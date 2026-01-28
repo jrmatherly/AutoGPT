@@ -25,22 +25,6 @@
       "path": "../docs"
     },
     {
-      "name": "classic - autogpt",
-      "path": "../classic/original_autogpt"
-    },
-    {
-      "name": "classic - benchmark",
-      "path": "../classic/benchmark"
-    },
-    {
-      "name": "classic - forge",
-      "path": "../classic/forge"
-    },
-    {
-      "name": "classic - frontend",
-      "path": "../classic/frontend"
-    },
-    {
       "name": "[root]",
       "path": ".."
     }
@@ -49,20 +33,24 @@
     "python.analysis.typeCheckingMode": "basic",
     "java.project.resourceFilters": [
       "node_modules",
-      "classic"
+      "classic",
+      ".archive"
     ],
     "java.import.exclusions": [
       "**/node_modules/**",
-      "**/classic/**"
+      "**/classic/**",
+      "**/.archive/**"
     ],
     "gradle.nestedProjects": false,
     "java.gradle.buildServer.enabled": "off",
     "cmake.ignoreCMakeListsMissing": true,
     "dart.analysisExcludedFolders": [
-      "classic"
+      "classic",
+      ".archive"
     ],
     "files.watcherExclude": {
-      "**/classic/**": true
+      "**/classic/**": true,
+      "**/.archive/**": true
     }
   },
   "extensions": {

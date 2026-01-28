@@ -7,7 +7,6 @@ This file provides comprehensive onboarding information for GitHub Copilot codin
 **AutoGPT** is a powerful platform for creating, deploying, and managing continuous AI agents that automate complex workflows. This is a large monorepo (~150MB) containing multiple components:
 
 - **AutoGPT Platform** (`autogpt_platform/`) - Main focus: Modern AI agent platform (Polyform Shield License)
-- **Classic AutoGPT** (`classic/`) - Legacy agent system (MIT License)
 - **Documentation** (`docs/`) - MkDocs-based documentation site
 - **Infrastructure** - Docker configurations, CI/CD, and development tools
 

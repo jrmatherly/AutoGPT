@@ -10,7 +10,7 @@ For efficient context, read these files first:
 
 ## Repository Structure
 
-AutoGPT is a monorepo with two main areas:
+AutoGPT is a monorepo:
 
 ```tree
 AutoGPT/
@@ -18,10 +18,6 @@ AutoGPT/
 │   ├── backend/               # Python FastAPI server
 │   ├── frontend/              # Next.js 15 React app
 │   └── autogpt_libs/          # Shared Python libraries
-├── classic/                   # Legacy **DEPRECATED** components (MIT licensed)
-│   ├── original_autogpt/      # Original standalone agent
-│   ├── forge/                 # Agent building toolkit
-│   └── benchmark/             # Agent testing framework
 └── docs/                      # Project documentation
 ```
 
@@ -86,7 +82,6 @@ pnpm test
 ## Licensing
 
 - **autogpt_platform/**: Polyform Shield License (commercial restrictions)
-- **classic/**: MIT License (permissive) **DEPRECATED**
 
 ## Contributing
 

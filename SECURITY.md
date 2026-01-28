@@ -4,8 +4,6 @@
 
 We take the security of our project seriously. If you believe you have found a security vulnerability, please report it to us privately. **Please do not report security vulnerabilities through public GitHub issues, discussions, or pull requests.**
 
-> **Important Note**: Any code within the `classic/` folder is considered legacy, unsupported, and out of scope for security reports. We will not address security vulnerabilities in this deprecated code.
-
 Instead, please report them via:
 
 - [GitHub Security Advisory](https://github.com/jrmatherly/AutoGPT/security/advisories/new)
@@ -33,7 +31,6 @@ Only the following versions are eligible for security updates:
 |---------|-----------|
 | Latest release on master branch | ✅ |
 | Development commits (pre-master) | ✅ |
-| Classic folder (deprecated) | ❌ |
 | All other versions | ❌ |
 
 ## Security Best Practices
@@ -44,7 +41,6 @@ When using this project:
 2. Review security advisories before updating
 3. Follow our security documentation and guidelines
 4. Keep your dependencies up to date
-5. Do not use code from the `classic/` folder as it is deprecated and unsupported
 
 ## Past Security Advisories
 
