@@ -15,14 +15,14 @@ To run the AutoGPT Platform, follow these steps:
 
 1. Clone this repository to your local machine and navigate to the `autogpt_platform` directory within the repository:
 
-   ```
+   ```bash
    git clone <https://github.com/Significant-Gravitas/AutoGPT.git | git@github.com:Significant-Gravitas/AutoGPT.git>
    cd AutoGPT/autogpt_platform
    ```
 
 2. Run the following command:
 
-   ```
+   ```bash
    cp .env.default .env
    ```
 
@@ -30,7 +30,7 @@ To run the AutoGPT Platform, follow these steps:
 
 3. Run the following command:
 
-   ```
+   ```bash
    docker compose up -d
    ```
 
@@ -42,7 +42,7 @@ To run the AutoGPT Platform, follow these steps:
 
 You can now run the following to enable just the core services.
 
-```
+```bash
 # For help
 make help
 
@@ -86,7 +86,7 @@ Here are some common scenarios where you might use multiple Docker Compose comma
 
 1. Updating and restarting a specific service:
 
-   ```
+   ```bash
    docker compose build api_srv
    docker compose up -d --no-deps api_srv
    ```
@@ -95,7 +95,7 @@ Here are some common scenarios where you might use multiple Docker Compose comma
 
 2. Viewing logs for troubleshooting:
 
-   ```
+   ```bash
    docker compose logs -f api_srv ws_srv
    ```
 
@@ -103,7 +103,7 @@ Here are some common scenarios where you might use multiple Docker Compose comma
 
 3. Scaling a service for increased load:
 
-   ```
+   ```bash
    docker compose up -d --scale executor=3
    ```
 
@@ -111,7 +111,7 @@ Here are some common scenarios where you might use multiple Docker Compose comma
 
 4. Stopping the entire system for maintenance:
 
-   ```
+   ```bash
    docker compose stop
    docker compose rm -f
    docker compose pull
@@ -122,16 +122,18 @@ Here are some common scenarios where you might use multiple Docker Compose comma
 
 5. Developing with live updates:
 
-   ```
+   ```bash
    docker compose watch
    ```
 
    This watches for changes in your code and automatically updates the relevant services.
 
 6. Checking the status of services:
-   ```
+
+   ```bash
    docker compose ps
    ```
+
    This shows the current status of all services defined in your docker-compose.yml file.
 
 These scenarios demonstrate how to use Docker Compose commands in combination to manage your AutoGPT Platform effectively.
@@ -178,12 +180,13 @@ If you need to update the API client after making changes to the backend API:
 
 1. Ensure the backend services are running:
 
-   ```
+   ```bash
    docker compose up -d
    ```
 
 2. Generate the updated API client:
-   ```
+
+   ```bash
    pnpm generate:api
    ```
 
