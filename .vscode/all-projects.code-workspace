@@ -46,7 +46,19 @@
     }
   ],
   "settings": {
-    "python.analysis.typeCheckingMode": "basic"
+    "python.analysis.typeCheckingMode": "basic",
+    "java.project.resourceFilters": [
+      "node_modules",
+      "classic"
+    ],
+    "java.import.exclusions": [
+      "**/node_modules/**",
+      "**/classic/**"
+    ],
+    "cmake.ignoreCMakeListsMissing": true,
+    "dart.analysisExcludedFolders": [
+      "classic"
+    ]
   },
   "extensions": {
     "recommendations": [
