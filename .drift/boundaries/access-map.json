@@ -1,0 +1,4634 @@
+{
+  "version": "1.0",
+  "generatedAt": "2026-01-28T23:51:44.788Z",
+  "projectRoot": "/Users/jason/dev/AutoGPT",
+  "models": [],
+  "tables": {
+    "integrations_router": {
+      "name": "integrations_router",
+      "model": null,
+      "fields": [],
+      "sensitiveFields": [],
+      "accessedBy": [
+        {
+          "id": "autogpt_platform/backend/backend/api/external/v1/integrations.py:624:0:integrations_router",
+          "table": "integrations_router",
+          "fields": [],
+          "operation": "delete",
+          "file": "autogpt_platform/backend/backend/api/external/v1/integrations.py",
+          "line": 624,
+          "column": 0,
+          "context": "@integrations_router.delete(",
+          "isRawSql": false,
+          "confidence": 0.85
+        }
+      ]
+    },
+    "tool": {
+      "name": "tool",
+      "model": null,
+      "fields": [],
+      "sensitiveFields": [],
+      "accessedBy": [
+        {
+          "id": "autogpt_platform/backend/backend/api/features/chat/db.py:288:0:tool",
+          "table": "tool",
+          "fields": [],
+          "operation": "write",
+          "file": "autogpt_platform/backend/backend/api/features/chat/db.py",
+          "line": 288,
+          "column": 0,
+          "context": "f\"Failed to update tool message for session {session_id}, \"",
+          "isRawSql": true,
+          "confidence": 0.5599999999999999
+        }
+      ]
+    },
+    "async_redis": {
+      "name": "async_redis",
+      "model": null,
+      "fields": [],
+      "sensitiveFields": [],
+      "accessedBy": [
+        {
+          "id": "autogpt_platform/backend/backend/api/features/chat/model.py:307:0:async_redis",
+          "table": "async_redis",
+          "fields": [],
+          "operation": "delete",
+          "file": "autogpt_platform/backend/backend/api/features/chat/model.py",
+          "line": 307,
+          "column": 0,
+          "context": "await async_redis.delete(redis_key)",
+          "isRawSql": false,
+          "confidence": 0.85
+        },
+        {
+          "id": "autogpt_platform/backend/backend/api/features/chat/model.py:575:0:async_redis",
+          "table": "async_redis",
+          "fields": [],
+          "operation": "delete",
+          "file": "autogpt_platform/backend/backend/api/features/chat/model.py",
+          "line": 575,
+          "column": 0,
+          "context": "await async_redis.delete(redis_key)",
+          "isRawSql": false,
+          "confidence": 0.85
+        },
+        {
+          "id": "autogpt_platform/backend/backend/api/features/chat/model.py:610:0:async_redis",
+          "table": "async_redis",
+          "fields": [],
+          "operation": "delete",
+          "file": "autogpt_platform/backend/backend/api/features/chat/model.py",
+          "line": 610,
+          "column": 0,
+          "context": "await async_redis.delete(redis_key)",
+          "isRawSql": false,
+          "confidence": 0.85
+        }
+      ]
+    },
+    "both": {
+      "name": "both",
+      "model": null,
+      "fields": [],
+      "sensitiveFields": [],
+      "accessedBy": [
+        {
+          "id": "autogpt_platform/backend/backend/api/features/chat/model.py:554:0:both",
+          "table": "both",
+          "fields": [],
+          "operation": "delete",
+          "file": "autogpt_platform/backend/backend/api/features/chat/model.py",
+          "line": 554,
+          "column": 0,
+          "context": "\"\"\"Delete a chat session from both cache and database.",
+          "isRawSql": true,
+          "confidence": 0.5599999999999999
+        },
+        {
+          "id": "autogpt_platform/backend/backend/data/understanding.py:317:0:both",
+          "table": "both",
+          "fields": [],
+          "operation": "delete",
+          "file": "autogpt_platform/backend/backend/data/understanding.py",
+          "line": 317,
+          "column": 0,
+          "context": "\"\"\"Clear/delete business understanding for a user from both DB and cache.\"\"\"",
+          "isRawSql": true,
+          "confidence": 0.5599999999999999
+        }
+      ]
+    },
+    "title": {
+      "name": "title",
+      "model": null,
+      "fields": [],
+      "sensitiveFields": [],
+      "accessedBy": [
+        {
+          "id": "autogpt_platform/backend/backend/api/features/chat/model.py:616:0:title",
+          "table": "title",
+          "fields": [],
+          "operation": "write",
+          "file": "autogpt_platform/backend/backend/api/features/chat/model.py",
+          "line": 616,
+          "column": 0,
+          "context": "logger.error(f\"Failed to update title for session {session_id}: {e}\")",
+          "isRawSql": true,
+          "confidence": 0.5599999999999999
+        }
+      ]
+    },
+    "redis": {
+      "name": "redis",
+      "model": null,
+      "fields": [],
+      "sensitiveFields": [],
+      "accessedBy": [
+        {
+          "id": "autogpt_platform/backend/backend/api/features/chat/service.py:188:0:redis",
+          "table": "redis",
+          "fields": [],
+          "operation": "delete",
+          "file": "autogpt_platform/backend/backend/api/features/chat/service.py",
+          "line": 188,
+          "column": 0,
+          "context": "await redis.delete(key)",
+          "isRawSql": false,
+          "confidence": 0.68
+        },
+        {
+          "id": "autogpt_platform/backend/backend/data/understanding.py:198:0:redis",
+          "table": "redis",
+          "fields": [],
+          "operation": "delete",
+          "file": "autogpt_platform/backend/backend/data/understanding.py",
+          "line": 198,
+          "column": 0,
+          "context": "await redis.delete(_cache_key(user_id))",
+          "isRawSql": false,
+          "confidence": 0.68
+        }
+      ]
+    },
+    "completions": {
+      "name": "completions",
+      "model": null,
+      "fields": [],
+      "sensitiveFields": [],
+      "accessedBy": [
+        {
+          "id": "autogpt_platform/backend/backend/api/features/chat/service.py:280:0:completions",
+          "table": "completions",
+          "fields": [],
+          "operation": "write",
+          "file": "autogpt_platform/backend/backend/api/features/chat/service.py",
+          "line": 280,
+          "column": 0,
+          "context": "response = await client.chat.completions.create(",
+          "isRawSql": false,
+          "confidence": 0.68
+        },
+        {
+          "id": "autogpt_platform/backend/backend/api/features/chat/service.py:846:0:completions",
+          "table": "completions",
+          "fields": [],
+          "operation": "write",
+          "file": "autogpt_platform/backend/backend/api/features/chat/service.py",
+          "line": 846,
+          "column": 0,
+          "context": "response = await summarization_client.chat.completions.create(",
+          "isRawSql": false,
+          "confidence": 0.68
+        },
+        {
+          "id": "autogpt_platform/backend/backend/api/features/chat/service.py:1380:0:completions",
+          "table": "completions",
+          "fields": [],
+          "operation": "write",
+          "file": "autogpt_platform/backend/backend/api/features/chat/service.py",
+          "line": 1380,
+          "column": 0,
+          "context": "stream = await client.chat.completions.create(",
+          "isRawSql": false,
+          "confidence": 0.68
+        },
+        {
+          "id": "autogpt_platform/backend/backend/api/features/chat/service.py:1927:0:completions",
+          "table": "completions",
+          "fields": [],
+          "operation": "write",
+          "file": "autogpt_platform/backend/backend/api/features/chat/service.py",
+          "line": 1927,
+          "column": 0,
+          "context": "response = await client.chat.completions.create(",
+          "isRawSql": false,
+          "confidence": 0.68
+        },
+        {
+          "id": "autogpt_platform/backend/backend/blocks/perplexity.py:149:0:completions",
+          "table": "completions",
+          "fields": [],
+          "operation": "write",
+          "file": "autogpt_platform/backend/backend/blocks/perplexity.py",
+          "line": 149,
+          "column": 0,
+          "context": "response = await client.chat.completions.create(",
+          "isRawSql": false,
+          "confidence": 0.68
+        }
+      ]
+    },
+    "chat": {
+      "name": "chat",
+      "model": null,
+      "fields": [],
+      "sensitiveFields": [],
+      "accessedBy": [
+        {
+          "id": "autogpt_platform/backend/backend/api/features/chat/service.py:1790:0:chat",
+          "table": "chat",
+          "fields": [],
+          "operation": "write",
+          "file": "autogpt_platform/backend/backend/api/features/chat/service.py",
+          "line": 1790,
+          "column": 0,
+          "context": "\"\"\"Execute a long-running tool in background and update chat history with result.",
+          "isRawSql": true,
+          "confidence": 0.5599999999999999
+        }
+      ]
+    },
+    "profile": {
+      "name": "profile",
+      "model": null,
+      "fields": [],
+      "sensitiveFields": [],
+      "accessedBy": [
+        {
+          "id": "autogpt_platform/backend/backend/api/features/chat/tools/_test_data.py:52:0:profile",
+          "table": "profile",
+          "fields": [],
+          "operation": "write",
+          "file": "autogpt_platform/backend/backend/api/features/chat/tools/_test_data.py",
+          "line": 52,
+          "column": 0,
+          "context": "await prisma.profile.create(",
+          "isRawSql": false,
+          "confidence": 0.68
+        },
+        {
+          "id": "autogpt_platform/backend/backend/api/features/chat/tools/_test_data.py:175:0:profile",
+          "table": "profile",
+          "fields": [],
+          "operation": "write",
+          "file": "autogpt_platform/backend/backend/api/features/chat/tools/_test_data.py",
+          "line": 175,
+          "column": 0,
+          "context": "await prisma.profile.create(",
+          "isRawSql": false,
+          "confidence": 0.68
+        },
+        {
+          "id": "autogpt_platform/backend/backend/api/features/chat/tools/_test_data.py:335:0:profile",
+          "table": "profile",
+          "fields": [],
+          "operation": "write",
+          "file": "autogpt_platform/backend/backend/api/features/chat/tools/_test_data.py",
+          "line": 335,
+          "column": 0,
+          "context": "await prisma.profile.create(",
+          "isRawSql": false,
+          "confidence": 0.68
+        },
+        {
+          "id": "autogpt_platform/backend/backend/api/features/store/db.py:1269:0:profile",
+          "table": "profile",
+          "fields": [],
+          "operation": "write",
+          "file": "autogpt_platform/backend/backend/api/features/store/db.py",
+          "line": 1269,
+          "column": 0,
+          "context": "logger.error(f\"Failed to update profile for user {user_id}\")",
+          "isRawSql": true,
+          "confidence": 0.5599999999999999
+        },
+        {
+          "id": "autogpt_platform/backend/backend/api/features/store/db.py:1270:0:profile",
+          "table": "profile",
+          "fields": [],
+          "operation": "write",
+          "file": "autogpt_platform/backend/backend/api/features/store/db.py",
+          "line": 1270,
+          "column": 0,
+          "context": "raise DatabaseError(\"Failed to update profile\")",
+          "isRawSql": true,
+          "confidence": 0.5599999999999999
+        }
+      ]
+    },
+    "library": {
+      "name": "library",
+      "model": null,
+      "fields": [],
+      "sensitiveFields": [],
+      "accessedBy": [
+        {
+          "id": "autogpt_platform/backend/backend/api/features/library/db.py:532:0:library",
+          "table": "library",
+          "fields": [],
+          "operation": "write",
+          "file": "autogpt_platform/backend/backend/api/features/library/db.py",
+          "line": 532,
+          "column": 0,
+          "context": "f\"Failed to update library agent for {agent_graph_id} v{agent_graph_version}\"",
+          "isRawSql": true,
+          "confidence": 0.5599999999999999
+        }
+      ]
+    },
+    "operation": {
+      "name": "operation",
+      "model": null,
+      "fields": [],
+      "sensitiveFields": [],
+      "accessedBy": [
+        {
+          "id": "autogpt_platform/backend/backend/api/features/library/db.py:565:0:operation",
+          "table": "operation",
+          "fields": [],
+          "operation": "write",
+          "file": "autogpt_platform/backend/backend/api/features/library/db.py",
+          "line": 565,
+          "column": 0,
+          "context": "DatabaseError: If there's an error in the update operation.",
+          "isRawSql": true,
+          "confidence": 0.5599999999999999
+        },
+        {
+          "id": "autogpt_platform/backend/backend/blocks/google/sheets.py:2036:0:operation",
+          "table": "operation",
+          "fields": [],
+          "operation": "write",
+          "file": "autogpt_platform/backend/backend/blocks/google/sheets.py",
+          "line": 2036,
+          "column": 0,
+          "context": "description=\"The result of the update operation\",",
+          "isRawSql": true,
+          "confidence": 0.5599999999999999
+        },
+        {
+          "id": "autogpt_platform/backend/backend/blocks/google/sheets.py:4353:0:operation",
+          "table": "operation",
+          "fields": [],
+          "operation": "write",
+          "file": "autogpt_platform/backend/backend/blocks/google/sheets.py",
+          "line": 4353,
+          "column": 0,
+          "context": "description=\"Result of the update operation\",",
+          "isRawSql": true,
+          "confidence": 0.5599999999999999
+        }
+      ]
+    },
+    "integrations_db": {
+      "name": "integrations_db",
+      "model": null,
+      "fields": [],
+      "sensitiveFields": [],
+      "accessedBy": [
+        {
+          "id": "autogpt_platform/backend/backend/api/features/library/db.py:694:0:integrations_db",
+          "table": "integrations_db",
+          "fields": [],
+          "operation": "read",
+          "file": "autogpt_platform/backend/backend/api/features/library/db.py",
+          "line": 694,
+          "column": 0,
+          "context": "webhooks = await integrations_db.find_webhooks_by_graph_id(",
+          "isRawSql": false,
+          "confidence": 0.85
+        }
+      ]
+    },
+    "Library": {
+      "name": "Library",
+      "model": null,
+      "fields": [],
+      "sensitiveFields": [],
+      "accessedBy": [
+        {
+          "id": "autogpt_platform/backend/backend/api/features/library/routes/agents.py:261:0:Library",
+          "table": "Library",
+          "fields": [],
+          "operation": "write",
+          "file": "autogpt_platform/backend/backend/api/features/library/routes/agents.py",
+          "line": 261,
+          "column": 0,
+          "context": "summary=\"Update Library Agent\",",
+          "isRawSql": true,
+          "confidence": 0.7
+        }
+      ]
+    },
+    "trigger": {
+      "name": "trigger",
+      "model": null,
+      "fields": [],
+      "sensitiveFields": [],
+      "accessedBy": [
+        {
+          "id": "autogpt_platform/backend/backend/api/features/library/routes/presets.py:269:0:trigger",
+          "table": "trigger",
+          "fields": [],
+          "operation": "write",
+          "file": "autogpt_platform/backend/backend/api/features/library/routes/presets.py",
+          "line": 269,
+          "column": 0,
+          "context": "detail=f\"Could not update trigger configuration: {feedback}\",",
+          "isRawSql": true,
+          "confidence": 0.27999999999999997
+        }
+      ]
+    },
+    "submission": {
+      "name": "submission",
+      "model": null,
+      "fields": [],
+      "sensitiveFields": [],
+      "accessedBy": [
+        {
+          "id": "autogpt_platform/backend/backend/api/features/store/db.py:865:0:submission",
+          "table": "submission",
+          "fields": [],
+          "operation": "write",
+          "file": "autogpt_platform/backend/backend/api/features/store/db.py",
+          "line": 865,
+          "column": 0,
+          "context": "changes_summary: str | None = \"Update submission\",",
+          "isRawSql": true,
+          "confidence": 0.5599999999999999
+        },
+        {
+          "id": "autogpt_platform/backend/backend/blocks/reddit.py:2242:0:submission",
+          "table": "submission",
+          "fields": [],
+          "operation": "delete",
+          "file": "autogpt_platform/backend/backend/blocks/reddit.py",
+          "line": 2242,
+          "column": 0,
+          "context": "submission.delete()",
+          "isRawSql": false,
+          "confidence": 0.68
+        }
+      ]
+    },
+    "attempt": {
+      "name": "attempt",
+      "model": null,
+      "fields": [],
+      "sensitiveFields": [],
+      "accessedBy": [
+        {
+          "id": "autogpt_platform/backend/backend/api/features/store/db.py:1243:0:attempt",
+          "table": "attempt",
+          "fields": [],
+          "operation": "write",
+          "file": "autogpt_platform/backend/backend/api/features/store/db.py",
+          "line": 1243,
+          "column": 0,
+          "context": "f\"Unauthorized update attempt for profile {existing_profile.id} by user {user_id}\"",
+          "isRawSql": true,
+          "confidence": 0.5599999999999999
+        },
+        {
+          "id": "autogpt_platform/backend/backend/api/features/store/db.py:1246:0:attempt",
+          "table": "attempt",
+          "fields": [],
+          "operation": "write",
+          "file": "autogpt_platform/backend/backend/api/features/store/db.py",
+          "line": 1246,
+          "column": 0,
+          "context": "f\"Unauthorized update attempt for profile {existing_profile.id} by user {user_id}\"",
+          "isRawSql": true,
+          "confidence": 0.5599999999999999
+        }
+      ]
+    },
+    "StoreAgent": {
+      "name": "StoreAgent",
+      "model": null,
+      "fields": [],
+      "sensitiveFields": [],
+      "accessedBy": [
+        {
+          "id": "autogpt_platform/backend/backend/api/features/store/db_test.py:390:0:StoreAgent",
+          "table": "StoreAgent",
+          "fields": [],
+          "operation": "delete",
+          "file": "autogpt_platform/backend/backend/api/features/store/db_test.py",
+          "line": 390,
+          "column": 0,
+          "context": "category=\"AI'; DELETE FROM StoreAgent; --\",",
+          "isRawSql": true,
+          "confidence": 0.7
+        }
+      ]
+    },
+    "embeddings": {
+      "name": "embeddings",
+      "model": null,
+      "fields": [],
+      "sensitiveFields": [],
+      "accessedBy": [
+        {
+          "id": "autogpt_platform/backend/backend/api/features/store/embeddings.py:89:0:embeddings",
+          "table": "embeddings",
+          "fields": [],
+          "operation": "write",
+          "file": "autogpt_platform/backend/backend/api/features/store/embeddings.py",
+          "line": 89,
+          "column": 0,
+          "context": "response = await client.embeddings.create(",
+          "isRawSql": false,
+          "confidence": 0.68
+        }
+      ]
+    },
+    "re": {
+      "name": "re",
+      "model": null,
+      "fields": [],
+      "sensitiveFields": [],
+      "accessedBy": [
+        {
+          "id": "autogpt_platform/backend/backend/api/features/store/hybrid_search.py:37:0:re",
+          "table": "re",
+          "fields": [],
+          "operation": "read",
+          "file": "autogpt_platform/backend/backend/api/features/store/hybrid_search.py",
+          "line": 37,
+          "column": 0,
+          "context": "tokens = re.findall(r\"\\b\\w+\\b\", text.lower())",
+          "isRawSql": false,
+          "confidence": 0.4759999999999999
+        }
+      ]
+    },
+    "search_scores": {
+      "name": "search_scores",
+      "model": null,
+      "fields": [],
+      "sensitiveFields": [],
+      "accessedBy": [
+        {
+          "id": "autogpt_platform/backend/backend/api/features/store/hybrid_search.py:327:0:search_scores",
+          "table": "search_scores",
+          "fields": [],
+          "operation": "read",
+          "file": "autogpt_platform/backend/backend/api/features/store/hybrid_search.py",
+          "line": 327,
+          "column": 0,
+          "context": "SELECT GREATEST(MAX(lexical_raw), 0.001) as max_val FROM search_scores",
+          "isRawSql": true,
+          "confidence": 0.7
+        }
+      ]
+    },
+    "filtered": {
+      "name": "filtered",
+      "model": null,
+      "fields": [],
+      "sensitiveFields": [],
+      "accessedBy": [
+        {
+          "id": "autogpt_platform/backend/backend/api/features/store/hybrid_search.py:360:0:filtered",
+          "table": "filtered",
+          "fields": [],
+          "operation": "read",
+          "file": "autogpt_platform/backend/backend/api/features/store/hybrid_search.py",
+          "line": 360,
+          "column": 0,
+          "context": "SELECT * FROM filtered",
+          "isRawSql": true,
+          "confidence": 0.5599999999999999
+        },
+        {
+          "id": "autogpt_platform/backend/backend/api/features/store/hybrid_search.py:682:0:filtered",
+          "table": "filtered",
+          "fields": [],
+          "operation": "read",
+          "file": "autogpt_platform/backend/backend/api/features/store/hybrid_search.py",
+          "line": 682,
+          "column": 0,
+          "context": "SELECT * FROM filtered",
+          "isRawSql": true,
+          "confidence": 0.5599999999999999
+        }
+      ]
+    },
+    "unnest": {
+      "name": "unnest",
+      "model": null,
+      "fields": [],
+      "sensitiveFields": [],
+      "accessedBy": [
+        {
+          "id": "autogpt_platform/backend/backend/api/features/store/hybrid_search.py:612:0:unnest",
+          "table": "unnest",
+          "fields": [],
+          "operation": "read",
+          "file": "autogpt_platform/backend/backend/api/features/store/hybrid_search.py",
+          "line": 612,
+          "column": 0,
+          "context": "SELECT 1 FROM unnest(sa.categories) cat",
+          "isRawSql": true,
+          "confidence": 0.5599999999999999
+        }
+      ]
+    },
+    "user": {
+      "name": "user",
+      "model": null,
+      "fields": [],
+      "sensitiveFields": [],
+      "accessedBy": [
+        {
+          "id": "autogpt_platform/backend/backend/api/features/store/routes.py:58:0:user",
+          "table": "user",
+          "fields": [],
+          "operation": "write",
+          "file": "autogpt_platform/backend/backend/api/features/store/routes.py",
+          "line": 58,
+          "column": 0,
+          "context": "summary=\"Update user profile\",",
+          "isRawSql": true,
+          "confidence": 0.5599999999999999
+        },
+        {
+          "id": "autogpt_platform/backend/backend/api/features/v1.py:142:0:user",
+          "table": "user",
+          "fields": [],
+          "operation": "write",
+          "file": "autogpt_platform/backend/backend/api/features/v1.py",
+          "line": 142,
+          "column": 0,
+          "context": "summary=\"Update user email\",",
+          "isRawSql": true,
+          "confidence": 0.5599999999999999
+        },
+        {
+          "id": "autogpt_platform/backend/backend/api/features/v1.py:170:0:user",
+          "table": "user",
+          "fields": [],
+          "operation": "write",
+          "file": "autogpt_platform/backend/backend/api/features/v1.py",
+          "line": 170,
+          "column": 0,
+          "context": "summary=\"Update user timezone\",",
+          "isRawSql": true,
+          "confidence": 0.5599999999999999
+        },
+        {
+          "id": "autogpt_platform/backend/backend/api/features/v1.py:177:0:user",
+          "table": "user",
+          "fields": [],
+          "operation": "write",
+          "file": "autogpt_platform/backend/backend/api/features/v1.py",
+          "line": 177,
+          "column": 0,
+          "context": "\"\"\"Update user timezone. The timezone should be a valid IANA timezone identifier.\"\"\"",
+          "isRawSql": true,
+          "confidence": 0.5599999999999999
+        },
+        {
+          "id": "autogpt_platform/backend/backend/api/features/v1_test.py:72:0:user",
+          "table": "user",
+          "fields": [],
+          "operation": "write",
+          "file": "autogpt_platform/backend/backend/api/features/v1_test.py",
+          "line": 72,
+          "column": 0,
+          "context": "\"\"\"Test update user email endpoint\"\"\"",
+          "isRawSql": true,
+          "confidence": 0.5599999999999999
+        },
+        {
+          "id": "autogpt_platform/backend/backend/check_db.py:123:0:user",
+          "table": "user",
+          "fields": [],
+          "operation": "read",
+          "file": "autogpt_platform/backend/backend/check_db.py",
+          "line": 123,
+          "column": 0,
+          "context": "users = await db.user.find_many(take=5)",
+          "isRawSql": false,
+          "confidence": 0.68
+        },
+        {
+          "id": "autogpt_platform/backend/backend/data/user.py:42:0:user",
+          "table": "user",
+          "fields": [],
+          "operation": "read",
+          "file": "autogpt_platform/backend/backend/data/user.py",
+          "line": 42,
+          "column": 0,
+          "context": "user = await prisma.user.find_unique(where={\"id\": user_id})",
+          "isRawSql": false,
+          "confidence": 0.68
+        },
+        {
+          "id": "autogpt_platform/backend/backend/data/user.py:44:0:user",
+          "table": "user",
+          "fields": [],
+          "operation": "write",
+          "file": "autogpt_platform/backend/backend/data/user.py",
+          "line": 44,
+          "column": 0,
+          "context": "user = await prisma.user.create(",
+          "isRawSql": false,
+          "confidence": 0.68
+        },
+        {
+          "id": "autogpt_platform/backend/backend/data/user.py:59:0:user",
+          "table": "user",
+          "fields": [],
+          "operation": "read",
+          "file": "autogpt_platform/backend/backend/data/user.py",
+          "line": 59,
+          "column": 0,
+          "context": "user = await prisma.user.find_unique(where={\"id\": user_id})",
+          "isRawSql": false,
+          "confidence": 0.68
+        },
+        {
+          "id": "autogpt_platform/backend/backend/data/user.py:67:0:user",
+          "table": "user",
+          "fields": [],
+          "operation": "read",
+          "file": "autogpt_platform/backend/backend/data/user.py",
+          "line": 67,
+          "column": 0,
+          "context": "user = await prisma.user.find_unique(where={\"id\": user_id})",
+          "isRawSql": false,
+          "confidence": 0.68
+        },
+        {
+          "id": "autogpt_platform/backend/backend/data/user.py:76:0:user",
+          "table": "user",
+          "fields": [],
+          "operation": "read",
+          "file": "autogpt_platform/backend/backend/data/user.py",
+          "line": 76,
+          "column": 0,
+          "context": "user = await prisma.user.find_unique(where={\"email\": email})",
+          "isRawSql": false,
+          "confidence": 0.68
+        },
+        {
+          "id": "autogpt_platform/backend/backend/data/user.py:85:0:user",
+          "table": "user",
+          "fields": [],
+          "operation": "read",
+          "file": "autogpt_platform/backend/backend/data/user.py",
+          "line": 85,
+          "column": 0,
+          "context": "old_user = await prisma.user.find_unique(where={\"id\": user_id})",
+          "isRawSql": false,
+          "confidence": 0.68
+        },
+        {
+          "id": "autogpt_platform/backend/backend/data/user.py:88:0:user",
+          "table": "user",
+          "fields": [],
+          "operation": "write",
+          "file": "autogpt_platform/backend/backend/data/user.py",
+          "line": 88,
+          "column": 0,
+          "context": "await prisma.user.update(where={\"id\": user_id}, data={\"email\": email})",
+          "isRawSql": false,
+          "confidence": 0.68
+        },
+        {
+          "id": "autogpt_platform/backend/backend/data/user.py:97:0:user",
+          "table": "user",
+          "fields": [],
+          "operation": "write",
+          "file": "autogpt_platform/backend/backend/data/user.py",
+          "line": 97,
+          "column": 0,
+          "context": "f\"Failed to update user email for user {user_id}: {e}\"",
+          "isRawSql": true,
+          "confidence": 0.5599999999999999
+        },
+        {
+          "id": "autogpt_platform/backend/backend/data/user.py:102:0:user",
+          "table": "user",
+          "fields": [],
+          "operation": "read",
+          "file": "autogpt_platform/backend/backend/data/user.py",
+          "line": 102,
+          "column": 0,
+          "context": "user = await prisma.user.find_unique(where={\"id\": DEFAULT_USER_ID})",
+          "isRawSql": false,
+          "confidence": 0.68
+        },
+        {
+          "id": "autogpt_platform/backend/backend/data/user.py:104:0:user",
+          "table": "user",
+          "fields": [],
+          "operation": "write",
+          "file": "autogpt_platform/backend/backend/data/user.py",
+          "line": 104,
+          "column": 0,
+          "context": "user = await prisma.user.create(",
+          "isRawSql": false,
+          "confidence": 0.68
+        },
+        {
+          "id": "autogpt_platform/backend/backend/data/user.py:338:0:user",
+          "table": "user",
+          "fields": [],
+          "operation": "write",
+          "file": "autogpt_platform/backend/backend/data/user.py",
+          "line": 338,
+          "column": 0,
+          "context": "f\"Failed to update user notification preference for user {user_id}: {e}\"",
+          "isRawSql": true,
+          "confidence": 0.5599999999999999
+        }
+      ]
+    },
+    "notification": {
+      "name": "notification",
+      "model": null,
+      "fields": [],
+      "sensitiveFields": [],
+      "accessedBy": [
+        {
+          "id": "autogpt_platform/backend/backend/api/features/v1.py:197:0:notification",
+          "table": "notification",
+          "fields": [],
+          "operation": "write",
+          "file": "autogpt_platform/backend/backend/api/features/v1.py",
+          "line": 197,
+          "column": 0,
+          "context": "summary=\"Update notification preferences\",",
+          "isRawSql": true,
+          "confidence": 0.5599999999999999
+        }
+      ]
+    },
+    "v1_router": {
+      "name": "v1_router",
+      "model": null,
+      "fields": [],
+      "sensitiveFields": [],
+      "accessedBy": [
+        {
+          "id": "autogpt_platform/backend/backend/api/features/v1.py:780:0:v1_router",
+          "table": "v1_router",
+          "fields": [],
+          "operation": "delete",
+          "file": "autogpt_platform/backend/backend/api/features/v1.py",
+          "line": 780,
+          "column": 0,
+          "context": "@v1_router.delete(",
+          "isRawSql": false,
+          "confidence": 0.85
+        },
+        {
+          "id": "autogpt_platform/backend/backend/api/features/v1.py:1184:0:v1_router",
+          "table": "v1_router",
+          "fields": [],
+          "operation": "delete",
+          "file": "autogpt_platform/backend/backend/api/features/v1.py",
+          "line": 1184,
+          "column": 0,
+          "context": "@v1_router.delete(",
+          "isRawSql": false,
+          "confidence": 0.85
+        },
+        {
+          "id": "autogpt_platform/backend/backend/api/features/v1.py:1250:0:v1_router",
+          "table": "v1_router",
+          "fields": [],
+          "operation": "delete",
+          "file": "autogpt_platform/backend/backend/api/features/v1.py",
+          "line": 1250,
+          "column": 0,
+          "context": "@v1_router.delete(",
+          "isRawSql": false,
+          "confidence": 0.85
+        },
+        {
+          "id": "autogpt_platform/backend/backend/api/features/v1.py:1389:0:v1_router",
+          "table": "v1_router",
+          "fields": [],
+          "operation": "delete",
+          "file": "autogpt_platform/backend/backend/api/features/v1.py",
+          "line": 1389,
+          "column": 0,
+          "context": "@v1_router.delete(",
+          "isRawSql": false,
+          "confidence": 0.85
+        },
+        {
+          "id": "autogpt_platform/backend/backend/api/features/v1.py:1462:0:v1_router",
+          "table": "v1_router",
+          "fields": [],
+          "operation": "delete",
+          "file": "autogpt_platform/backend/backend/api/features/v1.py",
+          "line": 1462,
+          "column": 0,
+          "context": "@v1_router.delete(",
+          "isRawSql": false,
+          "confidence": 0.85
+        }
+      ]
+    },
+    "graph": {
+      "name": "graph",
+      "model": null,
+      "fields": [],
+      "sensitiveFields": [],
+      "accessedBy": [
+        {
+          "id": "autogpt_platform/backend/backend/api/features/v1.py:799:0:graph",
+          "table": "graph",
+          "fields": [],
+          "operation": "write",
+          "file": "autogpt_platform/backend/backend/api/features/v1.py",
+          "line": 799,
+          "column": 0,
+          "context": "summary=\"Update graph version\",",
+          "isRawSql": true,
+          "confidence": 0.5599999999999999
+        },
+        {
+          "id": "autogpt_platform/backend/backend/api/features/v1.py:914:0:graph",
+          "table": "graph",
+          "fields": [],
+          "operation": "write",
+          "file": "autogpt_platform/backend/backend/api/features/v1.py",
+          "line": 914,
+          "column": 0,
+          "context": "summary=\"Update graph settings\",",
+          "isRawSql": true,
+          "confidence": 0.5599999999999999
+        },
+        {
+          "id": "autogpt_platform/backend/backend/api/features/v1.py:923:0:graph",
+          "table": "graph",
+          "fields": [],
+          "operation": "write",
+          "file": "autogpt_platform/backend/backend/api/features/v1.py",
+          "line": 923,
+          "column": 0,
+          "context": "\"\"\"Update graph settings for the user's library agent.\"\"\"",
+          "isRawSql": true,
+          "confidence": 0.5599999999999999
+        },
+        {
+          "id": "autogpt_platform/backend/backend/executor/manager.py:2021:0:graph",
+          "table": "graph",
+          "fields": [],
+          "operation": "write",
+          "file": "autogpt_platform/backend/backend/executor/manager.py",
+          "line": 2021,
+          "column": 0,
+          "context": "logger.error(f\"Failed to update graph execution stats for {graph_exec_id}\")",
+          "isRawSql": true,
+          "confidence": 0.5599999999999999
+        },
+        {
+          "id": "autogpt_platform/backend/backend/executor/manager.py:2036:0:graph",
+          "table": "graph",
+          "fields": [],
+          "operation": "write",
+          "file": "autogpt_platform/backend/backend/executor/manager.py",
+          "line": 2036,
+          "column": 0,
+          "context": "logger.error(f\"Failed to update graph execution stats for {graph_exec_id}\")",
+          "isRawSql": true,
+          "confidence": 0.5599999999999999
+        }
+      ]
+    },
+    "dependency_overrides": {
+      "name": "dependency_overrides",
+      "model": null,
+      "fields": [],
+      "sensitiveFields": [],
+      "accessedBy": [
+        {
+          "id": "autogpt_platform/backend/backend/api/rest_api.py:512:0:dependency_overrides",
+          "table": "dependency_overrides",
+          "fields": [],
+          "operation": "write",
+          "file": "autogpt_platform/backend/backend/api/rest_api.py",
+          "line": 512,
+          "column": 0,
+          "context": "app.dependency_overrides.update(overrides)",
+          "isRawSql": false,
+          "confidence": 0.85
+        }
+      ]
+    },
+    "table": {
+      "name": "table",
+      "model": null,
+      "fields": [],
+      "sensitiveFields": [],
+      "accessedBy": [
+        {
+          "id": "autogpt_platform/backend/backend/blocks/airtable/schema.py:135:0:table",
+          "table": "table",
+          "fields": [],
+          "operation": "write",
+          "file": "autogpt_platform/backend/backend/blocks/airtable/schema.py",
+          "line": 135,
+          "column": 0,
+          "context": "description=\"Update table properties\",",
+          "isRawSql": true,
+          "confidence": 0.27999999999999997
+        }
+      ]
+    },
+    "requests": {
+      "name": "requests",
+      "model": null,
+      "fields": [],
+      "sensitiveFields": [],
+      "accessedBy": [
+        {
+          "id": "autogpt_platform/backend/backend/blocks/baas/_api.py:91:0:requests",
+          "table": "requests",
+          "fields": [],
+          "operation": "delete",
+          "file": "autogpt_platform/backend/backend/blocks/baas/_api.py",
+          "line": 91,
+          "column": 0,
+          "context": "response = await self.requests.delete(",
+          "isRawSql": false,
+          "confidence": 0.68
+        }
+      ]
+    },
+    "BaseAsyncSandbox": {
+      "name": "BaseAsyncSandbox",
+      "model": null,
+      "fields": [],
+      "sensitiveFields": [],
+      "accessedBy": [
+        {
+          "id": "autogpt_platform/backend/backend/blocks/claude_code.py:327:0:BaseAsyncSandbox",
+          "table": "BaseAsyncSandbox",
+          "fields": [],
+          "operation": "write",
+          "file": "autogpt_platform/backend/backend/blocks/claude_code.py",
+          "line": 327,
+          "column": 0,
+          "context": "sandbox = await BaseAsyncSandbox.create(",
+          "isRawSql": false,
+          "confidence": 0.85
+        }
+      ]
+    },
+    "AsyncSandbox": {
+      "name": "AsyncSandbox",
+      "model": null,
+      "fields": [],
+      "sensitiveFields": [],
+      "accessedBy": [
+        {
+          "id": "autogpt_platform/backend/backend/blocks/code_executor.py:114:0:AsyncSandbox",
+          "table": "AsyncSandbox",
+          "fields": [],
+          "operation": "write",
+          "file": "autogpt_platform/backend/backend/blocks/code_executor.py",
+          "line": 114,
+          "column": 0,
+          "context": "sandbox = await AsyncSandbox.create(",
+          "isRawSql": false,
+          "confidence": 0.85
+        }
+      ]
+    },
+    "websets": {
+      "name": "websets",
+      "model": null,
+      "fields": [],
+      "sensitiveFields": [],
+      "accessedBy": [
+        {
+          "id": "autogpt_platform/backend/backend/blocks/exa/websets.py:388:0:websets",
+          "table": "websets",
+          "fields": [],
+          "operation": "write",
+          "file": "autogpt_platform/backend/backend/blocks/exa/websets.py",
+          "line": 388,
+          "column": 0,
+          "context": "webset = exa.websets.create(",
+          "isRawSql": false,
+          "confidence": 0.68
+        },
+        {
+          "id": "autogpt_platform/backend/backend/blocks/exa/websets.py:497:0:websets",
+          "table": "websets",
+          "fields": [],
+          "operation": "write",
+          "file": "autogpt_platform/backend/backend/blocks/exa/websets.py",
+          "line": 497,
+          "column": 0,
+          "context": "webset = aexa.websets.create(",
+          "isRawSql": false,
+          "confidence": 0.68
+        },
+        {
+          "id": "autogpt_platform/backend/backend/blocks/exa/websets.py:557:0:websets",
+          "table": "websets",
+          "fields": [],
+          "operation": "write",
+          "file": "autogpt_platform/backend/backend/blocks/exa/websets.py",
+          "line": 557,
+          "column": 0,
+          "context": "sdk_webset = aexa.websets.update(id=input_data.webset_id, params=payload)",
+          "isRawSql": false,
+          "confidence": 0.68
+        },
+        {
+          "id": "autogpt_platform/backend/backend/blocks/exa/websets.py:751:0:websets",
+          "table": "websets",
+          "fields": [],
+          "operation": "delete",
+          "file": "autogpt_platform/backend/backend/blocks/exa/websets.py",
+          "line": 751,
+          "column": 0,
+          "context": "deleted_webset = aexa.websets.delete(id=input_data.webset_id)",
+          "isRawSql": false,
+          "confidence": 0.68
+        }
+      ]
+    },
+    "imports": {
+      "name": "imports",
+      "model": null,
+      "fields": [],
+      "sensitiveFields": [],
+      "accessedBy": [
+        {
+          "id": "autogpt_platform/backend/backend/blocks/exa/websets_import_export.py:297:0:imports",
+          "table": "imports",
+          "fields": [],
+          "operation": "write",
+          "file": "autogpt_platform/backend/backend/blocks/exa/websets_import_export.py",
+          "line": 297,
+          "column": 0,
+          "context": "sdk_import = aexa.websets.imports.create(",
+          "isRawSql": false,
+          "confidence": 0.68
+        },
+        {
+          "id": "autogpt_platform/backend/backend/blocks/exa/websets_import_export.py:477:0:imports",
+          "table": "imports",
+          "fields": [],
+          "operation": "delete",
+          "file": "autogpt_platform/backend/backend/blocks/exa/websets_import_export.py",
+          "line": 477,
+          "column": 0,
+          "context": "deleted_import = aexa.websets.imports.delete(import_id=input_data.import_id)",
+          "isRawSql": false,
+          "confidence": 0.68
+        }
+      ]
+    },
+    "monitors": {
+      "name": "monitors",
+      "model": null,
+      "fields": [],
+      "sensitiveFields": [],
+      "accessedBy": [
+        {
+          "id": "autogpt_platform/backend/backend/blocks/exa/websets_monitor.py:323:0:monitors",
+          "table": "monitors",
+          "fields": [],
+          "operation": "write",
+          "file": "autogpt_platform/backend/backend/blocks/exa/websets_monitor.py",
+          "line": 323,
+          "column": 0,
+          "context": "sdk_monitor = aexa.websets.monitors.create(params=payload)",
+          "isRawSql": false,
+          "confidence": 0.68
+        },
+        {
+          "id": "autogpt_platform/backend/backend/blocks/exa/websets_monitor.py:479:0:monitors",
+          "table": "monitors",
+          "fields": [],
+          "operation": "write",
+          "file": "autogpt_platform/backend/backend/blocks/exa/websets_monitor.py",
+          "line": 479,
+          "column": 0,
+          "context": "sdk_monitor = aexa.websets.monitors.update(",
+          "isRawSql": false,
+          "confidence": 0.68
+        },
+        {
+          "id": "autogpt_platform/backend/backend/blocks/exa/websets_monitor.py:525:0:monitors",
+          "table": "monitors",
+          "fields": [],
+          "operation": "delete",
+          "file": "autogpt_platform/backend/backend/blocks/exa/websets_monitor.py",
+          "line": 525,
+          "column": 0,
+          "context": "deleted_monitor = aexa.websets.monitors.delete(monitor_id=input_data.monitor_id)",
+          "isRawSql": false,
+          "confidence": 0.68
+        }
+      ]
+    },
+    "searches": {
+      "name": "searches",
+      "model": null,
+      "fields": [],
+      "sensitiveFields": [],
+      "accessedBy": [
+        {
+          "id": "autogpt_platform/backend/backend/blocks/exa/websets_search.py:320:0:searches",
+          "table": "searches",
+          "fields": [],
+          "operation": "write",
+          "file": "autogpt_platform/backend/backend/blocks/exa/websets_search.py",
+          "line": 320,
+          "column": 0,
+          "context": "sdk_search = aexa.websets.searches.create(",
+          "isRawSql": false,
+          "confidence": 0.68
+        },
+        {
+          "id": "autogpt_platform/backend/backend/blocks/exa/websets_search.py:639:0:searches",
+          "table": "searches",
+          "fields": [],
+          "operation": "write",
+          "file": "autogpt_platform/backend/backend/blocks/exa/websets_search.py",
+          "line": 639,
+          "column": 0,
+          "context": "sdk_search = aexa.websets.searches.create(",
+          "isRawSql": false,
+          "confidence": 0.68
+        }
+      ]
+    },
+    "file": {
+      "name": "file",
+      "model": null,
+      "fields": [],
+      "sensitiveFields": [],
+      "accessedBy": [
+        {
+          "id": "autogpt_platform/backend/backend/blocks/github/repo.py:893:0:file",
+          "table": "file",
+          "fields": [],
+          "operation": "write",
+          "file": "autogpt_platform/backend/backend/blocks/github/repo.py",
+          "line": 893,
+          "column": 0,
+          "context": "default=\"Update file\",",
+          "isRawSql": true,
+          "confidence": 0.5599999999999999
+        }
+      ]
+    },
+    "text_to_search": {
+      "name": "text_to_search",
+      "model": null,
+      "fields": [],
+      "sensitiveFields": [],
+      "accessedBy": [
+        {
+          "id": "autogpt_platform/backend/backend/blocks/google/docs.py:2547:0:text_to_search",
+          "table": "text_to_search",
+          "fields": [],
+          "operation": "read",
+          "file": "autogpt_platform/backend/backend/blocks/google/docs.py",
+          "line": 2547,
+          "column": 0,
+          "context": "pos = text_to_search.find(search_text, offset)",
+          "isRawSql": false,
+          "confidence": 0.85
+        }
+      ]
+    },
+    "SheetOperation": {
+      "name": "SheetOperation",
+      "model": null,
+      "fields": [],
+      "sensitiveFields": [],
+      "accessedBy": [
+        {
+          "id": "autogpt_platform/backend/backend/blocks/google/sheets.py:1014:0:SheetOperation",
+          "table": "SheetOperation",
+          "fields": [],
+          "operation": "delete",
+          "file": "autogpt_platform/backend/backend/blocks/google/sheets.py",
+          "line": 1014,
+          "column": 0,
+          "context": "elif operation == SheetOperation.DELETE:",
+          "isRawSql": true,
+          "confidence": 0.7
+        }
+      ]
+    },
+    "BatchOperationType": {
+      "name": "BatchOperationType",
+      "model": null,
+      "fields": [],
+      "sensitiveFields": [],
+      "accessedBy": [
+        {
+          "id": "autogpt_platform/backend/backend/blocks/google/sheets.py:1086:0:BatchOperationType",
+          "table": "BatchOperationType",
+          "fields": [],
+          "operation": "write",
+          "file": "autogpt_platform/backend/backend/blocks/google/sheets.py",
+          "line": 1086,
+          "column": 0,
+          "context": "\"type\": BatchOperationType.UPDATE,",
+          "isRawSql": true,
+          "confidence": 0.7
+        },
+        {
+          "id": "autogpt_platform/backend/backend/blocks/google/sheets.py:1091:0:BatchOperationType",
+          "table": "BatchOperationType",
+          "fields": [],
+          "operation": "write",
+          "file": "autogpt_platform/backend/backend/blocks/google/sheets.py",
+          "line": 1091,
+          "column": 0,
+          "context": "\"type\": BatchOperationType.UPDATE,",
+          "isRawSql": true,
+          "confidence": 0.7
+        },
+        {
+          "id": "autogpt_platform/backend/backend/blocks/google/sheets.py:1163:0:BatchOperationType",
+          "table": "BatchOperationType",
+          "fields": [],
+          "operation": "write",
+          "file": "autogpt_platform/backend/backend/blocks/google/sheets.py",
+          "line": 1163,
+          "column": 0,
+          "context": "if op.type == BatchOperationType.UPDATE:",
+          "isRawSql": true,
+          "confidence": 0.7
+        }
+      ]
+    },
+    "fails": {
+      "name": "fails",
+      "model": null,
+      "fields": [],
+      "sensitiveFields": [],
+      "accessedBy": [
+        {
+          "id": "autogpt_platform/backend/backend/blocks/helpers/review.py:89:0:fails",
+          "table": "fails",
+          "fields": [],
+          "operation": "write",
+          "file": "autogpt_platform/backend/backend/blocks/helpers/review.py",
+          "line": 89,
+          "column": 0,
+          "context": "Exception: If review creation or status update fails",
+          "isRawSql": true,
+          "confidence": 0.5599999999999999
+        }
+      ]
+    },
+    "extra_headers": {
+      "name": "extra_headers",
+      "model": null,
+      "fields": [],
+      "sensitiveFields": [],
+      "accessedBy": [
+        {
+          "id": "autogpt_platform/backend/backend/blocks/http.py:263:0:extra_headers",
+          "table": "extra_headers",
+          "fields": [],
+          "operation": "read",
+          "file": "autogpt_platform/backend/backend/blocks/http.py",
+          "line": 263,
+          "column": 0,
+          "context": "extra_headers.update(credentials.get_headers_dict())",
+          "isRawSql": false,
+          "confidence": 0.85
+        }
+      ]
+    },
+    "Google": {
+      "name": "Google",
+      "model": null,
+      "fields": [],
+      "sensitiveFields": [],
+      "accessedBy": [
+        {
+          "id": "autogpt_platform/backend/backend/blocks/io.py:653:0:Google",
+          "table": "Google",
+          "fields": [],
+          "operation": "read",
+          "file": "autogpt_platform/backend/backend/blocks/io.py",
+          "line": 653,
+          "column": 0,
+          "context": "This block allows users to select a file from Google Drive.",
+          "isRawSql": true,
+          "confidence": 0.7
+        },
+        {
+          "id": "autogpt_platform/backend/backend/blocks/io.py:743:0:Google",
+          "table": "Google",
+          "fields": [],
+          "operation": "read",
+          "file": "autogpt_platform/backend/backend/blocks/io.py",
+          "line": 743,
+          "column": 0,
+          "context": "\"description\": \"Select a spreadsheet from Google Drive\",",
+          "isRawSql": true,
+          "confidence": 0.7
+        }
+      ]
+    },
+    "comment": {
+      "name": "comment",
+      "model": null,
+      "fields": [],
+      "sensitiveFields": [],
+      "accessedBy": [
+        {
+          "id": "autogpt_platform/backend/backend/blocks/reddit.py:2300:0:comment",
+          "table": "comment",
+          "fields": [],
+          "operation": "delete",
+          "file": "autogpt_platform/backend/backend/blocks/reddit.py",
+          "line": 2300,
+          "column": 0,
+          "context": "comment.delete()",
+          "isRawSql": false,
+          "confidence": 0.68
+        }
+      ]
+    },
+    "conversation": {
+      "name": "conversation",
+      "model": null,
+      "fields": [],
+      "sensitiveFields": [],
+      "accessedBy": [
+        {
+          "id": "autogpt_platform/backend/backend/blocks/smart_decision_maker.py:756:0:conversation",
+          "table": "conversation",
+          "fields": [],
+          "operation": "write",
+          "file": "autogpt_platform/backend/backend/blocks/smart_decision_maker.py",
+          "line": 756,
+          "column": 0,
+          "context": "\"\"\"Update conversation history with response and tool outputs.\"\"\"",
+          "isRawSql": true,
+          "confidence": 0.5599999999999999
+        }
+      ]
+    },
+    "pg_extension": {
+      "name": "pg_extension",
+      "model": null,
+      "fields": [],
+      "sensitiveFields": [],
+      "accessedBy": [
+        {
+          "id": "autogpt_platform/backend/backend/check_db.py:23:0:pg_extension",
+          "table": "pg_extension",
+          "fields": [],
+          "operation": "read",
+          "file": "autogpt_platform/backend/backend/check_db.py",
+          "line": 23,
+          "column": 0,
+          "context": "\"SELECT COUNT(*) as count FROM pg_extension WHERE extname = 'pg_cron'\"",
+          "isRawSql": true,
+          "confidence": 0.7
+        }
+      ]
+    },
+    "agentgraph": {
+      "name": "agentgraph",
+      "model": null,
+      "fields": [],
+      "sensitiveFields": [],
+      "accessedBy": [
+        {
+          "id": "autogpt_platform/backend/backend/check_db.py:124:0:agentgraph",
+          "table": "agentgraph",
+          "fields": [],
+          "operation": "read",
+          "file": "autogpt_platform/backend/backend/check_db.py",
+          "line": 124,
+          "column": 0,
+          "context": "graphs = await db.agentgraph.find_many(take=5)",
+          "isRawSql": false,
+          "confidence": 0.68
+        }
+      ]
+    },
+    "agentgraphexecution": {
+      "name": "agentgraphexecution",
+      "model": null,
+      "fields": [],
+      "sensitiveFields": [],
+      "accessedBy": [
+        {
+          "id": "autogpt_platform/backend/backend/check_db.py:135:0:agentgraphexecution",
+          "table": "agentgraphexecution",
+          "fields": [],
+          "operation": "write",
+          "file": "autogpt_platform/backend/backend/check_db.py",
+          "line": 135,
+          "column": 0,
+          "context": "await db.agentgraphexecution.create(",
+          "isRawSql": false,
+          "confidence": 0.68
+        }
+      ]
+    },
+    "storelistingversion": {
+      "name": "storelistingversion",
+      "model": null,
+      "fields": [],
+      "sensitiveFields": [],
+      "accessedBy": [
+        {
+          "id": "autogpt_platform/backend/backend/check_db.py:149:0:storelistingversion",
+          "table": "storelistingversion",
+          "fields": [],
+          "operation": "read",
+          "file": "autogpt_platform/backend/backend/check_db.py",
+          "line": 149,
+          "column": 0,
+          "context": "store_versions = await db.storelistingversion.find_many(",
+          "isRawSql": false,
+          "confidence": 0.68
+        },
+        {
+          "id": "autogpt_platform/backend/backend/check_db.py:170:0:storelistingversion",
+          "table": "storelistingversion",
+          "fields": [],
+          "operation": "write",
+          "file": "autogpt_platform/backend/backend/check_db.py",
+          "line": 170,
+          "column": 0,
+          "context": "version = await db.storelistingversion.create(",
+          "isRawSql": false,
+          "confidence": 0.68
+        },
+        {
+          "id": "autogpt_platform/backend/backend/check_db.py:193:0:storelistingversion",
+          "table": "storelistingversion",
+          "fields": [],
+          "operation": "read",
+          "file": "autogpt_platform/backend/backend/check_db.py",
+          "line": 193,
+          "column": 0,
+          "context": "store_versions = await db.storelistingversion.find_many(",
+          "isRawSql": false,
+          "confidence": 0.68
+        },
+        {
+          "id": "autogpt_platform/backend/backend/check_store_data.py:34:0:storelistingversion",
+          "table": "storelistingversion",
+          "fields": [],
+          "operation": "read",
+          "file": "autogpt_platform/backend/backend/check_store_data.py",
+          "line": 34,
+          "column": 0,
+          "context": "versions = await db.storelistingversion.find_many(include={\"StoreListing\": True})",
+          "isRawSql": false,
+          "confidence": 0.68
+        }
+      ]
+    },
+    "storelisting": {
+      "name": "storelisting",
+      "model": null,
+      "fields": [],
+      "sensitiveFields": [],
+      "accessedBy": [
+        {
+          "id": "autogpt_platform/backend/backend/check_db.py:159:0:storelisting",
+          "table": "storelisting",
+          "fields": [],
+          "operation": "write",
+          "file": "autogpt_platform/backend/backend/check_db.py",
+          "line": 159,
+          "column": 0,
+          "context": "listing = await db.storelisting.create(",
+          "isRawSql": false,
+          "confidence": 0.68
+        },
+        {
+          "id": "autogpt_platform/backend/backend/check_db.py:186:0:storelisting",
+          "table": "storelisting",
+          "fields": [],
+          "operation": "write",
+          "file": "autogpt_platform/backend/backend/check_db.py",
+          "line": 186,
+          "column": 0,
+          "context": "await db.storelisting.update(",
+          "isRawSql": false,
+          "confidence": 0.68
+        },
+        {
+          "id": "autogpt_platform/backend/backend/check_store_data.py:21:0:storelisting",
+          "table": "storelisting",
+          "fields": [],
+          "operation": "read",
+          "file": "autogpt_platform/backend/backend/check_store_data.py",
+          "line": 21,
+          "column": 0,
+          "context": "listings = await db.storelisting.find_many()",
+          "isRawSql": false,
+          "confidence": 0.68
+        }
+      ]
+    },
+    "storelistingreview": {
+      "name": "storelistingreview",
+      "model": null,
+      "fields": [],
+      "sensitiveFields": [],
+      "accessedBy": [
+        {
+          "id": "autogpt_platform/backend/backend/check_db.py:202:0:storelistingreview",
+          "table": "storelistingreview",
+          "fields": [],
+          "operation": "read",
+          "file": "autogpt_platform/backend/backend/check_db.py",
+          "line": 202,
+          "column": 0,
+          "context": "existing_reviews = await db.storelistingreview.find_many(",
+          "isRawSql": false,
+          "confidence": 0.68
+        },
+        {
+          "id": "autogpt_platform/backend/backend/check_db.py:210:0:storelistingreview",
+          "table": "storelistingreview",
+          "fields": [],
+          "operation": "write",
+          "file": "autogpt_platform/backend/backend/check_db.py",
+          "line": 210,
+          "column": 0,
+          "context": "await db.storelistingreview.create(",
+          "isRawSql": false,
+          "confidence": 0.68
+        },
+        {
+          "id": "autogpt_platform/backend/backend/check_store_data.py:59:0:storelistingreview",
+          "table": "storelistingreview",
+          "fields": [],
+          "operation": "read",
+          "file": "autogpt_platform/backend/backend/check_store_data.py",
+          "line": 59,
+          "column": 0,
+          "context": "reviews = await db.storelistingreview.find_many(",
+          "isRawSql": false,
+          "confidence": 0.68
+        }
+      ]
+    },
+    "OAuthApplication": {
+      "name": "OAuthApplication",
+      "model": null,
+      "fields": [],
+      "sensitiveFields": [],
+      "accessedBy": [
+        {
+          "id": "autogpt_platform/backend/backend/cli/oauth_tool.py:154:0:OAuthApplication",
+          "table": "OAuthApplication",
+          "fields": [],
+          "operation": "write",
+          "file": "autogpt_platform/backend/backend/cli/oauth_tool.py",
+          "line": 154,
+          "column": 0,
+          "context": "INSERT INTO \"OAuthApplication\" (",
+          "isRawSql": true,
+          "confidence": 0.7
+        }
+      ]
+    },
+    "OAuth": {
+      "name": "OAuth",
+      "model": null,
+      "fields": [],
+      "sensitiveFields": [],
+      "accessedBy": [
+        {
+          "id": "autogpt_platform/backend/backend/data/auth/oauth.py:802:0:OAuth",
+          "table": "OAuth",
+          "fields": [],
+          "operation": "write",
+          "file": "autogpt_platform/backend/backend/data/auth/oauth.py",
+          "line": 802,
+          "column": 0,
+          "context": "Update OAuth application active status.",
+          "isRawSql": true,
+          "confidence": 0.7
+        }
+      ]
+    },
+    "obj": {
+      "name": "obj",
+      "model": null,
+      "fields": [],
+      "sensitiveFields": [],
+      "accessedBy": [
+        {
+          "id": "autogpt_platform/backend/backend/data/block.py:162:0:obj",
+          "table": "obj",
+          "fields": [],
+          "operation": "write",
+          "file": "autogpt_platform/backend/backend/data/block.py",
+          "line": 162,
+          "column": 0,
+          "context": "obj.update(obj[one_key][0])",
+          "isRawSql": false,
+          "confidence": 0.4759999999999999
+        }
+      ]
+    },
+    "transaction_update": {
+      "name": "transaction_update",
+      "model": null,
+      "fields": [],
+      "sensitiveFields": [],
+      "accessedBy": [
+        {
+          "id": "autogpt_platform/backend/backend/data/credit.py:334:0:transaction_update",
+          "table": "transaction_update",
+          "fields": [],
+          "operation": "read",
+          "file": "autogpt_platform/backend/backend/data/credit.py",
+          "line": 334,
+          "column": 0,
+          "context": "SELECT \"runningBalance\" as balance FROM transaction_update;",
+          "isRawSql": true,
+          "confidence": 0.7
+        }
+      ]
+    },
+    "approach": {
+      "name": "approach",
+      "model": null,
+      "fields": [],
+      "sensitiveFields": [],
+      "accessedBy": [
+        {
+          "id": "autogpt_platform/backend/backend/data/credit.py:378:0:approach",
+          "table": "approach",
+          "fields": [],
+          "operation": "write",
+          "file": "autogpt_platform/backend/backend/data/credit.py",
+          "line": 378,
+          "column": 0,
+          "context": "that the FOR UPDATE approach is necessary despite the latency overhead.",
+          "isRawSql": true,
+          "confidence": 0.5599999999999999
+        }
+      ]
+    },
+    "must": {
+      "name": "must",
+      "model": null,
+      "fields": [],
+      "sensitiveFields": [],
+      "accessedBy": [
+        {
+          "id": "autogpt_platform/backend/backend/data/credit.py:383:0:must",
+          "table": "must",
+          "fields": [],
+          "operation": "write",
+          "file": "autogpt_platform/backend/backend/data/credit.py",
+          "line": 383,
+          "column": 0,
+          "context": "calculation, and update must be atomic to prevent race conditions where:",
+          "isRawSql": true,
+          "confidence": 0.5599999999999999
+        }
+      ]
+    },
+    "problems": {
+      "name": "problems",
+      "model": null,
+      "fields": [],
+      "sensitiveFields": [],
+      "accessedBy": [
+        {
+          "id": "autogpt_platform/backend/backend/data/credit.py:385:0:problems",
+          "table": "problems",
+          "fields": [],
+          "operation": "write",
+          "file": "autogpt_platform/backend/backend/data/credit.py",
+          "line": 385,
+          "column": 0,
+          "context": "- Lost update problems could occur with concurrent top-ups",
+          "isRawSql": true,
+          "confidence": 0.5599999999999999
+        }
+      ]
+    },
+    "ensures": {
+      "name": "ensures",
+      "model": null,
+      "fields": [],
+      "sensitiveFields": [],
+      "accessedBy": [
+        {
+          "id": "autogpt_platform/backend/backend/data/credit.py:388:0:ensures",
+          "table": "ensures",
+          "fields": [],
+          "operation": "write",
+          "file": "autogpt_platform/backend/backend/data/credit.py",
+          "line": 388,
+          "column": 0,
+          "context": "2. **Serializability**: FOR UPDATE ensures operations are serialized at the database level,",
+          "isRawSql": true,
+          "confidence": 0.5599999999999999
+        }
+      ]
+    },
+    "balance": {
+      "name": "balance",
+      "model": null,
+      "fields": [],
+      "sensitiveFields": [],
+      "accessedBy": [
+        {
+          "id": "autogpt_platform/backend/backend/data/credit.py:464:0:balance",
+          "table": "balance",
+          "fields": [],
+          "operation": "write",
+          "file": "autogpt_platform/backend/backend/data/credit.py",
+          "line": 464,
+          "column": 0,
+          "context": "-- For inactive transactions: Don't update balance",
+          "isRawSql": true,
+          "confidence": 0.5599999999999999
+        }
+      ]
+    },
+    "transaction_insert": {
+      "name": "transaction_insert",
+      "model": null,
+      "fields": [],
+      "sensitiveFields": [],
+      "accessedBy": [
+        {
+          "id": "autogpt_platform/backend/backend/data/credit.py:514:0:transaction_insert",
+          "table": "transaction_insert",
+          "fields": [],
+          "operation": "read",
+          "file": "autogpt_platform/backend/backend/data/credit.py",
+          "line": 514,
+          "column": 0,
+          "context": "SELECT \"runningBalance\" as balance, \"transactionKey\" FROM transaction_insert;",
+          "isRawSql": true,
+          "confidence": 0.7
+        }
+      ]
+    },
+    "Refund": {
+      "name": "Refund",
+      "model": null,
+      "fields": [],
+      "sensitiveFields": [],
+      "accessedBy": [
+        {
+          "id": "autogpt_platform/backend/backend/data/credit.py:711:0:Refund",
+          "table": "Refund",
+          "fields": [],
+          "operation": "write",
+          "file": "autogpt_platform/backend/backend/data/credit.py",
+          "line": 711,
+          "column": 0,
+          "context": "refund = stripe.Refund.create(payment_intent=transaction_key, metadata=metadata)",
+          "isRawSql": false,
+          "confidence": 0.85
+        }
+      ]
+    },
+    "PaymentIntent": {
+      "name": "PaymentIntent",
+      "model": null,
+      "fields": [],
+      "sensitiveFields": [],
+      "accessedBy": [
+        {
+          "id": "autogpt_platform/backend/backend/data/credit.py:910:0:PaymentIntent",
+          "table": "PaymentIntent",
+          "fields": [],
+          "operation": "write",
+          "file": "autogpt_platform/backend/backend/data/credit.py",
+          "line": 910,
+          "column": 0,
+          "context": "payment_intent = stripe.PaymentIntent.create(",
+          "isRawSql": false,
+          "confidence": 0.85
+        }
+      ]
+    },
+    "Customer": {
+      "name": "Customer",
+      "model": null,
+      "fields": [],
+      "sensitiveFields": [],
+      "accessedBy": [
+        {
+          "id": "autogpt_platform/backend/backend/data/credit.py:1237:0:Customer",
+          "table": "Customer",
+          "fields": [],
+          "operation": "write",
+          "file": "autogpt_platform/backend/backend/data/credit.py",
+          "line": 1237,
+          "column": 0,
+          "context": "customer = stripe.Customer.create(",
+          "isRawSql": false,
+          "confidence": 0.85
+        }
+      ]
+    },
+    "sub_graphs": {
+      "name": "sub_graphs",
+      "model": null,
+      "fields": [],
+      "sensitiveFields": [],
+      "accessedBy": [
+        {
+          "id": "autogpt_platform/backend/backend/data/graph.py:1122:0:sub_graphs",
+          "table": "sub_graphs",
+          "fields": [],
+          "operation": "write",
+          "file": "autogpt_platform/backend/backend/data/graph.py",
+          "line": 1122,
+          "column": 0,
+          "context": "sub_graphs.update({graph.id: graph for graph in search_graphs})",
+          "isRawSql": false,
+          "confidence": 0.85
+        }
+      ]
+    },
+    "nested": {
+      "name": "nested",
+      "model": null,
+      "fields": [],
+      "sensitiveFields": [],
+      "accessedBy": [
+        {
+          "id": "autogpt_platform/backend/backend/data/graph.py:1496:0:nested",
+          "table": "nested",
+          "fields": [],
+          "operation": "write",
+          "file": "autogpt_platform/backend/backend/data/graph.py",
+          "line": 1496,
+          "column": 0,
+          "context": "Note: Only updates top level LlmModel SchemaFields of blocks (won't update nested fields).",
+          "isRawSql": true,
+          "confidence": 0.5599999999999999
+        }
+      ]
+    },
+    "platform": {
+      "name": "platform",
+      "model": null,
+      "fields": [],
+      "sensitiveFields": [],
+      "accessedBy": [
+        {
+          "id": "autogpt_platform/backend/backend/data/graph.py:1521:0:platform",
+          "table": "platform",
+          "fields": [],
+          "operation": "write",
+          "file": "autogpt_platform/backend/backend/data/graph.py",
+          "line": 1521,
+          "column": 0,
+          "context": "UPDATE platform.\"AgentNode\"",
+          "isRawSql": true,
+          "confidence": 0.5599999999999999
+        }
+      ]
+    },
+    "needed": {
+      "name": "needed",
+      "model": null,
+      "fields": [],
+      "sensitiveFields": [],
+      "accessedBy": [
+        {
+          "id": "autogpt_platform/backend/backend/data/human_review.py:153:0:needed",
+          "table": "needed",
+          "fields": [],
+          "operation": "write",
+          "file": "autogpt_platform/backend/backend/data/human_review.py",
+          "line": 153,
+          "column": 0,
+          "context": "\"update\": {},  # Already exists, no update needed",
+          "isRawSql": true,
+          "confidence": 0.5599999999999999
+        }
+      ]
+    },
+    "agent_graph_include": {
+      "name": "agent_graph_include",
+      "model": null,
+      "fields": [],
+      "sensitiveFields": [],
+      "accessedBy": [
+        {
+          "id": "autogpt_platform/backend/backend/data/includes.py:116:0:agent_graph_include",
+          "table": "agent_graph_include",
+          "fields": [],
+          "operation": "write",
+          "file": "autogpt_platform/backend/backend/data/includes.py",
+          "line": 116,
+          "column": 0,
+          "context": "agent_graph_include.update(AGENT_GRAPH_INCLUDE)  # Full nodes",
+          "isRawSql": false,
+          "confidence": 0.85
+        }
+      ]
+    },
+    "all_scopes": {
+      "name": "all_scopes",
+      "model": null,
+      "fields": [],
+      "sensitiveFields": [],
+      "accessedBy": [
+        {
+          "id": "autogpt_platform/backend/backend/data/model.py:633:0:all_scopes",
+          "table": "all_scopes",
+          "fields": [],
+          "operation": "write",
+          "file": "autogpt_platform/backend/backend/data/model.py",
+          "line": 633,
+          "column": 0,
+          "context": "all_scopes.update(field.required_scopes)",
+          "isRawSql": false,
+          "confidence": 0.85
+        }
+      ]
+    },
+    "field_schema_extra": {
+      "name": "field_schema_extra",
+      "model": null,
+      "fields": [],
+      "sensitiveFields": [],
+      "accessedBy": [
+        {
+          "id": "autogpt_platform/backend/backend/data/model.py:710:0:field_schema_extra",
+          "table": "field_schema_extra",
+          "fields": [],
+          "operation": "write",
+          "file": "autogpt_platform/backend/backend/data/model.py",
+          "line": 710,
+          "column": 0,
+          "context": "field_schema_extra.update(extra_schema)",
+          "isRawSql": false,
+          "confidence": 0.85
+        }
+      ]
+    },
+    "Redis": {
+      "name": "Redis",
+      "model": null,
+      "fields": [],
+      "sensitiveFields": [],
+      "accessedBy": [
+        {
+          "id": "autogpt_platform/backend/backend/data/understanding.py:195:0:Redis",
+          "table": "Redis",
+          "fields": [],
+          "operation": "delete",
+          "file": "autogpt_platform/backend/backend/data/understanding.py",
+          "line": 195,
+          "column": 0,
+          "context": "\"\"\"Delete business understanding from Redis cache.\"\"\"",
+          "isRawSql": true,
+          "confidence": 0.7
+        }
+      ]
+    },
+    "business": {
+      "name": "business",
+      "model": null,
+      "fields": [],
+      "sensitiveFields": [],
+      "accessedBy": [
+        {
+          "id": "autogpt_platform/backend/backend/data/understanding.py:236:0:business",
+          "table": "business",
+          "fields": [],
+          "operation": "write",
+          "file": "autogpt_platform/backend/backend/data/understanding.py",
+          "line": 236,
+          "column": 0,
+          "context": "Create or update business understanding with incremental merge strategy.",
+          "isRawSql": true,
+          "confidence": 0.5599999999999999
+        }
+      ]
+    },
+    "next_node_input": {
+      "name": "next_node_input",
+      "model": null,
+      "fields": [],
+      "sensitiveFields": [],
+      "accessedBy": [
+        {
+          "id": "autogpt_platform/backend/backend/executor/manager.py:446:0:next_node_input",
+          "table": "next_node_input",
+          "fields": [],
+          "operation": "write",
+          "file": "autogpt_platform/backend/backend/executor/manager.py",
+          "line": 446,
+          "column": 0,
+          "context": "next_node_input.update(node_input_mask)",
+          "isRawSql": false,
+          "confidence": 0.85
+        }
+      ]
+    },
+    "idata": {
+      "name": "idata",
+      "model": null,
+      "fields": [],
+      "sensitiveFields": [],
+      "accessedBy": [
+        {
+          "id": "autogpt_platform/backend/backend/executor/manager.py:492:0:idata",
+          "table": "idata",
+          "fields": [],
+          "operation": "write",
+          "file": "autogpt_platform/backend/backend/executor/manager.py",
+          "line": 492,
+          "column": 0,
+          "context": "idata.update(node_input_mask)",
+          "isRawSql": false,
+          "confidence": 0.68
+        }
+      ]
+    },
+    "inputs": {
+      "name": "inputs",
+      "model": null,
+      "fields": [],
+      "sensitiveFields": [],
+      "accessedBy": [
+        {
+          "id": "autogpt_platform/backend/backend/executor/manager.py:1028:0:inputs",
+          "table": "inputs",
+          "fields": [],
+          "operation": "write",
+          "file": "autogpt_platform/backend/backend/executor/manager.py",
+          "line": 1028,
+          "column": 0,
+          "context": "queued_node_exec.inputs.update(node_input_mask)",
+          "isRawSql": false,
+          "confidence": 0.68
+        }
+      ]
+    },
+    "active_graph_runs": {
+      "name": "active_graph_runs",
+      "model": null,
+      "fields": [],
+      "sensitiveFields": [],
+      "accessedBy": [
+        {
+          "id": "autogpt_platform/backend/backend/executor/manager.py:1827:0:active_graph_runs",
+          "table": "active_graph_runs",
+          "fields": [],
+          "operation": "write",
+          "file": "autogpt_platform/backend/backend/executor/manager.py",
+          "line": 1827,
+          "column": 0,
+          "context": "\"\"\"Remove completed futures from active_graph_runs and update metrics\"\"\"",
+          "isRawSql": true,
+          "confidence": 0.7
+        }
+      ]
+    },
+    "execution": {
+      "name": "execution",
+      "model": null,
+      "fields": [],
+      "sensitiveFields": [],
+      "accessedBy": [
+        {
+          "id": "autogpt_platform/backend/backend/executor/utils.py:689:0:execution",
+          "table": "execution",
+          "fields": [],
+          "operation": "write",
+          "file": "autogpt_platform/backend/backend/executor/utils.py",
+          "line": 689,
+          "column": 0,
+          "context": "4. Update execution statuses in DB and set `error` outputs to `\"TERMINATED\"`.",
+          "isRawSql": true,
+          "confidence": 0.5599999999999999
+        }
+      ]
+    },
+    "credentials": {
+      "name": "credentials",
+      "model": null,
+      "fields": [],
+      "sensitiveFields": [],
+      "accessedBy": [
+        {
+          "id": "autogpt_platform/backend/backend/integrations/credentials_store.py:397:0:credentials",
+          "table": "credentials",
+          "fields": [],
+          "operation": "write",
+          "file": "autogpt_platform/backend/backend/integrations/credentials_store.py",
+          "line": 397,
+          "column": 0,
+          "context": "f\"Can not update credentials with ID {updated.id} \"",
+          "isRawSql": true,
+          "confidence": 0.5599999999999999
+        },
+        {
+          "id": "autogpt_platform/backend/backend/integrations/credentials_store.py:409:0:credentials",
+          "table": "credentials",
+          "fields": [],
+          "operation": "write",
+          "file": "autogpt_platform/backend/backend/integrations/credentials_store.py",
+          "line": 409,
+          "column": 0,
+          "context": "f\"Can not update credentials with ID {updated.id} \"",
+          "isRawSql": true,
+          "confidence": 0.5599999999999999
+        }
+      ]
+    },
+    "pipeline": {
+      "name": "pipeline",
+      "model": null,
+      "fields": [],
+      "sensitiveFields": [],
+      "accessedBy": [
+        {
+          "id": "autogpt_platform/backend/backend/util/cache.py:354:0:pipeline",
+          "table": "pipeline",
+          "fields": [],
+          "operation": "delete",
+          "file": "autogpt_platform/backend/backend/util/cache.py",
+          "line": 354,
+          "column": 0,
+          "context": "pipeline.delete(key)",
+          "isRawSql": false,
+          "confidence": 0.68
+        }
+      ]
+    },
+    "req_headers": {
+      "name": "req_headers",
+      "model": null,
+      "fields": [],
+      "sensitiveFields": [],
+      "accessedBy": [
+        {
+          "id": "autogpt_platform/backend/backend/util/request.py:471:0:req_headers",
+          "table": "req_headers",
+          "fields": [],
+          "operation": "write",
+          "file": "autogpt_platform/backend/backend/util/request.py",
+          "line": 471,
+          "column": 0,
+          "context": "req_headers.update(self.extra_headers)",
+          "isRawSql": false,
+          "confidence": 0.85
+        }
+      ]
+    },
+    "json_schema": {
+      "name": "json_schema",
+      "model": null,
+      "fields": [],
+      "sensitiveFields": [],
+      "accessedBy": [
+        {
+          "id": "autogpt_platform/backend/backend/util/timezone_name.py:114:0:json_schema",
+          "table": "json_schema",
+          "fields": [],
+          "operation": "write",
+          "file": "autogpt_platform/backend/backend/util/timezone_name.py",
+          "line": 114,
+          "column": 0,
+          "context": "json_schema.update({\"enum\": cls.allowed_values_list})",
+          "isRawSql": false,
+          "confidence": 0.85
+        }
+      ]
+    }
+  },
+  "accessPoints": {
+    "autogpt_platform/backend/backend/api/external/v1/integrations.py:624:0:integrations_router": {
+      "id": "autogpt_platform/backend/backend/api/external/v1/integrations.py:624:0:integrations_router",
+      "table": "integrations_router",
+      "fields": [],
+      "operation": "delete",
+      "file": "autogpt_platform/backend/backend/api/external/v1/integrations.py",
+      "line": 624,
+      "column": 0,
+      "context": "@integrations_router.delete(",
+      "isRawSql": false,
+      "confidence": 0.85
+    },
+    "autogpt_platform/backend/backend/api/features/chat/db.py:288:0:tool": {
+      "id": "autogpt_platform/backend/backend/api/features/chat/db.py:288:0:tool",
+      "table": "tool",
+      "fields": [],
+      "operation": "write",
+      "file": "autogpt_platform/backend/backend/api/features/chat/db.py",
+      "line": 288,
+      "column": 0,
+      "context": "f\"Failed to update tool message for session {session_id}, \"",
+      "isRawSql": true,
+      "confidence": 0.5599999999999999
+    },
+    "autogpt_platform/backend/backend/api/features/chat/model.py:307:0:async_redis": {
+      "id": "autogpt_platform/backend/backend/api/features/chat/model.py:307:0:async_redis",
+      "table": "async_redis",
+      "fields": [],
+      "operation": "delete",
+      "file": "autogpt_platform/backend/backend/api/features/chat/model.py",
+      "line": 307,
+      "column": 0,
+      "context": "await async_redis.delete(redis_key)",
+      "isRawSql": false,
+      "confidence": 0.85
+    },
+    "autogpt_platform/backend/backend/api/features/chat/model.py:554:0:both": {
+      "id": "autogpt_platform/backend/backend/api/features/chat/model.py:554:0:both",
+      "table": "both",
+      "fields": [],
+      "operation": "delete",
+      "file": "autogpt_platform/backend/backend/api/features/chat/model.py",
+      "line": 554,
+      "column": 0,
+      "context": "\"\"\"Delete a chat session from both cache and database.",
+      "isRawSql": true,
+      "confidence": 0.5599999999999999
+    },
+    "autogpt_platform/backend/backend/api/features/chat/model.py:575:0:async_redis": {
+      "id": "autogpt_platform/backend/backend/api/features/chat/model.py:575:0:async_redis",
+      "table": "async_redis",
+      "fields": [],
+      "operation": "delete",
+      "file": "autogpt_platform/backend/backend/api/features/chat/model.py",
+      "line": 575,
+      "column": 0,
+      "context": "await async_redis.delete(redis_key)",
+      "isRawSql": false,
+      "confidence": 0.85
+    },
+    "autogpt_platform/backend/backend/api/features/chat/model.py:610:0:async_redis": {
+      "id": "autogpt_platform/backend/backend/api/features/chat/model.py:610:0:async_redis",
+      "table": "async_redis",
+      "fields": [],
+      "operation": "delete",
+      "file": "autogpt_platform/backend/backend/api/features/chat/model.py",
+      "line": 610,
+      "column": 0,
+      "context": "await async_redis.delete(redis_key)",
+      "isRawSql": false,
+      "confidence": 0.85
+    },
+    "autogpt_platform/backend/backend/api/features/chat/model.py:616:0:title": {
+      "id": "autogpt_platform/backend/backend/api/features/chat/model.py:616:0:title",
+      "table": "title",
+      "fields": [],
+      "operation": "write",
+      "file": "autogpt_platform/backend/backend/api/features/chat/model.py",
+      "line": 616,
+      "column": 0,
+      "context": "logger.error(f\"Failed to update title for session {session_id}: {e}\")",
+      "isRawSql": true,
+      "confidence": 0.5599999999999999
+    },
+    "autogpt_platform/backend/backend/api/features/chat/service.py:188:0:redis": {
+      "id": "autogpt_platform/backend/backend/api/features/chat/service.py:188:0:redis",
+      "table": "redis",
+      "fields": [],
+      "operation": "delete",
+      "file": "autogpt_platform/backend/backend/api/features/chat/service.py",
+      "line": 188,
+      "column": 0,
+      "context": "await redis.delete(key)",
+      "isRawSql": false,
+      "confidence": 0.68
+    },
+    "autogpt_platform/backend/backend/api/features/chat/service.py:280:0:completions": {
+      "id": "autogpt_platform/backend/backend/api/features/chat/service.py:280:0:completions",
+      "table": "completions",
+      "fields": [],
+      "operation": "write",
+      "file": "autogpt_platform/backend/backend/api/features/chat/service.py",
+      "line": 280,
+      "column": 0,
+      "context": "response = await client.chat.completions.create(",
+      "isRawSql": false,
+      "confidence": 0.68
+    },
+    "autogpt_platform/backend/backend/api/features/chat/service.py:846:0:completions": {
+      "id": "autogpt_platform/backend/backend/api/features/chat/service.py:846:0:completions",
+      "table": "completions",
+      "fields": [],
+      "operation": "write",
+      "file": "autogpt_platform/backend/backend/api/features/chat/service.py",
+      "line": 846,
+      "column": 0,
+      "context": "response = await summarization_client.chat.completions.create(",
+      "isRawSql": false,
+      "confidence": 0.68
+    },
+    "autogpt_platform/backend/backend/api/features/chat/service.py:1380:0:completions": {
+      "id": "autogpt_platform/backend/backend/api/features/chat/service.py:1380:0:completions",
+      "table": "completions",
+      "fields": [],
+      "operation": "write",
+      "file": "autogpt_platform/backend/backend/api/features/chat/service.py",
+      "line": 1380,
+      "column": 0,
+      "context": "stream = await client.chat.completions.create(",
+      "isRawSql": false,
+      "confidence": 0.68
+    },
+    "autogpt_platform/backend/backend/api/features/chat/service.py:1790:0:chat": {
+      "id": "autogpt_platform/backend/backend/api/features/chat/service.py:1790:0:chat",
+      "table": "chat",
+      "fields": [],
+      "operation": "write",
+      "file": "autogpt_platform/backend/backend/api/features/chat/service.py",
+      "line": 1790,
+      "column": 0,
+      "context": "\"\"\"Execute a long-running tool in background and update chat history with result.",
+      "isRawSql": true,
+      "confidence": 0.5599999999999999
+    },
+    "autogpt_platform/backend/backend/api/features/chat/service.py:1927:0:completions": {
+      "id": "autogpt_platform/backend/backend/api/features/chat/service.py:1927:0:completions",
+      "table": "completions",
+      "fields": [],
+      "operation": "write",
+      "file": "autogpt_platform/backend/backend/api/features/chat/service.py",
+      "line": 1927,
+      "column": 0,
+      "context": "response = await client.chat.completions.create(",
+      "isRawSql": false,
+      "confidence": 0.68
+    },
+    "autogpt_platform/backend/backend/api/features/chat/tools/_test_data.py:52:0:profile": {
+      "id": "autogpt_platform/backend/backend/api/features/chat/tools/_test_data.py:52:0:profile",
+      "table": "profile",
+      "fields": [],
+      "operation": "write",
+      "file": "autogpt_platform/backend/backend/api/features/chat/tools/_test_data.py",
+      "line": 52,
+      "column": 0,
+      "context": "await prisma.profile.create(",
+      "isRawSql": false,
+      "confidence": 0.68
+    },
+    "autogpt_platform/backend/backend/api/features/chat/tools/_test_data.py:175:0:profile": {
+      "id": "autogpt_platform/backend/backend/api/features/chat/tools/_test_data.py:175:0:profile",
+      "table": "profile",
+      "fields": [],
+      "operation": "write",
+      "file": "autogpt_platform/backend/backend/api/features/chat/tools/_test_data.py",
+      "line": 175,
+      "column": 0,
+      "context": "await prisma.profile.create(",
+      "isRawSql": false,
+      "confidence": 0.68
+    },
+    "autogpt_platform/backend/backend/api/features/chat/tools/_test_data.py:335:0:profile": {
+      "id": "autogpt_platform/backend/backend/api/features/chat/tools/_test_data.py:335:0:profile",
+      "table": "profile",
+      "fields": [],
+      "operation": "write",
+      "file": "autogpt_platform/backend/backend/api/features/chat/tools/_test_data.py",
+      "line": 335,
+      "column": 0,
+      "context": "await prisma.profile.create(",
+      "isRawSql": false,
+      "confidence": 0.68
+    },
+    "autogpt_platform/backend/backend/api/features/library/db.py:532:0:library": {
+      "id": "autogpt_platform/backend/backend/api/features/library/db.py:532:0:library",
+      "table": "library",
+      "fields": [],
+      "operation": "write",
+      "file": "autogpt_platform/backend/backend/api/features/library/db.py",
+      "line": 532,
+      "column": 0,
+      "context": "f\"Failed to update library agent for {agent_graph_id} v{agent_graph_version}\"",
+      "isRawSql": true,
+      "confidence": 0.5599999999999999
+    },
+    "autogpt_platform/backend/backend/api/features/library/db.py:565:0:operation": {
+      "id": "autogpt_platform/backend/backend/api/features/library/db.py:565:0:operation",
+      "table": "operation",
+      "fields": [],
+      "operation": "write",
+      "file": "autogpt_platform/backend/backend/api/features/library/db.py",
+      "line": 565,
+      "column": 0,
+      "context": "DatabaseError: If there's an error in the update operation.",
+      "isRawSql": true,
+      "confidence": 0.5599999999999999
+    },
+    "autogpt_platform/backend/backend/api/features/library/db.py:694:0:integrations_db": {
+      "id": "autogpt_platform/backend/backend/api/features/library/db.py:694:0:integrations_db",
+      "table": "integrations_db",
+      "fields": [],
+      "operation": "read",
+      "file": "autogpt_platform/backend/backend/api/features/library/db.py",
+      "line": 694,
+      "column": 0,
+      "context": "webhooks = await integrations_db.find_webhooks_by_graph_id(",
+      "isRawSql": false,
+      "confidence": 0.85
+    },
+    "autogpt_platform/backend/backend/api/features/library/routes/agents.py:261:0:Library": {
+      "id": "autogpt_platform/backend/backend/api/features/library/routes/agents.py:261:0:Library",
+      "table": "Library",
+      "fields": [],
+      "operation": "write",
+      "file": "autogpt_platform/backend/backend/api/features/library/routes/agents.py",
+      "line": 261,
+      "column": 0,
+      "context": "summary=\"Update Library Agent\",",
+      "isRawSql": true,
+      "confidence": 0.7
+    },
+    "autogpt_platform/backend/backend/api/features/library/routes/presets.py:269:0:trigger": {
+      "id": "autogpt_platform/backend/backend/api/features/library/routes/presets.py:269:0:trigger",
+      "table": "trigger",
+      "fields": [],
+      "operation": "write",
+      "file": "autogpt_platform/backend/backend/api/features/library/routes/presets.py",
+      "line": 269,
+      "column": 0,
+      "context": "detail=f\"Could not update trigger configuration: {feedback}\",",
+      "isRawSql": true,
+      "confidence": 0.27999999999999997
+    },
+    "autogpt_platform/backend/backend/api/features/store/db.py:865:0:submission": {
+      "id": "autogpt_platform/backend/backend/api/features/store/db.py:865:0:submission",
+      "table": "submission",
+      "fields": [],
+      "operation": "write",
+      "file": "autogpt_platform/backend/backend/api/features/store/db.py",
+      "line": 865,
+      "column": 0,
+      "context": "changes_summary: str | None = \"Update submission\",",
+      "isRawSql": true,
+      "confidence": 0.5599999999999999
+    },
+    "autogpt_platform/backend/backend/api/features/store/db.py:1243:0:attempt": {
+      "id": "autogpt_platform/backend/backend/api/features/store/db.py:1243:0:attempt",
+      "table": "attempt",
+      "fields": [],
+      "operation": "write",
+      "file": "autogpt_platform/backend/backend/api/features/store/db.py",
+      "line": 1243,
+      "column": 0,
+      "context": "f\"Unauthorized update attempt for profile {existing_profile.id} by user {user_id}\"",
+      "isRawSql": true,
+      "confidence": 0.5599999999999999
+    },
+    "autogpt_platform/backend/backend/api/features/store/db.py:1246:0:attempt": {
+      "id": "autogpt_platform/backend/backend/api/features/store/db.py:1246:0:attempt",
+      "table": "attempt",
+      "fields": [],
+      "operation": "write",
+      "file": "autogpt_platform/backend/backend/api/features/store/db.py",
+      "line": 1246,
+      "column": 0,
+      "context": "f\"Unauthorized update attempt for profile {existing_profile.id} by user {user_id}\"",
+      "isRawSql": true,
+      "confidence": 0.5599999999999999
+    },
+    "autogpt_platform/backend/backend/api/features/store/db.py:1269:0:profile": {
+      "id": "autogpt_platform/backend/backend/api/features/store/db.py:1269:0:profile",
+      "table": "profile",
+      "fields": [],
+      "operation": "write",
+      "file": "autogpt_platform/backend/backend/api/features/store/db.py",
+      "line": 1269,
+      "column": 0,
+      "context": "logger.error(f\"Failed to update profile for user {user_id}\")",
+      "isRawSql": true,
+      "confidence": 0.5599999999999999
+    },
+    "autogpt_platform/backend/backend/api/features/store/db.py:1270:0:profile": {
+      "id": "autogpt_platform/backend/backend/api/features/store/db.py:1270:0:profile",
+      "table": "profile",
+      "fields": [],
+      "operation": "write",
+      "file": "autogpt_platform/backend/backend/api/features/store/db.py",
+      "line": 1270,
+      "column": 0,
+      "context": "raise DatabaseError(\"Failed to update profile\")",
+      "isRawSql": true,
+      "confidence": 0.5599999999999999
+    },
+    "autogpt_platform/backend/backend/api/features/store/db_test.py:390:0:StoreAgent": {
+      "id": "autogpt_platform/backend/backend/api/features/store/db_test.py:390:0:StoreAgent",
+      "table": "StoreAgent",
+      "fields": [],
+      "operation": "delete",
+      "file": "autogpt_platform/backend/backend/api/features/store/db_test.py",
+      "line": 390,
+      "column": 0,
+      "context": "category=\"AI'; DELETE FROM StoreAgent; --\",",
+      "isRawSql": true,
+      "confidence": 0.7
+    },
+    "autogpt_platform/backend/backend/api/features/store/embeddings.py:89:0:embeddings": {
+      "id": "autogpt_platform/backend/backend/api/features/store/embeddings.py:89:0:embeddings",
+      "table": "embeddings",
+      "fields": [],
+      "operation": "write",
+      "file": "autogpt_platform/backend/backend/api/features/store/embeddings.py",
+      "line": 89,
+      "column": 0,
+      "context": "response = await client.embeddings.create(",
+      "isRawSql": false,
+      "confidence": 0.68
+    },
+    "autogpt_platform/backend/backend/api/features/store/hybrid_search.py:37:0:re": {
+      "id": "autogpt_platform/backend/backend/api/features/store/hybrid_search.py:37:0:re",
+      "table": "re",
+      "fields": [],
+      "operation": "read",
+      "file": "autogpt_platform/backend/backend/api/features/store/hybrid_search.py",
+      "line": 37,
+      "column": 0,
+      "context": "tokens = re.findall(r\"\\b\\w+\\b\", text.lower())",
+      "isRawSql": false,
+      "confidence": 0.4759999999999999
+    },
+    "autogpt_platform/backend/backend/api/features/store/hybrid_search.py:327:0:search_scores": {
+      "id": "autogpt_platform/backend/backend/api/features/store/hybrid_search.py:327:0:search_scores",
+      "table": "search_scores",
+      "fields": [],
+      "operation": "read",
+      "file": "autogpt_platform/backend/backend/api/features/store/hybrid_search.py",
+      "line": 327,
+      "column": 0,
+      "context": "SELECT GREATEST(MAX(lexical_raw), 0.001) as max_val FROM search_scores",
+      "isRawSql": true,
+      "confidence": 0.7
+    },
+    "autogpt_platform/backend/backend/api/features/store/hybrid_search.py:360:0:filtered": {
+      "id": "autogpt_platform/backend/backend/api/features/store/hybrid_search.py:360:0:filtered",
+      "table": "filtered",
+      "fields": [],
+      "operation": "read",
+      "file": "autogpt_platform/backend/backend/api/features/store/hybrid_search.py",
+      "line": 360,
+      "column": 0,
+      "context": "SELECT * FROM filtered",
+      "isRawSql": true,
+      "confidence": 0.5599999999999999
+    },
+    "autogpt_platform/backend/backend/api/features/store/hybrid_search.py:612:0:unnest": {
+      "id": "autogpt_platform/backend/backend/api/features/store/hybrid_search.py:612:0:unnest",
+      "table": "unnest",
+      "fields": [],
+      "operation": "read",
+      "file": "autogpt_platform/backend/backend/api/features/store/hybrid_search.py",
+      "line": 612,
+      "column": 0,
+      "context": "SELECT 1 FROM unnest(sa.categories) cat",
+      "isRawSql": true,
+      "confidence": 0.5599999999999999
+    },
+    "autogpt_platform/backend/backend/api/features/store/hybrid_search.py:682:0:filtered": {
+      "id": "autogpt_platform/backend/backend/api/features/store/hybrid_search.py:682:0:filtered",
+      "table": "filtered",
+      "fields": [],
+      "operation": "read",
+      "file": "autogpt_platform/backend/backend/api/features/store/hybrid_search.py",
+      "line": 682,
+      "column": 0,
+      "context": "SELECT * FROM filtered",
+      "isRawSql": true,
+      "confidence": 0.5599999999999999
+    },
+    "autogpt_platform/backend/backend/api/features/store/routes.py:58:0:user": {
+      "id": "autogpt_platform/backend/backend/api/features/store/routes.py:58:0:user",
+      "table": "user",
+      "fields": [],
+      "operation": "write",
+      "file": "autogpt_platform/backend/backend/api/features/store/routes.py",
+      "line": 58,
+      "column": 0,
+      "context": "summary=\"Update user profile\",",
+      "isRawSql": true,
+      "confidence": 0.5599999999999999
+    },
+    "autogpt_platform/backend/backend/api/features/v1.py:142:0:user": {
+      "id": "autogpt_platform/backend/backend/api/features/v1.py:142:0:user",
+      "table": "user",
+      "fields": [],
+      "operation": "write",
+      "file": "autogpt_platform/backend/backend/api/features/v1.py",
+      "line": 142,
+      "column": 0,
+      "context": "summary=\"Update user email\",",
+      "isRawSql": true,
+      "confidence": 0.5599999999999999
+    },
+    "autogpt_platform/backend/backend/api/features/v1.py:170:0:user": {
+      "id": "autogpt_platform/backend/backend/api/features/v1.py:170:0:user",
+      "table": "user",
+      "fields": [],
+      "operation": "write",
+      "file": "autogpt_platform/backend/backend/api/features/v1.py",
+      "line": 170,
+      "column": 0,
+      "context": "summary=\"Update user timezone\",",
+      "isRawSql": true,
+      "confidence": 0.5599999999999999
+    },
+    "autogpt_platform/backend/backend/api/features/v1.py:177:0:user": {
+      "id": "autogpt_platform/backend/backend/api/features/v1.py:177:0:user",
+      "table": "user",
+      "fields": [],
+      "operation": "write",
+      "file": "autogpt_platform/backend/backend/api/features/v1.py",
+      "line": 177,
+      "column": 0,
+      "context": "\"\"\"Update user timezone. The timezone should be a valid IANA timezone identifier.\"\"\"",
+      "isRawSql": true,
+      "confidence": 0.5599999999999999
+    },
+    "autogpt_platform/backend/backend/api/features/v1.py:197:0:notification": {
+      "id": "autogpt_platform/backend/backend/api/features/v1.py:197:0:notification",
+      "table": "notification",
+      "fields": [],
+      "operation": "write",
+      "file": "autogpt_platform/backend/backend/api/features/v1.py",
+      "line": 197,
+      "column": 0,
+      "context": "summary=\"Update notification preferences\",",
+      "isRawSql": true,
+      "confidence": 0.5599999999999999
+    },
+    "autogpt_platform/backend/backend/api/features/v1.py:780:0:v1_router": {
+      "id": "autogpt_platform/backend/backend/api/features/v1.py:780:0:v1_router",
+      "table": "v1_router",
+      "fields": [],
+      "operation": "delete",
+      "file": "autogpt_platform/backend/backend/api/features/v1.py",
+      "line": 780,
+      "column": 0,
+      "context": "@v1_router.delete(",
+      "isRawSql": false,
+      "confidence": 0.85
+    },
+    "autogpt_platform/backend/backend/api/features/v1.py:799:0:graph": {
+      "id": "autogpt_platform/backend/backend/api/features/v1.py:799:0:graph",
+      "table": "graph",
+      "fields": [],
+      "operation": "write",
+      "file": "autogpt_platform/backend/backend/api/features/v1.py",
+      "line": 799,
+      "column": 0,
+      "context": "summary=\"Update graph version\",",
+      "isRawSql": true,
+      "confidence": 0.5599999999999999
+    },
+    "autogpt_platform/backend/backend/api/features/v1.py:914:0:graph": {
+      "id": "autogpt_platform/backend/backend/api/features/v1.py:914:0:graph",
+      "table": "graph",
+      "fields": [],
+      "operation": "write",
+      "file": "autogpt_platform/backend/backend/api/features/v1.py",
+      "line": 914,
+      "column": 0,
+      "context": "summary=\"Update graph settings\",",
+      "isRawSql": true,
+      "confidence": 0.5599999999999999
+    },
+    "autogpt_platform/backend/backend/api/features/v1.py:923:0:graph": {
+      "id": "autogpt_platform/backend/backend/api/features/v1.py:923:0:graph",
+      "table": "graph",
+      "fields": [],
+      "operation": "write",
+      "file": "autogpt_platform/backend/backend/api/features/v1.py",
+      "line": 923,
+      "column": 0,
+      "context": "\"\"\"Update graph settings for the user's library agent.\"\"\"",
+      "isRawSql": true,
+      "confidence": 0.5599999999999999
+    },
+    "autogpt_platform/backend/backend/api/features/v1.py:1184:0:v1_router": {
+      "id": "autogpt_platform/backend/backend/api/features/v1.py:1184:0:v1_router",
+      "table": "v1_router",
+      "fields": [],
+      "operation": "delete",
+      "file": "autogpt_platform/backend/backend/api/features/v1.py",
+      "line": 1184,
+      "column": 0,
+      "context": "@v1_router.delete(",
+      "isRawSql": false,
+      "confidence": 0.85
+    },
+    "autogpt_platform/backend/backend/api/features/v1.py:1250:0:v1_router": {
+      "id": "autogpt_platform/backend/backend/api/features/v1.py:1250:0:v1_router",
+      "table": "v1_router",
+      "fields": [],
+      "operation": "delete",
+      "file": "autogpt_platform/backend/backend/api/features/v1.py",
+      "line": 1250,
+      "column": 0,
+      "context": "@v1_router.delete(",
+      "isRawSql": false,
+      "confidence": 0.85
+    },
+    "autogpt_platform/backend/backend/api/features/v1.py:1389:0:v1_router": {
+      "id": "autogpt_platform/backend/backend/api/features/v1.py:1389:0:v1_router",
+      "table": "v1_router",
+      "fields": [],
+      "operation": "delete",
+      "file": "autogpt_platform/backend/backend/api/features/v1.py",
+      "line": 1389,
+      "column": 0,
+      "context": "@v1_router.delete(",
+      "isRawSql": false,
+      "confidence": 0.85
+    },
+    "autogpt_platform/backend/backend/api/features/v1.py:1462:0:v1_router": {
+      "id": "autogpt_platform/backend/backend/api/features/v1.py:1462:0:v1_router",
+      "table": "v1_router",
+      "fields": [],
+      "operation": "delete",
+      "file": "autogpt_platform/backend/backend/api/features/v1.py",
+      "line": 1462,
+      "column": 0,
+      "context": "@v1_router.delete(",
+      "isRawSql": false,
+      "confidence": 0.85
+    },
+    "autogpt_platform/backend/backend/api/features/v1_test.py:72:0:user": {
+      "id": "autogpt_platform/backend/backend/api/features/v1_test.py:72:0:user",
+      "table": "user",
+      "fields": [],
+      "operation": "write",
+      "file": "autogpt_platform/backend/backend/api/features/v1_test.py",
+      "line": 72,
+      "column": 0,
+      "context": "\"\"\"Test update user email endpoint\"\"\"",
+      "isRawSql": true,
+      "confidence": 0.5599999999999999
+    },
+    "autogpt_platform/backend/backend/api/rest_api.py:512:0:dependency_overrides": {
+      "id": "autogpt_platform/backend/backend/api/rest_api.py:512:0:dependency_overrides",
+      "table": "dependency_overrides",
+      "fields": [],
+      "operation": "write",
+      "file": "autogpt_platform/backend/backend/api/rest_api.py",
+      "line": 512,
+      "column": 0,
+      "context": "app.dependency_overrides.update(overrides)",
+      "isRawSql": false,
+      "confidence": 0.85
+    },
+    "autogpt_platform/backend/backend/blocks/airtable/schema.py:135:0:table": {
+      "id": "autogpt_platform/backend/backend/blocks/airtable/schema.py:135:0:table",
+      "table": "table",
+      "fields": [],
+      "operation": "write",
+      "file": "autogpt_platform/backend/backend/blocks/airtable/schema.py",
+      "line": 135,
+      "column": 0,
+      "context": "description=\"Update table properties\",",
+      "isRawSql": true,
+      "confidence": 0.27999999999999997
+    },
+    "autogpt_platform/backend/backend/blocks/baas/_api.py:91:0:requests": {
+      "id": "autogpt_platform/backend/backend/blocks/baas/_api.py:91:0:requests",
+      "table": "requests",
+      "fields": [],
+      "operation": "delete",
+      "file": "autogpt_platform/backend/backend/blocks/baas/_api.py",
+      "line": 91,
+      "column": 0,
+      "context": "response = await self.requests.delete(",
+      "isRawSql": false,
+      "confidence": 0.68
+    },
+    "autogpt_platform/backend/backend/blocks/claude_code.py:327:0:BaseAsyncSandbox": {
+      "id": "autogpt_platform/backend/backend/blocks/claude_code.py:327:0:BaseAsyncSandbox",
+      "table": "BaseAsyncSandbox",
+      "fields": [],
+      "operation": "write",
+      "file": "autogpt_platform/backend/backend/blocks/claude_code.py",
+      "line": 327,
+      "column": 0,
+      "context": "sandbox = await BaseAsyncSandbox.create(",
+      "isRawSql": false,
+      "confidence": 0.85
+    },
+    "autogpt_platform/backend/backend/blocks/code_executor.py:114:0:AsyncSandbox": {
+      "id": "autogpt_platform/backend/backend/blocks/code_executor.py:114:0:AsyncSandbox",
+      "table": "AsyncSandbox",
+      "fields": [],
+      "operation": "write",
+      "file": "autogpt_platform/backend/backend/blocks/code_executor.py",
+      "line": 114,
+      "column": 0,
+      "context": "sandbox = await AsyncSandbox.create(",
+      "isRawSql": false,
+      "confidence": 0.85
+    },
+    "autogpt_platform/backend/backend/blocks/exa/websets.py:388:0:websets": {
+      "id": "autogpt_platform/backend/backend/blocks/exa/websets.py:388:0:websets",
+      "table": "websets",
+      "fields": [],
+      "operation": "write",
+      "file": "autogpt_platform/backend/backend/blocks/exa/websets.py",
+      "line": 388,
+      "column": 0,
+      "context": "webset = exa.websets.create(",
+      "isRawSql": false,
+      "confidence": 0.68
+    },
+    "autogpt_platform/backend/backend/blocks/exa/websets.py:497:0:websets": {
+      "id": "autogpt_platform/backend/backend/blocks/exa/websets.py:497:0:websets",
+      "table": "websets",
+      "fields": [],
+      "operation": "write",
+      "file": "autogpt_platform/backend/backend/blocks/exa/websets.py",
+      "line": 497,
+      "column": 0,
+      "context": "webset = aexa.websets.create(",
+      "isRawSql": false,
+      "confidence": 0.68
+    },
+    "autogpt_platform/backend/backend/blocks/exa/websets.py:557:0:websets": {
+      "id": "autogpt_platform/backend/backend/blocks/exa/websets.py:557:0:websets",
+      "table": "websets",
+      "fields": [],
+      "operation": "write",
+      "file": "autogpt_platform/backend/backend/blocks/exa/websets.py",
+      "line": 557,
+      "column": 0,
+      "context": "sdk_webset = aexa.websets.update(id=input_data.webset_id, params=payload)",
+      "isRawSql": false,
+      "confidence": 0.68
+    },
+    "autogpt_platform/backend/backend/blocks/exa/websets.py:751:0:websets": {
+      "id": "autogpt_platform/backend/backend/blocks/exa/websets.py:751:0:websets",
+      "table": "websets",
+      "fields": [],
+      "operation": "delete",
+      "file": "autogpt_platform/backend/backend/blocks/exa/websets.py",
+      "line": 751,
+      "column": 0,
+      "context": "deleted_webset = aexa.websets.delete(id=input_data.webset_id)",
+      "isRawSql": false,
+      "confidence": 0.68
+    },
+    "autogpt_platform/backend/backend/blocks/exa/websets_import_export.py:297:0:imports": {
+      "id": "autogpt_platform/backend/backend/blocks/exa/websets_import_export.py:297:0:imports",
+      "table": "imports",
+      "fields": [],
+      "operation": "write",
+      "file": "autogpt_platform/backend/backend/blocks/exa/websets_import_export.py",
+      "line": 297,
+      "column": 0,
+      "context": "sdk_import = aexa.websets.imports.create(",
+      "isRawSql": false,
+      "confidence": 0.68
+    },
+    "autogpt_platform/backend/backend/blocks/exa/websets_import_export.py:477:0:imports": {
+      "id": "autogpt_platform/backend/backend/blocks/exa/websets_import_export.py:477:0:imports",
+      "table": "imports",
+      "fields": [],
+      "operation": "delete",
+      "file": "autogpt_platform/backend/backend/blocks/exa/websets_import_export.py",
+      "line": 477,
+      "column": 0,
+      "context": "deleted_import = aexa.websets.imports.delete(import_id=input_data.import_id)",
+      "isRawSql": false,
+      "confidence": 0.68
+    },
+    "autogpt_platform/backend/backend/blocks/exa/websets_monitor.py:323:0:monitors": {
+      "id": "autogpt_platform/backend/backend/blocks/exa/websets_monitor.py:323:0:monitors",
+      "table": "monitors",
+      "fields": [],
+      "operation": "write",
+      "file": "autogpt_platform/backend/backend/blocks/exa/websets_monitor.py",
+      "line": 323,
+      "column": 0,
+      "context": "sdk_monitor = aexa.websets.monitors.create(params=payload)",
+      "isRawSql": false,
+      "confidence": 0.68
+    },
+    "autogpt_platform/backend/backend/blocks/exa/websets_monitor.py:479:0:monitors": {
+      "id": "autogpt_platform/backend/backend/blocks/exa/websets_monitor.py:479:0:monitors",
+      "table": "monitors",
+      "fields": [],
+      "operation": "write",
+      "file": "autogpt_platform/backend/backend/blocks/exa/websets_monitor.py",
+      "line": 479,
+      "column": 0,
+      "context": "sdk_monitor = aexa.websets.monitors.update(",
+      "isRawSql": false,
+      "confidence": 0.68
+    },
+    "autogpt_platform/backend/backend/blocks/exa/websets_monitor.py:525:0:monitors": {
+      "id": "autogpt_platform/backend/backend/blocks/exa/websets_monitor.py:525:0:monitors",
+      "table": "monitors",
+      "fields": [],
+      "operation": "delete",
+      "file": "autogpt_platform/backend/backend/blocks/exa/websets_monitor.py",
+      "line": 525,
+      "column": 0,
+      "context": "deleted_monitor = aexa.websets.monitors.delete(monitor_id=input_data.monitor_id)",
+      "isRawSql": false,
+      "confidence": 0.68
+    },
+    "autogpt_platform/backend/backend/blocks/exa/websets_search.py:320:0:searches": {
+      "id": "autogpt_platform/backend/backend/blocks/exa/websets_search.py:320:0:searches",
+      "table": "searches",
+      "fields": [],
+      "operation": "write",
+      "file": "autogpt_platform/backend/backend/blocks/exa/websets_search.py",
+      "line": 320,
+      "column": 0,
+      "context": "sdk_search = aexa.websets.searches.create(",
+      "isRawSql": false,
+      "confidence": 0.68
+    },
+    "autogpt_platform/backend/backend/blocks/exa/websets_search.py:639:0:searches": {
+      "id": "autogpt_platform/backend/backend/blocks/exa/websets_search.py:639:0:searches",
+      "table": "searches",
+      "fields": [],
+      "operation": "write",
+      "file": "autogpt_platform/backend/backend/blocks/exa/websets_search.py",
+      "line": 639,
+      "column": 0,
+      "context": "sdk_search = aexa.websets.searches.create(",
+      "isRawSql": false,
+      "confidence": 0.68
+    },
+    "autogpt_platform/backend/backend/blocks/github/repo.py:893:0:file": {
+      "id": "autogpt_platform/backend/backend/blocks/github/repo.py:893:0:file",
+      "table": "file",
+      "fields": [],
+      "operation": "write",
+      "file": "autogpt_platform/backend/backend/blocks/github/repo.py",
+      "line": 893,
+      "column": 0,
+      "context": "default=\"Update file\",",
+      "isRawSql": true,
+      "confidence": 0.5599999999999999
+    },
+    "autogpt_platform/backend/backend/blocks/google/docs.py:2547:0:text_to_search": {
+      "id": "autogpt_platform/backend/backend/blocks/google/docs.py:2547:0:text_to_search",
+      "table": "text_to_search",
+      "fields": [],
+      "operation": "read",
+      "file": "autogpt_platform/backend/backend/blocks/google/docs.py",
+      "line": 2547,
+      "column": 0,
+      "context": "pos = text_to_search.find(search_text, offset)",
+      "isRawSql": false,
+      "confidence": 0.85
+    },
+    "autogpt_platform/backend/backend/blocks/google/sheets.py:1014:0:SheetOperation": {
+      "id": "autogpt_platform/backend/backend/blocks/google/sheets.py:1014:0:SheetOperation",
+      "table": "SheetOperation",
+      "fields": [],
+      "operation": "delete",
+      "file": "autogpt_platform/backend/backend/blocks/google/sheets.py",
+      "line": 1014,
+      "column": 0,
+      "context": "elif operation == SheetOperation.DELETE:",
+      "isRawSql": true,
+      "confidence": 0.7
+    },
+    "autogpt_platform/backend/backend/blocks/google/sheets.py:1086:0:BatchOperationType": {
+      "id": "autogpt_platform/backend/backend/blocks/google/sheets.py:1086:0:BatchOperationType",
+      "table": "BatchOperationType",
+      "fields": [],
+      "operation": "write",
+      "file": "autogpt_platform/backend/backend/blocks/google/sheets.py",
+      "line": 1086,
+      "column": 0,
+      "context": "\"type\": BatchOperationType.UPDATE,",
+      "isRawSql": true,
+      "confidence": 0.7
+    },
+    "autogpt_platform/backend/backend/blocks/google/sheets.py:1091:0:BatchOperationType": {
+      "id": "autogpt_platform/backend/backend/blocks/google/sheets.py:1091:0:BatchOperationType",
+      "table": "BatchOperationType",
+      "fields": [],
+      "operation": "write",
+      "file": "autogpt_platform/backend/backend/blocks/google/sheets.py",
+      "line": 1091,
+      "column": 0,
+      "context": "\"type\": BatchOperationType.UPDATE,",
+      "isRawSql": true,
+      "confidence": 0.7
+    },
+    "autogpt_platform/backend/backend/blocks/google/sheets.py:1163:0:BatchOperationType": {
+      "id": "autogpt_platform/backend/backend/blocks/google/sheets.py:1163:0:BatchOperationType",
+      "table": "BatchOperationType",
+      "fields": [],
+      "operation": "write",
+      "file": "autogpt_platform/backend/backend/blocks/google/sheets.py",
+      "line": 1163,
+      "column": 0,
+      "context": "if op.type == BatchOperationType.UPDATE:",
+      "isRawSql": true,
+      "confidence": 0.7
+    },
+    "autogpt_platform/backend/backend/blocks/google/sheets.py:2036:0:operation": {
+      "id": "autogpt_platform/backend/backend/blocks/google/sheets.py:2036:0:operation",
+      "table": "operation",
+      "fields": [],
+      "operation": "write",
+      "file": "autogpt_platform/backend/backend/blocks/google/sheets.py",
+      "line": 2036,
+      "column": 0,
+      "context": "description=\"The result of the update operation\",",
+      "isRawSql": true,
+      "confidence": 0.5599999999999999
+    },
+    "autogpt_platform/backend/backend/blocks/google/sheets.py:4353:0:operation": {
+      "id": "autogpt_platform/backend/backend/blocks/google/sheets.py:4353:0:operation",
+      "table": "operation",
+      "fields": [],
+      "operation": "write",
+      "file": "autogpt_platform/backend/backend/blocks/google/sheets.py",
+      "line": 4353,
+      "column": 0,
+      "context": "description=\"Result of the update operation\",",
+      "isRawSql": true,
+      "confidence": 0.5599999999999999
+    },
+    "autogpt_platform/backend/backend/blocks/helpers/review.py:89:0:fails": {
+      "id": "autogpt_platform/backend/backend/blocks/helpers/review.py:89:0:fails",
+      "table": "fails",
+      "fields": [],
+      "operation": "write",
+      "file": "autogpt_platform/backend/backend/blocks/helpers/review.py",
+      "line": 89,
+      "column": 0,
+      "context": "Exception: If review creation or status update fails",
+      "isRawSql": true,
+      "confidence": 0.5599999999999999
+    },
+    "autogpt_platform/backend/backend/blocks/http.py:263:0:extra_headers": {
+      "id": "autogpt_platform/backend/backend/blocks/http.py:263:0:extra_headers",
+      "table": "extra_headers",
+      "fields": [],
+      "operation": "read",
+      "file": "autogpt_platform/backend/backend/blocks/http.py",
+      "line": 263,
+      "column": 0,
+      "context": "extra_headers.update(credentials.get_headers_dict())",
+      "isRawSql": false,
+      "confidence": 0.85
+    },
+    "autogpt_platform/backend/backend/blocks/io.py:653:0:Google": {
+      "id": "autogpt_platform/backend/backend/blocks/io.py:653:0:Google",
+      "table": "Google",
+      "fields": [],
+      "operation": "read",
+      "file": "autogpt_platform/backend/backend/blocks/io.py",
+      "line": 653,
+      "column": 0,
+      "context": "This block allows users to select a file from Google Drive.",
+      "isRawSql": true,
+      "confidence": 0.7
+    },
+    "autogpt_platform/backend/backend/blocks/io.py:743:0:Google": {
+      "id": "autogpt_platform/backend/backend/blocks/io.py:743:0:Google",
+      "table": "Google",
+      "fields": [],
+      "operation": "read",
+      "file": "autogpt_platform/backend/backend/blocks/io.py",
+      "line": 743,
+      "column": 0,
+      "context": "\"description\": \"Select a spreadsheet from Google Drive\",",
+      "isRawSql": true,
+      "confidence": 0.7
+    },
+    "autogpt_platform/backend/backend/blocks/perplexity.py:149:0:completions": {
+      "id": "autogpt_platform/backend/backend/blocks/perplexity.py:149:0:completions",
+      "table": "completions",
+      "fields": [],
+      "operation": "write",
+      "file": "autogpt_platform/backend/backend/blocks/perplexity.py",
+      "line": 149,
+      "column": 0,
+      "context": "response = await client.chat.completions.create(",
+      "isRawSql": false,
+      "confidence": 0.68
+    },
+    "autogpt_platform/backend/backend/blocks/reddit.py:2242:0:submission": {
+      "id": "autogpt_platform/backend/backend/blocks/reddit.py:2242:0:submission",
+      "table": "submission",
+      "fields": [],
+      "operation": "delete",
+      "file": "autogpt_platform/backend/backend/blocks/reddit.py",
+      "line": 2242,
+      "column": 0,
+      "context": "submission.delete()",
+      "isRawSql": false,
+      "confidence": 0.68
+    },
+    "autogpt_platform/backend/backend/blocks/reddit.py:2300:0:comment": {
+      "id": "autogpt_platform/backend/backend/blocks/reddit.py:2300:0:comment",
+      "table": "comment",
+      "fields": [],
+      "operation": "delete",
+      "file": "autogpt_platform/backend/backend/blocks/reddit.py",
+      "line": 2300,
+      "column": 0,
+      "context": "comment.delete()",
+      "isRawSql": false,
+      "confidence": 0.68
+    },
+    "autogpt_platform/backend/backend/blocks/smart_decision_maker.py:756:0:conversation": {
+      "id": "autogpt_platform/backend/backend/blocks/smart_decision_maker.py:756:0:conversation",
+      "table": "conversation",
+      "fields": [],
+      "operation": "write",
+      "file": "autogpt_platform/backend/backend/blocks/smart_decision_maker.py",
+      "line": 756,
+      "column": 0,
+      "context": "\"\"\"Update conversation history with response and tool outputs.\"\"\"",
+      "isRawSql": true,
+      "confidence": 0.5599999999999999
+    },
+    "autogpt_platform/backend/backend/check_db.py:23:0:pg_extension": {
+      "id": "autogpt_platform/backend/backend/check_db.py:23:0:pg_extension",
+      "table": "pg_extension",
+      "fields": [],
+      "operation": "read",
+      "file": "autogpt_platform/backend/backend/check_db.py",
+      "line": 23,
+      "column": 0,
+      "context": "\"SELECT COUNT(*) as count FROM pg_extension WHERE extname = 'pg_cron'\"",
+      "isRawSql": true,
+      "confidence": 0.7
+    },
+    "autogpt_platform/backend/backend/check_db.py:123:0:user": {
+      "id": "autogpt_platform/backend/backend/check_db.py:123:0:user",
+      "table": "user",
+      "fields": [],
+      "operation": "read",
+      "file": "autogpt_platform/backend/backend/check_db.py",
+      "line": 123,
+      "column": 0,
+      "context": "users = await db.user.find_many(take=5)",
+      "isRawSql": false,
+      "confidence": 0.68
+    },
+    "autogpt_platform/backend/backend/check_db.py:124:0:agentgraph": {
+      "id": "autogpt_platform/backend/backend/check_db.py:124:0:agentgraph",
+      "table": "agentgraph",
+      "fields": [],
+      "operation": "read",
+      "file": "autogpt_platform/backend/backend/check_db.py",
+      "line": 124,
+      "column": 0,
+      "context": "graphs = await db.agentgraph.find_many(take=5)",
+      "isRawSql": false,
+      "confidence": 0.68
+    },
+    "autogpt_platform/backend/backend/check_db.py:135:0:agentgraphexecution": {
+      "id": "autogpt_platform/backend/backend/check_db.py:135:0:agentgraphexecution",
+      "table": "agentgraphexecution",
+      "fields": [],
+      "operation": "write",
+      "file": "autogpt_platform/backend/backend/check_db.py",
+      "line": 135,
+      "column": 0,
+      "context": "await db.agentgraphexecution.create(",
+      "isRawSql": false,
+      "confidence": 0.68
+    },
+    "autogpt_platform/backend/backend/check_db.py:149:0:storelistingversion": {
+      "id": "autogpt_platform/backend/backend/check_db.py:149:0:storelistingversion",
+      "table": "storelistingversion",
+      "fields": [],
+      "operation": "read",
+      "file": "autogpt_platform/backend/backend/check_db.py",
+      "line": 149,
+      "column": 0,
+      "context": "store_versions = await db.storelistingversion.find_many(",
+      "isRawSql": false,
+      "confidence": 0.68
+    },
+    "autogpt_platform/backend/backend/check_db.py:159:0:storelisting": {
+      "id": "autogpt_platform/backend/backend/check_db.py:159:0:storelisting",
+      "table": "storelisting",
+      "fields": [],
+      "operation": "write",
+      "file": "autogpt_platform/backend/backend/check_db.py",
+      "line": 159,
+      "column": 0,
+      "context": "listing = await db.storelisting.create(",
+      "isRawSql": false,
+      "confidence": 0.68
+    },
+    "autogpt_platform/backend/backend/check_db.py:170:0:storelistingversion": {
+      "id": "autogpt_platform/backend/backend/check_db.py:170:0:storelistingversion",
+      "table": "storelistingversion",
+      "fields": [],
+      "operation": "write",
+      "file": "autogpt_platform/backend/backend/check_db.py",
+      "line": 170,
+      "column": 0,
+      "context": "version = await db.storelistingversion.create(",
+      "isRawSql": false,
+      "confidence": 0.68
+    },
+    "autogpt_platform/backend/backend/check_db.py:186:0:storelisting": {
+      "id": "autogpt_platform/backend/backend/check_db.py:186:0:storelisting",
+      "table": "storelisting",
+      "fields": [],
+      "operation": "write",
+      "file": "autogpt_platform/backend/backend/check_db.py",
+      "line": 186,
+      "column": 0,
+      "context": "await db.storelisting.update(",
+      "isRawSql": false,
+      "confidence": 0.68
+    },
+    "autogpt_platform/backend/backend/check_db.py:193:0:storelistingversion": {
+      "id": "autogpt_platform/backend/backend/check_db.py:193:0:storelistingversion",
+      "table": "storelistingversion",
+      "fields": [],
+      "operation": "read",
+      "file": "autogpt_platform/backend/backend/check_db.py",
+      "line": 193,
+      "column": 0,
+      "context": "store_versions = await db.storelistingversion.find_many(",
+      "isRawSql": false,
+      "confidence": 0.68
+    },
+    "autogpt_platform/backend/backend/check_db.py:202:0:storelistingreview": {
+      "id": "autogpt_platform/backend/backend/check_db.py:202:0:storelistingreview",
+      "table": "storelistingreview",
+      "fields": [],
+      "operation": "read",
+      "file": "autogpt_platform/backend/backend/check_db.py",
+      "line": 202,
+      "column": 0,
+      "context": "existing_reviews = await db.storelistingreview.find_many(",
+      "isRawSql": false,
+      "confidence": 0.68
+    },
+    "autogpt_platform/backend/backend/check_db.py:210:0:storelistingreview": {
+      "id": "autogpt_platform/backend/backend/check_db.py:210:0:storelistingreview",
+      "table": "storelistingreview",
+      "fields": [],
+      "operation": "write",
+      "file": "autogpt_platform/backend/backend/check_db.py",
+      "line": 210,
+      "column": 0,
+      "context": "await db.storelistingreview.create(",
+      "isRawSql": false,
+      "confidence": 0.68
+    },
+    "autogpt_platform/backend/backend/check_store_data.py:21:0:storelisting": {
+      "id": "autogpt_platform/backend/backend/check_store_data.py:21:0:storelisting",
+      "table": "storelisting",
+      "fields": [],
+      "operation": "read",
+      "file": "autogpt_platform/backend/backend/check_store_data.py",
+      "line": 21,
+      "column": 0,
+      "context": "listings = await db.storelisting.find_many()",
+      "isRawSql": false,
+      "confidence": 0.68
+    },
+    "autogpt_platform/backend/backend/check_store_data.py:34:0:storelistingversion": {
+      "id": "autogpt_platform/backend/backend/check_store_data.py:34:0:storelistingversion",
+      "table": "storelistingversion",
+      "fields": [],
+      "operation": "read",
+      "file": "autogpt_platform/backend/backend/check_store_data.py",
+      "line": 34,
+      "column": 0,
+      "context": "versions = await db.storelistingversion.find_many(include={\"StoreListing\": True})",
+      "isRawSql": false,
+      "confidence": 0.68
+    },
+    "autogpt_platform/backend/backend/check_store_data.py:59:0:storelistingreview": {
+      "id": "autogpt_platform/backend/backend/check_store_data.py:59:0:storelistingreview",
+      "table": "storelistingreview",
+      "fields": [],
+      "operation": "read",
+      "file": "autogpt_platform/backend/backend/check_store_data.py",
+      "line": 59,
+      "column": 0,
+      "context": "reviews = await db.storelistingreview.find_many(",
+      "isRawSql": false,
+      "confidence": 0.68
+    },
+    "autogpt_platform/backend/backend/cli/oauth_tool.py:154:0:OAuthApplication": {
+      "id": "autogpt_platform/backend/backend/cli/oauth_tool.py:154:0:OAuthApplication",
+      "table": "OAuthApplication",
+      "fields": [],
+      "operation": "write",
+      "file": "autogpt_platform/backend/backend/cli/oauth_tool.py",
+      "line": 154,
+      "column": 0,
+      "context": "INSERT INTO \"OAuthApplication\" (",
+      "isRawSql": true,
+      "confidence": 0.7
+    },
+    "autogpt_platform/backend/backend/data/auth/oauth.py:802:0:OAuth": {
+      "id": "autogpt_platform/backend/backend/data/auth/oauth.py:802:0:OAuth",
+      "table": "OAuth",
+      "fields": [],
+      "operation": "write",
+      "file": "autogpt_platform/backend/backend/data/auth/oauth.py",
+      "line": 802,
+      "column": 0,
+      "context": "Update OAuth application active status.",
+      "isRawSql": true,
+      "confidence": 0.7
+    },
+    "autogpt_platform/backend/backend/data/block.py:162:0:obj": {
+      "id": "autogpt_platform/backend/backend/data/block.py:162:0:obj",
+      "table": "obj",
+      "fields": [],
+      "operation": "write",
+      "file": "autogpt_platform/backend/backend/data/block.py",
+      "line": 162,
+      "column": 0,
+      "context": "obj.update(obj[one_key][0])",
+      "isRawSql": false,
+      "confidence": 0.4759999999999999
+    },
+    "autogpt_platform/backend/backend/data/credit.py:334:0:transaction_update": {
+      "id": "autogpt_platform/backend/backend/data/credit.py:334:0:transaction_update",
+      "table": "transaction_update",
+      "fields": [],
+      "operation": "read",
+      "file": "autogpt_platform/backend/backend/data/credit.py",
+      "line": 334,
+      "column": 0,
+      "context": "SELECT \"runningBalance\" as balance FROM transaction_update;",
+      "isRawSql": true,
+      "confidence": 0.7
+    },
+    "autogpt_platform/backend/backend/data/credit.py:378:0:approach": {
+      "id": "autogpt_platform/backend/backend/data/credit.py:378:0:approach",
+      "table": "approach",
+      "fields": [],
+      "operation": "write",
+      "file": "autogpt_platform/backend/backend/data/credit.py",
+      "line": 378,
+      "column": 0,
+      "context": "that the FOR UPDATE approach is necessary despite the latency overhead.",
+      "isRawSql": true,
+      "confidence": 0.5599999999999999
+    },
+    "autogpt_platform/backend/backend/data/credit.py:383:0:must": {
+      "id": "autogpt_platform/backend/backend/data/credit.py:383:0:must",
+      "table": "must",
+      "fields": [],
+      "operation": "write",
+      "file": "autogpt_platform/backend/backend/data/credit.py",
+      "line": 383,
+      "column": 0,
+      "context": "calculation, and update must be atomic to prevent race conditions where:",
+      "isRawSql": true,
+      "confidence": 0.5599999999999999
+    },
+    "autogpt_platform/backend/backend/data/credit.py:385:0:problems": {
+      "id": "autogpt_platform/backend/backend/data/credit.py:385:0:problems",
+      "table": "problems",
+      "fields": [],
+      "operation": "write",
+      "file": "autogpt_platform/backend/backend/data/credit.py",
+      "line": 385,
+      "column": 0,
+      "context": "- Lost update problems could occur with concurrent top-ups",
+      "isRawSql": true,
+      "confidence": 0.5599999999999999
+    },
+    "autogpt_platform/backend/backend/data/credit.py:388:0:ensures": {
+      "id": "autogpt_platform/backend/backend/data/credit.py:388:0:ensures",
+      "table": "ensures",
+      "fields": [],
+      "operation": "write",
+      "file": "autogpt_platform/backend/backend/data/credit.py",
+      "line": 388,
+      "column": 0,
+      "context": "2. **Serializability**: FOR UPDATE ensures operations are serialized at the database level,",
+      "isRawSql": true,
+      "confidence": 0.5599999999999999
+    },
+    "autogpt_platform/backend/backend/data/credit.py:464:0:balance": {
+      "id": "autogpt_platform/backend/backend/data/credit.py:464:0:balance",
+      "table": "balance",
+      "fields": [],
+      "operation": "write",
+      "file": "autogpt_platform/backend/backend/data/credit.py",
+      "line": 464,
+      "column": 0,
+      "context": "-- For inactive transactions: Don't update balance",
+      "isRawSql": true,
+      "confidence": 0.5599999999999999
+    },
+    "autogpt_platform/backend/backend/data/credit.py:514:0:transaction_insert": {
+      "id": "autogpt_platform/backend/backend/data/credit.py:514:0:transaction_insert",
+      "table": "transaction_insert",
+      "fields": [],
+      "operation": "read",
+      "file": "autogpt_platform/backend/backend/data/credit.py",
+      "line": 514,
+      "column": 0,
+      "context": "SELECT \"runningBalance\" as balance, \"transactionKey\" FROM transaction_insert;",
+      "isRawSql": true,
+      "confidence": 0.7
+    },
+    "autogpt_platform/backend/backend/data/credit.py:711:0:Refund": {
+      "id": "autogpt_platform/backend/backend/data/credit.py:711:0:Refund",
+      "table": "Refund",
+      "fields": [],
+      "operation": "write",
+      "file": "autogpt_platform/backend/backend/data/credit.py",
+      "line": 711,
+      "column": 0,
+      "context": "refund = stripe.Refund.create(payment_intent=transaction_key, metadata=metadata)",
+      "isRawSql": false,
+      "confidence": 0.85
+    },
+    "autogpt_platform/backend/backend/data/credit.py:910:0:PaymentIntent": {
+      "id": "autogpt_platform/backend/backend/data/credit.py:910:0:PaymentIntent",
+      "table": "PaymentIntent",
+      "fields": [],
+      "operation": "write",
+      "file": "autogpt_platform/backend/backend/data/credit.py",
+      "line": 910,
+      "column": 0,
+      "context": "payment_intent = stripe.PaymentIntent.create(",
+      "isRawSql": false,
+      "confidence": 0.85
+    },
+    "autogpt_platform/backend/backend/data/credit.py:1237:0:Customer": {
+      "id": "autogpt_platform/backend/backend/data/credit.py:1237:0:Customer",
+      "table": "Customer",
+      "fields": [],
+      "operation": "write",
+      "file": "autogpt_platform/backend/backend/data/credit.py",
+      "line": 1237,
+      "column": 0,
+      "context": "customer = stripe.Customer.create(",
+      "isRawSql": false,
+      "confidence": 0.85
+    },
+    "autogpt_platform/backend/backend/data/graph.py:1122:0:sub_graphs": {
+      "id": "autogpt_platform/backend/backend/data/graph.py:1122:0:sub_graphs",
+      "table": "sub_graphs",
+      "fields": [],
+      "operation": "write",
+      "file": "autogpt_platform/backend/backend/data/graph.py",
+      "line": 1122,
+      "column": 0,
+      "context": "sub_graphs.update({graph.id: graph for graph in search_graphs})",
+      "isRawSql": false,
+      "confidence": 0.85
+    },
+    "autogpt_platform/backend/backend/data/graph.py:1496:0:nested": {
+      "id": "autogpt_platform/backend/backend/data/graph.py:1496:0:nested",
+      "table": "nested",
+      "fields": [],
+      "operation": "write",
+      "file": "autogpt_platform/backend/backend/data/graph.py",
+      "line": 1496,
+      "column": 0,
+      "context": "Note: Only updates top level LlmModel SchemaFields of blocks (won't update nested fields).",
+      "isRawSql": true,
+      "confidence": 0.5599999999999999
+    },
+    "autogpt_platform/backend/backend/data/graph.py:1521:0:platform": {
+      "id": "autogpt_platform/backend/backend/data/graph.py:1521:0:platform",
+      "table": "platform",
+      "fields": [],
+      "operation": "write",
+      "file": "autogpt_platform/backend/backend/data/graph.py",
+      "line": 1521,
+      "column": 0,
+      "context": "UPDATE platform.\"AgentNode\"",
+      "isRawSql": true,
+      "confidence": 0.5599999999999999
+    },
+    "autogpt_platform/backend/backend/data/human_review.py:153:0:needed": {
+      "id": "autogpt_platform/backend/backend/data/human_review.py:153:0:needed",
+      "table": "needed",
+      "fields": [],
+      "operation": "write",
+      "file": "autogpt_platform/backend/backend/data/human_review.py",
+      "line": 153,
+      "column": 0,
+      "context": "\"update\": {},  # Already exists, no update needed",
+      "isRawSql": true,
+      "confidence": 0.5599999999999999
+    },
+    "autogpt_platform/backend/backend/data/includes.py:116:0:agent_graph_include": {
+      "id": "autogpt_platform/backend/backend/data/includes.py:116:0:agent_graph_include",
+      "table": "agent_graph_include",
+      "fields": [],
+      "operation": "write",
+      "file": "autogpt_platform/backend/backend/data/includes.py",
+      "line": 116,
+      "column": 0,
+      "context": "agent_graph_include.update(AGENT_GRAPH_INCLUDE)  # Full nodes",
+      "isRawSql": false,
+      "confidence": 0.85
+    },
+    "autogpt_platform/backend/backend/data/model.py:633:0:all_scopes": {
+      "id": "autogpt_platform/backend/backend/data/model.py:633:0:all_scopes",
+      "table": "all_scopes",
+      "fields": [],
+      "operation": "write",
+      "file": "autogpt_platform/backend/backend/data/model.py",
+      "line": 633,
+      "column": 0,
+      "context": "all_scopes.update(field.required_scopes)",
+      "isRawSql": false,
+      "confidence": 0.85
+    },
+    "autogpt_platform/backend/backend/data/model.py:710:0:field_schema_extra": {
+      "id": "autogpt_platform/backend/backend/data/model.py:710:0:field_schema_extra",
+      "table": "field_schema_extra",
+      "fields": [],
+      "operation": "write",
+      "file": "autogpt_platform/backend/backend/data/model.py",
+      "line": 710,
+      "column": 0,
+      "context": "field_schema_extra.update(extra_schema)",
+      "isRawSql": false,
+      "confidence": 0.85
+    },
+    "autogpt_platform/backend/backend/data/understanding.py:195:0:Redis": {
+      "id": "autogpt_platform/backend/backend/data/understanding.py:195:0:Redis",
+      "table": "Redis",
+      "fields": [],
+      "operation": "delete",
+      "file": "autogpt_platform/backend/backend/data/understanding.py",
+      "line": 195,
+      "column": 0,
+      "context": "\"\"\"Delete business understanding from Redis cache.\"\"\"",
+      "isRawSql": true,
+      "confidence": 0.7
+    },
+    "autogpt_platform/backend/backend/data/understanding.py:198:0:redis": {
+      "id": "autogpt_platform/backend/backend/data/understanding.py:198:0:redis",
+      "table": "redis",
+      "fields": [],
+      "operation": "delete",
+      "file": "autogpt_platform/backend/backend/data/understanding.py",
+      "line": 198,
+      "column": 0,
+      "context": "await redis.delete(_cache_key(user_id))",
+      "isRawSql": false,
+      "confidence": 0.68
+    },
+    "autogpt_platform/backend/backend/data/understanding.py:236:0:business": {
+      "id": "autogpt_platform/backend/backend/data/understanding.py:236:0:business",
+      "table": "business",
+      "fields": [],
+      "operation": "write",
+      "file": "autogpt_platform/backend/backend/data/understanding.py",
+      "line": 236,
+      "column": 0,
+      "context": "Create or update business understanding with incremental merge strategy.",
+      "isRawSql": true,
+      "confidence": 0.5599999999999999
+    },
+    "autogpt_platform/backend/backend/data/understanding.py:317:0:both": {
+      "id": "autogpt_platform/backend/backend/data/understanding.py:317:0:both",
+      "table": "both",
+      "fields": [],
+      "operation": "delete",
+      "file": "autogpt_platform/backend/backend/data/understanding.py",
+      "line": 317,
+      "column": 0,
+      "context": "\"\"\"Clear/delete business understanding for a user from both DB and cache.\"\"\"",
+      "isRawSql": true,
+      "confidence": 0.5599999999999999
+    },
+    "autogpt_platform/backend/backend/data/user.py:42:0:user": {
+      "id": "autogpt_platform/backend/backend/data/user.py:42:0:user",
+      "table": "user",
+      "fields": [],
+      "operation": "read",
+      "file": "autogpt_platform/backend/backend/data/user.py",
+      "line": 42,
+      "column": 0,
+      "context": "user = await prisma.user.find_unique(where={\"id\": user_id})",
+      "isRawSql": false,
+      "confidence": 0.68
+    },
+    "autogpt_platform/backend/backend/data/user.py:44:0:user": {
+      "id": "autogpt_platform/backend/backend/data/user.py:44:0:user",
+      "table": "user",
+      "fields": [],
+      "operation": "write",
+      "file": "autogpt_platform/backend/backend/data/user.py",
+      "line": 44,
+      "column": 0,
+      "context": "user = await prisma.user.create(",
+      "isRawSql": false,
+      "confidence": 0.68
+    },
+    "autogpt_platform/backend/backend/data/user.py:59:0:user": {
+      "id": "autogpt_platform/backend/backend/data/user.py:59:0:user",
+      "table": "user",
+      "fields": [],
+      "operation": "read",
+      "file": "autogpt_platform/backend/backend/data/user.py",
+      "line": 59,
+      "column": 0,
+      "context": "user = await prisma.user.find_unique(where={\"id\": user_id})",
+      "isRawSql": false,
+      "confidence": 0.68
+    },
+    "autogpt_platform/backend/backend/data/user.py:67:0:user": {
+      "id": "autogpt_platform/backend/backend/data/user.py:67:0:user",
+      "table": "user",
+      "fields": [],
+      "operation": "read",
+      "file": "autogpt_platform/backend/backend/data/user.py",
+      "line": 67,
+      "column": 0,
+      "context": "user = await prisma.user.find_unique(where={\"id\": user_id})",
+      "isRawSql": false,
+      "confidence": 0.68
+    },
+    "autogpt_platform/backend/backend/data/user.py:76:0:user": {
+      "id": "autogpt_platform/backend/backend/data/user.py:76:0:user",
+      "table": "user",
+      "fields": [],
+      "operation": "read",
+      "file": "autogpt_platform/backend/backend/data/user.py",
+      "line": 76,
+      "column": 0,
+      "context": "user = await prisma.user.find_unique(where={\"email\": email})",
+      "isRawSql": false,
+      "confidence": 0.68
+    },
+    "autogpt_platform/backend/backend/data/user.py:85:0:user": {
+      "id": "autogpt_platform/backend/backend/data/user.py:85:0:user",
+      "table": "user",
+      "fields": [],
+      "operation": "read",
+      "file": "autogpt_platform/backend/backend/data/user.py",
+      "line": 85,
+      "column": 0,
+      "context": "old_user = await prisma.user.find_unique(where={\"id\": user_id})",
+      "isRawSql": false,
+      "confidence": 0.68
+    },
+    "autogpt_platform/backend/backend/data/user.py:88:0:user": {
+      "id": "autogpt_platform/backend/backend/data/user.py:88:0:user",
+      "table": "user",
+      "fields": [],
+      "operation": "write",
+      "file": "autogpt_platform/backend/backend/data/user.py",
+      "line": 88,
+      "column": 0,
+      "context": "await prisma.user.update(where={\"id\": user_id}, data={\"email\": email})",
+      "isRawSql": false,
+      "confidence": 0.68
+    },
+    "autogpt_platform/backend/backend/data/user.py:97:0:user": {
+      "id": "autogpt_platform/backend/backend/data/user.py:97:0:user",
+      "table": "user",
+      "fields": [],
+      "operation": "write",
+      "file": "autogpt_platform/backend/backend/data/user.py",
+      "line": 97,
+      "column": 0,
+      "context": "f\"Failed to update user email for user {user_id}: {e}\"",
+      "isRawSql": true,
+      "confidence": 0.5599999999999999
+    },
+    "autogpt_platform/backend/backend/data/user.py:102:0:user": {
+      "id": "autogpt_platform/backend/backend/data/user.py:102:0:user",
+      "table": "user",
+      "fields": [],
+      "operation": "read",
+      "file": "autogpt_platform/backend/backend/data/user.py",
+      "line": 102,
+      "column": 0,
+      "context": "user = await prisma.user.find_unique(where={\"id\": DEFAULT_USER_ID})",
+      "isRawSql": false,
+      "confidence": 0.68
+    },
+    "autogpt_platform/backend/backend/data/user.py:104:0:user": {
+      "id": "autogpt_platform/backend/backend/data/user.py:104:0:user",
+      "table": "user",
+      "fields": [],
+      "operation": "write",
+      "file": "autogpt_platform/backend/backend/data/user.py",
+      "line": 104,
+      "column": 0,
+      "context": "user = await prisma.user.create(",
+      "isRawSql": false,
+      "confidence": 0.68
+    },
+    "autogpt_platform/backend/backend/data/user.py:338:0:user": {
+      "id": "autogpt_platform/backend/backend/data/user.py:338:0:user",
+      "table": "user",
+      "fields": [],
+      "operation": "write",
+      "file": "autogpt_platform/backend/backend/data/user.py",
+      "line": 338,
+      "column": 0,
+      "context": "f\"Failed to update user notification preference for user {user_id}: {e}\"",
+      "isRawSql": true,
+      "confidence": 0.5599999999999999
+    },
+    "autogpt_platform/backend/backend/executor/manager.py:446:0:next_node_input": {
+      "id": "autogpt_platform/backend/backend/executor/manager.py:446:0:next_node_input",
+      "table": "next_node_input",
+      "fields": [],
+      "operation": "write",
+      "file": "autogpt_platform/backend/backend/executor/manager.py",
+      "line": 446,
+      "column": 0,
+      "context": "next_node_input.update(node_input_mask)",
+      "isRawSql": false,
+      "confidence": 0.85
+    },
+    "autogpt_platform/backend/backend/executor/manager.py:492:0:idata": {
+      "id": "autogpt_platform/backend/backend/executor/manager.py:492:0:idata",
+      "table": "idata",
+      "fields": [],
+      "operation": "write",
+      "file": "autogpt_platform/backend/backend/executor/manager.py",
+      "line": 492,
+      "column": 0,
+      "context": "idata.update(node_input_mask)",
+      "isRawSql": false,
+      "confidence": 0.68
+    },
+    "autogpt_platform/backend/backend/executor/manager.py:1028:0:inputs": {
+      "id": "autogpt_platform/backend/backend/executor/manager.py:1028:0:inputs",
+      "table": "inputs",
+      "fields": [],
+      "operation": "write",
+      "file": "autogpt_platform/backend/backend/executor/manager.py",
+      "line": 1028,
+      "column": 0,
+      "context": "queued_node_exec.inputs.update(node_input_mask)",
+      "isRawSql": false,
+      "confidence": 0.68
+    },
+    "autogpt_platform/backend/backend/executor/manager.py:1827:0:active_graph_runs": {
+      "id": "autogpt_platform/backend/backend/executor/manager.py:1827:0:active_graph_runs",
+      "table": "active_graph_runs",
+      "fields": [],
+      "operation": "write",
+      "file": "autogpt_platform/backend/backend/executor/manager.py",
+      "line": 1827,
+      "column": 0,
+      "context": "\"\"\"Remove completed futures from active_graph_runs and update metrics\"\"\"",
+      "isRawSql": true,
+      "confidence": 0.7
+    },
+    "autogpt_platform/backend/backend/executor/manager.py:2021:0:graph": {
+      "id": "autogpt_platform/backend/backend/executor/manager.py:2021:0:graph",
+      "table": "graph",
+      "fields": [],
+      "operation": "write",
+      "file": "autogpt_platform/backend/backend/executor/manager.py",
+      "line": 2021,
+      "column": 0,
+      "context": "logger.error(f\"Failed to update graph execution stats for {graph_exec_id}\")",
+      "isRawSql": true,
+      "confidence": 0.5599999999999999
+    },
+    "autogpt_platform/backend/backend/executor/manager.py:2036:0:graph": {
+      "id": "autogpt_platform/backend/backend/executor/manager.py:2036:0:graph",
+      "table": "graph",
+      "fields": [],
+      "operation": "write",
+      "file": "autogpt_platform/backend/backend/executor/manager.py",
+      "line": 2036,
+      "column": 0,
+      "context": "logger.error(f\"Failed to update graph execution stats for {graph_exec_id}\")",
+      "isRawSql": true,
+      "confidence": 0.5599999999999999
+    },
+    "autogpt_platform/backend/backend/executor/utils.py:689:0:execution": {
+      "id": "autogpt_platform/backend/backend/executor/utils.py:689:0:execution",
+      "table": "execution",
+      "fields": [],
+      "operation": "write",
+      "file": "autogpt_platform/backend/backend/executor/utils.py",
+      "line": 689,
+      "column": 0,
+      "context": "4. Update execution statuses in DB and set `error` outputs to `\"TERMINATED\"`.",
+      "isRawSql": true,
+      "confidence": 0.5599999999999999
+    },
+    "autogpt_platform/backend/backend/integrations/credentials_store.py:397:0:credentials": {
+      "id": "autogpt_platform/backend/backend/integrations/credentials_store.py:397:0:credentials",
+      "table": "credentials",
+      "fields": [],
+      "operation": "write",
+      "file": "autogpt_platform/backend/backend/integrations/credentials_store.py",
+      "line": 397,
+      "column": 0,
+      "context": "f\"Can not update credentials with ID {updated.id} \"",
+      "isRawSql": true,
+      "confidence": 0.5599999999999999
+    },
+    "autogpt_platform/backend/backend/integrations/credentials_store.py:409:0:credentials": {
+      "id": "autogpt_platform/backend/backend/integrations/credentials_store.py:409:0:credentials",
+      "table": "credentials",
+      "fields": [],
+      "operation": "write",
+      "file": "autogpt_platform/backend/backend/integrations/credentials_store.py",
+      "line": 409,
+      "column": 0,
+      "context": "f\"Can not update credentials with ID {updated.id} \"",
+      "isRawSql": true,
+      "confidence": 0.5599999999999999
+    },
+    "autogpt_platform/backend/backend/util/cache.py:354:0:pipeline": {
+      "id": "autogpt_platform/backend/backend/util/cache.py:354:0:pipeline",
+      "table": "pipeline",
+      "fields": [],
+      "operation": "delete",
+      "file": "autogpt_platform/backend/backend/util/cache.py",
+      "line": 354,
+      "column": 0,
+      "context": "pipeline.delete(key)",
+      "isRawSql": false,
+      "confidence": 0.68
+    },
+    "autogpt_platform/backend/backend/util/request.py:471:0:req_headers": {
+      "id": "autogpt_platform/backend/backend/util/request.py:471:0:req_headers",
+      "table": "req_headers",
+      "fields": [],
+      "operation": "write",
+      "file": "autogpt_platform/backend/backend/util/request.py",
+      "line": 471,
+      "column": 0,
+      "context": "req_headers.update(self.extra_headers)",
+      "isRawSql": false,
+      "confidence": 0.85
+    },
+    "autogpt_platform/backend/backend/util/timezone_name.py:114:0:json_schema": {
+      "id": "autogpt_platform/backend/backend/util/timezone_name.py:114:0:json_schema",
+      "table": "json_schema",
+      "fields": [],
+      "operation": "write",
+      "file": "autogpt_platform/backend/backend/util/timezone_name.py",
+      "line": 114,
+      "column": 0,
+      "context": "json_schema.update({\"enum\": cls.allowed_values_list})",
+      "isRawSql": false,
+      "confidence": 0.85
+    }
+  },
+  "sensitiveFields": [
+    {
+      "field": "api_key",
+      "table": null,
+      "sensitivityType": "credentials",
+      "file": "autogpt_platform/backend/backend/integrations/credentials_store.py",
+      "line": 222,
+      "confidence": 0.8
+    },
+    {
+      "field": "token",
+      "table": null,
+      "sensitivityType": "credentials",
+      "file": "autogpt_platform/backend/backend/integrations/credentials_store.py",
+      "line": 512,
+      "confidence": 0.8
+    },
+    {
+      "field": "api_key",
+      "table": "of",
+      "sensitivityType": "credentials",
+      "file": "autogpt_platform/backend/backend/api/external/middleware.py",
+      "line": 69,
+      "confidence": 0.8
+    },
+    {
+      "field": "password",
+      "table": null,
+      "sensitivityType": "credentials",
+      "file": "autogpt_platform/autogpt_libs/autogpt_libs/rate_limit/limiter.py",
+      "line": 20,
+      "confidence": 0.8
+    },
+    {
+      "field": "token",
+      "table": "for",
+      "sensitivityType": "credentials",
+      "file": "autogpt_platform/backend/backend/blocks/google/gmail.py",
+      "line": 198,
+      "confidence": 0.8
+    },
+    {
+      "field": "api_key",
+      "table": "for",
+      "sensitivityType": "credentials",
+      "file": "autogpt_platform/backend/backend/api/external/v1/integrations.py",
+      "line": 124,
+      "confidence": 0.8
+    },
+    {
+      "field": "password",
+      "table": "CreateUserPasswordCredentialRequest",
+      "sensitivityType": "credentials",
+      "file": "autogpt_platform/backend/backend/api/external/v1/integrations.py",
+      "line": 132,
+      "confidence": 0.8
+    },
+    {
+      "field": "password",
+      "table": "for",
+      "sensitivityType": "credentials",
+      "file": "autogpt_platform/backend/backend/api/external/v1/integrations.py",
+      "line": 136,
+      "confidence": 0.8
+    },
+    {
+      "field": "secret",
+      "table": null,
+      "sensitivityType": "credentials",
+      "file": "autogpt_platform/backend/backend/data/model.py",
+      "line": 387,
+      "confidence": 0.8
+    },
+    {
+      "field": "api_key",
+      "table": "else",
+      "sensitivityType": "credentials",
+      "file": "autogpt_platform/backend/backend/api/external/v1/integrations.py",
+      "line": 289,
+      "confidence": 0.8
+    },
+    {
+      "field": "Token",
+      "table": null,
+      "sensitivityType": "credentials",
+      "file": "autogpt_platform/backend/backend/cli/oauth_tool.py",
+      "line": 802,
+      "confidence": 0.8
+    },
+    {
+      "field": "Token",
+      "table": "StreamUsage",
+      "sensitivityType": "credentials",
+      "file": "autogpt_platform/backend/backend/api/features/chat/response_model.py",
+      "line": 129,
+      "confidence": 0.8
+    },
+    {
+      "field": "api_key",
+      "table": "as",
+      "sensitivityType": "credentials",
+      "file": "autogpt_platform/backend/backend/api/features/chat/service.py",
+      "line": 1117,
+      "confidence": 0.8
+    },
+    {
+      "field": "private_key",
+      "table": null,
+      "sensitivityType": "credentials",
+      "file": "autogpt_platform/backend/backend/api/features/integrations/router.py",
+      "line": 783,
+      "confidence": 0.8
+    },
+    {
+      "field": "token",
+      "table": "TokenResponse",
+      "sensitivityType": "credentials",
+      "file": "autogpt_platform/backend/backend/api/features/oauth.py",
+      "line": 67,
+      "confidence": 0.8
+    },
+    {
+      "field": "token",
+      "table": "AuthorizeRequest",
+      "sensitivityType": "credentials",
+      "file": "autogpt_platform/backend/backend/api/features/oauth.py",
+      "line": 144,
+      "confidence": 0.8
+    },
+    {
+      "field": "token",
+      "table": "TokenRequestByRefreshToken",
+      "sensitivityType": "credentials",
+      "file": "autogpt_platform/backend/backend/api/features/oauth.py",
+      "line": 337,
+      "confidence": 0.8
+    },
+    {
+      "field": "health",
+      "table": null,
+      "sensitivityType": "health",
+      "file": "autogpt_platform/backend/backend/util/service.py",
+      "line": 371,
+      "confidence": 0.8
+    },
+    {
+      "field": "api_key",
+      "table": "CreateAPIKeyResponse",
+      "sensitivityType": "credentials",
+      "file": "autogpt_platform/backend/backend/api/model.py",
+      "line": 55,
+      "confidence": 0.8
+    },
+    {
+      "field": "PHONE_NUMBER",
+      "table": null,
+      "sensitivityType": "pii",
+      "file": "autogpt_platform/backend/backend/blocks/airtable/_api.py",
+      "line": 85,
+      "confidence": 0.8
+    },
+    {
+      "field": "token",
+      "table": "OAuthTokenRequest",
+      "sensitivityType": "credentials",
+      "file": "autogpt_platform/backend/backend/blocks/wordpress/_api.py",
+      "line": 36,
+      "confidence": 0.8
+    },
+    {
+      "field": "token",
+      "table": "OAuthRefreshTokenRequest",
+      "sensitivityType": "credentials",
+      "file": "autogpt_platform/backend/backend/blocks/wordpress/_api.py",
+      "line": 62,
+      "confidence": 0.8
+    },
+    {
+      "field": "token",
+      "table": "OAuthTokenResponse",
+      "sensitivityType": "credentials",
+      "file": "autogpt_platform/backend/backend/blocks/wordpress/_api.py",
+      "line": 75,
+      "confidence": 0.8
+    },
+    {
+      "field": "api_key",
+      "table": "ApolloClient",
+      "sensitivityType": "credentials",
+      "file": "autogpt_platform/backend/backend/blocks/apollo/_api.py",
+      "line": 29,
+      "confidence": 0.8
+    },
+    {
+      "field": "phone",
+      "table": null,
+      "sensitivityType": "pii",
+      "file": "autogpt_platform/backend/backend/blocks/slant3d/order.py",
+      "line": 215,
+      "confidence": 0.8
+    },
+    {
+      "field": "address",
+      "table": null,
+      "sensitivityType": "pii",
+      "file": "autogpt_platform/backend/backend/util/request.py",
+      "line": 232,
+      "confidence": 0.8
+    },
+    {
+      "field": "api_key",
+      "table": "MeetingBaasAPI",
+      "sensitivityType": "credentials",
+      "file": "autogpt_platform/backend/backend/blocks/baas/_api.py",
+      "line": 19,
+      "confidence": 0.8
+    },
+    {
+      "field": "api_key",
+      "table": "Input",
+      "sensitivityType": "credentials",
+      "file": "autogpt_platform/backend/backend/blocks/screenshotone.py",
+      "line": 36,
+      "confidence": 0.8
+    },
+    {
+      "field": "api_key",
+      "table": "BaseE2BExecutorMixin",
+      "sensitivityType": "credentials",
+      "file": "autogpt_platform/backend/backend/blocks/code_executor.py",
+      "line": 90,
+      "confidence": 0.8
+    },
+    {
+      "field": "password",
+      "table": "Input",
+      "sensitivityType": "credentials",
+      "file": "autogpt_platform/backend/backend/blocks/dataforseo/related_keywords.py",
+      "line": 51,
+      "confidence": 0.8
+    },
+    {
+      "field": "Token",
+      "table": "Input",
+      "sensitivityType": "credentials",
+      "file": "autogpt_platform/backend/backend/blocks/exa/code_context.py",
+      "line": 65,
+      "confidence": 0.8
+    },
+    {
+      "field": "PHONE",
+      "table": "EnrichmentFormat",
+      "sensitivityType": "pii",
+      "file": "autogpt_platform/backend/backend/blocks/exa/websets.py",
+      "line": 64,
+      "confidence": 0.8
+    },
+    {
+      "field": "Token",
+      "table": "Output",
+      "sensitivityType": "credentials",
+      "file": "autogpt_platform/backend/backend/blocks/google/calendar.py",
+      "line": 91,
+      "confidence": 0.8
+    },
+    {
+      "field": "address",
+      "table": "Input",
+      "sensitivityType": "pii",
+      "file": "autogpt_platform/backend/backend/blocks/google/sheets.py",
+      "line": 6257,
+      "confidence": 0.8
+    },
+    {
+      "field": "address",
+      "table": "Output",
+      "sensitivityType": "pii",
+      "file": "autogpt_platform/backend/backend/blocks/google/gmail.py",
+      "line": 1499,
+      "confidence": 0.8
+    },
+    {
+      "field": "address",
+      "table": "Place",
+      "sensitivityType": "pii",
+      "file": "autogpt_platform/backend/backend/blocks/google_maps.py",
+      "line": 38,
+      "confidence": 0.8
+    },
+    {
+      "field": "phone",
+      "table": "Place",
+      "sensitivityType": "pii",
+      "file": "autogpt_platform/backend/backend/blocks/google_maps.py",
+      "line": 39,
+      "confidence": 0.8
+    },
+    {
+      "field": "api_key",
+      "table": "with",
+      "sensitivityType": "credentials",
+      "file": "autogpt_platform/backend/backend/blocks/mem0.py",
+      "line": 37,
+      "confidence": 0.8
+    },
+    {
+      "field": "phone_number",
+      "table": null,
+      "sensitivityType": "pii",
+      "file": "autogpt_platform/backend/backend/blocks/notion/read_database.py",
+      "line": 134,
+      "confidence": 0.8
+    },
+    {
+      "field": "api_key",
+      "table": "PerplexityModel",
+      "sensitivityType": "credentials",
+      "file": "autogpt_platform/backend/backend/blocks/perplexity.py",
+      "line": 38,
+      "confidence": 0.8
+    },
+    {
+      "field": "api_key",
+      "table": "SmartLeadClient",
+      "sensitivityType": "credentials",
+      "file": "autogpt_platform/backend/backend/blocks/smartlead/_api.py",
+      "line": 21,
+      "confidence": 0.8
+    },
+    {
+      "field": "token",
+      "table": "Output",
+      "sensitivityType": "credentials",
+      "file": "autogpt_platform/backend/backend/blocks/twitter/tweets/manage.py",
+      "line": 348,
+      "confidence": 0.8
+    },
+    {
+      "field": "token",
+      "table": "OAuthAuthorizeRequest",
+      "sensitivityType": "credentials",
+      "file": "autogpt_platform/backend/backend/blocks/wordpress/_api.py",
+      "line": 23,
+      "confidence": 0.8
+    },
+    {
+      "field": "secret",
+      "table": "OAuthTokenRequest",
+      "sensitivityType": "credentials",
+      "file": "autogpt_platform/backend/backend/blocks/wordpress/_api.py",
+      "line": 44,
+      "confidence": 0.8
+    },
+    {
+      "field": "secret",
+      "table": "OAuthRefreshTokenRequest",
+      "sensitivityType": "credentials",
+      "file": "autogpt_platform/backend/backend/blocks/wordpress/_api.py",
+      "line": 64,
+      "confidence": 0.8
+    },
+    {
+      "field": "Token",
+      "table": "TokenInfoResponse",
+      "sensitivityType": "credentials",
+      "file": "autogpt_platform/backend/backend/blocks/wordpress/_api.py",
+      "line": 220,
+      "confidence": 0.8
+    },
+    {
+      "field": "token",
+      "table": "TokenInfoResponse",
+      "sensitivityType": "credentials",
+      "file": "autogpt_platform/backend/backend/blocks/wordpress/_api.py",
+      "line": 226,
+      "confidence": 0.8
+    },
+    {
+      "field": "salt",
+      "table": null,
+      "sensitivityType": "credentials",
+      "file": "autogpt_platform/backend/backend/data/auth/oauth.py",
+      "line": 9,
+      "confidence": 0.8
+    },
+    {
+      "field": "Secret",
+      "table": null,
+      "sensitivityType": "credentials",
+      "file": "autogpt_platform/backend/backend/data/model.py",
+      "line": 183,
+      "confidence": 0.8
+    },
+    {
+      "field": "Hash",
+      "table": null,
+      "sensitivityType": "credentials",
+      "file": "autogpt_platform/backend/backend/cli/oauth_tool.py",
+      "line": 404,
+      "confidence": 0.8
+    },
+    {
+      "field": "Salt",
+      "table": null,
+      "sensitivityType": "credentials",
+      "file": "autogpt_platform/backend/backend/cli/oauth_tool.py",
+      "line": 405,
+      "confidence": 0.8
+    },
+    {
+      "field": "hash",
+      "table": null,
+      "sensitivityType": "credentials",
+      "file": "autogpt_platform/backend/backend/util/cache.py",
+      "line": 122,
+      "confidence": 0.8
+    },
+    {
+      "field": "hash",
+      "table": "APIKeyInfoWithHash",
+      "sensitivityType": "credentials",
+      "file": "autogpt_platform/backend/backend/data/auth/api_key.py",
+      "line": 58,
+      "confidence": 0.8
+    },
+    {
+      "field": "salt",
+      "table": "APIKeyInfoWithHash",
+      "sensitivityType": "credentials",
+      "file": "autogpt_platform/backend/backend/data/auth/api_key.py",
+      "line": 54,
+      "confidence": 0.8
+    },
+    {
+      "field": "api_key",
+      "table": "APIKeyInfoWithHash",
+      "sensitivityType": "credentials",
+      "file": "autogpt_platform/backend/backend/data/auth/api_key.py",
+      "line": 61,
+      "confidence": 0.8
+    },
+    {
+      "field": "api_key",
+      "table": "APIAuthorizationInfo",
+      "sensitivityType": "credentials",
+      "file": "autogpt_platform/backend/backend/data/auth/base.py",
+      "line": 11,
+      "confidence": 0.8
+    },
+    {
+      "field": "token",
+      "table": "InvalidGrantError",
+      "sensitivityType": "credentials",
+      "file": "autogpt_platform/backend/backend/data/auth/oauth.py",
+      "line": 71,
+      "confidence": 0.8
+    },
+    {
+      "field": "token",
+      "table": "InvalidTokenError",
+      "sensitivityType": "credentials",
+      "file": "autogpt_platform/backend/backend/data/auth/oauth.py",
+      "line": 83,
+      "confidence": 0.8
+    },
+    {
+      "field": "secret",
+      "table": "OAuthApplicationInfo",
+      "sensitivityType": "credentials",
+      "file": "autogpt_platform/backend/backend/data/auth/oauth.py",
+      "line": 92,
+      "confidence": 0.8
+    },
+    {
+      "field": "secret",
+      "table": "OAuthApplicationInfoWithSecret",
+      "sensitivityType": "credentials",
+      "file": "autogpt_platform/backend/backend/data/auth/oauth.py",
+      "line": 126,
+      "confidence": 0.8
+    },
+    {
+      "field": "token",
+      "table": "OAuthAccessTokenInfo",
+      "sensitivityType": "credentials",
+      "file": "autogpt_platform/backend/backend/data/auth/oauth.py",
+      "line": 193,
+      "confidence": 0.8
+    },
+    {
+      "field": "token",
+      "table": "OAuthAccessToken",
+      "sensitivityType": "credentials",
+      "file": "autogpt_platform/backend/backend/data/auth/oauth.py",
+      "line": 215,
+      "confidence": 0.8
+    },
+    {
+      "field": "token",
+      "table": "OAuthRefreshTokenInfo",
+      "sensitivityType": "credentials",
+      "file": "autogpt_platform/backend/backend/data/auth/oauth.py",
+      "line": 220,
+      "confidence": 0.8
+    },
+    {
+      "field": "token",
+      "table": "OAuthRefreshToken",
+      "sensitivityType": "credentials",
+      "file": "autogpt_platform/backend/backend/data/auth/oauth.py",
+      "line": 256,
+      "confidence": 0.8
+    },
+    {
+      "field": "token",
+      "table": "TokenIntrospectionResult",
+      "sensitivityType": "credentials",
+      "file": "autogpt_platform/backend/backend/data/auth/oauth.py",
+      "line": 261,
+      "confidence": 0.8
+    },
+    {
+      "field": "secret",
+      "table": "Webhook",
+      "sensitivityType": "credentials",
+      "file": "autogpt_platform/backend/backend/data/integrations.py",
+      "line": 42,
+      "confidence": 0.8
+    },
+    {
+      "field": "address",
+      "table": "with",
+      "sensitivityType": "pii",
+      "file": "autogpt_platform/backend/backend/data/model.py",
+      "line": 61,
+      "confidence": 0.8
+    },
+    {
+      "field": "token",
+      "table": "OAuth2Credentials",
+      "sensitivityType": "credentials",
+      "file": "autogpt_platform/backend/backend/data/model.py",
+      "line": 333,
+      "confidence": 0.8
+    },
+    {
+      "field": "api_key",
+      "table": "APIKeyCredentials",
+      "sensitivityType": "credentials",
+      "file": "autogpt_platform/backend/backend/data/model.py",
+      "line": 343,
+      "confidence": 0.8
+    },
+    {
+      "field": "password",
+      "table": "UserPasswordCredentials",
+      "sensitivityType": "credentials",
+      "file": "autogpt_platform/backend/backend/data/model.py",
+      "line": 366,
+      "confidence": 0.8
+    },
+    {
+      "field": "secret",
+      "table": "HostScopedCredentials",
+      "sensitivityType": "credentials",
+      "file": "autogpt_platform/backend/backend/data/model.py",
+      "line": 378,
+      "confidence": 0.8
+    },
+    {
+      "field": "token",
+      "table": "OAuthState",
+      "sensitivityType": "credentials",
+      "file": "autogpt_platform/backend/backend/data/model.py",
+      "line": 431,
+      "confidence": 0.8
+    },
+    {
+      "field": "address",
+      "table": "NotificationPreferenceDTO",
+      "sensitivityType": "pii",
+      "file": "autogpt_platform/backend/backend/data/notifications.py",
+      "line": 361,
+      "confidence": 0.8
+    },
+    {
+      "field": "PASSWORD",
+      "table": null,
+      "sensitivityType": "credentials",
+      "file": "autogpt_platform/backend/backend/executor/cluster_lock_test.py",
+      "line": 25,
+      "confidence": 0.8
+    },
+    {
+      "field": "token",
+      "table": "EmailSender",
+      "sensitivityType": "credentials",
+      "file": "autogpt_platform/backend/backend/notifications/email.py",
+      "line": 42,
+      "confidence": 0.8
+    },
+    {
+      "field": "address",
+      "table": "Requests",
+      "sensitivityType": "pii",
+      "file": "autogpt_platform/backend/backend/util/request.py",
+      "line": 332,
+      "confidence": 0.8
+    }
+  ],
+  "stats": {
+    "totalTables": 81,
+    "totalAccessPoints": 140,
+    "totalSensitiveFields": 76,
+    "totalModels": 0
+  }
+}

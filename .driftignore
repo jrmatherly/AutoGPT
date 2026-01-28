@@ -1,27 +1,51 @@
-.archive
-.claude
-.serena
-.vscode
-docs
-assets
-.github
-SECURITY.md
-README.md
-PROJECT_INDEX.md
-PROJECT_INDEX.json
-LICENSE
-CONTRIBUTING.md
-CODE_OF_CONDUCT.md
-CLAUDE.md
-CITATION.cff
-AGENTS.md
-backend/TEST_DATA_README.md
-load-tests/README.md
-README.advanced.md
-TESTING.md
-autogpt_platform/db/docker/README.md
-autogpt_platform/installer
-autogpt_platform/CLAUDE.md
-autogpt_platform/Contributor License Agreement (CLA).md
-autogpt_platform/LICENSE.md
-autogpt_platform/README.md
+# Dependencies & Package Managers
+**/node_modules/
+**/.venv/
+**/venv/
+**/__pycache__/
+**/.pnpm-store/
+
+# Build outputs
+**/dist/
+**/build/
+**/.next/
+**/.turbo/
+**/target/
+
+# Lock files (large, no code patterns)
+**/pnpm-lock.yaml
+**/poetry.lock
+**/package-lock.json
+
+# Test artifacts & fixtures
+**/snapshots/
+**/fixtures/
+**/.pytest_cache/
+**/coverage/
+**/htmlcov/
+
+# IDE & Editor
+.vscode/
+.idea/
+.claude/
+.serena/
+
+# Archive & Generated
+.archive/
+**/*.generated.*
+**/*.min.js
+**/*.bundle.js
+
+# Documentation (no code patterns)
+docs/
+**/*.md
+assets/
+.github/
+
+# Installer & build scripts
+autogpt_platform/installer/
+
+# Project-specific excludes
+autogpt_platform/db/docker/
+autogpt_platform/backend/migrations/
+autogpt_platform/backend/load-tests/

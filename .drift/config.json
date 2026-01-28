@@ -2,9 +2,26 @@
   "version": "2.0.0",
   "project": {
     "id": "ca9c642b-d8c1-4613-b6f5-4333282e990d",
-    "name": "AutoGPT",
+    "name": "AutoGPT Platform",
     "initializedAt": "2026-01-28T21:22:00.299Z"
   },
+  "packages": [
+    {
+      "name": "frontend",
+      "path": "autogpt_platform/frontend",
+      "language": "typescript"
+    },
+    {
+      "name": "backend",
+      "path": "autogpt_platform/backend",
+      "language": "python"
+    },
+    {
+      "name": "autogpt_libs",
+      "path": "autogpt_platform/autogpt_libs",
+      "language": "python"
+    }
+  ],
   "severity": {},
   "ignore": [
     "node_modules/**",
@@ -31,7 +48,7 @@
     "semanticLearning": true
   },
   "performance": {
-    "maxWorkers": 4,
+    "maxWorkers": 8,
     "cacheEnabled": true,
     "incrementalAnalysis": true,
     "cacheTTL": 3600
