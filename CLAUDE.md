@@ -18,7 +18,7 @@ AutoGPT/
 │   ├── backend/               # Python FastAPI server
 │   ├── frontend/              # Next.js 15 React app
 │   └── autogpt_libs/          # Shared Python libraries
-├── classic/                   # Legacy components (MIT licensed)
+├── classic/                   # Legacy **DEPRECATED** components (MIT licensed)
 │   ├── original_autogpt/      # Original standalone agent
 │   ├── forge/                 # Agent building toolkit
 │   └── benchmark/             # Agent testing framework
@@ -86,7 +86,7 @@ pnpm test
 ## Licensing
 
 - **autogpt_platform/**: Polyform Shield License (commercial restrictions)
-- **classic/**: MIT License (permissive)
+- **classic/**: MIT License (permissive) **DEPRECATED**
 
 ## Contributing
 

@@ -8,8 +8,7 @@ We take the security of our project seriously. If you believe you have found a s
 
 Instead, please report them via:
 
-- [GitHub Security Advisory](https://github.com/Significant-Gravitas/AutoGPT/security/advisories/new)
-<!--- [Huntr.dev](https://huntr.com/repos/significant-gravitas/autogpt) - where you may be eligible for a bounty-->
+- [GitHub Security Advisory](https://github.com/jrmatherly/AutoGPT/security/advisories/new)
 
 ### Reporting Process
 
@@ -49,7 +48,7 @@ When using this project:
 
 ## Past Security Advisories
 
-For a list of past security advisories, please visit our [Security Advisory Page](https://github.com/Significant-Gravitas/AutoGPT/security/advisories) and [Huntr Disclosures Page](https://huntr.com/repos/significant-gravitas/autogpt).
+For a list of past security advisories, please visit our [Security Advisory Page](https://github.com/jrmatherly/AutoGPT/security/advisories).
 
 ---
-Last updated: November 2024
+Last updated: January 2026
