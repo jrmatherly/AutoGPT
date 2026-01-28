@@ -55,10 +55,15 @@
       "**/node_modules/**",
       "**/classic/**"
     ],
+    "gradle.nestedProjects": false,
+    "java.gradle.buildServer.enabled": false,
     "cmake.ignoreCMakeListsMissing": true,
     "dart.analysisExcludedFolders": [
       "classic"
-    ]
+    ],
+    "files.watcherExclude": {
+      "**/classic/**": true
+    }
   },
   "extensions": {
     "recommendations": [
