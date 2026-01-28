@@ -1,0 +1,1078 @@
+{
+  "version": "1.0.0",
+  "category": "api",
+  "patterns": [
+    {
+      "id": "12d4fd50be4f9a37",
+      "subcategory": "route-structure",
+      "name": "Route Structure Detector",
+      "description": "Detects route URL structure patterns and flags inconsistencies",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "api/route-structure",
+          "patternId": "api/route-structure/restful"
+        }
+      },
+      "confidence": {
+        "frequency": 0.02,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 2,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "autogpt_platform/autogpt_libs/autogpt_libs/auth/dependencies_test.py",
+          "line": 30,
+          "column": 10,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "autogpt_platform/autogpt_libs/autogpt_libs/auth/helpers_test.py",
+          "line": 24,
+          "column": 6,
+          "isOutlier": false,
+          "confidence": 1
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-28T23:51:44.741Z",
+        "lastSeen": "2026-01-28T23:55:05.155Z",
+        "source": "auto-detected",
+        "tags": [
+          "api",
+          "route-structure"
+        ],
+        "approvedAt": "2026-01-28T23:55:05.155Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "bd890c974b55f81f",
+      "subcategory": "route-structure",
+      "name": "Route Structure Detector",
+      "description": "Detects route URL structure patterns and flags inconsistencies",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "api/route-structure",
+          "patternId": "api/route-structure/restful-route"
+        }
+      },
+      "confidence": {
+        "frequency": 0.08,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 8,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "autogpt_platform/backend/backend/api/external/fastapi_app.py",
+          "line": 16,
+          "column": 47,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "autogpt_platform/backend/backend/api/features/chat/tools/agent_generator/service.py",
+          "line": 81,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "autogpt_platform/backend/backend/api/features/executions/review/review_routes_test.py",
+          "line": 79,
+          "column": 33,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "autogpt_platform/backend/backend/api/features/oauth_test.py",
+          "line": 179,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "autogpt_platform/backend/backend/api/middleware/security.py",
+          "line": 23,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "autogpt_platform/backend/backend/api/middleware/security_test.py",
+          "line": 15,
+          "column": 14,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "autogpt_platform/backend/backend/api/rest_api.py",
+          "line": 267,
+          "column": 12,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "autogpt_platform/backend/backend/blocks/youtube.py",
+          "line": 112,
+          "column": 39,
+          "isOutlier": false,
+          "confidence": 1
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-28T23:50:57.341Z",
+        "lastSeen": "2026-01-28T23:55:05.180Z",
+        "source": "auto-detected",
+        "tags": [
+          "api",
+          "route-structure"
+        ],
+        "approvedAt": "2026-01-28T23:55:05.180Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "36793e790aa12cc5",
+      "subcategory": "route-structure",
+      "name": "Route Structure Detector",
+      "description": "Detects route URL structure patterns and flags inconsistencies",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "api/route-structure",
+          "patternId": "api/route-structure/express-route"
+        }
+      },
+      "confidence": {
+        "frequency": 0.02,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 2,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "autogpt_platform/autogpt_libs/autogpt_libs/auth/dependencies_test.py",
+          "line": 30,
+          "column": 10,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "autogpt_platform/autogpt_libs/autogpt_libs/auth/helpers_test.py",
+          "line": 24,
+          "column": 6,
+          "isOutlier": false,
+          "confidence": 1
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-28T23:51:44.741Z",
+        "lastSeen": "2026-01-28T23:55:05.205Z",
+        "source": "auto-detected",
+        "tags": [
+          "api",
+          "route-structure"
+        ],
+        "approvedAt": "2026-01-28T23:55:05.205Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "68d4915ed7bd7c21",
+      "subcategory": "http-methods",
+      "name": "HTTP Methods Detector",
+      "description": "Detects HTTP method usage patterns and flags RESTful convention violations",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "api/http-methods",
+          "patternId": "api/http-methods/express-handler"
+        }
+      },
+      "confidence": {
+        "frequency": 0.02,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 2,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "autogpt_platform/autogpt_libs/autogpt_libs/auth/dependencies_test.py",
+          "line": 30,
+          "column": 10,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "autogpt_platform/autogpt_libs/autogpt_libs/auth/helpers_test.py",
+          "line": 24,
+          "column": 6,
+          "isOutlier": false,
+          "confidence": 1
+        }
+      ],
+      "outliers": [
+        {
+          "file": "autogpt_platform/autogpt_libs/autogpt_libs/auth/helpers_test.py",
+          "line": 272,
+          "column": 6,
+          "reason": "Inconsistent HTTP method for update operation. Most update operations use PUT.",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "autogpt_platform/autogpt_libs/autogpt_libs/auth/helpers_test.py",
+          "line": 272,
+          "column": 5,
+          "reason": "Inconsistent HTTP method for update operation. Most update operations use PUT.",
+          "deviationScore": 0.4
+        }
+      ],
+      "metadata": {
+        "firstSeen": "2026-01-28T23:51:44.741Z",
+        "lastSeen": "2026-01-28T23:55:05.231Z",
+        "source": "auto-detected",
+        "tags": [
+          "api",
+          "http-methods"
+        ],
+        "approvedAt": "2026-01-28T23:55:05.231Z"
+      },
+      "severity": "error",
+      "autoFixable": false
+    },
+    {
+      "id": "0aecaaaff0e67ee0",
+      "subcategory": "http-methods",
+      "name": "HTTP Methods Detector",
+      "description": "Detects HTTP method usage patterns and flags RESTful convention violations",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "api/http-methods",
+          "patternId": "api/http-methods/method-get"
+        }
+      },
+      "confidence": {
+        "frequency": 0.02,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 2,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "autogpt_platform/autogpt_libs/autogpt_libs/auth/dependencies_test.py",
+          "line": 30,
+          "column": 10,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "autogpt_platform/autogpt_libs/autogpt_libs/auth/helpers_test.py",
+          "line": 24,
+          "column": 6,
+          "isOutlier": false,
+          "confidence": 1
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-28T23:51:44.741Z",
+        "lastSeen": "2026-01-28T23:55:05.256Z",
+        "source": "auto-detected",
+        "tags": [
+          "api",
+          "http-methods"
+        ],
+        "approvedAt": "2026-01-28T23:55:05.256Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "af3bf89494aa49a1",
+      "subcategory": "http-methods",
+      "name": "HTTP Methods Detector",
+      "description": "Detects HTTP method usage patterns and flags RESTful convention violations",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "api/http-methods",
+          "patternId": "api/http-methods/method-post"
+        }
+      },
+      "confidence": {
+        "frequency": 0.01,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "autogpt_platform/autogpt_libs/autogpt_libs/auth/helpers_test.py",
+          "line": 73,
+          "column": 6,
+          "isOutlier": false,
+          "confidence": 1
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-28T23:51:44.741Z",
+        "lastSeen": "2026-01-28T23:55:05.280Z",
+        "source": "auto-detected",
+        "tags": [
+          "api",
+          "http-methods"
+        ],
+        "approvedAt": "2026-01-28T23:55:05.280Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "18afcc7baa1bea51",
+      "subcategory": "http-methods",
+      "name": "HTTP Methods Detector",
+      "description": "Detects HTTP method usage patterns and flags RESTful convention violations",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "api/http-methods",
+          "patternId": "api/http-methods/method-delete"
+        }
+      },
+      "confidence": {
+        "frequency": 0.01,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "autogpt_platform/autogpt_libs/autogpt_libs/auth/helpers_test.py",
+          "line": 276,
+          "column": 6,
+          "isOutlier": false,
+          "confidence": 1
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-28T23:51:44.741Z",
+        "lastSeen": "2026-01-28T23:55:05.305Z",
+        "source": "auto-detected",
+        "tags": [
+          "api",
+          "http-methods"
+        ],
+        "approvedAt": "2026-01-28T23:55:05.305Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "6cfcc5c373507f26",
+      "subcategory": "http-methods",
+      "name": "HTTP Methods Detector",
+      "description": "Detects HTTP method usage patterns and flags RESTful convention violations",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "api/http-methods",
+          "patternId": "api/http-methods/http-client"
+        }
+      },
+      "confidence": {
+        "frequency": 0.01,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "autogpt_platform/autogpt_libs/autogpt_libs/auth/dependencies_test.py",
+          "line": 202,
+          "column": 20,
+          "isOutlier": false,
+          "confidence": 1
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-28T23:51:44.741Z",
+        "lastSeen": "2026-01-28T23:55:05.330Z",
+        "source": "auto-detected",
+        "tags": [
+          "api",
+          "http-methods"
+        ],
+        "approvedAt": "2026-01-28T23:55:05.330Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "76ed03f238cacf92",
+      "subcategory": "route-structure",
+      "name": "Route Structure Detector",
+      "description": "Detects route URL structure patterns and flags inconsistencies",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "api/route-structure",
+          "patternId": "api/route-structure/versioning"
+        }
+      },
+      "confidence": {
+        "frequency": 0.07,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 7,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "autogpt_platform/backend/backend/api/features/builder/routes.py",
+          "line": 20,
+          "column": 28,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "autogpt_platform/backend/backend/api/middleware/security.py",
+          "line": 24,
+          "column": 10,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "autogpt_platform/backend/backend/api/middleware/security_test.py",
+          "line": 19,
+          "column": 15,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "autogpt_platform/backend/backend/blocks/dataforseo/_api.py",
+          "line": 59,
+          "column": 36,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "autogpt_platform/backend/backend/blocks/hubspot/engagement.py",
+          "line": 62,
+          "column": 41,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "autogpt_platform/backend/backend/blocks/wordpress/_api.py",
+          "line": 276,
+          "column": 49,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "autogpt_platform/backend/backend/cli/oauth_tool.py",
+          "line": 788,
+          "column": 66,
+          "isOutlier": false,
+          "confidence": 1
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-28T23:50:57.350Z",
+        "lastSeen": "2026-01-28T23:55:05.354Z",
+        "source": "auto-detected",
+        "tags": [
+          "api",
+          "route-structure"
+        ],
+        "approvedAt": "2026-01-28T23:55:05.354Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "405e090f159f39c1",
+      "subcategory": "route-structure",
+      "name": "Route Structure Detector",
+      "description": "Detects route URL structure patterns and flags inconsistencies",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "api/route-structure",
+          "patternId": "api/route-structure/versioned-api"
+        }
+      },
+      "confidence": {
+        "frequency": 0.07,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 7,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "autogpt_platform/backend/backend/api/features/builder/routes.py",
+          "line": 20,
+          "column": 28,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "autogpt_platform/backend/backend/api/middleware/security.py",
+          "line": 24,
+          "column": 10,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "autogpt_platform/backend/backend/api/middleware/security_test.py",
+          "line": 19,
+          "column": 15,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "autogpt_platform/backend/backend/blocks/dataforseo/_api.py",
+          "line": 59,
+          "column": 36,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "autogpt_platform/backend/backend/blocks/hubspot/engagement.py",
+          "line": 62,
+          "column": 41,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "autogpt_platform/backend/backend/blocks/wordpress/_api.py",
+          "line": 276,
+          "column": 49,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "autogpt_platform/backend/backend/cli/oauth_tool.py",
+          "line": 788,
+          "column": 66,
+          "isOutlier": false,
+          "confidence": 1
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-28T23:50:57.350Z",
+        "lastSeen": "2026-01-28T23:55:05.378Z",
+        "source": "auto-detected",
+        "tags": [
+          "api",
+          "route-structure"
+        ],
+        "approvedAt": "2026-01-28T23:55:05.378Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "b74565e0163d6036",
+      "subcategory": "http-methods",
+      "name": "HTTP Methods Detector",
+      "description": "Detects HTTP method usage patterns and flags RESTful convention violations",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "api/http-methods",
+          "patternId": "api/http-methods/method-patch"
+        }
+      },
+      "confidence": {
+        "frequency": 0.01,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "autogpt_platform/autogpt_libs/autogpt_libs/auth/helpers_test.py",
+          "line": 272,
+          "column": 6,
+          "isOutlier": false,
+          "confidence": 1
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-28T23:51:44.741Z",
+        "lastSeen": "2026-01-28T23:55:05.404Z",
+        "source": "auto-detected",
+        "tags": [
+          "api",
+          "http-methods"
+        ],
+        "approvedAt": "2026-01-28T23:55:05.404Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "29defe1b2289e179",
+      "subcategory": "response-envelope",
+      "name": "Response Envelope Detector",
+      "description": "Detects response envelope patterns and flags inconsistencies",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "api/response-envelope",
+          "patternId": "api/response-envelope/format-standard"
+        }
+      },
+      "confidence": {
+        "frequency": 0.02,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 2,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "autogpt_platform/backend/backend/api/features/store/hybrid_search.py",
+          "line": 124,
+          "column": 62,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "autogpt_platform/backend/backend/blocks/screenshotone.py",
+          "line": 156,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 1
+        }
+      ],
+      "outliers": [
+        {
+          "file": "autogpt_platform/backend/backend/api/features/store/hybrid_search.py",
+          "line": 35,
+          "column": 9,
+          "reason": "Direct array/data return without envelope wrapper",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "autogpt_platform/backend/backend/api/features/store/hybrid_search.py",
+          "line": 166,
+          "column": 9,
+          "reason": "Direct array/data return without envelope wrapper",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "autogpt_platform/backend/backend/api/features/store/hybrid_search.py",
+          "line": 448,
+          "column": 9,
+          "reason": "Direct array/data return without envelope wrapper",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "autogpt_platform/backend/backend/data/graph.py",
+          "line": 503,
+          "column": 9,
+          "reason": "Direct array/data return without envelope wrapper",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "autogpt_platform/backend/backend/data/graph.py",
+          "line": 1124,
+          "column": 5,
+          "reason": "Direct array/data return without envelope wrapper",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "autogpt_platform/backend/backend/data/graph.py",
+          "line": 1132,
+          "column": 5,
+          "reason": "Direct array/data return without envelope wrapper",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "autogpt_platform/backend/backend/data/graph.py",
+          "line": 1175,
+          "column": 9,
+          "reason": "Direct array/data return without envelope wrapper",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "autogpt_platform/backend/backend/data/graph.py",
+          "line": 1177,
+          "column": 5,
+          "reason": "Direct array/data return without envelope wrapper",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "autogpt_platform/backend/backend/data/notifications.py",
+          "line": 649,
+          "column": 9,
+          "reason": "Direct array/data return without envelope wrapper",
+          "deviationScore": 0.4
+        }
+      ],
+      "metadata": {
+        "firstSeen": "2026-01-28T23:50:57.352Z",
+        "lastSeen": "2026-01-28T23:55:05.429Z",
+        "source": "auto-detected",
+        "tags": [
+          "api",
+          "response-envelope"
+        ],
+        "approvedAt": "2026-01-28T23:55:05.429Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "76277d351faa9589",
+      "subcategory": "response-envelope",
+      "name": "Response Envelope Detector",
+      "description": "Detects response envelope patterns and flags inconsistencies",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "api/response-envelope",
+          "patternId": "api/response-envelope/pagination-offset"
+        }
+      },
+      "confidence": {
+        "frequency": 0.01,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "autogpt_platform/backend/backend/api/features/store/hybrid_search.py",
+          "line": 124,
+          "column": 62,
+          "isOutlier": false,
+          "confidence": 1
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-28T23:50:57.352Z",
+        "lastSeen": "2026-01-28T23:55:05.453Z",
+        "source": "auto-detected",
+        "tags": [
+          "api",
+          "response-envelope"
+        ],
+        "approvedAt": "2026-01-28T23:55:05.453Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "0bb42dae08b3a805",
+      "subcategory": "response-envelope",
+      "name": "Response Envelope Detector",
+      "description": "Detects response envelope patterns and flags inconsistencies",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "api/response-envelope",
+          "patternId": "api/response-envelope/pagination-metadata"
+        }
+      },
+      "confidence": {
+        "frequency": 0.01,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "autogpt_platform/backend/backend/api/features/store/hybrid_search.py",
+          "line": 124,
+          "column": 62,
+          "isOutlier": false,
+          "confidence": 1
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-28T23:50:57.352Z",
+        "lastSeen": "2026-01-28T23:55:05.478Z",
+        "source": "auto-detected",
+        "tags": [
+          "api",
+          "response-envelope"
+        ],
+        "approvedAt": "2026-01-28T23:55:05.478Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "860217c5ff341ca3",
+      "subcategory": "http-methods",
+      "name": "HTTP Methods Detector",
+      "description": "Detects HTTP method usage patterns and flags RESTful convention violations",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "api/http-methods",
+          "patternId": "api/http-methods/method-put"
+        }
+      },
+      "confidence": {
+        "frequency": 0.01,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "autogpt_platform/autogpt_libs/autogpt_libs/auth/helpers_test.py",
+          "line": 268,
+          "column": 6,
+          "isOutlier": false,
+          "confidence": 1
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-28T23:51:44.741Z",
+        "lastSeen": "2026-01-28T23:55:05.504Z",
+        "source": "auto-detected",
+        "tags": [
+          "api",
+          "http-methods"
+        ],
+        "approvedAt": "2026-01-28T23:55:05.504Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "db2118f75931e218",
+      "subcategory": "response-envelope",
+      "name": "Response Envelope Detector",
+      "description": "Detects response envelope patterns and flags inconsistencies",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "api/response-envelope",
+          "patternId": "api/response-envelope/format-custom"
+        }
+      },
+      "confidence": {
+        "frequency": 0.04,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 4,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "autogpt_platform/backend/backend/blocks/exa/websets_import_export.py",
+          "line": 247,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "autogpt_platform/backend/backend/blocks/exa/websets_monitor.py",
+          "line": 263,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "autogpt_platform/backend/backend/data/graph.py",
+          "line": 333,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "autogpt_platform/backend/backend/data/notifications.py",
+          "line": 263,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 1
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-28T23:50:57.353Z",
+        "lastSeen": "2026-01-28T23:55:05.528Z",
+        "source": "auto-detected",
+        "tags": [
+          "api",
+          "response-envelope"
+        ],
+        "approvedAt": "2026-01-28T23:55:05.528Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "b48e3c2599d51f03",
+      "subcategory": "response-envelope",
+      "name": "Response Envelope Detector",
+      "description": "Detects response envelope patterns and flags inconsistencies",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "api/response-envelope",
+          "patternId": "api/response-envelope/envelope-structure"
+        }
+      },
+      "confidence": {
+        "frequency": 0.05,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 5,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "autogpt_platform/backend/backend/blocks/exa/websets_import_export.py",
+          "line": 247,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "autogpt_platform/backend/backend/blocks/exa/websets_monitor.py",
+          "line": 263,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "autogpt_platform/backend/backend/blocks/screenshotone.py",
+          "line": 156,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "autogpt_platform/backend/backend/data/graph.py",
+          "line": 333,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "autogpt_platform/backend/backend/data/notifications.py",
+          "line": 263,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 1
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-28T23:50:57.353Z",
+        "lastSeen": "2026-01-28T23:55:05.552Z",
+        "source": "auto-detected",
+        "tags": [
+          "api",
+          "response-envelope"
+        ],
+        "approvedAt": "2026-01-28T23:55:05.552Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "04bd68543dab5e1f",
+      "subcategory": "http-methods",
+      "name": "HTTP Methods Detector",
+      "description": "Detects HTTP method usage patterns and flags RESTful convention violations",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "api/http-methods",
+          "patternId": "api/http-methods/fetch-api"
+        }
+      },
+      "confidence": {
+        "frequency": 0.01,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "autogpt_platform/backend/backend/cli/oauth_tool.py",
+          "line": 688,
+          "column": 36,
+          "isOutlier": false,
+          "confidence": 1
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-28T23:50:57.353Z",
+        "lastSeen": "2026-01-28T23:55:05.577Z",
+        "source": "auto-detected",
+        "tags": [
+          "api",
+          "http-methods"
+        ],
+        "approvedAt": "2026-01-28T23:55:05.577Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    }
+  ],
+  "lastUpdated": "2026-01-28T23:55:21.057Z",
+  "checksum": "a8efae6bf4538be7"
+}
