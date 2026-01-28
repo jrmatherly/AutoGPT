@@ -108,16 +108,18 @@ drift files src/api/
 
 ```bash
 # Approve specific pattern
-drift approve api-rest-controller
+drift approve <pattern-id>
 
 # Approve all in category
-drift approve --category api
+drift approve --category api --yes
+drift approve --category auth --yes
+drift approve --category security --yes
 
-# Approve high-confidence patterns
-drift approve --min-confidence 0.9
+# Approve ALL patterns (use with caution)
+drift approve all --yes
 
 # Ignore a pattern (e.g., legacy code)
-drift ignore legacy-pattern --reason "Legacy code"
+drift ignore <pattern-id> --reason "Legacy code"
 ```
 
 ### 4. Continuous Validation
