@@ -151,22 +151,22 @@ jobs:
           echo "Waiting for ClamAV daemon to start..."
           max_attempts=60
           attempt=0
-          
+
           until nc -z localhost 3310 || [ $attempt -eq $max_attempts ]; do
             echo "ClamAV is unavailable - sleeping (attempt $((attempt+1))/$max_attempts)"
             sleep 5
             attempt=$((attempt+1))
           done
-          
+
           if [ $attempt -eq $max_attempts ]; then
             echo "ClamAV failed to start after $((max_attempts*5)) seconds"
             echo "Checking ClamAV service logs..."
             docker logs $(docker ps -q --filter "ancestor=clamav/clamav-debian:latest") 2>&1 | tail -50 || echo "No ClamAV container found"
             exit 1
           fi
-          
+
           echo "ClamAV is ready!"
-          
+
           # Verify ClamAV is responsive
           echo "Testing ClamAV connection..."
           timeout 10 bash -c 'echo "PING" | nc localhost 3310' || {

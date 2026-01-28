@@ -1,0 +1,219 @@
+{
+  "name": "AutoGPT",
+  "generated": "2026-01-28",
+  "versions": {
+    "backend": "0.6.22",
+    "frontend": "0.3.4"
+  },
+  "description": "A platform for building, deploying, and managing AI agents that automate complex workflows",
+  "license": {
+    "platform": "Polyform Shield License",
+    "classic": "MIT License"
+  },
+  "structure": {
+    "autogpt_platform": {
+      "path": "autogpt_platform/",
+      "description": "Modern platform",
+      "components": {
+        "backend": {
+          "path": "backend/",
+          "language": "Python",
+          "framework": "FastAPI",
+          "package_manager": "Poetry"
+        },
+        "frontend": {
+          "path": "frontend/",
+          "language": "TypeScript",
+          "framework": "Next.js 15",
+          "package_manager": "pnpm"
+        },
+        "autogpt_libs": {
+          "path": "autogpt_libs/",
+          "description": "Shared Python libraries"
+        }
+      }
+    },
+    "classic": {
+      "path": "classic/",
+      "description": "Legacy components",
+      "components": {
+        "original_autogpt": "Original standalone agent",
+        "forge": "Agent building toolkit",
+        "benchmark": "Agent testing framework"
+      }
+    }
+  },
+  "entry_points": {
+    "backend_server": {
+      "path": "autogpt_platform/backend/backend/app.py",
+      "command": "poetry run serve"
+    },
+    "rest_api": {
+      "path": "autogpt_platform/backend/backend/rest.py",
+      "command": "poetry run rest"
+    },
+    "websocket": {
+      "path": "autogpt_platform/backend/backend/ws.py",
+      "command": "poetry run ws"
+    },
+    "executor": {
+      "path": "autogpt_platform/backend/backend/exec.py",
+      "command": "poetry run executor"
+    },
+    "scheduler": {
+      "path": "autogpt_platform/backend/backend/scheduler.py",
+      "command": "poetry run scheduler"
+    },
+    "frontend": {
+      "path": "autogpt_platform/frontend/",
+      "command": "pnpm dev"
+    },
+    "cli": {
+      "path": "autogpt_platform/backend/backend/cli.py",
+      "command": "poetry run cli"
+    }
+  },
+  "backend_modules": {
+    "blocks": {
+      "path": "backend/blocks/",
+      "file_count": 224,
+      "integration_count": 32,
+      "purpose": "Workflow building blocks"
+    },
+    "api": {
+      "path": "backend/api/features/",
+      "features": [
+        "library",
+        "builder",
+        "store",
+        "executions",
+        "integrations",
+        "chat",
+        "admin",
+        "otto",
+        "postmark"
+      ],
+      "purpose": "REST API endpoints"
+    },
+    "data": {
+      "path": "backend/data/",
+      "purpose": "Data models, Prisma ORM"
+    },
+    "executor": {
+      "path": "backend/executor/",
+      "purpose": "Workflow execution engine"
+    },
+    "integrations": {
+      "path": "backend/integrations/",
+      "purpose": "OAuth, webhooks, credentials"
+    },
+    "util": {
+      "path": "backend/util/",
+      "purpose": "Utilities, settings, caching"
+    }
+  },
+  "frontend_modules": {
+    "app": {
+      "path": "src/app/(platform)/",
+      "page_count": 44,
+      "purpose": "Platform routes"
+    },
+    "components": {
+      "path": "src/components/",
+      "levels": ["atoms", "molecules", "organisms"],
+      "purpose": "Design system"
+    },
+    "api_generated": {
+      "path": "src/app/api/__generated__/",
+      "purpose": "Type-safe API client"
+    }
+  },
+  "block_categories": {
+    "social_media": ["twitter", "discord", "reddit", "ayrshare"],
+    "productivity": [
+      "google",
+      "notion",
+      "airtable",
+      "todoist",
+      "linear",
+      "hubspot"
+    ],
+    "ai_llm": ["llm", "perplexity", "claude_code", "replicate", "fal"],
+    "developer": ["github", "firecrawl", "exa"],
+    "media": ["ai_image_generator", "ai_shortform_video", "text_to_speech"],
+    "sales_crm": ["hubspot", "apollo", "smartlead"],
+    "core": ["http", "basic", "text", "iteration", "branching", "persistence"]
+  },
+  "configuration_files": {
+    "docker_compose": "autogpt_platform/docker-compose.yml",
+    "prisma_schema": "autogpt_platform/backend/schema.prisma",
+    "backend_deps": "autogpt_platform/backend/pyproject.toml",
+    "frontend_deps": "autogpt_platform/frontend/package.json",
+    "api_generation": "autogpt_platform/frontend/orval.config.ts",
+    "pre_commit": ".pre-commit-config.yaml",
+    "ai_guide": "autogpt_platform/CLAUDE.md"
+  },
+  "testing": {
+    "backend": {
+      "test_files": 61,
+      "pattern": "*_test.py",
+      "command": "poetry run test"
+    },
+    "frontend": {
+      "story_files": 57,
+      "e2e_framework": "Playwright",
+      "commands": {
+        "e2e": "pnpm test",
+        "storybook": "pnpm storybook"
+      }
+    }
+  },
+  "dependencies": {
+    "backend": {
+      "fastapi": "Web framework",
+      "prisma": "Database ORM",
+      "pika": "RabbitMQ client",
+      "anthropic": "Claude API",
+      "openai": "OpenAI API",
+      "supabase": "Authentication"
+    },
+    "frontend": {
+      "next": "React framework (15.x)",
+      "@tanstack/react-query": "Server state",
+      "@xyflow/react": "Workflow editor",
+      "tailwindcss": "Styling",
+      "orval": "API client generation"
+    }
+  },
+  "urls": {
+    "frontend_dev": "http://localhost:3000",
+    "backend_api": "http://localhost:8000",
+    "openapi_docs": "http://localhost:8000/docs",
+    "openapi_prod": "https://backend.agpt.co/openapi.json",
+    "openapi_staging": "https://dev-server.agpt.co/openapi.json"
+  },
+  "commands": {
+    "setup": {
+      "infrastructure": "cd autogpt_platform && docker compose up -d",
+      "backend": "cd backend && poetry install && poetry run prisma migrate dev",
+      "frontend": "cd frontend && pnpm i && pnpm generate:api"
+    },
+    "run": {
+      "backend": "poetry run serve",
+      "frontend": "pnpm dev"
+    },
+    "test": {
+      "backend": "poetry run test",
+      "frontend": "pnpm test"
+    },
+    "format": {
+      "backend": "poetry run format",
+      "frontend": "pnpm format"
+    },
+    "lint": {
+      "backend": "poetry run lint",
+      "frontend": "pnpm lint"
+    },
+    "generate_api": "pnpm generate:api"
+  }
+}

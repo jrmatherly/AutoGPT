@@ -6,14 +6,14 @@ on:
       block_pattern:
         description: 'Block file pattern to enhance (e.g., "google/*.md" or "*" for all blocks)'
         required: true
-        default: '*'
+        default: "*"
         type: string
       dry_run:
-        description: 'Dry run mode - show proposed changes without committing'
+        description: "Dry run mode - show proposed changes without committing"
         type: boolean
         default: true
       max_blocks:
-        description: 'Maximum number of blocks to process (0 for unlimited)'
+        description: "Maximum number of blocks to process (0 for unlimited)"
         type: number
         default: 10
 

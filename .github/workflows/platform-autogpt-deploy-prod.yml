@@ -6,8 +6,8 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: 'read'
-  id-token: 'write'
+  contents: "read"
+  id-token: "write"
 
 jobs:
   migrate:
@@ -24,7 +24,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: "3.11"
 
       - name: Install Python dependencies
         run: |
@@ -38,7 +38,6 @@ jobs:
         env:
           DATABASE_URL: ${{ secrets.BACKEND_DATABASE_URL }}
           DIRECT_URL: ${{ secrets.BACKEND_DATABASE_URL }}
-
 
   trigger:
     needs: migrate

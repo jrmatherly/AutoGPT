@@ -12,17 +12,17 @@ This Code of Conduct applies to all contributors, maintainers, and users of the 
 
 We encourage the following behavior:
 
-* Being respectful and considerate to others
-* Actively seeking diverse perspectives
-* Providing constructive feedback and assistance
-* Demonstrating empathy and understanding
+- Being respectful and considerate to others
+- Actively seeking diverse perspectives
+- Providing constructive feedback and assistance
+- Demonstrating empathy and understanding
 
 We discourage the following behavior:
 
-* Harassment or discrimination of any kind
-* Disrespectful, offensive, or inappropriate language or content
-* Personal attacks or insults
-* Unwarranted criticism or negativity
+- Harassment or discrimination of any kind
+- Disrespectful, offensive, or inappropriate language or content
+- Personal attacks or insults
+- Unwarranted criticism or negativity
 
 ## 4. Reporting and Enforcement
 

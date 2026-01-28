@@ -17,7 +17,6 @@
     {
       "name": "Frontend: Full Stack",
       "type": "node-terminal",
-
       "request": "launch",
       "command": "pnpm dev",
       "cwd": "${workspaceFolder}/autogpt_platform/frontend",
@@ -55,7 +54,10 @@
   "compounds": [
     {
       "name": "Everything",
-      "configurations": ["Backend", "Frontend: Full Stack"],
+      "configurations": [
+        "Backend",
+        "Frontend: Full Stack"
+      ],
       // "preLaunchTask": "${defaultBuildTask}",
       "stopAll": true,
       "presentation": {

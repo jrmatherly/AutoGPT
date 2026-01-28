@@ -24,26 +24,26 @@ jobs:
             const commentUser = context.payload.comment.user.login;
             const prAuthor = context.payload.issue.user.login;
             const authorAssociation = context.payload.comment.author_association;
-            
+
             // Check permissions
             const hasPermission = (
               authorAssociation === 'OWNER' ||
               authorAssociation === 'MEMBER' ||
               authorAssociation === 'COLLABORATOR'
             );
-            
+
             core.setOutput('comment_body', commentBody);
             core.setOutput('has_permission', hasPermission);
-            
+
             if (!hasPermission && (commentBody === '!deploy' || commentBody === '!undeploy')) {
               core.setOutput('permission_denied', 'true');
               return;
             }
-            
+
             if (commentBody !== '!deploy' && commentBody !== '!undeploy') {
               return;
             }
-            
+
             // Process deploy command
             if (commentBody === '!deploy') {
               core.setOutput('should_deploy', 'true');
@@ -79,7 +79,7 @@ jobs:
             core.setOutput('pr_number', pr.data.number);
             core.setOutput('pr_title', pr.data.title);
             core.setOutput('pr_state', pr.data.state);
-          
+
       - name: Dispatch Deploy Event
         if: steps.check_status.outputs.should_deploy == 'true'
         uses: peter-evans/repository-dispatch@v3
@@ -147,10 +147,10 @@ jobs:
               repo: context.repo.repo,
               issue_number: context.issue.number
             });
-            
+
             let lastDeployIndex = -1;
             let lastUndeployIndex = -1;
-            
+
             comments.data.forEach((comment, index) => {
               if (comment.body.trim() === '!deploy') {
                 lastDeployIndex = index;
@@ -158,11 +158,11 @@ jobs:
                 lastUndeployIndex = index;
               }
             });
-            
+
             // Should undeploy if there's a !deploy without a subsequent !undeploy
             const shouldUndeploy = lastDeployIndex !== -1 && lastDeployIndex > lastUndeployIndex;
             core.setOutput('should_undeploy', shouldUndeploy);
-            
+
       - name: Dispatch Undeploy Event (PR closed with active deployment)
         if: >-
           github.event_name == 'pull_request' &&

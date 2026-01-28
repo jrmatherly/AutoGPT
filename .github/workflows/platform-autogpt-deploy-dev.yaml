@@ -2,20 +2,20 @@ name: AutoGPT Platform - Deploy Dev Environment
 
 on:
   push:
-    branches: [ dev ]
+    branches: [dev]
     paths:
-      - 'autogpt_platform/**'
+      - "autogpt_platform/**"
   workflow_dispatch:
     inputs:
       git_ref:
-        description: 'Git ref (branch/tag) of AutoGPT to deploy'
+        description: "Git ref (branch/tag) of AutoGPT to deploy"
         required: true
-        default: 'master'
+        default: "master"
         type: string
 
 permissions:
-  contents: 'read'
-  id-token: 'write'
+  contents: "read"
+  id-token: "write"
 
 jobs:
   migrate:
@@ -32,7 +32,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: "3.11"
 
       - name: Install Python dependencies
         run: |

@@ -2,6 +2,14 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+## Quick Start Resources
+
+For comprehensive documentation, see:
+- **[PROJECT_INDEX.json](../PROJECT_INDEX.json)** - Machine-readable project index for quick context loading
+- **[docs/ARCHITECTURE.md](../docs/ARCHITECTURE.md)** - System architecture with Mermaid diagrams
+- **[docs/API_REFERENCE.md](../docs/API_REFERENCE.md)** - Complete REST/WebSocket API documentation
+- **[docs/BLOCK_SDK.md](../docs/BLOCK_SDK.md)** - Comprehensive block creation guide
+
 ## Repository Overview
 
 AutoGPT Platform is a monorepo containing:
@@ -240,7 +248,7 @@ See `/frontend/CONTRIBUTING.md` for complete patterns. Quick reference:
 
 ### Creating Pull Requests
 
-- Create the PR aginst the `dev` branch of the repository.
+- Create the PR against the `dev` branch of the repository.
 - Ensure the branch name is descriptive (e.g., `feature/add-new-block`)/
 - Use conventional commit messages (see below)/
 - Fill out the .github/PULL_REQUEST_TEMPLATE.md template as the PR description/

@@ -36,7 +36,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.11"  # Use standard version matching CI
+          python-version: "3.11" # Use standard version matching CI
 
       - name: Set up Python dependency cache
         uses: actions/cache@v4
@@ -50,10 +50,10 @@ jobs:
           cd autogpt_platform/backend
           HEAD_POETRY_VERSION=$(python3 ../../.github/workflows/scripts/get_package_version_from_lockfile.py poetry)
           echo "Found Poetry version ${HEAD_POETRY_VERSION} in backend/poetry.lock"
-          
+
           # Install Poetry
           curl -sSL https://install.python-poetry.org | POETRY_VERSION=$HEAD_POETRY_VERSION python3 -
-          
+
           # Add Poetry to PATH
           echo "$HOME/.local/bin" >> $GITHUB_PATH
 
@@ -145,7 +145,7 @@ jobs:
         working-directory: autogpt_platform
         run: |
           mkdir -p ~/docker-cache
-          
+
           # Define image list for easy maintenance
           IMAGES=(
             "redis:latest"
@@ -158,7 +158,7 @@ jobs:
             "supabase/postgres-meta:v0.86.1"
             "supabase/studio:20250224-d10db0f"
           )
-          
+
           # Check if any cached tar files exist (more reliable than cache-hit)
           if ls ~/docker-cache/*.tar 1> /dev/null 2>&1; then
             echo "Docker cache found, loading images in parallel..."
@@ -195,7 +195,7 @@ jobs:
               echo "Skipping cache save for PR/feature branch"
             fi
           fi
-          
+
           echo "Docker images ready for use"
 
       # Phase 2: Build migrate service with GitHub Actions cache
@@ -219,18 +219,18 @@ jobs:
           # Start essential services (migrate image already built with correct tag)
           docker compose --profile local up deps --no-build --detach
           echo "Waiting for services to be ready..."
-          
+
           # Wait for database to be ready
           echo "Checking database readiness..."
           timeout 30 sh -c 'until docker compose exec -T db pg_isready -U postgres 2>/dev/null; do 
             echo "  Waiting for database..."
             sleep 2
           done' && echo "✅ Database is ready" || echo "⚠️ Database ready check timeout after 30s, continuing..."
-          
+
           # Check migrate service status
           echo "Checking migration status..."
           docker compose ps migrate || echo "  Migrate service not visible in ps output"
-          
+
           # Wait for migrate service to complete
           echo "Waiting for migrations to complete..."
           timeout 30 bash -c '
@@ -268,7 +268,7 @@ jobs:
             echo "Migration logs (if available):"
             docker compose logs migrate --tail=10 2>/dev/null || echo "  No logs available"
           ' || echo "⚠️ Migration check completed with warnings, continuing..."
-          
+
           # Brief wait for other services to stabilize
           echo "Waiting 5 seconds for other services to stabilize..."
           sleep 5
@@ -279,33 +279,33 @@ jobs:
           echo "=== Python Setup ==="
           python --version
           poetry --version
-          
+
           echo "=== Node.js Setup ==="
           node --version
           pnpm --version
-          
+
           echo "=== Additional Tools ==="
           docker --version
           docker compose version
           gh --version || true
-          
+
           echo "=== Services Status ==="
           cd autogpt_platform
           docker compose ps || true
-          
+
           echo "=== Backend Dependencies ==="
           cd backend
           poetry show | head -10 || true
-          
+
           echo "=== Frontend Dependencies ==="
           cd ../frontend
           pnpm list --depth=0 | head -10 || true
-          
+
           echo "=== Environment Files ==="
           ls -la ../.env* || true
           ls -la .env* || true
           ls -la ../backend/.env* || true
-          
+
           echo "✅ AutoGPT Platform development environment setup complete!"
           echo "🚀 Ready for development with Docker services running"
           echo "📝 Backend server: poetry run serve (port 8000)"
