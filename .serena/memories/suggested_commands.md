@@ -82,22 +82,6 @@ pnpm format                       # Auto-fix formatting
 pnpm types                        # TypeScript type checking
 ```
 
-## Classic AutoGPT (classic/)
-
-### Setup & Run
-```bash
-./run setup                       # Install dependencies
-./run agent start <agent>         # Start an agent
-./run benchmark                   # Run benchmarks
-```
-
-### Individual Projects
-```bash
-cd classic/original_autogpt && poetry install
-cd classic/forge && poetry install
-cd classic/benchmark && poetry install
-```
-
 ## Docker Commands
 
 ### Platform Stack

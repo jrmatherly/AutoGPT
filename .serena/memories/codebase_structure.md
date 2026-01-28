@@ -4,7 +4,6 @@
 ```
 AutoGPT/
 ├── autogpt_platform/     # Modern platform (Polyform Shield License)
-├── classic/              # Legacy components (MIT License)
 ├── docs/                 # Documentation
 ├── assets/               # Project assets
 ├── .github/              # GitHub workflows and templates
@@ -88,41 +87,6 @@ autogpt_libs/
 ```
 db/
 └── docker/               # Docker configuration for database
-```
-
-## Classic AutoGPT (`classic/`)
-
-### Original AutoGPT (`original_autogpt/`)
-```
-original_autogpt/
-├── autogpt/              # Core AutoGPT agent
-│   ├── agents/           # Agent implementations
-│   ├── commands/         # Agent commands
-│   └── ...
-├── scripts/              # Utility scripts
-├── tests/                # Test files
-└── pyproject.toml
-```
-
-### Forge (`forge/`)
-```
-forge/
-├── forge/
-│   ├── components/       # Reusable agent components
-│   ├── llm/              # LLM provider integrations
-│   └── ...
-├── tutorials/            # Getting started guides
-└── pyproject.toml
-```
-
-### Benchmark (`benchmark/`)
-```
-benchmark/
-├── agbenchmark/
-│   ├── challenges/       # Test challenges
-│   └── ...
-├── frontend/             # Benchmark UI
-└── pyproject.toml
 ```
 
 ## Key Files

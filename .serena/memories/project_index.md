@@ -6,7 +6,7 @@
 |---------|------|-------------|
 | [Platform Backend](#platform-backend) | `autogpt_platform/backend/` | FastAPI server, blocks, API |
 | [Platform Frontend](#platform-frontend) | `autogpt_platform/frontend/` | Next.js React app |
-| [Classic AutoGPT](#classic-autogpt) | `classic/` | Original agent and tools |
+
 
 ---
 
@@ -182,24 +182,6 @@ components/
 | `src/services/` | Business services (feature flags) |
 | `tests/` | Playwright E2E tests |
 | `.storybook/` | Storybook configuration |
-
----
-
-## Classic AutoGPT
-
-### Original AutoGPT (`classic/original_autogpt/`)
-The standalone AI agent with autonomous capabilities.
-- `autogpt/agents/` - Agent implementations
-- `autogpt/commands/` - Available commands
-
-### Forge (`classic/forge/`)
-Toolkit for building custom agents.
-- `forge/components/` - Reusable components
-- `forge/llm/` - LLM provider integrations
-
-### Benchmark (`classic/benchmark/`)
-Testing framework for agent evaluation.
-- `agbenchmark/challenges/` - Test challenges
 
 ---
 

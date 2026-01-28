@@ -17,14 +17,7 @@ The modern, actively developed platform with:
 
 Licensed under **Polyform Shield License**.
 
-### 2. Classic AutoGPT (`classic/`)
-The original/legacy components:
-- **original_autogpt**: The original standalone AutoGPT agent
-- **forge**: Toolkit for building custom agent applications
-- **benchmark** (`agbenchmark`): Testing framework for agents
-- **frontend**: Classic GUI interface
 
-Licensed under **MIT License**.
 
 ## Tech Stack
 
@@ -49,11 +42,6 @@ Licensed under **MIT License**.
 - **Testing**: Playwright for E2E, Storybook for components, Vitest for units
 - **Package Manager**: pnpm (v10.20.0+)
 - **Node**: 22.x
-
-### Classic Components
-- Python with Poetry
-- Flutter (mobile frontend)
-- Various LLM provider integrations
 
 ## Key Concepts
 
