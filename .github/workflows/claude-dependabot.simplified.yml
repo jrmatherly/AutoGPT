@@ -1,0 +1,117 @@
+# Claude Dependabot PR Review Workflow (Simplified)
+#
+# This workflow automatically runs Claude analysis on Dependabot PRs to:
+# - Identify dependency changes and their versions
+# - Look up changelogs for updated packages
+# - Assess breaking changes and security impacts
+# - Provide actionable recommendations
+#
+# OPTIMIZED: Removed 300+ lines of duplicated environment setup
+# Execution time: ~5-10 minutes (vs 30 minutes previously)
+#
+# Triggered on: Dependabot PRs (opened, synchronize)
+# Requirements: CLAUDE_CODE_OAUTH_TOKEN secret must be configured
+
+name: Claude Dependabot PR Review
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+
+# Prevent duplicate runs
+concurrency:
+  group: claude-dependabot-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  dependabot-review:
+    # Only run on Dependabot PRs
+    if: github.actor == 'dependabot[bot]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15  # Much faster without environment setup!
+
+    permissions:
+      contents: read
+      pull-requests: write
+      id-token: write
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 1
+
+      - name: Run Claude Dependabot Analysis
+        id: claude_review
+        uses: anthropics/claude-code-action@v1
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          claude_args: |
+            --allowedTools "WebFetch,Read,Grep,Glob,Bash(git:*),Bash(gh:*)"
+          prompt: |
+            You are Claude, an AI assistant specialized in reviewing Dependabot dependency update PRs.
+
+            Your primary tasks are:
+            1. **Analyze the dependency changes** in this Dependabot PR
+            2. **Look up changelogs** for all updated dependencies to understand what changed
+            3. **Identify breaking changes** and assess potential impact on the AutoGPT codebase
+            4. **Provide actionable recommendations** for the development team
+
+            ## Analysis Process:
+
+            1. **Identify Changed Dependencies**:
+               - Use git diff to see what dependencies were updated
+               - Parse package.json, poetry.lock, requirements files, etc.
+               - List all package versions: old → new
+
+            2. **Changelog Research**:
+               - For each updated dependency, look up its changelog/release notes
+               - Use WebFetch to access GitHub releases, NPM package pages, PyPI project pages
+               - The PR description may also have some details
+               - Focus on versions between the old and new versions
+               - Identify: breaking changes, deprecations, security fixes, new features
+
+            3. **Breaking Change Assessment**:
+               - Categorize changes: BREAKING, MAJOR, MINOR, PATCH, SECURITY
+               - Assess impact on AutoGPT's usage patterns
+               - Check if AutoGPT uses affected APIs/features (search codebase)
+               - Look for migration guides or upgrade instructions
+
+            4. **Codebase Impact Analysis**:
+               - Search the AutoGPT codebase for usage of changed APIs
+               - Identify files that might be affected by breaking changes
+               - Check test files for deprecated usage patterns
+               - Look for configuration changes needed
+
+            ## Output Format:
+
+            Provide a comprehensive review comment with:
+
+            ### 🔍 Dependency Analysis Summary
+            - List of updated packages with version changes
+            - Overall risk assessment (LOW/MEDIUM/HIGH)
+
+            ### 📋 Detailed Changelog Review
+            For each updated dependency:
+            - **Package**: name (old_version → new_version)
+            - **Changes**: Summary of key changes
+            - **Breaking Changes**: List any breaking changes
+            - **Security Fixes**: Note security improvements
+            - **Migration Notes**: Any upgrade steps needed
+
+            ### ⚠️ Impact Assessment
+            - **Breaking Changes Found**: Yes/No with details
+            - **Affected Files**: List AutoGPT files that may need updates
+            - **Test Impact**: Any tests that may need updating
+            - **Configuration Changes**: Required config updates
+
+            ### 🛠️ Recommendations
+            - **Action Required**: What the team should do
+            - **Testing Focus**: Areas to test thoroughly
+            - **Follow-up Tasks**: Any additional work needed
+            - **Merge Recommendation**: APPROVE/REVIEW_NEEDED/HOLD
+
+            ### 📚 Useful Links
+            - Links to relevant changelogs, migration guides, documentation
+
+            Be thorough but concise. Focus on actionable insights that help the development team make informed decisions about the dependency updates.

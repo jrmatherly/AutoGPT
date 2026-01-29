@@ -1,17 +1,177 @@
+# =============================================================================
+# Enhanced GitHub Labeler Configuration
+# Version: 2.0 (2026-01-29)
+# Action: actions/labeler@v6
+#
+# This file defines automatic label assignment rules for pull requests based on:
+# - Changed file paths (using glob patterns)
+# - Branch names (using regex patterns)
+#
+# Reference: https://github.com/actions/labeler
+# =============================================================================
+
+# =============================================================================
+# Platform Components
+# =============================================================================
 documentation:
   - changed-files:
-      - any-glob-to-any-file: docs/**
+      - any-glob-to-any-file:
+          - "docs/**"
+          - "**/*.md"
+          - "**/CLAUDE.md"
+          - "**/README.md"
 
 platform/frontend:
   - changed-files:
-      - any-glob-to-any-file: autogpt_platform/frontend/**
+      - any-glob-to-any-file: "autogpt_platform/frontend/**"
 
 platform/backend:
   - changed-files:
       - all-globs-to-any-file:
-          - autogpt_platform/backend/**
+          - "autogpt_platform/backend/**"
           - "!autogpt_platform/backend/backend/blocks/**"
 
 platform/blocks:
   - changed-files:
-      - any-glob-to-any-file: autogpt_platform/backend/backend/blocks/**
+      - any-glob-to-any-file: "autogpt_platform/backend/backend/blocks/**"
+
+platform/libs:
+  - changed-files:
+      - any-glob-to-any-file: "autogpt_platform/autogpt_libs/**"
+
+# =============================================================================
+# Branch-Based Labels
+# =============================================================================
+feature:
+  - head-branch: ["^feature/", "feature"]
+
+bugfix:
+  - head-branch: ["^bugfix/", "^fix/"]
+
+hotfix:
+  - head-branch: ["^hotfix/"]
+
+release:
+  - head-branch: ["^release/"]
+
+# =============================================================================
+# Infrastructure & Tooling
+# =============================================================================
+ci/cd:
+  - changed-files:
+      - any-glob-to-any-file:
+          - ".github/workflows/**"
+          - ".github/dependabot.yml"
+          - ".github/labeler.yml"
+          - ".github/actions/**"
+
+infrastructure:
+  - changed-files:
+      - any-glob-to-any-file:
+          - "autogpt_platform/infra/**"
+          - "docker-compose*.yml"
+          - "Dockerfile*"
+          - "**/Dockerfile*"
+          - ".dockerignore"
+
+mise/tooling:
+  - changed-files:
+      - any-glob-to-any-file:
+          - "mise.toml"
+          - "**/mise.toml"
+          - "mise.lock"
+          - ".mise/**"
+          - ".tool-versions"
+
+# =============================================================================
+# Dependencies
+# =============================================================================
+dependencies:
+  - head-branch: ["^dependabot/"]
+
+dependencies/python:
+  - changed-files:
+      - any-glob-to-any-file:
+          - "**/poetry.lock"
+          - "**/pyproject.toml"
+          - "**/requirements*.txt"
+
+dependencies/node:
+  - changed-files:
+      - any-glob-to-any-file:
+          - "**/pnpm-lock.yaml"
+          - "**/package.json"
+          - "**/package-lock.json"
+
+dependencies/docker:
+  - changed-files:
+      - any-glob-to-any-file:
+          - "docker-compose*.yml"
+          - "Dockerfile*"
+
+# =============================================================================
+# Code Categories
+# =============================================================================
+tests:
+  - changed-files:
+      - any-glob-to-any-file:
+          - "**/test/**"
+          - "**/tests/**"
+          - "**/*test*.py"
+          - "**/*.spec.ts"
+          - "**/*.test.ts"
+          - "**/*.test.tsx"
+          - "**/playwright/**"
+          - "pytest.ini"
+          - "vitest.config.ts"
+
+configuration:
+  - changed-files:
+      - any-glob-to-any-file:
+          - "**/*.toml"
+          - "**/*.yaml"
+          - "**/*.yml"
+          - "!.github/workflows/**"
+          - "**/tsconfig*.json"
+          - "**/.eslintrc*"
+          - "**/.prettierrc*"
+          - "**/ruff.toml"
+          - "**/.env.example"
+
+database:
+  - changed-files:
+      - any-glob-to-any-file:
+          - "**/prisma/**"
+          - "**/migrations/**"
+          - "**/schema.prisma"
+          - "**/supabase/migrations/**"
+
+# =============================================================================
+# Priority/Impact Labels
+# =============================================================================
+breaking-change:
+  - changed-files:
+      - any-glob-to-any-file:
+          - "autogpt_platform/backend/backend/data/migrations/**"
+          - "**/BREAKING_CHANGES.md"
+          - "**/schema.prisma"
+
+security:
+  - changed-files:
+      - any-glob-to-any-file:
+          - "**/*auth*.py"
+          - "**/*auth*.ts"
+          - "**/*auth*.tsx"
+          - "**/*security*.py"
+          - "**/supabase/**"
+          - "**/*jwt*.py"
+          - "**/*credential*.py"
+
+performance:
+  - changed-files:
+      - any-glob-to-any-file:
+          - "**/*cache*.py"
+          - "**/*cache*.ts"
+          - "**/*perf*.py"
+          - "**/*optimization*.py"
+          - "**/redis/**"

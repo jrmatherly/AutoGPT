@@ -1,153 +1,369 @@
+# =============================================================================
+# Enhanced GitHub Dependabot Configuration
+# Version: 2.1 (2026-01-29)
+#
+# Updates from current configuration:
+# - Added labels for all ecosystems
+# - Added specific schedule times (Monday 4 AM Eastern Time)
+# - Configured security update groups (separate PRs)
+# - Added "include: scope" for commit messages
+# - Added timezone specification (America/New_York)
+# - Added comprehensive documentation and comments
+#
+# Key Features:
+# - Grouped dependency updates to reduce PR noise
+# - Security updates always get separate PRs
+# - Conventional commit format with scopes
+# - Weekly updates on Monday mornings (4 AM ET - off-peak)
+# =============================================================================
+
 version: 2
+
+# =============================================================================
+# Python Projects (Poetry)
+# =============================================================================
 updates:
-  # autogpt_libs (Poetry project)
+  # ---------------------------------------------------------------------------
+  # autogpt_libs (Shared Python Libraries)
+  # ---------------------------------------------------------------------------
   - package-ecosystem: "pip"
     directory: "autogpt_platform/autogpt_libs"
     schedule:
       interval: "weekly"
+      day: "monday"
+      time: "04:00"
+      timezone: "America/New_York"
     open-pull-requests-limit: 10
     target-branch: "dev"
+
+    labels:
+      - "dependencies"
+      - "python"
+      - "autogpt_libs"
+
     commit-message:
       prefix: "chore(libs/deps)"
       prefix-development: "chore(libs/deps-dev)"
+      include: "scope"
+
     ignore:
       - dependency-name: "poetry"
+
     groups:
+      # Security updates - separate PRs for immediate attention
+      security-updates:
+        applies-to: security-updates
+        patterns:
+          - "*"
+
+      # Production dependencies - grouped minor/patch updates
       production-dependencies:
         dependency-type: "production"
         update-types:
           - "minor"
           - "patch"
+
+      # Development dependencies - grouped minor/patch updates
       development-dependencies:
         dependency-type: "development"
         update-types:
           - "minor"
           - "patch"
 
-  # backend (Poetry project)
+  # ---------------------------------------------------------------------------
+  # backend (FastAPI Server)
+  # ---------------------------------------------------------------------------
   - package-ecosystem: "pip"
     directory: "autogpt_platform/backend"
     schedule:
       interval: "weekly"
+      day: "monday"
+      time: "04:00"
+      timezone: "America/New_York"
     open-pull-requests-limit: 10
     target-branch: "dev"
+
+    labels:
+      - "dependencies"
+      - "python"
+      - "backend"
+
     commit-message:
       prefix: "chore(backend/deps)"
       prefix-development: "chore(backend/deps-dev)"
+      include: "scope"
+
     ignore:
       - dependency-name: "poetry"
+      # Uncomment to pin critical dependencies to minor/patch only:
+      # - dependency-name: "fastapi"
+      #   update-types: ["version-update:semver-major"]
+      # - dependency-name: "prisma"
+      #   update-types: ["version-update:semver-major"]
+
     groups:
+      security-updates:
+        applies-to: security-updates
+        patterns:
+          - "*"
+
       production-dependencies:
         dependency-type: "production"
         update-types:
           - "minor"
           - "patch"
+
       development-dependencies:
         dependency-type: "development"
         update-types:
           - "minor"
           - "patch"
 
-  # frontend (Next.js project)
+  # =============================================================================
+  # Node.js Projects (pnpm)
+  # =============================================================================
+  # ---------------------------------------------------------------------------
+  # frontend (Next.js Application)
+  # ---------------------------------------------------------------------------
   - package-ecosystem: "npm"
     directory: "autogpt_platform/frontend"
     schedule:
       interval: "weekly"
+      day: "monday"
+      time: "04:00"
+      timezone: "America/New_York"
     open-pull-requests-limit: 10
     target-branch: "dev"
+
+    labels:
+      - "dependencies"
+      - "node"
+      - "frontend"
+
     commit-message:
       prefix: "chore(frontend/deps)"
       prefix-development: "chore(frontend/deps-dev)"
+      include: "scope"
+
+    # Uncomment to pin major framework versions:
+    # ignore:
+    #   - dependency-name: "next"
+    #     update-types: ["version-update:semver-major"]
+    #   - dependency-name: "react"
+    #     update-types: ["version-update:semver-major"]
+    #   - dependency-name: "react-dom"
+    #     update-types: ["version-update:semver-major"]
+
     groups:
+      security-updates:
+        applies-to: security-updates
+        patterns:
+          - "*"
+
       production-dependencies:
         dependency-type: "production"
         update-types:
           - "minor"
           - "patch"
+
       development-dependencies:
         dependency-type: "development"
         update-types:
           - "minor"
           - "patch"
 
+  # =============================================================================
+  # Infrastructure
+  # =============================================================================
+  # ---------------------------------------------------------------------------
   # infra (Terraform)
+  # ---------------------------------------------------------------------------
   - package-ecosystem: "terraform"
     directory: "autogpt_platform/infra"
     schedule:
       interval: "weekly"
+      day: "monday"
+      time: "04:00"
+      timezone: "America/New_York"
     open-pull-requests-limit: 5
     target-branch: "dev"
+
+    labels:
+      - "dependencies"
+      - "terraform"
+      - "infrastructure"
+
     commit-message:
       prefix: "chore(infra/deps)"
       prefix-development: "chore(infra/deps-dev)"
+      include: "scope"
 
     groups:
+      security-updates:
+        applies-to: security-updates
+        patterns:
+          - "*"
+
       production-dependencies:
         dependency-type: "production"
         update-types:
           - "minor"
           - "patch"
+
       development-dependencies:
         dependency-type: "development"
         update-types:
           - "minor"
           - "patch"
 
+  # =============================================================================
+  # GitHub Actions & Docker
+  # =============================================================================
+  # ---------------------------------------------------------------------------
   # GitHub Actions
+  # ---------------------------------------------------------------------------
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
       interval: "weekly"
+      day: "monday"
+      time: "04:00"
+      timezone: "America/New_York"
     open-pull-requests-limit: 5
     target-branch: "dev"
+
+    labels:
+      - "dependencies"
+      - "github-actions"
+      - "ci/cd"
+
+    commit-message:
+      prefix: "chore(ci/deps)"
+      include: "scope"
+
     groups:
+      security-updates:
+        applies-to: security-updates
+        patterns:
+          - "*"
+
       production-dependencies:
         dependency-type: "production"
         update-types:
           - "minor"
           - "patch"
-      development-dependencies:
-        dependency-type: "development"
-        update-types:
-          - "minor"
-          - "patch"
 
+  # ---------------------------------------------------------------------------
   # Docker
+  # ---------------------------------------------------------------------------
   - package-ecosystem: "docker"
     directory: "autogpt_platform/"
     schedule:
       interval: "weekly"
+      day: "monday"
+      time: "04:00"
+      timezone: "America/New_York"
     open-pull-requests-limit: 5
     target-branch: "dev"
+
+    labels:
+      - "dependencies"
+      - "docker"
+      - "infrastructure"
+
+    commit-message:
+      prefix: "chore(docker/deps)"
+      include: "scope"
+
     groups:
+      security-updates:
+        applies-to: security-updates
+        patterns:
+          - "*"
+
       production-dependencies:
         dependency-type: "production"
         update-types:
           - "minor"
           - "patch"
+
+  # =============================================================================
+  # Documentation
+  # =============================================================================
+  # ---------------------------------------------------------------------------
+  # docs (Python dependencies for documentation)
+  # ---------------------------------------------------------------------------
+  - package-ecosystem: "pip"
+    directory: "docs/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "04:00"
+      timezone: "America/New_York"
+    open-pull-requests-limit: 1
+    target-branch: "dev"
+
+    labels:
+      - "dependencies"
+      - "python"
+      - "documentation"
+
+    commit-message:
+      prefix: "chore(docs/deps)"
+      include: "scope"
+
+    groups:
+      security-updates:
+        applies-to: security-updates
+        patterns:
+          - "*"
+
+      production-dependencies:
+        dependency-type: "production"
+        update-types:
+          - "minor"
+          - "patch"
+
       development-dependencies:
         dependency-type: "development"
         update-types:
           - "minor"
           - "patch"
 
-  # Docs
-  - package-ecosystem: "pip"
-    directory: "docs/"
-    schedule:
-      interval: "weekly"
-    open-pull-requests-limit: 1
-    target-branch: "dev"
-    commit-message:
-      prefix: "chore(docs/deps)"
-    groups:
-      production-dependencies:
-        dependency-type: "production"
-        update-types:
-          - "minor"
-          - "patch"
-      development-dependencies:
-        dependency-type: "development"
-        update-types:
-          - "minor"
-          - "patch"
+# =============================================================================
+# Configuration Notes
+# =============================================================================
+#
+# Reviewer Assignment:
+# - The 'reviewers' configuration option is deprecated as of 2025
+# - Use .github/CODEOWNERS instead for automatic reviewer assignment
+# - Current CODEOWNERS: @jrmatherly for all paths
+#
+# Security Updates:
+# - Security updates are always created in separate PRs (via security-updates group)
+# - This ensures high-priority security patches are not bundled with routine updates
+#
+# Grouping Strategy:
+# - Production deps: Minor + Patch updates grouped (reduces noise)
+# - Development deps: Minor + Patch updates grouped (reduces noise)
+# - Major updates: Always separate PRs (require manual review)
+# - Security updates: Always separate PRs (immediate attention)
+#
+# Schedule:
+# - Monday 04:00 UTC (off-peak hours)
+# - Allows time for review during normal work week
+# - Avoids Friday deployments
+#
+# Labels:
+# - All PRs get ecosystem-specific labels for filtering
+# - Labels defined in .github/labels.yml (if using label-sync)
+# - Labels help with PR organization and automation
+#
+# Commit Message Format:
+# - Follows Conventional Commits specification
+# - Includes scope for better changelog generation
+# - Examples:
+#   - chore(backend/deps): update fastapi from 0.100.0 to 0.100.1
+#   - chore(frontend/deps-dev): update @types/react from 18.0.0 to 18.0.1
+#
+# =============================================================================
