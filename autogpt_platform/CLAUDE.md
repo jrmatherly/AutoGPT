@@ -75,7 +75,7 @@ poetry run prisma migrate dev
 docker compose up -d
 
 # Run the backend server
-poetry run serve
+poetry run app
 
 # Run tests
 poetry run test
@@ -291,7 +291,7 @@ See `/frontend/CONTRIBUTING.md` for complete patterns. Quick reference:
 
 ### Creating Pull Requests
 
-- Create the PR against the `dev` branch of the repository.
+- Create the PR against the `master` branch of the repository.
 - Ensure the branch name is descriptive (e.g., `feature/add-new-block`)/
 - Use conventional commit messages (see below)/
 - Fill out the .github/PULL_REQUEST_TEMPLATE.md template as the PR description/

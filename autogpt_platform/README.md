@@ -38,36 +38,44 @@ To run the AutoGPT Platform, follow these steps:
 
 4. After all the services are in ready state, open your browser and navigate to `http://localhost:3000` to access the AutoGPT Platform frontend.
 
-### Running Just Core services
+## Recommended Development Setup
 
-You can now run the following to enable just the core services.
+> **🚀 Recommended:** For the best development experience, we recommend using [mise](https://mise.jdx.dev/) for environment management. Mise automatically installs correct tool versions (Python, Node.js, pnpm) and provides unified task commands.
+>
+> See the [Mise Migration Guide](../docs/MISE_MIGRATION.md) for complete details.
+>
+> Quick start with mise:
+> ```bash
+> # Install mise
+> curl https://mise.run | sh
+>
+> # Setup project
+> cd autogpt_platform
+> mise trust
+> mise run setup
+>
+> # Daily development
+> mise run docker:up    # Start infrastructure
+> mise run backend      # Terminal 1
+> mise run frontend     # Terminal 2
+> ```
 
-```bash
-# For help
-make help
+### Running Just Core services (Makefile - Deprecated)
 
-# Run just Supabase + Redis + RabbitMQ
-make start-core
+> **⚠️ Deprecation Notice:** The Makefile is deprecated in favor of [mise](https://mise.jdx.dev/). While it still works, we recommend using mise for new development. See [Migration Guide](../docs/MISE_MIGRATION.md) for mise equivalents.
 
-# Stop core services
-make stop-core
+You can run the following commands to manage core services:
 
-# View logs from core services 
-make logs-core
-
-# Run formatting and linting for backend and frontend
-make format
-
-# Run migrations for backend database
-make migrate
-
-# Run backend server
-make run-backend
-
-# Run frontend development server
-make run-frontend
-
-```
+| Command | What it Does | Mise Equivalent |
+|---------|--------------|-----------------|
+| `make help` | Show available commands | `mise tasks` |
+| `make start-core` | Run just Supabase + Redis + RabbitMQ | `mise run docker:up` |
+| `make stop-core` | Stop core services | `mise run docker:down` |
+| `make logs-core` | View logs from core services | `mise run docker:logs` |
+| `make format` | Run formatting and linting for backend and frontend | `mise run format` |
+| `make migrate` | Run migrations for backend database | `mise run db:migrate` |
+| `make run-backend` | Run backend server | `mise run backend` |
+| `make run-frontend` | Run frontend development server | `mise run frontend` |
 
 ### Docker Compose Commands
 
@@ -171,8 +179,7 @@ This configuration will create named volumes for PostgreSQL and Redis, ensuring 
 The platform includes scripts for generating and managing the API client:
 
 - `pnpm fetch:openapi`: Fetches the OpenAPI specification from the backend service (requires backend to be running on port 8006)
-- `pnpm generate:api-client`: Generates the TypeScript API client from the OpenAPI specification using Orval
-- `pnpm generate:api`: Runs both fetch and generate commands in sequence
+- `pnpm generate:api`: Fetches the OpenAPI specification from the backend and generates the TypeScript API client using Orval
 
 #### Manual API Client Updates
 
