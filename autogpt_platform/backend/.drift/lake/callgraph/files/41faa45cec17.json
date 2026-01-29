@@ -1,0 +1,818 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.151Z",
+  "checksum": "8168e6349a400689",
+  "file": "backend/sdk/registry.py",
+  "functions": [
+    {
+      "id": "backend/sdk/registry.py:__init__:34",
+      "name": "__init__",
+      "startLine": 34,
+      "endLine": 46,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/sdk/registry.py:register_provider:62",
+      "name": "register_provider",
+      "startLine": 62,
+      "endLine": 100,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "hasattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 71
+        },
+        {
+          "target": "ProviderName",
+          "resolved": false,
+          "confidence": 0,
+          "line": 75
+        },
+        {
+          "target": "SDKOAuthCredentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 80
+        },
+        {
+          "target": "hasattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 91
+        },
+        {
+          "target": "ProviderName",
+          "resolved": false,
+          "confidence": 0,
+          "line": 96
+        },
+        {
+          "target": "extend",
+          "resolved": false,
+          "confidence": 0,
+          "line": 100
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/sdk/registry.py:register_api_key:103",
+      "name": "register_api_key",
+      "startLine": 103,
+      "endLine": 108,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/sdk/registry.py:get_all_credentials:111",
+      "name": "get_all_credentials",
+      "startLine": 111,
+      "endLine": 114,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "copy",
+          "resolved": false,
+          "confidence": 0,
+          "line": 114
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/sdk/registry.py:get_oauth_handlers:117",
+      "name": "get_oauth_handlers",
+      "startLine": 117,
+      "endLine": 120,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "copy",
+          "resolved": false,
+          "confidence": 0,
+          "line": 120
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/sdk/registry.py:get_oauth_credentials:123",
+      "name": "get_oauth_credentials",
+      "startLine": 123,
+      "endLine": 126,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "copy",
+          "resolved": false,
+          "confidence": 0,
+          "line": 126
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/sdk/registry.py:get_webhook_managers:129",
+      "name": "get_webhook_managers",
+      "startLine": 129,
+      "endLine": 132,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "copy",
+          "resolved": false,
+          "confidence": 0,
+          "line": 132
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/sdk/registry.py:register_block_configuration:135",
+      "name": "register_block_configuration",
+      "startLine": 135,
+      "endLine": 140,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/sdk/registry.py:get_provider:143",
+      "name": "get_provider",
+      "startLine": 143,
+      "endLine": 146,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 146,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "name",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 146,
+          "resolvedId": "backend/api/features/chat/tools/agent_output.py:name:105"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/sdk/registry.py:get_all_provider_names:149",
+      "name": "get_all_provider_names",
+      "startLine": 149,
+      "endLine": 152,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 152
+        },
+        {
+          "target": "keys",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 152,
+          "resolvedId": "backend/integrations/oauth/__init__.py:keys:100"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/sdk/registry.py:clear:155",
+      "name": "clear",
+      "startLine": 155,
+      "endLine": 163,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "clear",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 158,
+          "resolvedId": "backend/sdk/registry.py:clear:155"
+        },
+        {
+          "target": "clear",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 159,
+          "resolvedId": "backend/sdk/registry.py:clear:155"
+        },
+        {
+          "target": "clear",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 160,
+          "resolvedId": "backend/sdk/registry.py:clear:155"
+        },
+        {
+          "target": "clear",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 161,
+          "resolvedId": "backend/sdk/registry.py:clear:155"
+        },
+        {
+          "target": "clear",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 162,
+          "resolvedId": "backend/sdk/registry.py:clear:155"
+        },
+        {
+          "target": "clear",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 163,
+          "resolvedId": "backend/sdk/registry.py:clear:155"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/sdk/registry.py:patch_integrations:166",
+      "name": "patch_integrations",
+      "startLine": 166,
+      "endLine": 241,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "hasattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 184
+        },
+        {
+          "target": "webhooks",
+          "resolved": false,
+          "confidence": 0,
+          "line": 184
+        },
+        {
+          "target": "warning",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 201,
+          "resolvedId": "backend/util/logging.py:warning:45"
+        },
+        {
+          "target": "hasattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 216
+        },
+        {
+          "target": "creds_store",
+          "resolved": false,
+          "confidence": 0,
+          "line": 216
+        },
+        {
+          "target": "hasattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 218
+        },
+        {
+          "target": "store_class",
+          "resolved": false,
+          "confidence": 0,
+          "line": 218
+        },
+        {
+          "target": "info",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 237,
+          "resolvedId": "backend/util/logging.py:info:41"
+        },
+        {
+          "target": "warning",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 241,
+          "resolvedId": "backend/util/logging.py:warning:45"
+        },
+        {
+          "target": "original_load",
+          "resolved": false,
+          "confidence": 0,
+          "line": 189
+        },
+        {
+          "target": "get_webhook_managers",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 191,
+          "resolvedId": "backend/sdk/registry.py:get_webhook_managers:129"
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 192
+        },
+        {
+          "target": "sdk_managers",
+          "resolved": false,
+          "confidence": 0,
+          "line": 192
+        },
+        {
+          "target": "dict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 192
+        },
+        {
+          "target": "items",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 194,
+          "resolvedId": "backend/integrations/oauth/__init__.py:items:123"
+        },
+        {
+          "target": "ProviderName",
+          "resolved": false,
+          "confidence": 0,
+          "line": 195
+        },
+        {
+          "target": "provider_str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 195
+        },
+        {
+          "target": "original_get_all_creds",
+          "resolved": false,
+          "confidence": 0,
+          "line": 223
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 223
+        },
+        {
+          "target": "get_all_credentials",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 226,
+          "resolvedId": "backend/sdk/registry.py:get_all_credentials:111"
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 232
+        },
+        {
+          "target": "cred",
+          "resolved": false,
+          "confidence": 0,
+          "line": 232
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/sdk/registry.py:patched_load:187",
+      "name": "patched_load",
+      "startLine": 187,
+      "endLine": 197,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "original_load",
+          "resolved": false,
+          "confidence": 0,
+          "line": 189
+        },
+        {
+          "target": "get_webhook_managers",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 191,
+          "resolvedId": "backend/sdk/registry.py:get_webhook_managers:129"
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 192
+        },
+        {
+          "target": "sdk_managers",
+          "resolved": false,
+          "confidence": 0,
+          "line": 192
+        },
+        {
+          "target": "dict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 192
+        },
+        {
+          "target": "items",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 194,
+          "resolvedId": "backend/integrations/oauth/__init__.py:items:123"
+        },
+        {
+          "target": "ProviderName",
+          "resolved": false,
+          "confidence": 0,
+          "line": 195
+        },
+        {
+          "target": "provider_str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 195
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/sdk/registry.py:patched_get_all_creds:221",
+      "name": "patched_get_all_creds",
+      "startLine": 221,
+      "endLine": 234,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "original_get_all_creds",
+          "resolved": false,
+          "confidence": 0,
+          "line": 223
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 223
+        },
+        {
+          "target": "get_all_credentials",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 226,
+          "resolvedId": "backend/sdk/registry.py:get_all_credentials:111"
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 232
+        },
+        {
+          "target": "cred",
+          "resolved": false,
+          "confidence": 0,
+          "line": 232
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/sdk/registry.py:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 242,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "getLogger",
+          "resolved": false,
+          "confidence": 0,
+          "line": 20
+        },
+        {
+          "target": "Lock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 52
+        },
+        {
+          "target": "hasattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 71
+        },
+        {
+          "target": "ProviderName",
+          "resolved": false,
+          "confidence": 0,
+          "line": 75
+        },
+        {
+          "target": "SDKOAuthCredentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 80
+        },
+        {
+          "target": "hasattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 91
+        },
+        {
+          "target": "ProviderName",
+          "resolved": false,
+          "confidence": 0,
+          "line": 96
+        },
+        {
+          "target": "extend",
+          "resolved": false,
+          "confidence": 0,
+          "line": 100
+        },
+        {
+          "target": "copy",
+          "resolved": false,
+          "confidence": 0,
+          "line": 114
+        },
+        {
+          "target": "copy",
+          "resolved": false,
+          "confidence": 0,
+          "line": 120
+        },
+        {
+          "target": "copy",
+          "resolved": false,
+          "confidence": 0,
+          "line": 126
+        },
+        {
+          "target": "copy",
+          "resolved": false,
+          "confidence": 0,
+          "line": 132
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 146,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "name",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 146,
+          "resolvedId": "backend/api/features/chat/tools/agent_output.py:name:105"
+        },
+        {
+          "target": "list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 152
+        },
+        {
+          "target": "keys",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 152,
+          "resolvedId": "backend/integrations/oauth/__init__.py:keys:100"
+        },
+        {
+          "target": "clear",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 158,
+          "resolvedId": "backend/sdk/registry.py:clear:155"
+        },
+        {
+          "target": "clear",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 159,
+          "resolvedId": "backend/sdk/registry.py:clear:155"
+        },
+        {
+          "target": "clear",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 160,
+          "resolvedId": "backend/sdk/registry.py:clear:155"
+        },
+        {
+          "target": "clear",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 161,
+          "resolvedId": "backend/sdk/registry.py:clear:155"
+        },
+        {
+          "target": "clear",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 162,
+          "resolvedId": "backend/sdk/registry.py:clear:155"
+        },
+        {
+          "target": "clear",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 163,
+          "resolvedId": "backend/sdk/registry.py:clear:155"
+        },
+        {
+          "target": "hasattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 184
+        },
+        {
+          "target": "webhooks",
+          "resolved": false,
+          "confidence": 0,
+          "line": 184
+        },
+        {
+          "target": "warning",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 201,
+          "resolvedId": "backend/util/logging.py:warning:45"
+        },
+        {
+          "target": "hasattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 216
+        },
+        {
+          "target": "creds_store",
+          "resolved": false,
+          "confidence": 0,
+          "line": 216
+        },
+        {
+          "target": "hasattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 218
+        },
+        {
+          "target": "store_class",
+          "resolved": false,
+          "confidence": 0,
+          "line": 218
+        },
+        {
+          "target": "info",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 237,
+          "resolvedId": "backend/util/logging.py:info:41"
+        },
+        {
+          "target": "warning",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 241,
+          "resolvedId": "backend/util/logging.py:warning:45"
+        },
+        {
+          "target": "original_load",
+          "resolved": false,
+          "confidence": 0,
+          "line": 189
+        },
+        {
+          "target": "get_webhook_managers",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 191,
+          "resolvedId": "backend/sdk/registry.py:get_webhook_managers:129"
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 192
+        },
+        {
+          "target": "sdk_managers",
+          "resolved": false,
+          "confidence": 0,
+          "line": 192
+        },
+        {
+          "target": "dict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 192
+        },
+        {
+          "target": "items",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 194,
+          "resolvedId": "backend/integrations/oauth/__init__.py:items:123"
+        },
+        {
+          "target": "ProviderName",
+          "resolved": false,
+          "confidence": 0,
+          "line": 195
+        },
+        {
+          "target": "provider_str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 195
+        },
+        {
+          "target": "original_get_all_creds",
+          "resolved": false,
+          "confidence": 0,
+          "line": 223
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 223
+        },
+        {
+          "target": "get_all_credentials",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 226,
+          "resolvedId": "backend/sdk/registry.py:get_all_credentials:111"
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 232
+        },
+        {
+          "target": "cred",
+          "resolved": false,
+          "confidence": 0,
+          "line": 232
+        },
+        {
+          "target": "getLogger",
+          "resolved": false,
+          "confidence": 0,
+          "line": 20
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

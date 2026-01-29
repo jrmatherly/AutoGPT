@@ -1,0 +1,302 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.155Z",
+  "checksum": "faf6bd4ec2fa67fc",
+  "file": "backend/blocks/baas/bots.py",
+  "functions": [
+    {
+      "id": "backend/blocks/baas/bots.py:__init__:67",
+      "name": "__init__",
+      "startLine": 67,
+      "endLine": 74,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 68,
+          "resolvedId": "backend/blocks/baas/bots.py:__init__:67"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 68
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/baas/bots.py:run:76",
+      "name": "run",
+      "startLine": 76,
+      "endLine": 99,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 79,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        },
+        {
+          "target": "MeetingBaasAPI",
+          "resolved": false,
+          "confidence": 0,
+          "line": 80
+        },
+        {
+          "target": "api_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 80
+        },
+        {
+          "target": "join_meeting",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 83,
+          "resolvedId": "backend/blocks/baas/_api.py:join_meeting:24"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 98,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/baas/bots.py:__init__:116",
+      "name": "__init__",
+      "startLine": 116,
+      "endLine": 123,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 117,
+          "resolvedId": "backend/blocks/baas/bots.py:__init__:67"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 117
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/baas/bots.py:run:125",
+      "name": "run",
+      "startLine": 125,
+      "endLine": 134,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 128,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        },
+        {
+          "target": "MeetingBaasAPI",
+          "resolved": false,
+          "confidence": 0,
+          "line": 129
+        },
+        {
+          "target": "api_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 129
+        },
+        {
+          "target": "leave_meeting",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 132,
+          "resolvedId": "backend/blocks/baas/_api.py:leave_meeting:85"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/baas/bots.py:__init__:158",
+      "name": "__init__",
+      "startLine": 158,
+      "endLine": 165,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 159,
+          "resolvedId": "backend/blocks/baas/bots.py:__init__:67"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 159
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/baas/bots.py:run:167",
+      "name": "run",
+      "startLine": 167,
+      "endLine": 181,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 170,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        },
+        {
+          "target": "MeetingBaasAPI",
+          "resolved": false,
+          "confidence": 0,
+          "line": 171
+        },
+        {
+          "target": "api_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 171
+        },
+        {
+          "target": "get_meeting_data",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 174,
+          "resolvedId": "backend/blocks/baas/_api.py:get_meeting_data:127"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 179,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 180,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 180,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 181,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 181,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/baas/bots.py:__init__:200",
+      "name": "__init__",
+      "startLine": 200,
+      "endLine": 207,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 201,
+          "resolvedId": "backend/blocks/baas/bots.py:__init__:67"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 201
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/baas/bots.py:run:209",
+      "name": "run",
+      "startLine": 209,
+      "endLine": 218,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 212,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        },
+        {
+          "target": "MeetingBaasAPI",
+          "resolved": false,
+          "confidence": 0,
+          "line": 213
+        },
+        {
+          "target": "api_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 213
+        },
+        {
+          "target": "delete_data",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 216,
+          "resolvedId": "backend/blocks/baas/_api.py:delete_data:163"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

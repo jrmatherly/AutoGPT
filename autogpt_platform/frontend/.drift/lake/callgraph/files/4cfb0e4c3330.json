@@ -1,0 +1,473 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.043Z",
+  "checksum": "308e42dde4e669f6",
+  "file": "src/hooks/useCredits.ts",
+  "functions": [
+    {
+      "id": "src/hooks/useCredits.ts:useCredits:9",
+      "name": "useCredits",
+      "startLine": 9,
+      "endLine": 151,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 33
+        },
+        {
+          "target": "useState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 34
+        },
+        {
+          "target": "useMemo",
+          "resolved": false,
+          "confidence": 0,
+          "line": 39
+        },
+        {
+          "target": "AutoGPTServerAPI",
+          "resolved": false,
+          "confidence": 0,
+          "line": 39
+        },
+        {
+          "target": "useRouter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 40
+        },
+        {
+          "target": "useCallback",
+          "resolved": false,
+          "confidence": 0,
+          "line": 42
+        },
+        {
+          "target": "getUserCredit",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 43,
+          "resolvedId": "src/lib/autogpt-server-api/client.ts:getUserCredit:131"
+        },
+        {
+          "target": "setCredits",
+          "resolved": false,
+          "confidence": 0,
+          "line": 44
+        },
+        {
+          "target": "credits",
+          "resolved": false,
+          "confidence": 0,
+          "line": 44
+        },
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 47
+        },
+        {
+          "target": "fetchCredits",
+          "resolved": false,
+          "confidence": 0,
+          "line": 49
+        },
+        {
+          "target": "useCallback",
+          "resolved": false,
+          "confidence": 0,
+          "line": 52
+        },
+        {
+          "target": "getAutoTopUpConfig",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 53,
+          "resolvedId": "src/lib/autogpt-server-api/client.ts:getAutoTopUpConfig:149"
+        },
+        {
+          "target": "setAutoTopUpConfig",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 54,
+          "resolvedId": "src/lib/autogpt-server-api/client.ts:setAutoTopUpConfig:153"
+        },
+        {
+          "target": "response",
+          "resolved": false,
+          "confidence": 0,
+          "line": 54
+        },
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 57
+        },
+        {
+          "target": "fetchAutoTopUpConfig",
+          "resolved": false,
+          "confidence": 0,
+          "line": 59
+        },
+        {
+          "target": "useCallback",
+          "resolved": false,
+          "confidence": 0,
+          "line": 62
+        },
+        {
+          "target": "setAutoTopUpConfig",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 64,
+          "resolvedId": "src/lib/autogpt-server-api/client.ts:setAutoTopUpConfig:153"
+        },
+        {
+          "target": "fetchAutoTopUpConfig",
+          "resolved": false,
+          "confidence": 0,
+          "line": 65
+        },
+        {
+          "target": "useCallback",
+          "resolved": false,
+          "confidence": 0,
+          "line": 70
+        },
+        {
+          "target": "requestTopUp",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 72,
+          "resolvedId": "src/lib/autogpt-server-api/client.ts:requestTopUp:176"
+        },
+        {
+          "target": "credit_amount",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        },
+        {
+          "target": "push",
+          "resolved": false,
+          "confidence": 0,
+          "line": 73
+        },
+        {
+          "target": "checkout_url",
+          "resolved": false,
+          "confidence": 0,
+          "line": 73
+        },
+        {
+          "target": "useCallback",
+          "resolved": false,
+          "confidence": 0,
+          "line": 78
+        },
+        {
+          "target": "refundTopUp",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 80,
+          "resolvedId": "src/lib/autogpt-server-api/client.ts:refundTopUp:180"
+        },
+        {
+          "target": "transaction_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 80
+        },
+        {
+          "target": "reason",
+          "resolved": false,
+          "confidence": 0,
+          "line": 80
+        },
+        {
+          "target": "fetchCredits",
+          "resolved": false,
+          "confidence": 0,
+          "line": 81
+        },
+        {
+          "target": "setTransactionHistory",
+          "resolved": false,
+          "confidence": 0,
+          "line": 82
+        },
+        {
+          "target": "getTransactionHistory",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 82,
+          "resolvedId": "src/lib/autogpt-server-api/client.ts:getTransactionHistory:160"
+        },
+        {
+          "target": "useState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 89
+        },
+        {
+          "target": "useCallback",
+          "resolved": false,
+          "confidence": 0,
+          "line": 94
+        },
+        {
+          "target": "getTransactionHistory",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 95,
+          "resolvedId": "src/lib/autogpt-server-api/client.ts:getTransactionHistory:160"
+        },
+        {
+          "target": "next_transaction_time",
+          "resolved": false,
+          "confidence": 0,
+          "line": 96
+        },
+        {
+          "target": "setTransactionHistory",
+          "resolved": false,
+          "confidence": 0,
+          "line": 99
+        },
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 108
+        },
+        {
+          "target": "fetchTransactionHistory",
+          "resolved": false,
+          "confidence": 0,
+          "line": 110
+        },
+        {
+          "target": "useState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 116
+        },
+        {
+          "target": "useCallback",
+          "resolved": false,
+          "confidence": 0,
+          "line": 118
+        },
+        {
+          "target": "getRefundRequests",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 119,
+          "resolvedId": "src/lib/autogpt-server-api/client.ts:getRefundRequests:172"
+        },
+        {
+          "target": "setRefundRequests",
+          "resolved": false,
+          "confidence": 0,
+          "line": 120
+        },
+        {
+          "target": "response",
+          "resolved": false,
+          "confidence": 0,
+          "line": 120
+        },
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 123
+        },
+        {
+          "target": "fetchRefundRequests",
+          "resolved": false,
+          "confidence": 0,
+          "line": 125
+        },
+        {
+          "target": "useCallback",
+          "resolved": false,
+          "confidence": 0,
+          "line": 128
+        },
+        {
+          "target": "abs",
+          "resolved": false,
+          "confidence": 0,
+          "line": 132
+        },
+        {
+          "target": "credit",
+          "resolved": false,
+          "confidence": 0,
+          "line": 132
+        },
+        {
+          "target": "toFixed",
+          "resolved": false,
+          "confidence": 0,
+          "line": 134
+        },
+        {
+          "target": "fetchCredits",
+          "resolved": false,
+          "confidence": 0,
+          "line": 49
+        },
+        {
+          "target": "fetchAutoTopUpConfig",
+          "resolved": false,
+          "confidence": 0,
+          "line": 59
+        },
+        {
+          "target": "fetchTransactionHistory",
+          "resolved": false,
+          "confidence": 0,
+          "line": 110
+        },
+        {
+          "target": "fetchRefundRequests",
+          "resolved": false,
+          "confidence": 0,
+          "line": 125
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/hooks/useCredits.ts:$useEffect$1:47",
+      "name": "$useEffect$1",
+      "startLine": 47,
+      "endLine": 50,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 47
+        },
+        {
+          "target": "fetchCredits",
+          "resolved": false,
+          "confidence": 0,
+          "line": 49
+        },
+        {
+          "target": "fetchCredits",
+          "resolved": false,
+          "confidence": 0,
+          "line": 49
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/hooks/useCredits.ts:$useEffect$2:57",
+      "name": "$useEffect$2",
+      "startLine": 57,
+      "endLine": 60,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 57
+        },
+        {
+          "target": "fetchAutoTopUpConfig",
+          "resolved": false,
+          "confidence": 0,
+          "line": 59
+        },
+        {
+          "target": "fetchAutoTopUpConfig",
+          "resolved": false,
+          "confidence": 0,
+          "line": 59
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/hooks/useCredits.ts:$useEffect$3:108",
+      "name": "$useEffect$3",
+      "startLine": 108,
+      "endLine": 114,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 108
+        },
+        {
+          "target": "fetchTransactionHistory",
+          "resolved": false,
+          "confidence": 0,
+          "line": 110
+        },
+        {
+          "target": "fetchTransactionHistory",
+          "resolved": false,
+          "confidence": 0,
+          "line": 110
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/hooks/useCredits.ts:$useEffect$4:123",
+      "name": "$useEffect$4",
+      "startLine": 123,
+      "endLine": 126,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 123
+        },
+        {
+          "target": "fetchRefundRequests",
+          "resolved": false,
+          "confidence": 0,
+          "line": 125
+        },
+        {
+          "target": "fetchRefundRequests",
+          "resolved": false,
+          "confidence": 0,
+          "line": 125
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

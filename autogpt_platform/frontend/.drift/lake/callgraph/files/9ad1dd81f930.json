@@ -1,0 +1,577 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.085Z",
+  "checksum": "a181bd05d1178a93",
+  "file": "src/components/layout/Navbar/components/AgentActivityDropdown/components/ActivityItem.tsx",
+  "functions": [
+    {
+      "id": "src/components/layout/Navbar/components/AgentActivityDropdown/components/ActivityItem.tsx:ActivityItem:22",
+      "name": "ActivityItem",
+      "startLine": 22,
+      "endLine": 140,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "ClockIcon",
+          "resolved": false,
+          "confidence": 0,
+          "line": 26
+        },
+        {
+          "target": "SpinnerIcon",
+          "resolved": false,
+          "confidence": 0,
+          "line": 29
+        },
+        {
+          "target": "CheckCircleIcon",
+          "resolved": false,
+          "confidence": 0,
+          "line": 32
+        },
+        {
+          "target": "WarningIcon",
+          "resolved": false,
+          "confidence": 0,
+          "line": 34
+        },
+        {
+          "target": "StopCircleIcon",
+          "resolved": false,
+          "confidence": 0,
+          "line": 36
+        },
+        {
+          "target": "MinusCircleIcon",
+          "resolved": false,
+          "confidence": 0,
+          "line": 38
+        },
+        {
+          "target": "WarningIcon",
+          "resolved": false,
+          "confidence": 0,
+          "line": 40
+        },
+        {
+          "target": "formatTimeAgo",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 54,
+          "resolvedId": "src/lib/utils/time.ts:formatTimeAgo:7"
+        },
+        {
+          "target": "toString",
+          "resolved": false,
+          "confidence": 0,
+          "line": 54
+        },
+        {
+          "target": "getExecutionDuration",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 59,
+          "resolvedId": "src/components/layout/Navbar/components/AgentActivityDropdown/helpers.tsx:getExecutionDuration:16"
+        },
+        {
+          "target": "execution",
+          "resolved": false,
+          "confidence": 0,
+          "line": 59
+        },
+        {
+          "target": "formatTimeAgo",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 65,
+          "resolvedId": "src/lib/utils/time.ts:formatTimeAgo:7"
+        },
+        {
+          "target": "toString",
+          "resolved": false,
+          "confidence": 0,
+          "line": 65
+        },
+        {
+          "target": "formatTimeAgo",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 67,
+          "resolvedId": "src/lib/utils/time.ts:formatTimeAgo:7"
+        },
+        {
+          "target": "toString",
+          "resolved": false,
+          "confidence": 0,
+          "line": 67
+        },
+        {
+          "target": "toUpperCase",
+          "resolved": false,
+          "confidence": 0,
+          "line": 90
+        },
+        {
+          "target": "charAt",
+          "resolved": false,
+          "confidence": 0,
+          "line": 90
+        },
+        {
+          "target": "slice",
+          "resolved": false,
+          "confidence": 0,
+          "line": 90
+        },
+        {
+          "target": "URLSearchParams",
+          "resolved": false,
+          "confidence": 0,
+          "line": 95
+        },
+        {
+          "target": "set",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 97,
+          "resolvedId": "src/services/storage/local-storage.ts:set:29"
+        },
+        {
+          "target": "set",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 98,
+          "resolvedId": "src/services/storage/local-storage.ts:set:29"
+        },
+        {
+          "target": "id",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 98,
+          "resolvedId": "public/gtag.js:id:112"
+        },
+        {
+          "target": "toString",
+          "resolved": false,
+          "confidence": 0,
+          "line": 99
+        },
+        {
+          "target": "getStatusIcon",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 106,
+          "resolvedId": "src/components/layout/Navbar/components/AgentActivityDropdown/components/ActivityItem.tsx:getStatusIcon:23"
+        },
+        {
+          "target": "Text",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 107,
+          "resolvedId": "src/components/atoms/Text/Text.tsx:Text:15"
+        },
+        {
+          "target": "map",
+          "resolved": false,
+          "confidence": 0,
+          "line": 114
+        },
+        {
+          "target": "getItemDisplay",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 114,
+          "resolvedId": "src/components/layout/Navbar/components/AgentActivityDropdown/components/ActivityItem.tsx:getItemDisplay:46"
+        },
+        {
+          "target": "Text",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 115,
+          "resolvedId": "src/components/atoms/Text/Text.tsx:Text:15"
+        },
+        {
+          "target": "index",
+          "resolved": false,
+          "confidence": 0,
+          "line": 116
+        },
+        {
+          "target": "Link",
+          "resolved": false,
+          "confidence": 0,
+          "line": 128
+        },
+        {
+          "target": "linkUrl",
+          "resolved": false,
+          "confidence": 0,
+          "line": 130
+        },
+        {
+          "target": "ClockIcon",
+          "resolved": false,
+          "confidence": 0,
+          "line": 26
+        },
+        {
+          "target": "SpinnerIcon",
+          "resolved": false,
+          "confidence": 0,
+          "line": 29
+        },
+        {
+          "target": "CheckCircleIcon",
+          "resolved": false,
+          "confidence": 0,
+          "line": 32
+        },
+        {
+          "target": "WarningIcon",
+          "resolved": false,
+          "confidence": 0,
+          "line": 34
+        },
+        {
+          "target": "StopCircleIcon",
+          "resolved": false,
+          "confidence": 0,
+          "line": 36
+        },
+        {
+          "target": "MinusCircleIcon",
+          "resolved": false,
+          "confidence": 0,
+          "line": 38
+        },
+        {
+          "target": "WarningIcon",
+          "resolved": false,
+          "confidence": 0,
+          "line": 40
+        },
+        {
+          "target": "formatTimeAgo",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 54,
+          "resolvedId": "src/lib/utils/time.ts:formatTimeAgo:7"
+        },
+        {
+          "target": "toString",
+          "resolved": false,
+          "confidence": 0,
+          "line": 54
+        },
+        {
+          "target": "getExecutionDuration",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 59,
+          "resolvedId": "src/components/layout/Navbar/components/AgentActivityDropdown/helpers.tsx:getExecutionDuration:16"
+        },
+        {
+          "target": "execution",
+          "resolved": false,
+          "confidence": 0,
+          "line": 59
+        },
+        {
+          "target": "formatTimeAgo",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 65,
+          "resolvedId": "src/lib/utils/time.ts:formatTimeAgo:7"
+        },
+        {
+          "target": "toString",
+          "resolved": false,
+          "confidence": 0,
+          "line": 65
+        },
+        {
+          "target": "formatTimeAgo",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 67,
+          "resolvedId": "src/lib/utils/time.ts:formatTimeAgo:7"
+        },
+        {
+          "target": "toString",
+          "resolved": false,
+          "confidence": 0,
+          "line": 67
+        },
+        {
+          "target": "toUpperCase",
+          "resolved": false,
+          "confidence": 0,
+          "line": 90
+        },
+        {
+          "target": "charAt",
+          "resolved": false,
+          "confidence": 0,
+          "line": 90
+        },
+        {
+          "target": "slice",
+          "resolved": false,
+          "confidence": 0,
+          "line": 90
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/layout/Navbar/components/AgentActivityDropdown/components/ActivityItem.tsx:getStatusIcon:23",
+      "name": "getStatusIcon",
+      "startLine": 23,
+      "endLine": 44,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "ClockIcon",
+          "resolved": false,
+          "confidence": 0,
+          "line": 26
+        },
+        {
+          "target": "SpinnerIcon",
+          "resolved": false,
+          "confidence": 0,
+          "line": 29
+        },
+        {
+          "target": "CheckCircleIcon",
+          "resolved": false,
+          "confidence": 0,
+          "line": 32
+        },
+        {
+          "target": "WarningIcon",
+          "resolved": false,
+          "confidence": 0,
+          "line": 34
+        },
+        {
+          "target": "StopCircleIcon",
+          "resolved": false,
+          "confidence": 0,
+          "line": 36
+        },
+        {
+          "target": "MinusCircleIcon",
+          "resolved": false,
+          "confidence": 0,
+          "line": 38
+        },
+        {
+          "target": "WarningIcon",
+          "resolved": false,
+          "confidence": 0,
+          "line": 40
+        },
+        {
+          "target": "ClockIcon",
+          "resolved": false,
+          "confidence": 0,
+          "line": 26
+        },
+        {
+          "target": "SpinnerIcon",
+          "resolved": false,
+          "confidence": 0,
+          "line": 29
+        },
+        {
+          "target": "CheckCircleIcon",
+          "resolved": false,
+          "confidence": 0,
+          "line": 32
+        },
+        {
+          "target": "WarningIcon",
+          "resolved": false,
+          "confidence": 0,
+          "line": 34
+        },
+        {
+          "target": "StopCircleIcon",
+          "resolved": false,
+          "confidence": 0,
+          "line": 36
+        },
+        {
+          "target": "MinusCircleIcon",
+          "resolved": false,
+          "confidence": 0,
+          "line": 38
+        },
+        {
+          "target": "WarningIcon",
+          "resolved": false,
+          "confidence": 0,
+          "line": 40
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/layout/Navbar/components/AgentActivityDropdown/components/ActivityItem.tsx:getItemDisplay:46",
+      "name": "getItemDisplay",
+      "startLine": 46,
+      "endLine": 92,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "formatTimeAgo",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 54,
+          "resolvedId": "src/lib/utils/time.ts:formatTimeAgo:7"
+        },
+        {
+          "target": "toString",
+          "resolved": false,
+          "confidence": 0,
+          "line": 54
+        },
+        {
+          "target": "getExecutionDuration",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 59,
+          "resolvedId": "src/components/layout/Navbar/components/AgentActivityDropdown/helpers.tsx:getExecutionDuration:16"
+        },
+        {
+          "target": "execution",
+          "resolved": false,
+          "confidence": 0,
+          "line": 59
+        },
+        {
+          "target": "formatTimeAgo",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 65,
+          "resolvedId": "src/lib/utils/time.ts:formatTimeAgo:7"
+        },
+        {
+          "target": "toString",
+          "resolved": false,
+          "confidence": 0,
+          "line": 65
+        },
+        {
+          "target": "formatTimeAgo",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 67,
+          "resolvedId": "src/lib/utils/time.ts:formatTimeAgo:7"
+        },
+        {
+          "target": "toString",
+          "resolved": false,
+          "confidence": 0,
+          "line": 67
+        },
+        {
+          "target": "toUpperCase",
+          "resolved": false,
+          "confidence": 0,
+          "line": 90
+        },
+        {
+          "target": "charAt",
+          "resolved": false,
+          "confidence": 0,
+          "line": 90
+        },
+        {
+          "target": "slice",
+          "resolved": false,
+          "confidence": 0,
+          "line": 90
+        },
+        {
+          "target": "formatTimeAgo",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 54,
+          "resolvedId": "src/lib/utils/time.ts:formatTimeAgo:7"
+        },
+        {
+          "target": "toString",
+          "resolved": false,
+          "confidence": 0,
+          "line": 54
+        },
+        {
+          "target": "getExecutionDuration",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 59,
+          "resolvedId": "src/components/layout/Navbar/components/AgentActivityDropdown/helpers.tsx:getExecutionDuration:16"
+        },
+        {
+          "target": "execution",
+          "resolved": false,
+          "confidence": 0,
+          "line": 59
+        },
+        {
+          "target": "formatTimeAgo",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 65,
+          "resolvedId": "src/lib/utils/time.ts:formatTimeAgo:7"
+        },
+        {
+          "target": "toString",
+          "resolved": false,
+          "confidence": 0,
+          "line": 65
+        },
+        {
+          "target": "formatTimeAgo",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 67,
+          "resolvedId": "src/lib/utils/time.ts:formatTimeAgo:7"
+        },
+        {
+          "target": "toString",
+          "resolved": false,
+          "confidence": 0,
+          "line": 67
+        },
+        {
+          "target": "toUpperCase",
+          "resolved": false,
+          "confidence": 0,
+          "line": 90
+        },
+        {
+          "target": "charAt",
+          "resolved": false,
+          "confidence": 0,
+          "line": 90
+        },
+        {
+          "target": "slice",
+          "resolved": false,
+          "confidence": 0,
+          "line": 90
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

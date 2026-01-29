@@ -1,0 +1,116 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.086Z",
+  "checksum": "6617e0339b9746e7",
+  "file": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/selected-views/RunDetailHeader/useScheduleDetailHeader.ts",
+  "functions": [
+    {
+      "id": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/selected-views/RunDetailHeader/useScheduleDetailHeader.ts:useScheduleDetailHeader:10",
+      "name": "useScheduleDetailHeader",
+      "startLine": 10,
+      "endLine": 49,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "useQueryClient",
+          "resolved": false,
+          "confidence": 0,
+          "line": 15
+        },
+        {
+          "target": "useToast",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 16,
+          "resolvedId": "src/components/molecules/Toast/use-toast.tsx:useToast:77"
+        },
+        {
+          "target": "useDeleteV1DeleteExecutionSchedule",
+          "resolved": false,
+          "confidence": 0,
+          "line": 18
+        },
+        {
+          "target": "toast",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 21,
+          "resolvedId": "src/components/molecules/Toast/use-toast.tsx:toast:27"
+        },
+        {
+          "target": "invalidateQueries",
+          "resolved": false,
+          "confidence": 0,
+          "line": 22
+        },
+        {
+          "target": "getGetV1ListExecutionSchedulesForAGraphQueryOptions",
+          "resolved": false,
+          "confidence": 0,
+          "line": 24
+        },
+        {
+          "target": "agentGraphId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 24
+        },
+        {
+          "target": "toast",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 29,
+          "resolvedId": "src/components/molecules/Toast/use-toast.tsx:toast:27"
+        },
+        {
+          "target": "mutate",
+          "resolved": false,
+          "confidence": 0,
+          "line": 39
+        },
+        {
+          "target": "mutate",
+          "resolved": false,
+          "confidence": 0,
+          "line": 39
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "schedule",
+          "operation": "delete",
+          "line": 30,
+          "fields": [
+            "title"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/selected-views/RunDetailHeader/useScheduleDetailHeader.ts:deleteSchedule:37",
+      "name": "deleteSchedule",
+      "startLine": 37,
+      "endLine": 40,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "mutate",
+          "resolved": false,
+          "confidence": 0,
+          "line": 39
+        },
+        {
+          "target": "mutate",
+          "resolved": false,
+          "confidence": 0,
+          "line": 39
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

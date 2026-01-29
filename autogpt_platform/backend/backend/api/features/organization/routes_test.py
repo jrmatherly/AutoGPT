@@ -260,7 +260,9 @@ async def test_duplicate_slug_error(
     """Test that creating org with duplicate slug fails."""
     mocker.patch(
         "backend.api.features.organization.routes.create_organization",
-        new=AsyncMock(side_effect=ValueError("Organization slug 'test-slug' is already taken")),
+        new=AsyncMock(
+            side_effect=ValueError("Organization slug 'test-slug' is already taken")
+        ),
     )
 
     response = client.post(

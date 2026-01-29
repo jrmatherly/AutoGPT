@@ -1,0 +1,1456 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.148Z",
+  "checksum": "135da030affd03a3",
+  "file": "backend/api/features/store/hybrid_search_test.py",
+  "functions": [
+    {
+      "id": "backend/api/features/store/hybrid_search_test.py:test_hybrid_search_with_schema_handling:23",
+      "name": "test_hybrid_search_with_schema_handling",
+      "startLine": 23,
+      "endLine": 77,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 28,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 56,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "hybrid_search",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 61,
+          "resolvedId": "backend/api/features/store/hybrid_search.py:hybrid_search:428"
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 75
+        },
+        {
+          "target": "results",
+          "resolved": false,
+          "confidence": 0,
+          "line": 75
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/store/hybrid_search_test.py:test_hybrid_search_with_public_schema:82",
+      "name": "test_hybrid_search_with_public_schema",
+      "startLine": 82,
+      "endLine": 108,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 84,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 87,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 92,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "hybrid_search",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 97,
+          "resolvedId": "backend/api/features/store/hybrid_search.py:hybrid_search:428"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/store/hybrid_search_test.py:test_hybrid_search_with_custom_schema:113",
+      "name": "test_hybrid_search_with_custom_schema",
+      "startLine": 113,
+      "endLine": 138,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 115,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 118,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 123,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "hybrid_search",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 128,
+          "resolvedId": "backend/api/features/store/hybrid_search.py:hybrid_search:428"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/store/hybrid_search_test.py:test_hybrid_search_without_embeddings:143",
+      "name": "test_hybrid_search_without_embeddings",
+      "startLine": 143,
+      "endLine": 189,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 171,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 172,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "Exception",
+          "resolved": false,
+          "confidence": 0,
+          "line": 176
+        },
+        {
+          "target": "hybrid_search",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 180,
+          "resolvedId": "backend/api/features/store/hybrid_search.py:hybrid_search:428"
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 187
+        },
+        {
+          "target": "results",
+          "resolved": false,
+          "confidence": 0,
+          "line": 187
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/store/hybrid_search_test.py:test_hybrid_search_with_filters:194",
+      "name": "test_hybrid_search_with_filters",
+      "startLine": 194,
+      "endLine": 221,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 196,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 201,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "hybrid_search",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 207,
+          "resolvedId": "backend/api/features/store/hybrid_search.py:hybrid_search:428"
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 221
+        },
+        {
+          "target": "params",
+          "resolved": false,
+          "confidence": 0,
+          "line": 221
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/store/hybrid_search_test.py:test_hybrid_search_weights:226",
+      "name": "test_hybrid_search_weights",
+      "startLine": 226,
+      "endLine": 264,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "HybridSearchWeights",
+          "resolved": false,
+          "confidence": 0,
+          "line": 228
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 236,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 241,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "hybrid_search",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 246,
+          "resolvedId": "backend/api/features/store/hybrid_search.py:hybrid_search:428"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/store/hybrid_search_test.py:test_hybrid_search_min_score_filtering:269",
+      "name": "test_hybrid_search_min_score_filtering",
+      "startLine": 269,
+      "endLine": 308,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 271,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 285,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "hybrid_search",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 291,
+          "resolvedId": "backend/api/features/store/hybrid_search.py:hybrid_search:428"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/store/hybrid_search_test.py:test_hybrid_search_pagination:313",
+      "name": "test_hybrid_search_pagination",
+      "startLine": 313,
+      "endLine": 375,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "range",
+          "resolved": false,
+          "confidence": 0,
+          "line": 344
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 347,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 352,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "hybrid_search",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 358,
+          "resolvedId": "backend/api/features/store/hybrid_search.py:hybrid_search:428"
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 365
+        },
+        {
+          "target": "results",
+          "resolved": false,
+          "confidence": 0,
+          "line": 365
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/store/hybrid_search_test.py:test_hybrid_search_error_handling:380",
+      "name": "test_hybrid_search_error_handling",
+      "startLine": 380,
+      "endLine": 401,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 382,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "Exception",
+          "resolved": false,
+          "confidence": 0,
+          "line": 386
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 388,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "raises",
+          "resolved": false,
+          "confidence": 0,
+          "line": 394
+        },
+        {
+          "target": "hybrid_search",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 395,
+          "resolvedId": "backend/api/features/store/hybrid_search.py:hybrid_search:428"
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 401
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/store/hybrid_search_test.py:test_unified_hybrid_search_basic:411",
+      "name": "test_unified_hybrid_search_basic",
+      "startLine": 411,
+      "endLine": 460,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 442,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 445,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "unified_hybrid_search",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 451,
+          "resolvedId": "backend/api/features/store/hybrid_search.py:unified_hybrid_search:135"
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 457
+        },
+        {
+          "target": "results",
+          "resolved": false,
+          "confidence": 0,
+          "line": 457
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/store/hybrid_search_test.py:test_unified_hybrid_search_filter_by_content_type:465",
+      "name": "test_unified_hybrid_search_filter_by_content_type",
+      "startLine": 465,
+      "endLine": 506,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 483,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 486,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "unified_hybrid_search",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 492,
+          "resolvedId": "backend/api/features/store/hybrid_search.py:unified_hybrid_search:135"
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 505
+        },
+        {
+          "target": "results",
+          "resolved": false,
+          "confidence": 0,
+          "line": 505
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/store/hybrid_search_test.py:test_unified_hybrid_search_with_user_id:511",
+      "name": "test_unified_hybrid_search_with_user_id",
+      "startLine": 511,
+      "endLine": 551,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 529,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 532,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "unified_hybrid_search",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 538,
+          "resolvedId": "backend/api/features/store/hybrid_search.py:unified_hybrid_search:135"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/store/hybrid_search_test.py:test_unified_hybrid_search_custom_weights:556",
+      "name": "test_unified_hybrid_search_custom_weights",
+      "startLine": 556,
+      "endLine": 586,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "UnifiedSearchWeights",
+          "resolved": false,
+          "confidence": 0,
+          "line": 558
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 565,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 568,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "unified_hybrid_search",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 574,
+          "resolvedId": "backend/api/features/store/hybrid_search.py:unified_hybrid_search:135"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/store/hybrid_search_test.py:test_unified_hybrid_search_graceful_degradation:591",
+      "name": "test_unified_hybrid_search_graceful_degradation",
+      "startLine": 591,
+      "endLine": 628,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 609,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 612,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "Exception",
+          "resolved": false,
+          "confidence": 0,
+          "line": 616
+        },
+        {
+          "target": "unified_hybrid_search",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 621,
+          "resolvedId": "backend/api/features/store/hybrid_search.py:unified_hybrid_search:135"
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 627
+        },
+        {
+          "target": "results",
+          "resolved": false,
+          "confidence": 0,
+          "line": 627
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/store/hybrid_search_test.py:test_unified_hybrid_search_empty_query:633",
+      "name": "test_unified_hybrid_search_empty_query",
+      "startLine": 633,
+      "endLine": 642,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "unified_hybrid_search",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 635,
+          "resolvedId": "backend/api/features/store/hybrid_search.py:unified_hybrid_search:135"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/store/hybrid_search_test.py:test_unified_hybrid_search_pagination:647",
+      "name": "test_unified_hybrid_search_pagination",
+      "startLine": 647,
+      "endLine": 697,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "range",
+          "resolved": false,
+          "confidence": 0,
+          "line": 668
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 671,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 674,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "unified_hybrid_search",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 680,
+          "resolvedId": "backend/api/features/store/hybrid_search.py:unified_hybrid_search:135"
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 687
+        },
+        {
+          "target": "results",
+          "resolved": false,
+          "confidence": 0,
+          "line": 687
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/store/hybrid_search_test.py:test_unified_hybrid_search_schema_prefix:702",
+      "name": "test_unified_hybrid_search_schema_prefix",
+      "startLine": 702,
+      "endLine": 724,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 704,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 707,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "unified_hybrid_search",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 713,
+          "resolvedId": "backend/api/features/store/hybrid_search.py:unified_hybrid_search:135"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/store/hybrid_search_test.py:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 729,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 21
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 28,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 56,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "hybrid_search",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 61,
+          "resolvedId": "backend/api/features/store/hybrid_search.py:hybrid_search:428"
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 75
+        },
+        {
+          "target": "results",
+          "resolved": false,
+          "confidence": 0,
+          "line": 75
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 80
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 84,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 87,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 92,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "hybrid_search",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 97,
+          "resolvedId": "backend/api/features/store/hybrid_search.py:hybrid_search:428"
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 111
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 115,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 118,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 123,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "hybrid_search",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 128,
+          "resolvedId": "backend/api/features/store/hybrid_search.py:hybrid_search:428"
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 141
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 171,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 172,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "Exception",
+          "resolved": false,
+          "confidence": 0,
+          "line": 176
+        },
+        {
+          "target": "hybrid_search",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 180,
+          "resolvedId": "backend/api/features/store/hybrid_search.py:hybrid_search:428"
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 187
+        },
+        {
+          "target": "results",
+          "resolved": false,
+          "confidence": 0,
+          "line": 187
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 192
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 196,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 201,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "hybrid_search",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 207,
+          "resolvedId": "backend/api/features/store/hybrid_search.py:hybrid_search:428"
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 221
+        },
+        {
+          "target": "params",
+          "resolved": false,
+          "confidence": 0,
+          "line": 221
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 224
+        },
+        {
+          "target": "HybridSearchWeights",
+          "resolved": false,
+          "confidence": 0,
+          "line": 228
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 236,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 241,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "hybrid_search",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 246,
+          "resolvedId": "backend/api/features/store/hybrid_search.py:hybrid_search:428"
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 267
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 271,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 285,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "hybrid_search",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 291,
+          "resolvedId": "backend/api/features/store/hybrid_search.py:hybrid_search:428"
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 311
+        },
+        {
+          "target": "range",
+          "resolved": false,
+          "confidence": 0,
+          "line": 344
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 347,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 352,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "hybrid_search",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 358,
+          "resolvedId": "backend/api/features/store/hybrid_search.py:hybrid_search:428"
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 365
+        },
+        {
+          "target": "results",
+          "resolved": false,
+          "confidence": 0,
+          "line": 365
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 378
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 382,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "Exception",
+          "resolved": false,
+          "confidence": 0,
+          "line": 386
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 388,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "raises",
+          "resolved": false,
+          "confidence": 0,
+          "line": 394
+        },
+        {
+          "target": "hybrid_search",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 395,
+          "resolvedId": "backend/api/features/store/hybrid_search.py:hybrid_search:428"
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 401
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 409
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 442,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 445,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "unified_hybrid_search",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 451,
+          "resolvedId": "backend/api/features/store/hybrid_search.py:unified_hybrid_search:135"
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 457
+        },
+        {
+          "target": "results",
+          "resolved": false,
+          "confidence": 0,
+          "line": 457
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 463
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 483,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 486,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "unified_hybrid_search",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 492,
+          "resolvedId": "backend/api/features/store/hybrid_search.py:unified_hybrid_search:135"
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 505
+        },
+        {
+          "target": "results",
+          "resolved": false,
+          "confidence": 0,
+          "line": 505
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 509
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 529,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 532,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "unified_hybrid_search",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 538,
+          "resolvedId": "backend/api/features/store/hybrid_search.py:unified_hybrid_search:135"
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 554
+        },
+        {
+          "target": "UnifiedSearchWeights",
+          "resolved": false,
+          "confidence": 0,
+          "line": 558
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 565,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 568,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "unified_hybrid_search",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 574,
+          "resolvedId": "backend/api/features/store/hybrid_search.py:unified_hybrid_search:135"
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 589
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 609,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 612,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "Exception",
+          "resolved": false,
+          "confidence": 0,
+          "line": 616
+        },
+        {
+          "target": "unified_hybrid_search",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 621,
+          "resolvedId": "backend/api/features/store/hybrid_search.py:unified_hybrid_search:135"
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 627
+        },
+        {
+          "target": "results",
+          "resolved": false,
+          "confidence": 0,
+          "line": 627
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 631
+        },
+        {
+          "target": "unified_hybrid_search",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 635,
+          "resolvedId": "backend/api/features/store/hybrid_search.py:unified_hybrid_search:135"
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 645
+        },
+        {
+          "target": "range",
+          "resolved": false,
+          "confidence": 0,
+          "line": 668
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 671,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 674,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "unified_hybrid_search",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 680,
+          "resolvedId": "backend/api/features/store/hybrid_search.py:unified_hybrid_search:135"
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 687
+        },
+        {
+          "target": "results",
+          "resolved": false,
+          "confidence": 0,
+          "line": 687
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 700
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 704,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 707,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "unified_hybrid_search",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 713,
+          "resolvedId": "backend/api/features/store/hybrid_search.py:unified_hybrid_search:135"
+        },
+        {
+          "target": "main",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 728,
+          "resolvedId": "backend/check_store_data.py:main:149"
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 21
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 80
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 111
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 141
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 192
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 224
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 267
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 311
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 378
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 409
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 463
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 509
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 554
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 589
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 631
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 645
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 700
+        },
+        {
+          "target": "main",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 728,
+          "resolvedId": "backend/check_store_data.py:main:149"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

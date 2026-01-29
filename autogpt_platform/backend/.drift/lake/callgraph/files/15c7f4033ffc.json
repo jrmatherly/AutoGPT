@@ -1,0 +1,1394 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.130Z",
+  "checksum": "3ca3dd6b20d5433e",
+  "file": "backend/api/features/chat/tools/_test_data.py",
+  "functions": [
+    {
+      "id": "backend/api/features/chat/tools/_test_data.py:make_session:21",
+      "name": "make_session",
+      "startLine": 21,
+      "endLine": 31,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "ChatSession",
+          "resolved": false,
+          "confidence": 0,
+          "line": 22
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 23
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 23
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 27
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 28
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/chat/tools/_test_data.py:setup_test_data:35",
+      "name": "setup_test_data",
+      "startLine": 35,
+      "endLine": 150,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 45
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 46
+        },
+        {
+          "target": "get_or_create_user",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 48,
+          "resolvedId": "backend/data/user.py:get_or_create_user:32"
+        },
+        {
+          "target": "user_data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 48
+        },
+        {
+          "target": "split",
+          "resolved": false,
+          "confidence": 0,
+          "line": 51
+        },
+        {
+          "target": "create",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 52,
+          "resolvedId": "backend/integrations/creds_manager.py:create:68"
+        },
+        {
+          "target": "ProfileCreateInput",
+          "resolved": false,
+          "confidence": 0,
+          "line": 53
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 63
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 63
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 66
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 66
+        },
+        {
+          "target": "AgentInputBlock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 67
+        },
+        {
+          "target": "Node",
+          "resolved": false,
+          "confidence": 0,
+          "line": 68
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 83
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 83
+        },
+        {
+          "target": "AgentOutputBlock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 84
+        },
+        {
+          "target": "Node",
+          "resolved": false,
+          "confidence": 0,
+          "line": 85
+        },
+        {
+          "target": "Link",
+          "resolved": false,
+          "confidence": 0,
+          "line": 100
+        },
+        {
+          "target": "Graph",
+          "resolved": false,
+          "confidence": 0,
+          "line": 109
+        },
+        {
+          "target": "create_graph",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 119,
+          "resolvedId": "backend/executor/manager_test.py:create_graph:34"
+        },
+        {
+          "target": "graph",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 119,
+          "resolvedId": "backend/cli_main.py:graph:181"
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 123
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 123
+        },
+        {
+          "target": "create_store_submission",
+          "resolved": false,
+          "confidence": 0,
+          "line": 124
+        },
+        {
+          "target": "review_store_submission",
+          "resolved": false,
+          "confidence": 0,
+          "line": 138
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "profile",
+          "operation": "write",
+          "line": 52,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "write",
+          "line": 52,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/api/features/chat/tools/_test_data.py:setup_llm_test_data:154",
+      "name": "setup_llm_test_data",
+      "startLine": 154,
+      "endLine": 315,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "getenv",
+          "resolved": false,
+          "confidence": 0,
+          "line": 162
+        },
+        {
+          "target": "skip",
+          "resolved": false,
+          "confidence": 0,
+          "line": 164
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 168
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 169
+        },
+        {
+          "target": "get_or_create_user",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 171,
+          "resolvedId": "backend/data/user.py:get_or_create_user:32"
+        },
+        {
+          "target": "user_data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 171
+        },
+        {
+          "target": "split",
+          "resolved": false,
+          "confidence": 0,
+          "line": 174
+        },
+        {
+          "target": "create",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 175,
+          "resolvedId": "backend/integrations/creds_manager.py:create:68"
+        },
+        {
+          "target": "ProfileCreateInput",
+          "resolved": false,
+          "confidence": 0,
+          "line": 176
+        },
+        {
+          "target": "APIKeyCredentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 186
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 187
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 187
+        },
+        {
+          "target": "SecretStr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 189
+        },
+        {
+          "target": "IntegrationCredentialsStore",
+          "resolved": false,
+          "confidence": 0,
+          "line": 195
+        },
+        {
+          "target": "add_creds",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 196,
+          "resolvedId": "backend/integrations/credentials_store.py:add_creds:296"
+        },
+        {
+          "target": "credentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 196
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 199
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 199
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 202
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 202
+        },
+        {
+          "target": "AgentInputBlock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 203
+        },
+        {
+          "target": "Node",
+          "resolved": false,
+          "confidence": 0,
+          "line": 204
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 219
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 219
+        },
+        {
+          "target": "AITextGeneratorBlock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 220
+        },
+        {
+          "target": "Node",
+          "resolved": false,
+          "confidence": 0,
+          "line": 221
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 240
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 240
+        },
+        {
+          "target": "AgentOutputBlock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 241
+        },
+        {
+          "target": "Node",
+          "resolved": false,
+          "confidence": 0,
+          "line": 242
+        },
+        {
+          "target": "Link",
+          "resolved": false,
+          "confidence": 0,
+          "line": 258
+        },
+        {
+          "target": "Link",
+          "resolved": false,
+          "confidence": 0,
+          "line": 267
+        },
+        {
+          "target": "Graph",
+          "resolved": false,
+          "confidence": 0,
+          "line": 276
+        },
+        {
+          "target": "create_graph",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 286,
+          "resolvedId": "backend/executor/manager_test.py:create_graph:34"
+        },
+        {
+          "target": "graph",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 286,
+          "resolvedId": "backend/cli_main.py:graph:181"
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 289
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 289
+        },
+        {
+          "target": "create_store_submission",
+          "resolved": false,
+          "confidence": 0,
+          "line": 290
+        },
+        {
+          "target": "review_store_submission",
+          "resolved": false,
+          "confidence": 0,
+          "line": 302
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "profile",
+          "operation": "write",
+          "line": 175,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "write",
+          "line": 175,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/api/features/chat/tools/_test_data.py:setup_firecrawl_test_data:319",
+      "name": "setup_firecrawl_test_data",
+      "startLine": 319,
+      "endLine": 465,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 328
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 329
+        },
+        {
+          "target": "get_or_create_user",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 331,
+          "resolvedId": "backend/data/user.py:get_or_create_user:32"
+        },
+        {
+          "target": "user_data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 331
+        },
+        {
+          "target": "split",
+          "resolved": false,
+          "confidence": 0,
+          "line": 334
+        },
+        {
+          "target": "create",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 335,
+          "resolvedId": "backend/integrations/creds_manager.py:create:68"
+        },
+        {
+          "target": "ProfileCreateInput",
+          "resolved": false,
+          "confidence": 0,
+          "line": 336
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 349
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 349
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 352
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 352
+        },
+        {
+          "target": "AgentInputBlock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 353
+        },
+        {
+          "target": "Node",
+          "resolved": false,
+          "confidence": 0,
+          "line": 354
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 369
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 369
+        },
+        {
+          "target": "FirecrawlScrapeBlock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 370
+        },
+        {
+          "target": "Node",
+          "resolved": false,
+          "confidence": 0,
+          "line": 371
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 391
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 391
+        },
+        {
+          "target": "AgentOutputBlock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 392
+        },
+        {
+          "target": "Node",
+          "resolved": false,
+          "confidence": 0,
+          "line": 393
+        },
+        {
+          "target": "Link",
+          "resolved": false,
+          "confidence": 0,
+          "line": 409
+        },
+        {
+          "target": "Link",
+          "resolved": false,
+          "confidence": 0,
+          "line": 418
+        },
+        {
+          "target": "Graph",
+          "resolved": false,
+          "confidence": 0,
+          "line": 427
+        },
+        {
+          "target": "create_graph",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 437,
+          "resolvedId": "backend/executor/manager_test.py:create_graph:34"
+        },
+        {
+          "target": "graph",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 437,
+          "resolvedId": "backend/cli_main.py:graph:181"
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 440
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 440
+        },
+        {
+          "target": "create_store_submission",
+          "resolved": false,
+          "confidence": 0,
+          "line": 441
+        },
+        {
+          "target": "review_store_submission",
+          "resolved": false,
+          "confidence": 0,
+          "line": 453
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "profile",
+          "operation": "write",
+          "line": 335,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "write",
+          "line": 335,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/api/features/chat/tools/_test_data.py:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 466,
+      "isEntryPoint": false,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "ChatSession",
+          "resolved": false,
+          "confidence": 0,
+          "line": 22
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 23
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 23
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 27
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 28
+        },
+        {
+          "target": "fixture",
+          "resolved": false,
+          "confidence": 0,
+          "line": 34
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 45
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 46
+        },
+        {
+          "target": "get_or_create_user",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 48,
+          "resolvedId": "backend/data/user.py:get_or_create_user:32"
+        },
+        {
+          "target": "user_data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 48
+        },
+        {
+          "target": "split",
+          "resolved": false,
+          "confidence": 0,
+          "line": 51
+        },
+        {
+          "target": "create",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 52,
+          "resolvedId": "backend/integrations/creds_manager.py:create:68"
+        },
+        {
+          "target": "ProfileCreateInput",
+          "resolved": false,
+          "confidence": 0,
+          "line": 53
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 63
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 63
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 66
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 66
+        },
+        {
+          "target": "AgentInputBlock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 67
+        },
+        {
+          "target": "Node",
+          "resolved": false,
+          "confidence": 0,
+          "line": 68
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 83
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 83
+        },
+        {
+          "target": "AgentOutputBlock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 84
+        },
+        {
+          "target": "Node",
+          "resolved": false,
+          "confidence": 0,
+          "line": 85
+        },
+        {
+          "target": "Link",
+          "resolved": false,
+          "confidence": 0,
+          "line": 100
+        },
+        {
+          "target": "Graph",
+          "resolved": false,
+          "confidence": 0,
+          "line": 109
+        },
+        {
+          "target": "create_graph",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 119,
+          "resolvedId": "backend/executor/manager_test.py:create_graph:34"
+        },
+        {
+          "target": "graph",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 119,
+          "resolvedId": "backend/cli_main.py:graph:181"
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 123
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 123
+        },
+        {
+          "target": "create_store_submission",
+          "resolved": false,
+          "confidence": 0,
+          "line": 124
+        },
+        {
+          "target": "review_store_submission",
+          "resolved": false,
+          "confidence": 0,
+          "line": 138
+        },
+        {
+          "target": "fixture",
+          "resolved": false,
+          "confidence": 0,
+          "line": 153
+        },
+        {
+          "target": "getenv",
+          "resolved": false,
+          "confidence": 0,
+          "line": 162
+        },
+        {
+          "target": "skip",
+          "resolved": false,
+          "confidence": 0,
+          "line": 164
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 168
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 169
+        },
+        {
+          "target": "get_or_create_user",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 171,
+          "resolvedId": "backend/data/user.py:get_or_create_user:32"
+        },
+        {
+          "target": "user_data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 171
+        },
+        {
+          "target": "split",
+          "resolved": false,
+          "confidence": 0,
+          "line": 174
+        },
+        {
+          "target": "create",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 175,
+          "resolvedId": "backend/integrations/creds_manager.py:create:68"
+        },
+        {
+          "target": "ProfileCreateInput",
+          "resolved": false,
+          "confidence": 0,
+          "line": 176
+        },
+        {
+          "target": "APIKeyCredentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 186
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 187
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 187
+        },
+        {
+          "target": "SecretStr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 189
+        },
+        {
+          "target": "IntegrationCredentialsStore",
+          "resolved": false,
+          "confidence": 0,
+          "line": 195
+        },
+        {
+          "target": "add_creds",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 196,
+          "resolvedId": "backend/integrations/credentials_store.py:add_creds:296"
+        },
+        {
+          "target": "credentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 196
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 199
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 199
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 202
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 202
+        },
+        {
+          "target": "AgentInputBlock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 203
+        },
+        {
+          "target": "Node",
+          "resolved": false,
+          "confidence": 0,
+          "line": 204
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 219
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 219
+        },
+        {
+          "target": "AITextGeneratorBlock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 220
+        },
+        {
+          "target": "Node",
+          "resolved": false,
+          "confidence": 0,
+          "line": 221
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 240
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 240
+        },
+        {
+          "target": "AgentOutputBlock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 241
+        },
+        {
+          "target": "Node",
+          "resolved": false,
+          "confidence": 0,
+          "line": 242
+        },
+        {
+          "target": "Link",
+          "resolved": false,
+          "confidence": 0,
+          "line": 258
+        },
+        {
+          "target": "Link",
+          "resolved": false,
+          "confidence": 0,
+          "line": 267
+        },
+        {
+          "target": "Graph",
+          "resolved": false,
+          "confidence": 0,
+          "line": 276
+        },
+        {
+          "target": "create_graph",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 286,
+          "resolvedId": "backend/executor/manager_test.py:create_graph:34"
+        },
+        {
+          "target": "graph",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 286,
+          "resolvedId": "backend/cli_main.py:graph:181"
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 289
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 289
+        },
+        {
+          "target": "create_store_submission",
+          "resolved": false,
+          "confidence": 0,
+          "line": 290
+        },
+        {
+          "target": "review_store_submission",
+          "resolved": false,
+          "confidence": 0,
+          "line": 302
+        },
+        {
+          "target": "fixture",
+          "resolved": false,
+          "confidence": 0,
+          "line": 318
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 328
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 329
+        },
+        {
+          "target": "get_or_create_user",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 331,
+          "resolvedId": "backend/data/user.py:get_or_create_user:32"
+        },
+        {
+          "target": "user_data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 331
+        },
+        {
+          "target": "split",
+          "resolved": false,
+          "confidence": 0,
+          "line": 334
+        },
+        {
+          "target": "create",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 335,
+          "resolvedId": "backend/integrations/creds_manager.py:create:68"
+        },
+        {
+          "target": "ProfileCreateInput",
+          "resolved": false,
+          "confidence": 0,
+          "line": 336
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 349
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 349
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 352
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 352
+        },
+        {
+          "target": "AgentInputBlock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 353
+        },
+        {
+          "target": "Node",
+          "resolved": false,
+          "confidence": 0,
+          "line": 354
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 369
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 369
+        },
+        {
+          "target": "FirecrawlScrapeBlock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 370
+        },
+        {
+          "target": "Node",
+          "resolved": false,
+          "confidence": 0,
+          "line": 371
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 391
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 391
+        },
+        {
+          "target": "AgentOutputBlock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 392
+        },
+        {
+          "target": "Node",
+          "resolved": false,
+          "confidence": 0,
+          "line": 393
+        },
+        {
+          "target": "Link",
+          "resolved": false,
+          "confidence": 0,
+          "line": 409
+        },
+        {
+          "target": "Link",
+          "resolved": false,
+          "confidence": 0,
+          "line": 418
+        },
+        {
+          "target": "Graph",
+          "resolved": false,
+          "confidence": 0,
+          "line": 427
+        },
+        {
+          "target": "create_graph",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 437,
+          "resolvedId": "backend/executor/manager_test.py:create_graph:34"
+        },
+        {
+          "target": "graph",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 437,
+          "resolvedId": "backend/cli_main.py:graph:181"
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 440
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 440
+        },
+        {
+          "target": "create_store_submission",
+          "resolved": false,
+          "confidence": 0,
+          "line": 441
+        },
+        {
+          "target": "review_store_submission",
+          "resolved": false,
+          "confidence": 0,
+          "line": 453
+        },
+        {
+          "target": "fixture",
+          "resolved": false,
+          "confidence": 0,
+          "line": 34
+        },
+        {
+          "target": "fixture",
+          "resolved": false,
+          "confidence": 0,
+          "line": 153
+        },
+        {
+          "target": "fixture",
+          "resolved": false,
+          "confidence": 0,
+          "line": 318
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "profile",
+          "operation": "write",
+          "line": 52,
+          "fields": []
+        },
+        {
+          "table": "profile",
+          "operation": "write",
+          "line": 175,
+          "fields": []
+        },
+        {
+          "table": "profile",
+          "operation": "write",
+          "line": 335,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "write",
+          "line": 52,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "write",
+          "line": 175,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "write",
+          "line": 335,
+          "fields": []
+        }
+      ]
+    }
+  ]
+}

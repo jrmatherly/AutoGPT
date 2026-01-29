@@ -1,0 +1,101 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.045Z",
+  "checksum": "8ec2bd2ba4dfa63f",
+  "file": "src/app/(platform)/marketplace/components/MainAgentPage/useMainAgentPage.ts",
+  "functions": [
+    {
+      "id": "src/app/(platform)/marketplace/components/MainAgentPage/useMainAgentPage.ts:useMainAgentPage:12",
+      "name": "useMainAgentPage",
+      "startLine": 12,
+      "endLine": 86,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "toLowerCase",
+          "resolved": false,
+          "confidence": 0,
+          "line": 17
+        },
+        {
+          "target": "useSupabase",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 18,
+          "resolvedId": "src/lib/supabase/hooks/useSupabase.ts:useSupabase:10"
+        },
+        {
+          "target": "useGetV2GetSpecificAgent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 23
+        },
+        {
+          "target": "creator_lower",
+          "resolved": false,
+          "confidence": 0,
+          "line": 23
+        },
+        {
+          "target": "slug",
+          "resolved": false,
+          "confidence": 0,
+          "line": 23
+        },
+        {
+          "target": "useGetV2ListStoreAgents",
+          "resolved": false,
+          "confidence": 0,
+          "line": 28
+        },
+        {
+          "target": "useGetV2ListStoreAgents",
+          "resolved": false,
+          "confidence": 0,
+          "line": 42
+        },
+        {
+          "target": "replace",
+          "resolved": false,
+          "confidence": 0,
+          "line": 43
+        },
+        {
+          "target": "useGetV2GetAgentByStoreId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 56
+        },
+        {
+          "target": "okData",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 56,
+          "resolvedId": "src/app/api/helpers.ts:okData:23"
+        },
+        {
+          "target": "agent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 56
+        },
+        {
+          "target": "okData",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 61,
+          "resolvedId": "src/app/api/helpers.ts:okData:23"
+        },
+        {
+          "target": "agent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 61
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

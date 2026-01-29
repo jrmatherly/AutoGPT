@@ -1,0 +1,1110 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.070Z",
+  "checksum": "726faca3f1f0f9e1",
+  "file": "src/app/(platform)/signup/useSignupPage.ts",
+  "functions": [
+    {
+      "id": "src/app/(platform)/signup/useSignupPage.ts:useSignupPage:14",
+      "name": "useSignupPage",
+      "startLine": 14,
+      "endLine": 166,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useSupabase",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 15,
+          "resolvedId": "src/lib/supabase/hooks/useSupabase.ts:useSupabase:10"
+        },
+        {
+          "target": "useState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 16
+        },
+        {
+          "target": "useToast",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 17,
+          "resolvedId": "src/components/molecules/Toast/use-toast.tsx:useToast:77"
+        },
+        {
+          "target": "useRouter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 18
+        },
+        {
+          "target": "useSearchParams",
+          "resolved": false,
+          "confidence": 0,
+          "line": 19
+        },
+        {
+          "target": "useState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 20
+        },
+        {
+          "target": "useState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 21
+        },
+        {
+          "target": "useState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 22
+        },
+        {
+          "target": "useState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 23
+        },
+        {
+          "target": "isCloud",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 24,
+          "resolvedId": "src/services/environment/index.ts:isCloud:102"
+        },
+        {
+          "target": "useGetFlag",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 25,
+          "resolvedId": "src/services/feature-flags/use-get-flag.ts:useGetFlag:53"
+        },
+        {
+          "target": "CHAT",
+          "resolved": false,
+          "confidence": 0,
+          "line": 25
+        },
+        {
+          "target": "getHomepageRoute",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 26,
+          "resolvedId": "src/lib/constants.ts:getHomepageRoute:16"
+        },
+        {
+          "target": "isChatEnabled",
+          "resolved": false,
+          "confidence": 0,
+          "line": 26
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 29,
+          "resolvedId": "src/services/storage/local-storage.ts:get:16"
+        },
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 31
+        },
+        {
+          "target": "push",
+          "resolved": false,
+          "confidence": 0,
+          "line": 33
+        },
+        {
+          "target": "useForm",
+          "resolved": false,
+          "confidence": 0,
+          "line": 37
+        },
+        {
+          "target": "zodResolver",
+          "resolved": false,
+          "confidence": 0,
+          "line": 38
+        },
+        {
+          "target": "signupFormSchema",
+          "resolved": false,
+          "confidence": 0,
+          "line": 38
+        },
+        {
+          "target": "setIsGoogleLoading",
+          "resolved": false,
+          "confidence": 0,
+          "line": 48
+        },
+        {
+          "target": "setIsSigningUp",
+          "resolved": false,
+          "confidence": 0,
+          "line": 49
+        },
+        {
+          "target": "encodeURIComponent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 54
+        },
+        {
+          "target": "nextUrl",
+          "resolved": false,
+          "confidence": 0,
+          "line": 54
+        },
+        {
+          "target": "fetch",
+          "resolved": false,
+          "confidence": 0,
+          "line": 58
+        },
+        {
+          "target": "stringify",
+          "resolved": false,
+          "confidence": 0,
+          "line": 61
+        },
+        {
+          "target": "json",
+          "resolved": false,
+          "confidence": 0,
+          "line": 65
+        },
+        {
+          "target": "setShowNotAllowedModal",
+          "resolved": false,
+          "confidence": 0,
+          "line": 68
+        },
+        {
+          "target": "setIsSigningUp",
+          "resolved": false,
+          "confidence": 0,
+          "line": 69
+        },
+        {
+          "target": "Error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 73,
+          "resolvedId": "src/app/error.tsx:Error:8"
+        },
+        {
+          "target": "json",
+          "resolved": false,
+          "confidence": 0,
+          "line": 76
+        },
+        {
+          "target": "setIsGoogleLoading",
+          "resolved": false,
+          "confidence": 0,
+          "line": 79
+        },
+        {
+          "target": "setIsSigningUp",
+          "resolved": false,
+          "confidence": 0,
+          "line": 80
+        },
+        {
+          "target": "toast",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 81,
+          "resolvedId": "src/components/molecules/Toast/use-toast.tsx:toast:27"
+        },
+        {
+          "target": "setIsLoading",
+          "resolved": false,
+          "confidence": 0,
+          "line": 90
+        },
+        {
+          "target": "includes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 92
+        },
+        {
+          "target": "toast",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 93,
+          "resolvedId": "src/components/molecules/Toast/use-toast.tsx:toast:27"
+        },
+        {
+          "target": "setIsLoading",
+          "resolved": false,
+          "confidence": 0,
+          "line": 99
+        },
+        {
+          "target": "setIsSigningUp",
+          "resolved": false,
+          "confidence": 0,
+          "line": 103
+        },
+        {
+          "target": "signupAction",
+          "resolved": false,
+          "confidence": 0,
+          "line": 106
+        },
+        {
+          "target": "email",
+          "resolved": false,
+          "confidence": 0,
+          "line": 107
+        },
+        {
+          "target": "password",
+          "resolved": false,
+          "confidence": 0,
+          "line": 108
+        },
+        {
+          "target": "confirmPassword",
+          "resolved": false,
+          "confidence": 0,
+          "line": 109
+        },
+        {
+          "target": "agreeToTerms",
+          "resolved": false,
+          "confidence": 0,
+          "line": 110
+        },
+        {
+          "target": "setIsLoading",
+          "resolved": false,
+          "confidence": 0,
+          "line": 114
+        },
+        {
+          "target": "setFeedback",
+          "resolved": false,
+          "confidence": 0,
+          "line": 118
+        },
+        {
+          "target": "setIsSigningUp",
+          "resolved": false,
+          "confidence": 0,
+          "line": 119
+        },
+        {
+          "target": "setShowNotAllowedModal",
+          "resolved": false,
+          "confidence": 0,
+          "line": 123
+        },
+        {
+          "target": "setIsSigningUp",
+          "resolved": false,
+          "confidence": 0,
+          "line": 124
+        },
+        {
+          "target": "toast",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 128,
+          "resolvedId": "src/components/molecules/Toast/use-toast.tsx:toast:27"
+        },
+        {
+          "target": "setIsSigningUp",
+          "resolved": false,
+          "confidence": 0,
+          "line": 132
+        },
+        {
+          "target": "replace",
+          "resolved": false,
+          "confidence": 0,
+          "line": 138
+        },
+        {
+          "target": "redirectTo",
+          "resolved": false,
+          "confidence": 0,
+          "line": 138
+        },
+        {
+          "target": "setIsLoading",
+          "resolved": false,
+          "confidence": 0,
+          "line": 140
+        },
+        {
+          "target": "setIsSigningUp",
+          "resolved": false,
+          "confidence": 0,
+          "line": 141
+        },
+        {
+          "target": "toast",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 142,
+          "resolvedId": "src/components/molecules/Toast/use-toast.tsx:toast:27"
+        },
+        {
+          "target": "handleSubmit",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 162,
+          "resolvedId": "src/components/__legacy__/RatingCard.tsx:handleSubmit:28"
+        },
+        {
+          "target": "handleSignup",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 162,
+          "resolvedId": "src/app/(platform)/signup/useSignupPage.ts:handleSignup:89"
+        },
+        {
+          "target": "setShowNotAllowedModal",
+          "resolved": false,
+          "confidence": 0,
+          "line": 163
+        },
+        {
+          "target": "push",
+          "resolved": false,
+          "confidence": 0,
+          "line": 33
+        },
+        {
+          "target": "setIsGoogleLoading",
+          "resolved": false,
+          "confidence": 0,
+          "line": 48
+        },
+        {
+          "target": "setIsSigningUp",
+          "resolved": false,
+          "confidence": 0,
+          "line": 49
+        },
+        {
+          "target": "encodeURIComponent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 54
+        },
+        {
+          "target": "nextUrl",
+          "resolved": false,
+          "confidence": 0,
+          "line": 54
+        },
+        {
+          "target": "fetch",
+          "resolved": false,
+          "confidence": 0,
+          "line": 58
+        },
+        {
+          "target": "stringify",
+          "resolved": false,
+          "confidence": 0,
+          "line": 61
+        },
+        {
+          "target": "json",
+          "resolved": false,
+          "confidence": 0,
+          "line": 65
+        },
+        {
+          "target": "setShowNotAllowedModal",
+          "resolved": false,
+          "confidence": 0,
+          "line": 68
+        },
+        {
+          "target": "setIsSigningUp",
+          "resolved": false,
+          "confidence": 0,
+          "line": 69
+        },
+        {
+          "target": "Error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 73,
+          "resolvedId": "src/app/error.tsx:Error:8"
+        },
+        {
+          "target": "json",
+          "resolved": false,
+          "confidence": 0,
+          "line": 76
+        },
+        {
+          "target": "setIsGoogleLoading",
+          "resolved": false,
+          "confidence": 0,
+          "line": 79
+        },
+        {
+          "target": "setIsSigningUp",
+          "resolved": false,
+          "confidence": 0,
+          "line": 80
+        },
+        {
+          "target": "toast",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 81,
+          "resolvedId": "src/components/molecules/Toast/use-toast.tsx:toast:27"
+        },
+        {
+          "target": "setIsLoading",
+          "resolved": false,
+          "confidence": 0,
+          "line": 90
+        },
+        {
+          "target": "includes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 92
+        },
+        {
+          "target": "toast",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 93,
+          "resolvedId": "src/components/molecules/Toast/use-toast.tsx:toast:27"
+        },
+        {
+          "target": "setIsLoading",
+          "resolved": false,
+          "confidence": 0,
+          "line": 99
+        },
+        {
+          "target": "setIsSigningUp",
+          "resolved": false,
+          "confidence": 0,
+          "line": 103
+        },
+        {
+          "target": "signupAction",
+          "resolved": false,
+          "confidence": 0,
+          "line": 106
+        },
+        {
+          "target": "email",
+          "resolved": false,
+          "confidence": 0,
+          "line": 107
+        },
+        {
+          "target": "password",
+          "resolved": false,
+          "confidence": 0,
+          "line": 108
+        },
+        {
+          "target": "confirmPassword",
+          "resolved": false,
+          "confidence": 0,
+          "line": 109
+        },
+        {
+          "target": "agreeToTerms",
+          "resolved": false,
+          "confidence": 0,
+          "line": 110
+        },
+        {
+          "target": "setIsLoading",
+          "resolved": false,
+          "confidence": 0,
+          "line": 114
+        },
+        {
+          "target": "setFeedback",
+          "resolved": false,
+          "confidence": 0,
+          "line": 118
+        },
+        {
+          "target": "setIsSigningUp",
+          "resolved": false,
+          "confidence": 0,
+          "line": 119
+        },
+        {
+          "target": "setShowNotAllowedModal",
+          "resolved": false,
+          "confidence": 0,
+          "line": 123
+        },
+        {
+          "target": "setIsSigningUp",
+          "resolved": false,
+          "confidence": 0,
+          "line": 124
+        },
+        {
+          "target": "toast",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 128,
+          "resolvedId": "src/components/molecules/Toast/use-toast.tsx:toast:27"
+        },
+        {
+          "target": "setIsSigningUp",
+          "resolved": false,
+          "confidence": 0,
+          "line": 132
+        },
+        {
+          "target": "replace",
+          "resolved": false,
+          "confidence": 0,
+          "line": 138
+        },
+        {
+          "target": "redirectTo",
+          "resolved": false,
+          "confidence": 0,
+          "line": 138
+        },
+        {
+          "target": "setIsLoading",
+          "resolved": false,
+          "confidence": 0,
+          "line": 140
+        },
+        {
+          "target": "setIsSigningUp",
+          "resolved": false,
+          "confidence": 0,
+          "line": 141
+        },
+        {
+          "target": "toast",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 142,
+          "resolvedId": "src/components/molecules/Toast/use-toast.tsx:toast:27"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/app/(platform)/signup/useSignupPage.ts:$useEffect$1:31",
+      "name": "$useEffect$1",
+      "startLine": 31,
+      "endLine": 35,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 31
+        },
+        {
+          "target": "push",
+          "resolved": false,
+          "confidence": 0,
+          "line": 33
+        },
+        {
+          "target": "push",
+          "resolved": false,
+          "confidence": 0,
+          "line": 33
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/app/(platform)/signup/useSignupPage.ts:handleProviderSignup:47",
+      "name": "handleProviderSignup",
+      "startLine": 47,
+      "endLine": 87,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "setIsGoogleLoading",
+          "resolved": false,
+          "confidence": 0,
+          "line": 48
+        },
+        {
+          "target": "setIsSigningUp",
+          "resolved": false,
+          "confidence": 0,
+          "line": 49
+        },
+        {
+          "target": "encodeURIComponent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 54
+        },
+        {
+          "target": "nextUrl",
+          "resolved": false,
+          "confidence": 0,
+          "line": 54
+        },
+        {
+          "target": "fetch",
+          "resolved": false,
+          "confidence": 0,
+          "line": 58
+        },
+        {
+          "target": "stringify",
+          "resolved": false,
+          "confidence": 0,
+          "line": 61
+        },
+        {
+          "target": "json",
+          "resolved": false,
+          "confidence": 0,
+          "line": 65
+        },
+        {
+          "target": "setShowNotAllowedModal",
+          "resolved": false,
+          "confidence": 0,
+          "line": 68
+        },
+        {
+          "target": "setIsSigningUp",
+          "resolved": false,
+          "confidence": 0,
+          "line": 69
+        },
+        {
+          "target": "Error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 73,
+          "resolvedId": "src/app/error.tsx:Error:8"
+        },
+        {
+          "target": "json",
+          "resolved": false,
+          "confidence": 0,
+          "line": 76
+        },
+        {
+          "target": "setIsGoogleLoading",
+          "resolved": false,
+          "confidence": 0,
+          "line": 79
+        },
+        {
+          "target": "setIsSigningUp",
+          "resolved": false,
+          "confidence": 0,
+          "line": 80
+        },
+        {
+          "target": "toast",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 81,
+          "resolvedId": "src/components/molecules/Toast/use-toast.tsx:toast:27"
+        },
+        {
+          "target": "setIsGoogleLoading",
+          "resolved": false,
+          "confidence": 0,
+          "line": 48
+        },
+        {
+          "target": "setIsSigningUp",
+          "resolved": false,
+          "confidence": 0,
+          "line": 49
+        },
+        {
+          "target": "encodeURIComponent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 54
+        },
+        {
+          "target": "nextUrl",
+          "resolved": false,
+          "confidence": 0,
+          "line": 54
+        },
+        {
+          "target": "fetch",
+          "resolved": false,
+          "confidence": 0,
+          "line": 58
+        },
+        {
+          "target": "stringify",
+          "resolved": false,
+          "confidence": 0,
+          "line": 61
+        },
+        {
+          "target": "json",
+          "resolved": false,
+          "confidence": 0,
+          "line": 65
+        },
+        {
+          "target": "setShowNotAllowedModal",
+          "resolved": false,
+          "confidence": 0,
+          "line": 68
+        },
+        {
+          "target": "setIsSigningUp",
+          "resolved": false,
+          "confidence": 0,
+          "line": 69
+        },
+        {
+          "target": "Error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 73,
+          "resolvedId": "src/app/error.tsx:Error:8"
+        },
+        {
+          "target": "json",
+          "resolved": false,
+          "confidence": 0,
+          "line": 76
+        },
+        {
+          "target": "setIsGoogleLoading",
+          "resolved": false,
+          "confidence": 0,
+          "line": 79
+        },
+        {
+          "target": "setIsSigningUp",
+          "resolved": false,
+          "confidence": 0,
+          "line": 80
+        },
+        {
+          "target": "toast",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 81,
+          "resolvedId": "src/components/molecules/Toast/use-toast.tsx:toast:27"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/app/(platform)/signup/useSignupPage.ts:handleSignup:89",
+      "name": "handleSignup",
+      "startLine": 89,
+      "endLine": 150,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "setIsLoading",
+          "resolved": false,
+          "confidence": 0,
+          "line": 90
+        },
+        {
+          "target": "includes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 92
+        },
+        {
+          "target": "toast",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 93,
+          "resolvedId": "src/components/molecules/Toast/use-toast.tsx:toast:27"
+        },
+        {
+          "target": "setIsLoading",
+          "resolved": false,
+          "confidence": 0,
+          "line": 99
+        },
+        {
+          "target": "setIsSigningUp",
+          "resolved": false,
+          "confidence": 0,
+          "line": 103
+        },
+        {
+          "target": "signupAction",
+          "resolved": false,
+          "confidence": 0,
+          "line": 106
+        },
+        {
+          "target": "email",
+          "resolved": false,
+          "confidence": 0,
+          "line": 107
+        },
+        {
+          "target": "password",
+          "resolved": false,
+          "confidence": 0,
+          "line": 108
+        },
+        {
+          "target": "confirmPassword",
+          "resolved": false,
+          "confidence": 0,
+          "line": 109
+        },
+        {
+          "target": "agreeToTerms",
+          "resolved": false,
+          "confidence": 0,
+          "line": 110
+        },
+        {
+          "target": "setIsLoading",
+          "resolved": false,
+          "confidence": 0,
+          "line": 114
+        },
+        {
+          "target": "setFeedback",
+          "resolved": false,
+          "confidence": 0,
+          "line": 118
+        },
+        {
+          "target": "setIsSigningUp",
+          "resolved": false,
+          "confidence": 0,
+          "line": 119
+        },
+        {
+          "target": "setShowNotAllowedModal",
+          "resolved": false,
+          "confidence": 0,
+          "line": 123
+        },
+        {
+          "target": "setIsSigningUp",
+          "resolved": false,
+          "confidence": 0,
+          "line": 124
+        },
+        {
+          "target": "toast",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 128,
+          "resolvedId": "src/components/molecules/Toast/use-toast.tsx:toast:27"
+        },
+        {
+          "target": "setIsSigningUp",
+          "resolved": false,
+          "confidence": 0,
+          "line": 132
+        },
+        {
+          "target": "replace",
+          "resolved": false,
+          "confidence": 0,
+          "line": 138
+        },
+        {
+          "target": "redirectTo",
+          "resolved": false,
+          "confidence": 0,
+          "line": 138
+        },
+        {
+          "target": "setIsLoading",
+          "resolved": false,
+          "confidence": 0,
+          "line": 140
+        },
+        {
+          "target": "setIsSigningUp",
+          "resolved": false,
+          "confidence": 0,
+          "line": 141
+        },
+        {
+          "target": "toast",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 142,
+          "resolvedId": "src/components/molecules/Toast/use-toast.tsx:toast:27"
+        },
+        {
+          "target": "setIsLoading",
+          "resolved": false,
+          "confidence": 0,
+          "line": 90
+        },
+        {
+          "target": "includes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 92
+        },
+        {
+          "target": "toast",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 93,
+          "resolvedId": "src/components/molecules/Toast/use-toast.tsx:toast:27"
+        },
+        {
+          "target": "setIsLoading",
+          "resolved": false,
+          "confidence": 0,
+          "line": 99
+        },
+        {
+          "target": "setIsSigningUp",
+          "resolved": false,
+          "confidence": 0,
+          "line": 103
+        },
+        {
+          "target": "signupAction",
+          "resolved": false,
+          "confidence": 0,
+          "line": 106
+        },
+        {
+          "target": "email",
+          "resolved": false,
+          "confidence": 0,
+          "line": 107
+        },
+        {
+          "target": "password",
+          "resolved": false,
+          "confidence": 0,
+          "line": 108
+        },
+        {
+          "target": "confirmPassword",
+          "resolved": false,
+          "confidence": 0,
+          "line": 109
+        },
+        {
+          "target": "agreeToTerms",
+          "resolved": false,
+          "confidence": 0,
+          "line": 110
+        },
+        {
+          "target": "setIsLoading",
+          "resolved": false,
+          "confidence": 0,
+          "line": 114
+        },
+        {
+          "target": "setFeedback",
+          "resolved": false,
+          "confidence": 0,
+          "line": 118
+        },
+        {
+          "target": "setIsSigningUp",
+          "resolved": false,
+          "confidence": 0,
+          "line": 119
+        },
+        {
+          "target": "setShowNotAllowedModal",
+          "resolved": false,
+          "confidence": 0,
+          "line": 123
+        },
+        {
+          "target": "setIsSigningUp",
+          "resolved": false,
+          "confidence": 0,
+          "line": 124
+        },
+        {
+          "target": "toast",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 128,
+          "resolvedId": "src/components/molecules/Toast/use-toast.tsx:toast:27"
+        },
+        {
+          "target": "setIsSigningUp",
+          "resolved": false,
+          "confidence": 0,
+          "line": 132
+        },
+        {
+          "target": "replace",
+          "resolved": false,
+          "confidence": 0,
+          "line": 138
+        },
+        {
+          "target": "redirectTo",
+          "resolved": false,
+          "confidence": 0,
+          "line": 138
+        },
+        {
+          "target": "setIsLoading",
+          "resolved": false,
+          "confidence": 0,
+          "line": 140
+        },
+        {
+          "target": "setIsSigningUp",
+          "resolved": false,
+          "confidence": 0,
+          "line": 141
+        },
+        {
+          "target": "toast",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 142,
+          "resolvedId": "src/components/molecules/Toast/use-toast.tsx:toast:27"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

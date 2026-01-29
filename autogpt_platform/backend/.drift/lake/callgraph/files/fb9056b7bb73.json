@@ -1,0 +1,598 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.242Z",
+  "checksum": "a7c76ec6ec72bae3",
+  "file": "backend/blocks/notion/create_page.py",
+  "functions": [
+    {
+      "id": "backend/blocks/notion/create_page.py:validate_parent:55",
+      "name": "validate_parent",
+      "startLine": 55,
+      "endLine": 65,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "ValueError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 58
+        },
+        {
+          "target": "ValueError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 62
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/notion/create_page.py:__init__:71",
+      "name": "__init__",
+      "startLine": 71,
+      "endLine": 99,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 72,
+          "resolvedId": "backend/blocks/notion/create_page.py:__init__:71"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/notion/create_page.py:_markdown_to_blocks:102",
+      "name": "_markdown_to_blocks",
+      "startLine": 102,
+      "endLine": 244,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "split",
+          "resolved": false,
+          "confidence": 0,
+          "line": 108
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 111
+        },
+        {
+          "target": "lines",
+          "resolved": false,
+          "confidence": 0,
+          "line": 111
+        },
+        {
+          "target": "strip",
+          "resolved": false,
+          "confidence": 0,
+          "line": 115
+        },
+        {
+          "target": "startswith",
+          "resolved": false,
+          "confidence": 0,
+          "line": 120
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 121
+        },
+        {
+          "target": "strip",
+          "resolved": false,
+          "confidence": 0,
+          "line": 126
+        },
+        {
+          "target": "startswith",
+          "resolved": false,
+          "confidence": 0,
+          "line": 131
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 132
+        },
+        {
+          "target": "strip",
+          "resolved": false,
+          "confidence": 0,
+          "line": 137
+        },
+        {
+          "target": "startswith",
+          "resolved": false,
+          "confidence": 0,
+          "line": 142
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 143
+        },
+        {
+          "target": "strip",
+          "resolved": false,
+          "confidence": 0,
+          "line": 148
+        },
+        {
+          "target": "startswith",
+          "resolved": false,
+          "confidence": 0,
+          "line": 154
+        },
+        {
+          "target": "strip",
+          "resolved": false,
+          "confidence": 0,
+          "line": 154
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 155
+        },
+        {
+          "target": "strip",
+          "resolved": false,
+          "confidence": 0,
+          "line": 162
+        },
+        {
+          "target": "strip",
+          "resolved": false,
+          "confidence": 0,
+          "line": 162
+        },
+        {
+          "target": "strip",
+          "resolved": false,
+          "confidence": 0,
+          "line": 169
+        },
+        {
+          "target": "isdigit",
+          "resolved": false,
+          "confidence": 0,
+          "line": 169
+        },
+        {
+          "target": "strip",
+          "resolved": false,
+          "confidence": 0,
+          "line": 169
+        },
+        {
+          "target": "find",
+          "resolved": false,
+          "confidence": 0,
+          "line": 170
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 171
+        },
+        {
+          "target": "strip",
+          "resolved": false,
+          "confidence": 0,
+          "line": 178
+        },
+        {
+          "target": "startswith",
+          "resolved": false,
+          "confidence": 0,
+          "line": 185
+        },
+        {
+          "target": "strip",
+          "resolved": false,
+          "confidence": 0,
+          "line": 185
+        },
+        {
+          "target": "strip",
+          "resolved": false,
+          "confidence": 0,
+          "line": 187
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 189
+        },
+        {
+          "target": "lines",
+          "resolved": false,
+          "confidence": 0,
+          "line": 189
+        },
+        {
+          "target": "startswith",
+          "resolved": false,
+          "confidence": 0,
+          "line": 189
+        },
+        {
+          "target": "strip",
+          "resolved": false,
+          "confidence": 0,
+          "line": 189
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 190
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 192
+        },
+        {
+          "target": "join",
+          "resolved": false,
+          "confidence": 0,
+          "line": 199
+        },
+        {
+          "target": "code_lines",
+          "resolved": false,
+          "confidence": 0,
+          "line": 199
+        },
+        {
+          "target": "startswith",
+          "resolved": false,
+          "confidence": 0,
+          "line": 207
+        },
+        {
+          "target": "strip",
+          "resolved": false,
+          "confidence": 0,
+          "line": 207
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 208
+        },
+        {
+          "target": "strip",
+          "resolved": false,
+          "confidence": 0,
+          "line": 215
+        },
+        {
+          "target": "strip",
+          "resolved": false,
+          "confidence": 0,
+          "line": 215
+        },
+        {
+          "target": "strip",
+          "resolved": false,
+          "confidence": 0,
+          "line": 222
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 223
+        },
+        {
+          "target": "strip",
+          "resolved": false,
+          "confidence": 0,
+          "line": 227
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 238
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/notion/create_page.py:_build_properties:247",
+      "name": "_build_properties",
+      "startLine": 247,
+      "endLine": 284,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "items",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 256,
+          "resolvedId": "backend/integrations/oauth/__init__.py:items:123"
+        },
+        {
+          "target": "lower",
+          "resolved": false,
+          "confidence": 0,
+          "line": 257
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 261
+        },
+        {
+          "target": "value",
+          "resolved": false,
+          "confidence": 0,
+          "line": 261
+        },
+        {
+          "target": "bool",
+          "resolved": false,
+          "confidence": 0,
+          "line": 261
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 263
+        },
+        {
+          "target": "value",
+          "resolved": false,
+          "confidence": 0,
+          "line": 263
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 265
+        },
+        {
+          "target": "value",
+          "resolved": false,
+          "confidence": 0,
+          "line": 265
+        },
+        {
+          "target": "list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 265
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 268
+        },
+        {
+          "target": "item",
+          "resolved": false,
+          "confidence": 0,
+          "line": 268
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 270
+        },
+        {
+          "target": "value",
+          "resolved": false,
+          "confidence": 0,
+          "line": 270
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 270
+        },
+        {
+          "target": "lower",
+          "resolved": false,
+          "confidence": 0,
+          "line": 273
+        },
+        {
+          "target": "lower",
+          "resolved": false,
+          "confidence": 0,
+          "line": 275
+        },
+        {
+          "target": "lower",
+          "resolved": false,
+          "confidence": 0,
+          "line": 277
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/notion/create_page.py:create_page:287",
+      "name": "create_page",
+      "startLine": 287,
+      "endLine": 343,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "ValueError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 303
+        },
+        {
+          "target": "ValueError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 307
+        },
+        {
+          "target": "NotionClient",
+          "resolved": false,
+          "confidence": 0,
+          "line": 311
+        },
+        {
+          "target": "credentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 311
+        },
+        {
+          "target": "_build_properties",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 320,
+          "resolvedId": "backend/blocks/notion/create_page.py:_build_properties:247"
+        },
+        {
+          "target": "title",
+          "resolved": false,
+          "confidence": 0,
+          "line": 320
+        },
+        {
+          "target": "properties",
+          "resolved": false,
+          "confidence": 0,
+          "line": 320
+        },
+        {
+          "target": "_markdown_to_blocks",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 325,
+          "resolvedId": "backend/blocks/notion/create_page.py:_markdown_to_blocks:102"
+        },
+        {
+          "target": "content",
+          "resolved": false,
+          "confidence": 0,
+          "line": 325
+        },
+        {
+          "target": "create_page",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 333,
+          "resolvedId": "backend/blocks/notion/create_page.py:create_page:287"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 337,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 338,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "ValueError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 341
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/notion/create_page.py:run:345",
+      "name": "run",
+      "startLine": 345,
+      "endLine": 365,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "create_page",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 353,
+          "resolvedId": "backend/blocks/notion/create_page.py:create_page:287"
+        },
+        {
+          "target": "credentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 354
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 365
+        },
+        {
+          "target": "e",
+          "resolved": false,
+          "confidence": 0,
+          "line": 365
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 365
+        },
+        {
+          "target": "e",
+          "resolved": false,
+          "confidence": 0,
+          "line": 365
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

@@ -1,0 +1,1866 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.129Z",
+  "checksum": "a87765e01fe237c9",
+  "file": "load-tests/tests/comprehensive/platform-journey-test.js",
+  "functions": [
+    {
+      "id": "load-tests/tests/comprehensive/platform-journey-test.js:generateTestGraph:11",
+      "name": "generateTestGraph",
+      "startLine": 11,
+      "endLine": 22,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "substr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 13
+        },
+        {
+          "target": "toString",
+          "resolved": false,
+          "confidence": 0,
+          "line": 13
+        },
+        {
+          "target": "random",
+          "resolved": false,
+          "confidence": 0,
+          "line": 13
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "load-tests/tests/comprehensive/platform-journey-test.js:generateExecutionInputs:24",
+      "name": "generateExecutionInputs",
+      "startLine": 24,
+      "endLine": 26,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "load-tests/tests/comprehensive/platform-journey-test.js:generateScheduleData:28",
+      "name": "generateScheduleData",
+      "startLine": 28,
+      "endLine": 30,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "load-tests/tests/comprehensive/platform-journey-test.js:generateAPIKeyRequest:32",
+      "name": "generateAPIKeyRequest",
+      "startLine": 32,
+      "endLine": 34,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "load-tests/tests/comprehensive/platform-journey-test.js:setup:75",
+      "name": "setup",
+      "startLine": 75,
+      "endLine": 80,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 76
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 78
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "load-tests/tests/comprehensive/platform-journey-test.js:userProfileJourney:217",
+      "name": "userProfileJourney",
+      "startLine": 217,
+      "endLine": 243,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 218
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 221,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 225,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "check",
+          "resolved": false,
+          "confidence": 0,
+          "line": 227
+        },
+        {
+          "target": "creditsResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 227
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 232,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 236,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "check",
+          "resolved": false,
+          "confidence": 0,
+          "line": 238
+        },
+        {
+          "target": "onboardingResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 238
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 242,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 242
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "load-tests/tests/comprehensive/platform-journey-test.js:graphManagementJourney:245",
+      "name": "graphManagementJourney",
+      "startLine": 245,
+      "endLine": 339,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 246
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 249,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 253,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "check",
+          "resolved": false,
+          "confidence": 0,
+          "line": 255
+        },
+        {
+          "target": "listResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 255
+        },
+        {
+          "target": "random",
+          "resolved": false,
+          "confidence": 0,
+          "line": 260
+        },
+        {
+          "target": "generateTestGraph",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 261,
+          "resolvedId": "load-tests/tests/comprehensive/platform-journey-test.js:generateTestGraph:11"
+        },
+        {
+          "target": "post",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 263,
+          "resolvedId": "backend/util/request.py:post:563"
+        },
+        {
+          "target": "stringify",
+          "resolved": false,
+          "confidence": 0,
+          "line": 265
+        },
+        {
+          "target": "graphData",
+          "resolved": false,
+          "confidence": 0,
+          "line": 265
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 269,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "check",
+          "resolved": false,
+          "confidence": 0,
+          "line": 271
+        },
+        {
+          "target": "createResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 271
+        },
+        {
+          "target": "parse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 277
+        },
+        {
+          "target": "body",
+          "resolved": false,
+          "confidence": 0,
+          "line": 277
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 280,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 285,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "check",
+          "resolved": false,
+          "confidence": 0,
+          "line": 287
+        },
+        {
+          "target": "getResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 287
+        },
+        {
+          "target": "random",
+          "resolved": false,
+          "confidence": 0,
+          "line": 292
+        },
+        {
+          "target": "executeGraphScenario",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 293,
+          "resolvedId": "load-tests/tests/comprehensive/platform-journey-test.js:executeGraphScenario:341"
+        },
+        {
+          "target": "createdGraph",
+          "resolved": false,
+          "confidence": 0,
+          "line": 293
+        },
+        {
+          "target": "headers",
+          "resolved": false,
+          "confidence": 0,
+          "line": 293
+        },
+        {
+          "target": "random",
+          "resolved": false,
+          "confidence": 0,
+          "line": 297
+        },
+        {
+          "target": "createScheduleScenario",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 298,
+          "resolvedId": "load-tests/tests/comprehensive/platform-journey-test.js:createScheduleScenario:385"
+        },
+        {
+          "target": "id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 298
+        },
+        {
+          "target": "headers",
+          "resolved": false,
+          "confidence": 0,
+          "line": 298
+        },
+        {
+          "target": "error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 301,
+          "resolvedId": "backend/util/logging.py:error:49"
+        },
+        {
+          "target": "error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 301,
+          "resolvedId": "backend/util/logging.py:error:49"
+        },
+        {
+          "target": "parse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 309
+        },
+        {
+          "target": "body",
+          "resolved": false,
+          "confidence": 0,
+          "line": 309
+        },
+        {
+          "target": "floor",
+          "resolved": false,
+          "confidence": 0,
+          "line": 314
+        },
+        {
+          "target": "random",
+          "resolved": false,
+          "confidence": 0,
+          "line": 314
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 317,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 322,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "check",
+          "resolved": false,
+          "confidence": 0,
+          "line": 324
+        },
+        {
+          "target": "getResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 324
+        },
+        {
+          "target": "random",
+          "resolved": false,
+          "confidence": 0,
+          "line": 329
+        },
+        {
+          "target": "executeGraphScenario",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 330,
+          "resolvedId": "load-tests/tests/comprehensive/platform-journey-test.js:executeGraphScenario:341"
+        },
+        {
+          "target": "randomGraph",
+          "resolved": false,
+          "confidence": 0,
+          "line": 330
+        },
+        {
+          "target": "headers",
+          "resolved": false,
+          "confidence": 0,
+          "line": 330
+        },
+        {
+          "target": "error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 334,
+          "resolvedId": "backend/util/logging.py:error:49"
+        },
+        {
+          "target": "error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 334,
+          "resolvedId": "backend/util/logging.py:error:49"
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 338,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 338
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "load-tests/tests/comprehensive/platform-journey-test.js:executeGraphScenario:341",
+      "name": "executeGraphScenario",
+      "startLine": 341,
+      "endLine": 383,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 342
+        },
+        {
+          "target": "generateExecutionInputs",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 344,
+          "resolvedId": "load-tests/tests/comprehensive/platform-journey-test.js:generateExecutionInputs:24"
+        },
+        {
+          "target": "post",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 346,
+          "resolvedId": "backend/util/request.py:post:563"
+        },
+        {
+          "target": "stringify",
+          "resolved": false,
+          "confidence": 0,
+          "line": 348
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 355,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "check",
+          "resolved": false,
+          "confidence": 0,
+          "line": 357
+        },
+        {
+          "target": "executeResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 357
+        },
+        {
+          "target": "parse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 363
+        },
+        {
+          "target": "body",
+          "resolved": false,
+          "confidence": 0,
+          "line": 363
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 367,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 372,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "check",
+          "resolved": false,
+          "confidence": 0,
+          "line": 374
+        },
+        {
+          "target": "statusResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 374
+        },
+        {
+          "target": "error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 378,
+          "resolvedId": "backend/util/logging.py:error:49"
+        },
+        {
+          "target": "error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 378,
+          "resolvedId": "backend/util/logging.py:error:49"
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 382,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 382
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "load-tests/tests/comprehensive/platform-journey-test.js:createScheduleScenario:385",
+      "name": "createScheduleScenario",
+      "startLine": 385,
+      "endLine": 399,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "generateScheduleData",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 386,
+          "resolvedId": "load-tests/tests/comprehensive/platform-journey-test.js:generateScheduleData:28"
+        },
+        {
+          "target": "graphId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 386
+        },
+        {
+          "target": "post",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 388,
+          "resolvedId": "backend/util/request.py:post:563"
+        },
+        {
+          "target": "stringify",
+          "resolved": false,
+          "confidence": 0,
+          "line": 390
+        },
+        {
+          "target": "scheduleData",
+          "resolved": false,
+          "confidence": 0,
+          "line": 390
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 394,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "check",
+          "resolved": false,
+          "confidence": 0,
+          "line": 396
+        },
+        {
+          "target": "scheduleResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 396
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "load-tests/tests/comprehensive/platform-journey-test.js:blockOperationsJourney:401",
+      "name": "blockOperationsJourney",
+      "startLine": 401,
+      "endLine": 439,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 402
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 405,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 409,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "check",
+          "resolved": false,
+          "confidence": 0,
+          "line": 411
+        },
+        {
+          "target": "blocksResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 411
+        },
+        {
+          "target": "random",
+          "resolved": false,
+          "confidence": 0,
+          "line": 416
+        },
+        {
+          "target": "post",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 418,
+          "resolvedId": "backend/util/request.py:post:563"
+        },
+        {
+          "target": "stringify",
+          "resolved": false,
+          "confidence": 0,
+          "line": 420
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 430,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "check",
+          "resolved": false,
+          "confidence": 0,
+          "line": 432
+        },
+        {
+          "target": "timeBlockResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 432
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 438,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 438
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "load-tests/tests/comprehensive/platform-journey-test.js:systemOperationsJourney:441",
+      "name": "systemOperationsJourney",
+      "startLine": 441,
+      "endLine": 498,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 442
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 445,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 449,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "check",
+          "resolved": false,
+          "confidence": 0,
+          "line": 451
+        },
+        {
+          "target": "executionsResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 451
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 456,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 460,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "check",
+          "resolved": false,
+          "confidence": 0,
+          "line": 462
+        },
+        {
+          "target": "schedulesResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 462
+        },
+        {
+          "target": "random",
+          "resolved": false,
+          "confidence": 0,
+          "line": 467
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 469,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 473,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "check",
+          "resolved": false,
+          "confidence": 0,
+          "line": 475
+        },
+        {
+          "target": "apiKeysResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 475
+        },
+        {
+          "target": "random",
+          "resolved": false,
+          "confidence": 0,
+          "line": 480
+        },
+        {
+          "target": "generateAPIKeyRequest",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 481,
+          "resolvedId": "load-tests/tests/comprehensive/platform-journey-test.js:generateAPIKeyRequest:32"
+        },
+        {
+          "target": "post",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 483,
+          "resolvedId": "backend/util/request.py:post:563"
+        },
+        {
+          "target": "stringify",
+          "resolved": false,
+          "confidence": 0,
+          "line": 485
+        },
+        {
+          "target": "keyData",
+          "resolved": false,
+          "confidence": 0,
+          "line": 485
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 489,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "check",
+          "resolved": false,
+          "confidence": 0,
+          "line": 491
+        },
+        {
+          "target": "createKeyResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 491
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 497,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 497
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "load-tests/tests/comprehensive/platform-journey-test.js:teardown:500",
+      "name": "teardown",
+      "startLine": 500,
+      "endLine": 508,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 501
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 502
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 503
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 504
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 506
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 507
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "load-tests/tests/comprehensive/platform-journey-test.js:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 509,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "substr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 13
+        },
+        {
+          "target": "toString",
+          "resolved": false,
+          "confidence": 0,
+          "line": 13
+        },
+        {
+          "target": "random",
+          "resolved": false,
+          "confidence": 0,
+          "line": 13
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 76
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 78
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 218
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 221,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 225,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "check",
+          "resolved": false,
+          "confidence": 0,
+          "line": 227
+        },
+        {
+          "target": "creditsResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 227
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 232,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 236,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "check",
+          "resolved": false,
+          "confidence": 0,
+          "line": 238
+        },
+        {
+          "target": "onboardingResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 238
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 242,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 242
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 246
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 249,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 253,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "check",
+          "resolved": false,
+          "confidence": 0,
+          "line": 255
+        },
+        {
+          "target": "listResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 255
+        },
+        {
+          "target": "random",
+          "resolved": false,
+          "confidence": 0,
+          "line": 260
+        },
+        {
+          "target": "generateTestGraph",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 261,
+          "resolvedId": "load-tests/tests/comprehensive/platform-journey-test.js:generateTestGraph:11"
+        },
+        {
+          "target": "post",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 263,
+          "resolvedId": "backend/util/request.py:post:563"
+        },
+        {
+          "target": "stringify",
+          "resolved": false,
+          "confidence": 0,
+          "line": 265
+        },
+        {
+          "target": "graphData",
+          "resolved": false,
+          "confidence": 0,
+          "line": 265
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 269,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "check",
+          "resolved": false,
+          "confidence": 0,
+          "line": 271
+        },
+        {
+          "target": "createResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 271
+        },
+        {
+          "target": "parse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 277
+        },
+        {
+          "target": "body",
+          "resolved": false,
+          "confidence": 0,
+          "line": 277
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 280,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 285,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "check",
+          "resolved": false,
+          "confidence": 0,
+          "line": 287
+        },
+        {
+          "target": "getResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 287
+        },
+        {
+          "target": "random",
+          "resolved": false,
+          "confidence": 0,
+          "line": 292
+        },
+        {
+          "target": "executeGraphScenario",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 293,
+          "resolvedId": "load-tests/tests/comprehensive/platform-journey-test.js:executeGraphScenario:341"
+        },
+        {
+          "target": "createdGraph",
+          "resolved": false,
+          "confidence": 0,
+          "line": 293
+        },
+        {
+          "target": "headers",
+          "resolved": false,
+          "confidence": 0,
+          "line": 293
+        },
+        {
+          "target": "random",
+          "resolved": false,
+          "confidence": 0,
+          "line": 297
+        },
+        {
+          "target": "createScheduleScenario",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 298,
+          "resolvedId": "load-tests/tests/comprehensive/platform-journey-test.js:createScheduleScenario:385"
+        },
+        {
+          "target": "id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 298
+        },
+        {
+          "target": "headers",
+          "resolved": false,
+          "confidence": 0,
+          "line": 298
+        },
+        {
+          "target": "error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 301,
+          "resolvedId": "backend/util/logging.py:error:49"
+        },
+        {
+          "target": "error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 301,
+          "resolvedId": "backend/util/logging.py:error:49"
+        },
+        {
+          "target": "parse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 309
+        },
+        {
+          "target": "body",
+          "resolved": false,
+          "confidence": 0,
+          "line": 309
+        },
+        {
+          "target": "floor",
+          "resolved": false,
+          "confidence": 0,
+          "line": 314
+        },
+        {
+          "target": "random",
+          "resolved": false,
+          "confidence": 0,
+          "line": 314
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 317,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 322,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "check",
+          "resolved": false,
+          "confidence": 0,
+          "line": 324
+        },
+        {
+          "target": "getResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 324
+        },
+        {
+          "target": "random",
+          "resolved": false,
+          "confidence": 0,
+          "line": 329
+        },
+        {
+          "target": "executeGraphScenario",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 330,
+          "resolvedId": "load-tests/tests/comprehensive/platform-journey-test.js:executeGraphScenario:341"
+        },
+        {
+          "target": "randomGraph",
+          "resolved": false,
+          "confidence": 0,
+          "line": 330
+        },
+        {
+          "target": "headers",
+          "resolved": false,
+          "confidence": 0,
+          "line": 330
+        },
+        {
+          "target": "error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 334,
+          "resolvedId": "backend/util/logging.py:error:49"
+        },
+        {
+          "target": "error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 334,
+          "resolvedId": "backend/util/logging.py:error:49"
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 338,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 338
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 342
+        },
+        {
+          "target": "generateExecutionInputs",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 344,
+          "resolvedId": "load-tests/tests/comprehensive/platform-journey-test.js:generateExecutionInputs:24"
+        },
+        {
+          "target": "post",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 346,
+          "resolvedId": "backend/util/request.py:post:563"
+        },
+        {
+          "target": "stringify",
+          "resolved": false,
+          "confidence": 0,
+          "line": 348
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 355,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "check",
+          "resolved": false,
+          "confidence": 0,
+          "line": 357
+        },
+        {
+          "target": "executeResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 357
+        },
+        {
+          "target": "parse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 363
+        },
+        {
+          "target": "body",
+          "resolved": false,
+          "confidence": 0,
+          "line": 363
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 367,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 372,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "check",
+          "resolved": false,
+          "confidence": 0,
+          "line": 374
+        },
+        {
+          "target": "statusResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 374
+        },
+        {
+          "target": "error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 378,
+          "resolvedId": "backend/util/logging.py:error:49"
+        },
+        {
+          "target": "error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 378,
+          "resolvedId": "backend/util/logging.py:error:49"
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 382,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 382
+        },
+        {
+          "target": "generateScheduleData",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 386,
+          "resolvedId": "load-tests/tests/comprehensive/platform-journey-test.js:generateScheduleData:28"
+        },
+        {
+          "target": "graphId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 386
+        },
+        {
+          "target": "post",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 388,
+          "resolvedId": "backend/util/request.py:post:563"
+        },
+        {
+          "target": "stringify",
+          "resolved": false,
+          "confidence": 0,
+          "line": 390
+        },
+        {
+          "target": "scheduleData",
+          "resolved": false,
+          "confidence": 0,
+          "line": 390
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 394,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "check",
+          "resolved": false,
+          "confidence": 0,
+          "line": 396
+        },
+        {
+          "target": "scheduleResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 396
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 402
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 405,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 409,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "check",
+          "resolved": false,
+          "confidence": 0,
+          "line": 411
+        },
+        {
+          "target": "blocksResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 411
+        },
+        {
+          "target": "random",
+          "resolved": false,
+          "confidence": 0,
+          "line": 416
+        },
+        {
+          "target": "post",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 418,
+          "resolvedId": "backend/util/request.py:post:563"
+        },
+        {
+          "target": "stringify",
+          "resolved": false,
+          "confidence": 0,
+          "line": 420
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 430,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "check",
+          "resolved": false,
+          "confidence": 0,
+          "line": 432
+        },
+        {
+          "target": "timeBlockResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 432
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 438,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 438
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 442
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 445,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 449,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "check",
+          "resolved": false,
+          "confidence": 0,
+          "line": 451
+        },
+        {
+          "target": "executionsResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 451
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 456,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 460,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "check",
+          "resolved": false,
+          "confidence": 0,
+          "line": 462
+        },
+        {
+          "target": "schedulesResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 462
+        },
+        {
+          "target": "random",
+          "resolved": false,
+          "confidence": 0,
+          "line": 467
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 469,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 473,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "check",
+          "resolved": false,
+          "confidence": 0,
+          "line": 475
+        },
+        {
+          "target": "apiKeysResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 475
+        },
+        {
+          "target": "random",
+          "resolved": false,
+          "confidence": 0,
+          "line": 480
+        },
+        {
+          "target": "generateAPIKeyRequest",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 481,
+          "resolvedId": "load-tests/tests/comprehensive/platform-journey-test.js:generateAPIKeyRequest:32"
+        },
+        {
+          "target": "post",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 483,
+          "resolvedId": "backend/util/request.py:post:563"
+        },
+        {
+          "target": "stringify",
+          "resolved": false,
+          "confidence": 0,
+          "line": 485
+        },
+        {
+          "target": "keyData",
+          "resolved": false,
+          "confidence": 0,
+          "line": 485
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 489,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "check",
+          "resolved": false,
+          "confidence": 0,
+          "line": 491
+        },
+        {
+          "target": "createKeyResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 491
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 497,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 497
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 501
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 502
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 503
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 504
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 506
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 507
+        },
+        {
+          "target": "getEnvironmentConfig",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 36,
+          "resolvedId": "load-tests/configs/environment.js:getEnvironmentConfig:30"
+        },
+        {
+          "target": "Counter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 39
+        },
+        {
+          "target": "Counter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 40
+        },
+        {
+          "target": "Counter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 41
+        },
+        {
+          "target": "Trend",
+          "resolved": false,
+          "confidence": 0,
+          "line": 42
+        },
+        {
+          "target": "Rate",
+          "resolved": false,
+          "confidence": 0,
+          "line": 43
+        },
+        {
+          "target": "parseInt",
+          "resolved": false,
+          "confidence": 0,
+          "line": 50
+        },
+        {
+          "target": "VUS",
+          "resolved": false,
+          "confidence": 0,
+          "line": 50
+        },
+        {
+          "target": "parseInt",
+          "resolved": false,
+          "confidence": 0,
+          "line": 54
+        },
+        {
+          "target": "VUS",
+          "resolved": false,
+          "confidence": 0,
+          "line": 54
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

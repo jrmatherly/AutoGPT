@@ -1,0 +1,828 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.141Z",
+  "checksum": "992af04173045c97",
+  "file": "backend/api/features/analytics_test.py",
+  "functions": [
+    {
+      "id": "backend/api/features/analytics_test.py:setup_app_auth:21",
+      "name": "setup_app_auth",
+      "startLine": 21,
+      "endLine": 27,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "clear",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 27,
+          "resolvedId": "backend/sdk/registry.py:clear:155"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/analytics_test.py:test_log_raw_metric_success:35",
+      "name": "test_log_raw_metric_success",
+      "startLine": 35,
+      "endLine": 69,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "Mock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 41
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 42,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "post",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 54,
+          "resolvedId": "backend/util/request.py:post:563"
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 57,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "assert_called_once_with",
+          "resolved": false,
+          "confidence": 0,
+          "line": 59
+        },
+        {
+          "target": "assert_match",
+          "resolved": false,
+          "confidence": 0,
+          "line": 66
+        },
+        {
+          "target": "dumps",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 67,
+          "resolvedId": "backend/util/json.py:dumps:20"
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 67,
+          "resolvedId": "backend/util/request.py:json:289"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/analytics_test.py:test_log_raw_metric_various_values:83",
+      "name": "test_log_raw_metric_various_values",
+      "startLine": 83,
+      "endLine": 116,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "Mock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 92
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 93,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "post",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 105,
+          "resolvedId": "backend/util/request.py:post:563"
+        },
+        {
+          "target": "assert_match",
+          "resolved": false,
+          "confidence": 0,
+          "line": 109
+        },
+        {
+          "target": "dumps",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 110,
+          "resolvedId": "backend/util/json.py:dumps:20"
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 111,
+          "resolvedId": "backend/util/request.py:json:289"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/analytics_test.py:test_log_raw_metric_validation_errors:145",
+      "name": "test_log_raw_metric_validation_errors",
+      "startLine": 145,
+      "endLine": 159,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "post",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 150,
+          "resolvedId": "backend/util/request.py:post:563"
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 153,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "dumps",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 156,
+          "resolvedId": "backend/util/json.py:dumps:20"
+        },
+        {
+          "target": "error_detail",
+          "resolved": false,
+          "confidence": 0,
+          "line": 156
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/analytics_test.py:test_log_raw_metric_service_error:162",
+      "name": "test_log_raw_metric_service_error",
+      "startLine": 162,
+      "endLine": 184,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 167,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "Exception",
+          "resolved": false,
+          "confidence": 0,
+          "line": 170
+        },
+        {
+          "target": "post",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 179,
+          "resolvedId": "backend/util/request.py:post:563"
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 182,
+          "resolvedId": "backend/util/request.py:json:289"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/analytics_test.py:test_log_raw_analytics_success:192",
+      "name": "test_log_raw_analytics_success",
+      "startLine": 192,
+      "endLine": 231,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "Mock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 198
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 199,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "post",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 216,
+          "resolvedId": "backend/util/request.py:post:563"
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 219,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "assert_called_once_with",
+          "resolved": false,
+          "confidence": 0,
+          "line": 221
+        },
+        {
+          "target": "test_user_id",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 222,
+          "resolvedId": "backend/api/conftest.py:test_user_id:15"
+        },
+        {
+          "target": "assert_match",
+          "resolved": false,
+          "confidence": 0,
+          "line": 228
+        },
+        {
+          "target": "dumps",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 229,
+          "resolvedId": "backend/util/json.py:dumps:20"
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 229,
+          "resolvedId": "backend/util/request.py:json:289"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/analytics_test.py:test_log_raw_analytics_complex_data:234",
+      "name": "test_log_raw_analytics_complex_data",
+      "startLine": 234,
+      "endLine": 280,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "Mock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 239
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 240,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "post",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 269,
+          "resolvedId": "backend/util/request.py:post:563"
+        },
+        {
+          "target": "assert_match",
+          "resolved": false,
+          "confidence": 0,
+          "line": 273
+        },
+        {
+          "target": "dumps",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 274,
+          "resolvedId": "backend/util/json.py:dumps:20"
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 275,
+          "resolvedId": "backend/util/request.py:json:289"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/analytics_test.py:test_log_raw_analytics_validation_errors:301",
+      "name": "test_log_raw_analytics_validation_errors",
+      "startLine": 301,
+      "endLine": 315,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "post",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 306,
+          "resolvedId": "backend/util/request.py:post:563"
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 309,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "dumps",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 312,
+          "resolvedId": "backend/util/json.py:dumps:20"
+        },
+        {
+          "target": "error_detail",
+          "resolved": false,
+          "confidence": 0,
+          "line": 312
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/analytics_test.py:test_log_raw_analytics_service_error:318",
+      "name": "test_log_raw_analytics_service_error",
+      "startLine": 318,
+      "endLine": 340,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 323,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "Exception",
+          "resolved": false,
+          "confidence": 0,
+          "line": 326
+        },
+        {
+          "target": "post",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 335,
+          "resolvedId": "backend/util/request.py:post:563"
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 338,
+          "resolvedId": "backend/util/request.py:json:289"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/analytics_test.py:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 341,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "FastAPI",
+          "resolved": false,
+          "confidence": 0,
+          "line": 14
+        },
+        {
+          "target": "include_router",
+          "resolved": false,
+          "confidence": 0,
+          "line": 15
+        },
+        {
+          "target": "TestClient",
+          "resolved": false,
+          "confidence": 0,
+          "line": 17
+        },
+        {
+          "target": "fixture",
+          "resolved": false,
+          "confidence": 0,
+          "line": 20
+        },
+        {
+          "target": "clear",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 27,
+          "resolvedId": "backend/sdk/registry.py:clear:155"
+        },
+        {
+          "target": "Mock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 41
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 42,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "post",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 54,
+          "resolvedId": "backend/util/request.py:post:563"
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 57,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "assert_called_once_with",
+          "resolved": false,
+          "confidence": 0,
+          "line": 59
+        },
+        {
+          "target": "assert_match",
+          "resolved": false,
+          "confidence": 0,
+          "line": 66
+        },
+        {
+          "target": "dumps",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 67,
+          "resolvedId": "backend/util/json.py:dumps:20"
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 67,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "parametrize",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        },
+        {
+          "target": "Mock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 92
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 93,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "post",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 105,
+          "resolvedId": "backend/util/request.py:post:563"
+        },
+        {
+          "target": "assert_match",
+          "resolved": false,
+          "confidence": 0,
+          "line": 109
+        },
+        {
+          "target": "dumps",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 110,
+          "resolvedId": "backend/util/json.py:dumps:20"
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 111,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "parametrize",
+          "resolved": false,
+          "confidence": 0,
+          "line": 119
+        },
+        {
+          "target": "post",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 150,
+          "resolvedId": "backend/util/request.py:post:563"
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 153,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "dumps",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 156,
+          "resolvedId": "backend/util/json.py:dumps:20"
+        },
+        {
+          "target": "error_detail",
+          "resolved": false,
+          "confidence": 0,
+          "line": 156
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 167,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "Exception",
+          "resolved": false,
+          "confidence": 0,
+          "line": 170
+        },
+        {
+          "target": "post",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 179,
+          "resolvedId": "backend/util/request.py:post:563"
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 182,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "Mock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 198
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 199,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "post",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 216,
+          "resolvedId": "backend/util/request.py:post:563"
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 219,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "assert_called_once_with",
+          "resolved": false,
+          "confidence": 0,
+          "line": 221
+        },
+        {
+          "target": "test_user_id",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 222,
+          "resolvedId": "backend/api/conftest.py:test_user_id:15"
+        },
+        {
+          "target": "assert_match",
+          "resolved": false,
+          "confidence": 0,
+          "line": 228
+        },
+        {
+          "target": "dumps",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 229,
+          "resolvedId": "backend/util/json.py:dumps:20"
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 229,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "Mock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 239
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 240,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "post",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 269,
+          "resolvedId": "backend/util/request.py:post:563"
+        },
+        {
+          "target": "assert_match",
+          "resolved": false,
+          "confidence": 0,
+          "line": 273
+        },
+        {
+          "target": "dumps",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 274,
+          "resolvedId": "backend/util/json.py:dumps:20"
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 275,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "parametrize",
+          "resolved": false,
+          "confidence": 0,
+          "line": 283
+        },
+        {
+          "target": "post",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 306,
+          "resolvedId": "backend/util/request.py:post:563"
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 309,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "dumps",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 312,
+          "resolvedId": "backend/util/json.py:dumps:20"
+        },
+        {
+          "target": "error_detail",
+          "resolved": false,
+          "confidence": 0,
+          "line": 312
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 323,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "Exception",
+          "resolved": false,
+          "confidence": 0,
+          "line": 326
+        },
+        {
+          "target": "post",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 335,
+          "resolvedId": "backend/util/request.py:post:563"
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 338,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "FastAPI",
+          "resolved": false,
+          "confidence": 0,
+          "line": 14
+        },
+        {
+          "target": "include_router",
+          "resolved": false,
+          "confidence": 0,
+          "line": 15
+        },
+        {
+          "target": "TestClient",
+          "resolved": false,
+          "confidence": 0,
+          "line": 17
+        },
+        {
+          "target": "fixture",
+          "resolved": false,
+          "confidence": 0,
+          "line": 20
+        },
+        {
+          "target": "parametrize",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        },
+        {
+          "target": "parametrize",
+          "resolved": false,
+          "confidence": 0,
+          "line": 119
+        },
+        {
+          "target": "parametrize",
+          "resolved": false,
+          "confidence": 0,
+          "line": 283
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

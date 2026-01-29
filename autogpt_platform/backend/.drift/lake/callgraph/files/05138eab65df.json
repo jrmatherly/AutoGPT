@@ -1,0 +1,1081 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.122Z",
+  "checksum": "77d75d8977cab9b8",
+  "file": "backend/blocks/mem0.py",
+  "functions": [
+    {
+      "id": "backend/blocks/mem0.py:_get_client:35",
+      "name": "_get_client",
+      "startLine": 35,
+      "endLine": 37,
+      "isEntryPoint": false,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "MemoryClient",
+          "resolved": false,
+          "confidence": 0,
+          "line": 37
+        },
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 37,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "credentials",
+          "operation": "read",
+          "line": 37,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/blocks/mem0.py:__init__:84",
+      "name": "__init__",
+      "startLine": 84,
+      "endLine": 118,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 85,
+          "resolvedId": "backend/blocks/mem0.py:__init__:84"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 85
+        },
+        {
+          "target": "MockMemoryClient",
+          "resolved": false,
+          "confidence": 0,
+          "line": 117
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/mem0.py:run:120",
+      "name": "run",
+      "startLine": 120,
+      "endLine": 168,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "_get_client",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 131,
+          "resolvedId": "backend/blocks/mem0.py:_get_client:35"
+        },
+        {
+          "target": "credentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 131
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 133
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 135
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 138
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 152,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "messages",
+          "resolved": false,
+          "confidence": 0,
+          "line": 153
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 157,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 160
+        },
+        {
+          "target": "results",
+          "resolved": false,
+          "confidence": 0,
+          "line": 160
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 168
+        },
+        {
+          "target": "e",
+          "resolved": false,
+          "confidence": 0,
+          "line": 168
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/mem0.py:__init__:206",
+      "name": "__init__",
+      "startLine": 206,
+      "endLine": 223,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 207,
+          "resolvedId": "backend/blocks/mem0.py:__init__:84"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 207
+        },
+        {
+          "target": "MockMemoryClient",
+          "resolved": false,
+          "confidence": 0,
+          "line": 222
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/mem0.py:run:225",
+      "name": "run",
+      "startLine": 225,
+      "endLine": 261,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "_get_client",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 236,
+          "resolvedId": "backend/blocks/mem0.py:_get_client:35"
+        },
+        {
+          "target": "credentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 236
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 245
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 249
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 251
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 253
+        },
+        {
+          "target": "search",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 255,
+          "resolvedId": "backend/blocks/mem0.py:search:458"
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 261
+        },
+        {
+          "target": "e",
+          "resolved": false,
+          "confidence": 0,
+          "line": 261
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/mem0.py:__init__:293",
+      "name": "__init__",
+      "startLine": 293,
+      "endLine": 308,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 294,
+          "resolvedId": "backend/blocks/mem0.py:__init__:84"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 294
+        },
+        {
+          "target": "MockMemoryClient",
+          "resolved": false,
+          "confidence": 0,
+          "line": 307
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/mem0.py:run:310",
+      "name": "run",
+      "startLine": 310,
+      "endLine": 347,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "_get_client",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 321,
+          "resolvedId": "backend/blocks/mem0.py:_get_client:35"
+        },
+        {
+          "target": "credentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 321
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 329
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 331
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 333
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 337
+        },
+        {
+          "target": "get_all",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 339,
+          "resolvedId": "backend/blocks/mem0.py:get_all:461"
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 347
+        },
+        {
+          "target": "e",
+          "resolved": false,
+          "confidence": 0,
+          "line": 347
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/mem0.py:__init__:386",
+      "name": "__init__",
+      "startLine": 386,
+      "endLine": 402,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 387,
+          "resolvedId": "backend/blocks/mem0.py:__init__:84"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 387
+        },
+        {
+          "target": "MockMemoryClient",
+          "resolved": false,
+          "confidence": 0,
+          "line": 401
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/mem0.py:run:404",
+      "name": "run",
+      "startLine": 404,
+      "endLine": 448,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "_get_client",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 415,
+          "resolvedId": "backend/blocks/mem0.py:_get_client:35"
+        },
+        {
+          "target": "credentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 415
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 423
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 425
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 427
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 431
+        },
+        {
+          "target": "get_all",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 433,
+          "resolvedId": "backend/blocks/mem0.py:get_all:461"
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 448
+        },
+        {
+          "target": "e",
+          "resolved": false,
+          "confidence": 0,
+          "line": 448
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/mem0.py:add:455",
+      "name": "add",
+      "startLine": 455,
+      "endLine": 456,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/mem0.py:search:458",
+      "name": "search",
+      "startLine": 458,
+      "endLine": 459,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/mem0.py:get_all:461",
+      "name": "get_all",
+      "startLine": 461,
+      "endLine": 462,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/mem0.py:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 463,
+      "isEntryPoint": false,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "APIKeyCredentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 15
+        },
+        {
+          "target": "MemoryClient",
+          "resolved": false,
+          "confidence": 0,
+          "line": 37
+        },
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 37,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        },
+        {
+          "target": "CredentialsField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 61,
+          "resolvedId": "backend/data/model.py:CredentialsField:681"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 62,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 67,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 70,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 73,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 78,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 79,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 80,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 85,
+          "resolvedId": "backend/blocks/mem0.py:__init__:84"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 85
+        },
+        {
+          "target": "MockMemoryClient",
+          "resolved": false,
+          "confidence": 0,
+          "line": 117
+        },
+        {
+          "target": "_get_client",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 131,
+          "resolvedId": "backend/blocks/mem0.py:_get_client:35"
+        },
+        {
+          "target": "credentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 131
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 133
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 135
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 138
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 152,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "messages",
+          "resolved": false,
+          "confidence": 0,
+          "line": 153
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 157,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 160
+        },
+        {
+          "target": "results",
+          "resolved": false,
+          "confidence": 0,
+          "line": 160
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 168
+        },
+        {
+          "target": "e",
+          "resolved": false,
+          "confidence": 0,
+          "line": 168
+        },
+        {
+          "target": "CredentialsField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 177,
+          "resolvedId": "backend/data/model.py:CredentialsField:681"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 178,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 182,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 187,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 192,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 196,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 199,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 204,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 207,
+          "resolvedId": "backend/blocks/mem0.py:__init__:84"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 207
+        },
+        {
+          "target": "MockMemoryClient",
+          "resolved": false,
+          "confidence": 0,
+          "line": 222
+        },
+        {
+          "target": "_get_client",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 236,
+          "resolvedId": "backend/blocks/mem0.py:_get_client:35"
+        },
+        {
+          "target": "credentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 236
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 245
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 249
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 251
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 253
+        },
+        {
+          "target": "search",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 255,
+          "resolvedId": "backend/blocks/mem0.py:search:458"
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 261
+        },
+        {
+          "target": "e",
+          "resolved": false,
+          "confidence": 0,
+          "line": 261
+        },
+        {
+          "target": "CredentialsField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 270,
+          "resolvedId": "backend/data/model.py:CredentialsField:681"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 271,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 276,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 279,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 283,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 286,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 291,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 294,
+          "resolvedId": "backend/blocks/mem0.py:__init__:84"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 294
+        },
+        {
+          "target": "MockMemoryClient",
+          "resolved": false,
+          "confidence": 0,
+          "line": 307
+        },
+        {
+          "target": "_get_client",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 321,
+          "resolvedId": "backend/blocks/mem0.py:_get_client:35"
+        },
+        {
+          "target": "credentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 321
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 329
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 331
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 333
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 337
+        },
+        {
+          "target": "get_all",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 339,
+          "resolvedId": "backend/blocks/mem0.py:get_all:461"
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 347
+        },
+        {
+          "target": "e",
+          "resolved": false,
+          "confidence": 0,
+          "line": 347
+        },
+        {
+          "target": "CredentialsField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 356,
+          "resolvedId": "backend/data/model.py:CredentialsField:681"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 357,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 362,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 365,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 369,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 373,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 376,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 381,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 384,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 387,
+          "resolvedId": "backend/blocks/mem0.py:__init__:84"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 387
+        },
+        {
+          "target": "MockMemoryClient",
+          "resolved": false,
+          "confidence": 0,
+          "line": 401
+        },
+        {
+          "target": "_get_client",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 415,
+          "resolvedId": "backend/blocks/mem0.py:_get_client:35"
+        },
+        {
+          "target": "credentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 415
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 423
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 425
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 427
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 431
+        },
+        {
+          "target": "get_all",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 433,
+          "resolvedId": "backend/blocks/mem0.py:get_all:461"
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 448
+        },
+        {
+          "target": "e",
+          "resolved": false,
+          "confidence": 0,
+          "line": 448
+        },
+        {
+          "target": "APIKeyCredentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 15
+        },
+        {
+          "target": "SecretStr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 18
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "credentials",
+          "operation": "read",
+          "line": 37,
+          "fields": []
+        }
+      ]
+    }
+  ]
+}

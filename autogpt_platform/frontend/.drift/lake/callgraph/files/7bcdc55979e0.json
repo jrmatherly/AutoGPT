@@ -1,0 +1,121 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.070Z",
+  "checksum": "b72da23fec6d94f9",
+  "file": "src/app/(platform)/signup/actions.ts",
+  "functions": [
+    {
+      "id": "src/app/(platform)/signup/actions.ts:signup:10",
+      "name": "signup",
+      "startLine": 10,
+      "endLine": 75,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "safeParse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 18
+        },
+        {
+          "target": "getServerSupabase",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 32,
+          "resolvedId": "src/lib/supabase/server/getServerSupabase.ts:getServerSupabase:7"
+        },
+        {
+          "target": "signUp",
+          "resolved": false,
+          "confidence": 0,
+          "line": 40
+        },
+        {
+          "target": "data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 40
+        },
+        {
+          "target": "isWaitlistError",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 43,
+          "resolvedId": "src/app/api/auth/utils.ts:isWaitlistError:15"
+        },
+        {
+          "target": "code",
+          "resolved": false,
+          "confidence": 0,
+          "line": 43
+        },
+        {
+          "target": "message",
+          "resolved": false,
+          "confidence": 0,
+          "line": 43
+        },
+        {
+          "target": "logWaitlistError",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 44,
+          "resolvedId": "src/app/api/auth/utils.ts:logWaitlistError:53"
+        },
+        {
+          "target": "message",
+          "resolved": false,
+          "confidence": 0,
+          "line": 44
+        },
+        {
+          "target": "setSession",
+          "resolved": false,
+          "confidence": 0,
+          "line": 59
+        },
+        {
+          "target": "session",
+          "resolved": false,
+          "confidence": 0,
+          "line": 59
+        },
+        {
+          "target": "shouldShowOnboarding",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 62,
+          "resolvedId": "src/app/api/helpers.ts:shouldShowOnboarding:178"
+        },
+        {
+          "target": "getHomepageRoute",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 65,
+          "resolvedId": "src/lib/constants.ts:getHomepageRoute:16"
+        },
+        {
+          "target": "isChatEnabled",
+          "resolved": false,
+          "confidence": 0,
+          "line": 65
+        },
+        {
+          "target": "captureException",
+          "resolved": false,
+          "confidence": 0,
+          "line": 69
+        },
+        {
+          "target": "err",
+          "resolved": false,
+          "confidence": 0,
+          "line": 69
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

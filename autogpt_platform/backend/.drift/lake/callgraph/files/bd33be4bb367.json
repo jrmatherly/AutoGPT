@@ -1,0 +1,2236 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.209Z",
+  "checksum": "5d664b0da2e28695",
+  "file": "backend/api/features/chat/tools/run_agent_test.py",
+  "functions": [
+    {
+      "id": "backend/api/features/chat/tools/run_agent_test.py:mock_embedding_functions:22",
+      "name": "mock_embedding_functions",
+      "startLine": 22,
+      "endLine": 29,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 24,
+          "resolvedId": "backend/util/request.py:patch:578"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/chat/tools/run_agent_test.py:test_run_agent:33",
+      "name": "test_run_agent",
+      "startLine": 33,
+      "endLine": 70,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "RunAgentTool",
+          "resolved": false,
+          "confidence": 0,
+          "line": 41
+        },
+        {
+          "target": "split",
+          "resolved": false,
+          "confidence": 0,
+          "line": 44
+        },
+        {
+          "target": "make_session",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 47,
+          "resolvedId": "backend/api/features/chat/tools/_test_data.py:make_session:21"
+        },
+        {
+          "target": "execute",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 50,
+          "resolvedId": "backend/api/features/chat/tools/base.py:execute:60"
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 52
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 52
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 53
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 53
+        },
+        {
+          "target": "hasattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 61
+        },
+        {
+          "target": "response",
+          "resolved": false,
+          "confidence": 0,
+          "line": 61
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 64
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 64
+        },
+        {
+          "target": "loads",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 65,
+          "resolvedId": "backend/util/json.py:loads:77"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/chat/tools/run_agent_test.py:test_run_agent_missing_inputs:74",
+      "name": "test_run_agent_missing_inputs",
+      "startLine": 74,
+      "endLine": 106,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "RunAgentTool",
+          "resolved": false,
+          "confidence": 0,
+          "line": 81
+        },
+        {
+          "target": "split",
+          "resolved": false,
+          "confidence": 0,
+          "line": 84
+        },
+        {
+          "target": "make_session",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 87,
+          "resolvedId": "backend/api/features/chat/tools/_test_data.py:make_session:21"
+        },
+        {
+          "target": "execute",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 90,
+          "resolvedId": "backend/api/features/chat/tools/base.py:execute:60"
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 92
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 92
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 93
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 93
+        },
+        {
+          "target": "hasattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 101
+        },
+        {
+          "target": "response",
+          "resolved": false,
+          "confidence": 0,
+          "line": 101
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 104
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 104
+        },
+        {
+          "target": "loads",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 105,
+          "resolvedId": "backend/util/json.py:loads:77"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/chat/tools/run_agent_test.py:test_run_agent_invalid_agent_id:110",
+      "name": "test_run_agent_invalid_agent_id",
+      "startLine": 110,
+      "endLine": 141,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "RunAgentTool",
+          "resolved": false,
+          "confidence": 0,
+          "line": 116
+        },
+        {
+          "target": "make_session",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 119,
+          "resolvedId": "backend/api/features/chat/tools/_test_data.py:make_session:21"
+        },
+        {
+          "target": "execute",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 122,
+          "resolvedId": "backend/api/features/chat/tools/base.py:execute:60"
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 124
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 124
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 125
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 125
+        },
+        {
+          "target": "hasattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 133
+        },
+        {
+          "target": "response",
+          "resolved": false,
+          "confidence": 0,
+          "line": 133
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 135
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 135
+        },
+        {
+          "target": "loads",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 136,
+          "resolvedId": "backend/util/json.py:loads:77"
+        },
+        {
+          "target": "any",
+          "resolved": false,
+          "confidence": 0,
+          "line": 139
+        },
+        {
+          "target": "lower",
+          "resolved": false,
+          "confidence": 0,
+          "line": 140
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/chat/tools/run_agent_test.py:test_run_agent_with_llm_credentials:145",
+      "name": "test_run_agent_with_llm_credentials",
+      "startLine": 145,
+      "endLine": 185,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "RunAgentTool",
+          "resolved": false,
+          "confidence": 0,
+          "line": 153
+        },
+        {
+          "target": "split",
+          "resolved": false,
+          "confidence": 0,
+          "line": 156
+        },
+        {
+          "target": "make_session",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 159,
+          "resolvedId": "backend/api/features/chat/tools/_test_data.py:make_session:21"
+        },
+        {
+          "target": "execute",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 162,
+          "resolvedId": "backend/api/features/chat/tools/base.py:execute:60"
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 164
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 164
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 165
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 165
+        },
+        {
+          "target": "hasattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 173
+        },
+        {
+          "target": "response",
+          "resolved": false,
+          "confidence": 0,
+          "line": 173
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 177
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 177
+        },
+        {
+          "target": "loads",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 178,
+          "resolvedId": "backend/util/json.py:loads:77"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/chat/tools/run_agent_test.py:test_run_agent_shows_available_inputs_when_none_provided:189",
+      "name": "test_run_agent_shows_available_inputs_when_none_provided",
+      "startLine": 189,
+      "endLine": 219,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "RunAgentTool",
+          "resolved": false,
+          "confidence": 0,
+          "line": 194
+        },
+        {
+          "target": "split",
+          "resolved": false,
+          "confidence": 0,
+          "line": 195
+        },
+        {
+          "target": "make_session",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 196,
+          "resolvedId": "backend/api/features/chat/tools/_test_data.py:make_session:21"
+        },
+        {
+          "target": "execute",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 199,
+          "resolvedId": "backend/api/features/chat/tools/base.py:execute:60"
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 201
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 201
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 202
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 202
+        },
+        {
+          "target": "hasattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 210
+        },
+        {
+          "target": "response",
+          "resolved": false,
+          "confidence": 0,
+          "line": 210
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 211
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 211
+        },
+        {
+          "target": "loads",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 212,
+          "resolvedId": "backend/util/json.py:loads:77"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 215,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "lower",
+          "resolved": false,
+          "confidence": 0,
+          "line": 219
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/chat/tools/run_agent_test.py:test_run_agent_with_use_defaults:223",
+      "name": "test_run_agent_with_use_defaults",
+      "startLine": 223,
+      "endLine": 251,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "RunAgentTool",
+          "resolved": false,
+          "confidence": 0,
+          "line": 229
+        },
+        {
+          "target": "split",
+          "resolved": false,
+          "confidence": 0,
+          "line": 230
+        },
+        {
+          "target": "make_session",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 231,
+          "resolvedId": "backend/api/features/chat/tools/_test_data.py:make_session:21"
+        },
+        {
+          "target": "execute",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 234,
+          "resolvedId": "backend/api/features/chat/tools/base.py:execute:60"
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 236
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 236
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 237
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 237
+        },
+        {
+          "target": "hasattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 245
+        },
+        {
+          "target": "response",
+          "resolved": false,
+          "confidence": 0,
+          "line": 245
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 246
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 246
+        },
+        {
+          "target": "loads",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 247,
+          "resolvedId": "backend/util/json.py:loads:77"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/chat/tools/run_agent_test.py:test_run_agent_missing_credentials:255",
+      "name": "test_run_agent_missing_credentials",
+      "startLine": 255,
+      "endLine": 285,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "RunAgentTool",
+          "resolved": false,
+          "confidence": 0,
+          "line": 260
+        },
+        {
+          "target": "split",
+          "resolved": false,
+          "confidence": 0,
+          "line": 261
+        },
+        {
+          "target": "make_session",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 262,
+          "resolvedId": "backend/api/features/chat/tools/_test_data.py:make_session:21"
+        },
+        {
+          "target": "execute",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 265,
+          "resolvedId": "backend/api/features/chat/tools/base.py:execute:60"
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 267
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 267
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 268
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 268
+        },
+        {
+          "target": "hasattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 275
+        },
+        {
+          "target": "response",
+          "resolved": false,
+          "confidence": 0,
+          "line": 275
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 276
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 276
+        },
+        {
+          "target": "loads",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 277,
+          "resolvedId": "backend/util/json.py:loads:77"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 280,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 285
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/chat/tools/run_agent_test.py:test_run_agent_invalid_slug_format:289",
+      "name": "test_run_agent_invalid_slug_format",
+      "startLine": 289,
+      "endLine": 313,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "RunAgentTool",
+          "resolved": false,
+          "confidence": 0,
+          "line": 293
+        },
+        {
+          "target": "make_session",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 294,
+          "resolvedId": "backend/api/features/chat/tools/_test_data.py:make_session:21"
+        },
+        {
+          "target": "execute",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 297,
+          "resolvedId": "backend/api/features/chat/tools/base.py:execute:60"
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 299
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 299
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 300
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 300
+        },
+        {
+          "target": "hasattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 307
+        },
+        {
+          "target": "response",
+          "resolved": false,
+          "confidence": 0,
+          "line": 307
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 308
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 308
+        },
+        {
+          "target": "loads",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 309,
+          "resolvedId": "backend/util/json.py:loads:77"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 312,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/chat/tools/run_agent_test.py:test_run_agent_unauthenticated:317",
+      "name": "test_run_agent_unauthenticated",
+      "startLine": 317,
+      "endLine": 340,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "RunAgentTool",
+          "resolved": false,
+          "confidence": 0,
+          "line": 319
+        },
+        {
+          "target": "make_session",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 321,
+          "resolvedId": "backend/api/features/chat/tools/_test_data.py:make_session:21"
+        },
+        {
+          "target": "execute",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 324,
+          "resolvedId": "backend/api/features/chat/tools/base.py:execute:60"
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 326
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 326
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 327
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 327
+        },
+        {
+          "target": "hasattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 334
+        },
+        {
+          "target": "response",
+          "resolved": false,
+          "confidence": 0,
+          "line": 334
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 335
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 335
+        },
+        {
+          "target": "loads",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 336,
+          "resolvedId": "backend/util/json.py:loads:77"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 339,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "lower",
+          "resolved": false,
+          "confidence": 0,
+          "line": 340
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/chat/tools/run_agent_test.py:test_run_agent_schedule_without_cron:344",
+      "name": "test_run_agent_schedule_without_cron",
+      "startLine": 344,
+      "endLine": 372,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "RunAgentTool",
+          "resolved": false,
+          "confidence": 0,
+          "line": 349
+        },
+        {
+          "target": "split",
+          "resolved": false,
+          "confidence": 0,
+          "line": 350
+        },
+        {
+          "target": "make_session",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 351,
+          "resolvedId": "backend/api/features/chat/tools/_test_data.py:make_session:21"
+        },
+        {
+          "target": "execute",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 354,
+          "resolvedId": "backend/api/features/chat/tools/base.py:execute:60"
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 356
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 356
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 357
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 357
+        },
+        {
+          "target": "hasattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 366
+        },
+        {
+          "target": "response",
+          "resolved": false,
+          "confidence": 0,
+          "line": 366
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 367
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 367
+        },
+        {
+          "target": "loads",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 368,
+          "resolvedId": "backend/util/json.py:loads:77"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 371,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "lower",
+          "resolved": false,
+          "confidence": 0,
+          "line": 372
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/chat/tools/run_agent_test.py:test_run_agent_schedule_without_name:376",
+      "name": "test_run_agent_schedule_without_name",
+      "startLine": 376,
+      "endLine": 404,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "RunAgentTool",
+          "resolved": false,
+          "confidence": 0,
+          "line": 381
+        },
+        {
+          "target": "split",
+          "resolved": false,
+          "confidence": 0,
+          "line": 382
+        },
+        {
+          "target": "make_session",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 383,
+          "resolvedId": "backend/api/features/chat/tools/_test_data.py:make_session:21"
+        },
+        {
+          "target": "execute",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 386,
+          "resolvedId": "backend/api/features/chat/tools/base.py:execute:60"
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 388
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 388
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 389
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 389
+        },
+        {
+          "target": "hasattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 398
+        },
+        {
+          "target": "response",
+          "resolved": false,
+          "confidence": 0,
+          "line": 398
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 399
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 399
+        },
+        {
+          "target": "loads",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 400,
+          "resolvedId": "backend/util/json.py:loads:77"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 403,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "lower",
+          "resolved": false,
+          "confidence": 0,
+          "line": 404
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/chat/tools/run_agent_test.py:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 405,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "fixture",
+          "resolved": false,
+          "confidence": 0,
+          "line": 21
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 24,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 32
+        },
+        {
+          "target": "RunAgentTool",
+          "resolved": false,
+          "confidence": 0,
+          "line": 41
+        },
+        {
+          "target": "split",
+          "resolved": false,
+          "confidence": 0,
+          "line": 44
+        },
+        {
+          "target": "make_session",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 47,
+          "resolvedId": "backend/api/features/chat/tools/_test_data.py:make_session:21"
+        },
+        {
+          "target": "execute",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 50,
+          "resolvedId": "backend/api/features/chat/tools/base.py:execute:60"
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 52
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 52
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 53
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 53
+        },
+        {
+          "target": "hasattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 61
+        },
+        {
+          "target": "response",
+          "resolved": false,
+          "confidence": 0,
+          "line": 61
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 64
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 64
+        },
+        {
+          "target": "loads",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 65,
+          "resolvedId": "backend/util/json.py:loads:77"
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 73
+        },
+        {
+          "target": "RunAgentTool",
+          "resolved": false,
+          "confidence": 0,
+          "line": 81
+        },
+        {
+          "target": "split",
+          "resolved": false,
+          "confidence": 0,
+          "line": 84
+        },
+        {
+          "target": "make_session",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 87,
+          "resolvedId": "backend/api/features/chat/tools/_test_data.py:make_session:21"
+        },
+        {
+          "target": "execute",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 90,
+          "resolvedId": "backend/api/features/chat/tools/base.py:execute:60"
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 92
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 92
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 93
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 93
+        },
+        {
+          "target": "hasattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 101
+        },
+        {
+          "target": "response",
+          "resolved": false,
+          "confidence": 0,
+          "line": 101
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 104
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 104
+        },
+        {
+          "target": "loads",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 105,
+          "resolvedId": "backend/util/json.py:loads:77"
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 109
+        },
+        {
+          "target": "RunAgentTool",
+          "resolved": false,
+          "confidence": 0,
+          "line": 116
+        },
+        {
+          "target": "make_session",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 119,
+          "resolvedId": "backend/api/features/chat/tools/_test_data.py:make_session:21"
+        },
+        {
+          "target": "execute",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 122,
+          "resolvedId": "backend/api/features/chat/tools/base.py:execute:60"
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 124
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 124
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 125
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 125
+        },
+        {
+          "target": "hasattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 133
+        },
+        {
+          "target": "response",
+          "resolved": false,
+          "confidence": 0,
+          "line": 133
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 135
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 135
+        },
+        {
+          "target": "loads",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 136,
+          "resolvedId": "backend/util/json.py:loads:77"
+        },
+        {
+          "target": "any",
+          "resolved": false,
+          "confidence": 0,
+          "line": 139
+        },
+        {
+          "target": "lower",
+          "resolved": false,
+          "confidence": 0,
+          "line": 140
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 144
+        },
+        {
+          "target": "RunAgentTool",
+          "resolved": false,
+          "confidence": 0,
+          "line": 153
+        },
+        {
+          "target": "split",
+          "resolved": false,
+          "confidence": 0,
+          "line": 156
+        },
+        {
+          "target": "make_session",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 159,
+          "resolvedId": "backend/api/features/chat/tools/_test_data.py:make_session:21"
+        },
+        {
+          "target": "execute",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 162,
+          "resolvedId": "backend/api/features/chat/tools/base.py:execute:60"
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 164
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 164
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 165
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 165
+        },
+        {
+          "target": "hasattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 173
+        },
+        {
+          "target": "response",
+          "resolved": false,
+          "confidence": 0,
+          "line": 173
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 177
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 177
+        },
+        {
+          "target": "loads",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 178,
+          "resolvedId": "backend/util/json.py:loads:77"
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 188
+        },
+        {
+          "target": "RunAgentTool",
+          "resolved": false,
+          "confidence": 0,
+          "line": 194
+        },
+        {
+          "target": "split",
+          "resolved": false,
+          "confidence": 0,
+          "line": 195
+        },
+        {
+          "target": "make_session",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 196,
+          "resolvedId": "backend/api/features/chat/tools/_test_data.py:make_session:21"
+        },
+        {
+          "target": "execute",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 199,
+          "resolvedId": "backend/api/features/chat/tools/base.py:execute:60"
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 201
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 201
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 202
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 202
+        },
+        {
+          "target": "hasattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 210
+        },
+        {
+          "target": "response",
+          "resolved": false,
+          "confidence": 0,
+          "line": 210
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 211
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 211
+        },
+        {
+          "target": "loads",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 212,
+          "resolvedId": "backend/util/json.py:loads:77"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 215,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "lower",
+          "resolved": false,
+          "confidence": 0,
+          "line": 219
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 222
+        },
+        {
+          "target": "RunAgentTool",
+          "resolved": false,
+          "confidence": 0,
+          "line": 229
+        },
+        {
+          "target": "split",
+          "resolved": false,
+          "confidence": 0,
+          "line": 230
+        },
+        {
+          "target": "make_session",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 231,
+          "resolvedId": "backend/api/features/chat/tools/_test_data.py:make_session:21"
+        },
+        {
+          "target": "execute",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 234,
+          "resolvedId": "backend/api/features/chat/tools/base.py:execute:60"
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 236
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 236
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 237
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 237
+        },
+        {
+          "target": "hasattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 245
+        },
+        {
+          "target": "response",
+          "resolved": false,
+          "confidence": 0,
+          "line": 245
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 246
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 246
+        },
+        {
+          "target": "loads",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 247,
+          "resolvedId": "backend/util/json.py:loads:77"
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 254
+        },
+        {
+          "target": "RunAgentTool",
+          "resolved": false,
+          "confidence": 0,
+          "line": 260
+        },
+        {
+          "target": "split",
+          "resolved": false,
+          "confidence": 0,
+          "line": 261
+        },
+        {
+          "target": "make_session",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 262,
+          "resolvedId": "backend/api/features/chat/tools/_test_data.py:make_session:21"
+        },
+        {
+          "target": "execute",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 265,
+          "resolvedId": "backend/api/features/chat/tools/base.py:execute:60"
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 267
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 267
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 268
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 268
+        },
+        {
+          "target": "hasattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 275
+        },
+        {
+          "target": "response",
+          "resolved": false,
+          "confidence": 0,
+          "line": 275
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 276
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 276
+        },
+        {
+          "target": "loads",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 277,
+          "resolvedId": "backend/util/json.py:loads:77"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 280,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 285
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 288
+        },
+        {
+          "target": "RunAgentTool",
+          "resolved": false,
+          "confidence": 0,
+          "line": 293
+        },
+        {
+          "target": "make_session",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 294,
+          "resolvedId": "backend/api/features/chat/tools/_test_data.py:make_session:21"
+        },
+        {
+          "target": "execute",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 297,
+          "resolvedId": "backend/api/features/chat/tools/base.py:execute:60"
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 299
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 299
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 300
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 300
+        },
+        {
+          "target": "hasattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 307
+        },
+        {
+          "target": "response",
+          "resolved": false,
+          "confidence": 0,
+          "line": 307
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 308
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 308
+        },
+        {
+          "target": "loads",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 309,
+          "resolvedId": "backend/util/json.py:loads:77"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 312,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 316
+        },
+        {
+          "target": "RunAgentTool",
+          "resolved": false,
+          "confidence": 0,
+          "line": 319
+        },
+        {
+          "target": "make_session",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 321,
+          "resolvedId": "backend/api/features/chat/tools/_test_data.py:make_session:21"
+        },
+        {
+          "target": "execute",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 324,
+          "resolvedId": "backend/api/features/chat/tools/base.py:execute:60"
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 326
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 326
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 327
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 327
+        },
+        {
+          "target": "hasattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 334
+        },
+        {
+          "target": "response",
+          "resolved": false,
+          "confidence": 0,
+          "line": 334
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 335
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 335
+        },
+        {
+          "target": "loads",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 336,
+          "resolvedId": "backend/util/json.py:loads:77"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 339,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "lower",
+          "resolved": false,
+          "confidence": 0,
+          "line": 340
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 343
+        },
+        {
+          "target": "RunAgentTool",
+          "resolved": false,
+          "confidence": 0,
+          "line": 349
+        },
+        {
+          "target": "split",
+          "resolved": false,
+          "confidence": 0,
+          "line": 350
+        },
+        {
+          "target": "make_session",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 351,
+          "resolvedId": "backend/api/features/chat/tools/_test_data.py:make_session:21"
+        },
+        {
+          "target": "execute",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 354,
+          "resolvedId": "backend/api/features/chat/tools/base.py:execute:60"
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 356
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 356
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 357
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 357
+        },
+        {
+          "target": "hasattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 366
+        },
+        {
+          "target": "response",
+          "resolved": false,
+          "confidence": 0,
+          "line": 366
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 367
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 367
+        },
+        {
+          "target": "loads",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 368,
+          "resolvedId": "backend/util/json.py:loads:77"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 371,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "lower",
+          "resolved": false,
+          "confidence": 0,
+          "line": 372
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 375
+        },
+        {
+          "target": "RunAgentTool",
+          "resolved": false,
+          "confidence": 0,
+          "line": 381
+        },
+        {
+          "target": "split",
+          "resolved": false,
+          "confidence": 0,
+          "line": 382
+        },
+        {
+          "target": "make_session",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 383,
+          "resolvedId": "backend/api/features/chat/tools/_test_data.py:make_session:21"
+        },
+        {
+          "target": "execute",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 386,
+          "resolvedId": "backend/api/features/chat/tools/base.py:execute:60"
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 388
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 388
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 389
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 389
+        },
+        {
+          "target": "hasattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 398
+        },
+        {
+          "target": "response",
+          "resolved": false,
+          "confidence": 0,
+          "line": 398
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 399
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 399
+        },
+        {
+          "target": "loads",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 400,
+          "resolvedId": "backend/util/json.py:loads:77"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 403,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "lower",
+          "resolved": false,
+          "confidence": 0,
+          "line": 404
+        },
+        {
+          "target": "fixture",
+          "resolved": false,
+          "confidence": 0,
+          "line": 21
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 32
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 73
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 109
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 144
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 188
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 222
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 254
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 288
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 316
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 343
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 375
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

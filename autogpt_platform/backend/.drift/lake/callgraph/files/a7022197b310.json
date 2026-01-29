@@ -1,0 +1,353 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.199Z",
+  "checksum": "c7ddda161542f273",
+  "file": "backend/executor/cluster_lock.py",
+  "functions": [
+    {
+      "id": "backend/executor/cluster_lock.py:__init__:16",
+      "name": "__init__",
+      "startLine": 16,
+      "endLine": 21,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/executor/cluster_lock.py:try_acquire:23",
+      "name": "try_acquire",
+      "startLine": 23,
+      "endLine": 52,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "set",
+          "resolved": false,
+          "confidence": 0,
+          "line": 32
+        },
+        {
+          "target": "time",
+          "resolved": false,
+          "confidence": 0,
+          "line": 34
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 38,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "decode",
+          "resolved": false,
+          "confidence": 0,
+          "line": 41
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 42
+        },
+        {
+          "target": "current_value",
+          "resolved": false,
+          "confidence": 0,
+          "line": 42
+        },
+        {
+          "target": "bytes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 42
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 43
+        },
+        {
+          "target": "current_value",
+          "resolved": false,
+          "confidence": 0,
+          "line": 43
+        },
+        {
+          "target": "error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 51,
+          "resolvedId": "backend/util/logging.py:error:49"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/executor/cluster_lock.py:refresh:54",
+      "name": "refresh",
+      "startLine": 54,
+      "endLine": 103,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "max",
+          "resolved": false,
+          "confidence": 0,
+          "line": 62
+        },
+        {
+          "target": "time",
+          "resolved": false,
+          "confidence": 0,
+          "line": 63
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 74,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "decode",
+          "resolved": false,
+          "confidence": 0,
+          "line": 80
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 81
+        },
+        {
+          "target": "current_value",
+          "resolved": false,
+          "confidence": 0,
+          "line": 81
+        },
+        {
+          "target": "bytes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 81
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 82
+        },
+        {
+          "target": "current_value",
+          "resolved": false,
+          "confidence": 0,
+          "line": 82
+        },
+        {
+          "target": "expire",
+          "resolved": false,
+          "confidence": 0,
+          "line": 93
+        },
+        {
+          "target": "error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 101,
+          "resolvedId": "backend/util/logging.py:error:49"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/executor/cluster_lock.py:release:105",
+      "name": "release",
+      "startLine": 105,
+      "endLine": 115,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "delete",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 111,
+          "resolvedId": "backend/integrations/creds_manager.py:delete:166"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/executor/cluster_lock.py:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 116,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "getLogger",
+          "resolved": false,
+          "confidence": 0,
+          "line": 10
+        },
+        {
+          "target": "set",
+          "resolved": false,
+          "confidence": 0,
+          "line": 32
+        },
+        {
+          "target": "time",
+          "resolved": false,
+          "confidence": 0,
+          "line": 34
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 38,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "decode",
+          "resolved": false,
+          "confidence": 0,
+          "line": 41
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 42
+        },
+        {
+          "target": "current_value",
+          "resolved": false,
+          "confidence": 0,
+          "line": 42
+        },
+        {
+          "target": "bytes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 42
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 43
+        },
+        {
+          "target": "current_value",
+          "resolved": false,
+          "confidence": 0,
+          "line": 43
+        },
+        {
+          "target": "error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 51,
+          "resolvedId": "backend/util/logging.py:error:49"
+        },
+        {
+          "target": "max",
+          "resolved": false,
+          "confidence": 0,
+          "line": 62
+        },
+        {
+          "target": "time",
+          "resolved": false,
+          "confidence": 0,
+          "line": 63
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 74,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "decode",
+          "resolved": false,
+          "confidence": 0,
+          "line": 80
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 81
+        },
+        {
+          "target": "current_value",
+          "resolved": false,
+          "confidence": 0,
+          "line": 81
+        },
+        {
+          "target": "bytes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 81
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 82
+        },
+        {
+          "target": "current_value",
+          "resolved": false,
+          "confidence": 0,
+          "line": 82
+        },
+        {
+          "target": "expire",
+          "resolved": false,
+          "confidence": 0,
+          "line": 93
+        },
+        {
+          "target": "error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 101,
+          "resolvedId": "backend/util/logging.py:error:49"
+        },
+        {
+          "target": "delete",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 111,
+          "resolvedId": "backend/integrations/creds_manager.py:delete:166"
+        },
+        {
+          "target": "getLogger",
+          "resolved": false,
+          "confidence": 0,
+          "line": 10
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

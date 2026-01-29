@@ -1,0 +1,331 @@
+{
+  "version": "1.0.0",
+  "category": "documentation",
+  "patterns": [
+    {
+      "id": "f5d2c50f744738d7",
+      "subcategory": "jsdoc-patterns",
+      "name": "JSDoc Patterns Detector",
+      "description": "Learns JSDoc documentation patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "documentation/jsdoc-patterns",
+          "patternId": "documentation/jsdoc-patterns/assignment"
+        }
+      },
+      "confidence": {
+        "frequency": 0.1,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 4,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "autogpt_libs/auth/dependencies.py",
+          "line": 38,
+          "column": 5,
+          "isOutlier": true,
+          "confidence": 0.76,
+          "outlierReason": "Low confidence outlier"
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 40,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 46,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 51,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 56,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/rate_limit/config.py",
+          "line": 10,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/rate_limit/config.py",
+          "line": 15,
+          "column": 25,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/rate_limit/config.py",
+          "line": 20,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/rate_limit/config.py",
+          "line": 26,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/rate_limit/limiter.py",
+          "line": 33,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.97
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:33:06.622Z",
+        "lastSeen": "2026-01-29T06:33:06.622Z",
+        "source": "auto-detected",
+        "tags": [
+          "documentation",
+          "jsdoc-patterns"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "c490ae6a0aa69f21",
+      "subcategory": "jsdoc-patterns",
+      "name": "JSDoc Patterns Detector",
+      "description": "Learns JSDoc documentation patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "documentation/jsdoc-patterns",
+          "patternId": "documentation/jsdoc-patterns/unknown"
+        }
+      },
+      "confidence": {
+        "frequency": 0.04,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 2,
+        "score": 0.77,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "autogpt_libs/auth/dependencies.py",
+          "line": 81,
+          "column": 29,
+          "isOutlier": false,
+          "confidence": 0.56
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies.py",
+          "line": 85,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.56
+        },
+        {
+          "file": "autogpt_libs/auth/jwt_utils.py",
+          "line": 30,
+          "column": 6,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/auth/jwt_utils.py",
+          "line": 49,
+          "column": 6,
+          "isOutlier": false,
+          "confidence": 0.77
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:33:06.622Z",
+        "lastSeen": "2026-01-29T06:33:06.622Z",
+        "source": "auto-detected",
+        "tags": [
+          "documentation",
+          "jsdoc-patterns"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "417a473da66c3db0",
+      "subcategory": "jsdoc-patterns",
+      "name": "JSDoc Patterns Detector",
+      "description": "Learns JSDoc documentation patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "documentation/jsdoc-patterns",
+          "patternId": "documentation/jsdoc-patterns/property_access"
+        }
+      },
+      "confidence": {
+        "frequency": 0.04,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "autogpt_libs/auth/helpers_test.py",
+          "line": 49,
+          "column": 28,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/auth/helpers_test.py",
+          "line": 156,
+          "column": 42,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/auth/helpers_test.py",
+          "line": 158,
+          "column": 42,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/auth/helpers_test.py",
+          "line": 405,
+          "column": 32,
+          "isOutlier": false,
+          "confidence": 0.97
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:33:06.622Z",
+        "lastSeen": "2026-01-29T06:33:06.622Z",
+        "source": "auto-detected",
+        "tags": [
+          "documentation",
+          "jsdoc-patterns"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "1508cb7beb627744",
+      "subcategory": "todo-patterns",
+      "name": "Todo Patterns Detector",
+      "description": "Learns TODO/FIXME comment patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "documentation/todo-patterns",
+          "patternId": "documentation/todo-patterns/assignment"
+        }
+      },
+      "confidence": {
+        "frequency": 0.01,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 91,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 0.97
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:33:06.623Z",
+        "lastSeen": "2026-01-29T06:33:06.623Z",
+        "source": "auto-detected",
+        "tags": [
+          "documentation",
+          "todo-patterns"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "89cd33a2419e3ff8",
+      "subcategory": "readme-structure",
+      "name": "Readme Structure Detector",
+      "description": "Learns README structure patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "documentation/readme-structure",
+          "patternId": "documentation/readme-structure/unknown"
+        }
+      },
+      "confidence": {
+        "frequency": 0.04,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 2,
+        "score": 0.595,
+        "level": "low"
+      },
+      "locations": [
+        {
+          "file": "autogpt_libs/rate_limit/middleware.py",
+          "line": 20,
+          "column": 72,
+          "isOutlier": false,
+          "confidence": 0.595
+        },
+        {
+          "file": "autogpt_libs/supabase_integration_credentials_store/types.py",
+          "line": 47,
+          "column": 25,
+          "isOutlier": false,
+          "confidence": 0.5075000000000001
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:33:06.623Z",
+        "lastSeen": "2026-01-29T06:33:06.623Z",
+        "source": "auto-detected",
+        "tags": [
+          "documentation",
+          "readme-structure"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    }
+  ],
+  "lastUpdated": "2026-01-29T07:18:33.985Z",
+  "checksum": "fef20aff4de23062"
+}

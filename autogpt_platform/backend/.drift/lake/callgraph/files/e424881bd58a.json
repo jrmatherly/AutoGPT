@@ -1,0 +1,51 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.225Z",
+  "checksum": "c0f8a9a401e90c15",
+  "file": "load-tests/tests/api/core-api-test.js",
+  "functions": [
+    {
+      "id": "load-tests/tests/api/core-api-test.js:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 198,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "getEnvironmentConfig",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 7,
+          "resolvedId": "load-tests/configs/environment.js:getEnvironmentConfig:30"
+        },
+        {
+          "target": "parseInt",
+          "resolved": false,
+          "confidence": 0,
+          "line": 11
+        },
+        {
+          "target": "VUS",
+          "resolved": false,
+          "confidence": 0,
+          "line": 11
+        },
+        {
+          "target": "parseInt",
+          "resolved": false,
+          "confidence": 0,
+          "line": 12
+        },
+        {
+          "target": "VUS",
+          "resolved": false,
+          "confidence": 0,
+          "line": 12
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

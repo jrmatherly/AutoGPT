@@ -1,0 +1,939 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.133Z",
+  "checksum": "45176d47a91fce5f",
+  "file": "backend/blocks/code_executor.py",
+  "functions": [
+    {
+      "id": "backend/blocks/code_executor.py:execute_code:88",
+      "name": "execute_code",
+      "startLine": 88,
+      "endLine": 140,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "connect",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 109,
+          "resolvedId": "backend/data/rabbitmq.py:connect:102"
+        },
+        {
+          "target": "create",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 114,
+          "resolvedId": "backend/integrations/creds_manager.py:create:68"
+        },
+        {
+          "target": "run",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 119,
+          "resolvedId": "backend/blocks/code_executor.py:run:274"
+        },
+        {
+          "target": "cmd",
+          "resolved": false,
+          "confidence": 0,
+          "line": 119
+        },
+        {
+          "target": "run_code",
+          "resolved": false,
+          "confidence": 0,
+          "line": 122
+        },
+        {
+          "target": "code",
+          "resolved": false,
+          "confidence": 0,
+          "line": 123
+        },
+        {
+          "target": "kill",
+          "resolved": false,
+          "confidence": 0,
+          "line": 125
+        },
+        {
+          "target": "Exception",
+          "resolved": false,
+          "confidence": 0,
+          "line": 129
+        },
+        {
+          "target": "join",
+          "resolved": false,
+          "confidence": 0,
+          "line": 133
+        },
+        {
+          "target": "join",
+          "resolved": false,
+          "confidence": 0,
+          "line": 134
+        },
+        {
+          "target": "kill",
+          "resolved": false,
+          "confidence": 0,
+          "line": 140
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "AsyncSandbox",
+          "operation": "write",
+          "line": 114,
+          "fields": []
+        },
+        {
+          "table": "asyncsandboxs",
+          "operation": "write",
+          "line": 114,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/blocks/code_executor.py:process_execution_results:142",
+      "name": "process_execution_results",
+      "startLine": 142,
+      "endLine": 161,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "formats",
+          "resolved": false,
+          "confidence": 0,
+          "line": 150
+        },
+        {
+          "target": "getattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 151
+        },
+        {
+          "target": "r",
+          "resolved": false,
+          "confidence": 0,
+          "line": 151
+        },
+        {
+          "target": "f",
+          "resolved": false,
+          "confidence": 0,
+          "line": 151
+        },
+        {
+          "target": "next",
+          "resolved": false,
+          "confidence": 0,
+          "line": 155
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 156,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "pop",
+          "resolved": false,
+          "confidence": 0,
+          "line": 159
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/code_executor.py:__init__:242",
+      "name": "__init__",
+      "startLine": 242,
+      "endLine": 272,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 243,
+          "resolvedId": "backend/blocks/code_executor.py:__init__:242"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 243
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/code_executor.py:run:274",
+      "name": "run",
+      "startLine": 274,
+      "endLine": 300,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "execute_code",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 278,
+          "resolvedId": "backend/blocks/code_executor.py:execute_code:88"
+        },
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 279,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        },
+        {
+          "target": "process_execution_results",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 289,
+          "resolvedId": "backend/blocks/code_executor.py:process_execution_results:142"
+        },
+        {
+          "target": "results",
+          "resolved": false,
+          "confidence": 0,
+          "line": 289
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 300
+        },
+        {
+          "target": "e",
+          "resolved": false,
+          "confidence": 0,
+          "line": 300
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "credentials",
+          "operation": "read",
+          "line": 279,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/blocks/code_executor.py:__init__:365",
+      "name": "__init__",
+      "startLine": 365,
+      "endLine": 398,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 366,
+          "resolvedId": "backend/blocks/code_executor.py:__init__:242"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 366
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/code_executor.py:run:400",
+      "name": "run",
+      "startLine": 400,
+      "endLine": 424,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "execute_code",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 404,
+          "resolvedId": "backend/blocks/code_executor.py:execute_code:88"
+        },
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 405,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 424
+        },
+        {
+          "target": "e",
+          "resolved": false,
+          "confidence": 0,
+          "line": 424
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "credentials",
+          "operation": "read",
+          "line": 405,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/blocks/code_executor.py:__init__:477",
+      "name": "__init__",
+      "startLine": 477,
+      "endLine": 505,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 478,
+          "resolvedId": "backend/blocks/code_executor.py:__init__:242"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 478
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/code_executor.py:run:507",
+      "name": "run",
+      "startLine": 507,
+      "endLine": 531,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "execute_code",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 511,
+          "resolvedId": "backend/blocks/code_executor.py:execute_code:88"
+        },
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 512,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        },
+        {
+          "target": "process_execution_results",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 520,
+          "resolvedId": "backend/blocks/code_executor.py:process_execution_results:142"
+        },
+        {
+          "target": "results",
+          "resolved": false,
+          "confidence": 0,
+          "line": 520
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 531
+        },
+        {
+          "target": "e",
+          "resolved": false,
+          "confidence": 0,
+          "line": 531
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "credentials",
+          "operation": "read",
+          "line": 512,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/blocks/code_executor.py:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 532,
+      "isEntryPoint": false,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "APIKeyCredentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 24
+        },
+        {
+          "target": "Field",
+          "resolved": false,
+          "confidence": 0,
+          "line": 70
+        },
+        {
+          "target": "connect",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 109,
+          "resolvedId": "backend/data/rabbitmq.py:connect:102"
+        },
+        {
+          "target": "create",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 114,
+          "resolvedId": "backend/integrations/creds_manager.py:create:68"
+        },
+        {
+          "target": "run",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 119,
+          "resolvedId": "backend/blocks/code_executor.py:run:274"
+        },
+        {
+          "target": "cmd",
+          "resolved": false,
+          "confidence": 0,
+          "line": 119
+        },
+        {
+          "target": "run_code",
+          "resolved": false,
+          "confidence": 0,
+          "line": 122
+        },
+        {
+          "target": "code",
+          "resolved": false,
+          "confidence": 0,
+          "line": 123
+        },
+        {
+          "target": "kill",
+          "resolved": false,
+          "confidence": 0,
+          "line": 125
+        },
+        {
+          "target": "Exception",
+          "resolved": false,
+          "confidence": 0,
+          "line": 129
+        },
+        {
+          "target": "join",
+          "resolved": false,
+          "confidence": 0,
+          "line": 133
+        },
+        {
+          "target": "join",
+          "resolved": false,
+          "confidence": 0,
+          "line": 134
+        },
+        {
+          "target": "kill",
+          "resolved": false,
+          "confidence": 0,
+          "line": 140
+        },
+        {
+          "target": "formats",
+          "resolved": false,
+          "confidence": 0,
+          "line": 150
+        },
+        {
+          "target": "getattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 151
+        },
+        {
+          "target": "r",
+          "resolved": false,
+          "confidence": 0,
+          "line": 151
+        },
+        {
+          "target": "f",
+          "resolved": false,
+          "confidence": 0,
+          "line": 151
+        },
+        {
+          "target": "next",
+          "resolved": false,
+          "confidence": 0,
+          "line": 155
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 156,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "pop",
+          "resolved": false,
+          "confidence": 0,
+          "line": 159
+        },
+        {
+          "target": "CredentialsField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 171,
+          "resolvedId": "backend/data/model.py:CredentialsField:681"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 179,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 191,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 198,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 204,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 208,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 216,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 227,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 230,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 233,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 237,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 240,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 243,
+          "resolvedId": "backend/blocks/code_executor.py:__init__:242"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 243
+        },
+        {
+          "target": "execute_code",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 278,
+          "resolvedId": "backend/blocks/code_executor.py:execute_code:88"
+        },
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 279,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        },
+        {
+          "target": "process_execution_results",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 289,
+          "resolvedId": "backend/blocks/code_executor.py:process_execution_results:142"
+        },
+        {
+          "target": "results",
+          "resolved": false,
+          "confidence": 0,
+          "line": 289
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 300
+        },
+        {
+          "target": "e",
+          "resolved": false,
+          "confidence": 0,
+          "line": 300
+        },
+        {
+          "target": "CredentialsField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 307,
+          "resolvedId": "backend/data/model.py:CredentialsField:681"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 315,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 327,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 334,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 340,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 344,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 355,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 356,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 360,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 363,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 366,
+          "resolvedId": "backend/blocks/code_executor.py:__init__:242"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 366
+        },
+        {
+          "target": "execute_code",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 404,
+          "resolvedId": "backend/blocks/code_executor.py:execute_code:88"
+        },
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 405,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 424
+        },
+        {
+          "target": "e",
+          "resolved": false,
+          "confidence": 0,
+          "line": 424
+        },
+        {
+          "target": "CredentialsField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 431,
+          "resolvedId": "backend/data/model.py:CredentialsField:681"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 438,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 443,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 450,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 456,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 462,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 465,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 468,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 472,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 475,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 478,
+          "resolvedId": "backend/blocks/code_executor.py:__init__:242"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 478
+        },
+        {
+          "target": "execute_code",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 511,
+          "resolvedId": "backend/blocks/code_executor.py:execute_code:88"
+        },
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 512,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        },
+        {
+          "target": "process_execution_results",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 520,
+          "resolvedId": "backend/blocks/code_executor.py:process_execution_results:142"
+        },
+        {
+          "target": "results",
+          "resolved": false,
+          "confidence": 0,
+          "line": 520
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 531
+        },
+        {
+          "target": "e",
+          "resolved": false,
+          "confidence": 0,
+          "line": 531
+        },
+        {
+          "target": "APIKeyCredentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 24
+        },
+        {
+          "target": "SecretStr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 27
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "AsyncSandbox",
+          "operation": "write",
+          "line": 114,
+          "fields": []
+        },
+        {
+          "table": "asyncsandboxs",
+          "operation": "write",
+          "line": 114,
+          "fields": []
+        },
+        {
+          "table": "credentials",
+          "operation": "read",
+          "line": 279,
+          "fields": []
+        },
+        {
+          "table": "credentials",
+          "operation": "read",
+          "line": 405,
+          "fields": []
+        },
+        {
+          "table": "credentials",
+          "operation": "read",
+          "line": 512,
+          "fields": []
+        }
+      ]
+    }
+  ]
+}

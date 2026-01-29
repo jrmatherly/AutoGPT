@@ -1,0 +1,146 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:19.987Z",
+  "checksum": "974546e9981e8acf",
+  "file": "src/lib/dexie/db.ts",
+  "functions": [
+    {
+      "id": "src/lib/dexie/db.ts:constructor:25",
+      "name": "constructor",
+      "startLine": 25,
+      "endLine": 31,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 26
+        },
+        {
+          "target": "stores",
+          "resolved": false,
+          "confidence": 0,
+          "line": 28
+        },
+        {
+          "target": "version",
+          "resolved": false,
+          "confidence": 0,
+          "line": 28
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/lib/dexie/db.ts:cleanupExpiredDrafts:37",
+      "name": "cleanupExpiredDrafts",
+      "startLine": 37,
+      "endLine": 46,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 38
+        },
+        {
+          "target": "delete",
+          "resolved": false,
+          "confidence": 0,
+          "line": 40
+        },
+        {
+          "target": "below",
+          "resolved": false,
+          "confidence": 0,
+          "line": 40
+        },
+        {
+          "target": "expiryThreshold",
+          "resolved": false,
+          "confidence": 0,
+          "line": 42
+        },
+        {
+          "target": "where",
+          "resolved": false,
+          "confidence": 0,
+          "line": 40
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/lib/dexie/db.ts:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 47,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 26
+        },
+        {
+          "target": "stores",
+          "resolved": false,
+          "confidence": 0,
+          "line": 28
+        },
+        {
+          "target": "version",
+          "resolved": false,
+          "confidence": 0,
+          "line": 28
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 38
+        },
+        {
+          "target": "delete",
+          "resolved": false,
+          "confidence": 0,
+          "line": 40
+        },
+        {
+          "target": "below",
+          "resolved": false,
+          "confidence": 0,
+          "line": 40
+        },
+        {
+          "target": "expiryThreshold",
+          "resolved": false,
+          "confidence": 0,
+          "line": 42
+        },
+        {
+          "target": "where",
+          "resolved": false,
+          "confidence": 0,
+          "line": 40
+        },
+        {
+          "target": "BuilderDatabase",
+          "resolved": false,
+          "confidence": 0,
+          "line": 35
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

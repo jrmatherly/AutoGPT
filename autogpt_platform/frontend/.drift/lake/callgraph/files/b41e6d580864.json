@@ -1,0 +1,451 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.101Z",
+  "checksum": "2e8903c27441e46e",
+  "file": "src/tests/marketplace-creator.spec.ts",
+  "functions": [
+    {
+      "id": "src/tests/marketplace-creator.spec.ts:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 81,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "describe",
+          "resolved": false,
+          "confidence": 0,
+          "line": 8
+        },
+        {
+          "target": "test",
+          "resolved": false,
+          "confidence": 0,
+          "line": 9
+        },
+        {
+          "target": "MarketplacePage",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 10,
+          "resolvedId": "src/app/(platform)/marketplace/page.tsx:MarketplacePage:53"
+        },
+        {
+          "target": "goto",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 12,
+          "resolvedId": "src/tests/pages/marketplace.page.ts:goto:10"
+        },
+        {
+          "target": "page",
+          "resolved": false,
+          "confidence": 0,
+          "line": 12
+        },
+        {
+          "target": "hasUrl",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 13,
+          "resolvedId": "src/tests/utils/assertion.ts:hasUrl:23"
+        },
+        {
+          "target": "page",
+          "resolved": false,
+          "confidence": 0,
+          "line": 13
+        },
+        {
+          "target": "getFirstCreatorProfile",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 16,
+          "resolvedId": "src/tests/pages/marketplace.page.ts:getFirstCreatorProfile:119"
+        },
+        {
+          "target": "page",
+          "resolved": false,
+          "confidence": 0,
+          "line": 16
+        },
+        {
+          "target": "click",
+          "resolved": false,
+          "confidence": 0,
+          "line": 17
+        },
+        {
+          "target": "waitForURL",
+          "resolved": false,
+          "confidence": 0,
+          "line": 19
+        },
+        {
+          "target": "matchesUrl",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 20,
+          "resolvedId": "src/tests/utils/assertion.ts:matchesUrl:52"
+        },
+        {
+          "target": "page",
+          "resolved": false,
+          "confidence": 0,
+          "line": 20
+        },
+        {
+          "target": "test",
+          "resolved": false,
+          "confidence": 0,
+          "line": 23
+        },
+        {
+          "target": "LoginPage",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 24,
+          "resolvedId": "src/app/(platform)/login/page.tsx:LoginPage:16"
+        },
+        {
+          "target": "MarketplacePage",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 25,
+          "resolvedId": "src/app/(platform)/marketplace/page.tsx:MarketplacePage:53"
+        },
+        {
+          "target": "goto",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 27,
+          "resolvedId": "src/tests/pages/marketplace.page.ts:goto:10"
+        },
+        {
+          "target": "getTestUserWithLibraryAgents",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 28,
+          "resolvedId": "src/tests/credentials/index.ts:getTestUserWithLibraryAgents:7"
+        },
+        {
+          "target": "login",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 29,
+          "resolvedId": "src/tests/pages/login.page.ts:login:10"
+        },
+        {
+          "target": "email",
+          "resolved": false,
+          "confidence": 0,
+          "line": 29
+        },
+        {
+          "target": "password",
+          "resolved": false,
+          "confidence": 0,
+          "line": 29
+        },
+        {
+          "target": "hasUrl",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 30,
+          "resolvedId": "src/tests/utils/assertion.ts:hasUrl:23"
+        },
+        {
+          "target": "page",
+          "resolved": false,
+          "confidence": 0,
+          "line": 30
+        },
+        {
+          "target": "goto",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 32,
+          "resolvedId": "src/tests/pages/marketplace.page.ts:goto:10"
+        },
+        {
+          "target": "page",
+          "resolved": false,
+          "confidence": 0,
+          "line": 32
+        },
+        {
+          "target": "hasUrl",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 33,
+          "resolvedId": "src/tests/utils/assertion.ts:hasUrl:23"
+        },
+        {
+          "target": "page",
+          "resolved": false,
+          "confidence": 0,
+          "line": 33
+        },
+        {
+          "target": "getFirstCreatorProfile",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 36,
+          "resolvedId": "src/tests/pages/marketplace.page.ts:getFirstCreatorProfile:119"
+        },
+        {
+          "target": "page",
+          "resolved": false,
+          "confidence": 0,
+          "line": 36
+        },
+        {
+          "target": "click",
+          "resolved": false,
+          "confidence": 0,
+          "line": 37
+        },
+        {
+          "target": "waitForURL",
+          "resolved": false,
+          "confidence": 0,
+          "line": 39
+        },
+        {
+          "target": "matchesUrl",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 40,
+          "resolvedId": "src/tests/utils/assertion.ts:matchesUrl:52"
+        },
+        {
+          "target": "page",
+          "resolved": false,
+          "confidence": 0,
+          "line": 40
+        },
+        {
+          "target": "test",
+          "resolved": false,
+          "confidence": 0,
+          "line": 43
+        },
+        {
+          "target": "getSelectors",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 44,
+          "resolvedId": "src/tests/utils/selectors.ts:getSelectors:3"
+        },
+        {
+          "target": "page",
+          "resolved": false,
+          "confidence": 0,
+          "line": 44
+        },
+        {
+          "target": "MarketplacePage",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 45,
+          "resolvedId": "src/app/(platform)/marketplace/page.tsx:MarketplacePage:53"
+        },
+        {
+          "target": "goto",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 47,
+          "resolvedId": "src/tests/pages/marketplace.page.ts:goto:10"
+        },
+        {
+          "target": "page",
+          "resolved": false,
+          "confidence": 0,
+          "line": 47
+        },
+        {
+          "target": "hasUrl",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 48,
+          "resolvedId": "src/tests/utils/assertion.ts:hasUrl:23"
+        },
+        {
+          "target": "page",
+          "resolved": false,
+          "confidence": 0,
+          "line": 48
+        },
+        {
+          "target": "getFirstCreatorProfile",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 51,
+          "resolvedId": "src/tests/pages/marketplace.page.ts:getFirstCreatorProfile:119"
+        },
+        {
+          "target": "page",
+          "resolved": false,
+          "confidence": 0,
+          "line": 51
+        },
+        {
+          "target": "click",
+          "resolved": false,
+          "confidence": 0,
+          "line": 52
+        },
+        {
+          "target": "waitForURL",
+          "resolved": false,
+          "confidence": 0,
+          "line": 53
+        },
+        {
+          "target": "getId",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 55,
+          "resolvedId": "src/tests/utils/selectors.ts:getId:48"
+        },
+        {
+          "target": "isVisible",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 56,
+          "resolvedId": "src/tests/utils/assertion.ts:isVisible:3"
+        },
+        {
+          "target": "creatorTitle",
+          "resolved": false,
+          "confidence": 0,
+          "line": 56
+        },
+        {
+          "target": "getId",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 58,
+          "resolvedId": "src/tests/utils/selectors.ts:getId:48"
+        },
+        {
+          "target": "isVisible",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 59,
+          "resolvedId": "src/tests/utils/assertion.ts:isVisible:3"
+        },
+        {
+          "target": "creatorDescription",
+          "resolved": false,
+          "confidence": 0,
+          "line": 59
+        },
+        {
+          "target": "test",
+          "resolved": false,
+          "confidence": 0,
+          "line": 62
+        },
+        {
+          "target": "MarketplacePage",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 63,
+          "resolvedId": "src/app/(platform)/marketplace/page.tsx:MarketplacePage:53"
+        },
+        {
+          "target": "goto",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 65,
+          "resolvedId": "src/tests/pages/marketplace.page.ts:goto:10"
+        },
+        {
+          "target": "page",
+          "resolved": false,
+          "confidence": 0,
+          "line": 65
+        },
+        {
+          "target": "hasUrl",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 66,
+          "resolvedId": "src/tests/utils/assertion.ts:hasUrl:23"
+        },
+        {
+          "target": "page",
+          "resolved": false,
+          "confidence": 0,
+          "line": 66
+        },
+        {
+          "target": "getFirstCreatorProfile",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 69,
+          "resolvedId": "src/tests/pages/marketplace.page.ts:getFirstCreatorProfile:119"
+        },
+        {
+          "target": "page",
+          "resolved": false,
+          "confidence": 0,
+          "line": 69
+        },
+        {
+          "target": "click",
+          "resolved": false,
+          "confidence": 0,
+          "line": 70
+        },
+        {
+          "target": "waitForURL",
+          "resolved": false,
+          "confidence": 0,
+          "line": 71
+        },
+        {
+          "target": "first",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        },
+        {
+          "target": "locator",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        },
+        {
+          "target": "click",
+          "resolved": false,
+          "confidence": 0,
+          "line": 76
+        },
+        {
+          "target": "waitForURL",
+          "resolved": false,
+          "confidence": 0,
+          "line": 77
+        },
+        {
+          "target": "matchesUrl",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 78,
+          "resolvedId": "src/tests/utils/assertion.ts:matchesUrl:52"
+        },
+        {
+          "target": "page",
+          "resolved": false,
+          "confidence": 0,
+          "line": 78
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

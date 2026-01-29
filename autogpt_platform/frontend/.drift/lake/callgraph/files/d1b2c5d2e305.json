@@ -1,0 +1,609 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.189Z",
+  "checksum": "fe173a0da0363b38",
+  "file": "src/tests/utils/signup.ts",
+  "functions": [
+    {
+      "id": "src/tests/utils/signup.ts:signupTestUser:6",
+      "name": "signupTestUser",
+      "startLine": 6,
+      "endLine": 109,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "import",
+          "resolved": false,
+          "confidence": 0,
+          "line": 13
+        },
+        {
+          "target": "email",
+          "resolved": false,
+          "confidence": 0,
+          "line": 14
+        },
+        {
+          "target": "password",
+          "resolved": false,
+          "confidence": 0,
+          "line": 15
+        },
+        {
+          "target": "getSelectors",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 17,
+          "resolvedId": "src/tests/utils/selectors.ts:getSelectors:3"
+        },
+        {
+          "target": "page",
+          "resolved": false,
+          "confidence": 0,
+          "line": 17
+        },
+        {
+          "target": "goto",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 21,
+          "resolvedId": "src/tests/pages/marketplace.page.ts:goto:10"
+        },
+        {
+          "target": "getText",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 24,
+          "resolvedId": "src/tests/utils/selectors.ts:getText:28"
+        },
+        {
+          "target": "getField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 27,
+          "resolvedId": "src/tests/utils/selectors.ts:getField:44"
+        },
+        {
+          "target": "fill",
+          "resolved": false,
+          "confidence": 0,
+          "line": 28
+        },
+        {
+          "target": "userEmail",
+          "resolved": false,
+          "confidence": 0,
+          "line": 28
+        },
+        {
+          "target": "locator",
+          "resolved": false,
+          "confidence": 0,
+          "line": 29
+        },
+        {
+          "target": "fill",
+          "resolved": false,
+          "confidence": 0,
+          "line": 30
+        },
+        {
+          "target": "userPassword",
+          "resolved": false,
+          "confidence": 0,
+          "line": 30
+        },
+        {
+          "target": "locator",
+          "resolved": false,
+          "confidence": 0,
+          "line": 31
+        },
+        {
+          "target": "fill",
+          "resolved": false,
+          "confidence": 0,
+          "line": 32
+        },
+        {
+          "target": "userPassword",
+          "resolved": false,
+          "confidence": 0,
+          "line": 32
+        },
+        {
+          "target": "click",
+          "resolved": false,
+          "confidence": 0,
+          "line": 35
+        },
+        {
+          "target": "getRole",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 35,
+          "resolvedId": "src/tests/utils/selectors.ts:getRole:56"
+        },
+        {
+          "target": "getButton",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 36,
+          "resolvedId": "src/tests/utils/selectors.ts:getButton:36"
+        },
+        {
+          "target": "click",
+          "resolved": false,
+          "confidence": 0,
+          "line": 37
+        },
+        {
+          "target": "waitForURL",
+          "resolved": false,
+          "confidence": 0,
+          "line": 44
+        },
+        {
+          "target": "test",
+          "resolved": false,
+          "confidence": 0,
+          "line": 46
+        },
+        {
+          "target": "pathname",
+          "resolved": false,
+          "confidence": 0,
+          "line": 46
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 50
+        },
+        {
+          "target": "url",
+          "resolved": false,
+          "confidence": 0,
+          "line": 52
+        },
+        {
+          "target": "url",
+          "resolved": false,
+          "confidence": 0,
+          "line": 57
+        },
+        {
+          "target": "includes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 60
+        },
+        {
+          "target": "goto",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 61,
+          "resolvedId": "src/tests/pages/marketplace.page.ts:goto:10"
+        },
+        {
+          "target": "waitForLoadState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 62
+        },
+        {
+          "target": "includes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 66
+        },
+        {
+          "target": "includes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 66
+        },
+        {
+          "target": "waitFor",
+          "resolved": false,
+          "confidence": 0,
+          "line": 68
+        },
+        {
+          "target": "getByTestId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 68
+        },
+        {
+          "target": "includes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 71
+        },
+        {
+          "target": "waitFor",
+          "resolved": false,
+          "confidence": 0,
+          "line": 73
+        },
+        {
+          "target": "first",
+          "resolved": false,
+          "confidence": 0,
+          "line": 73
+        },
+        {
+          "target": "getByText",
+          "resolved": false,
+          "confidence": 0,
+          "line": 73
+        },
+        {
+          "target": "waitFor",
+          "resolved": false,
+          "confidence": 0,
+          "line": 81
+        },
+        {
+          "target": "getByTestId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 81
+        },
+        {
+          "target": "getId",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 88,
+          "resolvedId": "src/tests/utils/selectors.ts:getId:48"
+        },
+        {
+          "target": "click",
+          "resolved": false,
+          "confidence": 0,
+          "line": 89
+        },
+        {
+          "target": "getId",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 91,
+          "resolvedId": "src/tests/utils/selectors.ts:getId:48"
+        },
+        {
+          "target": "isVisible",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 92,
+          "resolvedId": "src/tests/utils/assertion.ts:isVisible:3"
+        },
+        {
+          "target": "blocksBtn",
+          "resolved": false,
+          "confidence": 0,
+          "line": 92
+        },
+        {
+          "target": "BuildPage",
+          "resolved": false,
+          "confidence": 0,
+          "line": 94
+        },
+        {
+          "target": "createDummyAgent",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 95,
+          "resolvedId": "src/tests/pages/build.page.ts:createDummyAgent:526"
+        },
+        {
+          "target": "toISOString",
+          "resolved": false,
+          "confidence": 0,
+          "line": 101
+        },
+        {
+          "target": "Date",
+          "resolved": false,
+          "confidence": 0,
+          "line": 101
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 106
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 106
+        },
+        {
+          "target": "test",
+          "resolved": false,
+          "confidence": 0,
+          "line": 46
+        },
+        {
+          "target": "pathname",
+          "resolved": false,
+          "confidence": 0,
+          "line": 46
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/tests/utils/signup.ts:$waitForURL$1:45",
+      "name": "$waitForURL$1",
+      "startLine": 45,
+      "endLine": 46,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "test",
+          "resolved": false,
+          "confidence": 0,
+          "line": 46
+        },
+        {
+          "target": "pathname",
+          "resolved": false,
+          "confidence": 0,
+          "line": 46
+        },
+        {
+          "target": "test",
+          "resolved": false,
+          "confidence": 0,
+          "line": 46
+        },
+        {
+          "target": "pathname",
+          "resolved": false,
+          "confidence": 0,
+          "line": 46
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/tests/utils/signup.ts:signupAndNavigateToMarketplace:111",
+      "name": "signupAndNavigateToMarketplace",
+      "startLine": 111,
+      "endLine": 123,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 116
+        },
+        {
+          "target": "signupTestUser",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 119,
+          "resolvedId": "src/tests/utils/signup.ts:signupTestUser:6"
+        },
+        {
+          "target": "page",
+          "resolved": false,
+          "confidence": 0,
+          "line": 119
+        },
+        {
+          "target": "email",
+          "resolved": false,
+          "confidence": 0,
+          "line": 119
+        },
+        {
+          "target": "password",
+          "resolved": false,
+          "confidence": 0,
+          "line": 119
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 121
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/tests/utils/signup.ts:validateSignupForm:125",
+      "name": "validateSignupForm",
+      "startLine": 125,
+      "endLine": 157,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 126
+        },
+        {
+          "target": "goto",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 128,
+          "resolvedId": "src/tests/pages/marketplace.page.ts:goto:10"
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 131
+        },
+        {
+          "target": "getByRole",
+          "resolved": false,
+          "confidence": 0,
+          "line": 132
+        },
+        {
+          "target": "click",
+          "resolved": false,
+          "confidence": 0,
+          "line": 133
+        },
+        {
+          "target": "url",
+          "resolved": false,
+          "confidence": 0,
+          "line": 136
+        },
+        {
+          "target": "includes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 137
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 138
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 140
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 144
+        },
+        {
+          "target": "fill",
+          "resolved": false,
+          "confidence": 0,
+          "line": 145
+        },
+        {
+          "target": "getByLabel",
+          "resolved": false,
+          "confidence": 0,
+          "line": 145
+        },
+        {
+          "target": "click",
+          "resolved": false,
+          "confidence": 0,
+          "line": 146
+        },
+        {
+          "target": "url",
+          "resolved": false,
+          "confidence": 0,
+          "line": 149
+        },
+        {
+          "target": "includes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 150
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 151
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 153
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 156
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/tests/utils/signup.ts:generateTestEmail:159",
+      "name": "generateTestEmail",
+      "startLine": 159,
+      "endLine": 161,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 160
+        },
+        {
+          "target": "substring",
+          "resolved": false,
+          "confidence": 0,
+          "line": 160
+        },
+        {
+          "target": "toString",
+          "resolved": false,
+          "confidence": 0,
+          "line": 160
+        },
+        {
+          "target": "random",
+          "resolved": false,
+          "confidence": 0,
+          "line": 160
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/tests/utils/signup.ts:generateTestPassword:163",
+      "name": "generateTestPassword",
+      "startLine": 163,
+      "endLine": 166,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "import",
+          "resolved": false,
+          "confidence": 0,
+          "line": 164
+        },
+        {
+          "target": "password",
+          "resolved": false,
+          "confidence": 0,
+          "line": 165
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

@@ -1,0 +1,213 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.090Z",
+  "checksum": "65220c154ab3cf9d",
+  "file": "scripts/generate-api-queries.ts",
+  "functions": [
+    {
+      "id": "scripts/generate-api-queries.ts:fetchOpenApiSpec:9",
+      "name": "fetchOpenApiSpec",
+      "startLine": 9,
+      "endLine": 73,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "slice",
+          "resolved": false,
+          "confidence": 0,
+          "line": 10
+        },
+        {
+          "target": "includes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 11
+        },
+        {
+          "target": "getAGPTServerBaseUrl",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 13,
+          "resolvedId": "src/services/environment/index.ts:getAGPTServerBaseUrl:35"
+        },
+        {
+          "target": "join",
+          "resolved": false,
+          "confidence": 0,
+          "line": 15
+        },
+        {
+          "target": "__dirname",
+          "resolved": false,
+          "confidence": 0,
+          "line": 16
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 24
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 25
+        },
+        {
+          "target": "existsSync",
+          "resolved": false,
+          "confidence": 0,
+          "line": 28
+        },
+        {
+          "target": "outputPath",
+          "resolved": false,
+          "confidence": 0,
+          "line": 28
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 31
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 32
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 37
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 39
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 44
+        },
+        {
+          "target": "join",
+          "resolved": false,
+          "confidence": 0,
+          "line": 47
+        },
+        {
+          "target": "tmpdir",
+          "resolved": false,
+          "confidence": 0,
+          "line": 48
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 49
+        },
+        {
+          "target": "execSync",
+          "resolved": false,
+          "confidence": 0,
+          "line": 54
+        },
+        {
+          "target": "execSync",
+          "resolved": false,
+          "confidence": 0,
+          "line": 59
+        },
+        {
+          "target": "copyFileSync",
+          "resolved": false,
+          "confidence": 0,
+          "line": 62
+        },
+        {
+          "target": "tmpOutputPath",
+          "resolved": false,
+          "confidence": 0,
+          "line": 62
+        },
+        {
+          "target": "outputPath",
+          "resolved": false,
+          "confidence": 0,
+          "line": 62
+        },
+        {
+          "target": "unlinkSync",
+          "resolved": false,
+          "confidence": 0,
+          "line": 63
+        },
+        {
+          "target": "tmpOutputPath",
+          "resolved": false,
+          "confidence": 0,
+          "line": 63
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 65
+        },
+        {
+          "target": "existsSync",
+          "resolved": false,
+          "confidence": 0,
+          "line": 67
+        },
+        {
+          "target": "tmpOutputPath",
+          "resolved": false,
+          "confidence": 0,
+          "line": 67
+        },
+        {
+          "target": "unlinkSync",
+          "resolved": false,
+          "confidence": 0,
+          "line": 68
+        },
+        {
+          "target": "tmpOutputPath",
+          "resolved": false,
+          "confidence": 0,
+          "line": 68
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 70
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 70
+        },
+        {
+          "target": "exit",
+          "resolved": false,
+          "confidence": 0,
+          "line": 71
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

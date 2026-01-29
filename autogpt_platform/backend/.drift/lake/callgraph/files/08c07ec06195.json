@@ -1,0 +1,360 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.124Z",
+  "checksum": "4c5c0a2a0bc77bc0",
+  "file": "backend/data/redis_client.py",
+  "functions": [
+    {
+      "id": "backend/data/redis_client.py:connect:21",
+      "name": "connect",
+      "startLine": 21,
+      "endLine": 29,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "Redis",
+          "resolved": false,
+          "confidence": 0,
+          "line": 22
+        },
+        {
+          "target": "ping",
+          "resolved": false,
+          "confidence": 0,
+          "line": 28
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/redis_client.py:disconnect:33",
+      "name": "disconnect",
+      "startLine": 33,
+      "endLine": 34,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "close",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 34,
+          "resolvedId": "backend/util/service.py:close:453"
+        },
+        {
+          "target": "get_redis",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 34,
+          "resolvedId": "backend/data/redis_client.py:get_redis:38"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/redis_client.py:get_redis:38",
+      "name": "get_redis",
+      "startLine": 38,
+      "endLine": 39,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "connect",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 39,
+          "resolvedId": "backend/data/redis_client.py:connect:21"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/redis_client.py:connect_async:43",
+      "name": "connect_async",
+      "startLine": 43,
+      "endLine": 51,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "AsyncRedis",
+          "resolved": false,
+          "confidence": 0,
+          "line": 44
+        },
+        {
+          "target": "ping",
+          "resolved": false,
+          "confidence": 0,
+          "line": 50
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/redis_client.py:disconnect_async:55",
+      "name": "disconnect_async",
+      "startLine": 55,
+      "endLine": 57,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "get_redis_async",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 56,
+          "resolvedId": "backend/data/redis_client.py:get_redis_async:61"
+        },
+        {
+          "target": "close",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 57,
+          "resolvedId": "backend/util/service.py:close:453"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/redis_client.py:get_redis_async:61",
+      "name": "get_redis_async",
+      "startLine": 61,
+      "endLine": 62,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "connect_async",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 62,
+          "resolvedId": "backend/data/redis_client.py:connect_async:43"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/redis_client.py:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 63,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "load_dotenv",
+          "resolved": false,
+          "confidence": 0,
+          "line": 11
+        },
+        {
+          "target": "getenv",
+          "resolved": false,
+          "confidence": 0,
+          "line": 13
+        },
+        {
+          "target": "int",
+          "resolved": false,
+          "confidence": 0,
+          "line": 14
+        },
+        {
+          "target": "getenv",
+          "resolved": false,
+          "confidence": 0,
+          "line": 15
+        },
+        {
+          "target": "getLogger",
+          "resolved": false,
+          "confidence": 0,
+          "line": 17
+        },
+        {
+          "target": "conn_retry",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 20,
+          "resolvedId": "backend/util/retry.py:conn_retry:170"
+        },
+        {
+          "target": "Redis",
+          "resolved": false,
+          "confidence": 0,
+          "line": 22
+        },
+        {
+          "target": "ping",
+          "resolved": false,
+          "confidence": 0,
+          "line": 28
+        },
+        {
+          "target": "conn_retry",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 32,
+          "resolvedId": "backend/util/retry.py:conn_retry:170"
+        },
+        {
+          "target": "close",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 34,
+          "resolvedId": "backend/util/service.py:close:453"
+        },
+        {
+          "target": "get_redis",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 34,
+          "resolvedId": "backend/data/redis_client.py:get_redis:38"
+        },
+        {
+          "target": "cached",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 37,
+          "resolvedId": "backend/util/cache.py:cached:146"
+        },
+        {
+          "target": "connect",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 39,
+          "resolvedId": "backend/data/redis_client.py:connect:21"
+        },
+        {
+          "target": "conn_retry",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 42,
+          "resolvedId": "backend/util/retry.py:conn_retry:170"
+        },
+        {
+          "target": "AsyncRedis",
+          "resolved": false,
+          "confidence": 0,
+          "line": 44
+        },
+        {
+          "target": "ping",
+          "resolved": false,
+          "confidence": 0,
+          "line": 50
+        },
+        {
+          "target": "conn_retry",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 54,
+          "resolvedId": "backend/util/retry.py:conn_retry:170"
+        },
+        {
+          "target": "get_redis_async",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 56,
+          "resolvedId": "backend/data/redis_client.py:get_redis_async:61"
+        },
+        {
+          "target": "close",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 57,
+          "resolvedId": "backend/util/service.py:close:453"
+        },
+        {
+          "target": "connect_async",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 62,
+          "resolvedId": "backend/data/redis_client.py:connect_async:43"
+        },
+        {
+          "target": "load_dotenv",
+          "resolved": false,
+          "confidence": 0,
+          "line": 11
+        },
+        {
+          "target": "getenv",
+          "resolved": false,
+          "confidence": 0,
+          "line": 13
+        },
+        {
+          "target": "int",
+          "resolved": false,
+          "confidence": 0,
+          "line": 14
+        },
+        {
+          "target": "getenv",
+          "resolved": false,
+          "confidence": 0,
+          "line": 14
+        },
+        {
+          "target": "getenv",
+          "resolved": false,
+          "confidence": 0,
+          "line": 15
+        },
+        {
+          "target": "getLogger",
+          "resolved": false,
+          "confidence": 0,
+          "line": 17
+        },
+        {
+          "target": "conn_retry",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 20,
+          "resolvedId": "backend/util/retry.py:conn_retry:170"
+        },
+        {
+          "target": "conn_retry",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 32,
+          "resolvedId": "backend/util/retry.py:conn_retry:170"
+        },
+        {
+          "target": "cached",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 37,
+          "resolvedId": "backend/util/cache.py:cached:146"
+        },
+        {
+          "target": "conn_retry",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 42,
+          "resolvedId": "backend/util/retry.py:conn_retry:170"
+        },
+        {
+          "target": "conn_retry",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 54,
+          "resolvedId": "backend/util/retry.py:conn_retry:170"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

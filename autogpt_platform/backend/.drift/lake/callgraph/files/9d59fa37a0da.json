@@ -1,0 +1,888 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.194Z",
+  "checksum": "94c26e55c48958ac",
+  "file": "backend/api/features/builder/routes.py",
+  "functions": [
+    {
+      "id": "backend/api/features/builder/routes.py:sanitize_query:21",
+      "name": "sanitize_query",
+      "startLine": 21,
+      "endLine": 37,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "strip",
+          "resolved": false,
+          "confidence": 0,
+          "line": 24
+        },
+        {
+          "target": "replace",
+          "resolved": false,
+          "confidence": 0,
+          "line": 26
+        },
+        {
+          "target": "replace",
+          "resolved": false,
+          "confidence": 0,
+          "line": 26
+        },
+        {
+          "target": "replace",
+          "resolved": false,
+          "confidence": 0,
+          "line": 26
+        },
+        {
+          "target": "replace",
+          "resolved": false,
+          "confidence": 0,
+          "line": 26
+        },
+        {
+          "target": "replace",
+          "resolved": false,
+          "confidence": 0,
+          "line": 26
+        },
+        {
+          "target": "replace",
+          "resolved": false,
+          "confidence": 0,
+          "line": 26
+        },
+        {
+          "target": "replace",
+          "resolved": false,
+          "confidence": 0,
+          "line": 26
+        },
+        {
+          "target": "replace",
+          "resolved": false,
+          "confidence": 0,
+          "line": 26
+        },
+        {
+          "target": "replace",
+          "resolved": false,
+          "confidence": 0,
+          "line": 26
+        },
+        {
+          "target": "replace",
+          "resolved": false,
+          "confidence": 0,
+          "line": 26
+        },
+        {
+          "target": "replace",
+          "resolved": false,
+          "confidence": 0,
+          "line": 26
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/builder/routes.py:get_suggestions:45",
+      "name": "get_suggestions",
+      "startLine": 45,
+      "endLine": 67,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "SuggestionsResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 51
+        },
+        {
+          "target": "get_recent_searches",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 57,
+          "resolvedId": "backend/api/features/builder/db.py:get_recent_searches:190"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 57
+        },
+        {
+          "target": "get_suggested_blocks",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 66,
+          "resolvedId": "backend/api/features/builder/db.py:get_suggested_blocks:644"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/builder/routes.py:get_block_categories:75",
+      "name": "get_block_categories",
+      "startLine": 75,
+      "endLine": 81,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "get_block_categories",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 81,
+          "resolvedId": "backend/api/features/builder/routes.py:get_block_categories:75"
+        },
+        {
+          "target": "blocks_per_category",
+          "resolved": false,
+          "confidence": 0,
+          "line": 81
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "fastapi",
+          "operation": "read",
+          "line": 76,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/api/features/builder/routes.py:get_blocks:89",
+      "name": "get_blocks",
+      "startLine": 89,
+      "endLine": 105,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "get_blocks",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 99,
+          "resolvedId": "backend/api/features/builder/routes.py:get_blocks:89"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "fastapi",
+          "operation": "read",
+          "line": 90,
+          "fields": []
+        },
+        {
+          "table": "fastapi",
+          "operation": "read",
+          "line": 91,
+          "fields": []
+        },
+        {
+          "table": "fastapi",
+          "operation": "read",
+          "line": 92,
+          "fields": []
+        },
+        {
+          "table": "fastapi",
+          "operation": "read",
+          "line": 93,
+          "fields": []
+        },
+        {
+          "table": "fastapi",
+          "operation": "read",
+          "line": 94,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/api/features/builder/routes.py:get_specific_blocks:113",
+      "name": "get_specific_blocks",
+      "startLine": 113,
+      "endLine": 124,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "get_block_by_id",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 121,
+          "resolvedId": "backend/api/features/builder/db.py:get_block_by_id:149"
+        },
+        {
+          "target": "block_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 121
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 123
+        },
+        {
+          "target": "block",
+          "resolved": false,
+          "confidence": 0,
+          "line": 123
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "fastapi",
+          "operation": "read",
+          "line": 114,
+          "fields": []
+        },
+        {
+          "table": "block",
+          "operation": "read",
+          "line": 121,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/api/features/builder/routes.py:get_providers:132",
+      "name": "get_providers",
+      "startLine": 132,
+      "endLine": 142,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "get_providers",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 139,
+          "resolvedId": "backend/api/features/builder/routes.py:get_providers:132"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "fastapi",
+          "operation": "read",
+          "line": 133,
+          "fields": []
+        },
+        {
+          "table": "fastapi",
+          "operation": "read",
+          "line": 134,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/api/features/builder/routes.py:search:151",
+      "name": "search",
+      "startLine": 151,
+      "endLine": 210,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "sanitize_query",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 171,
+          "resolvedId": "backend/api/features/builder/routes.py:sanitize_query:21"
+        },
+        {
+          "target": "search_query",
+          "resolved": false,
+          "confidence": 0,
+          "line": 171
+        },
+        {
+          "target": "get_sorted_search_results",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 174,
+          "resolvedId": "backend/api/features/builder/db.py:get_sorted_search_results:214"
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 182
+        },
+        {
+          "target": "Pagination",
+          "resolved": false,
+          "confidence": 0,
+          "line": 183
+        },
+        {
+          "target": "update_search",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 195,
+          "resolvedId": "backend/api/features/builder/db.py:update_search:160"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 196
+        },
+        {
+          "target": "SearchEntry",
+          "resolved": false,
+          "confidence": 0,
+          "line": 197
+        },
+        {
+          "target": "SearchResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 205
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "fastapi",
+          "operation": "read",
+          "line": 153,
+          "fields": []
+        },
+        {
+          "table": "fastapi",
+          "operation": "read",
+          "line": 154,
+          "fields": []
+        },
+        {
+          "table": "fastapi",
+          "operation": "read",
+          "line": 155,
+          "fields": []
+        },
+        {
+          "table": "fastapi",
+          "operation": "read",
+          "line": 156,
+          "fields": []
+        },
+        {
+          "table": "fastapi",
+          "operation": "read",
+          "line": 157,
+          "fields": []
+        },
+        {
+          "table": "fastapi",
+          "operation": "read",
+          "line": 158,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/api/features/builder/routes.py:get_counts:218",
+      "name": "get_counts",
+      "startLine": 218,
+      "endLine": 224,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "get_counts",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 224,
+          "resolvedId": "backend/api/features/builder/routes.py:get_counts:218"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 224
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/builder/routes.py:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 225,
+      "isEntryPoint": false,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "getLogger",
+          "resolved": false,
+          "confidence": 0,
+          "line": 13
+        },
+        {
+          "target": "APIRouter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 15
+        },
+        {
+          "target": "strip",
+          "resolved": false,
+          "confidence": 0,
+          "line": 24
+        },
+        {
+          "target": "replace",
+          "resolved": false,
+          "confidence": 0,
+          "line": 26
+        },
+        {
+          "target": "replace",
+          "resolved": false,
+          "confidence": 0,
+          "line": 26
+        },
+        {
+          "target": "replace",
+          "resolved": false,
+          "confidence": 0,
+          "line": 26
+        },
+        {
+          "target": "replace",
+          "resolved": false,
+          "confidence": 0,
+          "line": 26
+        },
+        {
+          "target": "replace",
+          "resolved": false,
+          "confidence": 0,
+          "line": 26
+        },
+        {
+          "target": "replace",
+          "resolved": false,
+          "confidence": 0,
+          "line": 26
+        },
+        {
+          "target": "replace",
+          "resolved": false,
+          "confidence": 0,
+          "line": 26
+        },
+        {
+          "target": "replace",
+          "resolved": false,
+          "confidence": 0,
+          "line": 26
+        },
+        {
+          "target": "replace",
+          "resolved": false,
+          "confidence": 0,
+          "line": 26
+        },
+        {
+          "target": "replace",
+          "resolved": false,
+          "confidence": 0,
+          "line": 26
+        },
+        {
+          "target": "replace",
+          "resolved": false,
+          "confidence": 0,
+          "line": 26
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 40,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "SuggestionsResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 51
+        },
+        {
+          "target": "get_recent_searches",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 57,
+          "resolvedId": "backend/api/features/builder/db.py:get_recent_searches:190"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 57
+        },
+        {
+          "target": "get_suggested_blocks",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 66,
+          "resolvedId": "backend/api/features/builder/db.py:get_suggested_blocks:644"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 70,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "get_block_categories",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 81,
+          "resolvedId": "backend/api/features/builder/routes.py:get_block_categories:75"
+        },
+        {
+          "target": "blocks_per_category",
+          "resolved": false,
+          "confidence": 0,
+          "line": 81
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 84,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "get_blocks",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 99,
+          "resolvedId": "backend/api/features/builder/routes.py:get_blocks:89"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 108,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "get_block_by_id",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 121,
+          "resolvedId": "backend/api/features/builder/db.py:get_block_by_id:149"
+        },
+        {
+          "target": "block_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 121
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 123
+        },
+        {
+          "target": "block",
+          "resolved": false,
+          "confidence": 0,
+          "line": 123
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 127,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "get_providers",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 139,
+          "resolvedId": "backend/api/features/builder/routes.py:get_providers:132"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 145,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "sanitize_query",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 171,
+          "resolvedId": "backend/api/features/builder/routes.py:sanitize_query:21"
+        },
+        {
+          "target": "search_query",
+          "resolved": false,
+          "confidence": 0,
+          "line": 171
+        },
+        {
+          "target": "get_sorted_search_results",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 174,
+          "resolvedId": "backend/api/features/builder/db.py:get_sorted_search_results:214"
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 182
+        },
+        {
+          "target": "Pagination",
+          "resolved": false,
+          "confidence": 0,
+          "line": 183
+        },
+        {
+          "target": "update_search",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 195,
+          "resolvedId": "backend/api/features/builder/db.py:update_search:160"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 196
+        },
+        {
+          "target": "SearchEntry",
+          "resolved": false,
+          "confidence": 0,
+          "line": 197
+        },
+        {
+          "target": "SearchResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 205
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 213,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "get_counts",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 224,
+          "resolvedId": "backend/api/features/builder/routes.py:get_counts:218"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 224
+        },
+        {
+          "target": "getLogger",
+          "resolved": false,
+          "confidence": 0,
+          "line": 13
+        },
+        {
+          "target": "APIRouter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 15
+        },
+        {
+          "target": "Security",
+          "resolved": false,
+          "confidence": 0,
+          "line": 16
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 40,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 70,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 84,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 108,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 127,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 145,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 213,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "logging",
+          "operation": "read",
+          "line": 13,
+          "fields": []
+        },
+        {
+          "table": "fastapi",
+          "operation": "read",
+          "line": 76,
+          "fields": []
+        },
+        {
+          "table": "fastapi",
+          "operation": "read",
+          "line": 90,
+          "fields": []
+        },
+        {
+          "table": "fastapi",
+          "operation": "read",
+          "line": 91,
+          "fields": []
+        },
+        {
+          "table": "fastapi",
+          "operation": "read",
+          "line": 92,
+          "fields": []
+        },
+        {
+          "table": "fastapi",
+          "operation": "read",
+          "line": 93,
+          "fields": []
+        },
+        {
+          "table": "fastapi",
+          "operation": "read",
+          "line": 94,
+          "fields": []
+        },
+        {
+          "table": "fastapi",
+          "operation": "read",
+          "line": 114,
+          "fields": []
+        },
+        {
+          "table": "block",
+          "operation": "read",
+          "line": 121,
+          "fields": []
+        },
+        {
+          "table": "fastapi",
+          "operation": "read",
+          "line": 133,
+          "fields": []
+        },
+        {
+          "table": "fastapi",
+          "operation": "read",
+          "line": 134,
+          "fields": []
+        },
+        {
+          "table": "fastapi",
+          "operation": "read",
+          "line": 153,
+          "fields": []
+        },
+        {
+          "table": "fastapi",
+          "operation": "read",
+          "line": 154,
+          "fields": []
+        },
+        {
+          "table": "fastapi",
+          "operation": "read",
+          "line": 155,
+          "fields": []
+        },
+        {
+          "table": "fastapi",
+          "operation": "read",
+          "line": 156,
+          "fields": []
+        },
+        {
+          "table": "fastapi",
+          "operation": "read",
+          "line": 157,
+          "fields": []
+        },
+        {
+          "table": "fastapi",
+          "operation": "read",
+          "line": 158,
+          "fields": []
+        }
+      ]
+    }
+  ]
+}

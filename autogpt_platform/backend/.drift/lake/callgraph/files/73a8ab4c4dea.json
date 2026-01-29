@@ -1,0 +1,158 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.172Z",
+  "checksum": "6a02f6307d34a920",
+  "file": "backend/blocks/notion/read_page_markdown.py",
+  "functions": [
+    {
+      "id": "backend/blocks/notion/read_page_markdown.py:__init__:39",
+      "name": "__init__",
+      "startLine": 39,
+      "endLine": 63,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 40,
+          "resolvedId": "backend/blocks/notion/read_page_markdown.py:__init__:39"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 40
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/notion/read_page_markdown.py:get_page_markdown:66",
+      "name": "get_page_markdown",
+      "startLine": 66,
+      "endLine": 98,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "NotionClient",
+          "resolved": false,
+          "confidence": 0,
+          "line": 80
+        },
+        {
+          "target": "credentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 80
+        },
+        {
+          "target": "get_page",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 83,
+          "resolvedId": "backend/blocks/notion/read_page.py:get_page:54"
+        },
+        {
+          "target": "page_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 83
+        },
+        {
+          "target": "extract_page_title",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 84,
+          "resolvedId": "backend/blocks/notion/_api.py:extract_page_title:519"
+        },
+        {
+          "target": "page",
+          "resolved": false,
+          "confidence": 0,
+          "line": 84
+        },
+        {
+          "target": "get_blocks",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 87,
+          "resolvedId": "backend/api/features/builder/routes.py:get_blocks:89"
+        },
+        {
+          "target": "page_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 87
+        },
+        {
+          "target": "blocks_to_markdown",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 90,
+          "resolvedId": "backend/blocks/notion/_api.py:blocks_to_markdown:491"
+        },
+        {
+          "target": "blocks",
+          "resolved": false,
+          "confidence": 0,
+          "line": 90
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/notion/read_page_markdown.py:run:100",
+      "name": "run",
+      "startLine": 100,
+      "endLine": 114,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "get_page_markdown",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 108,
+          "resolvedId": "backend/blocks/notion/read_page_markdown.py:get_page_markdown:66"
+        },
+        {
+          "target": "credentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 109
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 114
+        },
+        {
+          "target": "e",
+          "resolved": false,
+          "confidence": 0,
+          "line": 114
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 114
+        },
+        {
+          "target": "e",
+          "resolved": false,
+          "confidence": 0,
+          "line": 114
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

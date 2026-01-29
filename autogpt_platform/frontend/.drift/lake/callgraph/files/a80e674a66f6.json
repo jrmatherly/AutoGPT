@@ -1,0 +1,52 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.094Z",
+  "checksum": "9713ca2093e20c18",
+  "file": "src/lib/react-query/queryClient.ts",
+  "functions": [
+    {
+      "id": "src/lib/react-query/queryClient.ts:makeQueryClient:3",
+      "name": "makeQueryClient",
+      "startLine": 3,
+      "endLine": 20,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "QueryClient",
+          "resolved": false,
+          "confidence": 0,
+          "line": 4
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/lib/react-query/queryClient.ts:getQueryClient:28",
+      "name": "getQueryClient",
+      "startLine": 28,
+      "endLine": 37,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "makeQueryClient",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 31,
+          "resolvedId": "src/lib/react-query/queryClient.ts:makeQueryClient:3"
+        },
+        {
+          "target": "makeQueryClient",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 34,
+          "resolvedId": "src/lib/react-query/queryClient.ts:makeQueryClient:3"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

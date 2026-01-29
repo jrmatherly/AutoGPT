@@ -1,0 +1,377 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.095Z",
+  "checksum": "bf7b034c3ee26640",
+  "file": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/modals/AgentInputsReadOnly/AgentInputsReadOnly.tsx",
+  "functions": [
+    {
+      "id": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/modals/AgentInputsReadOnly/AgentInputsReadOnly.tsx:AgentInputsReadOnly:17",
+      "name": "AgentInputsReadOnly",
+      "startLine": 17,
+      "endLine": 91,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "getAgentInputFields",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 22,
+          "resolvedId": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/modals/AgentInputsReadOnly/helpers.ts:getAgentInputFields:15"
+        },
+        {
+          "target": "agent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 22
+        },
+        {
+          "target": "entries",
+          "resolved": false,
+          "confidence": 0,
+          "line": 23
+        },
+        {
+          "target": "getAgentCredentialsFields",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 24,
+          "resolvedId": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/modals/AgentInputsReadOnly/helpers.ts:getAgentCredentialsFields:28"
+        },
+        {
+          "target": "agent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 24
+        },
+        {
+          "target": "map",
+          "resolved": false,
+          "confidence": 0,
+          "line": 29
+        },
+        {
+          "target": "entries",
+          "resolved": false,
+          "confidence": 0,
+          "line": 29
+        },
+        {
+          "target": "inputs",
+          "resolved": false,
+          "confidence": 0,
+          "line": 29
+        },
+        {
+          "target": "Text",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 40,
+          "resolvedId": "src/components/atoms/Text/Text.tsx:Text:15"
+        },
+        {
+          "target": "map",
+          "resolved": false,
+          "confidence": 0,
+          "line": 51
+        },
+        {
+          "target": "RunAgentInputs",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 55,
+          "resolvedId": "src/components/contextual/RunAgentInputs/RunAgentInputs.tsx:RunAgentInputs:44"
+        },
+        {
+          "target": "key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 56
+        },
+        {
+          "target": "schema",
+          "resolved": false,
+          "confidence": 0,
+          "line": 57
+        },
+        {
+          "target": "value",
+          "resolved": false,
+          "confidence": 0,
+          "line": 58
+        },
+        {
+          "target": "description",
+          "resolved": false,
+          "confidence": 0,
+          "line": 59
+        },
+        {
+          "target": "map",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        },
+        {
+          "target": "isSystemCredential",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 75,
+          "resolvedId": "src/components/contextual/CredentialsInput/helpers.ts:isSystemCredential:104"
+        },
+        {
+          "target": "credential",
+          "resolved": false,
+          "confidence": 0,
+          "line": 75
+        },
+        {
+          "target": "CredentialsInput",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 78,
+          "resolvedId": "src/components/contextual/CredentialsInput/CredentialsInput.tsx:CredentialsInput:40"
+        },
+        {
+          "target": "key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 79
+        },
+        {
+          "target": "credential",
+          "resolved": false,
+          "confidence": 0,
+          "line": 81
+        },
+        {
+          "target": "RunAgentInputs",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 55,
+          "resolvedId": "src/components/contextual/RunAgentInputs/RunAgentInputs.tsx:RunAgentInputs:44"
+        },
+        {
+          "target": "key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 56
+        },
+        {
+          "target": "schema",
+          "resolved": false,
+          "confidence": 0,
+          "line": 57
+        },
+        {
+          "target": "value",
+          "resolved": false,
+          "confidence": 0,
+          "line": 58
+        },
+        {
+          "target": "description",
+          "resolved": false,
+          "confidence": 0,
+          "line": 59
+        },
+        {
+          "target": "isSystemCredential",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 75,
+          "resolvedId": "src/components/contextual/CredentialsInput/helpers.ts:isSystemCredential:104"
+        },
+        {
+          "target": "credential",
+          "resolved": false,
+          "confidence": 0,
+          "line": 75
+        },
+        {
+          "target": "CredentialsInput",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 78,
+          "resolvedId": "src/components/contextual/CredentialsInput/CredentialsInput.tsx:CredentialsInput:40"
+        },
+        {
+          "target": "key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 79
+        },
+        {
+          "target": "credential",
+          "resolved": false,
+          "confidence": 0,
+          "line": 81
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/modals/AgentInputsReadOnly/AgentInputsReadOnly.tsx:$map$1:51",
+      "name": "$map$1",
+      "startLine": 51,
+      "endLine": 64,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "map",
+          "resolved": false,
+          "confidence": 0,
+          "line": 51
+        },
+        {
+          "target": "RunAgentInputs",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 55,
+          "resolvedId": "src/components/contextual/RunAgentInputs/RunAgentInputs.tsx:RunAgentInputs:44"
+        },
+        {
+          "target": "key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 56
+        },
+        {
+          "target": "schema",
+          "resolved": false,
+          "confidence": 0,
+          "line": 57
+        },
+        {
+          "target": "value",
+          "resolved": false,
+          "confidence": 0,
+          "line": 58
+        },
+        {
+          "target": "description",
+          "resolved": false,
+          "confidence": 0,
+          "line": 59
+        },
+        {
+          "target": "RunAgentInputs",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 55,
+          "resolvedId": "src/components/contextual/RunAgentInputs/RunAgentInputs.tsx:RunAgentInputs:44"
+        },
+        {
+          "target": "key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 56
+        },
+        {
+          "target": "schema",
+          "resolved": false,
+          "confidence": 0,
+          "line": 57
+        },
+        {
+          "target": "value",
+          "resolved": false,
+          "confidence": 0,
+          "line": 58
+        },
+        {
+          "target": "description",
+          "resolved": false,
+          "confidence": 0,
+          "line": 59
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/modals/AgentInputsReadOnly/AgentInputsReadOnly.tsx:$map$2:72",
+      "name": "$map$2",
+      "startLine": 72,
+      "endLine": 86,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "map",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        },
+        {
+          "target": "isSystemCredential",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 75,
+          "resolvedId": "src/components/contextual/CredentialsInput/helpers.ts:isSystemCredential:104"
+        },
+        {
+          "target": "credential",
+          "resolved": false,
+          "confidence": 0,
+          "line": 75
+        },
+        {
+          "target": "CredentialsInput",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 78,
+          "resolvedId": "src/components/contextual/CredentialsInput/CredentialsInput.tsx:CredentialsInput:40"
+        },
+        {
+          "target": "key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 79
+        },
+        {
+          "target": "credential",
+          "resolved": false,
+          "confidence": 0,
+          "line": 81
+        },
+        {
+          "target": "isSystemCredential",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 75,
+          "resolvedId": "src/components/contextual/CredentialsInput/helpers.ts:isSystemCredential:104"
+        },
+        {
+          "target": "credential",
+          "resolved": false,
+          "confidence": 0,
+          "line": 75
+        },
+        {
+          "target": "CredentialsInput",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 78,
+          "resolvedId": "src/components/contextual/CredentialsInput/CredentialsInput.tsx:CredentialsInput:40"
+        },
+        {
+          "target": "key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 79
+        },
+        {
+          "target": "credential",
+          "resolved": false,
+          "confidence": 0,
+          "line": 81
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

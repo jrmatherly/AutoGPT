@@ -1,0 +1,351 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.184Z",
+  "checksum": "4a2da396bccfe9ff",
+  "file": "backend/blocks/codex.py",
+  "functions": [
+    {
+      "id": "backend/blocks/codex.py:CodexCredentialsField:69",
+      "name": "CodexCredentialsField",
+      "startLine": 69,
+      "endLine": 72,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "CredentialsField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 70,
+          "resolvedId": "backend/data/model.py:CredentialsField:681"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/codex.py:__init__:125",
+      "name": "__init__",
+      "startLine": 125,
+      "endLine": 152,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 126,
+          "resolvedId": "backend/blocks/codex.py:__init__:125"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 126
+        },
+        {
+          "target": "CodexCallResult",
+          "resolved": false,
+          "confidence": 0,
+          "line": 144
+        },
+        {
+          "target": "NodeExecutionStats",
+          "resolved": false,
+          "confidence": 0,
+          "line": 152
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/codex.py:call_codex:154",
+      "name": "call_codex",
+      "startLine": 154,
+      "endLine": 204,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "AsyncOpenAI",
+          "resolved": false,
+          "confidence": 0,
+          "line": 165
+        },
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 165,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        },
+        {
+          "target": "create",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 178,
+          "resolvedId": "backend/integrations/creds_manager.py:create:68"
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 179
+        },
+        {
+          "target": "response",
+          "resolved": false,
+          "confidence": 0,
+          "line": 179
+        },
+        {
+          "target": "TypeError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 180
+        },
+        {
+          "target": "type",
+          "resolved": false,
+          "confidence": 0,
+          "line": 180
+        },
+        {
+          "target": "response",
+          "resolved": false,
+          "confidence": 0,
+          "line": 180
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 185
+        },
+        {
+          "target": "CodexCallResult",
+          "resolved": false,
+          "confidence": 0,
+          "line": 200
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/codex.py:run:206",
+      "name": "run",
+      "startLine": 206,
+      "endLine": 224,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "call_codex",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 213,
+          "resolvedId": "backend/blocks/codex.py:call_codex:154"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/codex.py:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 225,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "APIKeyCredentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 54
+        },
+        {
+          "target": "CredentialsField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 70,
+          "resolvedId": "backend/data/model.py:CredentialsField:681"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 79,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 83,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 92,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 98,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 104,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "CodexCredentialsField",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 110,
+          "resolvedId": "backend/blocks/codex.py:CodexCredentialsField:69"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 113,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 116,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 120,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 126,
+          "resolvedId": "backend/blocks/codex.py:__init__:125"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 126
+        },
+        {
+          "target": "CodexCallResult",
+          "resolved": false,
+          "confidence": 0,
+          "line": 144
+        },
+        {
+          "target": "NodeExecutionStats",
+          "resolved": false,
+          "confidence": 0,
+          "line": 152
+        },
+        {
+          "target": "AsyncOpenAI",
+          "resolved": false,
+          "confidence": 0,
+          "line": 165
+        },
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 165,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        },
+        {
+          "target": "create",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 178,
+          "resolvedId": "backend/integrations/creds_manager.py:create:68"
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 179
+        },
+        {
+          "target": "response",
+          "resolved": false,
+          "confidence": 0,
+          "line": 179
+        },
+        {
+          "target": "TypeError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 180
+        },
+        {
+          "target": "type",
+          "resolved": false,
+          "confidence": 0,
+          "line": 180
+        },
+        {
+          "target": "response",
+          "resolved": false,
+          "confidence": 0,
+          "line": 180
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 185
+        },
+        {
+          "target": "CodexCallResult",
+          "resolved": false,
+          "confidence": 0,
+          "line": 200
+        },
+        {
+          "target": "call_codex",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 213,
+          "resolvedId": "backend/blocks/codex.py:call_codex:154"
+        },
+        {
+          "target": "APIKeyCredentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 54
+        },
+        {
+          "target": "SecretStr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 57
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.202Z",
+  "checksum": "11760971f9dbe45b",
+  "file": "src/app/(platform)/admin/spending/actions.ts",
+  "functions": [
+    {
+      "id": "src/app/(platform)/admin/spending/actions.ts:addDollars:10",
+      "name": "addDollars",
+      "startLine": 10,
+      "endLine": 19,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 12,
+          "resolvedId": "src/services/storage/local-storage.ts:get:16"
+        },
+        {
+          "target": "parseInt",
+          "resolved": false,
+          "confidence": 0,
+          "line": 13
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 13,
+          "resolvedId": "src/services/storage/local-storage.ts:get:16"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 14,
+          "resolvedId": "src/services/storage/local-storage.ts:get:16"
+        },
+        {
+          "target": "BackendApi",
+          "resolved": false,
+          "confidence": 0,
+          "line": 16
+        },
+        {
+          "target": "addUserCredits",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 17,
+          "resolvedId": "src/lib/autogpt-server-api/client.ts:addUserCredits:596"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 17
+        },
+        {
+          "target": "amount",
+          "resolved": false,
+          "confidence": 0,
+          "line": 17
+        },
+        {
+          "target": "comments",
+          "resolved": false,
+          "confidence": 0,
+          "line": 17
+        },
+        {
+          "target": "revalidatePath",
+          "resolved": false,
+          "confidence": 0,
+          "line": 18
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/app/(platform)/admin/spending/actions.ts:getUsersTransactionHistory:21",
+      "name": "getUsersTransactionHistory",
+      "startLine": 21,
+      "endLine": 41,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "BackendApi",
+          "resolved": false,
+          "confidence": 0,
+          "line": 38
+        },
+        {
+          "target": "getUsersHistory",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 39,
+          "resolvedId": "src/lib/autogpt-server-api/client.ts:getUsersHistory:608"
+        },
+        {
+          "target": "data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 39
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

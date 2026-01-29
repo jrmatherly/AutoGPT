@@ -1,0 +1,1342 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.237Z",
+  "checksum": "23b359b330a217b2",
+  "file": "backend/data/integrations.py",
+  "functions": [
+    {
+      "id": "backend/data/integrations.py:url:48",
+      "name": "url",
+      "startLine": 48,
+      "endLine": 49,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "webhook_ingress_url",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 49,
+          "resolvedId": "backend/integrations/webhooks/utils.py:webhook_ingress_url:23"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/integrations.py:from_db:52",
+      "name": "from_db",
+      "startLine": 52,
+      "endLine": 64,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "Webhook",
+          "resolved": false,
+          "confidence": 0,
+          "line": 53
+        },
+        {
+          "target": "ProviderName",
+          "resolved": false,
+          "confidence": 0,
+          "line": 56
+        },
+        {
+          "target": "dict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 61
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/integrations.py:from_db:72",
+      "name": "from_db",
+      "startLine": 72,
+      "endLine": 90,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "ValueError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 74
+        },
+        {
+          "target": "WebhookWithRelations",
+          "resolved": false,
+          "confidence": 0,
+          "line": 84
+        },
+        {
+          "target": "model_dump",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 85,
+          "resolvedId": "backend/blocks/apollo/models.py:model_dump:11"
+        },
+        {
+          "target": "from_db",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 85,
+          "resolvedId": "backend/data/integrations.py:from_db:52"
+        },
+        {
+          "target": "webhook",
+          "resolved": false,
+          "confidence": 0,
+          "line": 85
+        },
+        {
+          "target": "from_db",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 86,
+          "resolvedId": "backend/data/integrations.py:from_db:52"
+        },
+        {
+          "target": "node",
+          "resolved": false,
+          "confidence": 0,
+          "line": 86
+        },
+        {
+          "target": "from_db",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 88,
+          "resolvedId": "backend/data/integrations.py:from_db:52"
+        },
+        {
+          "target": "preset",
+          "resolved": false,
+          "confidence": 0,
+          "line": 88
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/integrations.py:create_webhook:96",
+      "name": "create_webhook",
+      "startLine": 96,
+      "endLine": 111,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "create",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 97,
+          "resolvedId": "backend/integrations/creds_manager.py:create:68"
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 97
+        },
+        {
+          "target": "IntegrationWebhookCreateInput",
+          "resolved": false,
+          "confidence": 0,
+          "line": 98
+        },
+        {
+          "target": "SafeJson",
+          "resolved": false,
+          "confidence": 0,
+          "line": 106
+        },
+        {
+          "target": "from_db",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 111,
+          "resolvedId": "backend/data/integrations.py:from_db:52"
+        },
+        {
+          "target": "created_webhook",
+          "resolved": false,
+          "confidence": 0,
+          "line": 111
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "prisma",
+          "operation": "write",
+          "line": 97,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/data/integrations.py:get_webhook:115",
+      "name": "get_webhook",
+      "startLine": 115,
+      "endLine": 117,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/integrations.py:get_webhook:119",
+      "name": "get_webhook",
+      "startLine": 119,
+      "endLine": 121,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/integrations.py:get_webhook:124",
+      "name": "get_webhook",
+      "startLine": 124,
+      "endLine": 139,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "find_unique",
+          "resolved": false,
+          "confidence": 0,
+          "line": 133
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 133
+        },
+        {
+          "target": "NotFoundError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 138
+        },
+        {
+          "target": "from_db",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 139,
+          "resolvedId": "backend/data/integrations.py:from_db:52"
+        },
+        {
+          "target": "webhook",
+          "resolved": false,
+          "confidence": 0,
+          "line": 139
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "prisma",
+          "operation": "read",
+          "line": 133,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/data/integrations.py:get_all_webhooks_by_creds:143",
+      "name": "get_all_webhooks_by_creds",
+      "startLine": 143,
+      "endLine": 149,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/integrations.py:get_all_webhooks_by_creds:151",
+      "name": "get_all_webhooks_by_creds",
+      "startLine": 151,
+      "endLine": 157,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/integrations.py:get_all_webhooks_by_creds:160",
+      "name": "get_all_webhooks_by_creds",
+      "startLine": 160,
+      "endLine": 178,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "ValueError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 168
+        },
+        {
+          "target": "find_many",
+          "resolved": false,
+          "confidence": 0,
+          "line": 169
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 169
+        },
+        {
+          "target": "from_db",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 176,
+          "resolvedId": "backend/data/integrations.py:from_db:52"
+        },
+        {
+          "target": "webhook",
+          "resolved": false,
+          "confidence": 0,
+          "line": 176
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "prisma",
+          "operation": "read",
+          "line": 169,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/data/integrations.py:find_webhook_by_credentials_and_props:181",
+      "name": "find_webhook_by_credentials_and_props",
+      "startLine": 181,
+      "endLine": 197,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "find_first",
+          "resolved": false,
+          "confidence": 0,
+          "line": 188
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 188
+        },
+        {
+          "target": "from_db",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 197,
+          "resolvedId": "backend/data/integrations.py:from_db:52"
+        },
+        {
+          "target": "webhook",
+          "resolved": false,
+          "confidence": 0,
+          "line": 197
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "prisma",
+          "operation": "read",
+          "line": 188,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/data/integrations.py:find_webhook_by_graph_and_props:200",
+      "name": "find_webhook_by_graph_and_props",
+      "startLine": 200,
+      "endLine": 224,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "ValueError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 219
+        },
+        {
+          "target": "find_first",
+          "resolved": false,
+          "confidence": 0,
+          "line": 221
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 221
+        },
+        {
+          "target": "from_db",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 224,
+          "resolvedId": "backend/data/integrations.py:from_db:52"
+        },
+        {
+          "target": "webhook",
+          "resolved": false,
+          "confidence": 0,
+          "line": 224
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "prisma",
+          "operation": "read",
+          "line": 221,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/data/integrations.py:update_webhook:227",
+      "name": "update_webhook",
+      "startLine": 227,
+      "endLine": 247,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "SafeJson",
+          "resolved": false,
+          "confidence": 0,
+          "line": 235
+        },
+        {
+          "target": "config",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 235,
+          "resolvedId": "backend/util/cloud_storage_test.py:config:16"
+        },
+        {
+          "target": "ValueError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 239
+        },
+        {
+          "target": "update",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 241,
+          "resolvedId": "backend/integrations/creds_manager.py:update:162"
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 241
+        },
+        {
+          "target": "NotFoundError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 246
+        },
+        {
+          "target": "from_db",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 247,
+          "resolvedId": "backend/data/integrations.py:from_db:52"
+        },
+        {
+          "target": "_updated_webhook",
+          "resolved": false,
+          "confidence": 0,
+          "line": 247
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "prisma",
+          "operation": "write",
+          "line": 241,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/data/integrations.py:find_webhooks_by_graph_id:250",
+      "name": "find_webhooks_by_graph_id",
+      "startLine": 250,
+      "endLine": 271,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "find_many",
+          "resolved": false,
+          "confidence": 0,
+          "line": 270
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 270
+        },
+        {
+          "target": "from_db",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 271,
+          "resolvedId": "backend/data/integrations.py:from_db:52"
+        },
+        {
+          "target": "webhook",
+          "resolved": false,
+          "confidence": 0,
+          "line": 271
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "prisma",
+          "operation": "read",
+          "line": 270,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/data/integrations.py:unlink_webhook_from_graph:274",
+      "name": "unlink_webhook_from_graph",
+      "startLine": 274,
+      "endLine": 318,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "find_many",
+          "resolved": false,
+          "confidence": 0,
+          "line": 292
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 292
+        },
+        {
+          "target": "set_node_webhook",
+          "resolved": false,
+          "confidence": 0,
+          "line": 298
+        },
+        {
+          "target": "find_many",
+          "resolved": false,
+          "confidence": 0,
+          "line": 301
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 301
+        },
+        {
+          "target": "set_preset_webhook",
+          "resolved": false,
+          "confidence": 0,
+          "line": 307
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 307
+        },
+        {
+          "target": "get_webhook",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 310,
+          "resolvedId": "backend/data/integrations.py:get_webhook:115"
+        },
+        {
+          "target": "webhook_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 310
+        },
+        {
+          "target": "get_webhook_manager",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 311,
+          "resolvedId": "backend/integrations/webhooks/__init__.py:get_webhook_manager:35"
+        },
+        {
+          "target": "IntegrationCredentialsManager",
+          "resolved": false,
+          "confidence": 0,
+          "line": 312
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 314,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 314
+        },
+        {
+          "target": "prune_webhook_if_dangling",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 318,
+          "resolvedId": "backend/integrations/webhooks/_base.py:prune_webhook_if_dangling:102"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 318
+        },
+        {
+          "target": "credentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 318
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "prisma",
+          "operation": "read",
+          "line": 292,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "read",
+          "line": 301,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/data/integrations.py:delete_webhook:321",
+      "name": "delete_webhook",
+      "startLine": 321,
+      "endLine": 326,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "delete_many",
+          "resolved": false,
+          "confidence": 0,
+          "line": 322
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 322
+        },
+        {
+          "target": "NotFoundError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 326
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/integrations.py:event_bus_name:343",
+      "name": "event_bus_name",
+      "startLine": 343,
+      "endLine": 344,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/integrations.py:publish_webhook_event:350",
+      "name": "publish_webhook_event",
+      "startLine": 350,
+      "endLine": 353,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "publish_event",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 351,
+          "resolvedId": "backend/data/event_bus.py:publish_event:105"
+        },
+        {
+          "target": "event",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 352,
+          "resolvedId": "backend/cli_main.py:event:229"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/integrations.py:listen_for_webhook_events:356",
+      "name": "listen_for_webhook_events",
+      "startLine": 356,
+      "endLine": 362,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "listen_events",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 359,
+          "resolvedId": "backend/data/event_bus.py:listen_events:119"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/integrations.py:wait_for_webhook_event:365",
+      "name": "wait_for_webhook_event",
+      "startLine": 365,
+      "endLine": 370,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "wait_for_event",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 368,
+          "resolvedId": "backend/data/event_bus.py:wait_for_event:170"
+        },
+        {
+          "target": "timeout",
+          "resolved": false,
+          "confidence": 0,
+          "line": 369
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/integrations.py:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 371,
+      "isEntryPoint": false,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "getLogger",
+          "resolved": false,
+          "confidence": 0,
+          "line": 31
+        },
+        {
+          "target": "Field",
+          "resolved": false,
+          "confidence": 0,
+          "line": 41
+        },
+        {
+          "target": "webhook_ingress_url",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 49,
+          "resolvedId": "backend/integrations/webhooks/utils.py:webhook_ingress_url:23"
+        },
+        {
+          "target": "Webhook",
+          "resolved": false,
+          "confidence": 0,
+          "line": 53
+        },
+        {
+          "target": "ProviderName",
+          "resolved": false,
+          "confidence": 0,
+          "line": 56
+        },
+        {
+          "target": "dict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 61
+        },
+        {
+          "target": "ValueError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 74
+        },
+        {
+          "target": "WebhookWithRelations",
+          "resolved": false,
+          "confidence": 0,
+          "line": 84
+        },
+        {
+          "target": "model_dump",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 85,
+          "resolvedId": "backend/blocks/apollo/models.py:model_dump:11"
+        },
+        {
+          "target": "from_db",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 85,
+          "resolvedId": "backend/data/integrations.py:from_db:52"
+        },
+        {
+          "target": "webhook",
+          "resolved": false,
+          "confidence": 0,
+          "line": 85
+        },
+        {
+          "target": "from_db",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 86,
+          "resolvedId": "backend/data/integrations.py:from_db:52"
+        },
+        {
+          "target": "node",
+          "resolved": false,
+          "confidence": 0,
+          "line": 86
+        },
+        {
+          "target": "from_db",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 88,
+          "resolvedId": "backend/data/integrations.py:from_db:52"
+        },
+        {
+          "target": "preset",
+          "resolved": false,
+          "confidence": 0,
+          "line": 88
+        },
+        {
+          "target": "create",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 97,
+          "resolvedId": "backend/integrations/creds_manager.py:create:68"
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 97
+        },
+        {
+          "target": "IntegrationWebhookCreateInput",
+          "resolved": false,
+          "confidence": 0,
+          "line": 98
+        },
+        {
+          "target": "SafeJson",
+          "resolved": false,
+          "confidence": 0,
+          "line": 106
+        },
+        {
+          "target": "from_db",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 111,
+          "resolvedId": "backend/data/integrations.py:from_db:52"
+        },
+        {
+          "target": "created_webhook",
+          "resolved": false,
+          "confidence": 0,
+          "line": 111
+        },
+        {
+          "target": "find_unique",
+          "resolved": false,
+          "confidence": 0,
+          "line": 133
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 133
+        },
+        {
+          "target": "NotFoundError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 138
+        },
+        {
+          "target": "from_db",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 139,
+          "resolvedId": "backend/data/integrations.py:from_db:52"
+        },
+        {
+          "target": "webhook",
+          "resolved": false,
+          "confidence": 0,
+          "line": 139
+        },
+        {
+          "target": "ValueError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 168
+        },
+        {
+          "target": "find_many",
+          "resolved": false,
+          "confidence": 0,
+          "line": 169
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 169
+        },
+        {
+          "target": "from_db",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 176,
+          "resolvedId": "backend/data/integrations.py:from_db:52"
+        },
+        {
+          "target": "webhook",
+          "resolved": false,
+          "confidence": 0,
+          "line": 176
+        },
+        {
+          "target": "find_first",
+          "resolved": false,
+          "confidence": 0,
+          "line": 188
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 188
+        },
+        {
+          "target": "from_db",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 197,
+          "resolvedId": "backend/data/integrations.py:from_db:52"
+        },
+        {
+          "target": "webhook",
+          "resolved": false,
+          "confidence": 0,
+          "line": 197
+        },
+        {
+          "target": "ValueError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 219
+        },
+        {
+          "target": "find_first",
+          "resolved": false,
+          "confidence": 0,
+          "line": 221
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 221
+        },
+        {
+          "target": "from_db",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 224,
+          "resolvedId": "backend/data/integrations.py:from_db:52"
+        },
+        {
+          "target": "webhook",
+          "resolved": false,
+          "confidence": 0,
+          "line": 224
+        },
+        {
+          "target": "SafeJson",
+          "resolved": false,
+          "confidence": 0,
+          "line": 235
+        },
+        {
+          "target": "config",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 235,
+          "resolvedId": "backend/util/cloud_storage_test.py:config:16"
+        },
+        {
+          "target": "ValueError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 239
+        },
+        {
+          "target": "update",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 241,
+          "resolvedId": "backend/integrations/creds_manager.py:update:162"
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 241
+        },
+        {
+          "target": "NotFoundError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 246
+        },
+        {
+          "target": "from_db",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 247,
+          "resolvedId": "backend/data/integrations.py:from_db:52"
+        },
+        {
+          "target": "_updated_webhook",
+          "resolved": false,
+          "confidence": 0,
+          "line": 247
+        },
+        {
+          "target": "find_many",
+          "resolved": false,
+          "confidence": 0,
+          "line": 270
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 270
+        },
+        {
+          "target": "from_db",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 271,
+          "resolvedId": "backend/data/integrations.py:from_db:52"
+        },
+        {
+          "target": "webhook",
+          "resolved": false,
+          "confidence": 0,
+          "line": 271
+        },
+        {
+          "target": "find_many",
+          "resolved": false,
+          "confidence": 0,
+          "line": 292
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 292
+        },
+        {
+          "target": "set_node_webhook",
+          "resolved": false,
+          "confidence": 0,
+          "line": 298
+        },
+        {
+          "target": "find_many",
+          "resolved": false,
+          "confidence": 0,
+          "line": 301
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 301
+        },
+        {
+          "target": "set_preset_webhook",
+          "resolved": false,
+          "confidence": 0,
+          "line": 307
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 307
+        },
+        {
+          "target": "get_webhook",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 310,
+          "resolvedId": "backend/data/integrations.py:get_webhook:115"
+        },
+        {
+          "target": "webhook_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 310
+        },
+        {
+          "target": "get_webhook_manager",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 311,
+          "resolvedId": "backend/integrations/webhooks/__init__.py:get_webhook_manager:35"
+        },
+        {
+          "target": "IntegrationCredentialsManager",
+          "resolved": false,
+          "confidence": 0,
+          "line": 312
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 314,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 314
+        },
+        {
+          "target": "prune_webhook_if_dangling",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 318,
+          "resolvedId": "backend/integrations/webhooks/_base.py:prune_webhook_if_dangling:102"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 318
+        },
+        {
+          "target": "credentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 318
+        },
+        {
+          "target": "delete_many",
+          "resolved": false,
+          "confidence": 0,
+          "line": 322
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 322
+        },
+        {
+          "target": "NotFoundError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 326
+        },
+        {
+          "target": "WebhookEventBus",
+          "resolved": false,
+          "confidence": 0,
+          "line": 347
+        },
+        {
+          "target": "publish_event",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 351,
+          "resolvedId": "backend/data/event_bus.py:publish_event:105"
+        },
+        {
+          "target": "event",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 352,
+          "resolvedId": "backend/cli_main.py:event:229"
+        },
+        {
+          "target": "listen_events",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 359,
+          "resolvedId": "backend/data/event_bus.py:listen_events:119"
+        },
+        {
+          "target": "wait_for_event",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 368,
+          "resolvedId": "backend/data/event_bus.py:wait_for_event:170"
+        },
+        {
+          "target": "timeout",
+          "resolved": false,
+          "confidence": 0,
+          "line": 369
+        },
+        {
+          "target": "getLogger",
+          "resolved": false,
+          "confidence": 0,
+          "line": 31
+        },
+        {
+          "target": "WebhookEventBus",
+          "resolved": false,
+          "confidence": 0,
+          "line": 347
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "logging",
+          "operation": "read",
+          "line": 31,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "write",
+          "line": 97,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "read",
+          "line": 133,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "read",
+          "line": 169,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "read",
+          "line": 188,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "read",
+          "line": 221,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "write",
+          "line": 241,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "read",
+          "line": 270,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "read",
+          "line": 292,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "read",
+          "line": 301,
+          "fields": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "version": "2.0.0",
+  "project": {
+    "id": "1c78f463-ea3f-4889-bb0a-9958c40f0e67",
+    "name": "@autogpt/libs",
+    "description": "AutoGPT Platform Shared Libraries - Common Python utilities",
+    "language": "python",
+    "isShared": true,
+    "initializedAt": "2026-01-29T06:12:07.630Z"
+  },
+  "severity": {},
+  "categories": ["shared", "utilities"],
+  "ignore": [
+    "node_modules/**",
+    "dist/**",
+    "build/**",
+    ".git/**",
+    "coverage/**",
+    "*.min.js",
+    "*.bundle.js",
+    "vendor/**",
+    "__pycache__/**",
+    ".venv/**",
+    "target/**",
+    "bin/**",
+    "obj/**"
+  ],
+  "ci": {
+    "failOn": "error",
+    "reportFormat": "text"
+  },
+  "learning": {
+    "autoApproveThreshold": 0.95,
+    "minOccurrences": 3,
+    "semanticLearning": true
+  },
+  "performance": {
+    "maxWorkers": 4,
+    "cacheEnabled": true,
+    "incrementalAnalysis": true,
+    "cacheTTL": 3600
+  },
+  "features": {
+    "callGraph": true,
+    "boundaries": true,
+    "dna": true,
+    "contracts": true
+  }
+}

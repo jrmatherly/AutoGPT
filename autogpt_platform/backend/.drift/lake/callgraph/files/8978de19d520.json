@@ -1,0 +1,591 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.182Z",
+  "checksum": "1568b7a5b380a7c3",
+  "file": "backend/blocks/test/test_http.py",
+  "functions": [
+    {
+      "id": "backend/blocks/test/test_http.py:http_block:22",
+      "name": "http_block",
+      "startLine": 22,
+      "endLine": 24,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "SendAuthenticatedWebRequestBlock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 24
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/test/test_http.py:mock_response:27",
+      "name": "mock_response",
+      "startLine": 27,
+      "endLine": 33,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 29
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/test/test_http.py:exact_match_credentials:36",
+      "name": "exact_match_credentials",
+      "startLine": 36,
+      "endLine": 46,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "HostScopedCredentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 38
+        },
+        {
+          "target": "SecretStr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 42
+        },
+        {
+          "target": "SecretStr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 43
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/test/test_http.py:wildcard_credentials:49",
+      "name": "wildcard_credentials",
+      "startLine": 49,
+      "endLine": 58,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "HostScopedCredentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 51
+        },
+        {
+          "target": "SecretStr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 55
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/test/test_http.py:non_matching_credentials:61",
+      "name": "non_matching_credentials",
+      "startLine": 61,
+      "endLine": 70,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "HostScopedCredentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 63
+        },
+        {
+          "target": "SecretStr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 67
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/test/test_http.py:test_http_block_with_exact_host_match:74",
+      "name": "test_http_block_with_exact_host_match",
+      "startLine": 74,
+      "endLine": 126,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "AsyncMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 83
+        },
+        {
+          "target": "Input",
+          "resolved": false,
+          "confidence": 0,
+          "line": 88
+        },
+        {
+          "target": "cast",
+          "resolved": false,
+          "confidence": 0,
+          "line": 92
+        },
+        {
+          "target": "run",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 105,
+          "resolvedId": "backend/blocks/firecrawl/crawl.py:run:73"
+        },
+        {
+          "target": "input_data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 106
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 111
+        },
+        {
+          "target": "assert_called_once",
+          "resolved": false,
+          "confidence": 0,
+          "line": 114
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 124
+        },
+        {
+          "target": "result",
+          "resolved": false,
+          "confidence": 0,
+          "line": 124
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/test/test_http.py:test_http_block_with_wildcard_host_match:130",
+      "name": "test_http_block_with_wildcard_host_match",
+      "startLine": 130,
+      "endLine": 173,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "AsyncMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 139
+        },
+        {
+          "target": "Input",
+          "resolved": false,
+          "confidence": 0,
+          "line": 144
+        },
+        {
+          "target": "cast",
+          "resolved": false,
+          "confidence": 0,
+          "line": 148
+        },
+        {
+          "target": "run",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 161,
+          "resolvedId": "backend/blocks/firecrawl/crawl.py:run:73"
+        },
+        {
+          "target": "input_data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 162
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 167
+        },
+        {
+          "target": "assert_called_once",
+          "resolved": false,
+          "confidence": 0,
+          "line": 170
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/test/test_http.py:test_http_block_with_non_matching_credentials:177",
+      "name": "test_http_block_with_non_matching_credentials",
+      "startLine": 177,
+      "endLine": 220,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "AsyncMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 186
+        },
+        {
+          "target": "Input",
+          "resolved": false,
+          "confidence": 0,
+          "line": 191
+        },
+        {
+          "target": "cast",
+          "resolved": false,
+          "confidence": 0,
+          "line": 195
+        },
+        {
+          "target": "run",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 208,
+          "resolvedId": "backend/blocks/firecrawl/crawl.py:run:73"
+        },
+        {
+          "target": "input_data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 209
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 214
+        },
+        {
+          "target": "assert_called_once",
+          "resolved": false,
+          "confidence": 0,
+          "line": 217
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/test/test_http.py:test_user_headers_override_credential_headers:224",
+      "name": "test_user_headers_override_credential_headers",
+      "startLine": 224,
+      "endLine": 274,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "AsyncMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 233
+        },
+        {
+          "target": "Input",
+          "resolved": false,
+          "confidence": 0,
+          "line": 238
+        },
+        {
+          "target": "cast",
+          "resolved": false,
+          "confidence": 0,
+          "line": 245
+        },
+        {
+          "target": "run",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 258,
+          "resolvedId": "backend/blocks/firecrawl/crawl.py:run:73"
+        },
+        {
+          "target": "input_data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 259
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 264
+        },
+        {
+          "target": "assert_called_once",
+          "resolved": false,
+          "confidence": 0,
+          "line": 267
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/test/test_http.py:test_auto_discovered_credentials_flow:278",
+      "name": "test_auto_discovered_credentials_flow",
+      "startLine": 278,
+      "endLine": 335,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "HostScopedCredentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 286
+        },
+        {
+          "target": "SecretStr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 290
+        },
+        {
+          "target": "AsyncMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 296
+        },
+        {
+          "target": "Input",
+          "resolved": false,
+          "confidence": 0,
+          "line": 301
+        },
+        {
+          "target": "cast",
+          "resolved": false,
+          "confidence": 0,
+          "line": 305
+        },
+        {
+          "target": "run",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 318,
+          "resolvedId": "backend/blocks/firecrawl/crawl.py:run:73"
+        },
+        {
+          "target": "input_data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 319
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 324
+        },
+        {
+          "target": "assert_called_once",
+          "resolved": false,
+          "confidence": 0,
+          "line": 327
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 333
+        },
+        {
+          "target": "result",
+          "resolved": false,
+          "confidence": 0,
+          "line": 333
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/test/test_http.py:test_multiple_header_credentials:339",
+      "name": "test_multiple_header_credentials",
+      "startLine": 339,
+      "endLine": 400,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "HostScopedCredentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 347
+        },
+        {
+          "target": "SecretStr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 351
+        },
+        {
+          "target": "SecretStr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 352
+        },
+        {
+          "target": "SecretStr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 353
+        },
+        {
+          "target": "SecretStr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 354
+        },
+        {
+          "target": "AsyncMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 360
+        },
+        {
+          "target": "Input",
+          "resolved": false,
+          "confidence": 0,
+          "line": 365
+        },
+        {
+          "target": "cast",
+          "resolved": false,
+          "confidence": 0,
+          "line": 369
+        },
+        {
+          "target": "run",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 382,
+          "resolvedId": "backend/blocks/firecrawl/crawl.py:run:73"
+        },
+        {
+          "target": "input_data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 383
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 388
+        },
+        {
+          "target": "assert_called_once",
+          "resolved": false,
+          "confidence": 0,
+          "line": 391
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/test/test_http.py:test_credentials_with_complex_url_patterns:404",
+      "name": "test_credentials_with_complex_url_patterns",
+      "startLine": 404,
+      "endLine": 492,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "AsyncMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 436
+        },
+        {
+          "target": "reset_mock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 442
+        },
+        {
+          "target": "HostScopedCredentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 445
+        },
+        {
+          "target": "SecretStr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 449
+        },
+        {
+          "target": "Input",
+          "resolved": false,
+          "confidence": 0,
+          "line": 454
+        },
+        {
+          "target": "cast",
+          "resolved": false,
+          "confidence": 0,
+          "line": 458
+        },
+        {
+          "target": "run",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 471,
+          "resolvedId": "backend/blocks/firecrawl/crawl.py:run:73"
+        },
+        {
+          "target": "input_data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 472
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 477
+        },
+        {
+          "target": "assert_called_once",
+          "resolved": false,
+          "confidence": 0,
+          "line": 480
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

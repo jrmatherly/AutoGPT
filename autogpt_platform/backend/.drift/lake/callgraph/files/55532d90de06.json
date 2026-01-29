@@ -1,0 +1,1632 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.158Z",
+  "checksum": "89f81d7e5353ff09",
+  "file": "backend/util/retry.py",
+  "functions": [
+    {
+      "id": "backend/util/retry.py:should_send_alert:29",
+      "name": "should_send_alert",
+      "startLine": 29,
+      "endLine": 42,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "type",
+          "resolved": false,
+          "confidence": 0,
+          "line": 33
+        },
+        {
+          "target": "exception",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 33,
+          "resolvedId": "backend/util/logging.py:exception:57"
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 33
+        },
+        {
+          "target": "exception",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 33,
+          "resolvedId": "backend/util/logging.py:exception:57"
+        },
+        {
+          "target": "time",
+          "resolved": false,
+          "confidence": 0,
+          "line": 35
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 38,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "error_signature",
+          "resolved": false,
+          "confidence": 0,
+          "line": 38
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/retry.py:send_rate_limited_discord_alert:45",
+      "name": "send_rate_limited_discord_alert",
+      "startLine": 45,
+      "endLine": 68,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "should_send_alert",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 53,
+          "resolvedId": "backend/util/retry.py:should_send_alert:29"
+        },
+        {
+          "target": "func_name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 53
+        },
+        {
+          "target": "exception",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 53,
+          "resolvedId": "backend/util/logging.py:exception:57"
+        },
+        {
+          "target": "context",
+          "resolved": false,
+          "confidence": 0,
+          "line": 53
+        },
+        {
+          "target": "get_notification_manager_client",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 60,
+          "resolvedId": "backend/util/clients.py:get_notification_manager_client:57"
+        },
+        {
+          "target": "discord_system_alert",
+          "resolved": false,
+          "confidence": 0,
+          "line": 61
+        },
+        {
+          "target": "alert_msg",
+          "resolved": false,
+          "confidence": 0,
+          "line": 62
+        },
+        {
+          "target": "error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 67,
+          "resolvedId": "backend/util/logging.py:error:49"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/retry.py:_send_critical_retry_alert:71",
+      "name": "_send_critical_retry_alert",
+      "startLine": 71,
+      "endLine": 88,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "send_rate_limited_discord_alert",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 77,
+          "resolvedId": "backend/util/retry.py:send_rate_limited_discord_alert:45"
+        },
+        {
+          "target": "func_name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 78
+        },
+        {
+          "target": "exception",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 79,
+          "resolvedId": "backend/util/logging.py:exception:57"
+        },
+        {
+          "target": "context",
+          "resolved": false,
+          "confidence": 0,
+          "line": 80
+        },
+        {
+          "target": "type",
+          "resolved": false,
+          "confidence": 0,
+          "line": 83
+        },
+        {
+          "target": "exception",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 83,
+          "resolvedId": "backend/util/logging.py:exception:57"
+        },
+        {
+          "target": "critical",
+          "resolved": false,
+          "confidence": 0,
+          "line": 86
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/retry.py:_create_retry_callback:91",
+      "name": "_create_retry_callback",
+      "startLine": 91,
+      "endLine": 119,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "exception",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 96,
+          "resolvedId": "backend/util/logging.py:exception:57"
+        },
+        {
+          "target": "getattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 97
+        },
+        {
+          "target": "error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 103,
+          "resolvedId": "backend/util/logging.py:error:49"
+        },
+        {
+          "target": "type",
+          "resolved": false,
+          "confidence": 0,
+          "line": 105
+        },
+        {
+          "target": "exception",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 105,
+          "resolvedId": "backend/util/logging.py:exception:57"
+        },
+        {
+          "target": "_send_critical_retry_alert",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 110,
+          "resolvedId": "backend/util/retry.py:_send_critical_retry_alert:71"
+        },
+        {
+          "target": "func_name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 111
+        },
+        {
+          "target": "attempt_number",
+          "resolved": false,
+          "confidence": 0,
+          "line": 111
+        },
+        {
+          "target": "exception",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 111,
+          "resolvedId": "backend/util/logging.py:exception:57"
+        },
+        {
+          "target": "context",
+          "resolved": false,
+          "confidence": 0,
+          "line": 111
+        },
+        {
+          "target": "warning",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 114,
+          "resolvedId": "backend/util/logging.py:warning:45"
+        },
+        {
+          "target": "type",
+          "resolved": false,
+          "confidence": 0,
+          "line": 116
+        },
+        {
+          "target": "exception",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 116,
+          "resolvedId": "backend/util/logging.py:exception:57"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/retry.py:callback:94",
+      "name": "callback",
+      "startLine": 94,
+      "endLine": 117,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "exception",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 96,
+          "resolvedId": "backend/util/logging.py:exception:57"
+        },
+        {
+          "target": "getattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 97
+        },
+        {
+          "target": "error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 103,
+          "resolvedId": "backend/util/logging.py:error:49"
+        },
+        {
+          "target": "type",
+          "resolved": false,
+          "confidence": 0,
+          "line": 105
+        },
+        {
+          "target": "exception",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 105,
+          "resolvedId": "backend/util/logging.py:exception:57"
+        },
+        {
+          "target": "_send_critical_retry_alert",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 110,
+          "resolvedId": "backend/util/retry.py:_send_critical_retry_alert:71"
+        },
+        {
+          "target": "func_name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 111
+        },
+        {
+          "target": "attempt_number",
+          "resolved": false,
+          "confidence": 0,
+          "line": 111
+        },
+        {
+          "target": "exception",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 111,
+          "resolvedId": "backend/util/logging.py:exception:57"
+        },
+        {
+          "target": "context",
+          "resolved": false,
+          "confidence": 0,
+          "line": 111
+        },
+        {
+          "target": "warning",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 114,
+          "resolvedId": "backend/util/logging.py:warning:45"
+        },
+        {
+          "target": "type",
+          "resolved": false,
+          "confidence": 0,
+          "line": 116
+        },
+        {
+          "target": "exception",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 116,
+          "resolvedId": "backend/util/logging.py:exception:57"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/retry.py:create_retry_decorator:122",
+      "name": "create_retry_decorator",
+      "startLine": 122,
+      "endLine": 158,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "retry",
+          "resolved": false,
+          "confidence": 0,
+          "line": 145
+        },
+        {
+          "target": "stop_after_attempt",
+          "resolved": false,
+          "confidence": 0,
+          "line": 146
+        },
+        {
+          "target": "max_attempts",
+          "resolved": false,
+          "confidence": 0,
+          "line": 146
+        },
+        {
+          "target": "wait_exponential_jitter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 147
+        },
+        {
+          "target": "_create_retry_callback",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 148,
+          "resolvedId": "backend/util/retry.py:_create_retry_callback:91"
+        },
+        {
+          "target": "context",
+          "resolved": false,
+          "confidence": 0,
+          "line": 148
+        },
+        {
+          "target": "retry_if_not_exception_type",
+          "resolved": false,
+          "confidence": 0,
+          "line": 150
+        },
+        {
+          "target": "exclude_exceptions",
+          "resolved": false,
+          "confidence": 0,
+          "line": 150
+        },
+        {
+          "target": "retry",
+          "resolved": false,
+          "confidence": 0,
+          "line": 153
+        },
+        {
+          "target": "stop_after_attempt",
+          "resolved": false,
+          "confidence": 0,
+          "line": 154
+        },
+        {
+          "target": "max_attempts",
+          "resolved": false,
+          "confidence": 0,
+          "line": 154
+        },
+        {
+          "target": "wait_exponential_jitter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 155
+        },
+        {
+          "target": "_create_retry_callback",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 156,
+          "resolvedId": "backend/util/retry.py:_create_retry_callback:91"
+        },
+        {
+          "target": "context",
+          "resolved": false,
+          "confidence": 0,
+          "line": 156
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/retry.py:_log_prefix:161",
+      "name": "_log_prefix",
+      "startLine": 161,
+      "endLine": 167,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "getpid",
+          "resolved": false,
+          "confidence": 0,
+          "line": 167
+        },
+        {
+          "target": "get_native_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 167
+        },
+        {
+          "target": "get_service_name",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 167,
+          "resolvedId": "backend/util/settings.py:get_service_name:22"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/retry.py:conn_retry:170",
+      "name": "conn_retry",
+      "startLine": 170,
+      "endLine": 245,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 176
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 176
+        },
+        {
+          "target": "_log_prefix",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 179,
+          "resolvedId": "backend/util/retry.py:_log_prefix:161"
+        },
+        {
+          "target": "resource_name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 179
+        },
+        {
+          "target": "conn_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 179
+        },
+        {
+          "target": "exception",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 180,
+          "resolvedId": "backend/util/logging.py:exception:57"
+        },
+        {
+          "target": "getattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 182
+        },
+        {
+          "target": "error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 185,
+          "resolvedId": "backend/util/logging.py:error:49"
+        },
+        {
+          "target": "send_rate_limited_discord_alert",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 188,
+          "resolvedId": "backend/util/retry.py:send_rate_limited_discord_alert:45"
+        },
+        {
+          "target": "func_name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 189
+        },
+        {
+          "target": "exception",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 190,
+          "resolvedId": "backend/util/logging.py:exception:57"
+        },
+        {
+          "target": "type",
+          "resolved": false,
+          "confidence": 0,
+          "line": 197
+        },
+        {
+          "target": "exception",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 197,
+          "resolvedId": "backend/util/logging.py:exception:57"
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 197
+        },
+        {
+          "target": "exception",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 197,
+          "resolvedId": "backend/util/logging.py:exception:57"
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 197
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 197
+        },
+        {
+          "target": "exception",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 197,
+          "resolvedId": "backend/util/logging.py:exception:57"
+        },
+        {
+          "target": "critical",
+          "resolved": false,
+          "confidence": 0,
+          "line": 200
+        },
+        {
+          "target": "warning",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 204,
+          "resolvedId": "backend/util/logging.py:warning:45"
+        },
+        {
+          "target": "iscoroutinefunction",
+          "resolved": false,
+          "confidence": 0,
+          "line": 209
+        },
+        {
+          "target": "func",
+          "resolved": false,
+          "confidence": 0,
+          "line": 209
+        },
+        {
+          "target": "retry",
+          "resolved": false,
+          "confidence": 0,
+          "line": 211
+        },
+        {
+          "target": "stop_after_attempt",
+          "resolved": false,
+          "confidence": 0,
+          "line": 212
+        },
+        {
+          "target": "wait_exponential_jitter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 213
+        },
+        {
+          "target": "retry_decorator",
+          "resolved": false,
+          "confidence": 0,
+          "line": 217
+        },
+        {
+          "target": "func",
+          "resolved": false,
+          "confidence": 0,
+          "line": 217
+        },
+        {
+          "target": "wraps",
+          "resolved": false,
+          "confidence": 0,
+          "line": 219
+        },
+        {
+          "target": "func",
+          "resolved": false,
+          "confidence": 0,
+          "line": 219
+        },
+        {
+          "target": "wraps",
+          "resolved": false,
+          "confidence": 0,
+          "line": 231
+        },
+        {
+          "target": "func",
+          "resolved": false,
+          "confidence": 0,
+          "line": 231
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/retry.py:on_retry:178",
+      "name": "on_retry",
+      "startLine": 178,
+      "endLine": 206,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "_log_prefix",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 179,
+          "resolvedId": "backend/util/retry.py:_log_prefix:161"
+        },
+        {
+          "target": "resource_name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 179
+        },
+        {
+          "target": "conn_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 179
+        },
+        {
+          "target": "exception",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 180,
+          "resolvedId": "backend/util/logging.py:exception:57"
+        },
+        {
+          "target": "getattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 182
+        },
+        {
+          "target": "error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 185,
+          "resolvedId": "backend/util/logging.py:error:49"
+        },
+        {
+          "target": "send_rate_limited_discord_alert",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 188,
+          "resolvedId": "backend/util/retry.py:send_rate_limited_discord_alert:45"
+        },
+        {
+          "target": "func_name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 189
+        },
+        {
+          "target": "exception",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 190,
+          "resolvedId": "backend/util/logging.py:exception:57"
+        },
+        {
+          "target": "type",
+          "resolved": false,
+          "confidence": 0,
+          "line": 197
+        },
+        {
+          "target": "exception",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 197,
+          "resolvedId": "backend/util/logging.py:exception:57"
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 197
+        },
+        {
+          "target": "exception",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 197,
+          "resolvedId": "backend/util/logging.py:exception:57"
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 197
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 197
+        },
+        {
+          "target": "exception",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 197,
+          "resolvedId": "backend/util/logging.py:exception:57"
+        },
+        {
+          "target": "critical",
+          "resolved": false,
+          "confidence": 0,
+          "line": 200
+        },
+        {
+          "target": "warning",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 204,
+          "resolvedId": "backend/util/logging.py:warning:45"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/retry.py:decorator:208",
+      "name": "decorator",
+      "startLine": 208,
+      "endLine": 243,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "iscoroutinefunction",
+          "resolved": false,
+          "confidence": 0,
+          "line": 209
+        },
+        {
+          "target": "func",
+          "resolved": false,
+          "confidence": 0,
+          "line": 209
+        },
+        {
+          "target": "retry",
+          "resolved": false,
+          "confidence": 0,
+          "line": 211
+        },
+        {
+          "target": "stop_after_attempt",
+          "resolved": false,
+          "confidence": 0,
+          "line": 212
+        },
+        {
+          "target": "wait_exponential_jitter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 213
+        },
+        {
+          "target": "retry_decorator",
+          "resolved": false,
+          "confidence": 0,
+          "line": 217
+        },
+        {
+          "target": "func",
+          "resolved": false,
+          "confidence": 0,
+          "line": 217
+        },
+        {
+          "target": "wraps",
+          "resolved": false,
+          "confidence": 0,
+          "line": 219
+        },
+        {
+          "target": "func",
+          "resolved": false,
+          "confidence": 0,
+          "line": 219
+        },
+        {
+          "target": "wraps",
+          "resolved": false,
+          "confidence": 0,
+          "line": 231
+        },
+        {
+          "target": "func",
+          "resolved": false,
+          "confidence": 0,
+          "line": 231
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/retry.py:continuous_retry:252",
+      "name": "continuous_retry",
+      "startLine": 252,
+      "endLine": 300,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "iscoroutinefunction",
+          "resolved": false,
+          "confidence": 0,
+          "line": 254
+        },
+        {
+          "target": "func",
+          "resolved": false,
+          "confidence": 0,
+          "line": 254
+        },
+        {
+          "target": "wraps",
+          "resolved": false,
+          "confidence": 0,
+          "line": 256
+        },
+        {
+          "target": "func",
+          "resolved": false,
+          "confidence": 0,
+          "line": 256
+        },
+        {
+          "target": "wraps",
+          "resolved": false,
+          "confidence": 0,
+          "line": 277
+        },
+        {
+          "target": "func",
+          "resolved": false,
+          "confidence": 0,
+          "line": 277
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/retry.py:decorator:253",
+      "name": "decorator",
+      "startLine": 253,
+      "endLine": 298,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "iscoroutinefunction",
+          "resolved": false,
+          "confidence": 0,
+          "line": 254
+        },
+        {
+          "target": "func",
+          "resolved": false,
+          "confidence": 0,
+          "line": 254
+        },
+        {
+          "target": "wraps",
+          "resolved": false,
+          "confidence": 0,
+          "line": 256
+        },
+        {
+          "target": "func",
+          "resolved": false,
+          "confidence": 0,
+          "line": 256
+        },
+        {
+          "target": "wraps",
+          "resolved": false,
+          "confidence": 0,
+          "line": 277
+        },
+        {
+          "target": "func",
+          "resolved": false,
+          "confidence": 0,
+          "line": 277
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/retry.py:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 301,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "getLogger",
+          "resolved": false,
+          "confidence": 0,
+          "line": 18
+        },
+        {
+          "target": "Lock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 25
+        },
+        {
+          "target": "type",
+          "resolved": false,
+          "confidence": 0,
+          "line": 33
+        },
+        {
+          "target": "exception",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 33,
+          "resolvedId": "backend/util/logging.py:exception:57"
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 33
+        },
+        {
+          "target": "exception",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 33,
+          "resolvedId": "backend/util/logging.py:exception:57"
+        },
+        {
+          "target": "time",
+          "resolved": false,
+          "confidence": 0,
+          "line": 35
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 38,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "error_signature",
+          "resolved": false,
+          "confidence": 0,
+          "line": 38
+        },
+        {
+          "target": "should_send_alert",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 53,
+          "resolvedId": "backend/util/retry.py:should_send_alert:29"
+        },
+        {
+          "target": "func_name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 53
+        },
+        {
+          "target": "exception",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 53,
+          "resolvedId": "backend/util/logging.py:exception:57"
+        },
+        {
+          "target": "context",
+          "resolved": false,
+          "confidence": 0,
+          "line": 53
+        },
+        {
+          "target": "get_notification_manager_client",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 60,
+          "resolvedId": "backend/util/clients.py:get_notification_manager_client:57"
+        },
+        {
+          "target": "discord_system_alert",
+          "resolved": false,
+          "confidence": 0,
+          "line": 61
+        },
+        {
+          "target": "alert_msg",
+          "resolved": false,
+          "confidence": 0,
+          "line": 62
+        },
+        {
+          "target": "error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 67,
+          "resolvedId": "backend/util/logging.py:error:49"
+        },
+        {
+          "target": "send_rate_limited_discord_alert",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 77,
+          "resolvedId": "backend/util/retry.py:send_rate_limited_discord_alert:45"
+        },
+        {
+          "target": "func_name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 78
+        },
+        {
+          "target": "exception",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 79,
+          "resolvedId": "backend/util/logging.py:exception:57"
+        },
+        {
+          "target": "context",
+          "resolved": false,
+          "confidence": 0,
+          "line": 80
+        },
+        {
+          "target": "type",
+          "resolved": false,
+          "confidence": 0,
+          "line": 83
+        },
+        {
+          "target": "exception",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 83,
+          "resolvedId": "backend/util/logging.py:exception:57"
+        },
+        {
+          "target": "critical",
+          "resolved": false,
+          "confidence": 0,
+          "line": 86
+        },
+        {
+          "target": "exception",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 96,
+          "resolvedId": "backend/util/logging.py:exception:57"
+        },
+        {
+          "target": "getattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 97
+        },
+        {
+          "target": "error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 103,
+          "resolvedId": "backend/util/logging.py:error:49"
+        },
+        {
+          "target": "type",
+          "resolved": false,
+          "confidence": 0,
+          "line": 105
+        },
+        {
+          "target": "exception",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 105,
+          "resolvedId": "backend/util/logging.py:exception:57"
+        },
+        {
+          "target": "_send_critical_retry_alert",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 110,
+          "resolvedId": "backend/util/retry.py:_send_critical_retry_alert:71"
+        },
+        {
+          "target": "func_name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 111
+        },
+        {
+          "target": "attempt_number",
+          "resolved": false,
+          "confidence": 0,
+          "line": 111
+        },
+        {
+          "target": "exception",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 111,
+          "resolvedId": "backend/util/logging.py:exception:57"
+        },
+        {
+          "target": "context",
+          "resolved": false,
+          "confidence": 0,
+          "line": 111
+        },
+        {
+          "target": "warning",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 114,
+          "resolvedId": "backend/util/logging.py:warning:45"
+        },
+        {
+          "target": "type",
+          "resolved": false,
+          "confidence": 0,
+          "line": 116
+        },
+        {
+          "target": "exception",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 116,
+          "resolvedId": "backend/util/logging.py:exception:57"
+        },
+        {
+          "target": "retry",
+          "resolved": false,
+          "confidence": 0,
+          "line": 145
+        },
+        {
+          "target": "stop_after_attempt",
+          "resolved": false,
+          "confidence": 0,
+          "line": 146
+        },
+        {
+          "target": "max_attempts",
+          "resolved": false,
+          "confidence": 0,
+          "line": 146
+        },
+        {
+          "target": "wait_exponential_jitter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 147
+        },
+        {
+          "target": "_create_retry_callback",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 148,
+          "resolvedId": "backend/util/retry.py:_create_retry_callback:91"
+        },
+        {
+          "target": "context",
+          "resolved": false,
+          "confidence": 0,
+          "line": 148
+        },
+        {
+          "target": "retry_if_not_exception_type",
+          "resolved": false,
+          "confidence": 0,
+          "line": 150
+        },
+        {
+          "target": "exclude_exceptions",
+          "resolved": false,
+          "confidence": 0,
+          "line": 150
+        },
+        {
+          "target": "retry",
+          "resolved": false,
+          "confidence": 0,
+          "line": 153
+        },
+        {
+          "target": "stop_after_attempt",
+          "resolved": false,
+          "confidence": 0,
+          "line": 154
+        },
+        {
+          "target": "max_attempts",
+          "resolved": false,
+          "confidence": 0,
+          "line": 154
+        },
+        {
+          "target": "wait_exponential_jitter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 155
+        },
+        {
+          "target": "_create_retry_callback",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 156,
+          "resolvedId": "backend/util/retry.py:_create_retry_callback:91"
+        },
+        {
+          "target": "context",
+          "resolved": false,
+          "confidence": 0,
+          "line": 156
+        },
+        {
+          "target": "getpid",
+          "resolved": false,
+          "confidence": 0,
+          "line": 167
+        },
+        {
+          "target": "get_native_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 167
+        },
+        {
+          "target": "get_service_name",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 167,
+          "resolvedId": "backend/util/settings.py:get_service_name:22"
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 176
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 176
+        },
+        {
+          "target": "_log_prefix",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 179,
+          "resolvedId": "backend/util/retry.py:_log_prefix:161"
+        },
+        {
+          "target": "resource_name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 179
+        },
+        {
+          "target": "conn_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 179
+        },
+        {
+          "target": "exception",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 180,
+          "resolvedId": "backend/util/logging.py:exception:57"
+        },
+        {
+          "target": "getattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 182
+        },
+        {
+          "target": "error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 185,
+          "resolvedId": "backend/util/logging.py:error:49"
+        },
+        {
+          "target": "send_rate_limited_discord_alert",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 188,
+          "resolvedId": "backend/util/retry.py:send_rate_limited_discord_alert:45"
+        },
+        {
+          "target": "func_name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 189
+        },
+        {
+          "target": "exception",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 190,
+          "resolvedId": "backend/util/logging.py:exception:57"
+        },
+        {
+          "target": "type",
+          "resolved": false,
+          "confidence": 0,
+          "line": 197
+        },
+        {
+          "target": "exception",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 197,
+          "resolvedId": "backend/util/logging.py:exception:57"
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 197
+        },
+        {
+          "target": "exception",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 197,
+          "resolvedId": "backend/util/logging.py:exception:57"
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 197
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 197
+        },
+        {
+          "target": "exception",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 197,
+          "resolvedId": "backend/util/logging.py:exception:57"
+        },
+        {
+          "target": "critical",
+          "resolved": false,
+          "confidence": 0,
+          "line": 200
+        },
+        {
+          "target": "warning",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 204,
+          "resolvedId": "backend/util/logging.py:warning:45"
+        },
+        {
+          "target": "iscoroutinefunction",
+          "resolved": false,
+          "confidence": 0,
+          "line": 209
+        },
+        {
+          "target": "func",
+          "resolved": false,
+          "confidence": 0,
+          "line": 209
+        },
+        {
+          "target": "retry",
+          "resolved": false,
+          "confidence": 0,
+          "line": 211
+        },
+        {
+          "target": "stop_after_attempt",
+          "resolved": false,
+          "confidence": 0,
+          "line": 212
+        },
+        {
+          "target": "wait_exponential_jitter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 213
+        },
+        {
+          "target": "retry_decorator",
+          "resolved": false,
+          "confidence": 0,
+          "line": 217
+        },
+        {
+          "target": "func",
+          "resolved": false,
+          "confidence": 0,
+          "line": 217
+        },
+        {
+          "target": "wraps",
+          "resolved": false,
+          "confidence": 0,
+          "line": 219
+        },
+        {
+          "target": "func",
+          "resolved": false,
+          "confidence": 0,
+          "line": 219
+        },
+        {
+          "target": "wraps",
+          "resolved": false,
+          "confidence": 0,
+          "line": 231
+        },
+        {
+          "target": "func",
+          "resolved": false,
+          "confidence": 0,
+          "line": 231
+        },
+        {
+          "target": "create_retry_decorator",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 249,
+          "resolvedId": "backend/util/retry.py:create_retry_decorator:122"
+        },
+        {
+          "target": "iscoroutinefunction",
+          "resolved": false,
+          "confidence": 0,
+          "line": 254
+        },
+        {
+          "target": "func",
+          "resolved": false,
+          "confidence": 0,
+          "line": 254
+        },
+        {
+          "target": "wraps",
+          "resolved": false,
+          "confidence": 0,
+          "line": 256
+        },
+        {
+          "target": "func",
+          "resolved": false,
+          "confidence": 0,
+          "line": 256
+        },
+        {
+          "target": "wraps",
+          "resolved": false,
+          "confidence": 0,
+          "line": 277
+        },
+        {
+          "target": "func",
+          "resolved": false,
+          "confidence": 0,
+          "line": 277
+        },
+        {
+          "target": "getLogger",
+          "resolved": false,
+          "confidence": 0,
+          "line": 18
+        },
+        {
+          "target": "Lock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 25
+        },
+        {
+          "target": "create_retry_decorator",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 249,
+          "resolvedId": "backend/util/retry.py:create_retry_decorator:122"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

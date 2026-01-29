@@ -1,0 +1,175 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.078Z",
+  "checksum": "9c3ae9ab98b79f2f",
+  "file": "src/tests/pages/profile.page.ts",
+  "functions": [
+    {
+      "id": "src/tests/pages/profile.page.ts:constructor:6",
+      "name": "constructor",
+      "startLine": 6,
+      "endLine": 8,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 7
+        },
+        {
+          "target": "page",
+          "resolved": false,
+          "confidence": 0,
+          "line": 7
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/tests/pages/profile.page.ts:getDisplayedHandle:10",
+      "name": "getDisplayedHandle",
+      "startLine": 10,
+      "endLine": 17,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "waitForPageToLoad",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 11,
+          "resolvedId": "src/tests/pages/profile.page.ts:waitForPageToLoad:40"
+        },
+        {
+          "target": "inputValue",
+          "resolved": false,
+          "confidence": 0,
+          "line": 12
+        },
+        {
+          "target": "locator",
+          "resolved": false,
+          "confidence": 0,
+          "line": 12
+        },
+        {
+          "target": "Error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 14,
+          "resolvedId": "src/app/error.tsx:Error:8"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/tests/pages/profile.page.ts:getDisplayedName:19",
+      "name": "getDisplayedName",
+      "startLine": 19,
+      "endLine": 28,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "waitForPageToLoad",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 20,
+          "resolvedId": "src/tests/pages/profile.page.ts:waitForPageToLoad:40"
+        },
+        {
+          "target": "inputValue",
+          "resolved": false,
+          "confidence": 0,
+          "line": 21
+        },
+        {
+          "target": "locator",
+          "resolved": false,
+          "confidence": 0,
+          "line": 21
+        },
+        {
+          "target": "Error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 25,
+          "resolvedId": "src/app/error.tsx:Error:8"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/tests/pages/profile.page.ts:isLoaded:30",
+      "name": "isLoaded",
+      "startLine": 30,
+      "endLine": 38,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "waitForPageToLoad",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 32,
+          "resolvedId": "src/tests/pages/profile.page.ts:waitForPageToLoad:40"
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 35
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 35
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/tests/pages/profile.page.ts:waitForPageToLoad:40",
+      "name": "waitForPageToLoad",
+      "startLine": 40,
+      "endLine": 49,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "waitForLoadState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 41
+        },
+        {
+          "target": "waitFor",
+          "resolved": false,
+          "confidence": 0,
+          "line": 43
+        },
+        {
+          "target": "locator",
+          "resolved": false,
+          "confidence": 0,
+          "line": 43
+        },
+        {
+          "target": "waitForLoadState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 48
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

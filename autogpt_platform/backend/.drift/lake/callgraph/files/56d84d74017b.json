@@ -1,0 +1,1250 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.159Z",
+  "checksum": "29da4918fb00ead4",
+  "file": "backend/blocks/twitter/_builders.py",
+  "functions": [
+    {
+      "id": "backend/blocks/twitter/_builders.py:__init__:38",
+      "name": "__init__",
+      "startLine": 38,
+      "endLine": 39,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/twitter/_builders.py:add_expansions:41",
+      "name": "add_expansions",
+      "startLine": 41,
+      "endLine": 52,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "items",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 44,
+          "resolvedId": "backend/integrations/oauth/__init__.py:items:123"
+        },
+        {
+          "target": "dict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 44
+        },
+        {
+          "target": "join",
+          "resolved": false,
+          "confidence": 0,
+          "line": 48
+        },
+        {
+          "target": "get_backend_expansion",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 49,
+          "resolvedId": "backend/blocks/twitter/_mappers.py:get_backend_expansion:17"
+        },
+        {
+          "target": "exp",
+          "resolved": false,
+          "confidence": 0,
+          "line": 49
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/twitter/_builders.py:add_media_fields:54",
+      "name": "add_media_fields",
+      "startLine": 54,
+      "endLine": 63,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "items",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 57,
+          "resolvedId": "backend/integrations/oauth/__init__.py:items:123"
+        },
+        {
+          "target": "dict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 57
+        },
+        {
+          "target": "join",
+          "resolved": false,
+          "confidence": 0,
+          "line": 60
+        },
+        {
+          "target": "get_backend_media_field",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 61,
+          "resolvedId": "backend/blocks/twitter/_mappers.py:get_backend_media_field:151"
+        },
+        {
+          "target": "field",
+          "resolved": false,
+          "confidence": 0,
+          "line": 61
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/twitter/_builders.py:add_place_fields:65",
+      "name": "add_place_fields",
+      "startLine": 65,
+      "endLine": 74,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "items",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 68,
+          "resolvedId": "backend/integrations/oauth/__init__.py:items:123"
+        },
+        {
+          "target": "dict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 68
+        },
+        {
+          "target": "join",
+          "resolved": false,
+          "confidence": 0,
+          "line": 71
+        },
+        {
+          "target": "get_backend_place_field",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 72,
+          "resolvedId": "backend/blocks/twitter/_mappers.py:get_backend_place_field:126"
+        },
+        {
+          "target": "field",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/twitter/_builders.py:add_poll_fields:76",
+      "name": "add_poll_fields",
+      "startLine": 76,
+      "endLine": 85,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "items",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 79,
+          "resolvedId": "backend/integrations/oauth/__init__.py:items:123"
+        },
+        {
+          "target": "dict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 79
+        },
+        {
+          "target": "join",
+          "resolved": false,
+          "confidence": 0,
+          "line": 82
+        },
+        {
+          "target": "get_backend_poll_field",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 83,
+          "resolvedId": "backend/blocks/twitter/_mappers.py:get_backend_poll_field:107"
+        },
+        {
+          "target": "field",
+          "resolved": false,
+          "confidence": 0,
+          "line": 83
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/twitter/_builders.py:add_tweet_fields:87",
+      "name": "add_tweet_fields",
+      "startLine": 87,
+      "endLine": 96,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "items",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 90,
+          "resolvedId": "backend/integrations/oauth/__init__.py:items:123"
+        },
+        {
+          "target": "dict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 90
+        },
+        {
+          "target": "join",
+          "resolved": false,
+          "confidence": 0,
+          "line": 93
+        },
+        {
+          "target": "get_backend_field",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 94,
+          "resolvedId": "backend/blocks/twitter/_mappers.py:get_backend_field:90"
+        },
+        {
+          "target": "field",
+          "resolved": false,
+          "confidence": 0,
+          "line": 94
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/twitter/_builders.py:add_user_fields:98",
+      "name": "add_user_fields",
+      "startLine": 98,
+      "endLine": 107,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "items",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 101,
+          "resolvedId": "backend/integrations/oauth/__init__.py:items:123"
+        },
+        {
+          "target": "dict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 101
+        },
+        {
+          "target": "join",
+          "resolved": false,
+          "confidence": 0,
+          "line": 104
+        },
+        {
+          "target": "get_backend_user_field",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 105,
+          "resolvedId": "backend/blocks/twitter/_mappers.py:get_backend_user_field:60"
+        },
+        {
+          "target": "field",
+          "resolved": false,
+          "confidence": 0,
+          "line": 105
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/twitter/_builders.py:build:109",
+      "name": "build",
+      "startLine": 109,
+      "endLine": 110,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/twitter/_builders.py:__init__:114",
+      "name": "__init__",
+      "startLine": 114,
+      "endLine": 115,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/twitter/_builders.py:add_expansions:117",
+      "name": "add_expansions",
+      "startLine": 117,
+      "endLine": 124,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "items",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 120,
+          "resolvedId": "backend/integrations/oauth/__init__.py:items:123"
+        },
+        {
+          "target": "dict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 120
+        },
+        {
+          "target": "join",
+          "resolved": false,
+          "confidence": 0,
+          "line": 123
+        },
+        {
+          "target": "filtered_expansions",
+          "resolved": false,
+          "confidence": 0,
+          "line": 123
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/twitter/_builders.py:add_tweet_fields:126",
+      "name": "add_tweet_fields",
+      "startLine": 126,
+      "endLine": 135,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "items",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 129,
+          "resolvedId": "backend/integrations/oauth/__init__.py:items:123"
+        },
+        {
+          "target": "dict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 129
+        },
+        {
+          "target": "join",
+          "resolved": false,
+          "confidence": 0,
+          "line": 132
+        },
+        {
+          "target": "get_backend_field",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 133,
+          "resolvedId": "backend/blocks/twitter/_mappers.py:get_backend_field:90"
+        },
+        {
+          "target": "field",
+          "resolved": false,
+          "confidence": 0,
+          "line": 133
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/twitter/_builders.py:add_user_fields:137",
+      "name": "add_user_fields",
+      "startLine": 137,
+      "endLine": 146,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "items",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 140,
+          "resolvedId": "backend/integrations/oauth/__init__.py:items:123"
+        },
+        {
+          "target": "dict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 140
+        },
+        {
+          "target": "join",
+          "resolved": false,
+          "confidence": 0,
+          "line": 143
+        },
+        {
+          "target": "get_backend_user_field",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 144,
+          "resolvedId": "backend/blocks/twitter/_mappers.py:get_backend_user_field:60"
+        },
+        {
+          "target": "field",
+          "resolved": false,
+          "confidence": 0,
+          "line": 144
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/twitter/_builders.py:build:148",
+      "name": "build",
+      "startLine": 148,
+      "endLine": 149,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/twitter/_builders.py:__init__:153",
+      "name": "__init__",
+      "startLine": 153,
+      "endLine": 154,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/twitter/_builders.py:add_expansions:156",
+      "name": "add_expansions",
+      "startLine": 156,
+      "endLine": 165,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "items",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 159,
+          "resolvedId": "backend/integrations/oauth/__init__.py:items:123"
+        },
+        {
+          "target": "dict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 159
+        },
+        {
+          "target": "join",
+          "resolved": false,
+          "confidence": 0,
+          "line": 162
+        },
+        {
+          "target": "get_backend_list_expansion",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 163,
+          "resolvedId": "backend/blocks/twitter/_mappers.py:get_backend_list_expansion:211"
+        },
+        {
+          "target": "exp",
+          "resolved": false,
+          "confidence": 0,
+          "line": 163
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/twitter/_builders.py:add_list_fields:167",
+      "name": "add_list_fields",
+      "startLine": 167,
+      "endLine": 176,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "items",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 170,
+          "resolvedId": "backend/integrations/oauth/__init__.py:items:123"
+        },
+        {
+          "target": "dict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 170
+        },
+        {
+          "target": "join",
+          "resolved": false,
+          "confidence": 0,
+          "line": 173
+        },
+        {
+          "target": "get_backend_list_field",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 174,
+          "resolvedId": "backend/blocks/twitter/_mappers.py:get_backend_list_field:230"
+        },
+        {
+          "target": "field",
+          "resolved": false,
+          "confidence": 0,
+          "line": 174
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/twitter/_builders.py:add_user_fields:178",
+      "name": "add_user_fields",
+      "startLine": 178,
+      "endLine": 187,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "items",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 181,
+          "resolvedId": "backend/integrations/oauth/__init__.py:items:123"
+        },
+        {
+          "target": "dict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 181
+        },
+        {
+          "target": "join",
+          "resolved": false,
+          "confidence": 0,
+          "line": 184
+        },
+        {
+          "target": "get_backend_user_field",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 185,
+          "resolvedId": "backend/blocks/twitter/_mappers.py:get_backend_user_field:60"
+        },
+        {
+          "target": "field",
+          "resolved": false,
+          "confidence": 0,
+          "line": 185
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/twitter/_builders.py:build:189",
+      "name": "build",
+      "startLine": 189,
+      "endLine": 190,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/twitter/_builders.py:__init__:194",
+      "name": "__init__",
+      "startLine": 194,
+      "endLine": 195,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/twitter/_builders.py:add_expansions:197",
+      "name": "add_expansions",
+      "startLine": 197,
+      "endLine": 206,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "items",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 200,
+          "resolvedId": "backend/integrations/oauth/__init__.py:items:123"
+        },
+        {
+          "target": "dict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 200
+        },
+        {
+          "target": "join",
+          "resolved": false,
+          "confidence": 0,
+          "line": 203
+        },
+        {
+          "target": "get_backend_space_expansion",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 204,
+          "resolvedId": "backend/blocks/twitter/_mappers.py:get_backend_space_expansion:170"
+        },
+        {
+          "target": "exp",
+          "resolved": false,
+          "confidence": 0,
+          "line": 204
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/twitter/_builders.py:add_space_fields:208",
+      "name": "add_space_fields",
+      "startLine": 208,
+      "endLine": 217,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "items",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 211,
+          "resolvedId": "backend/integrations/oauth/__init__.py:items:123"
+        },
+        {
+          "target": "dict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 211
+        },
+        {
+          "target": "join",
+          "resolved": false,
+          "confidence": 0,
+          "line": 214
+        },
+        {
+          "target": "get_backend_space_field",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 215,
+          "resolvedId": "backend/blocks/twitter/_mappers.py:get_backend_space_field:198"
+        },
+        {
+          "target": "field",
+          "resolved": false,
+          "confidence": 0,
+          "line": 215
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/twitter/_builders.py:add_user_fields:219",
+      "name": "add_user_fields",
+      "startLine": 219,
+      "endLine": 228,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "items",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 222,
+          "resolvedId": "backend/integrations/oauth/__init__.py:items:123"
+        },
+        {
+          "target": "dict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 222
+        },
+        {
+          "target": "join",
+          "resolved": false,
+          "confidence": 0,
+          "line": 225
+        },
+        {
+          "target": "get_backend_user_field",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 226,
+          "resolvedId": "backend/blocks/twitter/_mappers.py:get_backend_user_field:60"
+        },
+        {
+          "target": "field",
+          "resolved": false,
+          "confidence": 0,
+          "line": 226
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/twitter/_builders.py:build:230",
+      "name": "build",
+      "startLine": 230,
+      "endLine": 231,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/twitter/_builders.py:__init__:235",
+      "name": "__init__",
+      "startLine": 235,
+      "endLine": 236,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/twitter/_builders.py:add_start_time:238",
+      "name": "add_start_time",
+      "startLine": 238,
+      "endLine": 247,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 241
+        },
+        {
+          "target": "timedelta",
+          "resolved": false,
+          "confidence": 0,
+          "line": 241
+        },
+        {
+          "target": "replace",
+          "resolved": false,
+          "confidence": 0,
+          "line": 243
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/twitter/_builders.py:add_end_time:249",
+      "name": "add_end_time",
+      "startLine": 249,
+      "endLine": 252,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/twitter/_builders.py:add_since_id:254",
+      "name": "add_since_id",
+      "startLine": 254,
+      "endLine": 257,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/twitter/_builders.py:add_until_id:259",
+      "name": "add_until_id",
+      "startLine": 259,
+      "endLine": 262,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/twitter/_builders.py:add_sort_order:264",
+      "name": "add_sort_order",
+      "startLine": 264,
+      "endLine": 267,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/twitter/_builders.py:build:269",
+      "name": "build",
+      "startLine": 269,
+      "endLine": 270,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/twitter/_builders.py:__init__:274",
+      "name": "__init__",
+      "startLine": 274,
+      "endLine": 275,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/twitter/_builders.py:add_expansions:277",
+      "name": "add_expansions",
+      "startLine": 277,
+      "endLine": 284,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "items",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 280,
+          "resolvedId": "backend/integrations/oauth/__init__.py:items:123"
+        },
+        {
+          "target": "dict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 280
+        },
+        {
+          "target": "join",
+          "resolved": false,
+          "confidence": 0,
+          "line": 283
+        },
+        {
+          "target": "filtered_expansions",
+          "resolved": false,
+          "confidence": 0,
+          "line": 283
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/twitter/_builders.py:add_event_types:286",
+      "name": "add_event_types",
+      "startLine": 286,
+      "endLine": 293,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "items",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 289,
+          "resolvedId": "backend/integrations/oauth/__init__.py:items:123"
+        },
+        {
+          "target": "dict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 289
+        },
+        {
+          "target": "join",
+          "resolved": false,
+          "confidence": 0,
+          "line": 292
+        },
+        {
+          "target": "filtered_types",
+          "resolved": false,
+          "confidence": 0,
+          "line": 292
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/twitter/_builders.py:add_media_fields:295",
+      "name": "add_media_fields",
+      "startLine": 295,
+      "endLine": 302,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "items",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 298,
+          "resolvedId": "backend/integrations/oauth/__init__.py:items:123"
+        },
+        {
+          "target": "dict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 298
+        },
+        {
+          "target": "join",
+          "resolved": false,
+          "confidence": 0,
+          "line": 301
+        },
+        {
+          "target": "filtered_fields",
+          "resolved": false,
+          "confidence": 0,
+          "line": 301
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/twitter/_builders.py:add_tweet_fields:304",
+      "name": "add_tweet_fields",
+      "startLine": 304,
+      "endLine": 311,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "items",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 307,
+          "resolvedId": "backend/integrations/oauth/__init__.py:items:123"
+        },
+        {
+          "target": "dict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 307
+        },
+        {
+          "target": "join",
+          "resolved": false,
+          "confidence": 0,
+          "line": 310
+        },
+        {
+          "target": "filtered_fields",
+          "resolved": false,
+          "confidence": 0,
+          "line": 310
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/twitter/_builders.py:add_user_fields:313",
+      "name": "add_user_fields",
+      "startLine": 313,
+      "endLine": 320,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "items",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 316,
+          "resolvedId": "backend/integrations/oauth/__init__.py:items:123"
+        },
+        {
+          "target": "dict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 316
+        },
+        {
+          "target": "join",
+          "resolved": false,
+          "confidence": 0,
+          "line": 319
+        },
+        {
+          "target": "filtered_fields",
+          "resolved": false,
+          "confidence": 0,
+          "line": 319
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/twitter/_builders.py:build:322",
+      "name": "build",
+      "startLine": 322,
+      "endLine": 323,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/twitter/_builders.py:__init__:328",
+      "name": "__init__",
+      "startLine": 328,
+      "endLine": 329,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/twitter/_builders.py:add_query:331",
+      "name": "add_query",
+      "startLine": 331,
+      "endLine": 334,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/twitter/_builders.py:add_pagination:336",
+      "name": "add_pagination",
+      "startLine": 336,
+      "endLine": 341,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/twitter/_builders.py:build:343",
+      "name": "build",
+      "startLine": 343,
+      "endLine": 344,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/twitter/_builders.py:__init__:348",
+      "name": "__init__",
+      "startLine": 348,
+      "endLine": 349,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/twitter/_builders.py:add_text:351",
+      "name": "add_text",
+      "startLine": 351,
+      "endLine": 354,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/twitter/_builders.py:add_media:356",
+      "name": "add_media",
+      "startLine": 356,
+      "endLine": 361,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/twitter/_builders.py:add_deep_link:363",
+      "name": "add_deep_link",
+      "startLine": 363,
+      "endLine": 366,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/twitter/_builders.py:add_super_followers:368",
+      "name": "add_super_followers",
+      "startLine": 368,
+      "endLine": 371,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/twitter/_builders.py:add_place:373",
+      "name": "add_place",
+      "startLine": 373,
+      "endLine": 376,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/twitter/_builders.py:add_poll_options:378",
+      "name": "add_poll_options",
+      "startLine": 378,
+      "endLine": 381,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/twitter/_builders.py:add_poll_duration:383",
+      "name": "add_poll_duration",
+      "startLine": 383,
+      "endLine": 386,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/twitter/_builders.py:add_quote:388",
+      "name": "add_quote",
+      "startLine": 388,
+      "endLine": 391,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/twitter/_builders.py:add_reply_settings:393",
+      "name": "add_reply_settings",
+      "startLine": 393,
+      "endLine": 409,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/twitter/_builders.py:build:411",
+      "name": "build",
+      "startLine": 411,
+      "endLine": 412,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/twitter/_builders.py:__init__:416",
+      "name": "__init__",
+      "startLine": 416,
+      "endLine": 417,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/twitter/_builders.py:add_id:419",
+      "name": "add_id",
+      "startLine": 419,
+      "endLine": 421,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/twitter/_builders.py:build:423",
+      "name": "build",
+      "startLine": 423,
+      "endLine": 424,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

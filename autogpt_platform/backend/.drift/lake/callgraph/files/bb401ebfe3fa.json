@@ -1,0 +1,344 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.207Z",
+  "checksum": "8cc330daa5184559",
+  "file": "backend/api/features/analytics.py",
+  "functions": [
+    {
+      "id": "backend/api/features/analytics.py:log_raw_metric:24",
+      "name": "log_raw_metric",
+      "startLine": 24,
+      "endLine": 46,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "log_raw_metric",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 29,
+          "resolvedId": "backend/api/features/analytics.py:log_raw_metric:24"
+        },
+        {
+          "target": "exception",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 37,
+          "resolvedId": "backend/util/logging.py:exception:57"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 38
+        },
+        {
+          "target": "e",
+          "resolved": false,
+          "confidence": 0,
+          "line": 38
+        },
+        {
+          "target": "HTTPException",
+          "resolved": false,
+          "confidence": 0,
+          "line": 40
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 43
+        },
+        {
+          "target": "e",
+          "resolved": false,
+          "confidence": 0,
+          "line": 43
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/analytics.py:log_raw_analytics:50",
+      "name": "log_raw_analytics",
+      "startLine": 50,
+      "endLine": 76,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "log_raw_analytics",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 67,
+          "resolvedId": "backend/api/features/analytics.py:log_raw_analytics:50"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 68
+        },
+        {
+          "target": "type",
+          "resolved": false,
+          "confidence": 0,
+          "line": 68
+        },
+        {
+          "target": "data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 68
+        },
+        {
+          "target": "data_index",
+          "resolved": false,
+          "confidence": 0,
+          "line": 68
+        },
+        {
+          "target": "exception",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 72,
+          "resolvedId": "backend/util/logging.py:exception:57"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        },
+        {
+          "target": "e",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        },
+        {
+          "target": "HTTPException",
+          "resolved": false,
+          "confidence": 0,
+          "line": 73
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 75
+        },
+        {
+          "target": "e",
+          "resolved": false,
+          "confidence": 0,
+          "line": 75
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/analytics.py:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 77,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "APIRouter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 13
+        },
+        {
+          "target": "getLogger",
+          "resolved": false,
+          "confidence": 0,
+          "line": 14
+        },
+        {
+          "target": "Field",
+          "resolved": false,
+          "confidence": 0,
+          "line": 18
+        },
+        {
+          "target": "Field",
+          "resolved": false,
+          "confidence": 0,
+          "line": 19
+        },
+        {
+          "target": "Field",
+          "resolved": false,
+          "confidence": 0,
+          "line": 20
+        },
+        {
+          "target": "post",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 23,
+          "resolvedId": "backend/util/request.py:post:563"
+        },
+        {
+          "target": "log_raw_metric",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 29,
+          "resolvedId": "backend/api/features/analytics.py:log_raw_metric:24"
+        },
+        {
+          "target": "exception",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 37,
+          "resolvedId": "backend/util/logging.py:exception:57"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 38
+        },
+        {
+          "target": "e",
+          "resolved": false,
+          "confidence": 0,
+          "line": 38
+        },
+        {
+          "target": "HTTPException",
+          "resolved": false,
+          "confidence": 0,
+          "line": 40
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 43
+        },
+        {
+          "target": "e",
+          "resolved": false,
+          "confidence": 0,
+          "line": 43
+        },
+        {
+          "target": "post",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 49,
+          "resolvedId": "backend/util/request.py:post:563"
+        },
+        {
+          "target": "log_raw_analytics",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 67,
+          "resolvedId": "backend/api/features/analytics.py:log_raw_analytics:50"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 68
+        },
+        {
+          "target": "type",
+          "resolved": false,
+          "confidence": 0,
+          "line": 68
+        },
+        {
+          "target": "data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 68
+        },
+        {
+          "target": "data_index",
+          "resolved": false,
+          "confidence": 0,
+          "line": 68
+        },
+        {
+          "target": "exception",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 72,
+          "resolvedId": "backend/util/logging.py:exception:57"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        },
+        {
+          "target": "e",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        },
+        {
+          "target": "HTTPException",
+          "resolved": false,
+          "confidence": 0,
+          "line": 73
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 75
+        },
+        {
+          "target": "e",
+          "resolved": false,
+          "confidence": 0,
+          "line": 75
+        },
+        {
+          "target": "APIRouter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 13
+        },
+        {
+          "target": "Security",
+          "resolved": false,
+          "confidence": 0,
+          "line": 13
+        },
+        {
+          "target": "getLogger",
+          "resolved": false,
+          "confidence": 0,
+          "line": 14
+        },
+        {
+          "target": "post",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 23,
+          "resolvedId": "backend/util/request.py:post:563"
+        },
+        {
+          "target": "post",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 49,
+          "resolvedId": "backend/util/request.py:post:563"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

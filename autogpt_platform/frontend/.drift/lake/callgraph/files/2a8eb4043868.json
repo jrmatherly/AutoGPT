@@ -1,0 +1,105 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.022Z",
+  "checksum": "eaed817c51e6ab7b",
+  "file": "src/components/contextual/Chat/components/ToolCallMessage/ToolCallMessage.tsx",
+  "functions": [
+    {
+      "id": "src/components/contextual/Chat/components/ToolCallMessage/ToolCallMessage.tsx:ToolCallMessage:19",
+      "name": "ToolCallMessage",
+      "startLine": 19,
+      "endLine": 55,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "getToolActionPhrase",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 25,
+          "resolvedId": "src/components/contextual/Chat/components/ToolCallMessage/helpers.ts:getToolActionPhrase:23"
+        },
+        {
+          "target": "toolName",
+          "resolved": false,
+          "confidence": 0,
+          "line": 25
+        },
+        {
+          "target": "formatToolArguments",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 26,
+          "resolvedId": "src/components/contextual/Chat/components/ToolCallMessage/helpers.ts:formatToolArguments:66"
+        },
+        {
+          "target": "toolName",
+          "resolved": false,
+          "confidence": 0,
+          "line": 26
+        },
+        {
+          "target": "toolArguments",
+          "resolved": false,
+          "confidence": 0,
+          "line": 26
+        },
+        {
+          "target": "getToolIcon",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 28,
+          "resolvedId": "src/components/contextual/Chat/components/ToolCallMessage/helpers.ts:getToolIcon:164"
+        },
+        {
+          "target": "toolName",
+          "resolved": false,
+          "confidence": 0,
+          "line": 28
+        },
+        {
+          "target": "AIChatBubble",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 31,
+          "resolvedId": "src/components/contextual/Chat/components/AIChatBubble/AIChatBubble.tsx:AIChatBubble:9"
+        },
+        {
+          "target": "className",
+          "resolved": false,
+          "confidence": 0,
+          "line": 31
+        },
+        {
+          "target": "IconComponent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 33
+        },
+        {
+          "target": "cn",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 36,
+          "resolvedId": "src/components/renderers/InputRenderer/utils/rjsf-utils.ts:cn:4"
+        },
+        {
+          "target": "Text",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 41,
+          "resolvedId": "src/components/atoms/Text/Text.tsx:Text:15"
+        },
+        {
+          "target": "cn",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 43,
+          "resolvedId": "src/components/renderers/InputRenderer/utils/rjsf-utils.ts:cn:4"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

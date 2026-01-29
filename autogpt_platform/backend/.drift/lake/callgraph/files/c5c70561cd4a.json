@@ -1,0 +1,586 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.213Z",
+  "checksum": "74e7d4f049b312bd",
+  "file": "backend/monitoring/late_execution_monitor.py",
+  "functions": [
+    {
+      "id": "backend/monitoring/late_execution_monitor.py:__init__:27",
+      "name": "__init__",
+      "startLine": 27,
+      "endLine": 29,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "get_notification_manager_client",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 29,
+          "resolvedId": "backend/util/clients.py:get_notification_manager_client:57"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/monitoring/late_execution_monitor.py:check_late_executions:31",
+      "name": "check_late_executions",
+      "startLine": 31,
+      "endLine": 106,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "get_graph_executions",
+          "resolved": false,
+          "confidence": 0,
+          "line": 35
+        },
+        {
+          "target": "get_database_manager_client",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 35,
+          "resolvedId": "backend/util/clients.py:get_database_manager_client:28"
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 37
+        },
+        {
+          "target": "timedelta",
+          "resolved": false,
+          "confidence": 0,
+          "line": 38
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 41
+        },
+        {
+          "target": "timedelta",
+          "resolved": false,
+          "confidence": 0,
+          "line": 42
+        },
+        {
+          "target": "get_graph_executions",
+          "resolved": false,
+          "confidence": 0,
+          "line": 47
+        },
+        {
+          "target": "get_database_manager_client",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 47,
+          "resolvedId": "backend/util/clients.py:get_database_manager_client:28"
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 49
+        },
+        {
+          "target": "timedelta",
+          "resolved": false,
+          "confidence": 0,
+          "line": 50
+        },
+        {
+          "target": "timedelta",
+          "resolved": false,
+          "confidence": 0,
+          "line": 51
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 54
+        },
+        {
+          "target": "timedelta",
+          "resolved": false,
+          "confidence": 0,
+          "line": 54
+        },
+        {
+          "target": "sort",
+          "resolved": false,
+          "confidence": 0,
+          "line": 64
+        },
+        {
+          "target": "replace",
+          "resolved": false,
+          "confidence": 0,
+          "line": 65
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 68
+        },
+        {
+          "target": "all_late_executions",
+          "resolved": false,
+          "confidence": 0,
+          "line": 68
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 69
+        },
+        {
+          "target": "queued_late_executions",
+          "resolved": false,
+          "confidence": 0,
+          "line": 69
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 70
+        },
+        {
+          "target": "running_late_executions",
+          "resolved": false,
+          "confidence": 0,
+          "line": 70
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 71
+        },
+        {
+          "target": "set",
+          "resolved": false,
+          "confidence": 0,
+          "line": 71
+        },
+        {
+          "target": "isoformat",
+          "resolved": false,
+          "confidence": 0,
+          "line": 79
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 91
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 95
+        },
+        {
+          "target": "join",
+          "resolved": false,
+          "confidence": 0,
+          "line": 98
+        },
+        {
+          "target": "message_parts",
+          "resolved": false,
+          "confidence": 0,
+          "line": 98
+        },
+        {
+          "target": "join",
+          "resolved": false,
+          "confidence": 0,
+          "line": 98
+        },
+        {
+          "target": "late_execution_details",
+          "resolved": false,
+          "confidence": 0,
+          "line": 98
+        },
+        {
+          "target": "LateExecutionException",
+          "resolved": false,
+          "confidence": 0,
+          "line": 101
+        },
+        {
+          "target": "error_message",
+          "resolved": false,
+          "confidence": 0,
+          "line": 101
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 102
+        },
+        {
+          "target": "error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 102,
+          "resolvedId": "backend/util/logging.py:error:49"
+        },
+        {
+          "target": "sentry_capture_error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 104,
+          "resolvedId": "backend/util/metrics.py:sentry_capture_error:49"
+        },
+        {
+          "target": "error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 104,
+          "resolvedId": "backend/util/logging.py:error:49"
+        },
+        {
+          "target": "discord_system_alert",
+          "resolved": false,
+          "confidence": 0,
+          "line": 105
+        },
+        {
+          "target": "msg",
+          "resolved": false,
+          "confidence": 0,
+          "line": 105
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/monitoring/late_execution_monitor.py:report_late_executions:109",
+      "name": "report_late_executions",
+      "startLine": 109,
+      "endLine": 112,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "LateExecutionMonitor",
+          "resolved": false,
+          "confidence": 0,
+          "line": 111
+        },
+        {
+          "target": "check_late_executions",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 112,
+          "resolvedId": "backend/monitoring/late_execution_monitor.py:check_late_executions:31"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/monitoring/late_execution_monitor.py:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 113,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "getLogger",
+          "resolved": false,
+          "confidence": 0,
+          "line": 14
+        },
+        {
+          "target": "Config",
+          "resolved": false,
+          "confidence": 0,
+          "line": 15
+        },
+        {
+          "target": "get_notification_manager_client",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 29,
+          "resolvedId": "backend/util/clients.py:get_notification_manager_client:57"
+        },
+        {
+          "target": "get_graph_executions",
+          "resolved": false,
+          "confidence": 0,
+          "line": 35
+        },
+        {
+          "target": "get_database_manager_client",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 35,
+          "resolvedId": "backend/util/clients.py:get_database_manager_client:28"
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 37
+        },
+        {
+          "target": "timedelta",
+          "resolved": false,
+          "confidence": 0,
+          "line": 38
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 41
+        },
+        {
+          "target": "timedelta",
+          "resolved": false,
+          "confidence": 0,
+          "line": 42
+        },
+        {
+          "target": "get_graph_executions",
+          "resolved": false,
+          "confidence": 0,
+          "line": 47
+        },
+        {
+          "target": "get_database_manager_client",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 47,
+          "resolvedId": "backend/util/clients.py:get_database_manager_client:28"
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 49
+        },
+        {
+          "target": "timedelta",
+          "resolved": false,
+          "confidence": 0,
+          "line": 50
+        },
+        {
+          "target": "timedelta",
+          "resolved": false,
+          "confidence": 0,
+          "line": 51
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 54
+        },
+        {
+          "target": "timedelta",
+          "resolved": false,
+          "confidence": 0,
+          "line": 54
+        },
+        {
+          "target": "sort",
+          "resolved": false,
+          "confidence": 0,
+          "line": 64
+        },
+        {
+          "target": "replace",
+          "resolved": false,
+          "confidence": 0,
+          "line": 65
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 68
+        },
+        {
+          "target": "all_late_executions",
+          "resolved": false,
+          "confidence": 0,
+          "line": 68
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 69
+        },
+        {
+          "target": "queued_late_executions",
+          "resolved": false,
+          "confidence": 0,
+          "line": 69
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 70
+        },
+        {
+          "target": "running_late_executions",
+          "resolved": false,
+          "confidence": 0,
+          "line": 70
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 71
+        },
+        {
+          "target": "set",
+          "resolved": false,
+          "confidence": 0,
+          "line": 71
+        },
+        {
+          "target": "isoformat",
+          "resolved": false,
+          "confidence": 0,
+          "line": 79
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 91
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 95
+        },
+        {
+          "target": "join",
+          "resolved": false,
+          "confidence": 0,
+          "line": 98
+        },
+        {
+          "target": "message_parts",
+          "resolved": false,
+          "confidence": 0,
+          "line": 98
+        },
+        {
+          "target": "join",
+          "resolved": false,
+          "confidence": 0,
+          "line": 98
+        },
+        {
+          "target": "late_execution_details",
+          "resolved": false,
+          "confidence": 0,
+          "line": 98
+        },
+        {
+          "target": "LateExecutionException",
+          "resolved": false,
+          "confidence": 0,
+          "line": 101
+        },
+        {
+          "target": "error_message",
+          "resolved": false,
+          "confidence": 0,
+          "line": 101
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 102
+        },
+        {
+          "target": "error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 102,
+          "resolvedId": "backend/util/logging.py:error:49"
+        },
+        {
+          "target": "sentry_capture_error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 104,
+          "resolvedId": "backend/util/metrics.py:sentry_capture_error:49"
+        },
+        {
+          "target": "error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 104,
+          "resolvedId": "backend/util/logging.py:error:49"
+        },
+        {
+          "target": "discord_system_alert",
+          "resolved": false,
+          "confidence": 0,
+          "line": 105
+        },
+        {
+          "target": "msg",
+          "resolved": false,
+          "confidence": 0,
+          "line": 105
+        },
+        {
+          "target": "LateExecutionMonitor",
+          "resolved": false,
+          "confidence": 0,
+          "line": 111
+        },
+        {
+          "target": "check_late_executions",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 112,
+          "resolvedId": "backend/monitoring/late_execution_monitor.py:check_late_executions:31"
+        },
+        {
+          "target": "getLogger",
+          "resolved": false,
+          "confidence": 0,
+          "line": 14
+        },
+        {
+          "target": "Config",
+          "resolved": false,
+          "confidence": 0,
+          "line": 15
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

@@ -1,0 +1,446 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.180Z",
+  "checksum": "06237eaa1cb7bb65",
+  "file": "backend/executor/manager_low_balance_test.py",
+  "functions": [
+    {
+      "id": "backend/executor/manager_low_balance_test.py:test_handle_low_balance_threshold_crossing:12",
+      "name": "test_handle_low_balance_threshold_crossing",
+      "startLine": 12,
+      "endLine": 63,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "ExecutionProcessor",
+          "resolved": false,
+          "confidence": 0,
+          "line": 15
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 21,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 23,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 25,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 30
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 36
+        },
+        {
+          "target": "_handle_low_balance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 40
+        },
+        {
+          "target": "assert_called_once",
+          "resolved": false,
+          "confidence": 0,
+          "line": 48
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 54
+        },
+        {
+          "target": "assert_called_once",
+          "resolved": false,
+          "confidence": 0,
+          "line": 58
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/executor/manager_low_balance_test.py:test_handle_low_balance_no_notification_when_not_crossing:67",
+      "name": "test_handle_low_balance_no_notification_when_not_crossing",
+      "startLine": 67,
+      "endLine": 106,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "ExecutionProcessor",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 80,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 82,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 84,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 89
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 94
+        },
+        {
+          "target": "_handle_low_balance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 97
+        },
+        {
+          "target": "assert_not_called",
+          "resolved": false,
+          "confidence": 0,
+          "line": 105
+        },
+        {
+          "target": "assert_not_called",
+          "resolved": false,
+          "confidence": 0,
+          "line": 106
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/executor/manager_low_balance_test.py:test_handle_low_balance_no_duplicate_when_already_below:110",
+      "name": "test_handle_low_balance_no_duplicate_when_already_below",
+      "startLine": 110,
+      "endLine": 149,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "ExecutionProcessor",
+          "resolved": false,
+          "confidence": 0,
+          "line": 115
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 123,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 125,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 127,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 132
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 137
+        },
+        {
+          "target": "_handle_low_balance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 140
+        },
+        {
+          "target": "assert_not_called",
+          "resolved": false,
+          "confidence": 0,
+          "line": 148
+        },
+        {
+          "target": "assert_not_called",
+          "resolved": false,
+          "confidence": 0,
+          "line": 149
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/executor/manager_low_balance_test.py:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 150,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 11
+        },
+        {
+          "target": "ExecutionProcessor",
+          "resolved": false,
+          "confidence": 0,
+          "line": 15
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 21,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 23,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 25,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 30
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 36
+        },
+        {
+          "target": "_handle_low_balance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 40
+        },
+        {
+          "target": "assert_called_once",
+          "resolved": false,
+          "confidence": 0,
+          "line": 48
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 54
+        },
+        {
+          "target": "assert_called_once",
+          "resolved": false,
+          "confidence": 0,
+          "line": 58
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 66
+        },
+        {
+          "target": "ExecutionProcessor",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 80,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 82,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 84,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 89
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 94
+        },
+        {
+          "target": "_handle_low_balance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 97
+        },
+        {
+          "target": "assert_not_called",
+          "resolved": false,
+          "confidence": 0,
+          "line": 105
+        },
+        {
+          "target": "assert_not_called",
+          "resolved": false,
+          "confidence": 0,
+          "line": 106
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 109
+        },
+        {
+          "target": "ExecutionProcessor",
+          "resolved": false,
+          "confidence": 0,
+          "line": 115
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 123,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 125,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 127,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 132
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 137
+        },
+        {
+          "target": "_handle_low_balance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 140
+        },
+        {
+          "target": "assert_not_called",
+          "resolved": false,
+          "confidence": 0,
+          "line": 148
+        },
+        {
+          "target": "assert_not_called",
+          "resolved": false,
+          "confidence": 0,
+          "line": 149
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 11
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 66
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 109
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

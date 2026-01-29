@@ -4,14 +4,13 @@ import logging
 from typing import Annotated
 
 from autogpt_libs.auth import get_user_id, requires_user
-from fastapi import APIRouter, Depends, HTTPException, Security, status
+from fastapi import APIRouter, HTTPException, Security, status
 from prisma.enums import OrganizationRole
 
 from backend.data.organization import (
     OrganizationCreate,
     OrganizationUpdate,
     accept_invitation,
-    add_organization_member,
     check_user_permission,
     create_invitation,
     create_organization,
@@ -322,7 +321,9 @@ async def remove_member(
         raise HTTPException(
             status_code=status.HTTP_404_NOT_FOUND, detail="Member not found"
         )
-    logger.info(f"User {user_id} removed member {member_user_id} from {organization_id}")
+    logger.info(
+        f"User {user_id} removed member {member_user_id} from {organization_id}"
+    )
 
 
 # ============================================================================

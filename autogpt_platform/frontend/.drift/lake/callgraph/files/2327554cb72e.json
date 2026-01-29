@@ -1,0 +1,75 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.014Z",
+  "checksum": "3561cb0afc754ef5",
+  "file": "src/components/layout/Navbar/components/AccountMenu/components/AccountLogoutOption.tsx",
+  "functions": [
+    {
+      "id": "src/components/layout/Navbar/components/AccountMenu/components/AccountLogoutOption.tsx:AccountLogoutOption:5",
+      "name": "AccountLogoutOption",
+      "startLine": 5,
+      "endLine": 26,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useRouter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 6
+        },
+        {
+          "target": "replace",
+          "resolved": false,
+          "confidence": 0,
+          "line": 9
+        },
+        {
+          "target": "handleLogout",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 15,
+          "resolvedId": "src/components/layout/Navbar/components/AccountMenu/components/AccountLogoutOption.tsx:handleLogout:8"
+        },
+        {
+          "target": "IconLogOut",
+          "resolved": false,
+          "confidence": 0,
+          "line": 19
+        },
+        {
+          "target": "replace",
+          "resolved": false,
+          "confidence": 0,
+          "line": 9
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/layout/Navbar/components/AccountMenu/components/AccountLogoutOption.tsx:handleLogout:8",
+      "name": "handleLogout",
+      "startLine": 8,
+      "endLine": 10,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "replace",
+          "resolved": false,
+          "confidence": 0,
+          "line": 9
+        },
+        {
+          "target": "replace",
+          "resolved": false,
+          "confidence": 0,
+          "line": 9
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

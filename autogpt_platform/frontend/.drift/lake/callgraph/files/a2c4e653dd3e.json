@@ -1,0 +1,138 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.089Z",
+  "checksum": "9471d5820999a319",
+  "file": "src/lib/withRoleAccess.ts",
+  "functions": [
+    {
+      "id": "src/lib/withRoleAccess.ts:withRoleAccess:6",
+      "name": "withRoleAccess",
+      "startLine": 6,
+      "endLine": 22,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "withServerActionInstrumentation",
+          "resolved": false,
+          "confidence": 0,
+          "line": 8
+        },
+        {
+          "target": "getServerUser",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 13,
+          "resolvedId": "src/lib/supabase/server/getServerUser.ts:getServerUser:3"
+        },
+        {
+          "target": "includes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 15
+        },
+        {
+          "target": "role",
+          "resolved": false,
+          "confidence": 0,
+          "line": 15
+        },
+        {
+          "target": "redirect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 16
+        },
+        {
+          "target": "getServerUser",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 13,
+          "resolvedId": "src/lib/supabase/server/getServerUser.ts:getServerUser:3"
+        },
+        {
+          "target": "includes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 15
+        },
+        {
+          "target": "role",
+          "resolved": false,
+          "confidence": 0,
+          "line": 15
+        },
+        {
+          "target": "redirect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 16
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/lib/withRoleAccess.ts:$withServerActionInstrumentation$1:11",
+      "name": "$withServerActionInstrumentation$1",
+      "startLine": 11,
+      "endLine": 20,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "getServerUser",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 13,
+          "resolvedId": "src/lib/supabase/server/getServerUser.ts:getServerUser:3"
+        },
+        {
+          "target": "includes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 15
+        },
+        {
+          "target": "role",
+          "resolved": false,
+          "confidence": 0,
+          "line": 15
+        },
+        {
+          "target": "redirect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 16
+        },
+        {
+          "target": "getServerUser",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 13,
+          "resolvedId": "src/lib/supabase/server/getServerUser.ts:getServerUser:3"
+        },
+        {
+          "target": "includes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 15
+        },
+        {
+          "target": "role",
+          "resolved": false,
+          "confidence": 0,
+          "line": 15
+        },
+        {
+          "target": "redirect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 16
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

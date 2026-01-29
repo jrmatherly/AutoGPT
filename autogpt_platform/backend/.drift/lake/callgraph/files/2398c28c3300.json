@@ -1,0 +1,2011 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.135Z",
+  "checksum": "9161cc7cdf978c0a",
+  "file": "backend/util/test.py",
+  "functions": [
+    {
+      "id": "backend/util/test.py:__init__:28",
+      "name": "__init__",
+      "startLine": 28,
+      "endLine": 33,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "DatabaseManager",
+          "resolved": false,
+          "confidence": 0,
+          "line": 29
+        },
+        {
+          "target": "ExecutionManager",
+          "resolved": false,
+          "confidence": 0,
+          "line": 30
+        },
+        {
+          "target": "AgentServer",
+          "resolved": false,
+          "confidence": 0,
+          "line": 31
+        },
+        {
+          "target": "Scheduler",
+          "resolved": false,
+          "confidence": 0,
+          "line": 32
+        },
+        {
+          "target": "NotificationManager",
+          "resolved": false,
+          "confidence": 0,
+          "line": 33
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/test.py:test_get_user_id:36",
+      "name": "test_get_user_id",
+      "startLine": 36,
+      "endLine": 37,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/test.py:__aenter__:39",
+      "name": "__aenter__",
+      "startLine": 39,
+      "endLine": 51,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "setup_dependency_overrides",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 40,
+          "resolvedId": "backend/util/test.py:setup_dependency_overrides:67"
+        },
+        {
+          "target": "__enter__",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 41,
+          "resolvedId": "backend/util/process.py:__enter__:106"
+        },
+        {
+          "target": "__enter__",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 42,
+          "resolvedId": "backend/util/process.py:__enter__:106"
+        },
+        {
+          "target": "__enter__",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 43,
+          "resolvedId": "backend/util/process.py:__enter__:106"
+        },
+        {
+          "target": "__enter__",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 44,
+          "resolvedId": "backend/util/process.py:__enter__:106"
+        },
+        {
+          "target": "__enter__",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 45,
+          "resolvedId": "backend/util/process.py:__enter__:106"
+        },
+        {
+          "target": "connect",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 47,
+          "resolvedId": "backend/data/rabbitmq.py:connect:102"
+        },
+        {
+          "target": "initialize_blocks",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 48,
+          "resolvedId": "test/load_store_agents.py:initialize_blocks:47"
+        },
+        {
+          "target": "create_default_user",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 49,
+          "resolvedId": "backend/data/user.py:create_default_user:101"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/test.py:__aexit__:53",
+      "name": "__aexit__",
+      "startLine": 53,
+      "endLine": 65,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "disconnect",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 54,
+          "resolvedId": "backend/data/rabbitmq.py:disconnect:107"
+        },
+        {
+          "target": "__exit__",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 56,
+          "resolvedId": "backend/util/process.py:__exit__:110"
+        },
+        {
+          "target": "exc_type",
+          "resolved": false,
+          "confidence": 0,
+          "line": 56
+        },
+        {
+          "target": "exc_val",
+          "resolved": false,
+          "confidence": 0,
+          "line": 56
+        },
+        {
+          "target": "exc_tb",
+          "resolved": false,
+          "confidence": 0,
+          "line": 56
+        },
+        {
+          "target": "__exit__",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 57,
+          "resolvedId": "backend/util/process.py:__exit__:110"
+        },
+        {
+          "target": "exc_type",
+          "resolved": false,
+          "confidence": 0,
+          "line": 57
+        },
+        {
+          "target": "exc_val",
+          "resolved": false,
+          "confidence": 0,
+          "line": 57
+        },
+        {
+          "target": "exc_tb",
+          "resolved": false,
+          "confidence": 0,
+          "line": 57
+        },
+        {
+          "target": "__exit__",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 58,
+          "resolvedId": "backend/util/process.py:__exit__:110"
+        },
+        {
+          "target": "exc_type",
+          "resolved": false,
+          "confidence": 0,
+          "line": 58
+        },
+        {
+          "target": "exc_val",
+          "resolved": false,
+          "confidence": 0,
+          "line": 58
+        },
+        {
+          "target": "exc_tb",
+          "resolved": false,
+          "confidence": 0,
+          "line": 58
+        },
+        {
+          "target": "__exit__",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 59,
+          "resolvedId": "backend/util/process.py:__exit__:110"
+        },
+        {
+          "target": "exc_type",
+          "resolved": false,
+          "confidence": 0,
+          "line": 59
+        },
+        {
+          "target": "exc_val",
+          "resolved": false,
+          "confidence": 0,
+          "line": 59
+        },
+        {
+          "target": "exc_tb",
+          "resolved": false,
+          "confidence": 0,
+          "line": 59
+        },
+        {
+          "target": "__exit__",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 60,
+          "resolvedId": "backend/util/process.py:__exit__:110"
+        },
+        {
+          "target": "exc_type",
+          "resolved": false,
+          "confidence": 0,
+          "line": 60
+        },
+        {
+          "target": "exc_val",
+          "resolved": false,
+          "confidence": 0,
+          "line": 60
+        },
+        {
+          "target": "exc_tb",
+          "resolved": false,
+          "confidence": 0,
+          "line": 60
+        },
+        {
+          "target": "sleep",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 65,
+          "resolvedId": "load-tests/orchestrator/orchestrator.js:sleep:171"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/test.py:setup_dependency_overrides:67",
+      "name": "setup_dependency_overrides",
+      "startLine": 67,
+      "endLine": 71,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "set_test_dependency_overrides",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 69,
+          "resolvedId": "backend/api/rest_api.py:set_test_dependency_overrides:517"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/test.py:wait_execution:74",
+      "name": "wait_execution",
+      "startLine": 74,
+      "endLine": 102,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "range",
+          "resolved": false,
+          "confidence": 0,
+          "line": 91
+        },
+        {
+          "target": "timeout",
+          "resolved": false,
+          "confidence": 0,
+          "line": 91
+        },
+        {
+          "target": "is_execution_completed",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 92,
+          "resolvedId": "backend/util/test.py:is_execution_completed:79"
+        },
+        {
+          "target": "get_graph_execution",
+          "resolved": false,
+          "confidence": 0,
+          "line": 93
+        },
+        {
+          "target": "sleep",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 100,
+          "resolvedId": "load-tests/orchestrator/orchestrator.js:sleep:171"
+        },
+        {
+          "target": "test_get_graph_run_status",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 80,
+          "resolvedId": "backend/api/rest_api.py:test_get_graph_run_status:410"
+        },
+        {
+          "target": "graph_exec_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 80
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 80
+        },
+        {
+          "target": "AgentServer",
+          "resolved": false,
+          "confidence": 0,
+          "line": 80
+        },
+        {
+          "target": "info",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 81,
+          "resolvedId": "backend/util/logging.py:info:41"
+        },
+        {
+          "target": "info",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 83,
+          "resolvedId": "backend/util/logging.py:info:41"
+        },
+        {
+          "target": "Exception",
+          "resolved": false,
+          "confidence": 0,
+          "line": 84
+        },
+        {
+          "target": "info",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 86,
+          "resolvedId": "backend/util/logging.py:info:41"
+        },
+        {
+          "target": "Exception",
+          "resolved": false,
+          "confidence": 0,
+          "line": 87
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/test.py:is_execution_completed:79",
+      "name": "is_execution_completed",
+      "startLine": 79,
+      "endLine": 88,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "test_get_graph_run_status",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 80,
+          "resolvedId": "backend/api/rest_api.py:test_get_graph_run_status:410"
+        },
+        {
+          "target": "graph_exec_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 80
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 80
+        },
+        {
+          "target": "AgentServer",
+          "resolved": false,
+          "confidence": 0,
+          "line": 80
+        },
+        {
+          "target": "info",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 81,
+          "resolvedId": "backend/util/logging.py:info:41"
+        },
+        {
+          "target": "info",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 83,
+          "resolvedId": "backend/util/logging.py:info:41"
+        },
+        {
+          "target": "Exception",
+          "resolved": false,
+          "confidence": 0,
+          "line": 84
+        },
+        {
+          "target": "info",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 86,
+          "resolvedId": "backend/util/logging.py:info:41"
+        },
+        {
+          "target": "Exception",
+          "resolved": false,
+          "confidence": 0,
+          "line": 87
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/test.py:execute_block_test:105",
+      "name": "execute_block_test",
+      "startLine": 105,
+      "endLine": 219,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "info",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 109,
+          "resolvedId": "backend/util/logging.py:info:41"
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 111
+        },
+        {
+          "target": "list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 111
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 113
+        },
+        {
+          "target": "list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 113
+        },
+        {
+          "target": "info",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 117,
+          "resolvedId": "backend/util/logging.py:info:41"
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 117
+        },
+        {
+          "target": "items",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 120,
+          "resolvedId": "backend/integrations/oauth/__init__.py:items:123"
+        },
+        {
+          "target": "info",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 121,
+          "resolvedId": "backend/util/logging.py:info:41"
+        },
+        {
+          "target": "hasattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 123
+        },
+        {
+          "target": "block",
+          "resolved": false,
+          "confidence": 0,
+          "line": 123
+        },
+        {
+          "target": "mock_name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 123
+        },
+        {
+          "target": "info",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 124,
+          "resolvedId": "backend/util/logging.py:info:41"
+        },
+        {
+          "target": "getattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 127
+        },
+        {
+          "target": "block",
+          "resolved": false,
+          "confidence": 0,
+          "line": 127
+        },
+        {
+          "target": "mock_name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 127
+        },
+        {
+          "target": "iscoroutinefunction",
+          "resolved": false,
+          "confidence": 0,
+          "line": 128
+        },
+        {
+          "target": "fun",
+          "resolved": false,
+          "confidence": 0,
+          "line": 128
+        },
+        {
+          "target": "isasyncgenfunction",
+          "resolved": false,
+          "confidence": 0,
+          "line": 128
+        },
+        {
+          "target": "fun",
+          "resolved": false,
+          "confidence": 0,
+          "line": 128
+        },
+        {
+          "target": "setattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 137
+        },
+        {
+          "target": "block",
+          "resolved": false,
+          "confidence": 0,
+          "line": 137
+        },
+        {
+          "target": "mock_name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 137
+        },
+        {
+          "target": "async_mock",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 137,
+          "resolvedId": "backend/util/test.py:async_mock:132"
+        },
+        {
+          "target": "setattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 140
+        },
+        {
+          "target": "block",
+          "resolved": false,
+          "confidence": 0,
+          "line": 140
+        },
+        {
+          "target": "mock_name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 140
+        },
+        {
+          "target": "mock_obj",
+          "resolved": false,
+          "confidence": 0,
+          "line": 140
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 144
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 144
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 145
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 145
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 146
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 146
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 147
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 147
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 148
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 148
+        },
+        {
+          "target": "ExecutionContext",
+          "resolved": false,
+          "confidence": 0,
+          "line": 150
+        },
+        {
+          "target": "cast",
+          "resolved": false,
+          "confidence": 0,
+          "line": 152
+        },
+        {
+          "target": "get_credentials_fields",
+          "resolved": false,
+          "confidence": 0,
+          "line": 155
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 156
+        },
+        {
+          "target": "credentials_input_fields",
+          "resolved": false,
+          "confidence": 0,
+          "line": 156
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 156
+        },
+        {
+          "target": "_BaseCredentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 157
+        },
+        {
+          "target": "next",
+          "resolved": false,
+          "confidence": 0,
+          "line": 159
+        },
+        {
+          "target": "iter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 159
+        },
+        {
+          "target": "credentials_input_fields",
+          "resolved": false,
+          "confidence": 0,
+          "line": 159
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 162
+        },
+        {
+          "target": "dict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 162
+        },
+        {
+          "target": "TypeError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 163
+        },
+        {
+          "target": "get_auto_credentials_fields",
+          "resolved": false,
+          "confidence": 0,
+          "line": 170
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 172
+        },
+        {
+          "target": "_BaseCredentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 172
+        },
+        {
+          "target": "keys",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 174,
+          "resolvedId": "backend/integrations/oauth/__init__.py:keys:100"
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 176
+        },
+        {
+          "target": "dict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 176
+        },
+        {
+          "target": "keys",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 177,
+          "resolvedId": "backend/integrations/oauth/__init__.py:keys:100"
+        },
+        {
+          "target": "info",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 182,
+          "resolvedId": "backend/util/logging.py:info:41"
+        },
+        {
+          "target": "execute",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 184,
+          "resolvedId": "backend/api/features/chat/tools/base.py:execute:60"
+        },
+        {
+          "target": "input_data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 185
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 187
+        },
+        {
+          "target": "ValueError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 188
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 189
+        },
+        {
+          "target": "compare",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 212,
+          "resolvedId": "backend/util/test.py:compare:193"
+        },
+        {
+          "target": "output_data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 212
+        },
+        {
+          "target": "ex_output_data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 212
+        },
+        {
+          "target": "compare",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 213,
+          "resolvedId": "backend/util/test.py:compare:193"
+        },
+        {
+          "target": "output_name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 213
+        },
+        {
+          "target": "ex_output_name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 213
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 216
+        },
+        {
+          "target": "ValueError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 217
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 218
+        },
+        {
+          "target": "_mock_obj",
+          "resolved": false,
+          "confidence": 0,
+          "line": 135
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 196
+        },
+        {
+          "target": "expected_data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 196
+        },
+        {
+          "target": "type",
+          "resolved": false,
+          "confidence": 0,
+          "line": 196
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 197
+        },
+        {
+          "target": "data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 197
+        },
+        {
+          "target": "expected_data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 197
+        },
+        {
+          "target": "callable",
+          "resolved": false,
+          "confidence": 0,
+          "line": 198
+        },
+        {
+          "target": "expected_data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 198
+        },
+        {
+          "target": "expected_data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 199
+        },
+        {
+          "target": "data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 199
+        },
+        {
+          "target": "info",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 204,
+          "resolvedId": "backend/util/logging.py:info:41"
+        },
+        {
+          "target": "ValueError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 206
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/test.py:async_mock:132",
+      "name": "async_mock",
+      "startLine": 132,
+      "endLine": 135,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "_mock_obj",
+          "resolved": false,
+          "confidence": 0,
+          "line": 135
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/test.py:compare:193",
+      "name": "compare",
+      "startLine": 193,
+      "endLine": 210,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 196
+        },
+        {
+          "target": "expected_data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 196
+        },
+        {
+          "target": "type",
+          "resolved": false,
+          "confidence": 0,
+          "line": 196
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 197
+        },
+        {
+          "target": "data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 197
+        },
+        {
+          "target": "expected_data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 197
+        },
+        {
+          "target": "callable",
+          "resolved": false,
+          "confidence": 0,
+          "line": 198
+        },
+        {
+          "target": "expected_data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 198
+        },
+        {
+          "target": "expected_data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 199
+        },
+        {
+          "target": "data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 199
+        },
+        {
+          "target": "info",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 204,
+          "resolvedId": "backend/util/logging.py:info:41"
+        },
+        {
+          "target": "ValueError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 206
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/test.py:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 220,
+      "isEntryPoint": false,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "getLogger",
+          "resolved": false,
+          "confidence": 0,
+          "line": 24
+        },
+        {
+          "target": "DatabaseManager",
+          "resolved": false,
+          "confidence": 0,
+          "line": 29
+        },
+        {
+          "target": "ExecutionManager",
+          "resolved": false,
+          "confidence": 0,
+          "line": 30
+        },
+        {
+          "target": "AgentServer",
+          "resolved": false,
+          "confidence": 0,
+          "line": 31
+        },
+        {
+          "target": "Scheduler",
+          "resolved": false,
+          "confidence": 0,
+          "line": 32
+        },
+        {
+          "target": "NotificationManager",
+          "resolved": false,
+          "confidence": 0,
+          "line": 33
+        },
+        {
+          "target": "setup_dependency_overrides",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 40,
+          "resolvedId": "backend/util/test.py:setup_dependency_overrides:67"
+        },
+        {
+          "target": "__enter__",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 41,
+          "resolvedId": "backend/util/process.py:__enter__:106"
+        },
+        {
+          "target": "__enter__",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 42,
+          "resolvedId": "backend/util/process.py:__enter__:106"
+        },
+        {
+          "target": "__enter__",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 43,
+          "resolvedId": "backend/util/process.py:__enter__:106"
+        },
+        {
+          "target": "__enter__",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 44,
+          "resolvedId": "backend/util/process.py:__enter__:106"
+        },
+        {
+          "target": "__enter__",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 45,
+          "resolvedId": "backend/util/process.py:__enter__:106"
+        },
+        {
+          "target": "connect",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 47,
+          "resolvedId": "backend/data/rabbitmq.py:connect:102"
+        },
+        {
+          "target": "initialize_blocks",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 48,
+          "resolvedId": "test/load_store_agents.py:initialize_blocks:47"
+        },
+        {
+          "target": "create_default_user",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 49,
+          "resolvedId": "backend/data/user.py:create_default_user:101"
+        },
+        {
+          "target": "disconnect",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 54,
+          "resolvedId": "backend/data/rabbitmq.py:disconnect:107"
+        },
+        {
+          "target": "__exit__",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 56,
+          "resolvedId": "backend/util/process.py:__exit__:110"
+        },
+        {
+          "target": "exc_type",
+          "resolved": false,
+          "confidence": 0,
+          "line": 56
+        },
+        {
+          "target": "exc_val",
+          "resolved": false,
+          "confidence": 0,
+          "line": 56
+        },
+        {
+          "target": "exc_tb",
+          "resolved": false,
+          "confidence": 0,
+          "line": 56
+        },
+        {
+          "target": "__exit__",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 57,
+          "resolvedId": "backend/util/process.py:__exit__:110"
+        },
+        {
+          "target": "exc_type",
+          "resolved": false,
+          "confidence": 0,
+          "line": 57
+        },
+        {
+          "target": "exc_val",
+          "resolved": false,
+          "confidence": 0,
+          "line": 57
+        },
+        {
+          "target": "exc_tb",
+          "resolved": false,
+          "confidence": 0,
+          "line": 57
+        },
+        {
+          "target": "__exit__",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 58,
+          "resolvedId": "backend/util/process.py:__exit__:110"
+        },
+        {
+          "target": "exc_type",
+          "resolved": false,
+          "confidence": 0,
+          "line": 58
+        },
+        {
+          "target": "exc_val",
+          "resolved": false,
+          "confidence": 0,
+          "line": 58
+        },
+        {
+          "target": "exc_tb",
+          "resolved": false,
+          "confidence": 0,
+          "line": 58
+        },
+        {
+          "target": "__exit__",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 59,
+          "resolvedId": "backend/util/process.py:__exit__:110"
+        },
+        {
+          "target": "exc_type",
+          "resolved": false,
+          "confidence": 0,
+          "line": 59
+        },
+        {
+          "target": "exc_val",
+          "resolved": false,
+          "confidence": 0,
+          "line": 59
+        },
+        {
+          "target": "exc_tb",
+          "resolved": false,
+          "confidence": 0,
+          "line": 59
+        },
+        {
+          "target": "__exit__",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 60,
+          "resolvedId": "backend/util/process.py:__exit__:110"
+        },
+        {
+          "target": "exc_type",
+          "resolved": false,
+          "confidence": 0,
+          "line": 60
+        },
+        {
+          "target": "exc_val",
+          "resolved": false,
+          "confidence": 0,
+          "line": 60
+        },
+        {
+          "target": "exc_tb",
+          "resolved": false,
+          "confidence": 0,
+          "line": 60
+        },
+        {
+          "target": "sleep",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 65,
+          "resolvedId": "load-tests/orchestrator/orchestrator.js:sleep:171"
+        },
+        {
+          "target": "set_test_dependency_overrides",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 69,
+          "resolvedId": "backend/api/rest_api.py:set_test_dependency_overrides:517"
+        },
+        {
+          "target": "range",
+          "resolved": false,
+          "confidence": 0,
+          "line": 91
+        },
+        {
+          "target": "timeout",
+          "resolved": false,
+          "confidence": 0,
+          "line": 91
+        },
+        {
+          "target": "is_execution_completed",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 92,
+          "resolvedId": "backend/util/test.py:is_execution_completed:79"
+        },
+        {
+          "target": "get_graph_execution",
+          "resolved": false,
+          "confidence": 0,
+          "line": 93
+        },
+        {
+          "target": "sleep",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 100,
+          "resolvedId": "load-tests/orchestrator/orchestrator.js:sleep:171"
+        },
+        {
+          "target": "test_get_graph_run_status",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 80,
+          "resolvedId": "backend/api/rest_api.py:test_get_graph_run_status:410"
+        },
+        {
+          "target": "graph_exec_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 80
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 80
+        },
+        {
+          "target": "AgentServer",
+          "resolved": false,
+          "confidence": 0,
+          "line": 80
+        },
+        {
+          "target": "info",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 81,
+          "resolvedId": "backend/util/logging.py:info:41"
+        },
+        {
+          "target": "info",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 83,
+          "resolvedId": "backend/util/logging.py:info:41"
+        },
+        {
+          "target": "Exception",
+          "resolved": false,
+          "confidence": 0,
+          "line": 84
+        },
+        {
+          "target": "info",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 86,
+          "resolvedId": "backend/util/logging.py:info:41"
+        },
+        {
+          "target": "Exception",
+          "resolved": false,
+          "confidence": 0,
+          "line": 87
+        },
+        {
+          "target": "info",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 109,
+          "resolvedId": "backend/util/logging.py:info:41"
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 111
+        },
+        {
+          "target": "list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 111
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 113
+        },
+        {
+          "target": "list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 113
+        },
+        {
+          "target": "info",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 117,
+          "resolvedId": "backend/util/logging.py:info:41"
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 117
+        },
+        {
+          "target": "items",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 120,
+          "resolvedId": "backend/integrations/oauth/__init__.py:items:123"
+        },
+        {
+          "target": "info",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 121,
+          "resolvedId": "backend/util/logging.py:info:41"
+        },
+        {
+          "target": "hasattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 123
+        },
+        {
+          "target": "block",
+          "resolved": false,
+          "confidence": 0,
+          "line": 123
+        },
+        {
+          "target": "mock_name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 123
+        },
+        {
+          "target": "info",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 124,
+          "resolvedId": "backend/util/logging.py:info:41"
+        },
+        {
+          "target": "getattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 127
+        },
+        {
+          "target": "block",
+          "resolved": false,
+          "confidence": 0,
+          "line": 127
+        },
+        {
+          "target": "mock_name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 127
+        },
+        {
+          "target": "iscoroutinefunction",
+          "resolved": false,
+          "confidence": 0,
+          "line": 128
+        },
+        {
+          "target": "fun",
+          "resolved": false,
+          "confidence": 0,
+          "line": 128
+        },
+        {
+          "target": "isasyncgenfunction",
+          "resolved": false,
+          "confidence": 0,
+          "line": 128
+        },
+        {
+          "target": "fun",
+          "resolved": false,
+          "confidence": 0,
+          "line": 128
+        },
+        {
+          "target": "setattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 137
+        },
+        {
+          "target": "block",
+          "resolved": false,
+          "confidence": 0,
+          "line": 137
+        },
+        {
+          "target": "mock_name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 137
+        },
+        {
+          "target": "async_mock",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 137,
+          "resolvedId": "backend/util/test.py:async_mock:132"
+        },
+        {
+          "target": "setattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 140
+        },
+        {
+          "target": "block",
+          "resolved": false,
+          "confidence": 0,
+          "line": 140
+        },
+        {
+          "target": "mock_name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 140
+        },
+        {
+          "target": "mock_obj",
+          "resolved": false,
+          "confidence": 0,
+          "line": 140
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 144
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 144
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 145
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 145
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 146
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 146
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 147
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 147
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 148
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 148
+        },
+        {
+          "target": "ExecutionContext",
+          "resolved": false,
+          "confidence": 0,
+          "line": 150
+        },
+        {
+          "target": "cast",
+          "resolved": false,
+          "confidence": 0,
+          "line": 152
+        },
+        {
+          "target": "get_credentials_fields",
+          "resolved": false,
+          "confidence": 0,
+          "line": 155
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 156
+        },
+        {
+          "target": "credentials_input_fields",
+          "resolved": false,
+          "confidence": 0,
+          "line": 156
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 156
+        },
+        {
+          "target": "_BaseCredentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 157
+        },
+        {
+          "target": "next",
+          "resolved": false,
+          "confidence": 0,
+          "line": 159
+        },
+        {
+          "target": "iter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 159
+        },
+        {
+          "target": "credentials_input_fields",
+          "resolved": false,
+          "confidence": 0,
+          "line": 159
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 162
+        },
+        {
+          "target": "dict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 162
+        },
+        {
+          "target": "TypeError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 163
+        },
+        {
+          "target": "get_auto_credentials_fields",
+          "resolved": false,
+          "confidence": 0,
+          "line": 170
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 172
+        },
+        {
+          "target": "_BaseCredentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 172
+        },
+        {
+          "target": "keys",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 174,
+          "resolvedId": "backend/integrations/oauth/__init__.py:keys:100"
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 176
+        },
+        {
+          "target": "dict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 176
+        },
+        {
+          "target": "keys",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 177,
+          "resolvedId": "backend/integrations/oauth/__init__.py:keys:100"
+        },
+        {
+          "target": "info",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 182,
+          "resolvedId": "backend/util/logging.py:info:41"
+        },
+        {
+          "target": "execute",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 184,
+          "resolvedId": "backend/api/features/chat/tools/base.py:execute:60"
+        },
+        {
+          "target": "input_data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 185
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 187
+        },
+        {
+          "target": "ValueError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 188
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 189
+        },
+        {
+          "target": "compare",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 212,
+          "resolvedId": "backend/util/test.py:compare:193"
+        },
+        {
+          "target": "output_data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 212
+        },
+        {
+          "target": "ex_output_data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 212
+        },
+        {
+          "target": "compare",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 213,
+          "resolvedId": "backend/util/test.py:compare:193"
+        },
+        {
+          "target": "output_name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 213
+        },
+        {
+          "target": "ex_output_name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 213
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 216
+        },
+        {
+          "target": "ValueError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 217
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 218
+        },
+        {
+          "target": "_mock_obj",
+          "resolved": false,
+          "confidence": 0,
+          "line": 135
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 196
+        },
+        {
+          "target": "expected_data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 196
+        },
+        {
+          "target": "type",
+          "resolved": false,
+          "confidence": 0,
+          "line": 196
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 197
+        },
+        {
+          "target": "data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 197
+        },
+        {
+          "target": "expected_data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 197
+        },
+        {
+          "target": "callable",
+          "resolved": false,
+          "confidence": 0,
+          "line": 198
+        },
+        {
+          "target": "expected_data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 198
+        },
+        {
+          "target": "expected_data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 199
+        },
+        {
+          "target": "data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 199
+        },
+        {
+          "target": "info",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 204,
+          "resolvedId": "backend/util/logging.py:info:41"
+        },
+        {
+          "target": "ValueError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 206
+        },
+        {
+          "target": "getLogger",
+          "resolved": false,
+          "confidence": 0,
+          "line": 24
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "logging",
+          "operation": "read",
+          "line": 24,
+          "fields": []
+        }
+      ]
+    }
+  ]
+}

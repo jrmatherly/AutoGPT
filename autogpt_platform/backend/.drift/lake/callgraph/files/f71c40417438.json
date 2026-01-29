@@ -1,0 +1,2038 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.240Z",
+  "checksum": "3fcd0d4e2ca1105d",
+  "file": "load-tests/orchestrator/orchestrator.js",
+  "functions": [
+    {
+      "id": "load-tests/orchestrator/orchestrator.js:sleep:171",
+      "name": "sleep",
+      "startLine": 171,
+      "endLine": 173,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "Promise",
+          "resolved": false,
+          "confidence": 0,
+          "line": 172
+        },
+        {
+          "target": "setTimeout",
+          "resolved": false,
+          "confidence": 0,
+          "line": 172
+        },
+        {
+          "target": "resolve",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 172,
+          "resolvedId": "backend/util/request.py:resolve:106"
+        },
+        {
+          "target": "ms",
+          "resolved": false,
+          "confidence": 0,
+          "line": 172
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "load-tests/orchestrator/orchestrator.js:runTest:178",
+      "name": "runTest",
+      "startLine": 178,
+      "endLine": 272,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "Promise",
+          "resolved": false,
+          "confidence": 0,
+          "line": 179
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 180
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 181
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 182
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 183
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 184
+        },
+        {
+          "target": "toISOString",
+          "resolved": false,
+          "confidence": 0,
+          "line": 184
+        },
+        {
+          "target": "Date",
+          "resolved": false,
+          "confidence": 0,
+          "line": 184
+        },
+        {
+          "target": "toString",
+          "resolved": false,
+          "confidence": 0,
+          "line": 190
+        },
+        {
+          "target": "flat",
+          "resolved": false,
+          "confidence": 0,
+          "line": 201
+        },
+        {
+          "target": "map",
+          "resolved": false,
+          "confidence": 0,
+          "line": 201
+        },
+        {
+          "target": "entries",
+          "resolved": false,
+          "confidence": 0,
+          "line": 201
+        },
+        {
+          "target": "env",
+          "resolved": false,
+          "confidence": 0,
+          "line": 201
+        },
+        {
+          "target": "flat",
+          "resolved": false,
+          "confidence": 0,
+          "line": 207
+        },
+        {
+          "target": "map",
+          "resolved": false,
+          "confidence": 0,
+          "line": 207
+        },
+        {
+          "target": "entries",
+          "resolved": false,
+          "confidence": 0,
+          "line": 207
+        },
+        {
+          "target": "env",
+          "resolved": false,
+          "confidence": 0,
+          "line": 207
+        },
+        {
+          "target": "spawn",
+          "resolved": false,
+          "confidence": 0,
+          "line": 212
+        },
+        {
+          "target": "args",
+          "resolved": false,
+          "confidence": 0,
+          "line": 212
+        },
+        {
+          "target": "on",
+          "resolved": false,
+          "confidence": 0,
+          "line": 220
+        },
+        {
+          "target": "toString",
+          "resolved": false,
+          "confidence": 0,
+          "line": 221
+        },
+        {
+          "target": "match",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 225,
+          "resolvedId": "backend/data/auth/api_key.py:match:56"
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 228
+        },
+        {
+          "target": "match",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 232,
+          "resolvedId": "backend/data/auth/api_key.py:match:56"
+        },
+        {
+          "target": "write",
+          "resolved": false,
+          "confidence": 0,
+          "line": 234
+        },
+        {
+          "target": "on",
+          "resolved": false,
+          "confidence": 0,
+          "line": 238
+        },
+        {
+          "target": "toString",
+          "resolved": false,
+          "confidence": 0,
+          "line": 239
+        },
+        {
+          "target": "on",
+          "resolved": false,
+          "confidence": 0,
+          "line": 242
+        },
+        {
+          "target": "write",
+          "resolved": false,
+          "confidence": 0,
+          "line": 243
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 246
+        },
+        {
+          "target": "resolve",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 247,
+          "resolvedId": "backend/util/request.py:resolve:106"
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 255
+        },
+        {
+          "target": "resolve",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 256,
+          "resolvedId": "backend/util/request.py:resolve:106"
+        },
+        {
+          "target": "on",
+          "resolved": false,
+          "confidence": 0,
+          "line": 267
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 268
+        },
+        {
+          "target": "reject",
+          "resolved": false,
+          "confidence": 0,
+          "line": 269
+        },
+        {
+          "target": "error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 269,
+          "resolvedId": "backend/util/logging.py:error:49"
+        },
+        {
+          "target": "toString",
+          "resolved": false,
+          "confidence": 0,
+          "line": 221
+        },
+        {
+          "target": "match",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 225,
+          "resolvedId": "backend/data/auth/api_key.py:match:56"
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 228
+        },
+        {
+          "target": "match",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 232,
+          "resolvedId": "backend/data/auth/api_key.py:match:56"
+        },
+        {
+          "target": "write",
+          "resolved": false,
+          "confidence": 0,
+          "line": 234
+        },
+        {
+          "target": "toString",
+          "resolved": false,
+          "confidence": 0,
+          "line": 239
+        },
+        {
+          "target": "write",
+          "resolved": false,
+          "confidence": 0,
+          "line": 243
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 246
+        },
+        {
+          "target": "resolve",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 247,
+          "resolvedId": "backend/util/request.py:resolve:106"
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 255
+        },
+        {
+          "target": "resolve",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 256,
+          "resolvedId": "backend/util/request.py:resolve:106"
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 268
+        },
+        {
+          "target": "reject",
+          "resolved": false,
+          "confidence": 0,
+          "line": 269
+        },
+        {
+          "target": "error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 269,
+          "resolvedId": "backend/util/logging.py:error:49"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "load-tests/orchestrator/orchestrator.js:$map$1:201",
+      "name": "$map$1",
+      "startLine": 201,
+      "endLine": 201,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "flat",
+          "resolved": false,
+          "confidence": 0,
+          "line": 201
+        },
+        {
+          "target": "map",
+          "resolved": false,
+          "confidence": 0,
+          "line": 201
+        },
+        {
+          "target": "entries",
+          "resolved": false,
+          "confidence": 0,
+          "line": 201
+        },
+        {
+          "target": "env",
+          "resolved": false,
+          "confidence": 0,
+          "line": 201
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "load-tests/orchestrator/orchestrator.js:$map$2:207",
+      "name": "$map$2",
+      "startLine": 207,
+      "endLine": 207,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "flat",
+          "resolved": false,
+          "confidence": 0,
+          "line": 207
+        },
+        {
+          "target": "map",
+          "resolved": false,
+          "confidence": 0,
+          "line": 207
+        },
+        {
+          "target": "entries",
+          "resolved": false,
+          "confidence": 0,
+          "line": 207
+        },
+        {
+          "target": "env",
+          "resolved": false,
+          "confidence": 0,
+          "line": 207
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "load-tests/orchestrator/orchestrator.js:$on$3:220",
+      "name": "$on$3",
+      "startLine": 220,
+      "endLine": 236,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "on",
+          "resolved": false,
+          "confidence": 0,
+          "line": 220
+        },
+        {
+          "target": "toString",
+          "resolved": false,
+          "confidence": 0,
+          "line": 221
+        },
+        {
+          "target": "match",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 225,
+          "resolvedId": "backend/data/auth/api_key.py:match:56"
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 228
+        },
+        {
+          "target": "match",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 232,
+          "resolvedId": "backend/data/auth/api_key.py:match:56"
+        },
+        {
+          "target": "write",
+          "resolved": false,
+          "confidence": 0,
+          "line": 234
+        },
+        {
+          "target": "toString",
+          "resolved": false,
+          "confidence": 0,
+          "line": 221
+        },
+        {
+          "target": "match",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 225,
+          "resolvedId": "backend/data/auth/api_key.py:match:56"
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 228
+        },
+        {
+          "target": "match",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 232,
+          "resolvedId": "backend/data/auth/api_key.py:match:56"
+        },
+        {
+          "target": "write",
+          "resolved": false,
+          "confidence": 0,
+          "line": 234
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "load-tests/orchestrator/orchestrator.js:$on$4:238",
+      "name": "$on$4",
+      "startLine": 238,
+      "endLine": 240,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "on",
+          "resolved": false,
+          "confidence": 0,
+          "line": 238
+        },
+        {
+          "target": "toString",
+          "resolved": false,
+          "confidence": 0,
+          "line": 239
+        },
+        {
+          "target": "toString",
+          "resolved": false,
+          "confidence": 0,
+          "line": 239
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "load-tests/orchestrator/orchestrator.js:$on$5:242",
+      "name": "$on$5",
+      "startLine": 242,
+      "endLine": 265,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "on",
+          "resolved": false,
+          "confidence": 0,
+          "line": 242
+        },
+        {
+          "target": "write",
+          "resolved": false,
+          "confidence": 0,
+          "line": 243
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 246
+        },
+        {
+          "target": "resolve",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 247,
+          "resolvedId": "backend/util/request.py:resolve:106"
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 255
+        },
+        {
+          "target": "resolve",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 256,
+          "resolvedId": "backend/util/request.py:resolve:106"
+        },
+        {
+          "target": "write",
+          "resolved": false,
+          "confidence": 0,
+          "line": 243
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 246
+        },
+        {
+          "target": "resolve",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 247,
+          "resolvedId": "backend/util/request.py:resolve:106"
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 255
+        },
+        {
+          "target": "resolve",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 256,
+          "resolvedId": "backend/util/request.py:resolve:106"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "load-tests/orchestrator/orchestrator.js:$on$6:267",
+      "name": "$on$6",
+      "startLine": 267,
+      "endLine": 270,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "on",
+          "resolved": false,
+          "confidence": 0,
+          "line": 267
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 268
+        },
+        {
+          "target": "reject",
+          "resolved": false,
+          "confidence": 0,
+          "line": 269
+        },
+        {
+          "target": "error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 269,
+          "resolvedId": "backend/util/logging.py:error:49"
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 268
+        },
+        {
+          "target": "reject",
+          "resolved": false,
+          "confidence": 0,
+          "line": 269
+        },
+        {
+          "target": "error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 269,
+          "resolvedId": "backend/util/logging.py:error:49"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "load-tests/orchestrator/orchestrator.js:main:277",
+      "name": "main",
+      "startLine": 277,
+      "endLine": 354,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 278
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 279
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 280
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 282
+        },
+        {
+          "target": "forEach",
+          "resolved": false,
+          "confidence": 0,
+          "line": 283
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 284
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 286
+        },
+        {
+          "target": "runTest",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 294,
+          "resolvedId": "load-tests/orchestrator/orchestrator.js:runTest:178"
+        },
+        {
+          "target": "test",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 294,
+          "resolvedId": "run_tests.py:test:48"
+        },
+        {
+          "target": "i",
+          "resolved": false,
+          "confidence": 0,
+          "line": 294
+        },
+        {
+          "target": "push",
+          "resolved": false,
+          "confidence": 0,
+          "line": 295
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 299
+        },
+        {
+          "target": "sleep",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 300,
+          "resolvedId": "load-tests/orchestrator/orchestrator.js:sleep:171"
+        },
+        {
+          "target": "error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 303,
+          "resolvedId": "backend/util/logging.py:error:49"
+        },
+        {
+          "target": "message",
+          "resolved": false,
+          "confidence": 0,
+          "line": 303
+        },
+        {
+          "target": "push",
+          "resolved": false,
+          "confidence": 0,
+          "line": 304
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 309
+        },
+        {
+          "target": "repeat",
+          "resolved": false,
+          "confidence": 0,
+          "line": 309
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 310
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 311
+        },
+        {
+          "target": "repeat",
+          "resolved": false,
+          "confidence": 0,
+          "line": 311
+        },
+        {
+          "target": "filter",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 313,
+          "resolvedId": "backend/util/logging.py:filter:79"
+        },
+        {
+          "target": "filter",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 314,
+          "resolvedId": "backend/util/logging.py:filter:79"
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 316
+        },
+        {
+          "target": "round",
+          "resolved": false,
+          "confidence": 0,
+          "line": 316
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 317
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 320
+        },
+        {
+          "target": "forEach",
+          "resolved": false,
+          "confidence": 0,
+          "line": 321
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 322
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 327
+        },
+        {
+          "target": "forEach",
+          "resolved": false,
+          "confidence": 0,
+          "line": 328
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 329
+        },
+        {
+          "target": "reduce",
+          "resolved": false,
+          "confidence": 0,
+          "line": 334
+        },
+        {
+          "target": "parseFloat",
+          "resolved": false,
+          "confidence": 0,
+          "line": 335
+        },
+        {
+          "target": "replace",
+          "resolved": false,
+          "confidence": 0,
+          "line": 335
+        },
+        {
+          "target": "includes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 336
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 340
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 341
+        },
+        {
+          "target": "round",
+          "resolved": false,
+          "confidence": 0,
+          "line": 341
+        },
+        {
+          "target": "totalVuMinutes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 341
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 342
+        },
+        {
+          "target": "max",
+          "resolved": false,
+          "confidence": 0,
+          "line": 342
+        },
+        {
+          "target": "map",
+          "resolved": false,
+          "confidence": 0,
+          "line": 342
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 343
+        },
+        {
+          "target": "toFixed",
+          "resolved": false,
+          "confidence": 0,
+          "line": 343
+        },
+        {
+          "target": "reduce",
+          "resolved": false,
+          "confidence": 0,
+          "line": 343
+        },
+        {
+          "target": "parseFloat",
+          "resolved": false,
+          "confidence": 0,
+          "line": 343
+        },
+        {
+          "target": "replace",
+          "resolved": false,
+          "confidence": 0,
+          "line": 343
+        },
+        {
+          "target": "includes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 343
+        },
+        {
+          "target": "floor",
+          "resolved": false,
+          "confidence": 0,
+          "line": 346
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 346
+        },
+        {
+          "target": "writeFileSync",
+          "resolved": false,
+          "confidence": 0,
+          "line": 348
+        },
+        {
+          "target": "resultsFile",
+          "resolved": false,
+          "confidence": 0,
+          "line": 348
+        },
+        {
+          "target": "stringify",
+          "resolved": false,
+          "confidence": 0,
+          "line": 348
+        },
+        {
+          "target": "results",
+          "resolved": false,
+          "confidence": 0,
+          "line": 348
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 349
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 351
+        },
+        {
+          "target": "exit",
+          "resolved": false,
+          "confidence": 0,
+          "line": 353
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 284
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 322
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 329
+        },
+        {
+          "target": "parseFloat",
+          "resolved": false,
+          "confidence": 0,
+          "line": 343
+        },
+        {
+          "target": "replace",
+          "resolved": false,
+          "confidence": 0,
+          "line": 343
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "load-tests/orchestrator/orchestrator.js:$forEach$1:283",
+      "name": "$forEach$1",
+      "startLine": 283,
+      "endLine": 285,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "forEach",
+          "resolved": false,
+          "confidence": 0,
+          "line": 283
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 284
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 284
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "load-tests/orchestrator/orchestrator.js:$forEach$2:321",
+      "name": "$forEach$2",
+      "startLine": 321,
+      "endLine": 323,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "forEach",
+          "resolved": false,
+          "confidence": 0,
+          "line": 321
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 322
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 322
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "load-tests/orchestrator/orchestrator.js:$forEach$3:328",
+      "name": "$forEach$3",
+      "startLine": 328,
+      "endLine": 330,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "forEach",
+          "resolved": false,
+          "confidence": 0,
+          "line": 328
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 329
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 329
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "load-tests/orchestrator/orchestrator.js:$map$4:342",
+      "name": "$map$4",
+      "startLine": 342,
+      "endLine": 342,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 342
+        },
+        {
+          "target": "max",
+          "resolved": false,
+          "confidence": 0,
+          "line": 342
+        },
+        {
+          "target": "map",
+          "resolved": false,
+          "confidence": 0,
+          "line": 342
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "load-tests/orchestrator/orchestrator.js:$reduce$5:343",
+      "name": "$reduce$5",
+      "startLine": 343,
+      "endLine": 343,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 343
+        },
+        {
+          "target": "toFixed",
+          "resolved": false,
+          "confidence": 0,
+          "line": 343
+        },
+        {
+          "target": "reduce",
+          "resolved": false,
+          "confidence": 0,
+          "line": 343
+        },
+        {
+          "target": "parseFloat",
+          "resolved": false,
+          "confidence": 0,
+          "line": 343
+        },
+        {
+          "target": "replace",
+          "resolved": false,
+          "confidence": 0,
+          "line": 343
+        },
+        {
+          "target": "includes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 343
+        },
+        {
+          "target": "parseFloat",
+          "resolved": false,
+          "confidence": 0,
+          "line": 343
+        },
+        {
+          "target": "replace",
+          "resolved": false,
+          "confidence": 0,
+          "line": 343
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "load-tests/orchestrator/orchestrator.js:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 362,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "Promise",
+          "resolved": false,
+          "confidence": 0,
+          "line": 172
+        },
+        {
+          "target": "setTimeout",
+          "resolved": false,
+          "confidence": 0,
+          "line": 172
+        },
+        {
+          "target": "resolve",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 172,
+          "resolvedId": "backend/util/request.py:resolve:106"
+        },
+        {
+          "target": "ms",
+          "resolved": false,
+          "confidence": 0,
+          "line": 172
+        },
+        {
+          "target": "Promise",
+          "resolved": false,
+          "confidence": 0,
+          "line": 179
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 180
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 181
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 182
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 183
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 184
+        },
+        {
+          "target": "toISOString",
+          "resolved": false,
+          "confidence": 0,
+          "line": 184
+        },
+        {
+          "target": "Date",
+          "resolved": false,
+          "confidence": 0,
+          "line": 184
+        },
+        {
+          "target": "toString",
+          "resolved": false,
+          "confidence": 0,
+          "line": 190
+        },
+        {
+          "target": "flat",
+          "resolved": false,
+          "confidence": 0,
+          "line": 201
+        },
+        {
+          "target": "map",
+          "resolved": false,
+          "confidence": 0,
+          "line": 201
+        },
+        {
+          "target": "entries",
+          "resolved": false,
+          "confidence": 0,
+          "line": 201
+        },
+        {
+          "target": "env",
+          "resolved": false,
+          "confidence": 0,
+          "line": 201
+        },
+        {
+          "target": "flat",
+          "resolved": false,
+          "confidence": 0,
+          "line": 207
+        },
+        {
+          "target": "map",
+          "resolved": false,
+          "confidence": 0,
+          "line": 207
+        },
+        {
+          "target": "entries",
+          "resolved": false,
+          "confidence": 0,
+          "line": 207
+        },
+        {
+          "target": "env",
+          "resolved": false,
+          "confidence": 0,
+          "line": 207
+        },
+        {
+          "target": "spawn",
+          "resolved": false,
+          "confidence": 0,
+          "line": 212
+        },
+        {
+          "target": "args",
+          "resolved": false,
+          "confidence": 0,
+          "line": 212
+        },
+        {
+          "target": "on",
+          "resolved": false,
+          "confidence": 0,
+          "line": 220
+        },
+        {
+          "target": "toString",
+          "resolved": false,
+          "confidence": 0,
+          "line": 221
+        },
+        {
+          "target": "match",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 225,
+          "resolvedId": "backend/data/auth/api_key.py:match:56"
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 228
+        },
+        {
+          "target": "match",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 232,
+          "resolvedId": "backend/data/auth/api_key.py:match:56"
+        },
+        {
+          "target": "write",
+          "resolved": false,
+          "confidence": 0,
+          "line": 234
+        },
+        {
+          "target": "on",
+          "resolved": false,
+          "confidence": 0,
+          "line": 238
+        },
+        {
+          "target": "toString",
+          "resolved": false,
+          "confidence": 0,
+          "line": 239
+        },
+        {
+          "target": "on",
+          "resolved": false,
+          "confidence": 0,
+          "line": 242
+        },
+        {
+          "target": "write",
+          "resolved": false,
+          "confidence": 0,
+          "line": 243
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 246
+        },
+        {
+          "target": "resolve",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 247,
+          "resolvedId": "backend/util/request.py:resolve:106"
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 255
+        },
+        {
+          "target": "resolve",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 256,
+          "resolvedId": "backend/util/request.py:resolve:106"
+        },
+        {
+          "target": "on",
+          "resolved": false,
+          "confidence": 0,
+          "line": 267
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 268
+        },
+        {
+          "target": "reject",
+          "resolved": false,
+          "confidence": 0,
+          "line": 269
+        },
+        {
+          "target": "error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 269,
+          "resolvedId": "backend/util/logging.py:error:49"
+        },
+        {
+          "target": "toString",
+          "resolved": false,
+          "confidence": 0,
+          "line": 221
+        },
+        {
+          "target": "match",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 225,
+          "resolvedId": "backend/data/auth/api_key.py:match:56"
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 228
+        },
+        {
+          "target": "match",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 232,
+          "resolvedId": "backend/data/auth/api_key.py:match:56"
+        },
+        {
+          "target": "write",
+          "resolved": false,
+          "confidence": 0,
+          "line": 234
+        },
+        {
+          "target": "toString",
+          "resolved": false,
+          "confidence": 0,
+          "line": 239
+        },
+        {
+          "target": "write",
+          "resolved": false,
+          "confidence": 0,
+          "line": 243
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 246
+        },
+        {
+          "target": "resolve",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 247,
+          "resolvedId": "backend/util/request.py:resolve:106"
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 255
+        },
+        {
+          "target": "resolve",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 256,
+          "resolvedId": "backend/util/request.py:resolve:106"
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 268
+        },
+        {
+          "target": "reject",
+          "resolved": false,
+          "confidence": 0,
+          "line": 269
+        },
+        {
+          "target": "error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 269,
+          "resolvedId": "backend/util/logging.py:error:49"
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 278
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 279
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 280
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 282
+        },
+        {
+          "target": "forEach",
+          "resolved": false,
+          "confidence": 0,
+          "line": 283
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 284
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 286
+        },
+        {
+          "target": "runTest",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 294,
+          "resolvedId": "load-tests/orchestrator/orchestrator.js:runTest:178"
+        },
+        {
+          "target": "test",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 294,
+          "resolvedId": "run_tests.py:test:48"
+        },
+        {
+          "target": "i",
+          "resolved": false,
+          "confidence": 0,
+          "line": 294
+        },
+        {
+          "target": "push",
+          "resolved": false,
+          "confidence": 0,
+          "line": 295
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 299
+        },
+        {
+          "target": "sleep",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 300,
+          "resolvedId": "load-tests/orchestrator/orchestrator.js:sleep:171"
+        },
+        {
+          "target": "error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 303,
+          "resolvedId": "backend/util/logging.py:error:49"
+        },
+        {
+          "target": "message",
+          "resolved": false,
+          "confidence": 0,
+          "line": 303
+        },
+        {
+          "target": "push",
+          "resolved": false,
+          "confidence": 0,
+          "line": 304
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 309
+        },
+        {
+          "target": "repeat",
+          "resolved": false,
+          "confidence": 0,
+          "line": 309
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 310
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 311
+        },
+        {
+          "target": "repeat",
+          "resolved": false,
+          "confidence": 0,
+          "line": 311
+        },
+        {
+          "target": "filter",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 313,
+          "resolvedId": "backend/util/logging.py:filter:79"
+        },
+        {
+          "target": "filter",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 314,
+          "resolvedId": "backend/util/logging.py:filter:79"
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 316
+        },
+        {
+          "target": "round",
+          "resolved": false,
+          "confidence": 0,
+          "line": 316
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 317
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 320
+        },
+        {
+          "target": "forEach",
+          "resolved": false,
+          "confidence": 0,
+          "line": 321
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 322
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 327
+        },
+        {
+          "target": "forEach",
+          "resolved": false,
+          "confidence": 0,
+          "line": 328
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 329
+        },
+        {
+          "target": "reduce",
+          "resolved": false,
+          "confidence": 0,
+          "line": 334
+        },
+        {
+          "target": "parseFloat",
+          "resolved": false,
+          "confidence": 0,
+          "line": 335
+        },
+        {
+          "target": "replace",
+          "resolved": false,
+          "confidence": 0,
+          "line": 335
+        },
+        {
+          "target": "includes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 336
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 340
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 341
+        },
+        {
+          "target": "round",
+          "resolved": false,
+          "confidence": 0,
+          "line": 341
+        },
+        {
+          "target": "totalVuMinutes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 341
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 342
+        },
+        {
+          "target": "max",
+          "resolved": false,
+          "confidence": 0,
+          "line": 342
+        },
+        {
+          "target": "map",
+          "resolved": false,
+          "confidence": 0,
+          "line": 342
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 343
+        },
+        {
+          "target": "toFixed",
+          "resolved": false,
+          "confidence": 0,
+          "line": 343
+        },
+        {
+          "target": "reduce",
+          "resolved": false,
+          "confidence": 0,
+          "line": 343
+        },
+        {
+          "target": "parseFloat",
+          "resolved": false,
+          "confidence": 0,
+          "line": 343
+        },
+        {
+          "target": "replace",
+          "resolved": false,
+          "confidence": 0,
+          "line": 343
+        },
+        {
+          "target": "includes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 343
+        },
+        {
+          "target": "floor",
+          "resolved": false,
+          "confidence": 0,
+          "line": 346
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 346
+        },
+        {
+          "target": "writeFileSync",
+          "resolved": false,
+          "confidence": 0,
+          "line": 348
+        },
+        {
+          "target": "resultsFile",
+          "resolved": false,
+          "confidence": 0,
+          "line": 348
+        },
+        {
+          "target": "stringify",
+          "resolved": false,
+          "confidence": 0,
+          "line": 348
+        },
+        {
+          "target": "results",
+          "resolved": false,
+          "confidence": 0,
+          "line": 348
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 349
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 351
+        },
+        {
+          "target": "exit",
+          "resolved": false,
+          "confidence": 0,
+          "line": 353
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 284
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 322
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 329
+        },
+        {
+          "target": "parseFloat",
+          "resolved": false,
+          "confidence": 0,
+          "line": 343
+        },
+        {
+          "target": "replace",
+          "resolved": false,
+          "confidence": 0,
+          "line": 343
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 13
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 14
+        },
+        {
+          "target": "slice",
+          "resolved": false,
+          "confidence": 0,
+          "line": 17
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 21
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 22
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

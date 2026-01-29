@@ -1,0 +1,324 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.012Z",
+  "checksum": "171855fcea3db288",
+  "file": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/selected-views/SelectedScheduleView/SelectedScheduleView.tsx",
+  "functions": [
+    {
+      "id": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/selected-views/SelectedScheduleView/SelectedScheduleView.tsx:SelectedScheduleView:26",
+      "name": "SelectedScheduleView",
+      "startLine": 26,
+      "endLine": 177,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useSelectedScheduleView",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 32,
+          "resolvedId": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/selected-views/SelectedScheduleView/useSelectedScheduleView.ts:useSelectedScheduleView:7"
+        },
+        {
+          "target": "graph_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 33
+        },
+        {
+          "target": "scheduleId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 34
+        },
+        {
+          "target": "useUserTimezone",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 37,
+          "resolvedId": "src/lib/hooks/useUserTimezone.ts:useUserTimezone:4"
+        },
+        {
+          "target": "useBreakpoint",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 39,
+          "resolvedId": "src/lib/hooks/useBreakpoint.ts:useBreakpoint:15"
+        },
+        {
+          "target": "isLargeScreen",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 40,
+          "resolvedId": "src/lib/hooks/useBreakpoint.ts:isLargeScreen:43"
+        },
+        {
+          "target": "breakpoint",
+          "resolved": false,
+          "confidence": 0,
+          "line": 40
+        },
+        {
+          "target": "ErrorCard",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 44,
+          "resolvedId": "src/components/molecules/ErrorCard/ErrorCard.tsx:ErrorCard:26"
+        },
+        {
+          "target": "String",
+          "resolved": false,
+          "confidence": 0,
+          "line": 48
+        },
+        {
+          "target": "LoadingSelectedContent",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 69,
+          "resolvedId": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/selected-views/LoadingSelectedContent.tsx:LoadingSelectedContent:11"
+        },
+        {
+          "target": "agent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 69
+        },
+        {
+          "target": "SelectedViewLayout",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 75,
+          "resolvedId": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/selected-views/SelectedViewLayout.tsx:SelectedViewLayout:14"
+        },
+        {
+          "target": "agent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 75
+        },
+        {
+          "target": "banner",
+          "resolved": false,
+          "confidence": 0,
+          "line": 75
+        },
+        {
+          "target": "RunDetailHeader",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 78,
+          "resolvedId": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/selected-views/RunDetailHeader/RunDetailHeader.tsx:RunDetailHeader:17"
+        },
+        {
+          "target": "agent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 79
+        },
+        {
+          "target": "undefined",
+          "resolved": false,
+          "confidence": 0,
+          "line": 80
+        },
+        {
+          "target": "humanizeCronExpression",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 83,
+          "resolvedId": "src/lib/cron-expression-utils.ts:humanizeCronExpression:82"
+        },
+        {
+          "target": "getTimezoneDisplayName",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 83,
+          "resolvedId": "src/lib/timezone-utils.ts:getTimezoneDisplayName:95"
+        },
+        {
+          "target": "SelectedScheduleActions",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 89,
+          "resolvedId": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/selected-views/SelectedScheduleView/components/SelectedScheduleActions/SelectedScheduleActions.tsx:SelectedScheduleActions:19"
+        },
+        {
+          "target": "agent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 90
+        },
+        {
+          "target": "id",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 91,
+          "resolvedId": "public/gtag.js:id:112"
+        },
+        {
+          "target": "onClearSelectedRun",
+          "resolved": false,
+          "confidence": 0,
+          "line": 92
+        },
+        {
+          "target": "RunDetailCard",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 100,
+          "resolvedId": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/selected-views/RunDetailCard/RunDetailCard.tsx:RunDetailCard:10"
+        },
+        {
+          "target": "LoadingSpinner",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 103,
+          "resolvedId": "src/components/__legacy__/ui/loading.tsx:LoadingSpinner:24"
+        },
+        {
+          "target": "Text",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 108,
+          "resolvedId": "src/components/atoms/Text/Text.tsx:Text:15"
+        },
+        {
+          "target": "Text",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 109,
+          "resolvedId": "src/components/atoms/Text/Text.tsx:Text:15"
+        },
+        {
+          "target": "Text",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 112,
+          "resolvedId": "src/components/atoms/Text/Text.tsx:Text:15"
+        },
+        {
+          "target": "Text",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 113,
+          "resolvedId": "src/components/atoms/Text/Text.tsx:Text:15"
+        },
+        {
+          "target": "humanizeCronExpression",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 114,
+          "resolvedId": "src/lib/cron-expression-utils.ts:humanizeCronExpression:82"
+        },
+        {
+          "target": "cron",
+          "resolved": false,
+          "confidence": 0,
+          "line": 114
+        },
+        {
+          "target": "getTimezoneDisplayName",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 117,
+          "resolvedId": "src/lib/timezone-utils.ts:getTimezoneDisplayName:95"
+        },
+        {
+          "target": "Text",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 124,
+          "resolvedId": "src/components/atoms/Text/Text.tsx:Text:15"
+        },
+        {
+          "target": "Text",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 125,
+          "resolvedId": "src/components/atoms/Text/Text.tsx:Text:15"
+        },
+        {
+          "target": "formatInTimezone",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 126,
+          "resolvedId": "src/lib/timezone-utils.ts:formatInTimezone:12"
+        },
+        {
+          "target": "next_run_time",
+          "resolved": false,
+          "confidence": 0,
+          "line": 127
+        },
+        {
+          "target": "getTimezoneDisplayName",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 140,
+          "resolvedId": "src/lib/timezone-utils.ts:getTimezoneDisplayName:95"
+        },
+        {
+          "target": "RunDetailCard",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 153,
+          "resolvedId": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/selected-views/RunDetailCard/RunDetailCard.tsx:RunDetailCard:10"
+        },
+        {
+          "target": "AgentInputsReadOnly",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 155,
+          "resolvedId": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/modals/AgentInputsReadOnly/AgentInputsReadOnly.tsx:AgentInputsReadOnly:17"
+        },
+        {
+          "target": "agent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 156
+        },
+        {
+          "target": "input_data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 157
+        },
+        {
+          "target": "input_credentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 158
+        },
+        {
+          "target": "SelectedScheduleActions",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 168,
+          "resolvedId": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/selected-views/SelectedScheduleView/components/SelectedScheduleActions/SelectedScheduleActions.tsx:SelectedScheduleActions:19"
+        },
+        {
+          "target": "agent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 169
+        },
+        {
+          "target": "id",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 170,
+          "resolvedId": "public/gtag.js:id:112"
+        },
+        {
+          "target": "onClearSelectedRun",
+          "resolved": false,
+          "confidence": 0,
+          "line": 171
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

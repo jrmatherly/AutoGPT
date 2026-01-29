@@ -1,0 +1,76 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.203Z",
+  "checksum": "f00ea45edd8148fc",
+  "file": "src/hooks/usePendingReviews.ts",
+  "functions": [
+    {
+      "id": "src/hooks/usePendingReviews.ts:usePendingReviews:7",
+      "name": "usePendingReviews",
+      "startLine": 7,
+      "endLine": 16,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useGetV2GetPendingReviews",
+          "resolved": false,
+          "confidence": 0,
+          "line": 8
+        },
+        {
+          "target": "okData",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 11,
+          "resolvedId": "src/app/api/helpers.ts:okData:23"
+        },
+        {
+          "target": "data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 11
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/hooks/usePendingReviews.ts:usePendingReviewsForExecution:23",
+      "name": "usePendingReviewsForExecution",
+      "startLine": 23,
+      "endLine": 41,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useGetV2GetPendingReviewsForExecution",
+          "resolved": false,
+          "confidence": 0,
+          "line": 27
+        },
+        {
+          "target": "graphExecId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 27
+        },
+        {
+          "target": "okData",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 36,
+          "resolvedId": "src/app/api/helpers.ts:okData:23"
+        },
+        {
+          "target": "data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 36
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

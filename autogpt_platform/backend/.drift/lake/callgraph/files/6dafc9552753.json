@@ -1,0 +1,1094 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.170Z",
+  "checksum": "535a06cd61dce222",
+  "file": "test/agent_generator/test_core_integration.py",
+  "functions": [
+    {
+      "id": "test/agent_generator/test_core_integration.py:test_decompose_goal_raises_when_not_configured:22",
+      "name": "test_decompose_goal_raises_when_not_configured",
+      "startLine": 22,
+      "endLine": 26,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "object",
+          "resolved": false,
+          "confidence": 0,
+          "line": 24
+        },
+        {
+          "target": "core",
+          "resolved": false,
+          "confidence": 0,
+          "line": 24
+        },
+        {
+          "target": "raises",
+          "resolved": false,
+          "confidence": 0,
+          "line": 25
+        },
+        {
+          "target": "decompose_goal",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 26,
+          "resolvedId": "backend/api/features/chat/tools/agent_generator/core.py:decompose_goal:39"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/agent_generator/test_core_integration.py:test_generate_agent_raises_when_not_configured:29",
+      "name": "test_generate_agent_raises_when_not_configured",
+      "startLine": 29,
+      "endLine": 33,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "object",
+          "resolved": false,
+          "confidence": 0,
+          "line": 31
+        },
+        {
+          "target": "core",
+          "resolved": false,
+          "confidence": 0,
+          "line": 31
+        },
+        {
+          "target": "raises",
+          "resolved": false,
+          "confidence": 0,
+          "line": 32
+        },
+        {
+          "target": "generate_agent",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 33,
+          "resolvedId": "backend/api/features/chat/tools/agent_generator/core.py:generate_agent:60"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/agent_generator/test_core_integration.py:test_generate_agent_patch_raises_when_not_configured:36",
+      "name": "test_generate_agent_patch_raises_when_not_configured",
+      "startLine": 36,
+      "endLine": 40,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "object",
+          "resolved": false,
+          "confidence": 0,
+          "line": 38
+        },
+        {
+          "target": "core",
+          "resolved": false,
+          "confidence": 0,
+          "line": 38
+        },
+        {
+          "target": "raises",
+          "resolved": false,
+          "confidence": 0,
+          "line": 39
+        },
+        {
+          "target": "generate_agent_patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 40,
+          "resolvedId": "backend/api/features/chat/tools/agent_generator/core.py:generate_agent_patch:255"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/agent_generator/test_core_integration.py:test_calls_external_service:47",
+      "name": "test_calls_external_service",
+      "startLine": 47,
+      "endLine": 61,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "object",
+          "resolved": false,
+          "confidence": 0,
+          "line": 51
+        },
+        {
+          "target": "core",
+          "resolved": false,
+          "confidence": 0,
+          "line": 52
+        },
+        {
+          "target": "object",
+          "resolved": false,
+          "confidence": 0,
+          "line": 53
+        },
+        {
+          "target": "core",
+          "resolved": false,
+          "confidence": 0,
+          "line": 54
+        },
+        {
+          "target": "decompose_goal",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 58,
+          "resolvedId": "backend/api/features/chat/tools/agent_generator/core.py:decompose_goal:39"
+        },
+        {
+          "target": "assert_called_once_with",
+          "resolved": false,
+          "confidence": 0,
+          "line": 60
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/agent_generator/test_core_integration.py:test_passes_context_to_external_service:64",
+      "name": "test_passes_context_to_external_service",
+      "startLine": 64,
+      "endLine": 77,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "object",
+          "resolved": false,
+          "confidence": 0,
+          "line": 68
+        },
+        {
+          "target": "core",
+          "resolved": false,
+          "confidence": 0,
+          "line": 69
+        },
+        {
+          "target": "object",
+          "resolved": false,
+          "confidence": 0,
+          "line": 70
+        },
+        {
+          "target": "core",
+          "resolved": false,
+          "confidence": 0,
+          "line": 71
+        },
+        {
+          "target": "decompose_goal",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 75,
+          "resolvedId": "backend/api/features/chat/tools/agent_generator/core.py:decompose_goal:39"
+        },
+        {
+          "target": "assert_called_once_with",
+          "resolved": false,
+          "confidence": 0,
+          "line": 77
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/agent_generator/test_core_integration.py:test_returns_none_on_service_failure:80",
+      "name": "test_returns_none_on_service_failure",
+      "startLine": 80,
+      "endLine": 91,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "object",
+          "resolved": false,
+          "confidence": 0,
+          "line": 82
+        },
+        {
+          "target": "core",
+          "resolved": false,
+          "confidence": 0,
+          "line": 83
+        },
+        {
+          "target": "object",
+          "resolved": false,
+          "confidence": 0,
+          "line": 84
+        },
+        {
+          "target": "core",
+          "resolved": false,
+          "confidence": 0,
+          "line": 85
+        },
+        {
+          "target": "decompose_goal",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 89,
+          "resolvedId": "backend/api/features/chat/tools/agent_generator/core.py:decompose_goal:39"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/agent_generator/test_core_integration.py:test_calls_external_service:98",
+      "name": "test_calls_external_service",
+      "startLine": 98,
+      "endLine": 118,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "object",
+          "resolved": false,
+          "confidence": 0,
+          "line": 102
+        },
+        {
+          "target": "core",
+          "resolved": false,
+          "confidence": 0,
+          "line": 103
+        },
+        {
+          "target": "object",
+          "resolved": false,
+          "confidence": 0,
+          "line": 104
+        },
+        {
+          "target": "core",
+          "resolved": false,
+          "confidence": 0,
+          "line": 105
+        },
+        {
+          "target": "generate_agent",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 110,
+          "resolvedId": "backend/api/features/chat/tools/agent_generator/core.py:generate_agent:60"
+        },
+        {
+          "target": "instructions",
+          "resolved": false,
+          "confidence": 0,
+          "line": 110
+        },
+        {
+          "target": "assert_called_once_with",
+          "resolved": false,
+          "confidence": 0,
+          "line": 112
+        },
+        {
+          "target": "instructions",
+          "resolved": false,
+          "confidence": 0,
+          "line": 112
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/agent_generator/test_core_integration.py:test_preserves_existing_id_and_version:121",
+      "name": "test_preserves_existing_id_and_version",
+      "startLine": 121,
+      "endLine": 142,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "object",
+          "resolved": false,
+          "confidence": 0,
+          "line": 130
+        },
+        {
+          "target": "core",
+          "resolved": false,
+          "confidence": 0,
+          "line": 131
+        },
+        {
+          "target": "object",
+          "resolved": false,
+          "confidence": 0,
+          "line": 132
+        },
+        {
+          "target": "core",
+          "resolved": false,
+          "confidence": 0,
+          "line": 133
+        },
+        {
+          "target": "copy",
+          "resolved": false,
+          "confidence": 0,
+          "line": 135
+        },
+        {
+          "target": "generate_agent",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 137,
+          "resolvedId": "backend/api/features/chat/tools/agent_generator/core.py:generate_agent:60"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/agent_generator/test_core_integration.py:test_returns_none_when_external_service_fails:145",
+      "name": "test_returns_none_when_external_service_fails",
+      "startLine": 145,
+      "endLine": 156,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "object",
+          "resolved": false,
+          "confidence": 0,
+          "line": 147
+        },
+        {
+          "target": "core",
+          "resolved": false,
+          "confidence": 0,
+          "line": 148
+        },
+        {
+          "target": "object",
+          "resolved": false,
+          "confidence": 0,
+          "line": 149
+        },
+        {
+          "target": "core",
+          "resolved": false,
+          "confidence": 0,
+          "line": 150
+        },
+        {
+          "target": "generate_agent",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 154,
+          "resolvedId": "backend/api/features/chat/tools/agent_generator/core.py:generate_agent:60"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/agent_generator/test_core_integration.py:test_calls_external_service:163",
+      "name": "test_calls_external_service",
+      "startLine": 163,
+      "endLine": 178,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "object",
+          "resolved": false,
+          "confidence": 0,
+          "line": 167
+        },
+        {
+          "target": "core",
+          "resolved": false,
+          "confidence": 0,
+          "line": 168
+        },
+        {
+          "target": "object",
+          "resolved": false,
+          "confidence": 0,
+          "line": 169
+        },
+        {
+          "target": "core",
+          "resolved": false,
+          "confidence": 0,
+          "line": 170
+        },
+        {
+          "target": "generate_agent_patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 175,
+          "resolvedId": "backend/api/features/chat/tools/agent_generator/core.py:generate_agent_patch:255"
+        },
+        {
+          "target": "current_agent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 175
+        },
+        {
+          "target": "assert_called_once_with",
+          "resolved": false,
+          "confidence": 0,
+          "line": 177
+        },
+        {
+          "target": "current_agent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 177
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/agent_generator/test_core_integration.py:test_returns_clarifying_questions:181",
+      "name": "test_returns_clarifying_questions",
+      "startLine": 181,
+      "endLine": 197,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "object",
+          "resolved": false,
+          "confidence": 0,
+          "line": 188
+        },
+        {
+          "target": "core",
+          "resolved": false,
+          "confidence": 0,
+          "line": 189
+        },
+        {
+          "target": "object",
+          "resolved": false,
+          "confidence": 0,
+          "line": 190
+        },
+        {
+          "target": "core",
+          "resolved": false,
+          "confidence": 0,
+          "line": 191
+        },
+        {
+          "target": "generate_agent_patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 195,
+          "resolvedId": "backend/api/features/chat/tools/agent_generator/core.py:generate_agent_patch:255"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/agent_generator/test_core_integration.py:test_returns_none_when_external_service_fails:200",
+      "name": "test_returns_none_when_external_service_fails",
+      "startLine": 200,
+      "endLine": 211,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "object",
+          "resolved": false,
+          "confidence": 0,
+          "line": 202
+        },
+        {
+          "target": "core",
+          "resolved": false,
+          "confidence": 0,
+          "line": 203
+        },
+        {
+          "target": "object",
+          "resolved": false,
+          "confidence": 0,
+          "line": 204
+        },
+        {
+          "target": "core",
+          "resolved": false,
+          "confidence": 0,
+          "line": 205
+        },
+        {
+          "target": "generate_agent_patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 209,
+          "resolvedId": "backend/api/features/chat/tools/agent_generator/core.py:generate_agent_patch:255"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/agent_generator/test_core_integration.py:test_converts_agent_json_to_graph:217",
+      "name": "test_converts_agent_json_to_graph",
+      "startLine": 217,
+      "endLine": 256,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "json_to_graph",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 245,
+          "resolvedId": "backend/api/features/chat/tools/agent_generator/core.py:json_to_graph:86"
+        },
+        {
+          "target": "agent_json",
+          "resolved": false,
+          "confidence": 0,
+          "line": 245
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 252
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 255
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/agent_generator/test_core_integration.py:test_generates_ids_if_missing:258",
+      "name": "test_generates_ids_if_missing",
+      "startLine": 258,
+      "endLine": 269,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "json_to_graph",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 266,
+          "resolvedId": "backend/api/features/chat/tools/agent_generator/core.py:json_to_graph:86"
+        },
+        {
+          "target": "agent_json",
+          "resolved": false,
+          "confidence": 0,
+          "line": 266
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/agent_generator/test_core_integration.py:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 274,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "object",
+          "resolved": false,
+          "confidence": 0,
+          "line": 24
+        },
+        {
+          "target": "core",
+          "resolved": false,
+          "confidence": 0,
+          "line": 24
+        },
+        {
+          "target": "raises",
+          "resolved": false,
+          "confidence": 0,
+          "line": 25
+        },
+        {
+          "target": "decompose_goal",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 26,
+          "resolvedId": "backend/api/features/chat/tools/agent_generator/core.py:decompose_goal:39"
+        },
+        {
+          "target": "object",
+          "resolved": false,
+          "confidence": 0,
+          "line": 31
+        },
+        {
+          "target": "core",
+          "resolved": false,
+          "confidence": 0,
+          "line": 31
+        },
+        {
+          "target": "raises",
+          "resolved": false,
+          "confidence": 0,
+          "line": 32
+        },
+        {
+          "target": "generate_agent",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 33,
+          "resolvedId": "backend/api/features/chat/tools/agent_generator/core.py:generate_agent:60"
+        },
+        {
+          "target": "object",
+          "resolved": false,
+          "confidence": 0,
+          "line": 38
+        },
+        {
+          "target": "core",
+          "resolved": false,
+          "confidence": 0,
+          "line": 38
+        },
+        {
+          "target": "raises",
+          "resolved": false,
+          "confidence": 0,
+          "line": 39
+        },
+        {
+          "target": "generate_agent_patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 40,
+          "resolvedId": "backend/api/features/chat/tools/agent_generator/core.py:generate_agent_patch:255"
+        },
+        {
+          "target": "object",
+          "resolved": false,
+          "confidence": 0,
+          "line": 51
+        },
+        {
+          "target": "core",
+          "resolved": false,
+          "confidence": 0,
+          "line": 52
+        },
+        {
+          "target": "object",
+          "resolved": false,
+          "confidence": 0,
+          "line": 53
+        },
+        {
+          "target": "core",
+          "resolved": false,
+          "confidence": 0,
+          "line": 54
+        },
+        {
+          "target": "decompose_goal",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 58,
+          "resolvedId": "backend/api/features/chat/tools/agent_generator/core.py:decompose_goal:39"
+        },
+        {
+          "target": "assert_called_once_with",
+          "resolved": false,
+          "confidence": 0,
+          "line": 60
+        },
+        {
+          "target": "object",
+          "resolved": false,
+          "confidence": 0,
+          "line": 68
+        },
+        {
+          "target": "core",
+          "resolved": false,
+          "confidence": 0,
+          "line": 69
+        },
+        {
+          "target": "object",
+          "resolved": false,
+          "confidence": 0,
+          "line": 70
+        },
+        {
+          "target": "core",
+          "resolved": false,
+          "confidence": 0,
+          "line": 71
+        },
+        {
+          "target": "decompose_goal",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 75,
+          "resolvedId": "backend/api/features/chat/tools/agent_generator/core.py:decompose_goal:39"
+        },
+        {
+          "target": "assert_called_once_with",
+          "resolved": false,
+          "confidence": 0,
+          "line": 77
+        },
+        {
+          "target": "object",
+          "resolved": false,
+          "confidence": 0,
+          "line": 82
+        },
+        {
+          "target": "core",
+          "resolved": false,
+          "confidence": 0,
+          "line": 83
+        },
+        {
+          "target": "object",
+          "resolved": false,
+          "confidence": 0,
+          "line": 84
+        },
+        {
+          "target": "core",
+          "resolved": false,
+          "confidence": 0,
+          "line": 85
+        },
+        {
+          "target": "decompose_goal",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 89,
+          "resolvedId": "backend/api/features/chat/tools/agent_generator/core.py:decompose_goal:39"
+        },
+        {
+          "target": "object",
+          "resolved": false,
+          "confidence": 0,
+          "line": 102
+        },
+        {
+          "target": "core",
+          "resolved": false,
+          "confidence": 0,
+          "line": 103
+        },
+        {
+          "target": "object",
+          "resolved": false,
+          "confidence": 0,
+          "line": 104
+        },
+        {
+          "target": "core",
+          "resolved": false,
+          "confidence": 0,
+          "line": 105
+        },
+        {
+          "target": "generate_agent",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 110,
+          "resolvedId": "backend/api/features/chat/tools/agent_generator/core.py:generate_agent:60"
+        },
+        {
+          "target": "instructions",
+          "resolved": false,
+          "confidence": 0,
+          "line": 110
+        },
+        {
+          "target": "assert_called_once_with",
+          "resolved": false,
+          "confidence": 0,
+          "line": 112
+        },
+        {
+          "target": "instructions",
+          "resolved": false,
+          "confidence": 0,
+          "line": 112
+        },
+        {
+          "target": "object",
+          "resolved": false,
+          "confidence": 0,
+          "line": 130
+        },
+        {
+          "target": "core",
+          "resolved": false,
+          "confidence": 0,
+          "line": 131
+        },
+        {
+          "target": "object",
+          "resolved": false,
+          "confidence": 0,
+          "line": 132
+        },
+        {
+          "target": "core",
+          "resolved": false,
+          "confidence": 0,
+          "line": 133
+        },
+        {
+          "target": "copy",
+          "resolved": false,
+          "confidence": 0,
+          "line": 135
+        },
+        {
+          "target": "generate_agent",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 137,
+          "resolvedId": "backend/api/features/chat/tools/agent_generator/core.py:generate_agent:60"
+        },
+        {
+          "target": "object",
+          "resolved": false,
+          "confidence": 0,
+          "line": 147
+        },
+        {
+          "target": "core",
+          "resolved": false,
+          "confidence": 0,
+          "line": 148
+        },
+        {
+          "target": "object",
+          "resolved": false,
+          "confidence": 0,
+          "line": 149
+        },
+        {
+          "target": "core",
+          "resolved": false,
+          "confidence": 0,
+          "line": 150
+        },
+        {
+          "target": "generate_agent",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 154,
+          "resolvedId": "backend/api/features/chat/tools/agent_generator/core.py:generate_agent:60"
+        },
+        {
+          "target": "object",
+          "resolved": false,
+          "confidence": 0,
+          "line": 167
+        },
+        {
+          "target": "core",
+          "resolved": false,
+          "confidence": 0,
+          "line": 168
+        },
+        {
+          "target": "object",
+          "resolved": false,
+          "confidence": 0,
+          "line": 169
+        },
+        {
+          "target": "core",
+          "resolved": false,
+          "confidence": 0,
+          "line": 170
+        },
+        {
+          "target": "generate_agent_patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 175,
+          "resolvedId": "backend/api/features/chat/tools/agent_generator/core.py:generate_agent_patch:255"
+        },
+        {
+          "target": "current_agent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 175
+        },
+        {
+          "target": "assert_called_once_with",
+          "resolved": false,
+          "confidence": 0,
+          "line": 177
+        },
+        {
+          "target": "current_agent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 177
+        },
+        {
+          "target": "object",
+          "resolved": false,
+          "confidence": 0,
+          "line": 188
+        },
+        {
+          "target": "core",
+          "resolved": false,
+          "confidence": 0,
+          "line": 189
+        },
+        {
+          "target": "object",
+          "resolved": false,
+          "confidence": 0,
+          "line": 190
+        },
+        {
+          "target": "core",
+          "resolved": false,
+          "confidence": 0,
+          "line": 191
+        },
+        {
+          "target": "generate_agent_patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 195,
+          "resolvedId": "backend/api/features/chat/tools/agent_generator/core.py:generate_agent_patch:255"
+        },
+        {
+          "target": "object",
+          "resolved": false,
+          "confidence": 0,
+          "line": 202
+        },
+        {
+          "target": "core",
+          "resolved": false,
+          "confidence": 0,
+          "line": 203
+        },
+        {
+          "target": "object",
+          "resolved": false,
+          "confidence": 0,
+          "line": 204
+        },
+        {
+          "target": "core",
+          "resolved": false,
+          "confidence": 0,
+          "line": 205
+        },
+        {
+          "target": "generate_agent_patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 209,
+          "resolvedId": "backend/api/features/chat/tools/agent_generator/core.py:generate_agent_patch:255"
+        },
+        {
+          "target": "json_to_graph",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 245,
+          "resolvedId": "backend/api/features/chat/tools/agent_generator/core.py:json_to_graph:86"
+        },
+        {
+          "target": "agent_json",
+          "resolved": false,
+          "confidence": 0,
+          "line": 245
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 252
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 255
+        },
+        {
+          "target": "json_to_graph",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 266,
+          "resolvedId": "backend/api/features/chat/tools/agent_generator/core.py:json_to_graph:86"
+        },
+        {
+          "target": "agent_json",
+          "resolved": false,
+          "confidence": 0,
+          "line": 266
+        },
+        {
+          "target": "main",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 273,
+          "resolvedId": "backend/check_store_data.py:main:149"
+        },
+        {
+          "target": "main",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 273,
+          "resolvedId": "backend/check_store_data.py:main:149"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

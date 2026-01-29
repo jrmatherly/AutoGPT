@@ -1,0 +1,836 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.017Z",
+  "checksum": "8774be770927cd5d",
+  "file": "src/tests/pages/marketplace.page.ts",
+  "functions": [
+    {
+      "id": "src/tests/pages/marketplace.page.ts:constructor:6",
+      "name": "constructor",
+      "startLine": 6,
+      "endLine": 8,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 7
+        },
+        {
+          "target": "page",
+          "resolved": false,
+          "confidence": 0,
+          "line": 7
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/tests/pages/marketplace.page.ts:goto:10",
+      "name": "goto",
+      "startLine": 10,
+      "endLine": 12,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "goto",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 11,
+          "resolvedId": "src/tests/pages/marketplace.page.ts:goto:10"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/tests/pages/marketplace.page.ts:getMarketplaceTitle:14",
+      "name": "getMarketplaceTitle",
+      "startLine": 14,
+      "endLine": 17,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "getSelectors",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 15,
+          "resolvedId": "src/tests/utils/selectors.ts:getSelectors:3"
+        },
+        {
+          "target": "page",
+          "resolved": false,
+          "confidence": 0,
+          "line": 15
+        },
+        {
+          "target": "getText",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 16,
+          "resolvedId": "src/tests/utils/selectors.ts:getText:28"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/tests/pages/marketplace.page.ts:getCreatorsSection:19",
+      "name": "getCreatorsSection",
+      "startLine": 19,
+      "endLine": 22,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "getSelectors",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 20,
+          "resolvedId": "src/tests/utils/selectors.ts:getSelectors:3"
+        },
+        {
+          "target": "page",
+          "resolved": false,
+          "confidence": 0,
+          "line": 20
+        },
+        {
+          "target": "getId",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 21,
+          "resolvedId": "src/tests/utils/selectors.ts:getId:48"
+        },
+        {
+          "target": "getText",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 21,
+          "resolvedId": "src/tests/utils/selectors.ts:getText:28"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/tests/pages/marketplace.page.ts:getAgentsSection:24",
+      "name": "getAgentsSection",
+      "startLine": 24,
+      "endLine": 27,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "getSelectors",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 25,
+          "resolvedId": "src/tests/utils/selectors.ts:getSelectors:3"
+        },
+        {
+          "target": "page",
+          "resolved": false,
+          "confidence": 0,
+          "line": 25
+        },
+        {
+          "target": "getId",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 26,
+          "resolvedId": "src/tests/utils/selectors.ts:getId:48"
+        },
+        {
+          "target": "getText",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 26,
+          "resolvedId": "src/tests/utils/selectors.ts:getText:28"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/tests/pages/marketplace.page.ts:getCreatorsLink:29",
+      "name": "getCreatorsLink",
+      "startLine": 29,
+      "endLine": 32,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "getSelectors",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 30,
+          "resolvedId": "src/tests/utils/selectors.ts:getSelectors:3"
+        },
+        {
+          "target": "page",
+          "resolved": false,
+          "confidence": 0,
+          "line": 30
+        },
+        {
+          "target": "getLink",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 31,
+          "resolvedId": "src/tests/utils/selectors.ts:getLink:40"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/tests/pages/marketplace.page.ts:getAgentsLink:34",
+      "name": "getAgentsLink",
+      "startLine": 34,
+      "endLine": 37,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "getSelectors",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 35,
+          "resolvedId": "src/tests/utils/selectors.ts:getSelectors:3"
+        },
+        {
+          "target": "page",
+          "resolved": false,
+          "confidence": 0,
+          "line": 35
+        },
+        {
+          "target": "getLink",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 36,
+          "resolvedId": "src/tests/utils/selectors.ts:getLink:40"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/tests/pages/marketplace.page.ts:getSearchInput:39",
+      "name": "getSearchInput",
+      "startLine": 39,
+      "endLine": 42,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "getSelectors",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 40,
+          "resolvedId": "src/tests/utils/selectors.ts:getSelectors:3"
+        },
+        {
+          "target": "page",
+          "resolved": false,
+          "confidence": 0,
+          "line": 40
+        },
+        {
+          "target": "getId",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 41,
+          "resolvedId": "src/tests/utils/selectors.ts:getId:48"
+        },
+        {
+          "target": "getField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 41,
+          "resolvedId": "src/tests/utils/selectors.ts:getField:44"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/tests/pages/marketplace.page.ts:getFilterDropdown:44",
+      "name": "getFilterDropdown",
+      "startLine": 44,
+      "endLine": 47,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "getSelectors",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 45,
+          "resolvedId": "src/tests/utils/selectors.ts:getSelectors:3"
+        },
+        {
+          "target": "page",
+          "resolved": false,
+          "confidence": 0,
+          "line": 45
+        },
+        {
+          "target": "getId",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 46,
+          "resolvedId": "src/tests/utils/selectors.ts:getId:48"
+        },
+        {
+          "target": "getButton",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 46,
+          "resolvedId": "src/tests/utils/selectors.ts:getButton:36"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/tests/pages/marketplace.page.ts:searchFor:49",
+      "name": "searchFor",
+      "startLine": 49,
+      "endLine": 53,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "getSearchInput",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 50,
+          "resolvedId": "src/tests/pages/marketplace.page.ts:getSearchInput:39"
+        },
+        {
+          "target": "page",
+          "resolved": false,
+          "confidence": 0,
+          "line": 50
+        },
+        {
+          "target": "fill",
+          "resolved": false,
+          "confidence": 0,
+          "line": 51
+        },
+        {
+          "target": "query",
+          "resolved": false,
+          "confidence": 0,
+          "line": 51
+        },
+        {
+          "target": "press",
+          "resolved": false,
+          "confidence": 0,
+          "line": 52
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/tests/pages/marketplace.page.ts:clickCreators:55",
+      "name": "clickCreators",
+      "startLine": 55,
+      "endLine": 58,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "getCreatorsLink",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 56,
+          "resolvedId": "src/tests/pages/marketplace.page.ts:getCreatorsLink:29"
+        },
+        {
+          "target": "page",
+          "resolved": false,
+          "confidence": 0,
+          "line": 56
+        },
+        {
+          "target": "click",
+          "resolved": false,
+          "confidence": 0,
+          "line": 57
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/tests/pages/marketplace.page.ts:clickAgents:60",
+      "name": "clickAgents",
+      "startLine": 60,
+      "endLine": 63,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "getAgentsLink",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 61,
+          "resolvedId": "src/tests/pages/marketplace.page.ts:getAgentsLink:34"
+        },
+        {
+          "target": "page",
+          "resolved": false,
+          "confidence": 0,
+          "line": 61
+        },
+        {
+          "target": "click",
+          "resolved": false,
+          "confidence": 0,
+          "line": 62
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/tests/pages/marketplace.page.ts:openFilter:65",
+      "name": "openFilter",
+      "startLine": 65,
+      "endLine": 68,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "getFilterDropdown",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 66,
+          "resolvedId": "src/tests/pages/marketplace.page.ts:getFilterDropdown:44"
+        },
+        {
+          "target": "page",
+          "resolved": false,
+          "confidence": 0,
+          "line": 66
+        },
+        {
+          "target": "click",
+          "resolved": false,
+          "confidence": 0,
+          "line": 67
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/tests/pages/marketplace.page.ts:getFeaturedAgentsSection:70",
+      "name": "getFeaturedAgentsSection",
+      "startLine": 70,
+      "endLine": 73,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "getSelectors",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 71,
+          "resolvedId": "src/tests/utils/selectors.ts:getSelectors:3"
+        },
+        {
+          "target": "page",
+          "resolved": false,
+          "confidence": 0,
+          "line": 71
+        },
+        {
+          "target": "getText",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 72,
+          "resolvedId": "src/tests/utils/selectors.ts:getText:28"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/tests/pages/marketplace.page.ts:getTopAgentsSection:75",
+      "name": "getTopAgentsSection",
+      "startLine": 75,
+      "endLine": 78,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "getSelectors",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 76,
+          "resolvedId": "src/tests/utils/selectors.ts:getSelectors:3"
+        },
+        {
+          "target": "page",
+          "resolved": false,
+          "confidence": 0,
+          "line": 76
+        },
+        {
+          "target": "getText",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 77,
+          "resolvedId": "src/tests/utils/selectors.ts:getText:28"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/tests/pages/marketplace.page.ts:getFeaturedCreatorsSection:80",
+      "name": "getFeaturedCreatorsSection",
+      "startLine": 80,
+      "endLine": 83,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "getSelectors",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 81,
+          "resolvedId": "src/tests/utils/selectors.ts:getSelectors:3"
+        },
+        {
+          "target": "page",
+          "resolved": false,
+          "confidence": 0,
+          "line": 81
+        },
+        {
+          "target": "getText",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 82,
+          "resolvedId": "src/tests/utils/selectors.ts:getText:28"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/tests/pages/marketplace.page.ts:getFeaturedAgentCards:85",
+      "name": "getFeaturedAgentCards",
+      "startLine": 85,
+      "endLine": 88,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "getSelectors",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 86,
+          "resolvedId": "src/tests/utils/selectors.ts:getSelectors:3"
+        },
+        {
+          "target": "page",
+          "resolved": false,
+          "confidence": 0,
+          "line": 86
+        },
+        {
+          "target": "getId",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 87,
+          "resolvedId": "src/tests/utils/selectors.ts:getId:48"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/tests/pages/marketplace.page.ts:getTopAgentCards:90",
+      "name": "getTopAgentCards",
+      "startLine": 90,
+      "endLine": 93,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "getSelectors",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 91,
+          "resolvedId": "src/tests/utils/selectors.ts:getSelectors:3"
+        },
+        {
+          "target": "page",
+          "resolved": false,
+          "confidence": 0,
+          "line": 91
+        },
+        {
+          "target": "getId",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 92,
+          "resolvedId": "src/tests/utils/selectors.ts:getId:48"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/tests/pages/marketplace.page.ts:getCreatorProfiles:95",
+      "name": "getCreatorProfiles",
+      "startLine": 95,
+      "endLine": 98,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "getSelectors",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 96,
+          "resolvedId": "src/tests/utils/selectors.ts:getSelectors:3"
+        },
+        {
+          "target": "page",
+          "resolved": false,
+          "confidence": 0,
+          "line": 96
+        },
+        {
+          "target": "getId",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 97,
+          "resolvedId": "src/tests/utils/selectors.ts:getId:48"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/tests/pages/marketplace.page.ts:searchAndNavigate:100",
+      "name": "searchAndNavigate",
+      "startLine": 100,
+      "endLine": 104,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "first",
+          "resolved": false,
+          "confidence": 0,
+          "line": 101
+        },
+        {
+          "target": "getSearchInput",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 101,
+          "resolvedId": "src/tests/pages/marketplace.page.ts:getSearchInput:39"
+        },
+        {
+          "target": "page",
+          "resolved": false,
+          "confidence": 0,
+          "line": 101
+        },
+        {
+          "target": "fill",
+          "resolved": false,
+          "confidence": 0,
+          "line": 102
+        },
+        {
+          "target": "query",
+          "resolved": false,
+          "confidence": 0,
+          "line": 102
+        },
+        {
+          "target": "press",
+          "resolved": false,
+          "confidence": 0,
+          "line": 103
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/tests/pages/marketplace.page.ts:waitForSearchResults:106",
+      "name": "waitForSearchResults",
+      "startLine": 106,
+      "endLine": 108,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "waitForURL",
+          "resolved": false,
+          "confidence": 0,
+          "line": 107
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/tests/pages/marketplace.page.ts:getFirstFeaturedAgent:110",
+      "name": "getFirstFeaturedAgent",
+      "startLine": 110,
+      "endLine": 113,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "getSelectors",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 111,
+          "resolvedId": "src/tests/utils/selectors.ts:getSelectors:3"
+        },
+        {
+          "target": "page",
+          "resolved": false,
+          "confidence": 0,
+          "line": 111
+        },
+        {
+          "target": "first",
+          "resolved": false,
+          "confidence": 0,
+          "line": 112
+        },
+        {
+          "target": "getId",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 112,
+          "resolvedId": "src/tests/utils/selectors.ts:getId:48"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/tests/pages/marketplace.page.ts:getFirstTopAgent:115",
+      "name": "getFirstTopAgent",
+      "startLine": 115,
+      "endLine": 117,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "first",
+          "resolved": false,
+          "confidence": 0,
+          "line": 116
+        },
+        {
+          "target": "locator",
+          "resolved": false,
+          "confidence": 0,
+          "line": 116
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/tests/pages/marketplace.page.ts:getFirstCreatorProfile:119",
+      "name": "getFirstCreatorProfile",
+      "startLine": 119,
+      "endLine": 122,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "getSelectors",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 120,
+          "resolvedId": "src/tests/utils/selectors.ts:getSelectors:3"
+        },
+        {
+          "target": "page",
+          "resolved": false,
+          "confidence": 0,
+          "line": 120
+        },
+        {
+          "target": "first",
+          "resolved": false,
+          "confidence": 0,
+          "line": 121
+        },
+        {
+          "target": "getId",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 121,
+          "resolvedId": "src/tests/utils/selectors.ts:getId:48"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/tests/pages/marketplace.page.ts:getSearchResultsCount:124",
+      "name": "getSearchResultsCount",
+      "startLine": 124,
+      "endLine": 128,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "getSelectors",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 125,
+          "resolvedId": "src/tests/utils/selectors.ts:getSelectors:3"
+        },
+        {
+          "target": "page",
+          "resolved": false,
+          "confidence": 0,
+          "line": 125
+        },
+        {
+          "target": "getId",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 126,
+          "resolvedId": "src/tests/utils/selectors.ts:getId:48"
+        },
+        {
+          "target": "count",
+          "resolved": false,
+          "confidence": 0,
+          "line": 127
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

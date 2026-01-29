@@ -1,0 +1,1794 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.204Z",
+  "checksum": "ec53d462cbdb6c69",
+  "file": "backend/data/credit_refund_test.py",
+  "functions": [
+    {
+      "id": "backend/data/credit_refund_test.py:setup_test_user_with_topup:26",
+      "name": "setup_test_user_with_topup",
+      "startLine": 26,
+      "endLine": 66,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "delete_many",
+          "resolved": false,
+          "confidence": 0,
+          "line": 29
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 29
+        },
+        {
+          "target": "delete_many",
+          "resolved": false,
+          "confidence": 0,
+          "line": 32
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 32
+        },
+        {
+          "target": "delete_many",
+          "resolved": false,
+          "confidence": 0,
+          "line": 33
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 33
+        },
+        {
+          "target": "delete_many",
+          "resolved": false,
+          "confidence": 0,
+          "line": 34
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 34
+        },
+        {
+          "target": "create",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 37,
+          "resolvedId": "backend/integrations/creds_manager.py:create:68"
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 37
+        },
+        {
+          "target": "create",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 46,
+          "resolvedId": "backend/integrations/creds_manager.py:create:68"
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 46
+        },
+        {
+          "target": "create",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 54,
+          "resolvedId": "backend/integrations/creds_manager.py:create:68"
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 54
+        },
+        {
+          "target": "SafeJson",
+          "resolved": false,
+          "confidence": 0,
+          "line": 62
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "prisma",
+          "operation": "write",
+          "line": 37,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "write",
+          "line": 46,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "write",
+          "line": 54,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/data/credit_refund_test.py:cleanup_test_user:69",
+      "name": "cleanup_test_user",
+      "startLine": 69,
+      "endLine": 76,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "delete_many",
+          "resolved": false,
+          "confidence": 0,
+          "line": 71
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 71
+        },
+        {
+          "target": "delete_many",
+          "resolved": false,
+          "confidence": 0,
+          "line": 74
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 74
+        },
+        {
+          "target": "delete_many",
+          "resolved": false,
+          "confidence": 0,
+          "line": 75
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 75
+        },
+        {
+          "target": "delete_many",
+          "resolved": false,
+          "confidence": 0,
+          "line": 76
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 76
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/credit_refund_test.py:test_deduct_credits_atomic:80",
+      "name": "test_deduct_credits_atomic",
+      "startLine": 80,
+      "endLine": 143,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "setup_test_user_with_topup",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 82,
+          "resolvedId": "backend/data/credit_refund_test.py:setup_test_user_with_topup:26"
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 86
+        },
+        {
+          "target": "int",
+          "resolved": false,
+          "confidence": 0,
+          "line": 92
+        },
+        {
+          "target": "timestamp",
+          "resolved": false,
+          "confidence": 0,
+          "line": 92
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 92
+        },
+        {
+          "target": "create",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 95,
+          "resolvedId": "backend/integrations/creds_manager.py:create:68"
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 95
+        },
+        {
+          "target": "deduct_credits",
+          "resolved": false,
+          "confidence": 0,
+          "line": 105
+        },
+        {
+          "target": "refund",
+          "resolved": false,
+          "confidence": 0,
+          "line": 105
+        },
+        {
+          "target": "find_unique",
+          "resolved": false,
+          "confidence": 0,
+          "line": 108
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 108
+        },
+        {
+          "target": "find_first",
+          "resolved": false,
+          "confidence": 0,
+          "line": 117
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 117
+        },
+        {
+          "target": "find_first",
+          "resolved": false,
+          "confidence": 0,
+          "line": 130
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 130
+        },
+        {
+          "target": "cleanup_test_user",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 143,
+          "resolvedId": "backend/data/credit_refund_test.py:cleanup_test_user:69"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "prisma",
+          "operation": "write",
+          "line": 95,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "read",
+          "line": 108,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "read",
+          "line": 117,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "read",
+          "line": 130,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/data/credit_refund_test.py:test_deduct_credits_user_not_found:147",
+      "name": "test_deduct_credits_user_not_found",
+      "startLine": 147,
+      "endLine": 160,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 150
+        },
+        {
+          "target": "int",
+          "resolved": false,
+          "confidence": 0,
+          "line": 156
+        },
+        {
+          "target": "timestamp",
+          "resolved": false,
+          "confidence": 0,
+          "line": 156
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 156
+        },
+        {
+          "target": "raises",
+          "resolved": false,
+          "confidence": 0,
+          "line": 159
+        },
+        {
+          "target": "deduct_credits",
+          "resolved": false,
+          "confidence": 0,
+          "line": 160
+        },
+        {
+          "target": "refund",
+          "resolved": false,
+          "confidence": 0,
+          "line": 160
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/credit_refund_test.py:test_handle_dispute_with_sufficient_balance:167",
+      "name": "test_handle_dispute_with_sufficient_balance",
+      "startLine": 167,
+      "endLine": 213,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "setup_test_user_with_topup",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 171,
+          "resolvedId": "backend/data/credit_refund_test.py:setup_test_user_with_topup:26"
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 178
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 183
+        },
+        {
+          "target": "int",
+          "resolved": false,
+          "confidence": 0,
+          "line": 189
+        },
+        {
+          "target": "timestamp",
+          "resolved": false,
+          "confidence": 0,
+          "line": 189
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 189
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 192
+        },
+        {
+          "target": "handle_dispute",
+          "resolved": false,
+          "confidence": 0,
+          "line": 195
+        },
+        {
+          "target": "dispute",
+          "resolved": false,
+          "confidence": 0,
+          "line": 195
+        },
+        {
+          "target": "assert_called_once",
+          "resolved": false,
+          "confidence": 0,
+          "line": 198
+        },
+        {
+          "target": "assert_not_called",
+          "resolved": false,
+          "confidence": 0,
+          "line": 201
+        },
+        {
+          "target": "find_unique",
+          "resolved": false,
+          "confidence": 0,
+          "line": 204
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 204
+        },
+        {
+          "target": "cleanup_test_user",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 213,
+          "resolvedId": "backend/data/credit_refund_test.py:cleanup_test_user:69"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "prisma",
+          "operation": "read",
+          "line": 204,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/data/credit_refund_test.py:test_handle_dispute_with_insufficient_balance:220",
+      "name": "test_handle_dispute_with_insufficient_balance",
+      "startLine": 220,
+      "endLine": 274,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "setup_test_user_with_topup",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 224,
+          "resolvedId": "backend/data/credit_refund_test.py:setup_test_user_with_topup:26"
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 234
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 241
+        },
+        {
+          "target": "AsyncMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 243
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 246
+        },
+        {
+          "target": "int",
+          "resolved": false,
+          "confidence": 0,
+          "line": 251
+        },
+        {
+          "target": "timestamp",
+          "resolved": false,
+          "confidence": 0,
+          "line": 251
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 251
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 254
+        },
+        {
+          "target": "handle_dispute",
+          "resolved": false,
+          "confidence": 0,
+          "line": 257
+        },
+        {
+          "target": "dispute",
+          "resolved": false,
+          "confidence": 0,
+          "line": 257
+        },
+        {
+          "target": "assert_not_called",
+          "resolved": false,
+          "confidence": 0,
+          "line": 260
+        },
+        {
+          "target": "assert_called_once",
+          "resolved": false,
+          "confidence": 0,
+          "line": 263
+        },
+        {
+          "target": "find_unique",
+          "resolved": false,
+          "confidence": 0,
+          "line": 266
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 266
+        },
+        {
+          "target": "cleanup_test_user",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 274,
+          "resolvedId": "backend/data/credit_refund_test.py:cleanup_test_user:69"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "prisma",
+          "operation": "read",
+          "line": 266,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/data/credit_refund_test.py:test_concurrent_refunds:278",
+      "name": "test_concurrent_refunds",
+      "startLine": 278,
+      "endLine": 372,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "setup_test_user_with_topup",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 282,
+          "resolvedId": "backend/data/credit_refund_test.py:setup_test_user_with_topup:26"
+        },
+        {
+          "target": "range",
+          "resolved": false,
+          "confidence": 0,
+          "line": 287
+        },
+        {
+          "target": "create",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 288,
+          "resolvedId": "backend/integrations/creds_manager.py:create:68"
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 288
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 296
+        },
+        {
+          "target": "req",
+          "resolved": false,
+          "confidence": 0,
+          "line": 296
+        },
+        {
+          "target": "gather",
+          "resolved": false,
+          "confidence": 0,
+          "line": 315
+        },
+        {
+          "target": "process_refund",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 316,
+          "resolvedId": "backend/data/credit_refund_test.py:process_refund:299"
+        },
+        {
+          "target": "i",
+          "resolved": false,
+          "confidence": 0,
+          "line": 316
+        },
+        {
+          "target": "range",
+          "resolved": false,
+          "confidence": 0,
+          "line": 316
+        },
+        {
+          "target": "all",
+          "resolved": false,
+          "confidence": 0,
+          "line": 320
+        },
+        {
+          "target": "find_unique",
+          "resolved": false,
+          "confidence": 0,
+          "line": 325
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 325
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 332
+        },
+        {
+          "target": "find_many",
+          "resolved": false,
+          "confidence": 0,
+          "line": 340
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 340
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 347
+        },
+        {
+          "target": "refund_txs",
+          "resolved": false,
+          "confidence": 0,
+          "line": 347
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 348
+        },
+        {
+          "target": "refund_txs",
+          "resolved": false,
+          "confidence": 0,
+          "line": 348
+        },
+        {
+          "target": "sorted",
+          "resolved": false,
+          "confidence": 0,
+          "line": 366
+        },
+        {
+          "target": "running_balances",
+          "resolved": false,
+          "confidence": 0,
+          "line": 366
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 368
+        },
+        {
+          "target": "sorted_balances",
+          "resolved": false,
+          "confidence": 0,
+          "line": 368
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 369
+        },
+        {
+          "target": "sorted_balances",
+          "resolved": false,
+          "confidence": 0,
+          "line": 369
+        },
+        {
+          "target": "cleanup_test_user",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 372,
+          "resolvedId": "backend/data/credit_refund_test.py:cleanup_test_user:69"
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 300
+        },
+        {
+          "target": "int",
+          "resolved": false,
+          "confidence": 0,
+          "line": 306
+        },
+        {
+          "target": "timestamp",
+          "resolved": false,
+          "confidence": 0,
+          "line": 306
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 306
+        },
+        {
+          "target": "deduct_credits",
+          "resolved": false,
+          "confidence": 0,
+          "line": 309
+        },
+        {
+          "target": "refund",
+          "resolved": false,
+          "confidence": 0,
+          "line": 309
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "prisma",
+          "operation": "write",
+          "line": 288,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "read",
+          "line": 325,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "read",
+          "line": 340,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/data/credit_refund_test.py:process_refund:299",
+      "name": "process_refund",
+      "startLine": 299,
+      "endLine": 312,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 300
+        },
+        {
+          "target": "int",
+          "resolved": false,
+          "confidence": 0,
+          "line": 306
+        },
+        {
+          "target": "timestamp",
+          "resolved": false,
+          "confidence": 0,
+          "line": 306
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 306
+        },
+        {
+          "target": "deduct_credits",
+          "resolved": false,
+          "confidence": 0,
+          "line": 309
+        },
+        {
+          "target": "refund",
+          "resolved": false,
+          "confidence": 0,
+          "line": 309
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/credit_refund_test.py:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 373,
+      "isEntryPoint": false,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "UserCredit",
+          "resolved": false,
+          "confidence": 0,
+          "line": 20
+        },
+        {
+          "target": "delete_many",
+          "resolved": false,
+          "confidence": 0,
+          "line": 29
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 29
+        },
+        {
+          "target": "delete_many",
+          "resolved": false,
+          "confidence": 0,
+          "line": 32
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 32
+        },
+        {
+          "target": "delete_many",
+          "resolved": false,
+          "confidence": 0,
+          "line": 33
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 33
+        },
+        {
+          "target": "delete_many",
+          "resolved": false,
+          "confidence": 0,
+          "line": 34
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 34
+        },
+        {
+          "target": "create",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 37,
+          "resolvedId": "backend/integrations/creds_manager.py:create:68"
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 37
+        },
+        {
+          "target": "create",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 46,
+          "resolvedId": "backend/integrations/creds_manager.py:create:68"
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 46
+        },
+        {
+          "target": "create",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 54,
+          "resolvedId": "backend/integrations/creds_manager.py:create:68"
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 54
+        },
+        {
+          "target": "SafeJson",
+          "resolved": false,
+          "confidence": 0,
+          "line": 62
+        },
+        {
+          "target": "delete_many",
+          "resolved": false,
+          "confidence": 0,
+          "line": 71
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 71
+        },
+        {
+          "target": "delete_many",
+          "resolved": false,
+          "confidence": 0,
+          "line": 74
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 74
+        },
+        {
+          "target": "delete_many",
+          "resolved": false,
+          "confidence": 0,
+          "line": 75
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 75
+        },
+        {
+          "target": "delete_many",
+          "resolved": false,
+          "confidence": 0,
+          "line": 76
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 76
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 79
+        },
+        {
+          "target": "setup_test_user_with_topup",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 82,
+          "resolvedId": "backend/data/credit_refund_test.py:setup_test_user_with_topup:26"
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 86
+        },
+        {
+          "target": "int",
+          "resolved": false,
+          "confidence": 0,
+          "line": 92
+        },
+        {
+          "target": "timestamp",
+          "resolved": false,
+          "confidence": 0,
+          "line": 92
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 92
+        },
+        {
+          "target": "create",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 95,
+          "resolvedId": "backend/integrations/creds_manager.py:create:68"
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 95
+        },
+        {
+          "target": "deduct_credits",
+          "resolved": false,
+          "confidence": 0,
+          "line": 105
+        },
+        {
+          "target": "refund",
+          "resolved": false,
+          "confidence": 0,
+          "line": 105
+        },
+        {
+          "target": "find_unique",
+          "resolved": false,
+          "confidence": 0,
+          "line": 108
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 108
+        },
+        {
+          "target": "find_first",
+          "resolved": false,
+          "confidence": 0,
+          "line": 117
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 117
+        },
+        {
+          "target": "find_first",
+          "resolved": false,
+          "confidence": 0,
+          "line": 130
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 130
+        },
+        {
+          "target": "cleanup_test_user",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 143,
+          "resolvedId": "backend/data/credit_refund_test.py:cleanup_test_user:69"
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 146
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 150
+        },
+        {
+          "target": "int",
+          "resolved": false,
+          "confidence": 0,
+          "line": 156
+        },
+        {
+          "target": "timestamp",
+          "resolved": false,
+          "confidence": 0,
+          "line": 156
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 156
+        },
+        {
+          "target": "raises",
+          "resolved": false,
+          "confidence": 0,
+          "line": 159
+        },
+        {
+          "target": "deduct_credits",
+          "resolved": false,
+          "confidence": 0,
+          "line": 160
+        },
+        {
+          "target": "refund",
+          "resolved": false,
+          "confidence": 0,
+          "line": 160
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 163
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 164,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 165,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 166,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "setup_test_user_with_topup",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 171,
+          "resolvedId": "backend/data/credit_refund_test.py:setup_test_user_with_topup:26"
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 178
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 183
+        },
+        {
+          "target": "int",
+          "resolved": false,
+          "confidence": 0,
+          "line": 189
+        },
+        {
+          "target": "timestamp",
+          "resolved": false,
+          "confidence": 0,
+          "line": 189
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 189
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 192
+        },
+        {
+          "target": "handle_dispute",
+          "resolved": false,
+          "confidence": 0,
+          "line": 195
+        },
+        {
+          "target": "dispute",
+          "resolved": false,
+          "confidence": 0,
+          "line": 195
+        },
+        {
+          "target": "assert_called_once",
+          "resolved": false,
+          "confidence": 0,
+          "line": 198
+        },
+        {
+          "target": "assert_not_called",
+          "resolved": false,
+          "confidence": 0,
+          "line": 201
+        },
+        {
+          "target": "find_unique",
+          "resolved": false,
+          "confidence": 0,
+          "line": 204
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 204
+        },
+        {
+          "target": "cleanup_test_user",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 213,
+          "resolvedId": "backend/data/credit_refund_test.py:cleanup_test_user:69"
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 216
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 217,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 218,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 219,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "setup_test_user_with_topup",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 224,
+          "resolvedId": "backend/data/credit_refund_test.py:setup_test_user_with_topup:26"
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 234
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 241
+        },
+        {
+          "target": "AsyncMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 243
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 246
+        },
+        {
+          "target": "int",
+          "resolved": false,
+          "confidence": 0,
+          "line": 251
+        },
+        {
+          "target": "timestamp",
+          "resolved": false,
+          "confidence": 0,
+          "line": 251
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 251
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 254
+        },
+        {
+          "target": "handle_dispute",
+          "resolved": false,
+          "confidence": 0,
+          "line": 257
+        },
+        {
+          "target": "dispute",
+          "resolved": false,
+          "confidence": 0,
+          "line": 257
+        },
+        {
+          "target": "assert_not_called",
+          "resolved": false,
+          "confidence": 0,
+          "line": 260
+        },
+        {
+          "target": "assert_called_once",
+          "resolved": false,
+          "confidence": 0,
+          "line": 263
+        },
+        {
+          "target": "find_unique",
+          "resolved": false,
+          "confidence": 0,
+          "line": 266
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 266
+        },
+        {
+          "target": "cleanup_test_user",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 274,
+          "resolvedId": "backend/data/credit_refund_test.py:cleanup_test_user:69"
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 277
+        },
+        {
+          "target": "setup_test_user_with_topup",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 282,
+          "resolvedId": "backend/data/credit_refund_test.py:setup_test_user_with_topup:26"
+        },
+        {
+          "target": "range",
+          "resolved": false,
+          "confidence": 0,
+          "line": 287
+        },
+        {
+          "target": "create",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 288,
+          "resolvedId": "backend/integrations/creds_manager.py:create:68"
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 288
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 296
+        },
+        {
+          "target": "req",
+          "resolved": false,
+          "confidence": 0,
+          "line": 296
+        },
+        {
+          "target": "gather",
+          "resolved": false,
+          "confidence": 0,
+          "line": 315
+        },
+        {
+          "target": "process_refund",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 316,
+          "resolvedId": "backend/data/credit_refund_test.py:process_refund:299"
+        },
+        {
+          "target": "i",
+          "resolved": false,
+          "confidence": 0,
+          "line": 316
+        },
+        {
+          "target": "range",
+          "resolved": false,
+          "confidence": 0,
+          "line": 316
+        },
+        {
+          "target": "all",
+          "resolved": false,
+          "confidence": 0,
+          "line": 320
+        },
+        {
+          "target": "find_unique",
+          "resolved": false,
+          "confidence": 0,
+          "line": 325
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 325
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 332
+        },
+        {
+          "target": "find_many",
+          "resolved": false,
+          "confidence": 0,
+          "line": 340
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 340
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 347
+        },
+        {
+          "target": "refund_txs",
+          "resolved": false,
+          "confidence": 0,
+          "line": 347
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 348
+        },
+        {
+          "target": "refund_txs",
+          "resolved": false,
+          "confidence": 0,
+          "line": 348
+        },
+        {
+          "target": "sorted",
+          "resolved": false,
+          "confidence": 0,
+          "line": 366
+        },
+        {
+          "target": "running_balances",
+          "resolved": false,
+          "confidence": 0,
+          "line": 366
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 368
+        },
+        {
+          "target": "sorted_balances",
+          "resolved": false,
+          "confidence": 0,
+          "line": 368
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 369
+        },
+        {
+          "target": "sorted_balances",
+          "resolved": false,
+          "confidence": 0,
+          "line": 369
+        },
+        {
+          "target": "cleanup_test_user",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 372,
+          "resolvedId": "backend/data/credit_refund_test.py:cleanup_test_user:69"
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 300
+        },
+        {
+          "target": "int",
+          "resolved": false,
+          "confidence": 0,
+          "line": 306
+        },
+        {
+          "target": "timestamp",
+          "resolved": false,
+          "confidence": 0,
+          "line": 306
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 306
+        },
+        {
+          "target": "deduct_credits",
+          "resolved": false,
+          "confidence": 0,
+          "line": 309
+        },
+        {
+          "target": "refund",
+          "resolved": false,
+          "confidence": 0,
+          "line": 309
+        },
+        {
+          "target": "UserCredit",
+          "resolved": false,
+          "confidence": 0,
+          "line": 20
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 79
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 146
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 163
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 164,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 165,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 166,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 216
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 217,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 218,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 219,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 277
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "prisma",
+          "operation": "write",
+          "line": 37,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "write",
+          "line": 46,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "write",
+          "line": 54,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "write",
+          "line": 95,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "read",
+          "line": 108,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "read",
+          "line": 117,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "read",
+          "line": 130,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "read",
+          "line": 204,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "read",
+          "line": 266,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "write",
+          "line": 288,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "read",
+          "line": 325,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "read",
+          "line": 340,
+          "fields": []
+        }
+      ]
+    }
+  ]
+}

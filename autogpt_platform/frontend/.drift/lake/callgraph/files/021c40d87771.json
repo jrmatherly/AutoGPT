@@ -1,0 +1,699 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:19.988Z",
+  "checksum": "bf5e6f2e1b01fce7",
+  "file": "src/tests/marketplace-agent.spec.ts",
+  "functions": [
+    {
+      "id": "src/tests/marketplace-agent.spec.ts:escapeRegExp:8",
+      "name": "escapeRegExp",
+      "startLine": 8,
+      "endLine": 10,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "replace",
+          "resolved": false,
+          "confidence": 0,
+          "line": 9
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/tests/marketplace-agent.spec.ts:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 121,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "replace",
+          "resolved": false,
+          "confidence": 0,
+          "line": 9
+        },
+        {
+          "target": "describe",
+          "resolved": false,
+          "confidence": 0,
+          "line": 12
+        },
+        {
+          "target": "test",
+          "resolved": false,
+          "confidence": 0,
+          "line": 13
+        },
+        {
+          "target": "MarketplacePage",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 14,
+          "resolvedId": "src/app/(platform)/marketplace/page.tsx:MarketplacePage:53"
+        },
+        {
+          "target": "goto",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 16,
+          "resolvedId": "src/tests/pages/marketplace.page.ts:goto:10"
+        },
+        {
+          "target": "page",
+          "resolved": false,
+          "confidence": 0,
+          "line": 16
+        },
+        {
+          "target": "hasUrl",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 17,
+          "resolvedId": "src/tests/utils/assertion.ts:hasUrl:23"
+        },
+        {
+          "target": "page",
+          "resolved": false,
+          "confidence": 0,
+          "line": 17
+        },
+        {
+          "target": "getFirstTopAgent",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 19,
+          "resolvedId": "src/tests/pages/marketplace.page.ts:getFirstTopAgent:115"
+        },
+        {
+          "target": "click",
+          "resolved": false,
+          "confidence": 0,
+          "line": 20
+        },
+        {
+          "target": "waitForURL",
+          "resolved": false,
+          "confidence": 0,
+          "line": 22
+        },
+        {
+          "target": "matchesUrl",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 23,
+          "resolvedId": "src/tests/utils/assertion.ts:matchesUrl:52"
+        },
+        {
+          "target": "page",
+          "resolved": false,
+          "confidence": 0,
+          "line": 23
+        },
+        {
+          "target": "test",
+          "resolved": false,
+          "confidence": 0,
+          "line": 26
+        },
+        {
+          "target": "LoginPage",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 27,
+          "resolvedId": "src/app/(platform)/login/page.tsx:LoginPage:16"
+        },
+        {
+          "target": "MarketplacePage",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 28,
+          "resolvedId": "src/app/(platform)/marketplace/page.tsx:MarketplacePage:53"
+        },
+        {
+          "target": "goto",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 30,
+          "resolvedId": "src/tests/pages/marketplace.page.ts:goto:10"
+        },
+        {
+          "target": "getTestUserWithLibraryAgents",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 31,
+          "resolvedId": "src/tests/credentials/index.ts:getTestUserWithLibraryAgents:7"
+        },
+        {
+          "target": "login",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 32,
+          "resolvedId": "src/tests/pages/login.page.ts:login:10"
+        },
+        {
+          "target": "email",
+          "resolved": false,
+          "confidence": 0,
+          "line": 32
+        },
+        {
+          "target": "password",
+          "resolved": false,
+          "confidence": 0,
+          "line": 32
+        },
+        {
+          "target": "hasUrl",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 33,
+          "resolvedId": "src/tests/utils/assertion.ts:hasUrl:23"
+        },
+        {
+          "target": "page",
+          "resolved": false,
+          "confidence": 0,
+          "line": 33
+        },
+        {
+          "target": "goto",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 34,
+          "resolvedId": "src/tests/pages/marketplace.page.ts:goto:10"
+        },
+        {
+          "target": "page",
+          "resolved": false,
+          "confidence": 0,
+          "line": 34
+        },
+        {
+          "target": "hasUrl",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 35,
+          "resolvedId": "src/tests/utils/assertion.ts:hasUrl:23"
+        },
+        {
+          "target": "page",
+          "resolved": false,
+          "confidence": 0,
+          "line": 35
+        },
+        {
+          "target": "getFirstTopAgent",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 37,
+          "resolvedId": "src/tests/pages/marketplace.page.ts:getFirstTopAgent:115"
+        },
+        {
+          "target": "click",
+          "resolved": false,
+          "confidence": 0,
+          "line": 38
+        },
+        {
+          "target": "waitForURL",
+          "resolved": false,
+          "confidence": 0,
+          "line": 40
+        },
+        {
+          "target": "matchesUrl",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 41,
+          "resolvedId": "src/tests/utils/assertion.ts:matchesUrl:52"
+        },
+        {
+          "target": "page",
+          "resolved": false,
+          "confidence": 0,
+          "line": 41
+        },
+        {
+          "target": "test",
+          "resolved": false,
+          "confidence": 0,
+          "line": 44
+        },
+        {
+          "target": "getSelectors",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 45,
+          "resolvedId": "src/tests/utils/selectors.ts:getSelectors:3"
+        },
+        {
+          "target": "page",
+          "resolved": false,
+          "confidence": 0,
+          "line": 45
+        },
+        {
+          "target": "MarketplacePage",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 47,
+          "resolvedId": "src/app/(platform)/marketplace/page.tsx:MarketplacePage:53"
+        },
+        {
+          "target": "goto",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 48,
+          "resolvedId": "src/tests/pages/marketplace.page.ts:goto:10"
+        },
+        {
+          "target": "page",
+          "resolved": false,
+          "confidence": 0,
+          "line": 48
+        },
+        {
+          "target": "getFirstTopAgent",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 50,
+          "resolvedId": "src/tests/pages/marketplace.page.ts:getFirstTopAgent:115"
+        },
+        {
+          "target": "click",
+          "resolved": false,
+          "confidence": 0,
+          "line": 51
+        },
+        {
+          "target": "waitForURL",
+          "resolved": false,
+          "confidence": 0,
+          "line": 52
+        },
+        {
+          "target": "getId",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 54,
+          "resolvedId": "src/tests/utils/selectors.ts:getId:48"
+        },
+        {
+          "target": "isVisible",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 55,
+          "resolvedId": "src/tests/utils/assertion.ts:isVisible:3"
+        },
+        {
+          "target": "agentTitle",
+          "resolved": false,
+          "confidence": 0,
+          "line": 55
+        },
+        {
+          "target": "getId",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 57,
+          "resolvedId": "src/tests/utils/selectors.ts:getId:48"
+        },
+        {
+          "target": "isVisible",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 58,
+          "resolvedId": "src/tests/utils/assertion.ts:isVisible:3"
+        },
+        {
+          "target": "agentDescription",
+          "resolved": false,
+          "confidence": 0,
+          "line": 58
+        },
+        {
+          "target": "getId",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 60,
+          "resolvedId": "src/tests/utils/selectors.ts:getId:48"
+        },
+        {
+          "target": "isVisible",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 61,
+          "resolvedId": "src/tests/utils/assertion.ts:isVisible:3"
+        },
+        {
+          "target": "creatorInfo",
+          "resolved": false,
+          "confidence": 0,
+          "line": 61
+        },
+        {
+          "target": "test",
+          "resolved": false,
+          "confidence": 0,
+          "line": 64
+        },
+        {
+          "target": "getSelectors",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 65,
+          "resolvedId": "src/tests/utils/selectors.ts:getSelectors:3"
+        },
+        {
+          "target": "page",
+          "resolved": false,
+          "confidence": 0,
+          "line": 65
+        },
+        {
+          "target": "MarketplacePage",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 67,
+          "resolvedId": "src/app/(platform)/marketplace/page.tsx:MarketplacePage:53"
+        },
+        {
+          "target": "goto",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 68,
+          "resolvedId": "src/tests/pages/marketplace.page.ts:goto:10"
+        },
+        {
+          "target": "page",
+          "resolved": false,
+          "confidence": 0,
+          "line": 68
+        },
+        {
+          "target": "getFirstTopAgent",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 70,
+          "resolvedId": "src/tests/pages/marketplace.page.ts:getFirstTopAgent:115"
+        },
+        {
+          "target": "click",
+          "resolved": false,
+          "confidence": 0,
+          "line": 71
+        },
+        {
+          "target": "waitForURL",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        },
+        {
+          "target": "getId",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 74,
+          "resolvedId": "src/tests/utils/selectors.ts:getId:48"
+        },
+        {
+          "target": "isVisible",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 75,
+          "resolvedId": "src/tests/utils/assertion.ts:isVisible:3"
+        },
+        {
+          "target": "downloadButton",
+          "resolved": false,
+          "confidence": 0,
+          "line": 75
+        },
+        {
+          "target": "click",
+          "resolved": false,
+          "confidence": 0,
+          "line": 76
+        },
+        {
+          "target": "getText",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 78,
+          "resolvedId": "src/tests/utils/selectors.ts:getText:28"
+        },
+        {
+          "target": "isVisible",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 81,
+          "resolvedId": "src/tests/utils/assertion.ts:isVisible:3"
+        },
+        {
+          "target": "downloadSuccessMessage",
+          "resolved": false,
+          "confidence": 0,
+          "line": 81
+        },
+        {
+          "target": "test",
+          "resolved": false,
+          "confidence": 0,
+          "line": 84
+        },
+        {
+          "target": "getSelectors",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 87,
+          "resolvedId": "src/tests/utils/selectors.ts:getSelectors:3"
+        },
+        {
+          "target": "page",
+          "resolved": false,
+          "confidence": 0,
+          "line": 87
+        },
+        {
+          "target": "LoginPage",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 89,
+          "resolvedId": "src/app/(platform)/login/page.tsx:LoginPage:16"
+        },
+        {
+          "target": "MarketplacePage",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 90,
+          "resolvedId": "src/app/(platform)/marketplace/page.tsx:MarketplacePage:53"
+        },
+        {
+          "target": "goto",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 92,
+          "resolvedId": "src/tests/pages/marketplace.page.ts:goto:10"
+        },
+        {
+          "target": "getTestUserWithLibraryAgents",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 93,
+          "resolvedId": "src/tests/credentials/index.ts:getTestUserWithLibraryAgents:7"
+        },
+        {
+          "target": "login",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 94,
+          "resolvedId": "src/tests/pages/login.page.ts:login:10"
+        },
+        {
+          "target": "email",
+          "resolved": false,
+          "confidence": 0,
+          "line": 94
+        },
+        {
+          "target": "password",
+          "resolved": false,
+          "confidence": 0,
+          "line": 94
+        },
+        {
+          "target": "hasUrl",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 95,
+          "resolvedId": "src/tests/utils/assertion.ts:hasUrl:23"
+        },
+        {
+          "target": "page",
+          "resolved": false,
+          "confidence": 0,
+          "line": 95
+        },
+        {
+          "target": "goto",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 96,
+          "resolvedId": "src/tests/pages/marketplace.page.ts:goto:10"
+        },
+        {
+          "target": "page",
+          "resolved": false,
+          "confidence": 0,
+          "line": 96
+        },
+        {
+          "target": "getFirstTopAgent",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 98,
+          "resolvedId": "src/tests/pages/marketplace.page.ts:getFirstTopAgent:115"
+        },
+        {
+          "target": "click",
+          "resolved": false,
+          "confidence": 0,
+          "line": 99
+        },
+        {
+          "target": "waitForURL",
+          "resolved": false,
+          "confidence": 0,
+          "line": 100
+        },
+        {
+          "target": "textContent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 102
+        },
+        {
+          "target": "getId",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 102,
+          "resolvedId": "src/tests/utils/selectors.ts:getId:48"
+        },
+        {
+          "target": "trim",
+          "resolved": false,
+          "confidence": 0,
+          "line": 103
+        },
+        {
+          "target": "Error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 104,
+          "resolvedId": "src/app/error.tsx:Error:8"
+        },
+        {
+          "target": "trim",
+          "resolved": false,
+          "confidence": 0,
+          "line": 106
+        },
+        {
+          "target": "getId",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 108,
+          "resolvedId": "src/tests/utils/selectors.ts:getId:48"
+        },
+        {
+          "target": "isVisible",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 109,
+          "resolvedId": "src/tests/utils/assertion.ts:isVisible:3"
+        },
+        {
+          "target": "addToLibraryButton",
+          "resolved": false,
+          "confidence": 0,
+          "line": 109
+        },
+        {
+          "target": "click",
+          "resolved": false,
+          "confidence": 0,
+          "line": 110
+        },
+        {
+          "target": "getText",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 112,
+          "resolvedId": "src/tests/utils/selectors.ts:getText:28"
+        },
+        {
+          "target": "isVisible",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 113,
+          "resolvedId": "src/tests/utils/assertion.ts:isVisible:3"
+        },
+        {
+          "target": "addSuccessMessage",
+          "resolved": false,
+          "confidence": 0,
+          "line": 113
+        },
+        {
+          "target": "waitForURL",
+          "resolved": false,
+          "confidence": 0,
+          "line": 115
+        },
+        {
+          "target": "toHaveTitle",
+          "resolved": false,
+          "confidence": 0,
+          "line": 116
+        },
+        {
+          "target": "expect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 116
+        },
+        {
+          "target": "page",
+          "resolved": false,
+          "confidence": 0,
+          "line": 116
+        },
+        {
+          "target": "RegExp",
+          "resolved": false,
+          "confidence": 0,
+          "line": 117
+        },
+        {
+          "target": "escapeRegExp",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 117,
+          "resolvedId": "src/tests/marketplace-agent.spec.ts:escapeRegExp:8"
+        },
+        {
+          "target": "agentName",
+          "resolved": false,
+          "confidence": 0,
+          "line": 117
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

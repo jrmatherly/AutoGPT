@@ -1,0 +1,84 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.028Z",
+  "checksum": "b62c7f536c30e750",
+  "file": "src/app/(platform)/auth/confirm/route.ts",
+  "functions": [
+    {
+      "id": "src/app/(platform)/auth/confirm/route.ts:GET:8",
+      "name": "GET",
+      "startLine": 8,
+      "endLine": 33,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "URL",
+          "resolved": false,
+          "confidence": 0,
+          "line": 9
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 10,
+          "resolvedId": "src/services/storage/local-storage.ts:get:16"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 11,
+          "resolvedId": "src/services/storage/local-storage.ts:get:16"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 12,
+          "resolvedId": "src/services/storage/local-storage.ts:get:16"
+        },
+        {
+          "target": "getServerSupabase",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 15,
+          "resolvedId": "src/lib/supabase/server/getServerSupabase.ts:getServerSupabase:7"
+        },
+        {
+          "target": "redirect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 18
+        },
+        {
+          "target": "verifyOtp",
+          "resolved": false,
+          "confidence": 0,
+          "line": 21
+        },
+        {
+          "target": "redirect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 27
+        },
+        {
+          "target": "next",
+          "resolved": false,
+          "confidence": 0,
+          "line": 27
+        },
+        {
+          "target": "redirect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 32
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

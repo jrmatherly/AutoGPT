@@ -1,0 +1,225 @@
+{
+  "version": "1.0.0",
+  "category": "components",
+  "patterns": [
+    {
+      "id": "d4ce0a15c6e4e723",
+      "subcategory": "component-structure",
+      "name": "Component Structure Detector",
+      "description": "Learns component structure patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "components/component-structure",
+          "patternId": "components/component-structure/function_definition"
+        }
+      },
+      "confidence": {
+        "frequency": 0.05,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 2,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "backend/data/notifications.py",
+          "line": 252,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/data/notifications.py",
+          "line": 325,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/executor/utils_test.py",
+          "line": 372,
+          "column": 20,
+          "isOutlier": false,
+          "confidence": 1
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:30:16.815Z",
+        "lastSeen": "2026-01-29T06:30:16.815Z",
+        "source": "auto-detected",
+        "tags": [
+          "components",
+          "component-structure"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "011e01a54e623b9e",
+      "subcategory": "duplicate-detection",
+      "name": "Duplicate Detection Detector",
+      "description": "Learns duplicate component patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "components/duplicate-detection",
+          "patternId": "components/duplicate-detection/function_definition"
+        }
+      },
+      "confidence": {
+        "frequency": 0.03,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 2,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "backend/executor/utils_test.py",
+          "line": 372,
+          "column": 20,
+          "isOutlier": false,
+          "confidence": 0.9853846153846154
+        },
+        {
+          "file": "backend/util/cache_test.py",
+          "line": 315,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 1
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:30:16.815Z",
+        "lastSeen": "2026-01-29T06:30:16.815Z",
+        "source": "auto-detected",
+        "tags": [
+          "components",
+          "duplicate-detection"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "583506744a714915",
+      "subcategory": "composition",
+      "name": "Composition Detector",
+      "description": "Learns component composition patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "components/composition",
+          "patternId": "components/composition/function_definition"
+        }
+      },
+      "confidence": {
+        "frequency": 0.08,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 2,
+        "score": 0.945,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "backend/util/decorator.py",
+          "line": 53,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.945
+        },
+        {
+          "file": "backend/util/decorator.py",
+          "line": 132,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.945
+        },
+        {
+          "file": "backend/util/decorator.py",
+          "line": 195,
+          "column": 19,
+          "isOutlier": false,
+          "confidence": 0.945
+        },
+        {
+          "file": "backend/util/timezone_name.py",
+          "line": 69,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.945
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:30:16.815Z",
+        "lastSeen": "2026-01-29T06:30:16.815Z",
+        "source": "auto-detected",
+        "tags": [
+          "components",
+          "composition"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "d24105994841a4ad",
+      "subcategory": "composition",
+      "name": "Composition Detector",
+      "description": "Learns component composition patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "components/composition",
+          "patternId": "components/composition/function_call"
+        }
+      },
+      "confidence": {
+        "frequency": 0.04,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.83,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "backend/util/prompt_test.py",
+          "line": 24,
+          "column": 21,
+          "isOutlier": false,
+          "confidence": 0.83
+        },
+        {
+          "file": "backend/util/prompt_test.py",
+          "line": 35,
+          "column": 21,
+          "isOutlier": false,
+          "confidence": 0.83
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:30:16.815Z",
+        "lastSeen": "2026-01-29T06:30:16.815Z",
+        "source": "auto-detected",
+        "tags": [
+          "components",
+          "composition"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    }
+  ],
+  "lastUpdated": "2026-01-29T07:17:16.543Z",
+  "checksum": "13cd385d3f81a43e"
+}

@@ -1,0 +1,106 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.162Z",
+  "checksum": "54628894afe7d9a7",
+  "file": "backend/blocks/twitter/_auth.py",
+  "functions": [
+    {
+      "id": "backend/blocks/twitter/_auth.py:TwitterCredentialsField:29",
+      "name": "TwitterCredentialsField",
+      "startLine": 29,
+      "endLine": 40,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "CredentialsField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 36,
+          "resolvedId": "backend/data/model.py:CredentialsField:681"
+        },
+        {
+          "target": "set",
+          "resolved": false,
+          "confidence": 0,
+          "line": 38
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/twitter/_auth.py:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 61,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "Secrets",
+          "resolved": false,
+          "confidence": 0,
+          "line": 15
+        },
+        {
+          "target": "bool",
+          "resolved": false,
+          "confidence": 0,
+          "line": 16
+        },
+        {
+          "target": "CredentialsField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 36,
+          "resolvedId": "backend/data/model.py:CredentialsField:681"
+        },
+        {
+          "target": "set",
+          "resolved": false,
+          "confidence": 0,
+          "line": 38
+        },
+        {
+          "target": "OAuth2Credentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 43
+        },
+        {
+          "target": "Secrets",
+          "resolved": false,
+          "confidence": 0,
+          "line": 15
+        },
+        {
+          "target": "bool",
+          "resolved": false,
+          "confidence": 0,
+          "line": 16
+        },
+        {
+          "target": "OAuth2Credentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 43
+        },
+        {
+          "target": "SecretStr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 46
+        },
+        {
+          "target": "SecretStr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 47
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

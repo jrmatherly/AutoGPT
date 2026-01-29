@@ -1,0 +1,950 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.222Z",
+  "checksum": "245fe244d408df98",
+  "file": "backend/data/organization_test.py",
+  "functions": [
+    {
+      "id": "backend/data/organization_test.py:ensure_test_users:30",
+      "name": "ensure_test_users",
+      "startLine": 30,
+      "endLine": 41,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "find_unique",
+          "resolved": false,
+          "confidence": 0,
+          "line": 33
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 33
+        },
+        {
+          "target": "create",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 35,
+          "resolvedId": "backend/integrations/creds_manager.py:create:68"
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 35
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "prisma",
+          "operation": "read",
+          "line": 33,
+          "fields": [
+            "id",
+            "user_id"
+          ]
+        },
+        {
+          "table": "prisma",
+          "operation": "write",
+          "line": 35,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/data/organization_test.py:cleanup_test_users:44",
+      "name": "cleanup_test_users",
+      "startLine": 44,
+      "endLine": 50,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "delete",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 48,
+          "resolvedId": "backend/integrations/creds_manager.py:delete:166"
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 48
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "prisma",
+          "operation": "delete",
+          "line": 48,
+          "fields": [
+            "id",
+            "user_id"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "backend/data/organization_test.py:cleanup_test_organizations:53",
+      "name": "cleanup_test_organizations",
+      "startLine": 53,
+      "endLine": 64,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "delete_many",
+          "resolved": false,
+          "confidence": 0,
+          "line": 56
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 56
+        },
+        {
+          "target": "delete_many",
+          "resolved": false,
+          "confidence": 0,
+          "line": 60
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 60
+        },
+        {
+          "target": "delete_many",
+          "resolved": false,
+          "confidence": 0,
+          "line": 64
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 64
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/organization_test.py:test_create_organization:68",
+      "name": "test_create_organization",
+      "startLine": 68,
+      "endLine": 85,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "cleanup_test_organizations",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 70,
+          "resolvedId": "backend/data/organization_test.py:cleanup_test_organizations:53"
+        },
+        {
+          "target": "ensure_test_users",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 71,
+          "resolvedId": "backend/data/organization_test.py:ensure_test_users:30"
+        },
+        {
+          "target": "OrganizationCreate",
+          "resolved": false,
+          "confidence": 0,
+          "line": 73
+        },
+        {
+          "target": "create_organization",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 79,
+          "resolvedId": "backend/data/organization.py:create_organization:55"
+        },
+        {
+          "target": "org_data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 79
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/organization_test.py:test_get_organization_by_slug:89",
+      "name": "test_get_organization_by_slug",
+      "startLine": 89,
+      "endLine": 94,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "get_organization_by_slug",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 91,
+          "resolvedId": "backend/data/organization.py:get_organization_by_slug:109"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/organization_test.py:test_owner_membership_created:98",
+      "name": "test_owner_membership_created",
+      "startLine": 98,
+      "endLine": 109,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "get_organization_by_slug",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 100,
+          "resolvedId": "backend/data/organization.py:get_organization_by_slug:109"
+        },
+        {
+          "target": "find_many",
+          "resolved": false,
+          "confidence": 0,
+          "line": 103
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 103
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 107
+        },
+        {
+          "target": "members",
+          "resolved": false,
+          "confidence": 0,
+          "line": 107
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "prisma",
+          "operation": "read",
+          "line": 103,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/data/organization_test.py:test_add_organization_member:113",
+      "name": "test_add_organization_member",
+      "startLine": 113,
+      "endLine": 128,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "get_organization_by_slug",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 115,
+          "resolvedId": "backend/data/organization.py:get_organization_by_slug:109"
+        },
+        {
+          "target": "OrganizationMemberCreate",
+          "resolved": false,
+          "confidence": 0,
+          "line": 118
+        },
+        {
+          "target": "add_organization_member",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 124,
+          "resolvedId": "backend/data/organization.py:add_organization_member:199"
+        },
+        {
+          "target": "member_data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 124
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/organization_test.py:test_update_member_role:132",
+      "name": "test_update_member_role",
+      "startLine": 132,
+      "endLine": 144,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "get_organization_by_slug",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 134,
+          "resolvedId": "backend/data/organization.py:get_organization_by_slug:109"
+        },
+        {
+          "target": "update_member_role",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 137,
+          "resolvedId": "backend/data/organization.py:update_member_role:238"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/organization_test.py:test_check_user_permission:148",
+      "name": "test_check_user_permission",
+      "startLine": 148,
+      "endLine": 169,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "get_organization_by_slug",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 150,
+          "resolvedId": "backend/data/organization.py:get_organization_by_slug:109"
+        },
+        {
+          "target": "check_user_permission",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 154,
+          "resolvedId": "backend/data/organization.py:check_user_permission:255"
+        },
+        {
+          "target": "check_user_permission",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 160,
+          "resolvedId": "backend/data/organization.py:check_user_permission:255"
+        },
+        {
+          "target": "check_user_permission",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 166,
+          "resolvedId": "backend/data/organization.py:check_user_permission:255"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/organization_test.py:test_get_user_organizations:173",
+      "name": "test_get_user_organizations",
+      "startLine": 173,
+      "endLine": 179,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "get_user_organizations",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 175,
+          "resolvedId": "backend/data/organization.py:get_user_organizations:163"
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 177
+        },
+        {
+          "target": "orgs",
+          "resolved": false,
+          "confidence": 0,
+          "line": 177
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/organization_test.py:test_create_and_accept_invitation:183",
+      "name": "test_create_and_accept_invitation",
+      "startLine": 183,
+      "endLine": 207,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "get_organization_by_slug",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 185,
+          "resolvedId": "backend/data/organization.py:get_organization_by_slug:109"
+        },
+        {
+          "target": "create_invitation",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 188,
+          "resolvedId": "backend/data/organization.py:create_invitation:284"
+        },
+        {
+          "target": "accept_invitation",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 200,
+          "resolvedId": "backend/data/organization.py:accept_invitation:345"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/organization_test.py:test_remove_organization_member:211",
+      "name": "test_remove_organization_member",
+      "startLine": 211,
+      "endLine": 224,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "get_organization_by_slug",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 213,
+          "resolvedId": "backend/data/organization.py:get_organization_by_slug:109"
+        },
+        {
+          "target": "remove_organization_member",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 217,
+          "resolvedId": "backend/data/organization.py:remove_organization_member:214"
+        },
+        {
+          "target": "check_user_permission",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 221,
+          "resolvedId": "backend/data/organization.py:check_user_permission:255"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/organization_test.py:test_cleanup:228",
+      "name": "test_cleanup",
+      "startLine": 228,
+      "endLine": 235,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "cleanup_test_organizations",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 230,
+          "resolvedId": "backend/data/organization_test.py:cleanup_test_organizations:53"
+        },
+        {
+          "target": "cleanup_test_users",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 231,
+          "resolvedId": "backend/data/organization_test.py:cleanup_test_users:44"
+        },
+        {
+          "target": "get_organization_by_slug",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 234,
+          "resolvedId": "backend/data/organization.py:get_organization_by_slug:109"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/organization_test.py:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 236,
+      "isEntryPoint": false,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "find_unique",
+          "resolved": false,
+          "confidence": 0,
+          "line": 33
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 33
+        },
+        {
+          "target": "create",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 35,
+          "resolvedId": "backend/integrations/creds_manager.py:create:68"
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 35
+        },
+        {
+          "target": "delete",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 48,
+          "resolvedId": "backend/integrations/creds_manager.py:delete:166"
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 48
+        },
+        {
+          "target": "delete_many",
+          "resolved": false,
+          "confidence": 0,
+          "line": 56
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 56
+        },
+        {
+          "target": "delete_many",
+          "resolved": false,
+          "confidence": 0,
+          "line": 60
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 60
+        },
+        {
+          "target": "delete_many",
+          "resolved": false,
+          "confidence": 0,
+          "line": 64
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 64
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 67
+        },
+        {
+          "target": "cleanup_test_organizations",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 70,
+          "resolvedId": "backend/data/organization_test.py:cleanup_test_organizations:53"
+        },
+        {
+          "target": "ensure_test_users",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 71,
+          "resolvedId": "backend/data/organization_test.py:ensure_test_users:30"
+        },
+        {
+          "target": "OrganizationCreate",
+          "resolved": false,
+          "confidence": 0,
+          "line": 73
+        },
+        {
+          "target": "create_organization",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 79,
+          "resolvedId": "backend/data/organization.py:create_organization:55"
+        },
+        {
+          "target": "org_data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 79
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 88
+        },
+        {
+          "target": "get_organization_by_slug",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 91,
+          "resolvedId": "backend/data/organization.py:get_organization_by_slug:109"
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 97
+        },
+        {
+          "target": "get_organization_by_slug",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 100,
+          "resolvedId": "backend/data/organization.py:get_organization_by_slug:109"
+        },
+        {
+          "target": "find_many",
+          "resolved": false,
+          "confidence": 0,
+          "line": 103
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 103
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 107
+        },
+        {
+          "target": "members",
+          "resolved": false,
+          "confidence": 0,
+          "line": 107
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 112
+        },
+        {
+          "target": "get_organization_by_slug",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 115,
+          "resolvedId": "backend/data/organization.py:get_organization_by_slug:109"
+        },
+        {
+          "target": "OrganizationMemberCreate",
+          "resolved": false,
+          "confidence": 0,
+          "line": 118
+        },
+        {
+          "target": "add_organization_member",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 124,
+          "resolvedId": "backend/data/organization.py:add_organization_member:199"
+        },
+        {
+          "target": "member_data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 124
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 131
+        },
+        {
+          "target": "get_organization_by_slug",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 134,
+          "resolvedId": "backend/data/organization.py:get_organization_by_slug:109"
+        },
+        {
+          "target": "update_member_role",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 137,
+          "resolvedId": "backend/data/organization.py:update_member_role:238"
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 147
+        },
+        {
+          "target": "get_organization_by_slug",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 150,
+          "resolvedId": "backend/data/organization.py:get_organization_by_slug:109"
+        },
+        {
+          "target": "check_user_permission",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 154,
+          "resolvedId": "backend/data/organization.py:check_user_permission:255"
+        },
+        {
+          "target": "check_user_permission",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 160,
+          "resolvedId": "backend/data/organization.py:check_user_permission:255"
+        },
+        {
+          "target": "check_user_permission",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 166,
+          "resolvedId": "backend/data/organization.py:check_user_permission:255"
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 172
+        },
+        {
+          "target": "get_user_organizations",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 175,
+          "resolvedId": "backend/data/organization.py:get_user_organizations:163"
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 177
+        },
+        {
+          "target": "orgs",
+          "resolved": false,
+          "confidence": 0,
+          "line": 177
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 182
+        },
+        {
+          "target": "get_organization_by_slug",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 185,
+          "resolvedId": "backend/data/organization.py:get_organization_by_slug:109"
+        },
+        {
+          "target": "create_invitation",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 188,
+          "resolvedId": "backend/data/organization.py:create_invitation:284"
+        },
+        {
+          "target": "accept_invitation",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 200,
+          "resolvedId": "backend/data/organization.py:accept_invitation:345"
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 210
+        },
+        {
+          "target": "get_organization_by_slug",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 213,
+          "resolvedId": "backend/data/organization.py:get_organization_by_slug:109"
+        },
+        {
+          "target": "remove_organization_member",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 217,
+          "resolvedId": "backend/data/organization.py:remove_organization_member:214"
+        },
+        {
+          "target": "check_user_permission",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 221,
+          "resolvedId": "backend/data/organization.py:check_user_permission:255"
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 227
+        },
+        {
+          "target": "cleanup_test_organizations",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 230,
+          "resolvedId": "backend/data/organization_test.py:cleanup_test_organizations:53"
+        },
+        {
+          "target": "cleanup_test_users",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 231,
+          "resolvedId": "backend/data/organization_test.py:cleanup_test_users:44"
+        },
+        {
+          "target": "get_organization_by_slug",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 234,
+          "resolvedId": "backend/data/organization.py:get_organization_by_slug:109"
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 67
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 88
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 97
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 112
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 131
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 147
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 172
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 182
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 210
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 227
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "prisma",
+          "operation": "read",
+          "line": 33,
+          "fields": [
+            "id",
+            "user_id"
+          ]
+        },
+        {
+          "table": "prisma",
+          "operation": "write",
+          "line": 35,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "delete",
+          "line": 48,
+          "fields": [
+            "id",
+            "user_id"
+          ]
+        },
+        {
+          "table": "prisma",
+          "operation": "read",
+          "line": 103,
+          "fields": []
+        }
+      ]
+    }
+  ]
+}

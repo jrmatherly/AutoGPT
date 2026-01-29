@@ -1,0 +1,174 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.111Z",
+  "checksum": "5300879a9ac1b28f",
+  "file": "src/components/renderers/InputRenderer/base/standard/widgets/GoogleDrivePicker/GoogleDrivePicketWidget.tsx",
+  "functions": [
+    {
+      "id": "src/components/renderers/InputRenderer/base/standard/widgets/GoogleDrivePicker/GoogleDrivePicketWidget.tsx:hasGoogleDrivePickerConfig:8",
+      "name": "hasGoogleDrivePickerConfig",
+      "startLine": 8,
+      "endLine": 16,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/renderers/InputRenderer/base/standard/widgets/GoogleDrivePicker/GoogleDrivePicketWidget.tsx:GoogleDrivePickerWidget:18",
+      "name": "GoogleDrivePickerWidget",
+      "startLine": 18,
+      "endLine": 55,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useNodeStore",
+          "resolved": false,
+          "confidence": 0,
+          "line": 23
+        },
+        {
+          "target": "find",
+          "resolved": false,
+          "confidence": 0,
+          "line": 24
+        },
+        {
+          "target": "getFieldErrorKey",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 28,
+          "resolvedId": "src/components/renderers/InputRenderer/utils/helpers.ts:getFieldErrorKey:1"
+        },
+        {
+          "target": "replace",
+          "resolved": false,
+          "confidence": 0,
+          "line": 31
+        },
+        {
+          "target": "replace",
+          "resolved": false,
+          "confidence": 0,
+          "line": 32
+        },
+        {
+          "target": "hasGoogleDrivePickerConfig",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 35,
+          "resolvedId": "src/components/renderers/InputRenderer/base/standard/widgets/GoogleDrivePicker/GoogleDrivePicketWidget.tsx:hasGoogleDrivePickerConfig:8"
+        },
+        {
+          "target": "schema",
+          "resolved": false,
+          "confidence": 0,
+          "line": 35
+        },
+        {
+          "target": "onChange",
+          "resolved": false,
+          "confidence": 0,
+          "line": 40
+        },
+        {
+          "target": "newValue",
+          "resolved": false,
+          "confidence": 0,
+          "line": 40
+        },
+        {
+          "target": "GoogleDrivePickerInput",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 44,
+          "resolvedId": "src/components/contextual/GoogleDrivePicker/GoogleDrivePickerInput.tsx:GoogleDrivePickerInput:18"
+        },
+        {
+          "target": "config",
+          "resolved": false,
+          "confidence": 0,
+          "line": 45
+        },
+        {
+          "target": "value",
+          "resolved": false,
+          "confidence": 0,
+          "line": 46
+        },
+        {
+          "target": "handleChange",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 47,
+          "resolvedId": "src/components/renderers/InputRenderer/base/standard/widgets/GoogleDrivePicker/GoogleDrivePicketWidget.tsx:handleChange:39"
+        },
+        {
+          "target": "fieldError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 48
+        },
+        {
+          "target": "cn",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 49,
+          "resolvedId": "src/components/renderers/InputRenderer/utils/rjsf-utils.ts:cn:4"
+        },
+        {
+          "target": "onChange",
+          "resolved": false,
+          "confidence": 0,
+          "line": 40
+        },
+        {
+          "target": "newValue",
+          "resolved": false,
+          "confidence": 0,
+          "line": 40
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/renderers/InputRenderer/base/standard/widgets/GoogleDrivePicker/GoogleDrivePicketWidget.tsx:handleChange:39",
+      "name": "handleChange",
+      "startLine": 39,
+      "endLine": 41,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "onChange",
+          "resolved": false,
+          "confidence": 0,
+          "line": 40
+        },
+        {
+          "target": "newValue",
+          "resolved": false,
+          "confidence": 0,
+          "line": 40
+        },
+        {
+          "target": "onChange",
+          "resolved": false,
+          "confidence": 0,
+          "line": 40
+        },
+        {
+          "target": "newValue",
+          "resolved": false,
+          "confidence": 0,
+          "line": 40
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

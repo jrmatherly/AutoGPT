@@ -1,0 +1,146 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.103Z",
+  "checksum": "1f102527d4948086",
+  "file": "src/services/storage/session-storage.ts",
+  "functions": [
+    {
+      "id": "src/services/storage/session-storage.ts:get:9",
+      "name": "get",
+      "startLine": 9,
+      "endLine": 19,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "isServerSide",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 10,
+          "resolvedId": "src/services/environment/index.ts:isServerSide:110"
+        },
+        {
+          "target": "captureException",
+          "resolved": false,
+          "confidence": 0,
+          "line": 11
+        },
+        {
+          "target": "Error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 11,
+          "resolvedId": "src/app/error.tsx:Error:8"
+        },
+        {
+          "target": "getItem",
+          "resolved": false,
+          "confidence": 0,
+          "line": 15
+        },
+        {
+          "target": "key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 15
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/services/storage/session-storage.ts:set:21",
+      "name": "set",
+      "startLine": 21,
+      "endLine": 27,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "isServerSide",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 22,
+          "resolvedId": "src/services/environment/index.ts:isServerSide:110"
+        },
+        {
+          "target": "captureException",
+          "resolved": false,
+          "confidence": 0,
+          "line": 23
+        },
+        {
+          "target": "Error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 23,
+          "resolvedId": "src/app/error.tsx:Error:8"
+        },
+        {
+          "target": "setItem",
+          "resolved": false,
+          "confidence": 0,
+          "line": 26
+        },
+        {
+          "target": "key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 26
+        },
+        {
+          "target": "value",
+          "resolved": false,
+          "confidence": 0,
+          "line": 26
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/services/storage/session-storage.ts:clean:29",
+      "name": "clean",
+      "startLine": 29,
+      "endLine": 35,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "isServerSide",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 30,
+          "resolvedId": "src/services/environment/index.ts:isServerSide:110"
+        },
+        {
+          "target": "captureException",
+          "resolved": false,
+          "confidence": 0,
+          "line": 31
+        },
+        {
+          "target": "Error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 31,
+          "resolvedId": "src/app/error.tsx:Error:8"
+        },
+        {
+          "target": "removeItem",
+          "resolved": false,
+          "confidence": 0,
+          "line": 34
+        },
+        {
+          "target": "key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 34
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

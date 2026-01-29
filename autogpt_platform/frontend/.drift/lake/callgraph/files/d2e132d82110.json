@@ -1,0 +1,574 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.189Z",
+  "checksum": "9ea34f8839fee079",
+  "file": "src/components/molecules/Table/useTable.ts",
+  "functions": [
+    {
+      "id": "src/components/molecules/Table/useTable.ts:useTable:11",
+      "name": "useTable",
+      "startLine": 11,
+      "endLine": 81,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "forEach",
+          "resolved": false,
+          "confidence": 0,
+          "line": 18
+        },
+        {
+          "target": "useState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 24
+        },
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 31
+        },
+        {
+          "target": "setRows",
+          "resolved": false,
+          "confidence": 0,
+          "line": 33
+        },
+        {
+          "target": "defaultValues",
+          "resolved": false,
+          "confidence": 0,
+          "line": 33
+        },
+        {
+          "target": "setRows",
+          "resolved": false,
+          "confidence": 0,
+          "line": 38
+        },
+        {
+          "target": "newRows",
+          "resolved": false,
+          "confidence": 0,
+          "line": 38
+        },
+        {
+          "target": "onChange",
+          "resolved": false,
+          "confidence": 0,
+          "line": 39
+        },
+        {
+          "target": "newRows",
+          "resolved": false,
+          "confidence": 0,
+          "line": 39
+        },
+        {
+          "target": "createEmptyRow",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 43,
+          "resolvedId": "src/components/molecules/Table/useTable.ts:createEmptyRow:16"
+        },
+        {
+          "target": "updateRows",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 44,
+          "resolvedId": "src/components/molecules/Table/useTable.ts:updateRows:37"
+        },
+        {
+          "target": "newRows",
+          "resolved": false,
+          "confidence": 0,
+          "line": 44
+        },
+        {
+          "target": "filter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 48
+        },
+        {
+          "target": "updateRows",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 49,
+          "resolvedId": "src/components/molecules/Table/useTable.ts:updateRows:37"
+        },
+        {
+          "target": "newRows",
+          "resolved": false,
+          "confidence": 0,
+          "line": 49
+        },
+        {
+          "target": "map",
+          "resolved": false,
+          "confidence": 0,
+          "line": 57
+        },
+        {
+          "target": "updateRows",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 66,
+          "resolvedId": "src/components/molecules/Table/useTable.ts:updateRows:37"
+        },
+        {
+          "target": "newRows",
+          "resolved": false,
+          "confidence": 0,
+          "line": 66
+        },
+        {
+          "target": "updateRows",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 70,
+          "resolvedId": "src/components/molecules/Table/useTable.ts:updateRows:37"
+        },
+        {
+          "target": "forEach",
+          "resolved": false,
+          "confidence": 0,
+          "line": 18
+        },
+        {
+          "target": "setRows",
+          "resolved": false,
+          "confidence": 0,
+          "line": 33
+        },
+        {
+          "target": "defaultValues",
+          "resolved": false,
+          "confidence": 0,
+          "line": 33
+        },
+        {
+          "target": "setRows",
+          "resolved": false,
+          "confidence": 0,
+          "line": 38
+        },
+        {
+          "target": "newRows",
+          "resolved": false,
+          "confidence": 0,
+          "line": 38
+        },
+        {
+          "target": "onChange",
+          "resolved": false,
+          "confidence": 0,
+          "line": 39
+        },
+        {
+          "target": "newRows",
+          "resolved": false,
+          "confidence": 0,
+          "line": 39
+        },
+        {
+          "target": "createEmptyRow",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 43,
+          "resolvedId": "src/components/molecules/Table/useTable.ts:createEmptyRow:16"
+        },
+        {
+          "target": "updateRows",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 44,
+          "resolvedId": "src/components/molecules/Table/useTable.ts:updateRows:37"
+        },
+        {
+          "target": "newRows",
+          "resolved": false,
+          "confidence": 0,
+          "line": 44
+        },
+        {
+          "target": "filter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 48
+        },
+        {
+          "target": "updateRows",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 49,
+          "resolvedId": "src/components/molecules/Table/useTable.ts:updateRows:37"
+        },
+        {
+          "target": "newRows",
+          "resolved": false,
+          "confidence": 0,
+          "line": 49
+        },
+        {
+          "target": "map",
+          "resolved": false,
+          "confidence": 0,
+          "line": 57
+        },
+        {
+          "target": "updateRows",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 66,
+          "resolvedId": "src/components/molecules/Table/useTable.ts:updateRows:37"
+        },
+        {
+          "target": "newRows",
+          "resolved": false,
+          "confidence": 0,
+          "line": 66
+        },
+        {
+          "target": "updateRows",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 70,
+          "resolvedId": "src/components/molecules/Table/useTable.ts:updateRows:37"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/molecules/Table/useTable.ts:createEmptyRow:16",
+      "name": "createEmptyRow",
+      "startLine": 16,
+      "endLine": 22,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "forEach",
+          "resolved": false,
+          "confidence": 0,
+          "line": 18
+        },
+        {
+          "target": "forEach",
+          "resolved": false,
+          "confidence": 0,
+          "line": 18
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/molecules/Table/useTable.ts:$forEach$1:18",
+      "name": "$forEach$1",
+      "startLine": 18,
+      "endLine": 20,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "forEach",
+          "resolved": false,
+          "confidence": 0,
+          "line": 18
+        },
+        {
+          "target": "forEach",
+          "resolved": false,
+          "confidence": 0,
+          "line": 18
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/molecules/Table/useTable.ts:$useEffect$1:31",
+      "name": "$useEffect$1",
+      "startLine": 31,
+      "endLine": 35,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 31
+        },
+        {
+          "target": "setRows",
+          "resolved": false,
+          "confidence": 0,
+          "line": 33
+        },
+        {
+          "target": "defaultValues",
+          "resolved": false,
+          "confidence": 0,
+          "line": 33
+        },
+        {
+          "target": "setRows",
+          "resolved": false,
+          "confidence": 0,
+          "line": 33
+        },
+        {
+          "target": "defaultValues",
+          "resolved": false,
+          "confidence": 0,
+          "line": 33
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/molecules/Table/useTable.ts:updateRows:37",
+      "name": "updateRows",
+      "startLine": 37,
+      "endLine": 40,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "setRows",
+          "resolved": false,
+          "confidence": 0,
+          "line": 38
+        },
+        {
+          "target": "newRows",
+          "resolved": false,
+          "confidence": 0,
+          "line": 38
+        },
+        {
+          "target": "onChange",
+          "resolved": false,
+          "confidence": 0,
+          "line": 39
+        },
+        {
+          "target": "newRows",
+          "resolved": false,
+          "confidence": 0,
+          "line": 39
+        },
+        {
+          "target": "setRows",
+          "resolved": false,
+          "confidence": 0,
+          "line": 38
+        },
+        {
+          "target": "newRows",
+          "resolved": false,
+          "confidence": 0,
+          "line": 38
+        },
+        {
+          "target": "onChange",
+          "resolved": false,
+          "confidence": 0,
+          "line": 39
+        },
+        {
+          "target": "newRows",
+          "resolved": false,
+          "confidence": 0,
+          "line": 39
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/molecules/Table/useTable.ts:handleAddRow:42",
+      "name": "handleAddRow",
+      "startLine": 42,
+      "endLine": 45,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "createEmptyRow",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 43,
+          "resolvedId": "src/components/molecules/Table/useTable.ts:createEmptyRow:16"
+        },
+        {
+          "target": "updateRows",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 44,
+          "resolvedId": "src/components/molecules/Table/useTable.ts:updateRows:37"
+        },
+        {
+          "target": "newRows",
+          "resolved": false,
+          "confidence": 0,
+          "line": 44
+        },
+        {
+          "target": "createEmptyRow",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 43,
+          "resolvedId": "src/components/molecules/Table/useTable.ts:createEmptyRow:16"
+        },
+        {
+          "target": "updateRows",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 44,
+          "resolvedId": "src/components/molecules/Table/useTable.ts:updateRows:37"
+        },
+        {
+          "target": "newRows",
+          "resolved": false,
+          "confidence": 0,
+          "line": 44
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/molecules/Table/useTable.ts:handleDeleteRow:47",
+      "name": "handleDeleteRow",
+      "startLine": 47,
+      "endLine": 50,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "filter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 48
+        },
+        {
+          "target": "updateRows",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 49,
+          "resolvedId": "src/components/molecules/Table/useTable.ts:updateRows:37"
+        },
+        {
+          "target": "newRows",
+          "resolved": false,
+          "confidence": 0,
+          "line": 49
+        },
+        {
+          "target": "filter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 48
+        },
+        {
+          "target": "updateRows",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 49,
+          "resolvedId": "src/components/molecules/Table/useTable.ts:updateRows:37"
+        },
+        {
+          "target": "newRows",
+          "resolved": false,
+          "confidence": 0,
+          "line": 49
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/molecules/Table/useTable.ts:handleCellChange:52",
+      "name": "handleCellChange",
+      "startLine": 52,
+      "endLine": 67,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "map",
+          "resolved": false,
+          "confidence": 0,
+          "line": 57
+        },
+        {
+          "target": "updateRows",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 66,
+          "resolvedId": "src/components/molecules/Table/useTable.ts:updateRows:37"
+        },
+        {
+          "target": "newRows",
+          "resolved": false,
+          "confidence": 0,
+          "line": 66
+        },
+        {
+          "target": "map",
+          "resolved": false,
+          "confidence": 0,
+          "line": 57
+        },
+        {
+          "target": "updateRows",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 66,
+          "resolvedId": "src/components/molecules/Table/useTable.ts:updateRows:37"
+        },
+        {
+          "target": "newRows",
+          "resolved": false,
+          "confidence": 0,
+          "line": 66
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/molecules/Table/useTable.ts:clearAll:69",
+      "name": "clearAll",
+      "startLine": 69,
+      "endLine": 71,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "updateRows",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 70,
+          "resolvedId": "src/components/molecules/Table/useTable.ts:updateRows:37"
+        },
+        {
+          "target": "updateRows",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 70,
+          "resolvedId": "src/components/molecules/Table/useTable.ts:updateRows:37"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

@@ -1,0 +1,1306 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.137Z",
+  "checksum": "64fecb6ab3c87bb0",
+  "file": "backend/api/features/chat/tools/agent_output.py",
+  "functions": [
+    {
+      "id": "backend/api/features/chat/tools/agent_output.py:strip_strings:47",
+      "name": "strip_strings",
+      "startLine": 47,
+      "endLine": 49,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "strip",
+          "resolved": false,
+          "confidence": 0,
+          "line": 49
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 49
+        },
+        {
+          "target": "v",
+          "resolved": false,
+          "confidence": 0,
+          "line": 49
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 49
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/chat/tools/agent_output.py:parse_time_expression:52",
+      "name": "parse_time_expression",
+      "startLine": 52,
+      "endLine": 98,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "lower",
+          "resolved": false,
+          "confidence": 0,
+          "line": 61
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 64
+        },
+        {
+          "target": "replace",
+          "resolved": false,
+          "confidence": 0,
+          "line": 65
+        },
+        {
+          "target": "strip",
+          "resolved": false,
+          "confidence": 0,
+          "line": 66
+        },
+        {
+          "target": "lower",
+          "resolved": false,
+          "confidence": 0,
+          "line": 66
+        },
+        {
+          "target": "timedelta",
+          "resolved": false,
+          "confidence": 0,
+          "line": 70
+        },
+        {
+          "target": "timedelta",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        },
+        {
+          "target": "timedelta",
+          "resolved": false,
+          "confidence": 0,
+          "line": 73
+        },
+        {
+          "target": "timedelta",
+          "resolved": false,
+          "confidence": 0,
+          "line": 74
+        },
+        {
+          "target": "timedelta",
+          "resolved": false,
+          "confidence": 0,
+          "line": 75
+        },
+        {
+          "target": "match",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 81,
+          "resolvedId": "backend/data/auth/api_key.py:match:56"
+        },
+        {
+          "target": "expr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 81
+        },
+        {
+          "target": "map",
+          "resolved": false,
+          "confidence": 0,
+          "line": 84
+        },
+        {
+          "target": "int",
+          "resolved": false,
+          "confidence": 0,
+          "line": 84
+        },
+        {
+          "target": "groups",
+          "resolved": false,
+          "confidence": 0,
+          "line": 84
+        },
+        {
+          "target": "datetime",
+          "resolved": false,
+          "confidence": 0,
+          "line": 85
+        },
+        {
+          "target": "year",
+          "resolved": false,
+          "confidence": 0,
+          "line": 85
+        },
+        {
+          "target": "month",
+          "resolved": false,
+          "confidence": 0,
+          "line": 85
+        },
+        {
+          "target": "day",
+          "resolved": false,
+          "confidence": 0,
+          "line": 85
+        },
+        {
+          "target": "timedelta",
+          "resolved": false,
+          "confidence": 0,
+          "line": 86
+        },
+        {
+          "target": "fromisoformat",
+          "resolved": false,
+          "confidence": 0,
+          "line": 93
+        },
+        {
+          "target": "replace",
+          "resolved": false,
+          "confidence": 0,
+          "line": 93
+        },
+        {
+          "target": "replace",
+          "resolved": false,
+          "confidence": 0,
+          "line": 95
+        },
+        {
+          "target": "timedelta",
+          "resolved": false,
+          "confidence": 0,
+          "line": 96
+        },
+        {
+          "target": "timedelta",
+          "resolved": false,
+          "confidence": 0,
+          "line": 96
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/chat/tools/agent_output.py:name:105",
+      "name": "name",
+      "startLine": 105,
+      "endLine": 106,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/chat/tools/agent_output.py:description:109",
+      "name": "description",
+      "startLine": 109,
+      "endLine": 120,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/chat/tools/agent_output.py:parameters:123",
+      "name": "parameters",
+      "startLine": 123,
+      "endLine": 151,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/chat/tools/agent_output.py:requires_auth:154",
+      "name": "requires_auth",
+      "startLine": 154,
+      "endLine": 155,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/chat/tools/agent_output.py:_resolve_agent:157",
+      "name": "_resolve_agent",
+      "startLine": 157,
+      "endLine": 217,
+      "isEntryPoint": false,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "get_library_agent",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 171,
+          "resolvedId": "backend/api/features/library/routes/agents.py:get_library_agent:136"
+        },
+        {
+          "target": "library_agent_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 171
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 171
+        },
+        {
+          "target": "warning",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 174,
+          "resolvedId": "backend/util/logging.py:warning:45"
+        },
+        {
+          "target": "split",
+          "resolved": false,
+          "confidence": 0,
+          "line": 179
+        },
+        {
+          "target": "fetch_graph_from_store_slug",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 180,
+          "resolvedId": "backend/api/features/chat/tools/utils.py:fetch_graph_from_store_slug:18"
+        },
+        {
+          "target": "username",
+          "resolved": false,
+          "confidence": 0,
+          "line": 180
+        },
+        {
+          "target": "agent_slug",
+          "resolved": false,
+          "confidence": 0,
+          "line": 180
+        },
+        {
+          "target": "get_library_agent_by_graph_id",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 185,
+          "resolvedId": "backend/api/features/library/routes/agents.py:get_library_agent_by_graph_id:144"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 185
+        },
+        {
+          "target": "list_library_agents",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 197,
+          "resolvedId": "backend/api/features/library/routes/agents.py:list_library_agents:34"
+        },
+        {
+          "target": "error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 211,
+          "resolvedId": "backend/util/logging.py:error:49"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "models",
+          "operation": "read",
+          "line": 171,
+          "fields": [
+            "user_id"
+          ]
+        },
+        {
+          "table": "graph",
+          "operation": "read",
+          "line": 185,
+          "fields": [
+            "id",
+            "user_id"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "backend/api/features/chat/tools/agent_output.py:_get_execution:219",
+      "name": "_get_execution",
+      "startLine": 219,
+      "endLine": 270,
+      "isEntryPoint": false,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "get_graph_execution",
+          "resolved": false,
+          "confidence": 0,
+          "line": 233
+        },
+        {
+          "target": "get_graph_executions",
+          "resolved": false,
+          "confidence": 0,
+          "line": 243
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 256
+        },
+        {
+          "target": "executions",
+          "resolved": false,
+          "confidence": 0,
+          "line": 256
+        },
+        {
+          "target": "get_graph_execution",
+          "resolved": false,
+          "confidence": 0,
+          "line": 257
+        },
+        {
+          "target": "get_graph_execution",
+          "resolved": false,
+          "confidence": 0,
+          "line": 265
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "execution",
+          "operation": "read",
+          "line": 233,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/api/features/chat/tools/agent_output.py:_build_response:272",
+      "name": "_build_response",
+      "startLine": 272,
+      "endLine": 329,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "AgentOutputResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 283
+        },
+        {
+          "target": "ExecutionOutputInfo",
+          "resolved": false,
+          "confidence": 0,
+          "line": 293
+        },
+        {
+          "target": "dict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 298
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 303
+        },
+        {
+          "target": "available_executions",
+          "resolved": false,
+          "confidence": 0,
+          "line": 303
+        },
+        {
+          "target": "isoformat",
+          "resolved": false,
+          "confidence": 0,
+          "line": 308
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 314
+        },
+        {
+          "target": "available_executions",
+          "resolved": false,
+          "confidence": 0,
+          "line": 314
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 316
+        },
+        {
+          "target": "available_executions",
+          "resolved": false,
+          "confidence": 0,
+          "line": 316
+        },
+        {
+          "target": "AgentOutputResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 319
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 328
+        },
+        {
+          "target": "available_executions",
+          "resolved": false,
+          "confidence": 0,
+          "line": 328
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/chat/tools/agent_output.py:_execute:331",
+      "name": "_execute",
+      "startLine": 331,
+      "endLine": 446,
+      "isEntryPoint": false,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "AgentOutputInput",
+          "resolved": false,
+          "confidence": 0,
+          "line": 342
+        },
+        {
+          "target": "error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 344,
+          "resolvedId": "backend/util/logging.py:error:49"
+        },
+        {
+          "target": "ErrorResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 345
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 347
+        },
+        {
+          "target": "e",
+          "resolved": false,
+          "confidence": 0,
+          "line": 347
+        },
+        {
+          "target": "ErrorResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 353
+        },
+        {
+          "target": "any",
+          "resolved": false,
+          "confidence": 0,
+          "line": 359
+        },
+        {
+          "target": "ErrorResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 367
+        },
+        {
+          "target": "get_graph_execution",
+          "resolved": false,
+          "confidence": 0,
+          "line": 383
+        },
+        {
+          "target": "ErrorResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 389
+        },
+        {
+          "target": "get_library_agent_by_graph_id",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 395,
+          "resolvedId": "backend/api/features/library/routes/agents.py:get_library_agent_by_graph_id:144"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 396
+        },
+        {
+          "target": "NoResultsResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 399
+        },
+        {
+          "target": "_build_response",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 408,
+          "resolvedId": "backend/api/features/chat/tools/agent_output.py:_build_response:272"
+        },
+        {
+          "target": "agent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 408
+        },
+        {
+          "target": "execution",
+          "resolved": false,
+          "confidence": 0,
+          "line": 408
+        },
+        {
+          "target": "session_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 408
+        },
+        {
+          "target": "_resolve_agent",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 411,
+          "resolvedId": "backend/api/features/chat/tools/agent_output.py:_resolve_agent:157"
+        },
+        {
+          "target": "NoResultsResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 419
+        },
+        {
+          "target": "parse_time_expression",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 429,
+          "resolvedId": "backend/api/features/chat/tools/agent_output.py:parse_time_expression:52"
+        },
+        {
+          "target": "_get_execution",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 432,
+          "resolvedId": "backend/api/features/chat/tools/agent_output.py:_get_execution:219"
+        },
+        {
+          "target": "ErrorResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 441
+        },
+        {
+          "target": "_build_response",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 446,
+          "resolvedId": "backend/api/features/chat/tools/agent_output.py:_build_response:272"
+        },
+        {
+          "target": "agent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 446
+        },
+        {
+          "target": "execution",
+          "resolved": false,
+          "confidence": 0,
+          "line": 446
+        },
+        {
+          "target": "available_executions",
+          "resolved": false,
+          "confidence": 0,
+          "line": 446
+        },
+        {
+          "target": "session_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 446
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "execution",
+          "operation": "read",
+          "line": 383,
+          "fields": []
+        },
+        {
+          "table": "models",
+          "operation": "read",
+          "line": 395,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/api/features/chat/tools/agent_output.py:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 447,
+      "isEntryPoint": false,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "getLogger",
+          "resolved": false,
+          "confidence": 0,
+          "line": 26
+        },
+        {
+          "target": "field_validator",
+          "resolved": false,
+          "confidence": 0,
+          "line": 38
+        },
+        {
+          "target": "strip",
+          "resolved": false,
+          "confidence": 0,
+          "line": 49
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 49
+        },
+        {
+          "target": "v",
+          "resolved": false,
+          "confidence": 0,
+          "line": 49
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 49
+        },
+        {
+          "target": "lower",
+          "resolved": false,
+          "confidence": 0,
+          "line": 61
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 64
+        },
+        {
+          "target": "replace",
+          "resolved": false,
+          "confidence": 0,
+          "line": 65
+        },
+        {
+          "target": "strip",
+          "resolved": false,
+          "confidence": 0,
+          "line": 66
+        },
+        {
+          "target": "lower",
+          "resolved": false,
+          "confidence": 0,
+          "line": 66
+        },
+        {
+          "target": "timedelta",
+          "resolved": false,
+          "confidence": 0,
+          "line": 70
+        },
+        {
+          "target": "timedelta",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        },
+        {
+          "target": "timedelta",
+          "resolved": false,
+          "confidence": 0,
+          "line": 73
+        },
+        {
+          "target": "timedelta",
+          "resolved": false,
+          "confidence": 0,
+          "line": 74
+        },
+        {
+          "target": "timedelta",
+          "resolved": false,
+          "confidence": 0,
+          "line": 75
+        },
+        {
+          "target": "match",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 81,
+          "resolvedId": "backend/data/auth/api_key.py:match:56"
+        },
+        {
+          "target": "expr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 81
+        },
+        {
+          "target": "map",
+          "resolved": false,
+          "confidence": 0,
+          "line": 84
+        },
+        {
+          "target": "int",
+          "resolved": false,
+          "confidence": 0,
+          "line": 84
+        },
+        {
+          "target": "groups",
+          "resolved": false,
+          "confidence": 0,
+          "line": 84
+        },
+        {
+          "target": "datetime",
+          "resolved": false,
+          "confidence": 0,
+          "line": 85
+        },
+        {
+          "target": "year",
+          "resolved": false,
+          "confidence": 0,
+          "line": 85
+        },
+        {
+          "target": "month",
+          "resolved": false,
+          "confidence": 0,
+          "line": 85
+        },
+        {
+          "target": "day",
+          "resolved": false,
+          "confidence": 0,
+          "line": 85
+        },
+        {
+          "target": "timedelta",
+          "resolved": false,
+          "confidence": 0,
+          "line": 86
+        },
+        {
+          "target": "fromisoformat",
+          "resolved": false,
+          "confidence": 0,
+          "line": 93
+        },
+        {
+          "target": "replace",
+          "resolved": false,
+          "confidence": 0,
+          "line": 93
+        },
+        {
+          "target": "replace",
+          "resolved": false,
+          "confidence": 0,
+          "line": 95
+        },
+        {
+          "target": "timedelta",
+          "resolved": false,
+          "confidence": 0,
+          "line": 96
+        },
+        {
+          "target": "timedelta",
+          "resolved": false,
+          "confidence": 0,
+          "line": 96
+        },
+        {
+          "target": "get_library_agent",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 171,
+          "resolvedId": "backend/api/features/library/routes/agents.py:get_library_agent:136"
+        },
+        {
+          "target": "library_agent_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 171
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 171
+        },
+        {
+          "target": "warning",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 174,
+          "resolvedId": "backend/util/logging.py:warning:45"
+        },
+        {
+          "target": "split",
+          "resolved": false,
+          "confidence": 0,
+          "line": 179
+        },
+        {
+          "target": "fetch_graph_from_store_slug",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 180,
+          "resolvedId": "backend/api/features/chat/tools/utils.py:fetch_graph_from_store_slug:18"
+        },
+        {
+          "target": "username",
+          "resolved": false,
+          "confidence": 0,
+          "line": 180
+        },
+        {
+          "target": "agent_slug",
+          "resolved": false,
+          "confidence": 0,
+          "line": 180
+        },
+        {
+          "target": "get_library_agent_by_graph_id",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 185,
+          "resolvedId": "backend/api/features/library/routes/agents.py:get_library_agent_by_graph_id:144"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 185
+        },
+        {
+          "target": "list_library_agents",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 197,
+          "resolvedId": "backend/api/features/library/routes/agents.py:list_library_agents:34"
+        },
+        {
+          "target": "error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 211,
+          "resolvedId": "backend/util/logging.py:error:49"
+        },
+        {
+          "target": "get_graph_execution",
+          "resolved": false,
+          "confidence": 0,
+          "line": 233
+        },
+        {
+          "target": "get_graph_executions",
+          "resolved": false,
+          "confidence": 0,
+          "line": 243
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 256
+        },
+        {
+          "target": "executions",
+          "resolved": false,
+          "confidence": 0,
+          "line": 256
+        },
+        {
+          "target": "get_graph_execution",
+          "resolved": false,
+          "confidence": 0,
+          "line": 257
+        },
+        {
+          "target": "get_graph_execution",
+          "resolved": false,
+          "confidence": 0,
+          "line": 265
+        },
+        {
+          "target": "AgentOutputResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 283
+        },
+        {
+          "target": "ExecutionOutputInfo",
+          "resolved": false,
+          "confidence": 0,
+          "line": 293
+        },
+        {
+          "target": "dict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 298
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 303
+        },
+        {
+          "target": "available_executions",
+          "resolved": false,
+          "confidence": 0,
+          "line": 303
+        },
+        {
+          "target": "isoformat",
+          "resolved": false,
+          "confidence": 0,
+          "line": 308
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 314
+        },
+        {
+          "target": "available_executions",
+          "resolved": false,
+          "confidence": 0,
+          "line": 314
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 316
+        },
+        {
+          "target": "available_executions",
+          "resolved": false,
+          "confidence": 0,
+          "line": 316
+        },
+        {
+          "target": "AgentOutputResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 319
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 328
+        },
+        {
+          "target": "available_executions",
+          "resolved": false,
+          "confidence": 0,
+          "line": 328
+        },
+        {
+          "target": "AgentOutputInput",
+          "resolved": false,
+          "confidence": 0,
+          "line": 342
+        },
+        {
+          "target": "error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 344,
+          "resolvedId": "backend/util/logging.py:error:49"
+        },
+        {
+          "target": "ErrorResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 345
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 347
+        },
+        {
+          "target": "e",
+          "resolved": false,
+          "confidence": 0,
+          "line": 347
+        },
+        {
+          "target": "ErrorResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 353
+        },
+        {
+          "target": "any",
+          "resolved": false,
+          "confidence": 0,
+          "line": 359
+        },
+        {
+          "target": "ErrorResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 367
+        },
+        {
+          "target": "get_graph_execution",
+          "resolved": false,
+          "confidence": 0,
+          "line": 383
+        },
+        {
+          "target": "ErrorResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 389
+        },
+        {
+          "target": "get_library_agent_by_graph_id",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 395,
+          "resolvedId": "backend/api/features/library/routes/agents.py:get_library_agent_by_graph_id:144"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 396
+        },
+        {
+          "target": "NoResultsResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 399
+        },
+        {
+          "target": "_build_response",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 408,
+          "resolvedId": "backend/api/features/chat/tools/agent_output.py:_build_response:272"
+        },
+        {
+          "target": "agent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 408
+        },
+        {
+          "target": "execution",
+          "resolved": false,
+          "confidence": 0,
+          "line": 408
+        },
+        {
+          "target": "session_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 408
+        },
+        {
+          "target": "_resolve_agent",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 411,
+          "resolvedId": "backend/api/features/chat/tools/agent_output.py:_resolve_agent:157"
+        },
+        {
+          "target": "NoResultsResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 419
+        },
+        {
+          "target": "parse_time_expression",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 429,
+          "resolvedId": "backend/api/features/chat/tools/agent_output.py:parse_time_expression:52"
+        },
+        {
+          "target": "_get_execution",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 432,
+          "resolvedId": "backend/api/features/chat/tools/agent_output.py:_get_execution:219"
+        },
+        {
+          "target": "ErrorResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 441
+        },
+        {
+          "target": "_build_response",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 446,
+          "resolvedId": "backend/api/features/chat/tools/agent_output.py:_build_response:272"
+        },
+        {
+          "target": "agent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 446
+        },
+        {
+          "target": "execution",
+          "resolved": false,
+          "confidence": 0,
+          "line": 446
+        },
+        {
+          "target": "available_executions",
+          "resolved": false,
+          "confidence": 0,
+          "line": 446
+        },
+        {
+          "target": "session_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 446
+        },
+        {
+          "target": "getLogger",
+          "resolved": false,
+          "confidence": 0,
+          "line": 26
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "logging",
+          "operation": "read",
+          "line": 26,
+          "fields": []
+        },
+        {
+          "table": "models",
+          "operation": "read",
+          "line": 171,
+          "fields": [
+            "user_id"
+          ]
+        },
+        {
+          "table": "graph",
+          "operation": "read",
+          "line": 185,
+          "fields": [
+            "id",
+            "user_id"
+          ]
+        },
+        {
+          "table": "execution",
+          "operation": "read",
+          "line": 233,
+          "fields": []
+        },
+        {
+          "table": "execution",
+          "operation": "read",
+          "line": 383,
+          "fields": []
+        },
+        {
+          "table": "models",
+          "operation": "read",
+          "line": 395,
+          "fields": []
+        }
+      ]
+    }
+  ]
+}

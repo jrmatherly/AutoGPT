@@ -40,46 +40,44 @@ For example, a content creation workflow might combine several agent blocks:
 ### **Step-by-Step Setup**
 
 1. **Add and Configure Blocks**
-    * Add an Input Block
-    * Add an AI Text Generator Block
-    * Add an Output Block
+    - Add an Input Block
+    - Add an AI Text Generator Block
+    - Add an Output Block
 2. **Connect Components**
-    * Connect Input's result to AI Text Generator's Prompt
-    * Connect AI Text Generator's response to Output's value
+    - Connect Input's result to AI Text Generator's Prompt
+    - Connect AI Text Generator's response to Output's value
 3. **Name the Components**
-    * Name the Input Block: "question"
-    * Name the Output Block: "answer"
+    - Name the Input Block: "question"
+    - Name the Output Block: "answer"
 4. **Save the Agent**
-    * Choose a descriptive name (e.g., "Weather Agent")
-    * Click Save
-
-
+    - Choose a descriptive name (e.g., "Weather Agent")
+    - Click Save
 
 ## **Converting to a Block**
 
 1. **Access the Block Menu**
-    * Go to the Builder interface
-    * Click the Blocks menu
-    * Click the agent tag or search the name of your agent
+    - Go to the Builder interface
+    - Click the Blocks menu
+    - Click the agent tag or search the name of your agent
 2. **Using the Agent Block**
-    * Click on the agent block to add to your workflow
-    * Save the new agent with a descriptive name (e.g., "Weather Agent")
+    - Click on the agent block to add to your workflow
+    - Save the new agent with a descriptive name (e.g., "Weather Agent")
 
 ## **Testing the Agent Block**
 
 1. **Run the Agent**
-    * Enter a test question (e.g., "How far is the Earth from the Moon?")
-    * Click Run
+    - Enter a test question (e.g., "How far is the Earth from the Moon?")
+    - Click Run
 2. **View Results**
-    * Option 1: Check "Agent Outputs" section*
-    * Option 2: Click "View More" for detailed results
+    - Option 1: Check "Agent Outputs" section*
+    - Option 2: Click "View More" for detailed results
 
 *Note: if there is no output block then the "Agent Outputs" button will show up blank. You can see the output under view more or at bottom of the block.
 
 ## **Advanced Usage**
 
-* You can make more complex agents by combining multiple agent blocks
-* Chain different agents together for more sophisticated workflows
+- You can make more complex agents by combining multiple agent blocks
+- Chain different agents together for more sophisticated workflows
 
 ## **Note**
 

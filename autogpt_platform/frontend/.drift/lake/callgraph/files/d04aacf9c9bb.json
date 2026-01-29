@@ -1,0 +1,784 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.188Z",
+  "checksum": "a63fea84075e1da6",
+  "file": "src/tests/pages/profile-form.page.ts",
+  "functions": [
+    {
+      "id": "src/tests/pages/profile-form.page.ts:constructor:6",
+      "name": "constructor",
+      "startLine": 6,
+      "endLine": 8,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 7
+        },
+        {
+          "target": "page",
+          "resolved": false,
+          "confidence": 0,
+          "line": 7
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/tests/pages/profile-form.page.ts:getId:10",
+      "name": "getId",
+      "startLine": 10,
+      "endLine": 13,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "getSelectors",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 11,
+          "resolvedId": "src/tests/utils/selectors.ts:getSelectors:3"
+        },
+        {
+          "target": "page",
+          "resolved": false,
+          "confidence": 0,
+          "line": 11
+        },
+        {
+          "target": "getId",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 12,
+          "resolvedId": "src/tests/pages/profile-form.page.ts:getId:10"
+        },
+        {
+          "target": "id",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 12,
+          "resolvedId": "public/gtag.js:id:112"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/tests/pages/profile-form.page.ts:hideFloatingWidgets:15",
+      "name": "hideFloatingWidgets",
+      "startLine": 15,
+      "endLine": 21,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "addStyleTag",
+          "resolved": false,
+          "confidence": 0,
+          "line": 16
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/tests/pages/profile-form.page.ts:title:24",
+      "name": "title",
+      "startLine": 24,
+      "endLine": 26,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "getId",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 25,
+          "resolvedId": "src/tests/pages/profile-form.page.ts:getId:10"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/tests/pages/profile-form.page.ts:displayNameField:28",
+      "name": "displayNameField",
+      "startLine": 28,
+      "endLine": 31,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "getSelectors",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 29,
+          "resolvedId": "src/tests/utils/selectors.ts:getSelectors:3"
+        },
+        {
+          "target": "page",
+          "resolved": false,
+          "confidence": 0,
+          "line": 29
+        },
+        {
+          "target": "getField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 30,
+          "resolvedId": "src/tests/utils/selectors.ts:getField:44"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/tests/pages/profile-form.page.ts:handleField:33",
+      "name": "handleField",
+      "startLine": 33,
+      "endLine": 36,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "getSelectors",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 34,
+          "resolvedId": "src/tests/utils/selectors.ts:getSelectors:3"
+        },
+        {
+          "target": "page",
+          "resolved": false,
+          "confidence": 0,
+          "line": 34
+        },
+        {
+          "target": "getField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 35,
+          "resolvedId": "src/tests/utils/selectors.ts:getField:44"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/tests/pages/profile-form.page.ts:bioField:38",
+      "name": "bioField",
+      "startLine": 38,
+      "endLine": 41,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "getSelectors",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 39,
+          "resolvedId": "src/tests/utils/selectors.ts:getSelectors:3"
+        },
+        {
+          "target": "page",
+          "resolved": false,
+          "confidence": 0,
+          "line": 39
+        },
+        {
+          "target": "getField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 40,
+          "resolvedId": "src/tests/utils/selectors.ts:getField:44"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/tests/pages/profile-form.page.ts:linkField:43",
+      "name": "linkField",
+      "startLine": 43,
+      "endLine": 47,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "assertValidLinkIndex",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 44,
+          "resolvedId": "src/tests/pages/profile-form.page.ts:assertValidLinkIndex:140"
+        },
+        {
+          "target": "index",
+          "resolved": false,
+          "confidence": 0,
+          "line": 44
+        },
+        {
+          "target": "getSelectors",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 45,
+          "resolvedId": "src/tests/utils/selectors.ts:getSelectors:3"
+        },
+        {
+          "target": "page",
+          "resolved": false,
+          "confidence": 0,
+          "line": 45
+        },
+        {
+          "target": "getField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 46,
+          "resolvedId": "src/tests/utils/selectors.ts:getField:44"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/tests/pages/profile-form.page.ts:cancelButton:49",
+      "name": "cancelButton",
+      "startLine": 49,
+      "endLine": 52,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "getSelectors",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 50,
+          "resolvedId": "src/tests/utils/selectors.ts:getSelectors:3"
+        },
+        {
+          "target": "page",
+          "resolved": false,
+          "confidence": 0,
+          "line": 50
+        },
+        {
+          "target": "getButton",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 51,
+          "resolvedId": "src/tests/utils/selectors.ts:getButton:36"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/tests/pages/profile-form.page.ts:saveButton:54",
+      "name": "saveButton",
+      "startLine": 54,
+      "endLine": 57,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "getSelectors",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 55,
+          "resolvedId": "src/tests/utils/selectors.ts:getSelectors:3"
+        },
+        {
+          "target": "page",
+          "resolved": false,
+          "confidence": 0,
+          "line": 55
+        },
+        {
+          "target": "getButton",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 56,
+          "resolvedId": "src/tests/utils/selectors.ts:getButton:36"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/tests/pages/profile-form.page.ts:isLoaded:60",
+      "name": "isLoaded",
+      "startLine": 60,
+      "endLine": 72,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "waitFor",
+          "resolved": false,
+          "confidence": 0,
+          "line": 62
+        },
+        {
+          "target": "title",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 62,
+          "resolvedId": "src/tests/pages/profile-form.page.ts:title:24"
+        },
+        {
+          "target": "waitFor",
+          "resolved": false,
+          "confidence": 0,
+          "line": 63
+        },
+        {
+          "target": "displayNameField",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 63,
+          "resolvedId": "src/tests/pages/profile-form.page.ts:displayNameField:28"
+        },
+        {
+          "target": "waitFor",
+          "resolved": false,
+          "confidence": 0,
+          "line": 67
+        },
+        {
+          "target": "handleField",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 67,
+          "resolvedId": "src/tests/pages/profile-form.page.ts:handleField:33"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/tests/pages/profile-form.page.ts:setDisplayName:75",
+      "name": "setDisplayName",
+      "startLine": 75,
+      "endLine": 77,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "fill",
+          "resolved": false,
+          "confidence": 0,
+          "line": 76
+        },
+        {
+          "target": "name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 76
+        },
+        {
+          "target": "displayNameField",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 76,
+          "resolvedId": "src/tests/pages/profile-form.page.ts:displayNameField:28"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/tests/pages/profile-form.page.ts:getDisplayName:79",
+      "name": "getDisplayName",
+      "startLine": 79,
+      "endLine": 81,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "inputValue",
+          "resolved": false,
+          "confidence": 0,
+          "line": 80
+        },
+        {
+          "target": "displayNameField",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 80,
+          "resolvedId": "src/tests/pages/profile-form.page.ts:displayNameField:28"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/tests/pages/profile-form.page.ts:setHandle:83",
+      "name": "setHandle",
+      "startLine": 83,
+      "endLine": 85,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "fill",
+          "resolved": false,
+          "confidence": 0,
+          "line": 84
+        },
+        {
+          "target": "handle",
+          "resolved": false,
+          "confidence": 0,
+          "line": 84
+        },
+        {
+          "target": "handleField",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 84,
+          "resolvedId": "src/tests/pages/profile-form.page.ts:handleField:33"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/tests/pages/profile-form.page.ts:getHandle:87",
+      "name": "getHandle",
+      "startLine": 87,
+      "endLine": 89,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "inputValue",
+          "resolved": false,
+          "confidence": 0,
+          "line": 88
+        },
+        {
+          "target": "handleField",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 88,
+          "resolvedId": "src/tests/pages/profile-form.page.ts:handleField:33"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/tests/pages/profile-form.page.ts:setBio:91",
+      "name": "setBio",
+      "startLine": 91,
+      "endLine": 93,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "fill",
+          "resolved": false,
+          "confidence": 0,
+          "line": 92
+        },
+        {
+          "target": "bio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 92
+        },
+        {
+          "target": "bioField",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 92,
+          "resolvedId": "src/tests/pages/profile-form.page.ts:bioField:38"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/tests/pages/profile-form.page.ts:getBio:95",
+      "name": "getBio",
+      "startLine": 95,
+      "endLine": 97,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "inputValue",
+          "resolved": false,
+          "confidence": 0,
+          "line": 96
+        },
+        {
+          "target": "bioField",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 96,
+          "resolvedId": "src/tests/pages/profile-form.page.ts:bioField:38"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/tests/pages/profile-form.page.ts:setLink:99",
+      "name": "setLink",
+      "startLine": 99,
+      "endLine": 101,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "fill",
+          "resolved": false,
+          "confidence": 0,
+          "line": 100
+        },
+        {
+          "target": "url",
+          "resolved": false,
+          "confidence": 0,
+          "line": 100
+        },
+        {
+          "target": "linkField",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 100,
+          "resolvedId": "src/tests/pages/profile-form.page.ts:linkField:43"
+        },
+        {
+          "target": "index",
+          "resolved": false,
+          "confidence": 0,
+          "line": 100
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/tests/pages/profile-form.page.ts:getLink:103",
+      "name": "getLink",
+      "startLine": 103,
+      "endLine": 105,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "inputValue",
+          "resolved": false,
+          "confidence": 0,
+          "line": 104
+        },
+        {
+          "target": "linkField",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 104,
+          "resolvedId": "src/tests/pages/profile-form.page.ts:linkField:43"
+        },
+        {
+          "target": "index",
+          "resolved": false,
+          "confidence": 0,
+          "line": 104
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/tests/pages/profile-form.page.ts:setLinks:107",
+      "name": "setLinks",
+      "startLine": 107,
+      "endLine": 112,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "setLink",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 110,
+          "resolvedId": "src/tests/pages/profile-form.page.ts:setLink:99"
+        },
+        {
+          "target": "i",
+          "resolved": false,
+          "confidence": 0,
+          "line": 110
+        },
+        {
+          "target": "val",
+          "resolved": false,
+          "confidence": 0,
+          "line": 110
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/tests/pages/profile-form.page.ts:clickCancel:114",
+      "name": "clickCancel",
+      "startLine": 114,
+      "endLine": 116,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "click",
+          "resolved": false,
+          "confidence": 0,
+          "line": 115
+        },
+        {
+          "target": "cancelButton",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 115,
+          "resolvedId": "src/tests/pages/profile-form.page.ts:cancelButton:49"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/tests/pages/profile-form.page.ts:clickSave:118",
+      "name": "clickSave",
+      "startLine": 118,
+      "endLine": 120,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "click",
+          "resolved": false,
+          "confidence": 0,
+          "line": 119
+        },
+        {
+          "target": "saveButton",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 119,
+          "resolvedId": "src/tests/pages/profile-form.page.ts:saveButton:54"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/tests/pages/profile-form.page.ts:saveChanges:122",
+      "name": "saveChanges",
+      "startLine": 122,
+      "endLine": 126,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "hideFloatingWidgets",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 123,
+          "resolvedId": "src/tests/pages/profile-form.page.ts:hideFloatingWidgets:15"
+        },
+        {
+          "target": "clickSave",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 124,
+          "resolvedId": "src/tests/pages/profile-form.page.ts:clickSave:118"
+        },
+        {
+          "target": "waitForSaveComplete",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 125,
+          "resolvedId": "src/tests/pages/profile-form.page.ts:waitForSaveComplete:128"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/tests/pages/profile-form.page.ts:waitForSaveComplete:128",
+      "name": "waitForSaveComplete",
+      "startLine": 128,
+      "endLine": 138,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "getSelectors",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 129,
+          "resolvedId": "src/tests/utils/selectors.ts:getSelectors:3"
+        },
+        {
+          "target": "page",
+          "resolved": false,
+          "confidence": 0,
+          "line": 129
+        },
+        {
+          "target": "waitFor",
+          "resolved": false,
+          "confidence": 0,
+          "line": 130
+        },
+        {
+          "target": "getButton",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 130,
+          "resolvedId": "src/tests/utils/selectors.ts:getButton:36"
+        },
+        {
+          "target": "waitFor",
+          "resolved": false,
+          "confidence": 0,
+          "line": 134
+        },
+        {
+          "target": "getButton",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 134,
+          "resolvedId": "src/tests/utils/selectors.ts:getButton:36"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/tests/pages/profile-form.page.ts:assertValidLinkIndex:140",
+      "name": "assertValidLinkIndex",
+      "startLine": 140,
+      "endLine": 144,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "Error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 142,
+          "resolvedId": "src/app/error.tsx:Error:8"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

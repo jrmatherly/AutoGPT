@@ -1,0 +1,211 @@
+{
+  "version": "1.0.0",
+  "category": "security",
+  "patterns": [
+    {
+      "id": "f3b097339ad80188",
+      "subcategory": "rate-limiting",
+      "name": "Rate Limiting Detector",
+      "description": "Learns rate limiting patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "security/rate-limiting",
+          "patternId": "security/rate-limiting/import"
+        }
+      },
+      "confidence": {
+        "frequency": 0.01,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src/components/layout/Navbar/components/AgentActivityDropdown/components/ActivityDropdown/ActivityDropdown.tsx",
+          "line": 7,
+          "column": 46,
+          "isOutlier": false,
+          "confidence": 0.97
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:32:38.510Z",
+        "lastSeen": "2026-01-29T06:32:38.510Z",
+        "source": "auto-detected",
+        "tags": [
+          "security",
+          "rate-limiting"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "b01ad1e6770c0e7e",
+      "subcategory": "rate-limiting",
+      "name": "Rate Limiting Detector",
+      "description": "Learns rate limiting patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "security/rate-limiting",
+          "patternId": "security/rate-limiting/class_definition"
+        }
+      },
+      "confidence": {
+        "frequency": 0.04,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 4,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src/lib/autogpt-server-api/context.tsx",
+          "line": 9,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.945
+        },
+        {
+          "file": "src/services/analytics/index.tsx",
+          "line": 15,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.92
+        },
+        {
+          "file": "src/services/scripts/scripts.tsx",
+          "line": 4,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.91
+        },
+        {
+          "file": "src/types/types.ts",
+          "line": 2,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 1
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:32:38.510Z",
+        "lastSeen": "2026-01-29T06:32:38.510Z",
+        "source": "auto-detected",
+        "tags": [
+          "security",
+          "rate-limiting"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "db6e57e534c7a6b4",
+      "subcategory": "csp-headers",
+      "name": "CSP Headers Detector",
+      "description": "Learns Content Security Policy header patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "security/csp-headers",
+          "patternId": "security/csp-headers/class_definition"
+        }
+      },
+      "confidence": {
+        "frequency": 0.02,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src/lib/autogpt-server-api/helpers.test.ts",
+          "line": 23,
+          "column": 37,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/lib/autogpt-server-api/helpers.test.ts",
+          "line": 24,
+          "column": 46,
+          "isOutlier": false,
+          "confidence": 1
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:32:38.510Z",
+        "lastSeen": "2026-01-29T06:32:38.510Z",
+        "source": "auto-detected",
+        "tags": [
+          "security",
+          "csp-headers"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "124a677bffdea025",
+      "subcategory": "xss-prevention",
+      "name": "XSS Prevention Detector",
+      "description": "Learns XSS prevention patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "security/xss-prevention",
+          "patternId": "security/xss-prevention/function_definition"
+        }
+      },
+      "confidence": {
+        "frequency": 0.04,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 2,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src/lib/autogpt-server-api/utils.ts",
+          "line": 42,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/tests/marketplace-agent.spec.ts",
+          "line": 8,
+          "column": 10,
+          "isOutlier": false,
+          "confidence": 0.945
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:32:38.510Z",
+        "lastSeen": "2026-01-29T06:32:38.510Z",
+        "source": "auto-detected",
+        "tags": [
+          "security",
+          "xss-prevention"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    }
+  ],
+  "lastUpdated": "2026-01-29T07:18:15.503Z",
+  "checksum": "e3fbca3549679648"
+}

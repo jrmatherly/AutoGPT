@@ -1,0 +1,88 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.064Z",
+  "checksum": "d777c5e513e34280",
+  "file": "src/app/(platform)/profile/(user)/layout.tsx",
+  "functions": [
+    {
+      "id": "src/app/(platform)/profile/(user)/layout.tsx:Layout:16",
+      "name": "Layout",
+      "startLine": 16,
+      "endLine": 71,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useGetFlag",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 17,
+          "resolvedId": "src/services/feature-flags/use-get-flag.ts:useGetFlag:53"
+        },
+        {
+          "target": "ENABLE_PLATFORM_PAYMENT",
+          "resolved": false,
+          "confidence": 0,
+          "line": 17
+        },
+        {
+          "target": "UserCircleIcon",
+          "resolved": false,
+          "confidence": 0,
+          "line": 25
+        },
+        {
+          "target": "StorefrontIcon",
+          "resolved": false,
+          "confidence": 0,
+          "line": 30
+        },
+        {
+          "target": "CoinsIcon",
+          "resolved": false,
+          "confidence": 0,
+          "line": 37
+        },
+        {
+          "target": "PlugsIcon",
+          "resolved": false,
+          "confidence": 0,
+          "line": 44
+        },
+        {
+          "target": "SlidersHorizontalIcon",
+          "resolved": false,
+          "confidence": 0,
+          "line": 49
+        },
+        {
+          "target": "KeyIcon",
+          "resolved": false,
+          "confidence": 0,
+          "line": 54
+        },
+        {
+          "target": "AppWindowIcon",
+          "resolved": false,
+          "confidence": 0,
+          "line": 59
+        },
+        {
+          "target": "Sidebar",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 67,
+          "resolvedId": "src/components/__legacy__/Sidebar.tsx:Sidebar:32"
+        },
+        {
+          "target": "sidebarLinkGroups",
+          "resolved": false,
+          "confidence": 0,
+          "line": 67
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

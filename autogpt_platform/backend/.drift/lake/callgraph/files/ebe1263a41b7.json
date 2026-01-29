@@ -1,0 +1,1112 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.230Z",
+  "checksum": "33fdca10bbc134e7",
+  "file": "backend/api/features/chat/db.py",
+  "functions": [
+    {
+      "id": "backend/api/features/chat/db.py:get_chat_session:23",
+      "name": "get_chat_session",
+      "startLine": 23,
+      "endLine": 33,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "find_unique",
+          "resolved": false,
+          "confidence": 0,
+          "line": 25
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 25
+        },
+        {
+          "target": "sort",
+          "resolved": false,
+          "confidence": 0,
+          "line": 32
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "prisma",
+          "operation": "read",
+          "line": 25,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/api/features/chat/db.py:create_chat_session:36",
+      "name": "create_chat_session",
+      "startLine": 36,
+      "endLine": 51,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "ChatSessionCreateInput",
+          "resolved": false,
+          "confidence": 0,
+          "line": 41
+        },
+        {
+          "target": "SafeJson",
+          "resolved": false,
+          "confidence": 0,
+          "line": 44
+        },
+        {
+          "target": "SafeJson",
+          "resolved": false,
+          "confidence": 0,
+          "line": 45
+        },
+        {
+          "target": "SafeJson",
+          "resolved": false,
+          "confidence": 0,
+          "line": 46
+        },
+        {
+          "target": "create",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 48,
+          "resolvedId": "backend/integrations/creds_manager.py:create:68"
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 48
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "prisma",
+          "operation": "write",
+          "line": 48,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/api/features/chat/db.py:update_chat_session:54",
+      "name": "update_chat_session",
+      "startLine": 54,
+      "endLine": 87,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 64
+        },
+        {
+          "target": "SafeJson",
+          "resolved": false,
+          "confidence": 0,
+          "line": 67
+        },
+        {
+          "target": "credentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 67
+        },
+        {
+          "target": "SafeJson",
+          "resolved": false,
+          "confidence": 0,
+          "line": 69
+        },
+        {
+          "target": "successful_agent_runs",
+          "resolved": false,
+          "confidence": 0,
+          "line": 69
+        },
+        {
+          "target": "SafeJson",
+          "resolved": false,
+          "confidence": 0,
+          "line": 71
+        },
+        {
+          "target": "successful_agent_schedules",
+          "resolved": false,
+          "confidence": 0,
+          "line": 71
+        },
+        {
+          "target": "update",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 79,
+          "resolvedId": "backend/integrations/creds_manager.py:update:162"
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 79
+        },
+        {
+          "target": "sort",
+          "resolved": false,
+          "confidence": 0,
+          "line": 86
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "prisma",
+          "operation": "write",
+          "line": 79,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/api/features/chat/db.py:add_chat_message:90",
+      "name": "add_chat_message",
+      "startLine": 90,
+      "endLine": 135,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "SafeJson",
+          "resolved": false,
+          "confidence": 0,
+          "line": 123
+        },
+        {
+          "target": "tool_calls",
+          "resolved": false,
+          "confidence": 0,
+          "line": 123
+        },
+        {
+          "target": "SafeJson",
+          "resolved": false,
+          "confidence": 0,
+          "line": 125
+        },
+        {
+          "target": "function_call",
+          "resolved": false,
+          "confidence": 0,
+          "line": 125
+        },
+        {
+          "target": "gather",
+          "resolved": false,
+          "confidence": 0,
+          "line": 128
+        },
+        {
+          "target": "update",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 129,
+          "resolvedId": "backend/integrations/creds_manager.py:update:162"
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 129
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 131
+        },
+        {
+          "target": "create",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 133,
+          "resolvedId": "backend/integrations/creds_manager.py:create:68"
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 133
+        },
+        {
+          "target": "cast",
+          "resolved": false,
+          "confidence": 0,
+          "line": 133
+        },
+        {
+          "target": "data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 133
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "prisma",
+          "operation": "write",
+          "line": 129,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "write",
+          "line": 133,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/api/features/chat/db.py:add_chat_messages_batch:138",
+      "name": "add_chat_messages_batch",
+      "startLine": 138,
+      "endLine": 193,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "transaction",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 153,
+          "resolvedId": "backend/data/db.py:transaction:92"
+        },
+        {
+          "target": "enumerate",
+          "resolved": false,
+          "confidence": 0,
+          "line": 154
+        },
+        {
+          "target": "messages",
+          "resolved": false,
+          "confidence": 0,
+          "line": 154
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 165,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 167,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 169,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 171,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 175,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "SafeJson",
+          "resolved": false,
+          "confidence": 0,
+          "line": 176
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 177,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "SafeJson",
+          "resolved": false,
+          "confidence": 0,
+          "line": 178
+        },
+        {
+          "target": "create",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 180,
+          "resolvedId": "backend/integrations/creds_manager.py:create:68"
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 180
+        },
+        {
+          "target": "tx",
+          "resolved": false,
+          "confidence": 0,
+          "line": 180
+        },
+        {
+          "target": "cast",
+          "resolved": false,
+          "confidence": 0,
+          "line": 181
+        },
+        {
+          "target": "data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 181
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 183
+        },
+        {
+          "target": "created",
+          "resolved": false,
+          "confidence": 0,
+          "line": 183
+        },
+        {
+          "target": "update",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 188,
+          "resolvedId": "backend/integrations/creds_manager.py:update:162"
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 188
+        },
+        {
+          "target": "tx",
+          "resolved": false,
+          "confidence": 0,
+          "line": 188
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 190
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "prisma",
+          "operation": "write",
+          "line": 180,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "write",
+          "line": 188,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/api/features/chat/db.py:get_user_chat_sessions:196",
+      "name": "get_user_chat_sessions",
+      "startLine": 196,
+      "endLine": 207,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "find_many",
+          "resolved": false,
+          "confidence": 0,
+          "line": 202
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 202
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "prisma",
+          "operation": "read",
+          "line": 202,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/api/features/chat/db.py:get_user_session_count:210",
+      "name": "get_user_session_count",
+      "startLine": 210,
+      "endLine": 212,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "count",
+          "resolved": false,
+          "confidence": 0,
+          "line": 212
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 212
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/chat/db.py:delete_chat_session:215",
+      "name": "delete_chat_session",
+      "startLine": 215,
+      "endLine": 243,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "delete_many",
+          "resolved": false,
+          "confidence": 0,
+          "line": 233
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 233
+        },
+        {
+          "target": "warning",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 235,
+          "resolvedId": "backend/util/logging.py:warning:45"
+        },
+        {
+          "target": "error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 242,
+          "resolvedId": "backend/util/logging.py:error:49"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/chat/db.py:get_chat_session_message_count:246",
+      "name": "get_chat_session_message_count",
+      "startLine": 246,
+      "endLine": 249,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "count",
+          "resolved": false,
+          "confidence": 0,
+          "line": 248
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 248
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/chat/db.py:update_tool_message_content:252",
+      "name": "update_tool_message_content",
+      "startLine": 252,
+      "endLine": 291,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "update_many",
+          "resolved": false,
+          "confidence": 0,
+          "line": 270
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 270
+        },
+        {
+          "target": "warning",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 280,
+          "resolvedId": "backend/util/logging.py:warning:45"
+        },
+        {
+          "target": "error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 287,
+          "resolvedId": "backend/util/logging.py:error:49"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "tool",
+          "operation": "write",
+          "line": 288,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/api/features/chat/db.py:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 292,
+      "isEntryPoint": false,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "getLogger",
+          "resolved": false,
+          "confidence": 0,
+          "line": 20
+        },
+        {
+          "target": "find_unique",
+          "resolved": false,
+          "confidence": 0,
+          "line": 25
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 25
+        },
+        {
+          "target": "sort",
+          "resolved": false,
+          "confidence": 0,
+          "line": 32
+        },
+        {
+          "target": "ChatSessionCreateInput",
+          "resolved": false,
+          "confidence": 0,
+          "line": 41
+        },
+        {
+          "target": "SafeJson",
+          "resolved": false,
+          "confidence": 0,
+          "line": 44
+        },
+        {
+          "target": "SafeJson",
+          "resolved": false,
+          "confidence": 0,
+          "line": 45
+        },
+        {
+          "target": "SafeJson",
+          "resolved": false,
+          "confidence": 0,
+          "line": 46
+        },
+        {
+          "target": "create",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 48,
+          "resolvedId": "backend/integrations/creds_manager.py:create:68"
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 48
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 64
+        },
+        {
+          "target": "SafeJson",
+          "resolved": false,
+          "confidence": 0,
+          "line": 67
+        },
+        {
+          "target": "credentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 67
+        },
+        {
+          "target": "SafeJson",
+          "resolved": false,
+          "confidence": 0,
+          "line": 69
+        },
+        {
+          "target": "successful_agent_runs",
+          "resolved": false,
+          "confidence": 0,
+          "line": 69
+        },
+        {
+          "target": "SafeJson",
+          "resolved": false,
+          "confidence": 0,
+          "line": 71
+        },
+        {
+          "target": "successful_agent_schedules",
+          "resolved": false,
+          "confidence": 0,
+          "line": 71
+        },
+        {
+          "target": "update",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 79,
+          "resolvedId": "backend/integrations/creds_manager.py:update:162"
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 79
+        },
+        {
+          "target": "sort",
+          "resolved": false,
+          "confidence": 0,
+          "line": 86
+        },
+        {
+          "target": "SafeJson",
+          "resolved": false,
+          "confidence": 0,
+          "line": 123
+        },
+        {
+          "target": "tool_calls",
+          "resolved": false,
+          "confidence": 0,
+          "line": 123
+        },
+        {
+          "target": "SafeJson",
+          "resolved": false,
+          "confidence": 0,
+          "line": 125
+        },
+        {
+          "target": "function_call",
+          "resolved": false,
+          "confidence": 0,
+          "line": 125
+        },
+        {
+          "target": "gather",
+          "resolved": false,
+          "confidence": 0,
+          "line": 128
+        },
+        {
+          "target": "update",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 129,
+          "resolvedId": "backend/integrations/creds_manager.py:update:162"
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 129
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 131
+        },
+        {
+          "target": "create",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 133,
+          "resolvedId": "backend/integrations/creds_manager.py:create:68"
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 133
+        },
+        {
+          "target": "cast",
+          "resolved": false,
+          "confidence": 0,
+          "line": 133
+        },
+        {
+          "target": "data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 133
+        },
+        {
+          "target": "transaction",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 153,
+          "resolvedId": "backend/data/db.py:transaction:92"
+        },
+        {
+          "target": "enumerate",
+          "resolved": false,
+          "confidence": 0,
+          "line": 154
+        },
+        {
+          "target": "messages",
+          "resolved": false,
+          "confidence": 0,
+          "line": 154
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 165,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 167,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 169,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 171,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 175,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "SafeJson",
+          "resolved": false,
+          "confidence": 0,
+          "line": 176
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 177,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "SafeJson",
+          "resolved": false,
+          "confidence": 0,
+          "line": 178
+        },
+        {
+          "target": "create",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 180,
+          "resolvedId": "backend/integrations/creds_manager.py:create:68"
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 180
+        },
+        {
+          "target": "tx",
+          "resolved": false,
+          "confidence": 0,
+          "line": 180
+        },
+        {
+          "target": "cast",
+          "resolved": false,
+          "confidence": 0,
+          "line": 181
+        },
+        {
+          "target": "data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 181
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 183
+        },
+        {
+          "target": "created",
+          "resolved": false,
+          "confidence": 0,
+          "line": 183
+        },
+        {
+          "target": "update",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 188,
+          "resolvedId": "backend/integrations/creds_manager.py:update:162"
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 188
+        },
+        {
+          "target": "tx",
+          "resolved": false,
+          "confidence": 0,
+          "line": 188
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 190
+        },
+        {
+          "target": "find_many",
+          "resolved": false,
+          "confidence": 0,
+          "line": 202
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 202
+        },
+        {
+          "target": "count",
+          "resolved": false,
+          "confidence": 0,
+          "line": 212
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 212
+        },
+        {
+          "target": "delete_many",
+          "resolved": false,
+          "confidence": 0,
+          "line": 233
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 233
+        },
+        {
+          "target": "warning",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 235,
+          "resolvedId": "backend/util/logging.py:warning:45"
+        },
+        {
+          "target": "error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 242,
+          "resolvedId": "backend/util/logging.py:error:49"
+        },
+        {
+          "target": "count",
+          "resolved": false,
+          "confidence": 0,
+          "line": 248
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 248
+        },
+        {
+          "target": "update_many",
+          "resolved": false,
+          "confidence": 0,
+          "line": 270
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 270
+        },
+        {
+          "target": "warning",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 280,
+          "resolvedId": "backend/util/logging.py:warning:45"
+        },
+        {
+          "target": "error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 287,
+          "resolvedId": "backend/util/logging.py:error:49"
+        },
+        {
+          "target": "getLogger",
+          "resolved": false,
+          "confidence": 0,
+          "line": 20
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "tool",
+          "operation": "write",
+          "line": 288,
+          "fields": []
+        },
+        {
+          "table": "logging",
+          "operation": "read",
+          "line": 20,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "read",
+          "line": 25,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "write",
+          "line": 48,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "write",
+          "line": 79,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "write",
+          "line": 129,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "write",
+          "line": 133,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "write",
+          "line": 180,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "write",
+          "line": 188,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "read",
+          "line": 202,
+          "fields": []
+        }
+      ]
+    }
+  ]
+}

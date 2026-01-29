@@ -1,0 +1,1584 @@
+{
+  "version": "1.0.0",
+  "category": "styling",
+  "patterns": [
+    {
+      "id": "3db47873c5892416",
+      "subcategory": "design-tokens",
+      "name": "Design Tokens Detector",
+      "description": "Learns design token patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "styling/design-tokens",
+          "patternId": "styling/design-tokens/function_call"
+        }
+      },
+      "confidence": {
+        "frequency": 0.04,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "autogpt_libs/api_key/keysmith.py",
+          "line": 25,
+          "column": 43,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/api_key/keysmith.py",
+          "line": 69,
+          "column": 24,
+          "isOutlier": false,
+          "confidence": 0.97
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:33:06.620Z",
+        "lastSeen": "2026-01-29T07:18:28.885Z",
+        "source": "auto-detected",
+        "tags": [
+          "styling",
+          "design-tokens"
+        ],
+        "approvedAt": "2026-01-29T07:18:28.885Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "f61448b71954b389",
+      "subcategory": "color-usage",
+      "name": "Color Usage Detector",
+      "description": "Learns color usage patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "styling/color-usage",
+          "patternId": "styling/color-usage/function_call"
+        }
+      },
+      "confidence": {
+        "frequency": 0.04,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 2,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "autogpt_libs/api_key/keysmith.py",
+          "line": 48,
+          "column": 65,
+          "isOutlier": false,
+          "confidence": 0.8533333333333333
+        },
+        {
+          "file": "autogpt_libs/api_key/test_keysmith.py",
+          "line": 32,
+          "column": 55,
+          "isOutlier": false,
+          "confidence": 0.97
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:33:06.620Z",
+        "lastSeen": "2026-01-29T07:18:28.898Z",
+        "source": "auto-detected",
+        "tags": [
+          "styling",
+          "color-usage"
+        ],
+        "approvedAt": "2026-01-29T07:18:28.898Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "f8fa258a6c490eb0",
+      "subcategory": "color-usage",
+      "name": "Color Usage Detector",
+      "description": "Learns color usage patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "styling/color-usage",
+          "patternId": "styling/color-usage/property_access"
+        }
+      },
+      "confidence": {
+        "frequency": 0.04,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.8533333333333333,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "autogpt_libs/api_key/keysmith.py",
+          "line": 65,
+          "column": 27,
+          "isOutlier": false,
+          "confidence": 0.8533333333333333
+        },
+        {
+          "file": "autogpt_libs/api_key/keysmith.py",
+          "line": 81,
+          "column": 25,
+          "isOutlier": false,
+          "confidence": 0.8533333333333333
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:33:06.620Z",
+        "lastSeen": "2026-01-29T07:18:28.910Z",
+        "source": "auto-detected",
+        "tags": [
+          "styling",
+          "color-usage"
+        ],
+        "approvedAt": "2026-01-29T07:18:28.910Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "5d71a23c3dbf9da3",
+      "subcategory": "class-naming",
+      "name": "Class Naming Detector",
+      "description": "Learns class naming patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "styling/class-naming",
+          "patternId": "styling/class-naming/unknown"
+        }
+      },
+      "confidence": {
+        "frequency": 0.58,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 13,
+        "score": 0.77,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "autogpt_libs/api_key/keysmith.py",
+          "line": 8,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/api_key/keysmith.py",
+          "line": 18,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/auth/config.py",
+          "line": 9,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/auth/config.py",
+          "line": 23,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 22,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 169,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 260,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 364,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/auth/helpers_test.py",
+          "line": 2,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/auth/models.py",
+          "line": 9,
+          "column": 1,
+          "isOutlier": true,
+          "confidence": 0.595,
+          "outlierReason": "Low confidence outlier"
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 37,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 0.6533333333333333
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 78,
+          "column": 37,
+          "isOutlier": false,
+          "confidence": 0.6533333333333333
+        },
+        {
+          "file": "autogpt_libs/logging/filters.py",
+          "line": 4,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/logging/formatters.py",
+          "line": 8,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 0.7
+        },
+        {
+          "file": "autogpt_libs/logging/formatters.py",
+          "line": 16,
+          "column": 64,
+          "isOutlier": false,
+          "confidence": 0.7
+        },
+        {
+          "file": "autogpt_libs/logging/formatters.py",
+          "line": 52,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 0.7
+        },
+        {
+          "file": "autogpt_libs/logging/formatters.py",
+          "line": 25,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.7
+        },
+        {
+          "file": "autogpt_libs/logging/handlers.py",
+          "line": 7,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/rate_limit/config.py",
+          "line": 7,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/rate_limit/limiter.py",
+          "line": 9,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/supabase_integration_credentials_store/types.py",
+          "line": 7,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/supabase_integration_credentials_store/types.py",
+          "line": 19,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/supabase_integration_credentials_store/types.py",
+          "line": 36,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/supabase_integration_credentials_store/types.py",
+          "line": 55,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/supabase_integration_credentials_store/types.py",
+          "line": 64,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/supabase_integration_credentials_store/types.py",
+          "line": 69,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/supabase_integration_credentials_store/types.py",
+          "line": 74,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/utils/synchronize.py",
+          "line": 12,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/utils/synchronize.py",
+          "line": 14,
+          "column": 10,
+          "isOutlier": false,
+          "confidence": 0.77
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:33:06.620Z",
+        "lastSeen": "2026-01-29T07:18:28.923Z",
+        "source": "auto-detected",
+        "tags": [
+          "styling",
+          "class-naming"
+        ],
+        "approvedAt": "2026-01-29T07:18:28.923Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "a0d0f51f8db1401a",
+      "subcategory": "design-tokens",
+      "name": "Design Tokens Detector",
+      "description": "Learns design token patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "styling/design-tokens",
+          "patternId": "styling/design-tokens/conditional"
+        }
+      },
+      "confidence": {
+        "frequency": 0.15,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 5,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "autogpt_libs/auth/config_test.py",
+          "line": 3,
+          "column": 60,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies.py",
+          "line": 31,
+          "column": 91,
+          "isOutlier": false,
+          "confidence": 0.8533333333333333
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies.py",
+          "line": 32,
+          "column": 66,
+          "isOutlier": false,
+          "confidence": 0.8533333333333333
+        },
+        {
+          "file": "autogpt_libs/auth/jwt_utils.py",
+          "line": 27,
+          "column": 25,
+          "isOutlier": false,
+          "confidence": 0.7472727272727272
+        },
+        {
+          "file": "autogpt_libs/auth/jwt_utils.py",
+          "line": 51,
+          "column": 32,
+          "isOutlier": false,
+          "confidence": 0.7472727272727272
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 81,
+          "column": 70,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/supabase_integration_credentials_store/types.py",
+          "line": 25,
+          "column": 60,
+          "isOutlier": false,
+          "confidence": 0.8533333333333333
+        },
+        {
+          "file": "autogpt_libs/supabase_integration_credentials_store/types.py",
+          "line": 28,
+          "column": 61,
+          "isOutlier": false,
+          "confidence": 0.8533333333333333
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:33:06.621Z",
+        "lastSeen": "2026-01-29T07:18:28.936Z",
+        "source": "auto-detected",
+        "tags": [
+          "styling",
+          "design-tokens"
+        ],
+        "approvedAt": "2026-01-29T07:18:28.936Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "15fee2a49a7c3c2d",
+      "subcategory": "typography",
+      "name": "Typography Detector",
+      "description": "Learns typography patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "styling/typography",
+          "patternId": "styling/typography/property_access"
+        }
+      },
+      "confidence": {
+        "frequency": 0.18,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.935,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "autogpt_libs/auth/config_test.py",
+          "line": 110,
+          "column": 45,
+          "isOutlier": false,
+          "confidence": 0.935
+        },
+        {
+          "file": "autogpt_libs/auth/config_test.py",
+          "line": 111,
+          "column": 52,
+          "isOutlier": false,
+          "confidence": 0.935
+        },
+        {
+          "file": "autogpt_libs/auth/config_test.py",
+          "line": 124,
+          "column": 45,
+          "isOutlier": false,
+          "confidence": 0.935
+        },
+        {
+          "file": "autogpt_libs/auth/config_test.py",
+          "line": 137,
+          "column": 56,
+          "isOutlier": false,
+          "confidence": 0.935
+        },
+        {
+          "file": "autogpt_libs/auth/config_test.py",
+          "line": 235,
+          "column": 73,
+          "isOutlier": false,
+          "confidence": 0.935
+        },
+        {
+          "file": "autogpt_libs/auth/config_test.py",
+          "line": 236,
+          "column": 41,
+          "isOutlier": false,
+          "confidence": 0.935
+        },
+        {
+          "file": "autogpt_libs/auth/config_test.py",
+          "line": 282,
+          "column": 36,
+          "isOutlier": false,
+          "confidence": 0.935
+        },
+        {
+          "file": "autogpt_libs/auth/config_test.py",
+          "line": 283,
+          "column": 69,
+          "isOutlier": false,
+          "confidence": 0.935
+        },
+        {
+          "file": "autogpt_libs/auth/config_test.py",
+          "line": 305,
+          "column": 73,
+          "isOutlier": false,
+          "confidence": 0.935
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:33:06.621Z",
+        "lastSeen": "2026-01-29T07:18:28.949Z",
+        "source": "auto-detected",
+        "tags": [
+          "styling",
+          "typography"
+        ],
+        "approvedAt": "2026-01-29T07:18:28.949Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "f86acad3901edbb4",
+      "subcategory": "typography",
+      "name": "Typography Detector",
+      "description": "Learns typography patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "styling/typography",
+          "patternId": "styling/typography/unknown"
+        }
+      },
+      "confidence": {
+        "frequency": 0.04,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 2,
+        "score": 0.77,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "autogpt_libs/auth/config_test.py",
+          "line": 2,
+          "column": 59,
+          "isOutlier": false,
+          "confidence": 0.7350000000000001
+        },
+        {
+          "file": "autogpt_libs/auth/jwt_utils_test.py",
+          "line": 3,
+          "column": 14,
+          "isOutlier": false,
+          "confidence": 0.77
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:33:06.621Z",
+        "lastSeen": "2026-01-29T07:18:28.963Z",
+        "source": "auto-detected",
+        "tags": [
+          "styling",
+          "typography"
+        ],
+        "approvedAt": "2026-01-29T07:18:28.963Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "427e09b335d77f18",
+      "subcategory": "tailwind-patterns",
+      "name": "Tailwind Patterns Detector",
+      "description": "Learns Tailwind CSS patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "styling/tailwind-patterns",
+          "patternId": "styling/tailwind-patterns/property_access"
+        }
+      },
+      "confidence": {
+        "frequency": 0.09,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "autogpt_libs/auth/config_test.py",
+          "line": 110,
+          "column": 45,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/auth/config_test.py",
+          "line": 111,
+          "column": 52,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/auth/config_test.py",
+          "line": 124,
+          "column": 45,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/auth/config_test.py",
+          "line": 137,
+          "column": 56,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/auth/config_test.py",
+          "line": 235,
+          "column": 73,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/auth/config_test.py",
+          "line": 236,
+          "column": 41,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/auth/config_test.py",
+          "line": 282,
+          "column": 36,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/auth/config_test.py",
+          "line": 283,
+          "column": 69,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/auth/config_test.py",
+          "line": 305,
+          "column": 73,
+          "isOutlier": false,
+          "confidence": 0.97
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:33:06.621Z",
+        "lastSeen": "2026-01-29T07:18:28.977Z",
+        "source": "auto-detected",
+        "tags": [
+          "styling",
+          "tailwind-patterns"
+        ],
+        "approvedAt": "2026-01-29T07:18:28.977Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "4b0e56fa486a4265",
+      "subcategory": "design-tokens",
+      "name": "Design Tokens Detector",
+      "description": "Learns design token patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "styling/design-tokens",
+          "patternId": "styling/design-tokens/import"
+        }
+      },
+      "confidence": {
+        "frequency": 0.06,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 3,
+        "score": 0.8533333333333333,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "autogpt_libs/auth/dependencies.py",
+          "line": 39,
+          "column": 83,
+          "isOutlier": false,
+          "confidence": 0.8533333333333333
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 192,
+          "column": 35,
+          "isOutlier": false,
+          "confidence": 0.7949999999999999
+        },
+        {
+          "file": "autogpt_libs/auth/jwt_utils.py",
+          "line": 30,
+          "column": 68,
+          "isOutlier": false,
+          "confidence": 0.7472727272727272
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:33:06.622Z",
+        "lastSeen": "2026-01-29T07:18:28.990Z",
+        "source": "auto-detected",
+        "tags": [
+          "styling",
+          "design-tokens"
+        ],
+        "approvedAt": "2026-01-29T07:18:28.990Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "9dbab14f7c6d947a",
+      "subcategory": "design-tokens",
+      "name": "Design Tokens Detector",
+      "description": "Learns design token patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "styling/design-tokens",
+          "patternId": "styling/design-tokens/assignment"
+        }
+      },
+      "confidence": {
+        "frequency": 0.3,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 4,
+        "score": 0.8533333333333333,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 216,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.7949999999999999
+        },
+        {
+          "file": "autogpt_libs/auth/jwt_utils.py",
+          "line": 49,
+          "column": 12,
+          "isOutlier": false,
+          "confidence": 0.7472727272727272
+        },
+        {
+          "file": "autogpt_libs/auth/jwt_utils.py",
+          "line": 49,
+          "column": 23,
+          "isOutlier": false,
+          "confidence": 0.7472727272727272
+        },
+        {
+          "file": "autogpt_libs/auth/jwt_utils.py",
+          "line": 65,
+          "column": 36,
+          "isOutlier": false,
+          "confidence": 0.7472727272727272
+        },
+        {
+          "file": "autogpt_libs/auth/jwt_utils_test.py",
+          "line": 50,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 0.7949999999999999
+        },
+        {
+          "file": "autogpt_libs/auth/jwt_utils_test.py",
+          "line": 64,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 0.7949999999999999
+        },
+        {
+          "file": "autogpt_libs/auth/jwt_utils_test.py",
+          "line": 74,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 0.7949999999999999
+        },
+        {
+          "file": "autogpt_libs/auth/jwt_utils_test.py",
+          "line": 102,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 0.7949999999999999
+        },
+        {
+          "file": "autogpt_libs/auth/jwt_utils_test.py",
+          "line": 112,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 0.7949999999999999
+        },
+        {
+          "file": "autogpt_libs/auth/jwt_utils_test.py",
+          "line": 121,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 0.7949999999999999
+        },
+        {
+          "file": "autogpt_libs/auth/jwt_utils_test.py",
+          "line": 230,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 0.7949999999999999
+        },
+        {
+          "file": "autogpt_libs/auth/jwt_utils_test.py",
+          "line": 282,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 0.7949999999999999
+        },
+        {
+          "file": "autogpt_libs/auth/jwt_utils_test.py",
+          "line": 302,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.7949999999999999
+        },
+        {
+          "file": "autogpt_libs/auth/jwt_utils_test.py",
+          "line": 304,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.7949999999999999
+        },
+        {
+          "file": "autogpt_libs/supabase_integration_credentials_store/types.py",
+          "line": 56,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 0.8533333333333333
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:33:06.622Z",
+        "lastSeen": "2026-01-29T07:18:29.002Z",
+        "source": "auto-detected",
+        "tags": [
+          "styling",
+          "design-tokens"
+        ],
+        "approvedAt": "2026-01-29T07:18:29.002Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "66c3587a5fafbb3c",
+      "subcategory": "design-tokens",
+      "name": "Design Tokens Detector",
+      "description": "Learns design token patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "styling/design-tokens",
+          "patternId": "styling/design-tokens/function_definition"
+        }
+      },
+      "confidence": {
+        "frequency": 0.04,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 2,
+        "score": 0.945,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "autogpt_libs/auth/helpers.py",
+          "line": 18,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.945
+        },
+        {
+          "file": "autogpt_libs/auth/jwt_utils.py",
+          "line": 45,
+          "column": 21,
+          "isOutlier": false,
+          "confidence": 0.8972727272727272
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:33:06.622Z",
+        "lastSeen": "2026-01-29T07:18:29.016Z",
+        "source": "auto-detected",
+        "tags": [
+          "styling",
+          "design-tokens"
+        ],
+        "approvedAt": "2026-01-29T07:18:29.016Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "66c491197917b1c4",
+      "subcategory": "design-tokens",
+      "name": "Design Tokens Detector",
+      "description": "Learns design token patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "styling/design-tokens",
+          "patternId": "styling/design-tokens/unknown"
+        }
+      },
+      "confidence": {
+        "frequency": 0.36,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 4,
+        "score": 0.77,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "autogpt_libs/auth/helpers.py",
+          "line": 64,
+          "column": 19,
+          "isOutlier": false,
+          "confidence": 0.595
+        },
+        {
+          "file": "autogpt_libs/auth/jwt_utils.py",
+          "line": 26,
+          "column": 60,
+          "isOutlier": false,
+          "confidence": 0.5472727272727271
+        },
+        {
+          "file": "autogpt_libs/auth/jwt_utils.py",
+          "line": 28,
+          "column": 24,
+          "isOutlier": false,
+          "confidence": 0.5472727272727271
+        },
+        {
+          "file": "autogpt_libs/auth/jwt_utils.py",
+          "line": 47,
+          "column": 30,
+          "isOutlier": false,
+          "confidence": 0.5472727272727271
+        },
+        {
+          "file": "autogpt_libs/auth/jwt_utils.py",
+          "line": 56,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.5472727272727271
+        },
+        {
+          "file": "autogpt_libs/auth/jwt_utils_test.py",
+          "line": 2,
+          "column": 29,
+          "isOutlier": false,
+          "confidence": 0.595
+        },
+        {
+          "file": "autogpt_libs/auth/jwt_utils_test.py",
+          "line": 51,
+          "column": 40,
+          "isOutlier": false,
+          "confidence": 0.595
+        },
+        {
+          "file": "autogpt_libs/auth/jwt_utils_test.py",
+          "line": 67,
+          "column": 35,
+          "isOutlier": false,
+          "confidence": 0.595
+        },
+        {
+          "file": "autogpt_libs/auth/jwt_utils_test.py",
+          "line": 77,
+          "column": 35,
+          "isOutlier": false,
+          "confidence": 0.595
+        },
+        {
+          "file": "autogpt_libs/auth/jwt_utils_test.py",
+          "line": 93,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.595
+        },
+        {
+          "file": "autogpt_libs/auth/jwt_utils_test.py",
+          "line": 95,
+          "column": 39,
+          "isOutlier": false,
+          "confidence": 0.595
+        },
+        {
+          "file": "autogpt_libs/auth/jwt_utils_test.py",
+          "line": 105,
+          "column": 35,
+          "isOutlier": false,
+          "confidence": 0.595
+        },
+        {
+          "file": "autogpt_libs/auth/jwt_utils_test.py",
+          "line": 115,
+          "column": 35,
+          "isOutlier": false,
+          "confidence": 0.595
+        },
+        {
+          "file": "autogpt_libs/auth/jwt_utils_test.py",
+          "line": 122,
+          "column": 77,
+          "isOutlier": false,
+          "confidence": 0.595
+        },
+        {
+          "file": "autogpt_libs/auth/jwt_utils_test.py",
+          "line": 232,
+          "column": 40,
+          "isOutlier": false,
+          "confidence": 0.595
+        },
+        {
+          "file": "autogpt_libs/auth/jwt_utils_test.py",
+          "line": 286,
+          "column": 35,
+          "isOutlier": false,
+          "confidence": 0.595
+        },
+        {
+          "file": "autogpt_libs/auth/jwt_utils_test.py",
+          "line": 307,
+          "column": 39,
+          "isOutlier": false,
+          "confidence": 0.595
+        },
+        {
+          "file": "autogpt_libs/logging/formatters.py",
+          "line": 10,
+          "column": 7,
+          "isOutlier": true,
+          "confidence": 0.77,
+          "outlierReason": "High confidence outlier"
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:33:06.622Z",
+        "lastSeen": "2026-01-29T07:18:29.028Z",
+        "source": "auto-detected",
+        "tags": [
+          "styling",
+          "design-tokens"
+        ],
+        "approvedAt": "2026-01-29T07:18:29.028Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "eada4194606b9241",
+      "subcategory": "typography",
+      "name": "Typography Detector",
+      "description": "Learns typography patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "styling/typography",
+          "patternId": "styling/typography/import"
+        }
+      },
+      "confidence": {
+        "frequency": 0.08,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 2,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "autogpt_libs/auth/helpers_test.py",
+          "line": 348,
+          "column": 57,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 137,
+          "column": 54,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 153,
+          "column": 58,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 168,
+          "column": 54,
+          "isOutlier": false,
+          "confidence": 0.97
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:33:06.622Z",
+        "lastSeen": "2026-01-29T07:18:29.041Z",
+        "source": "auto-detected",
+        "tags": [
+          "styling",
+          "typography"
+        ],
+        "approvedAt": "2026-01-29T07:18:29.041Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "09c87713f4188d25",
+      "subcategory": "design-tokens",
+      "name": "Design Tokens Detector",
+      "description": "Learns design token patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "styling/design-tokens",
+          "patternId": "styling/design-tokens/property_access"
+        }
+      },
+      "confidence": {
+        "frequency": 0.04,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.7949999999999999,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "autogpt_libs/auth/jwt_utils_test.py",
+          "line": 84,
+          "column": 16,
+          "isOutlier": false,
+          "confidence": 0.7949999999999999
+        },
+        {
+          "file": "autogpt_libs/auth/jwt_utils_test.py",
+          "line": 140,
+          "column": 47,
+          "isOutlier": false,
+          "confidence": 0.7949999999999999
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:33:06.622Z",
+        "lastSeen": "2026-01-29T07:18:29.089Z",
+        "source": "auto-detected",
+        "tags": [
+          "styling",
+          "design-tokens"
+        ],
+        "approvedAt": "2026-01-29T07:18:29.089Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "e8d75ec4e7d7b5a9",
+      "subcategory": "class-naming",
+      "name": "Class Naming Detector",
+      "description": "Learns class naming patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "styling/class-naming",
+          "patternId": "styling/class-naming/decorator"
+        }
+      },
+      "confidence": {
+        "frequency": 0.04,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 2,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "autogpt_libs/auth/models.py",
+          "line": 15,
+          "column": 6,
+          "isOutlier": false,
+          "confidence": 0.945
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 67,
+          "column": 6,
+          "isOutlier": false,
+          "confidence": 1
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:33:06.622Z",
+        "lastSeen": "2026-01-29T07:18:29.108Z",
+        "source": "auto-detected",
+        "tags": [
+          "styling",
+          "class-naming"
+        ],
+        "approvedAt": "2026-01-29T07:18:29.108Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "8c12264da3d2dae1",
+      "subcategory": "color-usage",
+      "name": "Color Usage Detector",
+      "description": "Learns color usage patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "styling/color-usage",
+          "patternId": "styling/color-usage/import"
+        }
+      },
+      "confidence": {
+        "frequency": 0.06,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.7366666666666666,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "autogpt_libs/logging/formatters.py",
+          "line": 3,
+          "column": 6,
+          "isOutlier": false,
+          "confidence": 0.7366666666666666
+        },
+        {
+          "file": "autogpt_libs/logging/formatters.py",
+          "line": 64,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.7366666666666666
+        },
+        {
+          "file": "autogpt_libs/logging/formatters.py",
+          "line": 64,
+          "column": 51,
+          "isOutlier": false,
+          "confidence": 0.7366666666666666
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:33:06.623Z",
+        "lastSeen": "2026-01-29T07:18:29.146Z",
+        "source": "auto-detected",
+        "tags": [
+          "styling",
+          "color-usage"
+        ],
+        "approvedAt": "2026-01-29T07:18:29.146Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "23fd05f4a4f7b360",
+      "subcategory": "color-usage",
+      "name": "Color Usage Detector",
+      "description": "Learns color usage patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "styling/color-usage",
+          "patternId": "styling/color-usage/unknown"
+        }
+      },
+      "confidence": {
+        "frequency": 0.06,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.5366666666666666,
+        "level": "low"
+      },
+      "locations": [
+        {
+          "file": "autogpt_libs/logging/formatters.py",
+          "line": 12,
+          "column": 62,
+          "isOutlier": false,
+          "confidence": 0.5366666666666666
+        },
+        {
+          "file": "autogpt_libs/logging/formatters.py",
+          "line": 12,
+          "column": 80,
+          "isOutlier": false,
+          "confidence": 0.5366666666666666
+        },
+        {
+          "file": "autogpt_libs/logging/formatters.py",
+          "line": 16,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.5366666666666666
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:33:06.623Z",
+        "lastSeen": "2026-01-29T07:18:29.185Z",
+        "source": "auto-detected",
+        "tags": [
+          "styling",
+          "color-usage"
+        ],
+        "approvedAt": "2026-01-29T07:18:29.185Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "a4d09b9b5a3d5583",
+      "subcategory": "color-usage",
+      "name": "Color Usage Detector",
+      "description": "Learns color usage patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "styling/color-usage",
+          "patternId": "styling/color-usage/assignment"
+        }
+      },
+      "confidence": {
+        "frequency": 0.04,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.7366666666666666,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "autogpt_libs/logging/formatters.py",
+          "line": 42,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.7366666666666666
+        },
+        {
+          "file": "autogpt_libs/logging/formatters.py",
+          "line": 42,
+          "column": 34,
+          "isOutlier": false,
+          "confidence": 0.7366666666666666
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:33:06.623Z",
+        "lastSeen": "2026-01-29T07:18:29.198Z",
+        "source": "auto-detected",
+        "tags": [
+          "styling",
+          "color-usage"
+        ],
+        "approvedAt": "2026-01-29T07:18:29.198Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "9110a44acb233fb5",
+      "subcategory": "color-usage",
+      "name": "Color Usage Detector",
+      "description": "Learns color usage patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "styling/color-usage",
+          "patternId": "styling/color-usage/conditional"
+        }
+      },
+      "confidence": {
+        "frequency": 0.08,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.7366666666666666,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "autogpt_libs/logging/formatters.py",
+          "line": 43,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.7366666666666666
+        },
+        {
+          "file": "autogpt_libs/logging/formatters.py",
+          "line": 43,
+          "column": 47,
+          "isOutlier": false,
+          "confidence": 0.7366666666666666
+        },
+        {
+          "file": "autogpt_libs/logging/formatters.py",
+          "line": 46,
+          "column": 12,
+          "isOutlier": false,
+          "confidence": 0.7366666666666666
+        },
+        {
+          "file": "autogpt_libs/logging/formatters.py",
+          "line": 46,
+          "column": 57,
+          "isOutlier": false,
+          "confidence": 0.7366666666666666
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:33:06.623Z",
+        "lastSeen": "2026-01-29T07:18:29.226Z",
+        "source": "auto-detected",
+        "tags": [
+          "styling",
+          "color-usage"
+        ],
+        "approvedAt": "2026-01-29T07:18:29.226Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "4ce17b86b17e5c2b",
+      "subcategory": "class-naming",
+      "name": "Class Naming Detector",
+      "description": "Learns class naming patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "styling/class-naming",
+          "patternId": "styling/class-naming/import"
+        }
+      },
+      "confidence": {
+        "frequency": 0.02,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.8999999999999999,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "autogpt_libs/logging/formatters.py",
+          "line": 3,
+          "column": 28,
+          "isOutlier": false,
+          "confidence": 0.8999999999999999
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:33:06.623Z",
+        "lastSeen": "2026-01-29T07:18:29.238Z",
+        "source": "auto-detected",
+        "tags": [
+          "styling",
+          "class-naming"
+        ],
+        "approvedAt": "2026-01-29T07:18:29.238Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    }
+  ],
+  "lastUpdated": "2026-01-29T07:18:34.019Z",
+  "checksum": "dcd5f63bf0f74e2c"
+}

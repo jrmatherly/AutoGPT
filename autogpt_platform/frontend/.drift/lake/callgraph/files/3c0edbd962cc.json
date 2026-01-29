@@ -1,0 +1,783 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.033Z",
+  "checksum": "c7cd930b51dd2e6d",
+  "file": "src/app/(platform)/monitoring/page.tsx",
+  "functions": [
+    {
+      "id": "src/app/(platform)/monitoring/page.tsx:Monitor:21",
+      "name": "Monitor",
+      "startLine": 21,
+      "endLine": 149,
+      "isEntryPoint": false,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "useState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 22
+        },
+        {
+          "target": "useState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 23
+        },
+        {
+          "target": "useState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 24
+        },
+        {
+          "target": "useState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 25
+        },
+        {
+          "target": "useState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 29
+        },
+        {
+          "target": "useState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 30
+        },
+        {
+          "target": "useBackendAPI",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 31,
+          "resolvedId": "src/lib/autogpt-server-api/context.tsx:useBackendAPI:34"
+        },
+        {
+          "target": "useGetV1ListExecutionSchedulesForAUser",
+          "resolved": false,
+          "confidence": 0,
+          "line": 35
+        },
+        {
+          "target": "useDeleteV1DeleteExecutionSchedule",
+          "resolved": false,
+          "confidence": 0,
+          "line": 36
+        },
+        {
+          "target": "okData",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 38,
+          "resolvedId": "src/app/api/helpers.ts:okData:23"
+        },
+        {
+          "target": "schedulesResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 38
+        },
+        {
+          "target": "useCallback",
+          "resolved": false,
+          "confidence": 0,
+          "line": 40
+        },
+        {
+          "target": "mutateAsync",
+          "resolved": false,
+          "confidence": 0,
+          "line": 42
+        },
+        {
+          "target": "refetchSchedules",
+          "resolved": false,
+          "confidence": 0,
+          "line": 43
+        },
+        {
+          "target": "useCallback",
+          "resolved": false,
+          "confidence": 0,
+          "line": 48
+        },
+        {
+          "target": "then",
+          "resolved": false,
+          "confidence": 0,
+          "line": 49
+        },
+        {
+          "target": "listLibraryAgents",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 49,
+          "resolvedId": "src/lib/autogpt-server-api/client.ts:listLibraryAgents:627"
+        },
+        {
+          "target": "setFlows",
+          "resolved": false,
+          "confidence": 0,
+          "line": 50
+        },
+        {
+          "target": "agents",
+          "resolved": false,
+          "confidence": 0,
+          "line": 50
+        },
+        {
+          "target": "then",
+          "resolved": false,
+          "confidence": 0,
+          "line": 52
+        },
+        {
+          "target": "getExecutions",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 52,
+          "resolvedId": "src/lib/autogpt-server-api/client.ts:getExecutions:267"
+        },
+        {
+          "target": "setExecutions",
+          "resolved": false,
+          "confidence": 0,
+          "line": 53
+        },
+        {
+          "target": "executions",
+          "resolved": false,
+          "confidence": 0,
+          "line": 53
+        },
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 57
+        },
+        {
+          "target": "fetchAgents",
+          "resolved": false,
+          "confidence": 0,
+          "line": 58
+        },
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 61
+        },
+        {
+          "target": "setInterval",
+          "resolved": false,
+          "confidence": 0,
+          "line": 62
+        },
+        {
+          "target": "fetchAgents",
+          "resolved": false,
+          "confidence": 0,
+          "line": 62
+        },
+        {
+          "target": "clearInterval",
+          "resolved": false,
+          "confidence": 0,
+          "line": 63
+        },
+        {
+          "target": "intervalId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 63
+        },
+        {
+          "target": "setSortDirection",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        },
+        {
+          "target": "setSortColumn",
+          "resolved": false,
+          "confidence": 0,
+          "line": 74
+        },
+        {
+          "target": "column",
+          "resolved": false,
+          "confidence": 0,
+          "line": 74
+        },
+        {
+          "target": "setSortDirection",
+          "resolved": false,
+          "confidence": 0,
+          "line": 75
+        },
+        {
+          "target": "AgentFlowList",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 84,
+          "resolvedId": "src/app/(platform)/monitoring/components/AgentFlowList.tsx:AgentFlowList:37"
+        },
+        {
+          "target": "column1",
+          "resolved": false,
+          "confidence": 0,
+          "line": 85
+        },
+        {
+          "target": "flows",
+          "resolved": false,
+          "confidence": 0,
+          "line": 86
+        },
+        {
+          "target": "executions",
+          "resolved": false,
+          "confidence": 0,
+          "line": 87
+        },
+        {
+          "target": "selectedFlow",
+          "resolved": false,
+          "confidence": 0,
+          "line": 88
+        },
+        {
+          "target": "setSelectedRun",
+          "resolved": false,
+          "confidence": 0,
+          "line": 90
+        },
+        {
+          "target": "setSelectedFlow",
+          "resolved": false,
+          "confidence": 0,
+          "line": 91
+        },
+        {
+          "target": "FlowRunsList",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 94,
+          "resolvedId": "src/app/(platform)/monitoring/components/FlowRunsList.tsx:FlowRunsList:21"
+        },
+        {
+          "target": "column2",
+          "resolved": false,
+          "confidence": 0,
+          "line": 95
+        },
+        {
+          "target": "flows",
+          "resolved": false,
+          "confidence": 0,
+          "line": 96
+        },
+        {
+          "target": "selectedRun",
+          "resolved": false,
+          "confidence": 0,
+          "line": 106
+        },
+        {
+          "target": "sort",
+          "resolved": false,
+          "confidence": 0,
+          "line": 97
+        },
+        {
+          "target": "filter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 99
+        },
+        {
+          "target": "getTime",
+          "resolved": false,
+          "confidence": 0,
+          "line": 102
+        },
+        {
+          "target": "getTime",
+          "resolved": false,
+          "confidence": 0,
+          "line": 103
+        },
+        {
+          "target": "setSelectedRun",
+          "resolved": false,
+          "confidence": 0,
+          "line": 107
+        },
+        {
+          "target": "FlowRunInfo",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 110,
+          "resolvedId": "src/app/(platform)/monitoring/components/FlowRunInfo.tsx:FlowRunInfo:20"
+        },
+        {
+          "target": "selectedRun",
+          "resolved": false,
+          "confidence": 0,
+          "line": 115
+        },
+        {
+          "target": "column3",
+          "resolved": false,
+          "confidence": 0,
+          "line": 116
+        },
+        {
+          "target": "find",
+          "resolved": false,
+          "confidence": 0,
+          "line": 113
+        },
+        {
+          "target": "FlowInfo",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 120,
+          "resolvedId": "src/app/(platform)/monitoring/components/FlowInfo.tsx:FlowInfo:45"
+        },
+        {
+          "target": "selectedFlow",
+          "resolved": false,
+          "confidence": 0,
+          "line": 121
+        },
+        {
+          "target": "column3",
+          "resolved": false,
+          "confidence": 0,
+          "line": 125
+        },
+        {
+          "target": "filter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 122
+        },
+        {
+          "target": "fetchAgents",
+          "resolved": false,
+          "confidence": 0,
+          "line": 127
+        },
+        {
+          "target": "setSelectedFlow",
+          "resolved": false,
+          "confidence": 0,
+          "line": 128
+        },
+        {
+          "target": "setSelectedRun",
+          "resolved": false,
+          "confidence": 0,
+          "line": 129
+        },
+        {
+          "target": "Card",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 133,
+          "resolvedId": "src/components/atoms/Card/Card.tsx:Card:9"
+        },
+        {
+          "target": "FlowRunsStatus",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 134,
+          "resolvedId": "src/app/(platform)/monitoring/components/FlowRunsStatus.tsx:FlowRunsStatus:13"
+        },
+        {
+          "target": "flows",
+          "resolved": false,
+          "confidence": 0,
+          "line": 134
+        },
+        {
+          "target": "executions",
+          "resolved": false,
+          "confidence": 0,
+          "line": 134
+        },
+        {
+          "target": "SchedulesTable",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 138,
+          "resolvedId": "src/app/(platform)/monitoring/components/SchedulesTable.tsx:SchedulesTable:51"
+        },
+        {
+          "target": "schedules",
+          "resolved": false,
+          "confidence": 0,
+          "line": 139
+        },
+        {
+          "target": "flows",
+          "resolved": false,
+          "confidence": 0,
+          "line": 140
+        },
+        {
+          "target": "removeSchedule",
+          "resolved": false,
+          "confidence": 0,
+          "line": 141
+        },
+        {
+          "target": "sortColumn",
+          "resolved": false,
+          "confidence": 0,
+          "line": 142
+        },
+        {
+          "target": "sortDirection",
+          "resolved": false,
+          "confidence": 0,
+          "line": 143
+        },
+        {
+          "target": "handleSort",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 144,
+          "resolvedId": "src/app/(platform)/monitoring/page.tsx:handleSort:70"
+        },
+        {
+          "target": "fetchAgents",
+          "resolved": false,
+          "confidence": 0,
+          "line": 58
+        },
+        {
+          "target": "setInterval",
+          "resolved": false,
+          "confidence": 0,
+          "line": 62
+        },
+        {
+          "target": "fetchAgents",
+          "resolved": false,
+          "confidence": 0,
+          "line": 62
+        },
+        {
+          "target": "clearInterval",
+          "resolved": false,
+          "confidence": 0,
+          "line": 63
+        },
+        {
+          "target": "intervalId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 63
+        },
+        {
+          "target": "setSortDirection",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        },
+        {
+          "target": "setSortColumn",
+          "resolved": false,
+          "confidence": 0,
+          "line": 74
+        },
+        {
+          "target": "column",
+          "resolved": false,
+          "confidence": 0,
+          "line": 74
+        },
+        {
+          "target": "setSortDirection",
+          "resolved": false,
+          "confidence": 0,
+          "line": 75
+        },
+        {
+          "target": "getTime",
+          "resolved": false,
+          "confidence": 0,
+          "line": 102
+        },
+        {
+          "target": "getTime",
+          "resolved": false,
+          "confidence": 0,
+          "line": 103
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "flows",
+          "operation": "read",
+          "line": 113,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "src/app/(platform)/monitoring/page.tsx:$useEffect$1:57",
+      "name": "$useEffect$1",
+      "startLine": 57,
+      "endLine": 59,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 57
+        },
+        {
+          "target": "fetchAgents",
+          "resolved": false,
+          "confidence": 0,
+          "line": 58
+        },
+        {
+          "target": "fetchAgents",
+          "resolved": false,
+          "confidence": 0,
+          "line": 58
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/app/(platform)/monitoring/page.tsx:$useEffect$2:61",
+      "name": "$useEffect$2",
+      "startLine": 61,
+      "endLine": 64,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 61
+        },
+        {
+          "target": "setInterval",
+          "resolved": false,
+          "confidence": 0,
+          "line": 62
+        },
+        {
+          "target": "fetchAgents",
+          "resolved": false,
+          "confidence": 0,
+          "line": 62
+        },
+        {
+          "target": "clearInterval",
+          "resolved": false,
+          "confidence": 0,
+          "line": 63
+        },
+        {
+          "target": "intervalId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 63
+        },
+        {
+          "target": "setInterval",
+          "resolved": false,
+          "confidence": 0,
+          "line": 62
+        },
+        {
+          "target": "fetchAgents",
+          "resolved": false,
+          "confidence": 0,
+          "line": 62
+        },
+        {
+          "target": "clearInterval",
+          "resolved": false,
+          "confidence": 0,
+          "line": 63
+        },
+        {
+          "target": "intervalId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 63
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/app/(platform)/monitoring/page.tsx:handleSort:70",
+      "name": "handleSort",
+      "startLine": 70,
+      "endLine": 77,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "setSortDirection",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        },
+        {
+          "target": "setSortColumn",
+          "resolved": false,
+          "confidence": 0,
+          "line": 74
+        },
+        {
+          "target": "column",
+          "resolved": false,
+          "confidence": 0,
+          "line": 74
+        },
+        {
+          "target": "setSortDirection",
+          "resolved": false,
+          "confidence": 0,
+          "line": 75
+        },
+        {
+          "target": "setSortDirection",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        },
+        {
+          "target": "setSortColumn",
+          "resolved": false,
+          "confidence": 0,
+          "line": 74
+        },
+        {
+          "target": "column",
+          "resolved": false,
+          "confidence": 0,
+          "line": 74
+        },
+        {
+          "target": "setSortDirection",
+          "resolved": false,
+          "confidence": 0,
+          "line": 75
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/app/(platform)/monitoring/page.tsx:$sort$3:101",
+      "name": "$sort$3",
+      "startLine": 101,
+      "endLine": 105,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "getTime",
+          "resolved": false,
+          "confidence": 0,
+          "line": 102
+        },
+        {
+          "target": "getTime",
+          "resolved": false,
+          "confidence": 0,
+          "line": 103
+        },
+        {
+          "target": "getTime",
+          "resolved": false,
+          "confidence": 0,
+          "line": 102
+        },
+        {
+          "target": "getTime",
+          "resolved": false,
+          "confidence": 0,
+          "line": 103
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/app/(platform)/monitoring/page.tsx:$filter$4:99",
+      "name": "$filter$4",
+      "startLine": 99,
+      "endLine": 99,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "filter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 99
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/app/(platform)/monitoring/page.tsx:$find$5:113",
+      "name": "$find$5",
+      "startLine": 113,
+      "endLine": 113,
+      "isEntryPoint": false,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "find",
+          "resolved": false,
+          "confidence": 0,
+          "line": 113
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "flows",
+          "operation": "read",
+          "line": 113,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "src/app/(platform)/monitoring/page.tsx:$filter$6:123",
+      "name": "$filter$6",
+      "startLine": 123,
+      "endLine": 123,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

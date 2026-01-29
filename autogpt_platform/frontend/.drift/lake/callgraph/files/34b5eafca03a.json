@@ -1,0 +1,2199 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.028Z",
+  "checksum": "24c101df0e0d468a",
+  "file": "src/components/contextual/Chat/components/ChatContainer/useChatContainer.ts",
+  "functions": [
+    {
+      "id": "src/components/contextual/Chat/components/ChatContainer/useChatContainer.ts:getMessageKey:18",
+      "name": "getMessageKey",
+      "startLine": 18,
+      "endLine": 37,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "slice",
+          "resolved": false,
+          "confidence": 0,
+          "line": 35
+        },
+        {
+          "target": "stringify",
+          "resolved": false,
+          "confidence": 0,
+          "line": 35
+        },
+        {
+          "target": "msg",
+          "resolved": false,
+          "confidence": 0,
+          "line": 35
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/contextual/Chat/components/ChatContainer/useChatContainer.ts:useChatContainer:46",
+      "name": "useChatContainer",
+      "startLine": 46,
+      "endLine": 306,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 52
+        },
+        {
+          "target": "useState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 53
+        },
+        {
+          "target": "useState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 54
+        },
+        {
+          "target": "useState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 55
+        },
+        {
+          "target": "useState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 57
+        },
+        {
+          "target": "useRef",
+          "resolved": false,
+          "confidence": 0,
+          "line": 58
+        },
+        {
+          "target": "useRef",
+          "resolved": false,
+          "confidence": 0,
+          "line": 59
+        },
+        {
+          "target": "useRef",
+          "resolved": false,
+          "confidence": 0,
+          "line": 60
+        },
+        {
+          "target": "useChatStream",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 65,
+          "resolvedId": "src/components/contextual/Chat/useChatStream.ts:useChatStream:10"
+        },
+        {
+          "target": "useChatStore",
+          "resolved": false,
+          "confidence": 0,
+          "line": 66
+        },
+        {
+          "target": "useChatStore",
+          "resolved": false,
+          "confidence": 0,
+          "line": 67
+        },
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 70
+        },
+        {
+          "target": "stopStreaming",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 76,
+          "resolvedId": "src/components/contextual/Chat/useChatStream.ts:stopStreaming:29"
+        },
+        {
+          "target": "prevSession",
+          "resolved": false,
+          "confidence": 0,
+          "line": 76
+        },
+        {
+          "target": "setMessages",
+          "resolved": false,
+          "confidence": 0,
+          "line": 79
+        },
+        {
+          "target": "setStreamingChunks",
+          "resolved": false,
+          "confidence": 0,
+          "line": 80
+        },
+        {
+          "target": "setHasTextChunks",
+          "resolved": false,
+          "confidence": 0,
+          "line": 82
+        },
+        {
+          "target": "setIsStreamingInitiated",
+          "resolved": false,
+          "confidence": 0,
+          "line": 83
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 88,
+          "resolvedId": "src/services/storage/local-storage.ts:get:16"
+        },
+        {
+          "target": "sessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 88
+        },
+        {
+          "target": "createStreamEventDispatcher",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 91,
+          "resolvedId": "src/components/contextual/Chat/components/ChatContainer/createStreamEventDispatcher.ts:createStreamEventDispatcher:15"
+        },
+        {
+          "target": "setIsStreamingInitiated",
+          "resolved": false,
+          "confidence": 0,
+          "line": 103
+        },
+        {
+          "target": "subscribeToStream",
+          "resolved": false,
+          "confidence": 0,
+          "line": 105
+        },
+        {
+          "target": "sessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 105
+        },
+        {
+          "target": "dispatcher",
+          "resolved": false,
+          "confidence": 0,
+          "line": 105
+        },
+        {
+          "target": "skipReplay",
+          "resolved": false,
+          "confidence": 0,
+          "line": 105
+        },
+        {
+          "target": "useMemo",
+          "resolved": false,
+          "confidence": 0,
+          "line": 118
+        },
+        {
+          "target": "processInitialMessages",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 119,
+          "resolvedId": "src/components/contextual/Chat/components/ChatContainer/helpers.ts:processInitialMessages:6"
+        },
+        {
+          "target": "initialMessages",
+          "resolved": false,
+          "confidence": 0,
+          "line": 119
+        },
+        {
+          "target": "Set",
+          "resolved": false,
+          "confidence": 0,
+          "line": 120
+        },
+        {
+          "target": "add",
+          "resolved": false,
+          "confidence": 0,
+          "line": 129
+        },
+        {
+          "target": "toolId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 129
+        },
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 138
+        },
+        {
+          "target": "setMessages",
+          "resolved": false,
+          "confidence": 0,
+          "line": 142
+        },
+        {
+          "target": "filter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 143
+        },
+        {
+          "target": "has",
+          "resolved": false,
+          "confidence": 0,
+          "line": 150
+        },
+        {
+          "target": "toolId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 150
+        },
+        {
+          "target": "useMemo",
+          "resolved": false,
+          "confidence": 0,
+          "line": 165
+        },
+        {
+          "target": "processInitialMessages",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 166,
+          "resolvedId": "src/components/contextual/Chat/components/ChatContainer/helpers.ts:processInitialMessages:6"
+        },
+        {
+          "target": "initialMessages",
+          "resolved": false,
+          "confidence": 0,
+          "line": 166
+        },
+        {
+          "target": "Set",
+          "resolved": false,
+          "confidence": 0,
+          "line": 169
+        },
+        {
+          "target": "add",
+          "resolved": false,
+          "confidence": 0,
+          "line": 171
+        },
+        {
+          "target": "getMessageKey",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 171,
+          "resolvedId": "src/components/contextual/Chat/components/ChatContainer/useChatContainer.ts:getMessageKey:18"
+        },
+        {
+          "target": "msg",
+          "resolved": false,
+          "confidence": 0,
+          "line": 171
+        },
+        {
+          "target": "filter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 175
+        },
+        {
+          "target": "has",
+          "resolved": false,
+          "confidence": 0,
+          "line": 183
+        },
+        {
+          "target": "toolId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 183
+        },
+        {
+          "target": "getMessageKey",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 188,
+          "resolvedId": "src/components/contextual/Chat/components/ChatContainer/useChatContainer.ts:getMessageKey:18"
+        },
+        {
+          "target": "msg",
+          "resolved": false,
+          "confidence": 0,
+          "line": 188
+        },
+        {
+          "target": "has",
+          "resolved": false,
+          "confidence": 0,
+          "line": 189
+        },
+        {
+          "target": "key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 189
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 202
+        },
+        {
+          "target": "setIsRegionBlockedModalOpen",
+          "resolved": false,
+          "confidence": 0,
+          "line": 205
+        },
+        {
+          "target": "createUserMessage",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 207,
+          "resolvedId": "src/components/contextual/Chat/components/ChatContainer/helpers.ts:createUserMessage:161"
+        },
+        {
+          "target": "content",
+          "resolved": false,
+          "confidence": 0,
+          "line": 207
+        },
+        {
+          "target": "setMessages",
+          "resolved": false,
+          "confidence": 0,
+          "line": 208
+        },
+        {
+          "target": "filterAuthMessages",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 208,
+          "resolvedId": "src/components/contextual/Chat/components/ChatContainer/helpers.ts:filterAuthMessages:170"
+        },
+        {
+          "target": "prev",
+          "resolved": false,
+          "confidence": 0,
+          "line": 208
+        },
+        {
+          "target": "setMessages",
+          "resolved": false,
+          "confidence": 0,
+          "line": 210
+        },
+        {
+          "target": "filterAuthMessages",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 210,
+          "resolvedId": "src/components/contextual/Chat/components/ChatContainer/helpers.ts:filterAuthMessages:170"
+        },
+        {
+          "target": "prev",
+          "resolved": false,
+          "confidence": 0,
+          "line": 210
+        },
+        {
+          "target": "setStreamingChunks",
+          "resolved": false,
+          "confidence": 0,
+          "line": 212
+        },
+        {
+          "target": "setHasTextChunks",
+          "resolved": false,
+          "confidence": 0,
+          "line": 214
+        },
+        {
+          "target": "setIsStreamingInitiated",
+          "resolved": false,
+          "confidence": 0,
+          "line": 215
+        },
+        {
+          "target": "createStreamEventDispatcher",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 218,
+          "resolvedId": "src/components/contextual/Chat/components/ChatContainer/createStreamEventDispatcher.ts:createStreamEventDispatcher:15"
+        },
+        {
+          "target": "sendStreamMessage",
+          "resolved": false,
+          "confidence": 0,
+          "line": 231
+        },
+        {
+          "target": "sessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 232
+        },
+        {
+          "target": "content",
+          "resolved": false,
+          "confidence": 0,
+          "line": 233
+        },
+        {
+          "target": "dispatcher",
+          "resolved": false,
+          "confidence": 0,
+          "line": 234
+        },
+        {
+          "target": "isUserMessage",
+          "resolved": false,
+          "confidence": 0,
+          "line": 235
+        },
+        {
+          "target": "context",
+          "resolved": false,
+          "confidence": 0,
+          "line": 236
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 239
+        },
+        {
+          "target": "err",
+          "resolved": false,
+          "confidence": 0,
+          "line": 239
+        },
+        {
+          "target": "setIsStreamingInitiated",
+          "resolved": false,
+          "confidence": 0,
+          "line": 240
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 246
+        },
+        {
+          "target": "stopStreaming",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 253,
+          "resolvedId": "src/components/contextual/Chat/useChatStream.ts:stopStreaming:29"
+        },
+        {
+          "target": "setStreamingChunks",
+          "resolved": false,
+          "confidence": 0,
+          "line": 254
+        },
+        {
+          "target": "setHasTextChunks",
+          "resolved": false,
+          "confidence": 0,
+          "line": 256
+        },
+        {
+          "target": "setIsStreamingInitiated",
+          "resolved": false,
+          "confidence": 0,
+          "line": 257
+        },
+        {
+          "target": "usePageContext",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 260,
+          "resolvedId": "src/components/contextual/Chat/usePageContext.ts:usePageContext:14"
+        },
+        {
+          "target": "useRef",
+          "resolved": false,
+          "confidence": 0,
+          "line": 261
+        },
+        {
+          "target": "sendMessage",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 261,
+          "resolvedId": "src/components/contextual/Chat/components/ChatContainer/useChatContainer.ts:sendMessage:196"
+        },
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 264
+        },
+        {
+          "target": "hasSentInitialPrompt",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 268,
+          "resolvedId": "src/components/contextual/Chat/components/ChatContainer/helpers.ts:hasSentInitialPrompt:116"
+        },
+        {
+          "target": "sessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 268
+        },
+        {
+          "target": "markInitialPromptSent",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 270,
+          "resolvedId": "src/components/contextual/Chat/components/ChatContainer/helpers.ts:markInitialPromptSent:127"
+        },
+        {
+          "target": "sessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 270
+        },
+        {
+          "target": "capturePageContext",
+          "resolved": false,
+          "confidence": 0,
+          "line": 271
+        },
+        {
+          "target": "current",
+          "resolved": false,
+          "confidence": 0,
+          "line": 272
+        },
+        {
+          "target": "initialPrompt",
+          "resolved": false,
+          "confidence": 0,
+          "line": 272
+        },
+        {
+          "target": "context",
+          "resolved": false,
+          "confidence": 0,
+          "line": 272
+        },
+        {
+          "target": "capturePageContext",
+          "resolved": false,
+          "confidence": 0,
+          "line": 281
+        },
+        {
+          "target": "sendMessage",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 282,
+          "resolvedId": "src/components/contextual/Chat/components/ChatContainer/useChatContainer.ts:sendMessage:196"
+        },
+        {
+          "target": "content",
+          "resolved": false,
+          "confidence": 0,
+          "line": 282
+        },
+        {
+          "target": "isUserMessage",
+          "resolved": false,
+          "confidence": 0,
+          "line": 282
+        },
+        {
+          "target": "context",
+          "resolved": false,
+          "confidence": 0,
+          "line": 282
+        },
+        {
+          "target": "setIsRegionBlockedModalOpen",
+          "resolved": false,
+          "confidence": 0,
+          "line": 286
+        },
+        {
+          "target": "open",
+          "resolved": false,
+          "confidence": 0,
+          "line": 286
+        },
+        {
+          "target": "setIsRegionBlockedModalOpen",
+          "resolved": false,
+          "confidence": 0,
+          "line": 290
+        },
+        {
+          "target": "stopStreaming",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 76,
+          "resolvedId": "src/components/contextual/Chat/useChatStream.ts:stopStreaming:29"
+        },
+        {
+          "target": "prevSession",
+          "resolved": false,
+          "confidence": 0,
+          "line": 76
+        },
+        {
+          "target": "setMessages",
+          "resolved": false,
+          "confidence": 0,
+          "line": 79
+        },
+        {
+          "target": "setStreamingChunks",
+          "resolved": false,
+          "confidence": 0,
+          "line": 80
+        },
+        {
+          "target": "setHasTextChunks",
+          "resolved": false,
+          "confidence": 0,
+          "line": 82
+        },
+        {
+          "target": "setIsStreamingInitiated",
+          "resolved": false,
+          "confidence": 0,
+          "line": 83
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 88,
+          "resolvedId": "src/services/storage/local-storage.ts:get:16"
+        },
+        {
+          "target": "sessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 88
+        },
+        {
+          "target": "createStreamEventDispatcher",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 91,
+          "resolvedId": "src/components/contextual/Chat/components/ChatContainer/createStreamEventDispatcher.ts:createStreamEventDispatcher:15"
+        },
+        {
+          "target": "setIsStreamingInitiated",
+          "resolved": false,
+          "confidence": 0,
+          "line": 103
+        },
+        {
+          "target": "subscribeToStream",
+          "resolved": false,
+          "confidence": 0,
+          "line": 105
+        },
+        {
+          "target": "sessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 105
+        },
+        {
+          "target": "dispatcher",
+          "resolved": false,
+          "confidence": 0,
+          "line": 105
+        },
+        {
+          "target": "skipReplay",
+          "resolved": false,
+          "confidence": 0,
+          "line": 105
+        },
+        {
+          "target": "setMessages",
+          "resolved": false,
+          "confidence": 0,
+          "line": 142
+        },
+        {
+          "target": "filter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 143
+        },
+        {
+          "target": "has",
+          "resolved": false,
+          "confidence": 0,
+          "line": 150
+        },
+        {
+          "target": "toolId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 150
+        },
+        {
+          "target": "filter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 143
+        },
+        {
+          "target": "has",
+          "resolved": false,
+          "confidence": 0,
+          "line": 150
+        },
+        {
+          "target": "toolId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 150
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 202
+        },
+        {
+          "target": "setIsRegionBlockedModalOpen",
+          "resolved": false,
+          "confidence": 0,
+          "line": 205
+        },
+        {
+          "target": "createUserMessage",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 207,
+          "resolvedId": "src/components/contextual/Chat/components/ChatContainer/helpers.ts:createUserMessage:161"
+        },
+        {
+          "target": "content",
+          "resolved": false,
+          "confidence": 0,
+          "line": 207
+        },
+        {
+          "target": "setMessages",
+          "resolved": false,
+          "confidence": 0,
+          "line": 208
+        },
+        {
+          "target": "filterAuthMessages",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 208,
+          "resolvedId": "src/components/contextual/Chat/components/ChatContainer/helpers.ts:filterAuthMessages:170"
+        },
+        {
+          "target": "prev",
+          "resolved": false,
+          "confidence": 0,
+          "line": 208
+        },
+        {
+          "target": "setMessages",
+          "resolved": false,
+          "confidence": 0,
+          "line": 210
+        },
+        {
+          "target": "filterAuthMessages",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 210,
+          "resolvedId": "src/components/contextual/Chat/components/ChatContainer/helpers.ts:filterAuthMessages:170"
+        },
+        {
+          "target": "prev",
+          "resolved": false,
+          "confidence": 0,
+          "line": 210
+        },
+        {
+          "target": "setStreamingChunks",
+          "resolved": false,
+          "confidence": 0,
+          "line": 212
+        },
+        {
+          "target": "setHasTextChunks",
+          "resolved": false,
+          "confidence": 0,
+          "line": 214
+        },
+        {
+          "target": "setIsStreamingInitiated",
+          "resolved": false,
+          "confidence": 0,
+          "line": 215
+        },
+        {
+          "target": "createStreamEventDispatcher",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 218,
+          "resolvedId": "src/components/contextual/Chat/components/ChatContainer/createStreamEventDispatcher.ts:createStreamEventDispatcher:15"
+        },
+        {
+          "target": "sendStreamMessage",
+          "resolved": false,
+          "confidence": 0,
+          "line": 231
+        },
+        {
+          "target": "sessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 232
+        },
+        {
+          "target": "content",
+          "resolved": false,
+          "confidence": 0,
+          "line": 233
+        },
+        {
+          "target": "dispatcher",
+          "resolved": false,
+          "confidence": 0,
+          "line": 234
+        },
+        {
+          "target": "isUserMessage",
+          "resolved": false,
+          "confidence": 0,
+          "line": 235
+        },
+        {
+          "target": "context",
+          "resolved": false,
+          "confidence": 0,
+          "line": 236
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 239
+        },
+        {
+          "target": "err",
+          "resolved": false,
+          "confidence": 0,
+          "line": 239
+        },
+        {
+          "target": "setIsStreamingInitiated",
+          "resolved": false,
+          "confidence": 0,
+          "line": 240
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 246
+        },
+        {
+          "target": "filterAuthMessages",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 208,
+          "resolvedId": "src/components/contextual/Chat/components/ChatContainer/helpers.ts:filterAuthMessages:170"
+        },
+        {
+          "target": "prev",
+          "resolved": false,
+          "confidence": 0,
+          "line": 208
+        },
+        {
+          "target": "filterAuthMessages",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 210,
+          "resolvedId": "src/components/contextual/Chat/components/ChatContainer/helpers.ts:filterAuthMessages:170"
+        },
+        {
+          "target": "prev",
+          "resolved": false,
+          "confidence": 0,
+          "line": 210
+        },
+        {
+          "target": "stopStreaming",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 253,
+          "resolvedId": "src/components/contextual/Chat/useChatStream.ts:stopStreaming:29"
+        },
+        {
+          "target": "setStreamingChunks",
+          "resolved": false,
+          "confidence": 0,
+          "line": 254
+        },
+        {
+          "target": "setHasTextChunks",
+          "resolved": false,
+          "confidence": 0,
+          "line": 256
+        },
+        {
+          "target": "setIsStreamingInitiated",
+          "resolved": false,
+          "confidence": 0,
+          "line": 257
+        },
+        {
+          "target": "hasSentInitialPrompt",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 268,
+          "resolvedId": "src/components/contextual/Chat/components/ChatContainer/helpers.ts:hasSentInitialPrompt:116"
+        },
+        {
+          "target": "sessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 268
+        },
+        {
+          "target": "markInitialPromptSent",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 270,
+          "resolvedId": "src/components/contextual/Chat/components/ChatContainer/helpers.ts:markInitialPromptSent:127"
+        },
+        {
+          "target": "sessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 270
+        },
+        {
+          "target": "capturePageContext",
+          "resolved": false,
+          "confidence": 0,
+          "line": 271
+        },
+        {
+          "target": "current",
+          "resolved": false,
+          "confidence": 0,
+          "line": 272
+        },
+        {
+          "target": "initialPrompt",
+          "resolved": false,
+          "confidence": 0,
+          "line": 272
+        },
+        {
+          "target": "context",
+          "resolved": false,
+          "confidence": 0,
+          "line": 272
+        },
+        {
+          "target": "capturePageContext",
+          "resolved": false,
+          "confidence": 0,
+          "line": 281
+        },
+        {
+          "target": "sendMessage",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 282,
+          "resolvedId": "src/components/contextual/Chat/components/ChatContainer/useChatContainer.ts:sendMessage:196"
+        },
+        {
+          "target": "content",
+          "resolved": false,
+          "confidence": 0,
+          "line": 282
+        },
+        {
+          "target": "isUserMessage",
+          "resolved": false,
+          "confidence": 0,
+          "line": 282
+        },
+        {
+          "target": "context",
+          "resolved": false,
+          "confidence": 0,
+          "line": 282
+        },
+        {
+          "target": "setIsRegionBlockedModalOpen",
+          "resolved": false,
+          "confidence": 0,
+          "line": 286
+        },
+        {
+          "target": "open",
+          "resolved": false,
+          "confidence": 0,
+          "line": 286
+        },
+        {
+          "target": "setIsRegionBlockedModalOpen",
+          "resolved": false,
+          "confidence": 0,
+          "line": 290
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/contextual/Chat/components/ChatContainer/useChatContainer.ts:$useEffect$1:71",
+      "name": "$useEffect$1",
+      "startLine": 71,
+      "endLine": 106,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "stopStreaming",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 76,
+          "resolvedId": "src/components/contextual/Chat/useChatStream.ts:stopStreaming:29"
+        },
+        {
+          "target": "prevSession",
+          "resolved": false,
+          "confidence": 0,
+          "line": 76
+        },
+        {
+          "target": "setMessages",
+          "resolved": false,
+          "confidence": 0,
+          "line": 79
+        },
+        {
+          "target": "setStreamingChunks",
+          "resolved": false,
+          "confidence": 0,
+          "line": 80
+        },
+        {
+          "target": "setHasTextChunks",
+          "resolved": false,
+          "confidence": 0,
+          "line": 82
+        },
+        {
+          "target": "setIsStreamingInitiated",
+          "resolved": false,
+          "confidence": 0,
+          "line": 83
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 88,
+          "resolvedId": "src/services/storage/local-storage.ts:get:16"
+        },
+        {
+          "target": "sessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 88
+        },
+        {
+          "target": "createStreamEventDispatcher",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 91,
+          "resolvedId": "src/components/contextual/Chat/components/ChatContainer/createStreamEventDispatcher.ts:createStreamEventDispatcher:15"
+        },
+        {
+          "target": "setIsStreamingInitiated",
+          "resolved": false,
+          "confidence": 0,
+          "line": 103
+        },
+        {
+          "target": "subscribeToStream",
+          "resolved": false,
+          "confidence": 0,
+          "line": 105
+        },
+        {
+          "target": "sessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 105
+        },
+        {
+          "target": "dispatcher",
+          "resolved": false,
+          "confidence": 0,
+          "line": 105
+        },
+        {
+          "target": "skipReplay",
+          "resolved": false,
+          "confidence": 0,
+          "line": 105
+        },
+        {
+          "target": "stopStreaming",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 76,
+          "resolvedId": "src/components/contextual/Chat/useChatStream.ts:stopStreaming:29"
+        },
+        {
+          "target": "prevSession",
+          "resolved": false,
+          "confidence": 0,
+          "line": 76
+        },
+        {
+          "target": "setMessages",
+          "resolved": false,
+          "confidence": 0,
+          "line": 79
+        },
+        {
+          "target": "setStreamingChunks",
+          "resolved": false,
+          "confidence": 0,
+          "line": 80
+        },
+        {
+          "target": "setHasTextChunks",
+          "resolved": false,
+          "confidence": 0,
+          "line": 82
+        },
+        {
+          "target": "setIsStreamingInitiated",
+          "resolved": false,
+          "confidence": 0,
+          "line": 83
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 88,
+          "resolvedId": "src/services/storage/local-storage.ts:get:16"
+        },
+        {
+          "target": "sessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 88
+        },
+        {
+          "target": "createStreamEventDispatcher",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 91,
+          "resolvedId": "src/components/contextual/Chat/components/ChatContainer/createStreamEventDispatcher.ts:createStreamEventDispatcher:15"
+        },
+        {
+          "target": "setIsStreamingInitiated",
+          "resolved": false,
+          "confidence": 0,
+          "line": 103
+        },
+        {
+          "target": "subscribeToStream",
+          "resolved": false,
+          "confidence": 0,
+          "line": 105
+        },
+        {
+          "target": "sessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 105
+        },
+        {
+          "target": "dispatcher",
+          "resolved": false,
+          "confidence": 0,
+          "line": 105
+        },
+        {
+          "target": "skipReplay",
+          "resolved": false,
+          "confidence": 0,
+          "line": 105
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/contextual/Chat/components/ChatContainer/useChatContainer.ts:$useEffect$2:139",
+      "name": "$useEffect$2",
+      "startLine": 139,
+      "endLine": 159,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "setMessages",
+          "resolved": false,
+          "confidence": 0,
+          "line": 142
+        },
+        {
+          "target": "filter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 143
+        },
+        {
+          "target": "has",
+          "resolved": false,
+          "confidence": 0,
+          "line": 150
+        },
+        {
+          "target": "toolId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 150
+        },
+        {
+          "target": "setMessages",
+          "resolved": false,
+          "confidence": 0,
+          "line": 142
+        },
+        {
+          "target": "filter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 143
+        },
+        {
+          "target": "has",
+          "resolved": false,
+          "confidence": 0,
+          "line": 150
+        },
+        {
+          "target": "toolId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 150
+        },
+        {
+          "target": "filter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 143
+        },
+        {
+          "target": "has",
+          "resolved": false,
+          "confidence": 0,
+          "line": 150
+        },
+        {
+          "target": "toolId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 150
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/contextual/Chat/components/ChatContainer/useChatContainer.ts:$setMessages$1:142",
+      "name": "$setMessages$1",
+      "startLine": 142,
+      "endLine": 158,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "setMessages",
+          "resolved": false,
+          "confidence": 0,
+          "line": 142
+        },
+        {
+          "target": "filter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 143
+        },
+        {
+          "target": "has",
+          "resolved": false,
+          "confidence": 0,
+          "line": 150
+        },
+        {
+          "target": "toolId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 150
+        },
+        {
+          "target": "setMessages",
+          "resolved": false,
+          "confidence": 0,
+          "line": 142
+        },
+        {
+          "target": "filter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 143
+        },
+        {
+          "target": "has",
+          "resolved": false,
+          "confidence": 0,
+          "line": 150
+        },
+        {
+          "target": "toolId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 150
+        },
+        {
+          "target": "filter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 143
+        },
+        {
+          "target": "has",
+          "resolved": false,
+          "confidence": 0,
+          "line": 150
+        },
+        {
+          "target": "toolId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 150
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/contextual/Chat/components/ChatContainer/useChatContainer.ts:sendMessage:196",
+      "name": "sendMessage",
+      "startLine": 196,
+      "endLine": 250,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 202
+        },
+        {
+          "target": "setIsRegionBlockedModalOpen",
+          "resolved": false,
+          "confidence": 0,
+          "line": 205
+        },
+        {
+          "target": "createUserMessage",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 207,
+          "resolvedId": "src/components/contextual/Chat/components/ChatContainer/helpers.ts:createUserMessage:161"
+        },
+        {
+          "target": "content",
+          "resolved": false,
+          "confidence": 0,
+          "line": 207
+        },
+        {
+          "target": "setMessages",
+          "resolved": false,
+          "confidence": 0,
+          "line": 208
+        },
+        {
+          "target": "filterAuthMessages",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 208,
+          "resolvedId": "src/components/contextual/Chat/components/ChatContainer/helpers.ts:filterAuthMessages:170"
+        },
+        {
+          "target": "prev",
+          "resolved": false,
+          "confidence": 0,
+          "line": 208
+        },
+        {
+          "target": "setMessages",
+          "resolved": false,
+          "confidence": 0,
+          "line": 210
+        },
+        {
+          "target": "filterAuthMessages",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 210,
+          "resolvedId": "src/components/contextual/Chat/components/ChatContainer/helpers.ts:filterAuthMessages:170"
+        },
+        {
+          "target": "prev",
+          "resolved": false,
+          "confidence": 0,
+          "line": 210
+        },
+        {
+          "target": "setStreamingChunks",
+          "resolved": false,
+          "confidence": 0,
+          "line": 212
+        },
+        {
+          "target": "setHasTextChunks",
+          "resolved": false,
+          "confidence": 0,
+          "line": 214
+        },
+        {
+          "target": "setIsStreamingInitiated",
+          "resolved": false,
+          "confidence": 0,
+          "line": 215
+        },
+        {
+          "target": "createStreamEventDispatcher",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 218,
+          "resolvedId": "src/components/contextual/Chat/components/ChatContainer/createStreamEventDispatcher.ts:createStreamEventDispatcher:15"
+        },
+        {
+          "target": "sendStreamMessage",
+          "resolved": false,
+          "confidence": 0,
+          "line": 231
+        },
+        {
+          "target": "sessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 232
+        },
+        {
+          "target": "content",
+          "resolved": false,
+          "confidence": 0,
+          "line": 233
+        },
+        {
+          "target": "dispatcher",
+          "resolved": false,
+          "confidence": 0,
+          "line": 234
+        },
+        {
+          "target": "isUserMessage",
+          "resolved": false,
+          "confidence": 0,
+          "line": 235
+        },
+        {
+          "target": "context",
+          "resolved": false,
+          "confidence": 0,
+          "line": 236
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 239
+        },
+        {
+          "target": "err",
+          "resolved": false,
+          "confidence": 0,
+          "line": 239
+        },
+        {
+          "target": "setIsStreamingInitiated",
+          "resolved": false,
+          "confidence": 0,
+          "line": 240
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 246
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 202
+        },
+        {
+          "target": "setIsRegionBlockedModalOpen",
+          "resolved": false,
+          "confidence": 0,
+          "line": 205
+        },
+        {
+          "target": "createUserMessage",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 207,
+          "resolvedId": "src/components/contextual/Chat/components/ChatContainer/helpers.ts:createUserMessage:161"
+        },
+        {
+          "target": "content",
+          "resolved": false,
+          "confidence": 0,
+          "line": 207
+        },
+        {
+          "target": "setMessages",
+          "resolved": false,
+          "confidence": 0,
+          "line": 208
+        },
+        {
+          "target": "filterAuthMessages",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 208,
+          "resolvedId": "src/components/contextual/Chat/components/ChatContainer/helpers.ts:filterAuthMessages:170"
+        },
+        {
+          "target": "prev",
+          "resolved": false,
+          "confidence": 0,
+          "line": 208
+        },
+        {
+          "target": "setMessages",
+          "resolved": false,
+          "confidence": 0,
+          "line": 210
+        },
+        {
+          "target": "filterAuthMessages",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 210,
+          "resolvedId": "src/components/contextual/Chat/components/ChatContainer/helpers.ts:filterAuthMessages:170"
+        },
+        {
+          "target": "prev",
+          "resolved": false,
+          "confidence": 0,
+          "line": 210
+        },
+        {
+          "target": "setStreamingChunks",
+          "resolved": false,
+          "confidence": 0,
+          "line": 212
+        },
+        {
+          "target": "setHasTextChunks",
+          "resolved": false,
+          "confidence": 0,
+          "line": 214
+        },
+        {
+          "target": "setIsStreamingInitiated",
+          "resolved": false,
+          "confidence": 0,
+          "line": 215
+        },
+        {
+          "target": "createStreamEventDispatcher",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 218,
+          "resolvedId": "src/components/contextual/Chat/components/ChatContainer/createStreamEventDispatcher.ts:createStreamEventDispatcher:15"
+        },
+        {
+          "target": "sendStreamMessage",
+          "resolved": false,
+          "confidence": 0,
+          "line": 231
+        },
+        {
+          "target": "sessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 232
+        },
+        {
+          "target": "content",
+          "resolved": false,
+          "confidence": 0,
+          "line": 233
+        },
+        {
+          "target": "dispatcher",
+          "resolved": false,
+          "confidence": 0,
+          "line": 234
+        },
+        {
+          "target": "isUserMessage",
+          "resolved": false,
+          "confidence": 0,
+          "line": 235
+        },
+        {
+          "target": "context",
+          "resolved": false,
+          "confidence": 0,
+          "line": 236
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 239
+        },
+        {
+          "target": "err",
+          "resolved": false,
+          "confidence": 0,
+          "line": 239
+        },
+        {
+          "target": "setIsStreamingInitiated",
+          "resolved": false,
+          "confidence": 0,
+          "line": 240
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 246
+        },
+        {
+          "target": "filterAuthMessages",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 208,
+          "resolvedId": "src/components/contextual/Chat/components/ChatContainer/helpers.ts:filterAuthMessages:170"
+        },
+        {
+          "target": "prev",
+          "resolved": false,
+          "confidence": 0,
+          "line": 208
+        },
+        {
+          "target": "filterAuthMessages",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 210,
+          "resolvedId": "src/components/contextual/Chat/components/ChatContainer/helpers.ts:filterAuthMessages:170"
+        },
+        {
+          "target": "prev",
+          "resolved": false,
+          "confidence": 0,
+          "line": 210
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/contextual/Chat/components/ChatContainer/useChatContainer.ts:$setMessages$1:208",
+      "name": "$setMessages$1",
+      "startLine": 208,
+      "endLine": 208,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "setMessages",
+          "resolved": false,
+          "confidence": 0,
+          "line": 208
+        },
+        {
+          "target": "filterAuthMessages",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 208,
+          "resolvedId": "src/components/contextual/Chat/components/ChatContainer/helpers.ts:filterAuthMessages:170"
+        },
+        {
+          "target": "prev",
+          "resolved": false,
+          "confidence": 0,
+          "line": 208
+        },
+        {
+          "target": "setMessages",
+          "resolved": false,
+          "confidence": 0,
+          "line": 208
+        },
+        {
+          "target": "filterAuthMessages",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 208,
+          "resolvedId": "src/components/contextual/Chat/components/ChatContainer/helpers.ts:filterAuthMessages:170"
+        },
+        {
+          "target": "prev",
+          "resolved": false,
+          "confidence": 0,
+          "line": 208
+        },
+        {
+          "target": "filterAuthMessages",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 208,
+          "resolvedId": "src/components/contextual/Chat/components/ChatContainer/helpers.ts:filterAuthMessages:170"
+        },
+        {
+          "target": "prev",
+          "resolved": false,
+          "confidence": 0,
+          "line": 208
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/contextual/Chat/components/ChatContainer/useChatContainer.ts:$setMessages$2:210",
+      "name": "$setMessages$2",
+      "startLine": 210,
+      "endLine": 210,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "setMessages",
+          "resolved": false,
+          "confidence": 0,
+          "line": 210
+        },
+        {
+          "target": "filterAuthMessages",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 210,
+          "resolvedId": "src/components/contextual/Chat/components/ChatContainer/helpers.ts:filterAuthMessages:170"
+        },
+        {
+          "target": "prev",
+          "resolved": false,
+          "confidence": 0,
+          "line": 210
+        },
+        {
+          "target": "setMessages",
+          "resolved": false,
+          "confidence": 0,
+          "line": 210
+        },
+        {
+          "target": "filterAuthMessages",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 210,
+          "resolvedId": "src/components/contextual/Chat/components/ChatContainer/helpers.ts:filterAuthMessages:170"
+        },
+        {
+          "target": "prev",
+          "resolved": false,
+          "confidence": 0,
+          "line": 210
+        },
+        {
+          "target": "filterAuthMessages",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 210,
+          "resolvedId": "src/components/contextual/Chat/components/ChatContainer/helpers.ts:filterAuthMessages:170"
+        },
+        {
+          "target": "prev",
+          "resolved": false,
+          "confidence": 0,
+          "line": 210
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/contextual/Chat/components/ChatContainer/useChatContainer.ts:handleStopStreaming:252",
+      "name": "handleStopStreaming",
+      "startLine": 252,
+      "endLine": 258,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "stopStreaming",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 253,
+          "resolvedId": "src/components/contextual/Chat/useChatStream.ts:stopStreaming:29"
+        },
+        {
+          "target": "setStreamingChunks",
+          "resolved": false,
+          "confidence": 0,
+          "line": 254
+        },
+        {
+          "target": "setHasTextChunks",
+          "resolved": false,
+          "confidence": 0,
+          "line": 256
+        },
+        {
+          "target": "setIsStreamingInitiated",
+          "resolved": false,
+          "confidence": 0,
+          "line": 257
+        },
+        {
+          "target": "stopStreaming",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 253,
+          "resolvedId": "src/components/contextual/Chat/useChatStream.ts:stopStreaming:29"
+        },
+        {
+          "target": "setStreamingChunks",
+          "resolved": false,
+          "confidence": 0,
+          "line": 254
+        },
+        {
+          "target": "setHasTextChunks",
+          "resolved": false,
+          "confidence": 0,
+          "line": 256
+        },
+        {
+          "target": "setIsStreamingInitiated",
+          "resolved": false,
+          "confidence": 0,
+          "line": 257
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/contextual/Chat/components/ChatContainer/useChatContainer.ts:$useEffect$3:265",
+      "name": "$useEffect$3",
+      "startLine": 265,
+      "endLine": 273,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "hasSentInitialPrompt",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 268,
+          "resolvedId": "src/components/contextual/Chat/components/ChatContainer/helpers.ts:hasSentInitialPrompt:116"
+        },
+        {
+          "target": "sessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 268
+        },
+        {
+          "target": "markInitialPromptSent",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 270,
+          "resolvedId": "src/components/contextual/Chat/components/ChatContainer/helpers.ts:markInitialPromptSent:127"
+        },
+        {
+          "target": "sessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 270
+        },
+        {
+          "target": "capturePageContext",
+          "resolved": false,
+          "confidence": 0,
+          "line": 271
+        },
+        {
+          "target": "current",
+          "resolved": false,
+          "confidence": 0,
+          "line": 272
+        },
+        {
+          "target": "initialPrompt",
+          "resolved": false,
+          "confidence": 0,
+          "line": 272
+        },
+        {
+          "target": "context",
+          "resolved": false,
+          "confidence": 0,
+          "line": 272
+        },
+        {
+          "target": "hasSentInitialPrompt",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 268,
+          "resolvedId": "src/components/contextual/Chat/components/ChatContainer/helpers.ts:hasSentInitialPrompt:116"
+        },
+        {
+          "target": "sessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 268
+        },
+        {
+          "target": "markInitialPromptSent",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 270,
+          "resolvedId": "src/components/contextual/Chat/components/ChatContainer/helpers.ts:markInitialPromptSent:127"
+        },
+        {
+          "target": "sessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 270
+        },
+        {
+          "target": "capturePageContext",
+          "resolved": false,
+          "confidence": 0,
+          "line": 271
+        },
+        {
+          "target": "current",
+          "resolved": false,
+          "confidence": 0,
+          "line": 272
+        },
+        {
+          "target": "initialPrompt",
+          "resolved": false,
+          "confidence": 0,
+          "line": 272
+        },
+        {
+          "target": "context",
+          "resolved": false,
+          "confidence": 0,
+          "line": 272
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/contextual/Chat/components/ChatContainer/useChatContainer.ts:sendMessageWithContext:277",
+      "name": "sendMessageWithContext",
+      "startLine": 277,
+      "endLine": 283,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "capturePageContext",
+          "resolved": false,
+          "confidence": 0,
+          "line": 281
+        },
+        {
+          "target": "sendMessage",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 282,
+          "resolvedId": "src/components/contextual/Chat/components/ChatContainer/useChatContainer.ts:sendMessage:196"
+        },
+        {
+          "target": "content",
+          "resolved": false,
+          "confidence": 0,
+          "line": 282
+        },
+        {
+          "target": "isUserMessage",
+          "resolved": false,
+          "confidence": 0,
+          "line": 282
+        },
+        {
+          "target": "context",
+          "resolved": false,
+          "confidence": 0,
+          "line": 282
+        },
+        {
+          "target": "capturePageContext",
+          "resolved": false,
+          "confidence": 0,
+          "line": 281
+        },
+        {
+          "target": "sendMessage",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 282,
+          "resolvedId": "src/components/contextual/Chat/components/ChatContainer/useChatContainer.ts:sendMessage:196"
+        },
+        {
+          "target": "content",
+          "resolved": false,
+          "confidence": 0,
+          "line": 282
+        },
+        {
+          "target": "isUserMessage",
+          "resolved": false,
+          "confidence": 0,
+          "line": 282
+        },
+        {
+          "target": "context",
+          "resolved": false,
+          "confidence": 0,
+          "line": 282
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/contextual/Chat/components/ChatContainer/useChatContainer.ts:handleRegionModalOpenChange:285",
+      "name": "handleRegionModalOpenChange",
+      "startLine": 285,
+      "endLine": 287,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "setIsRegionBlockedModalOpen",
+          "resolved": false,
+          "confidence": 0,
+          "line": 286
+        },
+        {
+          "target": "open",
+          "resolved": false,
+          "confidence": 0,
+          "line": 286
+        },
+        {
+          "target": "setIsRegionBlockedModalOpen",
+          "resolved": false,
+          "confidence": 0,
+          "line": 286
+        },
+        {
+          "target": "open",
+          "resolved": false,
+          "confidence": 0,
+          "line": 286
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/contextual/Chat/components/ChatContainer/useChatContainer.ts:handleRegionModalClose:289",
+      "name": "handleRegionModalClose",
+      "startLine": 289,
+      "endLine": 291,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "setIsRegionBlockedModalOpen",
+          "resolved": false,
+          "confidence": 0,
+          "line": 290
+        },
+        {
+          "target": "setIsRegionBlockedModalOpen",
+          "resolved": false,
+          "confidence": 0,
+          "line": 290
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

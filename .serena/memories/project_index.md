@@ -22,7 +22,7 @@
 | `backend/exec.py` | Workflow executor service |
 | `backend/notification.py` | Notification service |
 | `backend/db.py` | Database utilities |
-| `backend/cli.py` | CLI commands |
+| `backend/cli_main.py` | CLI commands |
 
 ### API Structure (`backend/api/`)
 ```

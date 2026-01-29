@@ -1,0 +1,1003 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.193Z",
+  "checksum": "c63c063159ec458b",
+  "file": "backend/monitoring/instrumentation.py",
+  "functions": [
+    {
+      "id": "backend/monitoring/instrumentation.py:instrument_fastapi:107",
+      "name": "instrument_fastapi",
+      "startLine": 107,
+      "endLine": 214,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "version",
+          "resolved": false,
+          "confidence": 0,
+          "line": 134
+        },
+        {
+          "target": "info",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 138,
+          "resolvedId": "backend/util/logging.py:info:41"
+        },
+        {
+          "target": "replace",
+          "resolved": false,
+          "confidence": 0,
+          "line": 148
+        },
+        {
+          "target": "Instrumentator",
+          "resolved": false,
+          "confidence": 0,
+          "line": 149
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 161,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "default",
+          "resolved": false,
+          "confidence": 0,
+          "line": 162
+        },
+        {
+          "target": "replace",
+          "resolved": false,
+          "confidence": 0,
+          "line": 164
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 169,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "request_size",
+          "resolved": false,
+          "confidence": 0,
+          "line": 170
+        },
+        {
+          "target": "replace",
+          "resolved": false,
+          "confidence": 0,
+          "line": 172
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 177,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "response_size",
+          "resolved": false,
+          "confidence": 0,
+          "line": 178
+        },
+        {
+          "target": "replace",
+          "resolved": false,
+          "confidence": 0,
+          "line": 180
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 185,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "latency",
+          "resolved": false,
+          "confidence": 0,
+          "line": 186
+        },
+        {
+          "target": "replace",
+          "resolved": false,
+          "confidence": 0,
+          "line": 188
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 194,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "combined_size",
+          "resolved": false,
+          "confidence": 0,
+          "line": 195
+        },
+        {
+          "target": "replace",
+          "resolved": false,
+          "confidence": 0,
+          "line": 197
+        },
+        {
+          "target": "instrument",
+          "resolved": false,
+          "confidence": 0,
+          "line": 202
+        },
+        {
+          "target": "app",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 202,
+          "resolvedId": "backend/api/middleware/security_test.py:app:10"
+        },
+        {
+          "target": "expose",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 206,
+          "resolvedId": "backend/util/service.py:expose:86"
+        },
+        {
+          "target": "app",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 207,
+          "resolvedId": "backend/api/middleware/security_test.py:app:10"
+        },
+        {
+          "target": "info",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 212,
+          "resolvedId": "backend/util/logging.py:info:41"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/monitoring/instrumentation.py:record_graph_execution:217",
+      "name": "record_graph_execution",
+      "startLine": 217,
+      "endLine": 230,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "inc",
+          "resolved": false,
+          "confidence": 0,
+          "line": 226
+        },
+        {
+          "target": "labels",
+          "resolved": false,
+          "confidence": 0,
+          "line": 226
+        },
+        {
+          "target": "inc",
+          "resolved": false,
+          "confidence": 0,
+          "line": 230
+        },
+        {
+          "target": "labels",
+          "resolved": false,
+          "confidence": 0,
+          "line": 230
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/monitoring/instrumentation.py:record_block_execution:233",
+      "name": "record_block_execution",
+      "startLine": 233,
+      "endLine": 236,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "inc",
+          "resolved": false,
+          "confidence": 0,
+          "line": 235
+        },
+        {
+          "target": "labels",
+          "resolved": false,
+          "confidence": 0,
+          "line": 235
+        },
+        {
+          "target": "observe",
+          "resolved": false,
+          "confidence": 0,
+          "line": 236
+        },
+        {
+          "target": "duration",
+          "resolved": false,
+          "confidence": 0,
+          "line": 236
+        },
+        {
+          "target": "labels",
+          "resolved": false,
+          "confidence": 0,
+          "line": 236
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/monitoring/instrumentation.py:update_websocket_connections:239",
+      "name": "update_websocket_connections",
+      "startLine": 239,
+      "endLine": 250,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "inc",
+          "resolved": false,
+          "confidence": 0,
+          "line": 248
+        },
+        {
+          "target": "delta",
+          "resolved": false,
+          "confidence": 0,
+          "line": 248
+        },
+        {
+          "target": "dec",
+          "resolved": false,
+          "confidence": 0,
+          "line": 250
+        },
+        {
+          "target": "abs",
+          "resolved": false,
+          "confidence": 0,
+          "line": 250
+        },
+        {
+          "target": "delta",
+          "resolved": false,
+          "confidence": 0,
+          "line": 250
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/monitoring/instrumentation.py:record_database_query:253",
+      "name": "record_database_query",
+      "startLine": 253,
+      "endLine": 255,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "observe",
+          "resolved": false,
+          "confidence": 0,
+          "line": 255
+        },
+        {
+          "target": "duration",
+          "resolved": false,
+          "confidence": 0,
+          "line": 255
+        },
+        {
+          "target": "labels",
+          "resolved": false,
+          "confidence": 0,
+          "line": 255
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/monitoring/instrumentation.py:record_rabbitmq_message:258",
+      "name": "record_rabbitmq_message",
+      "startLine": 258,
+      "endLine": 260,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "inc",
+          "resolved": false,
+          "confidence": 0,
+          "line": 260
+        },
+        {
+          "target": "labels",
+          "resolved": false,
+          "confidence": 0,
+          "line": 260
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/monitoring/instrumentation.py:record_authentication_attempt:263",
+      "name": "record_authentication_attempt",
+      "startLine": 263,
+      "endLine": 265,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "inc",
+          "resolved": false,
+          "confidence": 0,
+          "line": 265
+        },
+        {
+          "target": "labels",
+          "resolved": false,
+          "confidence": 0,
+          "line": 265
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/monitoring/instrumentation.py:record_api_key_usage:268",
+      "name": "record_api_key_usage",
+      "startLine": 268,
+      "endLine": 270,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "inc",
+          "resolved": false,
+          "confidence": 0,
+          "line": 270
+        },
+        {
+          "target": "labels",
+          "resolved": false,
+          "confidence": 0,
+          "line": 270
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/monitoring/instrumentation.py:record_rate_limit_hit:273",
+      "name": "record_rate_limit_hit",
+      "startLine": 273,
+      "endLine": 280,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "inc",
+          "resolved": false,
+          "confidence": 0,
+          "line": 280
+        },
+        {
+          "target": "labels",
+          "resolved": false,
+          "confidence": 0,
+          "line": 280
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/monitoring/instrumentation.py:record_graph_operation:283",
+      "name": "record_graph_operation",
+      "startLine": 283,
+      "endLine": 285,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "inc",
+          "resolved": false,
+          "confidence": 0,
+          "line": 285
+        },
+        {
+          "target": "labels",
+          "resolved": false,
+          "confidence": 0,
+          "line": 285
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/monitoring/instrumentation.py:record_user_operation:288",
+      "name": "record_user_operation",
+      "startLine": 288,
+      "endLine": 290,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "inc",
+          "resolved": false,
+          "confidence": 0,
+          "line": 290
+        },
+        {
+          "target": "labels",
+          "resolved": false,
+          "confidence": 0,
+          "line": 290
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/monitoring/instrumentation.py:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 291,
+      "isEntryPoint": false,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "getLogger",
+          "resolved": false,
+          "confidence": 0,
+          "line": 15
+        },
+        {
+          "target": "Counter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 18
+        },
+        {
+          "target": "Counter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 26
+        },
+        {
+          "target": "Counter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 32
+        },
+        {
+          "target": "Histogram",
+          "resolved": false,
+          "confidence": 0,
+          "line": 38
+        },
+        {
+          "target": "Gauge",
+          "resolved": false,
+          "confidence": 0,
+          "line": 45
+        },
+        {
+          "target": "Gauge",
+          "resolved": false,
+          "confidence": 0,
+          "line": 51
+        },
+        {
+          "target": "Histogram",
+          "resolved": false,
+          "confidence": 0,
+          "line": 57
+        },
+        {
+          "target": "Counter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 64
+        },
+        {
+          "target": "Counter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 70
+        },
+        {
+          "target": "Counter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 76
+        },
+        {
+          "target": "Counter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 83
+        },
+        {
+          "target": "Counter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 89
+        },
+        {
+          "target": "Counter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 95
+        },
+        {
+          "target": "Info",
+          "resolved": false,
+          "confidence": 0,
+          "line": 101
+        },
+        {
+          "target": "version",
+          "resolved": false,
+          "confidence": 0,
+          "line": 134
+        },
+        {
+          "target": "info",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 138,
+          "resolvedId": "backend/util/logging.py:info:41"
+        },
+        {
+          "target": "replace",
+          "resolved": false,
+          "confidence": 0,
+          "line": 148
+        },
+        {
+          "target": "Instrumentator",
+          "resolved": false,
+          "confidence": 0,
+          "line": 149
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 161,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "default",
+          "resolved": false,
+          "confidence": 0,
+          "line": 162
+        },
+        {
+          "target": "replace",
+          "resolved": false,
+          "confidence": 0,
+          "line": 164
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 169,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "request_size",
+          "resolved": false,
+          "confidence": 0,
+          "line": 170
+        },
+        {
+          "target": "replace",
+          "resolved": false,
+          "confidence": 0,
+          "line": 172
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 177,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "response_size",
+          "resolved": false,
+          "confidence": 0,
+          "line": 178
+        },
+        {
+          "target": "replace",
+          "resolved": false,
+          "confidence": 0,
+          "line": 180
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 185,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "latency",
+          "resolved": false,
+          "confidence": 0,
+          "line": 186
+        },
+        {
+          "target": "replace",
+          "resolved": false,
+          "confidence": 0,
+          "line": 188
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 194,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "combined_size",
+          "resolved": false,
+          "confidence": 0,
+          "line": 195
+        },
+        {
+          "target": "replace",
+          "resolved": false,
+          "confidence": 0,
+          "line": 197
+        },
+        {
+          "target": "instrument",
+          "resolved": false,
+          "confidence": 0,
+          "line": 202
+        },
+        {
+          "target": "app",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 202,
+          "resolvedId": "backend/api/middleware/security_test.py:app:10"
+        },
+        {
+          "target": "expose",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 206,
+          "resolvedId": "backend/util/service.py:expose:86"
+        },
+        {
+          "target": "app",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 207,
+          "resolvedId": "backend/api/middleware/security_test.py:app:10"
+        },
+        {
+          "target": "info",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 212,
+          "resolvedId": "backend/util/logging.py:info:41"
+        },
+        {
+          "target": "inc",
+          "resolved": false,
+          "confidence": 0,
+          "line": 226
+        },
+        {
+          "target": "labels",
+          "resolved": false,
+          "confidence": 0,
+          "line": 226
+        },
+        {
+          "target": "inc",
+          "resolved": false,
+          "confidence": 0,
+          "line": 230
+        },
+        {
+          "target": "labels",
+          "resolved": false,
+          "confidence": 0,
+          "line": 230
+        },
+        {
+          "target": "inc",
+          "resolved": false,
+          "confidence": 0,
+          "line": 235
+        },
+        {
+          "target": "labels",
+          "resolved": false,
+          "confidence": 0,
+          "line": 235
+        },
+        {
+          "target": "observe",
+          "resolved": false,
+          "confidence": 0,
+          "line": 236
+        },
+        {
+          "target": "duration",
+          "resolved": false,
+          "confidence": 0,
+          "line": 236
+        },
+        {
+          "target": "labels",
+          "resolved": false,
+          "confidence": 0,
+          "line": 236
+        },
+        {
+          "target": "inc",
+          "resolved": false,
+          "confidence": 0,
+          "line": 248
+        },
+        {
+          "target": "delta",
+          "resolved": false,
+          "confidence": 0,
+          "line": 248
+        },
+        {
+          "target": "dec",
+          "resolved": false,
+          "confidence": 0,
+          "line": 250
+        },
+        {
+          "target": "abs",
+          "resolved": false,
+          "confidence": 0,
+          "line": 250
+        },
+        {
+          "target": "delta",
+          "resolved": false,
+          "confidence": 0,
+          "line": 250
+        },
+        {
+          "target": "observe",
+          "resolved": false,
+          "confidence": 0,
+          "line": 255
+        },
+        {
+          "target": "duration",
+          "resolved": false,
+          "confidence": 0,
+          "line": 255
+        },
+        {
+          "target": "labels",
+          "resolved": false,
+          "confidence": 0,
+          "line": 255
+        },
+        {
+          "target": "inc",
+          "resolved": false,
+          "confidence": 0,
+          "line": 260
+        },
+        {
+          "target": "labels",
+          "resolved": false,
+          "confidence": 0,
+          "line": 260
+        },
+        {
+          "target": "inc",
+          "resolved": false,
+          "confidence": 0,
+          "line": 265
+        },
+        {
+          "target": "labels",
+          "resolved": false,
+          "confidence": 0,
+          "line": 265
+        },
+        {
+          "target": "inc",
+          "resolved": false,
+          "confidence": 0,
+          "line": 270
+        },
+        {
+          "target": "labels",
+          "resolved": false,
+          "confidence": 0,
+          "line": 270
+        },
+        {
+          "target": "inc",
+          "resolved": false,
+          "confidence": 0,
+          "line": 280
+        },
+        {
+          "target": "labels",
+          "resolved": false,
+          "confidence": 0,
+          "line": 280
+        },
+        {
+          "target": "inc",
+          "resolved": false,
+          "confidence": 0,
+          "line": 285
+        },
+        {
+          "target": "labels",
+          "resolved": false,
+          "confidence": 0,
+          "line": 285
+        },
+        {
+          "target": "inc",
+          "resolved": false,
+          "confidence": 0,
+          "line": 290
+        },
+        {
+          "target": "labels",
+          "resolved": false,
+          "confidence": 0,
+          "line": 290
+        },
+        {
+          "target": "getLogger",
+          "resolved": false,
+          "confidence": 0,
+          "line": 15
+        },
+        {
+          "target": "Counter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 18
+        },
+        {
+          "target": "Counter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 26
+        },
+        {
+          "target": "Counter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 32
+        },
+        {
+          "target": "Histogram",
+          "resolved": false,
+          "confidence": 0,
+          "line": 38
+        },
+        {
+          "target": "Gauge",
+          "resolved": false,
+          "confidence": 0,
+          "line": 45
+        },
+        {
+          "target": "Gauge",
+          "resolved": false,
+          "confidence": 0,
+          "line": 51
+        },
+        {
+          "target": "Histogram",
+          "resolved": false,
+          "confidence": 0,
+          "line": 57
+        },
+        {
+          "target": "Counter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 64
+        },
+        {
+          "target": "Counter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 70
+        },
+        {
+          "target": "Counter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 76
+        },
+        {
+          "target": "Counter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 83
+        },
+        {
+          "target": "Counter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 89
+        },
+        {
+          "target": "Counter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 95
+        },
+        {
+          "target": "Info",
+          "resolved": false,
+          "confidence": 0,
+          "line": 101
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "logging",
+          "operation": "read",
+          "line": 15,
+          "fields": []
+        },
+        {
+          "table": "operation",
+          "operation": "write",
+          "line": 86,
+          "fields": [
+            "status"
+          ]
+        }
+      ]
+    }
+  ]
+}

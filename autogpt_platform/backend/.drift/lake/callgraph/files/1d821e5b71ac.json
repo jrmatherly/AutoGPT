@@ -1,0 +1,67 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.131Z",
+  "checksum": "f40b2ee9ec8b0cbc",
+  "file": "backend/blocks/wolfram/_api.py",
+  "functions": [
+    {
+      "id": "backend/blocks/wolfram/_api.py:llm_api_call:4",
+      "name": "llm_api_call",
+      "startLine": 4,
+      "endLine": 14,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 5,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 6,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "Requests",
+          "resolved": false,
+          "confidence": 0,
+          "line": 6
+        },
+        {
+          "target": "ValueError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 10
+        },
+        {
+          "target": "text",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 10,
+          "resolvedId": "backend/util/request.py:text:297"
+        },
+        {
+          "target": "text",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 12,
+          "resolvedId": "backend/util/request.py:text:297"
+        },
+        {
+          "target": "text",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 12,
+          "resolvedId": "backend/util/request.py:text:297"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.058Z",
+  "checksum": "8c8c135c923aa09e",
+  "file": "src/app/global-error.tsx",
+  "functions": [
+    {
+      "id": "src/app/global-error.tsx:GlobalError:12",
+      "name": "GlobalError",
+      "startLine": 12,
+      "endLine": 36,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 13
+        },
+        {
+          "target": "captureException",
+          "resolved": false,
+          "confidence": 0,
+          "line": 14
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 14
+        },
+        {
+          "target": "ErrorCard",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 22,
+          "resolvedId": "src/components/molecules/ErrorCard/ErrorCard.tsx:ErrorCard:26"
+        },
+        {
+          "target": "reset",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 29,
+          "resolvedId": "src/app/(platform)/copilot/components/CopilotShell/components/SessionsList/useSessionsPagination.ts:reset:75"
+        },
+        {
+          "target": "captureException",
+          "resolved": false,
+          "confidence": 0,
+          "line": 14
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 14
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/app/global-error.tsx:$useEffect$1:13",
+      "name": "$useEffect$1",
+      "startLine": 13,
+      "endLine": 15,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 13
+        },
+        {
+          "target": "captureException",
+          "resolved": false,
+          "confidence": 0,
+          "line": 14
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 14
+        },
+        {
+          "target": "captureException",
+          "resolved": false,
+          "confidence": 0,
+          "line": 14
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 14
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

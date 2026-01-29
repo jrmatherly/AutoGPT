@@ -1,0 +1,396 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:19.992Z",
+  "checksum": "7da280f21af11eb3",
+  "file": "src/services/consent/cookies.ts",
+  "functions": [
+    {
+      "id": "src/services/consent/cookies.ts:load:38",
+      "name": "load",
+      "startLine": 38,
+      "endLine": 65,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 40,
+          "resolvedId": "src/services/storage/local-storage.ts:get:16"
+        },
+        {
+          "target": "COOKIE_CONSENT",
+          "resolved": false,
+          "confidence": 0,
+          "line": 40
+        },
+        {
+          "target": "parse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 45
+        },
+        {
+          "target": "stored",
+          "resolved": false,
+          "confidence": 0,
+          "line": 45
+        },
+        {
+          "target": "warn",
+          "resolved": false,
+          "confidence": 0,
+          "line": 53
+        },
+        {
+          "target": "captureException",
+          "resolved": false,
+          "confidence": 0,
+          "line": 61
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 61
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 62
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 62
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/services/consent/cookies.ts:save:67",
+      "name": "save",
+      "startLine": 67,
+      "endLine": 74,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "set",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 69,
+          "resolvedId": "src/services/storage/local-storage.ts:set:29"
+        },
+        {
+          "target": "COOKIE_CONSENT",
+          "resolved": false,
+          "confidence": 0,
+          "line": 69
+        },
+        {
+          "target": "stringify",
+          "resolved": false,
+          "confidence": 0,
+          "line": 69
+        },
+        {
+          "target": "preferences",
+          "resolved": false,
+          "confidence": 0,
+          "line": 69
+        },
+        {
+          "target": "captureException",
+          "resolved": false,
+          "confidence": 0,
+          "line": 71
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 71
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/services/consent/cookies.ts:clear:76",
+      "name": "clear",
+      "startLine": 76,
+      "endLine": 83,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "clean",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 78,
+          "resolvedId": "src/services/storage/local-storage.ts:clean:37"
+        },
+        {
+          "target": "COOKIE_CONSENT",
+          "resolved": false,
+          "confidence": 0,
+          "line": 78
+        },
+        {
+          "target": "captureException",
+          "resolved": false,
+          "confidence": 0,
+          "line": 80
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 80
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 81
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 81
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/services/consent/cookies.ts:hasConsented:85",
+      "name": "hasConsented",
+      "startLine": 85,
+      "endLine": 88,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "load",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 86,
+          "resolvedId": "src/services/consent/cookies.ts:load:38"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/services/consent/cookies.ts:hasConsentFor:90",
+      "name": "hasConsentFor",
+      "startLine": 90,
+      "endLine": 95,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "load",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 93,
+          "resolvedId": "src/services/consent/cookies.ts:load:38"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/services/consent/cookies.ts:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 104,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 40,
+          "resolvedId": "src/services/storage/local-storage.ts:get:16"
+        },
+        {
+          "target": "COOKIE_CONSENT",
+          "resolved": false,
+          "confidence": 0,
+          "line": 40
+        },
+        {
+          "target": "parse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 45
+        },
+        {
+          "target": "stored",
+          "resolved": false,
+          "confidence": 0,
+          "line": 45
+        },
+        {
+          "target": "warn",
+          "resolved": false,
+          "confidence": 0,
+          "line": 53
+        },
+        {
+          "target": "captureException",
+          "resolved": false,
+          "confidence": 0,
+          "line": 61
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 61
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 62
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 62
+        },
+        {
+          "target": "set",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 69,
+          "resolvedId": "src/services/storage/local-storage.ts:set:29"
+        },
+        {
+          "target": "COOKIE_CONSENT",
+          "resolved": false,
+          "confidence": 0,
+          "line": 69
+        },
+        {
+          "target": "stringify",
+          "resolved": false,
+          "confidence": 0,
+          "line": 69
+        },
+        {
+          "target": "preferences",
+          "resolved": false,
+          "confidence": 0,
+          "line": 69
+        },
+        {
+          "target": "captureException",
+          "resolved": false,
+          "confidence": 0,
+          "line": 71
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 71
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        },
+        {
+          "target": "clean",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 78,
+          "resolvedId": "src/services/storage/local-storage.ts:clean:37"
+        },
+        {
+          "target": "COOKIE_CONSENT",
+          "resolved": false,
+          "confidence": 0,
+          "line": 78
+        },
+        {
+          "target": "captureException",
+          "resolved": false,
+          "confidence": 0,
+          "line": 80
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 80
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 81
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 81
+        },
+        {
+          "target": "load",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 86,
+          "resolvedId": "src/services/consent/cookies.ts:load:38"
+        },
+        {
+          "target": "load",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 93,
+          "resolvedId": "src/services/consent/cookies.ts:load:38"
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 13
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

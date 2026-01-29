@@ -1,0 +1,148 @@
+{
+  "version": "1.0.0",
+  "category": "structural",
+  "patterns": [
+    {
+      "id": "d9c37c6fc210c943",
+      "subcategory": "import-ordering",
+      "name": "Import Ordering Detector",
+      "description": "Learns import ordering patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "structural/import-ordering",
+          "patternId": "structural/import-ordering/type_annotation"
+        }
+      },
+      "confidence": {
+        "frequency": 0.03,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 2,
+        "score": 0.7203676470588235,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "backend/data/execution.py",
+          "line": 154,
+          "column": 51,
+          "isOutlier": false,
+          "confidence": 0.7203676470588235
+        },
+        {
+          "file": "backend/data/notifications.py",
+          "line": 499,
+          "column": 6,
+          "isOutlier": false,
+          "confidence": 0.7185185185185184
+        },
+        {
+          "file": "backend/data/notifications.py",
+          "line": 623,
+          "column": 6,
+          "isOutlier": false,
+          "confidence": 0.7185185185185184
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:30:16.815Z",
+        "lastSeen": "2026-01-29T06:30:16.815Z",
+        "source": "auto-detected",
+        "tags": [
+          "structural",
+          "import-ordering"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "109bc869a6945187",
+      "subcategory": "circular-deps",
+      "name": "Circular Dependencies Detector",
+      "description": "Learns circular dependency patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "structural/circular-deps",
+          "patternId": "structural/circular-deps/type_annotation"
+        }
+      },
+      "confidence": {
+        "frequency": 0.01,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.9296153846153845,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "backend/data/execution.py",
+          "line": 154,
+          "column": 51,
+          "isOutlier": false,
+          "confidence": 0.9296153846153845
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:30:16.815Z",
+        "lastSeen": "2026-01-29T06:30:16.815Z",
+        "source": "auto-detected",
+        "tags": [
+          "structural",
+          "circular-deps"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "c9497b07e3ac9221",
+      "subcategory": "package-boundaries",
+      "name": "Package Boundaries Detector",
+      "description": "Learns package boundary patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "structural/package-boundaries",
+          "patternId": "structural/package-boundaries/property_access"
+        }
+      },
+      "confidence": {
+        "frequency": 0.01,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "backend/executor/manager_insufficient_funds_test.py",
+          "line": 86,
+          "column": 30,
+          "isOutlier": false,
+          "confidence": 0.97
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:30:16.815Z",
+        "lastSeen": "2026-01-29T06:30:16.815Z",
+        "source": "auto-detected",
+        "tags": [
+          "structural",
+          "package-boundaries"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    }
+  ],
+  "lastUpdated": "2026-01-29T07:17:13.608Z",
+  "checksum": "95a87e2d6427ac7a"
+}

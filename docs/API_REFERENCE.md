@@ -7,13 +7,13 @@
 The AutoGPT Platform provides REST and WebSocket APIs for building, deploying, and managing AI agents.
 
 **Base URLs:**
-- Production: `https://backend.agpt.co`
-- Staging: `https://dev-server.agpt.co`
+- Production: `https://api.example.com`
+- Staging: `https://api-staging.example.com`
 - Local: `http://localhost:8000`
 
 **OpenAPI Specification:**
-- Production: `https://backend.agpt.co/openapi.json`
-- Staging: `https://dev-server.agpt.co/openapi.json`
+- Production: `https://api.example.com/openapi.json`
+- Staging: `https://api-staging.example.com/openapi.json`
 
 ## Authentication
 
@@ -661,7 +661,7 @@ X-RateLimit-Reset: 1705320000
 ```python
 import requests
 
-API_URL = "https://backend.agpt.co"
+API_URL = "https://api.example.com"
 TOKEN = "your_jwt_token"
 
 headers = {
@@ -688,7 +688,7 @@ execution = response.json()
 ### JavaScript/TypeScript
 
 ```typescript
-const API_URL = "https://backend.agpt.co";
+const API_URL = "https://api.example.com";
 const token = "your_jwt_token";
 
 // List library agents
@@ -718,11 +718,11 @@ const execution = await execResponse.json();
 
 ```bash
 # List library agents
-curl -X GET "https://backend.agpt.co/api/v2/library/agents" \
+curl -X GET "https://api.example.com/api/v2/library/agents" \
   -H "Authorization: Bearer $TOKEN"
 
 # Execute a graph
-curl -X POST "https://backend.agpt.co/api/v2/builder/graphs/$GRAPH_ID/execute" \
+curl -X POST "https://api.example.com/api/v2/builder/graphs/$GRAPH_ID/execute" \
   -H "Authorization: Bearer $TOKEN" \
   -H "Content-Type: application/json" \
   -d '{"input_data": {"prompt": "Hello!"}}'

@@ -1,0 +1,91 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.094Z",
+  "checksum": "b11cfbc2c7d7e266",
+  "file": "src/app/(platform)/copilot/helpers.ts",
+  "functions": [
+    {
+      "id": "src/app/(platform)/copilot/helpers.ts:getGreetingName:3",
+      "name": "getGreetingName",
+      "startLine": 3,
+      "endLine": 18,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "trim",
+          "resolved": false,
+          "confidence": 0,
+          "line": 8
+        },
+        {
+          "target": "split",
+          "resolved": false,
+          "confidence": 0,
+          "line": 9
+        },
+        {
+          "target": "trim",
+          "resolved": false,
+          "confidence": 0,
+          "line": 11
+        },
+        {
+          "target": "split",
+          "resolved": false,
+          "confidence": 0,
+          "line": 12
+        },
+        {
+          "target": "split",
+          "resolved": false,
+          "confidence": 0,
+          "line": 15
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/app/(platform)/copilot/helpers.ts:buildCopilotChatUrl:20",
+      "name": "buildCopilotChatUrl",
+      "startLine": 20,
+      "endLine": 25,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "trim",
+          "resolved": false,
+          "confidence": 0,
+          "line": 21
+        },
+        {
+          "target": "encodeURIComponent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 23
+        },
+        {
+          "target": "trimmed",
+          "resolved": false,
+          "confidence": 0,
+          "line": 23
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/app/(platform)/copilot/helpers.ts:getQuickActions:27",
+      "name": "getQuickActions",
+      "startLine": 27,
+      "endLine": 33,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

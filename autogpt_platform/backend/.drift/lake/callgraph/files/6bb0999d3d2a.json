@@ -1,0 +1,327 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.169Z",
+  "checksum": "74104f5e7a302755",
+  "file": "backend/api/features/chat/tools/base.py",
+  "functions": [
+    {
+      "id": "backend/api/features/chat/tools/base.py:name:20",
+      "name": "name",
+      "startLine": 20,
+      "endLine": 22,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/chat/tools/base.py:description:25",
+      "name": "description",
+      "startLine": 25,
+      "endLine": 27,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/chat/tools/base.py:parameters:30",
+      "name": "parameters",
+      "startLine": 30,
+      "endLine": 32,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/chat/tools/base.py:requires_auth:35",
+      "name": "requires_auth",
+      "startLine": 35,
+      "endLine": 37,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/chat/tools/base.py:is_long_running:40",
+      "name": "is_long_running",
+      "startLine": 40,
+      "endLine": 47,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/chat/tools/base.py:as_openai_tool:49",
+      "name": "as_openai_tool",
+      "startLine": 49,
+      "endLine": 58,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "ChatCompletionToolParam",
+          "resolved": false,
+          "confidence": 0,
+          "line": 51
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/chat/tools/base.py:execute:60",
+      "name": "execute",
+      "startLine": 60,
+      "endLine": 110,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 79,
+          "resolvedId": "backend/util/logging.py:error:49"
+        },
+        {
+          "target": "StreamToolOutputAvailable",
+          "resolved": false,
+          "confidence": 0,
+          "line": 82
+        },
+        {
+          "target": "model_dump_json",
+          "resolved": false,
+          "confidence": 0,
+          "line": 85
+        },
+        {
+          "target": "NeedLoginResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 85
+        },
+        {
+          "target": "_execute",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 93,
+          "resolvedId": "backend/api/features/chat/tools/base.py:_execute:112"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 93
+        },
+        {
+          "target": "session",
+          "resolved": false,
+          "confidence": 0,
+          "line": 93
+        },
+        {
+          "target": "StreamToolOutputAvailable",
+          "resolved": false,
+          "confidence": 0,
+          "line": 94
+        },
+        {
+          "target": "model_dump_json",
+          "resolved": false,
+          "confidence": 0,
+          "line": 97
+        },
+        {
+          "target": "error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 100,
+          "resolvedId": "backend/util/logging.py:error:49"
+        },
+        {
+          "target": "StreamToolOutputAvailable",
+          "resolved": false,
+          "confidence": 0,
+          "line": 101
+        },
+        {
+          "target": "model_dump_json",
+          "resolved": false,
+          "confidence": 0,
+          "line": 104
+        },
+        {
+          "target": "ErrorResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 104
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 106
+        },
+        {
+          "target": "e",
+          "resolved": false,
+          "confidence": 0,
+          "line": 106
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/chat/tools/base.py:_execute:112",
+      "name": "_execute",
+      "startLine": 112,
+      "endLine": 129,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/chat/tools/base.py:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 130,
+      "isEntryPoint": false,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "getLogger",
+          "resolved": false,
+          "confidence": 0,
+          "line": 13
+        },
+        {
+          "target": "ChatCompletionToolParam",
+          "resolved": false,
+          "confidence": 0,
+          "line": 51
+        },
+        {
+          "target": "error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 79,
+          "resolvedId": "backend/util/logging.py:error:49"
+        },
+        {
+          "target": "StreamToolOutputAvailable",
+          "resolved": false,
+          "confidence": 0,
+          "line": 82
+        },
+        {
+          "target": "model_dump_json",
+          "resolved": false,
+          "confidence": 0,
+          "line": 85
+        },
+        {
+          "target": "NeedLoginResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 85
+        },
+        {
+          "target": "_execute",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 93,
+          "resolvedId": "backend/api/features/chat/tools/base.py:_execute:112"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 93
+        },
+        {
+          "target": "session",
+          "resolved": false,
+          "confidence": 0,
+          "line": 93
+        },
+        {
+          "target": "StreamToolOutputAvailable",
+          "resolved": false,
+          "confidence": 0,
+          "line": 94
+        },
+        {
+          "target": "model_dump_json",
+          "resolved": false,
+          "confidence": 0,
+          "line": 97
+        },
+        {
+          "target": "error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 100,
+          "resolvedId": "backend/util/logging.py:error:49"
+        },
+        {
+          "target": "StreamToolOutputAvailable",
+          "resolved": false,
+          "confidence": 0,
+          "line": 101
+        },
+        {
+          "target": "model_dump_json",
+          "resolved": false,
+          "confidence": 0,
+          "line": 104
+        },
+        {
+          "target": "ErrorResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 104
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 106
+        },
+        {
+          "target": "e",
+          "resolved": false,
+          "confidence": 0,
+          "line": 106
+        },
+        {
+          "target": "getLogger",
+          "resolved": false,
+          "confidence": 0,
+          "line": 13
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "logging",
+          "operation": "read",
+          "line": 13,
+          "fields": []
+        }
+      ]
+    }
+  ]
+}

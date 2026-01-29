@@ -12,7 +12,6 @@ from backend.data.organization import (
     check_user_permission,
     create_invitation,
     create_organization,
-    get_organization_by_id,
     get_organization_by_slug,
     get_user_organizations,
     remove_organization_member,
@@ -20,7 +19,6 @@ from backend.data.organization import (
 )
 from backend.data.user import DEFAULT_USER_ID
 from backend.util.test import SpinTestServer
-
 
 # Test data constants
 TEST_ORG_SLUG = "test-org-multi-tenant"

@@ -1,0 +1,1117 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.173Z",
+  "checksum": "453af969f81eeb61",
+  "file": "backend/blocks/exa/websets_import_export.py",
+  "functions": [
+    {
+      "id": "backend/blocks/exa/websets_import_export.py:from_sdk:53",
+      "name": "from_sdk",
+      "startLine": 53,
+      "endLine": 108,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "model_dump",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 60,
+          "resolvedId": "backend/blocks/apollo/models.py:model_dump:11"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 61,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "hasattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 66
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 67
+        },
+        {
+          "target": "hasattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 73
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 74
+        },
+        {
+          "target": "hasattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 82
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 83
+        },
+        {
+          "target": "cls",
+          "resolved": false,
+          "confidence": 0,
+          "line": 86
+        },
+        {
+          "target": "int",
+          "resolved": false,
+          "confidence": 0,
+          "line": 92
+        },
+        {
+          "target": "getattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 93
+        },
+        {
+          "target": "import_obj",
+          "resolved": false,
+          "confidence": 0,
+          "line": 94
+        },
+        {
+          "target": "getattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 96
+        },
+        {
+          "target": "import_obj",
+          "resolved": false,
+          "confidence": 0,
+          "line": 97
+        },
+        {
+          "target": "isoformat",
+          "resolved": false,
+          "confidence": 0,
+          "line": 103
+        },
+        {
+          "target": "isoformat",
+          "resolved": false,
+          "confidence": 0,
+          "line": 106
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/exa/websets_import_export.py:__init__:193",
+      "name": "__init__",
+      "startLine": 193,
+      "endLine": 219,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 194,
+          "resolvedId": "backend/blocks/exa/websets_import_export.py:__init__:193"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 194
+        },
+        {
+          "target": "_create_test_mock",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 218,
+          "resolvedId": "backend/blocks/exa/websets_import_export.py:_create_test_mock:222"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/exa/websets_import_export.py:_create_test_mock:222",
+      "name": "_create_test_mock",
+      "startLine": 222,
+      "endLine": 253,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 228
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 230
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 232
+        },
+        {
+          "target": "fromisoformat",
+          "resolved": false,
+          "confidence": 0,
+          "line": 239
+        },
+        {
+          "target": "fromisoformat",
+          "resolved": false,
+          "confidence": 0,
+          "line": 240
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 243
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 244
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 248
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 249
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 250
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/exa/websets_import_export.py:_get_client:255",
+      "name": "_get_client",
+      "startLine": 255,
+      "endLine": 257,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "AsyncExa",
+          "resolved": false,
+          "confidence": 0,
+          "line": 257
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/exa/websets_import_export.py:run:259",
+      "name": "run",
+      "startLine": 259,
+      "endLine": 310,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "_get_client",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 262,
+          "resolvedId": "backend/blocks/exa/websets_import_export.py:_get_client:255"
+        },
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 262,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        },
+        {
+          "target": "reader",
+          "resolved": false,
+          "confidence": 0,
+          "line": 264
+        },
+        {
+          "target": "StringIO",
+          "resolved": false,
+          "confidence": 0,
+          "line": 264
+        },
+        {
+          "target": "list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 265
+        },
+        {
+          "target": "csv_reader",
+          "resolved": false,
+          "confidence": 0,
+          "line": 265
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 266
+        },
+        {
+          "target": "rows",
+          "resolved": false,
+          "confidence": 0,
+          "line": 266
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 266
+        },
+        {
+          "target": "rows",
+          "resolved": false,
+          "confidence": 0,
+          "line": 266
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 268
+        },
+        {
+          "target": "encode",
+          "resolved": false,
+          "confidence": 0,
+          "line": 268
+        },
+        {
+          "target": "create",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 297,
+          "resolvedId": "backend/integrations/creds_manager.py:create:68"
+        },
+        {
+          "target": "from_sdk",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 301,
+          "resolvedId": "backend/blocks/exa/websets_import_export.py:from_sdk:53"
+        },
+        {
+          "target": "sdk_import",
+          "resolved": false,
+          "confidence": 0,
+          "line": 301
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "imports",
+          "operation": "write",
+          "line": 297,
+          "fields": []
+        },
+        {
+          "table": "credentials",
+          "operation": "read",
+          "line": 262,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/blocks/exa/websets_import_export.py:__init__:348",
+      "name": "__init__",
+      "startLine": 348,
+      "endLine": 355,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 349,
+          "resolvedId": "backend/blocks/exa/websets_import_export.py:__init__:193"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 349
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/exa/websets_import_export.py:run:357",
+      "name": "run",
+      "startLine": 357,
+      "endLine": 380,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "AsyncExa",
+          "resolved": false,
+          "confidence": 0,
+          "line": 361
+        },
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 361,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 363,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "from_sdk",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 365,
+          "resolvedId": "backend/blocks/exa/websets_import_export.py:from_sdk:53"
+        },
+        {
+          "target": "sdk_import",
+          "resolved": false,
+          "confidence": 0,
+          "line": 365
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "credentials",
+          "operation": "read",
+          "line": 361,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/blocks/exa/websets_import_export.py:__init__:414",
+      "name": "__init__",
+      "startLine": 414,
+      "endLine": 421,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 415,
+          "resolvedId": "backend/blocks/exa/websets_import_export.py:__init__:193"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 415
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/exa/websets_import_export.py:run:423",
+      "name": "run",
+      "startLine": 423,
+      "endLine": 443,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "AsyncExa",
+          "resolved": false,
+          "confidence": 0,
+          "line": 427
+        },
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 427,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        },
+        {
+          "target": "list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 429
+        },
+        {
+          "target": "from_sdk",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 435,
+          "resolvedId": "backend/blocks/exa/websets_import_export.py:from_sdk:53"
+        },
+        {
+          "target": "i",
+          "resolved": false,
+          "confidence": 0,
+          "line": 435
+        },
+        {
+          "target": "model_dump",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 437,
+          "resolvedId": "backend/blocks/apollo/models.py:model_dump:11"
+        },
+        {
+          "target": "model_dump",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 440,
+          "resolvedId": "backend/blocks/apollo/models.py:model_dump:11"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "credentials",
+          "operation": "read",
+          "line": 427,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/blocks/exa/websets_import_export.py:__init__:462",
+      "name": "__init__",
+      "startLine": 462,
+      "endLine": 469,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 463,
+          "resolvedId": "backend/blocks/exa/websets_import_export.py:__init__:193"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 463
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/exa/websets_import_export.py:run:471",
+      "name": "run",
+      "startLine": 471,
+      "endLine": 480,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "AsyncExa",
+          "resolved": false,
+          "confidence": 0,
+          "line": 475
+        },
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 475,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        },
+        {
+          "target": "delete",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 477,
+          "resolvedId": "backend/integrations/creds_manager.py:delete:166"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "imports",
+          "operation": "delete",
+          "line": 477,
+          "fields": []
+        },
+        {
+          "table": "credentials",
+          "operation": "read",
+          "line": 475,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/blocks/exa/websets_import_export.py:__init__:526",
+      "name": "__init__",
+      "startLine": 526,
+      "endLine": 550,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 527,
+          "resolvedId": "backend/blocks/exa/websets_import_export.py:__init__:193"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 527
+        },
+        {
+          "target": "_create_test_mock",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 549,
+          "resolvedId": "backend/blocks/exa/websets_import_export.py:_create_test_mock:222"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/exa/websets_import_export.py:_create_test_mock:553",
+      "name": "_create_test_mock",
+      "startLine": 553,
+      "endLine": 585,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 558
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 559
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 567
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 568
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 580
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 581
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 582
+        },
+        {
+          "target": "iter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 582
+        },
+        {
+          "target": "mock_items",
+          "resolved": false,
+          "confidence": 0,
+          "line": 582
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/exa/websets_import_export.py:_get_client:587",
+      "name": "_get_client",
+      "startLine": 587,
+      "endLine": 589,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "AsyncExa",
+          "resolved": false,
+          "confidence": 0,
+          "line": 589
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/exa/websets_import_export.py:run:591",
+      "name": "run",
+      "startLine": 591,
+      "endLine": 662,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "_get_client",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 595,
+          "resolvedId": "backend/blocks/exa/websets_import_export.py:_get_client:255"
+        },
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 595,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        },
+        {
+          "target": "list_all",
+          "resolved": false,
+          "confidence": 0,
+          "line": 601
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 606
+        },
+        {
+          "target": "all_items",
+          "resolved": false,
+          "confidence": 0,
+          "line": 606
+        },
+        {
+          "target": "model_dump",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 610,
+          "resolvedId": "backend/blocks/apollo/models.py:model_dump:11"
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 611
+        },
+        {
+          "target": "item_dict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 611
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 614
+        },
+        {
+          "target": "all_items",
+          "resolved": false,
+          "confidence": 0,
+          "line": 614
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 615
+        },
+        {
+          "target": "all_items",
+          "resolved": false,
+          "confidence": 0,
+          "line": 615
+        },
+        {
+          "target": "pop",
+          "resolved": false,
+          "confidence": 0,
+          "line": 620
+        },
+        {
+          "target": "pop",
+          "resolved": false,
+          "confidence": 0,
+          "line": 624
+        },
+        {
+          "target": "dumps",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 630,
+          "resolvedId": "backend/util/json.py:dumps:20"
+        },
+        {
+          "target": "all_items",
+          "resolved": false,
+          "confidence": 0,
+          "line": 630
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 630
+        },
+        {
+          "target": "dumps",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 633,
+          "resolvedId": "backend/util/json.py:dumps:20"
+        },
+        {
+          "target": "item",
+          "resolved": false,
+          "confidence": 0,
+          "line": 633
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 633
+        },
+        {
+          "target": "join",
+          "resolved": false,
+          "confidence": 0,
+          "line": 634
+        },
+        {
+          "target": "lines",
+          "resolved": false,
+          "confidence": 0,
+          "line": 634
+        },
+        {
+          "target": "set",
+          "resolved": false,
+          "confidence": 0,
+          "line": 638
+        },
+        {
+          "target": "update",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 640,
+          "resolvedId": "backend/integrations/creds_manager.py:update:162"
+        },
+        {
+          "target": "keys",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 640,
+          "resolvedId": "backend/integrations/oauth/__init__.py:keys:100"
+        },
+        {
+          "target": "_flatten_dict",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 640,
+          "resolvedId": "backend/blocks/exa/websets_import_export.py:_flatten_dict:664"
+        },
+        {
+          "target": "item",
+          "resolved": false,
+          "confidence": 0,
+          "line": 640
+        },
+        {
+          "target": "StringIO",
+          "resolved": false,
+          "confidence": 0,
+          "line": 643
+        },
+        {
+          "target": "DictWriter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 644
+        },
+        {
+          "target": "output",
+          "resolved": false,
+          "confidence": 0,
+          "line": 644
+        },
+        {
+          "target": "sorted",
+          "resolved": false,
+          "confidence": 0,
+          "line": 644
+        },
+        {
+          "target": "all_keys",
+          "resolved": false,
+          "confidence": 0,
+          "line": 644
+        },
+        {
+          "target": "writeheader",
+          "resolved": false,
+          "confidence": 0,
+          "line": 645
+        },
+        {
+          "target": "_flatten_dict",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 648,
+          "resolvedId": "backend/blocks/exa/websets_import_export.py:_flatten_dict:664"
+        },
+        {
+          "target": "item",
+          "resolved": false,
+          "confidence": 0,
+          "line": 648
+        },
+        {
+          "target": "writerow",
+          "resolved": false,
+          "confidence": 0,
+          "line": 649
+        },
+        {
+          "target": "flat_item",
+          "resolved": false,
+          "confidence": 0,
+          "line": 649
+        },
+        {
+          "target": "getvalue",
+          "resolved": false,
+          "confidence": 0,
+          "line": 651
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 654
+        },
+        {
+          "target": "all_items",
+          "resolved": false,
+          "confidence": 0,
+          "line": 654
+        },
+        {
+          "target": "ValueError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 661
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "credentials",
+          "operation": "read",
+          "line": 595,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/blocks/exa/websets_import_export.py:_flatten_dict:664",
+      "name": "_flatten_dict",
+      "startLine": 664,
+      "endLine": 676,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "items",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 667,
+          "resolvedId": "backend/integrations/oauth/__init__.py:items:123"
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 669
+        },
+        {
+          "target": "v",
+          "resolved": false,
+          "confidence": 0,
+          "line": 669
+        },
+        {
+          "target": "dict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 669
+        },
+        {
+          "target": "extend",
+          "resolved": false,
+          "confidence": 0,
+          "line": 670
+        },
+        {
+          "target": "items",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 670,
+          "resolvedId": "backend/integrations/oauth/__init__.py:items:123"
+        },
+        {
+          "target": "_flatten_dict",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 670,
+          "resolvedId": "backend/blocks/exa/websets_import_export.py:_flatten_dict:664"
+        },
+        {
+          "target": "v",
+          "resolved": false,
+          "confidence": 0,
+          "line": 670
+        },
+        {
+          "target": "new_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 670
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 671
+        },
+        {
+          "target": "v",
+          "resolved": false,
+          "confidence": 0,
+          "line": 671
+        },
+        {
+          "target": "list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 671
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 673
+        },
+        {
+          "target": "dumps",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 673,
+          "resolvedId": "backend/util/json.py:dumps:20"
+        },
+        {
+          "target": "v",
+          "resolved": false,
+          "confidence": 0,
+          "line": 673
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 673
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 675
+        },
+        {
+          "target": "dict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 676
+        },
+        {
+          "target": "items",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 676,
+          "resolvedId": "backend/integrations/oauth/__init__.py:items:123"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

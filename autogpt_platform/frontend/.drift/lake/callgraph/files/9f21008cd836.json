@@ -1,0 +1,244 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.087Z",
+  "checksum": "cfbb8213c85108db",
+  "file": "src/app/(platform)/error/page.tsx",
+  "functions": [
+    {
+      "id": "src/app/(platform)/error/page.tsx:ErrorPageContent:10",
+      "name": "ErrorPageContent",
+      "startLine": 10,
+      "endLine": 48,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useSearchParams",
+          "resolved": false,
+          "confidence": 0,
+          "line": 11
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 12,
+          "resolvedId": "src/services/storage/local-storage.ts:get:16"
+        },
+        {
+          "target": "getErrorDetails",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 13,
+          "resolvedId": "src/app/(platform)/error/helpers.ts:getErrorDetails:1"
+        },
+        {
+          "target": "errorMessage",
+          "resolved": false,
+          "confidence": 0,
+          "line": 13
+        },
+        {
+          "target": "useGetFlag",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 14,
+          "resolvedId": "src/services/feature-flags/use-get-flag.ts:useGetFlag:53"
+        },
+        {
+          "target": "CHAT",
+          "resolved": false,
+          "confidence": 0,
+          "line": 14
+        },
+        {
+          "target": "getHomepageRoute",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 15,
+          "resolvedId": "src/lib/constants.ts:getHomepageRoute:16"
+        },
+        {
+          "target": "isChatEnabled",
+          "resolved": false,
+          "confidence": 0,
+          "line": 15
+        },
+        {
+          "target": "setTimeout",
+          "resolved": false,
+          "confidence": 0,
+          "line": 28
+        },
+        {
+          "target": "reload",
+          "resolved": false,
+          "confidence": 0,
+          "line": 29
+        },
+        {
+          "target": "ErrorCard",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 40,
+          "resolvedId": "src/components/molecules/ErrorCard/ErrorCard.tsx:ErrorCard:26"
+        },
+        {
+          "target": "responseError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 41
+        },
+        {
+          "target": "context",
+          "resolved": false,
+          "confidence": 0,
+          "line": 42
+        },
+        {
+          "target": "handleRetry",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 43,
+          "resolvedId": "src/app/(platform)/error/page.tsx:handleRetry:17"
+        },
+        {
+          "target": "setTimeout",
+          "resolved": false,
+          "confidence": 0,
+          "line": 28
+        },
+        {
+          "target": "reload",
+          "resolved": false,
+          "confidence": 0,
+          "line": 29
+        },
+        {
+          "target": "reload",
+          "resolved": false,
+          "confidence": 0,
+          "line": 29
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/app/(platform)/error/page.tsx:handleRetry:17",
+      "name": "handleRetry",
+      "startLine": 17,
+      "endLine": 35,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "setTimeout",
+          "resolved": false,
+          "confidence": 0,
+          "line": 28
+        },
+        {
+          "target": "reload",
+          "resolved": false,
+          "confidence": 0,
+          "line": 29
+        },
+        {
+          "target": "setTimeout",
+          "resolved": false,
+          "confidence": 0,
+          "line": 28
+        },
+        {
+          "target": "reload",
+          "resolved": false,
+          "confidence": 0,
+          "line": 29
+        },
+        {
+          "target": "reload",
+          "resolved": false,
+          "confidence": 0,
+          "line": 29
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/app/(platform)/error/page.tsx:$setTimeout$1:28",
+      "name": "$setTimeout$1",
+      "startLine": 28,
+      "endLine": 30,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "setTimeout",
+          "resolved": false,
+          "confidence": 0,
+          "line": 28
+        },
+        {
+          "target": "reload",
+          "resolved": false,
+          "confidence": 0,
+          "line": 29
+        },
+        {
+          "target": "setTimeout",
+          "resolved": false,
+          "confidence": 0,
+          "line": 28
+        },
+        {
+          "target": "reload",
+          "resolved": false,
+          "confidence": 0,
+          "line": 29
+        },
+        {
+          "target": "reload",
+          "resolved": false,
+          "confidence": 0,
+          "line": 29
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/app/(platform)/error/page.tsx:ErrorPage:50",
+      "name": "ErrorPage",
+      "startLine": 50,
+      "endLine": 67,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "Suspense",
+          "resolved": false,
+          "confidence": 0,
+          "line": 52
+        },
+        {
+          "target": "ErrorCard",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 56,
+          "resolvedId": "src/components/molecules/ErrorCard/ErrorCard.tsx:ErrorCard:26"
+        },
+        {
+          "target": "ErrorPageContent",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 64,
+          "resolvedId": "src/app/(platform)/error/page.tsx:ErrorPageContent:10"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

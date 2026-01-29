@@ -1,0 +1,240 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.102Z",
+  "checksum": "307323e47f875edd",
+  "file": "src/components/contextual/GoogleDrivePicker/helpers.ts",
+  "functions": [
+    {
+      "id": "src/components/contextual/GoogleDrivePicker/helpers.ts:loadGoogleAPIPicker:4",
+      "name": "loadGoogleAPIPicker",
+      "startLine": 4,
+      "endLine": 23,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "validateWindow",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 5,
+          "resolvedId": "src/components/contextual/GoogleDrivePicker/helpers.ts:validateWindow:103"
+        },
+        {
+          "target": "loadScript",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 7,
+          "resolvedId": "src/services/scripts/scripts.tsx:loadScript:17"
+        },
+        {
+          "target": "Error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 11,
+          "resolvedId": "src/app/error.tsx:Error:8"
+        },
+        {
+          "target": "Promise",
+          "resolved": false,
+          "confidence": 0,
+          "line": 16
+        },
+        {
+          "target": "load",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 18,
+          "resolvedId": "src/services/consent/cookies.ts:load:38"
+        },
+        {
+          "target": "reject",
+          "resolved": false,
+          "confidence": 0,
+          "line": 20
+        },
+        {
+          "target": "e",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 20,
+          "resolvedId": "public/gtag.js:e:37"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/contextual/GoogleDrivePicker/helpers.ts:loadGoogleIdentityServices:25",
+      "name": "loadGoogleIdentityServices",
+      "startLine": 25,
+      "endLine": 36,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "Error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 27,
+          "resolvedId": "src/app/error.tsx:Error:8"
+        },
+        {
+          "target": "loadScript",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 30,
+          "resolvedId": "src/services/scripts/scripts.tsx:loadScript:17"
+        },
+        {
+          "target": "Error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 34,
+          "resolvedId": "src/app/error.tsx:Error:8"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/contextual/GoogleDrivePicker/helpers.ts:mapViewId:46",
+      "name": "mapViewId",
+      "startLine": 46,
+      "endLine": 70,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "validateWindow",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 47,
+          "resolvedId": "src/components/contextual/GoogleDrivePicker/helpers.ts:validateWindow:103"
+        },
+        {
+          "target": "Error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 51,
+          "resolvedId": "src/app/error.tsx:Error:8"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/contextual/GoogleDrivePicker/helpers.ts:scopesIncludeDrive:72",
+      "name": "scopesIncludeDrive",
+      "startLine": 72,
+      "endLine": 77,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "Set",
+          "resolved": false,
+          "confidence": 0,
+          "line": 73
+        },
+        {
+          "target": "has",
+          "resolved": false,
+          "confidence": 0,
+          "line": 74
+        },
+        {
+          "target": "has",
+          "resolved": false,
+          "confidence": 0,
+          "line": 75
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/contextual/GoogleDrivePicker/helpers.ts:normalizePickerResponse:87",
+      "name": "normalizePickerResponse",
+      "startLine": 87,
+      "endLine": 101,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "validateWindow",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 88,
+          "resolvedId": "src/components/contextual/GoogleDrivePicker/helpers.ts:validateWindow:103"
+        },
+        {
+          "target": "map",
+          "resolved": false,
+          "confidence": 0,
+          "line": 94
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/contextual/GoogleDrivePicker/helpers.ts:$map$1:94",
+      "name": "$map$1",
+      "startLine": 94,
+      "endLine": 100,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "map",
+          "resolved": false,
+          "confidence": 0,
+          "line": 94
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/contextual/GoogleDrivePicker/helpers.ts:validateWindow:103",
+      "name": "validateWindow",
+      "startLine": 103,
+      "endLine": 107,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "Error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 105,
+          "resolvedId": "src/app/error.tsx:Error:8"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/contextual/GoogleDrivePicker/helpers.ts:getCredentialsSchema:109",
+      "name": "getCredentialsSchema",
+      "startLine": 109,
+      "endLine": 121,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/contextual/GoogleDrivePicker/helpers.ts:isValidFile:123",
+      "name": "isValidFile",
+      "startLine": 123,
+      "endLine": 132,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

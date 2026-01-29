@@ -1,0 +1,134 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.213Z",
+  "checksum": "1fd3bb6a5d2763e3",
+  "file": "src/components/molecules/ErrorCard/ErrorCard.tsx",
+  "functions": [
+    {
+      "id": "src/components/molecules/ErrorCard/ErrorCard.tsx:ErrorCard:26",
+      "name": "ErrorCard",
+      "startLine": 26,
+      "endLine": 73,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "isArray",
+          "resolved": false,
+          "confidence": 0,
+          "line": 44
+        },
+        {
+          "target": "detail",
+          "resolved": false,
+          "confidence": 0,
+          "line": 44
+        },
+        {
+          "target": "getErrorMessage",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 50,
+          "resolvedId": "src/components/contextual/Chat/components/ToolResponseMessage/helpers.ts:getErrorMessage:27"
+        },
+        {
+          "target": "responseError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 50
+        },
+        {
+          "target": "getHttpErrorMessage",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 51,
+          "resolvedId": "src/components/molecules/ErrorCard/helpers.ts:getHttpErrorMessage:17"
+        },
+        {
+          "target": "httpError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 51
+        },
+        {
+          "target": "CardWrapper",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 54,
+          "resolvedId": "src/components/molecules/ErrorCard/components/CardWrapper.tsx:CardWrapper:9"
+        },
+        {
+          "target": "className",
+          "resolved": false,
+          "confidence": 0,
+          "line": 54
+        },
+        {
+          "target": "ErrorHeader",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 56,
+          "resolvedId": "src/components/molecules/ErrorCard/components/ErrorHeader.tsx:ErrorHeader:5"
+        },
+        {
+          "target": "ErrorMessage",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 57,
+          "resolvedId": "src/components/molecules/ErrorCard/components/ErrorMessage.tsx:ErrorMessage:10"
+        },
+        {
+          "target": "errorMessage",
+          "resolved": false,
+          "confidence": 0,
+          "line": 58
+        },
+        {
+          "target": "context",
+          "resolved": false,
+          "confidence": 0,
+          "line": 59
+        },
+        {
+          "target": "hint",
+          "resolved": false,
+          "confidence": 0,
+          "line": 60
+        },
+        {
+          "target": "ActionButtons",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 63,
+          "resolvedId": "src/components/molecules/ErrorCard/components/ActionButtons.tsx:ActionButtons:14"
+        },
+        {
+          "target": "onRetry",
+          "resolved": false,
+          "confidence": 0,
+          "line": 64
+        },
+        {
+          "target": "responseError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 65
+        },
+        {
+          "target": "httpError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 66
+        },
+        {
+          "target": "context",
+          "resolved": false,
+          "confidence": 0,
+          "line": 67
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

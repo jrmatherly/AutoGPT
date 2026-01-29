@@ -1,0 +1,3038 @@
+{
+  "version": "1.0.0",
+  "category": "logging",
+  "patterns": [
+    {
+      "id": "b29f5cb503bb5ee1",
+      "subcategory": "structured-logging",
+      "name": "Structured Logging Detector",
+      "description": "Learns structured logging patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "logging/structured-logging",
+          "patternId": "logging/structured-logging/import"
+        }
+      },
+      "confidence": {
+        "frequency": 0.23,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 8,
+        "score": 0.9116666666666666,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "autogpt_libs/auth/config.py",
+          "line": 1,
+          "column": 8,
+          "isOutlier": false,
+          "confidence": 0.7833333333333333
+        },
+        {
+          "file": "autogpt_libs/auth/config_test.py",
+          "line": 6,
+          "column": 8,
+          "isOutlier": false,
+          "confidence": 0.9116666666666666
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies.py",
+          "line": 7,
+          "column": 8,
+          "isOutlier": false,
+          "confidence": 0.7815384615384615
+        },
+        {
+          "file": "autogpt_libs/auth/jwt_utils.py",
+          "line": 1,
+          "column": 8,
+          "isOutlier": false,
+          "confidence": 0.7366666666666666
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 3,
+          "column": 8,
+          "isOutlier": false,
+          "confidence": 0.8042105263157895
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 7,
+          "column": 6,
+          "isOutlier": false,
+          "confidence": 0.8042105263157895
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 120,
+          "column": 39,
+          "isOutlier": false,
+          "confidence": 0.8042105263157895
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 120,
+          "column": 52,
+          "isOutlier": false,
+          "confidence": 0.8042105263157895
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 122,
+          "column": 27,
+          "isOutlier": false,
+          "confidence": 0.8042105263157895
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 120,
+          "column": 68,
+          "isOutlier": false,
+          "confidence": 0.8042105263157895
+        },
+        {
+          "file": "autogpt_libs/logging/filters.py",
+          "line": 1,
+          "column": 8,
+          "isOutlier": false,
+          "confidence": 0.87
+        },
+        {
+          "file": "autogpt_libs/logging/formatters.py",
+          "line": 1,
+          "column": 8,
+          "isOutlier": false,
+          "confidence": 0.8670588235294118
+        },
+        {
+          "file": "autogpt_libs/logging/handlers.py",
+          "line": 4,
+          "column": 8,
+          "isOutlier": false,
+          "confidence": 0.8999999999999999
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:33:06.621Z",
+        "lastSeen": "2026-01-29T07:18:31.828Z",
+        "source": "auto-detected",
+        "tags": [
+          "logging",
+          "structured-logging"
+        ],
+        "approvedAt": "2026-01-29T07:18:31.828Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "f05e3345d2e8a9dc",
+      "subcategory": "structured-logging",
+      "name": "Structured Logging Detector",
+      "description": "Learns structured logging patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "logging/structured-logging",
+          "patternId": "logging/structured-logging/assignment"
+        }
+      },
+      "confidence": {
+        "frequency": 0.28,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 9,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "autogpt_libs/auth/config.py",
+          "line": 6,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 0.7833333333333333
+        },
+        {
+          "file": "autogpt_libs/auth/config.py",
+          "line": 6,
+          "column": 10,
+          "isOutlier": false,
+          "confidence": 0.7833333333333333
+        },
+        {
+          "file": "autogpt_libs/auth/config_test.py",
+          "line": 36,
+          "column": 5,
+          "isOutlier": true,
+          "confidence": 0.9116666666666666,
+          "outlierReason": "Value above IQR upper bound"
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies.py",
+          "line": 20,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 0.7815384615384615
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies.py",
+          "line": 20,
+          "column": 10,
+          "isOutlier": false,
+          "confidence": 0.7815384615384615
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 398,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.76
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 500,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.76
+        },
+        {
+          "file": "autogpt_libs/auth/helpers_test.py",
+          "line": 48,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 0.8109090909090909
+        },
+        {
+          "file": "autogpt_libs/auth/helpers_test.py",
+          "line": 402,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.8109090909090909
+        },
+        {
+          "file": "autogpt_libs/auth/jwt_utils.py",
+          "line": 11,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 0.7366666666666666
+        },
+        {
+          "file": "autogpt_libs/auth/jwt_utils.py",
+          "line": 11,
+          "column": 10,
+          "isOutlier": false,
+          "confidence": 0.7366666666666666
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 25,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 0.8042105263157895
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 25,
+          "column": 57,
+          "isOutlier": false,
+          "confidence": 0.8042105263157895
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 54,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 0.8042105263157895
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 95,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 0.8042105263157895
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 95,
+          "column": 24,
+          "isOutlier": false,
+          "confidence": 0.8042105263157895
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 27,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 0.8042105263157895
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 27,
+          "column": 19,
+          "isOutlier": false,
+          "confidence": 0.8042105263157895
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 32,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 0.8042105263157895
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 154,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.8042105263157895
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 28,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 0.8042105263157895
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 28,
+          "column": 19,
+          "isOutlier": false,
+          "confidence": 0.8042105263157895
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 169,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.8042105263157895
+        },
+        {
+          "file": "autogpt_libs/logging/formatters.py",
+          "line": 23,
+          "column": 17,
+          "isOutlier": true,
+          "confidence": 0.8670588235294118,
+          "outlierReason": "Value above IQR upper bound"
+        },
+        {
+          "file": "autogpt_libs/logging/test_utils.py",
+          "line": 31,
+          "column": 14,
+          "isOutlier": true,
+          "confidence": 0.97,
+          "outlierReason": "High confidence outlier"
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:33:06.621Z",
+        "lastSeen": "2026-01-29T07:18:31.840Z",
+        "source": "auto-detected",
+        "tags": [
+          "logging",
+          "structured-logging"
+        ],
+        "approvedAt": "2026-01-29T07:18:31.840Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "af80b470766df872",
+      "subcategory": "structured-logging",
+      "name": "Structured Logging Detector",
+      "description": "Learns structured logging patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "logging/structured-logging",
+          "patternId": "logging/structured-logging/unknown"
+        }
+      },
+      "confidence": {
+        "frequency": 1,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 10,
+        "score": 0.7116666666666667,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "autogpt_libs/auth/config.py",
+          "line": 40,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.5833333333333333
+        },
+        {
+          "file": "autogpt_libs/auth/config.py",
+          "line": 48,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.5833333333333333
+        },
+        {
+          "file": "autogpt_libs/auth/config.py",
+          "line": 65,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.5833333333333333
+        },
+        {
+          "file": "autogpt_libs/auth/config.py",
+          "line": 6,
+          "column": 10,
+          "isOutlier": false,
+          "confidence": 0.5833333333333333
+        },
+        {
+          "file": "autogpt_libs/auth/config_test.py",
+          "line": 101,
+          "column": 43,
+          "isOutlier": false,
+          "confidence": 0.7116666666666667
+        },
+        {
+          "file": "autogpt_libs/auth/config_test.py",
+          "line": 107,
+          "column": 26,
+          "isOutlier": false,
+          "confidence": 0.7116666666666667
+        },
+        {
+          "file": "autogpt_libs/auth/config_test.py",
+          "line": 115,
+          "column": 43,
+          "isOutlier": false,
+          "confidence": 0.7116666666666667
+        },
+        {
+          "file": "autogpt_libs/auth/config_test.py",
+          "line": 121,
+          "column": 26,
+          "isOutlier": false,
+          "confidence": 0.7116666666666667
+        },
+        {
+          "file": "autogpt_libs/auth/config_test.py",
+          "line": 128,
+          "column": 43,
+          "isOutlier": false,
+          "confidence": 0.7116666666666667
+        },
+        {
+          "file": "autogpt_libs/auth/config_test.py",
+          "line": 134,
+          "column": 26,
+          "isOutlier": false,
+          "confidence": 0.7116666666666667
+        },
+        {
+          "file": "autogpt_libs/auth/config_test.py",
+          "line": 225,
+          "column": 66,
+          "isOutlier": false,
+          "confidence": 0.7116666666666667
+        },
+        {
+          "file": "autogpt_libs/auth/config_test.py",
+          "line": 233,
+          "column": 26,
+          "isOutlier": false,
+          "confidence": 0.7116666666666667
+        },
+        {
+          "file": "autogpt_libs/auth/config_test.py",
+          "line": 270,
+          "column": 43,
+          "isOutlier": false,
+          "confidence": 0.7116666666666667
+        },
+        {
+          "file": "autogpt_libs/auth/config_test.py",
+          "line": 280,
+          "column": 26,
+          "isOutlier": false,
+          "confidence": 0.7116666666666667
+        },
+        {
+          "file": "autogpt_libs/auth/config_test.py",
+          "line": 292,
+          "column": 43,
+          "isOutlier": false,
+          "confidence": 0.7116666666666667
+        },
+        {
+          "file": "autogpt_libs/auth/config_test.py",
+          "line": 302,
+          "column": 26,
+          "isOutlier": false,
+          "confidence": 0.7116666666666667
+        },
+        {
+          "file": "autogpt_libs/auth/config_test.py",
+          "line": 107,
+          "column": 34,
+          "isOutlier": false,
+          "confidence": 0.7116666666666667
+        },
+        {
+          "file": "autogpt_libs/auth/config_test.py",
+          "line": 121,
+          "column": 34,
+          "isOutlier": false,
+          "confidence": 0.7116666666666667
+        },
+        {
+          "file": "autogpt_libs/auth/config_test.py",
+          "line": 134,
+          "column": 34,
+          "isOutlier": false,
+          "confidence": 0.7116666666666667
+        },
+        {
+          "file": "autogpt_libs/auth/config_test.py",
+          "line": 233,
+          "column": 34,
+          "isOutlier": false,
+          "confidence": 0.7116666666666667
+        },
+        {
+          "file": "autogpt_libs/auth/config_test.py",
+          "line": 280,
+          "column": 34,
+          "isOutlier": false,
+          "confidence": 0.7116666666666667
+        },
+        {
+          "file": "autogpt_libs/auth/config_test.py",
+          "line": 302,
+          "column": 34,
+          "isOutlier": false,
+          "confidence": 0.7116666666666667
+        },
+        {
+          "file": "autogpt_libs/auth/config_test.py",
+          "line": 37,
+          "column": 16,
+          "isOutlier": false,
+          "confidence": 0.7116666666666667
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies.py",
+          "line": 51,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.5815384615384616
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies.py",
+          "line": 86,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 0.5815384615384616
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies.py",
+          "line": 110,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.5815384615384616
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies.py",
+          "line": 20,
+          "column": 10,
+          "isOutlier": false,
+          "confidence": 0.5815384615384616
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 399,
+          "column": 42,
+          "isOutlier": false,
+          "confidence": 0.56
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 400,
+          "column": 39,
+          "isOutlier": false,
+          "confidence": 0.56
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 401,
+          "column": 37,
+          "isOutlier": false,
+          "confidence": 0.56
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 501,
+          "column": 42,
+          "isOutlier": false,
+          "confidence": 0.56
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 502,
+          "column": 44,
+          "isOutlier": false,
+          "confidence": 0.56
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 503,
+          "column": 37,
+          "isOutlier": false,
+          "confidence": 0.56
+        },
+        {
+          "file": "autogpt_libs/auth/helpers_test.py",
+          "line": 49,
+          "column": 12,
+          "isOutlier": false,
+          "confidence": 0.6109090909090908
+        },
+        {
+          "file": "autogpt_libs/auth/helpers_test.py",
+          "line": 54,
+          "column": 23,
+          "isOutlier": false,
+          "confidence": 0.6109090909090908
+        },
+        {
+          "file": "autogpt_libs/auth/helpers_test.py",
+          "line": 405,
+          "column": 16,
+          "isOutlier": false,
+          "confidence": 0.6109090909090908
+        },
+        {
+          "file": "autogpt_libs/auth/jwt_utils.py",
+          "line": 39,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.5366666666666666
+        },
+        {
+          "file": "autogpt_libs/auth/jwt_utils.py",
+          "line": 11,
+          "column": 10,
+          "isOutlier": false,
+          "confidence": 0.5366666666666666
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 55,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.6042105263157895
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 78,
+          "column": 29,
+          "isOutlier": false,
+          "confidence": 0.6042105263157895
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 78,
+          "column": 57,
+          "isOutlier": false,
+          "confidence": 0.6042105263157895
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 80,
+          "column": 27,
+          "isOutlier": false,
+          "confidence": 0.6042105263157895
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 82,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 0.6042105263157895
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 82,
+          "column": 62,
+          "isOutlier": false,
+          "confidence": 0.6042105263157895
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 84,
+          "column": 27,
+          "isOutlier": false,
+          "confidence": 0.6042105263157895
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 84,
+          "column": 67,
+          "isOutlier": false,
+          "confidence": 0.6042105263157895
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 86,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 0.6042105263157895
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 86,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.6042105263157895
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 88,
+          "column": 63,
+          "isOutlier": false,
+          "confidence": 0.6042105263157895
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 92,
+          "column": 19,
+          "isOutlier": false,
+          "confidence": 0.6042105263157895
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 101,
+          "column": 18,
+          "isOutlier": false,
+          "confidence": 0.6042105263157895
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 103,
+          "column": 43,
+          "isOutlier": false,
+          "confidence": 0.6042105263157895
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 109,
+          "column": 18,
+          "isOutlier": false,
+          "confidence": 0.6042105263157895
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 110,
+          "column": 25,
+          "isOutlier": false,
+          "confidence": 0.6042105263157895
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 116,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.6042105263157895
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 126,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.6042105263157895
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 132,
+          "column": 20,
+          "isOutlier": false,
+          "confidence": 0.6042105263157895
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 139,
+          "column": 20,
+          "isOutlier": false,
+          "confidence": 0.6042105263157895
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 139,
+          "column": 30,
+          "isOutlier": false,
+          "confidence": 0.6042105263157895
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 149,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.6042105263157895
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 155,
+          "column": 24,
+          "isOutlier": false,
+          "confidence": 0.6042105263157895
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 161,
+          "column": 40,
+          "isOutlier": false,
+          "confidence": 0.6042105263157895
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 165,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.6042105263157895
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 170,
+          "column": 20,
+          "isOutlier": false,
+          "confidence": 0.6042105263157895
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 176,
+          "column": 36,
+          "isOutlier": false,
+          "confidence": 0.6042105263157895
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 178,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.6042105263157895
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 181,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 0.6042105263157895
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 190,
+          "column": 18,
+          "isOutlier": false,
+          "confidence": 0.6042105263157895
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 95,
+          "column": 24,
+          "isOutlier": false,
+          "confidence": 0.6042105263157895
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 82,
+          "column": 31,
+          "isOutlier": false,
+          "confidence": 0.6042105263157895
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 105,
+          "column": 47,
+          "isOutlier": false,
+          "confidence": 0.6042105263157895
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 112,
+          "column": 47,
+          "isOutlier": false,
+          "confidence": 0.6042105263157895
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 155,
+          "column": 34,
+          "isOutlier": false,
+          "confidence": 0.6042105263157895
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 162,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.6042105263157895
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 163,
+          "column": 31,
+          "isOutlier": false,
+          "confidence": 0.6042105263157895
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 165,
+          "column": 33,
+          "isOutlier": false,
+          "confidence": 0.6042105263157895
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 177,
+          "column": 54,
+          "isOutlier": false,
+          "confidence": 0.6042105263157895
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 103,
+          "column": 51,
+          "isOutlier": false,
+          "confidence": 0.6042105263157895
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 110,
+          "column": 33,
+          "isOutlier": false,
+          "confidence": 0.6042105263157895
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 170,
+          "column": 30,
+          "isOutlier": false,
+          "confidence": 0.6042105263157895
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 177,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.6042105263157895
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 178,
+          "column": 29,
+          "isOutlier": false,
+          "confidence": 0.6042105263157895
+        },
+        {
+          "file": "autogpt_libs/logging/filters.py",
+          "line": 4,
+          "column": 24,
+          "isOutlier": false,
+          "confidence": 0.6699999999999999
+        },
+        {
+          "file": "autogpt_libs/logging/filters.py",
+          "line": 11,
+          "column": 30,
+          "isOutlier": false,
+          "confidence": 0.6699999999999999
+        },
+        {
+          "file": "autogpt_libs/logging/filters.py",
+          "line": 11,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.6699999999999999
+        },
+        {
+          "file": "autogpt_libs/logging/formatters.py",
+          "line": 8,
+          "column": 29,
+          "isOutlier": false,
+          "confidence": 0.6670588235294117
+        },
+        {
+          "file": "autogpt_libs/logging/formatters.py",
+          "line": 10,
+          "column": 14,
+          "isOutlier": false,
+          "confidence": 0.6670588235294117
+        },
+        {
+          "file": "autogpt_libs/logging/formatters.py",
+          "line": 12,
+          "column": 42,
+          "isOutlier": false,
+          "confidence": 0.6670588235294117
+        },
+        {
+          "file": "autogpt_libs/logging/formatters.py",
+          "line": 13,
+          "column": 41,
+          "isOutlier": false,
+          "confidence": 0.6670588235294117
+        },
+        {
+          "file": "autogpt_libs/logging/formatters.py",
+          "line": 21,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.6670588235294117
+        },
+        {
+          "file": "autogpt_libs/logging/formatters.py",
+          "line": 22,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.6670588235294117
+        },
+        {
+          "file": "autogpt_libs/logging/formatters.py",
+          "line": 23,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.6670588235294117
+        },
+        {
+          "file": "autogpt_libs/logging/formatters.py",
+          "line": 24,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.6670588235294117
+        },
+        {
+          "file": "autogpt_libs/logging/formatters.py",
+          "line": 25,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.6670588235294117
+        },
+        {
+          "file": "autogpt_libs/logging/formatters.py",
+          "line": 28,
+          "column": 30,
+          "isOutlier": false,
+          "confidence": 0.6670588235294117
+        },
+        {
+          "file": "autogpt_libs/logging/formatters.py",
+          "line": 28,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.6670588235294117
+        },
+        {
+          "file": "autogpt_libs/logging/formatters.py",
+          "line": 57,
+          "column": 30,
+          "isOutlier": false,
+          "confidence": 0.6670588235294117
+        },
+        {
+          "file": "autogpt_libs/logging/formatters.py",
+          "line": 57,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.6670588235294117
+        },
+        {
+          "file": "autogpt_libs/logging/formatters.py",
+          "line": 10,
+          "column": 45,
+          "isOutlier": false,
+          "confidence": 0.6670588235294117
+        },
+        {
+          "file": "autogpt_libs/logging/handlers.py",
+          "line": 7,
+          "column": 23,
+          "isOutlier": false,
+          "confidence": 0.7
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:33:06.621Z",
+        "lastSeen": "2026-01-29T07:18:31.853Z",
+        "source": "auto-detected",
+        "tags": [
+          "logging",
+          "structured-logging"
+        ],
+        "approvedAt": "2026-01-29T07:18:31.853Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "9f0e6dd4e5415f57",
+      "subcategory": "structured-logging",
+      "name": "Structured Logging Detector",
+      "description": "Learns structured logging patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "logging/structured-logging",
+          "patternId": "logging/structured-logging/function_call"
+        }
+      },
+      "confidence": {
+        "frequency": 0.08,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 3,
+        "score": 0.9116666666666666,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "autogpt_libs/auth/config.py",
+          "line": 40,
+          "column": 20,
+          "isOutlier": false,
+          "confidence": 0.7833333333333333
+        },
+        {
+          "file": "autogpt_libs/auth/config.py",
+          "line": 48,
+          "column": 20,
+          "isOutlier": false,
+          "confidence": 0.7833333333333333
+        },
+        {
+          "file": "autogpt_libs/auth/config.py",
+          "line": 65,
+          "column": 20,
+          "isOutlier": false,
+          "confidence": 0.7833333333333333
+        },
+        {
+          "file": "autogpt_libs/auth/config_test.py",
+          "line": 117,
+          "column": 47,
+          "isOutlier": false,
+          "confidence": 0.9116666666666666
+        },
+        {
+          "file": "autogpt_libs/auth/config_test.py",
+          "line": 130,
+          "column": 55,
+          "isOutlier": false,
+          "confidence": 0.9116666666666666
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 94,
+          "column": 14,
+          "isOutlier": false,
+          "confidence": 0.8042105263157895
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 134,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.8042105263157895
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:33:06.621Z",
+        "lastSeen": "2026-01-29T07:18:31.867Z",
+        "source": "auto-detected",
+        "tags": [
+          "logging",
+          "structured-logging"
+        ],
+        "approvedAt": "2026-01-29T07:18:31.867Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "dd53a03e83f6ae83",
+      "subcategory": "log-levels",
+      "name": "Log Levels Detector",
+      "description": "Learns log level patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "logging/log-levels",
+          "patternId": "logging/log-levels/function_call"
+        }
+      },
+      "confidence": {
+        "frequency": 0.1,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 2,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "autogpt_libs/auth/config.py",
+          "line": 40,
+          "column": 20,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/auth/config.py",
+          "line": 48,
+          "column": 20,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/auth/config.py",
+          "line": 65,
+          "column": 20,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/auth/config_test.py",
+          "line": 117,
+          "column": 47,
+          "isOutlier": false,
+          "confidence": 0.8727777777777778
+        },
+        {
+          "file": "autogpt_libs/auth/config_test.py",
+          "line": 130,
+          "column": 55,
+          "isOutlier": false,
+          "confidence": 0.8727777777777778
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:33:06.621Z",
+        "lastSeen": "2026-01-29T07:18:31.880Z",
+        "source": "auto-detected",
+        "tags": [
+          "logging",
+          "log-levels"
+        ],
+        "approvedAt": "2026-01-29T07:18:31.880Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "adad4a1e38905f2f",
+      "subcategory": "log-levels",
+      "name": "Log Levels Detector",
+      "description": "Learns log level patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "logging/log-levels",
+          "patternId": "logging/log-levels/unknown"
+        }
+      },
+      "confidence": {
+        "frequency": 0.37,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 3,
+        "score": 0.6727777777777777,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "autogpt_libs/auth/config_test.py",
+          "line": 107,
+          "column": 34,
+          "isOutlier": false,
+          "confidence": 0.6727777777777777
+        },
+        {
+          "file": "autogpt_libs/auth/config_test.py",
+          "line": 121,
+          "column": 34,
+          "isOutlier": false,
+          "confidence": 0.6727777777777777
+        },
+        {
+          "file": "autogpt_libs/auth/config_test.py",
+          "line": 134,
+          "column": 34,
+          "isOutlier": false,
+          "confidence": 0.6727777777777777
+        },
+        {
+          "file": "autogpt_libs/auth/config_test.py",
+          "line": 233,
+          "column": 34,
+          "isOutlier": false,
+          "confidence": 0.6727777777777777
+        },
+        {
+          "file": "autogpt_libs/auth/config_test.py",
+          "line": 280,
+          "column": 34,
+          "isOutlier": false,
+          "confidence": 0.6727777777777777
+        },
+        {
+          "file": "autogpt_libs/auth/config_test.py",
+          "line": 302,
+          "column": 34,
+          "isOutlier": false,
+          "confidence": 0.6727777777777777
+        },
+        {
+          "file": "autogpt_libs/auth/config_test.py",
+          "line": 37,
+          "column": 16,
+          "isOutlier": false,
+          "confidence": 0.6727777777777777
+        },
+        {
+          "file": "autogpt_libs/auth/helpers_test.py",
+          "line": 49,
+          "column": 12,
+          "isOutlier": false,
+          "confidence": 0.6670588235294117
+        },
+        {
+          "file": "autogpt_libs/auth/helpers_test.py",
+          "line": 54,
+          "column": 23,
+          "isOutlier": false,
+          "confidence": 0.6670588235294117
+        },
+        {
+          "file": "autogpt_libs/auth/helpers_test.py",
+          "line": 405,
+          "column": 16,
+          "isOutlier": false,
+          "confidence": 0.6670588235294117
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 105,
+          "column": 47,
+          "isOutlier": false,
+          "confidence": 0.5536363636363637
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 112,
+          "column": 47,
+          "isOutlier": false,
+          "confidence": 0.5536363636363637
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 155,
+          "column": 34,
+          "isOutlier": false,
+          "confidence": 0.5536363636363637
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 162,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.5536363636363637
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 163,
+          "column": 31,
+          "isOutlier": false,
+          "confidence": 0.5536363636363637
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 165,
+          "column": 33,
+          "isOutlier": false,
+          "confidence": 0.5536363636363637
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 177,
+          "column": 54,
+          "isOutlier": false,
+          "confidence": 0.5536363636363637
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 103,
+          "column": 51,
+          "isOutlier": false,
+          "confidence": 0.5536363636363637
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 110,
+          "column": 33,
+          "isOutlier": false,
+          "confidence": 0.5536363636363637
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 170,
+          "column": 30,
+          "isOutlier": false,
+          "confidence": 0.5536363636363637
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 177,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.5536363636363637
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 178,
+          "column": 29,
+          "isOutlier": false,
+          "confidence": 0.5536363636363637
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:33:06.621Z",
+        "lastSeen": "2026-01-29T07:18:31.892Z",
+        "source": "auto-detected",
+        "tags": [
+          "logging",
+          "log-levels"
+        ],
+        "approvedAt": "2026-01-29T07:18:31.892Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "f5b7a5f05e8098a1",
+      "subcategory": "log-levels",
+      "name": "Log Levels Detector",
+      "description": "Learns log level patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "logging/log-levels",
+          "patternId": "logging/log-levels/assignment"
+        }
+      },
+      "confidence": {
+        "frequency": 0.17,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 5,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "autogpt_libs/auth/config_test.py",
+          "line": 36,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 0.8727777777777778
+        },
+        {
+          "file": "autogpt_libs/auth/helpers_test.py",
+          "line": 48,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 0.8670588235294118
+        },
+        {
+          "file": "autogpt_libs/auth/helpers_test.py",
+          "line": 402,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.8670588235294118
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 27,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 0.7536363636363637
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 27,
+          "column": 19,
+          "isOutlier": false,
+          "confidence": 0.7536363636363637
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 32,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 0.7536363636363637
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 154,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.7536363636363637
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 28,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 0.7536363636363637
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 28,
+          "column": 19,
+          "isOutlier": false,
+          "confidence": 0.7536363636363637
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 169,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.7536363636363637
+        },
+        {
+          "file": "autogpt_libs/logging/formatters.py",
+          "line": 23,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.8922222222222222
+        },
+        {
+          "file": "autogpt_libs/logging/test_utils.py",
+          "line": 31,
+          "column": 14,
+          "isOutlier": false,
+          "confidence": 0.97
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:33:06.621Z",
+        "lastSeen": "2026-01-29T07:18:31.905Z",
+        "source": "auto-detected",
+        "tags": [
+          "logging",
+          "log-levels"
+        ],
+        "approvedAt": "2026-01-29T07:18:31.905Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "09e14fe0dfcc80ee",
+      "subcategory": "health-checks",
+      "name": "Health Checks Detector",
+      "description": "Learns health check patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "logging/health-checks",
+          "patternId": "logging/health-checks/conditional"
+        }
+      },
+      "confidence": {
+        "frequency": 0.06,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 3,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "autogpt_libs/auth/config_test.py",
+          "line": 3,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/auth/jwt_utils_test.py",
+          "line": 213,
+          "column": 41,
+          "isOutlier": false,
+          "confidence": 0.92625
+        },
+        {
+          "file": "autogpt_libs/rate_limit/limiter.py",
+          "line": 31,
+          "column": 51,
+          "isOutlier": false,
+          "confidence": 0.7366666666666666
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:33:06.621Z",
+        "lastSeen": "2026-01-29T07:18:31.918Z",
+        "source": "auto-detected",
+        "tags": [
+          "logging",
+          "health-checks"
+        ],
+        "approvedAt": "2026-01-29T07:18:31.918Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "65bbf48c172e8ac0",
+      "subcategory": "structured-logging",
+      "name": "Structured Logging Detector",
+      "description": "Learns structured logging patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "logging/structured-logging",
+          "patternId": "logging/structured-logging/property_access"
+        }
+      },
+      "confidence": {
+        "frequency": 0.34,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 6,
+        "score": 0.8670588235294118,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "autogpt_libs/auth/dependencies.py",
+          "line": 51,
+          "column": 16,
+          "isOutlier": false,
+          "confidence": 0.7815384615384615
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies.py",
+          "line": 110,
+          "column": 16,
+          "isOutlier": false,
+          "confidence": 0.7815384615384615
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 385,
+          "column": 68,
+          "isOutlier": false,
+          "confidence": 0.76
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 488,
+          "column": 68,
+          "isOutlier": false,
+          "confidence": 0.76
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 544,
+          "column": 68,
+          "isOutlier": false,
+          "confidence": 0.76
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 397,
+          "column": 21,
+          "isOutlier": false,
+          "confidence": 0.76
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 398,
+          "column": 32,
+          "isOutlier": false,
+          "confidence": 0.76
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 498,
+          "column": 21,
+          "isOutlier": false,
+          "confidence": 0.76
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 500,
+          "column": 35,
+          "isOutlier": false,
+          "confidence": 0.76
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 554,
+          "column": 21,
+          "isOutlier": false,
+          "confidence": 0.76
+        },
+        {
+          "file": "autogpt_libs/auth/helpers_test.py",
+          "line": 39,
+          "column": 20,
+          "isOutlier": false,
+          "confidence": 0.8109090909090909
+        },
+        {
+          "file": "autogpt_libs/auth/helpers_test.py",
+          "line": 40,
+          "column": 20,
+          "isOutlier": false,
+          "confidence": 0.8109090909090909
+        },
+        {
+          "file": "autogpt_libs/auth/helpers_test.py",
+          "line": 310,
+          "column": 20,
+          "isOutlier": false,
+          "confidence": 0.8109090909090909
+        },
+        {
+          "file": "autogpt_libs/auth/helpers_test.py",
+          "line": 427,
+          "column": 14,
+          "isOutlier": false,
+          "confidence": 0.8109090909090909
+        },
+        {
+          "file": "autogpt_libs/auth/helpers_test.py",
+          "line": 434,
+          "column": 21,
+          "isOutlier": false,
+          "confidence": 0.8109090909090909
+        },
+        {
+          "file": "autogpt_libs/auth/helpers_test.py",
+          "line": 435,
+          "column": 21,
+          "isOutlier": false,
+          "confidence": 0.8109090909090909
+        },
+        {
+          "file": "autogpt_libs/auth/jwt_utils.py",
+          "line": 39,
+          "column": 16,
+          "isOutlier": false,
+          "confidence": 0.7366666666666666
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 26,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 0.8042105263157895
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 26,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 0.8042105263157895
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 27,
+          "column": 25,
+          "isOutlier": false,
+          "confidence": 0.8042105263157895
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 28,
+          "column": 25,
+          "isOutlier": false,
+          "confidence": 0.8042105263157895
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 104,
+          "column": 36,
+          "isOutlier": false,
+          "confidence": 0.8042105263157895
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 111,
+          "column": 36,
+          "isOutlier": false,
+          "confidence": 0.8042105263157895
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 151,
+          "column": 36,
+          "isOutlier": false,
+          "confidence": 0.8042105263157895
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 161,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.8042105263157895
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 161,
+          "column": 48,
+          "isOutlier": false,
+          "confidence": 0.8042105263157895
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 186,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.8042105263157895
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 186,
+          "column": 61,
+          "isOutlier": false,
+          "confidence": 0.8042105263157895
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 176,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.8042105263157895
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 176,
+          "column": 44,
+          "isOutlier": false,
+          "confidence": 0.8042105263157895
+        },
+        {
+          "file": "autogpt_libs/logging/formatters.py",
+          "line": 21,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.8670588235294118
+        },
+        {
+          "file": "autogpt_libs/logging/formatters.py",
+          "line": 22,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.8670588235294118
+        },
+        {
+          "file": "autogpt_libs/logging/formatters.py",
+          "line": 46,
+          "column": 49,
+          "isOutlier": false,
+          "confidence": 0.8670588235294118
+        },
+        {
+          "file": "autogpt_libs/logging/formatters.py",
+          "line": 24,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.8670588235294118
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:33:06.622Z",
+        "lastSeen": "2026-01-29T07:18:31.931Z",
+        "source": "auto-detected",
+        "tags": [
+          "logging",
+          "structured-logging"
+        ],
+        "approvedAt": "2026-01-29T07:18:31.931Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "cdf10dc1e2748904",
+      "subcategory": "log-levels",
+      "name": "Log Levels Detector",
+      "description": "Learns log level patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "logging/log-levels",
+          "patternId": "logging/log-levels/property_access"
+        }
+      },
+      "confidence": {
+        "frequency": 0.51,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 6,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "autogpt_libs/auth/dependencies.py",
+          "line": 51,
+          "column": 16,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies.py",
+          "line": 110,
+          "column": 16,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 397,
+          "column": 21,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 398,
+          "column": 32,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 498,
+          "column": 21,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 500,
+          "column": 35,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 554,
+          "column": 21,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/auth/helpers_test.py",
+          "line": 39,
+          "column": 20,
+          "isOutlier": false,
+          "confidence": 0.8670588235294118
+        },
+        {
+          "file": "autogpt_libs/auth/helpers_test.py",
+          "line": 40,
+          "column": 20,
+          "isOutlier": false,
+          "confidence": 0.8670588235294118
+        },
+        {
+          "file": "autogpt_libs/auth/helpers_test.py",
+          "line": 310,
+          "column": 20,
+          "isOutlier": false,
+          "confidence": 0.8670588235294118
+        },
+        {
+          "file": "autogpt_libs/auth/helpers_test.py",
+          "line": 427,
+          "column": 14,
+          "isOutlier": false,
+          "confidence": 0.8670588235294118
+        },
+        {
+          "file": "autogpt_libs/auth/helpers_test.py",
+          "line": 434,
+          "column": 21,
+          "isOutlier": false,
+          "confidence": 0.8670588235294118
+        },
+        {
+          "file": "autogpt_libs/auth/helpers_test.py",
+          "line": 435,
+          "column": 21,
+          "isOutlier": false,
+          "confidence": 0.8670588235294118
+        },
+        {
+          "file": "autogpt_libs/auth/jwt_utils.py",
+          "line": 39,
+          "column": 16,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 104,
+          "column": 36,
+          "isOutlier": false,
+          "confidence": 0.7536363636363637
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 111,
+          "column": 36,
+          "isOutlier": false,
+          "confidence": 0.7536363636363637
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 151,
+          "column": 36,
+          "isOutlier": false,
+          "confidence": 0.7536363636363637
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 161,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.7536363636363637
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 161,
+          "column": 48,
+          "isOutlier": false,
+          "confidence": 0.7536363636363637
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 186,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.7536363636363637
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 186,
+          "column": 61,
+          "isOutlier": false,
+          "confidence": 0.7536363636363637
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 176,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.7536363636363637
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 176,
+          "column": 44,
+          "isOutlier": false,
+          "confidence": 0.7536363636363637
+        },
+        {
+          "file": "autogpt_libs/logging/formatters.py",
+          "line": 21,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.8922222222222222
+        },
+        {
+          "file": "autogpt_libs/logging/formatters.py",
+          "line": 22,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.8922222222222222
+        },
+        {
+          "file": "autogpt_libs/logging/formatters.py",
+          "line": 46,
+          "column": 49,
+          "isOutlier": false,
+          "confidence": 0.8922222222222222
+        },
+        {
+          "file": "autogpt_libs/logging/formatters.py",
+          "line": 24,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.8922222222222222
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:33:06.622Z",
+        "lastSeen": "2026-01-29T07:18:31.945Z",
+        "source": "auto-detected",
+        "tags": [
+          "logging",
+          "log-levels"
+        ],
+        "approvedAt": "2026-01-29T07:18:31.945Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "8c26b6eafbff6f2e",
+      "subcategory": "context-fields",
+      "name": "Context Fields Detector",
+      "description": "Learns logging context field patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "logging/context-fields",
+          "patternId": "logging/context-fields/unknown"
+        }
+      },
+      "confidence": {
+        "frequency": 0.05,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 3,
+        "score": 0.77,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "autogpt_libs/auth/dependencies.py",
+          "line": 29,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies.py",
+          "line": 32,
+          "column": 37,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies.py",
+          "line": 39,
+          "column": 27,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/auth/jwt_utils.py",
+          "line": 23,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/auth/jwt_utils_test.py",
+          "line": 230,
+          "column": 26,
+          "isOutlier": false,
+          "confidence": 0.595
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:33:06.622Z",
+        "lastSeen": "2026-01-29T07:18:31.958Z",
+        "source": "auto-detected",
+        "tags": [
+          "logging",
+          "context-fields"
+        ],
+        "approvedAt": "2026-01-29T07:18:31.958Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "071499c600db0e02",
+      "subcategory": "health-checks",
+      "name": "Health Checks Detector",
+      "description": "Learns health check patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "logging/health-checks",
+          "patternId": "logging/health-checks/assignment"
+        }
+      },
+      "confidence": {
+        "frequency": 0.5,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 5,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "autogpt_libs/auth/dependencies.py",
+          "line": 96,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies.py",
+          "line": 106,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 86,
+          "column": 31,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 96,
+          "column": 31,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 121,
+          "column": 31,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 154,
+          "column": 31,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 166,
+          "column": 31,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 203,
+          "column": 25,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 222,
+          "column": 25,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 245,
+          "column": 25,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 256,
+          "column": 25,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 427,
+          "column": 31,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/auth/jwt_utils.py",
+          "line": 35,
+          "column": 29,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/auth/jwt_utils.py",
+          "line": 42,
+          "column": 29,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/auth/jwt_utils.py",
+          "line": 70,
+          "column": 29,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/auth/jwt_utils.py",
+          "line": 75,
+          "column": 29,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/auth/jwt_utils.py",
+          "line": 78,
+          "column": 29,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/auth/jwt_utils_test.py",
+          "line": 133,
+          "column": 27,
+          "isOutlier": false,
+          "confidence": 0.92625
+        },
+        {
+          "file": "autogpt_libs/auth/jwt_utils_test.py",
+          "line": 145,
+          "column": 27,
+          "isOutlier": false,
+          "confidence": 0.92625
+        },
+        {
+          "file": "autogpt_libs/auth/jwt_utils_test.py",
+          "line": 170,
+          "column": 27,
+          "isOutlier": false,
+          "confidence": 0.92625
+        },
+        {
+          "file": "autogpt_libs/auth/jwt_utils_test.py",
+          "line": 178,
+          "column": 27,
+          "isOutlier": false,
+          "confidence": 0.92625
+        },
+        {
+          "file": "autogpt_libs/auth/jwt_utils_test.py",
+          "line": 187,
+          "column": 27,
+          "isOutlier": false,
+          "confidence": 0.92625
+        },
+        {
+          "file": "autogpt_libs/auth/jwt_utils_test.py",
+          "line": 196,
+          "column": 27,
+          "isOutlier": false,
+          "confidence": 0.92625
+        },
+        {
+          "file": "autogpt_libs/auth/jwt_utils_test.py",
+          "line": 205,
+          "column": 27,
+          "isOutlier": false,
+          "confidence": 0.92625
+        },
+        {
+          "file": "autogpt_libs/rate_limit/middleware.py",
+          "line": 24,
+          "column": 13,
+          "isOutlier": true,
+          "confidence": 0.7949999999999999,
+          "outlierReason": "Low confidence outlier"
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:33:06.622Z",
+        "lastSeen": "2026-01-29T07:18:31.970Z",
+        "source": "auto-detected",
+        "tags": [
+          "logging",
+          "health-checks"
+        ],
+        "approvedAt": "2026-01-29T07:18:31.970Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "c13cb24de97dd2ef",
+      "subcategory": "structured-logging",
+      "name": "Structured Logging Detector",
+      "description": "Learns structured logging patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "logging/structured-logging",
+          "patternId": "logging/structured-logging/conditional"
+        }
+      },
+      "confidence": {
+        "frequency": 0.22,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 3,
+        "score": 0.8670588235294118,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 384,
+          "column": 16,
+          "isOutlier": false,
+          "confidence": 0.76
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 384,
+          "column": 39,
+          "isOutlier": false,
+          "confidence": 0.76
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 496,
+          "column": 40,
+          "isOutlier": false,
+          "confidence": 0.76
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 81,
+          "column": 36,
+          "isOutlier": false,
+          "confidence": 0.8042105263157895
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 104,
+          "column": 28,
+          "isOutlier": false,
+          "confidence": 0.8042105263157895
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 111,
+          "column": 28,
+          "isOutlier": false,
+          "confidence": 0.8042105263157895
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 131,
+          "column": 23,
+          "isOutlier": false,
+          "confidence": 0.8042105263157895
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 151,
+          "column": 28,
+          "isOutlier": false,
+          "confidence": 0.8042105263157895
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 186,
+          "column": 53,
+          "isOutlier": false,
+          "confidence": 0.8042105263157895
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 71,
+          "column": 27,
+          "isOutlier": false,
+          "confidence": 0.8042105263157895
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 71,
+          "column": 36,
+          "isOutlier": false,
+          "confidence": 0.8042105263157895
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 71,
+          "column": 44,
+          "isOutlier": false,
+          "confidence": 0.8042105263157895
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 71,
+          "column": 55,
+          "isOutlier": false,
+          "confidence": 0.8042105263157895
+        },
+        {
+          "file": "autogpt_libs/logging/formatters.py",
+          "line": 46,
+          "column": 41,
+          "isOutlier": false,
+          "confidence": 0.8670588235294118
+        },
+        {
+          "file": "autogpt_libs/logging/formatters.py",
+          "line": 14,
+          "column": 48,
+          "isOutlier": false,
+          "confidence": 0.8670588235294118
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:33:06.622Z",
+        "lastSeen": "2026-01-29T07:18:31.984Z",
+        "source": "auto-detected",
+        "tags": [
+          "logging",
+          "structured-logging"
+        ],
+        "approvedAt": "2026-01-29T07:18:31.984Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "ad31f8e9effd5563",
+      "subcategory": "context-fields",
+      "name": "Context Fields Detector",
+      "description": "Learns logging context field patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "logging/context-fields",
+          "patternId": "logging/context-fields/conditional"
+        }
+      },
+      "confidence": {
+        "frequency": 0.05,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 2,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 378,
+          "column": 49,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 414,
+          "column": 51,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 481,
+          "column": 49,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 537,
+          "column": 49,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/rate_limit/config.py",
+          "line": 30,
+          "column": 60,
+          "isOutlier": false,
+          "confidence": 0.97
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:33:06.622Z",
+        "lastSeen": "2026-01-29T07:18:31.998Z",
+        "source": "auto-detected",
+        "tags": [
+          "logging",
+          "context-fields"
+        ],
+        "approvedAt": "2026-01-29T07:18:31.998Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "a201b59d218ebeed",
+      "subcategory": "pii-redaction",
+      "name": "PII Redaction Detector",
+      "description": "Learns PII redaction patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "logging/pii-redaction",
+          "patternId": "logging/pii-redaction/conditional"
+        }
+      },
+      "confidence": {
+        "frequency": 0.01,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 507,
+          "column": 51,
+          "isOutlier": false,
+          "confidence": 0.97
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:33:06.622Z",
+        "lastSeen": "2026-01-29T07:18:32.011Z",
+        "source": "auto-detected",
+        "tags": [
+          "logging",
+          "pii-redaction"
+        ],
+        "approvedAt": "2026-01-29T07:18:32.011Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "33fda031e9af0d92",
+      "subcategory": "context-fields",
+      "name": "Context Fields Detector",
+      "description": "Learns logging context field patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "logging/context-fields",
+          "patternId": "logging/context-fields/assignment"
+        }
+      },
+      "confidence": {
+        "frequency": 0.04,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 3,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "autogpt_libs/auth/jwt_utils_test.py",
+          "line": 222,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 0.7949999999999999
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 63,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/supabase_integration_credentials_store/types.py",
+          "line": 30,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 0.97
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:33:06.622Z",
+        "lastSeen": "2026-01-29T07:18:32.024Z",
+        "source": "auto-detected",
+        "tags": [
+          "logging",
+          "context-fields"
+        ],
+        "approvedAt": "2026-01-29T07:18:32.024Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "162755bc113d5955",
+      "subcategory": "context-fields",
+      "name": "Context Fields Detector",
+      "description": "Learns logging context field patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "logging/context-fields",
+          "patternId": "logging/context-fields/import"
+        }
+      },
+      "confidence": {
+        "frequency": 0.04,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 2,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "autogpt_libs/auth/models.py",
+          "line": 1,
+          "column": 6,
+          "isOutlier": false,
+          "confidence": 0.8533333333333333
+        },
+        {
+          "file": "autogpt_libs/auth/models.py",
+          "line": 1,
+          "column": 25,
+          "isOutlier": false,
+          "confidence": 0.8533333333333333
+        },
+        {
+          "file": "autogpt_libs/utils/synchronize.py",
+          "line": 2,
+          "column": 6,
+          "isOutlier": false,
+          "confidence": 0.97
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:33:06.622Z",
+        "lastSeen": "2026-01-29T07:18:32.037Z",
+        "source": "auto-detected",
+        "tags": [
+          "logging",
+          "context-fields"
+        ],
+        "approvedAt": "2026-01-29T07:18:32.037Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "900a9b661958de3b",
+      "subcategory": "context-fields",
+      "name": "Context Fields Detector",
+      "description": "Learns logging context field patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "logging/context-fields",
+          "patternId": "logging/context-fields/decorator"
+        }
+      },
+      "confidence": {
+        "frequency": 0.01,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "autogpt_libs/auth/models.py",
+          "line": 8,
+          "column": 2,
+          "isOutlier": false,
+          "confidence": 1
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:33:06.622Z",
+        "lastSeen": "2026-01-29T07:18:32.052Z",
+        "source": "auto-detected",
+        "tags": [
+          "logging",
+          "context-fields"
+        ],
+        "approvedAt": "2026-01-29T07:18:32.052Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "0db1e2663b80a477",
+      "subcategory": "structured-logging",
+      "name": "Structured Logging Detector",
+      "description": "Learns structured logging patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "logging/structured-logging",
+          "patternId": "logging/structured-logging/class_definition"
+        }
+      },
+      "confidence": {
+        "frequency": 0.02,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 37,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 0.9542105263157895
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:33:06.623Z",
+        "lastSeen": "2026-01-29T07:18:32.065Z",
+        "source": "auto-detected",
+        "tags": [
+          "logging",
+          "structured-logging"
+        ],
+        "approvedAt": "2026-01-29T07:18:32.065Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "9bf8ddc33a14c565",
+      "subcategory": "log-levels",
+      "name": "Log Levels Detector",
+      "description": "Learns log level patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "logging/log-levels",
+          "patternId": "logging/log-levels/conditional"
+        }
+      },
+      "confidence": {
+        "frequency": 0.07,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.7536363636363637,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 71,
+          "column": 27,
+          "isOutlier": false,
+          "confidence": 0.7536363636363637
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 71,
+          "column": 36,
+          "isOutlier": false,
+          "confidence": 0.7536363636363637
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 71,
+          "column": 44,
+          "isOutlier": false,
+          "confidence": 0.7536363636363637
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 71,
+          "column": 55,
+          "isOutlier": false,
+          "confidence": 0.7536363636363637
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:33:06.623Z",
+        "lastSeen": "2026-01-29T07:18:32.078Z",
+        "source": "auto-detected",
+        "tags": [
+          "logging",
+          "log-levels"
+        ],
+        "approvedAt": "2026-01-29T07:18:32.078Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "591bd07b73dd41fb",
+      "subcategory": "health-checks",
+      "name": "Health Checks Detector",
+      "description": "Learns health check patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "logging/health-checks",
+          "patternId": "logging/health-checks/function_definition"
+        }
+      },
+      "confidence": {
+        "frequency": 0.02,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.8866666666666666,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "autogpt_libs/rate_limit/limiter.py",
+          "line": 26,
+          "column": 15,
+          "isOutlier": false,
+          "confidence": 0.8866666666666666
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:33:06.623Z",
+        "lastSeen": "2026-01-29T07:18:32.090Z",
+        "source": "auto-detected",
+        "tags": [
+          "logging",
+          "health-checks"
+        ],
+        "approvedAt": "2026-01-29T07:18:32.090Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "a4c85530f838a761",
+      "subcategory": "health-checks",
+      "name": "Health Checks Detector",
+      "description": "Learns health check patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "logging/health-checks",
+          "patternId": "logging/health-checks/unknown"
+        }
+      },
+      "confidence": {
+        "frequency": 0.02,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.5366666666666666,
+        "level": "low"
+      },
+      "locations": [
+        {
+          "file": "autogpt_libs/rate_limit/limiter.py",
+          "line": 28,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.5366666666666666
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:33:06.623Z",
+        "lastSeen": "2026-01-29T07:18:32.102Z",
+        "source": "auto-detected",
+        "tags": [
+          "logging",
+          "health-checks"
+        ],
+        "approvedAt": "2026-01-29T07:18:32.102Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "a976e4246a14ae7b",
+      "subcategory": "health-checks",
+      "name": "Health Checks Detector",
+      "description": "Learns health check patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "logging/health-checks",
+          "patternId": "logging/health-checks/function_call"
+        }
+      },
+      "confidence": {
+        "frequency": 0.02,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.7949999999999999,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "autogpt_libs/rate_limit/middleware.py",
+          "line": 20,
+          "column": 55,
+          "isOutlier": false,
+          "confidence": 0.7949999999999999
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:33:06.623Z",
+        "lastSeen": "2026-01-29T07:18:32.117Z",
+        "source": "auto-detected",
+        "tags": [
+          "logging",
+          "health-checks"
+        ],
+        "approvedAt": "2026-01-29T07:18:32.117Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    }
+  ],
+  "lastUpdated": "2026-01-29T07:18:34.039Z",
+  "checksum": "54a7cd10087789b8"
+}

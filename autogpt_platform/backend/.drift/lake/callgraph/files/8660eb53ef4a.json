@@ -1,0 +1,682 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.181Z",
+  "checksum": "973e79ad5a97def0",
+  "file": "backend/data/organization.py",
+  "functions": [
+    {
+      "id": "backend/data/organization.py:create_organization:55",
+      "name": "create_organization",
+      "startLine": 55,
+      "endLine": 99,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "find_unique",
+          "resolved": false,
+          "confidence": 0,
+          "line": 73
+        },
+        {
+          "target": "ValueError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 75
+        },
+        {
+          "target": "tx",
+          "resolved": false,
+          "confidence": 0,
+          "line": 78
+        },
+        {
+          "target": "create",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 79,
+          "resolvedId": "backend/integrations/creds_manager.py:create:68"
+        },
+        {
+          "target": "create",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 90,
+          "resolvedId": "backend/integrations/creds_manager.py:create:68"
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 95
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "organization",
+          "operation": "read",
+          "line": 74,
+          "fields": []
+        },
+        {
+          "table": "organization",
+          "operation": "write",
+          "line": 80,
+          "fields": []
+        },
+        {
+          "table": "organizationmember",
+          "operation": "write",
+          "line": 91,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "read",
+          "line": 73,
+          "fields": []
+        },
+        {
+          "table": "organization",
+          "operation": "write",
+          "line": 79,
+          "fields": []
+        },
+        {
+          "table": "organizationmember",
+          "operation": "write",
+          "line": 90,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/data/organization.py:get_organization_by_id:102",
+      "name": "get_organization_by_id",
+      "startLine": 102,
+      "endLine": 106,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "find_unique",
+          "resolved": false,
+          "confidence": 0,
+          "line": 106
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "prisma",
+          "operation": "read",
+          "line": 106,
+          "fields": [
+            "id",
+            "organization_id"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "backend/data/organization.py:get_organization_by_slug:109",
+      "name": "get_organization_by_slug",
+      "startLine": 109,
+      "endLine": 113,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "find_unique",
+          "resolved": false,
+          "confidence": 0,
+          "line": 113
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "prisma",
+          "operation": "read",
+          "line": 113,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/data/organization.py:get_organization_by_sso_domain:116",
+      "name": "get_organization_by_sso_domain",
+      "startLine": 116,
+      "endLine": 126,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "find_first",
+          "resolved": false,
+          "confidence": 0,
+          "line": 120
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "organization",
+          "operation": "read",
+          "line": 121,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "read",
+          "line": 120,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/data/organization.py:update_organization:129",
+      "name": "update_organization",
+      "startLine": 129,
+      "endLine": 155,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "model_dump",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 134,
+          "resolvedId": "backend/blocks/apollo/models.py:model_dump:11"
+        },
+        {
+          "target": "get_organization_by_id",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 136,
+          "resolvedId": "backend/data/organization.py:get_organization_by_id:102"
+        },
+        {
+          "target": "organization_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 136
+        },
+        {
+          "target": "get_organization_by_id",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 150,
+          "resolvedId": "backend/data/organization.py:get_organization_by_id:102"
+        },
+        {
+          "target": "organization_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 150
+        },
+        {
+          "target": "update",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 152,
+          "resolvedId": "backend/integrations/creds_manager.py:update:162"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "organization",
+          "operation": "write",
+          "line": 134,
+          "fields": []
+        },
+        {
+          "table": "organization",
+          "operation": "write",
+          "line": 153,
+          "fields": []
+        },
+        {
+          "table": "organization",
+          "operation": "write",
+          "line": 133,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "write",
+          "line": 152,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/data/organization.py:get_user_organizations:163",
+      "name": "get_user_organizations",
+      "startLine": 163,
+      "endLine": 170,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "find_many",
+          "resolved": false,
+          "confidence": 0,
+          "line": 167
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "organizationmember",
+          "operation": "read",
+          "line": 168,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "read",
+          "line": 167,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/data/organization.py:get_organization_members:173",
+      "name": "get_organization_members",
+      "startLine": 173,
+      "endLine": 181,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "find_many",
+          "resolved": false,
+          "confidence": 0,
+          "line": 177
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "organizationmember",
+          "operation": "read",
+          "line": 178,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "read",
+          "line": 177,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/data/organization.py:get_member:184",
+      "name": "get_member",
+      "startLine": 184,
+      "endLine": 196,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "find_unique",
+          "resolved": false,
+          "confidence": 0,
+          "line": 189
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "organizationmember",
+          "operation": "read",
+          "line": 190,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "read",
+          "line": 189,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/data/organization.py:add_organization_member:199",
+      "name": "add_organization_member",
+      "startLine": 199,
+      "endLine": 211,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "create",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 203,
+          "resolvedId": "backend/integrations/creds_manager.py:create:68"
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 209
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "organizationmember",
+          "operation": "write",
+          "line": 204,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "write",
+          "line": 203,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/data/organization.py:remove_organization_member:214",
+      "name": "remove_organization_member",
+      "startLine": 214,
+      "endLine": 235,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "delete",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 225,
+          "resolvedId": "backend/integrations/creds_manager.py:delete:166"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "organizationmember",
+          "operation": "delete",
+          "line": 226,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "delete",
+          "line": 225,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/data/organization.py:update_member_role:238",
+      "name": "update_member_role",
+      "startLine": 238,
+      "endLine": 252,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "update",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 244,
+          "resolvedId": "backend/integrations/creds_manager.py:update:162"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "organizationmember",
+          "operation": "write",
+          "line": 245,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "write",
+          "line": 244,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/data/organization.py:check_user_permission:255",
+      "name": "check_user_permission",
+      "startLine": 255,
+      "endLine": 274,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "get_member",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 271,
+          "resolvedId": "backend/data/organization.py:get_member:184"
+        },
+        {
+          "target": "organization_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 271
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 271
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/organization.py:create_invitation:284",
+      "name": "create_invitation",
+      "startLine": 284,
+      "endLine": 332,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "token_urlsafe",
+          "resolved": false,
+          "confidence": 0,
+          "line": 303
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 304
+        },
+        {
+          "target": "timedelta",
+          "resolved": false,
+          "confidence": 0,
+          "line": 304
+        },
+        {
+          "target": "upsert",
+          "resolved": false,
+          "confidence": 0,
+          "line": 307
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "prisma",
+          "operation": "write",
+          "line": 307,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/data/organization.py:get_invitation_by_token:335",
+      "name": "get_invitation_by_token",
+      "startLine": 335,
+      "endLine": 342,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "find_unique",
+          "resolved": false,
+          "confidence": 0,
+          "line": 339
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "organizationinvitation",
+          "operation": "read",
+          "line": 340,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "read",
+          "line": 339,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/data/organization.py:accept_invitation:345",
+      "name": "accept_invitation",
+      "startLine": 345,
+      "endLine": 390,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "get_invitation_by_token",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 359,
+          "resolvedId": "backend/data/organization.py:get_invitation_by_token:335"
+        },
+        {
+          "target": "token",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 359,
+          "resolvedId": "backend/api/features/oauth.py:token:337"
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 365
+        },
+        {
+          "target": "tx",
+          "resolved": false,
+          "confidence": 0,
+          "line": 373
+        },
+        {
+          "target": "create",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 374,
+          "resolvedId": "backend/integrations/creds_manager.py:create:68"
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 381
+        },
+        {
+          "target": "update",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 385,
+          "resolvedId": "backend/integrations/creds_manager.py:update:162"
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 387
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "organizationmember",
+          "operation": "write",
+          "line": 375,
+          "fields": []
+        },
+        {
+          "table": "organizationinvitation",
+          "operation": "write",
+          "line": 386,
+          "fields": []
+        },
+        {
+          "table": "organizationmember",
+          "operation": "write",
+          "line": 374,
+          "fields": []
+        },
+        {
+          "table": "organizationinvitation",
+          "operation": "write",
+          "line": 385,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/data/organization.py:get_pending_invitations:393",
+      "name": "get_pending_invitations",
+      "startLine": 393,
+      "endLine": 405,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "find_many",
+          "resolved": false,
+          "confidence": 0,
+          "line": 397
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 402
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "organizationinvitation",
+          "operation": "read",
+          "line": 398,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "read",
+          "line": 397,
+          "fields": []
+        }
+      ]
+    }
+  ]
+}

@@ -34,21 +34,9 @@
       "env": {
         "OBJC_DISABLE_INITIALIZE_FORK_SAFETY": "YES"
       },
-      "envFile": "${workspaceFolder}/backend/.env",
+      "envFile": "${workspaceFolder}/autogpt_platform/backend/.env",
       "justMyCode": false,
       "cwd": "${workspaceFolder}/autogpt_platform/backend"
-    },
-    {
-      "name": "Marketplace",
-      "type": "debugpy",
-      "request": "launch",
-      "module": "autogpt_platform.market.main",
-      "env": {
-        "ENV": "dev"
-      },
-      "envFile": "${workspaceFolder}/market/.env",
-      "justMyCode": false,
-      "cwd": "${workspaceFolder}/market"
     }
   ],
   "compounds": [

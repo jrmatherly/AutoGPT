@@ -1,0 +1,374 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.040Z",
+  "checksum": "b609e5ec80ebfa09",
+  "file": "src/components/molecules/Dialog/Dialog.stories.tsx",
+  "functions": [
+    {
+      "id": "src/components/molecules/Dialog/Dialog.stories.tsx:renderBasicDialog:76",
+      "name": "renderBasicDialog",
+      "startLine": 76,
+      "endLine": 91,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "Dialog",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 78,
+          "resolvedId": "src/components/molecules/Dialog/Dialog.tsx:Dialog:28"
+        },
+        {
+          "target": "Trigger",
+          "resolved": false,
+          "confidence": 0,
+          "line": 79
+        },
+        {
+          "target": "Button",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 80,
+          "resolvedId": "src/components/atoms/Button/Button.tsx:Button:12"
+        },
+        {
+          "target": "Content",
+          "resolved": false,
+          "confidence": 0,
+          "line": 82
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/molecules/Dialog/Dialog.stories.tsx:renderDialogWithoutTitle:93",
+      "name": "renderDialogWithoutTitle",
+      "startLine": 93,
+      "endLine": 107,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "Dialog",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 95,
+          "resolvedId": "src/components/molecules/Dialog/Dialog.tsx:Dialog:28"
+        },
+        {
+          "target": "Trigger",
+          "resolved": false,
+          "confidence": 0,
+          "line": 96
+        },
+        {
+          "target": "Button",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 97,
+          "resolvedId": "src/components/atoms/Button/Button.tsx:Button:12"
+        },
+        {
+          "target": "Content",
+          "resolved": false,
+          "confidence": 0,
+          "line": 99
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/molecules/Dialog/Dialog.stories.tsx:renderForceOpenDialog:109",
+      "name": "renderForceOpenDialog",
+      "startLine": 109,
+      "endLine": 120,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "Dialog",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 111,
+          "resolvedId": "src/components/molecules/Dialog/Dialog.tsx:Dialog:28"
+        },
+        {
+          "target": "Content",
+          "resolved": false,
+          "confidence": 0,
+          "line": 112
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/molecules/Dialog/Dialog.stories.tsx:renderDialogWithFooter:122",
+      "name": "renderDialogWithFooter",
+      "startLine": 122,
+      "endLine": 142,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "Dialog",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 124,
+          "resolvedId": "src/components/molecules/Dialog/Dialog.tsx:Dialog:28"
+        },
+        {
+          "target": "Trigger",
+          "resolved": false,
+          "confidence": 0,
+          "line": 125
+        },
+        {
+          "target": "Button",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 126,
+          "resolvedId": "src/components/atoms/Button/Button.tsx:Button:12"
+        },
+        {
+          "target": "Content",
+          "resolved": false,
+          "confidence": 0,
+          "line": 128
+        },
+        {
+          "target": "Footer",
+          "resolved": false,
+          "confidence": 0,
+          "line": 131
+        },
+        {
+          "target": "Button",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 132,
+          "resolvedId": "src/components/atoms/Button/Button.tsx:Button:12"
+        },
+        {
+          "target": "Button",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 135,
+          "resolvedId": "src/components/atoms/Button/Button.tsx:Button:12"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/molecules/Dialog/Dialog.stories.tsx:renderControlledDialog:144",
+      "name": "renderControlledDialog",
+      "startLine": 144,
+      "endLine": 180,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 145
+        },
+        {
+          "target": "setIsOpen",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 148,
+          "resolvedId": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/modals/AgentSettingsModal/AgentSettingsModal.tsx:setIsOpen:26"
+        },
+        {
+          "target": "Button",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 153,
+          "resolvedId": "src/components/atoms/Button/Button.tsx:Button:12"
+        },
+        {
+          "target": "handleToggle",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 153,
+          "resolvedId": "src/components/molecules/Dialog/Dialog.stories.tsx:handleToggle:147"
+        },
+        {
+          "target": "Dialog",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 157,
+          "resolvedId": "src/components/molecules/Dialog/Dialog.tsx:Dialog:28"
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 163
+        },
+        {
+          "target": "Content",
+          "resolved": false,
+          "confidence": 0,
+          "line": 165
+        },
+        {
+          "target": "Button",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 173,
+          "resolvedId": "src/components/atoms/Button/Button.tsx:Button:12"
+        },
+        {
+          "target": "handleToggle",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 173,
+          "resolvedId": "src/components/molecules/Dialog/Dialog.stories.tsx:handleToggle:147"
+        },
+        {
+          "target": "setIsOpen",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 148,
+          "resolvedId": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/modals/AgentSettingsModal/AgentSettingsModal.tsx:setIsOpen:26"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/molecules/Dialog/Dialog.stories.tsx:handleToggle:147",
+      "name": "handleToggle",
+      "startLine": 147,
+      "endLine": 149,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "setIsOpen",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 148,
+          "resolvedId": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/modals/AgentSettingsModal/AgentSettingsModal.tsx:setIsOpen:26"
+        },
+        {
+          "target": "setIsOpen",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 148,
+          "resolvedId": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/modals/AgentSettingsModal/AgentSettingsModal.tsx:setIsOpen:26"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/molecules/Dialog/Dialog.stories.tsx:renderCustomStyledDialog:182",
+      "name": "renderCustomStyledDialog",
+      "startLine": 182,
+      "endLine": 201,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "Dialog",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 184,
+          "resolvedId": "src/components/molecules/Dialog/Dialog.tsx:Dialog:28"
+        },
+        {
+          "target": "Trigger",
+          "resolved": false,
+          "confidence": 0,
+          "line": 192
+        },
+        {
+          "target": "Button",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 193,
+          "resolvedId": "src/components/atoms/Button/Button.tsx:Button:12"
+        },
+        {
+          "target": "Content",
+          "resolved": false,
+          "confidence": 0,
+          "line": 195
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/molecules/Dialog/Dialog.stories.tsx:renderModalOverModal:203",
+      "name": "renderModalOverModal",
+      "startLine": 203,
+      "endLine": 231,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "Dialog",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 205,
+          "resolvedId": "src/components/molecules/Dialog/Dialog.tsx:Dialog:28"
+        },
+        {
+          "target": "Trigger",
+          "resolved": false,
+          "confidence": 0,
+          "line": 206
+        },
+        {
+          "target": "Button",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 207,
+          "resolvedId": "src/components/atoms/Button/Button.tsx:Button:12"
+        },
+        {
+          "target": "Content",
+          "resolved": false,
+          "confidence": 0,
+          "line": 209
+        },
+        {
+          "target": "Dialog",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 216,
+          "resolvedId": "src/components/molecules/Dialog/Dialog.tsx:Dialog:28"
+        },
+        {
+          "target": "Trigger",
+          "resolved": false,
+          "confidence": 0,
+          "line": 217
+        },
+        {
+          "target": "Button",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 218,
+          "resolvedId": "src/components/atoms/Button/Button.tsx:Button:12"
+        },
+        {
+          "target": "Content",
+          "resolved": false,
+          "confidence": 0,
+          "line": 220
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

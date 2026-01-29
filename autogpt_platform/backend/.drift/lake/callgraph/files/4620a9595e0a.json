@@ -1,0 +1,503 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.152Z",
+  "checksum": "5a1357517fb42682",
+  "file": "backend/blocks/talking_head.py",
+  "functions": [
+    {
+      "id": "backend/blocks/talking_head.py:__init__:82",
+      "name": "__init__",
+      "startLine": 82,
+      "endLine": 119,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 83,
+          "resolvedId": "backend/blocks/talking_head.py:__init__:82"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 83
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/talking_head.py:create_clip:121",
+      "name": "create_clip",
+      "startLine": 121,
+      "endLine": 129,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 126,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        },
+        {
+          "target": "post",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 128,
+          "resolvedId": "backend/util/request.py:post:563"
+        },
+        {
+          "target": "url",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 128,
+          "resolvedId": "backend/data/integrations.py:url:48"
+        },
+        {
+          "target": "Requests",
+          "resolved": false,
+          "confidence": 0,
+          "line": 128
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 129,
+          "resolvedId": "backend/util/request.py:json:289"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/talking_head.py:get_clip_status:131",
+      "name": "get_clip_status",
+      "startLine": 131,
+      "endLine": 138,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 135,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 137,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "url",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 137,
+          "resolvedId": "backend/data/integrations.py:url:48"
+        },
+        {
+          "target": "Requests",
+          "resolved": false,
+          "confidence": 0,
+          "line": 137
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 138,
+          "resolvedId": "backend/util/request.py:json:289"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/talking_head.py:run:140",
+      "name": "run",
+      "startLine": 140,
+      "endLine": 177,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "lower",
+          "resolved": false,
+          "confidence": 0,
+          "line": 147
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 147
+        },
+        {
+          "target": "lower",
+          "resolved": false,
+          "confidence": 0,
+          "line": 152
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 152
+        },
+        {
+          "target": "create_clip",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 161,
+          "resolvedId": "backend/blocks/talking_head.py:create_clip:121"
+        },
+        {
+          "target": "payload",
+          "resolved": false,
+          "confidence": 0,
+          "line": 161
+        },
+        {
+          "target": "range",
+          "resolved": false,
+          "confidence": 0,
+          "line": 165
+        },
+        {
+          "target": "get_clip_status",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 166,
+          "resolvedId": "backend/blocks/talking_head.py:get_clip_status:131"
+        },
+        {
+          "target": "clip_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 166
+        },
+        {
+          "target": "RuntimeError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 171
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 172,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "sleep",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 175,
+          "resolvedId": "load-tests/orchestrator/orchestrator.js:sleep:171"
+        },
+        {
+          "target": "TimeoutError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 177
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/talking_head.py:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 178,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "APIKeyCredentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 22
+        },
+        {
+          "target": "CredentialsField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 41,
+          "resolvedId": "backend/data/model.py:CredentialsField:681"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 45,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 49,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 52,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 56,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 59,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 62,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 65,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 68,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 71,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 72,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 75,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 80,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 83,
+          "resolvedId": "backend/blocks/talking_head.py:__init__:82"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 83
+        },
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 126,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        },
+        {
+          "target": "post",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 128,
+          "resolvedId": "backend/util/request.py:post:563"
+        },
+        {
+          "target": "url",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 128,
+          "resolvedId": "backend/data/integrations.py:url:48"
+        },
+        {
+          "target": "Requests",
+          "resolved": false,
+          "confidence": 0,
+          "line": 128
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 129,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 135,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 137,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "url",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 137,
+          "resolvedId": "backend/data/integrations.py:url:48"
+        },
+        {
+          "target": "Requests",
+          "resolved": false,
+          "confidence": 0,
+          "line": 137
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 138,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "lower",
+          "resolved": false,
+          "confidence": 0,
+          "line": 147
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 147
+        },
+        {
+          "target": "lower",
+          "resolved": false,
+          "confidence": 0,
+          "line": 152
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 152
+        },
+        {
+          "target": "create_clip",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 161,
+          "resolvedId": "backend/blocks/talking_head.py:create_clip:121"
+        },
+        {
+          "target": "payload",
+          "resolved": false,
+          "confidence": 0,
+          "line": 161
+        },
+        {
+          "target": "range",
+          "resolved": false,
+          "confidence": 0,
+          "line": 165
+        },
+        {
+          "target": "get_clip_status",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 166,
+          "resolvedId": "backend/blocks/talking_head.py:get_clip_status:131"
+        },
+        {
+          "target": "clip_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 166
+        },
+        {
+          "target": "RuntimeError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 171
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 172,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "sleep",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 175,
+          "resolvedId": "load-tests/orchestrator/orchestrator.js:sleep:171"
+        },
+        {
+          "target": "TimeoutError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 177
+        },
+        {
+          "target": "APIKeyCredentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 22
+        },
+        {
+          "target": "SecretStr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 25
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

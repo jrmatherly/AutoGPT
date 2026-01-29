@@ -1,0 +1,525 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.244Z",
+  "checksum": "bc42e9e662858195",
+  "file": "backend/blocks/system/library_operations.py",
+  "functions": [
+    {
+      "id": "backend/blocks/system/library_operations.py:__init__:62",
+      "name": "__init__",
+      "startLine": 62,
+      "endLine": 89,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 63,
+          "resolvedId": "backend/blocks/system/library_operations.py:__init__:62"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 63
+        },
+        {
+          "target": "LibraryAgent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 82
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/system/library_operations.py:run:91",
+      "name": "run",
+      "startLine": 91,
+      "endLine": 109,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "_add_to_library",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 98,
+          "resolvedId": "backend/blocks/system/library_operations.py:_add_to_library:111"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/system/library_operations.py:_add_to_library:111",
+      "name": "_add_to_library",
+      "startLine": 111,
+      "endLine": 135,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "add_store_agent_to_library",
+          "resolved": false,
+          "confidence": 0,
+          "line": 121
+        },
+        {
+          "target": "get_database_manager_async_client",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 121,
+          "resolvedId": "backend/util/clients.py:get_database_manager_async_client:37"
+        },
+        {
+          "target": "LibraryAgent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 130
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/system/library_operations.py:__init__:168",
+      "name": "__init__",
+      "startLine": 168,
+      "endLine": 226,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 169,
+          "resolvedId": "backend/blocks/system/library_operations.py:__init__:62"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 169
+        },
+        {
+          "target": "LibraryAgent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 184
+        },
+        {
+          "target": "LibraryAgent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 199
+        },
+        {
+          "target": "LibraryAgent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 212
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/system/library_operations.py:run:228",
+      "name": "run",
+      "startLine": 228,
+      "endLine": 251,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "_list_library_agents",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 235,
+          "resolvedId": "backend/blocks/system/library_operations.py:_list_library_agents:253"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/system/library_operations.py:_list_library_agents:253",
+      "name": "_list_library_agents",
+      "startLine": 253,
+      "endLine": 289,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "list_library_agents",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 263,
+          "resolvedId": "backend/api/features/library/routes/agents.py:list_library_agents:34"
+        },
+        {
+          "target": "get_database_manager_async_client",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 263,
+          "resolvedId": "backend/util/clients.py:get_database_manager_async_client:37"
+        },
+        {
+          "target": "LibraryAgent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 271
+        },
+        {
+          "target": "getattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 276
+        },
+        {
+          "target": "agent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 276
+        },
+        {
+          "target": "getattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 277
+        },
+        {
+          "target": "agent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 277
+        },
+        {
+          "target": "getattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 278
+        },
+        {
+          "target": "agent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 278
+        },
+        {
+          "target": "getattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 279
+        },
+        {
+          "target": "agent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 279
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/system/library_operations.py:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 290,
+      "isEntryPoint": false,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "getLogger",
+          "resolved": false,
+          "confidence": 0,
+          "line": 16
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 40,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 43,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 49,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 52,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 55,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 56,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 59,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 60,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 63,
+          "resolvedId": "backend/blocks/system/library_operations.py:__init__:62"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 63
+        },
+        {
+          "target": "LibraryAgent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 82
+        },
+        {
+          "target": "_add_to_library",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 98,
+          "resolvedId": "backend/blocks/system/library_operations.py:_add_to_library:111"
+        },
+        {
+          "target": "add_store_agent_to_library",
+          "resolved": false,
+          "confidence": 0,
+          "line": 121
+        },
+        {
+          "target": "get_database_manager_async_client",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 121,
+          "resolvedId": "backend/util/clients.py:get_database_manager_async_client:37"
+        },
+        {
+          "target": "LibraryAgent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 130
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 144,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 147,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 150,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 155,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 159,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 162,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 165,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 166,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 169,
+          "resolvedId": "backend/blocks/system/library_operations.py:__init__:62"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 169
+        },
+        {
+          "target": "LibraryAgent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 184
+        },
+        {
+          "target": "LibraryAgent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 199
+        },
+        {
+          "target": "LibraryAgent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 212
+        },
+        {
+          "target": "_list_library_agents",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 235,
+          "resolvedId": "backend/blocks/system/library_operations.py:_list_library_agents:253"
+        },
+        {
+          "target": "list_library_agents",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 263,
+          "resolvedId": "backend/api/features/library/routes/agents.py:list_library_agents:34"
+        },
+        {
+          "target": "get_database_manager_async_client",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 263,
+          "resolvedId": "backend/util/clients.py:get_database_manager_async_client:37"
+        },
+        {
+          "target": "LibraryAgent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 271
+        },
+        {
+          "target": "getattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 276
+        },
+        {
+          "target": "agent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 276
+        },
+        {
+          "target": "getattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 277
+        },
+        {
+          "target": "agent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 277
+        },
+        {
+          "target": "getattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 278
+        },
+        {
+          "target": "agent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 278
+        },
+        {
+          "target": "getattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 279
+        },
+        {
+          "target": "agent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 279
+        },
+        {
+          "target": "getLogger",
+          "resolved": false,
+          "confidence": 0,
+          "line": 16
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "logging",
+          "operation": "read",
+          "line": 16,
+          "fields": []
+        }
+      ]
+    }
+  ]
+}

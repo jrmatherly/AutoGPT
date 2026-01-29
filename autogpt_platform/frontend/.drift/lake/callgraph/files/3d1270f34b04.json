@@ -1,0 +1,132 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.034Z",
+  "checksum": "d8c784aa636e4896",
+  "file": "src/lib/autogpt-server-api/helpers.test.ts",
+  "functions": [
+    {
+      "id": "src/lib/autogpt-server-api/helpers.test.ts:testHandleFetchError:42",
+      "name": "testHandleFetchError",
+      "startLine": 42,
+      "endLine": 91,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 43
+        },
+        {
+          "target": "Response",
+          "resolved": false,
+          "confidence": 0,
+          "line": 46
+        },
+        {
+          "target": "stringify",
+          "resolved": false,
+          "confidence": 0,
+          "line": 47
+        },
+        {
+          "target": "handleFetchError",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 53,
+          "resolvedId": "src/lib/autogpt-server-api/helpers.ts:handleFetchError:86"
+        },
+        {
+          "target": "jsonResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 53
+        },
+        {
+          "target": "assert",
+          "resolved": false,
+          "confidence": 0,
+          "line": 54
+        },
+        {
+          "target": "Response",
+          "resolved": false,
+          "confidence": 0,
+          "line": 60
+        },
+        {
+          "target": "handleFetchError",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 64,
+          "resolvedId": "src/lib/autogpt-server-api/helpers.ts:handleFetchError:86"
+        },
+        {
+          "target": "htmlResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 64
+        },
+        {
+          "target": "assert",
+          "resolved": false,
+          "confidence": 0,
+          "line": 65
+        },
+        {
+          "target": "includes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 68
+        },
+        {
+          "target": "Response",
+          "resolved": false,
+          "confidence": 0,
+          "line": 74
+        },
+        {
+          "target": "handleFetchError",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 82,
+          "resolvedId": "src/lib/autogpt-server-api/helpers.ts:handleFetchError:86"
+        },
+        {
+          "target": "mismatchedResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 82
+        },
+        {
+          "target": "assert",
+          "resolved": false,
+          "confidence": 0,
+          "line": 83
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 87
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 89
+        },
+        {
+          "target": "e",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 89,
+          "resolvedId": "public/gtag.js:e:37"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

@@ -1,0 +1,1276 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.147Z",
+  "checksum": "2ebfcf8bce05dc68",
+  "file": "backend/executor/activity_status_generator.py",
+  "functions": [
+    {
+      "id": "backend/executor/activity_status_generator.py:_truncate_uuid:174",
+      "name": "_truncate_uuid",
+      "startLine": 174,
+      "endLine": 178,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "split",
+          "resolved": false,
+          "confidence": 0,
+          "line": 178
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/executor/activity_status_generator.py:generate_activity_status_for_execution:181",
+      "name": "generate_activity_status_for_execution",
+      "startLine": 181,
+      "endLine": 367,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "is_feature_enabled",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 220,
+          "resolvedId": "backend/util/feature_flag.py:is_feature_enabled:165"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 221
+        },
+        {
+          "target": "debug",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 223,
+          "resolvedId": "backend/util/logging.py:debug:53"
+        },
+        {
+          "target": "debug",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 232,
+          "resolvedId": "backend/util/logging.py:debug:53"
+        },
+        {
+          "target": "Settings",
+          "resolved": false,
+          "confidence": 0,
+          "line": 242
+        },
+        {
+          "target": "debug",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 244,
+          "resolvedId": "backend/util/logging.py:debug:53"
+        },
+        {
+          "target": "get_node_executions",
+          "resolved": false,
+          "confidence": 0,
+          "line": 250
+        },
+        {
+          "target": "graph_exec_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 251
+        },
+        {
+          "target": "get_graph_metadata",
+          "resolved": false,
+          "confidence": 0,
+          "line": 255
+        },
+        {
+          "target": "graph_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 255
+        },
+        {
+          "target": "graph_version",
+          "resolved": false,
+          "confidence": 0,
+          "line": 255
+        },
+        {
+          "target": "get_graph",
+          "resolved": false,
+          "confidence": 0,
+          "line": 256
+        },
+        {
+          "target": "_build_execution_summary",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 268,
+          "resolvedId": "backend/executor/activity_status_generator.py:_build_execution_summary:370"
+        },
+        {
+          "target": "node_executions",
+          "resolved": false,
+          "confidence": 0,
+          "line": 269
+        },
+        {
+          "target": "execution_stats",
+          "resolved": false,
+          "confidence": 0,
+          "line": 270
+        },
+        {
+          "target": "graph_name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 271
+        },
+        {
+          "target": "graph_description",
+          "resolved": false,
+          "confidence": 0,
+          "line": 272
+        },
+        {
+          "target": "graph_links",
+          "resolved": false,
+          "confidence": 0,
+          "line": 273
+        },
+        {
+          "target": "execution_status",
+          "resolved": false,
+          "confidence": 0,
+          "line": 274
+        },
+        {
+          "target": "dumps",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 278,
+          "resolvedId": "backend/util/json.py:dumps:20"
+        },
+        {
+          "target": "execution_data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 278
+        },
+        {
+          "target": "replace",
+          "resolved": false,
+          "confidence": 0,
+          "line": 281
+        },
+        {
+          "target": "execution_data_json",
+          "resolved": false,
+          "confidence": 0,
+          "line": 282
+        },
+        {
+          "target": "replace",
+          "resolved": false,
+          "confidence": 0,
+          "line": 281
+        },
+        {
+          "target": "graph_name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 281
+        },
+        {
+          "target": "debug",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 298,
+          "resolvedId": "backend/util/logging.py:debug:53"
+        },
+        {
+          "target": "dumps",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 299,
+          "resolvedId": "backend/util/json.py:dumps:20"
+        },
+        {
+          "target": "prompt",
+          "resolved": false,
+          "confidence": 0,
+          "line": 299
+        },
+        {
+          "target": "APIKeyCredentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 303
+        },
+        {
+          "target": "SecretStr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 306
+        },
+        {
+          "target": "AIStructuredResponseGeneratorBlock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 317
+        },
+        {
+          "target": "Input",
+          "resolved": false,
+          "confidence": 0,
+          "line": 327
+        },
+        {
+          "target": "LlmModel",
+          "resolved": false,
+          "confidence": 0,
+          "line": 331
+        },
+        {
+          "target": "model_name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 331
+        },
+        {
+          "target": "run",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 338,
+          "resolvedId": "backend/blocks/firecrawl/crawl.py:run:73"
+        },
+        {
+          "target": "structured_input",
+          "resolved": false,
+          "confidence": 0,
+          "line": 339
+        },
+        {
+          "target": "RuntimeError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 345
+        },
+        {
+          "target": "float",
+          "resolved": false,
+          "confidence": 0,
+          "line": 348
+        },
+        {
+          "target": "max",
+          "resolved": false,
+          "confidence": 0,
+          "line": 350
+        },
+        {
+          "target": "min",
+          "resolved": false,
+          "confidence": 0,
+          "line": 350
+        },
+        {
+          "target": "correctness_score",
+          "resolved": false,
+          "confidence": 0,
+          "line": 350
+        },
+        {
+          "target": "debug",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 357,
+          "resolvedId": "backend/util/logging.py:debug:53"
+        },
+        {
+          "target": "exception",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 364,
+          "resolvedId": "backend/util/logging.py:exception:57"
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 365
+        },
+        {
+          "target": "e",
+          "resolved": false,
+          "confidence": 0,
+          "line": 365
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/executor/activity_status_generator.py:_build_execution_summary:370",
+      "name": "_build_execution_summary",
+      "startLine": 370,
+      "endLine": 574,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "get_block",
+          "resolved": false,
+          "confidence": 0,
+          "line": 391
+        },
+        {
+          "target": "warning",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 393,
+          "resolvedId": "backend/util/logging.py:warning:45"
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 411
+        },
+        {
+          "target": "dict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 411
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 415
+        },
+        {
+          "target": "error_output",
+          "resolved": false,
+          "confidence": 0,
+          "line": 415
+        },
+        {
+          "target": "list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 415
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 416
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 418
+        },
+        {
+          "target": "error_output",
+          "resolved": false,
+          "confidence": 0,
+          "line": 418
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 424
+        },
+        {
+          "target": "_truncate_uuid",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 427,
+          "resolvedId": "backend/executor/activity_status_generator.py:_truncate_uuid:174"
+        },
+        {
+          "target": "isoformat",
+          "resolved": false,
+          "confidence": 0,
+          "line": 428
+        },
+        {
+          "target": "truncate",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 438,
+          "resolvedId": "backend/util/truncate.py:truncate:75"
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 440
+        },
+        {
+          "target": "_truncate_uuid",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 442,
+          "resolvedId": "backend/executor/activity_status_generator.py:_truncate_uuid:174"
+        },
+        {
+          "target": "isoformat",
+          "resolved": false,
+          "confidence": 0,
+          "line": 444
+        },
+        {
+          "target": "truncate",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 454,
+          "resolvedId": "backend/util/truncate.py:truncate:75"
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 456
+        },
+        {
+          "target": "_truncate_uuid",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 458,
+          "resolvedId": "backend/executor/activity_status_generator.py:_truncate_uuid:174"
+        },
+        {
+          "target": "isoformat",
+          "resolved": false,
+          "confidence": 0,
+          "line": 460
+        },
+        {
+          "target": "_truncate_uuid",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 467,
+          "resolvedId": "backend/executor/activity_status_generator.py:_truncate_uuid:174"
+        },
+        {
+          "target": "_truncate_uuid",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 468,
+          "resolvedId": "backend/executor/activity_status_generator.py:_truncate_uuid:174"
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 477
+        },
+        {
+          "target": "node_data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 477
+        },
+        {
+          "target": "dict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 483
+        },
+        {
+          "target": "dict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 487
+        },
+        {
+          "target": "items",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 495,
+          "resolvedId": "backend/integrations/oauth/__init__.py:items:123"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 501,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "original_node_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 501
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 502,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "original_node_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 502
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 507
+        },
+        {
+          "target": "node_error_list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 507
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 517,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "sort",
+          "resolved": false,
+          "confidence": 0,
+          "line": 518
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 519,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 527,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "sort",
+          "resolved": false,
+          "confidence": 0,
+          "line": 528
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 529,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "_truncate_uuid",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 538,
+          "resolvedId": "backend/executor/activity_status_generator.py:_truncate_uuid:174"
+        },
+        {
+          "target": "_truncate_uuid",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 539,
+          "resolvedId": "backend/executor/activity_status_generator.py:_truncate_uuid:174"
+        },
+        {
+          "target": "hasattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 542
+        },
+        {
+          "target": "link",
+          "resolved": false,
+          "confidence": 0,
+          "line": 542
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 551
+        },
+        {
+          "target": "relation",
+          "resolved": false,
+          "confidence": 0,
+          "line": 551
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 560
+        },
+        {
+          "target": "nodes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 560
+        },
+        {
+          "target": "bool",
+          "resolved": false,
+          "confidence": 0,
+          "line": 564
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 568
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/executor/activity_status_generator.py:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 575,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "getLogger",
+          "resolved": false,
+          "confidence": 0,
+          "line": 27
+        },
+        {
+          "target": "split",
+          "resolved": false,
+          "confidence": 0,
+          "line": 178
+        },
+        {
+          "target": "is_feature_enabled",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 220,
+          "resolvedId": "backend/util/feature_flag.py:is_feature_enabled:165"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 221
+        },
+        {
+          "target": "debug",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 223,
+          "resolvedId": "backend/util/logging.py:debug:53"
+        },
+        {
+          "target": "debug",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 232,
+          "resolvedId": "backend/util/logging.py:debug:53"
+        },
+        {
+          "target": "Settings",
+          "resolved": false,
+          "confidence": 0,
+          "line": 242
+        },
+        {
+          "target": "debug",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 244,
+          "resolvedId": "backend/util/logging.py:debug:53"
+        },
+        {
+          "target": "get_node_executions",
+          "resolved": false,
+          "confidence": 0,
+          "line": 250
+        },
+        {
+          "target": "graph_exec_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 251
+        },
+        {
+          "target": "get_graph_metadata",
+          "resolved": false,
+          "confidence": 0,
+          "line": 255
+        },
+        {
+          "target": "graph_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 255
+        },
+        {
+          "target": "graph_version",
+          "resolved": false,
+          "confidence": 0,
+          "line": 255
+        },
+        {
+          "target": "get_graph",
+          "resolved": false,
+          "confidence": 0,
+          "line": 256
+        },
+        {
+          "target": "_build_execution_summary",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 268,
+          "resolvedId": "backend/executor/activity_status_generator.py:_build_execution_summary:370"
+        },
+        {
+          "target": "node_executions",
+          "resolved": false,
+          "confidence": 0,
+          "line": 269
+        },
+        {
+          "target": "execution_stats",
+          "resolved": false,
+          "confidence": 0,
+          "line": 270
+        },
+        {
+          "target": "graph_name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 271
+        },
+        {
+          "target": "graph_description",
+          "resolved": false,
+          "confidence": 0,
+          "line": 272
+        },
+        {
+          "target": "graph_links",
+          "resolved": false,
+          "confidence": 0,
+          "line": 273
+        },
+        {
+          "target": "execution_status",
+          "resolved": false,
+          "confidence": 0,
+          "line": 274
+        },
+        {
+          "target": "dumps",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 278,
+          "resolvedId": "backend/util/json.py:dumps:20"
+        },
+        {
+          "target": "execution_data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 278
+        },
+        {
+          "target": "replace",
+          "resolved": false,
+          "confidence": 0,
+          "line": 281
+        },
+        {
+          "target": "execution_data_json",
+          "resolved": false,
+          "confidence": 0,
+          "line": 282
+        },
+        {
+          "target": "replace",
+          "resolved": false,
+          "confidence": 0,
+          "line": 281
+        },
+        {
+          "target": "graph_name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 281
+        },
+        {
+          "target": "debug",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 298,
+          "resolvedId": "backend/util/logging.py:debug:53"
+        },
+        {
+          "target": "dumps",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 299,
+          "resolvedId": "backend/util/json.py:dumps:20"
+        },
+        {
+          "target": "prompt",
+          "resolved": false,
+          "confidence": 0,
+          "line": 299
+        },
+        {
+          "target": "APIKeyCredentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 303
+        },
+        {
+          "target": "SecretStr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 306
+        },
+        {
+          "target": "AIStructuredResponseGeneratorBlock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 317
+        },
+        {
+          "target": "Input",
+          "resolved": false,
+          "confidence": 0,
+          "line": 327
+        },
+        {
+          "target": "LlmModel",
+          "resolved": false,
+          "confidence": 0,
+          "line": 331
+        },
+        {
+          "target": "model_name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 331
+        },
+        {
+          "target": "run",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 338,
+          "resolvedId": "backend/blocks/firecrawl/crawl.py:run:73"
+        },
+        {
+          "target": "structured_input",
+          "resolved": false,
+          "confidence": 0,
+          "line": 339
+        },
+        {
+          "target": "RuntimeError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 345
+        },
+        {
+          "target": "float",
+          "resolved": false,
+          "confidence": 0,
+          "line": 348
+        },
+        {
+          "target": "max",
+          "resolved": false,
+          "confidence": 0,
+          "line": 350
+        },
+        {
+          "target": "min",
+          "resolved": false,
+          "confidence": 0,
+          "line": 350
+        },
+        {
+          "target": "correctness_score",
+          "resolved": false,
+          "confidence": 0,
+          "line": 350
+        },
+        {
+          "target": "debug",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 357,
+          "resolvedId": "backend/util/logging.py:debug:53"
+        },
+        {
+          "target": "exception",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 364,
+          "resolvedId": "backend/util/logging.py:exception:57"
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 365
+        },
+        {
+          "target": "e",
+          "resolved": false,
+          "confidence": 0,
+          "line": 365
+        },
+        {
+          "target": "get_block",
+          "resolved": false,
+          "confidence": 0,
+          "line": 391
+        },
+        {
+          "target": "warning",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 393,
+          "resolvedId": "backend/util/logging.py:warning:45"
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 411
+        },
+        {
+          "target": "dict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 411
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 415
+        },
+        {
+          "target": "error_output",
+          "resolved": false,
+          "confidence": 0,
+          "line": 415
+        },
+        {
+          "target": "list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 415
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 416
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 418
+        },
+        {
+          "target": "error_output",
+          "resolved": false,
+          "confidence": 0,
+          "line": 418
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 424
+        },
+        {
+          "target": "_truncate_uuid",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 427,
+          "resolvedId": "backend/executor/activity_status_generator.py:_truncate_uuid:174"
+        },
+        {
+          "target": "isoformat",
+          "resolved": false,
+          "confidence": 0,
+          "line": 428
+        },
+        {
+          "target": "truncate",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 438,
+          "resolvedId": "backend/util/truncate.py:truncate:75"
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 440
+        },
+        {
+          "target": "_truncate_uuid",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 442,
+          "resolvedId": "backend/executor/activity_status_generator.py:_truncate_uuid:174"
+        },
+        {
+          "target": "isoformat",
+          "resolved": false,
+          "confidence": 0,
+          "line": 444
+        },
+        {
+          "target": "truncate",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 454,
+          "resolvedId": "backend/util/truncate.py:truncate:75"
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 456
+        },
+        {
+          "target": "_truncate_uuid",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 458,
+          "resolvedId": "backend/executor/activity_status_generator.py:_truncate_uuid:174"
+        },
+        {
+          "target": "isoformat",
+          "resolved": false,
+          "confidence": 0,
+          "line": 460
+        },
+        {
+          "target": "_truncate_uuid",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 467,
+          "resolvedId": "backend/executor/activity_status_generator.py:_truncate_uuid:174"
+        },
+        {
+          "target": "_truncate_uuid",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 468,
+          "resolvedId": "backend/executor/activity_status_generator.py:_truncate_uuid:174"
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 477
+        },
+        {
+          "target": "node_data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 477
+        },
+        {
+          "target": "dict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 483
+        },
+        {
+          "target": "dict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 487
+        },
+        {
+          "target": "items",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 495,
+          "resolvedId": "backend/integrations/oauth/__init__.py:items:123"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 501,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "original_node_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 501
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 502,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "original_node_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 502
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 507
+        },
+        {
+          "target": "node_error_list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 507
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 517,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "sort",
+          "resolved": false,
+          "confidence": 0,
+          "line": 518
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 519,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 527,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "sort",
+          "resolved": false,
+          "confidence": 0,
+          "line": 528
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 529,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "_truncate_uuid",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 538,
+          "resolvedId": "backend/executor/activity_status_generator.py:_truncate_uuid:174"
+        },
+        {
+          "target": "_truncate_uuid",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 539,
+          "resolvedId": "backend/executor/activity_status_generator.py:_truncate_uuid:174"
+        },
+        {
+          "target": "hasattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 542
+        },
+        {
+          "target": "link",
+          "resolved": false,
+          "confidence": 0,
+          "line": 542
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 551
+        },
+        {
+          "target": "relation",
+          "resolved": false,
+          "confidence": 0,
+          "line": 551
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 560
+        },
+        {
+          "target": "nodes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 560
+        },
+        {
+          "target": "bool",
+          "resolved": false,
+          "confidence": 0,
+          "line": 564
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 568
+        },
+        {
+          "target": "getLogger",
+          "resolved": false,
+          "confidence": 0,
+          "line": 27
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

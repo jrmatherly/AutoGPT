@@ -1,0 +1,353 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:21.048Z",
+  "checksum": "e2b5b86b2885492c",
+  "file": "autogpt_libs/api_key/test_keysmith.py",
+  "functions": [
+    {
+      "id": "autogpt_libs/api_key/test_keysmith.py:test_generate_api_key:6",
+      "name": "test_generate_api_key",
+      "startLine": 6,
+      "endLine": 14,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "APIKeySmith",
+          "resolved": false,
+          "confidence": 0,
+          "line": 7
+        },
+        {
+          "target": "generate_key",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 8,
+          "resolvedId": "autogpt_libs/api_key/keysmith.py:generate_key:23"
+        },
+        {
+          "target": "startswith",
+          "resolved": false,
+          "confidence": 0,
+          "line": 10
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 13
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 14
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "autogpt_libs/api_key/test_keysmith.py:test_verify_new_secure_key:17",
+      "name": "test_verify_new_secure_key",
+      "startLine": 17,
+      "endLine": 26,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "APIKeySmith",
+          "resolved": false,
+          "confidence": 0,
+          "line": 18
+        },
+        {
+          "target": "generate_key",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 19,
+          "resolvedId": "autogpt_libs/api_key/keysmith.py:generate_key:23"
+        },
+        {
+          "target": "verify_key",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 22,
+          "resolvedId": "autogpt_libs/api_key/keysmith.py:verify_key:36"
+        },
+        {
+          "target": "verify_key",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 26,
+          "resolvedId": "autogpt_libs/api_key/keysmith.py:verify_key:36"
+        },
+        {
+          "target": "wrong_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 26
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "autogpt_libs/api_key/test_keysmith.py:test_verify_legacy_key:29",
+      "name": "test_verify_legacy_key",
+      "startLine": 29,
+      "endLine": 39,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "APIKeySmith",
+          "resolved": false,
+          "confidence": 0,
+          "line": 30
+        },
+        {
+          "target": "hexdigest",
+          "resolved": false,
+          "confidence": 0,
+          "line": 32
+        },
+        {
+          "target": "sha256",
+          "resolved": false,
+          "confidence": 0,
+          "line": 32
+        },
+        {
+          "target": "encode",
+          "resolved": false,
+          "confidence": 0,
+          "line": 32
+        },
+        {
+          "target": "verify_key",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 35,
+          "resolvedId": "autogpt_libs/api_key/keysmith.py:verify_key:36"
+        },
+        {
+          "target": "legacy_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 35
+        },
+        {
+          "target": "legacy_hash",
+          "resolved": false,
+          "confidence": 0,
+          "line": 35
+        },
+        {
+          "target": "verify_key",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 39,
+          "resolvedId": "autogpt_libs/api_key/keysmith.py:verify_key:36"
+        },
+        {
+          "target": "wrong_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 39
+        },
+        {
+          "target": "legacy_hash",
+          "resolved": false,
+          "confidence": 0,
+          "line": 39
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "autogpt_libs/api_key/test_keysmith.py:test_rehash_existing_key:42",
+      "name": "test_rehash_existing_key",
+      "startLine": 42,
+      "endLine": 54,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "APIKeySmith",
+          "resolved": false,
+          "confidence": 0,
+          "line": 43
+        },
+        {
+          "target": "hash_key",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 47,
+          "resolvedId": "autogpt_libs/api_key/keysmith.py:hash_key:58"
+        },
+        {
+          "target": "legacy_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 47
+        },
+        {
+          "target": "verify_key",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 50,
+          "resolvedId": "autogpt_libs/api_key/keysmith.py:verify_key:36"
+        },
+        {
+          "target": "legacy_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 50
+        },
+        {
+          "target": "new_hash",
+          "resolved": false,
+          "confidence": 0,
+          "line": 50
+        },
+        {
+          "target": "new_salt",
+          "resolved": false,
+          "confidence": 0,
+          "line": 50
+        },
+        {
+          "target": "verify_key",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 54,
+          "resolvedId": "autogpt_libs/api_key/keysmith.py:verify_key:36"
+        },
+        {
+          "target": "wrong_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 54
+        },
+        {
+          "target": "new_hash",
+          "resolved": false,
+          "confidence": 0,
+          "line": 54
+        },
+        {
+          "target": "new_salt",
+          "resolved": false,
+          "confidence": 0,
+          "line": 54
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "autogpt_libs/api_key/test_keysmith.py:test_invalid_key_prefix:57",
+      "name": "test_invalid_key_prefix",
+      "startLine": 57,
+      "endLine": 63,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "APIKeySmith",
+          "resolved": false,
+          "confidence": 0,
+          "line": 58
+        },
+        {
+          "target": "generate_key",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 59,
+          "resolvedId": "autogpt_libs/api_key/keysmith.py:generate_key:23"
+        },
+        {
+          "target": "verify_key",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 63,
+          "resolvedId": "autogpt_libs/api_key/keysmith.py:verify_key:36"
+        },
+        {
+          "target": "invalid_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 63
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "autogpt_libs/api_key/test_keysmith.py:test_secure_hash_requires_salt:66",
+      "name": "test_secure_hash_requires_salt",
+      "startLine": 66,
+      "endLine": 71,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "APIKeySmith",
+          "resolved": false,
+          "confidence": 0,
+          "line": 67
+        },
+        {
+          "target": "generate_key",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 68,
+          "resolvedId": "autogpt_libs/api_key/keysmith.py:generate_key:23"
+        },
+        {
+          "target": "verify_key",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 71,
+          "resolvedId": "autogpt_libs/api_key/keysmith.py:verify_key:36"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "autogpt_libs/api_key/test_keysmith.py:test_invalid_salt_format:74",
+      "name": "test_invalid_salt_format",
+      "startLine": 74,
+      "endLine": 79,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "APIKeySmith",
+          "resolved": false,
+          "confidence": 0,
+          "line": 75
+        },
+        {
+          "target": "generate_key",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 76,
+          "resolvedId": "autogpt_libs/api_key/keysmith.py:generate_key:23"
+        },
+        {
+          "target": "verify_key",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 79,
+          "resolvedId": "autogpt_libs/api_key/keysmith.py:verify_key:36"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

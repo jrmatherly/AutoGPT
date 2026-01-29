@@ -1,0 +1,1176 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.238Z",
+  "checksum": "1507a606d50ce2b4",
+  "file": "load-tests/generate-tokens.js",
+  "functions": [
+    {
+      "id": "load-tests/generate-tokens.js:authenticateUser:37",
+      "name": "authenticateUser",
+      "startLine": 37,
+      "endLine": 97,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "Promise",
+          "resolved": false,
+          "confidence": 0,
+          "line": 38
+        },
+        {
+          "target": "stringify",
+          "resolved": false,
+          "confidence": 0,
+          "line": 39
+        },
+        {
+          "target": "request",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 57,
+          "resolvedId": "backend/util/request.py:request:359"
+        },
+        {
+          "target": "options",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 57,
+          "resolvedId": "backend/util/request.py:options:575"
+        },
+        {
+          "target": "on",
+          "resolved": false,
+          "confidence": 0,
+          "line": 59
+        },
+        {
+          "target": "on",
+          "resolved": false,
+          "confidence": 0,
+          "line": 60
+        },
+        {
+          "target": "parse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 63
+        },
+        {
+          "target": "data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 63
+        },
+        {
+          "target": "resolve",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 64,
+          "resolvedId": "backend/util/request.py:resolve:106"
+        },
+        {
+          "target": "access_token",
+          "resolved": false,
+          "confidence": 0,
+          "line": 64
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 67
+        },
+        {
+          "target": "setTimeout",
+          "resolved": false,
+          "confidence": 0,
+          "line": 70
+        },
+        {
+          "target": "then",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        },
+        {
+          "target": "resolve",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 72,
+          "resolvedId": "backend/util/request.py:resolve:106"
+        },
+        {
+          "target": "authenticateUser",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 72,
+          "resolvedId": "load-tests/generate-tokens.js:authenticateUser:37"
+        },
+        {
+          "target": "user",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 74
+        },
+        {
+          "target": "resolve",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 75,
+          "resolvedId": "backend/util/request.py:resolve:106"
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 79
+        },
+        {
+          "target": "resolve",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 80,
+          "resolvedId": "backend/util/request.py:resolve:106"
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 83
+        },
+        {
+          "target": "message",
+          "resolved": false,
+          "confidence": 0,
+          "line": 83
+        },
+        {
+          "target": "resolve",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 84,
+          "resolvedId": "backend/util/request.py:resolve:106"
+        },
+        {
+          "target": "on",
+          "resolved": false,
+          "confidence": 0,
+          "line": 89
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 90
+        },
+        {
+          "target": "message",
+          "resolved": false,
+          "confidence": 0,
+          "line": 90
+        },
+        {
+          "target": "resolve",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 91,
+          "resolvedId": "backend/util/request.py:resolve:106"
+        },
+        {
+          "target": "write",
+          "resolved": false,
+          "confidence": 0,
+          "line": 94
+        },
+        {
+          "target": "postData",
+          "resolved": false,
+          "confidence": 0,
+          "line": 94
+        },
+        {
+          "target": "end",
+          "resolved": false,
+          "confidence": 0,
+          "line": 95
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 90
+        },
+        {
+          "target": "message",
+          "resolved": false,
+          "confidence": 0,
+          "line": 90
+        },
+        {
+          "target": "resolve",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 91,
+          "resolvedId": "backend/util/request.py:resolve:106"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "load-tests/generate-tokens.js:$on$1:89",
+      "name": "$on$1",
+      "startLine": 89,
+      "endLine": 92,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "on",
+          "resolved": false,
+          "confidence": 0,
+          "line": 89
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 90
+        },
+        {
+          "target": "message",
+          "resolved": false,
+          "confidence": 0,
+          "line": 90
+        },
+        {
+          "target": "resolve",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 91,
+          "resolvedId": "backend/util/request.py:resolve:106"
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 90
+        },
+        {
+          "target": "message",
+          "resolved": false,
+          "confidence": 0,
+          "line": 90
+        },
+        {
+          "target": "resolve",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 91,
+          "resolvedId": "backend/util/request.py:resolve:106"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "load-tests/generate-tokens.js:generateTokens:99",
+      "name": "generateTokens",
+      "startLine": 99,
+      "endLine": 229,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 100
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 101
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 102
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 105
+        },
+        {
+          "target": "parseInt",
+          "resolved": false,
+          "confidence": 0,
+          "line": 109
+        },
+        {
+          "target": "split",
+          "resolved": false,
+          "confidence": 0,
+          "line": 110
+        },
+        {
+          "target": "find",
+          "resolved": false,
+          "confidence": 0,
+          "line": 110
+        },
+        {
+          "target": "startsWith",
+          "resolved": false,
+          "confidence": 0,
+          "line": 110
+        },
+        {
+          "target": "parseInt",
+          "resolved": false,
+          "confidence": 0,
+          "line": 112
+        },
+        {
+          "target": "TOKEN_COUNT",
+          "resolved": false,
+          "confidence": 0,
+          "line": 112
+        },
+        {
+          "target": "ceil",
+          "resolved": false,
+          "confidence": 0,
+          "line": 114
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 115
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 120
+        },
+        {
+          "target": "write",
+          "resolved": false,
+          "confidence": 0,
+          "line": 129
+        },
+        {
+          "target": "padEnd",
+          "resolved": false,
+          "confidence": 0,
+          "line": 129
+        },
+        {
+          "target": "authenticateUser",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 131,
+          "resolvedId": "load-tests/generate-tokens.js:authenticateUser:37"
+        },
+        {
+          "target": "user",
+          "resolved": false,
+          "confidence": 0,
+          "line": 131
+        },
+        {
+          "target": "push",
+          "resolved": false,
+          "confidence": 0,
+          "line": 134
+        },
+        {
+          "target": "toISOString",
+          "resolved": false,
+          "confidence": 0,
+          "line": 137
+        },
+        {
+          "target": "Date",
+          "resolved": false,
+          "confidence": 0,
+          "line": 137
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 140
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 142
+        },
+        {
+          "target": "Promise",
+          "resolved": false,
+          "confidence": 0,
+          "line": 147
+        },
+        {
+          "target": "setTimeout",
+          "resolved": false,
+          "confidence": 0,
+          "line": 147
+        },
+        {
+          "target": "resolve",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 147,
+          "resolvedId": "backend/util/request.py:resolve:106"
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 155
+        },
+        {
+          "target": "Promise",
+          "resolved": false,
+          "confidence": 0,
+          "line": 156
+        },
+        {
+          "target": "setTimeout",
+          "resolved": false,
+          "confidence": 0,
+          "line": 156
+        },
+        {
+          "target": "resolve",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 156,
+          "resolvedId": "backend/util/request.py:resolve:106"
+        },
+        {
+          "target": "round",
+          "resolved": false,
+          "confidence": 0,
+          "line": 160
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 160
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 161
+        },
+        {
+          "target": "join",
+          "resolved": false,
+          "confidence": 0,
+          "line": 164
+        },
+        {
+          "target": "cwd",
+          "resolved": false,
+          "confidence": 0,
+          "line": 164
+        },
+        {
+          "target": "existsSync",
+          "resolved": false,
+          "confidence": 0,
+          "line": 165
+        },
+        {
+          "target": "configsDir",
+          "resolved": false,
+          "confidence": 0,
+          "line": 165
+        },
+        {
+          "target": "mkdirSync",
+          "resolved": false,
+          "confidence": 0,
+          "line": 166
+        },
+        {
+          "target": "configsDir",
+          "resolved": false,
+          "confidence": 0,
+          "line": 166
+        },
+        {
+          "target": "toISOString",
+          "resolved": false,
+          "confidence": 0,
+          "line": 171
+        },
+        {
+          "target": "Date",
+          "resolved": false,
+          "confidence": 0,
+          "line": 171
+        },
+        {
+          "target": "stringify",
+          "resolved": false,
+          "confidence": 0,
+          "line": 178
+        },
+        {
+          "target": "tokens",
+          "resolved": false,
+          "confidence": 0,
+          "line": 178
+        },
+        {
+          "target": "replace",
+          "resolved": false,
+          "confidence": 0,
+          "line": 196
+        },
+        {
+          "target": "slice",
+          "resolved": false,
+          "confidence": 0,
+          "line": 196
+        },
+        {
+          "target": "toISOString",
+          "resolved": false,
+          "confidence": 0,
+          "line": 196
+        },
+        {
+          "target": "Date",
+          "resolved": false,
+          "confidence": 0,
+          "line": 196
+        },
+        {
+          "target": "join",
+          "resolved": false,
+          "confidence": 0,
+          "line": 219
+        },
+        {
+          "target": "configsDir",
+          "resolved": false,
+          "confidence": 0,
+          "line": 219
+        },
+        {
+          "target": "writeFileSync",
+          "resolved": false,
+          "confidence": 0,
+          "line": 220
+        },
+        {
+          "target": "tokenFile",
+          "resolved": false,
+          "confidence": 0,
+          "line": 220
+        },
+        {
+          "target": "jsContent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 220
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 222
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 223
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 224
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "load-tests/generate-tokens.js:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 237,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "Promise",
+          "resolved": false,
+          "confidence": 0,
+          "line": 38
+        },
+        {
+          "target": "stringify",
+          "resolved": false,
+          "confidence": 0,
+          "line": 39
+        },
+        {
+          "target": "request",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 57,
+          "resolvedId": "backend/util/request.py:request:359"
+        },
+        {
+          "target": "options",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 57,
+          "resolvedId": "backend/util/request.py:options:575"
+        },
+        {
+          "target": "on",
+          "resolved": false,
+          "confidence": 0,
+          "line": 59
+        },
+        {
+          "target": "on",
+          "resolved": false,
+          "confidence": 0,
+          "line": 60
+        },
+        {
+          "target": "parse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 63
+        },
+        {
+          "target": "data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 63
+        },
+        {
+          "target": "resolve",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 64,
+          "resolvedId": "backend/util/request.py:resolve:106"
+        },
+        {
+          "target": "access_token",
+          "resolved": false,
+          "confidence": 0,
+          "line": 64
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 67
+        },
+        {
+          "target": "setTimeout",
+          "resolved": false,
+          "confidence": 0,
+          "line": 70
+        },
+        {
+          "target": "then",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        },
+        {
+          "target": "resolve",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 72,
+          "resolvedId": "backend/util/request.py:resolve:106"
+        },
+        {
+          "target": "authenticateUser",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 72,
+          "resolvedId": "load-tests/generate-tokens.js:authenticateUser:37"
+        },
+        {
+          "target": "user",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 74
+        },
+        {
+          "target": "resolve",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 75,
+          "resolvedId": "backend/util/request.py:resolve:106"
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 79
+        },
+        {
+          "target": "resolve",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 80,
+          "resolvedId": "backend/util/request.py:resolve:106"
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 83
+        },
+        {
+          "target": "message",
+          "resolved": false,
+          "confidence": 0,
+          "line": 83
+        },
+        {
+          "target": "resolve",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 84,
+          "resolvedId": "backend/util/request.py:resolve:106"
+        },
+        {
+          "target": "on",
+          "resolved": false,
+          "confidence": 0,
+          "line": 89
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 90
+        },
+        {
+          "target": "message",
+          "resolved": false,
+          "confidence": 0,
+          "line": 90
+        },
+        {
+          "target": "resolve",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 91,
+          "resolvedId": "backend/util/request.py:resolve:106"
+        },
+        {
+          "target": "write",
+          "resolved": false,
+          "confidence": 0,
+          "line": 94
+        },
+        {
+          "target": "postData",
+          "resolved": false,
+          "confidence": 0,
+          "line": 94
+        },
+        {
+          "target": "end",
+          "resolved": false,
+          "confidence": 0,
+          "line": 95
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 90
+        },
+        {
+          "target": "message",
+          "resolved": false,
+          "confidence": 0,
+          "line": 90
+        },
+        {
+          "target": "resolve",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 91,
+          "resolvedId": "backend/util/request.py:resolve:106"
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 100
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 101
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 102
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 105
+        },
+        {
+          "target": "parseInt",
+          "resolved": false,
+          "confidence": 0,
+          "line": 109
+        },
+        {
+          "target": "split",
+          "resolved": false,
+          "confidence": 0,
+          "line": 110
+        },
+        {
+          "target": "find",
+          "resolved": false,
+          "confidence": 0,
+          "line": 110
+        },
+        {
+          "target": "startsWith",
+          "resolved": false,
+          "confidence": 0,
+          "line": 110
+        },
+        {
+          "target": "parseInt",
+          "resolved": false,
+          "confidence": 0,
+          "line": 112
+        },
+        {
+          "target": "TOKEN_COUNT",
+          "resolved": false,
+          "confidence": 0,
+          "line": 112
+        },
+        {
+          "target": "ceil",
+          "resolved": false,
+          "confidence": 0,
+          "line": 114
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 115
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 120
+        },
+        {
+          "target": "write",
+          "resolved": false,
+          "confidence": 0,
+          "line": 129
+        },
+        {
+          "target": "padEnd",
+          "resolved": false,
+          "confidence": 0,
+          "line": 129
+        },
+        {
+          "target": "authenticateUser",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 131,
+          "resolvedId": "load-tests/generate-tokens.js:authenticateUser:37"
+        },
+        {
+          "target": "user",
+          "resolved": false,
+          "confidence": 0,
+          "line": 131
+        },
+        {
+          "target": "push",
+          "resolved": false,
+          "confidence": 0,
+          "line": 134
+        },
+        {
+          "target": "toISOString",
+          "resolved": false,
+          "confidence": 0,
+          "line": 137
+        },
+        {
+          "target": "Date",
+          "resolved": false,
+          "confidence": 0,
+          "line": 137
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 140
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 142
+        },
+        {
+          "target": "Promise",
+          "resolved": false,
+          "confidence": 0,
+          "line": 147
+        },
+        {
+          "target": "setTimeout",
+          "resolved": false,
+          "confidence": 0,
+          "line": 147
+        },
+        {
+          "target": "resolve",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 147,
+          "resolvedId": "backend/util/request.py:resolve:106"
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 155
+        },
+        {
+          "target": "Promise",
+          "resolved": false,
+          "confidence": 0,
+          "line": 156
+        },
+        {
+          "target": "setTimeout",
+          "resolved": false,
+          "confidence": 0,
+          "line": 156
+        },
+        {
+          "target": "resolve",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 156,
+          "resolvedId": "backend/util/request.py:resolve:106"
+        },
+        {
+          "target": "round",
+          "resolved": false,
+          "confidence": 0,
+          "line": 160
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 160
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 161
+        },
+        {
+          "target": "join",
+          "resolved": false,
+          "confidence": 0,
+          "line": 164
+        },
+        {
+          "target": "cwd",
+          "resolved": false,
+          "confidence": 0,
+          "line": 164
+        },
+        {
+          "target": "existsSync",
+          "resolved": false,
+          "confidence": 0,
+          "line": 165
+        },
+        {
+          "target": "configsDir",
+          "resolved": false,
+          "confidence": 0,
+          "line": 165
+        },
+        {
+          "target": "mkdirSync",
+          "resolved": false,
+          "confidence": 0,
+          "line": 166
+        },
+        {
+          "target": "configsDir",
+          "resolved": false,
+          "confidence": 0,
+          "line": 166
+        },
+        {
+          "target": "toISOString",
+          "resolved": false,
+          "confidence": 0,
+          "line": 171
+        },
+        {
+          "target": "Date",
+          "resolved": false,
+          "confidence": 0,
+          "line": 171
+        },
+        {
+          "target": "stringify",
+          "resolved": false,
+          "confidence": 0,
+          "line": 178
+        },
+        {
+          "target": "tokens",
+          "resolved": false,
+          "confidence": 0,
+          "line": 178
+        },
+        {
+          "target": "replace",
+          "resolved": false,
+          "confidence": 0,
+          "line": 196
+        },
+        {
+          "target": "slice",
+          "resolved": false,
+          "confidence": 0,
+          "line": 196
+        },
+        {
+          "target": "toISOString",
+          "resolved": false,
+          "confidence": 0,
+          "line": 196
+        },
+        {
+          "target": "Date",
+          "resolved": false,
+          "confidence": 0,
+          "line": 196
+        },
+        {
+          "target": "join",
+          "resolved": false,
+          "confidence": 0,
+          "line": 219
+        },
+        {
+          "target": "configsDir",
+          "resolved": false,
+          "confidence": 0,
+          "line": 219
+        },
+        {
+          "target": "writeFileSync",
+          "resolved": false,
+          "confidence": 0,
+          "line": 220
+        },
+        {
+          "target": "tokenFile",
+          "resolved": false,
+          "confidence": 0,
+          "line": 220
+        },
+        {
+          "target": "jsContent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 220
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 222
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 223
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 224
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 33
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

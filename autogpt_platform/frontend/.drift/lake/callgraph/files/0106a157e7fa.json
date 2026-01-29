@@ -1,0 +1,1302 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:19.986Z",
+  "checksum": "0b5bb2b4848b0e21",
+  "file": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/modals/RunAgentModal/useAgentRunModal.tsx",
+  "functions": [
+    {
+      "id": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/modals/RunAgentModal/useAgentRunModal.tsx:useAgentRunModal:41",
+      "name": "useAgentRunModal",
+      "startLine": 41,
+      "endLine": 389,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "useToast",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 45,
+          "resolvedId": "src/components/molecules/Toast/use-toast.tsx:useToast:77"
+        },
+        {
+          "target": "useQueryClient",
+          "resolved": false,
+          "confidence": 0,
+          "line": 46
+        },
+        {
+          "target": "useState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 47
+        },
+        {
+          "target": "useState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 48
+        },
+        {
+          "target": "useState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 51
+        },
+        {
+          "target": "useState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 55
+        },
+        {
+          "target": "useState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 56
+        },
+        {
+          "target": "useRef",
+          "resolved": false,
+          "confidence": 0,
+          "line": 57
+        },
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 67
+        },
+        {
+          "target": "setInputValues",
+          "resolved": false,
+          "confidence": 0,
+          "line": 68
+        },
+        {
+          "target": "setInputCredentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 69
+        },
+        {
+          "target": "useContext",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        },
+        {
+          "target": "CredentialsProvidersContext",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        },
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 75
+        },
+        {
+          "target": "setInputCredentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 88
+        },
+        {
+          "target": "entries",
+          "resolved": false,
+          "confidence": 0,
+          "line": 91
+        },
+        {
+          "target": "properties",
+          "resolved": false,
+          "confidence": 0,
+          "line": 91
+        },
+        {
+          "target": "getSystemCredentials",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 102,
+          "resolvedId": "src/components/contextual/CredentialsInput/helpers.ts:getSystemCredentials:124"
+        },
+        {
+          "target": "filter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 105
+        },
+        {
+          "target": "includes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 106
+        },
+        {
+          "target": "type",
+          "resolved": false,
+          "confidence": 0,
+          "line": 106
+        },
+        {
+          "target": "Set",
+          "resolved": false,
+          "confidence": 0,
+          "line": 113
+        },
+        {
+          "target": "every",
+          "resolved": false,
+          "confidence": 0,
+          "line": 114
+        },
+        {
+          "target": "has",
+          "resolved": false,
+          "confidence": 0,
+          "line": 115
+        },
+        {
+          "target": "scope",
+          "resolved": false,
+          "confidence": 0,
+          "line": 115
+        },
+        {
+          "target": "keys",
+          "resolved": false,
+          "confidence": 0,
+          "line": 136
+        },
+        {
+          "target": "credsToAdd",
+          "resolved": false,
+          "confidence": 0,
+          "line": 136
+        },
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 153
+        },
+        {
+          "target": "usePostV1ExecuteGraphAgent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 158
+        },
+        {
+          "target": "toast",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 162,
+          "resolvedId": "src/components/molecules/Toast/use-toast.tsx:toast:27"
+        },
+        {
+          "target": "invalidateQueries",
+          "resolved": false,
+          "confidence": 0,
+          "line": 165
+        },
+        {
+          "target": "getGetV1ListGraphExecutionsQueryKey",
+          "resolved": false,
+          "confidence": 0,
+          "line": 166
+        },
+        {
+          "target": "graph_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 166
+        },
+        {
+          "target": "onRun",
+          "resolved": false,
+          "confidence": 0,
+          "line": 168
+        },
+        {
+          "target": "data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 168
+        },
+        {
+          "target": "sendDatafastEvent",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 169,
+          "resolvedId": "src/services/analytics/index.tsx:sendDatafastEvent:122"
+        },
+        {
+          "target": "setIsOpen",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 173,
+          "resolvedId": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/modals/AgentSettingsModal/AgentSettingsModal.tsx:setIsOpen:26"
+        },
+        {
+          "target": "showExecutionErrorToast",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 177,
+          "resolvedId": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/modals/RunAgentModal/errorHelpers.tsx:showExecutionErrorToast:80"
+        },
+        {
+          "target": "toast",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 177,
+          "resolvedId": "src/components/molecules/Toast/use-toast.tsx:toast:27"
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 177
+        },
+        {
+          "target": "usePostV2SetupTrigger",
+          "resolved": false,
+          "confidence": 0,
+          "line": 185
+        },
+        {
+          "target": "toast",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 189,
+          "resolvedId": "src/components/molecules/Toast/use-toast.tsx:toast:27"
+        },
+        {
+          "target": "invalidateQueries",
+          "resolved": false,
+          "confidence": 0,
+          "line": 192
+        },
+        {
+          "target": "getGetV2ListPresetsQueryKey",
+          "resolved": false,
+          "confidence": 0,
+          "line": 193
+        },
+        {
+          "target": "onSetupTrigger",
+          "resolved": false,
+          "confidence": 0,
+          "line": 195
+        },
+        {
+          "target": "data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 195
+        },
+        {
+          "target": "setIsOpen",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 196,
+          "resolvedId": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/modals/AgentSettingsModal/AgentSettingsModal.tsx:setIsOpen:26"
+        },
+        {
+          "target": "toast",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 200,
+          "resolvedId": "src/components/molecules/Toast/use-toast.tsx:toast:27"
+        },
+        {
+          "target": "useMemo",
+          "resolved": false,
+          "confidence": 0,
+          "line": 210
+        },
+        {
+          "target": "useMemo",
+          "resolved": false,
+          "confidence": 0,
+          "line": 217
+        },
+        {
+          "target": "fromEntries",
+          "resolved": false,
+          "confidence": 0,
+          "line": 227
+        },
+        {
+          "target": "filter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 228
+        },
+        {
+          "target": "entries",
+          "resolved": false,
+          "confidence": 0,
+          "line": 228
+        },
+        {
+          "target": "properties",
+          "resolved": false,
+          "confidence": 0,
+          "line": 228
+        },
+        {
+          "target": "useMemo",
+          "resolved": false,
+          "confidence": 0,
+          "line": 234
+        },
+        {
+          "target": "useMemo",
+          "resolved": false,
+          "confidence": 0,
+          "line": 247
+        },
+        {
+          "target": "Set",
+          "resolved": false,
+          "confidence": 0,
+          "line": 248
+        },
+        {
+          "target": "filter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 249
+        },
+        {
+          "target": "keys",
+          "resolved": false,
+          "confidence": 0,
+          "line": 249
+        },
+        {
+          "target": "inputValues",
+          "resolved": false,
+          "confidence": 0,
+          "line": 249
+        },
+        {
+          "target": "isEmpty",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 249,
+          "resolvedId": "src/lib/utils.ts:isEmpty:468"
+        },
+        {
+          "target": "Set",
+          "resolved": false,
+          "confidence": 0,
+          "line": 251
+        },
+        {
+          "target": "filter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 254
+        },
+        {
+          "target": "has",
+          "resolved": false,
+          "confidence": 0,
+          "line": 255
+        },
+        {
+          "target": "input",
+          "resolved": false,
+          "confidence": 0,
+          "line": 255
+        },
+        {
+          "target": "useMemo",
+          "resolved": false,
+          "confidence": 0,
+          "line": 260
+        },
+        {
+          "target": "Set",
+          "resolved": false,
+          "confidence": 0,
+          "line": 261
+        },
+        {
+          "target": "filter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 265
+        },
+        {
+          "target": "useMemo",
+          "resolved": false,
+          "confidence": 0,
+          "line": 273
+        },
+        {
+          "target": "keys",
+          "resolved": false,
+          "confidence": 0,
+          "line": 274
+        },
+        {
+          "target": "useMemo",
+          "resolved": false,
+          "confidence": 0,
+          "line": 278
+        },
+        {
+          "target": "useCallback",
+          "resolved": false,
+          "confidence": 0,
+          "line": 285
+        },
+        {
+          "target": "concat",
+          "resolved": false,
+          "confidence": 0,
+          "line": 286
+        },
+        {
+          "target": "map",
+          "resolved": false,
+          "confidence": 0,
+          "line": 288
+        },
+        {
+          "target": "toast",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 292,
+          "resolvedId": "src/components/molecules/Toast/use-toast.tsx:toast:27"
+        },
+        {
+          "target": "join",
+          "resolved": false,
+          "confidence": 0,
+          "line": 294
+        },
+        {
+          "target": "map",
+          "resolved": false,
+          "confidence": 0,
+          "line": 294
+        },
+        {
+          "target": "useCallback",
+          "resolved": false,
+          "confidence": 0,
+          "line": 306
+        },
+        {
+          "target": "notifyMissingRequirements",
+          "resolved": false,
+          "confidence": 0,
+          "line": 308
+        },
+        {
+          "target": "trim",
+          "resolved": false,
+          "confidence": 0,
+          "line": 316
+        },
+        {
+          "target": "toast",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 317,
+          "resolvedId": "src/components/molecules/Toast/use-toast.tsx:toast:27"
+        },
+        {
+          "target": "mutate",
+          "resolved": false,
+          "confidence": 0,
+          "line": 325
+        },
+        {
+          "target": "fromEntries",
+          "resolved": false,
+          "confidence": 0,
+          "line": 336
+        },
+        {
+          "target": "filter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 337
+        },
+        {
+          "target": "entries",
+          "resolved": false,
+          "confidence": 0,
+          "line": 337
+        },
+        {
+          "target": "inputCredentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 337
+        },
+        {
+          "target": "mutate",
+          "resolved": false,
+          "confidence": 0,
+          "line": 340
+        },
+        {
+          "target": "useMemo",
+          "resolved": false,
+          "confidence": 0,
+          "line": 364
+        },
+        {
+          "target": "keys",
+          "resolved": false,
+          "confidence": 0,
+          "line": 365
+        },
+        {
+          "target": "agentInputFields",
+          "resolved": false,
+          "confidence": 0,
+          "line": 365
+        },
+        {
+          "target": "setInputValues",
+          "resolved": false,
+          "confidence": 0,
+          "line": 68
+        },
+        {
+          "target": "setInputCredentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 69
+        },
+        {
+          "target": "setInputCredentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 88
+        },
+        {
+          "target": "entries",
+          "resolved": false,
+          "confidence": 0,
+          "line": 91
+        },
+        {
+          "target": "properties",
+          "resolved": false,
+          "confidence": 0,
+          "line": 91
+        },
+        {
+          "target": "getSystemCredentials",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 102,
+          "resolvedId": "src/components/contextual/CredentialsInput/helpers.ts:getSystemCredentials:124"
+        },
+        {
+          "target": "filter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 105
+        },
+        {
+          "target": "includes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 106
+        },
+        {
+          "target": "type",
+          "resolved": false,
+          "confidence": 0,
+          "line": 106
+        },
+        {
+          "target": "Set",
+          "resolved": false,
+          "confidence": 0,
+          "line": 113
+        },
+        {
+          "target": "every",
+          "resolved": false,
+          "confidence": 0,
+          "line": 114
+        },
+        {
+          "target": "has",
+          "resolved": false,
+          "confidence": 0,
+          "line": 115
+        },
+        {
+          "target": "scope",
+          "resolved": false,
+          "confidence": 0,
+          "line": 115
+        },
+        {
+          "target": "keys",
+          "resolved": false,
+          "confidence": 0,
+          "line": 136
+        },
+        {
+          "target": "credsToAdd",
+          "resolved": false,
+          "confidence": 0,
+          "line": 136
+        },
+        {
+          "target": "entries",
+          "resolved": false,
+          "confidence": 0,
+          "line": 91
+        },
+        {
+          "target": "properties",
+          "resolved": false,
+          "confidence": 0,
+          "line": 91
+        },
+        {
+          "target": "getSystemCredentials",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 102,
+          "resolvedId": "src/components/contextual/CredentialsInput/helpers.ts:getSystemCredentials:124"
+        },
+        {
+          "target": "filter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 105
+        },
+        {
+          "target": "includes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 106
+        },
+        {
+          "target": "type",
+          "resolved": false,
+          "confidence": 0,
+          "line": 106
+        },
+        {
+          "target": "Set",
+          "resolved": false,
+          "confidence": 0,
+          "line": 113
+        },
+        {
+          "target": "every",
+          "resolved": false,
+          "confidence": 0,
+          "line": 114
+        },
+        {
+          "target": "has",
+          "resolved": false,
+          "confidence": 0,
+          "line": 115
+        },
+        {
+          "target": "scope",
+          "resolved": false,
+          "confidence": 0,
+          "line": 115
+        },
+        {
+          "target": "keys",
+          "resolved": false,
+          "confidence": 0,
+          "line": 136
+        },
+        {
+          "target": "credsToAdd",
+          "resolved": false,
+          "confidence": 0,
+          "line": 136
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "requiredInputs",
+          "operation": "read",
+          "line": 254,
+          "fields": []
+        },
+        {
+          "table": "requiredCredentials",
+          "operation": "read",
+          "line": 265,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/modals/RunAgentModal/useAgentRunModal.tsx:$useEffect$1:67",
+      "name": "$useEffect$1",
+      "startLine": 67,
+      "endLine": 70,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 67
+        },
+        {
+          "target": "setInputValues",
+          "resolved": false,
+          "confidence": 0,
+          "line": 68
+        },
+        {
+          "target": "setInputCredentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 69
+        },
+        {
+          "target": "setInputValues",
+          "resolved": false,
+          "confidence": 0,
+          "line": 68
+        },
+        {
+          "target": "setInputCredentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 69
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/modals/RunAgentModal/useAgentRunModal.tsx:$useEffect$2:75",
+      "name": "$useEffect$2",
+      "startLine": 75,
+      "endLine": 146,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 75
+        },
+        {
+          "target": "setInputCredentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 88
+        },
+        {
+          "target": "entries",
+          "resolved": false,
+          "confidence": 0,
+          "line": 91
+        },
+        {
+          "target": "properties",
+          "resolved": false,
+          "confidence": 0,
+          "line": 91
+        },
+        {
+          "target": "getSystemCredentials",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 102,
+          "resolvedId": "src/components/contextual/CredentialsInput/helpers.ts:getSystemCredentials:124"
+        },
+        {
+          "target": "filter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 105
+        },
+        {
+          "target": "includes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 106
+        },
+        {
+          "target": "type",
+          "resolved": false,
+          "confidence": 0,
+          "line": 106
+        },
+        {
+          "target": "Set",
+          "resolved": false,
+          "confidence": 0,
+          "line": 113
+        },
+        {
+          "target": "every",
+          "resolved": false,
+          "confidence": 0,
+          "line": 114
+        },
+        {
+          "target": "has",
+          "resolved": false,
+          "confidence": 0,
+          "line": 115
+        },
+        {
+          "target": "scope",
+          "resolved": false,
+          "confidence": 0,
+          "line": 115
+        },
+        {
+          "target": "keys",
+          "resolved": false,
+          "confidence": 0,
+          "line": 136
+        },
+        {
+          "target": "credsToAdd",
+          "resolved": false,
+          "confidence": 0,
+          "line": 136
+        },
+        {
+          "target": "setInputCredentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 88
+        },
+        {
+          "target": "entries",
+          "resolved": false,
+          "confidence": 0,
+          "line": 91
+        },
+        {
+          "target": "properties",
+          "resolved": false,
+          "confidence": 0,
+          "line": 91
+        },
+        {
+          "target": "getSystemCredentials",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 102,
+          "resolvedId": "src/components/contextual/CredentialsInput/helpers.ts:getSystemCredentials:124"
+        },
+        {
+          "target": "filter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 105
+        },
+        {
+          "target": "includes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 106
+        },
+        {
+          "target": "type",
+          "resolved": false,
+          "confidence": 0,
+          "line": 106
+        },
+        {
+          "target": "Set",
+          "resolved": false,
+          "confidence": 0,
+          "line": 113
+        },
+        {
+          "target": "every",
+          "resolved": false,
+          "confidence": 0,
+          "line": 114
+        },
+        {
+          "target": "has",
+          "resolved": false,
+          "confidence": 0,
+          "line": 115
+        },
+        {
+          "target": "scope",
+          "resolved": false,
+          "confidence": 0,
+          "line": 115
+        },
+        {
+          "target": "keys",
+          "resolved": false,
+          "confidence": 0,
+          "line": 136
+        },
+        {
+          "target": "credsToAdd",
+          "resolved": false,
+          "confidence": 0,
+          "line": 136
+        },
+        {
+          "target": "entries",
+          "resolved": false,
+          "confidence": 0,
+          "line": 91
+        },
+        {
+          "target": "properties",
+          "resolved": false,
+          "confidence": 0,
+          "line": 91
+        },
+        {
+          "target": "getSystemCredentials",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 102,
+          "resolvedId": "src/components/contextual/CredentialsInput/helpers.ts:getSystemCredentials:124"
+        },
+        {
+          "target": "filter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 105
+        },
+        {
+          "target": "includes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 106
+        },
+        {
+          "target": "type",
+          "resolved": false,
+          "confidence": 0,
+          "line": 106
+        },
+        {
+          "target": "Set",
+          "resolved": false,
+          "confidence": 0,
+          "line": 113
+        },
+        {
+          "target": "every",
+          "resolved": false,
+          "confidence": 0,
+          "line": 114
+        },
+        {
+          "target": "has",
+          "resolved": false,
+          "confidence": 0,
+          "line": 115
+        },
+        {
+          "target": "scope",
+          "resolved": false,
+          "confidence": 0,
+          "line": 115
+        },
+        {
+          "target": "keys",
+          "resolved": false,
+          "confidence": 0,
+          "line": 136
+        },
+        {
+          "target": "credsToAdd",
+          "resolved": false,
+          "confidence": 0,
+          "line": 136
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/modals/RunAgentModal/useAgentRunModal.tsx:$setInputCredentials$1:88",
+      "name": "$setInputCredentials$1",
+      "startLine": 88,
+      "endLine": 145,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "setInputCredentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 88
+        },
+        {
+          "target": "entries",
+          "resolved": false,
+          "confidence": 0,
+          "line": 91
+        },
+        {
+          "target": "properties",
+          "resolved": false,
+          "confidence": 0,
+          "line": 91
+        },
+        {
+          "target": "getSystemCredentials",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 102,
+          "resolvedId": "src/components/contextual/CredentialsInput/helpers.ts:getSystemCredentials:124"
+        },
+        {
+          "target": "filter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 105
+        },
+        {
+          "target": "includes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 106
+        },
+        {
+          "target": "type",
+          "resolved": false,
+          "confidence": 0,
+          "line": 106
+        },
+        {
+          "target": "Set",
+          "resolved": false,
+          "confidence": 0,
+          "line": 113
+        },
+        {
+          "target": "every",
+          "resolved": false,
+          "confidence": 0,
+          "line": 114
+        },
+        {
+          "target": "has",
+          "resolved": false,
+          "confidence": 0,
+          "line": 115
+        },
+        {
+          "target": "scope",
+          "resolved": false,
+          "confidence": 0,
+          "line": 115
+        },
+        {
+          "target": "keys",
+          "resolved": false,
+          "confidence": 0,
+          "line": 136
+        },
+        {
+          "target": "credsToAdd",
+          "resolved": false,
+          "confidence": 0,
+          "line": 136
+        },
+        {
+          "target": "setInputCredentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 88
+        },
+        {
+          "target": "entries",
+          "resolved": false,
+          "confidence": 0,
+          "line": 91
+        },
+        {
+          "target": "properties",
+          "resolved": false,
+          "confidence": 0,
+          "line": 91
+        },
+        {
+          "target": "getSystemCredentials",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 102,
+          "resolvedId": "src/components/contextual/CredentialsInput/helpers.ts:getSystemCredentials:124"
+        },
+        {
+          "target": "filter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 105
+        },
+        {
+          "target": "includes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 106
+        },
+        {
+          "target": "type",
+          "resolved": false,
+          "confidence": 0,
+          "line": 106
+        },
+        {
+          "target": "Set",
+          "resolved": false,
+          "confidence": 0,
+          "line": 113
+        },
+        {
+          "target": "every",
+          "resolved": false,
+          "confidence": 0,
+          "line": 114
+        },
+        {
+          "target": "has",
+          "resolved": false,
+          "confidence": 0,
+          "line": 115
+        },
+        {
+          "target": "scope",
+          "resolved": false,
+          "confidence": 0,
+          "line": 115
+        },
+        {
+          "target": "keys",
+          "resolved": false,
+          "confidence": 0,
+          "line": 136
+        },
+        {
+          "target": "credsToAdd",
+          "resolved": false,
+          "confidence": 0,
+          "line": 136
+        },
+        {
+          "target": "entries",
+          "resolved": false,
+          "confidence": 0,
+          "line": 91
+        },
+        {
+          "target": "properties",
+          "resolved": false,
+          "confidence": 0,
+          "line": 91
+        },
+        {
+          "target": "getSystemCredentials",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 102,
+          "resolvedId": "src/components/contextual/CredentialsInput/helpers.ts:getSystemCredentials:124"
+        },
+        {
+          "target": "filter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 105
+        },
+        {
+          "target": "includes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 106
+        },
+        {
+          "target": "type",
+          "resolved": false,
+          "confidence": 0,
+          "line": 106
+        },
+        {
+          "target": "Set",
+          "resolved": false,
+          "confidence": 0,
+          "line": 113
+        },
+        {
+          "target": "every",
+          "resolved": false,
+          "confidence": 0,
+          "line": 114
+        },
+        {
+          "target": "has",
+          "resolved": false,
+          "confidence": 0,
+          "line": 115
+        },
+        {
+          "target": "scope",
+          "resolved": false,
+          "confidence": 0,
+          "line": 115
+        },
+        {
+          "target": "keys",
+          "resolved": false,
+          "confidence": 0,
+          "line": 136
+        },
+        {
+          "target": "credsToAdd",
+          "resolved": false,
+          "confidence": 0,
+          "line": 136
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/modals/RunAgentModal/useAgentRunModal.tsx:$useEffect$3:153",
+      "name": "$useEffect$3",
+      "startLine": 153,
+      "endLine": 155,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 153
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

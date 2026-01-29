@@ -1,0 +1,627 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.211Z",
+  "checksum": "60ef8971c149b881",
+  "file": "backend/notifications/email.py",
+  "functions": [
+    {
+      "id": "backend/notifications/email.py:__init__:35",
+      "name": "__init__",
+      "startLine": 35,
+      "endLine": 45,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "TypedPostmarkClient",
+          "resolved": false,
+          "confidence": 0,
+          "line": 37
+        },
+        {
+          "target": "warning",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 41,
+          "resolvedId": "backend/util/logging.py:warning:45"
+        },
+        {
+          "target": "TextFormatter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 45
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/notifications/email.py:send_templated:49",
+      "name": "send_templated",
+      "startLine": 49,
+      "endLine": 116,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "warning",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 61,
+          "resolvedId": "backend/util/logging.py:warning:45"
+        },
+        {
+          "target": "_get_template",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 64,
+          "resolvedId": "backend/notifications/email.py:_get_template:118"
+        },
+        {
+          "target": "notification",
+          "resolved": false,
+          "confidence": 0,
+          "line": 64
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 71
+        },
+        {
+          "target": "data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 71
+        },
+        {
+          "target": "list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 71
+        },
+        {
+          "target": "format_email",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 74,
+          "resolvedId": "backend/util/text.py:format_email:111"
+        },
+        {
+          "target": "error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 82,
+          "resolvedId": "backend/util/logging.py:error:49"
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 86
+        },
+        {
+          "target": "full_message",
+          "resolved": false,
+          "confidence": 0,
+          "line": 86
+        },
+        {
+          "target": "warning",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 88,
+          "resolvedId": "backend/util/logging.py:warning:45"
+        },
+        {
+          "target": "getattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 95
+        },
+        {
+          "target": "data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 95
+        },
+        {
+          "target": "getattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 97
+        },
+        {
+          "target": "data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 97
+        },
+        {
+          "target": "getattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 98
+        },
+        {
+          "target": "data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 98
+        },
+        {
+          "target": "getattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 99
+        },
+        {
+          "target": "data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 99
+        },
+        {
+          "target": "_send_email",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 102,
+          "resolvedId": "backend/notifications/email.py:_send_email:137"
+        },
+        {
+          "target": "debug",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 110,
+          "resolvedId": "backend/util/logging.py:debug:53"
+        },
+        {
+          "target": "_send_email",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 111,
+          "resolvedId": "backend/notifications/email.py:_send_email:137"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/notifications/email.py:_get_template:118",
+      "name": "_get_template",
+      "startLine": 118,
+      "endLine": 135,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "NotificationTypeOverride",
+          "resolved": false,
+          "confidence": 0,
+          "line": 120
+        },
+        {
+          "target": "notification",
+          "resolved": false,
+          "confidence": 0,
+          "line": 120
+        },
+        {
+          "target": "debug",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 123,
+          "resolvedId": "backend/util/logging.py:debug:53"
+        },
+        {
+          "target": "Path",
+          "resolved": false,
+          "confidence": 0,
+          "line": 124
+        },
+        {
+          "target": "__file__",
+          "resolved": false,
+          "confidence": 0,
+          "line": 124
+        },
+        {
+          "target": "open",
+          "resolved": false,
+          "confidence": 0,
+          "line": 127
+        },
+        {
+          "target": "Path",
+          "resolved": false,
+          "confidence": 0,
+          "line": 127
+        },
+        {
+          "target": "__file__",
+          "resolved": false,
+          "confidence": 0,
+          "line": 127
+        },
+        {
+          "target": "read",
+          "resolved": false,
+          "confidence": 0,
+          "line": 128
+        },
+        {
+          "target": "open",
+          "resolved": false,
+          "confidence": 0,
+          "line": 129
+        },
+        {
+          "target": "Path",
+          "resolved": false,
+          "confidence": 0,
+          "line": 129
+        },
+        {
+          "target": "__file__",
+          "resolved": false,
+          "confidence": 0,
+          "line": 129
+        },
+        {
+          "target": "read",
+          "resolved": false,
+          "confidence": 0,
+          "line": 130
+        },
+        {
+          "target": "Template",
+          "resolved": false,
+          "confidence": 0,
+          "line": 131
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/notifications/email.py:_send_email:137",
+      "name": "_send_email",
+      "startLine": 137,
+      "endLine": 161,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "warning",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 145,
+          "resolvedId": "backend/util/logging.py:warning:45"
+        },
+        {
+          "target": "debug",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 147,
+          "resolvedId": "backend/util/logging.py:debug:53"
+        },
+        {
+          "target": "send",
+          "resolved": false,
+          "confidence": 0,
+          "line": 148
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/notifications/email.py:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 162,
+      "isEntryPoint": false,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "getLogger",
+          "resolved": false,
+          "confidence": 0,
+          "line": 17
+        },
+        {
+          "target": "Settings",
+          "resolved": false,
+          "confidence": 0,
+          "line": 18
+        },
+        {
+          "target": "TypedPostmarkClient",
+          "resolved": false,
+          "confidence": 0,
+          "line": 37
+        },
+        {
+          "target": "warning",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 41,
+          "resolvedId": "backend/util/logging.py:warning:45"
+        },
+        {
+          "target": "TextFormatter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 45
+        },
+        {
+          "target": "warning",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 61,
+          "resolvedId": "backend/util/logging.py:warning:45"
+        },
+        {
+          "target": "_get_template",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 64,
+          "resolvedId": "backend/notifications/email.py:_get_template:118"
+        },
+        {
+          "target": "notification",
+          "resolved": false,
+          "confidence": 0,
+          "line": 64
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 71
+        },
+        {
+          "target": "data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 71
+        },
+        {
+          "target": "list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 71
+        },
+        {
+          "target": "format_email",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 74,
+          "resolvedId": "backend/util/text.py:format_email:111"
+        },
+        {
+          "target": "error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 82,
+          "resolvedId": "backend/util/logging.py:error:49"
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 86
+        },
+        {
+          "target": "full_message",
+          "resolved": false,
+          "confidence": 0,
+          "line": 86
+        },
+        {
+          "target": "warning",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 88,
+          "resolvedId": "backend/util/logging.py:warning:45"
+        },
+        {
+          "target": "getattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 95
+        },
+        {
+          "target": "data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 95
+        },
+        {
+          "target": "getattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 97
+        },
+        {
+          "target": "data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 97
+        },
+        {
+          "target": "getattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 98
+        },
+        {
+          "target": "data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 98
+        },
+        {
+          "target": "getattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 99
+        },
+        {
+          "target": "data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 99
+        },
+        {
+          "target": "_send_email",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 102,
+          "resolvedId": "backend/notifications/email.py:_send_email:137"
+        },
+        {
+          "target": "debug",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 110,
+          "resolvedId": "backend/util/logging.py:debug:53"
+        },
+        {
+          "target": "_send_email",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 111,
+          "resolvedId": "backend/notifications/email.py:_send_email:137"
+        },
+        {
+          "target": "NotificationTypeOverride",
+          "resolved": false,
+          "confidence": 0,
+          "line": 120
+        },
+        {
+          "target": "notification",
+          "resolved": false,
+          "confidence": 0,
+          "line": 120
+        },
+        {
+          "target": "debug",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 123,
+          "resolvedId": "backend/util/logging.py:debug:53"
+        },
+        {
+          "target": "Path",
+          "resolved": false,
+          "confidence": 0,
+          "line": 124
+        },
+        {
+          "target": "__file__",
+          "resolved": false,
+          "confidence": 0,
+          "line": 124
+        },
+        {
+          "target": "open",
+          "resolved": false,
+          "confidence": 0,
+          "line": 127
+        },
+        {
+          "target": "Path",
+          "resolved": false,
+          "confidence": 0,
+          "line": 127
+        },
+        {
+          "target": "__file__",
+          "resolved": false,
+          "confidence": 0,
+          "line": 127
+        },
+        {
+          "target": "read",
+          "resolved": false,
+          "confidence": 0,
+          "line": 128
+        },
+        {
+          "target": "open",
+          "resolved": false,
+          "confidence": 0,
+          "line": 129
+        },
+        {
+          "target": "Path",
+          "resolved": false,
+          "confidence": 0,
+          "line": 129
+        },
+        {
+          "target": "__file__",
+          "resolved": false,
+          "confidence": 0,
+          "line": 129
+        },
+        {
+          "target": "read",
+          "resolved": false,
+          "confidence": 0,
+          "line": 130
+        },
+        {
+          "target": "Template",
+          "resolved": false,
+          "confidence": 0,
+          "line": 131
+        },
+        {
+          "target": "warning",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 145,
+          "resolvedId": "backend/util/logging.py:warning:45"
+        },
+        {
+          "target": "debug",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 147,
+          "resolvedId": "backend/util/logging.py:debug:53"
+        },
+        {
+          "target": "send",
+          "resolved": false,
+          "confidence": 0,
+          "line": 148
+        },
+        {
+          "target": "getLogger",
+          "resolved": false,
+          "confidence": 0,
+          "line": 17
+        },
+        {
+          "target": "Settings",
+          "resolved": false,
+          "confidence": 0,
+          "line": 18
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "logging",
+          "operation": "read",
+          "line": 17,
+          "fields": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1843 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.181Z",
+  "checksum": "1f5834c81f1e2111",
+  "file": "backend/cli_main.py",
+  "functions": [
+    {
+      "id": "backend/cli_main.py:get_pid_path:14",
+      "name": "get_pid_path",
+      "startLine": 14,
+      "endLine": 18,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "home",
+          "resolved": false,
+          "confidence": 0,
+          "line": 15
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/cli_main.py:get_pid:21",
+      "name": "get_pid",
+      "startLine": 21,
+      "endLine": 32,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "get_pid_path",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 22,
+          "resolvedId": "backend/cli_main.py:get_pid_path:14"
+        },
+        {
+          "target": "exists",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 23,
+          "resolvedId": "backend/integrations/creds_manager.py:exists:71"
+        },
+        {
+          "target": "makedirs",
+          "resolved": false,
+          "confidence": 0,
+          "line": 26
+        },
+        {
+          "target": "open",
+          "resolved": false,
+          "confidence": 0,
+          "line": 27
+        },
+        {
+          "target": "file_path",
+          "resolved": false,
+          "confidence": 0,
+          "line": 27
+        },
+        {
+          "target": "read",
+          "resolved": false,
+          "confidence": 0,
+          "line": 28
+        },
+        {
+          "target": "int",
+          "resolved": false,
+          "confidence": 0,
+          "line": 30
+        },
+        {
+          "target": "pid",
+          "resolved": false,
+          "confidence": 0,
+          "line": 30
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/cli_main.py:write_pid:35",
+      "name": "write_pid",
+      "startLine": 35,
+      "endLine": 39,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "get_pid_path",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 36,
+          "resolvedId": "backend/cli_main.py:get_pid_path:14"
+        },
+        {
+          "target": "makedirs",
+          "resolved": false,
+          "confidence": 0,
+          "line": 37
+        },
+        {
+          "target": "open",
+          "resolved": false,
+          "confidence": 0,
+          "line": 38
+        },
+        {
+          "target": "file_path",
+          "resolved": false,
+          "confidence": 0,
+          "line": 38
+        },
+        {
+          "target": "write",
+          "resolved": false,
+          "confidence": 0,
+          "line": 39
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 39
+        },
+        {
+          "target": "pid",
+          "resolved": false,
+          "confidence": 0,
+          "line": 39
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/cli_main.py:run:43",
+      "name": "run",
+      "startLine": 43,
+      "endLine": 46,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "main",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 46,
+          "resolvedId": "backend/cli_main.py:main:50"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/cli_main.py:main:50",
+      "name": "main",
+      "startLine": 50,
+      "endLine": 52,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/cli_main.py:start:56",
+      "name": "start",
+      "startLine": 56,
+      "endLine": 75,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "get_pid",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 61,
+          "resolvedId": "backend/cli_main.py:get_pid:21"
+        },
+        {
+          "target": "pid_exists",
+          "resolved": false,
+          "confidence": 0,
+          "line": 62
+        },
+        {
+          "target": "pid",
+          "resolved": false,
+          "confidence": 0,
+          "line": 62
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 63
+        },
+        {
+          "target": "exit",
+          "resolved": false,
+          "confidence": 0,
+          "line": 64
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 66
+        },
+        {
+          "target": "remove",
+          "resolved": false,
+          "confidence": 0,
+          "line": 67
+        },
+        {
+          "target": "get_pid_path",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 67,
+          "resolvedId": "backend/cli_main.py:get_pid_path:14"
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 69
+        },
+        {
+          "target": "start",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 70,
+          "resolvedId": "backend/cli_main.py:start:56"
+        },
+        {
+          "target": "MainApp",
+          "resolved": false,
+          "confidence": 0,
+          "line": 70
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 71
+        },
+        {
+          "target": "write_pid",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 73,
+          "resolvedId": "backend/cli_main.py:write_pid:35"
+        },
+        {
+          "target": "pid",
+          "resolved": false,
+          "confidence": 0,
+          "line": 73
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 74
+        },
+        {
+          "target": "_exit",
+          "resolved": false,
+          "confidence": 0,
+          "line": 75
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "os",
+          "operation": "delete",
+          "line": 67,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/cli_main.py:stop:79",
+      "name": "stop",
+      "startLine": 79,
+      "endLine": 94,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "get_pid",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 83,
+          "resolvedId": "backend/cli_main.py:get_pid:21"
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 85
+        },
+        {
+          "target": "remove",
+          "resolved": false,
+          "confidence": 0,
+          "line": 88
+        },
+        {
+          "target": "get_pid_path",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 88,
+          "resolvedId": "backend/cli_main.py:get_pid_path:14"
+        },
+        {
+          "target": "Process",
+          "resolved": false,
+          "confidence": 0,
+          "line": 89
+        },
+        {
+          "target": "int",
+          "resolved": false,
+          "confidence": 0,
+          "line": 89
+        },
+        {
+          "target": "pid",
+          "resolved": false,
+          "confidence": 0,
+          "line": 89
+        },
+        {
+          "target": "children",
+          "resolved": false,
+          "confidence": 0,
+          "line": 90
+        },
+        {
+          "target": "terminate",
+          "resolved": false,
+          "confidence": 0,
+          "line": 91
+        },
+        {
+          "target": "terminate",
+          "resolved": false,
+          "confidence": 0,
+          "line": 92
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 94
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "os",
+          "operation": "delete",
+          "line": 88,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/cli_main.py:gen_encrypt_key:98",
+      "name": "gen_encrypt_key",
+      "startLine": 98,
+      "endLine": 104,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 104
+        },
+        {
+          "target": "decode",
+          "resolved": false,
+          "confidence": 0,
+          "line": 104
+        },
+        {
+          "target": "generate_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 104
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/cli_main.py:test:108",
+      "name": "test",
+      "startLine": 108,
+      "endLine": 112,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/cli_main.py:reddit:117",
+      "name": "reddit",
+      "startLine": 117,
+      "endLine": 134,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "create_test_graph",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 124,
+          "resolvedId": "backend/usecases/sample.py:create_test_graph:28"
+        },
+        {
+          "target": "model_dump_json",
+          "resolved": false,
+          "confidence": 0,
+          "line": 127
+        },
+        {
+          "target": "post",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 129,
+          "resolvedId": "backend/util/request.py:post:563"
+        },
+        {
+          "target": "url",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 130,
+          "resolvedId": "backend/data/integrations.py:url:48"
+        },
+        {
+          "target": "Requests",
+          "resolved": false,
+          "confidence": 0,
+          "line": 129
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 133,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 134
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/cli_main.py:populate_db:139",
+      "name": "populate_db",
+      "startLine": 139,
+      "endLine": 176,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "create_test_graph",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 147,
+          "resolvedId": "backend/usecases/sample.py:create_test_graph:28"
+        },
+        {
+          "target": "model_dump_json",
+          "resolved": false,
+          "confidence": 0,
+          "line": 150
+        },
+        {
+          "target": "post",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 152,
+          "resolvedId": "backend/util/request.py:post:563"
+        },
+        {
+          "target": "url",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 153,
+          "resolvedId": "backend/data/integrations.py:url:48"
+        },
+        {
+          "target": "Requests",
+          "resolved": false,
+          "confidence": 0,
+          "line": 152
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 156,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 159,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "post",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 162,
+          "resolvedId": "backend/util/request.py:post:563"
+        },
+        {
+          "target": "execute_url",
+          "resolved": false,
+          "confidence": 0,
+          "line": 163
+        },
+        {
+          "target": "Requests",
+          "resolved": false,
+          "confidence": 0,
+          "line": 162
+        },
+        {
+          "target": "post",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 172,
+          "resolvedId": "backend/util/request.py:post:563"
+        },
+        {
+          "target": "schedule_url",
+          "resolved": false,
+          "confidence": 0,
+          "line": 173
+        },
+        {
+          "target": "Requests",
+          "resolved": false,
+          "confidence": 0,
+          "line": 172
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 176
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/cli_main.py:graph:181",
+      "name": "graph",
+      "startLine": 181,
+      "endLine": 207,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "model_dump_json",
+          "resolved": false,
+          "confidence": 0,
+          "line": 191
+        },
+        {
+          "target": "create_test_graph",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 191,
+          "resolvedId": "backend/usecases/sample.py:create_test_graph:28"
+        },
+        {
+          "target": "post",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 192,
+          "resolvedId": "backend/util/request.py:post:563"
+        },
+        {
+          "target": "url",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 193,
+          "resolvedId": "backend/data/integrations.py:url:48"
+        },
+        {
+          "target": "Requests",
+          "resolved": false,
+          "confidence": 0,
+          "line": 192
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 197
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 197,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 198,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "post",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 201,
+          "resolvedId": "backend/util/request.py:post:563"
+        },
+        {
+          "target": "execute_url",
+          "resolved": false,
+          "confidence": 0,
+          "line": 202
+        },
+        {
+          "target": "Requests",
+          "resolved": false,
+          "confidence": 0,
+          "line": 201
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 206
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 207
+        },
+        {
+          "target": "text",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 207,
+          "resolvedId": "backend/util/request.py:text:297"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/cli_main.py:execute:213",
+      "name": "execute",
+      "startLine": 213,
+      "endLine": 225,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "post",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 223,
+          "resolvedId": "backend/util/request.py:post:563"
+        },
+        {
+          "target": "execute_url",
+          "resolved": false,
+          "confidence": 0,
+          "line": 224
+        },
+        {
+          "target": "Requests",
+          "resolved": false,
+          "confidence": 0,
+          "line": 223
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/cli_main.py:event:229",
+      "name": "event",
+      "startLine": 229,
+      "endLine": 233,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 233
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/cli_main.py:websocket:239",
+      "name": "websocket",
+      "startLine": 239,
+      "endLine": 268,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "run",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 267,
+          "resolvedId": "backend/cli_main.py:run:43"
+        },
+        {
+          "target": "send_message",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 267,
+          "resolvedId": "backend/cli_main.py:send_message:249"
+        },
+        {
+          "target": "server_address",
+          "resolved": false,
+          "confidence": 0,
+          "line": 267
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 268
+        },
+        {
+          "target": "connect",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 251,
+          "resolvedId": "backend/data/rabbitmq.py:connect:102"
+        },
+        {
+          "target": "uri",
+          "resolved": false,
+          "confidence": 0,
+          "line": 251
+        },
+        {
+          "target": "model_dump_json",
+          "resolved": false,
+          "confidence": 0,
+          "line": 253
+        },
+        {
+          "target": "WSMessage",
+          "resolved": false,
+          "confidence": 0,
+          "line": 253
+        },
+        {
+          "target": "model_dump",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 255,
+          "resolvedId": "backend/blocks/apollo/models.py:model_dump:11"
+        },
+        {
+          "target": "WSSubscribeGraphExecutionRequest",
+          "resolved": false,
+          "confidence": 0,
+          "line": 255
+        },
+        {
+          "target": "send",
+          "resolved": false,
+          "confidence": 0,
+          "line": 259
+        },
+        {
+          "target": "msg",
+          "resolved": false,
+          "confidence": 0,
+          "line": 259
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 260
+        },
+        {
+          "target": "recv",
+          "resolved": false,
+          "confidence": 0,
+          "line": 262
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 263
+        },
+        {
+          "target": "exit",
+          "resolved": false,
+          "confidence": 0,
+          "line": 265
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/cli_main.py:send_message:249",
+      "name": "send_message",
+      "startLine": 249,
+      "endLine": 265,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "connect",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 251,
+          "resolvedId": "backend/data/rabbitmq.py:connect:102"
+        },
+        {
+          "target": "uri",
+          "resolved": false,
+          "confidence": 0,
+          "line": 251
+        },
+        {
+          "target": "model_dump_json",
+          "resolved": false,
+          "confidence": 0,
+          "line": 253
+        },
+        {
+          "target": "WSMessage",
+          "resolved": false,
+          "confidence": 0,
+          "line": 253
+        },
+        {
+          "target": "model_dump",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 255,
+          "resolvedId": "backend/blocks/apollo/models.py:model_dump:11"
+        },
+        {
+          "target": "WSSubscribeGraphExecutionRequest",
+          "resolved": false,
+          "confidence": 0,
+          "line": 255
+        },
+        {
+          "target": "send",
+          "resolved": false,
+          "confidence": 0,
+          "line": 259
+        },
+        {
+          "target": "msg",
+          "resolved": false,
+          "confidence": 0,
+          "line": 259
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 260
+        },
+        {
+          "target": "recv",
+          "resolved": false,
+          "confidence": 0,
+          "line": 262
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 263
+        },
+        {
+          "target": "exit",
+          "resolved": false,
+          "confidence": 0,
+          "line": 265
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/cli_main.py:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 275,
+      "isEntryPoint": false,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "home",
+          "resolved": false,
+          "confidence": 0,
+          "line": 15
+        },
+        {
+          "target": "get_pid_path",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 22,
+          "resolvedId": "backend/cli_main.py:get_pid_path:14"
+        },
+        {
+          "target": "exists",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 23,
+          "resolvedId": "backend/integrations/creds_manager.py:exists:71"
+        },
+        {
+          "target": "makedirs",
+          "resolved": false,
+          "confidence": 0,
+          "line": 26
+        },
+        {
+          "target": "open",
+          "resolved": false,
+          "confidence": 0,
+          "line": 27
+        },
+        {
+          "target": "file_path",
+          "resolved": false,
+          "confidence": 0,
+          "line": 27
+        },
+        {
+          "target": "read",
+          "resolved": false,
+          "confidence": 0,
+          "line": 28
+        },
+        {
+          "target": "int",
+          "resolved": false,
+          "confidence": 0,
+          "line": 30
+        },
+        {
+          "target": "pid",
+          "resolved": false,
+          "confidence": 0,
+          "line": 30
+        },
+        {
+          "target": "get_pid_path",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 36,
+          "resolvedId": "backend/cli_main.py:get_pid_path:14"
+        },
+        {
+          "target": "makedirs",
+          "resolved": false,
+          "confidence": 0,
+          "line": 37
+        },
+        {
+          "target": "open",
+          "resolved": false,
+          "confidence": 0,
+          "line": 38
+        },
+        {
+          "target": "file_path",
+          "resolved": false,
+          "confidence": 0,
+          "line": 38
+        },
+        {
+          "target": "write",
+          "resolved": false,
+          "confidence": 0,
+          "line": 39
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 39
+        },
+        {
+          "target": "pid",
+          "resolved": false,
+          "confidence": 0,
+          "line": 39
+        },
+        {
+          "target": "main",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 46,
+          "resolvedId": "backend/cli_main.py:main:50"
+        },
+        {
+          "target": "group",
+          "resolved": false,
+          "confidence": 0,
+          "line": 49
+        },
+        {
+          "target": "command",
+          "resolved": false,
+          "confidence": 0,
+          "line": 55
+        },
+        {
+          "target": "get_pid",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 61,
+          "resolvedId": "backend/cli_main.py:get_pid:21"
+        },
+        {
+          "target": "pid_exists",
+          "resolved": false,
+          "confidence": 0,
+          "line": 62
+        },
+        {
+          "target": "pid",
+          "resolved": false,
+          "confidence": 0,
+          "line": 62
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 63
+        },
+        {
+          "target": "exit",
+          "resolved": false,
+          "confidence": 0,
+          "line": 64
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 66
+        },
+        {
+          "target": "remove",
+          "resolved": false,
+          "confidence": 0,
+          "line": 67
+        },
+        {
+          "target": "get_pid_path",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 67,
+          "resolvedId": "backend/cli_main.py:get_pid_path:14"
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 69
+        },
+        {
+          "target": "start",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 70,
+          "resolvedId": "backend/cli_main.py:start:56"
+        },
+        {
+          "target": "MainApp",
+          "resolved": false,
+          "confidence": 0,
+          "line": 70
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 71
+        },
+        {
+          "target": "write_pid",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 73,
+          "resolvedId": "backend/cli_main.py:write_pid:35"
+        },
+        {
+          "target": "pid",
+          "resolved": false,
+          "confidence": 0,
+          "line": 73
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 74
+        },
+        {
+          "target": "_exit",
+          "resolved": false,
+          "confidence": 0,
+          "line": 75
+        },
+        {
+          "target": "command",
+          "resolved": false,
+          "confidence": 0,
+          "line": 78
+        },
+        {
+          "target": "get_pid",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 83,
+          "resolvedId": "backend/cli_main.py:get_pid:21"
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 85
+        },
+        {
+          "target": "remove",
+          "resolved": false,
+          "confidence": 0,
+          "line": 88
+        },
+        {
+          "target": "get_pid_path",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 88,
+          "resolvedId": "backend/cli_main.py:get_pid_path:14"
+        },
+        {
+          "target": "Process",
+          "resolved": false,
+          "confidence": 0,
+          "line": 89
+        },
+        {
+          "target": "int",
+          "resolved": false,
+          "confidence": 0,
+          "line": 89
+        },
+        {
+          "target": "pid",
+          "resolved": false,
+          "confidence": 0,
+          "line": 89
+        },
+        {
+          "target": "children",
+          "resolved": false,
+          "confidence": 0,
+          "line": 90
+        },
+        {
+          "target": "terminate",
+          "resolved": false,
+          "confidence": 0,
+          "line": 91
+        },
+        {
+          "target": "terminate",
+          "resolved": false,
+          "confidence": 0,
+          "line": 92
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 94
+        },
+        {
+          "target": "command",
+          "resolved": false,
+          "confidence": 0,
+          "line": 97
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 104
+        },
+        {
+          "target": "decode",
+          "resolved": false,
+          "confidence": 0,
+          "line": 104
+        },
+        {
+          "target": "generate_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 104
+        },
+        {
+          "target": "group",
+          "resolved": false,
+          "confidence": 0,
+          "line": 107
+        },
+        {
+          "target": "command",
+          "resolved": false,
+          "confidence": 0,
+          "line": 115
+        },
+        {
+          "target": "argument",
+          "resolved": false,
+          "confidence": 0,
+          "line": 116
+        },
+        {
+          "target": "create_test_graph",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 124,
+          "resolvedId": "backend/usecases/sample.py:create_test_graph:28"
+        },
+        {
+          "target": "model_dump_json",
+          "resolved": false,
+          "confidence": 0,
+          "line": 127
+        },
+        {
+          "target": "post",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 129,
+          "resolvedId": "backend/util/request.py:post:563"
+        },
+        {
+          "target": "url",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 130,
+          "resolvedId": "backend/data/integrations.py:url:48"
+        },
+        {
+          "target": "Requests",
+          "resolved": false,
+          "confidence": 0,
+          "line": 129
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 133,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 134
+        },
+        {
+          "target": "command",
+          "resolved": false,
+          "confidence": 0,
+          "line": 137
+        },
+        {
+          "target": "argument",
+          "resolved": false,
+          "confidence": 0,
+          "line": 138
+        },
+        {
+          "target": "create_test_graph",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 147,
+          "resolvedId": "backend/usecases/sample.py:create_test_graph:28"
+        },
+        {
+          "target": "model_dump_json",
+          "resolved": false,
+          "confidence": 0,
+          "line": 150
+        },
+        {
+          "target": "post",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 152,
+          "resolvedId": "backend/util/request.py:post:563"
+        },
+        {
+          "target": "url",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 153,
+          "resolvedId": "backend/data/integrations.py:url:48"
+        },
+        {
+          "target": "Requests",
+          "resolved": false,
+          "confidence": 0,
+          "line": 152
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 156,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 159,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "post",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 162,
+          "resolvedId": "backend/util/request.py:post:563"
+        },
+        {
+          "target": "execute_url",
+          "resolved": false,
+          "confidence": 0,
+          "line": 163
+        },
+        {
+          "target": "Requests",
+          "resolved": false,
+          "confidence": 0,
+          "line": 162
+        },
+        {
+          "target": "post",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 172,
+          "resolvedId": "backend/util/request.py:post:563"
+        },
+        {
+          "target": "schedule_url",
+          "resolved": false,
+          "confidence": 0,
+          "line": 173
+        },
+        {
+          "target": "Requests",
+          "resolved": false,
+          "confidence": 0,
+          "line": 172
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 176
+        },
+        {
+          "target": "command",
+          "resolved": false,
+          "confidence": 0,
+          "line": 179
+        },
+        {
+          "target": "argument",
+          "resolved": false,
+          "confidence": 0,
+          "line": 180
+        },
+        {
+          "target": "model_dump_json",
+          "resolved": false,
+          "confidence": 0,
+          "line": 191
+        },
+        {
+          "target": "create_test_graph",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 191,
+          "resolvedId": "backend/usecases/sample.py:create_test_graph:28"
+        },
+        {
+          "target": "post",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 192,
+          "resolvedId": "backend/util/request.py:post:563"
+        },
+        {
+          "target": "url",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 193,
+          "resolvedId": "backend/data/integrations.py:url:48"
+        },
+        {
+          "target": "Requests",
+          "resolved": false,
+          "confidence": 0,
+          "line": 192
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 197
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 197,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 198,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "post",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 201,
+          "resolvedId": "backend/util/request.py:post:563"
+        },
+        {
+          "target": "execute_url",
+          "resolved": false,
+          "confidence": 0,
+          "line": 202
+        },
+        {
+          "target": "Requests",
+          "resolved": false,
+          "confidence": 0,
+          "line": 201
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 206
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 207
+        },
+        {
+          "target": "text",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 207,
+          "resolvedId": "backend/util/request.py:text:297"
+        },
+        {
+          "target": "command",
+          "resolved": false,
+          "confidence": 0,
+          "line": 210
+        },
+        {
+          "target": "argument",
+          "resolved": false,
+          "confidence": 0,
+          "line": 211
+        },
+        {
+          "target": "argument",
+          "resolved": false,
+          "confidence": 0,
+          "line": 212
+        },
+        {
+          "target": "post",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 223,
+          "resolvedId": "backend/util/request.py:post:563"
+        },
+        {
+          "target": "execute_url",
+          "resolved": false,
+          "confidence": 0,
+          "line": 224
+        },
+        {
+          "target": "Requests",
+          "resolved": false,
+          "confidence": 0,
+          "line": 223
+        },
+        {
+          "target": "command",
+          "resolved": false,
+          "confidence": 0,
+          "line": 228
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 233
+        },
+        {
+          "target": "command",
+          "resolved": false,
+          "confidence": 0,
+          "line": 236
+        },
+        {
+          "target": "argument",
+          "resolved": false,
+          "confidence": 0,
+          "line": 237
+        },
+        {
+          "target": "argument",
+          "resolved": false,
+          "confidence": 0,
+          "line": 238
+        },
+        {
+          "target": "run",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 267,
+          "resolvedId": "backend/cli_main.py:run:43"
+        },
+        {
+          "target": "send_message",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 267,
+          "resolvedId": "backend/cli_main.py:send_message:249"
+        },
+        {
+          "target": "server_address",
+          "resolved": false,
+          "confidence": 0,
+          "line": 267
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 268
+        },
+        {
+          "target": "connect",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 251,
+          "resolvedId": "backend/data/rabbitmq.py:connect:102"
+        },
+        {
+          "target": "uri",
+          "resolved": false,
+          "confidence": 0,
+          "line": 251
+        },
+        {
+          "target": "model_dump_json",
+          "resolved": false,
+          "confidence": 0,
+          "line": 253
+        },
+        {
+          "target": "WSMessage",
+          "resolved": false,
+          "confidence": 0,
+          "line": 253
+        },
+        {
+          "target": "model_dump",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 255,
+          "resolvedId": "backend/blocks/apollo/models.py:model_dump:11"
+        },
+        {
+          "target": "WSSubscribeGraphExecutionRequest",
+          "resolved": false,
+          "confidence": 0,
+          "line": 255
+        },
+        {
+          "target": "send",
+          "resolved": false,
+          "confidence": 0,
+          "line": 259
+        },
+        {
+          "target": "msg",
+          "resolved": false,
+          "confidence": 0,
+          "line": 259
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 260
+        },
+        {
+          "target": "recv",
+          "resolved": false,
+          "confidence": 0,
+          "line": 262
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 263
+        },
+        {
+          "target": "exit",
+          "resolved": false,
+          "confidence": 0,
+          "line": 265
+        },
+        {
+          "target": "add_command",
+          "resolved": false,
+          "confidence": 0,
+          "line": 271
+        },
+        {
+          "target": "main",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 274,
+          "resolvedId": "backend/cli_main.py:main:50"
+        },
+        {
+          "target": "group",
+          "resolved": false,
+          "confidence": 0,
+          "line": 49
+        },
+        {
+          "target": "command",
+          "resolved": false,
+          "confidence": 0,
+          "line": 55
+        },
+        {
+          "target": "command",
+          "resolved": false,
+          "confidence": 0,
+          "line": 78
+        },
+        {
+          "target": "command",
+          "resolved": false,
+          "confidence": 0,
+          "line": 97
+        },
+        {
+          "target": "group",
+          "resolved": false,
+          "confidence": 0,
+          "line": 107
+        },
+        {
+          "target": "command",
+          "resolved": false,
+          "confidence": 0,
+          "line": 115
+        },
+        {
+          "target": "argument",
+          "resolved": false,
+          "confidence": 0,
+          "line": 116
+        },
+        {
+          "target": "command",
+          "resolved": false,
+          "confidence": 0,
+          "line": 137
+        },
+        {
+          "target": "argument",
+          "resolved": false,
+          "confidence": 0,
+          "line": 138
+        },
+        {
+          "target": "command",
+          "resolved": false,
+          "confidence": 0,
+          "line": 179
+        },
+        {
+          "target": "argument",
+          "resolved": false,
+          "confidence": 0,
+          "line": 180
+        },
+        {
+          "target": "command",
+          "resolved": false,
+          "confidence": 0,
+          "line": 210
+        },
+        {
+          "target": "argument",
+          "resolved": false,
+          "confidence": 0,
+          "line": 211
+        },
+        {
+          "target": "argument",
+          "resolved": false,
+          "confidence": 0,
+          "line": 212
+        },
+        {
+          "target": "command",
+          "resolved": false,
+          "confidence": 0,
+          "line": 228
+        },
+        {
+          "target": "command",
+          "resolved": false,
+          "confidence": 0,
+          "line": 236
+        },
+        {
+          "target": "argument",
+          "resolved": false,
+          "confidence": 0,
+          "line": 237
+        },
+        {
+          "target": "argument",
+          "resolved": false,
+          "confidence": 0,
+          "line": 238
+        },
+        {
+          "target": "add_command",
+          "resolved": false,
+          "confidence": 0,
+          "line": 271
+        },
+        {
+          "target": "main",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 274,
+          "resolvedId": "backend/cli_main.py:main:50"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "os",
+          "operation": "delete",
+          "line": 67,
+          "fields": []
+        },
+        {
+          "table": "os",
+          "operation": "delete",
+          "line": 88,
+          "fields": []
+        }
+      ]
+    }
+  ]
+}

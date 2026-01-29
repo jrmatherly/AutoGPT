@@ -1,0 +1,92 @@
+{
+  "version": "1.0.0",
+  "category": "accessibility",
+  "patterns": [
+    {
+      "id": "da49df07df076d58",
+      "subcategory": "heading-hierarchy",
+      "name": "Heading Hierarchy Detector",
+      "description": "Learns heading hierarchy patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "accessibility/heading-hierarchy",
+          "patternId": "accessibility/heading-hierarchy/function_call"
+        }
+      },
+      "confidence": {
+        "frequency": 0.01,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src/components/tokens/typography.stories.tsx",
+          "line": 127,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.9565384615384616
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:32:38.510Z",
+        "lastSeen": "2026-01-29T06:32:38.510Z",
+        "source": "auto-detected",
+        "tags": [
+          "accessibility",
+          "heading-hierarchy"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "3eff416d806782e9",
+      "subcategory": "aria-roles",
+      "name": "ARIA Roles Detector",
+      "description": "Learns ARIA roles patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "accessibility/aria-roles",
+          "patternId": "accessibility/aria-roles/class_definition"
+        }
+      },
+      "confidence": {
+        "frequency": 0.01,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src/tests/utils/selectors.ts",
+          "line": 67,
+          "column": 6,
+          "isOutlier": false,
+          "confidence": 0.97
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:32:38.510Z",
+        "lastSeen": "2026-01-29T06:32:38.510Z",
+        "source": "auto-detected",
+        "tags": [
+          "accessibility",
+          "aria-roles"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    }
+  ],
+  "lastUpdated": "2026-01-29T07:18:23.225Z",
+  "checksum": "0aff767c3b243cc4"
+}

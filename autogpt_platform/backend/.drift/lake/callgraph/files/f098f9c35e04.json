@@ -1,0 +1,72 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.235Z",
+  "checksum": "5f62b1d328bab2a1",
+  "file": "backend/scheduler.py",
+  "functions": [
+    {
+      "id": "backend/scheduler.py:main:5",
+      "name": "main",
+      "startLine": 5,
+      "endLine": 11,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "run_processes",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 9,
+          "resolvedId": "backend/app.py:run_processes:14"
+        },
+        {
+          "target": "Scheduler",
+          "resolved": false,
+          "confidence": 0,
+          "line": 10
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/scheduler.py:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 16,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "run_processes",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 9,
+          "resolvedId": "backend/app.py:run_processes:14"
+        },
+        {
+          "target": "Scheduler",
+          "resolved": false,
+          "confidence": 0,
+          "line": 10
+        },
+        {
+          "target": "main",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 15,
+          "resolvedId": "backend/scheduler.py:main:5"
+        },
+        {
+          "target": "main",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 15,
+          "resolvedId": "backend/scheduler.py:main:5"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

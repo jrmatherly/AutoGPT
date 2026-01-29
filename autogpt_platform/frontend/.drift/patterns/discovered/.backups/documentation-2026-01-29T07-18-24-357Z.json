@@ -1,0 +1,347 @@
+{
+  "version": "1.0.0",
+  "category": "documentation",
+  "patterns": [
+    {
+      "id": "6876272d3108511a",
+      "subcategory": "readme-structure",
+      "name": "Readme Structure Detector",
+      "description": "Learns README structure patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "documentation/readme-structure",
+          "patternId": "documentation/readme-structure/class_definition"
+        }
+      },
+      "confidence": {
+        "frequency": 0.18,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 6,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src/components/contextual/CredentialsInput/components/APIKeyCredentialsModal/useAPIKeyCredentialsModal.ts",
+          "line": 10,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.945
+        },
+        {
+          "file": "src/lib/autogpt-server-api/helpers.ts",
+          "line": 11,
+          "column": 14,
+          "isOutlier": true,
+          "confidence": 0.9158333333333334,
+          "outlierReason": "Value below IQR lower bound"
+        },
+        {
+          "file": "src/lib/autogpt-server-api/types.ts",
+          "line": 673,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.9542105263157895
+        },
+        {
+          "file": "src/lib/autogpt-server-api/types.ts",
+          "line": 929,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.9542105263157895
+        },
+        {
+          "file": "src/lib/autogpt-server-api/types.ts",
+          "line": 936,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.9542105263157895
+        },
+        {
+          "file": "src/lib/autogpt-server-api/types.ts",
+          "line": 942,
+          "column": 18,
+          "isOutlier": false,
+          "confidence": 0.9542105263157895
+        },
+        {
+          "file": "src/lib/supabase/hooks/helpers.ts",
+          "line": 1,
+          "column": 51,
+          "isOutlier": false,
+          "confidence": 0.945
+        },
+        {
+          "file": "src/lib/supabase/hooks/useSupabaseStore.ts",
+          "line": 3,
+          "column": 51,
+          "isOutlier": true,
+          "confidence": 0.895,
+          "outlierReason": "Value below IQR lower bound"
+        },
+        {
+          "file": "src/providers/agent-credentials/credentials-provider.tsx",
+          "line": 16,
+          "column": 6,
+          "isOutlier": true,
+          "confidence": 1,
+          "outlierReason": "Value above IQR upper bound"
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:32:38.510Z",
+        "lastSeen": "2026-01-29T06:32:38.510Z",
+        "source": "auto-detected",
+        "tags": [
+          "documentation",
+          "readme-structure"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "668eccb00e1d9a55",
+      "subcategory": "todo-patterns",
+      "name": "Todo Patterns Detector",
+      "description": "Learns TODO/FIXME comment patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "documentation/todo-patterns",
+          "patternId": "documentation/todo-patterns/import"
+        }
+      },
+      "confidence": {
+        "frequency": 0.02,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 2,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src/components/molecules/ErrorCard/components/ActionButtons.tsx",
+          "line": 2,
+          "column": 26,
+          "isOutlier": false,
+          "confidence": 0.7949999999999999
+        },
+        {
+          "file": "src/lib/react-query/queryClient.ts",
+          "line": 33,
+          "column": 61,
+          "isOutlier": false,
+          "confidence": 0.97
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:32:38.510Z",
+        "lastSeen": "2026-01-29T06:32:38.510Z",
+        "source": "auto-detected",
+        "tags": [
+          "documentation",
+          "todo-patterns"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "ded752838892ea97",
+      "subcategory": "todo-patterns",
+      "name": "Todo Patterns Detector",
+      "description": "Learns TODO/FIXME comment patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "documentation/todo-patterns",
+          "patternId": "documentation/todo-patterns/unknown"
+        }
+      },
+      "confidence": {
+        "frequency": 0.02,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 2,
+        "score": 0.77,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "src/components/molecules/ErrorCard/components/ActionButtons.tsx",
+          "line": 34,
+          "column": 10,
+          "isOutlier": false,
+          "confidence": 0.595
+        },
+        {
+          "file": "src/components/overview.stories.tsx",
+          "line": 217,
+          "column": 32,
+          "isOutlier": false,
+          "confidence": 0.77
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:32:38.510Z",
+        "lastSeen": "2026-01-29T06:32:38.510Z",
+        "source": "auto-detected",
+        "tags": [
+          "documentation",
+          "todo-patterns"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "e6565f825f149eea",
+      "subcategory": "jsdoc-patterns",
+      "name": "JSDoc Patterns Detector",
+      "description": "Learns JSDoc documentation patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "documentation/jsdoc-patterns",
+          "patternId": "documentation/jsdoc-patterns/function_definition"
+        }
+      },
+      "confidence": {
+        "frequency": 0.02,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.87,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src/components/renderers/InputRenderer/base/standard/DescriptionField.tsx",
+          "line": 10,
+          "column": 25,
+          "isOutlier": false,
+          "confidence": 0.87
+        },
+        {
+          "file": "src/components/renderers/InputRenderer/base/standard/DescriptionField.tsx",
+          "line": 10,
+          "column": 49,
+          "isOutlier": false,
+          "confidence": 0.87
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:32:38.510Z",
+        "lastSeen": "2026-01-29T06:32:38.510Z",
+        "source": "auto-detected",
+        "tags": [
+          "documentation",
+          "jsdoc-patterns"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "f186bb4803859a4a",
+      "subcategory": "todo-patterns",
+      "name": "Todo Patterns Detector",
+      "description": "Learns TODO/FIXME comment patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "documentation/todo-patterns",
+          "patternId": "documentation/todo-patterns/property_access"
+        }
+      },
+      "confidence": {
+        "frequency": 0.02,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 2,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src/components/renderers/InputRenderer/base/standard/FieldTemplate.tsx",
+          "line": 54,
+          "column": 30,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "src/components/renderers/InputRenderer/base/standard/widgets/TextInput/TextWidget.tsx",
+          "line": 91,
+          "column": 30,
+          "isOutlier": false,
+          "confidence": 0.97
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:32:38.510Z",
+        "lastSeen": "2026-01-29T06:32:38.510Z",
+        "source": "auto-detected",
+        "tags": [
+          "documentation",
+          "todo-patterns"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "8b61b00171e123c6",
+      "subcategory": "todo-patterns",
+      "name": "Todo Patterns Detector",
+      "description": "Learns TODO/FIXME comment patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "documentation/todo-patterns",
+          "patternId": "documentation/todo-patterns/conditional"
+        }
+      },
+      "confidence": {
+        "frequency": 0.01,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src/lib/autogpt-server-api/helpers.test.ts",
+          "line": 33,
+          "column": 41,
+          "isOutlier": false,
+          "confidence": 0.97
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:32:38.510Z",
+        "lastSeen": "2026-01-29T06:32:38.510Z",
+        "source": "auto-detected",
+        "tags": [
+          "documentation",
+          "todo-patterns"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    }
+  ],
+  "lastUpdated": "2026-01-29T07:18:24.312Z",
+  "checksum": "f7fffce3e4504ea2"
+}

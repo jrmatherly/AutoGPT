@@ -1,0 +1,259 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.124Z",
+  "checksum": "3079036427851214",
+  "file": "backend/blocks/twitter/_serializer.py",
+  "functions": [
+    {
+      "id": "backend/blocks/twitter/_serializer.py:_serialize_value:6",
+      "name": "_serialize_value",
+      "startLine": 6,
+      "endLine": 10,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "hasattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 8
+        },
+        {
+          "target": "value",
+          "resolved": false,
+          "confidence": 0,
+          "line": 8
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/twitter/_serializer.py:serialize:15",
+      "name": "serialize",
+      "startLine": 15,
+      "endLine": 29,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "items",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 21,
+          "resolvedId": "backend/integrations/oauth/__init__.py:items:123"
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 22
+        },
+        {
+          "target": "value",
+          "resolved": false,
+          "confidence": 0,
+          "line": 22
+        },
+        {
+          "target": "list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 22
+        },
+        {
+          "target": "_serialize_value",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 24,
+          "resolvedId": "backend/blocks/twitter/_serializer.py:_serialize_value:6"
+        },
+        {
+          "target": "item",
+          "resolved": false,
+          "confidence": 0,
+          "line": 24
+        },
+        {
+          "target": "_serialize_value",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 27,
+          "resolvedId": "backend/blocks/twitter/_serializer.py:_serialize_value:6"
+        },
+        {
+          "target": "value",
+          "resolved": false,
+          "confidence": 0,
+          "line": 27
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/twitter/_serializer.py:serialize_dict:34",
+      "name": "serialize_dict",
+      "startLine": 34,
+      "endLine": 51,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "hasattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 38
+        },
+        {
+          "target": "item",
+          "resolved": false,
+          "confidence": 0,
+          "line": 38
+        },
+        {
+          "target": "items",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 39,
+          "resolvedId": "backend/integrations/oauth/__init__.py:items:123"
+        },
+        {
+          "target": "items",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 41,
+          "resolvedId": "backend/integrations/oauth/__init__.py:items:123"
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 44
+        },
+        {
+          "target": "value",
+          "resolved": false,
+          "confidence": 0,
+          "line": 44
+        },
+        {
+          "target": "list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 44
+        },
+        {
+          "target": "_serialize_value",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 46,
+          "resolvedId": "backend/blocks/twitter/_serializer.py:_serialize_value:6"
+        },
+        {
+          "target": "sub_item",
+          "resolved": false,
+          "confidence": 0,
+          "line": 46
+        },
+        {
+          "target": "_serialize_value",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 49,
+          "resolvedId": "backend/blocks/twitter/_serializer.py:_serialize_value:6"
+        },
+        {
+          "target": "value",
+          "resolved": false,
+          "confidence": 0,
+          "line": 49
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/twitter/_serializer.py:serialize_list:54",
+      "name": "serialize_list",
+      "startLine": 54,
+      "endLine": 58,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "serialize_dict",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 58,
+          "resolvedId": "backend/blocks/twitter/_serializer.py:serialize_dict:34"
+        },
+        {
+          "target": "item",
+          "resolved": false,
+          "confidence": 0,
+          "line": 58
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/twitter/_serializer.py:serialize:63",
+      "name": "serialize",
+      "startLine": 63,
+      "endLine": 78,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 69
+        },
+        {
+          "target": "list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 69
+        },
+        {
+          "target": "serialize_list",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 70,
+          "resolvedId": "backend/blocks/twitter/_serializer.py:serialize_list:54"
+        },
+        {
+          "target": "serialize_dict",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 72,
+          "resolvedId": "backend/blocks/twitter/_serializer.py:serialize_dict:34"
+        },
+        {
+          "target": "hasattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 75
+        },
+        {
+          "target": "response",
+          "resolved": false,
+          "confidence": 0,
+          "line": 75
+        },
+        {
+          "target": "serialize",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 76,
+          "resolvedId": "backend/blocks/twitter/_serializer.py:serialize:15"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

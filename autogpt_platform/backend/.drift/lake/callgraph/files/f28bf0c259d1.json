@@ -1,0 +1,120 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.237Z",
+  "checksum": "d76bb123d23bc6d2",
+  "file": "backend/blocks/zerobounce/validate_emails.py",
+  "functions": [
+    {
+      "id": "backend/blocks/zerobounce/validate_emails.py:__init__:112",
+      "name": "__init__",
+      "startLine": 112,
+      "endLine": 159,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 113,
+          "resolvedId": "backend/blocks/zerobounce/validate_emails.py:__init__:112"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 113
+        },
+        {
+          "target": "Response",
+          "resolved": false,
+          "confidence": 0,
+          "line": 127
+        },
+        {
+          "target": "ZBValidateResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 143
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/zerobounce/validate_emails.py:validate_email:162",
+      "name": "validate_email",
+      "startLine": 162,
+      "endLine": 166,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "ZeroBounceClient",
+          "resolved": false,
+          "confidence": 0,
+          "line": 165
+        },
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 165,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        },
+        {
+          "target": "validate_email",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 166,
+          "resolvedId": "backend/blocks/zerobounce/validate_emails.py:validate_email:162"
+        },
+        {
+          "target": "email",
+          "resolved": false,
+          "confidence": 0,
+          "line": 166
+        },
+        {
+          "target": "ip_address",
+          "resolved": false,
+          "confidence": 0,
+          "line": 166
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/zerobounce/validate_emails.py:run:168",
+      "name": "run",
+      "startLine": 168,
+      "endLine": 181,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "validate_email",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 175,
+          "resolvedId": "backend/blocks/zerobounce/validate_emails.py:validate_email:162"
+        },
+        {
+          "target": "credentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 176
+        },
+        {
+          "target": "Response",
+          "resolved": false,
+          "confidence": 0,
+          "line": 179
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

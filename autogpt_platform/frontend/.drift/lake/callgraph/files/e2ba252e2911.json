@@ -1,0 +1,52 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.199Z",
+  "checksum": "d3852a0393c3ba4e",
+  "file": "src/lib/supabase/server/getServerUser.ts",
+  "functions": [
+    {
+      "id": "src/lib/supabase/server/getServerUser.ts:getServerUser:3",
+      "name": "getServerUser",
+      "startLine": 3,
+      "endLine": 32,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "getServerSupabase",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 4,
+          "resolvedId": "src/lib/supabase/server/getServerSupabase.ts:getServerSupabase:7"
+        },
+        {
+          "target": "getUser",
+          "resolved": false,
+          "confidence": 0,
+          "line": 13
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 25
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 25
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "auth",
+          "operation": "read",
+          "line": 13,
+          "fields": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,510 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.001Z",
+  "checksum": "257eb97c1313e03e",
+  "file": "src/lib/cron-expression-utils.ts",
+  "functions": [
+    {
+      "id": "src/lib/cron-expression-utils.ts:makeCronExpression:44",
+      "name": "makeCronExpression",
+      "startLine": 44,
+      "endLine": 80,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "join",
+          "resolved": false,
+          "confidence": 0,
+          "line": 53
+        },
+        {
+          "target": "sort",
+          "resolved": false,
+          "confidence": 0,
+          "line": 53
+        },
+        {
+          "target": "join",
+          "resolved": false,
+          "confidence": 0,
+          "line": 59
+        },
+        {
+          "target": "sort",
+          "resolved": false,
+          "confidence": 0,
+          "line": 59
+        },
+        {
+          "target": "join",
+          "resolved": false,
+          "confidence": 0,
+          "line": 65
+        },
+        {
+          "target": "sort",
+          "resolved": false,
+          "confidence": 0,
+          "line": 65
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/lib/cron-expression-utils.ts:humanizeCronExpression:82",
+      "name": "humanizeCronExpression",
+      "startLine": 82,
+      "endLine": 220,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "split",
+          "resolved": false,
+          "confidence": 0,
+          "line": 83
+        },
+        {
+          "target": "trim",
+          "resolved": false,
+          "confidence": 0,
+          "line": 83
+        },
+        {
+          "target": "Error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 85,
+          "resolvedId": "src/app/error.tsx:Error:8"
+        },
+        {
+          "target": "startsWith",
+          "resolved": false,
+          "confidence": 0,
+          "line": 97
+        },
+        {
+          "target": "substring",
+          "resolved": false,
+          "confidence": 0,
+          "line": 103
+        },
+        {
+          "target": "includes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 110
+        },
+        {
+          "target": "startsWith",
+          "resolved": false,
+          "confidence": 0,
+          "line": 120
+        },
+        {
+          "target": "substring",
+          "resolved": false,
+          "confidence": 0,
+          "line": 126
+        },
+        {
+          "target": "includes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 135
+        },
+        {
+          "target": "includes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 136
+        },
+        {
+          "target": "formatTime",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 138,
+          "resolvedId": "src/lib/cron-expression-utils.ts:formatTime:222"
+        },
+        {
+          "target": "hour",
+          "resolved": false,
+          "confidence": 0,
+          "line": 138
+        },
+        {
+          "target": "minute",
+          "resolved": false,
+          "confidence": 0,
+          "line": 138
+        },
+        {
+          "target": "includes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 146
+        },
+        {
+          "target": "includes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 147
+        },
+        {
+          "target": "getDayNames",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 149,
+          "resolvedId": "src/lib/cron-expression-utils.ts:getDayNames:234"
+        },
+        {
+          "target": "dayOfWeek",
+          "resolved": false,
+          "confidence": 0,
+          "line": 149
+        },
+        {
+          "target": "formatTime",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 150,
+          "resolvedId": "src/lib/cron-expression-utils.ts:formatTime:222"
+        },
+        {
+          "target": "hour",
+          "resolved": false,
+          "confidence": 0,
+          "line": 150
+        },
+        {
+          "target": "minute",
+          "resolved": false,
+          "confidence": 0,
+          "line": 150
+        },
+        {
+          "target": "includes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 155
+        },
+        {
+          "target": "split",
+          "resolved": false,
+          "confidence": 0,
+          "line": 161
+        },
+        {
+          "target": "includes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 167
+        },
+        {
+          "target": "split",
+          "resolved": false,
+          "confidence": 0,
+          "line": 173
+        },
+        {
+          "target": "startsWith",
+          "resolved": false,
+          "confidence": 0,
+          "line": 180
+        },
+        {
+          "target": "includes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 183
+        },
+        {
+          "target": "includes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 184
+        },
+        {
+          "target": "substring",
+          "resolved": false,
+          "confidence": 0,
+          "line": 186
+        },
+        {
+          "target": "formatTime",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 187,
+          "resolvedId": "src/lib/cron-expression-utils.ts:formatTime:222"
+        },
+        {
+          "target": "hour",
+          "resolved": false,
+          "confidence": 0,
+          "line": 187
+        },
+        {
+          "target": "minute",
+          "resolved": false,
+          "confidence": 0,
+          "line": 187
+        },
+        {
+          "target": "startsWith",
+          "resolved": false,
+          "confidence": 0,
+          "line": 194
+        },
+        {
+          "target": "includes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 197
+        },
+        {
+          "target": "includes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 198
+        },
+        {
+          "target": "map",
+          "resolved": false,
+          "confidence": 0,
+          "line": 200
+        },
+        {
+          "target": "Number",
+          "resolved": false,
+          "confidence": 0,
+          "line": 200
+        },
+        {
+          "target": "split",
+          "resolved": false,
+          "confidence": 0,
+          "line": 200
+        },
+        {
+          "target": "join",
+          "resolved": false,
+          "confidence": 0,
+          "line": 201
+        },
+        {
+          "target": "formatTime",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 202,
+          "resolvedId": "src/lib/cron-expression-utils.ts:formatTime:222"
+        },
+        {
+          "target": "hour",
+          "resolved": false,
+          "confidence": 0,
+          "line": 202
+        },
+        {
+          "target": "minute",
+          "resolved": false,
+          "confidence": 0,
+          "line": 202
+        },
+        {
+          "target": "startsWith",
+          "resolved": false,
+          "confidence": 0,
+          "line": 209
+        },
+        {
+          "target": "includes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 212
+        },
+        {
+          "target": "includes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 213
+        },
+        {
+          "target": "getMonthNames",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 215,
+          "resolvedId": "src/lib/cron-expression-utils.ts:getMonthNames:253"
+        },
+        {
+          "target": "month",
+          "resolved": false,
+          "confidence": 0,
+          "line": 215
+        },
+        {
+          "target": "formatTime",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 216,
+          "resolvedId": "src/lib/cron-expression-utils.ts:formatTime:222"
+        },
+        {
+          "target": "hour",
+          "resolved": false,
+          "confidence": 0,
+          "line": 216
+        },
+        {
+          "target": "minute",
+          "resolved": false,
+          "confidence": 0,
+          "line": 216
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/lib/cron-expression-utils.ts:formatTime:222",
+      "name": "formatTime",
+      "startLine": 222,
+      "endLine": 228,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "padZero",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 225,
+          "resolvedId": "src/lib/cron-expression-utils.ts:padZero:230"
+        },
+        {
+          "target": "hour",
+          "resolved": false,
+          "confidence": 0,
+          "line": 225
+        },
+        {
+          "target": "padZero",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 226,
+          "resolvedId": "src/lib/cron-expression-utils.ts:padZero:230"
+        },
+        {
+          "target": "minute",
+          "resolved": false,
+          "confidence": 0,
+          "line": 226
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/lib/cron-expression-utils.ts:padZero:230",
+      "name": "padZero",
+      "startLine": 230,
+      "endLine": 232,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "padStart",
+          "resolved": false,
+          "confidence": 0,
+          "line": 231
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/lib/cron-expression-utils.ts:getDayNames:234",
+      "name": "getDayNames",
+      "startLine": 234,
+      "endLine": 251,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "map",
+          "resolved": false,
+          "confidence": 0,
+          "line": 235
+        },
+        {
+          "target": "Number",
+          "resolved": false,
+          "confidence": 0,
+          "line": 235
+        },
+        {
+          "target": "split",
+          "resolved": false,
+          "confidence": 0,
+          "line": 235
+        },
+        {
+          "target": "join",
+          "resolved": false,
+          "confidence": 0,
+          "line": 236
+        },
+        {
+          "target": "map",
+          "resolved": false,
+          "confidence": 0,
+          "line": 236
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/lib/cron-expression-utils.ts:getMonthNames:253",
+      "name": "getMonthNames",
+      "startLine": 253,
+      "endLine": 275,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "map",
+          "resolved": false,
+          "confidence": 0,
+          "line": 254
+        },
+        {
+          "target": "Number",
+          "resolved": false,
+          "confidence": 0,
+          "line": 254
+        },
+        {
+          "target": "split",
+          "resolved": false,
+          "confidence": 0,
+          "line": 254
+        },
+        {
+          "target": "join",
+          "resolved": false,
+          "confidence": 0,
+          "line": 255
+        },
+        {
+          "target": "map",
+          "resolved": false,
+          "confidence": 0,
+          "line": 255
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

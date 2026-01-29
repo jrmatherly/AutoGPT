@@ -1,0 +1,1593 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.043Z",
+  "checksum": "9137c487ba61d83a",
+  "file": "src/components/contextual/PublishAgentModal/usePublishAgentModal.ts",
+  "functions": [
+    {
+      "id": "src/components/contextual/PublishAgentModal/usePublishAgentModal.ts:usePublishAgentModal:39",
+      "name": "usePublishAgentModal",
+      "startLine": 39,
+      "endLine": 310,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "useState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 45
+        },
+        {
+          "target": "useCallback",
+          "resolved": false,
+          "confidence": 0,
+          "line": 49
+        },
+        {
+          "target": "setCurrentState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 51
+        },
+        {
+          "target": "newState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 51
+        },
+        {
+          "target": "onStateChange",
+          "resolved": false,
+          "confidence": 0,
+          "line": 52
+        },
+        {
+          "target": "newState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 52
+        },
+        {
+          "target": "useState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 58
+        },
+        {
+          "target": "emptyModalState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 58
+        },
+        {
+          "target": "useState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 60
+        },
+        {
+          "target": "useState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 62
+        },
+        {
+          "target": "useState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 66
+        },
+        {
+          "target": "useRouter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 70
+        },
+        {
+          "target": "useQueryClient",
+          "resolved": false,
+          "confidence": 0,
+          "line": 71
+        },
+        {
+          "target": "useSupabase",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 72,
+          "resolvedId": "src/lib/supabase/hooks/useSupabase.ts:useSupabase:10"
+        },
+        {
+          "target": "useGetV2GetMyAgents",
+          "resolved": false,
+          "confidence": 0,
+          "line": 75
+        },
+        {
+          "target": "undefined",
+          "resolved": false,
+          "confidence": 0,
+          "line": 75
+        },
+        {
+          "target": "useGetV2ListMySubmissions",
+          "resolved": false,
+          "confidence": 0,
+          "line": 80
+        },
+        {
+          "target": "undefined",
+          "resolved": false,
+          "confidence": 0,
+          "line": 80
+        },
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 87
+        },
+        {
+          "target": "setCurrentState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 89
+        },
+        {
+          "target": "targetState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 89
+        },
+        {
+          "target": "useState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 94
+        },
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 95
+        },
+        {
+          "target": "setSelectedAgent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 98
+        },
+        {
+          "target": "setSelectedAgentId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 99
+        },
+        {
+          "target": "setSelectedAgentVersion",
+          "resolved": false,
+          "confidence": 0,
+          "line": 100
+        },
+        {
+          "target": "setInitialData",
+          "resolved": false,
+          "confidence": 0,
+          "line": 101
+        },
+        {
+          "target": "emptyModalState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 101
+        },
+        {
+          "target": "setHasOpened",
+          "resolved": false,
+          "confidence": 0,
+          "line": 102
+        },
+        {
+          "target": "setHasOpened",
+          "resolved": false,
+          "confidence": 0,
+          "line": 104
+        },
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 109
+        },
+        {
+          "target": "okData",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 117,
+          "resolvedId": "src/app/api/helpers.ts:okData:23"
+        },
+        {
+          "target": "myAgents",
+          "resolved": false,
+          "confidence": 0,
+          "line": 117
+        },
+        {
+          "target": "okData",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 118,
+          "resolvedId": "src/app/api/helpers.ts:okData:23"
+        },
+        {
+          "target": "mySubmissions",
+          "resolved": false,
+          "confidence": 0,
+          "line": 118
+        },
+        {
+          "target": "find",
+          "resolved": false,
+          "confidence": 0,
+          "line": 123
+        },
+        {
+          "target": "sort",
+          "resolved": false,
+          "confidence": 0,
+          "line": 129
+        },
+        {
+          "target": "filter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 129
+        },
+        {
+          "target": "filter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 149
+        },
+        {
+          "target": "Boolean",
+          "resolved": false,
+          "confidence": 0,
+          "line": 151
+        },
+        {
+          "target": "Set",
+          "resolved": false,
+          "confidence": 0,
+          "line": 150
+        },
+        {
+          "target": "replace",
+          "resolved": false,
+          "confidence": 0,
+          "line": 164
+        },
+        {
+          "target": "setInitialData",
+          "resolved": false,
+          "confidence": 0,
+          "line": 168
+        },
+        {
+          "target": "initialFormData",
+          "resolved": false,
+          "confidence": 0,
+          "line": 168
+        },
+        {
+          "target": "setCurrentState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 172
+        },
+        {
+          "target": "setSelectedAgent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 187
+        },
+        {
+          "target": "setSelectedAgentId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 188
+        },
+        {
+          "target": "setSelectedAgentVersion",
+          "resolved": false,
+          "confidence": 0,
+          "line": 189
+        },
+        {
+          "target": "setInitialData",
+          "resolved": false,
+          "confidence": 0,
+          "line": 190
+        },
+        {
+          "target": "emptyModalState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 190
+        },
+        {
+          "target": "invalidateQueries",
+          "resolved": false,
+          "confidence": 0,
+          "line": 193
+        },
+        {
+          "target": "getGetV2ListMySubmissionsQueryKey",
+          "resolved": false,
+          "confidence": 0,
+          "line": 194
+        },
+        {
+          "target": "updateState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 203
+        },
+        {
+          "target": "newState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 203
+        },
+        {
+          "target": "setSelectedAgent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 207
+        },
+        {
+          "target": "agentName",
+          "resolved": false,
+          "confidence": 0,
+          "line": 207
+        },
+        {
+          "target": "filter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 231
+        },
+        {
+          "target": "Boolean",
+          "resolved": false,
+          "confidence": 0,
+          "line": 233
+        },
+        {
+          "target": "Set",
+          "resolved": false,
+          "confidence": 0,
+          "line": 232
+        },
+        {
+          "target": "replace",
+          "resolved": false,
+          "confidence": 0,
+          "line": 246
+        },
+        {
+          "target": "setInitialData",
+          "resolved": false,
+          "confidence": 0,
+          "line": 250
+        },
+        {
+          "target": "initialFormData",
+          "resolved": false,
+          "confidence": 0,
+          "line": 250
+        },
+        {
+          "target": "updateState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 252
+        },
+        {
+          "target": "setSelectedAgentId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 258
+        },
+        {
+          "target": "agentId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 258
+        },
+        {
+          "target": "setSelectedAgentVersion",
+          "resolved": false,
+          "confidence": 0,
+          "line": 259
+        },
+        {
+          "target": "agentVersion",
+          "resolved": false,
+          "confidence": 0,
+          "line": 259
+        },
+        {
+          "target": "updateState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 263
+        },
+        {
+          "target": "updateState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 272
+        },
+        {
+          "target": "updateState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 277
+        },
+        {
+          "target": "push",
+          "resolved": false,
+          "confidence": 0,
+          "line": 285
+        },
+        {
+          "target": "handleClose",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 286,
+          "resolvedId": "src/components/contextual/PublishAgentModal/usePublishAgentModal.ts:handleClose:185"
+        },
+        {
+          "target": "push",
+          "resolved": false,
+          "confidence": 0,
+          "line": 290
+        },
+        {
+          "target": "handleClose",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 291,
+          "resolvedId": "src/components/contextual/PublishAgentModal/usePublishAgentModal.ts:handleClose:185"
+        },
+        {
+          "target": "setCurrentState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 89
+        },
+        {
+          "target": "targetState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 89
+        },
+        {
+          "target": "setSelectedAgent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 98
+        },
+        {
+          "target": "setSelectedAgentId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 99
+        },
+        {
+          "target": "setSelectedAgentVersion",
+          "resolved": false,
+          "confidence": 0,
+          "line": 100
+        },
+        {
+          "target": "setInitialData",
+          "resolved": false,
+          "confidence": 0,
+          "line": 101
+        },
+        {
+          "target": "emptyModalState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 101
+        },
+        {
+          "target": "setHasOpened",
+          "resolved": false,
+          "confidence": 0,
+          "line": 102
+        },
+        {
+          "target": "setHasOpened",
+          "resolved": false,
+          "confidence": 0,
+          "line": 104
+        },
+        {
+          "target": "okData",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 117,
+          "resolvedId": "src/app/api/helpers.ts:okData:23"
+        },
+        {
+          "target": "myAgents",
+          "resolved": false,
+          "confidence": 0,
+          "line": 117
+        },
+        {
+          "target": "okData",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 118,
+          "resolvedId": "src/app/api/helpers.ts:okData:23"
+        },
+        {
+          "target": "mySubmissions",
+          "resolved": false,
+          "confidence": 0,
+          "line": 118
+        },
+        {
+          "target": "find",
+          "resolved": false,
+          "confidence": 0,
+          "line": 123
+        },
+        {
+          "target": "sort",
+          "resolved": false,
+          "confidence": 0,
+          "line": 129
+        },
+        {
+          "target": "filter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 129
+        },
+        {
+          "target": "filter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 149
+        },
+        {
+          "target": "Boolean",
+          "resolved": false,
+          "confidence": 0,
+          "line": 151
+        },
+        {
+          "target": "Set",
+          "resolved": false,
+          "confidence": 0,
+          "line": 150
+        },
+        {
+          "target": "replace",
+          "resolved": false,
+          "confidence": 0,
+          "line": 164
+        },
+        {
+          "target": "setInitialData",
+          "resolved": false,
+          "confidence": 0,
+          "line": 168
+        },
+        {
+          "target": "initialFormData",
+          "resolved": false,
+          "confidence": 0,
+          "line": 168
+        },
+        {
+          "target": "setCurrentState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 172
+        },
+        {
+          "target": "setSelectedAgent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 187
+        },
+        {
+          "target": "setSelectedAgentId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 188
+        },
+        {
+          "target": "setSelectedAgentVersion",
+          "resolved": false,
+          "confidence": 0,
+          "line": 189
+        },
+        {
+          "target": "setInitialData",
+          "resolved": false,
+          "confidence": 0,
+          "line": 190
+        },
+        {
+          "target": "emptyModalState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 190
+        },
+        {
+          "target": "invalidateQueries",
+          "resolved": false,
+          "confidence": 0,
+          "line": 193
+        },
+        {
+          "target": "getGetV2ListMySubmissionsQueryKey",
+          "resolved": false,
+          "confidence": 0,
+          "line": 194
+        },
+        {
+          "target": "updateState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 203
+        },
+        {
+          "target": "newState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 203
+        },
+        {
+          "target": "setSelectedAgent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 207
+        },
+        {
+          "target": "agentName",
+          "resolved": false,
+          "confidence": 0,
+          "line": 207
+        },
+        {
+          "target": "filter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 231
+        },
+        {
+          "target": "Boolean",
+          "resolved": false,
+          "confidence": 0,
+          "line": 233
+        },
+        {
+          "target": "Set",
+          "resolved": false,
+          "confidence": 0,
+          "line": 232
+        },
+        {
+          "target": "replace",
+          "resolved": false,
+          "confidence": 0,
+          "line": 246
+        },
+        {
+          "target": "setInitialData",
+          "resolved": false,
+          "confidence": 0,
+          "line": 250
+        },
+        {
+          "target": "initialFormData",
+          "resolved": false,
+          "confidence": 0,
+          "line": 250
+        },
+        {
+          "target": "updateState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 252
+        },
+        {
+          "target": "setSelectedAgentId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 258
+        },
+        {
+          "target": "agentId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 258
+        },
+        {
+          "target": "setSelectedAgentVersion",
+          "resolved": false,
+          "confidence": 0,
+          "line": 259
+        },
+        {
+          "target": "agentVersion",
+          "resolved": false,
+          "confidence": 0,
+          "line": 259
+        },
+        {
+          "target": "updateState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 263
+        },
+        {
+          "target": "updateState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 272
+        },
+        {
+          "target": "updateState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 277
+        },
+        {
+          "target": "push",
+          "resolved": false,
+          "confidence": 0,
+          "line": 285
+        },
+        {
+          "target": "handleClose",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 286,
+          "resolvedId": "src/components/contextual/PublishAgentModal/usePublishAgentModal.ts:handleClose:185"
+        },
+        {
+          "target": "push",
+          "resolved": false,
+          "confidence": 0,
+          "line": 290
+        },
+        {
+          "target": "handleClose",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 291,
+          "resolvedId": "src/components/contextual/PublishAgentModal/usePublishAgentModal.ts:handleClose:185"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "agent",
+          "operation": "read",
+          "line": 123,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "src/components/contextual/PublishAgentModal/usePublishAgentModal.ts:$useEffect$1:87",
+      "name": "$useEffect$1",
+      "startLine": 87,
+      "endLine": 91,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 87
+        },
+        {
+          "target": "setCurrentState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 89
+        },
+        {
+          "target": "targetState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 89
+        },
+        {
+          "target": "setCurrentState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 89
+        },
+        {
+          "target": "targetState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 89
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/contextual/PublishAgentModal/usePublishAgentModal.ts:$useEffect$2:95",
+      "name": "$useEffect$2",
+      "startLine": 95,
+      "endLine": 106,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 95
+        },
+        {
+          "target": "setSelectedAgent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 98
+        },
+        {
+          "target": "setSelectedAgentId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 99
+        },
+        {
+          "target": "setSelectedAgentVersion",
+          "resolved": false,
+          "confidence": 0,
+          "line": 100
+        },
+        {
+          "target": "setInitialData",
+          "resolved": false,
+          "confidence": 0,
+          "line": 101
+        },
+        {
+          "target": "emptyModalState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 101
+        },
+        {
+          "target": "setHasOpened",
+          "resolved": false,
+          "confidence": 0,
+          "line": 102
+        },
+        {
+          "target": "setHasOpened",
+          "resolved": false,
+          "confidence": 0,
+          "line": 104
+        },
+        {
+          "target": "setSelectedAgent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 98
+        },
+        {
+          "target": "setSelectedAgentId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 99
+        },
+        {
+          "target": "setSelectedAgentVersion",
+          "resolved": false,
+          "confidence": 0,
+          "line": 100
+        },
+        {
+          "target": "setInitialData",
+          "resolved": false,
+          "confidence": 0,
+          "line": 101
+        },
+        {
+          "target": "emptyModalState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 101
+        },
+        {
+          "target": "setHasOpened",
+          "resolved": false,
+          "confidence": 0,
+          "line": 102
+        },
+        {
+          "target": "setHasOpened",
+          "resolved": false,
+          "confidence": 0,
+          "line": 104
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/contextual/PublishAgentModal/usePublishAgentModal.ts:$useEffect$3:109",
+      "name": "$useEffect$3",
+      "startLine": 109,
+      "endLine": 177,
+      "isEntryPoint": false,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 109
+        },
+        {
+          "target": "okData",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 117,
+          "resolvedId": "src/app/api/helpers.ts:okData:23"
+        },
+        {
+          "target": "myAgents",
+          "resolved": false,
+          "confidence": 0,
+          "line": 117
+        },
+        {
+          "target": "okData",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 118,
+          "resolvedId": "src/app/api/helpers.ts:okData:23"
+        },
+        {
+          "target": "mySubmissions",
+          "resolved": false,
+          "confidence": 0,
+          "line": 118
+        },
+        {
+          "target": "find",
+          "resolved": false,
+          "confidence": 0,
+          "line": 123
+        },
+        {
+          "target": "sort",
+          "resolved": false,
+          "confidence": 0,
+          "line": 129
+        },
+        {
+          "target": "filter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 129
+        },
+        {
+          "target": "filter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 149
+        },
+        {
+          "target": "Boolean",
+          "resolved": false,
+          "confidence": 0,
+          "line": 151
+        },
+        {
+          "target": "Set",
+          "resolved": false,
+          "confidence": 0,
+          "line": 150
+        },
+        {
+          "target": "replace",
+          "resolved": false,
+          "confidence": 0,
+          "line": 164
+        },
+        {
+          "target": "setInitialData",
+          "resolved": false,
+          "confidence": 0,
+          "line": 168
+        },
+        {
+          "target": "initialFormData",
+          "resolved": false,
+          "confidence": 0,
+          "line": 168
+        },
+        {
+          "target": "setCurrentState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 172
+        },
+        {
+          "target": "okData",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 117,
+          "resolvedId": "src/app/api/helpers.ts:okData:23"
+        },
+        {
+          "target": "myAgents",
+          "resolved": false,
+          "confidence": 0,
+          "line": 117
+        },
+        {
+          "target": "okData",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 118,
+          "resolvedId": "src/app/api/helpers.ts:okData:23"
+        },
+        {
+          "target": "mySubmissions",
+          "resolved": false,
+          "confidence": 0,
+          "line": 118
+        },
+        {
+          "target": "find",
+          "resolved": false,
+          "confidence": 0,
+          "line": 123
+        },
+        {
+          "target": "sort",
+          "resolved": false,
+          "confidence": 0,
+          "line": 129
+        },
+        {
+          "target": "filter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 129
+        },
+        {
+          "target": "filter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 149
+        },
+        {
+          "target": "Boolean",
+          "resolved": false,
+          "confidence": 0,
+          "line": 151
+        },
+        {
+          "target": "Set",
+          "resolved": false,
+          "confidence": 0,
+          "line": 150
+        },
+        {
+          "target": "replace",
+          "resolved": false,
+          "confidence": 0,
+          "line": 164
+        },
+        {
+          "target": "setInitialData",
+          "resolved": false,
+          "confidence": 0,
+          "line": 168
+        },
+        {
+          "target": "initialFormData",
+          "resolved": false,
+          "confidence": 0,
+          "line": 168
+        },
+        {
+          "target": "setCurrentState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 172
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "agent",
+          "operation": "read",
+          "line": 123,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "src/components/contextual/PublishAgentModal/usePublishAgentModal.ts:$setCurrentState$1:172",
+      "name": "$setCurrentState$1",
+      "startLine": 172,
+      "endLine": 175,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "setCurrentState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 172
+        },
+        {
+          "target": "setCurrentState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 172
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/contextual/PublishAgentModal/usePublishAgentModal.ts:handleClose:185",
+      "name": "handleClose",
+      "startLine": 185,
+      "endLine": 204,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "setSelectedAgent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 187
+        },
+        {
+          "target": "setSelectedAgentId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 188
+        },
+        {
+          "target": "setSelectedAgentVersion",
+          "resolved": false,
+          "confidence": 0,
+          "line": 189
+        },
+        {
+          "target": "setInitialData",
+          "resolved": false,
+          "confidence": 0,
+          "line": 190
+        },
+        {
+          "target": "emptyModalState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 190
+        },
+        {
+          "target": "invalidateQueries",
+          "resolved": false,
+          "confidence": 0,
+          "line": 193
+        },
+        {
+          "target": "getGetV2ListMySubmissionsQueryKey",
+          "resolved": false,
+          "confidence": 0,
+          "line": 194
+        },
+        {
+          "target": "updateState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 203
+        },
+        {
+          "target": "newState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 203
+        },
+        {
+          "target": "setSelectedAgent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 187
+        },
+        {
+          "target": "setSelectedAgentId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 188
+        },
+        {
+          "target": "setSelectedAgentVersion",
+          "resolved": false,
+          "confidence": 0,
+          "line": 189
+        },
+        {
+          "target": "setInitialData",
+          "resolved": false,
+          "confidence": 0,
+          "line": 190
+        },
+        {
+          "target": "emptyModalState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 190
+        },
+        {
+          "target": "invalidateQueries",
+          "resolved": false,
+          "confidence": 0,
+          "line": 193
+        },
+        {
+          "target": "getGetV2ListMySubmissionsQueryKey",
+          "resolved": false,
+          "confidence": 0,
+          "line": 194
+        },
+        {
+          "target": "updateState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 203
+        },
+        {
+          "target": "newState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 203
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/contextual/PublishAgentModal/usePublishAgentModal.ts:handleAgentSelect:206",
+      "name": "handleAgentSelect",
+      "startLine": 206,
+      "endLine": 208,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "setSelectedAgent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 207
+        },
+        {
+          "target": "agentName",
+          "resolved": false,
+          "confidence": 0,
+          "line": 207
+        },
+        {
+          "target": "setSelectedAgent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 207
+        },
+        {
+          "target": "agentName",
+          "resolved": false,
+          "confidence": 0,
+          "line": 207
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/contextual/PublishAgentModal/usePublishAgentModal.ts:handleNextFromSelect:210",
+      "name": "handleNextFromSelect",
+      "startLine": 210,
+      "endLine": 260,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "filter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 231
+        },
+        {
+          "target": "Boolean",
+          "resolved": false,
+          "confidence": 0,
+          "line": 233
+        },
+        {
+          "target": "Set",
+          "resolved": false,
+          "confidence": 0,
+          "line": 232
+        },
+        {
+          "target": "replace",
+          "resolved": false,
+          "confidence": 0,
+          "line": 246
+        },
+        {
+          "target": "setInitialData",
+          "resolved": false,
+          "confidence": 0,
+          "line": 250
+        },
+        {
+          "target": "initialFormData",
+          "resolved": false,
+          "confidence": 0,
+          "line": 250
+        },
+        {
+          "target": "updateState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 252
+        },
+        {
+          "target": "setSelectedAgentId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 258
+        },
+        {
+          "target": "agentId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 258
+        },
+        {
+          "target": "setSelectedAgentVersion",
+          "resolved": false,
+          "confidence": 0,
+          "line": 259
+        },
+        {
+          "target": "agentVersion",
+          "resolved": false,
+          "confidence": 0,
+          "line": 259
+        },
+        {
+          "target": "filter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 231
+        },
+        {
+          "target": "Boolean",
+          "resolved": false,
+          "confidence": 0,
+          "line": 233
+        },
+        {
+          "target": "Set",
+          "resolved": false,
+          "confidence": 0,
+          "line": 232
+        },
+        {
+          "target": "replace",
+          "resolved": false,
+          "confidence": 0,
+          "line": 246
+        },
+        {
+          "target": "setInitialData",
+          "resolved": false,
+          "confidence": 0,
+          "line": 250
+        },
+        {
+          "target": "initialFormData",
+          "resolved": false,
+          "confidence": 0,
+          "line": 250
+        },
+        {
+          "target": "updateState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 252
+        },
+        {
+          "target": "setSelectedAgentId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 258
+        },
+        {
+          "target": "agentId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 258
+        },
+        {
+          "target": "setSelectedAgentVersion",
+          "resolved": false,
+          "confidence": 0,
+          "line": 259
+        },
+        {
+          "target": "agentVersion",
+          "resolved": false,
+          "confidence": 0,
+          "line": 259
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/contextual/PublishAgentModal/usePublishAgentModal.ts:handleSuccessFromInfo:262",
+      "name": "handleSuccessFromInfo",
+      "startLine": 262,
+      "endLine": 268,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "updateState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 263
+        },
+        {
+          "target": "updateState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 263
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/contextual/PublishAgentModal/usePublishAgentModal.ts:handleBack:270",
+      "name": "handleBack",
+      "startLine": 270,
+      "endLine": 282,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "updateState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 272
+        },
+        {
+          "target": "updateState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 277
+        },
+        {
+          "target": "updateState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 272
+        },
+        {
+          "target": "updateState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 277
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/contextual/PublishAgentModal/usePublishAgentModal.ts:handleGoToDashboard:284",
+      "name": "handleGoToDashboard",
+      "startLine": 284,
+      "endLine": 287,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "push",
+          "resolved": false,
+          "confidence": 0,
+          "line": 285
+        },
+        {
+          "target": "handleClose",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 286,
+          "resolvedId": "src/components/contextual/PublishAgentModal/usePublishAgentModal.ts:handleClose:185"
+        },
+        {
+          "target": "push",
+          "resolved": false,
+          "confidence": 0,
+          "line": 285
+        },
+        {
+          "target": "handleClose",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 286,
+          "resolvedId": "src/components/contextual/PublishAgentModal/usePublishAgentModal.ts:handleClose:185"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/contextual/PublishAgentModal/usePublishAgentModal.ts:handleGoToBuilder:289",
+      "name": "handleGoToBuilder",
+      "startLine": 289,
+      "endLine": 292,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "push",
+          "resolved": false,
+          "confidence": 0,
+          "line": 290
+        },
+        {
+          "target": "handleClose",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 291,
+          "resolvedId": "src/components/contextual/PublishAgentModal/usePublishAgentModal.ts:handleClose:185"
+        },
+        {
+          "target": "push",
+          "resolved": false,
+          "confidence": 0,
+          "line": 290
+        },
+        {
+          "target": "handleClose",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 291,
+          "resolvedId": "src/components/contextual/PublishAgentModal/usePublishAgentModal.ts:handleClose:185"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

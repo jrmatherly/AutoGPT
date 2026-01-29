@@ -1,0 +1,94 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.102Z",
+  "checksum": "2cff54f3558fbf72",
+  "file": "src/components/layout/Navbar/components/LoginButton.tsx",
+  "functions": [
+    {
+      "id": "src/components/layout/Navbar/components/LoginButton.tsx:LoginButton:7",
+      "name": "LoginButton",
+      "startLine": 7,
+      "endLine": 28,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useRouter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 8
+        },
+        {
+          "target": "usePathname",
+          "resolved": false,
+          "confidence": 0,
+          "line": 9
+        },
+        {
+          "target": "includes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 10
+        },
+        {
+          "target": "push",
+          "resolved": false,
+          "confidence": 0,
+          "line": 15
+        },
+        {
+          "target": "Button",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 19,
+          "resolvedId": "src/components/atoms/Button/Button.tsx:Button:12"
+        },
+        {
+          "target": "handleLogin",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 20,
+          "resolvedId": "src/components/layout/Navbar/components/LoginButton.tsx:handleLogin:14"
+        },
+        {
+          "target": "SignInIcon",
+          "resolved": false,
+          "confidence": 0,
+          "line": 22
+        },
+        {
+          "target": "push",
+          "resolved": false,
+          "confidence": 0,
+          "line": 15
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/layout/Navbar/components/LoginButton.tsx:handleLogin:14",
+      "name": "handleLogin",
+      "startLine": 14,
+      "endLine": 16,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "push",
+          "resolved": false,
+          "confidence": 0,
+          "line": 15
+        },
+        {
+          "target": "push",
+          "resolved": false,
+          "confidence": 0,
+          "line": 15
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

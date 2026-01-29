@@ -1,0 +1,379 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.084Z",
+  "checksum": "1395a335bd8b3ef9",
+  "file": "src/app/(platform)/marketplace/components/CreatorLinks/CreatorLinks.tsx",
+  "functions": [
+    {
+      "id": "src/app/(platform)/marketplace/components/CreatorLinks/CreatorLinks.tsx:normalizeURL:8",
+      "name": "normalizeURL",
+      "startLine": 8,
+      "endLine": 13,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "startsWith",
+          "resolved": false,
+          "confidence": 0,
+          "line": 9
+        },
+        {
+          "target": "startsWith",
+          "resolved": false,
+          "confidence": 0,
+          "line": 9
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/app/(platform)/marketplace/components/CreatorLinks/CreatorLinks.tsx:getHostnameFromURL:15",
+      "name": "getHostnameFromURL",
+      "startLine": 15,
+      "endLine": 22,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "normalizeURL",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 17,
+          "resolvedId": "src/app/(platform)/marketplace/components/CreatorLinks/CreatorLinks.tsx:normalizeURL:8"
+        },
+        {
+          "target": "url",
+          "resolved": false,
+          "confidence": 0,
+          "line": 17
+        },
+        {
+          "target": "replace",
+          "resolved": false,
+          "confidence": 0,
+          "line": 18
+        },
+        {
+          "target": "URL",
+          "resolved": false,
+          "confidence": 0,
+          "line": 18
+        },
+        {
+          "target": "replace",
+          "resolved": false,
+          "confidence": 0,
+          "line": 20
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/app/(platform)/marketplace/components/CreatorLinks/CreatorLinks.tsx:CreatorLinks:24",
+      "name": "CreatorLinks",
+      "startLine": 24,
+      "endLine": 59,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "normalizeURL",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 31,
+          "resolvedId": "src/app/(platform)/marketplace/components/CreatorLinks/CreatorLinks.tsx:normalizeURL:8"
+        },
+        {
+          "target": "url",
+          "resolved": false,
+          "confidence": 0,
+          "line": 31
+        },
+        {
+          "target": "getHostnameFromURL",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 37,
+          "resolvedId": "src/app/(platform)/marketplace/components/CreatorLinks/CreatorLinks.tsx:getHostnameFromURL:15"
+        },
+        {
+          "target": "url",
+          "resolved": false,
+          "confidence": 0,
+          "line": 37
+        },
+        {
+          "target": "getIconForSocial",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 40,
+          "resolvedId": "src/components/__legacy__/ui/icons.tsx:getIconForSocial:1843"
+        },
+        {
+          "target": "url",
+          "resolved": false,
+          "confidence": 0,
+          "line": 40
+        },
+        {
+          "target": "map",
+          "resolved": false,
+          "confidence": 0,
+          "line": 53
+        },
+        {
+          "target": "Fragment",
+          "resolved": false,
+          "confidence": 0,
+          "line": 54
+        },
+        {
+          "target": "index",
+          "resolved": false,
+          "confidence": 0,
+          "line": 54
+        },
+        {
+          "target": "renderLinkButton",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 54,
+          "resolvedId": "src/app/(platform)/marketplace/components/CreatorLinks/CreatorLinks.tsx:renderLinkButton:29"
+        },
+        {
+          "target": "link",
+          "resolved": false,
+          "confidence": 0,
+          "line": 54
+        },
+        {
+          "target": "normalizeURL",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 31,
+          "resolvedId": "src/app/(platform)/marketplace/components/CreatorLinks/CreatorLinks.tsx:normalizeURL:8"
+        },
+        {
+          "target": "url",
+          "resolved": false,
+          "confidence": 0,
+          "line": 31
+        },
+        {
+          "target": "getHostnameFromURL",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 37,
+          "resolvedId": "src/app/(platform)/marketplace/components/CreatorLinks/CreatorLinks.tsx:getHostnameFromURL:15"
+        },
+        {
+          "target": "url",
+          "resolved": false,
+          "confidence": 0,
+          "line": 37
+        },
+        {
+          "target": "getIconForSocial",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 40,
+          "resolvedId": "src/components/__legacy__/ui/icons.tsx:getIconForSocial:1843"
+        },
+        {
+          "target": "url",
+          "resolved": false,
+          "confidence": 0,
+          "line": 40
+        },
+        {
+          "target": "Fragment",
+          "resolved": false,
+          "confidence": 0,
+          "line": 54
+        },
+        {
+          "target": "index",
+          "resolved": false,
+          "confidence": 0,
+          "line": 54
+        },
+        {
+          "target": "renderLinkButton",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 54,
+          "resolvedId": "src/app/(platform)/marketplace/components/CreatorLinks/CreatorLinks.tsx:renderLinkButton:29"
+        },
+        {
+          "target": "link",
+          "resolved": false,
+          "confidence": 0,
+          "line": 54
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/app/(platform)/marketplace/components/CreatorLinks/CreatorLinks.tsx:renderLinkButton:29",
+      "name": "renderLinkButton",
+      "startLine": 29,
+      "endLine": 45,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "normalizeURL",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 31,
+          "resolvedId": "src/app/(platform)/marketplace/components/CreatorLinks/CreatorLinks.tsx:normalizeURL:8"
+        },
+        {
+          "target": "url",
+          "resolved": false,
+          "confidence": 0,
+          "line": 31
+        },
+        {
+          "target": "getHostnameFromURL",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 37,
+          "resolvedId": "src/app/(platform)/marketplace/components/CreatorLinks/CreatorLinks.tsx:getHostnameFromURL:15"
+        },
+        {
+          "target": "url",
+          "resolved": false,
+          "confidence": 0,
+          "line": 37
+        },
+        {
+          "target": "getIconForSocial",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 40,
+          "resolvedId": "src/components/__legacy__/ui/icons.tsx:getIconForSocial:1843"
+        },
+        {
+          "target": "url",
+          "resolved": false,
+          "confidence": 0,
+          "line": 40
+        },
+        {
+          "target": "normalizeURL",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 31,
+          "resolvedId": "src/app/(platform)/marketplace/components/CreatorLinks/CreatorLinks.tsx:normalizeURL:8"
+        },
+        {
+          "target": "url",
+          "resolved": false,
+          "confidence": 0,
+          "line": 31
+        },
+        {
+          "target": "getHostnameFromURL",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 37,
+          "resolvedId": "src/app/(platform)/marketplace/components/CreatorLinks/CreatorLinks.tsx:getHostnameFromURL:15"
+        },
+        {
+          "target": "url",
+          "resolved": false,
+          "confidence": 0,
+          "line": 37
+        },
+        {
+          "target": "getIconForSocial",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 40,
+          "resolvedId": "src/components/__legacy__/ui/icons.tsx:getIconForSocial:1843"
+        },
+        {
+          "target": "url",
+          "resolved": false,
+          "confidence": 0,
+          "line": 40
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/app/(platform)/marketplace/components/CreatorLinks/CreatorLinks.tsx:$map$1:53",
+      "name": "$map$1",
+      "startLine": 53,
+      "endLine": 55,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "map",
+          "resolved": false,
+          "confidence": 0,
+          "line": 53
+        },
+        {
+          "target": "Fragment",
+          "resolved": false,
+          "confidence": 0,
+          "line": 54
+        },
+        {
+          "target": "index",
+          "resolved": false,
+          "confidence": 0,
+          "line": 54
+        },
+        {
+          "target": "renderLinkButton",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 54,
+          "resolvedId": "src/app/(platform)/marketplace/components/CreatorLinks/CreatorLinks.tsx:renderLinkButton:29"
+        },
+        {
+          "target": "link",
+          "resolved": false,
+          "confidence": 0,
+          "line": 54
+        },
+        {
+          "target": "Fragment",
+          "resolved": false,
+          "confidence": 0,
+          "line": 54
+        },
+        {
+          "target": "index",
+          "resolved": false,
+          "confidence": 0,
+          "line": 54
+        },
+        {
+          "target": "renderLinkButton",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 54,
+          "resolvedId": "src/app/(platform)/marketplace/components/CreatorLinks/CreatorLinks.tsx:renderLinkButton:29"
+        },
+        {
+          "target": "link",
+          "resolved": false,
+          "confidence": 0,
+          "line": 54
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

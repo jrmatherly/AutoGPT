@@ -1,0 +1,124 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.050Z",
+  "checksum": "739f969daca4fe72",
+  "file": "src/components/contextual/Chat/components/ToolResponseMessage/ToolResponseMessage.tsx",
+  "functions": [
+    {
+      "id": "src/components/contextual/Chat/components/ToolResponseMessage/ToolResponseMessage.tsx:ToolResponseMessage:21",
+      "name": "ToolResponseMessage",
+      "startLine": 21,
+      "endLine": 53,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "isErrorResponse",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 28,
+          "resolvedId": "src/components/contextual/Chat/components/ToolResponseMessage/helpers.ts:isErrorResponse:9"
+        },
+        {
+          "target": "result",
+          "resolved": false,
+          "confidence": 0,
+          "line": 28
+        },
+        {
+          "target": "getErrorMessage",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 29,
+          "resolvedId": "src/components/contextual/Chat/components/ToolResponseMessage/helpers.ts:getErrorMessage:27"
+        },
+        {
+          "target": "result",
+          "resolved": false,
+          "confidence": 0,
+          "line": 29
+        },
+        {
+          "target": "AIChatBubble",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 31,
+          "resolvedId": "src/components/contextual/Chat/components/AIChatBubble/AIChatBubble.tsx:AIChatBubble:9"
+        },
+        {
+          "target": "className",
+          "resolved": false,
+          "confidence": 0,
+          "line": 31
+        },
+        {
+          "target": "WarningCircleIcon",
+          "resolved": false,
+          "confidence": 0,
+          "line": 33
+        },
+        {
+          "target": "Text",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 38,
+          "resolvedId": "src/components/atoms/Text/Text.tsx:Text:15"
+        },
+        {
+          "target": "cn",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 38,
+          "resolvedId": "src/components/renderers/InputRenderer/utils/rjsf-utils.ts:cn:4"
+        },
+        {
+          "target": "formatToolResponse",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 46,
+          "resolvedId": "src/components/contextual/Chat/components/ToolResponseMessage/helpers.ts:formatToolResponse:62"
+        },
+        {
+          "target": "result",
+          "resolved": false,
+          "confidence": 0,
+          "line": 46
+        },
+        {
+          "target": "toolName",
+          "resolved": false,
+          "confidence": 0,
+          "line": 46
+        },
+        {
+          "target": "AIChatBubble",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 49,
+          "resolvedId": "src/components/contextual/Chat/components/AIChatBubble/AIChatBubble.tsx:AIChatBubble:9"
+        },
+        {
+          "target": "className",
+          "resolved": false,
+          "confidence": 0,
+          "line": 49
+        },
+        {
+          "target": "MarkdownContent",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 50,
+          "resolvedId": "src/components/contextual/Chat/components/MarkdownContent/MarkdownContent.tsx:MarkdownContent:32"
+        },
+        {
+          "target": "formattedText",
+          "resolved": false,
+          "confidence": 0,
+          "line": 50
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

@@ -1,0 +1,189 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.087Z",
+  "checksum": "4ef773c3ee0aa522",
+  "file": "src/components/renderers/InputRenderer/base/standard/helpers.ts",
+  "functions": [
+    {
+      "id": "src/components/renderers/InputRenderer/base/standard/helpers.ts:parseFieldPath:3",
+      "name": "parseFieldPath",
+      "startLine": 3,
+      "endLine": 31,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "filter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 9
+        },
+        {
+          "target": "Boolean",
+          "resolved": false,
+          "confidence": 0,
+          "line": 9
+        },
+        {
+          "target": "split",
+          "resolved": false,
+          "confidence": 0,
+          "line": 9
+        },
+        {
+          "target": "idSeparator",
+          "resolved": false,
+          "confidence": 0,
+          "line": 9
+        },
+        {
+          "target": "test",
+          "resolved": false,
+          "confidence": 0,
+          "line": 16
+        },
+        {
+          "target": "segment",
+          "resolved": false,
+          "confidence": 0,
+          "line": 16
+        },
+        {
+          "target": "push",
+          "resolved": false,
+          "confidence": 0,
+          "line": 19
+        },
+        {
+          "target": "push",
+          "resolved": false,
+          "confidence": 0,
+          "line": 22
+        },
+        {
+          "target": "push",
+          "resolved": false,
+          "confidence": 0,
+          "line": 24
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/renderers/InputRenderer/base/standard/helpers.ts:getHandleId:39",
+      "name": "getHandleId",
+      "startLine": 39,
+      "endLine": 76,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "startsWith",
+          "resolved": false,
+          "confidence": 0,
+          "line": 48
+        },
+        {
+          "target": "idPrefix",
+          "resolved": false,
+          "confidence": 0,
+          "line": 48
+        },
+        {
+          "target": "slice",
+          "resolved": false,
+          "confidence": 0,
+          "line": 49
+        },
+        {
+          "target": "length",
+          "resolved": false,
+          "confidence": 0,
+          "line": 49
+        },
+        {
+          "target": "endsWith",
+          "resolved": false,
+          "confidence": 0,
+          "line": 51
+        },
+        {
+          "target": "idSuffix",
+          "resolved": false,
+          "confidence": 0,
+          "line": 51
+        },
+        {
+          "target": "slice",
+          "resolved": false,
+          "confidence": 0,
+          "line": 52
+        },
+        {
+          "target": "parseFieldPath",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 55,
+          "resolvedId": "src/components/renderers/InputRenderer/base/standard/helpers.ts:parseFieldPath:3"
+        },
+        {
+          "target": "rootSchema",
+          "resolved": false,
+          "confidence": 0,
+          "line": 56
+        },
+        {
+          "target": "id",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 57,
+          "resolvedId": "public/gtag.js:id:112"
+        },
+        {
+          "target": "additional",
+          "resolved": false,
+          "confidence": 0,
+          "line": 58
+        },
+        {
+          "target": "idSeparator",
+          "resolved": false,
+          "confidence": 0,
+          "line": 59
+        },
+        {
+          "target": "slice",
+          "resolved": false,
+          "confidence": 0,
+          "line": 62
+        },
+        {
+          "target": "join",
+          "resolved": false,
+          "confidence": 0,
+          "line": 62
+        },
+        {
+          "target": "map",
+          "resolved": false,
+          "confidence": 0,
+          "line": 62
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/renderers/InputRenderer/base/standard/helpers.ts:$map$1:63",
+      "name": "$map$1",
+      "startLine": 63,
+      "endLine": 73,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

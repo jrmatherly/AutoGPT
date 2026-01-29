@@ -1,0 +1,697 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.228Z",
+  "checksum": "96af6e383ad2c1fe",
+  "file": "backend/integrations/oauth/google.py",
+  "functions": [
+    {
+      "id": "backend/integrations/oauth/google.py:__init__:35",
+      "name": "__init__",
+      "startLine": 35,
+      "endLine": 40,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/integrations/oauth/google.py:get_login_url:42",
+      "name": "get_login_url",
+      "startLine": 42,
+      "endLine": 55,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 45
+        },
+        {
+          "target": "set",
+          "resolved": false,
+          "confidence": 0,
+          "line": 45
+        },
+        {
+          "target": "debug",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 46,
+          "resolvedId": "backend/util/logging.py:debug:53"
+        },
+        {
+          "target": "_setup_oauth_flow",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 47,
+          "resolvedId": "backend/integrations/oauth/google.py:_setup_oauth_flow:163"
+        },
+        {
+          "target": "all_scopes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 47
+        },
+        {
+          "target": "authorization_url",
+          "resolved": false,
+          "confidence": 0,
+          "line": 49
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/integrations/oauth/google.py:exchange_code_for_tokens:57",
+      "name": "exchange_code_for_tokens",
+      "startLine": 57,
+      "endLine": 107,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "debug",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 60,
+          "resolvedId": "backend/util/logging.py:debug:53"
+        },
+        {
+          "target": "_setup_oauth_flow",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 63,
+          "resolvedId": "backend/integrations/oauth/google.py:_setup_oauth_flow:163"
+        },
+        {
+          "target": "scopes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 63
+        },
+        {
+          "target": "debug",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 66,
+          "resolvedId": "backend/util/logging.py:debug:53"
+        },
+        {
+          "target": "fetch_token",
+          "resolved": false,
+          "confidence": 0,
+          "line": 70
+        },
+        {
+          "target": "debug",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 71,
+          "resolvedId": "backend/util/logging.py:debug:53"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 74,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "debug",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 76,
+          "resolvedId": "backend/util/logging.py:debug:53"
+        },
+        {
+          "target": "debug",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 79,
+          "resolvedId": "backend/util/logging.py:debug:53"
+        },
+        {
+          "target": "debug",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 81,
+          "resolvedId": "backend/util/logging.py:debug:53"
+        },
+        {
+          "target": "_request_email",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 82,
+          "resolvedId": "backend/integrations/oauth/google.py:_request_email:118"
+        },
+        {
+          "target": "google_creds",
+          "resolved": false,
+          "confidence": 0,
+          "line": 82
+        },
+        {
+          "target": "debug",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 83,
+          "resolvedId": "backend/util/logging.py:debug:53"
+        },
+        {
+          "target": "OAuth2Credentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 91
+        },
+        {
+          "target": "SecretStr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 95
+        },
+        {
+          "target": "SecretStr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 96
+        },
+        {
+          "target": "int",
+          "resolved": false,
+          "confidence": 0,
+          "line": 98
+        },
+        {
+          "target": "timestamp",
+          "resolved": false,
+          "confidence": 0,
+          "line": 98
+        },
+        {
+          "target": "debug",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 103,
+          "resolvedId": "backend/util/logging.py:debug:53"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/integrations/oauth/google.py:revoke_tokens:109",
+      "name": "revoke_tokens",
+      "startLine": 109,
+      "endLine": 116,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "AuthorizedSession",
+          "resolved": false,
+          "confidence": 0,
+          "line": 110
+        },
+        {
+          "target": "credentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 110
+        },
+        {
+          "target": "post",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 111,
+          "resolvedId": "backend/util/request.py:post:563"
+        },
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 113,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/integrations/oauth/google.py:_request_email:118",
+      "name": "_request_email",
+      "startLine": 118,
+      "endLine": 128,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "AuthorizedSession",
+          "resolved": false,
+          "confidence": 0,
+          "line": 121
+        },
+        {
+          "target": "creds",
+          "resolved": false,
+          "confidence": 0,
+          "line": 121
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 122,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 124,
+          "resolvedId": "backend/util/logging.py:error:49"
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 128,
+          "resolvedId": "backend/util/request.py:json:289"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/integrations/oauth/google.py:_refresh_tokens:130",
+      "name": "_refresh_tokens",
+      "startLine": 130,
+      "endLine": 161,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "Credentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 136
+        },
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 137,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        },
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 138,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        },
+        {
+          "target": "refresh",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 148,
+          "resolvedId": "backend/executor/cluster_lock.py:refresh:54"
+        },
+        {
+          "target": "Request",
+          "resolved": false,
+          "confidence": 0,
+          "line": 148
+        },
+        {
+          "target": "OAuth2Credentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 151
+        },
+        {
+          "target": "SecretStr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 156
+        },
+        {
+          "target": "SecretStr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 157
+        },
+        {
+          "target": "int",
+          "resolved": false,
+          "confidence": 0,
+          "line": 158
+        },
+        {
+          "target": "timestamp",
+          "resolved": false,
+          "confidence": 0,
+          "line": 158
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/integrations/oauth/google.py:_setup_oauth_flow:163",
+      "name": "_setup_oauth_flow",
+      "startLine": 163,
+      "endLine": 174,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "from_client_config",
+          "resolved": false,
+          "confidence": 0,
+          "line": 164
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/integrations/oauth/google.py:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 175,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "getLogger",
+          "resolved": false,
+          "confidence": 0,
+          "line": 17
+        },
+        {
+          "target": "list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 45
+        },
+        {
+          "target": "set",
+          "resolved": false,
+          "confidence": 0,
+          "line": 45
+        },
+        {
+          "target": "debug",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 46,
+          "resolvedId": "backend/util/logging.py:debug:53"
+        },
+        {
+          "target": "_setup_oauth_flow",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 47,
+          "resolvedId": "backend/integrations/oauth/google.py:_setup_oauth_flow:163"
+        },
+        {
+          "target": "all_scopes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 47
+        },
+        {
+          "target": "authorization_url",
+          "resolved": false,
+          "confidence": 0,
+          "line": 49
+        },
+        {
+          "target": "debug",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 60,
+          "resolvedId": "backend/util/logging.py:debug:53"
+        },
+        {
+          "target": "_setup_oauth_flow",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 63,
+          "resolvedId": "backend/integrations/oauth/google.py:_setup_oauth_flow:163"
+        },
+        {
+          "target": "scopes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 63
+        },
+        {
+          "target": "debug",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 66,
+          "resolvedId": "backend/util/logging.py:debug:53"
+        },
+        {
+          "target": "fetch_token",
+          "resolved": false,
+          "confidence": 0,
+          "line": 70
+        },
+        {
+          "target": "debug",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 71,
+          "resolvedId": "backend/util/logging.py:debug:53"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 74,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "debug",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 76,
+          "resolvedId": "backend/util/logging.py:debug:53"
+        },
+        {
+          "target": "debug",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 79,
+          "resolvedId": "backend/util/logging.py:debug:53"
+        },
+        {
+          "target": "debug",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 81,
+          "resolvedId": "backend/util/logging.py:debug:53"
+        },
+        {
+          "target": "_request_email",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 82,
+          "resolvedId": "backend/integrations/oauth/google.py:_request_email:118"
+        },
+        {
+          "target": "google_creds",
+          "resolved": false,
+          "confidence": 0,
+          "line": 82
+        },
+        {
+          "target": "debug",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 83,
+          "resolvedId": "backend/util/logging.py:debug:53"
+        },
+        {
+          "target": "OAuth2Credentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 91
+        },
+        {
+          "target": "SecretStr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 95
+        },
+        {
+          "target": "SecretStr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 96
+        },
+        {
+          "target": "int",
+          "resolved": false,
+          "confidence": 0,
+          "line": 98
+        },
+        {
+          "target": "timestamp",
+          "resolved": false,
+          "confidence": 0,
+          "line": 98
+        },
+        {
+          "target": "debug",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 103,
+          "resolvedId": "backend/util/logging.py:debug:53"
+        },
+        {
+          "target": "AuthorizedSession",
+          "resolved": false,
+          "confidence": 0,
+          "line": 110
+        },
+        {
+          "target": "credentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 110
+        },
+        {
+          "target": "post",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 111,
+          "resolvedId": "backend/util/request.py:post:563"
+        },
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 113,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        },
+        {
+          "target": "AuthorizedSession",
+          "resolved": false,
+          "confidence": 0,
+          "line": 121
+        },
+        {
+          "target": "creds",
+          "resolved": false,
+          "confidence": 0,
+          "line": 121
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 122,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 124,
+          "resolvedId": "backend/util/logging.py:error:49"
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 128,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "Credentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 136
+        },
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 137,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        },
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 138,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        },
+        {
+          "target": "refresh",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 148,
+          "resolvedId": "backend/executor/cluster_lock.py:refresh:54"
+        },
+        {
+          "target": "Request",
+          "resolved": false,
+          "confidence": 0,
+          "line": 148
+        },
+        {
+          "target": "OAuth2Credentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 151
+        },
+        {
+          "target": "SecretStr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 156
+        },
+        {
+          "target": "SecretStr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 157
+        },
+        {
+          "target": "int",
+          "resolved": false,
+          "confidence": 0,
+          "line": 158
+        },
+        {
+          "target": "timestamp",
+          "resolved": false,
+          "confidence": 0,
+          "line": 158
+        },
+        {
+          "target": "from_client_config",
+          "resolved": false,
+          "confidence": 0,
+          "line": 164
+        },
+        {
+          "target": "getLogger",
+          "resolved": false,
+          "confidence": 0,
+          "line": 17
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.185Z",
+  "checksum": "d08abe35a5c01feb",
+  "file": "backend/exec.py",
+  "functions": [
+    {
+      "id": "backend/exec.py:main:5",
+      "name": "main",
+      "startLine": 5,
+      "endLine": 9,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "run_processes",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 9,
+          "resolvedId": "backend/app.py:run_processes:14"
+        },
+        {
+          "target": "ExecutionManager",
+          "resolved": false,
+          "confidence": 0,
+          "line": 9
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/exec.py:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 14,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "run_processes",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 9,
+          "resolvedId": "backend/app.py:run_processes:14"
+        },
+        {
+          "target": "ExecutionManager",
+          "resolved": false,
+          "confidence": 0,
+          "line": 9
+        },
+        {
+          "target": "main",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 13,
+          "resolvedId": "backend/exec.py:main:5"
+        },
+        {
+          "target": "main",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 13,
+          "resolvedId": "backend/exec.py:main:5"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

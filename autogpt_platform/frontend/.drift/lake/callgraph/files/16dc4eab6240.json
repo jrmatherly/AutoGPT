@@ -1,0 +1,159 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.007Z",
+  "checksum": "322784dc3305015d",
+  "file": "src/components/renderers/InputRenderer/base/anyof/helpers.ts",
+  "functions": [
+    {
+      "id": "src/components/renderers/InputRenderer/base/anyof/helpers.ts:getDefaultTypeIndex:12",
+      "name": "getDefaultTypeIndex",
+      "startLine": 12,
+      "endLine": 20,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "findIndex",
+          "resolved": false,
+          "confidence": 0,
+          "line": 14
+        },
+        {
+          "target": "findIndex",
+          "resolved": false,
+          "confidence": 0,
+          "line": 18
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/renderers/InputRenderer/base/anyof/helpers.ts:shouldShowTypeSelector:27",
+      "name": "shouldShowTypeSelector",
+      "startLine": 27,
+      "endLine": 40,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "isArray",
+          "resolved": false,
+          "confidence": 0,
+          "line": 31
+        },
+        {
+          "target": "anyOf",
+          "resolved": false,
+          "confidence": 0,
+          "line": 31
+        },
+        {
+          "target": "some",
+          "resolved": false,
+          "confidence": 0,
+          "line": 35
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/renderers/InputRenderer/base/anyof/helpers.ts:$some$1:35",
+      "name": "$some$1",
+      "startLine": 35,
+      "endLine": 35,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "some",
+          "resolved": false,
+          "confidence": 0,
+          "line": 35
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/renderers/InputRenderer/base/anyof/helpers.ts:isSimpleOptional:42",
+      "name": "isSimpleOptional",
+      "startLine": 42,
+      "endLine": 49,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "isArray",
+          "resolved": false,
+          "confidence": 0,
+          "line": 45
+        },
+        {
+          "target": "anyOf",
+          "resolved": false,
+          "confidence": 0,
+          "line": 45
+        },
+        {
+          "target": "some",
+          "resolved": false,
+          "confidence": 0,
+          "line": 47
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/renderers/InputRenderer/base/anyof/helpers.ts:$some$1:47",
+      "name": "$some$1",
+      "startLine": 47,
+      "endLine": 47,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "some",
+          "resolved": false,
+          "confidence": 0,
+          "line": 47
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/renderers/InputRenderer/base/anyof/helpers.ts:getOptionalType:51",
+      "name": "getOptionalType",
+      "startLine": 51,
+      "endLine": 61,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "isSimpleOptional",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 54,
+          "resolvedId": "src/components/renderers/InputRenderer/base/anyof/helpers.ts:isSimpleOptional:42"
+        },
+        {
+          "target": "schema",
+          "resolved": false,
+          "confidence": 0,
+          "line": 54
+        },
+        {
+          "target": "find",
+          "resolved": false,
+          "confidence": 0,
+          "line": 59
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

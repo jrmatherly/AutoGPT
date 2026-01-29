@@ -1,0 +1,554 @@
+{
+  "version": "1.0.0",
+  "category": "styling",
+  "patterns": [
+    {
+      "id": "906734488a89473f",
+      "subcategory": "spacing-scale",
+      "name": "Spacing Scale Detector",
+      "description": "Learns spacing scale patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "styling/spacing-scale",
+          "patternId": "styling/spacing-scale/function_definition"
+        }
+      },
+      "confidence": {
+        "frequency": 0.04,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.945,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "backend/blocks/twitter/_builders.py",
+          "line": 208,
+          "column": 32,
+          "isOutlier": false,
+          "confidence": 0.945
+        },
+        {
+          "file": "backend/blocks/twitter/_builders.py",
+          "line": 208,
+          "column": 46,
+          "isOutlier": false,
+          "confidence": 0.945
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:30:16.815Z",
+        "lastSeen": "2026-01-29T06:30:16.815Z",
+        "source": "auto-detected",
+        "tags": [
+          "styling",
+          "spacing-scale"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "b94e5bc8007170a6",
+      "subcategory": "spacing-scale",
+      "name": "Spacing Scale Detector",
+      "description": "Learns spacing scale patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "styling/spacing-scale",
+          "patternId": "styling/spacing-scale/assignment"
+        }
+      },
+      "confidence": {
+        "frequency": 0.68,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 5,
+        "score": 0.8766666666666667,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "backend/blocks/twitter/_mappers.py",
+          "line": 178,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 0.7949999999999999
+        },
+        {
+          "file": "backend/blocks/twitter/_types.py",
+          "line": 215,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 0.7949999999999999
+        },
+        {
+          "file": "backend/blocks/twitter/_types.py",
+          "line": 216,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 0.7949999999999999
+        },
+        {
+          "file": "backend/blocks/twitter/_types.py",
+          "line": 228,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 0.7949999999999999
+        },
+        {
+          "file": "backend/blocks/twitter/_types.py",
+          "line": 365,
+          "column": 86,
+          "isOutlier": false,
+          "confidence": 0.7949999999999999
+        },
+        {
+          "file": "backend/blocks/twitter/_types.py",
+          "line": 365,
+          "column": 239,
+          "isOutlier": false,
+          "confidence": 0.7949999999999999
+        },
+        {
+          "file": "backend/blocks/twitter/_types.py",
+          "line": 365,
+          "column": 310,
+          "isOutlier": false,
+          "confidence": 0.7949999999999999
+        },
+        {
+          "file": "backend/blocks/twitter/_types.py",
+          "line": 371,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 0.7949999999999999
+        },
+        {
+          "file": "backend/blocks/twitter/_types.py",
+          "line": 371,
+          "column": 19,
+          "isOutlier": false,
+          "confidence": 0.7949999999999999
+        },
+        {
+          "file": "backend/blocks/twitter/spaces/search_spaces.py",
+          "line": 53,
+          "column": 16,
+          "isOutlier": false,
+          "confidence": 0.774
+        },
+        {
+          "file": "backend/blocks/twitter/spaces/search_spaces.py",
+          "line": 117,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.774
+        },
+        {
+          "file": "backend/blocks/twitter/spaces/search_spaces.py",
+          "line": 117,
+          "column": 23,
+          "isOutlier": false,
+          "confidence": 0.774
+        },
+        {
+          "file": "backend/blocks/twitter/spaces/spaces_lookup.py",
+          "line": 45,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 0.7575
+        },
+        {
+          "file": "backend/blocks/twitter/spaces/spaces_lookup.py",
+          "line": 144,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.7575
+        },
+        {
+          "file": "backend/blocks/twitter/spaces/spaces_lookup.py",
+          "line": 144,
+          "column": 23,
+          "isOutlier": false,
+          "confidence": 0.7575
+        },
+        {
+          "file": "backend/blocks/twitter/spaces/spaces_lookup.py",
+          "line": 228,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.7575
+        },
+        {
+          "file": "backend/blocks/twitter/spaces/spaces_lookup.py",
+          "line": 289,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.7575
+        },
+        {
+          "file": "backend/blocks/twitter/spaces/spaces_lookup.py",
+          "line": 291,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.7575
+        },
+        {
+          "file": "backend/blocks/twitter/spaces/spaces_lookup.py",
+          "line": 291,
+          "column": 23,
+          "isOutlier": false,
+          "confidence": 0.7575
+        },
+        {
+          "file": "backend/blocks/twitter/spaces/spaces_lookup.py",
+          "line": 389,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.7575
+        },
+        {
+          "file": "backend/blocks/twitter/spaces/spaces_lookup.py",
+          "line": 441,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.7575
+        },
+        {
+          "file": "backend/blocks/twitter/spaces/spaces_lookup.py",
+          "line": 516,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.7575
+        },
+        {
+          "file": "backend/blocks/twitter/spaces/spaces_lookup.py",
+          "line": 571,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.7575
+        },
+        {
+          "file": "backend/cli/oauth_tool.py",
+          "line": 458,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.8766666666666667
+        },
+        {
+          "file": "backend/cli/oauth_tool.py",
+          "line": 467,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.8766666666666667
+        },
+        {
+          "file": "backend/cli/oauth_tool.py",
+          "line": 506,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.8766666666666667
+        },
+        {
+          "file": "backend/cli/oauth_tool.py",
+          "line": 458,
+          "column": 49,
+          "isOutlier": false,
+          "confidence": 0.8766666666666667
+        },
+        {
+          "file": "backend/cli/oauth_tool.py",
+          "line": 463,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.8766666666666667
+        },
+        {
+          "file": "backend/cli/oauth_tool.py",
+          "line": 472,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.8766666666666667
+        },
+        {
+          "file": "backend/cli/oauth_tool.py",
+          "line": 482,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.8766666666666667
+        },
+        {
+          "file": "backend/cli/oauth_tool.py",
+          "line": 505,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.8766666666666667
+        },
+        {
+          "file": "backend/cli/oauth_tool.py",
+          "line": 519,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.8766666666666667
+        },
+        {
+          "file": "backend/cli/oauth_tool.py",
+          "line": 501,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.8766666666666667
+        },
+        {
+          "file": "backend/cli/oauth_tool.py",
+          "line": 524,
+          "column": 19,
+          "isOutlier": false,
+          "confidence": 0.8766666666666667
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:30:16.815Z",
+        "lastSeen": "2026-01-29T06:30:16.815Z",
+        "source": "auto-detected",
+        "tags": [
+          "styling",
+          "spacing-scale"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "fb158f9f23bc08d9",
+      "subcategory": "spacing-scale",
+      "name": "Spacing Scale Detector",
+      "description": "Learns spacing scale patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "styling/spacing-scale",
+          "patternId": "styling/spacing-scale/function_call"
+        }
+      },
+      "confidence": {
+        "frequency": 0.12,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 3,
+        "score": 0.7949999999999999,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "backend/blocks/twitter/_types.py",
+          "line": 374,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.7949999999999999
+        },
+        {
+          "file": "backend/blocks/twitter/_types.py",
+          "line": 374,
+          "column": 35,
+          "isOutlier": false,
+          "confidence": 0.7949999999999999
+        },
+        {
+          "file": "backend/blocks/twitter/spaces/search_spaces.py",
+          "line": 128,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.774
+        },
+        {
+          "file": "backend/blocks/twitter/spaces/spaces_lookup.py",
+          "line": 56,
+          "column": 55,
+          "isOutlier": false,
+          "confidence": 0.7575
+        },
+        {
+          "file": "backend/blocks/twitter/spaces/spaces_lookup.py",
+          "line": 162,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.7575
+        },
+        {
+          "file": "backend/blocks/twitter/spaces/spaces_lookup.py",
+          "line": 304,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.7575
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:30:16.815Z",
+        "lastSeen": "2026-01-29T06:30:16.815Z",
+        "source": "auto-detected",
+        "tags": [
+          "styling",
+          "spacing-scale"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "89819061de0ff5d9",
+      "subcategory": "spacing-scale",
+      "name": "Spacing Scale Detector",
+      "description": "Learns spacing scale patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "styling/spacing-scale",
+          "patternId": "styling/spacing-scale/import"
+        }
+      },
+      "confidence": {
+        "frequency": 0.02,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.774,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "backend/blocks/twitter/spaces/search_spaces.py",
+          "line": 14,
+          "column": 46,
+          "isOutlier": false,
+          "confidence": 0.774
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:30:16.815Z",
+        "lastSeen": "2026-01-29T06:30:16.815Z",
+        "source": "auto-detected",
+        "tags": [
+          "styling",
+          "spacing-scale"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "766760e858172663",
+      "subcategory": "z-index-scale",
+      "name": "Z-Index Scale Detector",
+      "description": "Learns z-index scale patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "styling/z-index-scale",
+          "patternId": "styling/z-index-scale/unknown"
+        }
+      },
+      "confidence": {
+        "frequency": 0.08,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 4,
+        "score": 0.77,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "backend/data/auth/oauth.py",
+          "line": 2,
+          "column": 25,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "backend/data/human_review.py",
+          "line": 2,
+          "column": 6,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "backend/data/organization.py",
+          "line": 2,
+          "column": 19,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "backend/util/service.py",
+          "line": 57,
+          "column": 40,
+          "isOutlier": false,
+          "confidence": 0.595
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:30:16.815Z",
+        "lastSeen": "2026-01-29T06:30:16.815Z",
+        "source": "auto-detected",
+        "tags": [
+          "styling",
+          "z-index-scale"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "5dec9b8c877498dd",
+      "subcategory": "z-index-scale",
+      "name": "Z-Index Scale Detector",
+      "description": "Learns z-index scale patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "styling/z-index-scale",
+          "patternId": "styling/z-index-scale/function_call"
+        }
+      },
+      "confidence": {
+        "frequency": 0.02,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "backend/util/virus_scanner.py",
+          "line": 32,
+          "column": 32,
+          "isOutlier": false,
+          "confidence": 0.97
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:30:16.815Z",
+        "lastSeen": "2026-01-29T06:30:16.815Z",
+        "source": "auto-detected",
+        "tags": [
+          "styling",
+          "z-index-scale"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    }
+  ],
+  "lastUpdated": "2026-01-29T07:17:19.230Z",
+  "checksum": "ad7339e6d4365d06"
+}

@@ -1,0 +1,418 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.220Z",
+  "checksum": "58a94a9c16911a6c",
+  "file": "backend/api/features/store/semantic_search_test.py",
+  "functions": [
+    {
+      "id": "backend/api/features/store/semantic_search_test.py:test_search_blocks_only:10",
+      "name": "test_search_blocks_only",
+      "startLine": 10,
+      "endLine": 42,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 14,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 29,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "semantic_search",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 34,
+          "resolvedId": "backend/api/features/store/embeddings.py:semantic_search:766"
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 39
+        },
+        {
+          "target": "results",
+          "resolved": false,
+          "confidence": 0,
+          "line": 39
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/store/semantic_search_test.py:test_search_multiple_content_types:46",
+      "name": "test_search_multiple_content_types",
+      "startLine": 46,
+      "endLine": 82,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 49,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 70,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "semantic_search",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 75,
+          "resolvedId": "backend/api/features/store/embeddings.py:semantic_search:766"
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 80
+        },
+        {
+          "target": "results",
+          "resolved": false,
+          "confidence": 0,
+          "line": 80
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/store/semantic_search_test.py:test_search_with_min_similarity_threshold:86",
+      "name": "test_search_with_min_similarity_threshold",
+      "startLine": 86,
+      "endLine": 116,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 89,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 104,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "semantic_search",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 109,
+          "resolvedId": "backend/api/features/store/embeddings.py:semantic_search:766"
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 115
+        },
+        {
+          "target": "results",
+          "resolved": false,
+          "confidence": 0,
+          "line": 115
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/store/semantic_search_test.py:test_search_fallback_to_lexical:120",
+      "name": "test_search_fallback_to_lexical",
+      "startLine": 120,
+      "endLine": 148,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 123,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 137,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "semantic_search",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 142,
+          "resolvedId": "backend/api/features/store/embeddings.py:semantic_search:766"
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 147
+        },
+        {
+          "target": "results",
+          "resolved": false,
+          "confidence": 0,
+          "line": 147
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/store/semantic_search_test.py:test_search_empty_query:152",
+      "name": "test_search_empty_query",
+      "startLine": 152,
+      "endLine": 158,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "semantic_search",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 154,
+          "resolvedId": "backend/api/features/store/embeddings.py:semantic_search:766"
+        },
+        {
+          "target": "semantic_search",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 157,
+          "resolvedId": "backend/api/features/store/embeddings.py:semantic_search:766"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/store/semantic_search_test.py:test_search_with_user_id_filter:162",
+      "name": "test_search_with_user_id_filter",
+      "startLine": 162,
+      "endLine": 191,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 165,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 179,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "semantic_search",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 184,
+          "resolvedId": "backend/api/features/store/embeddings.py:semantic_search:766"
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 190
+        },
+        {
+          "target": "results",
+          "resolved": false,
+          "confidence": 0,
+          "line": 190
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/store/semantic_search_test.py:test_search_limit_parameter:195",
+      "name": "test_search_limit_parameter",
+      "startLine": 195,
+      "endLine": 225,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 198,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "range",
+          "resolved": false,
+          "confidence": 0,
+          "line": 212
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 214,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "semantic_search",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 219,
+          "resolvedId": "backend/api/features/store/embeddings.py:semantic_search:766"
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 225
+        },
+        {
+          "target": "results",
+          "resolved": false,
+          "confidence": 0,
+          "line": 225
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/store/semantic_search_test.py:test_search_default_content_types:229",
+      "name": "test_search_default_content_types",
+      "startLine": 229,
+      "endLine": 248,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 232,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 237,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "semantic_search",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 242,
+          "resolvedId": "backend/api/features/store/embeddings.py:semantic_search:766"
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 246
+        },
+        {
+          "target": "call_args",
+          "resolved": false,
+          "confidence": 0,
+          "line": 246
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 247
+        },
+        {
+          "target": "call_args",
+          "resolved": false,
+          "confidence": 0,
+          "line": 247
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 248
+        },
+        {
+          "target": "call_args",
+          "resolved": false,
+          "confidence": 0,
+          "line": 248
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/store/semantic_search_test.py:test_search_handles_database_error:252",
+      "name": "test_search_handles_database_error",
+      "startLine": 252,
+      "endLine": 272,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 255,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 261,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "Exception",
+          "resolved": false,
+          "confidence": 0,
+          "line": 263
+        },
+        {
+          "target": "semantic_search",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 266,
+          "resolvedId": "backend/api/features/store/embeddings.py:semantic_search:766"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

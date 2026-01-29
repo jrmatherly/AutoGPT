@@ -1,0 +1,513 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.218Z",
+  "checksum": "a0ce5296762b2703",
+  "file": "backend/api/features/chat/tracking.py",
+  "functions": [
+    {
+      "id": "backend/api/features/chat/tracking.py:_shutdown_posthog:18",
+      "name": "_shutdown_posthog",
+      "startLine": 18,
+      "endLine": 22,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "flush",
+          "resolved": false,
+          "confidence": 0,
+          "line": 21
+        },
+        {
+          "target": "shutdown",
+          "resolved": false,
+          "confidence": 0,
+          "line": 22
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/chat/tracking.py:_get_posthog_client:28",
+      "name": "_get_posthog_client",
+      "startLine": 28,
+      "endLine": 45,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "debug",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 35,
+          "resolvedId": "backend/util/logging.py:debug:53"
+        },
+        {
+          "target": "Posthog",
+          "resolved": false,
+          "confidence": 0,
+          "line": 38
+        },
+        {
+          "target": "info",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 42,
+          "resolvedId": "backend/util/logging.py:info:41"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/chat/tracking.py:_get_base_properties:48",
+      "name": "_get_base_properties",
+      "startLine": 48,
+      "endLine": 53,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/chat/tracking.py:track_user_message:56",
+      "name": "track_user_message",
+      "startLine": 56,
+      "endLine": 84,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "_get_posthog_client",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 68,
+          "resolvedId": "backend/api/features/chat/tracking.py:_get_posthog_client:28"
+        },
+        {
+          "target": "_get_base_properties",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 74,
+          "resolvedId": "backend/api/features/chat/tracking.py:_get_base_properties:48"
+        },
+        {
+          "target": "capture",
+          "resolved": false,
+          "confidence": 0,
+          "line": 78
+        },
+        {
+          "target": "warning",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 84,
+          "resolvedId": "backend/util/logging.py:warning:45"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/chat/tracking.py:track_tool_called:87",
+      "name": "track_tool_called",
+      "startLine": 87,
+      "endLine": 124,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "_get_posthog_client",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 101,
+          "resolvedId": "backend/api/features/chat/tracking.py:_get_posthog_client:28"
+        },
+        {
+          "target": "info",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 103,
+          "resolvedId": "backend/util/logging.py:info:41"
+        },
+        {
+          "target": "_get_base_properties",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 108,
+          "resolvedId": "backend/api/features/chat/tracking.py:_get_base_properties:48"
+        },
+        {
+          "target": "info",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 114,
+          "resolvedId": "backend/util/logging.py:info:41"
+        },
+        {
+          "target": "capture",
+          "resolved": false,
+          "confidence": 0,
+          "line": 118
+        },
+        {
+          "target": "warning",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 124,
+          "resolvedId": "backend/util/logging.py:warning:45"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/chat/tracking.py:track_agent_run_success:127",
+      "name": "track_agent_run_success",
+      "startLine": 127,
+      "endLine": 164,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "_get_posthog_client",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 145,
+          "resolvedId": "backend/api/features/chat/tracking.py:_get_posthog_client:28"
+        },
+        {
+          "target": "_get_base_properties",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 151,
+          "resolvedId": "backend/api/features/chat/tracking.py:_get_base_properties:48"
+        },
+        {
+          "target": "capture",
+          "resolved": false,
+          "confidence": 0,
+          "line": 158
+        },
+        {
+          "target": "warning",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 164,
+          "resolvedId": "backend/util/logging.py:warning:45"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/chat/tracking.py:track_agent_scheduled:167",
+      "name": "track_agent_scheduled",
+      "startLine": 167,
+      "endLine": 210,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "_get_posthog_client",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 189,
+          "resolvedId": "backend/api/features/chat/tracking.py:_get_posthog_client:28"
+        },
+        {
+          "target": "_get_base_properties",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 195,
+          "resolvedId": "backend/api/features/chat/tracking.py:_get_base_properties:48"
+        },
+        {
+          "target": "capture",
+          "resolved": false,
+          "confidence": 0,
+          "line": 204
+        },
+        {
+          "target": "warning",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 210,
+          "resolvedId": "backend/util/logging.py:warning:45"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/chat/tracking.py:track_trigger_setup:213",
+      "name": "track_trigger_setup",
+      "startLine": 213,
+      "endLine": 250,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "_get_posthog_client",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 231,
+          "resolvedId": "backend/api/features/chat/tracking.py:_get_posthog_client:28"
+        },
+        {
+          "target": "_get_base_properties",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 237,
+          "resolvedId": "backend/api/features/chat/tracking.py:_get_base_properties:48"
+        },
+        {
+          "target": "capture",
+          "resolved": false,
+          "confidence": 0,
+          "line": 244
+        },
+        {
+          "target": "warning",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 250,
+          "resolvedId": "backend/util/logging.py:warning:45"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/chat/tracking.py:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 251,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "getLogger",
+          "resolved": false,
+          "confidence": 0,
+          "line": 11
+        },
+        {
+          "target": "Settings",
+          "resolved": false,
+          "confidence": 0,
+          "line": 12
+        },
+        {
+          "target": "flush",
+          "resolved": false,
+          "confidence": 0,
+          "line": 21
+        },
+        {
+          "target": "shutdown",
+          "resolved": false,
+          "confidence": 0,
+          "line": 22
+        },
+        {
+          "target": "register",
+          "resolved": false,
+          "confidence": 0,
+          "line": 25
+        },
+        {
+          "target": "debug",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 35,
+          "resolvedId": "backend/util/logging.py:debug:53"
+        },
+        {
+          "target": "Posthog",
+          "resolved": false,
+          "confidence": 0,
+          "line": 38
+        },
+        {
+          "target": "info",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 42,
+          "resolvedId": "backend/util/logging.py:info:41"
+        },
+        {
+          "target": "_get_posthog_client",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 68,
+          "resolvedId": "backend/api/features/chat/tracking.py:_get_posthog_client:28"
+        },
+        {
+          "target": "_get_base_properties",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 74,
+          "resolvedId": "backend/api/features/chat/tracking.py:_get_base_properties:48"
+        },
+        {
+          "target": "capture",
+          "resolved": false,
+          "confidence": 0,
+          "line": 78
+        },
+        {
+          "target": "warning",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 84,
+          "resolvedId": "backend/util/logging.py:warning:45"
+        },
+        {
+          "target": "_get_posthog_client",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 101,
+          "resolvedId": "backend/api/features/chat/tracking.py:_get_posthog_client:28"
+        },
+        {
+          "target": "info",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 103,
+          "resolvedId": "backend/util/logging.py:info:41"
+        },
+        {
+          "target": "_get_base_properties",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 108,
+          "resolvedId": "backend/api/features/chat/tracking.py:_get_base_properties:48"
+        },
+        {
+          "target": "info",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 114,
+          "resolvedId": "backend/util/logging.py:info:41"
+        },
+        {
+          "target": "capture",
+          "resolved": false,
+          "confidence": 0,
+          "line": 118
+        },
+        {
+          "target": "warning",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 124,
+          "resolvedId": "backend/util/logging.py:warning:45"
+        },
+        {
+          "target": "_get_posthog_client",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 145,
+          "resolvedId": "backend/api/features/chat/tracking.py:_get_posthog_client:28"
+        },
+        {
+          "target": "_get_base_properties",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 151,
+          "resolvedId": "backend/api/features/chat/tracking.py:_get_base_properties:48"
+        },
+        {
+          "target": "capture",
+          "resolved": false,
+          "confidence": 0,
+          "line": 158
+        },
+        {
+          "target": "warning",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 164,
+          "resolvedId": "backend/util/logging.py:warning:45"
+        },
+        {
+          "target": "_get_posthog_client",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 189,
+          "resolvedId": "backend/api/features/chat/tracking.py:_get_posthog_client:28"
+        },
+        {
+          "target": "_get_base_properties",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 195,
+          "resolvedId": "backend/api/features/chat/tracking.py:_get_base_properties:48"
+        },
+        {
+          "target": "capture",
+          "resolved": false,
+          "confidence": 0,
+          "line": 204
+        },
+        {
+          "target": "warning",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 210,
+          "resolvedId": "backend/util/logging.py:warning:45"
+        },
+        {
+          "target": "_get_posthog_client",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 231,
+          "resolvedId": "backend/api/features/chat/tracking.py:_get_posthog_client:28"
+        },
+        {
+          "target": "_get_base_properties",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 237,
+          "resolvedId": "backend/api/features/chat/tracking.py:_get_base_properties:48"
+        },
+        {
+          "target": "capture",
+          "resolved": false,
+          "confidence": 0,
+          "line": 244
+        },
+        {
+          "target": "warning",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 250,
+          "resolvedId": "backend/util/logging.py:warning:45"
+        },
+        {
+          "target": "getLogger",
+          "resolved": false,
+          "confidence": 0,
+          "line": 11
+        },
+        {
+          "target": "Settings",
+          "resolved": false,
+          "confidence": 0,
+          "line": 12
+        },
+        {
+          "target": "register",
+          "resolved": false,
+          "confidence": 0,
+          "line": 25
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

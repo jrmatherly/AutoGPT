@@ -1,0 +1,250 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.156Z",
+  "checksum": "a852ac2550e4add0",
+  "file": "backend/blocks/baas/_api.py",
+  "functions": [
+    {
+      "id": "backend/blocks/baas/_api.py:__init__:16",
+      "name": "__init__",
+      "startLine": 16,
+      "endLine": 20,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "Requests",
+          "resolved": false,
+          "confidence": 0,
+          "line": 20
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/baas/_api.py:join_meeting:24",
+      "name": "join_meeting",
+      "startLine": 24,
+      "endLine": 83,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "post",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 78,
+          "resolvedId": "backend/util/request.py:post:563"
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 83,
+          "resolvedId": "backend/util/request.py:json:289"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/baas/_api.py:leave_meeting:85",
+      "name": "leave_meeting",
+      "startLine": 85,
+      "endLine": 95,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "delete",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 91,
+          "resolvedId": "backend/integrations/creds_manager.py:delete:166"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "requests",
+          "operation": "delete",
+          "line": 91,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/blocks/baas/_api.py:retranscribe:97",
+      "name": "retranscribe",
+      "startLine": 97,
+      "endLine": 123,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "post",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 115,
+          "resolvedId": "backend/util/request.py:post:563"
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 123,
+          "resolvedId": "backend/util/request.py:json:289"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/baas/_api.py:get_meeting_data:127",
+      "name": "get_meeting_data",
+      "startLine": 127,
+      "endLine": 145,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "lower",
+          "resolved": false,
+          "confidence": 0,
+          "line": 137
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 137
+        },
+        {
+          "target": "include_transcripts",
+          "resolved": false,
+          "confidence": 0,
+          "line": 137
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 140,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 145,
+          "resolvedId": "backend/util/request.py:json:289"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/baas/_api.py:get_screenshots:147",
+      "name": "get_screenshots",
+      "startLine": 147,
+      "endLine": 161,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 153,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 157,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 159
+        },
+        {
+          "target": "result",
+          "resolved": false,
+          "confidence": 0,
+          "line": 159
+        },
+        {
+          "target": "list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 159
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/baas/_api.py:delete_data:163",
+      "name": "delete_data",
+      "startLine": 163,
+      "endLine": 173,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "post",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 169,
+          "resolvedId": "backend/util/request.py:post:563"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/baas/_api.py:list_bots_with_metadata:175",
+      "name": "list_bots_with_metadata",
+      "startLine": 175,
+      "endLine": 205,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "update",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 198,
+          "resolvedId": "backend/integrations/creds_manager.py:update:162"
+        },
+        {
+          "target": "filter_by",
+          "resolved": false,
+          "confidence": 0,
+          "line": 198
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 200,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 205,
+          "resolvedId": "backend/util/request.py:json:289"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

@@ -1,0 +1,854 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.170Z",
+  "checksum": "3b9e2ab17fa6de10",
+  "file": "backend/data/dynamic_fields.py",
+  "functions": [
+    {
+      "id": "backend/data/dynamic_fields.py:extract_base_field_name:22",
+      "name": "extract_base_field_name",
+      "startLine": 22,
+      "endLine": 42,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "split",
+          "resolved": false,
+          "confidence": 0,
+          "line": 41
+        },
+        {
+          "target": "delimiter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 41
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/dynamic_fields.py:is_dynamic_field:45",
+      "name": "is_dynamic_field",
+      "startLine": 45,
+      "endLine": 55,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "any",
+          "resolved": false,
+          "confidence": 0,
+          "line": 55
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/dynamic_fields.py:get_dynamic_field_description:58",
+      "name": "get_dynamic_field_description",
+      "startLine": 58,
+      "endLine": 92,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "extract_base_field_name",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 68,
+          "resolvedId": "backend/data/dynamic_fields.py:extract_base_field_name:22"
+        },
+        {
+          "target": "field_name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 68
+        },
+        {
+          "target": "split",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 73
+        },
+        {
+          "target": "parts",
+          "resolved": false,
+          "confidence": 0,
+          "line": 73
+        },
+        {
+          "target": "split",
+          "resolved": false,
+          "confidence": 0,
+          "line": 74
+        },
+        {
+          "target": "split",
+          "resolved": false,
+          "confidence": 0,
+          "line": 78
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 79
+        },
+        {
+          "target": "parts",
+          "resolved": false,
+          "confidence": 0,
+          "line": 79
+        },
+        {
+          "target": "split",
+          "resolved": false,
+          "confidence": 0,
+          "line": 80
+        },
+        {
+          "target": "split",
+          "resolved": false,
+          "confidence": 0,
+          "line": 86
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 87
+        },
+        {
+          "target": "parts",
+          "resolved": false,
+          "confidence": 0,
+          "line": 87
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/dynamic_fields.py:is_tool_pin:95",
+      "name": "is_tool_pin",
+      "startLine": 95,
+      "endLine": 97,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "startswith",
+          "resolved": false,
+          "confidence": 0,
+          "line": 97
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/dynamic_fields.py:sanitize_pin_name:100",
+      "name": "sanitize_pin_name",
+      "startLine": 100,
+      "endLine": 104,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "extract_base_field_name",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 101,
+          "resolvedId": "backend/data/dynamic_fields.py:extract_base_field_name:22"
+        },
+        {
+          "target": "name",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 101,
+          "resolvedId": "backend/api/features/chat/tools/agent_output.py:name:105"
+        },
+        {
+          "target": "is_tool_pin",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 102,
+          "resolvedId": "backend/data/dynamic_fields.py:is_tool_pin:95"
+        },
+        {
+          "target": "sanitized_name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 102
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/dynamic_fields.py:_next_delim:112",
+      "name": "_next_delim",
+      "startLine": 112,
+      "endLine": 124,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 119
+        },
+        {
+          "target": "s",
+          "resolved": false,
+          "confidence": 0,
+          "line": 119
+        },
+        {
+          "target": "find",
+          "resolved": false,
+          "confidence": 0,
+          "line": 121
+        },
+        {
+          "target": "d",
+          "resolved": false,
+          "confidence": 0,
+          "line": 121
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/dynamic_fields.py:_tokenise:127",
+      "name": "_tokenise",
+      "startLine": 127,
+      "endLine": 149,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "next",
+          "resolved": false,
+          "confidence": 0,
+          "line": 135
+        },
+        {
+          "target": "startswith",
+          "resolved": false,
+          "confidence": 0,
+          "line": 135
+        },
+        {
+          "target": "d",
+          "resolved": false,
+          "confidence": 0,
+          "line": 135
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 140
+        },
+        {
+          "target": "delim",
+          "resolved": false,
+          "confidence": 0,
+          "line": 140
+        },
+        {
+          "target": "_next_delim",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 141,
+          "resolvedId": "backend/data/dynamic_fields.py:_next_delim:112"
+        },
+        {
+          "target": "path",
+          "resolved": false,
+          "confidence": 0,
+          "line": 141
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 143
+        },
+        {
+          "target": "path",
+          "resolved": false,
+          "confidence": 0,
+          "line": 143
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 144
+        },
+        {
+          "target": "path",
+          "resolved": false,
+          "confidence": 0,
+          "line": 144
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 148
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/dynamic_fields.py:parse_execution_output:152",
+      "name": "parse_execution_output",
+      "startLine": 152,
+      "endLine": 242,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "is_tool_pin",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 186,
+          "resolvedId": "backend/data/dynamic_fields.py:is_tool_pin:95"
+        },
+        {
+          "target": "link_output_selector",
+          "resolved": false,
+          "confidence": 0,
+          "line": 186
+        },
+        {
+          "target": "startswith",
+          "resolved": false,
+          "confidence": 0,
+          "line": 187
+        },
+        {
+          "target": "ValueError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 190
+        },
+        {
+          "target": "split",
+          "resolved": false,
+          "confidence": 0,
+          "line": 196
+        },
+        {
+          "target": "startswith",
+          "resolved": false,
+          "confidence": 0,
+          "line": 207
+        },
+        {
+          "target": "output_pin_name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 207
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 209
+        },
+        {
+          "target": "output_pin_name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 209
+        },
+        {
+          "target": "_tokenise",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 213,
+          "resolvedId": "backend/data/dynamic_fields.py:_tokenise:127"
+        },
+        {
+          "target": "path",
+          "resolved": false,
+          "confidence": 0,
+          "line": 213
+        },
+        {
+          "target": "int",
+          "resolved": false,
+          "confidence": 0,
+          "line": 222
+        },
+        {
+          "target": "ident",
+          "resolved": false,
+          "confidence": 0,
+          "line": 222
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 225
+        },
+        {
+          "target": "cur",
+          "resolved": false,
+          "confidence": 0,
+          "line": 225
+        },
+        {
+          "target": "list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 225
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 225
+        },
+        {
+          "target": "cur",
+          "resolved": false,
+          "confidence": 0,
+          "line": 225
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 230
+        },
+        {
+          "target": "cur",
+          "resolved": false,
+          "confidence": 0,
+          "line": 230
+        },
+        {
+          "target": "dict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 230
+        },
+        {
+          "target": "hasattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 235
+        },
+        {
+          "target": "cur",
+          "resolved": false,
+          "confidence": 0,
+          "line": 235
+        },
+        {
+          "target": "ident",
+          "resolved": false,
+          "confidence": 0,
+          "line": 235
+        },
+        {
+          "target": "getattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 237
+        },
+        {
+          "target": "cur",
+          "resolved": false,
+          "confidence": 0,
+          "line": 237
+        },
+        {
+          "target": "ident",
+          "resolved": false,
+          "confidence": 0,
+          "line": 237
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/dynamic_fields.py:_assign:245",
+      "name": "_assign",
+      "startLine": 245,
+      "endLine": 296,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "int",
+          "resolved": false,
+          "confidence": 0,
+          "line": 259
+        },
+        {
+          "target": "ident",
+          "resolved": false,
+          "confidence": 0,
+          "line": 259
+        },
+        {
+          "target": "ValueError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 261
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 265
+        },
+        {
+          "target": "container",
+          "resolved": false,
+          "confidence": 0,
+          "line": 265
+        },
+        {
+          "target": "list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 265
+        },
+        {
+          "target": "list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 266
+        },
+        {
+          "target": "container",
+          "resolved": false,
+          "confidence": 0,
+          "line": 266
+        },
+        {
+          "target": "hasattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 266
+        },
+        {
+          "target": "container",
+          "resolved": false,
+          "confidence": 0,
+          "line": 266
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 268
+        },
+        {
+          "target": "container",
+          "resolved": false,
+          "confidence": 0,
+          "line": 268
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 269
+        },
+        {
+          "target": "_assign",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 270,
+          "resolvedId": "backend/data/dynamic_fields.py:_assign:245"
+        },
+        {
+          "target": "rest",
+          "resolved": false,
+          "confidence": 0,
+          "line": 270
+        },
+        {
+          "target": "value",
+          "resolved": false,
+          "confidence": 0,
+          "line": 270
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 277
+        },
+        {
+          "target": "container",
+          "resolved": false,
+          "confidence": 0,
+          "line": 277
+        },
+        {
+          "target": "dict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 277
+        },
+        {
+          "target": "dict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 278
+        },
+        {
+          "target": "container",
+          "resolved": false,
+          "confidence": 0,
+          "line": 278
+        },
+        {
+          "target": "hasattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 278
+        },
+        {
+          "target": "container",
+          "resolved": false,
+          "confidence": 0,
+          "line": 278
+        },
+        {
+          "target": "_assign",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 279,
+          "resolvedId": "backend/data/dynamic_fields.py:_assign:245"
+        },
+        {
+          "target": "rest",
+          "resolved": false,
+          "confidence": 0,
+          "line": 279
+        },
+        {
+          "target": "value",
+          "resolved": false,
+          "confidence": 0,
+          "line": 279
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 279,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "ident",
+          "resolved": false,
+          "confidence": 0,
+          "line": 279
+        },
+        {
+          "target": "MockObject",
+          "resolved": false,
+          "confidence": 0,
+          "line": 285
+        },
+        {
+          "target": "hasattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 286
+        },
+        {
+          "target": "container",
+          "resolved": false,
+          "confidence": 0,
+          "line": 286
+        },
+        {
+          "target": "MockObject",
+          "resolved": false,
+          "confidence": 0,
+          "line": 288
+        },
+        {
+          "target": "setattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 289
+        },
+        {
+          "target": "container",
+          "resolved": false,
+          "confidence": 0,
+          "line": 290
+        },
+        {
+          "target": "ident",
+          "resolved": false,
+          "confidence": 0,
+          "line": 291
+        },
+        {
+          "target": "_assign",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 292,
+          "resolvedId": "backend/data/dynamic_fields.py:_assign:245"
+        },
+        {
+          "target": "rest",
+          "resolved": false,
+          "confidence": 0,
+          "line": 292
+        },
+        {
+          "target": "value",
+          "resolved": false,
+          "confidence": 0,
+          "line": 292
+        },
+        {
+          "target": "getattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 292
+        },
+        {
+          "target": "container",
+          "resolved": false,
+          "confidence": 0,
+          "line": 292
+        },
+        {
+          "target": "ident",
+          "resolved": false,
+          "confidence": 0,
+          "line": 292
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/dynamic_fields.py:merge_execution_input:299",
+      "name": "merge_execution_input",
+      "startLine": 299,
+      "endLine": 330,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "items",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 313,
+          "resolvedId": "backend/integrations/oauth/__init__.py:items:123"
+        },
+        {
+          "target": "_next_delim",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 315,
+          "resolvedId": "backend/data/dynamic_fields.py:_next_delim:112"
+        },
+        {
+          "target": "key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 315
+        },
+        {
+          "target": "_tokenise",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 321,
+          "resolvedId": "backend/data/dynamic_fields.py:_tokenise:127"
+        },
+        {
+          "target": "path",
+          "resolved": false,
+          "confidence": 0,
+          "line": 321
+        },
+        {
+          "target": "_assign",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 327,
+          "resolvedId": "backend/data/dynamic_fields.py:_assign:245"
+        },
+        {
+          "target": "tokens",
+          "resolved": false,
+          "confidence": 0,
+          "line": 327
+        },
+        {
+          "target": "value",
+          "resolved": false,
+          "confidence": 0,
+          "line": 327
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 327,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "base",
+          "resolved": false,
+          "confidence": 0,
+          "line": 327
+        },
+        {
+          "target": "update",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 329,
+          "resolvedId": "backend/integrations/creds_manager.py:update:162"
+        },
+        {
+          "target": "merged",
+          "resolved": false,
+          "confidence": 0,
+          "line": 329
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "tokens",
+          "operation": "read",
+          "line": 327,
+          "fields": []
+        }
+      ]
+    }
+  ]
+}

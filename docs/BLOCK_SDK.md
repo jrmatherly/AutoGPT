@@ -273,7 +273,7 @@ class ManualWebhookBlock(Block):
 
     webhook_config = BlockManualWebhookConfig(
         setup_instructions="Configure webhook in your service settings",
-        webhook_url_template="https://api.agpt.co/webhook/{node_id}",
+        webhook_url_template="https://api.example.com/webhook/{node_id}",
     )
 ```
 

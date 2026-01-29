@@ -1,0 +1,712 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.178Z",
+  "checksum": "f5b959acfd41d057",
+  "file": "backend/blocks/ai_image_generator_block.py",
+  "functions": [
+    {
+      "id": "backend/blocks/ai_image_generator_block.py:__init__:150",
+      "name": "__init__",
+      "startLine": 150,
+      "endLine": 174,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 151,
+          "resolvedId": "backend/blocks/ai_image_generator_block.py:__init__:150"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 151
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/ai_image_generator_block.py:_run_client:176",
+      "name": "_run_client",
+      "startLine": 176,
+      "endLine": 204,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "ReplicateClient",
+          "resolved": false,
+          "confidence": 0,
+          "line": 181
+        },
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 181,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        },
+        {
+          "target": "async_run",
+          "resolved": false,
+          "confidence": 0,
+          "line": 184
+        },
+        {
+          "target": "model_name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 184
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 187
+        },
+        {
+          "target": "output",
+          "resolved": false,
+          "confidence": 0,
+          "line": 187
+        },
+        {
+          "target": "list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 187
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 187
+        },
+        {
+          "target": "output",
+          "resolved": false,
+          "confidence": 0,
+          "line": 187
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 188
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 192
+        },
+        {
+          "target": "output",
+          "resolved": false,
+          "confidence": 0,
+          "line": 192
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 194
+        },
+        {
+          "target": "output",
+          "resolved": false,
+          "confidence": 0,
+          "line": 194
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 194
+        },
+        {
+          "target": "TypeError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 202
+        },
+        {
+          "target": "RuntimeError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 204
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/ai_image_generator_block.py:generate_image:206",
+      "name": "generate_image",
+      "startLine": 206,
+      "endLine": 288,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "_style_to_prompt_prefix",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 211,
+          "resolvedId": "backend/blocks/ai_image_generator_block.py:_style_to_prompt_prefix:290"
+        },
+        {
+          "target": "strip",
+          "resolved": false,
+          "confidence": 0,
+          "line": 212
+        },
+        {
+          "target": "_run_client",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 224,
+          "resolvedId": "backend/blocks/ai_image_generator_block.py:_run_client:176"
+        },
+        {
+          "target": "credentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 225
+        },
+        {
+          "target": "input_params",
+          "resolved": false,
+          "confidence": 0,
+          "line": 227
+        },
+        {
+          "target": "_run_client",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 242,
+          "resolvedId": "backend/blocks/ai_image_generator_block.py:_run_client:176"
+        },
+        {
+          "target": "credentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 243
+        },
+        {
+          "target": "input_params",
+          "resolved": false,
+          "confidence": 0,
+          "line": 243
+        },
+        {
+          "target": "_run_client",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 257,
+          "resolvedId": "backend/blocks/ai_image_generator_block.py:_run_client:176"
+        },
+        {
+          "target": "credentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 258
+        },
+        {
+          "target": "input_params",
+          "resolved": false,
+          "confidence": 0,
+          "line": 258
+        },
+        {
+          "target": "_run_client",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 268,
+          "resolvedId": "backend/blocks/ai_image_generator_block.py:_run_client:176"
+        },
+        {
+          "target": "credentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 269
+        },
+        {
+          "target": "input_params",
+          "resolved": false,
+          "confidence": 0,
+          "line": 269
+        },
+        {
+          "target": "_run_client",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 282,
+          "resolvedId": "backend/blocks/ai_image_generator_block.py:_run_client:176"
+        },
+        {
+          "target": "credentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 283
+        },
+        {
+          "target": "input_params",
+          "resolved": false,
+          "confidence": 0,
+          "line": 283
+        },
+        {
+          "target": "RuntimeError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 288
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 288
+        },
+        {
+          "target": "e",
+          "resolved": false,
+          "confidence": 0,
+          "line": 288
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/ai_image_generator_block.py:_style_to_prompt_prefix:290",
+      "name": "_style_to_prompt_prefix",
+      "startLine": 290,
+      "endLine": 319,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 318,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "style",
+          "resolved": false,
+          "confidence": 0,
+          "line": 318
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/ai_image_generator_block.py:run:321",
+      "name": "run",
+      "startLine": 321,
+      "endLine": 330,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "generate_image",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 323,
+          "resolvedId": "backend/blocks/ai_image_generator_block.py:generate_image:206"
+        },
+        {
+          "target": "input_data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 323
+        },
+        {
+          "target": "credentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 323
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 330
+        },
+        {
+          "target": "e",
+          "resolved": false,
+          "confidence": 0,
+          "line": 330
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/ai_image_generator_block.py:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 348,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "CredentialsField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 116,
+          "resolvedId": "backend/data/model.py:CredentialsField:681"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 119,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 124,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 129,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 141,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 148,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 151,
+          "resolvedId": "backend/blocks/ai_image_generator_block.py:__init__:150"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 151
+        },
+        {
+          "target": "ReplicateClient",
+          "resolved": false,
+          "confidence": 0,
+          "line": 181
+        },
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 181,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        },
+        {
+          "target": "async_run",
+          "resolved": false,
+          "confidence": 0,
+          "line": 184
+        },
+        {
+          "target": "model_name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 184
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 187
+        },
+        {
+          "target": "output",
+          "resolved": false,
+          "confidence": 0,
+          "line": 187
+        },
+        {
+          "target": "list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 187
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 187
+        },
+        {
+          "target": "output",
+          "resolved": false,
+          "confidence": 0,
+          "line": 187
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 188
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 192
+        },
+        {
+          "target": "output",
+          "resolved": false,
+          "confidence": 0,
+          "line": 192
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 194
+        },
+        {
+          "target": "output",
+          "resolved": false,
+          "confidence": 0,
+          "line": 194
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 194
+        },
+        {
+          "target": "TypeError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 202
+        },
+        {
+          "target": "RuntimeError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 204
+        },
+        {
+          "target": "_style_to_prompt_prefix",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 211,
+          "resolvedId": "backend/blocks/ai_image_generator_block.py:_style_to_prompt_prefix:290"
+        },
+        {
+          "target": "strip",
+          "resolved": false,
+          "confidence": 0,
+          "line": 212
+        },
+        {
+          "target": "_run_client",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 224,
+          "resolvedId": "backend/blocks/ai_image_generator_block.py:_run_client:176"
+        },
+        {
+          "target": "credentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 225
+        },
+        {
+          "target": "input_params",
+          "resolved": false,
+          "confidence": 0,
+          "line": 227
+        },
+        {
+          "target": "_run_client",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 242,
+          "resolvedId": "backend/blocks/ai_image_generator_block.py:_run_client:176"
+        },
+        {
+          "target": "credentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 243
+        },
+        {
+          "target": "input_params",
+          "resolved": false,
+          "confidence": 0,
+          "line": 243
+        },
+        {
+          "target": "_run_client",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 257,
+          "resolvedId": "backend/blocks/ai_image_generator_block.py:_run_client:176"
+        },
+        {
+          "target": "credentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 258
+        },
+        {
+          "target": "input_params",
+          "resolved": false,
+          "confidence": 0,
+          "line": 258
+        },
+        {
+          "target": "_run_client",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 268,
+          "resolvedId": "backend/blocks/ai_image_generator_block.py:_run_client:176"
+        },
+        {
+          "target": "credentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 269
+        },
+        {
+          "target": "input_params",
+          "resolved": false,
+          "confidence": 0,
+          "line": 269
+        },
+        {
+          "target": "_run_client",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 282,
+          "resolvedId": "backend/blocks/ai_image_generator_block.py:_run_client:176"
+        },
+        {
+          "target": "credentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 283
+        },
+        {
+          "target": "input_params",
+          "resolved": false,
+          "confidence": 0,
+          "line": 283
+        },
+        {
+          "target": "RuntimeError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 288
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 288
+        },
+        {
+          "target": "e",
+          "resolved": false,
+          "confidence": 0,
+          "line": 288
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 318,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "style",
+          "resolved": false,
+          "confidence": 0,
+          "line": 318
+        },
+        {
+          "target": "generate_image",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 323,
+          "resolvedId": "backend/blocks/ai_image_generator_block.py:generate_image:206"
+        },
+        {
+          "target": "input_data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 323
+        },
+        {
+          "target": "credentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 323
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 330
+        },
+        {
+          "target": "e",
+          "resolved": false,
+          "confidence": 0,
+          "line": 330
+        },
+        {
+          "target": "APIKeyCredentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 334
+        },
+        {
+          "target": "APIKeyCredentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 334
+        },
+        {
+          "target": "SecretStr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 337
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

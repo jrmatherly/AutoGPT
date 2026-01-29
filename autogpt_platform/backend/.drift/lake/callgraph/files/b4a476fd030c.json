@@ -1,0 +1,730 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.206Z",
+  "checksum": "9f7d45094380d5d9",
+  "file": "backend/blocks/exa/websets_items.py",
+  "functions": [
+    {
+      "id": "backend/blocks/exa/websets_items.py:from_sdk:46",
+      "name": "from_sdk",
+      "startLine": 46,
+      "endLine": 66,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "hasattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 50
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 51
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 58
+        },
+        {
+          "target": "model_dump",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 58,
+          "resolvedId": "backend/blocks/apollo/models.py:model_dump:11"
+        },
+        {
+          "target": "cls",
+          "resolved": false,
+          "confidence": 0,
+          "line": 60
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/exa/websets_items.py:from_sdk:83",
+      "name": "from_sdk",
+      "startLine": 83,
+      "endLine": 136,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "hasattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 91
+        },
+        {
+          "target": "item",
+          "resolved": false,
+          "confidence": 0,
+          "line": 91
+        },
+        {
+          "target": "model_dump",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 92,
+          "resolvedId": "backend/blocks/apollo/models.py:model_dump:11"
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 100
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 103
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 106
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 109
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 112
+        },
+        {
+          "target": "getattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 118
+        },
+        {
+          "target": "hasattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 122
+        },
+        {
+          "target": "item",
+          "resolved": false,
+          "confidence": 0,
+          "line": 122
+        },
+        {
+          "target": "from_sdk",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 124,
+          "resolvedId": "backend/blocks/exa/websets_items.py:from_sdk:46"
+        },
+        {
+          "target": "sdk_enrich",
+          "resolved": false,
+          "confidence": 0,
+          "line": 124
+        },
+        {
+          "target": "cls",
+          "resolved": false,
+          "confidence": 0,
+          "line": 127
+        },
+        {
+          "target": "isoformat",
+          "resolved": false,
+          "confidence": 0,
+          "line": 134
+        },
+        {
+          "target": "isoformat",
+          "resolved": false,
+          "confidence": 0,
+          "line": 135
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/exa/websets_items.py:__init__:167",
+      "name": "__init__",
+      "startLine": 167,
+      "endLine": 174,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 168,
+          "resolvedId": "backend/blocks/exa/websets_items.py:__init__:167"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 168
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/exa/websets_items.py:run:176",
+      "name": "run",
+      "startLine": 176,
+      "endLine": 194,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "AsyncExa",
+          "resolved": false,
+          "confidence": 0,
+          "line": 179
+        },
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 179,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 181,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "from_sdk",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 185,
+          "resolvedId": "backend/blocks/exa/websets_items.py:from_sdk:46"
+        },
+        {
+          "target": "sdk_item",
+          "resolved": false,
+          "confidence": 0,
+          "line": 185
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "credentials",
+          "operation": "read",
+          "line": 179,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/blocks/exa/websets_items.py:__init__:249",
+      "name": "__init__",
+      "startLine": 249,
+      "endLine": 256,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 250,
+          "resolvedId": "backend/blocks/exa/websets_items.py:__init__:167"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 250
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/exa/websets_items.py:run:258",
+      "name": "run",
+      "startLine": 258,
+      "endLine": 306,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "AsyncExa",
+          "resolved": false,
+          "confidence": 0,
+          "line": 261
+        },
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 261,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        },
+        {
+          "target": "time",
+          "resolved": false,
+          "confidence": 0,
+          "line": 267
+        },
+        {
+          "target": "time",
+          "resolved": false,
+          "confidence": 0,
+          "line": 271
+        },
+        {
+          "target": "list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 272
+        },
+        {
+          "target": "sleep",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 281,
+          "resolvedId": "load-tests/orchestrator/orchestrator.js:sleep:171"
+        },
+        {
+          "target": "interval",
+          "resolved": false,
+          "confidence": 0,
+          "line": 281
+        },
+        {
+          "target": "min",
+          "resolved": false,
+          "confidence": 0,
+          "line": 282
+        },
+        {
+          "target": "list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 285
+        },
+        {
+          "target": "list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 291
+        },
+        {
+          "target": "from_sdk",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 297,
+          "resolvedId": "backend/blocks/exa/websets_items.py:from_sdk:46"
+        },
+        {
+          "target": "item",
+          "resolved": false,
+          "confidence": 0,
+          "line": 297
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "credentials",
+          "operation": "read",
+          "line": 261,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/blocks/exa/websets_items.py:__init__:329",
+      "name": "__init__",
+      "startLine": 329,
+      "endLine": 336,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 330,
+          "resolvedId": "backend/blocks/exa/websets_items.py:__init__:167"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 330
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/exa/websets_items.py:run:338",
+      "name": "run",
+      "startLine": 338,
+      "endLine": 348,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "AsyncExa",
+          "resolved": false,
+          "confidence": 0,
+          "line": 341
+        },
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 341,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        },
+        {
+          "target": "delete",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 343,
+          "resolvedId": "backend/integrations/creds_manager.py:delete:166"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "credentials",
+          "operation": "read",
+          "line": 341,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/blocks/exa/websets_items.py:__init__:391",
+      "name": "__init__",
+      "startLine": 391,
+      "endLine": 398,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 392,
+          "resolvedId": "backend/blocks/exa/websets_items.py:__init__:167"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 392
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/exa/websets_items.py:run:400",
+      "name": "run",
+      "startLine": 400,
+      "endLine": 430,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "AsyncExa",
+          "resolved": false,
+          "confidence": 0,
+          "line": 404
+        },
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 404,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        },
+        {
+          "target": "list_all",
+          "resolved": false,
+          "confidence": 0,
+          "line": 407
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 412
+        },
+        {
+          "target": "all_items",
+          "resolved": false,
+          "confidence": 0,
+          "line": 412
+        },
+        {
+          "target": "from_sdk",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 415,
+          "resolvedId": "backend/blocks/exa/websets_items.py:from_sdk:46"
+        },
+        {
+          "target": "sdk_item",
+          "resolved": false,
+          "confidence": 0,
+          "line": 415
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 422
+        },
+        {
+          "target": "item",
+          "resolved": false,
+          "confidence": 0,
+          "line": 422
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 429
+        },
+        {
+          "target": "all_items",
+          "resolved": false,
+          "confidence": 0,
+          "line": 429
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 430
+        },
+        {
+          "target": "all_items",
+          "resolved": false,
+          "confidence": 0,
+          "line": 430
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "credentials",
+          "operation": "read",
+          "line": 404,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/blocks/exa/websets_items.py:__init__:463",
+      "name": "__init__",
+      "startLine": 463,
+      "endLine": 470,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 464,
+          "resolvedId": "backend/blocks/exa/websets_items.py:__init__:167"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 464
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/exa/websets_items.py:run:472",
+      "name": "run",
+      "startLine": 472,
+      "endLine": 515,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "AsyncExa",
+          "resolved": false,
+          "confidence": 0,
+          "line": 476
+        },
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 476,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 478,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "model_dump",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 485,
+          "resolvedId": "backend/blocks/apollo/models.py:model_dump:11"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 486,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 498
+        },
+        {
+          "target": "from_sdk",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 503,
+          "resolvedId": "backend/blocks/exa/websets_items.py:from_sdk:46"
+        },
+        {
+          "target": "item",
+          "resolved": false,
+          "confidence": 0,
+          "line": 503
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "credentials",
+          "operation": "read",
+          "line": 476,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/blocks/exa/websets_items.py:__init__:556",
+      "name": "__init__",
+      "startLine": 556,
+      "endLine": 563,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 557,
+          "resolvedId": "backend/blocks/exa/websets_items.py:__init__:167"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 557
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/exa/websets_items.py:run:565",
+      "name": "run",
+      "startLine": 565,
+      "endLine": 591,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "AsyncExa",
+          "resolved": false,
+          "confidence": 0,
+          "line": 569
+        },
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 569,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        },
+        {
+          "target": "list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 572
+        },
+        {
+          "target": "from_sdk",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 579,
+          "resolvedId": "backend/blocks/exa/websets_items.py:from_sdk:46"
+        },
+        {
+          "target": "item",
+          "resolved": false,
+          "confidence": 0,
+          "line": 579
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 589
+        },
+        {
+          "target": "new_items",
+          "resolved": false,
+          "confidence": 0,
+          "line": 589
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "credentials",
+          "operation": "read",
+          "line": 569,
+          "fields": []
+        }
+      ]
+    }
+  ]
+}

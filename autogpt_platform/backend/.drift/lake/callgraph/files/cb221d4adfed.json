@@ -1,0 +1,480 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.215Z",
+  "checksum": "4d58603346871611",
+  "file": "backend/blocks/twitter/tweets/tweet_lookup.py",
+  "functions": [
+    {
+      "id": "backend/blocks/twitter/tweets/tweet_lookup.py:__init__:62",
+      "name": "__init__",
+      "startLine": 62,
+      "endLine": 99,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 63,
+          "resolvedId": "backend/blocks/twitter/tweets/tweet_lookup.py:__init__:62"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 63
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/twitter/tweets/tweet_lookup.py:get_tweet:102",
+      "name": "get_tweet",
+      "startLine": 102,
+      "endLine": 152,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "Client",
+          "resolved": false,
+          "confidence": 0,
+          "line": 113
+        },
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 114,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        },
+        {
+          "target": "build",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 120,
+          "resolvedId": "backend/blocks/twitter/_builders.py:build:109"
+        },
+        {
+          "target": "add_user_fields",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 120,
+          "resolvedId": "backend/blocks/twitter/_builders.py:add_user_fields:98"
+        },
+        {
+          "target": "user_fields",
+          "resolved": false,
+          "confidence": 0,
+          "line": 126
+        },
+        {
+          "target": "add_tweet_fields",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 120,
+          "resolvedId": "backend/blocks/twitter/_builders.py:add_tweet_fields:87"
+        },
+        {
+          "target": "tweet_fields",
+          "resolved": false,
+          "confidence": 0,
+          "line": 125
+        },
+        {
+          "target": "add_poll_fields",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 120,
+          "resolvedId": "backend/blocks/twitter/_builders.py:add_poll_fields:76"
+        },
+        {
+          "target": "poll_fields",
+          "resolved": false,
+          "confidence": 0,
+          "line": 124
+        },
+        {
+          "target": "add_place_fields",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 120,
+          "resolvedId": "backend/blocks/twitter/_builders.py:add_place_fields:65"
+        },
+        {
+          "target": "place_fields",
+          "resolved": false,
+          "confidence": 0,
+          "line": 123
+        },
+        {
+          "target": "add_media_fields",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 120,
+          "resolvedId": "backend/blocks/twitter/_builders.py:add_media_fields:54"
+        },
+        {
+          "target": "media_fields",
+          "resolved": false,
+          "confidence": 0,
+          "line": 122
+        },
+        {
+          "target": "add_expansions",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 120,
+          "resolvedId": "backend/blocks/twitter/_builders.py:add_expansions:41"
+        },
+        {
+          "target": "expansions",
+          "resolved": false,
+          "confidence": 0,
+          "line": 121
+        },
+        {
+          "target": "TweetExpansionsBuilder",
+          "resolved": false,
+          "confidence": 0,
+          "line": 120
+        },
+        {
+          "target": "params",
+          "resolved": false,
+          "confidence": 0,
+          "line": 120
+        },
+        {
+          "target": "cast",
+          "resolved": false,
+          "confidence": 0,
+          "line": 130
+        },
+        {
+          "target": "get_tweet",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 130,
+          "resolvedId": "backend/blocks/twitter/tweets/tweet_lookup.py:get_tweet:102"
+        },
+        {
+          "target": "serialize",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 139,
+          "resolvedId": "backend/blocks/twitter/_serializer.py:serialize:15"
+        },
+        {
+          "target": "serialize_dict",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 140,
+          "resolvedId": "backend/blocks/twitter/_serializer.py:serialize_dict:34"
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 143
+        },
+        {
+          "target": "Exception",
+          "resolved": false,
+          "confidence": 0,
+          "line": 149
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/twitter/tweets/tweet_lookup.py:run:154",
+      "name": "run",
+      "startLine": 154,
+      "endLine": 187,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "get_tweet",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 163,
+          "resolvedId": "backend/blocks/twitter/tweets/tweet_lookup.py:get_tweet:102"
+        },
+        {
+          "target": "credentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 164
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 174
+        },
+        {
+          "target": "handle_tweepy_exception",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 187,
+          "resolvedId": "backend/blocks/twitter/tweepy_exceptions.py:handle_tweepy_exception:4"
+        },
+        {
+          "target": "e",
+          "resolved": false,
+          "confidence": 0,
+          "line": 187
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/twitter/tweets/tweet_lookup.py:__init__:223",
+      "name": "__init__",
+      "startLine": 223,
+      "endLine": 264,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 224,
+          "resolvedId": "backend/blocks/twitter/tweets/tweet_lookup.py:__init__:62"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 224
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/twitter/tweets/tweet_lookup.py:get_tweets:267",
+      "name": "get_tweets",
+      "startLine": 267,
+      "endLine": 324,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "Client",
+          "resolved": false,
+          "confidence": 0,
+          "line": 278
+        },
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 279,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        },
+        {
+          "target": "build",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 285,
+          "resolvedId": "backend/blocks/twitter/_builders.py:build:109"
+        },
+        {
+          "target": "add_user_fields",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 285,
+          "resolvedId": "backend/blocks/twitter/_builders.py:add_user_fields:98"
+        },
+        {
+          "target": "user_fields",
+          "resolved": false,
+          "confidence": 0,
+          "line": 291
+        },
+        {
+          "target": "add_tweet_fields",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 285,
+          "resolvedId": "backend/blocks/twitter/_builders.py:add_tweet_fields:87"
+        },
+        {
+          "target": "tweet_fields",
+          "resolved": false,
+          "confidence": 0,
+          "line": 290
+        },
+        {
+          "target": "add_poll_fields",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 285,
+          "resolvedId": "backend/blocks/twitter/_builders.py:add_poll_fields:76"
+        },
+        {
+          "target": "poll_fields",
+          "resolved": false,
+          "confidence": 0,
+          "line": 289
+        },
+        {
+          "target": "add_place_fields",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 285,
+          "resolvedId": "backend/blocks/twitter/_builders.py:add_place_fields:65"
+        },
+        {
+          "target": "place_fields",
+          "resolved": false,
+          "confidence": 0,
+          "line": 288
+        },
+        {
+          "target": "add_media_fields",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 285,
+          "resolvedId": "backend/blocks/twitter/_builders.py:add_media_fields:54"
+        },
+        {
+          "target": "media_fields",
+          "resolved": false,
+          "confidence": 0,
+          "line": 287
+        },
+        {
+          "target": "add_expansions",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 285,
+          "resolvedId": "backend/blocks/twitter/_builders.py:add_expansions:41"
+        },
+        {
+          "target": "expansions",
+          "resolved": false,
+          "confidence": 0,
+          "line": 286
+        },
+        {
+          "target": "TweetExpansionsBuilder",
+          "resolved": false,
+          "confidence": 0,
+          "line": 285
+        },
+        {
+          "target": "params",
+          "resolved": false,
+          "confidence": 0,
+          "line": 285
+        },
+        {
+          "target": "cast",
+          "resolved": false,
+          "confidence": 0,
+          "line": 295
+        },
+        {
+          "target": "get_tweets",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 295,
+          "resolvedId": "backend/blocks/twitter/tweets/tweet_lookup.py:get_tweets:267"
+        },
+        {
+          "target": "Exception",
+          "resolved": false,
+          "confidence": 0,
+          "line": 298
+        },
+        {
+          "target": "serialize",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 306,
+          "resolvedId": "backend/blocks/twitter/_serializer.py:serialize:15"
+        },
+        {
+          "target": "serialize_list",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 307,
+          "resolvedId": "backend/blocks/twitter/_serializer.py:serialize_list:54"
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 310
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 315
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 315
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 316
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/twitter/tweets/tweet_lookup.py:run:326",
+      "name": "run",
+      "startLine": 326,
+      "endLine": 360,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "get_tweets",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 334,
+          "resolvedId": "backend/blocks/twitter/tweets/tweet_lookup.py:get_tweets:267"
+        },
+        {
+          "target": "credentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 335
+        },
+        {
+          "target": "handle_tweepy_exception",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 360,
+          "resolvedId": "backend/blocks/twitter/tweepy_exceptions.py:handle_tweepy_exception:4"
+        },
+        {
+          "target": "e",
+          "resolved": false,
+          "confidence": 0,
+          "line": 360
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

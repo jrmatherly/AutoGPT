@@ -1,0 +1,1034 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.089Z",
+  "checksum": "e84d4494087fe8c5",
+  "file": "src/app/(platform)/monitoring/components/AgentImportForm.tsx",
+  "functions": [
+    {
+      "id": "src/app/(platform)/monitoring/components/AgentImportForm.tsx:AgentImportForm:37",
+      "name": "AgentImportForm",
+      "startLine": 37,
+      "endLine": 175,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 40
+        },
+        {
+          "target": "useBackendAPI",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 41,
+          "resolvedId": "src/lib/autogpt-server-api/context.tsx:useBackendAPI:34"
+        },
+        {
+          "target": "useForm",
+          "resolved": false,
+          "confidence": 0,
+          "line": 43
+        },
+        {
+          "target": "zodResolver",
+          "resolved": false,
+          "confidence": 0,
+          "line": 44
+        },
+        {
+          "target": "formSchema",
+          "resolved": false,
+          "confidence": 0,
+          "line": 44
+        },
+        {
+          "target": "setError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 54
+        },
+        {
+          "target": "catch",
+          "resolved": false,
+          "confidence": 0,
+          "line": 64
+        },
+        {
+          "target": "then",
+          "resolved": false,
+          "confidence": 0,
+          "line": 64
+        },
+        {
+          "target": "createGraph",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 64,
+          "resolvedId": "src/lib/autogpt-server-api/client.ts:createGraph:227"
+        },
+        {
+          "target": "payload",
+          "resolved": false,
+          "confidence": 0,
+          "line": 65
+        },
+        {
+          "target": "setError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        },
+        {
+          "target": "Form",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 79,
+          "resolvedId": "src/components/molecules/Form/Form.tsx:Form:24"
+        },
+        {
+          "target": "handleSubmit",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 81,
+          "resolvedId": "src/components/__legacy__/RatingCard.tsx:handleSubmit:28"
+        },
+        {
+          "target": "onSubmit",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 81,
+          "resolvedId": "src/app/(platform)/monitoring/components/AgentImportForm.tsx:onSubmit:52"
+        },
+        {
+          "target": "cn",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 82,
+          "resolvedId": "src/components/renderers/InputRenderer/utils/rjsf-utils.ts:cn:4"
+        },
+        {
+          "target": "className",
+          "resolved": false,
+          "confidence": 0,
+          "line": 82
+        },
+        {
+          "target": "FormField",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 85,
+          "resolvedId": "src/components/__legacy__/ui/form.tsx:FormField:31"
+        },
+        {
+          "target": "control",
+          "resolved": false,
+          "confidence": 0,
+          "line": 86
+        },
+        {
+          "target": "FormItem",
+          "resolved": false,
+          "confidence": 0,
+          "line": 89
+        },
+        {
+          "target": "FormLabel",
+          "resolved": false,
+          "confidence": 0,
+          "line": 90
+        },
+        {
+          "target": "FormControl",
+          "resolved": false,
+          "confidence": 0,
+          "line": 91
+        },
+        {
+          "target": "Input",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 92,
+          "resolvedId": "src/components/atoms/Input/Input.tsx:Input:38"
+        },
+        {
+          "target": "onChange",
+          "resolved": false,
+          "confidence": 0,
+          "line": 99
+        },
+        {
+          "target": "file",
+          "resolved": false,
+          "confidence": 0,
+          "line": 99
+        },
+        {
+          "target": "FileReader",
+          "resolved": false,
+          "confidence": 0,
+          "line": 100
+        },
+        {
+          "target": "parse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 104
+        },
+        {
+          "target": "every",
+          "resolved": false,
+          "confidence": 0,
+          "line": 108
+        },
+        {
+          "target": "Error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 112,
+          "resolvedId": "src/app/error.tsx:Error:8"
+        },
+        {
+          "target": "stringify",
+          "resolved": false,
+          "confidence": 0,
+          "line": 114
+        },
+        {
+          "target": "obj",
+          "resolved": false,
+          "confidence": 0,
+          "line": 114
+        },
+        {
+          "target": "sanitizeImportedGraph",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 118,
+          "resolvedId": "src/lib/autogpt-server-api/utils.ts:sanitizeImportedGraph:42"
+        },
+        {
+          "target": "graph",
+          "resolved": false,
+          "confidence": 0,
+          "line": 118
+        },
+        {
+          "target": "setAgentObject",
+          "resolved": false,
+          "confidence": 0,
+          "line": 119
+        },
+        {
+          "target": "graph",
+          "resolved": false,
+          "confidence": 0,
+          "line": 119
+        },
+        {
+          "target": "setValue",
+          "resolved": false,
+          "confidence": 0,
+          "line": 120
+        },
+        {
+          "target": "name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 120
+        },
+        {
+          "target": "setValue",
+          "resolved": false,
+          "confidence": 0,
+          "line": 121
+        },
+        {
+          "target": "description",
+          "resolved": false,
+          "confidence": 0,
+          "line": 121
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 123
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 123
+        },
+        {
+          "target": "readAsText",
+          "resolved": false,
+          "confidence": 0,
+          "line": 127
+        },
+        {
+          "target": "file",
+          "resolved": false,
+          "confidence": 0,
+          "line": 127
+        },
+        {
+          "target": "FormMessage",
+          "resolved": false,
+          "confidence": 0,
+          "line": 132
+        },
+        {
+          "target": "FormField",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 136,
+          "resolvedId": "src/components/__legacy__/ui/form.tsx:FormField:31"
+        },
+        {
+          "target": "control",
+          "resolved": false,
+          "confidence": 0,
+          "line": 137
+        },
+        {
+          "target": "FormItem",
+          "resolved": false,
+          "confidence": 0,
+          "line": 141
+        },
+        {
+          "target": "FormLabel",
+          "resolved": false,
+          "confidence": 0,
+          "line": 142
+        },
+        {
+          "target": "FormControl",
+          "resolved": false,
+          "confidence": 0,
+          "line": 143
+        },
+        {
+          "target": "Input",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 144,
+          "resolvedId": "src/components/atoms/Input/Input.tsx:Input:38"
+        },
+        {
+          "target": "FormMessage",
+          "resolved": false,
+          "confidence": 0,
+          "line": 146
+        },
+        {
+          "target": "FormField",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 150,
+          "resolvedId": "src/components/__legacy__/ui/form.tsx:FormField:31"
+        },
+        {
+          "target": "control",
+          "resolved": false,
+          "confidence": 0,
+          "line": 151
+        },
+        {
+          "target": "FormItem",
+          "resolved": false,
+          "confidence": 0,
+          "line": 155
+        },
+        {
+          "target": "FormLabel",
+          "resolved": false,
+          "confidence": 0,
+          "line": 156
+        },
+        {
+          "target": "FormControl",
+          "resolved": false,
+          "confidence": 0,
+          "line": 157
+        },
+        {
+          "target": "Textarea",
+          "resolved": false,
+          "confidence": 0,
+          "line": 158
+        },
+        {
+          "target": "FormMessage",
+          "resolved": false,
+          "confidence": 0,
+          "line": 160
+        },
+        {
+          "target": "Button",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 164,
+          "resolvedId": "src/components/atoms/Button/Button.tsx:Button:12"
+        },
+        {
+          "target": "EnterIcon",
+          "resolved": false,
+          "confidence": 0,
+          "line": 170
+        },
+        {
+          "target": "setError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 54
+        },
+        {
+          "target": "catch",
+          "resolved": false,
+          "confidence": 0,
+          "line": 64
+        },
+        {
+          "target": "then",
+          "resolved": false,
+          "confidence": 0,
+          "line": 64
+        },
+        {
+          "target": "createGraph",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 64,
+          "resolvedId": "src/lib/autogpt-server-api/client.ts:createGraph:227"
+        },
+        {
+          "target": "payload",
+          "resolved": false,
+          "confidence": 0,
+          "line": 65
+        },
+        {
+          "target": "setError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        },
+        {
+          "target": "setError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/app/(platform)/monitoring/components/AgentImportForm.tsx:onSubmit:52",
+      "name": "onSubmit",
+      "startLine": 52,
+      "endLine": 76,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "setError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 54
+        },
+        {
+          "target": "catch",
+          "resolved": false,
+          "confidence": 0,
+          "line": 64
+        },
+        {
+          "target": "then",
+          "resolved": false,
+          "confidence": 0,
+          "line": 64
+        },
+        {
+          "target": "createGraph",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 64,
+          "resolvedId": "src/lib/autogpt-server-api/client.ts:createGraph:227"
+        },
+        {
+          "target": "payload",
+          "resolved": false,
+          "confidence": 0,
+          "line": 65
+        },
+        {
+          "target": "setError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        },
+        {
+          "target": "setError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 54
+        },
+        {
+          "target": "catch",
+          "resolved": false,
+          "confidence": 0,
+          "line": 64
+        },
+        {
+          "target": "then",
+          "resolved": false,
+          "confidence": 0,
+          "line": 64
+        },
+        {
+          "target": "createGraph",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 64,
+          "resolvedId": "src/lib/autogpt-server-api/client.ts:createGraph:227"
+        },
+        {
+          "target": "payload",
+          "resolved": false,
+          "confidence": 0,
+          "line": 65
+        },
+        {
+          "target": "setError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        },
+        {
+          "target": "setError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/app/(platform)/monitoring/components/AgentImportForm.tsx:$catch$1:70",
+      "name": "$catch$1",
+      "startLine": 70,
+      "endLine": 75,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "setError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        },
+        {
+          "target": "setError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        },
+        {
+          "target": "setError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/app/(platform)/monitoring/components/AgentImportForm.tsx:$then$2:66",
+      "name": "$then$2",
+      "startLine": 66,
+      "endLine": 69,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/app/(platform)/monitoring/components/AgentImportForm.tsx:$every$1:109",
+      "name": "$every$1",
+      "startLine": 109,
+      "endLine": 109,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/app/(platform)/monitoring/components/AgentImportForm.tsx:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 176,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 40
+        },
+        {
+          "target": "useBackendAPI",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 41,
+          "resolvedId": "src/lib/autogpt-server-api/context.tsx:useBackendAPI:34"
+        },
+        {
+          "target": "useForm",
+          "resolved": false,
+          "confidence": 0,
+          "line": 43
+        },
+        {
+          "target": "zodResolver",
+          "resolved": false,
+          "confidence": 0,
+          "line": 44
+        },
+        {
+          "target": "formSchema",
+          "resolved": false,
+          "confidence": 0,
+          "line": 44
+        },
+        {
+          "target": "setError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 54
+        },
+        {
+          "target": "catch",
+          "resolved": false,
+          "confidence": 0,
+          "line": 64
+        },
+        {
+          "target": "then",
+          "resolved": false,
+          "confidence": 0,
+          "line": 64
+        },
+        {
+          "target": "createGraph",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 64,
+          "resolvedId": "src/lib/autogpt-server-api/client.ts:createGraph:227"
+        },
+        {
+          "target": "payload",
+          "resolved": false,
+          "confidence": 0,
+          "line": 65
+        },
+        {
+          "target": "setError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        },
+        {
+          "target": "Form",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 79,
+          "resolvedId": "src/components/molecules/Form/Form.tsx:Form:24"
+        },
+        {
+          "target": "handleSubmit",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 81,
+          "resolvedId": "src/components/__legacy__/RatingCard.tsx:handleSubmit:28"
+        },
+        {
+          "target": "onSubmit",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 81,
+          "resolvedId": "src/app/(platform)/monitoring/components/AgentImportForm.tsx:onSubmit:52"
+        },
+        {
+          "target": "cn",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 82,
+          "resolvedId": "src/components/renderers/InputRenderer/utils/rjsf-utils.ts:cn:4"
+        },
+        {
+          "target": "className",
+          "resolved": false,
+          "confidence": 0,
+          "line": 82
+        },
+        {
+          "target": "FormField",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 85,
+          "resolvedId": "src/components/__legacy__/ui/form.tsx:FormField:31"
+        },
+        {
+          "target": "control",
+          "resolved": false,
+          "confidence": 0,
+          "line": 86
+        },
+        {
+          "target": "FormItem",
+          "resolved": false,
+          "confidence": 0,
+          "line": 89
+        },
+        {
+          "target": "FormLabel",
+          "resolved": false,
+          "confidence": 0,
+          "line": 90
+        },
+        {
+          "target": "FormControl",
+          "resolved": false,
+          "confidence": 0,
+          "line": 91
+        },
+        {
+          "target": "Input",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 92,
+          "resolvedId": "src/components/atoms/Input/Input.tsx:Input:38"
+        },
+        {
+          "target": "onChange",
+          "resolved": false,
+          "confidence": 0,
+          "line": 99
+        },
+        {
+          "target": "file",
+          "resolved": false,
+          "confidence": 0,
+          "line": 99
+        },
+        {
+          "target": "FileReader",
+          "resolved": false,
+          "confidence": 0,
+          "line": 100
+        },
+        {
+          "target": "parse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 104
+        },
+        {
+          "target": "every",
+          "resolved": false,
+          "confidence": 0,
+          "line": 108
+        },
+        {
+          "target": "Error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 112,
+          "resolvedId": "src/app/error.tsx:Error:8"
+        },
+        {
+          "target": "stringify",
+          "resolved": false,
+          "confidence": 0,
+          "line": 114
+        },
+        {
+          "target": "obj",
+          "resolved": false,
+          "confidence": 0,
+          "line": 114
+        },
+        {
+          "target": "sanitizeImportedGraph",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 118,
+          "resolvedId": "src/lib/autogpt-server-api/utils.ts:sanitizeImportedGraph:42"
+        },
+        {
+          "target": "graph",
+          "resolved": false,
+          "confidence": 0,
+          "line": 118
+        },
+        {
+          "target": "setAgentObject",
+          "resolved": false,
+          "confidence": 0,
+          "line": 119
+        },
+        {
+          "target": "graph",
+          "resolved": false,
+          "confidence": 0,
+          "line": 119
+        },
+        {
+          "target": "setValue",
+          "resolved": false,
+          "confidence": 0,
+          "line": 120
+        },
+        {
+          "target": "name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 120
+        },
+        {
+          "target": "setValue",
+          "resolved": false,
+          "confidence": 0,
+          "line": 121
+        },
+        {
+          "target": "description",
+          "resolved": false,
+          "confidence": 0,
+          "line": 121
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 123
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 123
+        },
+        {
+          "target": "readAsText",
+          "resolved": false,
+          "confidence": 0,
+          "line": 127
+        },
+        {
+          "target": "file",
+          "resolved": false,
+          "confidence": 0,
+          "line": 127
+        },
+        {
+          "target": "FormMessage",
+          "resolved": false,
+          "confidence": 0,
+          "line": 132
+        },
+        {
+          "target": "FormField",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 136,
+          "resolvedId": "src/components/__legacy__/ui/form.tsx:FormField:31"
+        },
+        {
+          "target": "control",
+          "resolved": false,
+          "confidence": 0,
+          "line": 137
+        },
+        {
+          "target": "FormItem",
+          "resolved": false,
+          "confidence": 0,
+          "line": 141
+        },
+        {
+          "target": "FormLabel",
+          "resolved": false,
+          "confidence": 0,
+          "line": 142
+        },
+        {
+          "target": "FormControl",
+          "resolved": false,
+          "confidence": 0,
+          "line": 143
+        },
+        {
+          "target": "Input",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 144,
+          "resolvedId": "src/components/atoms/Input/Input.tsx:Input:38"
+        },
+        {
+          "target": "FormMessage",
+          "resolved": false,
+          "confidence": 0,
+          "line": 146
+        },
+        {
+          "target": "FormField",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 150,
+          "resolvedId": "src/components/__legacy__/ui/form.tsx:FormField:31"
+        },
+        {
+          "target": "control",
+          "resolved": false,
+          "confidence": 0,
+          "line": 151
+        },
+        {
+          "target": "FormItem",
+          "resolved": false,
+          "confidence": 0,
+          "line": 155
+        },
+        {
+          "target": "FormLabel",
+          "resolved": false,
+          "confidence": 0,
+          "line": 156
+        },
+        {
+          "target": "FormControl",
+          "resolved": false,
+          "confidence": 0,
+          "line": 157
+        },
+        {
+          "target": "Textarea",
+          "resolved": false,
+          "confidence": 0,
+          "line": 158
+        },
+        {
+          "target": "FormMessage",
+          "resolved": false,
+          "confidence": 0,
+          "line": 160
+        },
+        {
+          "target": "Button",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 164,
+          "resolvedId": "src/components/atoms/Button/Button.tsx:Button:12"
+        },
+        {
+          "target": "EnterIcon",
+          "resolved": false,
+          "confidence": 0,
+          "line": 170
+        },
+        {
+          "target": "setError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 54
+        },
+        {
+          "target": "catch",
+          "resolved": false,
+          "confidence": 0,
+          "line": 64
+        },
+        {
+          "target": "then",
+          "resolved": false,
+          "confidence": 0,
+          "line": 64
+        },
+        {
+          "target": "createGraph",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 64,
+          "resolvedId": "src/lib/autogpt-server-api/client.ts:createGraph:227"
+        },
+        {
+          "target": "payload",
+          "resolved": false,
+          "confidence": 0,
+          "line": 65
+        },
+        {
+          "target": "setError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        },
+        {
+          "target": "setError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        },
+        {
+          "target": "custom",
+          "resolved": false,
+          "confidence": 0,
+          "line": 26
+        },
+        {
+          "target": "object",
+          "resolved": false,
+          "confidence": 0,
+          "line": 30
+        },
+        {
+          "target": "min",
+          "resolved": false,
+          "confidence": 0,
+          "line": 32
+        },
+        {
+          "target": "string",
+          "resolved": false,
+          "confidence": 0,
+          "line": 32
+        },
+        {
+          "target": "string",
+          "resolved": false,
+          "confidence": 0,
+          "line": 33
+        },
+        {
+          "target": "boolean",
+          "resolved": false,
+          "confidence": 0,
+          "line": 34
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

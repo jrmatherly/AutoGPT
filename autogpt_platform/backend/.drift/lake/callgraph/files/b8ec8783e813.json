@@ -1,0 +1,461 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.206Z",
+  "checksum": "856dc8abf111e955",
+  "file": "backend/api/conn_manager_test.py",
+  "functions": [
+    {
+      "id": "backend/api/conn_manager_test.py:connection_manager:17",
+      "name": "connection_manager",
+      "startLine": 17,
+      "endLine": 18,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "ConnectionManager",
+          "resolved": false,
+          "confidence": 0,
+          "line": 18
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/conn_manager_test.py:mock_websocket:22",
+      "name": "mock_websocket",
+      "startLine": 22,
+      "endLine": 25,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "AsyncMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 23
+        },
+        {
+          "target": "AsyncMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 24
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/conn_manager_test.py:test_connect:29",
+      "name": "test_connect",
+      "startLine": 29,
+      "endLine": 35,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "connect_socket",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 32,
+          "resolvedId": "backend/api/conn_manager.py:connect_socket:25"
+        },
+        {
+          "target": "mock_websocket",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 32,
+          "resolvedId": "backend/api/conn_manager_test.py:mock_websocket:22"
+        },
+        {
+          "target": "assert_called_once",
+          "resolved": false,
+          "confidence": 0,
+          "line": 35
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/conn_manager_test.py:test_disconnect:38",
+      "name": "test_disconnect",
+      "startLine": 38,
+      "endLine": 49,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 41,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "mock_websocket",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 41,
+          "resolvedId": "backend/api/conn_manager_test.py:mock_websocket:22"
+        },
+        {
+          "target": "disconnect_socket",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 45,
+          "resolvedId": "backend/api/conn_manager.py:disconnect_socket:32"
+        },
+        {
+          "target": "mock_websocket",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 45,
+          "resolvedId": "backend/api/conn_manager_test.py:mock_websocket:22"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/conn_manager_test.py:test_subscribe:53",
+      "name": "test_subscribe",
+      "startLine": 53,
+      "endLine": 64,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "subscribe_graph_exec",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 56,
+          "resolvedId": "backend/api/conn_manager.py:subscribe_graph_exec:42"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/conn_manager_test.py:test_unsubscribe:68",
+      "name": "test_unsubscribe",
+      "startLine": 68,
+      "endLine": 80,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "unsubscribe_graph_exec",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 74,
+          "resolvedId": "backend/api/conn_manager.py:unsubscribe_graph_exec:56"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/conn_manager_test.py:test_send_graph_execution_result:84",
+      "name": "test_send_graph_execution_result",
+      "startLine": 84,
+      "endLine": 124,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "GraphExecutionEvent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 89
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 96
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 97
+        },
+        {
+          "target": "Stats",
+          "resolved": false,
+          "confidence": 0,
+          "line": 98
+        },
+        {
+          "target": "send_execution_update",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 116,
+          "resolvedId": "backend/api/conn_manager.py:send_execution_update:70"
+        },
+        {
+          "target": "result",
+          "resolved": false,
+          "confidence": 0,
+          "line": 116
+        },
+        {
+          "target": "assert_called_once_with",
+          "resolved": false,
+          "confidence": 0,
+          "line": 118
+        },
+        {
+          "target": "model_dump_json",
+          "resolved": false,
+          "confidence": 0,
+          "line": 119
+        },
+        {
+          "target": "WSMessage",
+          "resolved": false,
+          "confidence": 0,
+          "line": 119
+        },
+        {
+          "target": "model_dump",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 122,
+          "resolvedId": "backend/blocks/apollo/models.py:model_dump:11"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/conn_manager_test.py:test_send_node_execution_result:128",
+      "name": "test_send_node_execution_result",
+      "startLine": 128,
+      "endLine": 158,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "NodeExecutionEvent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 133
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 144
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 146
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 147
+        },
+        {
+          "target": "send_execution_update",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 150,
+          "resolvedId": "backend/api/conn_manager.py:send_execution_update:70"
+        },
+        {
+          "target": "result",
+          "resolved": false,
+          "confidence": 0,
+          "line": 150
+        },
+        {
+          "target": "assert_called_once_with",
+          "resolved": false,
+          "confidence": 0,
+          "line": 152
+        },
+        {
+          "target": "model_dump_json",
+          "resolved": false,
+          "confidence": 0,
+          "line": 153
+        },
+        {
+          "target": "WSMessage",
+          "resolved": false,
+          "confidence": 0,
+          "line": 153
+        },
+        {
+          "target": "model_dump",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 156,
+          "resolvedId": "backend/blocks/apollo/models.py:model_dump:11"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/conn_manager_test.py:test_send_execution_result_user_mismatch:162",
+      "name": "test_send_execution_result_user_mismatch",
+      "startLine": 162,
+      "endLine": 186,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "NodeExecutionEvent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 167
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 178
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 180
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 181
+        },
+        {
+          "target": "send_execution_update",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 184,
+          "resolvedId": "backend/api/conn_manager.py:send_execution_update:70"
+        },
+        {
+          "target": "result",
+          "resolved": false,
+          "confidence": 0,
+          "line": 184
+        },
+        {
+          "target": "assert_not_called",
+          "resolved": false,
+          "confidence": 0,
+          "line": 186
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/conn_manager_test.py:test_send_execution_result_no_subscribers:190",
+      "name": "test_send_execution_result_no_subscribers",
+      "startLine": 190,
+      "endLine": 212,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "NodeExecutionEvent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 193
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 204
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 206
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 207
+        },
+        {
+          "target": "send_execution_update",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 210,
+          "resolvedId": "backend/api/conn_manager.py:send_execution_update:70"
+        },
+        {
+          "target": "result",
+          "resolved": false,
+          "confidence": 0,
+          "line": 210
+        },
+        {
+          "target": "assert_not_called",
+          "resolved": false,
+          "confidence": 0,
+          "line": 212
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/conn_manager_test.py:test_send_notification:216",
+      "name": "test_send_notification",
+      "startLine": 216,
+      "endLine": 231,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "send_notification",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 221,
+          "resolvedId": "backend/api/conn_manager.py:send_notification:105"
+        },
+        {
+          "target": "NotificationPayload",
+          "resolved": false,
+          "confidence": 0,
+          "line": 222
+        },
+        {
+          "target": "assert_called_once",
+          "resolved": false,
+          "confidence": 0,
+          "line": 225
+        },
+        {
+          "target": "model_dump_json",
+          "resolved": false,
+          "confidence": 0,
+          "line": 227
+        },
+        {
+          "target": "WSMessage",
+          "resolved": false,
+          "confidence": 0,
+          "line": 227
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

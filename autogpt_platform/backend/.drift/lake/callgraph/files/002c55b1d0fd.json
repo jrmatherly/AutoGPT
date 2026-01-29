@@ -1,0 +1,329 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.120Z",
+  "checksum": "6174dee2330e087b",
+  "file": "backend/usecases/sample.py",
+  "functions": [
+    {
+      "id": "backend/usecases/sample.py:create_test_user:11",
+      "name": "create_test_user",
+      "startLine": 11,
+      "endLine": 25,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "get_or_create_user",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 24,
+          "resolvedId": "backend/data/user.py:get_or_create_user:32"
+        },
+        {
+          "target": "test_user_data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 24
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/usecases/sample.py:create_test_graph:28",
+      "name": "create_test_graph",
+      "startLine": 28,
+      "endLine": 83,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "Node",
+          "resolved": false,
+          "confidence": 0,
+          "line": 37
+        },
+        {
+          "target": "AgentInputBlock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 38
+        },
+        {
+          "target": "Node",
+          "resolved": false,
+          "confidence": 0,
+          "line": 41
+        },
+        {
+          "target": "AgentInputBlock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 42
+        },
+        {
+          "target": "Node",
+          "resolved": false,
+          "confidence": 0,
+          "line": 48
+        },
+        {
+          "target": "FillTextTemplateBlock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 49
+        },
+        {
+          "target": "Node",
+          "resolved": false,
+          "confidence": 0,
+          "line": 55
+        },
+        {
+          "target": "StoreValueBlock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 55
+        },
+        {
+          "target": "Link",
+          "resolved": false,
+          "confidence": 0,
+          "line": 58
+        },
+        {
+          "target": "Link",
+          "resolved": false,
+          "confidence": 0,
+          "line": 64
+        },
+        {
+          "target": "Link",
+          "resolved": false,
+          "confidence": 0,
+          "line": 70
+        },
+        {
+          "target": "Graph",
+          "resolved": false,
+          "confidence": 0,
+          "line": 78
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/usecases/sample.py:sample_agent:86",
+      "name": "sample_agent",
+      "startLine": 86,
+      "endLine": 96,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "SpinTestServer",
+          "resolved": false,
+          "confidence": 0,
+          "line": 87
+        },
+        {
+          "target": "create_test_user",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 88,
+          "resolvedId": "backend/usecases/sample.py:create_test_user:11"
+        },
+        {
+          "target": "create_graph",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 89,
+          "resolvedId": "backend/executor/manager_test.py:create_graph:34"
+        },
+        {
+          "target": "create_test_graph",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 89,
+          "resolvedId": "backend/usecases/sample.py:create_test_graph:28"
+        },
+        {
+          "target": "test_execute_graph",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 91,
+          "resolvedId": "backend/api/rest_api.py:test_execute_graph:377"
+        },
+        {
+          "target": "wait_execution",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 96,
+          "resolvedId": "backend/util/test.py:wait_execution:74"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/usecases/sample.py:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 103,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "get_or_create_user",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 24,
+          "resolvedId": "backend/data/user.py:get_or_create_user:32"
+        },
+        {
+          "target": "test_user_data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 24
+        },
+        {
+          "target": "Node",
+          "resolved": false,
+          "confidence": 0,
+          "line": 37
+        },
+        {
+          "target": "AgentInputBlock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 38
+        },
+        {
+          "target": "Node",
+          "resolved": false,
+          "confidence": 0,
+          "line": 41
+        },
+        {
+          "target": "AgentInputBlock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 42
+        },
+        {
+          "target": "Node",
+          "resolved": false,
+          "confidence": 0,
+          "line": 48
+        },
+        {
+          "target": "FillTextTemplateBlock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 49
+        },
+        {
+          "target": "Node",
+          "resolved": false,
+          "confidence": 0,
+          "line": 55
+        },
+        {
+          "target": "StoreValueBlock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 55
+        },
+        {
+          "target": "Link",
+          "resolved": false,
+          "confidence": 0,
+          "line": 58
+        },
+        {
+          "target": "Link",
+          "resolved": false,
+          "confidence": 0,
+          "line": 64
+        },
+        {
+          "target": "Link",
+          "resolved": false,
+          "confidence": 0,
+          "line": 70
+        },
+        {
+          "target": "Graph",
+          "resolved": false,
+          "confidence": 0,
+          "line": 78
+        },
+        {
+          "target": "SpinTestServer",
+          "resolved": false,
+          "confidence": 0,
+          "line": 87
+        },
+        {
+          "target": "create_test_user",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 88,
+          "resolvedId": "backend/usecases/sample.py:create_test_user:11"
+        },
+        {
+          "target": "create_graph",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 89,
+          "resolvedId": "backend/executor/manager_test.py:create_graph:34"
+        },
+        {
+          "target": "create_test_graph",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 89,
+          "resolvedId": "backend/usecases/sample.py:create_test_graph:28"
+        },
+        {
+          "target": "test_execute_graph",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 91,
+          "resolvedId": "backend/api/rest_api.py:test_execute_graph:377"
+        },
+        {
+          "target": "wait_execution",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 96,
+          "resolvedId": "backend/util/test.py:wait_execution:74"
+        },
+        {
+          "target": "run",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 102,
+          "resolvedId": "backend/blocks/firecrawl/crawl.py:run:73"
+        },
+        {
+          "target": "run",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 102,
+          "resolvedId": "backend/blocks/firecrawl/crawl.py:run:73"
+        },
+        {
+          "target": "sample_agent",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 102,
+          "resolvedId": "backend/usecases/sample.py:sample_agent:86"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

@@ -1,0 +1,1947 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.140Z",
+  "checksum": "61f7150c6c1b3714",
+  "file": "load-tests/tests/marketplace/library-access-test.js",
+  "functions": [
+    {
+      "id": "load-tests/tests/marketplace/library-access-test.js:authenticatedLibraryJourney:76",
+      "name": "authenticatedLibraryJourney",
+      "startLine": 76,
+      "endLine": 432,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 77
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 80
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 81,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 86,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "check",
+          "resolved": false,
+          "confidence": 0,
+          "line": 87
+        },
+        {
+          "target": "libraryAgentsResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 87
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 91,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "isArray",
+          "resolved": false,
+          "confidence": 0,
+          "line": 92
+        },
+        {
+          "target": "agents",
+          "resolved": false,
+          "confidence": 0,
+          "line": 92
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 101,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 103,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 104
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 110
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 111,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 116,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "check",
+          "resolved": false,
+          "confidence": 0,
+          "line": 117
+        },
+        {
+          "target": "favoriteAgentsResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 117
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 121,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "isArray",
+          "resolved": false,
+          "confidence": 0,
+          "line": 122
+        },
+        {
+          "target": "agents",
+          "resolved": false,
+          "confidence": 0,
+          "line": 122
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 131,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 133,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 134
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 140
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 143,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 147,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "check",
+          "resolved": false,
+          "confidence": 0,
+          "line": 148
+        },
+        {
+          "target": "storeAgentsResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 148
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 152,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "isArray",
+          "resolved": false,
+          "confidence": 0,
+          "line": 156
+        },
+        {
+          "target": "agents",
+          "resolved": false,
+          "confidence": 0,
+          "line": 156
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 166,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 169,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "floor",
+          "resolved": false,
+          "confidence": 0,
+          "line": 173
+        },
+        {
+          "target": "random",
+          "resolved": false,
+          "confidence": 0,
+          "line": 173
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 177
+        },
+        {
+          "target": "post",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 185,
+          "resolvedId": "backend/util/request.py:post:563"
+        },
+        {
+          "target": "stringify",
+          "resolved": false,
+          "confidence": 0,
+          "line": 187
+        },
+        {
+          "target": "addAgentPayload",
+          "resolved": false,
+          "confidence": 0,
+          "line": 187
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 191,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "check",
+          "resolved": false,
+          "confidence": 0,
+          "line": 192
+        },
+        {
+          "target": "addAgentResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 192
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 197,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 207,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 211,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 213
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 220,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "stringify",
+          "resolved": false,
+          "confidence": 0,
+          "line": 222
+        },
+        {
+          "target": "updatePayload",
+          "resolved": false,
+          "confidence": 0,
+          "line": 222
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 226,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "check",
+          "resolved": false,
+          "confidence": 0,
+          "line": 227
+        },
+        {
+          "target": "updateAgentResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 227
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 231,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 242,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 244,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 245
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 251
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 252,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 257,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "check",
+          "resolved": false,
+          "confidence": 0,
+          "line": 258
+        },
+        {
+          "target": "agentDetailsResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 258
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 262,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 273,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 275,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 276
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 282
+        },
+        {
+          "target": "post",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 283,
+          "resolvedId": "backend/util/request.py:post:563"
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 289,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "check",
+          "resolved": false,
+          "confidence": 0,
+          "line": 290
+        },
+        {
+          "target": "forkAgentResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 290
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 294,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 305,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 307,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 308
+        },
+        {
+          "target": "warn",
+          "resolved": false,
+          "confidence": 0,
+          "line": 314
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 317,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 320,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 321
+        },
+        {
+          "target": "warn",
+          "resolved": false,
+          "confidence": 0,
+          "line": 328
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 329,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 332,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 333
+        },
+        {
+          "target": "floor",
+          "resolved": false,
+          "confidence": 0,
+          "line": 341
+        },
+        {
+          "target": "random",
+          "resolved": false,
+          "confidence": 0,
+          "line": 341
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 343
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 344,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "encodeURIComponent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 345
+        },
+        {
+          "target": "randomSearchTerm",
+          "resolved": false,
+          "confidence": 0,
+          "line": 345
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 349,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "check",
+          "resolved": false,
+          "confidence": 0,
+          "line": 350
+        },
+        {
+          "target": "searchLibraryResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 350
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 354,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "isArray",
+          "resolved": false,
+          "confidence": 0,
+          "line": 355
+        },
+        {
+          "target": "agents",
+          "resolved": false,
+          "confidence": 0,
+          "line": 355
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 364,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 366,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 367
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 375,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "floor",
+          "resolved": false,
+          "confidence": 0,
+          "line": 379
+        },
+        {
+          "target": "random",
+          "resolved": false,
+          "confidence": 0,
+          "line": 379
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 383
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 386,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 391,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "check",
+          "resolved": false,
+          "confidence": 0,
+          "line": 392
+        },
+        {
+          "target": "agentByGraphResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 392
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 396,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 411,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 413,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 414
+        },
+        {
+          "target": "warn",
+          "resolved": false,
+          "confidence": 0,
+          "line": 421
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 424,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 428
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 429
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "load-tests/tests/marketplace/library-access-test.js:handleSummary:434",
+      "name": "handleSummary",
+      "startLine": 434,
+      "endLine": 536,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "max",
+          "resolved": false,
+          "confidence": 0,
+          "line": 476
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 495
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 496
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 497
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 498
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 499
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 500
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 501
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 502
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 505
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 506
+        },
+        {
+          "target": "round",
+          "resolved": false,
+          "confidence": 0,
+          "line": 507
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 509
+        },
+        {
+          "target": "round",
+          "resolved": false,
+          "confidence": 0,
+          "line": 510
+        },
+        {
+          "target": "avg_response_time",
+          "resolved": false,
+          "confidence": 0,
+          "line": 510
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 512
+        },
+        {
+          "target": "round",
+          "resolved": false,
+          "confidence": 0,
+          "line": 513
+        },
+        {
+          "target": "p95_response_time",
+          "resolved": false,
+          "confidence": 0,
+          "line": 513
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 515
+        },
+        {
+          "target": "round",
+          "resolved": false,
+          "confidence": 0,
+          "line": 516
+        },
+        {
+          "target": "p99_response_time",
+          "resolved": false,
+          "confidence": 0,
+          "line": 516
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 519
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 520
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 523
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 526
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 529
+        },
+        {
+          "target": "stringify",
+          "resolved": false,
+          "confidence": 0,
+          "line": 534
+        },
+        {
+          "target": "summary",
+          "resolved": false,
+          "confidence": 0,
+          "line": 534
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "load-tests/tests/marketplace/library-access-test.js:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 537,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 77
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 80
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 81,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 86,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "check",
+          "resolved": false,
+          "confidence": 0,
+          "line": 87
+        },
+        {
+          "target": "libraryAgentsResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 87
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 91,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "isArray",
+          "resolved": false,
+          "confidence": 0,
+          "line": 92
+        },
+        {
+          "target": "agents",
+          "resolved": false,
+          "confidence": 0,
+          "line": 92
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 101,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 103,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 104
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 110
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 111,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 116,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "check",
+          "resolved": false,
+          "confidence": 0,
+          "line": 117
+        },
+        {
+          "target": "favoriteAgentsResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 117
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 121,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "isArray",
+          "resolved": false,
+          "confidence": 0,
+          "line": 122
+        },
+        {
+          "target": "agents",
+          "resolved": false,
+          "confidence": 0,
+          "line": 122
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 131,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 133,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 134
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 140
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 143,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 147,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "check",
+          "resolved": false,
+          "confidence": 0,
+          "line": 148
+        },
+        {
+          "target": "storeAgentsResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 148
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 152,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "isArray",
+          "resolved": false,
+          "confidence": 0,
+          "line": 156
+        },
+        {
+          "target": "agents",
+          "resolved": false,
+          "confidence": 0,
+          "line": 156
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 166,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 169,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "floor",
+          "resolved": false,
+          "confidence": 0,
+          "line": 173
+        },
+        {
+          "target": "random",
+          "resolved": false,
+          "confidence": 0,
+          "line": 173
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 177
+        },
+        {
+          "target": "post",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 185,
+          "resolvedId": "backend/util/request.py:post:563"
+        },
+        {
+          "target": "stringify",
+          "resolved": false,
+          "confidence": 0,
+          "line": 187
+        },
+        {
+          "target": "addAgentPayload",
+          "resolved": false,
+          "confidence": 0,
+          "line": 187
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 191,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "check",
+          "resolved": false,
+          "confidence": 0,
+          "line": 192
+        },
+        {
+          "target": "addAgentResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 192
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 197,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 207,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 211,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 213
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 220,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "stringify",
+          "resolved": false,
+          "confidence": 0,
+          "line": 222
+        },
+        {
+          "target": "updatePayload",
+          "resolved": false,
+          "confidence": 0,
+          "line": 222
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 226,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "check",
+          "resolved": false,
+          "confidence": 0,
+          "line": 227
+        },
+        {
+          "target": "updateAgentResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 227
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 231,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 242,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 244,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 245
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 251
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 252,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 257,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "check",
+          "resolved": false,
+          "confidence": 0,
+          "line": 258
+        },
+        {
+          "target": "agentDetailsResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 258
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 262,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 273,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 275,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 276
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 282
+        },
+        {
+          "target": "post",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 283,
+          "resolvedId": "backend/util/request.py:post:563"
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 289,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "check",
+          "resolved": false,
+          "confidence": 0,
+          "line": 290
+        },
+        {
+          "target": "forkAgentResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 290
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 294,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 305,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 307,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 308
+        },
+        {
+          "target": "warn",
+          "resolved": false,
+          "confidence": 0,
+          "line": 314
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 317,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 320,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 321
+        },
+        {
+          "target": "warn",
+          "resolved": false,
+          "confidence": 0,
+          "line": 328
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 329,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 332,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 333
+        },
+        {
+          "target": "floor",
+          "resolved": false,
+          "confidence": 0,
+          "line": 341
+        },
+        {
+          "target": "random",
+          "resolved": false,
+          "confidence": 0,
+          "line": 341
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 343
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 344,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "encodeURIComponent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 345
+        },
+        {
+          "target": "randomSearchTerm",
+          "resolved": false,
+          "confidence": 0,
+          "line": 345
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 349,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "check",
+          "resolved": false,
+          "confidence": 0,
+          "line": 350
+        },
+        {
+          "target": "searchLibraryResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 350
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 354,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "isArray",
+          "resolved": false,
+          "confidence": 0,
+          "line": 355
+        },
+        {
+          "target": "agents",
+          "resolved": false,
+          "confidence": 0,
+          "line": 355
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 364,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 366,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 367
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 375,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "floor",
+          "resolved": false,
+          "confidence": 0,
+          "line": 379
+        },
+        {
+          "target": "random",
+          "resolved": false,
+          "confidence": 0,
+          "line": 379
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 383
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 386,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 391,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "check",
+          "resolved": false,
+          "confidence": 0,
+          "line": 392
+        },
+        {
+          "target": "agentByGraphResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 392
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 396,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 411,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 413,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 414
+        },
+        {
+          "target": "warn",
+          "resolved": false,
+          "confidence": 0,
+          "line": 421
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 424,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 428
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 429
+        },
+        {
+          "target": "max",
+          "resolved": false,
+          "confidence": 0,
+          "line": 476
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 495
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 496
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 497
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 498
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 499
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 500
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 501
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 502
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 505
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 506
+        },
+        {
+          "target": "round",
+          "resolved": false,
+          "confidence": 0,
+          "line": 507
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 509
+        },
+        {
+          "target": "round",
+          "resolved": false,
+          "confidence": 0,
+          "line": 510
+        },
+        {
+          "target": "avg_response_time",
+          "resolved": false,
+          "confidence": 0,
+          "line": 510
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 512
+        },
+        {
+          "target": "round",
+          "resolved": false,
+          "confidence": 0,
+          "line": 513
+        },
+        {
+          "target": "p95_response_time",
+          "resolved": false,
+          "confidence": 0,
+          "line": 513
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 515
+        },
+        {
+          "target": "round",
+          "resolved": false,
+          "confidence": 0,
+          "line": 516
+        },
+        {
+          "target": "p99_response_time",
+          "resolved": false,
+          "confidence": 0,
+          "line": 516
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 519
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 520
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 523
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 526
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 529
+        },
+        {
+          "target": "stringify",
+          "resolved": false,
+          "confidence": 0,
+          "line": 534
+        },
+        {
+          "target": "summary",
+          "resolved": false,
+          "confidence": 0,
+          "line": 534
+        },
+        {
+          "target": "getEnvironmentConfig",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 8,
+          "resolvedId": "load-tests/configs/environment.js:getEnvironmentConfig:30"
+        },
+        {
+          "target": "Counter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 12
+        },
+        {
+          "target": "Counter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 13
+        },
+        {
+          "target": "Counter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 14
+        },
+        {
+          "target": "Counter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 15
+        },
+        {
+          "target": "Counter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 16
+        },
+        {
+          "target": "parseInt",
+          "resolved": false,
+          "confidence": 0,
+          "line": 19
+        },
+        {
+          "target": "VUS",
+          "resolved": false,
+          "confidence": 0,
+          "line": 19
+        },
+        {
+          "target": "parseInt",
+          "resolved": false,
+          "confidence": 0,
+          "line": 23
+        },
+        {
+          "target": "REQUESTS_PER_VU",
+          "resolved": false,
+          "confidence": 0,
+          "line": 23
+        },
+        {
+          "target": "parseInt",
+          "resolved": false,
+          "confidence": 0,
+          "line": 26
+        },
+        {
+          "target": "THRESHOLD_P95",
+          "resolved": false,
+          "confidence": 0,
+          "line": 26
+        },
+        {
+          "target": "parseInt",
+          "resolved": false,
+          "confidence": 0,
+          "line": 27
+        },
+        {
+          "target": "THRESHOLD_P99",
+          "resolved": false,
+          "confidence": 0,
+          "line": 27
+        },
+        {
+          "target": "parseFloat",
+          "resolved": false,
+          "confidence": 0,
+          "line": 28
+        },
+        {
+          "target": "THRESHOLD_ERROR_RATE",
+          "resolved": false,
+          "confidence": 0,
+          "line": 28
+        },
+        {
+          "target": "parseFloat",
+          "resolved": false,
+          "confidence": 0,
+          "line": 29
+        },
+        {
+          "target": "THRESHOLD_CHECK_RATE",
+          "resolved": false,
+          "confidence": 0,
+          "line": 29
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

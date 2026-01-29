@@ -1,0 +1,2750 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.057Z",
+  "checksum": "243998d9d616c7e1",
+  "file": "src/components/contextual/Chat/useChatSession.ts",
+  "functions": [
+    {
+      "id": "src/components/contextual/Chat/useChatSession.ts:useChatSession:22",
+      "name": "useChatSession",
+      "startLine": 22,
+      "endLine": 359,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useQueryClient",
+          "resolved": false,
+          "confidence": 0,
+          "line": 26
+        },
+        {
+          "target": "useState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 27
+        },
+        {
+          "target": "useState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 28
+        },
+        {
+          "target": "useRef",
+          "resolved": false,
+          "confidence": 0,
+          "line": 29
+        },
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 31
+        },
+        {
+          "target": "isValidUUID",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 33,
+          "resolvedId": "src/lib/utils.ts:isValidUUID:500"
+        },
+        {
+          "target": "urlSessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 33
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 34
+        },
+        {
+          "target": "urlSessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 34
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 35
+        },
+        {
+          "target": "setSessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 39
+        },
+        {
+          "target": "setSessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 42
+        },
+        {
+          "target": "urlSessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 42
+        },
+        {
+          "target": "setSessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 44
+        },
+        {
+          "target": "setSessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 46
+        },
+        {
+          "target": "usePostV2CreateSession",
+          "resolved": false,
+          "confidence": 0,
+          "line": 51
+        },
+        {
+          "target": "useGetV2GetSession",
+          "resolved": false,
+          "confidence": 0,
+          "line": 58
+        },
+        {
+          "target": "usePatchV2SessionAssignUser",
+          "resolved": false,
+          "confidence": 0,
+          "line": 68
+        },
+        {
+          "target": "useMemo",
+          "resolved": false,
+          "confidence": 0,
+          "line": 70
+        },
+        {
+          "target": "toISOString",
+          "resolved": false,
+          "confidence": 0,
+          "line": 78
+        },
+        {
+          "target": "Date",
+          "resolved": false,
+          "confidence": 0,
+          "line": 78
+        },
+        {
+          "target": "toISOString",
+          "resolved": false,
+          "confidence": 0,
+          "line": 79
+        },
+        {
+          "target": "Date",
+          "resolved": false,
+          "confidence": 0,
+          "line": 79
+        },
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 88
+        },
+        {
+          "target": "setError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 90
+        },
+        {
+          "target": "Error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 93,
+          "resolvedId": "src/app/error.tsx:Error:8"
+        },
+        {
+          "target": "setError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 96
+        },
+        {
+          "target": "Error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 99,
+          "resolvedId": "src/app/error.tsx:Error:8"
+        },
+        {
+          "target": "setError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 102
+        },
+        {
+          "target": "useState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 107
+        },
+        {
+          "target": "useRef",
+          "resolved": false,
+          "confidence": 0,
+          "line": 109
+        },
+        {
+          "target": "useMemo",
+          "resolved": false,
+          "confidence": 0,
+          "line": 113
+        },
+        {
+          "target": "Set",
+          "resolved": false,
+          "confidence": 0,
+          "line": 115
+        },
+        {
+          "target": "some",
+          "resolved": false,
+          "confidence": 0,
+          "line": 120
+        },
+        {
+          "target": "parse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 125
+        },
+        {
+          "target": "content",
+          "resolved": false,
+          "confidence": 0,
+          "line": 125
+        },
+        {
+          "target": "has",
+          "resolved": false,
+          "confidence": 0,
+          "line": 127
+        },
+        {
+          "target": "type",
+          "resolved": false,
+          "confidence": 0,
+          "line": 127
+        },
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 135
+        },
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 145
+        },
+        {
+          "target": "setForcePolling",
+          "resolved": false,
+          "confidence": 0,
+          "line": 152
+        },
+        {
+          "target": "setForcePolling",
+          "resolved": false,
+          "confidence": 0,
+          "line": 159
+        },
+        {
+          "target": "useRef",
+          "resolved": false,
+          "confidence": 0,
+          "line": 165
+        },
+        {
+          "target": "hasPendingOperations",
+          "resolved": false,
+          "confidence": 0,
+          "line": 165
+        },
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 166
+        },
+        {
+          "target": "invalidateQueries",
+          "resolved": false,
+          "confidence": 0,
+          "line": 173
+        },
+        {
+          "target": "getGetV2ListSessionsQueryKey",
+          "resolved": false,
+          "confidence": 0,
+          "line": 174
+        },
+        {
+          "target": "useRef",
+          "resolved": false,
+          "confidence": 0,
+          "line": 183
+        },
+        {
+          "target": "useRef",
+          "resolved": false,
+          "confidence": 0,
+          "line": 184
+        },
+        {
+          "target": "hasPendingOperations",
+          "resolved": false,
+          "confidence": 0,
+          "line": 184
+        },
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 187
+        },
+        {
+          "target": "min",
+          "resolved": false,
+          "confidence": 0,
+          "line": 199
+        },
+        {
+          "target": "setTimeout",
+          "resolved": false,
+          "confidence": 0,
+          "line": 200
+        },
+        {
+          "target": "delay",
+          "resolved": false,
+          "confidence": 0,
+          "line": 212
+        },
+        {
+          "target": "refetch",
+          "resolved": false,
+          "confidence": 0,
+          "line": 204
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 206
+        },
+        {
+          "target": "err",
+          "resolved": false,
+          "confidence": 0,
+          "line": 206
+        },
+        {
+          "target": "schedule",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 209,
+          "resolvedId": "src/components/contextual/Chat/useChatSession.ts:schedule:197"
+        },
+        {
+          "target": "schedule",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 215,
+          "resolvedId": "src/components/contextual/Chat/useChatSession.ts:schedule:197"
+        },
+        {
+          "target": "clearTimeout",
+          "resolved": false,
+          "confidence": 0,
+          "line": 219
+        },
+        {
+          "target": "timeoutId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 219
+        },
+        {
+          "target": "setError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 227
+        },
+        {
+          "target": "postV2CreateSession",
+          "resolved": false,
+          "confidence": 0,
+          "line": 228
+        },
+        {
+          "target": "stringify",
+          "resolved": false,
+          "confidence": 0,
+          "line": 229
+        },
+        {
+          "target": "Error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 232,
+          "resolvedId": "src/app/error.tsx:Error:8"
+        },
+        {
+          "target": "setSessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 235
+        },
+        {
+          "target": "newSessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 235
+        },
+        {
+          "target": "setTimeout",
+          "resolved": false,
+          "confidence": 0,
+          "line": 237
+        },
+        {
+          "target": "Error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 245,
+          "resolvedId": "src/app/error.tsx:Error:8"
+        },
+        {
+          "target": "setError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 246
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 246
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 247
+        },
+        {
+          "target": "setError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 256
+        },
+        {
+          "target": "invalidateQueries",
+          "resolved": false,
+          "confidence": 0,
+          "line": 258
+        },
+        {
+          "target": "getGetV2GetSessionQueryKey",
+          "resolved": false,
+          "confidence": 0,
+          "line": 259
+        },
+        {
+          "target": "id",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 259,
+          "resolvedId": "public/gtag.js:id:112"
+        },
+        {
+          "target": "setSessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 262
+        },
+        {
+          "target": "id",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 262,
+          "resolvedId": "public/gtag.js:id:112"
+        },
+        {
+          "target": "getGetV2GetSessionQueryOptions",
+          "resolved": false,
+          "confidence": 0,
+          "line": 264
+        },
+        {
+          "target": "id",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 264,
+          "resolvedId": "public/gtag.js:id:112"
+        },
+        {
+          "target": "fetchQuery",
+          "resolved": false,
+          "confidence": 0,
+          "line": 271
+        },
+        {
+          "target": "queryOptions",
+          "resolved": false,
+          "confidence": 0,
+          "line": 271
+        },
+        {
+          "target": "warn",
+          "resolved": false,
+          "confidence": 0,
+          "line": 273
+        },
+        {
+          "target": "setSessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 274
+        },
+        {
+          "target": "Error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 275,
+          "resolvedId": "src/app/error.tsx:Error:8"
+        },
+        {
+          "target": "Error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 279,
+          "resolvedId": "src/app/error.tsx:Error:8"
+        },
+        {
+          "target": "setError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 280
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 280
+        },
+        {
+          "target": "setError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 288
+        },
+        {
+          "target": "refetch",
+          "resolved": false,
+          "confidence": 0,
+          "line": 289
+        },
+        {
+          "target": "Error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 292,
+          "resolvedId": "src/app/error.tsx:Error:8"
+        },
+        {
+          "target": "setError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 293
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 293
+        },
+        {
+          "target": "setError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 300
+        },
+        {
+          "target": "claimSessionMutation",
+          "resolved": false,
+          "confidence": 0,
+          "line": 301
+        },
+        {
+          "target": "invalidateQueries",
+          "resolved": false,
+          "confidence": 0,
+          "line": 305
+        },
+        {
+          "target": "getGetV2GetSessionQueryKey",
+          "resolved": false,
+          "confidence": 0,
+          "line": 306
+        },
+        {
+          "target": "id",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 306,
+          "resolvedId": "public/gtag.js:id:112"
+        },
+        {
+          "target": "refetch",
+          "resolved": false,
+          "confidence": 0,
+          "line": 308
+        },
+        {
+          "target": "success",
+          "resolved": false,
+          "confidence": 0,
+          "line": 309
+        },
+        {
+          "target": "Error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 314,
+          "resolvedId": "src/app/error.tsx:Error:8"
+        },
+        {
+          "target": "setError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 328
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 328
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 329
+        },
+        {
+          "target": "setSessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 338
+        },
+        {
+          "target": "setError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 339
+        },
+        {
+          "target": "isNotFoundError",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 350,
+          "resolvedId": "src/components/contextual/Chat/useChatSession.ts:isNotFoundError:361"
+        },
+        {
+          "target": "loadError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 350
+        },
+        {
+          "target": "isValidUUID",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 33,
+          "resolvedId": "src/lib/utils.ts:isValidUUID:500"
+        },
+        {
+          "target": "urlSessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 33
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 34
+        },
+        {
+          "target": "urlSessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 34
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 35
+        },
+        {
+          "target": "setSessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 39
+        },
+        {
+          "target": "setSessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 42
+        },
+        {
+          "target": "urlSessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 42
+        },
+        {
+          "target": "setSessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 44
+        },
+        {
+          "target": "setSessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 46
+        },
+        {
+          "target": "setError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 90
+        },
+        {
+          "target": "Error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 93,
+          "resolvedId": "src/app/error.tsx:Error:8"
+        },
+        {
+          "target": "setError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 96
+        },
+        {
+          "target": "Error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 99,
+          "resolvedId": "src/app/error.tsx:Error:8"
+        },
+        {
+          "target": "setError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 102
+        },
+        {
+          "target": "setForcePolling",
+          "resolved": false,
+          "confidence": 0,
+          "line": 152
+        },
+        {
+          "target": "setForcePolling",
+          "resolved": false,
+          "confidence": 0,
+          "line": 159
+        },
+        {
+          "target": "invalidateQueries",
+          "resolved": false,
+          "confidence": 0,
+          "line": 173
+        },
+        {
+          "target": "getGetV2ListSessionsQueryKey",
+          "resolved": false,
+          "confidence": 0,
+          "line": 174
+        },
+        {
+          "target": "min",
+          "resolved": false,
+          "confidence": 0,
+          "line": 199
+        },
+        {
+          "target": "setTimeout",
+          "resolved": false,
+          "confidence": 0,
+          "line": 200
+        },
+        {
+          "target": "delay",
+          "resolved": false,
+          "confidence": 0,
+          "line": 212
+        },
+        {
+          "target": "refetch",
+          "resolved": false,
+          "confidence": 0,
+          "line": 204
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 206
+        },
+        {
+          "target": "err",
+          "resolved": false,
+          "confidence": 0,
+          "line": 206
+        },
+        {
+          "target": "schedule",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 209,
+          "resolvedId": "src/components/contextual/Chat/useChatSession.ts:schedule:197"
+        },
+        {
+          "target": "schedule",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 215,
+          "resolvedId": "src/components/contextual/Chat/useChatSession.ts:schedule:197"
+        },
+        {
+          "target": "clearTimeout",
+          "resolved": false,
+          "confidence": 0,
+          "line": 219
+        },
+        {
+          "target": "timeoutId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 219
+        },
+        {
+          "target": "min",
+          "resolved": false,
+          "confidence": 0,
+          "line": 199
+        },
+        {
+          "target": "setTimeout",
+          "resolved": false,
+          "confidence": 0,
+          "line": 200
+        },
+        {
+          "target": "delay",
+          "resolved": false,
+          "confidence": 0,
+          "line": 212
+        },
+        {
+          "target": "refetch",
+          "resolved": false,
+          "confidence": 0,
+          "line": 204
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 206
+        },
+        {
+          "target": "err",
+          "resolved": false,
+          "confidence": 0,
+          "line": 206
+        },
+        {
+          "target": "schedule",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 209,
+          "resolvedId": "src/components/contextual/Chat/useChatSession.ts:schedule:197"
+        },
+        {
+          "target": "refetch",
+          "resolved": false,
+          "confidence": 0,
+          "line": 204
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 206
+        },
+        {
+          "target": "err",
+          "resolved": false,
+          "confidence": 0,
+          "line": 206
+        },
+        {
+          "target": "schedule",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 209,
+          "resolvedId": "src/components/contextual/Chat/useChatSession.ts:schedule:197"
+        },
+        {
+          "target": "setError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 227
+        },
+        {
+          "target": "postV2CreateSession",
+          "resolved": false,
+          "confidence": 0,
+          "line": 228
+        },
+        {
+          "target": "stringify",
+          "resolved": false,
+          "confidence": 0,
+          "line": 229
+        },
+        {
+          "target": "Error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 232,
+          "resolvedId": "src/app/error.tsx:Error:8"
+        },
+        {
+          "target": "setSessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 235
+        },
+        {
+          "target": "newSessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 235
+        },
+        {
+          "target": "setTimeout",
+          "resolved": false,
+          "confidence": 0,
+          "line": 237
+        },
+        {
+          "target": "Error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 245,
+          "resolvedId": "src/app/error.tsx:Error:8"
+        },
+        {
+          "target": "setError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 246
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 246
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 247
+        },
+        {
+          "target": "setError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 256
+        },
+        {
+          "target": "invalidateQueries",
+          "resolved": false,
+          "confidence": 0,
+          "line": 258
+        },
+        {
+          "target": "getGetV2GetSessionQueryKey",
+          "resolved": false,
+          "confidence": 0,
+          "line": 259
+        },
+        {
+          "target": "id",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 259,
+          "resolvedId": "public/gtag.js:id:112"
+        },
+        {
+          "target": "setSessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 262
+        },
+        {
+          "target": "id",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 262,
+          "resolvedId": "public/gtag.js:id:112"
+        },
+        {
+          "target": "getGetV2GetSessionQueryOptions",
+          "resolved": false,
+          "confidence": 0,
+          "line": 264
+        },
+        {
+          "target": "id",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 264,
+          "resolvedId": "public/gtag.js:id:112"
+        },
+        {
+          "target": "fetchQuery",
+          "resolved": false,
+          "confidence": 0,
+          "line": 271
+        },
+        {
+          "target": "queryOptions",
+          "resolved": false,
+          "confidence": 0,
+          "line": 271
+        },
+        {
+          "target": "warn",
+          "resolved": false,
+          "confidence": 0,
+          "line": 273
+        },
+        {
+          "target": "setSessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 274
+        },
+        {
+          "target": "Error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 275,
+          "resolvedId": "src/app/error.tsx:Error:8"
+        },
+        {
+          "target": "Error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 279,
+          "resolvedId": "src/app/error.tsx:Error:8"
+        },
+        {
+          "target": "setError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 280
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 280
+        },
+        {
+          "target": "setError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 288
+        },
+        {
+          "target": "refetch",
+          "resolved": false,
+          "confidence": 0,
+          "line": 289
+        },
+        {
+          "target": "Error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 292,
+          "resolvedId": "src/app/error.tsx:Error:8"
+        },
+        {
+          "target": "setError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 293
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 293
+        },
+        {
+          "target": "setError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 300
+        },
+        {
+          "target": "claimSessionMutation",
+          "resolved": false,
+          "confidence": 0,
+          "line": 301
+        },
+        {
+          "target": "invalidateQueries",
+          "resolved": false,
+          "confidence": 0,
+          "line": 305
+        },
+        {
+          "target": "getGetV2GetSessionQueryKey",
+          "resolved": false,
+          "confidence": 0,
+          "line": 306
+        },
+        {
+          "target": "id",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 306,
+          "resolvedId": "public/gtag.js:id:112"
+        },
+        {
+          "target": "refetch",
+          "resolved": false,
+          "confidence": 0,
+          "line": 308
+        },
+        {
+          "target": "success",
+          "resolved": false,
+          "confidence": 0,
+          "line": 309
+        },
+        {
+          "target": "Error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 314,
+          "resolvedId": "src/app/error.tsx:Error:8"
+        },
+        {
+          "target": "setError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 328
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 328
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 329
+        },
+        {
+          "target": "setSessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 338
+        },
+        {
+          "target": "setError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 339
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/contextual/Chat/useChatSession.ts:$useEffect$1:31",
+      "name": "$useEffect$1",
+      "startLine": 31,
+      "endLine": 48,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 31
+        },
+        {
+          "target": "isValidUUID",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 33,
+          "resolvedId": "src/lib/utils.ts:isValidUUID:500"
+        },
+        {
+          "target": "urlSessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 33
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 34
+        },
+        {
+          "target": "urlSessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 34
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 35
+        },
+        {
+          "target": "setSessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 39
+        },
+        {
+          "target": "setSessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 42
+        },
+        {
+          "target": "urlSessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 42
+        },
+        {
+          "target": "setSessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 44
+        },
+        {
+          "target": "setSessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 46
+        },
+        {
+          "target": "isValidUUID",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 33,
+          "resolvedId": "src/lib/utils.ts:isValidUUID:500"
+        },
+        {
+          "target": "urlSessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 33
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 34
+        },
+        {
+          "target": "urlSessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 34
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 35
+        },
+        {
+          "target": "setSessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 39
+        },
+        {
+          "target": "setSessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 42
+        },
+        {
+          "target": "urlSessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 42
+        },
+        {
+          "target": "setSessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 44
+        },
+        {
+          "target": "setSessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 46
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/contextual/Chat/useChatSession.ts:$useEffect$2:88",
+      "name": "$useEffect$2",
+      "startLine": 88,
+      "endLine": 104,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 88
+        },
+        {
+          "target": "setError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 90
+        },
+        {
+          "target": "Error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 93,
+          "resolvedId": "src/app/error.tsx:Error:8"
+        },
+        {
+          "target": "setError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 96
+        },
+        {
+          "target": "Error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 99,
+          "resolvedId": "src/app/error.tsx:Error:8"
+        },
+        {
+          "target": "setError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 102
+        },
+        {
+          "target": "setError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 90
+        },
+        {
+          "target": "Error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 93,
+          "resolvedId": "src/app/error.tsx:Error:8"
+        },
+        {
+          "target": "setError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 96
+        },
+        {
+          "target": "Error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 99,
+          "resolvedId": "src/app/error.tsx:Error:8"
+        },
+        {
+          "target": "setError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 102
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/contextual/Chat/useChatSession.ts:$useEffect$3:135",
+      "name": "$useEffect$3",
+      "startLine": 135,
+      "endLine": 139,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 135
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/contextual/Chat/useChatSession.ts:$useEffect$4:145",
+      "name": "$useEffect$4",
+      "startLine": 145,
+      "endLine": 155,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 145
+        },
+        {
+          "target": "setForcePolling",
+          "resolved": false,
+          "confidence": 0,
+          "line": 152
+        },
+        {
+          "target": "setForcePolling",
+          "resolved": false,
+          "confidence": 0,
+          "line": 152
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/contextual/Chat/useChatSession.ts:startPollingForOperation:158",
+      "name": "startPollingForOperation",
+      "startLine": 158,
+      "endLine": 161,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "setForcePolling",
+          "resolved": false,
+          "confidence": 0,
+          "line": 159
+        },
+        {
+          "target": "setForcePolling",
+          "resolved": false,
+          "confidence": 0,
+          "line": 159
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/contextual/Chat/useChatSession.ts:$useEffect$5:167",
+      "name": "$useEffect$5",
+      "startLine": 167,
+      "endLine": 177,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "invalidateQueries",
+          "resolved": false,
+          "confidence": 0,
+          "line": 173
+        },
+        {
+          "target": "getGetV2ListSessionsQueryKey",
+          "resolved": false,
+          "confidence": 0,
+          "line": 174
+        },
+        {
+          "target": "invalidateQueries",
+          "resolved": false,
+          "confidence": 0,
+          "line": 173
+        },
+        {
+          "target": "getGetV2ListSessionsQueryKey",
+          "resolved": false,
+          "confidence": 0,
+          "line": 174
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/contextual/Chat/useChatSession.ts:$useEffect$6:188",
+      "name": "$useEffect$6",
+      "startLine": 188,
+      "endLine": 221,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "min",
+          "resolved": false,
+          "confidence": 0,
+          "line": 199
+        },
+        {
+          "target": "setTimeout",
+          "resolved": false,
+          "confidence": 0,
+          "line": 200
+        },
+        {
+          "target": "delay",
+          "resolved": false,
+          "confidence": 0,
+          "line": 212
+        },
+        {
+          "target": "refetch",
+          "resolved": false,
+          "confidence": 0,
+          "line": 204
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 206
+        },
+        {
+          "target": "err",
+          "resolved": false,
+          "confidence": 0,
+          "line": 206
+        },
+        {
+          "target": "schedule",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 209,
+          "resolvedId": "src/components/contextual/Chat/useChatSession.ts:schedule:197"
+        },
+        {
+          "target": "schedule",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 215,
+          "resolvedId": "src/components/contextual/Chat/useChatSession.ts:schedule:197"
+        },
+        {
+          "target": "clearTimeout",
+          "resolved": false,
+          "confidence": 0,
+          "line": 219
+        },
+        {
+          "target": "timeoutId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 219
+        },
+        {
+          "target": "min",
+          "resolved": false,
+          "confidence": 0,
+          "line": 199
+        },
+        {
+          "target": "setTimeout",
+          "resolved": false,
+          "confidence": 0,
+          "line": 200
+        },
+        {
+          "target": "delay",
+          "resolved": false,
+          "confidence": 0,
+          "line": 212
+        },
+        {
+          "target": "refetch",
+          "resolved": false,
+          "confidence": 0,
+          "line": 204
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 206
+        },
+        {
+          "target": "err",
+          "resolved": false,
+          "confidence": 0,
+          "line": 206
+        },
+        {
+          "target": "schedule",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 209,
+          "resolvedId": "src/components/contextual/Chat/useChatSession.ts:schedule:197"
+        },
+        {
+          "target": "schedule",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 215,
+          "resolvedId": "src/components/contextual/Chat/useChatSession.ts:schedule:197"
+        },
+        {
+          "target": "clearTimeout",
+          "resolved": false,
+          "confidence": 0,
+          "line": 219
+        },
+        {
+          "target": "timeoutId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 219
+        },
+        {
+          "target": "min",
+          "resolved": false,
+          "confidence": 0,
+          "line": 199
+        },
+        {
+          "target": "setTimeout",
+          "resolved": false,
+          "confidence": 0,
+          "line": 200
+        },
+        {
+          "target": "delay",
+          "resolved": false,
+          "confidence": 0,
+          "line": 212
+        },
+        {
+          "target": "refetch",
+          "resolved": false,
+          "confidence": 0,
+          "line": 204
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 206
+        },
+        {
+          "target": "err",
+          "resolved": false,
+          "confidence": 0,
+          "line": 206
+        },
+        {
+          "target": "schedule",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 209,
+          "resolvedId": "src/components/contextual/Chat/useChatSession.ts:schedule:197"
+        },
+        {
+          "target": "refetch",
+          "resolved": false,
+          "confidence": 0,
+          "line": 204
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 206
+        },
+        {
+          "target": "err",
+          "resolved": false,
+          "confidence": 0,
+          "line": 206
+        },
+        {
+          "target": "schedule",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 209,
+          "resolvedId": "src/components/contextual/Chat/useChatSession.ts:schedule:197"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/contextual/Chat/useChatSession.ts:schedule:197",
+      "name": "schedule",
+      "startLine": 197,
+      "endLine": 213,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "min",
+          "resolved": false,
+          "confidence": 0,
+          "line": 199
+        },
+        {
+          "target": "setTimeout",
+          "resolved": false,
+          "confidence": 0,
+          "line": 200
+        },
+        {
+          "target": "delay",
+          "resolved": false,
+          "confidence": 0,
+          "line": 212
+        },
+        {
+          "target": "refetch",
+          "resolved": false,
+          "confidence": 0,
+          "line": 204
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 206
+        },
+        {
+          "target": "err",
+          "resolved": false,
+          "confidence": 0,
+          "line": 206
+        },
+        {
+          "target": "schedule",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 209,
+          "resolvedId": "src/components/contextual/Chat/useChatSession.ts:schedule:197"
+        },
+        {
+          "target": "min",
+          "resolved": false,
+          "confidence": 0,
+          "line": 199
+        },
+        {
+          "target": "setTimeout",
+          "resolved": false,
+          "confidence": 0,
+          "line": 200
+        },
+        {
+          "target": "delay",
+          "resolved": false,
+          "confidence": 0,
+          "line": 212
+        },
+        {
+          "target": "refetch",
+          "resolved": false,
+          "confidence": 0,
+          "line": 204
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 206
+        },
+        {
+          "target": "err",
+          "resolved": false,
+          "confidence": 0,
+          "line": 206
+        },
+        {
+          "target": "schedule",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 209,
+          "resolvedId": "src/components/contextual/Chat/useChatSession.ts:schedule:197"
+        },
+        {
+          "target": "min",
+          "resolved": false,
+          "confidence": 0,
+          "line": 199
+        },
+        {
+          "target": "setTimeout",
+          "resolved": false,
+          "confidence": 0,
+          "line": 200
+        },
+        {
+          "target": "delay",
+          "resolved": false,
+          "confidence": 0,
+          "line": 212
+        },
+        {
+          "target": "refetch",
+          "resolved": false,
+          "confidence": 0,
+          "line": 204
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 206
+        },
+        {
+          "target": "err",
+          "resolved": false,
+          "confidence": 0,
+          "line": 206
+        },
+        {
+          "target": "schedule",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 209,
+          "resolvedId": "src/components/contextual/Chat/useChatSession.ts:schedule:197"
+        },
+        {
+          "target": "refetch",
+          "resolved": false,
+          "confidence": 0,
+          "line": 204
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 206
+        },
+        {
+          "target": "err",
+          "resolved": false,
+          "confidence": 0,
+          "line": 206
+        },
+        {
+          "target": "schedule",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 209,
+          "resolvedId": "src/components/contextual/Chat/useChatSession.ts:schedule:197"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/contextual/Chat/useChatSession.ts:$setTimeout$1:200",
+      "name": "$setTimeout$1",
+      "startLine": 200,
+      "endLine": 212,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "setTimeout",
+          "resolved": false,
+          "confidence": 0,
+          "line": 200
+        },
+        {
+          "target": "delay",
+          "resolved": false,
+          "confidence": 0,
+          "line": 212
+        },
+        {
+          "target": "refetch",
+          "resolved": false,
+          "confidence": 0,
+          "line": 204
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 206
+        },
+        {
+          "target": "err",
+          "resolved": false,
+          "confidence": 0,
+          "line": 206
+        },
+        {
+          "target": "schedule",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 209,
+          "resolvedId": "src/components/contextual/Chat/useChatSession.ts:schedule:197"
+        },
+        {
+          "target": "setTimeout",
+          "resolved": false,
+          "confidence": 0,
+          "line": 200
+        },
+        {
+          "target": "delay",
+          "resolved": false,
+          "confidence": 0,
+          "line": 212
+        },
+        {
+          "target": "refetch",
+          "resolved": false,
+          "confidence": 0,
+          "line": 204
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 206
+        },
+        {
+          "target": "err",
+          "resolved": false,
+          "confidence": 0,
+          "line": 206
+        },
+        {
+          "target": "schedule",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 209,
+          "resolvedId": "src/components/contextual/Chat/useChatSession.ts:schedule:197"
+        },
+        {
+          "target": "setTimeout",
+          "resolved": false,
+          "confidence": 0,
+          "line": 200
+        },
+        {
+          "target": "delay",
+          "resolved": false,
+          "confidence": 0,
+          "line": 212
+        },
+        {
+          "target": "refetch",
+          "resolved": false,
+          "confidence": 0,
+          "line": 204
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 206
+        },
+        {
+          "target": "err",
+          "resolved": false,
+          "confidence": 0,
+          "line": 206
+        },
+        {
+          "target": "schedule",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 209,
+          "resolvedId": "src/components/contextual/Chat/useChatSession.ts:schedule:197"
+        },
+        {
+          "target": "refetch",
+          "resolved": false,
+          "confidence": 0,
+          "line": 204
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 206
+        },
+        {
+          "target": "err",
+          "resolved": false,
+          "confidence": 0,
+          "line": 206
+        },
+        {
+          "target": "schedule",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 209,
+          "resolvedId": "src/components/contextual/Chat/useChatSession.ts:schedule:197"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/contextual/Chat/useChatSession.ts:createSession:225",
+      "name": "createSession",
+      "startLine": 225,
+      "endLine": 252,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "setError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 227
+        },
+        {
+          "target": "postV2CreateSession",
+          "resolved": false,
+          "confidence": 0,
+          "line": 228
+        },
+        {
+          "target": "stringify",
+          "resolved": false,
+          "confidence": 0,
+          "line": 229
+        },
+        {
+          "target": "Error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 232,
+          "resolvedId": "src/app/error.tsx:Error:8"
+        },
+        {
+          "target": "setSessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 235
+        },
+        {
+          "target": "newSessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 235
+        },
+        {
+          "target": "setTimeout",
+          "resolved": false,
+          "confidence": 0,
+          "line": 237
+        },
+        {
+          "target": "Error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 245,
+          "resolvedId": "src/app/error.tsx:Error:8"
+        },
+        {
+          "target": "setError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 246
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 246
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 247
+        },
+        {
+          "target": "setError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 227
+        },
+        {
+          "target": "postV2CreateSession",
+          "resolved": false,
+          "confidence": 0,
+          "line": 228
+        },
+        {
+          "target": "stringify",
+          "resolved": false,
+          "confidence": 0,
+          "line": 229
+        },
+        {
+          "target": "Error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 232,
+          "resolvedId": "src/app/error.tsx:Error:8"
+        },
+        {
+          "target": "setSessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 235
+        },
+        {
+          "target": "newSessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 235
+        },
+        {
+          "target": "setTimeout",
+          "resolved": false,
+          "confidence": 0,
+          "line": 237
+        },
+        {
+          "target": "Error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 245,
+          "resolvedId": "src/app/error.tsx:Error:8"
+        },
+        {
+          "target": "setError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 246
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 246
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 247
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/contextual/Chat/useChatSession.ts:$setTimeout$1:237",
+      "name": "$setTimeout$1",
+      "startLine": 237,
+      "endLine": 241,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "setTimeout",
+          "resolved": false,
+          "confidence": 0,
+          "line": 237
+        },
+        {
+          "target": "setTimeout",
+          "resolved": false,
+          "confidence": 0,
+          "line": 237
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/contextual/Chat/useChatSession.ts:loadSession:254",
+      "name": "loadSession",
+      "startLine": 254,
+      "endLine": 283,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "setError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 256
+        },
+        {
+          "target": "invalidateQueries",
+          "resolved": false,
+          "confidence": 0,
+          "line": 258
+        },
+        {
+          "target": "getGetV2GetSessionQueryKey",
+          "resolved": false,
+          "confidence": 0,
+          "line": 259
+        },
+        {
+          "target": "id",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 259,
+          "resolvedId": "public/gtag.js:id:112"
+        },
+        {
+          "target": "setSessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 262
+        },
+        {
+          "target": "id",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 262,
+          "resolvedId": "public/gtag.js:id:112"
+        },
+        {
+          "target": "getGetV2GetSessionQueryOptions",
+          "resolved": false,
+          "confidence": 0,
+          "line": 264
+        },
+        {
+          "target": "id",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 264,
+          "resolvedId": "public/gtag.js:id:112"
+        },
+        {
+          "target": "fetchQuery",
+          "resolved": false,
+          "confidence": 0,
+          "line": 271
+        },
+        {
+          "target": "queryOptions",
+          "resolved": false,
+          "confidence": 0,
+          "line": 271
+        },
+        {
+          "target": "warn",
+          "resolved": false,
+          "confidence": 0,
+          "line": 273
+        },
+        {
+          "target": "setSessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 274
+        },
+        {
+          "target": "Error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 275,
+          "resolvedId": "src/app/error.tsx:Error:8"
+        },
+        {
+          "target": "Error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 279,
+          "resolvedId": "src/app/error.tsx:Error:8"
+        },
+        {
+          "target": "setError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 280
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 280
+        },
+        {
+          "target": "setError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 256
+        },
+        {
+          "target": "invalidateQueries",
+          "resolved": false,
+          "confidence": 0,
+          "line": 258
+        },
+        {
+          "target": "getGetV2GetSessionQueryKey",
+          "resolved": false,
+          "confidence": 0,
+          "line": 259
+        },
+        {
+          "target": "id",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 259,
+          "resolvedId": "public/gtag.js:id:112"
+        },
+        {
+          "target": "setSessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 262
+        },
+        {
+          "target": "id",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 262,
+          "resolvedId": "public/gtag.js:id:112"
+        },
+        {
+          "target": "getGetV2GetSessionQueryOptions",
+          "resolved": false,
+          "confidence": 0,
+          "line": 264
+        },
+        {
+          "target": "id",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 264,
+          "resolvedId": "public/gtag.js:id:112"
+        },
+        {
+          "target": "fetchQuery",
+          "resolved": false,
+          "confidence": 0,
+          "line": 271
+        },
+        {
+          "target": "queryOptions",
+          "resolved": false,
+          "confidence": 0,
+          "line": 271
+        },
+        {
+          "target": "warn",
+          "resolved": false,
+          "confidence": 0,
+          "line": 273
+        },
+        {
+          "target": "setSessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 274
+        },
+        {
+          "target": "Error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 275,
+          "resolvedId": "src/app/error.tsx:Error:8"
+        },
+        {
+          "target": "Error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 279,
+          "resolvedId": "src/app/error.tsx:Error:8"
+        },
+        {
+          "target": "setError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 280
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 280
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/contextual/Chat/useChatSession.ts:refreshSession:285",
+      "name": "refreshSession",
+      "startLine": 285,
+      "endLine": 296,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "setError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 288
+        },
+        {
+          "target": "refetch",
+          "resolved": false,
+          "confidence": 0,
+          "line": 289
+        },
+        {
+          "target": "Error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 292,
+          "resolvedId": "src/app/error.tsx:Error:8"
+        },
+        {
+          "target": "setError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 293
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 293
+        },
+        {
+          "target": "setError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 288
+        },
+        {
+          "target": "refetch",
+          "resolved": false,
+          "confidence": 0,
+          "line": 289
+        },
+        {
+          "target": "Error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 292,
+          "resolvedId": "src/app/error.tsx:Error:8"
+        },
+        {
+          "target": "setError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 293
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 293
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/contextual/Chat/useChatSession.ts:claimSession:298",
+      "name": "claimSession",
+      "startLine": 298,
+      "endLine": 335,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "setError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 300
+        },
+        {
+          "target": "claimSessionMutation",
+          "resolved": false,
+          "confidence": 0,
+          "line": 301
+        },
+        {
+          "target": "invalidateQueries",
+          "resolved": false,
+          "confidence": 0,
+          "line": 305
+        },
+        {
+          "target": "getGetV2GetSessionQueryKey",
+          "resolved": false,
+          "confidence": 0,
+          "line": 306
+        },
+        {
+          "target": "id",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 306,
+          "resolvedId": "public/gtag.js:id:112"
+        },
+        {
+          "target": "refetch",
+          "resolved": false,
+          "confidence": 0,
+          "line": 308
+        },
+        {
+          "target": "success",
+          "resolved": false,
+          "confidence": 0,
+          "line": 309
+        },
+        {
+          "target": "Error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 314,
+          "resolvedId": "src/app/error.tsx:Error:8"
+        },
+        {
+          "target": "setError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 328
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 328
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 329
+        },
+        {
+          "target": "setError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 300
+        },
+        {
+          "target": "claimSessionMutation",
+          "resolved": false,
+          "confidence": 0,
+          "line": 301
+        },
+        {
+          "target": "invalidateQueries",
+          "resolved": false,
+          "confidence": 0,
+          "line": 305
+        },
+        {
+          "target": "getGetV2GetSessionQueryKey",
+          "resolved": false,
+          "confidence": 0,
+          "line": 306
+        },
+        {
+          "target": "id",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 306,
+          "resolvedId": "public/gtag.js:id:112"
+        },
+        {
+          "target": "refetch",
+          "resolved": false,
+          "confidence": 0,
+          "line": 308
+        },
+        {
+          "target": "success",
+          "resolved": false,
+          "confidence": 0,
+          "line": 309
+        },
+        {
+          "target": "Error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 314,
+          "resolvedId": "src/app/error.tsx:Error:8"
+        },
+        {
+          "target": "setError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 328
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 328
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 329
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/contextual/Chat/useChatSession.ts:clearSession:337",
+      "name": "clearSession",
+      "startLine": 337,
+      "endLine": 341,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "setSessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 338
+        },
+        {
+          "target": "setError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 339
+        },
+        {
+          "target": "setSessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 338
+        },
+        {
+          "target": "setError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 339
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/contextual/Chat/useChatSession.ts:isNotFoundError:361",
+      "name": "isNotFoundError",
+      "startLine": 361,
+      "endLine": 374,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/contextual/Chat/useChatSession.ts:shouldRetrySessionLoad:376",
+      "name": "shouldRetrySessionLoad",
+      "startLine": 376,
+      "endLine": 379,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "isNotFoundError",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 377,
+          "resolvedId": "src/components/contextual/Chat/useChatSession.ts:isNotFoundError:361"
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 377
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/contextual/Chat/useChatSession.ts:getSessionRetryDelay:381",
+      "name": "getSessionRetryDelay",
+      "startLine": 381,
+      "endLine": 385,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

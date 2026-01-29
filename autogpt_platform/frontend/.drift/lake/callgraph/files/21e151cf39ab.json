@@ -1,0 +1,41 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.013Z",
+  "checksum": "71e7b11bae906dbe",
+  "file": "src/app/(no-navbar)/onboarding/5-run/components/RunAgentHint.tsx",
+  "functions": [
+    {
+      "id": "src/app/(no-navbar)/onboarding/5-run/components/RunAgentHint.tsx:RunAgentHint:8",
+      "name": "RunAgentHint",
+      "startLine": 8,
+      "endLine": 45,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "OnboardingText",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 12,
+          "resolvedId": "src/app/(no-navbar)/onboarding/components/OnboardingText.tsx:OnboardingText:10"
+        },
+        {
+          "target": "handleNewRun",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 21,
+          "resolvedId": "src/app/(no-navbar)/onboarding/5-run/useOnboardingRunStep.tsx:handleNewRun:74"
+        },
+        {
+          "target": "cn",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 22,
+          "resolvedId": "src/components/renderers/InputRenderer/utils/rjsf-utils.ts:cn:4"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

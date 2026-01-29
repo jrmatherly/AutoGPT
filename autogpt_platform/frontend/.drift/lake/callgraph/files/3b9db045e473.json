@@ -1,0 +1,1530 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.032Z",
+  "checksum": "144221903e4928e6",
+  "file": "src/tests/agent-dashboard.spec.ts",
+  "functions": [
+    {
+      "id": "src/tests/agent-dashboard.spec.ts:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 261,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "beforeEach",
+          "resolved": false,
+          "confidence": 0,
+          "line": 7
+        },
+        {
+          "target": "LoginPage",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 8,
+          "resolvedId": "src/app/(platform)/login/page.tsx:LoginPage:16"
+        },
+        {
+          "target": "goto",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 9,
+          "resolvedId": "src/tests/pages/marketplace.page.ts:goto:10"
+        },
+        {
+          "target": "getTestUserWithLibraryAgents",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 10,
+          "resolvedId": "src/tests/credentials/index.ts:getTestUserWithLibraryAgents:7"
+        },
+        {
+          "target": "login",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 11,
+          "resolvedId": "src/tests/pages/login.page.ts:login:10"
+        },
+        {
+          "target": "email",
+          "resolved": false,
+          "confidence": 0,
+          "line": 11
+        },
+        {
+          "target": "password",
+          "resolved": false,
+          "confidence": 0,
+          "line": 11
+        },
+        {
+          "target": "hasUrl",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 12,
+          "resolvedId": "src/tests/utils/assertion.ts:hasUrl:23"
+        },
+        {
+          "target": "page",
+          "resolved": false,
+          "confidence": 0,
+          "line": 12
+        },
+        {
+          "target": "test",
+          "resolved": false,
+          "confidence": 0,
+          "line": 15
+        },
+        {
+          "target": "getSelectors",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 16,
+          "resolvedId": "src/tests/utils/selectors.ts:getSelectors:3"
+        },
+        {
+          "target": "page",
+          "resolved": false,
+          "confidence": 0,
+          "line": 16
+        },
+        {
+          "target": "goto",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 17,
+          "resolvedId": "src/tests/pages/marketplace.page.ts:goto:10"
+        },
+        {
+          "target": "toBeVisible",
+          "resolved": false,
+          "confidence": 0,
+          "line": 19
+        },
+        {
+          "target": "expect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 19
+        },
+        {
+          "target": "getText",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 19,
+          "resolvedId": "src/tests/utils/selectors.ts:getText:28"
+        },
+        {
+          "target": "toBeVisible",
+          "resolved": false,
+          "confidence": 0,
+          "line": 20
+        },
+        {
+          "target": "expect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 20
+        },
+        {
+          "target": "getText",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 20,
+          "resolvedId": "src/tests/utils/selectors.ts:getText:28"
+        },
+        {
+          "target": "toBeVisible",
+          "resolved": false,
+          "confidence": 0,
+          "line": 21
+        },
+        {
+          "target": "expect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 21
+        },
+        {
+          "target": "getText",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 21,
+          "resolvedId": "src/tests/utils/selectors.ts:getText:28"
+        },
+        {
+          "target": "test",
+          "resolved": false,
+          "confidence": 0,
+          "line": 24
+        },
+        {
+          "target": "getSelectors",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 25,
+          "resolvedId": "src/tests/utils/selectors.ts:getSelectors:3"
+        },
+        {
+          "target": "page",
+          "resolved": false,
+          "confidence": 0,
+          "line": 25
+        },
+        {
+          "target": "goto",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 27,
+          "resolvedId": "src/tests/pages/marketplace.page.ts:goto:10"
+        },
+        {
+          "target": "getId",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 28,
+          "resolvedId": "src/tests/utils/selectors.ts:getId:48"
+        },
+        {
+          "target": "toBeVisible",
+          "resolved": false,
+          "confidence": 0,
+          "line": 29
+        },
+        {
+          "target": "expect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 29
+        },
+        {
+          "target": "submitAgentButton",
+          "resolved": false,
+          "confidence": 0,
+          "line": 29
+        },
+        {
+          "target": "click",
+          "resolved": false,
+          "confidence": 0,
+          "line": 30
+        },
+        {
+          "target": "toBeVisible",
+          "resolved": false,
+          "confidence": 0,
+          "line": 32
+        },
+        {
+          "target": "expect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 32
+        },
+        {
+          "target": "getText",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 32,
+          "resolvedId": "src/tests/utils/selectors.ts:getText:28"
+        },
+        {
+          "target": "toBeVisible",
+          "resolved": false,
+          "confidence": 0,
+          "line": 33
+        },
+        {
+          "target": "expect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 33
+        },
+        {
+          "target": "getText",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 34,
+          "resolvedId": "src/tests/utils/selectors.ts:getText:28"
+        },
+        {
+          "target": "click",
+          "resolved": false,
+          "confidence": 0,
+          "line": 37
+        },
+        {
+          "target": "locator",
+          "resolved": false,
+          "confidence": 0,
+          "line": 37
+        },
+        {
+          "target": "toBeVisible",
+          "resolved": false,
+          "confidence": 0,
+          "line": 38
+        },
+        {
+          "target": "expect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 38
+        },
+        {
+          "target": "getText",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 38,
+          "resolvedId": "src/tests/utils/selectors.ts:getText:28"
+        },
+        {
+          "target": "test",
+          "resolved": false,
+          "confidence": 0,
+          "line": 41
+        },
+        {
+          "target": "goto",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 44,
+          "resolvedId": "src/tests/pages/marketplace.page.ts:goto:10"
+        },
+        {
+          "target": "getByTestId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 46
+        },
+        {
+          "target": "toBeVisible",
+          "resolved": false,
+          "confidence": 0,
+          "line": 47
+        },
+        {
+          "target": "expect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 47
+        },
+        {
+          "target": "agentTable",
+          "resolved": false,
+          "confidence": 0,
+          "line": 47
+        },
+        {
+          "target": "getByTestId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 49
+        },
+        {
+          "target": "first",
+          "resolved": false,
+          "confidence": 0,
+          "line": 52
+        },
+        {
+          "target": "filter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 52
+        },
+        {
+          "target": "count",
+          "resolved": false,
+          "confidence": 0,
+          "line": 53
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 54
+        },
+        {
+          "target": "scrollIntoViewIfNeeded",
+          "resolved": false,
+          "confidence": 0,
+          "line": 58
+        },
+        {
+          "target": "getByTestId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 60
+        },
+        {
+          "target": "waitFor",
+          "resolved": false,
+          "confidence": 0,
+          "line": 61
+        },
+        {
+          "target": "scrollIntoViewIfNeeded",
+          "resolved": false,
+          "confidence": 0,
+          "line": 62
+        },
+        {
+          "target": "click",
+          "resolved": false,
+          "confidence": 0,
+          "line": 63
+        },
+        {
+          "target": "getByRole",
+          "resolved": false,
+          "confidence": 0,
+          "line": 66
+        },
+        {
+          "target": "toBeVisible",
+          "resolved": false,
+          "confidence": 0,
+          "line": 67
+        },
+        {
+          "target": "expect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 67
+        },
+        {
+          "target": "viewButton",
+          "resolved": false,
+          "confidence": 0,
+          "line": 67
+        },
+        {
+          "target": "click",
+          "resolved": false,
+          "confidence": 0,
+          "line": 68
+        },
+        {
+          "target": "getByTestId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 70
+        },
+        {
+          "target": "toBeVisible",
+          "resolved": false,
+          "confidence": 0,
+          "line": 71
+        },
+        {
+          "target": "expect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 71
+        },
+        {
+          "target": "modal",
+          "resolved": false,
+          "confidence": 0,
+          "line": 71
+        },
+        {
+          "target": "getByText",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        },
+        {
+          "target": "toBeVisible",
+          "resolved": false,
+          "confidence": 0,
+          "line": 73
+        },
+        {
+          "target": "expect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 73
+        },
+        {
+          "target": "viewAgentName",
+          "resolved": false,
+          "confidence": 0,
+          "line": 73
+        },
+        {
+          "target": "click",
+          "resolved": false,
+          "confidence": 0,
+          "line": 75
+        },
+        {
+          "target": "getByRole",
+          "resolved": false,
+          "confidence": 0,
+          "line": 75
+        },
+        {
+          "target": "toBeVisible",
+          "resolved": false,
+          "confidence": 0,
+          "line": 76
+        },
+        {
+          "target": "expect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 76
+        },
+        {
+          "target": "modal",
+          "resolved": false,
+          "confidence": 0,
+          "line": 76
+        },
+        {
+          "target": "test",
+          "resolved": false,
+          "confidence": 0,
+          "line": 79
+        },
+        {
+          "target": "goto",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 80,
+          "resolvedId": "src/tests/pages/marketplace.page.ts:goto:10"
+        },
+        {
+          "target": "getByTestId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 82
+        },
+        {
+          "target": "toBeVisible",
+          "resolved": false,
+          "confidence": 0,
+          "line": 83
+        },
+        {
+          "target": "expect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 83
+        },
+        {
+          "target": "agentTable",
+          "resolved": false,
+          "confidence": 0,
+          "line": 83
+        },
+        {
+          "target": "getByTestId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 85
+        },
+        {
+          "target": "count",
+          "resolved": false,
+          "confidence": 0,
+          "line": 88
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 91
+        },
+        {
+          "target": "first",
+          "resolved": false,
+          "confidence": 0,
+          "line": 96
+        },
+        {
+          "target": "filter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 96
+        },
+        {
+          "target": "count",
+          "resolved": false,
+          "confidence": 0,
+          "line": 97
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 98
+        },
+        {
+          "target": "getAttribute",
+          "resolved": false,
+          "confidence": 0,
+          "line": 103
+        },
+        {
+          "target": "scrollIntoViewIfNeeded",
+          "resolved": false,
+          "confidence": 0,
+          "line": 104
+        },
+        {
+          "target": "getByTestId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 106
+        },
+        {
+          "target": "waitFor",
+          "resolved": false,
+          "confidence": 0,
+          "line": 107
+        },
+        {
+          "target": "scrollIntoViewIfNeeded",
+          "resolved": false,
+          "confidence": 0,
+          "line": 108
+        },
+        {
+          "target": "click",
+          "resolved": false,
+          "confidence": 0,
+          "line": 109
+        },
+        {
+          "target": "getByRole",
+          "resolved": false,
+          "confidence": 0,
+          "line": 111
+        },
+        {
+          "target": "toBeVisible",
+          "resolved": false,
+          "confidence": 0,
+          "line": 112
+        },
+        {
+          "target": "expect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 112
+        },
+        {
+          "target": "deleteButton",
+          "resolved": false,
+          "confidence": 0,
+          "line": 112
+        },
+        {
+          "target": "click",
+          "resolved": false,
+          "confidence": 0,
+          "line": 113
+        },
+        {
+          "target": "isHidden",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 116,
+          "resolvedId": "src/tests/utils/assertion.ts:isHidden:19"
+        },
+        {
+          "target": "locator",
+          "resolved": false,
+          "confidence": 0,
+          "line": 116
+        },
+        {
+          "target": "test",
+          "resolved": false,
+          "confidence": 0,
+          "line": 119
+        },
+        {
+          "target": "goto",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 122,
+          "resolvedId": "src/tests/pages/marketplace.page.ts:goto:10"
+        },
+        {
+          "target": "getByTestId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 124
+        },
+        {
+          "target": "toBeVisible",
+          "resolved": false,
+          "confidence": 0,
+          "line": 125
+        },
+        {
+          "target": "expect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 125
+        },
+        {
+          "target": "agentTable",
+          "resolved": false,
+          "confidence": 0,
+          "line": 125
+        },
+        {
+          "target": "getByTestId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 127
+        },
+        {
+          "target": "first",
+          "resolved": false,
+          "confidence": 0,
+          "line": 130
+        },
+        {
+          "target": "filter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 130
+        },
+        {
+          "target": "count",
+          "resolved": false,
+          "confidence": 0,
+          "line": 131
+        },
+        {
+          "target": "scrollIntoViewIfNeeded",
+          "resolved": false,
+          "confidence": 0,
+          "line": 132
+        },
+        {
+          "target": "getByTestId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 133
+        },
+        {
+          "target": "waitFor",
+          "resolved": false,
+          "confidence": 0,
+          "line": 134
+        },
+        {
+          "target": "scrollIntoViewIfNeeded",
+          "resolved": false,
+          "confidence": 0,
+          "line": 135
+        },
+        {
+          "target": "click",
+          "resolved": false,
+          "confidence": 0,
+          "line": 136
+        },
+        {
+          "target": "toBeVisible",
+          "resolved": false,
+          "confidence": 0,
+          "line": 138
+        },
+        {
+          "target": "expect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 138
+        },
+        {
+          "target": "getByRole",
+          "resolved": false,
+          "confidence": 0,
+          "line": 138
+        },
+        {
+          "target": "toHaveCount",
+          "resolved": false,
+          "confidence": 0,
+          "line": 139
+        },
+        {
+          "target": "expect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 139
+        },
+        {
+          "target": "getByRole",
+          "resolved": false,
+          "confidence": 0,
+          "line": 139
+        },
+        {
+          "target": "toHaveCount",
+          "resolved": false,
+          "confidence": 0,
+          "line": 140
+        },
+        {
+          "target": "expect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 140
+        },
+        {
+          "target": "getByRole",
+          "resolved": false,
+          "confidence": 0,
+          "line": 140
+        },
+        {
+          "target": "press",
+          "resolved": false,
+          "confidence": 0,
+          "line": 143
+        },
+        {
+          "target": "first",
+          "resolved": false,
+          "confidence": 0,
+          "line": 147
+        },
+        {
+          "target": "filter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 147
+        },
+        {
+          "target": "count",
+          "resolved": false,
+          "confidence": 0,
+          "line": 148
+        },
+        {
+          "target": "scrollIntoViewIfNeeded",
+          "resolved": false,
+          "confidence": 0,
+          "line": 149
+        },
+        {
+          "target": "getByTestId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 150
+        },
+        {
+          "target": "waitFor",
+          "resolved": false,
+          "confidence": 0,
+          "line": 151
+        },
+        {
+          "target": "scrollIntoViewIfNeeded",
+          "resolved": false,
+          "confidence": 0,
+          "line": 152
+        },
+        {
+          "target": "click",
+          "resolved": false,
+          "confidence": 0,
+          "line": 153
+        },
+        {
+          "target": "toBeVisible",
+          "resolved": false,
+          "confidence": 0,
+          "line": 155
+        },
+        {
+          "target": "expect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 155
+        },
+        {
+          "target": "getByRole",
+          "resolved": false,
+          "confidence": 0,
+          "line": 155
+        },
+        {
+          "target": "toHaveCount",
+          "resolved": false,
+          "confidence": 0,
+          "line": 156
+        },
+        {
+          "target": "expect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 156
+        },
+        {
+          "target": "getByRole",
+          "resolved": false,
+          "confidence": 0,
+          "line": 156
+        },
+        {
+          "target": "toHaveCount",
+          "resolved": false,
+          "confidence": 0,
+          "line": 157
+        },
+        {
+          "target": "expect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 157
+        },
+        {
+          "target": "getByRole",
+          "resolved": false,
+          "confidence": 0,
+          "line": 157
+        },
+        {
+          "target": "test",
+          "resolved": false,
+          "confidence": 0,
+          "line": 161
+        },
+        {
+          "target": "goto",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 162,
+          "resolvedId": "src/tests/pages/marketplace.page.ts:goto:10"
+        },
+        {
+          "target": "getByTestId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 164
+        },
+        {
+          "target": "toBeVisible",
+          "resolved": false,
+          "confidence": 0,
+          "line": 165
+        },
+        {
+          "target": "expect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 165
+        },
+        {
+          "target": "agentTable",
+          "resolved": false,
+          "confidence": 0,
+          "line": 165
+        },
+        {
+          "target": "getByTestId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 167
+        },
+        {
+          "target": "first",
+          "resolved": false,
+          "confidence": 0,
+          "line": 170
+        },
+        {
+          "target": "filter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 170
+        },
+        {
+          "target": "count",
+          "resolved": false,
+          "confidence": 0,
+          "line": 171
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 172
+        },
+        {
+          "target": "count",
+          "resolved": false,
+          "confidence": 0,
+          "line": 176
+        },
+        {
+          "target": "scrollIntoViewIfNeeded",
+          "resolved": false,
+          "confidence": 0,
+          "line": 178
+        },
+        {
+          "target": "getByTestId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 179
+        },
+        {
+          "target": "waitFor",
+          "resolved": false,
+          "confidence": 0,
+          "line": 180
+        },
+        {
+          "target": "scrollIntoViewIfNeeded",
+          "resolved": false,
+          "confidence": 0,
+          "line": 181
+        },
+        {
+          "target": "click",
+          "resolved": false,
+          "confidence": 0,
+          "line": 182
+        },
+        {
+          "target": "getByRole",
+          "resolved": false,
+          "confidence": 0,
+          "line": 184
+        },
+        {
+          "target": "toBeVisible",
+          "resolved": false,
+          "confidence": 0,
+          "line": 185
+        },
+        {
+          "target": "expect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 185
+        },
+        {
+          "target": "editButton",
+          "resolved": false,
+          "confidence": 0,
+          "line": 185
+        },
+        {
+          "target": "click",
+          "resolved": false,
+          "confidence": 0,
+          "line": 186
+        },
+        {
+          "target": "getByTestId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 188
+        },
+        {
+          "target": "toBeVisible",
+          "resolved": false,
+          "confidence": 0,
+          "line": 189
+        },
+        {
+          "target": "expect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 189
+        },
+        {
+          "target": "editModal",
+          "resolved": false,
+          "confidence": 0,
+          "line": 189
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 191
+        },
+        {
+          "target": "fill",
+          "resolved": false,
+          "confidence": 0,
+          "line": 192
+        },
+        {
+          "target": "newTitle",
+          "resolved": false,
+          "confidence": 0,
+          "line": 192
+        },
+        {
+          "target": "getByRole",
+          "resolved": false,
+          "confidence": 0,
+          "line": 192
+        },
+        {
+          "target": "fill",
+          "resolved": false,
+          "confidence": 0,
+          "line": 193
+        },
+        {
+          "target": "getByRole",
+          "resolved": false,
+          "confidence": 0,
+          "line": 193
+        },
+        {
+          "target": "click",
+          "resolved": false,
+          "confidence": 0,
+          "line": 197
+        },
+        {
+          "target": "getByRole",
+          "resolved": false,
+          "confidence": 0,
+          "line": 197
+        },
+        {
+          "target": "toBeVisible",
+          "resolved": false,
+          "confidence": 0,
+          "line": 198
+        },
+        {
+          "target": "expect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 198
+        },
+        {
+          "target": "editModal",
+          "resolved": false,
+          "confidence": 0,
+          "line": 198
+        },
+        {
+          "target": "toPass",
+          "resolved": false,
+          "confidence": 0,
+          "line": 201
+        },
+        {
+          "target": "expect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 201
+        },
+        {
+          "target": "count",
+          "resolved": false,
+          "confidence": 0,
+          "line": 202
+        },
+        {
+          "target": "toBeGreaterThan",
+          "resolved": false,
+          "confidence": 0,
+          "line": 203
+        },
+        {
+          "target": "beforeCount",
+          "resolved": false,
+          "confidence": 0,
+          "line": 203
+        },
+        {
+          "target": "expect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 203
+        },
+        {
+          "target": "afterCount",
+          "resolved": false,
+          "confidence": 0,
+          "line": 203
+        },
+        {
+          "target": "first",
+          "resolved": false,
+          "confidence": 0,
+          "line": 206
+        },
+        {
+          "target": "filter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 206
+        },
+        {
+          "target": "toBeVisible",
+          "resolved": false,
+          "confidence": 0,
+          "line": 207
+        },
+        {
+          "target": "expect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 207
+        },
+        {
+          "target": "newRow",
+          "resolved": false,
+          "confidence": 0,
+          "line": 207
+        },
+        {
+          "target": "toContainText",
+          "resolved": false,
+          "confidence": 0,
+          "line": 208
+        },
+        {
+          "target": "expect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 208
+        },
+        {
+          "target": "newRow",
+          "resolved": false,
+          "confidence": 0,
+          "line": 208
+        },
+        {
+          "target": "test",
+          "resolved": false,
+          "confidence": 0,
+          "line": 211
+        },
+        {
+          "target": "goto",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 214,
+          "resolvedId": "src/tests/pages/marketplace.page.ts:goto:10"
+        },
+        {
+          "target": "getByTestId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 216
+        },
+        {
+          "target": "toBeVisible",
+          "resolved": false,
+          "confidence": 0,
+          "line": 217
+        },
+        {
+          "target": "expect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 217
+        },
+        {
+          "target": "agentTable",
+          "resolved": false,
+          "confidence": 0,
+          "line": 217
+        },
+        {
+          "target": "getByTestId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 219
+        },
+        {
+          "target": "first",
+          "resolved": false,
+          "confidence": 0,
+          "line": 221
+        },
+        {
+          "target": "filter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 221
+        },
+        {
+          "target": "count",
+          "resolved": false,
+          "confidence": 0,
+          "line": 222
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 223
+        },
+        {
+          "target": "count",
+          "resolved": false,
+          "confidence": 0,
+          "line": 227
+        },
+        {
+          "target": "scrollIntoViewIfNeeded",
+          "resolved": false,
+          "confidence": 0,
+          "line": 229
+        },
+        {
+          "target": "getByTestId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 230
+        },
+        {
+          "target": "waitFor",
+          "resolved": false,
+          "confidence": 0,
+          "line": 231
+        },
+        {
+          "target": "scrollIntoViewIfNeeded",
+          "resolved": false,
+          "confidence": 0,
+          "line": 232
+        },
+        {
+          "target": "click",
+          "resolved": false,
+          "confidence": 0,
+          "line": 233
+        },
+        {
+          "target": "getByRole",
+          "resolved": false,
+          "confidence": 0,
+          "line": 235
+        },
+        {
+          "target": "toBeVisible",
+          "resolved": false,
+          "confidence": 0,
+          "line": 236
+        },
+        {
+          "target": "expect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 236
+        },
+        {
+          "target": "editButton",
+          "resolved": false,
+          "confidence": 0,
+          "line": 236
+        },
+        {
+          "target": "click",
+          "resolved": false,
+          "confidence": 0,
+          "line": 237
+        },
+        {
+          "target": "getByTestId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 239
+        },
+        {
+          "target": "toBeVisible",
+          "resolved": false,
+          "confidence": 0,
+          "line": 240
+        },
+        {
+          "target": "expect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 240
+        },
+        {
+          "target": "editModal",
+          "resolved": false,
+          "confidence": 0,
+          "line": 240
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 242
+        },
+        {
+          "target": "fill",
+          "resolved": false,
+          "confidence": 0,
+          "line": 243
+        },
+        {
+          "target": "newTitle",
+          "resolved": false,
+          "confidence": 0,
+          "line": 243
+        },
+        {
+          "target": "getByRole",
+          "resolved": false,
+          "confidence": 0,
+          "line": 243
+        },
+        {
+          "target": "fill",
+          "resolved": false,
+          "confidence": 0,
+          "line": 244
+        },
+        {
+          "target": "getByRole",
+          "resolved": false,
+          "confidence": 0,
+          "line": 244
+        },
+        {
+          "target": "click",
+          "resolved": false,
+          "confidence": 0,
+          "line": 248
+        },
+        {
+          "target": "getByRole",
+          "resolved": false,
+          "confidence": 0,
+          "line": 248
+        },
+        {
+          "target": "toBeVisible",
+          "resolved": false,
+          "confidence": 0,
+          "line": 249
+        },
+        {
+          "target": "expect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 249
+        },
+        {
+          "target": "editModal",
+          "resolved": false,
+          "confidence": 0,
+          "line": 249
+        },
+        {
+          "target": "toPass",
+          "resolved": false,
+          "confidence": 0,
+          "line": 252
+        },
+        {
+          "target": "expect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 252
+        },
+        {
+          "target": "count",
+          "resolved": false,
+          "confidence": 0,
+          "line": 253
+        },
+        {
+          "target": "toBe",
+          "resolved": false,
+          "confidence": 0,
+          "line": 254
+        },
+        {
+          "target": "beforeCount",
+          "resolved": false,
+          "confidence": 0,
+          "line": 254
+        },
+        {
+          "target": "expect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 254
+        },
+        {
+          "target": "afterCount",
+          "resolved": false,
+          "confidence": 0,
+          "line": 254
+        },
+        {
+          "target": "first",
+          "resolved": false,
+          "confidence": 0,
+          "line": 257
+        },
+        {
+          "target": "filter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 257
+        },
+        {
+          "target": "toBeVisible",
+          "resolved": false,
+          "confidence": 0,
+          "line": 258
+        },
+        {
+          "target": "expect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 258
+        },
+        {
+          "target": "updatedRow",
+          "resolved": false,
+          "confidence": 0,
+          "line": 258
+        },
+        {
+          "target": "toContainText",
+          "resolved": false,
+          "confidence": 0,
+          "line": 259
+        },
+        {
+          "target": "expect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 259
+        },
+        {
+          "target": "updatedRow",
+          "resolved": false,
+          "confidence": 0,
+          "line": 259
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

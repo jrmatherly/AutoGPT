@@ -1,0 +1,148 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.137Z",
+  "checksum": "56df4fad293ed6bc",
+  "file": "backend/blocks/generic_webhook/triggers.py",
+  "functions": [
+    {
+      "id": "backend/blocks/generic_webhook/triggers.py:__init__:40",
+      "name": "__init__",
+      "startLine": 40,
+      "endLine": 56,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 41,
+          "resolvedId": "backend/blocks/generic_webhook/triggers.py:__init__:40"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 41
+        },
+        {
+          "target": "BlockManualWebhookConfig",
+          "resolved": false,
+          "confidence": 0,
+          "line": 47
+        },
+        {
+          "target": "ProviderName",
+          "resolved": false,
+          "confidence": 0,
+          "line": 48
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/generic_webhook/triggers.py:run:58",
+      "name": "run",
+      "startLine": 58,
+      "endLine": 60,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/generic_webhook/triggers.py:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 61,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "build",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 16,
+          "resolvedId": "backend/blocks/twitter/_builders.py:build:109"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 24,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 25,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 31,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 34,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 41,
+          "resolvedId": "backend/blocks/generic_webhook/triggers.py:__init__:40"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 41
+        },
+        {
+          "target": "BlockManualWebhookConfig",
+          "resolved": false,
+          "confidence": 0,
+          "line": 47
+        },
+        {
+          "target": "ProviderName",
+          "resolved": false,
+          "confidence": 0,
+          "line": 48
+        },
+        {
+          "target": "build",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 16,
+          "resolvedId": "backend/blocks/twitter/_builders.py:build:109"
+        },
+        {
+          "target": "with_webhook_manager",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 16,
+          "resolvedId": "backend/sdk/builder.py:with_webhook_manager:135"
+        },
+        {
+          "target": "ProviderBuilder",
+          "resolved": false,
+          "confidence": 0,
+          "line": 16
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

@@ -1,0 +1,553 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.194Z",
+  "checksum": "ee66f439c3d2708e",
+  "file": "backend/util/dynamic_fields_test.py",
+  "functions": [
+    {
+      "id": "backend/util/dynamic_fields_test.py:test_extract_dict_field:14",
+      "name": "test_extract_dict_field",
+      "startLine": 14,
+      "endLine": 18,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "extract_base_field_name",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 16,
+          "resolvedId": "backend/data/dynamic_fields.py:extract_base_field_name:22"
+        },
+        {
+          "target": "extract_base_field_name",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 17,
+          "resolvedId": "backend/data/dynamic_fields.py:extract_base_field_name:22"
+        },
+        {
+          "target": "extract_base_field_name",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 18,
+          "resolvedId": "backend/data/dynamic_fields.py:extract_base_field_name:22"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/dynamic_fields_test.py:test_extract_list_field:20",
+      "name": "test_extract_list_field",
+      "startLine": 20,
+      "endLine": 24,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "extract_base_field_name",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 22,
+          "resolvedId": "backend/data/dynamic_fields.py:extract_base_field_name:22"
+        },
+        {
+          "target": "extract_base_field_name",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 23,
+          "resolvedId": "backend/data/dynamic_fields.py:extract_base_field_name:22"
+        },
+        {
+          "target": "extract_base_field_name",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 24,
+          "resolvedId": "backend/data/dynamic_fields.py:extract_base_field_name:22"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/dynamic_fields_test.py:test_extract_object_field:26",
+      "name": "test_extract_object_field",
+      "startLine": 26,
+      "endLine": 30,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "extract_base_field_name",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 28,
+          "resolvedId": "backend/data/dynamic_fields.py:extract_base_field_name:22"
+        },
+        {
+          "target": "extract_base_field_name",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 29,
+          "resolvedId": "backend/data/dynamic_fields.py:extract_base_field_name:22"
+        },
+        {
+          "target": "extract_base_field_name",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 30,
+          "resolvedId": "backend/data/dynamic_fields.py:extract_base_field_name:22"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/dynamic_fields_test.py:test_extract_mixed_fields:32",
+      "name": "test_extract_mixed_fields",
+      "startLine": 32,
+      "endLine": 36,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "extract_base_field_name",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 34,
+          "resolvedId": "backend/data/dynamic_fields.py:extract_base_field_name:22"
+        },
+        {
+          "target": "extract_base_field_name",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 35,
+          "resolvedId": "backend/data/dynamic_fields.py:extract_base_field_name:22"
+        },
+        {
+          "target": "extract_base_field_name",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 36,
+          "resolvedId": "backend/data/dynamic_fields.py:extract_base_field_name:22"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/dynamic_fields_test.py:test_extract_regular_field:38",
+      "name": "test_extract_regular_field",
+      "startLine": 38,
+      "endLine": 42,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "extract_base_field_name",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 40,
+          "resolvedId": "backend/data/dynamic_fields.py:extract_base_field_name:22"
+        },
+        {
+          "target": "extract_base_field_name",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 41,
+          "resolvedId": "backend/data/dynamic_fields.py:extract_base_field_name:22"
+        },
+        {
+          "target": "extract_base_field_name",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 42,
+          "resolvedId": "backend/data/dynamic_fields.py:extract_base_field_name:22"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/dynamic_fields_test.py:test_extract_field_with_underscores:44",
+      "name": "test_extract_field_with_underscores",
+      "startLine": 44,
+      "endLine": 47,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "extract_base_field_name",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 46,
+          "resolvedId": "backend/data/dynamic_fields.py:extract_base_field_name:22"
+        },
+        {
+          "target": "extract_base_field_name",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 47,
+          "resolvedId": "backend/data/dynamic_fields.py:extract_base_field_name:22"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/dynamic_fields_test.py:test_is_dynamic_dict_field:53",
+      "name": "test_is_dynamic_dict_field",
+      "startLine": 53,
+      "endLine": 56,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "is_dynamic_field",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 55,
+          "resolvedId": "backend/data/dynamic_fields.py:is_dynamic_field:45"
+        },
+        {
+          "target": "is_dynamic_field",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 56,
+          "resolvedId": "backend/data/dynamic_fields.py:is_dynamic_field:45"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/dynamic_fields_test.py:test_is_dynamic_list_field:58",
+      "name": "test_is_dynamic_list_field",
+      "startLine": 58,
+      "endLine": 61,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "is_dynamic_field",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 60,
+          "resolvedId": "backend/data/dynamic_fields.py:is_dynamic_field:45"
+        },
+        {
+          "target": "is_dynamic_field",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 61,
+          "resolvedId": "backend/data/dynamic_fields.py:is_dynamic_field:45"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/dynamic_fields_test.py:test_is_dynamic_object_field:63",
+      "name": "test_is_dynamic_object_field",
+      "startLine": 63,
+      "endLine": 66,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "is_dynamic_field",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 65,
+          "resolvedId": "backend/data/dynamic_fields.py:is_dynamic_field:45"
+        },
+        {
+          "target": "is_dynamic_field",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 66,
+          "resolvedId": "backend/data/dynamic_fields.py:is_dynamic_field:45"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/dynamic_fields_test.py:test_is_dynamic_mixed_field:68",
+      "name": "test_is_dynamic_mixed_field",
+      "startLine": 68,
+      "endLine": 71,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "is_dynamic_field",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 70,
+          "resolvedId": "backend/data/dynamic_fields.py:is_dynamic_field:45"
+        },
+        {
+          "target": "is_dynamic_field",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 71,
+          "resolvedId": "backend/data/dynamic_fields.py:is_dynamic_field:45"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/dynamic_fields_test.py:test_is_not_dynamic_field:73",
+      "name": "test_is_not_dynamic_field",
+      "startLine": 73,
+      "endLine": 78,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "is_dynamic_field",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 75,
+          "resolvedId": "backend/data/dynamic_fields.py:is_dynamic_field:45"
+        },
+        {
+          "target": "is_dynamic_field",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 76,
+          "resolvedId": "backend/data/dynamic_fields.py:is_dynamic_field:45"
+        },
+        {
+          "target": "is_dynamic_field",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 77,
+          "resolvedId": "backend/data/dynamic_fields.py:is_dynamic_field:45"
+        },
+        {
+          "target": "is_dynamic_field",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 78,
+          "resolvedId": "backend/data/dynamic_fields.py:is_dynamic_field:45"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/dynamic_fields_test.py:test_dict_field_description:84",
+      "name": "test_dict_field_description",
+      "startLine": 84,
+      "endLine": 90,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "get_dynamic_field_description",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 86,
+          "resolvedId": "backend/data/dynamic_fields.py:get_dynamic_field_description:58"
+        },
+        {
+          "target": "get_dynamic_field_description",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 89,
+          "resolvedId": "backend/data/dynamic_fields.py:get_dynamic_field_description:58"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/dynamic_fields_test.py:test_list_field_description:92",
+      "name": "test_list_field_description",
+      "startLine": 92,
+      "endLine": 98,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "get_dynamic_field_description",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 94,
+          "resolvedId": "backend/data/dynamic_fields.py:get_dynamic_field_description:58"
+        },
+        {
+          "target": "get_dynamic_field_description",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 97,
+          "resolvedId": "backend/data/dynamic_fields.py:get_dynamic_field_description:58"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/dynamic_fields_test.py:test_object_field_description:100",
+      "name": "test_object_field_description",
+      "startLine": 100,
+      "endLine": 106,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "get_dynamic_field_description",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 102,
+          "resolvedId": "backend/data/dynamic_fields.py:get_dynamic_field_description:58"
+        },
+        {
+          "target": "get_dynamic_field_description",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 105,
+          "resolvedId": "backend/data/dynamic_fields.py:get_dynamic_field_description:58"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/dynamic_fields_test.py:test_fallback_description:108",
+      "name": "test_fallback_description",
+      "startLine": 108,
+      "endLine": 111,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "get_dynamic_field_description",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 110,
+          "resolvedId": "backend/data/dynamic_fields.py:get_dynamic_field_description:58"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/dynamic_fields_test.py:test_group_mixed_fields:117",
+      "name": "test_group_mixed_fields",
+      "startLine": 117,
+      "endLine": 139,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "group_fields_by_base_name",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 129,
+          "resolvedId": "backend/util/dynamic_fields.py:group_fields_by_base_name:95"
+        },
+        {
+          "target": "fields",
+          "resolved": false,
+          "confidence": 0,
+          "line": 129
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/dynamic_fields_test.py:test_group_empty_list:141",
+      "name": "test_group_empty_list",
+      "startLine": 141,
+      "endLine": 144,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "group_fields_by_base_name",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 143,
+          "resolvedId": "backend/util/dynamic_fields.py:group_fields_by_base_name:95"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/dynamic_fields_test.py:test_group_single_field:146",
+      "name": "test_group_single_field",
+      "startLine": 146,
+      "endLine": 149,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "group_fields_by_base_name",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 148,
+          "resolvedId": "backend/util/dynamic_fields.py:group_fields_by_base_name:95"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/dynamic_fields_test.py:test_group_complex_dynamic_fields:151",
+      "name": "test_group_complex_dynamic_fields",
+      "startLine": 151,
+      "endLine": 167,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "group_fields_by_base_name",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 160,
+          "resolvedId": "backend/util/dynamic_fields.py:group_fields_by_base_name:95"
+        },
+        {
+          "target": "fields",
+          "resolved": false,
+          "confidence": 0,
+          "line": 160
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/dynamic_fields_test.py:test_preserve_order:169",
+      "name": "test_preserve_order",
+      "startLine": 169,
+      "endLine": 175,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "group_fields_by_base_name",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 172,
+          "resolvedId": "backend/util/dynamic_fields.py:group_fields_by_base_name:95"
+        },
+        {
+          "target": "fields",
+          "resolved": false,
+          "confidence": 0,
+          "line": 172
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

@@ -1,0 +1,3341 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.196Z",
+  "checksum": "70947d132bb18f4f",
+  "file": "backend/util/cache.py",
+  "functions": [
+    {
+      "id": "backend/util/cache.py:_get_cache_pool:43",
+      "name": "_get_cache_pool",
+      "startLine": 43,
+      "endLine": 54,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "ConnectionPool",
+          "resolved": false,
+          "confidence": 0,
+          "line": 45
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/cache.py:_get_redis:59",
+      "name": "_get_redis",
+      "startLine": 59,
+      "endLine": 68,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "Redis",
+          "resolved": false,
+          "confidence": 0,
+          "line": 66
+        },
+        {
+          "target": "_get_cache_pool",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 66,
+          "resolvedId": "backend/util/cache.py:_get_cache_pool:43"
+        },
+        {
+          "target": "ping",
+          "resolved": false,
+          "confidence": 0,
+          "line": 67
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/cache.py:_make_hashable_key:79",
+      "name": "_make_hashable_key",
+      "startLine": 79,
+      "endLine": 115,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "tuple",
+          "resolved": false,
+          "confidence": 0,
+          "line": 113
+        },
+        {
+          "target": "make_hashable",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 113,
+          "resolvedId": "backend/util/cache.py:make_hashable:89"
+        },
+        {
+          "target": "arg",
+          "resolved": false,
+          "confidence": 0,
+          "line": 113
+        },
+        {
+          "target": "tuple",
+          "resolved": false,
+          "confidence": 0,
+          "line": 114
+        },
+        {
+          "target": "sorted",
+          "resolved": false,
+          "confidence": 0,
+          "line": 114
+        },
+        {
+          "target": "make_hashable",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 114,
+          "resolvedId": "backend/util/cache.py:make_hashable:89"
+        },
+        {
+          "target": "v",
+          "resolved": false,
+          "confidence": 0,
+          "line": 114
+        },
+        {
+          "target": "items",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 114,
+          "resolvedId": "backend/integrations/oauth/__init__.py:items:123"
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 91
+        },
+        {
+          "target": "obj",
+          "resolved": false,
+          "confidence": 0,
+          "line": 91
+        },
+        {
+          "target": "dict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 91
+        },
+        {
+          "target": "tuple",
+          "resolved": false,
+          "confidence": 0,
+          "line": 95
+        },
+        {
+          "target": "sorted",
+          "resolved": false,
+          "confidence": 0,
+          "line": 95
+        },
+        {
+          "target": "make_hashable",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 95,
+          "resolvedId": "backend/util/cache.py:make_hashable:89"
+        },
+        {
+          "target": "v",
+          "resolved": false,
+          "confidence": 0,
+          "line": 95
+        },
+        {
+          "target": "items",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 95,
+          "resolvedId": "backend/integrations/oauth/__init__.py:items:123"
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 97
+        },
+        {
+          "target": "obj",
+          "resolved": false,
+          "confidence": 0,
+          "line": 97
+        },
+        {
+          "target": "tuple",
+          "resolved": false,
+          "confidence": 0,
+          "line": 98
+        },
+        {
+          "target": "make_hashable",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 98,
+          "resolvedId": "backend/util/cache.py:make_hashable:89"
+        },
+        {
+          "target": "item",
+          "resolved": false,
+          "confidence": 0,
+          "line": 98
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 99
+        },
+        {
+          "target": "obj",
+          "resolved": false,
+          "confidence": 0,
+          "line": 99
+        },
+        {
+          "target": "set",
+          "resolved": false,
+          "confidence": 0,
+          "line": 99
+        },
+        {
+          "target": "tuple",
+          "resolved": false,
+          "confidence": 0,
+          "line": 100
+        },
+        {
+          "target": "sorted",
+          "resolved": false,
+          "confidence": 0,
+          "line": 100
+        },
+        {
+          "target": "make_hashable",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 100,
+          "resolvedId": "backend/util/cache.py:make_hashable:89"
+        },
+        {
+          "target": "item",
+          "resolved": false,
+          "confidence": 0,
+          "line": 100
+        },
+        {
+          "target": "hasattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 101
+        },
+        {
+          "target": "obj",
+          "resolved": false,
+          "confidence": 0,
+          "line": 101
+        },
+        {
+          "target": "make_hashable",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 103,
+          "resolvedId": "backend/util/cache.py:make_hashable:89"
+        },
+        {
+          "target": "hash",
+          "resolved": false,
+          "confidence": 0,
+          "line": 107
+        },
+        {
+          "target": "obj",
+          "resolved": false,
+          "confidence": 0,
+          "line": 107
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 111
+        },
+        {
+          "target": "obj",
+          "resolved": false,
+          "confidence": 0,
+          "line": 111
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/cache.py:make_hashable:89",
+      "name": "make_hashable",
+      "startLine": 89,
+      "endLine": 111,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 91
+        },
+        {
+          "target": "obj",
+          "resolved": false,
+          "confidence": 0,
+          "line": 91
+        },
+        {
+          "target": "dict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 91
+        },
+        {
+          "target": "tuple",
+          "resolved": false,
+          "confidence": 0,
+          "line": 95
+        },
+        {
+          "target": "sorted",
+          "resolved": false,
+          "confidence": 0,
+          "line": 95
+        },
+        {
+          "target": "make_hashable",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 95,
+          "resolvedId": "backend/util/cache.py:make_hashable:89"
+        },
+        {
+          "target": "v",
+          "resolved": false,
+          "confidence": 0,
+          "line": 95
+        },
+        {
+          "target": "items",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 95,
+          "resolvedId": "backend/integrations/oauth/__init__.py:items:123"
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 97
+        },
+        {
+          "target": "obj",
+          "resolved": false,
+          "confidence": 0,
+          "line": 97
+        },
+        {
+          "target": "tuple",
+          "resolved": false,
+          "confidence": 0,
+          "line": 98
+        },
+        {
+          "target": "make_hashable",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 98,
+          "resolvedId": "backend/util/cache.py:make_hashable:89"
+        },
+        {
+          "target": "item",
+          "resolved": false,
+          "confidence": 0,
+          "line": 98
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 99
+        },
+        {
+          "target": "obj",
+          "resolved": false,
+          "confidence": 0,
+          "line": 99
+        },
+        {
+          "target": "set",
+          "resolved": false,
+          "confidence": 0,
+          "line": 99
+        },
+        {
+          "target": "tuple",
+          "resolved": false,
+          "confidence": 0,
+          "line": 100
+        },
+        {
+          "target": "sorted",
+          "resolved": false,
+          "confidence": 0,
+          "line": 100
+        },
+        {
+          "target": "make_hashable",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 100,
+          "resolvedId": "backend/util/cache.py:make_hashable:89"
+        },
+        {
+          "target": "item",
+          "resolved": false,
+          "confidence": 0,
+          "line": 100
+        },
+        {
+          "target": "hasattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 101
+        },
+        {
+          "target": "obj",
+          "resolved": false,
+          "confidence": 0,
+          "line": 101
+        },
+        {
+          "target": "make_hashable",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 103,
+          "resolvedId": "backend/util/cache.py:make_hashable:89"
+        },
+        {
+          "target": "hash",
+          "resolved": false,
+          "confidence": 0,
+          "line": 107
+        },
+        {
+          "target": "obj",
+          "resolved": false,
+          "confidence": 0,
+          "line": 107
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 111
+        },
+        {
+          "target": "obj",
+          "resolved": false,
+          "confidence": 0,
+          "line": 111
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/cache.py:_make_redis_key:118",
+      "name": "_make_redis_key",
+      "startLine": 118,
+      "endLine": 122,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 121
+        },
+        {
+          "target": "key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 121
+        },
+        {
+          "target": "tuple",
+          "resolved": false,
+          "confidence": 0,
+          "line": 121
+        },
+        {
+          "target": "hash",
+          "resolved": false,
+          "confidence": 0,
+          "line": 122
+        },
+        {
+          "target": "hashable_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 122
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/cache.py:cache_clear:129",
+      "name": "cache_clear",
+      "startLine": 129,
+      "endLine": 131,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/cache.py:cache_info:133",
+      "name": "cache_info",
+      "startLine": 133,
+      "endLine": 135,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/cache.py:cache_delete:137",
+      "name": "cache_delete",
+      "startLine": 137,
+      "endLine": 139,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/cache.py:__call__:141",
+      "name": "__call__",
+      "startLine": 141,
+      "endLine": 143,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/cache.py:cached:146",
+      "name": "cached",
+      "startLine": 146,
+      "endLine": 401,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "iscoroutinefunction",
+          "resolved": false,
+          "confidence": 0,
+          "line": 231
+        },
+        {
+          "target": "target_func",
+          "resolved": false,
+          "confidence": 0,
+          "line": 231
+        },
+        {
+          "target": "wraps",
+          "resolved": false,
+          "confidence": 0,
+          "line": 244
+        },
+        {
+          "target": "target_func",
+          "resolved": false,
+          "confidence": 0,
+          "line": 244
+        },
+        {
+          "target": "Lock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 289
+        },
+        {
+          "target": "wraps",
+          "resolved": false,
+          "confidence": 0,
+          "line": 291
+        },
+        {
+          "target": "target_func",
+          "resolved": false,
+          "confidence": 0,
+          "line": 291
+        },
+        {
+          "target": "setattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 395
+        },
+        {
+          "target": "wrapper",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 395,
+          "resolvedId": "backend/util/timezone_name.py:wrapper:69"
+        },
+        {
+          "target": "cache_clear",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 395,
+          "resolvedId": "backend/util/cache.py:cache_clear:129"
+        },
+        {
+          "target": "setattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 396
+        },
+        {
+          "target": "wrapper",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 396,
+          "resolvedId": "backend/util/timezone_name.py:wrapper:69"
+        },
+        {
+          "target": "cache_info",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 396,
+          "resolvedId": "backend/util/cache.py:cache_info:133"
+        },
+        {
+          "target": "setattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 397
+        },
+        {
+          "target": "wrapper",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 397,
+          "resolvedId": "backend/util/timezone_name.py:wrapper:69"
+        },
+        {
+          "target": "cache_delete",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 397,
+          "resolvedId": "backend/util/cache.py:cache_delete:137"
+        },
+        {
+          "target": "cast",
+          "resolved": false,
+          "confidence": 0,
+          "line": 399
+        },
+        {
+          "target": "wrapper",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 399,
+          "resolvedId": "backend/util/timezone_name.py:wrapper:69"
+        },
+        {
+          "target": "getex",
+          "resolved": false,
+          "confidence": 0,
+          "line": 187
+        },
+        {
+          "target": "redis_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 187
+        },
+        {
+          "target": "_get_redis",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 187,
+          "resolvedId": "backend/util/cache.py:_get_redis:59"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 189,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "redis_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 189
+        },
+        {
+          "target": "_get_redis",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 189,
+          "resolvedId": "backend/util/cache.py:_get_redis:59"
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 191
+        },
+        {
+          "target": "cached_bytes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 191
+        },
+        {
+          "target": "bytes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 191
+        },
+        {
+          "target": "loads",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 192,
+          "resolvedId": "backend/util/json.py:loads:77"
+        },
+        {
+          "target": "cached_bytes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 192
+        },
+        {
+          "target": "error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 194,
+          "resolvedId": "backend/util/logging.py:error:49"
+        },
+        {
+          "target": "dumps",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 202,
+          "resolvedId": "backend/util/json.py:dumps:20"
+        },
+        {
+          "target": "value",
+          "resolved": false,
+          "confidence": 0,
+          "line": 202
+        },
+        {
+          "target": "setex",
+          "resolved": false,
+          "confidence": 0,
+          "line": 203
+        },
+        {
+          "target": "redis_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 203
+        },
+        {
+          "target": "ttl_seconds",
+          "resolved": false,
+          "confidence": 0,
+          "line": 203
+        },
+        {
+          "target": "pickled_value",
+          "resolved": false,
+          "confidence": 0,
+          "line": 203
+        },
+        {
+          "target": "_get_redis",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 203,
+          "resolvedId": "backend/util/cache.py:_get_redis:59"
+        },
+        {
+          "target": "error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 205,
+          "resolvedId": "backend/util/logging.py:error:49"
+        },
+        {
+          "target": "time",
+          "resolved": false,
+          "confidence": 0,
+          "line": 213
+        },
+        {
+          "target": "debug",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 214,
+          "resolvedId": "backend/util/logging.py:debug:53"
+        },
+        {
+          "target": "CachedValue",
+          "resolved": false,
+          "confidence": 0,
+          "line": 222
+        },
+        {
+          "target": "time",
+          "resolved": false,
+          "confidence": 0,
+          "line": 222
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 225
+        },
+        {
+          "target": "cache_storage",
+          "resolved": false,
+          "confidence": 0,
+          "line": 225
+        },
+        {
+          "target": "list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 227
+        },
+        {
+          "target": "keys",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 227,
+          "resolvedId": "backend/integrations/oauth/__init__.py:keys:100"
+        },
+        {
+          "target": "pop",
+          "resolved": false,
+          "confidence": 0,
+          "line": 229
+        },
+        {
+          "target": "old_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 229
+        },
+        {
+          "target": "get_running_loop",
+          "resolved": false,
+          "confidence": 0,
+          "line": 236
+        },
+        {
+          "target": "setdefault",
+          "resolved": false,
+          "confidence": 0,
+          "line": 241
+        },
+        {
+          "target": "loop",
+          "resolved": false,
+          "confidence": 0,
+          "line": 241
+        },
+        {
+          "target": "Lock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 241
+        },
+        {
+          "target": "list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 340
+        },
+        {
+          "target": "scan_iter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 341
+        },
+        {
+          "target": "_get_redis",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 341,
+          "resolvedId": "backend/util/cache.py:_get_redis:59"
+        },
+        {
+          "target": "list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 347
+        },
+        {
+          "target": "scan_iter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 348
+        },
+        {
+          "target": "_get_redis",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 348,
+          "resolvedId": "backend/util/cache.py:_get_redis:59"
+        },
+        {
+          "target": "pipeline",
+          "resolved": false,
+          "confidence": 0,
+          "line": 352
+        },
+        {
+          "target": "_get_redis",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 352,
+          "resolvedId": "backend/util/cache.py:_get_redis:59"
+        },
+        {
+          "target": "delete",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 354,
+          "resolvedId": "backend/integrations/creds_manager.py:delete:166"
+        },
+        {
+          "target": "key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 354
+        },
+        {
+          "target": "execute",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 355,
+          "resolvedId": "backend/api/features/chat/tools/base.py:execute:60"
+        },
+        {
+          "target": "warning",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 359,
+          "resolvedId": "backend/util/logging.py:warning:45"
+        },
+        {
+          "target": "clear",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 363,
+          "resolvedId": "backend/sdk/registry.py:clear:155"
+        },
+        {
+          "target": "list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 367
+        },
+        {
+          "target": "scan_iter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 368
+        },
+        {
+          "target": "_get_redis",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 368,
+          "resolvedId": "backend/util/cache.py:_get_redis:59"
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 371
+        },
+        {
+          "target": "cache_keys",
+          "resolved": false,
+          "confidence": 0,
+          "line": 371
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 377
+        },
+        {
+          "target": "cache_storage",
+          "resolved": false,
+          "confidence": 0,
+          "line": 377
+        },
+        {
+          "target": "_make_hashable_key",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 384,
+          "resolvedId": "backend/util/cache.py:_make_hashable_key:79"
+        },
+        {
+          "target": "args",
+          "resolved": false,
+          "confidence": 0,
+          "line": 384
+        },
+        {
+          "target": "kwargs",
+          "resolved": false,
+          "confidence": 0,
+          "line": 384
+        },
+        {
+          "target": "_make_redis_key",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 386,
+          "resolvedId": "backend/util/cache.py:_make_redis_key:118"
+        },
+        {
+          "target": "key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 386
+        },
+        {
+          "target": "cast",
+          "resolved": false,
+          "confidence": 0,
+          "line": 387
+        },
+        {
+          "target": "int",
+          "resolved": false,
+          "confidence": 0,
+          "line": 387
+        },
+        {
+          "target": "delete",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 387,
+          "resolvedId": "backend/integrations/creds_manager.py:delete:166"
+        },
+        {
+          "target": "redis_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 387
+        },
+        {
+          "target": "_get_redis",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 387,
+          "resolvedId": "backend/util/cache.py:_get_redis:59"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "pipeline",
+          "operation": "delete",
+          "line": 354,
+          "fields": []
+        },
+        {
+          "table": "models",
+          "operation": "delete",
+          "line": 387,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/util/cache.py:decorator:178",
+      "name": "decorator",
+      "startLine": 178,
+      "endLine": 399,
+      "isEntryPoint": false,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "iscoroutinefunction",
+          "resolved": false,
+          "confidence": 0,
+          "line": 231
+        },
+        {
+          "target": "target_func",
+          "resolved": false,
+          "confidence": 0,
+          "line": 231
+        },
+        {
+          "target": "wraps",
+          "resolved": false,
+          "confidence": 0,
+          "line": 244
+        },
+        {
+          "target": "target_func",
+          "resolved": false,
+          "confidence": 0,
+          "line": 244
+        },
+        {
+          "target": "Lock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 289
+        },
+        {
+          "target": "wraps",
+          "resolved": false,
+          "confidence": 0,
+          "line": 291
+        },
+        {
+          "target": "target_func",
+          "resolved": false,
+          "confidence": 0,
+          "line": 291
+        },
+        {
+          "target": "setattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 395
+        },
+        {
+          "target": "wrapper",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 395,
+          "resolvedId": "backend/util/timezone_name.py:wrapper:69"
+        },
+        {
+          "target": "cache_clear",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 395,
+          "resolvedId": "backend/util/cache.py:cache_clear:129"
+        },
+        {
+          "target": "setattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 396
+        },
+        {
+          "target": "wrapper",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 396,
+          "resolvedId": "backend/util/timezone_name.py:wrapper:69"
+        },
+        {
+          "target": "cache_info",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 396,
+          "resolvedId": "backend/util/cache.py:cache_info:133"
+        },
+        {
+          "target": "setattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 397
+        },
+        {
+          "target": "wrapper",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 397,
+          "resolvedId": "backend/util/timezone_name.py:wrapper:69"
+        },
+        {
+          "target": "cache_delete",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 397,
+          "resolvedId": "backend/util/cache.py:cache_delete:137"
+        },
+        {
+          "target": "cast",
+          "resolved": false,
+          "confidence": 0,
+          "line": 399
+        },
+        {
+          "target": "wrapper",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 399,
+          "resolvedId": "backend/util/timezone_name.py:wrapper:69"
+        },
+        {
+          "target": "getex",
+          "resolved": false,
+          "confidence": 0,
+          "line": 187
+        },
+        {
+          "target": "redis_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 187
+        },
+        {
+          "target": "_get_redis",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 187,
+          "resolvedId": "backend/util/cache.py:_get_redis:59"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 189,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "redis_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 189
+        },
+        {
+          "target": "_get_redis",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 189,
+          "resolvedId": "backend/util/cache.py:_get_redis:59"
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 191
+        },
+        {
+          "target": "cached_bytes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 191
+        },
+        {
+          "target": "bytes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 191
+        },
+        {
+          "target": "loads",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 192,
+          "resolvedId": "backend/util/json.py:loads:77"
+        },
+        {
+          "target": "cached_bytes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 192
+        },
+        {
+          "target": "error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 194,
+          "resolvedId": "backend/util/logging.py:error:49"
+        },
+        {
+          "target": "dumps",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 202,
+          "resolvedId": "backend/util/json.py:dumps:20"
+        },
+        {
+          "target": "value",
+          "resolved": false,
+          "confidence": 0,
+          "line": 202
+        },
+        {
+          "target": "setex",
+          "resolved": false,
+          "confidence": 0,
+          "line": 203
+        },
+        {
+          "target": "redis_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 203
+        },
+        {
+          "target": "ttl_seconds",
+          "resolved": false,
+          "confidence": 0,
+          "line": 203
+        },
+        {
+          "target": "pickled_value",
+          "resolved": false,
+          "confidence": 0,
+          "line": 203
+        },
+        {
+          "target": "_get_redis",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 203,
+          "resolvedId": "backend/util/cache.py:_get_redis:59"
+        },
+        {
+          "target": "error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 205,
+          "resolvedId": "backend/util/logging.py:error:49"
+        },
+        {
+          "target": "time",
+          "resolved": false,
+          "confidence": 0,
+          "line": 213
+        },
+        {
+          "target": "debug",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 214,
+          "resolvedId": "backend/util/logging.py:debug:53"
+        },
+        {
+          "target": "CachedValue",
+          "resolved": false,
+          "confidence": 0,
+          "line": 222
+        },
+        {
+          "target": "time",
+          "resolved": false,
+          "confidence": 0,
+          "line": 222
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 225
+        },
+        {
+          "target": "cache_storage",
+          "resolved": false,
+          "confidence": 0,
+          "line": 225
+        },
+        {
+          "target": "list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 227
+        },
+        {
+          "target": "keys",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 227,
+          "resolvedId": "backend/integrations/oauth/__init__.py:keys:100"
+        },
+        {
+          "target": "pop",
+          "resolved": false,
+          "confidence": 0,
+          "line": 229
+        },
+        {
+          "target": "old_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 229
+        },
+        {
+          "target": "get_running_loop",
+          "resolved": false,
+          "confidence": 0,
+          "line": 236
+        },
+        {
+          "target": "setdefault",
+          "resolved": false,
+          "confidence": 0,
+          "line": 241
+        },
+        {
+          "target": "loop",
+          "resolved": false,
+          "confidence": 0,
+          "line": 241
+        },
+        {
+          "target": "Lock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 241
+        },
+        {
+          "target": "list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 340
+        },
+        {
+          "target": "scan_iter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 341
+        },
+        {
+          "target": "_get_redis",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 341,
+          "resolvedId": "backend/util/cache.py:_get_redis:59"
+        },
+        {
+          "target": "list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 347
+        },
+        {
+          "target": "scan_iter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 348
+        },
+        {
+          "target": "_get_redis",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 348,
+          "resolvedId": "backend/util/cache.py:_get_redis:59"
+        },
+        {
+          "target": "pipeline",
+          "resolved": false,
+          "confidence": 0,
+          "line": 352
+        },
+        {
+          "target": "_get_redis",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 352,
+          "resolvedId": "backend/util/cache.py:_get_redis:59"
+        },
+        {
+          "target": "delete",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 354,
+          "resolvedId": "backend/integrations/creds_manager.py:delete:166"
+        },
+        {
+          "target": "key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 354
+        },
+        {
+          "target": "execute",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 355,
+          "resolvedId": "backend/api/features/chat/tools/base.py:execute:60"
+        },
+        {
+          "target": "warning",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 359,
+          "resolvedId": "backend/util/logging.py:warning:45"
+        },
+        {
+          "target": "clear",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 363,
+          "resolvedId": "backend/sdk/registry.py:clear:155"
+        },
+        {
+          "target": "list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 367
+        },
+        {
+          "target": "scan_iter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 368
+        },
+        {
+          "target": "_get_redis",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 368,
+          "resolvedId": "backend/util/cache.py:_get_redis:59"
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 371
+        },
+        {
+          "target": "cache_keys",
+          "resolved": false,
+          "confidence": 0,
+          "line": 371
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 377
+        },
+        {
+          "target": "cache_storage",
+          "resolved": false,
+          "confidence": 0,
+          "line": 377
+        },
+        {
+          "target": "_make_hashable_key",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 384,
+          "resolvedId": "backend/util/cache.py:_make_hashable_key:79"
+        },
+        {
+          "target": "args",
+          "resolved": false,
+          "confidence": 0,
+          "line": 384
+        },
+        {
+          "target": "kwargs",
+          "resolved": false,
+          "confidence": 0,
+          "line": 384
+        },
+        {
+          "target": "_make_redis_key",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 386,
+          "resolvedId": "backend/util/cache.py:_make_redis_key:118"
+        },
+        {
+          "target": "key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 386
+        },
+        {
+          "target": "cast",
+          "resolved": false,
+          "confidence": 0,
+          "line": 387
+        },
+        {
+          "target": "int",
+          "resolved": false,
+          "confidence": 0,
+          "line": 387
+        },
+        {
+          "target": "delete",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 387,
+          "resolvedId": "backend/integrations/creds_manager.py:delete:166"
+        },
+        {
+          "target": "redis_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 387
+        },
+        {
+          "target": "_get_redis",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 387,
+          "resolvedId": "backend/util/cache.py:_get_redis:59"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "pipeline",
+          "operation": "delete",
+          "line": 354,
+          "fields": []
+        },
+        {
+          "table": "models",
+          "operation": "delete",
+          "line": 387,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/util/cache.py:_get_from_redis:182",
+      "name": "_get_from_redis",
+      "startLine": 182,
+      "endLine": 197,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "getex",
+          "resolved": false,
+          "confidence": 0,
+          "line": 187
+        },
+        {
+          "target": "redis_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 187
+        },
+        {
+          "target": "_get_redis",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 187,
+          "resolvedId": "backend/util/cache.py:_get_redis:59"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 189,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "redis_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 189
+        },
+        {
+          "target": "_get_redis",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 189,
+          "resolvedId": "backend/util/cache.py:_get_redis:59"
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 191
+        },
+        {
+          "target": "cached_bytes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 191
+        },
+        {
+          "target": "bytes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 191
+        },
+        {
+          "target": "loads",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 192,
+          "resolvedId": "backend/util/json.py:loads:77"
+        },
+        {
+          "target": "cached_bytes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 192
+        },
+        {
+          "target": "error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 194,
+          "resolvedId": "backend/util/logging.py:error:49"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/cache.py:_set_to_redis:199",
+      "name": "_set_to_redis",
+      "startLine": 199,
+      "endLine": 207,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "dumps",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 202,
+          "resolvedId": "backend/util/json.py:dumps:20"
+        },
+        {
+          "target": "value",
+          "resolved": false,
+          "confidence": 0,
+          "line": 202
+        },
+        {
+          "target": "setex",
+          "resolved": false,
+          "confidence": 0,
+          "line": 203
+        },
+        {
+          "target": "redis_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 203
+        },
+        {
+          "target": "ttl_seconds",
+          "resolved": false,
+          "confidence": 0,
+          "line": 203
+        },
+        {
+          "target": "pickled_value",
+          "resolved": false,
+          "confidence": 0,
+          "line": 203
+        },
+        {
+          "target": "_get_redis",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 203,
+          "resolvedId": "backend/util/cache.py:_get_redis:59"
+        },
+        {
+          "target": "error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 205,
+          "resolvedId": "backend/util/logging.py:error:49"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/cache.py:_get_from_memory:209",
+      "name": "_get_from_memory",
+      "startLine": 209,
+      "endLine": 218,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "time",
+          "resolved": false,
+          "confidence": 0,
+          "line": 213
+        },
+        {
+          "target": "debug",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 214,
+          "resolvedId": "backend/util/logging.py:debug:53"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/cache.py:_set_to_memory:220",
+      "name": "_set_to_memory",
+      "startLine": 220,
+      "endLine": 229,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "CachedValue",
+          "resolved": false,
+          "confidence": 0,
+          "line": 222
+        },
+        {
+          "target": "time",
+          "resolved": false,
+          "confidence": 0,
+          "line": 222
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 225
+        },
+        {
+          "target": "cache_storage",
+          "resolved": false,
+          "confidence": 0,
+          "line": 225
+        },
+        {
+          "target": "list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 227
+        },
+        {
+          "target": "keys",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 227,
+          "resolvedId": "backend/integrations/oauth/__init__.py:keys:100"
+        },
+        {
+          "target": "pop",
+          "resolved": false,
+          "confidence": 0,
+          "line": 229
+        },
+        {
+          "target": "old_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 229
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/cache.py:_get_cache_lock:233",
+      "name": "_get_cache_lock",
+      "startLine": 233,
+      "endLine": 242,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "get_running_loop",
+          "resolved": false,
+          "confidence": 0,
+          "line": 236
+        },
+        {
+          "target": "setdefault",
+          "resolved": false,
+          "confidence": 0,
+          "line": 241
+        },
+        {
+          "target": "loop",
+          "resolved": false,
+          "confidence": 0,
+          "line": 241
+        },
+        {
+          "target": "Lock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 241
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/cache.py:cache_clear:335",
+      "name": "cache_clear",
+      "startLine": 335,
+      "endLine": 363,
+      "isEntryPoint": false,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 340
+        },
+        {
+          "target": "scan_iter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 341
+        },
+        {
+          "target": "_get_redis",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 341,
+          "resolvedId": "backend/util/cache.py:_get_redis:59"
+        },
+        {
+          "target": "list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 347
+        },
+        {
+          "target": "scan_iter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 348
+        },
+        {
+          "target": "_get_redis",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 348,
+          "resolvedId": "backend/util/cache.py:_get_redis:59"
+        },
+        {
+          "target": "pipeline",
+          "resolved": false,
+          "confidence": 0,
+          "line": 352
+        },
+        {
+          "target": "_get_redis",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 352,
+          "resolvedId": "backend/util/cache.py:_get_redis:59"
+        },
+        {
+          "target": "delete",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 354,
+          "resolvedId": "backend/integrations/creds_manager.py:delete:166"
+        },
+        {
+          "target": "key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 354
+        },
+        {
+          "target": "execute",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 355,
+          "resolvedId": "backend/api/features/chat/tools/base.py:execute:60"
+        },
+        {
+          "target": "warning",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 359,
+          "resolvedId": "backend/util/logging.py:warning:45"
+        },
+        {
+          "target": "clear",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 363,
+          "resolvedId": "backend/sdk/registry.py:clear:155"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "pipeline",
+          "operation": "delete",
+          "line": 354,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/util/cache.py:cache_info:365",
+      "name": "cache_info",
+      "startLine": 365,
+      "endLine": 380,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 367
+        },
+        {
+          "target": "scan_iter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 368
+        },
+        {
+          "target": "_get_redis",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 368,
+          "resolvedId": "backend/util/cache.py:_get_redis:59"
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 371
+        },
+        {
+          "target": "cache_keys",
+          "resolved": false,
+          "confidence": 0,
+          "line": 371
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 377
+        },
+        {
+          "target": "cache_storage",
+          "resolved": false,
+          "confidence": 0,
+          "line": 377
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/cache.py:cache_delete:382",
+      "name": "cache_delete",
+      "startLine": 382,
+      "endLine": 393,
+      "isEntryPoint": false,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "_make_hashable_key",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 384,
+          "resolvedId": "backend/util/cache.py:_make_hashable_key:79"
+        },
+        {
+          "target": "args",
+          "resolved": false,
+          "confidence": 0,
+          "line": 384
+        },
+        {
+          "target": "kwargs",
+          "resolved": false,
+          "confidence": 0,
+          "line": 384
+        },
+        {
+          "target": "_make_redis_key",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 386,
+          "resolvedId": "backend/util/cache.py:_make_redis_key:118"
+        },
+        {
+          "target": "key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 386
+        },
+        {
+          "target": "cast",
+          "resolved": false,
+          "confidence": 0,
+          "line": 387
+        },
+        {
+          "target": "int",
+          "resolved": false,
+          "confidence": 0,
+          "line": 387
+        },
+        {
+          "target": "delete",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 387,
+          "resolvedId": "backend/integrations/creds_manager.py:delete:166"
+        },
+        {
+          "target": "redis_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 387
+        },
+        {
+          "target": "_get_redis",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 387,
+          "resolvedId": "backend/util/cache.py:_get_redis:59"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "models",
+          "operation": "delete",
+          "line": 387,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/util/cache.py:thread_cached:404",
+      "name": "thread_cached",
+      "startLine": 404,
+      "endLine": 461,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "local",
+          "resolved": false,
+          "confidence": 0,
+          "line": 427
+        },
+        {
+          "target": "iscoroutinefunction",
+          "resolved": false,
+          "confidence": 0,
+          "line": 433
+        },
+        {
+          "target": "func",
+          "resolved": false,
+          "confidence": 0,
+          "line": 433
+        },
+        {
+          "target": "wraps",
+          "resolved": false,
+          "confidence": 0,
+          "line": 435
+        },
+        {
+          "target": "func",
+          "resolved": false,
+          "confidence": 0,
+          "line": 435
+        },
+        {
+          "target": "setattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 445
+        },
+        {
+          "target": "async_wrapper",
+          "resolved": false,
+          "confidence": 0,
+          "line": 445
+        },
+        {
+          "target": "_clear",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 445,
+          "resolvedId": "backend/util/cache.py:_clear:429"
+        },
+        {
+          "target": "wraps",
+          "resolved": false,
+          "confidence": 0,
+          "line": 450
+        },
+        {
+          "target": "func",
+          "resolved": false,
+          "confidence": 0,
+          "line": 450
+        },
+        {
+          "target": "setattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 460
+        },
+        {
+          "target": "sync_wrapper",
+          "resolved": false,
+          "confidence": 0,
+          "line": 460
+        },
+        {
+          "target": "_clear",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 460,
+          "resolvedId": "backend/util/cache.py:_clear:429"
+        },
+        {
+          "target": "hasattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 430
+        },
+        {
+          "target": "thread_local",
+          "resolved": false,
+          "confidence": 0,
+          "line": 430
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/cache.py:_clear:429",
+      "name": "_clear",
+      "startLine": 429,
+      "endLine": 431,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "hasattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 430
+        },
+        {
+          "target": "thread_local",
+          "resolved": false,
+          "confidence": 0,
+          "line": 430
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/cache.py:clear_thread_cache:464",
+      "name": "clear_thread_cache",
+      "startLine": 464,
+      "endLine": 467,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "getattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 466
+        },
+        {
+          "target": "func",
+          "resolved": false,
+          "confidence": 0,
+          "line": 466
+        },
+        {
+          "target": "clear",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 467,
+          "resolvedId": "backend/sdk/registry.py:clear:155"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/cache.py:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 468,
+      "isEntryPoint": false,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "ParamSpec",
+          "resolved": false,
+          "confidence": 0,
+          "line": 27
+        },
+        {
+          "target": "TypeVar",
+          "resolved": false,
+          "confidence": 0,
+          "line": 28
+        },
+        {
+          "target": "TypeVar",
+          "resolved": false,
+          "confidence": 0,
+          "line": 29
+        },
+        {
+          "target": "TypeVar",
+          "resolved": false,
+          "confidence": 0,
+          "line": 30
+        },
+        {
+          "target": "getLogger",
+          "resolved": false,
+          "confidence": 0,
+          "line": 32
+        },
+        {
+          "target": "Settings",
+          "resolved": false,
+          "confidence": 0,
+          "line": 33
+        },
+        {
+          "target": "ConnectionPool",
+          "resolved": false,
+          "confidence": 0,
+          "line": 45
+        },
+        {
+          "target": "conn_retry",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 58,
+          "resolvedId": "backend/util/retry.py:conn_retry:170"
+        },
+        {
+          "target": "Redis",
+          "resolved": false,
+          "confidence": 0,
+          "line": 66
+        },
+        {
+          "target": "_get_cache_pool",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 66,
+          "resolvedId": "backend/util/cache.py:_get_cache_pool:43"
+        },
+        {
+          "target": "ping",
+          "resolved": false,
+          "confidence": 0,
+          "line": 67
+        },
+        {
+          "target": "tuple",
+          "resolved": false,
+          "confidence": 0,
+          "line": 113
+        },
+        {
+          "target": "make_hashable",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 113,
+          "resolvedId": "backend/util/cache.py:make_hashable:89"
+        },
+        {
+          "target": "arg",
+          "resolved": false,
+          "confidence": 0,
+          "line": 113
+        },
+        {
+          "target": "tuple",
+          "resolved": false,
+          "confidence": 0,
+          "line": 114
+        },
+        {
+          "target": "sorted",
+          "resolved": false,
+          "confidence": 0,
+          "line": 114
+        },
+        {
+          "target": "make_hashable",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 114,
+          "resolvedId": "backend/util/cache.py:make_hashable:89"
+        },
+        {
+          "target": "v",
+          "resolved": false,
+          "confidence": 0,
+          "line": 114
+        },
+        {
+          "target": "items",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 114,
+          "resolvedId": "backend/integrations/oauth/__init__.py:items:123"
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 91
+        },
+        {
+          "target": "obj",
+          "resolved": false,
+          "confidence": 0,
+          "line": 91
+        },
+        {
+          "target": "dict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 91
+        },
+        {
+          "target": "tuple",
+          "resolved": false,
+          "confidence": 0,
+          "line": 95
+        },
+        {
+          "target": "sorted",
+          "resolved": false,
+          "confidence": 0,
+          "line": 95
+        },
+        {
+          "target": "make_hashable",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 95,
+          "resolvedId": "backend/util/cache.py:make_hashable:89"
+        },
+        {
+          "target": "v",
+          "resolved": false,
+          "confidence": 0,
+          "line": 95
+        },
+        {
+          "target": "items",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 95,
+          "resolvedId": "backend/integrations/oauth/__init__.py:items:123"
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 97
+        },
+        {
+          "target": "obj",
+          "resolved": false,
+          "confidence": 0,
+          "line": 97
+        },
+        {
+          "target": "tuple",
+          "resolved": false,
+          "confidence": 0,
+          "line": 98
+        },
+        {
+          "target": "make_hashable",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 98,
+          "resolvedId": "backend/util/cache.py:make_hashable:89"
+        },
+        {
+          "target": "item",
+          "resolved": false,
+          "confidence": 0,
+          "line": 98
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 99
+        },
+        {
+          "target": "obj",
+          "resolved": false,
+          "confidence": 0,
+          "line": 99
+        },
+        {
+          "target": "set",
+          "resolved": false,
+          "confidence": 0,
+          "line": 99
+        },
+        {
+          "target": "tuple",
+          "resolved": false,
+          "confidence": 0,
+          "line": 100
+        },
+        {
+          "target": "sorted",
+          "resolved": false,
+          "confidence": 0,
+          "line": 100
+        },
+        {
+          "target": "make_hashable",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 100,
+          "resolvedId": "backend/util/cache.py:make_hashable:89"
+        },
+        {
+          "target": "item",
+          "resolved": false,
+          "confidence": 0,
+          "line": 100
+        },
+        {
+          "target": "hasattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 101
+        },
+        {
+          "target": "obj",
+          "resolved": false,
+          "confidence": 0,
+          "line": 101
+        },
+        {
+          "target": "make_hashable",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 103,
+          "resolvedId": "backend/util/cache.py:make_hashable:89"
+        },
+        {
+          "target": "hash",
+          "resolved": false,
+          "confidence": 0,
+          "line": 107
+        },
+        {
+          "target": "obj",
+          "resolved": false,
+          "confidence": 0,
+          "line": 107
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 111
+        },
+        {
+          "target": "obj",
+          "resolved": false,
+          "confidence": 0,
+          "line": 111
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 121
+        },
+        {
+          "target": "key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 121
+        },
+        {
+          "target": "tuple",
+          "resolved": false,
+          "confidence": 0,
+          "line": 121
+        },
+        {
+          "target": "hash",
+          "resolved": false,
+          "confidence": 0,
+          "line": 122
+        },
+        {
+          "target": "hashable_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 122
+        },
+        {
+          "target": "iscoroutinefunction",
+          "resolved": false,
+          "confidence": 0,
+          "line": 231
+        },
+        {
+          "target": "target_func",
+          "resolved": false,
+          "confidence": 0,
+          "line": 231
+        },
+        {
+          "target": "wraps",
+          "resolved": false,
+          "confidence": 0,
+          "line": 244
+        },
+        {
+          "target": "target_func",
+          "resolved": false,
+          "confidence": 0,
+          "line": 244
+        },
+        {
+          "target": "Lock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 289
+        },
+        {
+          "target": "wraps",
+          "resolved": false,
+          "confidence": 0,
+          "line": 291
+        },
+        {
+          "target": "target_func",
+          "resolved": false,
+          "confidence": 0,
+          "line": 291
+        },
+        {
+          "target": "setattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 395
+        },
+        {
+          "target": "wrapper",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 395,
+          "resolvedId": "backend/util/timezone_name.py:wrapper:69"
+        },
+        {
+          "target": "cache_clear",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 395,
+          "resolvedId": "backend/util/cache.py:cache_clear:129"
+        },
+        {
+          "target": "setattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 396
+        },
+        {
+          "target": "wrapper",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 396,
+          "resolvedId": "backend/util/timezone_name.py:wrapper:69"
+        },
+        {
+          "target": "cache_info",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 396,
+          "resolvedId": "backend/util/cache.py:cache_info:133"
+        },
+        {
+          "target": "setattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 397
+        },
+        {
+          "target": "wrapper",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 397,
+          "resolvedId": "backend/util/timezone_name.py:wrapper:69"
+        },
+        {
+          "target": "cache_delete",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 397,
+          "resolvedId": "backend/util/cache.py:cache_delete:137"
+        },
+        {
+          "target": "cast",
+          "resolved": false,
+          "confidence": 0,
+          "line": 399
+        },
+        {
+          "target": "wrapper",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 399,
+          "resolvedId": "backend/util/timezone_name.py:wrapper:69"
+        },
+        {
+          "target": "getex",
+          "resolved": false,
+          "confidence": 0,
+          "line": 187
+        },
+        {
+          "target": "redis_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 187
+        },
+        {
+          "target": "_get_redis",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 187,
+          "resolvedId": "backend/util/cache.py:_get_redis:59"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 189,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "redis_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 189
+        },
+        {
+          "target": "_get_redis",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 189,
+          "resolvedId": "backend/util/cache.py:_get_redis:59"
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 191
+        },
+        {
+          "target": "cached_bytes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 191
+        },
+        {
+          "target": "bytes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 191
+        },
+        {
+          "target": "loads",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 192,
+          "resolvedId": "backend/util/json.py:loads:77"
+        },
+        {
+          "target": "cached_bytes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 192
+        },
+        {
+          "target": "error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 194,
+          "resolvedId": "backend/util/logging.py:error:49"
+        },
+        {
+          "target": "dumps",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 202,
+          "resolvedId": "backend/util/json.py:dumps:20"
+        },
+        {
+          "target": "value",
+          "resolved": false,
+          "confidence": 0,
+          "line": 202
+        },
+        {
+          "target": "setex",
+          "resolved": false,
+          "confidence": 0,
+          "line": 203
+        },
+        {
+          "target": "redis_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 203
+        },
+        {
+          "target": "ttl_seconds",
+          "resolved": false,
+          "confidence": 0,
+          "line": 203
+        },
+        {
+          "target": "pickled_value",
+          "resolved": false,
+          "confidence": 0,
+          "line": 203
+        },
+        {
+          "target": "_get_redis",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 203,
+          "resolvedId": "backend/util/cache.py:_get_redis:59"
+        },
+        {
+          "target": "error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 205,
+          "resolvedId": "backend/util/logging.py:error:49"
+        },
+        {
+          "target": "time",
+          "resolved": false,
+          "confidence": 0,
+          "line": 213
+        },
+        {
+          "target": "debug",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 214,
+          "resolvedId": "backend/util/logging.py:debug:53"
+        },
+        {
+          "target": "CachedValue",
+          "resolved": false,
+          "confidence": 0,
+          "line": 222
+        },
+        {
+          "target": "time",
+          "resolved": false,
+          "confidence": 0,
+          "line": 222
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 225
+        },
+        {
+          "target": "cache_storage",
+          "resolved": false,
+          "confidence": 0,
+          "line": 225
+        },
+        {
+          "target": "list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 227
+        },
+        {
+          "target": "keys",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 227,
+          "resolvedId": "backend/integrations/oauth/__init__.py:keys:100"
+        },
+        {
+          "target": "pop",
+          "resolved": false,
+          "confidence": 0,
+          "line": 229
+        },
+        {
+          "target": "old_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 229
+        },
+        {
+          "target": "get_running_loop",
+          "resolved": false,
+          "confidence": 0,
+          "line": 236
+        },
+        {
+          "target": "setdefault",
+          "resolved": false,
+          "confidence": 0,
+          "line": 241
+        },
+        {
+          "target": "loop",
+          "resolved": false,
+          "confidence": 0,
+          "line": 241
+        },
+        {
+          "target": "Lock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 241
+        },
+        {
+          "target": "list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 340
+        },
+        {
+          "target": "scan_iter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 341
+        },
+        {
+          "target": "_get_redis",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 341,
+          "resolvedId": "backend/util/cache.py:_get_redis:59"
+        },
+        {
+          "target": "list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 347
+        },
+        {
+          "target": "scan_iter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 348
+        },
+        {
+          "target": "_get_redis",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 348,
+          "resolvedId": "backend/util/cache.py:_get_redis:59"
+        },
+        {
+          "target": "pipeline",
+          "resolved": false,
+          "confidence": 0,
+          "line": 352
+        },
+        {
+          "target": "_get_redis",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 352,
+          "resolvedId": "backend/util/cache.py:_get_redis:59"
+        },
+        {
+          "target": "delete",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 354,
+          "resolvedId": "backend/integrations/creds_manager.py:delete:166"
+        },
+        {
+          "target": "key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 354
+        },
+        {
+          "target": "execute",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 355,
+          "resolvedId": "backend/api/features/chat/tools/base.py:execute:60"
+        },
+        {
+          "target": "warning",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 359,
+          "resolvedId": "backend/util/logging.py:warning:45"
+        },
+        {
+          "target": "clear",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 363,
+          "resolvedId": "backend/sdk/registry.py:clear:155"
+        },
+        {
+          "target": "list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 367
+        },
+        {
+          "target": "scan_iter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 368
+        },
+        {
+          "target": "_get_redis",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 368,
+          "resolvedId": "backend/util/cache.py:_get_redis:59"
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 371
+        },
+        {
+          "target": "cache_keys",
+          "resolved": false,
+          "confidence": 0,
+          "line": 371
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 377
+        },
+        {
+          "target": "cache_storage",
+          "resolved": false,
+          "confidence": 0,
+          "line": 377
+        },
+        {
+          "target": "_make_hashable_key",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 384,
+          "resolvedId": "backend/util/cache.py:_make_hashable_key:79"
+        },
+        {
+          "target": "args",
+          "resolved": false,
+          "confidence": 0,
+          "line": 384
+        },
+        {
+          "target": "kwargs",
+          "resolved": false,
+          "confidence": 0,
+          "line": 384
+        },
+        {
+          "target": "_make_redis_key",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 386,
+          "resolvedId": "backend/util/cache.py:_make_redis_key:118"
+        },
+        {
+          "target": "key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 386
+        },
+        {
+          "target": "cast",
+          "resolved": false,
+          "confidence": 0,
+          "line": 387
+        },
+        {
+          "target": "int",
+          "resolved": false,
+          "confidence": 0,
+          "line": 387
+        },
+        {
+          "target": "delete",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 387,
+          "resolvedId": "backend/integrations/creds_manager.py:delete:166"
+        },
+        {
+          "target": "redis_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 387
+        },
+        {
+          "target": "_get_redis",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 387,
+          "resolvedId": "backend/util/cache.py:_get_redis:59"
+        },
+        {
+          "target": "local",
+          "resolved": false,
+          "confidence": 0,
+          "line": 427
+        },
+        {
+          "target": "iscoroutinefunction",
+          "resolved": false,
+          "confidence": 0,
+          "line": 433
+        },
+        {
+          "target": "func",
+          "resolved": false,
+          "confidence": 0,
+          "line": 433
+        },
+        {
+          "target": "wraps",
+          "resolved": false,
+          "confidence": 0,
+          "line": 435
+        },
+        {
+          "target": "func",
+          "resolved": false,
+          "confidence": 0,
+          "line": 435
+        },
+        {
+          "target": "setattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 445
+        },
+        {
+          "target": "async_wrapper",
+          "resolved": false,
+          "confidence": 0,
+          "line": 445
+        },
+        {
+          "target": "_clear",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 445,
+          "resolvedId": "backend/util/cache.py:_clear:429"
+        },
+        {
+          "target": "wraps",
+          "resolved": false,
+          "confidence": 0,
+          "line": 450
+        },
+        {
+          "target": "func",
+          "resolved": false,
+          "confidence": 0,
+          "line": 450
+        },
+        {
+          "target": "setattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 460
+        },
+        {
+          "target": "sync_wrapper",
+          "resolved": false,
+          "confidence": 0,
+          "line": 460
+        },
+        {
+          "target": "_clear",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 460,
+          "resolvedId": "backend/util/cache.py:_clear:429"
+        },
+        {
+          "target": "hasattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 430
+        },
+        {
+          "target": "thread_local",
+          "resolved": false,
+          "confidence": 0,
+          "line": 430
+        },
+        {
+          "target": "getattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 466
+        },
+        {
+          "target": "func",
+          "resolved": false,
+          "confidence": 0,
+          "line": 466
+        },
+        {
+          "target": "clear",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 467,
+          "resolvedId": "backend/sdk/registry.py:clear:155"
+        },
+        {
+          "target": "ParamSpec",
+          "resolved": false,
+          "confidence": 0,
+          "line": 27
+        },
+        {
+          "target": "TypeVar",
+          "resolved": false,
+          "confidence": 0,
+          "line": 28
+        },
+        {
+          "target": "TypeVar",
+          "resolved": false,
+          "confidence": 0,
+          "line": 29
+        },
+        {
+          "target": "TypeVar",
+          "resolved": false,
+          "confidence": 0,
+          "line": 30
+        },
+        {
+          "target": "getLogger",
+          "resolved": false,
+          "confidence": 0,
+          "line": 32
+        },
+        {
+          "target": "Settings",
+          "resolved": false,
+          "confidence": 0,
+          "line": 33
+        },
+        {
+          "target": "conn_retry",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 58,
+          "resolvedId": "backend/util/retry.py:conn_retry:170"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "pipeline",
+          "operation": "delete",
+          "line": 354,
+          "fields": []
+        },
+        {
+          "table": "logging",
+          "operation": "read",
+          "line": 32,
+          "fields": []
+        },
+        {
+          "table": "models",
+          "operation": "delete",
+          "line": 387,
+          "fields": []
+        }
+      ]
+    }
+  ]
+}

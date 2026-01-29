@@ -1,0 +1,107 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.202Z",
+  "checksum": "44a27eb9b1a3799e",
+  "file": "src/app/api/auth/callback/reset-password/route.ts",
+  "functions": [
+    {
+      "id": "src/app/api/auth/callback/reset-password/route.ts:GET:5",
+      "name": "GET",
+      "startLine": 5,
+      "endLine": 41,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "URL",
+          "resolved": false,
+          "confidence": 0,
+          "line": 6
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 7,
+          "resolvedId": "src/services/storage/local-storage.ts:get:16"
+        },
+        {
+          "target": "redirect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 12
+        },
+        {
+          "target": "getServerSupabase",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 18,
+          "resolvedId": "src/lib/supabase/server/getServerSupabase.ts:getServerSupabase:7"
+        },
+        {
+          "target": "redirect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 21
+        },
+        {
+          "target": "exchangePasswordResetCode",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 26,
+          "resolvedId": "src/lib/supabase/helpers.ts:exchangePasswordResetCode:112"
+        },
+        {
+          "target": "supabase",
+          "resolved": false,
+          "confidence": 0,
+          "line": 26
+        },
+        {
+          "target": "code",
+          "resolved": false,
+          "confidence": 0,
+          "line": 26
+        },
+        {
+          "target": "redirect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 29
+        },
+        {
+          "target": "encodeURIComponent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 30
+        },
+        {
+          "target": "redirect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 34
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 36
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 36
+        },
+        {
+          "target": "redirect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 37
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

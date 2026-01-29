@@ -1,0 +1,1241 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.093Z",
+  "checksum": "5c4567cc3bfbe73c",
+  "file": "src/app/(platform)/copilot/components/CopilotShell/useCopilotShell.ts",
+  "functions": [
+    {
+      "id": "src/app/(platform)/copilot/components/CopilotShell/useCopilotShell.ts:useCopilotShell:21",
+      "name": "useCopilotShell",
+      "startLine": 21,
+      "endLine": 171,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "usePathname",
+          "resolved": false,
+          "confidence": 0,
+          "line": 22
+        },
+        {
+          "target": "useSearchParams",
+          "resolved": false,
+          "confidence": 0,
+          "line": 23
+        },
+        {
+          "target": "useQueryClient",
+          "resolved": false,
+          "confidence": 0,
+          "line": 24
+        },
+        {
+          "target": "useBreakpoint",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 25,
+          "resolvedId": "src/lib/hooks/useBreakpoint.ts:useBreakpoint:15"
+        },
+        {
+          "target": "useSupabase",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 26,
+          "resolvedId": "src/lib/supabase/hooks/useSupabase.ts:useSupabase:10"
+        },
+        {
+          "target": "useCopilotSessionId",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 30,
+          "resolvedId": "src/app/(platform)/copilot/useCopilotSessionId.ts:useCopilotSessionId:3"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 33,
+          "resolvedId": "src/services/storage/local-storage.ts:get:16"
+        },
+        {
+          "target": "useMobileDrawer",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 40,
+          "resolvedId": "src/app/(platform)/copilot/components/CopilotShell/components/MobileDrawer/useMobileDrawer.ts:useMobileDrawer:3"
+        },
+        {
+          "target": "getCurrentSessionId",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 44,
+          "resolvedId": "src/app/(platform)/copilot/components/CopilotShell/helpers.ts:getCurrentSessionId:104"
+        },
+        {
+          "target": "searchParams",
+          "resolved": false,
+          "confidence": 0,
+          "line": 44
+        },
+        {
+          "target": "useGetV2GetSession",
+          "resolved": false,
+          "confidence": 0,
+          "line": 46
+        },
+        {
+          "target": "useShellSessionList",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 64,
+          "resolvedId": "src/app/(platform)/copilot/components/CopilotShell/useShellSessionList.ts:useShellSessionList:22"
+        },
+        {
+          "target": "useChatStore",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        },
+        {
+          "target": "useChatStore",
+          "resolved": false,
+          "confidence": 0,
+          "line": 73
+        },
+        {
+          "target": "useCopilotStore",
+          "resolved": false,
+          "confidence": 0,
+          "line": 74
+        },
+        {
+          "target": "useCopilotStore",
+          "resolved": false,
+          "confidence": 0,
+          "line": 75
+        },
+        {
+          "target": "useCopilotStore",
+          "resolved": false,
+          "confidence": 0,
+          "line": 76
+        },
+        {
+          "target": "useCopilotStore",
+          "resolved": false,
+          "confidence": 0,
+          "line": 77
+        },
+        {
+          "target": "useRef",
+          "resolved": false,
+          "confidence": 0,
+          "line": 79
+        },
+        {
+          "target": "setIsSwitchingSession",
+          "resolved": false,
+          "confidence": 0,
+          "line": 84
+        },
+        {
+          "target": "Promise",
+          "resolved": false,
+          "confidence": 0,
+          "line": 85
+        },
+        {
+          "target": "onStreamComplete",
+          "resolved": false,
+          "confidence": 0,
+          "line": 86
+        },
+        {
+          "target": "clearTimeout",
+          "resolved": false,
+          "confidence": 0,
+          "line": 88
+        },
+        {
+          "target": "timeout",
+          "resolved": false,
+          "confidence": 0,
+          "line": 88
+        },
+        {
+          "target": "unsubscribe",
+          "resolved": false,
+          "confidence": 0,
+          "line": 89
+        },
+        {
+          "target": "resolve",
+          "resolved": false,
+          "confidence": 0,
+          "line": 90
+        },
+        {
+          "target": "setTimeout",
+          "resolved": false,
+          "confidence": 0,
+          "line": 93
+        },
+        {
+          "target": "unsubscribe",
+          "resolved": false,
+          "confidence": 0,
+          "line": 94
+        },
+        {
+          "target": "resolve",
+          "resolved": false,
+          "confidence": 0,
+          "line": 95
+        },
+        {
+          "target": "stopStream",
+          "resolved": false,
+          "confidence": 0,
+          "line": 97
+        },
+        {
+          "target": "currentSessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 97
+        },
+        {
+          "target": "invalidateQueries",
+          "resolved": false,
+          "confidence": 0,
+          "line": 100
+        },
+        {
+          "target": "getGetV2GetSessionQueryKey",
+          "resolved": false,
+          "confidence": 0,
+          "line": 101
+        },
+        {
+          "target": "currentSessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 101
+        },
+        {
+          "target": "setIsSwitchingSession",
+          "resolved": false,
+          "confidence": 0,
+          "line": 103
+        },
+        {
+          "target": "has",
+          "resolved": false,
+          "confidence": 0,
+          "line": 108
+        },
+        {
+          "target": "sessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 108
+        },
+        {
+          "target": "invalidateQueries",
+          "resolved": false,
+          "confidence": 0,
+          "line": 109
+        },
+        {
+          "target": "getGetV2GetSessionQueryKey",
+          "resolved": false,
+          "confidence": 0,
+          "line": 110
+        },
+        {
+          "target": "sessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 110
+        },
+        {
+          "target": "setUrlSessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 113
+        },
+        {
+          "target": "sessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 113
+        },
+        {
+          "target": "handleCloseDrawer",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 114,
+          "resolvedId": "src/app/(platform)/copilot/components/CopilotShell/components/MobileDrawer/useMobileDrawer.ts:handleCloseDrawer:10"
+        },
+        {
+          "target": "resetPagination",
+          "resolved": false,
+          "confidence": 0,
+          "line": 118
+        },
+        {
+          "target": "invalidateQueries",
+          "resolved": false,
+          "confidence": 0,
+          "line": 119
+        },
+        {
+          "target": "getGetV2ListSessionsQueryKey",
+          "resolved": false,
+          "confidence": 0,
+          "line": 120
+        },
+        {
+          "target": "setUrlSessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 122
+        },
+        {
+          "target": "handleCloseDrawer",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 123,
+          "resolvedId": "src/app/(platform)/copilot/components/CopilotShell/components/MobileDrawer/useMobileDrawer.ts:handleCloseDrawer:10"
+        },
+        {
+          "target": "stopCurrentStream",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 131,
+          "resolvedId": "src/app/(platform)/copilot/components/CopilotShell/useCopilotShell.ts:stopCurrentStream:81"
+        },
+        {
+          "target": "selectSession",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 132,
+          "resolvedId": "src/app/(platform)/copilot/components/CopilotShell/useCopilotShell.ts:selectSession:106"
+        },
+        {
+          "target": "sessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 132
+        },
+        {
+          "target": "openInterruptModal",
+          "resolved": false,
+          "confidence": 0,
+          "line": 134
+        },
+        {
+          "target": "current",
+          "resolved": false,
+          "confidence": 0,
+          "line": 134
+        },
+        {
+          "target": "selectSession",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 136,
+          "resolvedId": "src/app/(platform)/copilot/components/CopilotShell/useCopilotShell.ts:selectSession:106"
+        },
+        {
+          "target": "sessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 136
+        },
+        {
+          "target": "stopCurrentStream",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 143,
+          "resolvedId": "src/app/(platform)/copilot/components/CopilotShell/useCopilotShell.ts:stopCurrentStream:81"
+        },
+        {
+          "target": "startNewChat",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 144,
+          "resolvedId": "src/app/(platform)/copilot/components/CopilotShell/useCopilotShell.ts:startNewChat:117"
+        },
+        {
+          "target": "openInterruptModal",
+          "resolved": false,
+          "confidence": 0,
+          "line": 146
+        },
+        {
+          "target": "current",
+          "resolved": false,
+          "confidence": 0,
+          "line": 146
+        },
+        {
+          "target": "startNewChat",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 148,
+          "resolvedId": "src/app/(platform)/copilot/components/CopilotShell/useCopilotShell.ts:startNewChat:117"
+        },
+        {
+          "target": "Boolean",
+          "resolved": false,
+          "confidence": 0,
+          "line": 157
+        },
+        {
+          "target": "currentSessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 157
+        },
+        {
+          "target": "Boolean",
+          "resolved": false,
+          "confidence": 0,
+          "line": 157
+        },
+        {
+          "target": "paramSessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 157
+        },
+        {
+          "target": "setIsSwitchingSession",
+          "resolved": false,
+          "confidence": 0,
+          "line": 84
+        },
+        {
+          "target": "Promise",
+          "resolved": false,
+          "confidence": 0,
+          "line": 85
+        },
+        {
+          "target": "onStreamComplete",
+          "resolved": false,
+          "confidence": 0,
+          "line": 86
+        },
+        {
+          "target": "clearTimeout",
+          "resolved": false,
+          "confidence": 0,
+          "line": 88
+        },
+        {
+          "target": "timeout",
+          "resolved": false,
+          "confidence": 0,
+          "line": 88
+        },
+        {
+          "target": "unsubscribe",
+          "resolved": false,
+          "confidence": 0,
+          "line": 89
+        },
+        {
+          "target": "resolve",
+          "resolved": false,
+          "confidence": 0,
+          "line": 90
+        },
+        {
+          "target": "setTimeout",
+          "resolved": false,
+          "confidence": 0,
+          "line": 93
+        },
+        {
+          "target": "unsubscribe",
+          "resolved": false,
+          "confidence": 0,
+          "line": 94
+        },
+        {
+          "target": "resolve",
+          "resolved": false,
+          "confidence": 0,
+          "line": 95
+        },
+        {
+          "target": "stopStream",
+          "resolved": false,
+          "confidence": 0,
+          "line": 97
+        },
+        {
+          "target": "currentSessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 97
+        },
+        {
+          "target": "invalidateQueries",
+          "resolved": false,
+          "confidence": 0,
+          "line": 100
+        },
+        {
+          "target": "getGetV2GetSessionQueryKey",
+          "resolved": false,
+          "confidence": 0,
+          "line": 101
+        },
+        {
+          "target": "currentSessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 101
+        },
+        {
+          "target": "setIsSwitchingSession",
+          "resolved": false,
+          "confidence": 0,
+          "line": 103
+        },
+        {
+          "target": "has",
+          "resolved": false,
+          "confidence": 0,
+          "line": 108
+        },
+        {
+          "target": "sessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 108
+        },
+        {
+          "target": "invalidateQueries",
+          "resolved": false,
+          "confidence": 0,
+          "line": 109
+        },
+        {
+          "target": "getGetV2GetSessionQueryKey",
+          "resolved": false,
+          "confidence": 0,
+          "line": 110
+        },
+        {
+          "target": "sessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 110
+        },
+        {
+          "target": "setUrlSessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 113
+        },
+        {
+          "target": "sessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 113
+        },
+        {
+          "target": "handleCloseDrawer",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 114,
+          "resolvedId": "src/app/(platform)/copilot/components/CopilotShell/components/MobileDrawer/useMobileDrawer.ts:handleCloseDrawer:10"
+        },
+        {
+          "target": "resetPagination",
+          "resolved": false,
+          "confidence": 0,
+          "line": 118
+        },
+        {
+          "target": "invalidateQueries",
+          "resolved": false,
+          "confidence": 0,
+          "line": 119
+        },
+        {
+          "target": "getGetV2ListSessionsQueryKey",
+          "resolved": false,
+          "confidence": 0,
+          "line": 120
+        },
+        {
+          "target": "setUrlSessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 122
+        },
+        {
+          "target": "handleCloseDrawer",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 123,
+          "resolvedId": "src/app/(platform)/copilot/components/CopilotShell/components/MobileDrawer/useMobileDrawer.ts:handleCloseDrawer:10"
+        },
+        {
+          "target": "stopCurrentStream",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 131,
+          "resolvedId": "src/app/(platform)/copilot/components/CopilotShell/useCopilotShell.ts:stopCurrentStream:81"
+        },
+        {
+          "target": "selectSession",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 132,
+          "resolvedId": "src/app/(platform)/copilot/components/CopilotShell/useCopilotShell.ts:selectSession:106"
+        },
+        {
+          "target": "sessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 132
+        },
+        {
+          "target": "openInterruptModal",
+          "resolved": false,
+          "confidence": 0,
+          "line": 134
+        },
+        {
+          "target": "current",
+          "resolved": false,
+          "confidence": 0,
+          "line": 134
+        },
+        {
+          "target": "selectSession",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 136,
+          "resolvedId": "src/app/(platform)/copilot/components/CopilotShell/useCopilotShell.ts:selectSession:106"
+        },
+        {
+          "target": "sessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 136
+        },
+        {
+          "target": "stopCurrentStream",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 143,
+          "resolvedId": "src/app/(platform)/copilot/components/CopilotShell/useCopilotShell.ts:stopCurrentStream:81"
+        },
+        {
+          "target": "startNewChat",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 144,
+          "resolvedId": "src/app/(platform)/copilot/components/CopilotShell/useCopilotShell.ts:startNewChat:117"
+        },
+        {
+          "target": "openInterruptModal",
+          "resolved": false,
+          "confidence": 0,
+          "line": 146
+        },
+        {
+          "target": "current",
+          "resolved": false,
+          "confidence": 0,
+          "line": 146
+        },
+        {
+          "target": "startNewChat",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 148,
+          "resolvedId": "src/app/(platform)/copilot/components/CopilotShell/useCopilotShell.ts:startNewChat:117"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/app/(platform)/copilot/components/CopilotShell/useCopilotShell.ts:stopCurrentStream:81",
+      "name": "stopCurrentStream",
+      "startLine": 81,
+      "endLine": 104,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "setIsSwitchingSession",
+          "resolved": false,
+          "confidence": 0,
+          "line": 84
+        },
+        {
+          "target": "Promise",
+          "resolved": false,
+          "confidence": 0,
+          "line": 85
+        },
+        {
+          "target": "onStreamComplete",
+          "resolved": false,
+          "confidence": 0,
+          "line": 86
+        },
+        {
+          "target": "clearTimeout",
+          "resolved": false,
+          "confidence": 0,
+          "line": 88
+        },
+        {
+          "target": "timeout",
+          "resolved": false,
+          "confidence": 0,
+          "line": 88
+        },
+        {
+          "target": "unsubscribe",
+          "resolved": false,
+          "confidence": 0,
+          "line": 89
+        },
+        {
+          "target": "resolve",
+          "resolved": false,
+          "confidence": 0,
+          "line": 90
+        },
+        {
+          "target": "setTimeout",
+          "resolved": false,
+          "confidence": 0,
+          "line": 93
+        },
+        {
+          "target": "unsubscribe",
+          "resolved": false,
+          "confidence": 0,
+          "line": 94
+        },
+        {
+          "target": "resolve",
+          "resolved": false,
+          "confidence": 0,
+          "line": 95
+        },
+        {
+          "target": "stopStream",
+          "resolved": false,
+          "confidence": 0,
+          "line": 97
+        },
+        {
+          "target": "currentSessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 97
+        },
+        {
+          "target": "invalidateQueries",
+          "resolved": false,
+          "confidence": 0,
+          "line": 100
+        },
+        {
+          "target": "getGetV2GetSessionQueryKey",
+          "resolved": false,
+          "confidence": 0,
+          "line": 101
+        },
+        {
+          "target": "currentSessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 101
+        },
+        {
+          "target": "setIsSwitchingSession",
+          "resolved": false,
+          "confidence": 0,
+          "line": 103
+        },
+        {
+          "target": "setIsSwitchingSession",
+          "resolved": false,
+          "confidence": 0,
+          "line": 84
+        },
+        {
+          "target": "Promise",
+          "resolved": false,
+          "confidence": 0,
+          "line": 85
+        },
+        {
+          "target": "onStreamComplete",
+          "resolved": false,
+          "confidence": 0,
+          "line": 86
+        },
+        {
+          "target": "clearTimeout",
+          "resolved": false,
+          "confidence": 0,
+          "line": 88
+        },
+        {
+          "target": "timeout",
+          "resolved": false,
+          "confidence": 0,
+          "line": 88
+        },
+        {
+          "target": "unsubscribe",
+          "resolved": false,
+          "confidence": 0,
+          "line": 89
+        },
+        {
+          "target": "resolve",
+          "resolved": false,
+          "confidence": 0,
+          "line": 90
+        },
+        {
+          "target": "setTimeout",
+          "resolved": false,
+          "confidence": 0,
+          "line": 93
+        },
+        {
+          "target": "unsubscribe",
+          "resolved": false,
+          "confidence": 0,
+          "line": 94
+        },
+        {
+          "target": "resolve",
+          "resolved": false,
+          "confidence": 0,
+          "line": 95
+        },
+        {
+          "target": "stopStream",
+          "resolved": false,
+          "confidence": 0,
+          "line": 97
+        },
+        {
+          "target": "currentSessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 97
+        },
+        {
+          "target": "invalidateQueries",
+          "resolved": false,
+          "confidence": 0,
+          "line": 100
+        },
+        {
+          "target": "getGetV2GetSessionQueryKey",
+          "resolved": false,
+          "confidence": 0,
+          "line": 101
+        },
+        {
+          "target": "currentSessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 101
+        },
+        {
+          "target": "setIsSwitchingSession",
+          "resolved": false,
+          "confidence": 0,
+          "line": 103
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/app/(platform)/copilot/components/CopilotShell/useCopilotShell.ts:selectSession:106",
+      "name": "selectSession",
+      "startLine": 106,
+      "endLine": 115,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "has",
+          "resolved": false,
+          "confidence": 0,
+          "line": 108
+        },
+        {
+          "target": "sessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 108
+        },
+        {
+          "target": "invalidateQueries",
+          "resolved": false,
+          "confidence": 0,
+          "line": 109
+        },
+        {
+          "target": "getGetV2GetSessionQueryKey",
+          "resolved": false,
+          "confidence": 0,
+          "line": 110
+        },
+        {
+          "target": "sessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 110
+        },
+        {
+          "target": "setUrlSessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 113
+        },
+        {
+          "target": "sessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 113
+        },
+        {
+          "target": "handleCloseDrawer",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 114,
+          "resolvedId": "src/app/(platform)/copilot/components/CopilotShell/components/MobileDrawer/useMobileDrawer.ts:handleCloseDrawer:10"
+        },
+        {
+          "target": "has",
+          "resolved": false,
+          "confidence": 0,
+          "line": 108
+        },
+        {
+          "target": "sessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 108
+        },
+        {
+          "target": "invalidateQueries",
+          "resolved": false,
+          "confidence": 0,
+          "line": 109
+        },
+        {
+          "target": "getGetV2GetSessionQueryKey",
+          "resolved": false,
+          "confidence": 0,
+          "line": 110
+        },
+        {
+          "target": "sessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 110
+        },
+        {
+          "target": "setUrlSessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 113
+        },
+        {
+          "target": "sessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 113
+        },
+        {
+          "target": "handleCloseDrawer",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 114,
+          "resolvedId": "src/app/(platform)/copilot/components/CopilotShell/components/MobileDrawer/useMobileDrawer.ts:handleCloseDrawer:10"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/app/(platform)/copilot/components/CopilotShell/useCopilotShell.ts:startNewChat:117",
+      "name": "startNewChat",
+      "startLine": 117,
+      "endLine": 124,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "resetPagination",
+          "resolved": false,
+          "confidence": 0,
+          "line": 118
+        },
+        {
+          "target": "invalidateQueries",
+          "resolved": false,
+          "confidence": 0,
+          "line": 119
+        },
+        {
+          "target": "getGetV2ListSessionsQueryKey",
+          "resolved": false,
+          "confidence": 0,
+          "line": 120
+        },
+        {
+          "target": "setUrlSessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 122
+        },
+        {
+          "target": "handleCloseDrawer",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 123,
+          "resolvedId": "src/app/(platform)/copilot/components/CopilotShell/components/MobileDrawer/useMobileDrawer.ts:handleCloseDrawer:10"
+        },
+        {
+          "target": "resetPagination",
+          "resolved": false,
+          "confidence": 0,
+          "line": 118
+        },
+        {
+          "target": "invalidateQueries",
+          "resolved": false,
+          "confidence": 0,
+          "line": 119
+        },
+        {
+          "target": "getGetV2ListSessionsQueryKey",
+          "resolved": false,
+          "confidence": 0,
+          "line": 120
+        },
+        {
+          "target": "setUrlSessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 122
+        },
+        {
+          "target": "handleCloseDrawer",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 123,
+          "resolvedId": "src/app/(platform)/copilot/components/CopilotShell/components/MobileDrawer/useMobileDrawer.ts:handleCloseDrawer:10"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/app/(platform)/copilot/components/CopilotShell/useCopilotShell.ts:handleSessionClick:126",
+      "name": "handleSessionClick",
+      "startLine": 126,
+      "endLine": 138,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "stopCurrentStream",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 131,
+          "resolvedId": "src/app/(platform)/copilot/components/CopilotShell/useCopilotShell.ts:stopCurrentStream:81"
+        },
+        {
+          "target": "selectSession",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 132,
+          "resolvedId": "src/app/(platform)/copilot/components/CopilotShell/useCopilotShell.ts:selectSession:106"
+        },
+        {
+          "target": "sessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 132
+        },
+        {
+          "target": "openInterruptModal",
+          "resolved": false,
+          "confidence": 0,
+          "line": 134
+        },
+        {
+          "target": "current",
+          "resolved": false,
+          "confidence": 0,
+          "line": 134
+        },
+        {
+          "target": "selectSession",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 136,
+          "resolvedId": "src/app/(platform)/copilot/components/CopilotShell/useCopilotShell.ts:selectSession:106"
+        },
+        {
+          "target": "sessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 136
+        },
+        {
+          "target": "stopCurrentStream",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 131,
+          "resolvedId": "src/app/(platform)/copilot/components/CopilotShell/useCopilotShell.ts:stopCurrentStream:81"
+        },
+        {
+          "target": "selectSession",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 132,
+          "resolvedId": "src/app/(platform)/copilot/components/CopilotShell/useCopilotShell.ts:selectSession:106"
+        },
+        {
+          "target": "sessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 132
+        },
+        {
+          "target": "openInterruptModal",
+          "resolved": false,
+          "confidence": 0,
+          "line": 134
+        },
+        {
+          "target": "current",
+          "resolved": false,
+          "confidence": 0,
+          "line": 134
+        },
+        {
+          "target": "selectSession",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 136,
+          "resolvedId": "src/app/(platform)/copilot/components/CopilotShell/useCopilotShell.ts:selectSession:106"
+        },
+        {
+          "target": "sessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 136
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/app/(platform)/copilot/components/CopilotShell/useCopilotShell.ts:handleNewChatClick:140",
+      "name": "handleNewChatClick",
+      "startLine": 140,
+      "endLine": 150,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "stopCurrentStream",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 143,
+          "resolvedId": "src/app/(platform)/copilot/components/CopilotShell/useCopilotShell.ts:stopCurrentStream:81"
+        },
+        {
+          "target": "startNewChat",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 144,
+          "resolvedId": "src/app/(platform)/copilot/components/CopilotShell/useCopilotShell.ts:startNewChat:117"
+        },
+        {
+          "target": "openInterruptModal",
+          "resolved": false,
+          "confidence": 0,
+          "line": 146
+        },
+        {
+          "target": "current",
+          "resolved": false,
+          "confidence": 0,
+          "line": 146
+        },
+        {
+          "target": "startNewChat",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 148,
+          "resolvedId": "src/app/(platform)/copilot/components/CopilotShell/useCopilotShell.ts:startNewChat:117"
+        },
+        {
+          "target": "stopCurrentStream",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 143,
+          "resolvedId": "src/app/(platform)/copilot/components/CopilotShell/useCopilotShell.ts:stopCurrentStream:81"
+        },
+        {
+          "target": "startNewChat",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 144,
+          "resolvedId": "src/app/(platform)/copilot/components/CopilotShell/useCopilotShell.ts:startNewChat:117"
+        },
+        {
+          "target": "openInterruptModal",
+          "resolved": false,
+          "confidence": 0,
+          "line": 146
+        },
+        {
+          "target": "current",
+          "resolved": false,
+          "confidence": 0,
+          "line": 146
+        },
+        {
+          "target": "startNewChat",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 148,
+          "resolvedId": "src/app/(platform)/copilot/components/CopilotShell/useCopilotShell.ts:startNewChat:117"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

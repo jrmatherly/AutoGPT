@@ -1,0 +1,465 @@
+{
+  "version": "1.0.0",
+  "category": "accessibility",
+  "patterns": [
+    {
+      "id": "8f323b2aacbba467",
+      "subcategory": "keyboard-nav",
+      "name": "Keyboard Navigation Detector",
+      "description": "Learns keyboard navigation patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "accessibility/keyboard-nav",
+          "patternId": "accessibility/keyboard-nav/assignment"
+        }
+      },
+      "confidence": {
+        "frequency": 0.05,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 3,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "backend/blocks/llm.py",
+          "line": 1523,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.8623076923076922
+        },
+        {
+          "file": "backend/blocks/llm.py",
+          "line": 1824,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.8623076923076922
+        },
+        {
+          "file": "backend/blocks/test/test_llm.py",
+          "line": 389,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "backend/cli/oauth_tool.py",
+          "line": 1052,
+          "column": 12,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "backend/cli/oauth_tool.py",
+          "line": 1168,
+          "column": 12,
+          "isOutlier": false,
+          "confidence": 0.97
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:30:16.815Z",
+        "lastSeen": "2026-01-29T06:30:16.815Z",
+        "source": "auto-detected",
+        "tags": [
+          "accessibility",
+          "keyboard-nav"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "0eb4eec7fcad07c0",
+      "subcategory": "keyboard-nav",
+      "name": "Keyboard Navigation Detector",
+      "description": "Learns keyboard navigation patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "accessibility/keyboard-nav",
+          "patternId": "accessibility/keyboard-nav/property_access"
+        }
+      },
+      "confidence": {
+        "frequency": 0.1,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 2,
+        "score": 0.8623076923076922,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "backend/blocks/llm.py",
+          "line": 1647,
+          "column": 79,
+          "isOutlier": false,
+          "confidence": 0.8623076923076922
+        },
+        {
+          "file": "backend/blocks/llm.py",
+          "line": 1647,
+          "column": 127,
+          "isOutlier": false,
+          "confidence": 0.8623076923076922
+        },
+        {
+          "file": "backend/blocks/llm.py",
+          "line": 1680,
+          "column": 113,
+          "isOutlier": false,
+          "confidence": 0.8623076923076922
+        },
+        {
+          "file": "backend/blocks/llm.py",
+          "line": 1680,
+          "column": 161,
+          "isOutlier": false,
+          "confidence": 0.8623076923076922
+        },
+        {
+          "file": "backend/blocks/llm.py",
+          "line": 1955,
+          "column": 23,
+          "isOutlier": false,
+          "confidence": 0.8623076923076922
+        },
+        {
+          "file": "backend/blocks/llm.py",
+          "line": 1956,
+          "column": 59,
+          "isOutlier": false,
+          "confidence": 0.8623076923076922
+        },
+        {
+          "file": "backend/blocks/llm.py",
+          "line": 1956,
+          "column": 68,
+          "isOutlier": false,
+          "confidence": 0.8623076923076922
+        },
+        {
+          "file": "backend/blocks/llm.py",
+          "line": 1956,
+          "column": 90,
+          "isOutlier": false,
+          "confidence": 0.8623076923076922
+        },
+        {
+          "file": "backend/blocks/llm.py",
+          "line": 1956,
+          "column": 98,
+          "isOutlier": false,
+          "confidence": 0.8623076923076922
+        },
+        {
+          "file": "backend/executor/activity_status_generator.py",
+          "line": 68,
+          "column": 44,
+          "isOutlier": true,
+          "confidence": 0.7949999999999999,
+          "outlierReason": "Low confidence outlier"
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:30:16.815Z",
+        "lastSeen": "2026-01-29T06:30:16.815Z",
+        "source": "auto-detected",
+        "tags": [
+          "accessibility",
+          "keyboard-nav"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "686664eaa4acf90f",
+      "subcategory": "keyboard-nav",
+      "name": "Keyboard Navigation Detector",
+      "description": "Learns keyboard navigation patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "accessibility/keyboard-nav",
+          "patternId": "accessibility/keyboard-nav/conditional"
+        }
+      },
+      "confidence": {
+        "frequency": 0.04,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 3,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "backend/blocks/llm.py",
+          "line": 1960,
+          "column": 44,
+          "isOutlier": false,
+          "confidence": 0.8623076923076922
+        },
+        {
+          "file": "backend/blocks/llm.py",
+          "line": 1960,
+          "column": 127,
+          "isOutlier": false,
+          "confidence": 0.8623076923076922
+        },
+        {
+          "file": "backend/executor/activity_status_generator.py",
+          "line": 73,
+          "column": 23,
+          "isOutlier": false,
+          "confidence": 0.7949999999999999
+        },
+        {
+          "file": "backend/util/process.py",
+          "line": 72,
+          "column": 35,
+          "isOutlier": false,
+          "confidence": 0.97
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:30:16.815Z",
+        "lastSeen": "2026-01-29T06:30:16.815Z",
+        "source": "auto-detected",
+        "tags": [
+          "accessibility",
+          "keyboard-nav"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "b6cb3fc4f7bfccaf",
+      "subcategory": "focus-management",
+      "name": "Focus Management Detector",
+      "description": "Learns focus management patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "accessibility/focus-management",
+          "patternId": "accessibility/focus-management/assignment"
+        }
+      },
+      "confidence": {
+        "frequency": 0.03,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 2,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "backend/blocks/llm.py",
+          "line": 1523,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.8623076923076922
+        },
+        {
+          "file": "backend/blocks/llm.py",
+          "line": 1824,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.8623076923076922
+        },
+        {
+          "file": "backend/blocks/test/test_llm.py",
+          "line": 389,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.97
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:30:16.815Z",
+        "lastSeen": "2026-01-29T06:30:16.815Z",
+        "source": "auto-detected",
+        "tags": [
+          "accessibility",
+          "focus-management"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "1f755024440da539",
+      "subcategory": "focus-management",
+      "name": "Focus Management Detector",
+      "description": "Learns focus management patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "accessibility/focus-management",
+          "patternId": "accessibility/focus-management/property_access"
+        }
+      },
+      "confidence": {
+        "frequency": 0.1,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 2,
+        "score": 0.8623076923076922,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "backend/blocks/llm.py",
+          "line": 1647,
+          "column": 79,
+          "isOutlier": false,
+          "confidence": 0.8623076923076922
+        },
+        {
+          "file": "backend/blocks/llm.py",
+          "line": 1647,
+          "column": 127,
+          "isOutlier": false,
+          "confidence": 0.8623076923076922
+        },
+        {
+          "file": "backend/blocks/llm.py",
+          "line": 1680,
+          "column": 113,
+          "isOutlier": false,
+          "confidence": 0.8623076923076922
+        },
+        {
+          "file": "backend/blocks/llm.py",
+          "line": 1680,
+          "column": 161,
+          "isOutlier": false,
+          "confidence": 0.8623076923076922
+        },
+        {
+          "file": "backend/blocks/llm.py",
+          "line": 1955,
+          "column": 23,
+          "isOutlier": false,
+          "confidence": 0.8623076923076922
+        },
+        {
+          "file": "backend/blocks/llm.py",
+          "line": 1956,
+          "column": 59,
+          "isOutlier": false,
+          "confidence": 0.8623076923076922
+        },
+        {
+          "file": "backend/blocks/llm.py",
+          "line": 1956,
+          "column": 68,
+          "isOutlier": false,
+          "confidence": 0.8623076923076922
+        },
+        {
+          "file": "backend/blocks/llm.py",
+          "line": 1956,
+          "column": 90,
+          "isOutlier": false,
+          "confidence": 0.8623076923076922
+        },
+        {
+          "file": "backend/blocks/llm.py",
+          "line": 1956,
+          "column": 98,
+          "isOutlier": false,
+          "confidence": 0.8623076923076922
+        },
+        {
+          "file": "backend/executor/activity_status_generator.py",
+          "line": 68,
+          "column": 44,
+          "isOutlier": true,
+          "confidence": 0.7949999999999999,
+          "outlierReason": "Low confidence outlier"
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:30:16.815Z",
+        "lastSeen": "2026-01-29T06:30:16.815Z",
+        "source": "auto-detected",
+        "tags": [
+          "accessibility",
+          "focus-management"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "89f85db34d38aaf1",
+      "subcategory": "focus-management",
+      "name": "Focus Management Detector",
+      "description": "Learns focus management patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "accessibility/focus-management",
+          "patternId": "accessibility/focus-management/conditional"
+        }
+      },
+      "confidence": {
+        "frequency": 0.03,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 2,
+        "score": 0.8623076923076922,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "backend/blocks/llm.py",
+          "line": 1960,
+          "column": 44,
+          "isOutlier": false,
+          "confidence": 0.8623076923076922
+        },
+        {
+          "file": "backend/blocks/llm.py",
+          "line": 1960,
+          "column": 127,
+          "isOutlier": false,
+          "confidence": 0.8623076923076922
+        },
+        {
+          "file": "backend/executor/activity_status_generator.py",
+          "line": 73,
+          "column": 23,
+          "isOutlier": false,
+          "confidence": 0.7949999999999999
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:30:16.815Z",
+        "lastSeen": "2026-01-29T06:30:16.815Z",
+        "source": "auto-detected",
+        "tags": [
+          "accessibility",
+          "focus-management"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    }
+  ],
+  "lastUpdated": "2026-01-29T07:17:51.144Z",
+  "checksum": "fd631f9402e7f700"
+}

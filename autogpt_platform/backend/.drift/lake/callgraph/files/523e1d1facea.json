@@ -1,0 +1,180 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.156Z",
+  "checksum": "feb357151b4de082",
+  "file": "test/blocks/test_google_docs_format_text_color.py",
+  "functions": [
+    {
+      "id": "test/blocks/test_google_docs_format_text_color.py:_make_mock_docs_service:6",
+      "name": "_make_mock_docs_service",
+      "startLine": 6,
+      "endLine": 10,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "Mock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 7
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/blocks/test_google_docs_format_text_color.py:test_format_text_parses_shorthand_hex_color:13",
+      "name": "test_format_text_parses_shorthand_hex_color",
+      "startLine": 13,
+      "endLine": 37,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "GoogleDocsFormatTextBlock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 14
+        },
+        {
+          "target": "_make_mock_docs_service",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 15,
+          "resolvedId": "test/blocks/test_google_docs_format_text_color.py:_make_mock_docs_service:6"
+        },
+        {
+          "target": "_format_text",
+          "resolved": false,
+          "confidence": 0,
+          "line": 17
+        },
+        {
+          "target": "service",
+          "resolved": false,
+          "confidence": 0,
+          "line": 18
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/blocks/test_google_docs_format_text_color.py:test_format_text_parses_full_hex_color:40",
+      "name": "test_format_text_parses_full_hex_color",
+      "startLine": 40,
+      "endLine": 63,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "GoogleDocsFormatTextBlock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 41
+        },
+        {
+          "target": "_make_mock_docs_service",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 42,
+          "resolvedId": "test/blocks/test_google_docs_format_text_color.py:_make_mock_docs_service:6"
+        },
+        {
+          "target": "_format_text",
+          "resolved": false,
+          "confidence": 0,
+          "line": 44
+        },
+        {
+          "target": "service",
+          "resolved": false,
+          "confidence": 0,
+          "line": 45
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/blocks/test_google_docs_format_text_color.py:test_format_text_ignores_invalid_color_when_other_fields_present:66",
+      "name": "test_format_text_ignores_invalid_color_when_other_fields_present",
+      "startLine": 66,
+      "endLine": 92,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "GoogleDocsFormatTextBlock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 67
+        },
+        {
+          "target": "_make_mock_docs_service",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 68,
+          "resolvedId": "test/blocks/test_google_docs_format_text_color.py:_make_mock_docs_service:6"
+        },
+        {
+          "target": "_format_text",
+          "resolved": false,
+          "confidence": 0,
+          "line": 70
+        },
+        {
+          "target": "service",
+          "resolved": false,
+          "confidence": 0,
+          "line": 71
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/blocks/test_google_docs_format_text_color.py:test_format_text_invalid_color_only_does_not_call_api:95",
+      "name": "test_format_text_invalid_color_only_does_not_call_api",
+      "startLine": 95,
+      "endLine": 113,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "GoogleDocsFormatTextBlock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 96
+        },
+        {
+          "target": "_make_mock_docs_service",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 97,
+          "resolvedId": "test/blocks/test_google_docs_format_text_color.py:_make_mock_docs_service:6"
+        },
+        {
+          "target": "_format_text",
+          "resolved": false,
+          "confidence": 0,
+          "line": 99
+        },
+        {
+          "target": "service",
+          "resolved": false,
+          "confidence": 0,
+          "line": 100
+        },
+        {
+          "target": "assert_not_called",
+          "resolved": false,
+          "confidence": 0,
+          "line": 113
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

@@ -1,0 +1,830 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.172Z",
+  "checksum": "d37042404768a6b0",
+  "file": "backend/integrations/oauth/__init__.py",
+  "functions": [
+    {
+      "id": "backend/integrations/oauth/__init__.py:__getitem__:65",
+      "name": "__getitem__",
+      "startLine": 65,
+      "endLine": 81,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "get_oauth_handlers",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 74,
+          "resolvedId": "backend/sdk/registry.py:get_oauth_handlers:117"
+        },
+        {
+          "target": "KeyError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 81
+        },
+        {
+          "target": "key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 81
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/integrations/oauth/__init__.py:get:83",
+      "name": "get",
+      "startLine": 83,
+      "endLine": 87,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/integrations/oauth/__init__.py:__contains__:89",
+      "name": "__contains__",
+      "startLine": 89,
+      "endLine": 98,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "get_oauth_handlers",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 95,
+          "resolvedId": "backend/sdk/registry.py:get_oauth_handlers:117"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/integrations/oauth/__init__.py:keys:100",
+      "name": "keys",
+      "startLine": 100,
+      "endLine": 110,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "dict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 102
+        },
+        {
+          "target": "_handlers_dict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 102
+        },
+        {
+          "target": "get_oauth_handlers",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 106,
+          "resolvedId": "backend/sdk/registry.py:get_oauth_handlers:117"
+        },
+        {
+          "target": "update",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 107,
+          "resolvedId": "backend/integrations/creds_manager.py:update:162"
+        },
+        {
+          "target": "sdk_handlers",
+          "resolved": false,
+          "confidence": 0,
+          "line": 107
+        },
+        {
+          "target": "keys",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 110,
+          "resolvedId": "backend/integrations/oauth/__init__.py:keys:100"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/integrations/oauth/__init__.py:values:112",
+      "name": "values",
+      "startLine": 112,
+      "endLine": 121,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "dict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 113
+        },
+        {
+          "target": "_handlers_dict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 113
+        },
+        {
+          "target": "get_oauth_handlers",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 117,
+          "resolvedId": "backend/sdk/registry.py:get_oauth_handlers:117"
+        },
+        {
+          "target": "update",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 118,
+          "resolvedId": "backend/integrations/creds_manager.py:update:162"
+        },
+        {
+          "target": "sdk_handlers",
+          "resolved": false,
+          "confidence": 0,
+          "line": 118
+        },
+        {
+          "target": "values",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 121,
+          "resolvedId": "backend/integrations/oauth/__init__.py:values:112"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/integrations/oauth/__init__.py:items:123",
+      "name": "items",
+      "startLine": 123,
+      "endLine": 132,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "dict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 124
+        },
+        {
+          "target": "_handlers_dict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 124
+        },
+        {
+          "target": "get_oauth_handlers",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 128,
+          "resolvedId": "backend/sdk/registry.py:get_oauth_handlers:117"
+        },
+        {
+          "target": "update",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 129,
+          "resolvedId": "backend/integrations/creds_manager.py:update:162"
+        },
+        {
+          "target": "sdk_handlers",
+          "resolved": false,
+          "confidence": 0,
+          "line": 129
+        },
+        {
+          "target": "items",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 132,
+          "resolvedId": "backend/integrations/oauth/__init__.py:items:123"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/integrations/oauth/__init__.py:__getitem__:138",
+      "name": "__getitem__",
+      "startLine": 138,
+      "endLine": 160,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "get_oauth_credentials",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 147,
+          "resolvedId": "backend/sdk/registry.py:get_oauth_credentials:123"
+        },
+        {
+          "target": "SDKAwareCredentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 151
+        },
+        {
+          "target": "KeyError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 160
+        },
+        {
+          "target": "key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 160
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/integrations/oauth/__init__.py:get:162",
+      "name": "get",
+      "startLine": 162,
+      "endLine": 166,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/integrations/oauth/__init__.py:__contains__:168",
+      "name": "__contains__",
+      "startLine": 168,
+      "endLine": 177,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "get_oauth_credentials",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 174,
+          "resolvedId": "backend/sdk/registry.py:get_oauth_credentials:123"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/integrations/oauth/__init__.py:keys:179",
+      "name": "keys",
+      "startLine": 179,
+      "endLine": 189,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "dict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 181
+        },
+        {
+          "target": "_credentials_by_provider",
+          "resolved": false,
+          "confidence": 0,
+          "line": 181
+        },
+        {
+          "target": "get_oauth_credentials",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 185,
+          "resolvedId": "backend/sdk/registry.py:get_oauth_credentials:123"
+        },
+        {
+          "target": "update",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 186,
+          "resolvedId": "backend/integrations/creds_manager.py:update:162"
+        },
+        {
+          "target": "sdk_credentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 186
+        },
+        {
+          "target": "keys",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 189,
+          "resolvedId": "backend/integrations/oauth/__init__.py:keys:100"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/integrations/oauth/__init__.py:values:191",
+      "name": "values",
+      "startLine": 191,
+      "endLine": 206,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "dict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 192
+        },
+        {
+          "target": "_credentials_by_provider",
+          "resolved": false,
+          "confidence": 0,
+          "line": 192
+        },
+        {
+          "target": "get_oauth_credentials",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 196,
+          "resolvedId": "backend/sdk/registry.py:get_oauth_credentials:123"
+        },
+        {
+          "target": "items",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 198,
+          "resolvedId": "backend/integrations/oauth/__init__.py:items:123"
+        },
+        {
+          "target": "SDKAwareCredentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 199
+        },
+        {
+          "target": "values",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 206,
+          "resolvedId": "backend/integrations/oauth/__init__.py:values:112"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/integrations/oauth/__init__.py:items:208",
+      "name": "items",
+      "startLine": 208,
+      "endLine": 223,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "dict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 209
+        },
+        {
+          "target": "_credentials_by_provider",
+          "resolved": false,
+          "confidence": 0,
+          "line": 209
+        },
+        {
+          "target": "get_oauth_credentials",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 213,
+          "resolvedId": "backend/sdk/registry.py:get_oauth_credentials:123"
+        },
+        {
+          "target": "items",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 215,
+          "resolvedId": "backend/integrations/oauth/__init__.py:items:123"
+        },
+        {
+          "target": "SDKAwareCredentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 216
+        },
+        {
+          "target": "items",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 223,
+          "resolvedId": "backend/integrations/oauth/__init__.py:items:123"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/integrations/oauth/__init__.py:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 231,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "hasattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 33
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 34
+        },
+        {
+          "target": "hasattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 53
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 54
+        },
+        {
+          "target": "SDKAwareCredentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 56
+        },
+        {
+          "target": "get_oauth_handlers",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 74,
+          "resolvedId": "backend/sdk/registry.py:get_oauth_handlers:117"
+        },
+        {
+          "target": "KeyError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 81
+        },
+        {
+          "target": "key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 81
+        },
+        {
+          "target": "get_oauth_handlers",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 95,
+          "resolvedId": "backend/sdk/registry.py:get_oauth_handlers:117"
+        },
+        {
+          "target": "dict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 102
+        },
+        {
+          "target": "_handlers_dict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 102
+        },
+        {
+          "target": "get_oauth_handlers",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 106,
+          "resolvedId": "backend/sdk/registry.py:get_oauth_handlers:117"
+        },
+        {
+          "target": "update",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 107,
+          "resolvedId": "backend/integrations/creds_manager.py:update:162"
+        },
+        {
+          "target": "sdk_handlers",
+          "resolved": false,
+          "confidence": 0,
+          "line": 107
+        },
+        {
+          "target": "keys",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 110,
+          "resolvedId": "backend/integrations/oauth/__init__.py:keys:100"
+        },
+        {
+          "target": "dict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 113
+        },
+        {
+          "target": "_handlers_dict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 113
+        },
+        {
+          "target": "get_oauth_handlers",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 117,
+          "resolvedId": "backend/sdk/registry.py:get_oauth_handlers:117"
+        },
+        {
+          "target": "update",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 118,
+          "resolvedId": "backend/integrations/creds_manager.py:update:162"
+        },
+        {
+          "target": "sdk_handlers",
+          "resolved": false,
+          "confidence": 0,
+          "line": 118
+        },
+        {
+          "target": "values",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 121,
+          "resolvedId": "backend/integrations/oauth/__init__.py:values:112"
+        },
+        {
+          "target": "dict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 124
+        },
+        {
+          "target": "_handlers_dict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 124
+        },
+        {
+          "target": "get_oauth_handlers",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 128,
+          "resolvedId": "backend/sdk/registry.py:get_oauth_handlers:117"
+        },
+        {
+          "target": "update",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 129,
+          "resolvedId": "backend/integrations/creds_manager.py:update:162"
+        },
+        {
+          "target": "sdk_handlers",
+          "resolved": false,
+          "confidence": 0,
+          "line": 129
+        },
+        {
+          "target": "items",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 132,
+          "resolvedId": "backend/integrations/oauth/__init__.py:items:123"
+        },
+        {
+          "target": "get_oauth_credentials",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 147,
+          "resolvedId": "backend/sdk/registry.py:get_oauth_credentials:123"
+        },
+        {
+          "target": "SDKAwareCredentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 151
+        },
+        {
+          "target": "KeyError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 160
+        },
+        {
+          "target": "key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 160
+        },
+        {
+          "target": "get_oauth_credentials",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 174,
+          "resolvedId": "backend/sdk/registry.py:get_oauth_credentials:123"
+        },
+        {
+          "target": "dict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 181
+        },
+        {
+          "target": "_credentials_by_provider",
+          "resolved": false,
+          "confidence": 0,
+          "line": 181
+        },
+        {
+          "target": "get_oauth_credentials",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 185,
+          "resolvedId": "backend/sdk/registry.py:get_oauth_credentials:123"
+        },
+        {
+          "target": "update",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 186,
+          "resolvedId": "backend/integrations/creds_manager.py:update:162"
+        },
+        {
+          "target": "sdk_credentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 186
+        },
+        {
+          "target": "keys",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 189,
+          "resolvedId": "backend/integrations/oauth/__init__.py:keys:100"
+        },
+        {
+          "target": "dict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 192
+        },
+        {
+          "target": "_credentials_by_provider",
+          "resolved": false,
+          "confidence": 0,
+          "line": 192
+        },
+        {
+          "target": "get_oauth_credentials",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 196,
+          "resolvedId": "backend/sdk/registry.py:get_oauth_credentials:123"
+        },
+        {
+          "target": "items",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 198,
+          "resolvedId": "backend/integrations/oauth/__init__.py:items:123"
+        },
+        {
+          "target": "SDKAwareCredentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 199
+        },
+        {
+          "target": "values",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 206,
+          "resolvedId": "backend/integrations/oauth/__init__.py:values:112"
+        },
+        {
+          "target": "dict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 209
+        },
+        {
+          "target": "_credentials_by_provider",
+          "resolved": false,
+          "confidence": 0,
+          "line": 209
+        },
+        {
+          "target": "get_oauth_credentials",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 213,
+          "resolvedId": "backend/sdk/registry.py:get_oauth_credentials:123"
+        },
+        {
+          "target": "items",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 215,
+          "resolvedId": "backend/integrations/oauth/__init__.py:items:123"
+        },
+        {
+          "target": "SDKAwareCredentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 216
+        },
+        {
+          "target": "items",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 223,
+          "resolvedId": "backend/integrations/oauth/__init__.py:items:123"
+        },
+        {
+          "target": "SDKAwareHandlersDict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 226
+        },
+        {
+          "target": "SDKAwareCredentialsDict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 227
+        },
+        {
+          "target": "hasattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 33
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 34
+        },
+        {
+          "target": "hasattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 53
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 54
+        },
+        {
+          "target": "SDKAwareCredentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 56
+        },
+        {
+          "target": "SDKAwareHandlersDict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 226
+        },
+        {
+          "target": "SDKAwareCredentialsDict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 227
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

@@ -1,0 +1,176 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.105Z",
+  "checksum": "76d9a28bfd634a82",
+  "file": "src/app/(platform)/auth/callback/route.ts",
+  "functions": [
+    {
+      "id": "src/app/(platform)/auth/callback/route.ts:GET:8",
+      "name": "GET",
+      "startLine": 8,
+      "endLine": 95,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "URL",
+          "resolved": false,
+          "confidence": 0,
+          "line": 9
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 10,
+          "resolvedId": "src/services/storage/local-storage.ts:get:16"
+        },
+        {
+          "target": "getServerSupabase",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 15,
+          "resolvedId": "src/lib/supabase/server/getServerSupabase.ts:getServerSupabase:7"
+        },
+        {
+          "target": "redirect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 18
+        },
+        {
+          "target": "exchangeCodeForSession",
+          "resolved": false,
+          "confidence": 0,
+          "line": 21
+        },
+        {
+          "target": "code",
+          "resolved": false,
+          "confidence": 0,
+          "line": 21
+        },
+        {
+          "target": "BackendAPI",
+          "resolved": false,
+          "confidence": 0,
+          "line": 25
+        },
+        {
+          "target": "createUser",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 26,
+          "resolvedId": "src/lib/autogpt-server-api/client.ts:createUser:119"
+        },
+        {
+          "target": "shouldShowOnboarding",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 28,
+          "resolvedId": "src/app/api/helpers.ts:shouldShowOnboarding:178"
+        },
+        {
+          "target": "revalidatePath",
+          "resolved": false,
+          "confidence": 0,
+          "line": 30
+        },
+        {
+          "target": "revalidatePath",
+          "resolved": false,
+          "confidence": 0,
+          "line": 32
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 35
+        },
+        {
+          "target": "createUserError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 35
+        },
+        {
+          "target": "redirect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 47
+        },
+        {
+          "target": "redirect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 52
+        },
+        {
+          "target": "redirect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 57
+        },
+        {
+          "target": "includes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 66
+        },
+        {
+          "target": "redirect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 68
+        },
+        {
+          "target": "redirect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 78,
+          "resolvedId": "src/services/storage/local-storage.ts:get:16"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 80,
+          "resolvedId": "src/services/storage/local-storage.ts:get:16"
+        },
+        {
+          "target": "redirect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 84
+        },
+        {
+          "target": "redirect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 86
+        },
+        {
+          "target": "redirect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 88
+        },
+        {
+          "target": "redirect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 94
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

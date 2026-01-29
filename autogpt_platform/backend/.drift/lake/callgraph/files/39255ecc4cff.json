@@ -1,0 +1,482 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.146Z",
+  "checksum": "9562a9527dfb806e",
+  "file": "backend/util/decorator_test.py",
+  "functions": [
+    {
+      "id": "backend/util/decorator_test.py:example_function:10",
+      "name": "example_function",
+      "startLine": 10,
+      "endLine": 12,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "sleep",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 11,
+          "resolvedId": "load-tests/orchestrator/orchestrator.js:sleep:171"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/decorator_test.py:example_function_with_error_swallowed:16",
+      "name": "example_function_with_error_swallowed",
+      "startLine": 16,
+      "endLine": 17,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "ValueError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 17
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/decorator_test.py:example_function_with_error_not_swallowed:21",
+      "name": "example_function_with_error_not_swallowed",
+      "startLine": 21,
+      "endLine": 22,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "ValueError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 22
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/decorator_test.py:async_function_with_error_swallowed:26",
+      "name": "async_function_with_error_swallowed",
+      "startLine": 26,
+      "endLine": 27,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "ValueError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 27
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/decorator_test.py:async_function_with_error_not_swallowed:31",
+      "name": "async_function_with_error_not_swallowed",
+      "startLine": 31,
+      "endLine": 32,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "ValueError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 32
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/decorator_test.py:test_timer_decorator:35",
+      "name": "test_timer_decorator",
+      "startLine": 35,
+      "endLine": 40,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "example_function",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 37,
+          "resolvedId": "backend/util/decorator_test.py:example_function:10"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/decorator_test.py:test_error_decorator_swallow_true:43",
+      "name": "test_error_decorator_swallow_true",
+      "startLine": 43,
+      "endLine": 46,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "example_function_with_error_swallowed",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 45,
+          "resolvedId": "backend/util/decorator_test.py:example_function_with_error_swallowed:16"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/decorator_test.py:test_error_decorator_swallow_false:49",
+      "name": "test_error_decorator_swallow_false",
+      "startLine": 49,
+      "endLine": 52,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "raises",
+          "resolved": false,
+          "confidence": 0,
+          "line": 51
+        },
+        {
+          "target": "example_function_with_error_not_swallowed",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 52,
+          "resolvedId": "backend/util/decorator_test.py:example_function_with_error_not_swallowed:21"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/decorator_test.py:test_async_error_decorator_swallow_true:55",
+      "name": "test_async_error_decorator_swallow_true",
+      "startLine": 55,
+      "endLine": 64,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "run",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 63,
+          "resolvedId": "backend/blocks/firecrawl/crawl.py:run:73"
+        },
+        {
+          "target": "run_test",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 63,
+          "resolvedId": "backend/util/decorator_test.py:run_test:59"
+        },
+        {
+          "target": "async_function_with_error_swallowed",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 60,
+          "resolvedId": "backend/util/decorator_test.py:async_function_with_error_swallowed:26"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/decorator_test.py:run_test:59",
+      "name": "run_test",
+      "startLine": 59,
+      "endLine": 61,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "async_function_with_error_swallowed",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 60,
+          "resolvedId": "backend/util/decorator_test.py:async_function_with_error_swallowed:26"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/decorator_test.py:test_async_error_decorator_swallow_false:67",
+      "name": "test_async_error_decorator_swallow_false",
+      "startLine": 67,
+      "endLine": 75,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "raises",
+          "resolved": false,
+          "confidence": 0,
+          "line": 74
+        },
+        {
+          "target": "run",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 75,
+          "resolvedId": "backend/blocks/firecrawl/crawl.py:run:73"
+        },
+        {
+          "target": "run_test",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 75,
+          "resolvedId": "backend/util/decorator_test.py:run_test:59"
+        },
+        {
+          "target": "async_function_with_error_not_swallowed",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 72,
+          "resolvedId": "backend/util/decorator_test.py:async_function_with_error_not_swallowed:31"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/decorator_test.py:run_test:71",
+      "name": "run_test",
+      "startLine": 71,
+      "endLine": 72,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "async_function_with_error_not_swallowed",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 72,
+          "resolvedId": "backend/util/decorator_test.py:async_function_with_error_not_swallowed:31"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/decorator_test.py:test_continuous_retry_basic:78",
+      "name": "test_continuous_retry_basic",
+      "startLine": 78,
+      "endLine": 98,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "MockManager",
+          "resolved": false,
+          "confidence": 0,
+          "line": 93
+        },
+        {
+          "target": "failing_method",
+          "resolved": false,
+          "confidence": 0,
+          "line": 96
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/decorator_test.py:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 99,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "sleep",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 11,
+          "resolvedId": "load-tests/orchestrator/orchestrator.js:sleep:171"
+        },
+        {
+          "target": "error_logged",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 15,
+          "resolvedId": "backend/util/decorator.py:error_logged:98"
+        },
+        {
+          "target": "ValueError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 17
+        },
+        {
+          "target": "error_logged",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 20,
+          "resolvedId": "backend/util/decorator.py:error_logged:98"
+        },
+        {
+          "target": "ValueError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 22
+        },
+        {
+          "target": "async_error_logged",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 25,
+          "resolvedId": "backend/util/decorator.py:async_error_logged:149"
+        },
+        {
+          "target": "ValueError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 27
+        },
+        {
+          "target": "async_error_logged",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 30,
+          "resolvedId": "backend/util/decorator.py:async_error_logged:149"
+        },
+        {
+          "target": "ValueError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 32
+        },
+        {
+          "target": "example_function",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 37,
+          "resolvedId": "backend/util/decorator_test.py:example_function:10"
+        },
+        {
+          "target": "example_function_with_error_swallowed",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 45,
+          "resolvedId": "backend/util/decorator_test.py:example_function_with_error_swallowed:16"
+        },
+        {
+          "target": "raises",
+          "resolved": false,
+          "confidence": 0,
+          "line": 51
+        },
+        {
+          "target": "example_function_with_error_not_swallowed",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 52,
+          "resolvedId": "backend/util/decorator_test.py:example_function_with_error_not_swallowed:21"
+        },
+        {
+          "target": "run",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 63,
+          "resolvedId": "backend/blocks/firecrawl/crawl.py:run:73"
+        },
+        {
+          "target": "run_test",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 63,
+          "resolvedId": "backend/util/decorator_test.py:run_test:59"
+        },
+        {
+          "target": "async_function_with_error_swallowed",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 60,
+          "resolvedId": "backend/util/decorator_test.py:async_function_with_error_swallowed:26"
+        },
+        {
+          "target": "raises",
+          "resolved": false,
+          "confidence": 0,
+          "line": 74
+        },
+        {
+          "target": "run",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 75,
+          "resolvedId": "backend/blocks/firecrawl/crawl.py:run:73"
+        },
+        {
+          "target": "run_test",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 75,
+          "resolvedId": "backend/util/decorator_test.py:run_test:59"
+        },
+        {
+          "target": "async_function_with_error_not_swallowed",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 72,
+          "resolvedId": "backend/util/decorator_test.py:async_function_with_error_not_swallowed:31"
+        },
+        {
+          "target": "MockManager",
+          "resolved": false,
+          "confidence": 0,
+          "line": 93
+        },
+        {
+          "target": "failing_method",
+          "resolved": false,
+          "confidence": 0,
+          "line": 96
+        },
+        {
+          "target": "error_logged",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 15,
+          "resolvedId": "backend/util/decorator.py:error_logged:98"
+        },
+        {
+          "target": "error_logged",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 20,
+          "resolvedId": "backend/util/decorator.py:error_logged:98"
+        },
+        {
+          "target": "async_error_logged",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 25,
+          "resolvedId": "backend/util/decorator.py:async_error_logged:149"
+        },
+        {
+          "target": "async_error_logged",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 30,
+          "resolvedId": "backend/util/decorator.py:async_error_logged:149"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

@@ -1,0 +1,915 @@
+{
+  "version": "1.0.0",
+  "category": "accessibility",
+  "patterns": [
+    {
+      "id": "8f45129fea1bb038",
+      "subcategory": "semantic-html",
+      "name": "Semantic HTML Detector",
+      "description": "Learns semantic HTML patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "accessibility/semantic-html",
+          "patternId": "accessibility/semantic-html/assignment"
+        }
+      },
+      "confidence": {
+        "frequency": 0.15,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 2,
+        "score": 0.9466666666666667,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "autogpt_libs/auth/dependencies.py",
+          "line": 83,
+          "column": 55,
+          "isOutlier": true,
+          "confidence": 0.7366666666666666,
+          "outlierReason": "Low confidence outlier"
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 136,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.9466666666666667
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 149,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.9466666666666667
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 161,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.9466666666666667
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 221,
+          "column": 40,
+          "isOutlier": false,
+          "confidence": 0.9466666666666667
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 243,
+          "column": 23,
+          "isOutlier": false,
+          "confidence": 0.9466666666666667
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 254,
+          "column": 23,
+          "isOutlier": false,
+          "confidence": 0.9466666666666667
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 371,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.9466666666666667
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 407,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.9466666666666667
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 434,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.9466666666666667
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 454,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.9466666666666667
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 454,
+          "column": 50,
+          "isOutlier": false,
+          "confidence": 0.9466666666666667
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 474,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.9466666666666667
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 510,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.9466666666666667
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 530,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.9466666666666667
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:33:06.622Z",
+        "lastSeen": "2026-01-29T07:18:33.711Z",
+        "source": "auto-detected",
+        "tags": [
+          "accessibility",
+          "semantic-html"
+        ],
+        "approvedAt": "2026-01-29T07:18:33.711Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "5caa11fe1bc9503f",
+      "subcategory": "semantic-html",
+      "name": "Semantic HTML Detector",
+      "description": "Learns semantic HTML patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "accessibility/semantic-html",
+          "patternId": "accessibility/semantic-html/conditional"
+        }
+      },
+      "confidence": {
+        "frequency": 0.04,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 3,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "autogpt_libs/auth/dependencies.py",
+          "line": 84,
+          "column": 14,
+          "isOutlier": false,
+          "confidence": 0.7366666666666666
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 452,
+          "column": 52,
+          "isOutlier": false,
+          "confidence": 0.9466666666666667
+        },
+        {
+          "file": "autogpt_libs/auth/helpers_test.py",
+          "line": 227,
+          "column": 51,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/auth/helpers_test.py",
+          "line": 375,
+          "column": 53,
+          "isOutlier": false,
+          "confidence": 0.97
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:33:06.622Z",
+        "lastSeen": "2026-01-29T07:18:33.724Z",
+        "source": "auto-detected",
+        "tags": [
+          "accessibility",
+          "semantic-html"
+        ],
+        "approvedAt": "2026-01-29T07:18:33.724Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "10cb7fc661522e07",
+      "subcategory": "semantic-html",
+      "name": "Semantic HTML Detector",
+      "description": "Learns semantic HTML patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "accessibility/semantic-html",
+          "patternId": "accessibility/semantic-html/unknown"
+        }
+      },
+      "confidence": {
+        "frequency": 0.06,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 3,
+        "score": 0.77,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "autogpt_libs/auth/dependencies.py",
+          "line": 100,
+          "column": 34,
+          "isOutlier": false,
+          "confidence": 0.5366666666666666
+        },
+        {
+          "file": "autogpt_libs/auth/jwt_utils.py",
+          "line": 26,
+          "column": 35,
+          "isOutlier": false,
+          "confidence": 0.595
+        },
+        {
+          "file": "autogpt_libs/rate_limit/middleware.py",
+          "line": 14,
+          "column": 23,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/rate_limit/middleware.py",
+          "line": 28,
+          "column": 14,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/rate_limit/middleware.py",
+          "line": 29,
+          "column": 14,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/rate_limit/middleware.py",
+          "line": 30,
+          "column": 14,
+          "isOutlier": false,
+          "confidence": 0.77
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:33:06.622Z",
+        "lastSeen": "2026-01-29T07:18:33.738Z",
+        "source": "auto-detected",
+        "tags": [
+          "accessibility",
+          "semantic-html"
+        ],
+        "approvedAt": "2026-01-29T07:18:33.738Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "5c9fe57344b7644f",
+      "subcategory": "aria-roles",
+      "name": "ARIA Roles Detector",
+      "description": "Learns ARIA roles patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "accessibility/aria-roles",
+          "patternId": "accessibility/aria-roles/property_access"
+        }
+      },
+      "confidence": {
+        "frequency": 0.21,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 5,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "autogpt_libs/auth/dependencies.py",
+          "line": 104,
+          "column": 31,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 32,
+          "column": 47,
+          "isOutlier": false,
+          "confidence": 0.8670588235294118
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 32,
+          "column": 59,
+          "isOutlier": false,
+          "confidence": 0.8670588235294118
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 36,
+          "column": 47,
+          "isOutlier": false,
+          "confidence": 0.8670588235294118
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 36,
+          "column": 59,
+          "isOutlier": false,
+          "confidence": 0.8670588235294118
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 61,
+          "column": 21,
+          "isOutlier": false,
+          "confidence": 0.8670588235294118
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 77,
+          "column": 21,
+          "isOutlier": false,
+          "confidence": 0.8670588235294118
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 112,
+          "column": 21,
+          "isOutlier": false,
+          "confidence": 0.8670588235294118
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 212,
+          "column": 47,
+          "isOutlier": false,
+          "confidence": 0.8670588235294118
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 212,
+          "column": 59,
+          "isOutlier": false,
+          "confidence": 0.8670588235294118
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 285,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 0.8670588235294118
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 328,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 0.8670588235294118
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 329,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 0.8670588235294118
+        },
+        {
+          "file": "autogpt_libs/auth/jwt_utils.py",
+          "line": 77,
+          "column": 36,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/auth/jwt_utils_test.py",
+          "line": 54,
+          "column": 20,
+          "isOutlier": false,
+          "confidence": 0.9116666666666666
+        },
+        {
+          "file": "autogpt_libs/auth/jwt_utils_test.py",
+          "line": 126,
+          "column": 20,
+          "isOutlier": false,
+          "confidence": 0.9116666666666666
+        },
+        {
+          "file": "autogpt_libs/auth/jwt_utils_test.py",
+          "line": 154,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.9116666666666666
+        },
+        {
+          "file": "autogpt_libs/auth/jwt_utils_test.py",
+          "line": 163,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.9116666666666666
+        },
+        {
+          "file": "autogpt_libs/auth/jwt_utils_test.py",
+          "line": 213,
+          "column": 59,
+          "isOutlier": false,
+          "confidence": 0.9116666666666666
+        },
+        {
+          "file": "autogpt_libs/auth/models.py",
+          "line": 21,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.8533333333333333
+        },
+        {
+          "file": "autogpt_libs/auth/models.py",
+          "line": 21,
+          "column": 27,
+          "isOutlier": false,
+          "confidence": 0.8533333333333333
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:33:06.622Z",
+        "lastSeen": "2026-01-29T07:18:33.751Z",
+        "source": "auto-detected",
+        "tags": [
+          "accessibility",
+          "aria-roles"
+        ],
+        "approvedAt": "2026-01-29T07:18:33.751Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "b1be2c88c162e50c",
+      "subcategory": "aria-roles",
+      "name": "ARIA Roles Detector",
+      "description": "Learns ARIA roles patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "accessibility/aria-roles",
+          "patternId": "accessibility/aria-roles/conditional"
+        }
+      },
+      "confidence": {
+        "frequency": 0.02,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 2,
+        "score": 0.9116666666666666,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 360,
+          "column": 45,
+          "isOutlier": false,
+          "confidence": 0.8670588235294118
+        },
+        {
+          "file": "autogpt_libs/auth/jwt_utils_test.py",
+          "line": 210,
+          "column": 34,
+          "isOutlier": false,
+          "confidence": 0.9116666666666666
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:33:06.622Z",
+        "lastSeen": "2026-01-29T07:18:33.765Z",
+        "source": "auto-detected",
+        "tags": [
+          "accessibility",
+          "aria-roles"
+        ],
+        "approvedAt": "2026-01-29T07:18:33.765Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "a027cc6ce5562916",
+      "subcategory": "aria-roles",
+      "name": "ARIA Roles Detector",
+      "description": "Learns ARIA roles patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "accessibility/aria-roles",
+          "patternId": "accessibility/aria-roles/assignment"
+        }
+      },
+      "confidence": {
+        "frequency": 0.05,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 2,
+        "score": 0.8670588235294118,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 381,
+          "column": 61,
+          "isOutlier": false,
+          "confidence": 0.8670588235294118
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 417,
+          "column": 63,
+          "isOutlier": false,
+          "confidence": 0.8670588235294118
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 484,
+          "column": 66,
+          "isOutlier": false,
+          "confidence": 0.8670588235294118
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 540,
+          "column": 61,
+          "isOutlier": false,
+          "confidence": 0.8670588235294118
+        },
+        {
+          "file": "autogpt_libs/auth/models.py",
+          "line": 13,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 0.8533333333333333
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:33:06.622Z",
+        "lastSeen": "2026-01-29T07:18:33.779Z",
+        "source": "auto-detected",
+        "tags": [
+          "accessibility",
+          "aria-roles"
+        ],
+        "approvedAt": "2026-01-29T07:18:33.779Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "129fdf7ce871b97c",
+      "subcategory": "alt-text",
+      "name": "Alt Text Detector",
+      "description": "Learns alt text patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "accessibility/alt-text",
+          "patternId": "accessibility/alt-text/assignment"
+        }
+      },
+      "confidence": {
+        "frequency": 0.1,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 3,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "autogpt_libs/auth/helpers_test.py",
+          "line": 17,
+          "column": 19,
+          "isOutlier": false,
+          "confidence": 0.8999999999999999
+        },
+        {
+          "file": "autogpt_libs/auth/helpers_test.py",
+          "line": 302,
+          "column": 19,
+          "isOutlier": false,
+          "confidence": 0.8999999999999999
+        },
+        {
+          "file": "autogpt_libs/logging/formatters.py",
+          "line": 69,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.8084615384615385
+        },
+        {
+          "file": "autogpt_libs/logging/formatters.py",
+          "line": 69,
+          "column": 34,
+          "isOutlier": false,
+          "confidence": 0.8084615384615385
+        },
+        {
+          "file": "autogpt_libs/logging/formatters.py",
+          "line": 70,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.8084615384615385
+        },
+        {
+          "file": "autogpt_libs/logging/formatters.py",
+          "line": 70,
+          "column": 40,
+          "isOutlier": false,
+          "confidence": 0.8084615384615385
+        },
+        {
+          "file": "autogpt_libs/logging/formatters.py",
+          "line": 74,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.8084615384615385
+        },
+        {
+          "file": "autogpt_libs/logging/formatters.py",
+          "line": 74,
+          "column": 24,
+          "isOutlier": false,
+          "confidence": 0.8084615384615385
+        },
+        {
+          "file": "autogpt_libs/logging/formatters.py",
+          "line": 74,
+          "column": 52,
+          "isOutlier": false,
+          "confidence": 0.8084615384615385
+        },
+        {
+          "file": "autogpt_libs/supabase_integration_credentials_store/types.py",
+          "line": 10,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 0.97
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:33:06.622Z",
+        "lastSeen": "2026-01-29T07:18:33.793Z",
+        "source": "auto-detected",
+        "tags": [
+          "accessibility",
+          "alt-text"
+        ],
+        "approvedAt": "2026-01-29T07:18:33.793Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "91a69d55847e4ad4",
+      "subcategory": "alt-text",
+      "name": "Alt Text Detector",
+      "description": "Learns alt text patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "accessibility/alt-text",
+          "patternId": "accessibility/alt-text/property_access"
+        }
+      },
+      "confidence": {
+        "frequency": 0.12,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 2,
+        "score": 0.8999999999999999,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "autogpt_libs/auth/helpers_test.py",
+          "line": 39,
+          "column": 28,
+          "isOutlier": false,
+          "confidence": 0.8999999999999999
+        },
+        {
+          "file": "autogpt_libs/auth/helpers_test.py",
+          "line": 310,
+          "column": 28,
+          "isOutlier": false,
+          "confidence": 0.8999999999999999
+        },
+        {
+          "file": "autogpt_libs/auth/helpers_test.py",
+          "line": 427,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 0.8999999999999999
+        },
+        {
+          "file": "autogpt_libs/auth/helpers_test.py",
+          "line": 427,
+          "column": 42,
+          "isOutlier": false,
+          "confidence": 0.8999999999999999
+        },
+        {
+          "file": "autogpt_libs/auth/helpers_test.py",
+          "line": 434,
+          "column": 29,
+          "isOutlier": false,
+          "confidence": 0.8999999999999999
+        },
+        {
+          "file": "autogpt_libs/auth/helpers_test.py",
+          "line": 434,
+          "column": 44,
+          "isOutlier": false,
+          "confidence": 0.8999999999999999
+        },
+        {
+          "file": "autogpt_libs/auth/helpers_test.py",
+          "line": 435,
+          "column": 29,
+          "isOutlier": false,
+          "confidence": 0.8999999999999999
+        },
+        {
+          "file": "autogpt_libs/auth/helpers_test.py",
+          "line": 435,
+          "column": 50,
+          "isOutlier": false,
+          "confidence": 0.8999999999999999
+        },
+        {
+          "file": "autogpt_libs/logging/formatters.py",
+          "line": 75,
+          "column": 28,
+          "isOutlier": false,
+          "confidence": 0.8084615384615385
+        },
+        {
+          "file": "autogpt_libs/logging/formatters.py",
+          "line": 76,
+          "column": 16,
+          "isOutlier": false,
+          "confidence": 0.8084615384615385
+        },
+        {
+          "file": "autogpt_libs/logging/formatters.py",
+          "line": 76,
+          "column": 27,
+          "isOutlier": false,
+          "confidence": 0.8084615384615385
+        },
+        {
+          "file": "autogpt_libs/logging/formatters.py",
+          "line": 76,
+          "column": 39,
+          "isOutlier": false,
+          "confidence": 0.8084615384615385
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:33:06.622Z",
+        "lastSeen": "2026-01-29T07:18:33.807Z",
+        "source": "auto-detected",
+        "tags": [
+          "accessibility",
+          "alt-text"
+        ],
+        "approvedAt": "2026-01-29T07:18:33.807Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "b3ba5435d64422f1",
+      "subcategory": "semantic-html",
+      "name": "Semantic HTML Detector",
+      "description": "Learns semantic HTML patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "accessibility/semantic-html",
+          "patternId": "accessibility/semantic-html/import"
+        }
+      },
+      "confidence": {
+        "frequency": 0.01,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.7949999999999999,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "autogpt_libs/auth/jwt_utils.py",
+          "line": 23,
+          "column": 62,
+          "isOutlier": false,
+          "confidence": 0.7949999999999999
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:33:06.622Z",
+        "lastSeen": "2026-01-29T07:18:33.821Z",
+        "source": "auto-detected",
+        "tags": [
+          "accessibility",
+          "semantic-html"
+        ],
+        "approvedAt": "2026-01-29T07:18:33.821Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "67c0155f36749bb2",
+      "subcategory": "alt-text",
+      "name": "Alt Text Detector",
+      "description": "Learns alt text patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "accessibility/alt-text",
+          "patternId": "accessibility/alt-text/conditional"
+        }
+      },
+      "confidence": {
+        "frequency": 0.02,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.8084615384615385,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "autogpt_libs/logging/formatters.py",
+          "line": 73,
+          "column": 12,
+          "isOutlier": false,
+          "confidence": 0.8084615384615385
+        },
+        {
+          "file": "autogpt_libs/logging/formatters.py",
+          "line": 73,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 0.8084615384615385
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:33:06.623Z",
+        "lastSeen": "2026-01-29T07:18:33.834Z",
+        "source": "auto-detected",
+        "tags": [
+          "accessibility",
+          "alt-text"
+        ],
+        "approvedAt": "2026-01-29T07:18:33.834Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    }
+  ],
+  "lastUpdated": "2026-01-29T07:18:34.030Z",
+  "checksum": "aa59d5a93d95e2ca"
+}

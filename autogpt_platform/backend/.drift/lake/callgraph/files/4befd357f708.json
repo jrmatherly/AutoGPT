@@ -1,0 +1,198 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.154Z",
+  "checksum": "c1c615da544dcf11",
+  "file": "backend/api/features/library/model.py",
+  "functions": [
+    {
+      "id": "backend/api/features/library/model.py:from_db:106",
+      "name": "from_db",
+      "startLine": 106,
+      "endLine": 199,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "ValueError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 117
+        },
+        {
+          "target": "from_db",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 119,
+          "resolvedId": "backend/api/features/library/model.py:from_db:106"
+        },
+        {
+          "target": "max",
+          "resolved": false,
+          "confidence": 0,
+          "line": 128
+        },
+        {
+          "target": "agent_updated_at",
+          "resolved": false,
+          "confidence": 0,
+          "line": 128
+        },
+        {
+          "target": "lib_agent_updated_at",
+          "resolved": false,
+          "confidence": 0,
+          "line": 128
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 140
+        },
+        {
+          "target": "timedelta",
+          "resolved": false,
+          "confidence": 0,
+          "line": 140
+        },
+        {
+          "target": "_calculate_agent_status",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 144,
+          "resolvedId": "backend/api/features/library/model.py:_calculate_agent_status:207"
+        },
+        {
+          "target": "executions",
+          "resolved": false,
+          "confidence": 0,
+          "line": 144
+        },
+        {
+          "target": "week_ago",
+          "resolved": false,
+          "confidence": 0,
+          "line": 144
+        },
+        {
+          "target": "MarketplaceListingCreator",
+          "resolved": false,
+          "confidence": 0,
+          "line": 157
+        },
+        {
+          "target": "MarketplaceListing",
+          "resolved": false,
+          "confidence": 0,
+          "line": 162
+        },
+        {
+          "target": "LibraryAgent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 169
+        },
+        {
+          "target": "model_validate",
+          "resolved": false,
+          "confidence": 0,
+          "line": 197
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/library/model.py:_calculate_agent_status:207",
+      "name": "_calculate_agent_status",
+      "startLine": 207,
+      "endLine": 248,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "AgentStatusResult",
+          "resolved": false,
+          "confidence": 0,
+          "line": 221
+        },
+        {
+          "target": "AgentStatusResult",
+          "resolved": false,
+          "confidence": 0,
+          "line": 236
+        },
+        {
+          "target": "AgentStatusResult",
+          "resolved": false,
+          "confidence": 0,
+          "line": 238
+        },
+        {
+          "target": "AgentStatusResult",
+          "resolved": false,
+          "confidence": 0,
+          "line": 242
+        },
+        {
+          "target": "AgentStatusResult",
+          "resolved": false,
+          "confidence": 0,
+          "line": 246
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/library/model.py:from_db:328",
+      "name": "from_db",
+      "startLine": 328,
+      "endLine": 363,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "ValueError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 332
+        },
+        {
+          "target": "ValueError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 334
+        },
+        {
+          "target": "is_credentials_field_name",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 342,
+          "resolvedId": "backend/data/model.py:is_credentials_field_name:487"
+        },
+        {
+          "target": "model_validate",
+          "resolved": false,
+          "confidence": 0,
+          "line": 346
+        },
+        {
+          "target": "cls",
+          "resolved": false,
+          "confidence": 0,
+          "line": 349
+        },
+        {
+          "target": "from_db",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 362,
+          "resolvedId": "backend/api/features/library/model.py:from_db:106"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

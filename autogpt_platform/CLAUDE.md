@@ -5,6 +5,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Quick Start Resources
 
 For comprehensive documentation, see:
+
 - **[PROJECT_INDEX.json](../PROJECT_INDEX.json)** - Machine-readable project index for quick context loading
 - **[docs/ARCHITECTURE.md](../docs/ARCHITECTURE.md)** - System architecture with Mermaid diagrams
 - **[docs/API_REFERENCE.md](../docs/API_REFERENCE.md)** - Complete REST/WebSocket API documentation
@@ -225,6 +226,7 @@ See `/frontend/CONTRIBUTING.md` for complete patterns. Quick reference:
 4. **Styling**: Tailwind CSS only, use design tokens, Phosphor Icons only
 5. **Testing**: Add Storybook stories for new components, Playwright for E2E
 6. **Code conventions**: Function declarations (not arrow functions) for components/handlers
+
 - Component props should be `interface Props { ... }` (not exported) unless the interface needs to be used outside the component
 - Separate render logic from business logic (component.tsx + useComponent.ts + helpers.ts)
 - Colocate state when possible and avoid creating large components, use sub-components ( local `/components` folder next to the parent component ) when sensible

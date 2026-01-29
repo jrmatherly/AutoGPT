@@ -1,0 +1,595 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.214Z",
+  "checksum": "6c0015486509f281",
+  "file": "src/app/(platform)/copilot/components/CopilotShell/useShellSessionList.ts",
+  "functions": [
+    {
+      "id": "src/app/(platform)/copilot/components/CopilotShell/useShellSessionList.ts:useShellSessionList:22",
+      "name": "useShellSessionList",
+      "startLine": 22,
+      "endLine": 113,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useQueryClient",
+          "resolved": false,
+          "confidence": 0,
+          "line": 29
+        },
+        {
+          "target": "useChatStore",
+          "resolved": false,
+          "confidence": 0,
+          "line": 30
+        },
+        {
+          "target": "useSessionsPagination",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 39,
+          "resolvedId": "src/app/(platform)/copilot/components/CopilotShell/components/SessionsList/useSessionsPagination.ts:useSessionsPagination:12"
+        },
+        {
+          "target": "useRef",
+          "resolved": false,
+          "confidence": 0,
+          "line": 43
+        },
+        {
+          "target": "Map",
+          "resolved": false,
+          "confidence": 0,
+          "line": 45
+        },
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 47
+        },
+        {
+          "target": "invalidateQueries",
+          "resolved": false,
+          "confidence": 0,
+          "line": 49
+        },
+        {
+          "target": "getGetV2ListSessionsQueryKey",
+          "resolved": false,
+          "confidence": 0,
+          "line": 50
+        },
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 55
+        },
+        {
+          "target": "some",
+          "resolved": false,
+          "confidence": 0,
+          "line": 59
+        },
+        {
+          "target": "convertSessionDetailToSummary",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 63,
+          "resolvedId": "src/app/(platform)/copilot/components/CopilotShell/helpers.ts:convertSessionDetailToSummary:5"
+        },
+        {
+          "target": "currentSessionData",
+          "resolved": false,
+          "confidence": 0,
+          "line": 63
+        },
+        {
+          "target": "set",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 64,
+          "resolvedId": "src/services/storage/local-storage.ts:set:29"
+        },
+        {
+          "target": "currentSessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 64
+        },
+        {
+          "target": "summary",
+          "resolved": false,
+          "confidence": 0,
+          "line": 64
+        },
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 69
+        },
+        {
+          "target": "keys",
+          "resolved": false,
+          "confidence": 0,
+          "line": 70
+        },
+        {
+          "target": "some",
+          "resolved": false,
+          "confidence": 0,
+          "line": 71
+        },
+        {
+          "target": "delete",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        },
+        {
+          "target": "sessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        },
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 77
+        },
+        {
+          "target": "onStreamComplete",
+          "resolved": false,
+          "confidence": 0,
+          "line": 78
+        },
+        {
+          "target": "invalidateQueries",
+          "resolved": false,
+          "confidence": 0,
+          "line": 79
+        },
+        {
+          "target": "getGetV2ListSessionsQueryKey",
+          "resolved": false,
+          "confidence": 0,
+          "line": 80
+        },
+        {
+          "target": "useMemo",
+          "resolved": false,
+          "confidence": 0,
+          "line": 86
+        },
+        {
+          "target": "mergeCurrentSessionIntoList",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 88,
+          "resolvedId": "src/app/(platform)/copilot/components/CopilotShell/helpers.ts:mergeCurrentSessionIntoList:49"
+        },
+        {
+          "target": "accumulatedSessions",
+          "resolved": false,
+          "confidence": 0,
+          "line": 89
+        },
+        {
+          "target": "currentSessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 90
+        },
+        {
+          "target": "currentSessionData",
+          "resolved": false,
+          "confidence": 0,
+          "line": 91
+        },
+        {
+          "target": "current",
+          "resolved": false,
+          "confidence": 0,
+          "line": 92
+        },
+        {
+          "target": "useMemo",
+          "resolved": false,
+          "confidence": 0,
+          "line": 97
+        },
+        {
+          "target": "filterVisibleSessions",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 98,
+          "resolvedId": "src/app/(platform)/copilot/components/CopilotShell/helpers.ts:filterVisibleSessions:14"
+        },
+        {
+          "target": "sessions",
+          "resolved": false,
+          "confidence": 0,
+          "line": 98
+        },
+        {
+          "target": "invalidateQueries",
+          "resolved": false,
+          "confidence": 0,
+          "line": 49
+        },
+        {
+          "target": "getGetV2ListSessionsQueryKey",
+          "resolved": false,
+          "confidence": 0,
+          "line": 50
+        },
+        {
+          "target": "some",
+          "resolved": false,
+          "confidence": 0,
+          "line": 59
+        },
+        {
+          "target": "convertSessionDetailToSummary",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 63,
+          "resolvedId": "src/app/(platform)/copilot/components/CopilotShell/helpers.ts:convertSessionDetailToSummary:5"
+        },
+        {
+          "target": "currentSessionData",
+          "resolved": false,
+          "confidence": 0,
+          "line": 63
+        },
+        {
+          "target": "set",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 64,
+          "resolvedId": "src/services/storage/local-storage.ts:set:29"
+        },
+        {
+          "target": "currentSessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 64
+        },
+        {
+          "target": "summary",
+          "resolved": false,
+          "confidence": 0,
+          "line": 64
+        },
+        {
+          "target": "keys",
+          "resolved": false,
+          "confidence": 0,
+          "line": 70
+        },
+        {
+          "target": "some",
+          "resolved": false,
+          "confidence": 0,
+          "line": 71
+        },
+        {
+          "target": "delete",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        },
+        {
+          "target": "sessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        },
+        {
+          "target": "onStreamComplete",
+          "resolved": false,
+          "confidence": 0,
+          "line": 78
+        },
+        {
+          "target": "invalidateQueries",
+          "resolved": false,
+          "confidence": 0,
+          "line": 79
+        },
+        {
+          "target": "getGetV2ListSessionsQueryKey",
+          "resolved": false,
+          "confidence": 0,
+          "line": 80
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/app/(platform)/copilot/components/CopilotShell/useShellSessionList.ts:$useEffect$1:47",
+      "name": "$useEffect$1",
+      "startLine": 47,
+      "endLine": 53,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 47
+        },
+        {
+          "target": "invalidateQueries",
+          "resolved": false,
+          "confidence": 0,
+          "line": 49
+        },
+        {
+          "target": "getGetV2ListSessionsQueryKey",
+          "resolved": false,
+          "confidence": 0,
+          "line": 50
+        },
+        {
+          "target": "invalidateQueries",
+          "resolved": false,
+          "confidence": 0,
+          "line": 49
+        },
+        {
+          "target": "getGetV2ListSessionsQueryKey",
+          "resolved": false,
+          "confidence": 0,
+          "line": 50
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/app/(platform)/copilot/components/CopilotShell/useShellSessionList.ts:$useEffect$2:55",
+      "name": "$useEffect$2",
+      "startLine": 55,
+      "endLine": 67,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 55
+        },
+        {
+          "target": "some",
+          "resolved": false,
+          "confidence": 0,
+          "line": 59
+        },
+        {
+          "target": "convertSessionDetailToSummary",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 63,
+          "resolvedId": "src/app/(platform)/copilot/components/CopilotShell/helpers.ts:convertSessionDetailToSummary:5"
+        },
+        {
+          "target": "currentSessionData",
+          "resolved": false,
+          "confidence": 0,
+          "line": 63
+        },
+        {
+          "target": "set",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 64,
+          "resolvedId": "src/services/storage/local-storage.ts:set:29"
+        },
+        {
+          "target": "currentSessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 64
+        },
+        {
+          "target": "summary",
+          "resolved": false,
+          "confidence": 0,
+          "line": 64
+        },
+        {
+          "target": "some",
+          "resolved": false,
+          "confidence": 0,
+          "line": 59
+        },
+        {
+          "target": "convertSessionDetailToSummary",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 63,
+          "resolvedId": "src/app/(platform)/copilot/components/CopilotShell/helpers.ts:convertSessionDetailToSummary:5"
+        },
+        {
+          "target": "currentSessionData",
+          "resolved": false,
+          "confidence": 0,
+          "line": 63
+        },
+        {
+          "target": "set",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 64,
+          "resolvedId": "src/services/storage/local-storage.ts:set:29"
+        },
+        {
+          "target": "currentSessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 64
+        },
+        {
+          "target": "summary",
+          "resolved": false,
+          "confidence": 0,
+          "line": 64
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/app/(platform)/copilot/components/CopilotShell/useShellSessionList.ts:$useEffect$3:69",
+      "name": "$useEffect$3",
+      "startLine": 69,
+      "endLine": 75,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 69
+        },
+        {
+          "target": "keys",
+          "resolved": false,
+          "confidence": 0,
+          "line": 70
+        },
+        {
+          "target": "some",
+          "resolved": false,
+          "confidence": 0,
+          "line": 71
+        },
+        {
+          "target": "delete",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        },
+        {
+          "target": "sessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        },
+        {
+          "target": "keys",
+          "resolved": false,
+          "confidence": 0,
+          "line": 70
+        },
+        {
+          "target": "some",
+          "resolved": false,
+          "confidence": 0,
+          "line": 71
+        },
+        {
+          "target": "delete",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        },
+        {
+          "target": "sessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/app/(platform)/copilot/components/CopilotShell/useShellSessionList.ts:$some$1:71",
+      "name": "$some$1",
+      "startLine": 71,
+      "endLine": 71,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "some",
+          "resolved": false,
+          "confidence": 0,
+          "line": 71
+        },
+        {
+          "target": "some",
+          "resolved": false,
+          "confidence": 0,
+          "line": 71
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/app/(platform)/copilot/components/CopilotShell/useShellSessionList.ts:$useEffect$4:77",
+      "name": "$useEffect$4",
+      "startLine": 77,
+      "endLine": 84,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 77
+        },
+        {
+          "target": "onStreamComplete",
+          "resolved": false,
+          "confidence": 0,
+          "line": 78
+        },
+        {
+          "target": "invalidateQueries",
+          "resolved": false,
+          "confidence": 0,
+          "line": 79
+        },
+        {
+          "target": "getGetV2ListSessionsQueryKey",
+          "resolved": false,
+          "confidence": 0,
+          "line": 80
+        },
+        {
+          "target": "onStreamComplete",
+          "resolved": false,
+          "confidence": 0,
+          "line": 78
+        },
+        {
+          "target": "invalidateQueries",
+          "resolved": false,
+          "confidence": 0,
+          "line": 79
+        },
+        {
+          "target": "getGetV2ListSessionsQueryKey",
+          "resolved": false,
+          "confidence": 0,
+          "line": 80
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

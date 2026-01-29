@@ -1,0 +1,68 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.212Z",
+  "checksum": "1fcaeeec43dfd135",
+  "file": "backend/api/features/chat/config.py",
+  "functions": [
+    {
+      "id": "backend/api/features/chat/config.py:get_api_key:56",
+      "name": "get_api_key",
+      "startLine": 56,
+      "endLine": 68,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "getenv",
+          "resolved": false,
+          "confidence": 0,
+          "line": 61
+        },
+        {
+          "target": "getenv",
+          "resolved": false,
+          "confidence": 0,
+          "line": 64
+        },
+        {
+          "target": "getenv",
+          "resolved": false,
+          "confidence": 0,
+          "line": 67
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/chat/config.py:get_base_url:72",
+      "name": "get_base_url",
+      "startLine": 72,
+      "endLine": 83,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "getenv",
+          "resolved": false,
+          "confidence": 0,
+          "line": 76
+        },
+        {
+          "target": "getenv",
+          "resolved": false,
+          "confidence": 0,
+          "line": 78
+        },
+        {
+          "target": "getenv",
+          "resolved": false,
+          "confidence": 0,
+          "line": 80
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

@@ -6,7 +6,6 @@ from typing import Optional
 from prisma.enums import OrganizationRole, OrganizationStatus, OrganizationTier
 from pydantic import BaseModel, Field
 
-
 # ============================================================================
 # Request Models
 # ============================================================================

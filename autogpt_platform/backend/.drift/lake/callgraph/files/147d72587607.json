@@ -1,0 +1,1908 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.129Z",
+  "checksum": "8ee368c048dc8bb8",
+  "file": "backend/api/features/organization/routes.py",
+  "functions": [
+    {
+      "id": "backend/api/features/organization/routes.py:_org_to_response:60",
+      "name": "_org_to_response",
+      "startLine": 60,
+      "endLine": 73,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "OrganizationResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 62
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/organization/routes.py:_member_to_response:76",
+      "name": "_member_to_response",
+      "startLine": 76,
+      "endLine": 88,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "getattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 78
+        },
+        {
+          "target": "member",
+          "resolved": false,
+          "confidence": 0,
+          "line": 78
+        },
+        {
+          "target": "OrganizationMemberResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 79
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/organization/routes.py:_invitation_to_response:91",
+      "name": "_invitation_to_response",
+      "startLine": 91,
+      "endLine": 100,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "OrganizationInvitationResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 93
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/organization/routes.py:require_org_permission:103",
+      "name": "require_org_permission",
+      "startLine": 103,
+      "endLine": 116,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "check_user_permission",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 109,
+          "resolvedId": "backend/data/organization.py:check_user_permission:255"
+        },
+        {
+          "target": "organization_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 110
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 110
+        },
+        {
+          "target": "required_roles",
+          "resolved": false,
+          "confidence": 0,
+          "line": 110
+        },
+        {
+          "target": "HTTPException",
+          "resolved": false,
+          "confidence": 0,
+          "line": 113
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/organization/routes.py:create_org:130",
+      "name": "create_org",
+      "startLine": 130,
+      "endLine": 146,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "OrganizationCreate",
+          "resolved": false,
+          "confidence": 0,
+          "line": 136
+        },
+        {
+          "target": "create_organization",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 142,
+          "resolvedId": "backend/data/organization.py:create_organization:55"
+        },
+        {
+          "target": "org_data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 142
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 142
+        },
+        {
+          "target": "info",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 143,
+          "resolvedId": "backend/util/logging.py:info:41"
+        },
+        {
+          "target": "_org_to_response",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 144,
+          "resolvedId": "backend/api/features/organization/routes.py:_org_to_response:60"
+        },
+        {
+          "target": "org",
+          "resolved": false,
+          "confidence": 0,
+          "line": 144
+        },
+        {
+          "target": "HTTPException",
+          "resolved": false,
+          "confidence": 0,
+          "line": 146
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 146
+        },
+        {
+          "target": "e",
+          "resolved": false,
+          "confidence": 0,
+          "line": 146
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/organization/routes.py:list_my_organizations:154",
+      "name": "list_my_organizations",
+      "startLine": 154,
+      "endLine": 167,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "get_user_organizations",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 158,
+          "resolvedId": "backend/data/organization.py:get_user_organizations:163"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 158
+        },
+        {
+          "target": "UserOrganizationResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 160
+        },
+        {
+          "target": "_org_to_response",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 161,
+          "resolvedId": "backend/api/features/organization/routes.py:_org_to_response:60"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/organization/routes.py:get_org:175",
+      "name": "get_org",
+      "startLine": 175,
+      "endLine": 187,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "require_org_permission",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 180,
+          "resolvedId": "backend/api/features/organization/routes.py:require_org_permission:103"
+        },
+        {
+          "target": "organization_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 180
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 180
+        },
+        {
+          "target": "get_organization_by_id",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 182,
+          "resolvedId": "backend/data/organization.py:get_organization_by_id:102"
+        },
+        {
+          "target": "organization_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 182
+        },
+        {
+          "target": "HTTPException",
+          "resolved": false,
+          "confidence": 0,
+          "line": 184
+        },
+        {
+          "target": "_org_to_response",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 187,
+          "resolvedId": "backend/api/features/organization/routes.py:_org_to_response:60"
+        },
+        {
+          "target": "org",
+          "resolved": false,
+          "confidence": 0,
+          "line": 187
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/organization/routes.py:get_org_by_slug:195",
+      "name": "get_org_by_slug",
+      "startLine": 195,
+      "endLine": 207,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "get_organization_by_slug",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 200,
+          "resolvedId": "backend/data/organization.py:get_organization_by_slug:109"
+        },
+        {
+          "target": "slug",
+          "resolved": false,
+          "confidence": 0,
+          "line": 200
+        },
+        {
+          "target": "HTTPException",
+          "resolved": false,
+          "confidence": 0,
+          "line": 202
+        },
+        {
+          "target": "require_org_permission",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 206,
+          "resolvedId": "backend/api/features/organization/routes.py:require_org_permission:103"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 206
+        },
+        {
+          "target": "_org_to_response",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 207,
+          "resolvedId": "backend/api/features/organization/routes.py:_org_to_response:60"
+        },
+        {
+          "target": "org",
+          "resolved": false,
+          "confidence": 0,
+          "line": 207
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/organization/routes.py:update_org:215",
+      "name": "update_org",
+      "startLine": 215,
+      "endLine": 234,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "require_org_permission",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 221,
+          "resolvedId": "backend/api/features/organization/routes.py:require_org_permission:103"
+        },
+        {
+          "target": "organization_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 221
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 221
+        },
+        {
+          "target": "OrganizationUpdate",
+          "resolved": false,
+          "confidence": 0,
+          "line": 223
+        },
+        {
+          "target": "update_organization",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 228,
+          "resolvedId": "backend/data/organization.py:update_organization:129"
+        },
+        {
+          "target": "organization_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 228
+        },
+        {
+          "target": "update_data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 228
+        },
+        {
+          "target": "HTTPException",
+          "resolved": false,
+          "confidence": 0,
+          "line": 230
+        },
+        {
+          "target": "info",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 233,
+          "resolvedId": "backend/util/logging.py:info:41"
+        },
+        {
+          "target": "_org_to_response",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 234,
+          "resolvedId": "backend/api/features/organization/routes.py:_org_to_response:60"
+        },
+        {
+          "target": "org",
+          "resolved": false,
+          "confidence": 0,
+          "line": 234
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "organization",
+          "operation": "write",
+          "line": 221,
+          "fields": []
+        },
+        {
+          "table": "organization",
+          "operation": "write",
+          "line": 220,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/api/features/organization/routes.py:list_members:247",
+      "name": "list_members",
+      "startLine": 247,
+      "endLine": 255,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "require_org_permission",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 252,
+          "resolvedId": "backend/api/features/organization/routes.py:require_org_permission:103"
+        },
+        {
+          "target": "organization_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 252
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 252
+        },
+        {
+          "target": "get_organization_members",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 254,
+          "resolvedId": "backend/data/organization.py:get_organization_members:173"
+        },
+        {
+          "target": "organization_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 254
+        },
+        {
+          "target": "_member_to_response",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 255,
+          "resolvedId": "backend/api/features/organization/routes.py:_member_to_response:76"
+        },
+        {
+          "target": "m",
+          "resolved": false,
+          "confidence": 0,
+          "line": 255
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/organization/routes.py:update_member:263",
+      "name": "update_member",
+      "startLine": 263,
+      "endLine": 290,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "require_org_permission",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 270,
+          "resolvedId": "backend/api/features/organization/routes.py:require_org_permission:103"
+        },
+        {
+          "target": "organization_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 270
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 270
+        },
+        {
+          "target": "get_member",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 273,
+          "resolvedId": "backend/data/organization.py:get_member:184"
+        },
+        {
+          "target": "organization_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 273
+        },
+        {
+          "target": "member_user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 273
+        },
+        {
+          "target": "get_member",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 275,
+          "resolvedId": "backend/data/organization.py:get_member:184"
+        },
+        {
+          "target": "organization_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 275
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 275
+        },
+        {
+          "target": "HTTPException",
+          "resolved": false,
+          "confidence": 0,
+          "line": 277
+        },
+        {
+          "target": "update_member_role",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 282,
+          "resolvedId": "backend/data/organization.py:update_member_role:238"
+        },
+        {
+          "target": "organization_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 282
+        },
+        {
+          "target": "member_user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 282
+        },
+        {
+          "target": "HTTPException",
+          "resolved": false,
+          "confidence": 0,
+          "line": 284
+        },
+        {
+          "target": "info",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 287,
+          "resolvedId": "backend/util/logging.py:info:41"
+        },
+        {
+          "target": "_member_to_response",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 290,
+          "resolvedId": "backend/api/features/organization/routes.py:_member_to_response:76"
+        },
+        {
+          "target": "member",
+          "resolved": false,
+          "confidence": 0,
+          "line": 290
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/organization/routes.py:remove_member:298",
+      "name": "remove_member",
+      "startLine": 298,
+      "endLine": 326,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "require_org_permission",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 306,
+          "resolvedId": "backend/api/features/organization/routes.py:require_org_permission:103"
+        },
+        {
+          "target": "organization_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 306
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 306
+        },
+        {
+          "target": "get_member",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 309,
+          "resolvedId": "backend/data/organization.py:get_member:184"
+        },
+        {
+          "target": "organization_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 309
+        },
+        {
+          "target": "member_user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 309
+        },
+        {
+          "target": "get_organization_members",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 311,
+          "resolvedId": "backend/data/organization.py:get_organization_members:173"
+        },
+        {
+          "target": "organization_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 311
+        },
+        {
+          "target": "sum",
+          "resolved": false,
+          "confidence": 0,
+          "line": 312
+        },
+        {
+          "target": "HTTPException",
+          "resolved": false,
+          "confidence": 0,
+          "line": 314
+        },
+        {
+          "target": "remove_organization_member",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 319,
+          "resolvedId": "backend/data/organization.py:remove_organization_member:214"
+        },
+        {
+          "target": "organization_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 319
+        },
+        {
+          "target": "member_user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 319
+        },
+        {
+          "target": "HTTPException",
+          "resolved": false,
+          "confidence": 0,
+          "line": 321
+        },
+        {
+          "target": "info",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 324,
+          "resolvedId": "backend/util/logging.py:info:41"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/organization/routes.py:invite_member:340",
+      "name": "invite_member",
+      "startLine": 340,
+      "endLine": 357,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "require_org_permission",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 346,
+          "resolvedId": "backend/api/features/organization/routes.py:require_org_permission:103"
+        },
+        {
+          "target": "organization_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 346
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 346
+        },
+        {
+          "target": "create_invitation",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 348,
+          "resolvedId": "backend/data/organization.py:create_invitation:284"
+        },
+        {
+          "target": "info",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 354,
+          "resolvedId": "backend/util/logging.py:info:41"
+        },
+        {
+          "target": "_invitation_to_response",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 357,
+          "resolvedId": "backend/api/features/organization/routes.py:_invitation_to_response:91"
+        },
+        {
+          "target": "invitation",
+          "resolved": false,
+          "confidence": 0,
+          "line": 357
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/organization/routes.py:list_invitations:365",
+      "name": "list_invitations",
+      "startLine": 365,
+      "endLine": 373,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "require_org_permission",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 370,
+          "resolvedId": "backend/api/features/organization/routes.py:require_org_permission:103"
+        },
+        {
+          "target": "organization_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 370
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 370
+        },
+        {
+          "target": "get_pending_invitations",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 372,
+          "resolvedId": "backend/data/organization.py:get_pending_invitations:393"
+        },
+        {
+          "target": "organization_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 372
+        },
+        {
+          "target": "_invitation_to_response",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 373,
+          "resolvedId": "backend/api/features/organization/routes.py:_invitation_to_response:91"
+        },
+        {
+          "target": "inv",
+          "resolved": false,
+          "confidence": 0,
+          "line": 373
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/organization/routes.py:accept_invite:381",
+      "name": "accept_invite",
+      "startLine": 381,
+      "endLine": 408,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "get_invitation_by_token",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 387,
+          "resolvedId": "backend/data/organization.py:get_invitation_by_token:335"
+        },
+        {
+          "target": "token",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 387,
+          "resolvedId": "backend/api/features/oauth.py:token:337"
+        },
+        {
+          "target": "HTTPException",
+          "resolved": false,
+          "confidence": 0,
+          "line": 389
+        },
+        {
+          "target": "accept_invitation",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 394,
+          "resolvedId": "backend/data/organization.py:accept_invitation:345"
+        },
+        {
+          "target": "token",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 394,
+          "resolvedId": "backend/api/features/oauth.py:token:337"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 394
+        },
+        {
+          "target": "HTTPException",
+          "resolved": false,
+          "confidence": 0,
+          "line": 396
+        },
+        {
+          "target": "get_organization_by_id",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 401,
+          "resolvedId": "backend/data/organization.py:get_organization_by_id:102"
+        },
+        {
+          "target": "info",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 402,
+          "resolvedId": "backend/util/logging.py:info:41"
+        },
+        {
+          "target": "AcceptInvitationResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 405
+        },
+        {
+          "target": "_org_to_response",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 406,
+          "resolvedId": "backend/api/features/organization/routes.py:_org_to_response:60"
+        },
+        {
+          "target": "org",
+          "resolved": false,
+          "confidence": 0,
+          "line": 406
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/organization/routes.py:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 409,
+      "isEntryPoint": false,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "getLogger",
+          "resolved": false,
+          "confidence": 0,
+          "line": 41
+        },
+        {
+          "target": "APIRouter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 43
+        },
+        {
+          "target": "OrganizationResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 62
+        },
+        {
+          "target": "getattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 78
+        },
+        {
+          "target": "member",
+          "resolved": false,
+          "confidence": 0,
+          "line": 78
+        },
+        {
+          "target": "OrganizationMemberResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 79
+        },
+        {
+          "target": "OrganizationInvitationResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 93
+        },
+        {
+          "target": "check_user_permission",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 109,
+          "resolvedId": "backend/data/organization.py:check_user_permission:255"
+        },
+        {
+          "target": "organization_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 110
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 110
+        },
+        {
+          "target": "required_roles",
+          "resolved": false,
+          "confidence": 0,
+          "line": 110
+        },
+        {
+          "target": "HTTPException",
+          "resolved": false,
+          "confidence": 0,
+          "line": 113
+        },
+        {
+          "target": "post",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 124,
+          "resolvedId": "backend/util/request.py:post:563"
+        },
+        {
+          "target": "OrganizationCreate",
+          "resolved": false,
+          "confidence": 0,
+          "line": 136
+        },
+        {
+          "target": "create_organization",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 142,
+          "resolvedId": "backend/data/organization.py:create_organization:55"
+        },
+        {
+          "target": "org_data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 142
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 142
+        },
+        {
+          "target": "info",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 143,
+          "resolvedId": "backend/util/logging.py:info:41"
+        },
+        {
+          "target": "_org_to_response",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 144,
+          "resolvedId": "backend/api/features/organization/routes.py:_org_to_response:60"
+        },
+        {
+          "target": "org",
+          "resolved": false,
+          "confidence": 0,
+          "line": 144
+        },
+        {
+          "target": "HTTPException",
+          "resolved": false,
+          "confidence": 0,
+          "line": 146
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 146
+        },
+        {
+          "target": "e",
+          "resolved": false,
+          "confidence": 0,
+          "line": 146
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 149,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "get_user_organizations",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 158,
+          "resolvedId": "backend/data/organization.py:get_user_organizations:163"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 158
+        },
+        {
+          "target": "UserOrganizationResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 160
+        },
+        {
+          "target": "_org_to_response",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 161,
+          "resolvedId": "backend/api/features/organization/routes.py:_org_to_response:60"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 170,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "require_org_permission",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 180,
+          "resolvedId": "backend/api/features/organization/routes.py:require_org_permission:103"
+        },
+        {
+          "target": "organization_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 180
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 180
+        },
+        {
+          "target": "get_organization_by_id",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 182,
+          "resolvedId": "backend/data/organization.py:get_organization_by_id:102"
+        },
+        {
+          "target": "organization_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 182
+        },
+        {
+          "target": "HTTPException",
+          "resolved": false,
+          "confidence": 0,
+          "line": 184
+        },
+        {
+          "target": "_org_to_response",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 187,
+          "resolvedId": "backend/api/features/organization/routes.py:_org_to_response:60"
+        },
+        {
+          "target": "org",
+          "resolved": false,
+          "confidence": 0,
+          "line": 187
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 190,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "get_organization_by_slug",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 200,
+          "resolvedId": "backend/data/organization.py:get_organization_by_slug:109"
+        },
+        {
+          "target": "slug",
+          "resolved": false,
+          "confidence": 0,
+          "line": 200
+        },
+        {
+          "target": "HTTPException",
+          "resolved": false,
+          "confidence": 0,
+          "line": 202
+        },
+        {
+          "target": "require_org_permission",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 206,
+          "resolvedId": "backend/api/features/organization/routes.py:require_org_permission:103"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 206
+        },
+        {
+          "target": "_org_to_response",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 207,
+          "resolvedId": "backend/api/features/organization/routes.py:_org_to_response:60"
+        },
+        {
+          "target": "org",
+          "resolved": false,
+          "confidence": 0,
+          "line": 207
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 210,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "require_org_permission",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 221,
+          "resolvedId": "backend/api/features/organization/routes.py:require_org_permission:103"
+        },
+        {
+          "target": "organization_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 221
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 221
+        },
+        {
+          "target": "OrganizationUpdate",
+          "resolved": false,
+          "confidence": 0,
+          "line": 223
+        },
+        {
+          "target": "update_organization",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 228,
+          "resolvedId": "backend/data/organization.py:update_organization:129"
+        },
+        {
+          "target": "organization_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 228
+        },
+        {
+          "target": "update_data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 228
+        },
+        {
+          "target": "HTTPException",
+          "resolved": false,
+          "confidence": 0,
+          "line": 230
+        },
+        {
+          "target": "info",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 233,
+          "resolvedId": "backend/util/logging.py:info:41"
+        },
+        {
+          "target": "_org_to_response",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 234,
+          "resolvedId": "backend/api/features/organization/routes.py:_org_to_response:60"
+        },
+        {
+          "target": "org",
+          "resolved": false,
+          "confidence": 0,
+          "line": 234
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 242,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "require_org_permission",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 252,
+          "resolvedId": "backend/api/features/organization/routes.py:require_org_permission:103"
+        },
+        {
+          "target": "organization_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 252
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 252
+        },
+        {
+          "target": "get_organization_members",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 254,
+          "resolvedId": "backend/data/organization.py:get_organization_members:173"
+        },
+        {
+          "target": "organization_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 254
+        },
+        {
+          "target": "_member_to_response",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 255,
+          "resolvedId": "backend/api/features/organization/routes.py:_member_to_response:76"
+        },
+        {
+          "target": "m",
+          "resolved": false,
+          "confidence": 0,
+          "line": 255
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 258,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "require_org_permission",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 270,
+          "resolvedId": "backend/api/features/organization/routes.py:require_org_permission:103"
+        },
+        {
+          "target": "organization_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 270
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 270
+        },
+        {
+          "target": "get_member",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 273,
+          "resolvedId": "backend/data/organization.py:get_member:184"
+        },
+        {
+          "target": "organization_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 273
+        },
+        {
+          "target": "member_user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 273
+        },
+        {
+          "target": "get_member",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 275,
+          "resolvedId": "backend/data/organization.py:get_member:184"
+        },
+        {
+          "target": "organization_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 275
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 275
+        },
+        {
+          "target": "HTTPException",
+          "resolved": false,
+          "confidence": 0,
+          "line": 277
+        },
+        {
+          "target": "update_member_role",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 282,
+          "resolvedId": "backend/data/organization.py:update_member_role:238"
+        },
+        {
+          "target": "organization_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 282
+        },
+        {
+          "target": "member_user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 282
+        },
+        {
+          "target": "HTTPException",
+          "resolved": false,
+          "confidence": 0,
+          "line": 284
+        },
+        {
+          "target": "info",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 287,
+          "resolvedId": "backend/util/logging.py:info:41"
+        },
+        {
+          "target": "_member_to_response",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 290,
+          "resolvedId": "backend/api/features/organization/routes.py:_member_to_response:76"
+        },
+        {
+          "target": "member",
+          "resolved": false,
+          "confidence": 0,
+          "line": 290
+        },
+        {
+          "target": "delete",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 293,
+          "resolvedId": "backend/integrations/creds_manager.py:delete:166"
+        },
+        {
+          "target": "require_org_permission",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 306,
+          "resolvedId": "backend/api/features/organization/routes.py:require_org_permission:103"
+        },
+        {
+          "target": "organization_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 306
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 306
+        },
+        {
+          "target": "get_member",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 309,
+          "resolvedId": "backend/data/organization.py:get_member:184"
+        },
+        {
+          "target": "organization_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 309
+        },
+        {
+          "target": "member_user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 309
+        },
+        {
+          "target": "get_organization_members",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 311,
+          "resolvedId": "backend/data/organization.py:get_organization_members:173"
+        },
+        {
+          "target": "organization_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 311
+        },
+        {
+          "target": "sum",
+          "resolved": false,
+          "confidence": 0,
+          "line": 312
+        },
+        {
+          "target": "HTTPException",
+          "resolved": false,
+          "confidence": 0,
+          "line": 314
+        },
+        {
+          "target": "remove_organization_member",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 319,
+          "resolvedId": "backend/data/organization.py:remove_organization_member:214"
+        },
+        {
+          "target": "organization_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 319
+        },
+        {
+          "target": "member_user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 319
+        },
+        {
+          "target": "HTTPException",
+          "resolved": false,
+          "confidence": 0,
+          "line": 321
+        },
+        {
+          "target": "info",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 324,
+          "resolvedId": "backend/util/logging.py:info:41"
+        },
+        {
+          "target": "post",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 334,
+          "resolvedId": "backend/util/request.py:post:563"
+        },
+        {
+          "target": "require_org_permission",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 346,
+          "resolvedId": "backend/api/features/organization/routes.py:require_org_permission:103"
+        },
+        {
+          "target": "organization_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 346
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 346
+        },
+        {
+          "target": "create_invitation",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 348,
+          "resolvedId": "backend/data/organization.py:create_invitation:284"
+        },
+        {
+          "target": "info",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 354,
+          "resolvedId": "backend/util/logging.py:info:41"
+        },
+        {
+          "target": "_invitation_to_response",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 357,
+          "resolvedId": "backend/api/features/organization/routes.py:_invitation_to_response:91"
+        },
+        {
+          "target": "invitation",
+          "resolved": false,
+          "confidence": 0,
+          "line": 357
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 360,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "require_org_permission",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 370,
+          "resolvedId": "backend/api/features/organization/routes.py:require_org_permission:103"
+        },
+        {
+          "target": "organization_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 370
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 370
+        },
+        {
+          "target": "get_pending_invitations",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 372,
+          "resolvedId": "backend/data/organization.py:get_pending_invitations:393"
+        },
+        {
+          "target": "organization_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 372
+        },
+        {
+          "target": "_invitation_to_response",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 373,
+          "resolvedId": "backend/api/features/organization/routes.py:_invitation_to_response:91"
+        },
+        {
+          "target": "inv",
+          "resolved": false,
+          "confidence": 0,
+          "line": 373
+        },
+        {
+          "target": "post",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 376,
+          "resolvedId": "backend/util/request.py:post:563"
+        },
+        {
+          "target": "get_invitation_by_token",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 387,
+          "resolvedId": "backend/data/organization.py:get_invitation_by_token:335"
+        },
+        {
+          "target": "token",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 387,
+          "resolvedId": "backend/api/features/oauth.py:token:337"
+        },
+        {
+          "target": "HTTPException",
+          "resolved": false,
+          "confidence": 0,
+          "line": 389
+        },
+        {
+          "target": "accept_invitation",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 394,
+          "resolvedId": "backend/data/organization.py:accept_invitation:345"
+        },
+        {
+          "target": "token",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 394,
+          "resolvedId": "backend/api/features/oauth.py:token:337"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 394
+        },
+        {
+          "target": "HTTPException",
+          "resolved": false,
+          "confidence": 0,
+          "line": 396
+        },
+        {
+          "target": "get_organization_by_id",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 401,
+          "resolvedId": "backend/data/organization.py:get_organization_by_id:102"
+        },
+        {
+          "target": "info",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 402,
+          "resolvedId": "backend/util/logging.py:info:41"
+        },
+        {
+          "target": "AcceptInvitationResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 405
+        },
+        {
+          "target": "_org_to_response",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 406,
+          "resolvedId": "backend/api/features/organization/routes.py:_org_to_response:60"
+        },
+        {
+          "target": "org",
+          "resolved": false,
+          "confidence": 0,
+          "line": 406
+        },
+        {
+          "target": "getLogger",
+          "resolved": false,
+          "confidence": 0,
+          "line": 41
+        },
+        {
+          "target": "APIRouter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 43
+        },
+        {
+          "target": "Security",
+          "resolved": false,
+          "confidence": 0,
+          "line": 46
+        },
+        {
+          "target": "post",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 124,
+          "resolvedId": "backend/util/request.py:post:563"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 149,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 170,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 190,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 210,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 242,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 258,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "delete",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 293,
+          "resolvedId": "backend/integrations/creds_manager.py:delete:166"
+        },
+        {
+          "target": "post",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 334,
+          "resolvedId": "backend/util/request.py:post:563"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 360,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "post",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 376,
+          "resolvedId": "backend/util/request.py:post:563"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "Organization",
+          "operation": "write",
+          "line": 214,
+          "fields": []
+        },
+        {
+          "table": "organization",
+          "operation": "write",
+          "line": 221,
+          "fields": []
+        },
+        {
+          "table": "Member",
+          "operation": "write",
+          "line": 262,
+          "fields": []
+        },
+        {
+          "table": "logging",
+          "operation": "read",
+          "line": 41,
+          "fields": []
+        },
+        {
+          "table": "organization",
+          "operation": "write",
+          "line": 213,
+          "fields": []
+        },
+        {
+          "table": "organization",
+          "operation": "write",
+          "line": 220,
+          "fields": []
+        },
+        {
+          "table": "user",
+          "operation": "write",
+          "line": 261,
+          "fields": []
+        }
+      ]
+    }
+  ]
+}

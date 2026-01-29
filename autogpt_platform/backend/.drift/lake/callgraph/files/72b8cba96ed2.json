@@ -1,0 +1,583 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.171Z",
+  "checksum": "a33cab8c6dbf2ddd",
+  "file": "backend/api/conn_manager.py",
+  "functions": [
+    {
+      "id": "backend/api/conn_manager.py:__init__:20",
+      "name": "__init__",
+      "startLine": 20,
+      "endLine": 23,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "set",
+          "resolved": false,
+          "confidence": 0,
+          "line": 21
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/conn_manager.py:connect_socket:25",
+      "name": "connect_socket",
+      "startLine": 25,
+      "endLine": 30,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "accept",
+          "resolved": false,
+          "confidence": 0,
+          "line": 26
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 27,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "websocket",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 27,
+          "resolvedId": "backend/cli_main.py:websocket:239"
+        },
+        {
+          "target": "set",
+          "resolved": false,
+          "confidence": 0,
+          "line": 29
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 30,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "websocket",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 30,
+          "resolvedId": "backend/cli_main.py:websocket:239"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/conn_manager.py:disconnect_socket:32",
+      "name": "disconnect_socket",
+      "startLine": 32,
+      "endLine": 40,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "discard",
+          "resolved": false,
+          "confidence": 0,
+          "line": 33
+        },
+        {
+          "target": "websocket",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 33,
+          "resolvedId": "backend/cli_main.py:websocket:239"
+        },
+        {
+          "target": "values",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 34,
+          "resolvedId": "backend/integrations/oauth/__init__.py:values:112"
+        },
+        {
+          "target": "discard",
+          "resolved": false,
+          "confidence": 0,
+          "line": 35
+        },
+        {
+          "target": "websocket",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 35,
+          "resolvedId": "backend/cli_main.py:websocket:239"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 36,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 36
+        },
+        {
+          "target": "discard",
+          "resolved": false,
+          "confidence": 0,
+          "line": 38
+        },
+        {
+          "target": "websocket",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 38,
+          "resolvedId": "backend/cli_main.py:websocket:239"
+        },
+        {
+          "target": "pop",
+          "resolved": false,
+          "confidence": 0,
+          "line": 40
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 40
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/conn_manager.py:subscribe_graph_exec:42",
+      "name": "subscribe_graph_exec",
+      "startLine": 42,
+      "endLine": 47,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "_subscribe",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 45,
+          "resolvedId": "backend/api/conn_manager.py:_subscribe:125"
+        },
+        {
+          "target": "websocket",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 46,
+          "resolvedId": "backend/cli_main.py:websocket:239"
+        },
+        {
+          "target": "_graph_exec_channel_key",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 46,
+          "resolvedId": "backend/api/conn_manager.py:_graph_exec_channel_key:140"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 46
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/conn_manager.py:subscribe_graph_execs:49",
+      "name": "subscribe_graph_execs",
+      "startLine": 49,
+      "endLine": 54,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "_subscribe",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 52,
+          "resolvedId": "backend/api/conn_manager.py:_subscribe:125"
+        },
+        {
+          "target": "websocket",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 53,
+          "resolvedId": "backend/cli_main.py:websocket:239"
+        },
+        {
+          "target": "_graph_execs_channel_key",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 53,
+          "resolvedId": "backend/api/conn_manager.py:_graph_execs_channel_key:144"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 53
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/conn_manager.py:unsubscribe_graph_exec:56",
+      "name": "unsubscribe_graph_exec",
+      "startLine": 56,
+      "endLine": 61,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "_unsubscribe",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 59,
+          "resolvedId": "backend/api/conn_manager.py:_unsubscribe:131"
+        },
+        {
+          "target": "websocket",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 60,
+          "resolvedId": "backend/cli_main.py:websocket:239"
+        },
+        {
+          "target": "_graph_exec_channel_key",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 60,
+          "resolvedId": "backend/api/conn_manager.py:_graph_exec_channel_key:140"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 60
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/conn_manager.py:unsubscribe_graph_execs:63",
+      "name": "unsubscribe_graph_execs",
+      "startLine": 63,
+      "endLine": 68,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "_unsubscribe",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 66,
+          "resolvedId": "backend/api/conn_manager.py:_unsubscribe:131"
+        },
+        {
+          "target": "websocket",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 67,
+          "resolvedId": "backend/cli_main.py:websocket:239"
+        },
+        {
+          "target": "_graph_execs_channel_key",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 67,
+          "resolvedId": "backend/api/conn_manager.py:_graph_execs_channel_key:144"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 67
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/conn_manager.py:send_execution_update:70",
+      "name": "send_execution_update",
+      "startLine": 70,
+      "endLine": 103,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 75
+        },
+        {
+          "target": "exec_event",
+          "resolved": false,
+          "confidence": 0,
+          "line": 75
+        },
+        {
+          "target": "_graph_exec_channel_key",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 83,
+          "resolvedId": "backend/api/conn_manager.py:_graph_exec_channel_key:140"
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 85
+        },
+        {
+          "target": "exec_event",
+          "resolved": false,
+          "confidence": 0,
+          "line": 85
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 87,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "_graph_execs_channel_key",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 88,
+          "resolvedId": "backend/api/conn_manager.py:_graph_execs_channel_key:144"
+        },
+        {
+          "target": "intersection",
+          "resolved": false,
+          "confidence": 0,
+          "line": 93
+        },
+        {
+          "target": "keys",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 93,
+          "resolvedId": "backend/integrations/oauth/__init__.py:keys:100"
+        },
+        {
+          "target": "model_dump_json",
+          "resolved": false,
+          "confidence": 0,
+          "line": 94
+        },
+        {
+          "target": "WSMessage",
+          "resolved": false,
+          "confidence": 0,
+          "line": 94
+        },
+        {
+          "target": "model_dump",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 97,
+          "resolvedId": "backend/blocks/apollo/models.py:model_dump:11"
+        },
+        {
+          "target": "send_text",
+          "resolved": false,
+          "confidence": 0,
+          "line": 100
+        },
+        {
+          "target": "message",
+          "resolved": false,
+          "confidence": 0,
+          "line": 100
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/conn_manager.py:send_notification:105",
+      "name": "send_notification",
+      "startLine": 105,
+      "endLine": 123,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "model_dump_json",
+          "resolved": false,
+          "confidence": 0,
+          "line": 109
+        },
+        {
+          "target": "WSMessage",
+          "resolved": false,
+          "confidence": 0,
+          "line": 109
+        },
+        {
+          "target": "model_dump",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 111,
+          "resolvedId": "backend/blocks/apollo/models.py:model_dump:11"
+        },
+        {
+          "target": "tuple",
+          "resolved": false,
+          "confidence": 0,
+          "line": 114
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 114,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 114
+        },
+        {
+          "target": "set",
+          "resolved": false,
+          "confidence": 0,
+          "line": 114
+        },
+        {
+          "target": "gather",
+          "resolved": false,
+          "confidence": 0,
+          "line": 118
+        },
+        {
+          "target": "send_text",
+          "resolved": false,
+          "confidence": 0,
+          "line": 119
+        },
+        {
+          "target": "message",
+          "resolved": false,
+          "confidence": 0,
+          "line": 119
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 123
+        },
+        {
+          "target": "connections",
+          "resolved": false,
+          "confidence": 0,
+          "line": 123
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/conn_manager.py:_subscribe:125",
+      "name": "_subscribe",
+      "startLine": 125,
+      "endLine": 129,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "set",
+          "resolved": false,
+          "confidence": 0,
+          "line": 127
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 128,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "websocket",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 128,
+          "resolvedId": "backend/cli_main.py:websocket:239"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/conn_manager.py:_unsubscribe:131",
+      "name": "_unsubscribe",
+      "startLine": 131,
+      "endLine": 137,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "discard",
+          "resolved": false,
+          "confidence": 0,
+          "line": 133
+        },
+        {
+          "target": "websocket",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 133,
+          "resolvedId": "backend/cli_main.py:websocket:239"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/conn_manager.py:_graph_exec_channel_key:140",
+      "name": "_graph_exec_channel_key",
+      "startLine": 140,
+      "endLine": 141,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/conn_manager.py:_graph_execs_channel_key:144",
+      "name": "_graph_execs_channel_key",
+      "startLine": 144,
+      "endLine": 145,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

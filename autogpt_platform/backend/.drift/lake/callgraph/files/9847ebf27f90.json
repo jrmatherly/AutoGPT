@@ -1,0 +1,135 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.191Z",
+  "checksum": "2cffdfc46bd5fee3",
+  "file": "backend/util/dynamic_fields.py",
+  "functions": [
+    {
+      "id": "backend/util/dynamic_fields.py:extract_base_field_name:21",
+      "name": "extract_base_field_name",
+      "startLine": 21,
+      "endLine": 41,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "split",
+          "resolved": false,
+          "confidence": 0,
+          "line": 40
+        },
+        {
+          "target": "delimiter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 40
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/dynamic_fields.py:is_dynamic_field:44",
+      "name": "is_dynamic_field",
+      "startLine": 44,
+      "endLine": 54,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "any",
+          "resolved": false,
+          "confidence": 0,
+          "line": 54
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/dynamic_fields.py:get_dynamic_field_description:57",
+      "name": "get_dynamic_field_description",
+      "startLine": 57,
+      "endLine": 92,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "split",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        },
+        {
+          "target": "split",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        },
+        {
+          "target": "split",
+          "resolved": false,
+          "confidence": 0,
+          "line": 79
+        },
+        {
+          "target": "split",
+          "resolved": false,
+          "confidence": 0,
+          "line": 79
+        },
+        {
+          "target": "split",
+          "resolved": false,
+          "confidence": 0,
+          "line": 86
+        },
+        {
+          "target": "split",
+          "resolved": false,
+          "confidence": 0,
+          "line": 86
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/dynamic_fields.py:group_fields_by_base_name:95",
+      "name": "group_fields_by_base_name",
+      "startLine": 95,
+      "endLine": 124,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "extract_base_field_name",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 120,
+          "resolvedId": "backend/util/dynamic_fields.py:extract_base_field_name:21"
+        },
+        {
+          "target": "field_name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 120
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 123
+        },
+        {
+          "target": "field_name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 123
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

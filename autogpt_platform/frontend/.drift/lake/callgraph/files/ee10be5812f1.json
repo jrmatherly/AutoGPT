@@ -1,0 +1,524 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.207Z",
+  "checksum": "dd2da28d0e74301e",
+  "file": "src/app/(platform)/profile/(user)/settings/components/SettingsForm/components/EmailForm/useEmailForm.ts",
+  "functions": [
+    {
+      "id": "src/app/(platform)/profile/(user)/settings/components/SettingsForm/components/EmailForm/useEmailForm.ts:createEmailDefaultValues:17",
+      "name": "createEmailDefaultValues",
+      "startLine": 17,
+      "endLine": 21,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/app/(platform)/profile/(user)/settings/components/SettingsForm/components/EmailForm/useEmailForm.ts:updateUserEmailAPI:23",
+      "name": "updateUserEmailAPI",
+      "startLine": 23,
+      "endLine": 38,
+      "isEntryPoint": false,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "fetch",
+          "resolved": false,
+          "confidence": 0,
+          "line": 24
+        },
+        {
+          "target": "stringify",
+          "resolved": false,
+          "confidence": 0,
+          "line": 29
+        },
+        {
+          "target": "json",
+          "resolved": false,
+          "confidence": 0,
+          "line": 33
+        },
+        {
+          "target": "Error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 34,
+          "resolvedId": "src/app/error.tsx:Error:8"
+        },
+        {
+          "target": "json",
+          "resolved": false,
+          "confidence": 0,
+          "line": 37
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "email",
+          "operation": "write",
+          "line": 34,
+          "fields": [
+            "email"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "src/app/(platform)/profile/(user)/settings/components/SettingsForm/components/EmailForm/useEmailForm.ts:useEmailForm:40",
+      "name": "useEmailForm",
+      "startLine": 40,
+      "endLine": 92,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "useToast",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 41,
+          "resolvedId": "src/components/molecules/Toast/use-toast.tsx:useToast:77"
+        },
+        {
+          "target": "createEmailDefaultValues",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 42,
+          "resolvedId": "src/app/(platform)/profile/(user)/settings/components/SettingsForm/components/EmailForm/useEmailForm.ts:createEmailDefaultValues:17"
+        },
+        {
+          "target": "user",
+          "resolved": false,
+          "confidence": 0,
+          "line": 42
+        },
+        {
+          "target": "useForm",
+          "resolved": false,
+          "confidence": 0,
+          "line": 45
+        },
+        {
+          "target": "zodResolver",
+          "resolved": false,
+          "confidence": 0,
+          "line": 46
+        },
+        {
+          "target": "emailFormSchema",
+          "resolved": false,
+          "confidence": 0,
+          "line": 46
+        },
+        {
+          "target": "usePostV1UpdateUserEmail",
+          "resolved": false,
+          "confidence": 0,
+          "line": 51
+        },
+        {
+          "target": "toast",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 54,
+          "resolvedId": "src/components/molecules/Toast/use-toast.tsx:toast:27"
+        },
+        {
+          "target": "all",
+          "resolved": false,
+          "confidence": 0,
+          "line": 67
+        },
+        {
+          "target": "updateUserEmailAPI",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 68,
+          "resolvedId": "src/app/(platform)/profile/(user)/settings/components/SettingsForm/components/EmailForm/useEmailForm.ts:updateUserEmailAPI:23"
+        },
+        {
+          "target": "email",
+          "resolved": false,
+          "confidence": 0,
+          "line": 68
+        },
+        {
+          "target": "mutateAsync",
+          "resolved": false,
+          "confidence": 0,
+          "line": 69
+        },
+        {
+          "target": "toast",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 72,
+          "resolvedId": "src/components/molecules/Toast/use-toast.tsx:toast:27"
+        },
+        {
+          "target": "toast",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 77,
+          "resolvedId": "src/components/molecules/Toast/use-toast.tsx:toast:27"
+        },
+        {
+          "target": "all",
+          "resolved": false,
+          "confidence": 0,
+          "line": 67
+        },
+        {
+          "target": "updateUserEmailAPI",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 68,
+          "resolvedId": "src/app/(platform)/profile/(user)/settings/components/SettingsForm/components/EmailForm/useEmailForm.ts:updateUserEmailAPI:23"
+        },
+        {
+          "target": "email",
+          "resolved": false,
+          "confidence": 0,
+          "line": 68
+        },
+        {
+          "target": "mutateAsync",
+          "resolved": false,
+          "confidence": 0,
+          "line": 69
+        },
+        {
+          "target": "toast",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 72,
+          "resolvedId": "src/components/molecules/Toast/use-toast.tsx:toast:27"
+        },
+        {
+          "target": "toast",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 77,
+          "resolvedId": "src/components/molecules/Toast/use-toast.tsx:toast:27"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "email",
+          "operation": "write",
+          "line": 57,
+          "fields": [
+            "email"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "src/app/(platform)/profile/(user)/settings/components/SettingsForm/components/EmailForm/useEmailForm.ts:onSubmit:64",
+      "name": "onSubmit",
+      "startLine": 64,
+      "endLine": 84,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "all",
+          "resolved": false,
+          "confidence": 0,
+          "line": 67
+        },
+        {
+          "target": "updateUserEmailAPI",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 68,
+          "resolvedId": "src/app/(platform)/profile/(user)/settings/components/SettingsForm/components/EmailForm/useEmailForm.ts:updateUserEmailAPI:23"
+        },
+        {
+          "target": "email",
+          "resolved": false,
+          "confidence": 0,
+          "line": 68
+        },
+        {
+          "target": "mutateAsync",
+          "resolved": false,
+          "confidence": 0,
+          "line": 69
+        },
+        {
+          "target": "toast",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 72,
+          "resolvedId": "src/components/molecules/Toast/use-toast.tsx:toast:27"
+        },
+        {
+          "target": "toast",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 77,
+          "resolvedId": "src/components/molecules/Toast/use-toast.tsx:toast:27"
+        },
+        {
+          "target": "all",
+          "resolved": false,
+          "confidence": 0,
+          "line": 67
+        },
+        {
+          "target": "updateUserEmailAPI",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 68,
+          "resolvedId": "src/app/(platform)/profile/(user)/settings/components/SettingsForm/components/EmailForm/useEmailForm.ts:updateUserEmailAPI:23"
+        },
+        {
+          "target": "email",
+          "resolved": false,
+          "confidence": 0,
+          "line": 68
+        },
+        {
+          "target": "mutateAsync",
+          "resolved": false,
+          "confidence": 0,
+          "line": 69
+        },
+        {
+          "target": "toast",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 72,
+          "resolvedId": "src/components/molecules/Toast/use-toast.tsx:toast:27"
+        },
+        {
+          "target": "toast",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 77,
+          "resolvedId": "src/components/molecules/Toast/use-toast.tsx:toast:27"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/app/(platform)/profile/(user)/settings/components/SettingsForm/components/EmailForm/useEmailForm.ts:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 93,
+      "isEntryPoint": false,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "fetch",
+          "resolved": false,
+          "confidence": 0,
+          "line": 24
+        },
+        {
+          "target": "stringify",
+          "resolved": false,
+          "confidence": 0,
+          "line": 29
+        },
+        {
+          "target": "json",
+          "resolved": false,
+          "confidence": 0,
+          "line": 33
+        },
+        {
+          "target": "Error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 34,
+          "resolvedId": "src/app/error.tsx:Error:8"
+        },
+        {
+          "target": "json",
+          "resolved": false,
+          "confidence": 0,
+          "line": 37
+        },
+        {
+          "target": "useToast",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 41,
+          "resolvedId": "src/components/molecules/Toast/use-toast.tsx:useToast:77"
+        },
+        {
+          "target": "createEmailDefaultValues",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 42,
+          "resolvedId": "src/app/(platform)/profile/(user)/settings/components/SettingsForm/components/EmailForm/useEmailForm.ts:createEmailDefaultValues:17"
+        },
+        {
+          "target": "user",
+          "resolved": false,
+          "confidence": 0,
+          "line": 42
+        },
+        {
+          "target": "useForm",
+          "resolved": false,
+          "confidence": 0,
+          "line": 45
+        },
+        {
+          "target": "zodResolver",
+          "resolved": false,
+          "confidence": 0,
+          "line": 46
+        },
+        {
+          "target": "emailFormSchema",
+          "resolved": false,
+          "confidence": 0,
+          "line": 46
+        },
+        {
+          "target": "usePostV1UpdateUserEmail",
+          "resolved": false,
+          "confidence": 0,
+          "line": 51
+        },
+        {
+          "target": "toast",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 54,
+          "resolvedId": "src/components/molecules/Toast/use-toast.tsx:toast:27"
+        },
+        {
+          "target": "all",
+          "resolved": false,
+          "confidence": 0,
+          "line": 67
+        },
+        {
+          "target": "updateUserEmailAPI",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 68,
+          "resolvedId": "src/app/(platform)/profile/(user)/settings/components/SettingsForm/components/EmailForm/useEmailForm.ts:updateUserEmailAPI:23"
+        },
+        {
+          "target": "email",
+          "resolved": false,
+          "confidence": 0,
+          "line": 68
+        },
+        {
+          "target": "mutateAsync",
+          "resolved": false,
+          "confidence": 0,
+          "line": 69
+        },
+        {
+          "target": "toast",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 72,
+          "resolvedId": "src/components/molecules/Toast/use-toast.tsx:toast:27"
+        },
+        {
+          "target": "toast",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 77,
+          "resolvedId": "src/components/molecules/Toast/use-toast.tsx:toast:27"
+        },
+        {
+          "target": "all",
+          "resolved": false,
+          "confidence": 0,
+          "line": 67
+        },
+        {
+          "target": "updateUserEmailAPI",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 68,
+          "resolvedId": "src/app/(platform)/profile/(user)/settings/components/SettingsForm/components/EmailForm/useEmailForm.ts:updateUserEmailAPI:23"
+        },
+        {
+          "target": "email",
+          "resolved": false,
+          "confidence": 0,
+          "line": 68
+        },
+        {
+          "target": "mutateAsync",
+          "resolved": false,
+          "confidence": 0,
+          "line": 69
+        },
+        {
+          "target": "toast",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 72,
+          "resolvedId": "src/components/molecules/Toast/use-toast.tsx:toast:27"
+        },
+        {
+          "target": "toast",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 77,
+          "resolvedId": "src/components/molecules/Toast/use-toast.tsx:toast:27"
+        },
+        {
+          "target": "object",
+          "resolved": false,
+          "confidence": 0,
+          "line": 10
+        },
+        {
+          "target": "email",
+          "resolved": false,
+          "confidence": 0,
+          "line": 11
+        },
+        {
+          "target": "min",
+          "resolved": false,
+          "confidence": 0,
+          "line": 11
+        },
+        {
+          "target": "string",
+          "resolved": false,
+          "confidence": 0,
+          "line": 11
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "email",
+          "operation": "write",
+          "line": 34,
+          "fields": [
+            "email"
+          ]
+        },
+        {
+          "table": "email",
+          "operation": "write",
+          "line": 57,
+          "fields": [
+            "email"
+          ]
+        }
+      ]
+    }
+  ]
+}

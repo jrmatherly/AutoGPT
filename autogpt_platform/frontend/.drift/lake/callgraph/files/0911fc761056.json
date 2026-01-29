@@ -1,0 +1,232 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:19.993Z",
+  "checksum": "b0954d5c699ce355",
+  "file": "src/components/contextual/Chat/components/ChatContainer/ChatContainer.tsx",
+  "functions": [
+    {
+      "id": "src/components/contextual/Chat/components/ChatContainer/ChatContainer.tsx:ChatContainer:22",
+      "name": "ChatContainer",
+      "startLine": 22,
+      "endLine": 130,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useChatContainer",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 39,
+          "resolvedId": "src/components/contextual/Chat/components/ChatContainer/useChatContainer.ts:useChatContainer:46"
+        },
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 46
+        },
+        {
+          "target": "onStreamingChange",
+          "resolved": false,
+          "confidence": 0,
+          "line": 47
+        },
+        {
+          "target": "isStreaming",
+          "resolved": false,
+          "confidence": 0,
+          "line": 47
+        },
+        {
+          "target": "useBreakpoint",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 50,
+          "resolvedId": "src/lib/hooks/useBreakpoint.ts:useBreakpoint:15"
+        },
+        {
+          "target": "cn",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 56,
+          "resolvedId": "src/components/renderers/InputRenderer/utils/rjsf-utils.ts:cn:4"
+        },
+        {
+          "target": "className",
+          "resolved": false,
+          "confidence": 0,
+          "line": 58
+        },
+        {
+          "target": "Dialog",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 61,
+          "resolvedId": "src/components/molecules/Dialog/Dialog.tsx:Dialog:28"
+        },
+        {
+          "target": "handleRegionModalClose",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 77,
+          "resolvedId": "src/components/contextual/Chat/components/ChatContainer/useChatContainer.ts:handleRegionModalClose:289"
+        },
+        {
+          "target": "GlobeHemisphereEastIcon",
+          "resolved": false,
+          "confidence": 0,
+          "line": 64
+        },
+        {
+          "target": "Text",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 65,
+          "resolvedId": "src/components/atoms/Text/Text.tsx:Text:15"
+        },
+        {
+          "target": "Content",
+          "resolved": false,
+          "confidence": 0,
+          "line": 80
+        },
+        {
+          "target": "Text",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 82,
+          "resolvedId": "src/components/atoms/Text/Text.tsx:Text:15"
+        },
+        {
+          "target": "Button",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 88,
+          "resolvedId": "src/components/atoms/Button/Button.tsx:Button:12"
+        },
+        {
+          "target": "handleRegionModalClose",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 91,
+          "resolvedId": "src/components/contextual/Chat/components/ChatContainer/useChatContainer.ts:handleRegionModalClose:289"
+        },
+        {
+          "target": "MessageList",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 103,
+          "resolvedId": "src/components/contextual/Chat/components/MessageList/MessageList.tsx:MessageList:21"
+        },
+        {
+          "target": "messages",
+          "resolved": false,
+          "confidence": 0,
+          "line": 104
+        },
+        {
+          "target": "streamingChunks",
+          "resolved": false,
+          "confidence": 0,
+          "line": 105
+        },
+        {
+          "target": "isStreaming",
+          "resolved": false,
+          "confidence": 0,
+          "line": 106
+        },
+        {
+          "target": "sendMessageWithContext",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 107,
+          "resolvedId": "src/components/contextual/Chat/components/ChatContainer/useChatContainer.ts:sendMessageWithContext:277"
+        },
+        {
+          "target": "ChatInput",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 116,
+          "resolvedId": "src/components/contextual/Chat/components/ChatInput/ChatInput.tsx:ChatInput:15"
+        },
+        {
+          "target": "sendMessageWithContext",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 117,
+          "resolvedId": "src/components/contextual/Chat/components/ChatContainer/useChatContainer.ts:sendMessageWithContext:277"
+        },
+        {
+          "target": "isStreaming",
+          "resolved": false,
+          "confidence": 0,
+          "line": 119
+        },
+        {
+          "target": "stopStreaming",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 120,
+          "resolvedId": "src/components/contextual/Chat/useChatStream.ts:stopStreaming:29"
+        },
+        {
+          "target": "onStreamingChange",
+          "resolved": false,
+          "confidence": 0,
+          "line": 47
+        },
+        {
+          "target": "isStreaming",
+          "resolved": false,
+          "confidence": 0,
+          "line": 47
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/contextual/Chat/components/ChatContainer/ChatContainer.tsx:$useEffect$1:46",
+      "name": "$useEffect$1",
+      "startLine": 46,
+      "endLine": 48,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 46
+        },
+        {
+          "target": "onStreamingChange",
+          "resolved": false,
+          "confidence": 0,
+          "line": 47
+        },
+        {
+          "target": "isStreaming",
+          "resolved": false,
+          "confidence": 0,
+          "line": 47
+        },
+        {
+          "target": "onStreamingChange",
+          "resolved": false,
+          "confidence": 0,
+          "line": 47
+        },
+        {
+          "target": "isStreaming",
+          "resolved": false,
+          "confidence": 0,
+          "line": 47
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

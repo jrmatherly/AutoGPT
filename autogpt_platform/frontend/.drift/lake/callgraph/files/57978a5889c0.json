@@ -1,0 +1,500 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.048Z",
+  "checksum": "b9ea10ca917b5511",
+  "file": "src/app/(platform)/library/agents/[id]/components/OldAgentLibraryView/components/agent-run-output-view.tsx",
+  "functions": [
+    {
+      "id": "src/app/(platform)/library/agents/[id]/components/OldAgentLibraryView/components/agent-run-output-view.tsx:AgentRunOutputView:21",
+      "name": "AgentRunOutputView",
+      "startLine": 21,
+      "endLine": 178,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useGetFlag",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 35,
+          "resolvedId": "src/services/feature-flags/use-get-flag.ts:useGetFlag:53"
+        },
+        {
+          "target": "ENABLE_ENHANCED_OUTPUT_HANDLING",
+          "resolved": false,
+          "confidence": 0,
+          "line": 36
+        },
+        {
+          "target": "useMemo",
+          "resolved": false,
+          "confidence": 0,
+          "line": 40
+        },
+        {
+          "target": "forEach",
+          "resolved": false,
+          "confidence": 0,
+          "line": 51
+        },
+        {
+          "target": "entries",
+          "resolved": false,
+          "confidence": 0,
+          "line": 51
+        },
+        {
+          "target": "agentRunOutputs",
+          "resolved": false,
+          "confidence": 0,
+          "line": 51
+        },
+        {
+          "target": "forEach",
+          "resolved": false,
+          "confidence": 0,
+          "line": 52
+        },
+        {
+          "target": "isValidElement",
+          "resolved": false,
+          "confidence": 0,
+          "line": 60
+        },
+        {
+          "target": "value",
+          "resolved": false,
+          "confidence": 0,
+          "line": 60
+        },
+        {
+          "target": "getRenderer",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 68,
+          "resolvedId": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/selected-views/OutputRenderers/types.ts:getRenderer:51"
+        },
+        {
+          "target": "value",
+          "resolved": false,
+          "confidence": 0,
+          "line": 68
+        },
+        {
+          "target": "metadata",
+          "resolved": false,
+          "confidence": 0,
+          "line": 68
+        },
+        {
+          "target": "push",
+          "resolved": false,
+          "confidence": 0,
+          "line": 70
+        },
+        {
+          "target": "find",
+          "resolved": false,
+          "confidence": 0,
+          "line": 78
+        },
+        {
+          "target": "getAllRenderers",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 78,
+          "resolvedId": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/selected-views/OutputRenderers/types.ts:getAllRenderers:55"
+        },
+        {
+          "target": "push",
+          "resolved": false,
+          "confidence": 0,
+          "line": 82
+        },
+        {
+          "target": "stringify",
+          "resolved": false,
+          "confidence": 0,
+          "line": 85
+        },
+        {
+          "target": "value",
+          "resolved": false,
+          "confidence": 0,
+          "line": 85
+        },
+        {
+          "target": "Card",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 100,
+          "resolvedId": "src/components/atoms/Card/Card.tsx:Card:9"
+        },
+        {
+          "target": "CardHeader",
+          "resolved": false,
+          "confidence": 0,
+          "line": 101
+        },
+        {
+          "target": "CardTitle",
+          "resolved": false,
+          "confidence": 0,
+          "line": 103
+        },
+        {
+          "target": "OutputActions",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 105,
+          "resolvedId": "src/components/contextual/OutputRenderers/components/OutputActions.tsx:OutputActions:20"
+        },
+        {
+          "target": "map",
+          "resolved": false,
+          "confidence": 0,
+          "line": 106
+        },
+        {
+          "target": "CardContent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 116
+        },
+        {
+          "target": "map",
+          "resolved": false,
+          "confidence": 0,
+          "line": 122
+        },
+        {
+          "target": "OutputItem",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 123,
+          "resolvedId": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/selected-views/OutputRenderers/components/OutputItem.tsx:OutputItem:13"
+        },
+        {
+          "target": "key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 124
+        },
+        {
+          "target": "value",
+          "resolved": false,
+          "confidence": 0,
+          "line": 125
+        },
+        {
+          "target": "metadata",
+          "resolved": false,
+          "confidence": 0,
+          "line": 126
+        },
+        {
+          "target": "renderer",
+          "resolved": false,
+          "confidence": 0,
+          "line": 127
+        },
+        {
+          "target": "label",
+          "resolved": false,
+          "confidence": 0,
+          "line": 128
+        },
+        {
+          "target": "LoadingBox",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 137,
+          "resolvedId": "src/components/__legacy__/ui/loading.tsx:LoadingBox:4"
+        },
+        {
+          "target": "Card",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 142,
+          "resolvedId": "src/components/atoms/Card/Card.tsx:Card:9"
+        },
+        {
+          "target": "CardHeader",
+          "resolved": false,
+          "confidence": 0,
+          "line": 143
+        },
+        {
+          "target": "CardTitle",
+          "resolved": false,
+          "confidence": 0,
+          "line": 144
+        },
+        {
+          "target": "CardContent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 147
+        },
+        {
+          "target": "map",
+          "resolved": false,
+          "confidence": 0,
+          "line": 152
+        },
+        {
+          "target": "entries",
+          "resolved": false,
+          "confidence": 0,
+          "line": 152
+        },
+        {
+          "target": "agentRunOutputs",
+          "resolved": false,
+          "confidence": 0,
+          "line": 152
+        },
+        {
+          "target": "key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 154
+        },
+        {
+          "target": "map",
+          "resolved": false,
+          "confidence": 0,
+          "line": 158
+        },
+        {
+          "target": "i",
+          "resolved": false,
+          "confidence": 0,
+          "line": 161
+        },
+        {
+          "target": "LoadingBox",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 171,
+          "resolvedId": "src/components/__legacy__/ui/loading.tsx:LoadingBox:4"
+        },
+        {
+          "target": "OutputItem",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 123,
+          "resolvedId": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/selected-views/OutputRenderers/components/OutputItem.tsx:OutputItem:13"
+        },
+        {
+          "target": "key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 124
+        },
+        {
+          "target": "value",
+          "resolved": false,
+          "confidence": 0,
+          "line": 125
+        },
+        {
+          "target": "metadata",
+          "resolved": false,
+          "confidence": 0,
+          "line": 126
+        },
+        {
+          "target": "renderer",
+          "resolved": false,
+          "confidence": 0,
+          "line": 127
+        },
+        {
+          "target": "label",
+          "resolved": false,
+          "confidence": 0,
+          "line": 128
+        },
+        {
+          "target": "key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 154
+        },
+        {
+          "target": "map",
+          "resolved": false,
+          "confidence": 0,
+          "line": 158
+        },
+        {
+          "target": "i",
+          "resolved": false,
+          "confidence": 0,
+          "line": 161
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/app/(platform)/library/agents/[id]/components/OldAgentLibraryView/components/agent-run-output-view.tsx:$map$1:106",
+      "name": "$map$1",
+      "startLine": 106,
+      "endLine": 110,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "map",
+          "resolved": false,
+          "confidence": 0,
+          "line": 106
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/app/(platform)/library/agents/[id]/components/OldAgentLibraryView/components/agent-run-output-view.tsx:$map$2:122",
+      "name": "$map$2",
+      "startLine": 122,
+      "endLine": 130,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "map",
+          "resolved": false,
+          "confidence": 0,
+          "line": 122
+        },
+        {
+          "target": "OutputItem",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 123,
+          "resolvedId": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/selected-views/OutputRenderers/components/OutputItem.tsx:OutputItem:13"
+        },
+        {
+          "target": "key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 124
+        },
+        {
+          "target": "value",
+          "resolved": false,
+          "confidence": 0,
+          "line": 125
+        },
+        {
+          "target": "metadata",
+          "resolved": false,
+          "confidence": 0,
+          "line": 126
+        },
+        {
+          "target": "renderer",
+          "resolved": false,
+          "confidence": 0,
+          "line": 127
+        },
+        {
+          "target": "label",
+          "resolved": false,
+          "confidence": 0,
+          "line": 128
+        },
+        {
+          "target": "OutputItem",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 123,
+          "resolvedId": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/selected-views/OutputRenderers/components/OutputItem.tsx:OutputItem:13"
+        },
+        {
+          "target": "key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 124
+        },
+        {
+          "target": "value",
+          "resolved": false,
+          "confidence": 0,
+          "line": 125
+        },
+        {
+          "target": "metadata",
+          "resolved": false,
+          "confidence": 0,
+          "line": 126
+        },
+        {
+          "target": "renderer",
+          "resolved": false,
+          "confidence": 0,
+          "line": 127
+        },
+        {
+          "target": "label",
+          "resolved": false,
+          "confidence": 0,
+          "line": 128
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/app/(platform)/library/agents/[id]/components/OldAgentLibraryView/components/agent-run-output-view.tsx:$map$3:153",
+      "name": "$map$3",
+      "startLine": 153,
+      "endLine": 168,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 154
+        },
+        {
+          "target": "map",
+          "resolved": false,
+          "confidence": 0,
+          "line": 158
+        },
+        {
+          "target": "i",
+          "resolved": false,
+          "confidence": 0,
+          "line": 161
+        },
+        {
+          "target": "key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 154
+        },
+        {
+          "target": "map",
+          "resolved": false,
+          "confidence": 0,
+          "line": 158
+        },
+        {
+          "target": "i",
+          "resolved": false,
+          "confidence": 0,
+          "line": 161
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

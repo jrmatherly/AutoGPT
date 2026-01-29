@@ -1,0 +1,520 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.066Z",
+  "checksum": "0a715852ee6c1eed",
+  "file": "src/lib/supabase/helpers.ts",
+  "functions": [
+    {
+      "id": "src/lib/supabase/helpers.ts:getCookieSettings:20",
+      "name": "getCookieSettings",
+      "startLine": 20,
+      "endLine": 26,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/lib/supabase/helpers.ts:isProtectedPage:29",
+      "name": "isProtectedPage",
+      "startLine": 29,
+      "endLine": 31,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "some",
+          "resolved": false,
+          "confidence": 0,
+          "line": 30
+        },
+        {
+          "target": "startsWith",
+          "resolved": false,
+          "confidence": 0,
+          "line": 30
+        },
+        {
+          "target": "page",
+          "resolved": false,
+          "confidence": 0,
+          "line": 30
+        },
+        {
+          "target": "startsWith",
+          "resolved": false,
+          "confidence": 0,
+          "line": 30
+        },
+        {
+          "target": "page",
+          "resolved": false,
+          "confidence": 0,
+          "line": 30
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/lib/supabase/helpers.ts:$some$1:30",
+      "name": "$some$1",
+      "startLine": 30,
+      "endLine": 30,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "some",
+          "resolved": false,
+          "confidence": 0,
+          "line": 30
+        },
+        {
+          "target": "startsWith",
+          "resolved": false,
+          "confidence": 0,
+          "line": 30
+        },
+        {
+          "target": "page",
+          "resolved": false,
+          "confidence": 0,
+          "line": 30
+        },
+        {
+          "target": "startsWith",
+          "resolved": false,
+          "confidence": 0,
+          "line": 30
+        },
+        {
+          "target": "page",
+          "resolved": false,
+          "confidence": 0,
+          "line": 30
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/lib/supabase/helpers.ts:isAdminPage:33",
+      "name": "isAdminPage",
+      "startLine": 33,
+      "endLine": 35,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "some",
+          "resolved": false,
+          "confidence": 0,
+          "line": 34
+        },
+        {
+          "target": "startsWith",
+          "resolved": false,
+          "confidence": 0,
+          "line": 34
+        },
+        {
+          "target": "page",
+          "resolved": false,
+          "confidence": 0,
+          "line": 34
+        },
+        {
+          "target": "startsWith",
+          "resolved": false,
+          "confidence": 0,
+          "line": 34
+        },
+        {
+          "target": "page",
+          "resolved": false,
+          "confidence": 0,
+          "line": 34
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/lib/supabase/helpers.ts:$some$1:34",
+      "name": "$some$1",
+      "startLine": 34,
+      "endLine": 34,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "some",
+          "resolved": false,
+          "confidence": 0,
+          "line": 34
+        },
+        {
+          "target": "startsWith",
+          "resolved": false,
+          "confidence": 0,
+          "line": 34
+        },
+        {
+          "target": "page",
+          "resolved": false,
+          "confidence": 0,
+          "line": 34
+        },
+        {
+          "target": "startsWith",
+          "resolved": false,
+          "confidence": 0,
+          "line": 34
+        },
+        {
+          "target": "page",
+          "resolved": false,
+          "confidence": 0,
+          "line": 34
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/lib/supabase/helpers.ts:shouldRedirectOnLogout:37",
+      "name": "shouldRedirectOnLogout",
+      "startLine": 37,
+      "endLine": 39,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "isProtectedPage",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 38,
+          "resolvedId": "src/lib/supabase/helpers.ts:isProtectedPage:29"
+        },
+        {
+          "target": "pathname",
+          "resolved": false,
+          "confidence": 0,
+          "line": 38
+        },
+        {
+          "target": "isAdminPage",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 38,
+          "resolvedId": "src/lib/supabase/helpers.ts:isAdminPage:33"
+        },
+        {
+          "target": "pathname",
+          "resolved": false,
+          "confidence": 0,
+          "line": 38
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/lib/supabase/helpers.ts:broadcastLogout:42",
+      "name": "broadcastLogout",
+      "startLine": 42,
+      "endLine": 44,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "set",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 43,
+          "resolvedId": "src/services/storage/local-storage.ts:set:29"
+        },
+        {
+          "target": "LOGOUT",
+          "resolved": false,
+          "confidence": 0,
+          "line": 43
+        },
+        {
+          "target": "toString",
+          "resolved": false,
+          "confidence": 0,
+          "line": 43
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 43
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/lib/supabase/helpers.ts:isLogoutEvent:46",
+      "name": "isLogoutEvent",
+      "startLine": 46,
+      "endLine": 48,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/lib/supabase/helpers.ts:setWebSocketDisconnectIntent:51",
+      "name": "setWebSocketDisconnectIntent",
+      "startLine": 51,
+      "endLine": 53,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "set",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 52,
+          "resolvedId": "src/services/storage/local-storage.ts:set:29"
+        },
+        {
+          "target": "WEBSOCKET_DISCONNECT_INTENT",
+          "resolved": false,
+          "confidence": 0,
+          "line": 52
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/lib/supabase/helpers.ts:clearWebSocketDisconnectIntent:55",
+      "name": "clearWebSocketDisconnectIntent",
+      "startLine": 55,
+      "endLine": 57,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "clean",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 56,
+          "resolvedId": "src/services/storage/local-storage.ts:clean:37"
+        },
+        {
+          "target": "WEBSOCKET_DISCONNECT_INTENT",
+          "resolved": false,
+          "confidence": 0,
+          "line": 56
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/lib/supabase/helpers.ts:hasWebSocketDisconnectIntent:59",
+      "name": "hasWebSocketDisconnectIntent",
+      "startLine": 59,
+      "endLine": 61,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 60,
+          "resolvedId": "src/services/storage/local-storage.ts:get:16"
+        },
+        {
+          "target": "WEBSOCKET_DISCONNECT_INTENT",
+          "resolved": false,
+          "confidence": 0,
+          "line": 60
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/lib/supabase/helpers.ts:getRedirectPath:64",
+      "name": "getRedirectPath",
+      "startLine": 64,
+      "endLine": 78,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "shouldRedirectOnLogout",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 68,
+          "resolvedId": "src/lib/supabase/helpers.ts:shouldRedirectOnLogout:37"
+        },
+        {
+          "target": "path",
+          "resolved": false,
+          "confidence": 0,
+          "line": 68
+        },
+        {
+          "target": "encodeURIComponent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 70
+        },
+        {
+          "target": "path",
+          "resolved": false,
+          "confidence": 0,
+          "line": 70
+        },
+        {
+          "target": "isAdminPage",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 73,
+          "resolvedId": "src/lib/supabase/helpers.ts:isAdminPage:33"
+        },
+        {
+          "target": "path",
+          "resolved": false,
+          "confidence": 0,
+          "line": 73
+        },
+        {
+          "target": "getHomepageRoute",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 74,
+          "resolvedId": "src/lib/constants.ts:getHomepageRoute:16"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/lib/supabase/helpers.ts:setupSessionEventListeners:85",
+      "name": "setupSessionEventListeners",
+      "startLine": 85,
+      "endLine": 105,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "isServerSide",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 90,
+          "resolvedId": "src/services/environment/index.ts:isServerSide:110"
+        },
+        {
+          "target": "addEventListener",
+          "resolved": false,
+          "confidence": 0,
+          "line": 94
+        },
+        {
+          "target": "onVisibilityChange",
+          "resolved": false,
+          "confidence": 0,
+          "line": 94
+        },
+        {
+          "target": "addEventListener",
+          "resolved": false,
+          "confidence": 0,
+          "line": 95
+        },
+        {
+          "target": "onFocus",
+          "resolved": false,
+          "confidence": 0,
+          "line": 95
+        },
+        {
+          "target": "addEventListener",
+          "resolved": false,
+          "confidence": 0,
+          "line": 96
+        },
+        {
+          "target": "onStorageChange",
+          "resolved": false,
+          "confidence": 0,
+          "line": 96
+        },
+        {
+          "target": "removeEventListener",
+          "resolved": false,
+          "confidence": 0,
+          "line": 100
+        },
+        {
+          "target": "onVisibilityChange",
+          "resolved": false,
+          "confidence": 0,
+          "line": 100
+        },
+        {
+          "target": "removeEventListener",
+          "resolved": false,
+          "confidence": 0,
+          "line": 101
+        },
+        {
+          "target": "onFocus",
+          "resolved": false,
+          "confidence": 0,
+          "line": 101
+        },
+        {
+          "target": "removeEventListener",
+          "resolved": false,
+          "confidence": 0,
+          "line": 102
+        },
+        {
+          "target": "onStorageChange",
+          "resolved": false,
+          "confidence": 0,
+          "line": 102
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/lib/supabase/helpers.ts:exchangePasswordResetCode:112",
+      "name": "exchangePasswordResetCode",
+      "startLine": 112,
+      "endLine": 140,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "exchangeCodeForSession",
+          "resolved": false,
+          "confidence": 0,
+          "line": 117
+        },
+        {
+          "target": "code",
+          "resolved": false,
+          "confidence": 0,
+          "line": 117
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

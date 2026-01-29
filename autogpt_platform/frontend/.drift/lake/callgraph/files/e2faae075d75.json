@@ -1,0 +1,478 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.199Z",
+  "checksum": "0b2775067a5e7ad3",
+  "file": "src/components/layout/Navbar/Navbar.tsx",
+  "functions": [
+    {
+      "id": "src/components/layout/Navbar/Navbar.tsx:Navbar:22",
+      "name": "Navbar",
+      "startLine": 22,
+      "endLine": 162,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useSupabase",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 23,
+          "resolvedId": "src/lib/supabase/hooks/useSupabase.ts:useSupabase:10"
+        },
+        {
+          "target": "useBreakpoint",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 24,
+          "resolvedId": "src/lib/hooks/useBreakpoint.ts:useBreakpoint:15"
+        },
+        {
+          "target": "getAccountMenuItems",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 26,
+          "resolvedId": "src/components/layout/Navbar/helpers.tsx:getAccountMenuItems:90"
+        },
+        {
+          "target": "role",
+          "resolved": false,
+          "confidence": 0,
+          "line": 26
+        },
+        {
+          "target": "useGetFlag",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 27,
+          "resolvedId": "src/services/feature-flags/use-get-flag.ts:useGetFlag:53"
+        },
+        {
+          "target": "CHAT",
+          "resolved": false,
+          "confidence": 0,
+          "line": 27
+        },
+        {
+          "target": "getPreviewStealingDev",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 28,
+          "resolvedId": "src/services/environment/index.ts:getPreviewStealingDev:63"
+        },
+        {
+          "target": "isLogoutInProgress",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 29,
+          "resolvedId": "src/lib/autogpt-server-api/helpers.ts:isLogoutInProgress:261"
+        },
+        {
+          "target": "useGetV2GetUserProfile",
+          "resolved": false,
+          "confidence": 0,
+          "line": 31
+        },
+        {
+          "target": "Boolean",
+          "resolved": false,
+          "confidence": 0,
+          "line": 44
+        },
+        {
+          "target": "NavbarLoading",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 55,
+          "resolvedId": "src/components/layout/Navbar/components/NavbarLoading.tsx:NavbarLoading:4"
+        },
+        {
+          "target": "PreviewBanner",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 62,
+          "resolvedId": "src/components/layout/Navbar/components/PreviewBanner/PreviewBanner.tsx:PreviewBanner:5"
+        },
+        {
+          "target": "previewBranchName",
+          "resolved": false,
+          "confidence": 0,
+          "line": 62
+        },
+        {
+          "target": "map",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        },
+        {
+          "target": "NavbarLink",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 73,
+          "resolvedId": "src/components/layout/Navbar/components/NavbarLink.tsx:NavbarLink:24"
+        },
+        {
+          "target": "name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 74
+        },
+        {
+          "target": "name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 75
+        },
+        {
+          "target": "href",
+          "resolved": false,
+          "confidence": 0,
+          "line": 76
+        },
+        {
+          "target": "map",
+          "resolved": false,
+          "confidence": 0,
+          "line": 79
+        },
+        {
+          "target": "NavbarLink",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 80,
+          "resolvedId": "src/components/layout/Navbar/components/NavbarLink.tsx:NavbarLink:24"
+        },
+        {
+          "target": "name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 81
+        },
+        {
+          "target": "name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 82
+        },
+        {
+          "target": "href",
+          "resolved": false,
+          "confidence": 0,
+          "line": 83
+        },
+        {
+          "target": "IconAutoGPTLogo",
+          "resolved": false,
+          "confidence": 0,
+          "line": 91
+        },
+        {
+          "target": "AgentActivityDropdown",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 98,
+          "resolvedId": "src/components/layout/Navbar/components/AgentActivityDropdown/AgentActivityDropdown.tsx:AgentActivityDropdown:14"
+        },
+        {
+          "target": "Wallet",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 99,
+          "resolvedId": "src/components/layout/Navbar/components/Wallet/Wallet.tsx:Wallet:46"
+        },
+        {
+          "target": "username",
+          "resolved": false,
+          "confidence": 0,
+          "line": 99
+        },
+        {
+          "target": "AccountMenu",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 100,
+          "resolvedId": "src/components/layout/Navbar/components/AccountMenu/AccountMenu.tsx:AccountMenu:26"
+        },
+        {
+          "target": "username",
+          "resolved": false,
+          "confidence": 0,
+          "line": 101
+        },
+        {
+          "target": "name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 102
+        },
+        {
+          "target": "dynamicMenuItems",
+          "resolved": false,
+          "confidence": 0,
+          "line": 104
+        },
+        {
+          "target": "isLoadingProfile",
+          "resolved": false,
+          "confidence": 0,
+          "line": 105
+        },
+        {
+          "target": "LoginButton",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 111,
+          "resolvedId": "src/components/layout/Navbar/components/LoginButton.tsx:LoginButton:7"
+        },
+        {
+          "target": "Wallet",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 121,
+          "resolvedId": "src/components/layout/Navbar/components/Wallet/Wallet.tsx:Wallet:46"
+        },
+        {
+          "target": "MobileNavBar",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 122,
+          "resolvedId": "src/components/layout/Navbar/components/MobileNavbar/MobileNavBar.tsx:MobileNavBar:40"
+        },
+        {
+          "target": "username",
+          "resolved": false,
+          "confidence": 0,
+          "line": 123
+        },
+        {
+          "target": "name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 154
+        },
+        {
+          "target": "filter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 127
+        },
+        {
+          "target": "map",
+          "resolved": false,
+          "confidence": 0,
+          "line": 127
+        },
+        {
+          "target": "NavbarLink",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 73,
+          "resolvedId": "src/components/layout/Navbar/components/NavbarLink.tsx:NavbarLink:24"
+        },
+        {
+          "target": "name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 74
+        },
+        {
+          "target": "name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 75
+        },
+        {
+          "target": "href",
+          "resolved": false,
+          "confidence": 0,
+          "line": 76
+        },
+        {
+          "target": "NavbarLink",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 80,
+          "resolvedId": "src/components/layout/Navbar/components/NavbarLink.tsx:NavbarLink:24"
+        },
+        {
+          "target": "name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 81
+        },
+        {
+          "target": "name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 82
+        },
+        {
+          "target": "href",
+          "resolved": false,
+          "confidence": 0,
+          "line": 83
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/layout/Navbar/Navbar.tsx:$map$1:72",
+      "name": "$map$1",
+      "startLine": 72,
+      "endLine": 78,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "map",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        },
+        {
+          "target": "NavbarLink",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 73,
+          "resolvedId": "src/components/layout/Navbar/components/NavbarLink.tsx:NavbarLink:24"
+        },
+        {
+          "target": "name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 74
+        },
+        {
+          "target": "name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 75
+        },
+        {
+          "target": "href",
+          "resolved": false,
+          "confidence": 0,
+          "line": 76
+        },
+        {
+          "target": "NavbarLink",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 73,
+          "resolvedId": "src/components/layout/Navbar/components/NavbarLink.tsx:NavbarLink:24"
+        },
+        {
+          "target": "name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 74
+        },
+        {
+          "target": "name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 75
+        },
+        {
+          "target": "href",
+          "resolved": false,
+          "confidence": 0,
+          "line": 76
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/layout/Navbar/Navbar.tsx:$map$2:79",
+      "name": "$map$2",
+      "startLine": 79,
+      "endLine": 85,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "map",
+          "resolved": false,
+          "confidence": 0,
+          "line": 79
+        },
+        {
+          "target": "NavbarLink",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 80,
+          "resolvedId": "src/components/layout/Navbar/components/NavbarLink.tsx:NavbarLink:24"
+        },
+        {
+          "target": "name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 81
+        },
+        {
+          "target": "name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 82
+        },
+        {
+          "target": "href",
+          "resolved": false,
+          "confidence": 0,
+          "line": 83
+        },
+        {
+          "target": "NavbarLink",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 80,
+          "resolvedId": "src/components/layout/Navbar/components/NavbarLink.tsx:NavbarLink:24"
+        },
+        {
+          "target": "name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 81
+        },
+        {
+          "target": "name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 82
+        },
+        {
+          "target": "href",
+          "resolved": false,
+          "confidence": 0,
+          "line": 83
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/layout/Navbar/Navbar.tsx:$filter$3:146",
+      "name": "$filter$3",
+      "startLine": 146,
+      "endLine": 146,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/layout/Navbar/Navbar.tsx:$map$4:128",
+      "name": "$map$4",
+      "startLine": 128,
+      "endLine": 145,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

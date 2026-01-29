@@ -1,0 +1,647 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.155Z",
+  "checksum": "3883b9779c516bca",
+  "file": "backend/util/process.py",
+  "functions": [
+    {
+      "id": "backend/util/process.py:run:37",
+      "name": "run",
+      "startLine": 37,
+      "endLine": 41,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/process.py:service_name:44",
+      "name": "service_name",
+      "startLine": 44,
+      "endLine": 45,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/process.py:cleanup:47",
+      "name": "cleanup",
+      "startLine": 47,
+      "endLine": 52,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/process.py:execute_run_command:54",
+      "name": "execute_run_command",
+      "startLine": 54,
+      "endLine": 85,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "signal",
+          "resolved": false,
+          "confidence": 0,
+          "line": 55
+        },
+        {
+          "target": "signal",
+          "resolved": false,
+          "confidence": 0,
+          "line": 56
+        },
+        {
+          "target": "open",
+          "resolved": false,
+          "confidence": 0,
+          "line": 60
+        },
+        {
+          "target": "open",
+          "resolved": false,
+          "confidence": 0,
+          "line": 61
+        },
+        {
+          "target": "set_service_name",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 63,
+          "resolvedId": "backend/util/settings.py:set_service_name:26"
+        },
+        {
+          "target": "info",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 64,
+          "resolvedId": "backend/util/logging.py:info:41"
+        },
+        {
+          "target": "run",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 65,
+          "resolvedId": "backend/util/process.py:run:37"
+        },
+        {
+          "target": "warning",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 67,
+          "resolvedId": "backend/util/logging.py:warning:45"
+        },
+        {
+          "target": "type",
+          "resolved": false,
+          "confidence": 0,
+          "line": 68
+        },
+        {
+          "target": "e",
+          "resolved": false,
+          "confidence": 0,
+          "line": 68
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 69
+        },
+        {
+          "target": "e",
+          "resolved": false,
+          "confidence": 0,
+          "line": 69
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        },
+        {
+          "target": "e",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        },
+        {
+          "target": "sentry_capture_error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 76,
+          "resolvedId": "backend/util/metrics.py:sentry_capture_error:49"
+        },
+        {
+          "target": "e",
+          "resolved": false,
+          "confidence": 0,
+          "line": 76
+        },
+        {
+          "target": "info",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 82,
+          "resolvedId": "backend/util/logging.py:info:41"
+        },
+        {
+          "target": "cleanup",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 83,
+          "resolvedId": "backend/util/process.py:cleanup:47"
+        },
+        {
+          "target": "info",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 84,
+          "resolvedId": "backend/util/logging.py:info:41"
+        },
+        {
+          "target": "info",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 85,
+          "resolvedId": "backend/util/logging.py:info:41"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/process.py:llprint:88",
+      "name": "llprint",
+      "startLine": 88,
+      "endLine": 93,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "write",
+          "resolved": false,
+          "confidence": 0,
+          "line": 93
+        },
+        {
+          "target": "fileno",
+          "resolved": false,
+          "confidence": 0,
+          "line": 93
+        },
+        {
+          "target": "encode",
+          "resolved": false,
+          "confidence": 0,
+          "line": 93
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/process.py:_self_terminate:95",
+      "name": "_self_terminate",
+      "startLine": 95,
+      "endLine": 102,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "exit",
+          "resolved": false,
+          "confidence": 0,
+          "line": 98
+        },
+        {
+          "target": "llprint",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 100,
+          "resolvedId": "backend/util/process.py:llprint:88"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/process.py:__enter__:106",
+      "name": "__enter__",
+      "startLine": 106,
+      "endLine": 108,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "start",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 107,
+          "resolvedId": "backend/util/process.py:start:113"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/process.py:__exit__:110",
+      "name": "__exit__",
+      "startLine": 110,
+      "endLine": 111,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "stop",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 111,
+          "resolvedId": "backend/util/process.py:stop:138"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/process.py:start:113",
+      "name": "start",
+      "startLine": 113,
+      "endLine": 136,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "execute_run_command",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 124,
+          "resolvedId": "backend/util/process.py:execute_run_command:54"
+        },
+        {
+          "target": "silent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 124
+        },
+        {
+          "target": "Process",
+          "resolved": false,
+          "confidence": 0,
+          "line": 127
+        },
+        {
+          "target": "start",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 133,
+          "resolvedId": "backend/util/process.py:start:113"
+        },
+        {
+          "target": "info",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 134,
+          "resolvedId": "backend/util/logging.py:info:41"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/process.py:stop:138",
+      "name": "stop",
+      "startLine": 138,
+      "endLine": 149,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "terminate",
+          "resolved": false,
+          "confidence": 0,
+          "line": 145
+        },
+        {
+          "target": "join",
+          "resolved": false,
+          "confidence": 0,
+          "line": 146
+        },
+        {
+          "target": "info",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 148,
+          "resolvedId": "backend/util/logging.py:info:41"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/process.py:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 150,
+      "isEntryPoint": false,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "getLogger",
+          "resolved": false,
+          "confidence": 0,
+          "line": 13
+        },
+        {
+          "target": "get_all_start_methods",
+          "resolved": false,
+          "confidence": 0,
+          "line": 25
+        },
+        {
+          "target": "set_start_method",
+          "resolved": false,
+          "confidence": 0,
+          "line": 26
+        },
+        {
+          "target": "warning",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 28,
+          "resolvedId": "backend/util/logging.py:warning:45"
+        },
+        {
+          "target": "set_start_method",
+          "resolved": false,
+          "confidence": 0,
+          "line": 29
+        },
+        {
+          "target": "configure_logging",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 31,
+          "resolvedId": "backend/util/logging.py:configure_logging:8"
+        },
+        {
+          "target": "sentry_init",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 32,
+          "resolvedId": "backend/util/metrics.py:sentry_init:24"
+        },
+        {
+          "target": "signal",
+          "resolved": false,
+          "confidence": 0,
+          "line": 55
+        },
+        {
+          "target": "signal",
+          "resolved": false,
+          "confidence": 0,
+          "line": 56
+        },
+        {
+          "target": "open",
+          "resolved": false,
+          "confidence": 0,
+          "line": 60
+        },
+        {
+          "target": "open",
+          "resolved": false,
+          "confidence": 0,
+          "line": 61
+        },
+        {
+          "target": "set_service_name",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 63,
+          "resolvedId": "backend/util/settings.py:set_service_name:26"
+        },
+        {
+          "target": "info",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 64,
+          "resolvedId": "backend/util/logging.py:info:41"
+        },
+        {
+          "target": "run",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 65,
+          "resolvedId": "backend/util/process.py:run:37"
+        },
+        {
+          "target": "warning",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 67,
+          "resolvedId": "backend/util/logging.py:warning:45"
+        },
+        {
+          "target": "type",
+          "resolved": false,
+          "confidence": 0,
+          "line": 68
+        },
+        {
+          "target": "e",
+          "resolved": false,
+          "confidence": 0,
+          "line": 68
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 69
+        },
+        {
+          "target": "e",
+          "resolved": false,
+          "confidence": 0,
+          "line": 69
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        },
+        {
+          "target": "e",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        },
+        {
+          "target": "sentry_capture_error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 76,
+          "resolvedId": "backend/util/metrics.py:sentry_capture_error:49"
+        },
+        {
+          "target": "e",
+          "resolved": false,
+          "confidence": 0,
+          "line": 76
+        },
+        {
+          "target": "info",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 82,
+          "resolvedId": "backend/util/logging.py:info:41"
+        },
+        {
+          "target": "cleanup",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 83,
+          "resolvedId": "backend/util/process.py:cleanup:47"
+        },
+        {
+          "target": "info",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 84,
+          "resolvedId": "backend/util/logging.py:info:41"
+        },
+        {
+          "target": "info",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 85,
+          "resolvedId": "backend/util/logging.py:info:41"
+        },
+        {
+          "target": "write",
+          "resolved": false,
+          "confidence": 0,
+          "line": 93
+        },
+        {
+          "target": "fileno",
+          "resolved": false,
+          "confidence": 0,
+          "line": 93
+        },
+        {
+          "target": "encode",
+          "resolved": false,
+          "confidence": 0,
+          "line": 93
+        },
+        {
+          "target": "exit",
+          "resolved": false,
+          "confidence": 0,
+          "line": 98
+        },
+        {
+          "target": "llprint",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 100,
+          "resolvedId": "backend/util/process.py:llprint:88"
+        },
+        {
+          "target": "start",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 107,
+          "resolvedId": "backend/util/process.py:start:113"
+        },
+        {
+          "target": "stop",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 111,
+          "resolvedId": "backend/util/process.py:stop:138"
+        },
+        {
+          "target": "execute_run_command",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 124,
+          "resolvedId": "backend/util/process.py:execute_run_command:54"
+        },
+        {
+          "target": "silent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 124
+        },
+        {
+          "target": "Process",
+          "resolved": false,
+          "confidence": 0,
+          "line": 127
+        },
+        {
+          "target": "start",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 133,
+          "resolvedId": "backend/util/process.py:start:113"
+        },
+        {
+          "target": "info",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 134,
+          "resolvedId": "backend/util/logging.py:info:41"
+        },
+        {
+          "target": "terminate",
+          "resolved": false,
+          "confidence": 0,
+          "line": 145
+        },
+        {
+          "target": "join",
+          "resolved": false,
+          "confidence": 0,
+          "line": 146
+        },
+        {
+          "target": "info",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 148,
+          "resolvedId": "backend/util/logging.py:info:41"
+        },
+        {
+          "target": "getLogger",
+          "resolved": false,
+          "confidence": 0,
+          "line": 13
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "logging",
+          "operation": "read",
+          "line": 13,
+          "fields": []
+        }
+      ]
+    }
+  ]
+}

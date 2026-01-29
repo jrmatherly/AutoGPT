@@ -1,0 +1,307 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.219Z",
+  "checksum": "6952e83688abe729",
+  "file": "backend/blocks/todoist/sections.py",
+  "functions": [
+    {
+      "id": "backend/blocks/todoist/sections.py:__init__:38",
+      "name": "__init__",
+      "startLine": 38,
+      "endLine": 80,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 39,
+          "resolvedId": "backend/blocks/todoist/sections.py:__init__:38"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 39
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/todoist/sections.py:get_section_lists:83",
+      "name": "get_section_lists",
+      "startLine": 83,
+      "endLine": 102,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "TodoistAPI",
+          "resolved": false,
+          "confidence": 0,
+          "line": 87
+        },
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 87,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        },
+        {
+          "target": "get_sections",
+          "resolved": false,
+          "confidence": 0,
+          "line": 88
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 95
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 96
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 97
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/todoist/sections.py:run:104",
+      "name": "run",
+      "startLine": 104,
+      "endLine": 124,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "get_section_lists",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 112,
+          "resolvedId": "backend/blocks/todoist/sections.py:get_section_lists:83"
+        },
+        {
+          "target": "credentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 113
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 124
+        },
+        {
+          "target": "e",
+          "resolved": false,
+          "confidence": 0,
+          "line": 124
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/todoist/sections.py:__init__:209",
+      "name": "__init__",
+      "startLine": 209,
+      "endLine": 233,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 210,
+          "resolvedId": "backend/blocks/todoist/sections.py:__init__:38"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 210
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/todoist/sections.py:get_section:236",
+      "name": "get_section",
+      "startLine": 236,
+      "endLine": 243,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "TodoistAPI",
+          "resolved": false,
+          "confidence": 0,
+          "line": 238
+        },
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 238,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        },
+        {
+          "target": "get_section",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 239,
+          "resolvedId": "backend/blocks/todoist/sections.py:get_section:236"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/todoist/sections.py:run:245",
+      "name": "run",
+      "startLine": 245,
+      "endLine": 262,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "get_section",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 253,
+          "resolvedId": "backend/blocks/todoist/sections.py:get_section:236"
+        },
+        {
+          "target": "credentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 253
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 262
+        },
+        {
+          "target": "e",
+          "resolved": false,
+          "confidence": 0,
+          "line": 262
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/todoist/sections.py:__init__:277",
+      "name": "__init__",
+      "startLine": 277,
+      "endLine": 289,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 278,
+          "resolvedId": "backend/blocks/todoist/sections.py:__init__:38"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 278
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/todoist/sections.py:delete_section:292",
+      "name": "delete_section",
+      "startLine": 292,
+      "endLine": 299,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "TodoistAPI",
+          "resolved": false,
+          "confidence": 0,
+          "line": 294
+        },
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 294,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        },
+        {
+          "target": "delete_section",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 295,
+          "resolvedId": "backend/blocks/todoist/sections.py:delete_section:292"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/todoist/sections.py:run:301",
+      "name": "run",
+      "startLine": 301,
+      "endLine": 313,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "delete_section",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 309,
+          "resolvedId": "backend/blocks/todoist/sections.py:delete_section:292"
+        },
+        {
+          "target": "credentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 309
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 313
+        },
+        {
+          "target": "e",
+          "resolved": false,
+          "confidence": 0,
+          "line": 313
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

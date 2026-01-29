@@ -1,0 +1,296 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.178Z",
+  "checksum": "f1278adf1f37dcda",
+  "file": "backend/blocks/smartlead/campaign.py",
+  "functions": [
+    {
+      "id": "backend/blocks/smartlead/campaign.py:__init__:55",
+      "name": "__init__",
+      "startLine": 55,
+      "endLine": 86,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 56,
+          "resolvedId": "backend/blocks/smartlead/campaign.py:__init__:55"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 56
+        },
+        {
+          "target": "CreateCampaignResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 79
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/smartlead/campaign.py:create_campaign:89",
+      "name": "create_campaign",
+      "startLine": 89,
+      "endLine": 93,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "SmartLeadClient",
+          "resolved": false,
+          "confidence": 0,
+          "line": 92
+        },
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 92,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        },
+        {
+          "target": "create_campaign",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 93,
+          "resolvedId": "backend/blocks/smartlead/campaign.py:create_campaign:89"
+        },
+        {
+          "target": "CreateCampaignRequest",
+          "resolved": false,
+          "confidence": 0,
+          "line": 93
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/smartlead/campaign.py:run:95",
+      "name": "run",
+      "startLine": 95,
+      "endLine": 108,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "create_campaign",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 102,
+          "resolvedId": "backend/blocks/smartlead/campaign.py:create_campaign:89"
+        },
+        {
+          "target": "credentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 102
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/smartlead/campaign.py:__init__:159",
+      "name": "__init__",
+      "startLine": 159,
+      "endLine": 199,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 160,
+          "resolvedId": "backend/blocks/smartlead/campaign.py:__init__:55"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 160
+        },
+        {
+          "target": "AddLeadsToCampaignResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 183
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/smartlead/campaign.py:add_leads_to_campaign:202",
+      "name": "add_leads_to_campaign",
+      "startLine": 202,
+      "endLine": 217,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "SmartLeadClient",
+          "resolved": false,
+          "confidence": 0,
+          "line": 205
+        },
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 205,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        },
+        {
+          "target": "add_leads_to_campaign",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 206,
+          "resolvedId": "backend/blocks/smartlead/campaign.py:add_leads_to_campaign:202"
+        },
+        {
+          "target": "AddLeadsRequest",
+          "resolved": false,
+          "confidence": 0,
+          "line": 207
+        },
+        {
+          "target": "LeadUploadSettings",
+          "resolved": false,
+          "confidence": 0,
+          "line": 210
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/smartlead/campaign.py:run:219",
+      "name": "run",
+      "startLine": 219,
+      "endLine": 245,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "add_leads_to_campaign",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 226,
+          "resolvedId": "backend/blocks/smartlead/campaign.py:add_leads_to_campaign:202"
+        },
+        {
+          "target": "credentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 227
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/smartlead/campaign.py:__init__:278",
+      "name": "__init__",
+      "startLine": 278,
+      "endLine": 303,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 279,
+          "resolvedId": "backend/blocks/smartlead/campaign.py:__init__:55"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 279
+        },
+        {
+          "target": "SaveSequencesResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 298
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/smartlead/campaign.py:save_campaign_sequences:306",
+      "name": "save_campaign_sequences",
+      "startLine": 306,
+      "endLine": 312,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "SmartLeadClient",
+          "resolved": false,
+          "confidence": 0,
+          "line": 309
+        },
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 309,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        },
+        {
+          "target": "save_campaign_sequences",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 310,
+          "resolvedId": "backend/blocks/smartlead/campaign.py:save_campaign_sequences:306"
+        },
+        {
+          "target": "SaveSequencesRequest",
+          "resolved": false,
+          "confidence": 0,
+          "line": 311
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/smartlead/campaign.py:run:314",
+      "name": "run",
+      "startLine": 314,
+      "endLine": 332,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "save_campaign_sequences",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 321,
+          "resolvedId": "backend/blocks/smartlead/campaign.py:save_campaign_sequences:306"
+        },
+        {
+          "target": "credentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 322
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

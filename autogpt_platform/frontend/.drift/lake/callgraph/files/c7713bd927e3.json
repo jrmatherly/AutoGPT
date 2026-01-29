@@ -1,0 +1,70 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.113Z",
+  "checksum": "d6bb673bd42d7ca0",
+  "file": "src/hooks/useLibraryAgents/useLibraryAgents.ts",
+  "functions": [
+    {
+      "id": "src/hooks/useLibraryAgents/useLibraryAgents.ts:useLibraryAgents:6",
+      "name": "useLibraryAgents",
+      "startLine": 6,
+      "endLine": 34,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useGetV2ListLibraryAgentsInfinite",
+          "resolved": false,
+          "confidence": 0,
+          "line": 8
+        },
+        {
+          "target": "unpaginate",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 24,
+          "resolvedId": "src/app/api/helpers.ts:unpaginate:62"
+        },
+        {
+          "target": "agentsQueryData",
+          "resolved": false,
+          "confidence": 0,
+          "line": 24
+        },
+        {
+          "target": "useMemo",
+          "resolved": false,
+          "confidence": 0,
+          "line": 27
+        },
+        {
+          "target": "buildAgentInfoMap",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 28,
+          "resolvedId": "src/hooks/useLibraryAgents/store.ts:buildAgentInfoMap:5"
+        },
+        {
+          "target": "agents",
+          "resolved": false,
+          "confidence": 0,
+          "line": 28
+        },
+        {
+          "target": "join",
+          "resolved": false,
+          "confidence": 0,
+          "line": 30
+        },
+        {
+          "target": "map",
+          "resolved": false,
+          "confidence": 0,
+          "line": 30
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

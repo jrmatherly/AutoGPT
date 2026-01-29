@@ -64,6 +64,7 @@ https://platform.agpt.co/auth/authorize?
 #### Parameters
 
 | Parameter | Required | Description |
+
 |-----------|----------|-------------|
 | `client_id` | Yes | Your OAuth application's client ID |
 | `redirect_uri` | Yes | URL to redirect after authorization (must match registered URI) |
@@ -197,6 +198,7 @@ https://platform.agpt.co/auth/integrations/setup-wizard?
 #### Parameters
 
 | Parameter | Required | Description |
+
 |-----------|----------|-------------|
 | `client_id` | Yes | Your OAuth application's client ID |
 | `providers` | Yes | Base64-encoded JSON array of provider configurations |
@@ -242,6 +244,7 @@ When using the Integration Setup Wizard, you need to specify which scopes to req
 Documentation: https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/scopes-for-oauth-apps
 
 | Scope | Description |
+
 |-------|-------------|
 | `repo` | Full control of private repositories |
 | `read:user` | Read user profile data |
@@ -260,6 +263,7 @@ Documentation: https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/sc
 Documentation: https://developers.google.com/identity/protocols/oauth2/scopes
 
 | Scope | Description |
+
 |-------|-------------|
 | `email` | View email address (default) |
 | `profile` | View basic profile info (default) |
@@ -287,6 +291,7 @@ Notion uses a single OAuth scope that grants access based on pages the user sele
 Documentation: https://developers.linear.app/docs/oauth/authentication
 
 | Scope | Description |
+
 |-------|-------------|
 | `read` | Read access to Linear data |
 | `write` | Write access to Linear data |
@@ -349,6 +354,7 @@ verifier, challenge = generate_pkce()
 ### Token Lifetimes
 
 | Token Type | Lifetime |
+
 |------------|----------|
 | Access Token | 1 hour |
 | Refresh Token | 30 days |
@@ -414,6 +420,7 @@ Content-Type: application/json
 ### Common OAuth Errors
 
 | Error | Description | Solution |
+
 |-------|-------------|----------|
 | `invalid_client` | Client ID not found or inactive | Verify client ID is correct |
 | `invalid_redirect_uri` | Redirect URI not registered | Register URI with platform admin |
@@ -424,6 +431,7 @@ Content-Type: application/json
 ### HTTP Status Codes
 
 | Code | Meaning |
+
 |------|---------|
 | 200 | Success |
 | 400 | Bad request (invalid parameters) |

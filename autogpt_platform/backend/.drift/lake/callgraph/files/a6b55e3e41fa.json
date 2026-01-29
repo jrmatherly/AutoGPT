@@ -1,0 +1,54 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.198Z",
+  "checksum": "699355644d49c737",
+  "file": "backend/blocks/helpers/http.py",
+  "functions": [
+    {
+      "id": "backend/blocks/helpers/http.py:get_request:8",
+      "name": "get_request",
+      "startLine": 8,
+      "endLine": 17,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 13,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "url",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 13,
+          "resolvedId": "backend/data/integrations.py:url:48"
+        },
+        {
+          "target": "Requests",
+          "resolved": false,
+          "confidence": 0,
+          "line": 13
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 15,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "text",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 17,
+          "resolvedId": "backend/util/request.py:text:297"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

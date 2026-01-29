@@ -1,0 +1,653 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.168Z",
+  "checksum": "7d28d77feaeefdf7",
+  "file": "backend/api/features/executions/review/model.py",
+  "functions": [
+    {
+      "id": "backend/api/features/executions/review/model.py:from_db:74",
+      "name": "from_db",
+      "startLine": 74,
+      "endLine": 106,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "cls",
+          "resolved": false,
+          "confidence": 0,
+          "line": 89
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/executions/review/model.py:validate_reviewed_data:132",
+      "name": "validate_reviewed_data",
+      "startLine": 132,
+      "endLine": 179,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "validate_safejson_type",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 154,
+          "resolvedId": "backend/api/features/executions/review/model.py:validate_safejson_type:138"
+        },
+        {
+          "target": "v",
+          "resolved": false,
+          "confidence": 0,
+          "line": 154
+        },
+        {
+          "target": "ValueError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 155
+        },
+        {
+          "target": "dumps",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 159,
+          "resolvedId": "backend/util/json.py:dumps:20"
+        },
+        {
+          "target": "v",
+          "resolved": false,
+          "confidence": 0,
+          "line": 159
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 160
+        },
+        {
+          "target": "json_str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 160
+        },
+        {
+          "target": "ValueError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 161
+        },
+        {
+          "target": "ValueError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 163
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 163
+        },
+        {
+          "target": "e",
+          "resolved": false,
+          "confidence": 0,
+          "line": 163
+        },
+        {
+          "target": "check_depth",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 178,
+          "resolvedId": "backend/api/features/executions/review/model.py:check_depth:166"
+        },
+        {
+          "target": "v",
+          "resolved": false,
+          "confidence": 0,
+          "line": 178
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 142
+        },
+        {
+          "target": "obj",
+          "resolved": false,
+          "confidence": 0,
+          "line": 142
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 144
+        },
+        {
+          "target": "obj",
+          "resolved": false,
+          "confidence": 0,
+          "line": 144
+        },
+        {
+          "target": "dict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 144
+        },
+        {
+          "target": "all",
+          "resolved": false,
+          "confidence": 0,
+          "line": 145
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 146
+        },
+        {
+          "target": "k",
+          "resolved": false,
+          "confidence": 0,
+          "line": 146
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 146
+        },
+        {
+          "target": "validate_safejson_type",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 146,
+          "resolvedId": "backend/api/features/executions/review/model.py:validate_safejson_type:138"
+        },
+        {
+          "target": "v",
+          "resolved": false,
+          "confidence": 0,
+          "line": 146
+        },
+        {
+          "target": "items",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 147,
+          "resolvedId": "backend/integrations/oauth/__init__.py:items:123"
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 149
+        },
+        {
+          "target": "obj",
+          "resolved": false,
+          "confidence": 0,
+          "line": 149
+        },
+        {
+          "target": "list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 149
+        },
+        {
+          "target": "all",
+          "resolved": false,
+          "confidence": 0,
+          "line": 150
+        },
+        {
+          "target": "validate_safejson_type",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 150,
+          "resolvedId": "backend/api/features/executions/review/model.py:validate_safejson_type:138"
+        },
+        {
+          "target": "item",
+          "resolved": false,
+          "confidence": 0,
+          "line": 150
+        },
+        {
+          "target": "ValueError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 169
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 171
+        },
+        {
+          "target": "obj",
+          "resolved": false,
+          "confidence": 0,
+          "line": 171
+        },
+        {
+          "target": "dict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 171
+        },
+        {
+          "target": "values",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 172,
+          "resolvedId": "backend/integrations/oauth/__init__.py:values:112"
+        },
+        {
+          "target": "check_depth",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 173,
+          "resolvedId": "backend/api/features/executions/review/model.py:check_depth:166"
+        },
+        {
+          "target": "value",
+          "resolved": false,
+          "confidence": 0,
+          "line": 173
+        },
+        {
+          "target": "max_depth",
+          "resolved": false,
+          "confidence": 0,
+          "line": 173
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 174
+        },
+        {
+          "target": "obj",
+          "resolved": false,
+          "confidence": 0,
+          "line": 174
+        },
+        {
+          "target": "list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 174
+        },
+        {
+          "target": "check_depth",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 176,
+          "resolvedId": "backend/api/features/executions/review/model.py:check_depth:166"
+        },
+        {
+          "target": "item",
+          "resolved": false,
+          "confidence": 0,
+          "line": 176
+        },
+        {
+          "target": "max_depth",
+          "resolved": false,
+          "confidence": 0,
+          "line": 176
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/executions/review/model.py:validate_safejson_type:138",
+      "name": "validate_safejson_type",
+      "startLine": 138,
+      "endLine": 152,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 142
+        },
+        {
+          "target": "obj",
+          "resolved": false,
+          "confidence": 0,
+          "line": 142
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 144
+        },
+        {
+          "target": "obj",
+          "resolved": false,
+          "confidence": 0,
+          "line": 144
+        },
+        {
+          "target": "dict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 144
+        },
+        {
+          "target": "all",
+          "resolved": false,
+          "confidence": 0,
+          "line": 145
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 146
+        },
+        {
+          "target": "k",
+          "resolved": false,
+          "confidence": 0,
+          "line": 146
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 146
+        },
+        {
+          "target": "validate_safejson_type",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 146,
+          "resolvedId": "backend/api/features/executions/review/model.py:validate_safejson_type:138"
+        },
+        {
+          "target": "v",
+          "resolved": false,
+          "confidence": 0,
+          "line": 146
+        },
+        {
+          "target": "items",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 147,
+          "resolvedId": "backend/integrations/oauth/__init__.py:items:123"
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 149
+        },
+        {
+          "target": "obj",
+          "resolved": false,
+          "confidence": 0,
+          "line": 149
+        },
+        {
+          "target": "list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 149
+        },
+        {
+          "target": "all",
+          "resolved": false,
+          "confidence": 0,
+          "line": 150
+        },
+        {
+          "target": "validate_safejson_type",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 150,
+          "resolvedId": "backend/api/features/executions/review/model.py:validate_safejson_type:138"
+        },
+        {
+          "target": "item",
+          "resolved": false,
+          "confidence": 0,
+          "line": 150
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/executions/review/model.py:check_depth:166",
+      "name": "check_depth",
+      "startLine": 166,
+      "endLine": 176,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "ValueError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 169
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 171
+        },
+        {
+          "target": "obj",
+          "resolved": false,
+          "confidence": 0,
+          "line": 171
+        },
+        {
+          "target": "dict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 171
+        },
+        {
+          "target": "values",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 172,
+          "resolvedId": "backend/integrations/oauth/__init__.py:values:112"
+        },
+        {
+          "target": "check_depth",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 173,
+          "resolvedId": "backend/api/features/executions/review/model.py:check_depth:166"
+        },
+        {
+          "target": "value",
+          "resolved": false,
+          "confidence": 0,
+          "line": 173
+        },
+        {
+          "target": "max_depth",
+          "resolved": false,
+          "confidence": 0,
+          "line": 173
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 174
+        },
+        {
+          "target": "obj",
+          "resolved": false,
+          "confidence": 0,
+          "line": 174
+        },
+        {
+          "target": "list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 174
+        },
+        {
+          "target": "check_depth",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 176,
+          "resolvedId": "backend/api/features/executions/review/model.py:check_depth:166"
+        },
+        {
+          "target": "item",
+          "resolved": false,
+          "confidence": 0,
+          "line": 176
+        },
+        {
+          "target": "max_depth",
+          "resolved": false,
+          "confidence": 0,
+          "line": 176
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/executions/review/model.py:validate_message:183",
+      "name": "validate_message",
+      "startLine": 183,
+      "endLine": 187,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 185
+        },
+        {
+          "target": "strip",
+          "resolved": false,
+          "confidence": 0,
+          "line": 185
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/executions/review/model.py:validate_review_completeness:206",
+      "name": "validate_review_completeness",
+      "startLine": 206,
+      "endLine": 217,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "ValueError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 209
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 213
+        },
+        {
+          "target": "node_ids",
+          "resolved": false,
+          "confidence": 0,
+          "line": 213
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 213
+        },
+        {
+          "target": "set",
+          "resolved": false,
+          "confidence": 0,
+          "line": 213
+        },
+        {
+          "target": "node_ids",
+          "resolved": false,
+          "confidence": 0,
+          "line": 213
+        },
+        {
+          "target": "set",
+          "resolved": false,
+          "confidence": 0,
+          "line": 214
+        },
+        {
+          "target": "node_ids",
+          "resolved": false,
+          "confidence": 0,
+          "line": 214
+        },
+        {
+          "target": "count",
+          "resolved": false,
+          "confidence": 0,
+          "line": 214
+        },
+        {
+          "target": "nid",
+          "resolved": false,
+          "confidence": 0,
+          "line": 214
+        },
+        {
+          "target": "ValueError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 215
+        },
+        {
+          "target": "join",
+          "resolved": false,
+          "confidence": 0,
+          "line": 215
+        },
+        {
+          "target": "duplicates",
+          "resolved": false,
+          "confidence": 0,
+          "line": 215
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

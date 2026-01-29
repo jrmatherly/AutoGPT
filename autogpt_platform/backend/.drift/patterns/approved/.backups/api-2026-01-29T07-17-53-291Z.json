@@ -1,0 +1,3130 @@
+{
+  "version": "1.0.0",
+  "category": "api",
+  "patterns": [
+    {
+      "id": "676dfc176a1a796b",
+      "subcategory": "route-structure",
+      "name": "Route Structure Detector",
+      "description": "Detects route URL structure patterns and flags inconsistencies",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "api/route-structure",
+          "patternId": "api/route-structure/restful"
+        }
+      },
+      "confidence": {
+        "frequency": 0.31,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 31,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "backend/api/external/fastapi_app.py",
+          "line": 16,
+          "column": 47,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/external/v1/integrations.py",
+          "line": 256,
+          "column": 15,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/admin/credit_admin_routes.py",
+          "line": 23,
+          "column": 2,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/admin/execution_analytics_routes.py",
+          "line": 112,
+          "column": 2,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/admin/store_admin_routes.py",
+          "line": 24,
+          "column": 2,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/analytics.py",
+          "line": 49,
+          "column": 2,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/builder/routes.py",
+          "line": 40,
+          "column": 2,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/chat/routes.py",
+          "line": 87,
+          "column": 2,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/chat/tools/agent_generator/service.py",
+          "line": 81,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/executions/review/review_routes_test.py",
+          "line": 79,
+          "column": 33,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/executions/review/routes.py",
+          "line": 38,
+          "column": 2,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/integrations/router.py",
+          "line": 71,
+          "column": 2,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/library/routes/agents.py",
+          "line": 87,
+          "column": 2,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/library/routes/presets.py",
+          "line": 29,
+          "column": 2,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/oauth.py",
+          "line": 98,
+          "column": 2,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/oauth_test.py",
+          "line": 179,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/organization/routes.py",
+          "line": 171,
+          "column": 2,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/otto/routes.py",
+          "line": 14,
+          "column": 2,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/postmark/postmark.py",
+          "line": 37,
+          "column": 2,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/store/content_handlers_test.py",
+          "line": 383,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/store/routes.py",
+          "line": 33,
+          "column": 2,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/v1.py",
+          "line": 129,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/middleware/security.py",
+          "line": 23,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/middleware/security_test.py",
+          "line": 15,
+          "column": 6,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/rest_api.py",
+          "line": 268,
+          "column": 12,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/utils/api_key_auth.py",
+          "line": 36,
+          "column": 10,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/ws_api.py",
+          "line": 324,
+          "column": 2,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/blocks/youtube.py",
+          "line": 112,
+          "column": 39,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/util/cloud_storage_test.py",
+          "line": 29,
+          "column": 46,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/util/file_test.py",
+          "line": 56,
+          "column": 59,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/util/request_test.py",
+          "line": 42,
+          "column": 33,
+          "isOutlier": false,
+          "confidence": 1
+        }
+      ],
+      "outliers": [
+        {
+          "file": "backend/api/features/executions/review/review_routes_test.py",
+          "line": 100,
+          "column": 33,
+          "reason": "URL segment 'pending?page=2&page_size=10' uses snake_case but project uses kebab-case/lowercase",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "backend/api/features/executions/review/review_routes_test.py",
+          "line": 132,
+          "column": 33,
+          "reason": "URL segment 'test_graph_exec_456' uses snake_case but project uses kebab-case/lowercase",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "backend/api/features/executions/review/review_routes_test.py",
+          "line": 151,
+          "column": 33,
+          "reason": "URL segment 'test_graph_exec_456' uses snake_case but project uses kebab-case/lowercase",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "backend/api/features/integrations/router.py",
+          "line": 729,
+          "column": 2,
+          "reason": "URL segment 'sso_url' uses snake_case but project uses kebab-case/lowercase",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "backend/api/features/integrations/router.py",
+          "line": 729,
+          "column": 1,
+          "reason": "URL segment 'sso_url' uses snake_case but project uses kebab-case/lowercase",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "backend/api/features/oauth.py",
+          "line": 336,
+          "column": 2,
+          "reason": "Resource 'token' should use plural form for RESTful consistency",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "backend/api/features/oauth.py",
+          "line": 336,
+          "column": 1,
+          "reason": "Resource 'token' should use plural form for RESTful consistency",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "backend/api/features/store/routes.py",
+          "line": 622,
+          "column": 2,
+          "reason": "URL segment 'generate_image' uses snake_case but project uses kebab-case/lowercase",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "backend/api/features/store/routes.py",
+          "line": 622,
+          "column": 1,
+          "reason": "URL segment 'generate_image' uses snake_case but project uses kebab-case/lowercase",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "backend/api/features/store/routes.py",
+          "line": 33,
+          "column": 2,
+          "reason": "Resource 'profile' should use plural form for RESTful consistency",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "backend/api/features/store/routes.py",
+          "line": 56,
+          "column": 2,
+          "reason": "Resource 'profile' should use plural form for RESTful consistency",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "backend/api/features/store/routes.py",
+          "line": 33,
+          "column": 1,
+          "reason": "Resource 'profile' should use plural form for RESTful consistency",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "backend/api/features/store/routes.py",
+          "line": 56,
+          "column": 1,
+          "reason": "Resource 'profile' should use plural form for RESTful consistency",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "backend/api/features/v1.py",
+          "line": 129,
+          "column": 5,
+          "reason": "Resource 'user' should use plural form for RESTful consistency",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "backend/api/features/v1.py",
+          "line": 140,
+          "column": 5,
+          "reason": "Resource 'user' should use plural form for RESTful consistency",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "backend/api/features/v1.py",
+          "line": 154,
+          "column": 5,
+          "reason": "Resource 'user' should use plural form for RESTful consistency",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "backend/api/features/v1.py",
+          "line": 168,
+          "column": 5,
+          "reason": "Resource 'user' should use plural form for RESTful consistency",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "backend/api/features/v1.py",
+          "line": 182,
+          "column": 5,
+          "reason": "Resource 'user' should use plural form for RESTful consistency",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "backend/api/features/v1.py",
+          "line": 195,
+          "column": 5,
+          "reason": "Resource 'user' should use plural form for RESTful consistency",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "backend/api/features/v1.py",
+          "line": 1213,
+          "column": 5,
+          "reason": "Route '/graphs/{graph_id}/executions/{graph_exec_id}/share' has 5 levels of nesting (max 4)",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "backend/api/features/v1.py",
+          "line": 1250,
+          "column": 5,
+          "reason": "Route '/graphs/{graph_id}/executions/{graph_exec_id}/share' has 5 levels of nesting (max 4)",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "backend/api/middleware/security.py",
+          "line": 25,
+          "column": 9,
+          "reason": "API route '/api/status' is missing version prefix",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "backend/api/middleware/security.py",
+          "line": 26,
+          "column": 9,
+          "reason": "API route '/api/blocks' is missing version prefix",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "backend/api/middleware/security.py",
+          "line": 29,
+          "column": 9,
+          "reason": "API route '/api/store/agents' is missing version prefix",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "backend/api/middleware/security.py",
+          "line": 31,
+          "column": 9,
+          "reason": "API route '/api/store/categories' is missing version prefix",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "backend/api/middleware/security.py",
+          "line": 33,
+          "column": 9,
+          "reason": "API route '/api/store/featured' is missing version prefix",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "backend/api/middleware/security.py",
+          "line": 36,
+          "column": 9,
+          "reason": "API route '/api/graphs/templates' is missing version prefix",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "backend/api/middleware/security_test.py",
+          "line": 138,
+          "column": 36,
+          "reason": "URL segment '_next' uses snake_case but project uses kebab-case/lowercase",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "backend/api/middleware/security_test.py",
+          "line": 15,
+          "column": 6,
+          "reason": "Resource 'user' should use plural form for RESTful consistency",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "backend/api/middleware/security_test.py",
+          "line": 15,
+          "column": 5,
+          "reason": "Resource 'user' should use plural form for RESTful consistency",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "backend/api/middleware/security_test.py",
+          "line": 123,
+          "column": 40,
+          "reason": "Resource 'user' should use plural form for RESTful consistency",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "backend/api/middleware/security_test.py",
+          "line": 141,
+          "column": 40,
+          "reason": "Resource 'profile' should use plural form for RESTful consistency",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "backend/api/middleware/security_test.py",
+          "line": 15,
+          "column": 14,
+          "reason": "Resource 'user' should use plural form for RESTful consistency",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "backend/api/middleware/security_test.py",
+          "line": 55,
+          "column": 9,
+          "reason": "Resource 'user' should use plural form for RESTful consistency",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "backend/api/middleware/security_test.py",
+          "line": 123,
+          "column": 45,
+          "reason": "Resource 'user' should use plural form for RESTful consistency",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "backend/api/middleware/security_test.py",
+          "line": 141,
+          "column": 45,
+          "reason": "Resource 'profile' should use plural form for RESTful consistency",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "backend/api/middleware/security_test.py",
+          "line": 15,
+          "column": 6,
+          "reason": "API route '/api/auth/user' is missing version prefix",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "backend/api/middleware/security_test.py",
+          "line": 23,
+          "column": 6,
+          "reason": "API route '/api/graphs/123/execute' is missing version prefix",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "backend/api/middleware/security_test.py",
+          "line": 27,
+          "column": 6,
+          "reason": "API route '/api/integrations/credentials' is missing version prefix",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "backend/api/middleware/security_test.py",
+          "line": 31,
+          "column": 6,
+          "reason": "API route '/api/store/agents' is missing version prefix",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "backend/api/middleware/security_test.py",
+          "line": 15,
+          "column": 5,
+          "reason": "API route '/api/auth/user' is missing version prefix",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "backend/api/middleware/security_test.py",
+          "line": 23,
+          "column": 5,
+          "reason": "API route '/api/graphs/123/execute' is missing version prefix",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "backend/api/middleware/security_test.py",
+          "line": 27,
+          "column": 5,
+          "reason": "API route '/api/integrations/credentials' is missing version prefix",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "backend/api/middleware/security_test.py",
+          "line": 31,
+          "column": 5,
+          "reason": "API route '/api/store/agents' is missing version prefix",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "backend/api/middleware/security_test.py",
+          "line": 118,
+          "column": 36,
+          "reason": "API route '/api/store/agents' is missing version prefix",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "backend/api/middleware/security_test.py",
+          "line": 123,
+          "column": 40,
+          "reason": "API route '/api/auth/user' is missing version prefix",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "backend/api/middleware/security_test.py",
+          "line": 125,
+          "column": 40,
+          "reason": "API route '/api/integrations/credentials/123' is missing version prefix",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "backend/api/middleware/security_test.py",
+          "line": 126,
+          "column": 40,
+          "reason": "API route '/api/graphs/abc123/execute' is missing version prefix",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "backend/api/middleware/security_test.py",
+          "line": 127,
+          "column": 40,
+          "reason": "API route '/api/store/xyz/submissions' is missing version prefix",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "backend/api/middleware/security_test.py",
+          "line": 141,
+          "column": 40,
+          "reason": "API route '/api/users/profile' is missing version prefix",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "backend/api/middleware/security_test.py",
+          "line": 143,
+          "column": 40,
+          "reason": "API route '/api/billing/subscription' is missing version prefix",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "backend/api/middleware/security_test.py",
+          "line": 15,
+          "column": 14,
+          "reason": "API route '/api/auth/user' is missing version prefix",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "backend/api/middleware/security_test.py",
+          "line": 23,
+          "column": 14,
+          "reason": "API route '/api/graphs/123/execute' is missing version prefix",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "backend/api/middleware/security_test.py",
+          "line": 27,
+          "column": 14,
+          "reason": "API route '/api/integrations/credentials' is missing version prefix",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "backend/api/middleware/security_test.py",
+          "line": 31,
+          "column": 14,
+          "reason": "API route '/api/store/agents' is missing version prefix",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "backend/api/middleware/security_test.py",
+          "line": 55,
+          "column": 9,
+          "reason": "API route '/api/auth/user' is missing version prefix",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "backend/api/middleware/security_test.py",
+          "line": 57,
+          "column": 9,
+          "reason": "API route '/api/graphs/123/execute' is missing version prefix",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "backend/api/middleware/security_test.py",
+          "line": 58,
+          "column": 9,
+          "reason": "API route '/api/integrations/credentials' is missing version prefix",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "backend/api/middleware/security_test.py",
+          "line": 82,
+          "column": 9,
+          "reason": "API route '/api/store/agents' is missing version prefix",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "backend/api/middleware/security_test.py",
+          "line": 118,
+          "column": 41,
+          "reason": "API route '/api/store/agents' is missing version prefix",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "backend/api/middleware/security_test.py",
+          "line": 123,
+          "column": 45,
+          "reason": "API route '/api/auth/user' is missing version prefix",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "backend/api/middleware/security_test.py",
+          "line": 125,
+          "column": 45,
+          "reason": "API route '/api/integrations/credentials/123' is missing version prefix",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "backend/api/middleware/security_test.py",
+          "line": 126,
+          "column": 45,
+          "reason": "API route '/api/graphs/abc123/execute' is missing version prefix",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "backend/api/middleware/security_test.py",
+          "line": 127,
+          "column": 45,
+          "reason": "API route '/api/store/xyz/submissions' is missing version prefix",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "backend/api/middleware/security_test.py",
+          "line": 141,
+          "column": 45,
+          "reason": "API route '/api/users/profile' is missing version prefix",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "backend/api/middleware/security_test.py",
+          "line": 143,
+          "column": 45,
+          "reason": "API route '/api/billing/subscription' is missing version prefix",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "backend/util/cloud_storage_test.py",
+          "line": 45,
+          "column": 37,
+          "reason": "URL segment 'plain;base64,SGVsbG8=' uses camelCase but project uses kebab-case/lowercase",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "backend/util/cloud_storage_test.py",
+          "line": 29,
+          "column": 46,
+          "reason": "Route 'gcs://bucket/path/to/file.txt' has 5 levels of nesting (max 4)",
+          "deviationScore": 0.7
+        }
+      ],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:30:16.803Z",
+        "lastSeen": "2026-01-29T07:17:19.540Z",
+        "source": "auto-detected",
+        "tags": [
+          "api",
+          "route-structure"
+        ],
+        "approvedAt": "2026-01-29T07:17:19.540Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "fa4ddd784cbaca7e",
+      "subcategory": "route-structure",
+      "name": "Route Structure Detector",
+      "description": "Detects route URL structure patterns and flags inconsistencies",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "api/route-structure",
+          "patternId": "api/route-structure/restful-route"
+        }
+      },
+      "confidence": {
+        "frequency": 0.08,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 8,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "backend/api/external/fastapi_app.py",
+          "line": 16,
+          "column": 47,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/chat/tools/agent_generator/service.py",
+          "line": 81,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/executions/review/review_routes_test.py",
+          "line": 79,
+          "column": 33,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/oauth_test.py",
+          "line": 179,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/middleware/security.py",
+          "line": 23,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/middleware/security_test.py",
+          "line": 15,
+          "column": 14,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/rest_api.py",
+          "line": 268,
+          "column": 12,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/blocks/youtube.py",
+          "line": 112,
+          "column": 39,
+          "isOutlier": false,
+          "confidence": 1
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:30:16.803Z",
+        "lastSeen": "2026-01-29T07:17:19.584Z",
+        "source": "auto-detected",
+        "tags": [
+          "api",
+          "route-structure"
+        ],
+        "approvedAt": "2026-01-29T07:17:19.584Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "c6977c692c529a7f",
+      "subcategory": "route-structure",
+      "name": "Route Structure Detector",
+      "description": "Detects route URL structure patterns and flags inconsistencies",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "api/route-structure",
+          "patternId": "api/route-structure/express-route"
+        }
+      },
+      "confidence": {
+        "frequency": 0.24,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 24,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "backend/api/external/v1/integrations.py",
+          "line": 256,
+          "column": 15,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/admin/credit_admin_routes.py",
+          "line": 23,
+          "column": 2,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/admin/execution_analytics_routes.py",
+          "line": 112,
+          "column": 2,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/admin/store_admin_routes.py",
+          "line": 24,
+          "column": 2,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/analytics.py",
+          "line": 49,
+          "column": 2,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/builder/routes.py",
+          "line": 40,
+          "column": 2,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/chat/routes.py",
+          "line": 87,
+          "column": 2,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/executions/review/routes.py",
+          "line": 38,
+          "column": 2,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/integrations/router.py",
+          "line": 71,
+          "column": 2,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/library/routes/agents.py",
+          "line": 87,
+          "column": 2,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/library/routes/presets.py",
+          "line": 29,
+          "column": 2,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/oauth.py",
+          "line": 98,
+          "column": 2,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/organization/routes.py",
+          "line": 171,
+          "column": 2,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/otto/routes.py",
+          "line": 14,
+          "column": 2,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/postmark/postmark.py",
+          "line": 37,
+          "column": 2,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/store/content_handlers_test.py",
+          "line": 383,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/store/routes.py",
+          "line": 33,
+          "column": 2,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/v1.py",
+          "line": 129,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/middleware/security_test.py",
+          "line": 15,
+          "column": 6,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/utils/api_key_auth.py",
+          "line": 36,
+          "column": 10,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/ws_api.py",
+          "line": 324,
+          "column": 2,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/util/cloud_storage_test.py",
+          "line": 29,
+          "column": 46,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/util/file_test.py",
+          "line": 56,
+          "column": 59,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/util/request_test.py",
+          "line": 42,
+          "column": 33,
+          "isOutlier": false,
+          "confidence": 1
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:30:16.805Z",
+        "lastSeen": "2026-01-29T07:17:19.629Z",
+        "source": "auto-detected",
+        "tags": [
+          "api",
+          "route-structure"
+        ],
+        "approvedAt": "2026-01-29T07:17:19.629Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "f65c03fd9f9d6673",
+      "subcategory": "http-methods",
+      "name": "HTTP Methods Detector",
+      "description": "Detects HTTP method usage patterns and flags RESTful convention violations",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "api/http-methods",
+          "patternId": "api/http-methods/express-handler"
+        }
+      },
+      "confidence": {
+        "frequency": 0.2,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 20,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "backend/api/external/v1/integrations.py",
+          "line": 256,
+          "column": 15,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/admin/credit_admin_routes.py",
+          "line": 23,
+          "column": 2,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/admin/execution_analytics_routes.py",
+          "line": 112,
+          "column": 2,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/admin/store_admin_routes.py",
+          "line": 24,
+          "column": 2,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/analytics.py",
+          "line": 49,
+          "column": 2,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/builder/routes.py",
+          "line": 40,
+          "column": 2,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/chat/routes.py",
+          "line": 87,
+          "column": 2,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/executions/review/routes.py",
+          "line": 38,
+          "column": 2,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/integrations/router.py",
+          "line": 71,
+          "column": 2,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/library/routes/agents.py",
+          "line": 87,
+          "column": 2,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/library/routes/presets.py",
+          "line": 29,
+          "column": 2,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/oauth.py",
+          "line": 98,
+          "column": 2,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/organization/routes.py",
+          "line": 171,
+          "column": 2,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/otto/routes.py",
+          "line": 14,
+          "column": 2,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/postmark/postmark.py",
+          "line": 37,
+          "column": 2,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/store/routes.py",
+          "line": 33,
+          "column": 2,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/v1.py",
+          "line": 129,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/middleware/security_test.py",
+          "line": 15,
+          "column": 6,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/utils/api_key_auth.py",
+          "line": 36,
+          "column": 10,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/ws_api.py",
+          "line": 324,
+          "column": 2,
+          "isOutlier": false,
+          "confidence": 1
+        }
+      ],
+      "outliers": [
+        {
+          "file": "backend/api/features/admin/store_admin_routes.py",
+          "line": 68,
+          "column": 2,
+          "reason": "Using POST for read operation. Consider using GET for idempotent read operations.",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "backend/api/features/admin/store_admin_routes.py",
+          "line": 68,
+          "column": 1,
+          "reason": "Using POST for read operation. Consider using GET for idempotent read operations.",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "backend/api/features/admin/store_admin_routes.py",
+          "line": 68,
+          "column": 2,
+          "reason": "Inconsistent HTTP method for read operation. Most read operations use GET.",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "backend/api/features/admin/store_admin_routes.py",
+          "line": 68,
+          "column": 1,
+          "reason": "Inconsistent HTTP method for read operation. Most read operations use GET.",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "backend/api/features/chat/tools/agent_generator/service.py",
+          "line": 81,
+          "column": 26,
+          "reason": "Using POST for read operation. Consider using GET for idempotent read operations.",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "backend/api/features/chat/tools/agent_generator/service.py",
+          "line": 81,
+          "column": 26,
+          "reason": "Inconsistent HTTP method for read operation. Most read operations use GET.",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "backend/api/features/executions/review/review_routes_test.py",
+          "line": 227,
+          "column": 22,
+          "reason": "Using POST for read operation. Consider using GET for idempotent read operations.",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "backend/api/features/executions/review/review_routes_test.py",
+          "line": 303,
+          "column": 22,
+          "reason": "Using POST for read operation. Consider using GET for idempotent read operations.",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "backend/api/features/executions/review/review_routes_test.py",
+          "line": 429,
+          "column": 22,
+          "reason": "Using POST for read operation. Consider using GET for idempotent read operations.",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "backend/api/features/executions/review/review_routes_test.py",
+          "line": 448,
+          "column": 22,
+          "reason": "Using POST for read operation. Consider using GET for idempotent read operations.",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "backend/api/features/executions/review/review_routes_test.py",
+          "line": 506,
+          "column": 22,
+          "reason": "Using POST for read operation. Consider using GET for idempotent read operations.",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "backend/api/features/executions/review/review_routes_test.py",
+          "line": 556,
+          "column": 22,
+          "reason": "Using POST for read operation. Consider using GET for idempotent read operations.",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "backend/api/features/executions/review/review_routes_test.py",
+          "line": 595,
+          "column": 22,
+          "reason": "Using POST for read operation. Consider using GET for idempotent read operations.",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "backend/api/features/executions/review/review_routes_test.py",
+          "line": 700,
+          "column": 22,
+          "reason": "Using POST for read operation. Consider using GET for idempotent read operations.",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "backend/api/features/executions/review/review_routes_test.py",
+          "line": 822,
+          "column": 22,
+          "reason": "Using POST for read operation. Consider using GET for idempotent read operations.",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "backend/api/features/executions/review/review_routes_test.py",
+          "line": 999,
+          "column": 22,
+          "reason": "Using POST for read operation. Consider using GET for idempotent read operations.",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "backend/api/features/executions/review/review_routes_test.py",
+          "line": 1216,
+          "column": 22,
+          "reason": "Using POST for read operation. Consider using GET for idempotent read operations.",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "backend/api/features/executions/review/review_routes_test.py",
+          "line": 79,
+          "column": 22,
+          "reason": "Inconsistent HTTP method for read operation. Most read operations use POST.",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "backend/api/features/executions/review/review_routes_test.py",
+          "line": 100,
+          "column": 22,
+          "reason": "Inconsistent HTTP method for read operation. Most read operations use POST.",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "backend/api/features/executions/review/review_routes_test.py",
+          "line": 132,
+          "column": 22,
+          "reason": "Inconsistent HTTP method for read operation. Most read operations use POST.",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "backend/api/features/executions/review/review_routes_test.py",
+          "line": 151,
+          "column": 22,
+          "reason": "Inconsistent HTTP method for read operation. Most read operations use POST.",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "backend/api/features/executions/review/routes.py",
+          "line": 124,
+          "column": 2,
+          "reason": "Using POST for read operation. Consider using GET for idempotent read operations.",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "backend/api/features/executions/review/routes.py",
+          "line": 124,
+          "column": 1,
+          "reason": "Using POST for read operation. Consider using GET for idempotent read operations.",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "backend/api/features/executions/review/routes.py",
+          "line": 124,
+          "column": 2,
+          "reason": "Inconsistent HTTP method for read operation. Most read operations use GET.",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "backend/api/features/executions/review/routes.py",
+          "line": 124,
+          "column": 1,
+          "reason": "Inconsistent HTTP method for read operation. Most read operations use GET.",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "backend/api/features/oauth.py",
+          "line": 669,
+          "column": 2,
+          "reason": "Using POST for read operation. Consider using GET for idempotent read operations.",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "backend/api/features/oauth.py",
+          "line": 669,
+          "column": 1,
+          "reason": "Using POST for read operation. Consider using GET for idempotent read operations.",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "backend/api/features/oauth.py",
+          "line": 669,
+          "column": 2,
+          "reason": "Inconsistent HTTP method for read operation. Most read operations use GET.",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "backend/api/features/oauth.py",
+          "line": 669,
+          "column": 1,
+          "reason": "Inconsistent HTTP method for read operation. Most read operations use GET.",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "backend/api/features/store/routes.py",
+          "line": 305,
+          "column": 2,
+          "reason": "Using POST for read operation. Consider using GET for idempotent read operations.",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "backend/api/features/store/routes.py",
+          "line": 305,
+          "column": 1,
+          "reason": "Using POST for read operation. Consider using GET for idempotent read operations.",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "backend/api/features/store/routes.py",
+          "line": 305,
+          "column": 2,
+          "reason": "Inconsistent HTTP method for read operation. Most read operations use GET.",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "backend/api/features/store/routes.py",
+          "line": 305,
+          "column": 1,
+          "reason": "Inconsistent HTTP method for read operation. Most read operations use GET.",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "backend/api/features/v1.py",
+          "line": 1488,
+          "column": 5,
+          "reason": "Inconsistent HTTP method for update operation. Most update operations use PATCH.",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "backend/api/features/v1_test.py",
+          "line": 208,
+          "column": 16,
+          "reason": "Using GET for mutation operation. GET requests should be idempotent and not modify server state.",
+          "deviationScore": 1
+        },
+        {
+          "file": "backend/api/features/v1_test.py",
+          "line": 262,
+          "column": 16,
+          "reason": "Using GET for mutation operation. GET requests should be idempotent and not modify server state.",
+          "deviationScore": 1
+        },
+        {
+          "file": "backend/api/features/v1_test.py",
+          "line": 208,
+          "column": 16,
+          "reason": "Inconsistent HTTP method for update operation. Most update operations use POST.",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "backend/api/features/v1_test.py",
+          "line": 262,
+          "column": 16,
+          "reason": "Inconsistent HTTP method for update operation. Most update operations use POST.",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "backend/blocks/github/pull_requests.py",
+          "line": 379,
+          "column": 15,
+          "reason": "Using POST for read operation. Consider using GET for idempotent read operations.",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "backend/blocks/github/pull_requests.py",
+          "line": 379,
+          "column": 15,
+          "reason": "Inconsistent HTTP method for read operation. Most read operations use GET.",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "backend/blocks/github/reviews.py",
+          "line": 176,
+          "column": 26,
+          "reason": "Using POST for read operation. Consider using GET for idempotent read operations.",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "backend/blocks/github/reviews.py",
+          "line": 176,
+          "column": 26,
+          "reason": "Inconsistent HTTP method for read operation. Most read operations use GET.",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "backend/cli/oauth_tool.py",
+          "line": 688,
+          "column": 36,
+          "reason": "Using POST for read operation. Consider using GET for idempotent read operations.",
+          "deviationScore": 0.7
+        }
+      ],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:30:16.805Z",
+        "lastSeen": "2026-01-29T07:17:19.673Z",
+        "source": "auto-detected",
+        "tags": [
+          "api",
+          "http-methods"
+        ],
+        "approvedAt": "2026-01-29T07:17:19.673Z"
+      },
+      "severity": "error",
+      "autoFixable": false
+    },
+    {
+      "id": "1730cf23b96a6ddf",
+      "subcategory": "http-methods",
+      "name": "HTTP Methods Detector",
+      "description": "Detects HTTP method usage patterns and flags RESTful convention violations",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "api/http-methods",
+          "patternId": "api/http-methods/method-get"
+        }
+      },
+      "confidence": {
+        "frequency": 0.34,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 34,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "backend/api/external/v1/integrations.py",
+          "line": 256,
+          "column": 15,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/admin/credit_admin_routes.py",
+          "line": 48,
+          "column": 2,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/admin/credit_admin_routes_test.py",
+          "line": 158,
+          "column": 16,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/admin/execution_analytics_routes.py",
+          "line": 112,
+          "column": 2,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/admin/store_admin_routes.py",
+          "line": 24,
+          "column": 2,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/builder/routes.py",
+          "line": 40,
+          "column": 2,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/chat/routes.py",
+          "line": 87,
+          "column": 2,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/chat/tools/agent_generator/service.py",
+          "line": 222,
+          "column": 26,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/executions/review/review_routes_test.py",
+          "line": 79,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/executions/review/routes.py",
+          "line": 38,
+          "column": 2,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/integrations/router.py",
+          "line": 71,
+          "column": 2,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/library/routes/agents.py",
+          "line": 87,
+          "column": 2,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/library/routes/presets.py",
+          "line": 29,
+          "column": 2,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/library/routes_test.py",
+          "line": 99,
+          "column": 16,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/oauth.py",
+          "line": 98,
+          "column": 2,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/organization/routes.py",
+          "line": 171,
+          "column": 2,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/organization/routes_test.py",
+          "line": 121,
+          "column": 16,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/store/routes.py",
+          "line": 33,
+          "column": 2,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/store/routes_test.py",
+          "line": 49,
+          "column": 16,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/v1.py",
+          "line": 154,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/v1_test.py",
+          "line": 120,
+          "column": 16,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/middleware/security_test.py",
+          "line": 15,
+          "column": 6,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/utils/api_key_auth.py",
+          "line": 36,
+          "column": 10,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/ws_api.py",
+          "line": 324,
+          "column": 2,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/blocks/discord/_api.py",
+          "line": 70,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/blocks/github/ci.py",
+          "line": 188,
+          "column": 30,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/blocks/github/issues.py",
+          "line": 313,
+          "column": 26,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/blocks/github/pull_requests.py",
+          "line": 93,
+          "column": 26,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/blocks/github/repo.py",
+          "line": 90,
+          "column": 26,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/blocks/github/reviews.py",
+          "line": 133,
+          "column": 33,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/blocks/screenshotone.py",
+          "line": 151,
+          "column": 26,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/executor/cluster_lock_test.py",
+          "line": 71,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/util/feature_flag.py",
+          "line": 52,
+          "column": 14,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/util/service_test.py",
+          "line": 565,
+          "column": 34,
+          "isOutlier": false,
+          "confidence": 1
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:30:16.805Z",
+        "lastSeen": "2026-01-29T07:17:19.717Z",
+        "source": "auto-detected",
+        "tags": [
+          "api",
+          "http-methods"
+        ],
+        "approvedAt": "2026-01-29T07:17:19.717Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "6c0880d6b0223436",
+      "subcategory": "http-methods",
+      "name": "HTTP Methods Detector",
+      "description": "Detects HTTP method usage patterns and flags RESTful convention violations",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "api/http-methods",
+          "patternId": "api/http-methods/method-post"
+        }
+      },
+      "confidence": {
+        "frequency": 0.35,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 35,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "backend/api/external/v1/integrations.py",
+          "line": 314,
+          "column": 15,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/admin/credit_admin_routes.py",
+          "line": 23,
+          "column": 2,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/admin/credit_admin_routes_test.py",
+          "line": 56,
+          "column": 16,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/admin/execution_analytics_routes.py",
+          "line": 206,
+          "column": 2,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/admin/store_admin_routes.py",
+          "line": 68,
+          "column": 2,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/analytics.py",
+          "line": 49,
+          "column": 2,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/analytics_test.py",
+          "line": 54,
+          "column": 16,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/chat/routes.py",
+          "line": 126,
+          "column": 2,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/chat/tools/agent_generator/service.py",
+          "line": 81,
+          "column": 26,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/executions/review/review_routes_test.py",
+          "line": 227,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/executions/review/routes.py",
+          "line": 124,
+          "column": 2,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/integrations/router.py",
+          "line": 109,
+          "column": 2,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/library/routes/agents.py",
+          "line": 351,
+          "column": 2,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/library/routes/presets.py",
+          "line": 108,
+          "column": 2,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/library/routes_test.py",
+          "line": 247,
+          "column": 16,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/oauth.py",
+          "line": 160,
+          "column": 2,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/oauth_test.py",
+          "line": 178,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/organization/routes.py",
+          "line": 333,
+          "column": 2,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/organization/routes_test.py",
+          "line": 89,
+          "column": 16,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/otto/routes.py",
+          "line": 14,
+          "column": 2,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/otto/routes_test.py",
+          "line": 68,
+          "column": 16,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/postmark/postmark.py",
+          "line": 37,
+          "column": 2,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/store/routes.py",
+          "line": 56,
+          "column": 2,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/v1.py",
+          "line": 129,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/v1_test.py",
+          "line": 57,
+          "column": 16,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/blocks/github/checks.py",
+          "line": 181,
+          "column": 26,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/blocks/github/issues.py",
+          "line": 97,
+          "column": 26,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/blocks/github/pull_requests.py",
+          "line": 191,
+          "column": 26,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/blocks/github/repo.py",
+          "line": 301,
+          "column": 26,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/blocks/github/reviews.py",
+          "line": 176,
+          "column": 26,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/blocks/github/statuses.py",
+          "line": 152,
+          "column": 26,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/blocks/reddit.py",
+          "line": 2398,
+          "column": 20,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/cli/oauth_tool.py",
+          "line": 688,
+          "column": 36,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/util/service.py",
+          "line": 615,
+          "column": 40,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/util/service_test.py",
+          "line": 578,
+          "column": 26,
+          "isOutlier": false,
+          "confidence": 1
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:30:16.805Z",
+        "lastSeen": "2026-01-29T07:17:19.762Z",
+        "source": "auto-detected",
+        "tags": [
+          "api",
+          "http-methods"
+        ],
+        "approvedAt": "2026-01-29T07:17:19.762Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "267063bad198bdd6",
+      "subcategory": "http-methods",
+      "name": "HTTP Methods Detector",
+      "description": "Detects HTTP method usage patterns and flags RESTful convention violations",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "api/http-methods",
+          "patternId": "api/http-methods/method-delete"
+        }
+      },
+      "confidence": {
+        "frequency": 0.14,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 14,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "backend/api/external/v1/integrations.py",
+          "line": 624,
+          "column": 15,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/integrations/router.py",
+          "line": 293,
+          "column": 2,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/library/routes/agents.py",
+          "line": 312,
+          "column": 2,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/library/routes/presets.py",
+          "line": 311,
+          "column": 2,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/oauth.py",
+          "line": 827,
+          "column": 29,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/organization/routes.py",
+          "line": 294,
+          "column": 2,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/store/routes.py",
+          "line": 435,
+          "column": 2,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/v1.py",
+          "line": 1250,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/v1_test.py",
+          "line": 459,
+          "column": 16,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/blocks/github/issues.py",
+          "line": 682,
+          "column": 15,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/blocks/github/pull_requests.py",
+          "line": 446,
+          "column": 15,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/blocks/github/repo.py",
+          "line": 752,
+          "column": 15,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/executor/cluster_lock_test.py",
+          "line": 38,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/executor/manager.py",
+          "line": 142,
+          "column": 32,
+          "isOutlier": false,
+          "confidence": 1
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:30:16.805Z",
+        "lastSeen": "2026-01-29T07:17:19.806Z",
+        "source": "auto-detected",
+        "tags": [
+          "api",
+          "http-methods"
+        ],
+        "approvedAt": "2026-01-29T07:17:19.806Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "44a7656966d00d3c",
+      "subcategory": "http-methods",
+      "name": "HTTP Methods Detector",
+      "description": "Detects HTTP method usage patterns and flags RESTful convention violations",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "api/http-methods",
+          "patternId": "api/http-methods/http-client"
+        }
+      },
+      "confidence": {
+        "frequency": 0.27,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 27,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "backend/api/features/admin/credit_admin_routes_test.py",
+          "line": 56,
+          "column": 16,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/analytics_test.py",
+          "line": 54,
+          "column": 16,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/chat/tools/agent_generator/service.py",
+          "line": 81,
+          "column": 26,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/executions/review/review_routes_test.py",
+          "line": 79,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/library/routes_test.py",
+          "line": 99,
+          "column": 16,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/oauth.py",
+          "line": 827,
+          "column": 29,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/oauth_test.py",
+          "line": 178,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/organization/routes_test.py",
+          "line": 89,
+          "column": 16,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/otto/routes_test.py",
+          "line": 68,
+          "column": 16,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/store/routes_test.py",
+          "line": 49,
+          "column": 16,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/v1_test.py",
+          "line": 57,
+          "column": 16,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/middleware/security_test.py",
+          "line": 62,
+          "column": 20,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/blocks/discord/_api.py",
+          "line": 70,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/blocks/github/checks.py",
+          "line": 181,
+          "column": 26,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/blocks/github/ci.py",
+          "line": 188,
+          "column": 30,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/blocks/github/issues.py",
+          "line": 97,
+          "column": 26,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/blocks/github/pull_requests.py",
+          "line": 93,
+          "column": 26,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/blocks/github/repo.py",
+          "line": 90,
+          "column": 26,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/blocks/github/reviews.py",
+          "line": 133,
+          "column": 33,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/blocks/github/statuses.py",
+          "line": 152,
+          "column": 26,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/blocks/reddit.py",
+          "line": 2398,
+          "column": 20,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/blocks/screenshotone.py",
+          "line": 151,
+          "column": 26,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/executor/cluster_lock_test.py",
+          "line": 38,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/executor/manager.py",
+          "line": 142,
+          "column": 32,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/util/feature_flag.py",
+          "line": 52,
+          "column": 14,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/util/service.py",
+          "line": 615,
+          "column": 40,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/util/service_test.py",
+          "line": 565,
+          "column": 34,
+          "isOutlier": false,
+          "confidence": 1
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:30:16.810Z",
+        "lastSeen": "2026-01-29T07:17:19.851Z",
+        "source": "auto-detected",
+        "tags": [
+          "api",
+          "http-methods"
+        ],
+        "approvedAt": "2026-01-29T07:17:19.851Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "303e812758dcc3ee",
+      "subcategory": "route-structure",
+      "name": "Route Structure Detector",
+      "description": "Detects route URL structure patterns and flags inconsistencies",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "api/route-structure",
+          "patternId": "api/route-structure/versioning"
+        }
+      },
+      "confidence": {
+        "frequency": 0.07,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 7,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "backend/api/features/builder/routes.py",
+          "line": 20,
+          "column": 28,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/middleware/security.py",
+          "line": 24,
+          "column": 10,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/middleware/security_test.py",
+          "line": 19,
+          "column": 15,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/blocks/dataforseo/_api.py",
+          "line": 59,
+          "column": 36,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/blocks/hubspot/engagement.py",
+          "line": 62,
+          "column": 41,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/blocks/wordpress/_api.py",
+          "line": 276,
+          "column": 49,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/cli/oauth_tool.py",
+          "line": 788,
+          "column": 66,
+          "isOutlier": false,
+          "confidence": 1
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:30:16.812Z",
+        "lastSeen": "2026-01-29T07:17:19.893Z",
+        "source": "auto-detected",
+        "tags": [
+          "api",
+          "route-structure"
+        ],
+        "approvedAt": "2026-01-29T07:17:19.893Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "560fb7645bbdbb3e",
+      "subcategory": "route-structure",
+      "name": "Route Structure Detector",
+      "description": "Detects route URL structure patterns and flags inconsistencies",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "api/route-structure",
+          "patternId": "api/route-structure/versioned-api"
+        }
+      },
+      "confidence": {
+        "frequency": 0.07,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 7,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "backend/api/features/builder/routes.py",
+          "line": 20,
+          "column": 28,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/middleware/security.py",
+          "line": 24,
+          "column": 10,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/middleware/security_test.py",
+          "line": 19,
+          "column": 15,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/blocks/dataforseo/_api.py",
+          "line": 59,
+          "column": 36,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/blocks/hubspot/engagement.py",
+          "line": 62,
+          "column": 41,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/blocks/wordpress/_api.py",
+          "line": 276,
+          "column": 49,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/cli/oauth_tool.py",
+          "line": 788,
+          "column": 66,
+          "isOutlier": false,
+          "confidence": 1
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:30:16.812Z",
+        "lastSeen": "2026-01-29T07:17:19.943Z",
+        "source": "auto-detected",
+        "tags": [
+          "api",
+          "route-structure"
+        ],
+        "approvedAt": "2026-01-29T07:17:19.943Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "85271c6653a51950",
+      "subcategory": "http-methods",
+      "name": "HTTP Methods Detector",
+      "description": "Detects HTTP method usage patterns and flags RESTful convention violations",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "api/http-methods",
+          "patternId": "api/http-methods/method-patch"
+        }
+      },
+      "confidence": {
+        "frequency": 0.09,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 9,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "backend/api/features/chat/routes.py",
+          "line": 343,
+          "column": 2,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/library/routes/agents.py",
+          "line": 259,
+          "column": 2,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/library/routes/presets.py",
+          "line": 207,
+          "column": 2,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/oauth.py",
+          "line": 574,
+          "column": 2,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/organization/routes.py",
+          "line": 211,
+          "column": 2,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/organization/routes_test.py",
+          "line": 169,
+          "column": 16,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/v1.py",
+          "line": 225,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/blocks/github/checks.py",
+          "line": 333,
+          "column": 26,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/blocks/github/issues.py",
+          "line": 188,
+          "column": 26,
+          "isOutlier": false,
+          "confidence": 1
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:30:16.812Z",
+        "lastSeen": "2026-01-29T07:17:20.041Z",
+        "source": "auto-detected",
+        "tags": [
+          "api",
+          "http-methods"
+        ],
+        "approvedAt": "2026-01-29T07:17:20.041Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "1d84bc0e5458c510",
+      "subcategory": "response-envelope",
+      "name": "Response Envelope Detector",
+      "description": "Detects response envelope patterns and flags inconsistencies",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "api/response-envelope",
+          "patternId": "api/response-envelope/format-standard"
+        }
+      },
+      "confidence": {
+        "frequency": 0.02,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 2,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "backend/api/features/store/hybrid_search.py",
+          "line": 124,
+          "column": 62,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/blocks/screenshotone.py",
+          "line": 156,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 1
+        }
+      ],
+      "outliers": [
+        {
+          "file": "backend/api/features/store/hybrid_search.py",
+          "line": 35,
+          "column": 9,
+          "reason": "Direct array/data return without envelope wrapper",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "backend/api/features/store/hybrid_search.py",
+          "line": 166,
+          "column": 9,
+          "reason": "Direct array/data return without envelope wrapper",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "backend/api/features/store/hybrid_search.py",
+          "line": 448,
+          "column": 9,
+          "reason": "Direct array/data return without envelope wrapper",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "backend/data/graph.py",
+          "line": 503,
+          "column": 9,
+          "reason": "Direct array/data return without envelope wrapper",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "backend/data/graph.py",
+          "line": 1124,
+          "column": 5,
+          "reason": "Direct array/data return without envelope wrapper",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "backend/data/graph.py",
+          "line": 1132,
+          "column": 5,
+          "reason": "Direct array/data return without envelope wrapper",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "backend/data/graph.py",
+          "line": 1175,
+          "column": 9,
+          "reason": "Direct array/data return without envelope wrapper",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "backend/data/graph.py",
+          "line": 1177,
+          "column": 5,
+          "reason": "Direct array/data return without envelope wrapper",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "backend/data/notifications.py",
+          "line": 649,
+          "column": 9,
+          "reason": "Direct array/data return without envelope wrapper",
+          "deviationScore": 0.4
+        }
+      ],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:30:16.814Z",
+        "lastSeen": "2026-01-29T07:17:20.094Z",
+        "source": "auto-detected",
+        "tags": [
+          "api",
+          "response-envelope"
+        ],
+        "approvedAt": "2026-01-29T07:17:20.094Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "e45fd04896e60bf6",
+      "subcategory": "response-envelope",
+      "name": "Response Envelope Detector",
+      "description": "Detects response envelope patterns and flags inconsistencies",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "api/response-envelope",
+          "patternId": "api/response-envelope/pagination-offset"
+        }
+      },
+      "confidence": {
+        "frequency": 0.01,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "backend/api/features/store/hybrid_search.py",
+          "line": 124,
+          "column": 62,
+          "isOutlier": false,
+          "confidence": 1
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:30:16.814Z",
+        "lastSeen": "2026-01-29T07:17:20.142Z",
+        "source": "auto-detected",
+        "tags": [
+          "api",
+          "response-envelope"
+        ],
+        "approvedAt": "2026-01-29T07:17:20.142Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "4fd5808f4bbd5c09",
+      "subcategory": "response-envelope",
+      "name": "Response Envelope Detector",
+      "description": "Detects response envelope patterns and flags inconsistencies",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "api/response-envelope",
+          "patternId": "api/response-envelope/pagination-metadata"
+        }
+      },
+      "confidence": {
+        "frequency": 0.01,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "backend/api/features/store/hybrid_search.py",
+          "line": 124,
+          "column": 62,
+          "isOutlier": false,
+          "confidence": 1
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:30:16.814Z",
+        "lastSeen": "2026-01-29T07:17:20.190Z",
+        "source": "auto-detected",
+        "tags": [
+          "api",
+          "response-envelope"
+        ],
+        "approvedAt": "2026-01-29T07:17:20.190Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "6a3f017dd276a53d",
+      "subcategory": "http-methods",
+      "name": "HTTP Methods Detector",
+      "description": "Detects HTTP method usage patterns and flags RESTful convention violations",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "api/http-methods",
+          "patternId": "api/http-methods/method-put"
+        }
+      },
+      "confidence": {
+        "frequency": 0.03,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 3,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "backend/api/features/store/routes.py",
+          "line": 551,
+          "column": 2,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/api/features/v1.py",
+          "line": 1488,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/blocks/github/repo.py",
+          "line": 846,
+          "column": 26,
+          "isOutlier": false,
+          "confidence": 1
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:30:16.814Z",
+        "lastSeen": "2026-01-29T07:17:20.239Z",
+        "source": "auto-detected",
+        "tags": [
+          "api",
+          "http-methods"
+        ],
+        "approvedAt": "2026-01-29T07:17:20.239Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "7d9a54f99cde9321",
+      "subcategory": "response-envelope",
+      "name": "Response Envelope Detector",
+      "description": "Detects response envelope patterns and flags inconsistencies",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "api/response-envelope",
+          "patternId": "api/response-envelope/format-custom"
+        }
+      },
+      "confidence": {
+        "frequency": 0.04,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 4,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "backend/blocks/exa/websets_import_export.py",
+          "line": 247,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/blocks/exa/websets_monitor.py",
+          "line": 263,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/data/graph.py",
+          "line": 333,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/data/notifications.py",
+          "line": 263,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 1
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:30:16.815Z",
+        "lastSeen": "2026-01-29T07:17:20.299Z",
+        "source": "auto-detected",
+        "tags": [
+          "api",
+          "response-envelope"
+        ],
+        "approvedAt": "2026-01-29T07:17:20.299Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "9968d24dfddd03ac",
+      "subcategory": "response-envelope",
+      "name": "Response Envelope Detector",
+      "description": "Detects response envelope patterns and flags inconsistencies",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "api/response-envelope",
+          "patternId": "api/response-envelope/envelope-structure"
+        }
+      },
+      "confidence": {
+        "frequency": 0.05,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 5,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "backend/blocks/exa/websets_import_export.py",
+          "line": 247,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/blocks/exa/websets_monitor.py",
+          "line": 263,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/blocks/screenshotone.py",
+          "line": 156,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/data/graph.py",
+          "line": 333,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/data/notifications.py",
+          "line": 263,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 1
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:30:16.815Z",
+        "lastSeen": "2026-01-29T07:17:20.381Z",
+        "source": "auto-detected",
+        "tags": [
+          "api",
+          "response-envelope"
+        ],
+        "approvedAt": "2026-01-29T07:17:20.381Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "9e16e5e17e5469ce",
+      "subcategory": "http-methods",
+      "name": "HTTP Methods Detector",
+      "description": "Detects HTTP method usage patterns and flags RESTful convention violations",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "api/http-methods",
+          "patternId": "api/http-methods/fetch-api"
+        }
+      },
+      "confidence": {
+        "frequency": 0.01,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "backend/cli/oauth_tool.py",
+          "line": 688,
+          "column": 36,
+          "isOutlier": false,
+          "confidence": 1
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:30:16.815Z",
+        "lastSeen": "2026-01-29T07:17:20.430Z",
+        "source": "auto-detected",
+        "tags": [
+          "api",
+          "http-methods"
+        ],
+        "approvedAt": "2026-01-29T07:17:20.430Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    }
+  ],
+  "lastUpdated": "2026-01-29T07:17:53.244Z",
+  "checksum": "8e96c2a94b040f8c"
+}

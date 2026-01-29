@@ -1,0 +1,393 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.005Z",
+  "checksum": "9ac7c6334799d38d",
+  "file": "src/tests/utils/assertion.ts",
+  "functions": [
+    {
+      "id": "src/tests/utils/assertion.ts:isVisible:3",
+      "name": "isVisible",
+      "startLine": 3,
+      "endLine": 5,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "toBeVisible",
+          "resolved": false,
+          "confidence": 0,
+          "line": 4
+        },
+        {
+          "target": "expect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 4
+        },
+        {
+          "target": "el",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 4,
+          "resolvedId": "public/gtag.js:el:278"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/tests/utils/assertion.ts:hasAttribute:7",
+      "name": "hasAttribute",
+      "startLine": 7,
+      "endLine": 13,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "toHaveAttribute",
+          "resolved": false,
+          "confidence": 0,
+          "line": 12
+        },
+        {
+          "target": "label",
+          "resolved": false,
+          "confidence": 0,
+          "line": 12
+        },
+        {
+          "target": "val",
+          "resolved": false,
+          "confidence": 0,
+          "line": 12
+        },
+        {
+          "target": "expect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 12
+        },
+        {
+          "target": "el",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 12,
+          "resolvedId": "public/gtag.js:el:278"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/tests/utils/assertion.ts:hasTextContent:15",
+      "name": "hasTextContent",
+      "startLine": 15,
+      "endLine": 17,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "toContainText",
+          "resolved": false,
+          "confidence": 0,
+          "line": 16
+        },
+        {
+          "target": "text",
+          "resolved": false,
+          "confidence": 0,
+          "line": 16
+        },
+        {
+          "target": "expect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 16
+        },
+        {
+          "target": "el",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 16,
+          "resolvedId": "public/gtag.js:el:278"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/tests/utils/assertion.ts:isHidden:19",
+      "name": "isHidden",
+      "startLine": 19,
+      "endLine": 21,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "toBeHidden",
+          "resolved": false,
+          "confidence": 0,
+          "line": 20
+        },
+        {
+          "target": "expect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 20
+        },
+        {
+          "target": "el",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 20,
+          "resolvedId": "public/gtag.js:el:278"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/tests/utils/assertion.ts:hasUrl:23",
+      "name": "hasUrl",
+      "startLine": 23,
+      "endLine": 33,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "toBe",
+          "resolved": false,
+          "confidence": 0,
+          "line": 29
+        },
+        {
+          "target": "url",
+          "resolved": false,
+          "confidence": 0,
+          "line": 29
+        },
+        {
+          "target": "expect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 29
+        },
+        {
+          "target": "decodeURIComponent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 29
+        },
+        {
+          "target": "url",
+          "resolved": false,
+          "confidence": 0,
+          "line": 29
+        },
+        {
+          "target": "toHaveURL",
+          "resolved": false,
+          "confidence": 0,
+          "line": 32
+        },
+        {
+          "target": "url",
+          "resolved": false,
+          "confidence": 0,
+          "line": 32
+        },
+        {
+          "target": "expect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 32
+        },
+        {
+          "target": "page",
+          "resolved": false,
+          "confidence": 0,
+          "line": 32
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/tests/utils/assertion.ts:hasFieldValue:35",
+      "name": "hasFieldValue",
+      "startLine": 35,
+      "endLine": 37,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "toHaveValue",
+          "resolved": false,
+          "confidence": 0,
+          "line": 36
+        },
+        {
+          "target": "value",
+          "resolved": false,
+          "confidence": 0,
+          "line": 36
+        },
+        {
+          "target": "expect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 36
+        },
+        {
+          "target": "el",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 36,
+          "resolvedId": "public/gtag.js:el:278"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/tests/utils/assertion.ts:isDisabled:39",
+      "name": "isDisabled",
+      "startLine": 39,
+      "endLine": 41,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "toBeDisabled",
+          "resolved": false,
+          "confidence": 0,
+          "line": 40
+        },
+        {
+          "target": "expect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 40
+        },
+        {
+          "target": "el",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 40,
+          "resolvedId": "public/gtag.js:el:278"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/tests/utils/assertion.ts:isEnabled:43",
+      "name": "isEnabled",
+      "startLine": 43,
+      "endLine": 45,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "toBeEnabled",
+          "resolved": false,
+          "confidence": 0,
+          "line": 44
+        },
+        {
+          "target": "expect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 44
+        },
+        {
+          "target": "el",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 44,
+          "resolvedId": "public/gtag.js:el:278"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/tests/utils/assertion.ts:hasMinCount:47",
+      "name": "hasMinCount",
+      "startLine": 47,
+      "endLine": 50,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "count",
+          "resolved": false,
+          "confidence": 0,
+          "line": 48
+        },
+        {
+          "target": "toBeGreaterThanOrEqual",
+          "resolved": false,
+          "confidence": 0,
+          "line": 49
+        },
+        {
+          "target": "minCount",
+          "resolved": false,
+          "confidence": 0,
+          "line": 49
+        },
+        {
+          "target": "expect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 49
+        },
+        {
+          "target": "count",
+          "resolved": false,
+          "confidence": 0,
+          "line": 49
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/tests/utils/assertion.ts:matchesUrl:52",
+      "name": "matchesUrl",
+      "startLine": 52,
+      "endLine": 54,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "toMatch",
+          "resolved": false,
+          "confidence": 0,
+          "line": 53
+        },
+        {
+          "target": "pattern",
+          "resolved": false,
+          "confidence": 0,
+          "line": 53
+        },
+        {
+          "target": "expect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 53
+        },
+        {
+          "target": "url",
+          "resolved": false,
+          "confidence": 0,
+          "line": 53
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

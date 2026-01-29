@@ -1,0 +1,773 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.145Z",
+  "checksum": "8d208661f736369f",
+  "file": "backend/blocks/todoist/labels.py",
+  "functions": [
+    {
+      "id": "backend/blocks/todoist/labels.py:__init__:44",
+      "name": "__init__",
+      "startLine": 44,
+      "endLine": 76,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 45,
+          "resolvedId": "backend/blocks/todoist/labels.py:__init__:44"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 45
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/todoist/labels.py:create_label:79",
+      "name": "create_label",
+      "startLine": 79,
+      "endLine": 86,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "TodoistAPI",
+          "resolved": false,
+          "confidence": 0,
+          "line": 81
+        },
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 81,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        },
+        {
+          "target": "add_label",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 82,
+          "resolvedId": "backend/blocks/github/issues.py:add_label:615"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/todoist/labels.py:run:88",
+      "name": "run",
+      "startLine": 88,
+      "endLine": 118,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "create_label",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 104,
+          "resolvedId": "backend/blocks/todoist/labels.py:create_label:79"
+        },
+        {
+          "target": "credentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 105
+        },
+        {
+          "target": "items",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 107,
+          "resolvedId": "backend/integrations/oauth/__init__.py:items:123"
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 118
+        },
+        {
+          "target": "e",
+          "resolved": false,
+          "confidence": 0,
+          "line": 118
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/todoist/labels.py:__init__:132",
+      "name": "__init__",
+      "startLine": 132,
+      "endLine": 169,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 133,
+          "resolvedId": "backend/blocks/todoist/labels.py:__init__:44"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 133
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/todoist/labels.py:get_labels:172",
+      "name": "get_labels",
+      "startLine": 172,
+      "endLine": 179,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "TodoistAPI",
+          "resolved": false,
+          "confidence": 0,
+          "line": 174
+        },
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 174,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        },
+        {
+          "target": "get_labels",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 175,
+          "resolvedId": "backend/blocks/todoist/labels.py:get_labels:172"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/todoist/labels.py:run:181",
+      "name": "run",
+      "startLine": 181,
+      "endLine": 195,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "get_labels",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 189,
+          "resolvedId": "backend/blocks/todoist/labels.py:get_labels:172"
+        },
+        {
+          "target": "credentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 189
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 195
+        },
+        {
+          "target": "e",
+          "resolved": false,
+          "confidence": 0,
+          "line": 195
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/todoist/labels.py:__init__:212",
+      "name": "__init__",
+      "startLine": 212,
+      "endLine": 241,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 213,
+          "resolvedId": "backend/blocks/todoist/labels.py:__init__:44"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 213
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/todoist/labels.py:get_label:244",
+      "name": "get_label",
+      "startLine": 244,
+      "endLine": 251,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "TodoistAPI",
+          "resolved": false,
+          "confidence": 0,
+          "line": 246
+        },
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 246,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        },
+        {
+          "target": "get_label",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 247,
+          "resolvedId": "backend/blocks/todoist/labels.py:get_label:244"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/todoist/labels.py:run:253",
+      "name": "run",
+      "startLine": 253,
+      "endLine": 271,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "get_label",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 261,
+          "resolvedId": "backend/blocks/todoist/labels.py:get_label:244"
+        },
+        {
+          "target": "credentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 261
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 271
+        },
+        {
+          "target": "e",
+          "resolved": false,
+          "confidence": 0,
+          "line": 271
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/todoist/labels.py:__init__:294",
+      "name": "__init__",
+      "startLine": 294,
+      "endLine": 313,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 295,
+          "resolvedId": "backend/blocks/todoist/labels.py:__init__:44"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 295
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/todoist/labels.py:update_label:316",
+      "name": "update_label",
+      "startLine": 316,
+      "endLine": 323,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "TodoistAPI",
+          "resolved": false,
+          "confidence": 0,
+          "line": 318
+        },
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 318,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        },
+        {
+          "target": "update_label",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 319,
+          "resolvedId": "backend/blocks/todoist/labels.py:update_label:316"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/todoist/labels.py:run:325",
+      "name": "run",
+      "startLine": 325,
+      "endLine": 352,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "update_label",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 343,
+          "resolvedId": "backend/blocks/todoist/labels.py:update_label:316"
+        },
+        {
+          "target": "credentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 344
+        },
+        {
+          "target": "items",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 346,
+          "resolvedId": "backend/integrations/oauth/__init__.py:items:123"
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 352
+        },
+        {
+          "target": "e",
+          "resolved": false,
+          "confidence": 0,
+          "line": 352
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/todoist/labels.py:__init__:365",
+      "name": "__init__",
+      "startLine": 365,
+      "endLine": 380,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 366,
+          "resolvedId": "backend/blocks/todoist/labels.py:__init__:44"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 366
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/todoist/labels.py:delete_label:383",
+      "name": "delete_label",
+      "startLine": 383,
+      "endLine": 390,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "TodoistAPI",
+          "resolved": false,
+          "confidence": 0,
+          "line": 385
+        },
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 385,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        },
+        {
+          "target": "delete_label",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 386,
+          "resolvedId": "backend/blocks/todoist/labels.py:delete_label:383"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/todoist/labels.py:run:392",
+      "name": "run",
+      "startLine": 392,
+      "endLine": 404,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "delete_label",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 400,
+          "resolvedId": "backend/blocks/todoist/labels.py:delete_label:383"
+        },
+        {
+          "target": "credentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 400
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 404
+        },
+        {
+          "target": "e",
+          "resolved": false,
+          "confidence": 0,
+          "line": 404
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/todoist/labels.py:__init__:416",
+      "name": "__init__",
+      "startLine": 416,
+      "endLine": 434,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 417,
+          "resolvedId": "backend/blocks/todoist/labels.py:__init__:44"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 417
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/todoist/labels.py:get_shared_labels:437",
+      "name": "get_shared_labels",
+      "startLine": 437,
+      "endLine": 444,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "TodoistAPI",
+          "resolved": false,
+          "confidence": 0,
+          "line": 439
+        },
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 439,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        },
+        {
+          "target": "get_shared_labels",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 440,
+          "resolvedId": "backend/blocks/todoist/labels.py:get_shared_labels:437"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/todoist/labels.py:run:446",
+      "name": "run",
+      "startLine": 446,
+      "endLine": 458,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "get_shared_labels",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 454,
+          "resolvedId": "backend/blocks/todoist/labels.py:get_shared_labels:437"
+        },
+        {
+          "target": "credentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 454
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 458
+        },
+        {
+          "target": "e",
+          "resolved": false,
+          "confidence": 0,
+          "line": 458
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/todoist/labels.py:__init__:472",
+      "name": "__init__",
+      "startLine": 472,
+      "endLine": 488,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 473,
+          "resolvedId": "backend/blocks/todoist/labels.py:__init__:44"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 473
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/todoist/labels.py:rename_shared_labels:491",
+      "name": "rename_shared_labels",
+      "startLine": 491,
+      "endLine": 498,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "TodoistAPI",
+          "resolved": false,
+          "confidence": 0,
+          "line": 493
+        },
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 493,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        },
+        {
+          "target": "rename_shared_label",
+          "resolved": false,
+          "confidence": 0,
+          "line": 494
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/todoist/labels.py:run:500",
+      "name": "run",
+      "startLine": 500,
+      "endLine": 514,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "rename_shared_labels",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 508,
+          "resolvedId": "backend/blocks/todoist/labels.py:rename_shared_labels:491"
+        },
+        {
+          "target": "credentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 509
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 514
+        },
+        {
+          "target": "e",
+          "resolved": false,
+          "confidence": 0,
+          "line": 514
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/todoist/labels.py:__init__:527",
+      "name": "__init__",
+      "startLine": 527,
+      "endLine": 539,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 528,
+          "resolvedId": "backend/blocks/todoist/labels.py:__init__:44"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 528
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/todoist/labels.py:remove_shared_label:542",
+      "name": "remove_shared_label",
+      "startLine": 542,
+      "endLine": 549,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "TodoistAPI",
+          "resolved": false,
+          "confidence": 0,
+          "line": 544
+        },
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 544,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        },
+        {
+          "target": "remove_shared_label",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 545,
+          "resolvedId": "backend/blocks/todoist/labels.py:remove_shared_label:542"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/todoist/labels.py:run:551",
+      "name": "run",
+      "startLine": 551,
+      "endLine": 563,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "remove_shared_label",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 559,
+          "resolvedId": "backend/blocks/todoist/labels.py:remove_shared_label:542"
+        },
+        {
+          "target": "credentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 559
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 563
+        },
+        {
+          "target": "e",
+          "resolved": false,
+          "confidence": 0,
+          "line": 563
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

@@ -1,0 +1,892 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.193Z",
+  "checksum": "9ddae38fc74cb97f",
+  "file": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/sidebar/SidebarRunsList/SidebarRunsList.tsx",
+  "functions": [
+    {
+      "id": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/sidebar/SidebarRunsList/SidebarRunsList.tsx:SidebarRunsList:41",
+      "name": "SidebarRunsList",
+      "startLine": 41,
+      "endLine": 259,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useSidebarRunsList",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 64,
+          "resolvedId": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/sidebar/SidebarRunsList/useSidebarRunsList.ts:useSidebarRunsList:47"
+        },
+        {
+          "target": "ErrorCard",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 71,
+          "resolvedId": "src/components/molecules/ErrorCard/ErrorCard.tsx:ErrorCard:26"
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 71
+        },
+        {
+          "target": "cn",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 77,
+          "resolvedId": "src/components/renderers/InputRenderer/utils/rjsf-utils.ts:cn:4"
+        },
+        {
+          "target": "AGENT_LIBRARY_SECTION_PADDING_X",
+          "resolved": false,
+          "confidence": 0,
+          "line": 79
+        },
+        {
+          "target": "Skeleton",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 82,
+          "resolvedId": "src/components/atoms/Skeleton/Skeleton.tsx:Skeleton:7"
+        },
+        {
+          "target": "Skeleton",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 83,
+          "resolvedId": "src/components/atoms/Skeleton/Skeleton.tsx:Skeleton:7"
+        },
+        {
+          "target": "Skeleton",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 84,
+          "resolvedId": "src/components/atoms/Skeleton/Skeleton.tsx:Skeleton:7"
+        },
+        {
+          "target": "TabsLine",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 90,
+          "resolvedId": "src/components/molecules/TabsLine/TabsLine.tsx:TabsLine:24"
+        },
+        {
+          "target": "tabValue",
+          "resolved": false,
+          "confidence": 0,
+          "line": 91
+        },
+        {
+          "target": "onTabChange",
+          "resolved": false,
+          "confidence": 0,
+          "line": 94
+        },
+        {
+          "target": "value",
+          "resolved": false,
+          "confidence": 0,
+          "line": 94
+        },
+        {
+          "target": "onSelectRun",
+          "resolved": false,
+          "confidence": 0,
+          "line": 97
+        },
+        {
+          "target": "id",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 97,
+          "resolvedId": "public/gtag.js:id:112"
+        },
+        {
+          "target": "onClearSelectedRun",
+          "resolved": false,
+          "confidence": 0,
+          "line": 99
+        },
+        {
+          "target": "onSelectRun",
+          "resolved": false,
+          "confidence": 0,
+          "line": 103
+        },
+        {
+          "target": "id",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 103,
+          "resolvedId": "public/gtag.js:id:112"
+        },
+        {
+          "target": "onClearSelectedRun",
+          "resolved": false,
+          "confidence": 0,
+          "line": 105
+        },
+        {
+          "target": "onClearSelectedRun",
+          "resolved": false,
+          "confidence": 0,
+          "line": 108
+        },
+        {
+          "target": "onClearSelectedRun",
+          "resolved": false,
+          "confidence": 0,
+          "line": 110
+        },
+        {
+          "target": "TabsLineList",
+          "resolved": false,
+          "confidence": 0,
+          "line": 118
+        },
+        {
+          "target": "cn",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 119,
+          "resolvedId": "src/components/renderers/InputRenderer/utils/rjsf-utils.ts:cn:4"
+        },
+        {
+          "target": "AGENT_LIBRARY_SECTION_PADDING_X",
+          "resolved": false,
+          "confidence": 0,
+          "line": 119
+        },
+        {
+          "target": "TabsLineTrigger",
+          "resolved": false,
+          "confidence": 0,
+          "line": 121
+        },
+        {
+          "target": "TabsLineTrigger",
+          "resolved": false,
+          "confidence": 0,
+          "line": 124
+        },
+        {
+          "target": "TabsLineTrigger",
+          "resolved": false,
+          "confidence": 0,
+          "line": 129
+        },
+        {
+          "target": "TabsLineTrigger",
+          "resolved": false,
+          "confidence": 0,
+          "line": 134
+        },
+        {
+          "target": "TabsLineContent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 143
+        },
+        {
+          "target": "cn",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 145,
+          "resolvedId": "src/components/renderers/InputRenderer/utils/rjsf-utils.ts:cn:4"
+        },
+        {
+          "target": "AGENT_LIBRARY_SECTION_PADDING_X",
+          "resolved": false,
+          "confidence": 0,
+          "line": 147
+        },
+        {
+          "target": "InfiniteList",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 150,
+          "resolvedId": "src/components/molecules/InfiniteList/InfiniteList.tsx:InfiniteList:15"
+        },
+        {
+          "target": "runs",
+          "resolved": false,
+          "confidence": 0,
+          "line": 151
+        },
+        {
+          "target": "isFetchingMoreRuns",
+          "resolved": false,
+          "confidence": 0,
+          "line": 153
+        },
+        {
+          "target": "fetchMoreRuns",
+          "resolved": false,
+          "confidence": 0,
+          "line": 154
+        },
+        {
+          "target": "TaskListItem",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 159,
+          "resolvedId": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/sidebar/SidebarRunsList/components/TaskListItem.tsx:TaskListItem:67"
+        },
+        {
+          "target": "run",
+          "resolved": false,
+          "confidence": 0,
+          "line": 160
+        },
+        {
+          "target": "name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 161
+        },
+        {
+          "target": "agent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 162
+        },
+        {
+          "target": "onSelectRun",
+          "resolved": false,
+          "confidence": 0,
+          "line": 164
+        },
+        {
+          "target": "id",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 164,
+          "resolvedId": "public/gtag.js:id:112"
+        },
+        {
+          "target": "TabsLineContent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 170
+        },
+        {
+          "target": "cn",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 172,
+          "resolvedId": "src/components/renderers/InputRenderer/utils/rjsf-utils.ts:cn:4"
+        },
+        {
+          "target": "AGENT_LIBRARY_SECTION_PADDING_X",
+          "resolved": false,
+          "confidence": 0,
+          "line": 174
+        },
+        {
+          "target": "map",
+          "resolved": false,
+          "confidence": 0,
+          "line": 179
+        },
+        {
+          "target": "id",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 180,
+          "resolvedId": "public/gtag.js:id:112"
+        },
+        {
+          "target": "ScheduleListItem",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 181,
+          "resolvedId": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/sidebar/SidebarRunsList/components/ScheduleListItem.tsx:ScheduleListItem:19"
+        },
+        {
+          "target": "s",
+          "resolved": false,
+          "confidence": 0,
+          "line": 182
+        },
+        {
+          "target": "agent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 183
+        },
+        {
+          "target": "onSelectRun",
+          "resolved": false,
+          "confidence": 0,
+          "line": 185
+        },
+        {
+          "target": "id",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 185,
+          "resolvedId": "public/gtag.js:id:112"
+        },
+        {
+          "target": "Text",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 191,
+          "resolvedId": "src/components/atoms/Text/Text.tsx:Text:15"
+        },
+        {
+          "target": "TabsLineContent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 199
+        },
+        {
+          "target": "cn",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 201,
+          "resolvedId": "src/components/renderers/InputRenderer/utils/rjsf-utils.ts:cn:4"
+        },
+        {
+          "target": "AGENT_LIBRARY_SECTION_PADDING_X",
+          "resolved": false,
+          "confidence": 0,
+          "line": 203
+        },
+        {
+          "target": "map",
+          "resolved": false,
+          "confidence": 0,
+          "line": 208
+        },
+        {
+          "target": "id",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 209,
+          "resolvedId": "public/gtag.js:id:112"
+        },
+        {
+          "target": "TriggerListItem",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 210,
+          "resolvedId": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/sidebar/SidebarRunsList/components/TriggerListItem.tsx:TriggerListItem:19"
+        },
+        {
+          "target": "trigger",
+          "resolved": false,
+          "confidence": 0,
+          "line": 211
+        },
+        {
+          "target": "agent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 212
+        },
+        {
+          "target": "onSelectRun",
+          "resolved": false,
+          "confidence": 0,
+          "line": 214
+        },
+        {
+          "target": "id",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 214,
+          "resolvedId": "public/gtag.js:id:112"
+        },
+        {
+          "target": "Text",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 220,
+          "resolvedId": "src/components/atoms/Text/Text.tsx:Text:15"
+        },
+        {
+          "target": "TabsLineContent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 228
+        },
+        {
+          "target": "cn",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 230,
+          "resolvedId": "src/components/renderers/InputRenderer/utils/rjsf-utils.ts:cn:4"
+        },
+        {
+          "target": "AGENT_LIBRARY_SECTION_PADDING_X",
+          "resolved": false,
+          "confidence": 0,
+          "line": 232
+        },
+        {
+          "target": "map",
+          "resolved": false,
+          "confidence": 0,
+          "line": 237
+        },
+        {
+          "target": "id",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 238,
+          "resolvedId": "public/gtag.js:id:112"
+        },
+        {
+          "target": "TemplateListItem",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 239,
+          "resolvedId": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/sidebar/SidebarRunsList/components/TemplateListItem.tsx:TemplateListItem:19"
+        },
+        {
+          "target": "template",
+          "resolved": false,
+          "confidence": 0,
+          "line": 240
+        },
+        {
+          "target": "agent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 241
+        },
+        {
+          "target": "onSelectRun",
+          "resolved": false,
+          "confidence": 0,
+          "line": 243
+        },
+        {
+          "target": "id",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 243,
+          "resolvedId": "public/gtag.js:id:112"
+        },
+        {
+          "target": "Text",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 249,
+          "resolvedId": "src/components/atoms/Text/Text.tsx:Text:15"
+        },
+        {
+          "target": "id",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 180,
+          "resolvedId": "public/gtag.js:id:112"
+        },
+        {
+          "target": "ScheduleListItem",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 181,
+          "resolvedId": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/sidebar/SidebarRunsList/components/ScheduleListItem.tsx:ScheduleListItem:19"
+        },
+        {
+          "target": "s",
+          "resolved": false,
+          "confidence": 0,
+          "line": 182
+        },
+        {
+          "target": "agent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 183
+        },
+        {
+          "target": "onSelectRun",
+          "resolved": false,
+          "confidence": 0,
+          "line": 185
+        },
+        {
+          "target": "id",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 185,
+          "resolvedId": "public/gtag.js:id:112"
+        },
+        {
+          "target": "id",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 209,
+          "resolvedId": "public/gtag.js:id:112"
+        },
+        {
+          "target": "TriggerListItem",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 210,
+          "resolvedId": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/sidebar/SidebarRunsList/components/TriggerListItem.tsx:TriggerListItem:19"
+        },
+        {
+          "target": "trigger",
+          "resolved": false,
+          "confidence": 0,
+          "line": 211
+        },
+        {
+          "target": "agent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 212
+        },
+        {
+          "target": "onSelectRun",
+          "resolved": false,
+          "confidence": 0,
+          "line": 214
+        },
+        {
+          "target": "id",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 214,
+          "resolvedId": "public/gtag.js:id:112"
+        },
+        {
+          "target": "id",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 238,
+          "resolvedId": "public/gtag.js:id:112"
+        },
+        {
+          "target": "TemplateListItem",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 239,
+          "resolvedId": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/sidebar/SidebarRunsList/components/TemplateListItem.tsx:TemplateListItem:19"
+        },
+        {
+          "target": "template",
+          "resolved": false,
+          "confidence": 0,
+          "line": 240
+        },
+        {
+          "target": "agent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 241
+        },
+        {
+          "target": "onSelectRun",
+          "resolved": false,
+          "confidence": 0,
+          "line": 243
+        },
+        {
+          "target": "id",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 243,
+          "resolvedId": "public/gtag.js:id:112"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/sidebar/SidebarRunsList/SidebarRunsList.tsx:$map$1:179",
+      "name": "$map$1",
+      "startLine": 179,
+      "endLine": 188,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "map",
+          "resolved": false,
+          "confidence": 0,
+          "line": 179
+        },
+        {
+          "target": "id",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 180,
+          "resolvedId": "public/gtag.js:id:112"
+        },
+        {
+          "target": "ScheduleListItem",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 181,
+          "resolvedId": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/sidebar/SidebarRunsList/components/ScheduleListItem.tsx:ScheduleListItem:19"
+        },
+        {
+          "target": "s",
+          "resolved": false,
+          "confidence": 0,
+          "line": 182
+        },
+        {
+          "target": "agent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 183
+        },
+        {
+          "target": "onSelectRun",
+          "resolved": false,
+          "confidence": 0,
+          "line": 185
+        },
+        {
+          "target": "id",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 185,
+          "resolvedId": "public/gtag.js:id:112"
+        },
+        {
+          "target": "id",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 180,
+          "resolvedId": "public/gtag.js:id:112"
+        },
+        {
+          "target": "ScheduleListItem",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 181,
+          "resolvedId": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/sidebar/SidebarRunsList/components/ScheduleListItem.tsx:ScheduleListItem:19"
+        },
+        {
+          "target": "s",
+          "resolved": false,
+          "confidence": 0,
+          "line": 182
+        },
+        {
+          "target": "agent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 183
+        },
+        {
+          "target": "onSelectRun",
+          "resolved": false,
+          "confidence": 0,
+          "line": 185
+        },
+        {
+          "target": "id",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 185,
+          "resolvedId": "public/gtag.js:id:112"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/sidebar/SidebarRunsList/SidebarRunsList.tsx:$map$2:208",
+      "name": "$map$2",
+      "startLine": 208,
+      "endLine": 217,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "map",
+          "resolved": false,
+          "confidence": 0,
+          "line": 208
+        },
+        {
+          "target": "id",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 209,
+          "resolvedId": "public/gtag.js:id:112"
+        },
+        {
+          "target": "TriggerListItem",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 210,
+          "resolvedId": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/sidebar/SidebarRunsList/components/TriggerListItem.tsx:TriggerListItem:19"
+        },
+        {
+          "target": "trigger",
+          "resolved": false,
+          "confidence": 0,
+          "line": 211
+        },
+        {
+          "target": "agent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 212
+        },
+        {
+          "target": "onSelectRun",
+          "resolved": false,
+          "confidence": 0,
+          "line": 214
+        },
+        {
+          "target": "id",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 214,
+          "resolvedId": "public/gtag.js:id:112"
+        },
+        {
+          "target": "id",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 209,
+          "resolvedId": "public/gtag.js:id:112"
+        },
+        {
+          "target": "TriggerListItem",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 210,
+          "resolvedId": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/sidebar/SidebarRunsList/components/TriggerListItem.tsx:TriggerListItem:19"
+        },
+        {
+          "target": "trigger",
+          "resolved": false,
+          "confidence": 0,
+          "line": 211
+        },
+        {
+          "target": "agent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 212
+        },
+        {
+          "target": "onSelectRun",
+          "resolved": false,
+          "confidence": 0,
+          "line": 214
+        },
+        {
+          "target": "id",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 214,
+          "resolvedId": "public/gtag.js:id:112"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/sidebar/SidebarRunsList/SidebarRunsList.tsx:$map$3:237",
+      "name": "$map$3",
+      "startLine": 237,
+      "endLine": 246,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "map",
+          "resolved": false,
+          "confidence": 0,
+          "line": 237
+        },
+        {
+          "target": "id",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 238,
+          "resolvedId": "public/gtag.js:id:112"
+        },
+        {
+          "target": "TemplateListItem",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 239,
+          "resolvedId": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/sidebar/SidebarRunsList/components/TemplateListItem.tsx:TemplateListItem:19"
+        },
+        {
+          "target": "template",
+          "resolved": false,
+          "confidence": 0,
+          "line": 240
+        },
+        {
+          "target": "agent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 241
+        },
+        {
+          "target": "onSelectRun",
+          "resolved": false,
+          "confidence": 0,
+          "line": 243
+        },
+        {
+          "target": "id",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 243,
+          "resolvedId": "public/gtag.js:id:112"
+        },
+        {
+          "target": "id",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 238,
+          "resolvedId": "public/gtag.js:id:112"
+        },
+        {
+          "target": "TemplateListItem",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 239,
+          "resolvedId": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/sidebar/SidebarRunsList/components/TemplateListItem.tsx:TemplateListItem:19"
+        },
+        {
+          "target": "template",
+          "resolved": false,
+          "confidence": 0,
+          "line": 240
+        },
+        {
+          "target": "agent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 241
+        },
+        {
+          "target": "onSelectRun",
+          "resolved": false,
+          "confidence": 0,
+          "line": 243
+        },
+        {
+          "target": "id",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 243,
+          "resolvedId": "public/gtag.js:id:112"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

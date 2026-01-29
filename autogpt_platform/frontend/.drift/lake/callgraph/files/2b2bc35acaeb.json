@@ -1,0 +1,57 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.022Z",
+  "checksum": "a94c28b3b2883e77",
+  "file": "src/app/(platform)/admin/dashboard/page.tsx",
+  "functions": [
+    {
+      "id": "src/app/(platform)/admin/dashboard/page.tsx:AdminDashboard:4",
+      "name": "AdminDashboard",
+      "startLine": 4,
+      "endLine": 11,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/app/(platform)/admin/dashboard/page.tsx:AdminDashboardPage:13",
+      "name": "AdminDashboardPage",
+      "startLine": 13,
+      "endLine": 18,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "withRoleAccess",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 15,
+          "resolvedId": "src/lib/withRoleAccess.ts:withRoleAccess:6"
+        },
+        {
+          "target": "withAdminAccess",
+          "resolved": false,
+          "confidence": 0,
+          "line": 16
+        },
+        {
+          "target": "AdminDashboard",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 16,
+          "resolvedId": "src/app/(platform)/admin/dashboard/page.tsx:AdminDashboard:4"
+        },
+        {
+          "target": "ProtectedAdminDashboard",
+          "resolved": false,
+          "confidence": 0,
+          "line": 17
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

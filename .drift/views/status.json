@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-01-28T23:51:44.795Z",
+  "generatedAt": "2026-01-29T06:28:33.198Z",
   "health": {
-    "score": 36,
+    "score": 29,
     "trend": "stable",
     "factors": [
       {
@@ -12,71 +12,55 @@
       },
       {
         "name": "High Confidence Patterns",
-        "score": 0.7264851485148515,
+        "score": 0.5753424657534246,
         "weight": 0.3,
         "trend": "stable"
       },
       {
         "name": "Low Outlier Rate",
-        "score": 0.9994767386547426,
+        "score": 1,
         "weight": 0.4,
         "trend": "stable"
       }
     ]
   },
   "patterns": {
-    "total": 808,
+    "total": 73,
     "approved": 0,
-    "discovered": 808,
+    "discovered": 73,
     "ignored": 0,
     "byCategory": {
-      "structural": 63,
-      "components": 65,
-      "styling": 61,
-      "api": 18,
-      "auth": 49,
-      "errors": 58,
-      "data-access": 88,
-      "testing": 60,
-      "logging": 51,
-      "security": 59,
-      "config": 49,
-      "types": 58,
-      "performance": 53,
-      "accessibility": 39,
-      "documentation": 37
+      "structural": 9,
+      "components": 1,
+      "styling": 7,
+      "auth": 4,
+      "errors": 2,
+      "data-access": 8,
+      "testing": 6,
+      "logging": 4,
+      "security": 7,
+      "config": 7,
+      "types": 13,
+      "performance": 1,
+      "accessibility": 3,
+      "documentation": 1
     }
   },
   "issues": {
-    "critical": 1,
-    "warnings": 1,
-    "topIssues": [
-      {
-        "id": "outlier-29defe1b2289e179",
-        "type": "outlier",
-        "severity": "critical",
-        "message": "Response Envelope Detector has 9 outliers",
-        "patternId": "29defe1b2289e179"
-      },
-      {
-        "id": "outlier-68d4915ed7bd7c21",
-        "type": "outlier",
-        "severity": "warning",
-        "message": "HTTP Methods Detector has 2 outliers",
-        "patternId": "68d4915ed7bd7c21"
-      }
-    ]
+    "critical": 0,
+    "warnings": 0,
+    "topIssues": []
   },
   "security": {
     "violations": 0,
-    "sensitiveExposures": 76,
-    "riskLevel": "high"
+    "sensitiveExposures": 0,
+    "riskLevel": "low"
   },
   "lastScan": {
-    "timestamp": "2026-01-28T23:51:44.789Z",
-    "duration": 286,
-    "filesScanned": 27,
-    "patternsFound": 808,
+    "timestamp": "2026-01-29T06:28:33.198Z",
+    "duration": 65,
+    "filesScanned": 3,
+    "patternsFound": 73,
     "errors": 0
   }
 }

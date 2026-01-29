@@ -1,0 +1,165 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.044Z",
+  "checksum": "42b577e51c92c631",
+  "file": "src/app/(platform)/admin/components/useAdminImpersonation.ts",
+  "functions": [
+    {
+      "id": "src/app/(platform)/admin/components/useAdminImpersonation.ts:useAdminImpersonation:20",
+      "name": "useAdminImpersonation",
+      "startLine": 20,
+      "endLine": 75,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 21
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 22,
+          "resolvedId": "src/services/storage/local-storage.ts:get:16"
+        },
+        {
+          "target": "useToast",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 24,
+          "resolvedId": "src/components/molecules/Toast/use-toast.tsx:useToast:77"
+        },
+        {
+          "target": "Boolean",
+          "resolved": false,
+          "confidence": 0,
+          "line": 26
+        },
+        {
+          "target": "impersonatedUserId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 26
+        },
+        {
+          "target": "useCallback",
+          "resolved": false,
+          "confidence": 0,
+          "line": 28
+        },
+        {
+          "target": "trim",
+          "resolved": false,
+          "confidence": 0,
+          "line": 30
+        },
+        {
+          "target": "toast",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 31,
+          "resolvedId": "src/components/molecules/Toast/use-toast.tsx:toast:27"
+        },
+        {
+          "target": "set",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 39,
+          "resolvedId": "src/services/storage/local-storage.ts:set:29"
+        },
+        {
+          "target": "userId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 39
+        },
+        {
+          "target": "setImpersonatedUserId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 40
+        },
+        {
+          "target": "userId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 40
+        },
+        {
+          "target": "reload",
+          "resolved": false,
+          "confidence": 0,
+          "line": 41
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 43
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 43
+        },
+        {
+          "target": "toast",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 44,
+          "resolvedId": "src/components/molecules/Toast/use-toast.tsx:toast:27"
+        },
+        {
+          "target": "useCallback",
+          "resolved": false,
+          "confidence": 0,
+          "line": 54
+        },
+        {
+          "target": "clear",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 56,
+          "resolvedId": "src/services/consent/cookies.ts:clear:76"
+        },
+        {
+          "target": "setImpersonatedUserId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 57
+        },
+        {
+          "target": "reload",
+          "resolved": false,
+          "confidence": 0,
+          "line": 58
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 60
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 60
+        },
+        {
+          "target": "toast",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 61,
+          "resolvedId": "src/components/molecules/Toast/use-toast.tsx:toast:27"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.140Z",
+  "checksum": "24a201bfe2dbe162",
+  "file": "backend/blocks/slant3d/slicing.py",
+  "functions": [
+    {
+      "id": "backend/blocks/slant3d/slicing.py:__init__:26",
+      "name": "__init__",
+      "startLine": 26,
+      "endLine": 44,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 27,
+          "resolvedId": "backend/blocks/slant3d/slicing.py:__init__:26"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 27
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/slant3d/slicing.py:run:46",
+      "name": "run",
+      "startLine": 46,
+      "endLine": 60,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "_make_request",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 50,
+          "resolvedId": "backend/blocks/slant3d/base.py:_make_request:17"
+        },
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 53,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 59
+        },
+        {
+          "target": "e",
+          "resolved": false,
+          "confidence": 0,
+          "line": 59
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

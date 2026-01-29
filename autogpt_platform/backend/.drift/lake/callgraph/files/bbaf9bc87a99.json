@@ -1,0 +1,3451 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.208Z",
+  "checksum": "61996d31ca1a1350",
+  "file": "backend/data/auth/oauth.py",
+  "functions": [
+    {
+      "id": "backend/data/auth/oauth.py:_generate_token:34",
+      "name": "_generate_token",
+      "startLine": 34,
+      "endLine": 36,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "token_urlsafe",
+          "resolved": false,
+          "confidence": 0,
+          "line": 36
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/auth/oauth.py:_hash_token:39",
+      "name": "_hash_token",
+      "startLine": 39,
+      "endLine": 41,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "hexdigest",
+          "resolved": false,
+          "confidence": 0,
+          "line": 41
+        },
+        {
+          "target": "sha256",
+          "resolved": false,
+          "confidence": 0,
+          "line": 41
+        },
+        {
+          "target": "encode",
+          "resolved": false,
+          "confidence": 0,
+          "line": 41
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/auth/oauth.py:__init__:73",
+      "name": "__init__",
+      "startLine": 73,
+      "endLine": 75,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 75,
+          "resolvedId": "backend/data/auth/oauth.py:__init__:73"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 75
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/auth/oauth.py:__init__:81",
+      "name": "__init__",
+      "startLine": 81,
+      "endLine": 83,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 83,
+          "resolvedId": "backend/data/auth/oauth.py:__init__:73"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 83
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/auth/oauth.py:from_db:108",
+      "name": "from_db",
+      "startLine": 108,
+      "endLine": 122,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "OAuthApplicationInfo",
+          "resolved": false,
+          "confidence": 0,
+          "line": 109
+        },
+        {
+          "target": "APIPermission",
+          "resolved": false,
+          "confidence": 0,
+          "line": 117
+        },
+        {
+          "target": "s",
+          "resolved": false,
+          "confidence": 0,
+          "line": 117
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/auth/oauth.py:from_db:132",
+      "name": "from_db",
+      "startLine": 132,
+      "endLine": 137,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "OAuthApplicationInfoWithSecret",
+          "resolved": false,
+          "confidence": 0,
+          "line": 133
+        },
+        {
+          "target": "model_dump",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 134,
+          "resolvedId": "backend/blocks/apollo/models.py:model_dump:11"
+        },
+        {
+          "target": "from_db",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 134,
+          "resolvedId": "backend/data/auth/oauth.py:from_db:108"
+        },
+        {
+          "target": "app",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 134,
+          "resolvedId": "backend/api/middleware/security_test.py:app:10"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/auth/oauth.py:verify_secret:139",
+      "name": "verify_secret",
+      "startLine": 139,
+      "endLine": 144,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "verify_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 142
+        },
+        {
+          "target": "plaintext_secret",
+          "resolved": false,
+          "confidence": 0,
+          "line": 143
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/auth/oauth.py:is_used:163",
+      "name": "is_used",
+      "startLine": 163,
+      "endLine": 164,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/auth/oauth.py:from_db:167",
+      "name": "from_db",
+      "startLine": 167,
+      "endLine": 180,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "OAuthAuthorizationCodeInfo",
+          "resolved": false,
+          "confidence": 0,
+          "line": 168
+        },
+        {
+          "target": "APIPermission",
+          "resolved": false,
+          "confidence": 0,
+          "line": 175
+        },
+        {
+          "target": "s",
+          "resolved": false,
+          "confidence": 0,
+          "line": 175
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/auth/oauth.py:from_db:193",
+      "name": "from_db",
+      "startLine": 193,
+      "endLine": 203,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "OAuthAccessTokenInfo",
+          "resolved": false,
+          "confidence": 0,
+          "line": 194
+        },
+        {
+          "target": "APIPermission",
+          "resolved": false,
+          "confidence": 0,
+          "line": 197
+        },
+        {
+          "target": "s",
+          "resolved": false,
+          "confidence": 0,
+          "line": 197
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/auth/oauth.py:from_db:212",
+      "name": "from_db",
+      "startLine": 212,
+      "endLine": 216,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "OAuthAccessToken",
+          "resolved": false,
+          "confidence": 0,
+          "line": 213
+        },
+        {
+          "target": "model_dump",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 214,
+          "resolvedId": "backend/blocks/apollo/models.py:model_dump:11"
+        },
+        {
+          "target": "from_db",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 214,
+          "resolvedId": "backend/data/auth/oauth.py:from_db:108"
+        },
+        {
+          "target": "token",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 214,
+          "resolvedId": "backend/api/features/oauth.py:token:337"
+        },
+        {
+          "target": "SecretStr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 215
+        },
+        {
+          "target": "plaintext_token",
+          "resolved": false,
+          "confidence": 0,
+          "line": 215
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/auth/oauth.py:is_revoked:231",
+      "name": "is_revoked",
+      "startLine": 231,
+      "endLine": 232,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/auth/oauth.py:from_db:235",
+      "name": "from_db",
+      "startLine": 235,
+      "endLine": 244,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "OAuthRefreshTokenInfo",
+          "resolved": false,
+          "confidence": 0,
+          "line": 236
+        },
+        {
+          "target": "APIPermission",
+          "resolved": false,
+          "confidence": 0,
+          "line": 239
+        },
+        {
+          "target": "s",
+          "resolved": false,
+          "confidence": 0,
+          "line": 239
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/auth/oauth.py:from_db:253",
+      "name": "from_db",
+      "startLine": 253,
+      "endLine": 257,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "OAuthRefreshToken",
+          "resolved": false,
+          "confidence": 0,
+          "line": 254
+        },
+        {
+          "target": "model_dump",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 255,
+          "resolvedId": "backend/blocks/apollo/models.py:model_dump:11"
+        },
+        {
+          "target": "from_db",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 255,
+          "resolvedId": "backend/data/auth/oauth.py:from_db:108"
+        },
+        {
+          "target": "token",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 255,
+          "resolvedId": "backend/api/features/oauth.py:token:337"
+        },
+        {
+          "target": "SecretStr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 256
+        },
+        {
+          "target": "plaintext_token",
+          "resolved": false,
+          "confidence": 0,
+          "line": 256
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/auth/oauth.py:get_oauth_application:276",
+      "name": "get_oauth_application",
+      "startLine": 276,
+      "endLine": 283,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "find_unique",
+          "resolved": false,
+          "confidence": 0,
+          "line": 278
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 278
+        },
+        {
+          "target": "from_db",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 283,
+          "resolvedId": "backend/data/auth/oauth.py:from_db:108"
+        },
+        {
+          "target": "app",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 283,
+          "resolvedId": "backend/api/middleware/security_test.py:app:10"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "prisma",
+          "operation": "read",
+          "line": 278,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/data/auth/oauth.py:get_oauth_application_with_secret:286",
+      "name": "get_oauth_application_with_secret",
+      "startLine": 286,
+      "endLine": 295,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "find_unique",
+          "resolved": false,
+          "confidence": 0,
+          "line": 290
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 290
+        },
+        {
+          "target": "from_db",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 295,
+          "resolvedId": "backend/data/auth/oauth.py:from_db:108"
+        },
+        {
+          "target": "app",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 295,
+          "resolvedId": "backend/api/middleware/security_test.py:app:10"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "prisma",
+          "operation": "read",
+          "line": 290,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/data/auth/oauth.py:validate_client_credentials:298",
+      "name": "validate_client_credentials",
+      "startLine": 298,
+      "endLine": 319,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "get_oauth_application_with_secret",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 307,
+          "resolvedId": "backend/data/auth/oauth.py:get_oauth_application_with_secret:286"
+        },
+        {
+          "target": "client_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 307
+        },
+        {
+          "target": "InvalidClientError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 309
+        },
+        {
+          "target": "InvalidClientError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 312
+        },
+        {
+          "target": "verify_secret",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 315,
+          "resolvedId": "backend/data/auth/oauth.py:verify_secret:139"
+        },
+        {
+          "target": "client_secret",
+          "resolved": false,
+          "confidence": 0,
+          "line": 315
+        },
+        {
+          "target": "InvalidClientError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 316
+        },
+        {
+          "target": "OAuthApplicationInfo",
+          "resolved": false,
+          "confidence": 0,
+          "line": 319
+        },
+        {
+          "target": "model_dump",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 319,
+          "resolvedId": "backend/blocks/apollo/models.py:model_dump:11"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/auth/oauth.py:validate_redirect_uri:322",
+      "name": "validate_redirect_uri",
+      "startLine": 322,
+      "endLine": 324,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/auth/oauth.py:validate_scopes:327",
+      "name": "validate_scopes",
+      "startLine": 327,
+      "endLine": 331,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "all",
+          "resolved": false,
+          "confidence": 0,
+          "line": 331
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/auth/oauth.py:_generate_authorization_code:339",
+      "name": "_generate_authorization_code",
+      "startLine": 339,
+      "endLine": 342,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "token_urlsafe",
+          "resolved": false,
+          "confidence": 0,
+          "line": 342
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/auth/oauth.py:create_authorization_code:345",
+      "name": "create_authorization_code",
+      "startLine": 345,
+      "endLine": 375,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "_generate_authorization_code",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 357,
+          "resolvedId": "backend/data/auth/oauth.py:_generate_authorization_code:339"
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 358
+        },
+        {
+          "target": "create",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 361,
+          "resolvedId": "backend/integrations/creds_manager.py:create:68"
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 361
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 363
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 363
+        },
+        {
+          "target": "from_db",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 375,
+          "resolvedId": "backend/data/auth/oauth.py:from_db:108"
+        },
+        {
+          "target": "saved_code",
+          "resolved": false,
+          "confidence": 0,
+          "line": 375
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "prisma",
+          "operation": "write",
+          "line": 361,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/data/auth/oauth.py:consume_authorization_code:378",
+      "name": "consume_authorization_code",
+      "startLine": 378,
+      "endLine": 441,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "find_unique",
+          "resolved": false,
+          "confidence": 0,
+          "line": 397
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 397
+        },
+        {
+          "target": "InvalidGrantError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 402
+        },
+        {
+          "target": "InvalidGrantError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 406
+        },
+        {
+          "target": "InvalidGrantError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 412
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 417
+        },
+        {
+          "target": "InvalidGrantError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 419
+        },
+        {
+          "target": "InvalidGrantError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 423
+        },
+        {
+          "target": "InvalidGrantError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 428
+        },
+        {
+          "target": "_verify_pkce",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 430,
+          "resolvedId": "backend/data/auth/oauth.py:_verify_pkce:444"
+        },
+        {
+          "target": "code_verifier",
+          "resolved": false,
+          "confidence": 0,
+          "line": 431
+        },
+        {
+          "target": "InvalidGrantError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 433
+        },
+        {
+          "target": "update",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 436,
+          "resolvedId": "backend/integrations/creds_manager.py:update:162"
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 436
+        },
+        {
+          "target": "APIPermission",
+          "resolved": false,
+          "confidence": 0,
+          "line": 441
+        },
+        {
+          "target": "s",
+          "resolved": false,
+          "confidence": 0,
+          "line": 441
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "prisma",
+          "operation": "read",
+          "line": 397,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "write",
+          "line": 436,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/data/auth/oauth.py:_verify_pkce:444",
+      "name": "_verify_pkce",
+      "startLine": 444,
+      "endLine": 472,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "digest",
+          "resolved": false,
+          "confidence": 0,
+          "line": 456
+        },
+        {
+          "target": "sha256",
+          "resolved": false,
+          "confidence": 0,
+          "line": 456
+        },
+        {
+          "target": "encode",
+          "resolved": false,
+          "confidence": 0,
+          "line": 456
+        },
+        {
+          "target": "decode",
+          "resolved": false,
+          "confidence": 0,
+          "line": 458
+        },
+        {
+          "target": "encode",
+          "resolved": false,
+          "confidence": 0,
+          "line": 458
+        },
+        {
+          "target": "token_urlsafe",
+          "resolved": false,
+          "confidence": 0,
+          "line": 458
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 458
+        },
+        {
+          "target": "hashed",
+          "resolved": false,
+          "confidence": 0,
+          "line": 458
+        },
+        {
+          "target": "rstrip",
+          "resolved": false,
+          "confidence": 0,
+          "line": 464
+        },
+        {
+          "target": "decode",
+          "resolved": false,
+          "confidence": 0,
+          "line": 464
+        },
+        {
+          "target": "urlsafe_b64encode",
+          "resolved": false,
+          "confidence": 0,
+          "line": 464
+        },
+        {
+          "target": "hashed",
+          "resolved": false,
+          "confidence": 0,
+          "line": 464
+        },
+        {
+          "target": "compare_digest",
+          "resolved": false,
+          "confidence": 0,
+          "line": 466
+        },
+        {
+          "target": "computed_challenge",
+          "resolved": false,
+          "confidence": 0,
+          "line": 466
+        },
+        {
+          "target": "code_challenge",
+          "resolved": false,
+          "confidence": 0,
+          "line": 466
+        },
+        {
+          "target": "compare_digest",
+          "resolved": false,
+          "confidence": 0,
+          "line": 469
+        },
+        {
+          "target": "code_verifier",
+          "resolved": false,
+          "confidence": 0,
+          "line": 469
+        },
+        {
+          "target": "code_challenge",
+          "resolved": false,
+          "confidence": 0,
+          "line": 469
+        },
+        {
+          "target": "warning",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 471,
+          "resolvedId": "backend/util/logging.py:warning:45"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/auth/oauth.py:create_access_token:480",
+      "name": "create_access_token",
+      "startLine": 480,
+      "endLine": 503,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "_generate_token",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 487,
+          "resolvedId": "backend/data/auth/oauth.py:_generate_token:34"
+        },
+        {
+          "target": "_hash_token",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 488,
+          "resolvedId": "backend/data/auth/oauth.py:_hash_token:39"
+        },
+        {
+          "target": "plaintext_token",
+          "resolved": false,
+          "confidence": 0,
+          "line": 488
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 489
+        },
+        {
+          "target": "create",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 492,
+          "resolvedId": "backend/integrations/creds_manager.py:create:68"
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 492
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 494
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 494
+        },
+        {
+          "target": "from_db",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 503,
+          "resolvedId": "backend/data/auth/oauth.py:from_db:108"
+        },
+        {
+          "target": "saved_token",
+          "resolved": false,
+          "confidence": 0,
+          "line": 503
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "prisma",
+          "operation": "write",
+          "line": 492,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/data/auth/oauth.py:validate_access_token:506",
+      "name": "validate_access_token",
+      "startLine": 506,
+      "endLine": 543,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "_hash_token",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 516,
+          "resolvedId": "backend/data/auth/oauth.py:_hash_token:39"
+        },
+        {
+          "target": "token",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 516,
+          "resolvedId": "backend/api/features/oauth.py:token:337"
+        },
+        {
+          "target": "find_unique",
+          "resolved": false,
+          "confidence": 0,
+          "line": 519
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 519
+        },
+        {
+          "target": "InvalidTokenError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 524
+        },
+        {
+          "target": "InvalidClientError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 527
+        },
+        {
+          "target": "InvalidClientError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 530
+        },
+        {
+          "target": "InvalidTokenError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 533
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 536
+        },
+        {
+          "target": "InvalidTokenError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 538
+        },
+        {
+          "target": "from_db",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 541,
+          "resolvedId": "backend/data/auth/oauth.py:from_db:108"
+        },
+        {
+          "target": "access_token",
+          "resolved": false,
+          "confidence": 0,
+          "line": 541
+        },
+        {
+          "target": "from_db",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 542,
+          "resolvedId": "backend/data/auth/oauth.py:from_db:108"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "prisma",
+          "operation": "read",
+          "line": 519,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/data/auth/oauth.py:revoke_access_token:546",
+      "name": "revoke_access_token",
+      "startLine": 546,
+      "endLine": 589,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "_hash_token",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 565,
+          "resolvedId": "backend/data/auth/oauth.py:_hash_token:39"
+        },
+        {
+          "target": "token",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 565,
+          "resolvedId": "backend/api/features/oauth.py:token:337"
+        },
+        {
+          "target": "update_many",
+          "resolved": false,
+          "confidence": 0,
+          "line": 568
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 568
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 574
+        },
+        {
+          "target": "find_unique",
+          "resolved": false,
+          "confidence": 0,
+          "line": 578
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 578
+        },
+        {
+          "target": "from_db",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 586,
+          "resolvedId": "backend/data/auth/oauth.py:from_db:108"
+        },
+        {
+          "target": "result",
+          "resolved": false,
+          "confidence": 0,
+          "line": 586
+        },
+        {
+          "target": "exception",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 588,
+          "resolvedId": "backend/util/logging.py:exception:57"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "prisma",
+          "operation": "read",
+          "line": 578,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/data/auth/oauth.py:create_refresh_token:597",
+      "name": "create_refresh_token",
+      "startLine": 597,
+      "endLine": 620,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "_generate_token",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 604,
+          "resolvedId": "backend/data/auth/oauth.py:_generate_token:34"
+        },
+        {
+          "target": "_hash_token",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 605,
+          "resolvedId": "backend/data/auth/oauth.py:_hash_token:39"
+        },
+        {
+          "target": "plaintext_token",
+          "resolved": false,
+          "confidence": 0,
+          "line": 605
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 606
+        },
+        {
+          "target": "create",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 609,
+          "resolvedId": "backend/integrations/creds_manager.py:create:68"
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 609
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 611
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 611
+        },
+        {
+          "target": "from_db",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 620,
+          "resolvedId": "backend/data/auth/oauth.py:from_db:108"
+        },
+        {
+          "target": "saved_token",
+          "resolved": false,
+          "confidence": 0,
+          "line": 620
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "prisma",
+          "operation": "write",
+          "line": 609,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/data/auth/oauth.py:refresh_tokens:623",
+      "name": "refresh_tokens",
+      "startLine": 623,
+      "endLine": 674,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "_hash_token",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 633,
+          "resolvedId": "backend/data/auth/oauth.py:_hash_token:39"
+        },
+        {
+          "target": "refresh_token",
+          "resolved": false,
+          "confidence": 0,
+          "line": 633
+        },
+        {
+          "target": "find_unique",
+          "resolved": false,
+          "confidence": 0,
+          "line": 636
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 636
+        },
+        {
+          "target": "InvalidGrantError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 639
+        },
+        {
+          "target": "InvalidGrantError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 644
+        },
+        {
+          "target": "InvalidGrantError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 648
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 651
+        },
+        {
+          "target": "InvalidGrantError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 653
+        },
+        {
+          "target": "update",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 656,
+          "resolvedId": "backend/integrations/creds_manager.py:update:162"
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 656
+        },
+        {
+          "target": "APIPermission",
+          "resolved": false,
+          "confidence": 0,
+          "line": 662
+        },
+        {
+          "target": "s",
+          "resolved": false,
+          "confidence": 0,
+          "line": 662
+        },
+        {
+          "target": "create_access_token",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 663,
+          "resolvedId": "backend/data/auth/oauth.py:create_access_token:480"
+        },
+        {
+          "target": "scopes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 666
+        },
+        {
+          "target": "create_refresh_token",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 668,
+          "resolvedId": "backend/data/auth/oauth.py:create_refresh_token:597"
+        },
+        {
+          "target": "scopes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 671
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "prisma",
+          "operation": "read",
+          "line": 636,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "write",
+          "line": 656,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/data/auth/oauth.py:revoke_refresh_token:677",
+      "name": "revoke_refresh_token",
+      "startLine": 677,
+      "endLine": 720,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "_hash_token",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 696,
+          "resolvedId": "backend/data/auth/oauth.py:_hash_token:39"
+        },
+        {
+          "target": "token",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 696,
+          "resolvedId": "backend/api/features/oauth.py:token:337"
+        },
+        {
+          "target": "update_many",
+          "resolved": false,
+          "confidence": 0,
+          "line": 699
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 699
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 705
+        },
+        {
+          "target": "find_unique",
+          "resolved": false,
+          "confidence": 0,
+          "line": 709
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 709
+        },
+        {
+          "target": "from_db",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 717,
+          "resolvedId": "backend/data/auth/oauth.py:from_db:108"
+        },
+        {
+          "target": "result",
+          "resolved": false,
+          "confidence": 0,
+          "line": 717
+        },
+        {
+          "target": "exception",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 719,
+          "resolvedId": "backend/util/logging.py:exception:57"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "prisma",
+          "operation": "read",
+          "line": 709,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/data/auth/oauth.py:introspect_token:728",
+      "name": "introspect_token",
+      "startLine": 728,
+      "endLine": 774,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "validate_access_token",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 741,
+          "resolvedId": "backend/data/auth/oauth.py:validate_access_token:506"
+        },
+        {
+          "target": "token",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 741,
+          "resolvedId": "backend/api/features/oauth.py:token:337"
+        },
+        {
+          "target": "TokenIntrospectionResult",
+          "resolved": false,
+          "confidence": 0,
+          "line": 742
+        },
+        {
+          "target": "list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 744
+        },
+        {
+          "target": "int",
+          "resolved": false,
+          "confidence": 0,
+          "line": 747
+        },
+        {
+          "target": "timestamp",
+          "resolved": false,
+          "confidence": 0,
+          "line": 747
+        },
+        {
+          "target": "_hash_token",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 754,
+          "resolvedId": "backend/data/auth/oauth.py:_hash_token:39"
+        },
+        {
+          "target": "token",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 754,
+          "resolvedId": "backend/api/features/oauth.py:token:337"
+        },
+        {
+          "target": "find_unique",
+          "resolved": false,
+          "confidence": 0,
+          "line": 755
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 755
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 761
+        },
+        {
+          "target": "get_oauth_application_by_id",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 763,
+          "resolvedId": "backend/data/auth/oauth.py:get_oauth_application_by_id:777"
+        },
+        {
+          "target": "TokenIntrospectionResult",
+          "resolved": false,
+          "confidence": 0,
+          "line": 764
+        },
+        {
+          "target": "list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 766
+        },
+        {
+          "target": "s",
+          "resolved": false,
+          "confidence": 0,
+          "line": 766
+        },
+        {
+          "target": "int",
+          "resolved": false,
+          "confidence": 0,
+          "line": 769
+        },
+        {
+          "target": "timestamp",
+          "resolved": false,
+          "confidence": 0,
+          "line": 769
+        },
+        {
+          "target": "TokenIntrospectionResult",
+          "resolved": false,
+          "confidence": 0,
+          "line": 774
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "prisma",
+          "operation": "read",
+          "line": 755,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/data/auth/oauth.py:get_oauth_application_by_id:777",
+      "name": "get_oauth_application_by_id",
+      "startLine": 777,
+      "endLine": 782,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "find_unique",
+          "resolved": false,
+          "confidence": 0,
+          "line": 779
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 779
+        },
+        {
+          "target": "from_db",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 782,
+          "resolvedId": "backend/data/auth/oauth.py:from_db:108"
+        },
+        {
+          "target": "app",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 782,
+          "resolvedId": "backend/api/middleware/security_test.py:app:10"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "prisma",
+          "operation": "read",
+          "line": 779,
+          "fields": [
+            "id"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "backend/data/auth/oauth.py:list_user_oauth_applications:785",
+      "name": "list_user_oauth_applications",
+      "startLine": 785,
+      "endLine": 791,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "find_many",
+          "resolved": false,
+          "confidence": 0,
+          "line": 787
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 787
+        },
+        {
+          "target": "from_db",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 791,
+          "resolvedId": "backend/data/auth/oauth.py:from_db:108"
+        },
+        {
+          "target": "app",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 791,
+          "resolvedId": "backend/api/middleware/security_test.py:app:10"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "prisma",
+          "operation": "read",
+          "line": 787,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/data/auth/oauth.py:update_oauth_application:794",
+      "name": "update_oauth_application",
+      "startLine": 794,
+      "endLine": 826,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "find_first",
+          "resolved": false,
+          "confidence": 0,
+          "line": 808
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 808
+        },
+        {
+          "target": "from_db",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 820,
+          "resolvedId": "backend/data/auth/oauth.py:from_db:108"
+        },
+        {
+          "target": "app",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 820,
+          "resolvedId": "backend/api/middleware/security_test.py:app:10"
+        },
+        {
+          "target": "update",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 822,
+          "resolvedId": "backend/integrations/creds_manager.py:update:162"
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 822
+        },
+        {
+          "target": "from_db",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 826,
+          "resolvedId": "backend/data/auth/oauth.py:from_db:108"
+        },
+        {
+          "target": "updated_app",
+          "resolved": false,
+          "confidence": 0,
+          "line": 826
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "OAuth",
+          "operation": "write",
+          "line": 802,
+          "fields": [
+            "status",
+            "active"
+          ]
+        },
+        {
+          "table": "prisma",
+          "operation": "read",
+          "line": 808,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "write",
+          "line": 822,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/data/auth/oauth.py:cleanup_expired_oauth_tokens:834",
+      "name": "cleanup_expired_oauth_tokens",
+      "startLine": 834,
+      "endLine": 872,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 845
+        },
+        {
+          "target": "delete_many",
+          "resolved": false,
+          "confidence": 0,
+          "line": 848
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 848
+        },
+        {
+          "target": "delete_many",
+          "resolved": false,
+          "confidence": 0,
+          "line": 853
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 853
+        },
+        {
+          "target": "delete_many",
+          "resolved": false,
+          "confidence": 0,
+          "line": 858
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 858
+        },
+        {
+          "target": "sum",
+          "resolved": false,
+          "confidence": 0,
+          "line": 868
+        },
+        {
+          "target": "values",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 868,
+          "resolvedId": "backend/integrations/oauth/__init__.py:values:112"
+        },
+        {
+          "target": "info",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 870,
+          "resolvedId": "backend/util/logging.py:info:41"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "OAuth",
+          "operation": "delete",
+          "line": 836,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/data/auth/oauth.py:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 873,
+      "isEntryPoint": false,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "getLogger",
+          "resolved": false,
+          "confidence": 0,
+          "line": 30
+        },
+        {
+          "target": "APIKeySmith",
+          "resolved": false,
+          "confidence": 0,
+          "line": 31
+        },
+        {
+          "target": "token_urlsafe",
+          "resolved": false,
+          "confidence": 0,
+          "line": 36
+        },
+        {
+          "target": "hexdigest",
+          "resolved": false,
+          "confidence": 0,
+          "line": 41
+        },
+        {
+          "target": "sha256",
+          "resolved": false,
+          "confidence": 0,
+          "line": 41
+        },
+        {
+          "target": "encode",
+          "resolved": false,
+          "confidence": 0,
+          "line": 41
+        },
+        {
+          "target": "timedelta",
+          "resolved": false,
+          "confidence": 0,
+          "line": 45
+        },
+        {
+          "target": "timedelta",
+          "resolved": false,
+          "confidence": 0,
+          "line": 46
+        },
+        {
+          "target": "timedelta",
+          "resolved": false,
+          "confidence": 0,
+          "line": 47
+        },
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 75,
+          "resolvedId": "backend/data/auth/oauth.py:__init__:73"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 75
+        },
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 83,
+          "resolvedId": "backend/data/auth/oauth.py:__init__:73"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 83
+        },
+        {
+          "target": "OAuthApplicationInfo",
+          "resolved": false,
+          "confidence": 0,
+          "line": 109
+        },
+        {
+          "target": "APIPermission",
+          "resolved": false,
+          "confidence": 0,
+          "line": 117
+        },
+        {
+          "target": "s",
+          "resolved": false,
+          "confidence": 0,
+          "line": 117
+        },
+        {
+          "target": "OAuthApplicationInfoWithSecret",
+          "resolved": false,
+          "confidence": 0,
+          "line": 133
+        },
+        {
+          "target": "model_dump",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 134,
+          "resolvedId": "backend/blocks/apollo/models.py:model_dump:11"
+        },
+        {
+          "target": "from_db",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 134,
+          "resolvedId": "backend/data/auth/oauth.py:from_db:108"
+        },
+        {
+          "target": "app",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 134,
+          "resolvedId": "backend/api/middleware/security_test.py:app:10"
+        },
+        {
+          "target": "verify_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 142
+        },
+        {
+          "target": "plaintext_secret",
+          "resolved": false,
+          "confidence": 0,
+          "line": 143
+        },
+        {
+          "target": "OAuthAuthorizationCodeInfo",
+          "resolved": false,
+          "confidence": 0,
+          "line": 168
+        },
+        {
+          "target": "APIPermission",
+          "resolved": false,
+          "confidence": 0,
+          "line": 175
+        },
+        {
+          "target": "s",
+          "resolved": false,
+          "confidence": 0,
+          "line": 175
+        },
+        {
+          "target": "OAuthAccessTokenInfo",
+          "resolved": false,
+          "confidence": 0,
+          "line": 194
+        },
+        {
+          "target": "APIPermission",
+          "resolved": false,
+          "confidence": 0,
+          "line": 197
+        },
+        {
+          "target": "s",
+          "resolved": false,
+          "confidence": 0,
+          "line": 197
+        },
+        {
+          "target": "Field",
+          "resolved": false,
+          "confidence": 0,
+          "line": 209
+        },
+        {
+          "target": "OAuthAccessToken",
+          "resolved": false,
+          "confidence": 0,
+          "line": 213
+        },
+        {
+          "target": "model_dump",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 214,
+          "resolvedId": "backend/blocks/apollo/models.py:model_dump:11"
+        },
+        {
+          "target": "from_db",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 214,
+          "resolvedId": "backend/data/auth/oauth.py:from_db:108"
+        },
+        {
+          "target": "token",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 214,
+          "resolvedId": "backend/api/features/oauth.py:token:337"
+        },
+        {
+          "target": "SecretStr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 215
+        },
+        {
+          "target": "plaintext_token",
+          "resolved": false,
+          "confidence": 0,
+          "line": 215
+        },
+        {
+          "target": "OAuthRefreshTokenInfo",
+          "resolved": false,
+          "confidence": 0,
+          "line": 236
+        },
+        {
+          "target": "APIPermission",
+          "resolved": false,
+          "confidence": 0,
+          "line": 239
+        },
+        {
+          "target": "s",
+          "resolved": false,
+          "confidence": 0,
+          "line": 239
+        },
+        {
+          "target": "Field",
+          "resolved": false,
+          "confidence": 0,
+          "line": 250
+        },
+        {
+          "target": "OAuthRefreshToken",
+          "resolved": false,
+          "confidence": 0,
+          "line": 254
+        },
+        {
+          "target": "model_dump",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 255,
+          "resolvedId": "backend/blocks/apollo/models.py:model_dump:11"
+        },
+        {
+          "target": "from_db",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 255,
+          "resolvedId": "backend/data/auth/oauth.py:from_db:108"
+        },
+        {
+          "target": "token",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 255,
+          "resolvedId": "backend/api/features/oauth.py:token:337"
+        },
+        {
+          "target": "SecretStr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 256
+        },
+        {
+          "target": "plaintext_token",
+          "resolved": false,
+          "confidence": 0,
+          "line": 256
+        },
+        {
+          "target": "find_unique",
+          "resolved": false,
+          "confidence": 0,
+          "line": 278
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 278
+        },
+        {
+          "target": "from_db",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 283,
+          "resolvedId": "backend/data/auth/oauth.py:from_db:108"
+        },
+        {
+          "target": "app",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 283,
+          "resolvedId": "backend/api/middleware/security_test.py:app:10"
+        },
+        {
+          "target": "find_unique",
+          "resolved": false,
+          "confidence": 0,
+          "line": 290
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 290
+        },
+        {
+          "target": "from_db",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 295,
+          "resolvedId": "backend/data/auth/oauth.py:from_db:108"
+        },
+        {
+          "target": "app",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 295,
+          "resolvedId": "backend/api/middleware/security_test.py:app:10"
+        },
+        {
+          "target": "get_oauth_application_with_secret",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 307,
+          "resolvedId": "backend/data/auth/oauth.py:get_oauth_application_with_secret:286"
+        },
+        {
+          "target": "client_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 307
+        },
+        {
+          "target": "InvalidClientError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 309
+        },
+        {
+          "target": "InvalidClientError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 312
+        },
+        {
+          "target": "verify_secret",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 315,
+          "resolvedId": "backend/data/auth/oauth.py:verify_secret:139"
+        },
+        {
+          "target": "client_secret",
+          "resolved": false,
+          "confidence": 0,
+          "line": 315
+        },
+        {
+          "target": "InvalidClientError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 316
+        },
+        {
+          "target": "OAuthApplicationInfo",
+          "resolved": false,
+          "confidence": 0,
+          "line": 319
+        },
+        {
+          "target": "model_dump",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 319,
+          "resolvedId": "backend/blocks/apollo/models.py:model_dump:11"
+        },
+        {
+          "target": "all",
+          "resolved": false,
+          "confidence": 0,
+          "line": 331
+        },
+        {
+          "target": "token_urlsafe",
+          "resolved": false,
+          "confidence": 0,
+          "line": 342
+        },
+        {
+          "target": "_generate_authorization_code",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 357,
+          "resolvedId": "backend/data/auth/oauth.py:_generate_authorization_code:339"
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 358
+        },
+        {
+          "target": "create",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 361,
+          "resolvedId": "backend/integrations/creds_manager.py:create:68"
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 361
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 363
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 363
+        },
+        {
+          "target": "from_db",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 375,
+          "resolvedId": "backend/data/auth/oauth.py:from_db:108"
+        },
+        {
+          "target": "saved_code",
+          "resolved": false,
+          "confidence": 0,
+          "line": 375
+        },
+        {
+          "target": "find_unique",
+          "resolved": false,
+          "confidence": 0,
+          "line": 397
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 397
+        },
+        {
+          "target": "InvalidGrantError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 402
+        },
+        {
+          "target": "InvalidGrantError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 406
+        },
+        {
+          "target": "InvalidGrantError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 412
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 417
+        },
+        {
+          "target": "InvalidGrantError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 419
+        },
+        {
+          "target": "InvalidGrantError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 423
+        },
+        {
+          "target": "InvalidGrantError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 428
+        },
+        {
+          "target": "_verify_pkce",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 430,
+          "resolvedId": "backend/data/auth/oauth.py:_verify_pkce:444"
+        },
+        {
+          "target": "code_verifier",
+          "resolved": false,
+          "confidence": 0,
+          "line": 431
+        },
+        {
+          "target": "InvalidGrantError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 433
+        },
+        {
+          "target": "update",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 436,
+          "resolvedId": "backend/integrations/creds_manager.py:update:162"
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 436
+        },
+        {
+          "target": "APIPermission",
+          "resolved": false,
+          "confidence": 0,
+          "line": 441
+        },
+        {
+          "target": "s",
+          "resolved": false,
+          "confidence": 0,
+          "line": 441
+        },
+        {
+          "target": "digest",
+          "resolved": false,
+          "confidence": 0,
+          "line": 456
+        },
+        {
+          "target": "sha256",
+          "resolved": false,
+          "confidence": 0,
+          "line": 456
+        },
+        {
+          "target": "encode",
+          "resolved": false,
+          "confidence": 0,
+          "line": 456
+        },
+        {
+          "target": "decode",
+          "resolved": false,
+          "confidence": 0,
+          "line": 458
+        },
+        {
+          "target": "encode",
+          "resolved": false,
+          "confidence": 0,
+          "line": 458
+        },
+        {
+          "target": "token_urlsafe",
+          "resolved": false,
+          "confidence": 0,
+          "line": 458
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 458
+        },
+        {
+          "target": "hashed",
+          "resolved": false,
+          "confidence": 0,
+          "line": 458
+        },
+        {
+          "target": "rstrip",
+          "resolved": false,
+          "confidence": 0,
+          "line": 464
+        },
+        {
+          "target": "decode",
+          "resolved": false,
+          "confidence": 0,
+          "line": 464
+        },
+        {
+          "target": "urlsafe_b64encode",
+          "resolved": false,
+          "confidence": 0,
+          "line": 464
+        },
+        {
+          "target": "hashed",
+          "resolved": false,
+          "confidence": 0,
+          "line": 464
+        },
+        {
+          "target": "compare_digest",
+          "resolved": false,
+          "confidence": 0,
+          "line": 466
+        },
+        {
+          "target": "computed_challenge",
+          "resolved": false,
+          "confidence": 0,
+          "line": 466
+        },
+        {
+          "target": "code_challenge",
+          "resolved": false,
+          "confidence": 0,
+          "line": 466
+        },
+        {
+          "target": "compare_digest",
+          "resolved": false,
+          "confidence": 0,
+          "line": 469
+        },
+        {
+          "target": "code_verifier",
+          "resolved": false,
+          "confidence": 0,
+          "line": 469
+        },
+        {
+          "target": "code_challenge",
+          "resolved": false,
+          "confidence": 0,
+          "line": 469
+        },
+        {
+          "target": "warning",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 471,
+          "resolvedId": "backend/util/logging.py:warning:45"
+        },
+        {
+          "target": "_generate_token",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 487,
+          "resolvedId": "backend/data/auth/oauth.py:_generate_token:34"
+        },
+        {
+          "target": "_hash_token",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 488,
+          "resolvedId": "backend/data/auth/oauth.py:_hash_token:39"
+        },
+        {
+          "target": "plaintext_token",
+          "resolved": false,
+          "confidence": 0,
+          "line": 488
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 489
+        },
+        {
+          "target": "create",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 492,
+          "resolvedId": "backend/integrations/creds_manager.py:create:68"
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 492
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 494
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 494
+        },
+        {
+          "target": "from_db",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 503,
+          "resolvedId": "backend/data/auth/oauth.py:from_db:108"
+        },
+        {
+          "target": "saved_token",
+          "resolved": false,
+          "confidence": 0,
+          "line": 503
+        },
+        {
+          "target": "_hash_token",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 516,
+          "resolvedId": "backend/data/auth/oauth.py:_hash_token:39"
+        },
+        {
+          "target": "token",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 516,
+          "resolvedId": "backend/api/features/oauth.py:token:337"
+        },
+        {
+          "target": "find_unique",
+          "resolved": false,
+          "confidence": 0,
+          "line": 519
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 519
+        },
+        {
+          "target": "InvalidTokenError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 524
+        },
+        {
+          "target": "InvalidClientError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 527
+        },
+        {
+          "target": "InvalidClientError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 530
+        },
+        {
+          "target": "InvalidTokenError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 533
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 536
+        },
+        {
+          "target": "InvalidTokenError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 538
+        },
+        {
+          "target": "from_db",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 541,
+          "resolvedId": "backend/data/auth/oauth.py:from_db:108"
+        },
+        {
+          "target": "access_token",
+          "resolved": false,
+          "confidence": 0,
+          "line": 541
+        },
+        {
+          "target": "from_db",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 542,
+          "resolvedId": "backend/data/auth/oauth.py:from_db:108"
+        },
+        {
+          "target": "_hash_token",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 565,
+          "resolvedId": "backend/data/auth/oauth.py:_hash_token:39"
+        },
+        {
+          "target": "token",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 565,
+          "resolvedId": "backend/api/features/oauth.py:token:337"
+        },
+        {
+          "target": "update_many",
+          "resolved": false,
+          "confidence": 0,
+          "line": 568
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 568
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 574
+        },
+        {
+          "target": "find_unique",
+          "resolved": false,
+          "confidence": 0,
+          "line": 578
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 578
+        },
+        {
+          "target": "from_db",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 586,
+          "resolvedId": "backend/data/auth/oauth.py:from_db:108"
+        },
+        {
+          "target": "result",
+          "resolved": false,
+          "confidence": 0,
+          "line": 586
+        },
+        {
+          "target": "exception",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 588,
+          "resolvedId": "backend/util/logging.py:exception:57"
+        },
+        {
+          "target": "_generate_token",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 604,
+          "resolvedId": "backend/data/auth/oauth.py:_generate_token:34"
+        },
+        {
+          "target": "_hash_token",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 605,
+          "resolvedId": "backend/data/auth/oauth.py:_hash_token:39"
+        },
+        {
+          "target": "plaintext_token",
+          "resolved": false,
+          "confidence": 0,
+          "line": 605
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 606
+        },
+        {
+          "target": "create",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 609,
+          "resolvedId": "backend/integrations/creds_manager.py:create:68"
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 609
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 611
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 611
+        },
+        {
+          "target": "from_db",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 620,
+          "resolvedId": "backend/data/auth/oauth.py:from_db:108"
+        },
+        {
+          "target": "saved_token",
+          "resolved": false,
+          "confidence": 0,
+          "line": 620
+        },
+        {
+          "target": "_hash_token",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 633,
+          "resolvedId": "backend/data/auth/oauth.py:_hash_token:39"
+        },
+        {
+          "target": "refresh_token",
+          "resolved": false,
+          "confidence": 0,
+          "line": 633
+        },
+        {
+          "target": "find_unique",
+          "resolved": false,
+          "confidence": 0,
+          "line": 636
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 636
+        },
+        {
+          "target": "InvalidGrantError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 639
+        },
+        {
+          "target": "InvalidGrantError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 644
+        },
+        {
+          "target": "InvalidGrantError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 648
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 651
+        },
+        {
+          "target": "InvalidGrantError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 653
+        },
+        {
+          "target": "update",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 656,
+          "resolvedId": "backend/integrations/creds_manager.py:update:162"
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 656
+        },
+        {
+          "target": "APIPermission",
+          "resolved": false,
+          "confidence": 0,
+          "line": 662
+        },
+        {
+          "target": "s",
+          "resolved": false,
+          "confidence": 0,
+          "line": 662
+        },
+        {
+          "target": "create_access_token",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 663,
+          "resolvedId": "backend/data/auth/oauth.py:create_access_token:480"
+        },
+        {
+          "target": "scopes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 666
+        },
+        {
+          "target": "create_refresh_token",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 668,
+          "resolvedId": "backend/data/auth/oauth.py:create_refresh_token:597"
+        },
+        {
+          "target": "scopes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 671
+        },
+        {
+          "target": "_hash_token",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 696,
+          "resolvedId": "backend/data/auth/oauth.py:_hash_token:39"
+        },
+        {
+          "target": "token",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 696,
+          "resolvedId": "backend/api/features/oauth.py:token:337"
+        },
+        {
+          "target": "update_many",
+          "resolved": false,
+          "confidence": 0,
+          "line": 699
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 699
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 705
+        },
+        {
+          "target": "find_unique",
+          "resolved": false,
+          "confidence": 0,
+          "line": 709
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 709
+        },
+        {
+          "target": "from_db",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 717,
+          "resolvedId": "backend/data/auth/oauth.py:from_db:108"
+        },
+        {
+          "target": "result",
+          "resolved": false,
+          "confidence": 0,
+          "line": 717
+        },
+        {
+          "target": "exception",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 719,
+          "resolvedId": "backend/util/logging.py:exception:57"
+        },
+        {
+          "target": "validate_access_token",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 741,
+          "resolvedId": "backend/data/auth/oauth.py:validate_access_token:506"
+        },
+        {
+          "target": "token",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 741,
+          "resolvedId": "backend/api/features/oauth.py:token:337"
+        },
+        {
+          "target": "TokenIntrospectionResult",
+          "resolved": false,
+          "confidence": 0,
+          "line": 742
+        },
+        {
+          "target": "list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 744
+        },
+        {
+          "target": "int",
+          "resolved": false,
+          "confidence": 0,
+          "line": 747
+        },
+        {
+          "target": "timestamp",
+          "resolved": false,
+          "confidence": 0,
+          "line": 747
+        },
+        {
+          "target": "_hash_token",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 754,
+          "resolvedId": "backend/data/auth/oauth.py:_hash_token:39"
+        },
+        {
+          "target": "token",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 754,
+          "resolvedId": "backend/api/features/oauth.py:token:337"
+        },
+        {
+          "target": "find_unique",
+          "resolved": false,
+          "confidence": 0,
+          "line": 755
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 755
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 761
+        },
+        {
+          "target": "get_oauth_application_by_id",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 763,
+          "resolvedId": "backend/data/auth/oauth.py:get_oauth_application_by_id:777"
+        },
+        {
+          "target": "TokenIntrospectionResult",
+          "resolved": false,
+          "confidence": 0,
+          "line": 764
+        },
+        {
+          "target": "list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 766
+        },
+        {
+          "target": "s",
+          "resolved": false,
+          "confidence": 0,
+          "line": 766
+        },
+        {
+          "target": "int",
+          "resolved": false,
+          "confidence": 0,
+          "line": 769
+        },
+        {
+          "target": "timestamp",
+          "resolved": false,
+          "confidence": 0,
+          "line": 769
+        },
+        {
+          "target": "TokenIntrospectionResult",
+          "resolved": false,
+          "confidence": 0,
+          "line": 774
+        },
+        {
+          "target": "find_unique",
+          "resolved": false,
+          "confidence": 0,
+          "line": 779
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 779
+        },
+        {
+          "target": "from_db",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 782,
+          "resolvedId": "backend/data/auth/oauth.py:from_db:108"
+        },
+        {
+          "target": "app",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 782,
+          "resolvedId": "backend/api/middleware/security_test.py:app:10"
+        },
+        {
+          "target": "find_many",
+          "resolved": false,
+          "confidence": 0,
+          "line": 787
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 787
+        },
+        {
+          "target": "from_db",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 791,
+          "resolvedId": "backend/data/auth/oauth.py:from_db:108"
+        },
+        {
+          "target": "app",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 791,
+          "resolvedId": "backend/api/middleware/security_test.py:app:10"
+        },
+        {
+          "target": "find_first",
+          "resolved": false,
+          "confidence": 0,
+          "line": 808
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 808
+        },
+        {
+          "target": "from_db",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 820,
+          "resolvedId": "backend/data/auth/oauth.py:from_db:108"
+        },
+        {
+          "target": "app",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 820,
+          "resolvedId": "backend/api/middleware/security_test.py:app:10"
+        },
+        {
+          "target": "update",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 822,
+          "resolvedId": "backend/integrations/creds_manager.py:update:162"
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 822
+        },
+        {
+          "target": "from_db",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 826,
+          "resolvedId": "backend/data/auth/oauth.py:from_db:108"
+        },
+        {
+          "target": "updated_app",
+          "resolved": false,
+          "confidence": 0,
+          "line": 826
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 845
+        },
+        {
+          "target": "delete_many",
+          "resolved": false,
+          "confidence": 0,
+          "line": 848
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 848
+        },
+        {
+          "target": "delete_many",
+          "resolved": false,
+          "confidence": 0,
+          "line": 853
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 853
+        },
+        {
+          "target": "delete_many",
+          "resolved": false,
+          "confidence": 0,
+          "line": 858
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 858
+        },
+        {
+          "target": "sum",
+          "resolved": false,
+          "confidence": 0,
+          "line": 868
+        },
+        {
+          "target": "values",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 868,
+          "resolvedId": "backend/integrations/oauth/__init__.py:values:112"
+        },
+        {
+          "target": "info",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 870,
+          "resolvedId": "backend/util/logging.py:info:41"
+        },
+        {
+          "target": "getLogger",
+          "resolved": false,
+          "confidence": 0,
+          "line": 30
+        },
+        {
+          "target": "APIKeySmith",
+          "resolved": false,
+          "confidence": 0,
+          "line": 31
+        },
+        {
+          "target": "timedelta",
+          "resolved": false,
+          "confidence": 0,
+          "line": 45
+        },
+        {
+          "target": "timedelta",
+          "resolved": false,
+          "confidence": 0,
+          "line": 46
+        },
+        {
+          "target": "timedelta",
+          "resolved": false,
+          "confidence": 0,
+          "line": 47
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "OAuth",
+          "operation": "write",
+          "line": 802,
+          "fields": [
+            "status",
+            "active"
+          ]
+        },
+        {
+          "table": "logging",
+          "operation": "read",
+          "line": 30,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "read",
+          "line": 278,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "read",
+          "line": 290,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "write",
+          "line": 361,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "read",
+          "line": 397,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "write",
+          "line": 436,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "write",
+          "line": 492,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "read",
+          "line": 519,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "read",
+          "line": 578,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "write",
+          "line": 609,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "read",
+          "line": 636,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "write",
+          "line": 656,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "read",
+          "line": 709,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "read",
+          "line": 755,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "read",
+          "line": 779,
+          "fields": [
+            "id"
+          ]
+        },
+        {
+          "table": "prisma",
+          "operation": "read",
+          "line": 787,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "read",
+          "line": 808,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "write",
+          "line": 822,
+          "fields": []
+        },
+        {
+          "table": "OAuth",
+          "operation": "delete",
+          "line": 836,
+          "fields": []
+        }
+      ]
+    }
+  ]
+}

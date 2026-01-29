@@ -1,0 +1,361 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.070Z",
+  "checksum": "07b47f1912fba07d",
+  "file": "src/app/(platform)/signup/page.tsx",
+  "functions": [
+    {
+      "id": "src/app/(platform)/signup/page.tsx:SignupPage:26",
+      "name": "SignupPage",
+      "startLine": 26,
+      "endLine": 207,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useSearchParams",
+          "resolved": false,
+          "confidence": 0,
+          "line": 27
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 28,
+          "resolvedId": "src/services/storage/local-storage.ts:get:16"
+        },
+        {
+          "target": "encodeURIComponent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 31
+        },
+        {
+          "target": "nextUrl",
+          "resolved": false,
+          "confidence": 0,
+          "line": 31
+        },
+        {
+          "target": "useSignupPage",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 47,
+          "resolvedId": "src/app/(platform)/signup/useSignupPage.ts:useSignupPage:14"
+        },
+        {
+          "target": "LoadingSignup",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 50,
+          "resolvedId": "src/app/(platform)/signup/components/LoadingSignup.tsx:LoadingSignup:4"
+        },
+        {
+          "target": "AuthCard",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 66,
+          "resolvedId": "src/components/auth/AuthCard.tsx:AuthCard:43"
+        },
+        {
+          "target": "Form",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 67,
+          "resolvedId": "src/components/molecules/Form/Form.tsx:Form:24"
+        },
+        {
+          "target": "handleSubmit",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 68,
+          "resolvedId": "src/components/__legacy__/RatingCard.tsx:handleSubmit:28"
+        },
+        {
+          "target": "FormField",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 69,
+          "resolvedId": "src/components/__legacy__/ui/form.tsx:FormField:31"
+        },
+        {
+          "target": "control",
+          "resolved": false,
+          "confidence": 0,
+          "line": 70
+        },
+        {
+          "target": "Input",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 73,
+          "resolvedId": "src/components/atoms/Input/Input.tsx:Input:38"
+        },
+        {
+          "target": "name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 74
+        },
+        {
+          "target": "message",
+          "resolved": false,
+          "confidence": 0,
+          "line": 79
+        },
+        {
+          "target": "FormField",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 84,
+          "resolvedId": "src/components/__legacy__/ui/form.tsx:FormField:31"
+        },
+        {
+          "target": "control",
+          "resolved": false,
+          "confidence": 0,
+          "line": 85
+        },
+        {
+          "target": "Input",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 89,
+          "resolvedId": "src/components/atoms/Input/Input.tsx:Input:38"
+        },
+        {
+          "target": "name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 90
+        },
+        {
+          "target": "message",
+          "resolved": false,
+          "confidence": 0,
+          "line": 95
+        },
+        {
+          "target": "FormField",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 101,
+          "resolvedId": "src/components/__legacy__/ui/form.tsx:FormField:31"
+        },
+        {
+          "target": "control",
+          "resolved": false,
+          "confidence": 0,
+          "line": 102
+        },
+        {
+          "target": "Input",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 105,
+          "resolvedId": "src/components/atoms/Input/Input.tsx:Input:38"
+        },
+        {
+          "target": "name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 106
+        },
+        {
+          "target": "confirmPasswordError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 111
+        },
+        {
+          "target": "FormField",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 116,
+          "resolvedId": "src/components/__legacy__/ui/form.tsx:FormField:31"
+        },
+        {
+          "target": "control",
+          "resolved": false,
+          "confidence": 0,
+          "line": 117
+        },
+        {
+          "target": "FormItem",
+          "resolved": false,
+          "confidence": 0,
+          "line": 121
+        },
+        {
+          "target": "FormControl",
+          "resolved": false,
+          "confidence": 0,
+          "line": 122
+        },
+        {
+          "target": "Checkbox",
+          "resolved": false,
+          "confidence": 0,
+          "line": 123
+        },
+        {
+          "target": "value",
+          "resolved": false,
+          "confidence": 0,
+          "line": 124
+        },
+        {
+          "target": "onChange",
+          "resolved": false,
+          "confidence": 0,
+          "line": 125
+        },
+        {
+          "target": "FormLabel",
+          "resolved": false,
+          "confidence": 0,
+          "line": 130
+        },
+        {
+          "target": "Text",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 131,
+          "resolvedId": "src/components/atoms/Text/Text.tsx:Text:15"
+        },
+        {
+          "target": "Link",
+          "resolved": false,
+          "confidence": 0,
+          "line": 137
+        },
+        {
+          "target": "Text",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 143,
+          "resolvedId": "src/components/atoms/Text/Text.tsx:Text:15"
+        },
+        {
+          "target": "Link",
+          "resolved": false,
+          "confidence": 0,
+          "line": 149
+        },
+        {
+          "target": "WarningOctagonIcon",
+          "resolved": false,
+          "confidence": 0,
+          "line": 160
+        },
+        {
+          "target": "Text",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 161,
+          "resolvedId": "src/components/atoms/Text/Text.tsx:Text:15"
+        },
+        {
+          "target": "Button",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 170,
+          "resolvedId": "src/components/atoms/Button/Button.tsx:Button:12"
+        },
+        {
+          "target": "isLoading",
+          "resolved": false,
+          "confidence": 0,
+          "line": 172
+        },
+        {
+          "target": "isGoogleLoading",
+          "resolved": false,
+          "confidence": 0,
+          "line": 173
+        },
+        {
+          "target": "GoogleOAuthButton",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 182,
+          "resolvedId": "src/components/auth/GoogleOAuthButton.tsx:GoogleOAuthButton:10"
+        },
+        {
+          "target": "isGoogleLoading",
+          "resolved": false,
+          "confidence": 0,
+          "line": 184
+        },
+        {
+          "target": "isLoading",
+          "resolved": false,
+          "confidence": 0,
+          "line": 185
+        },
+        {
+          "target": "handleProviderSignup",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 183,
+          "resolvedId": "src/app/(platform)/signup/useSignupPage.ts:handleProviderSignup:47"
+        },
+        {
+          "target": "AuthFeedback",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 188,
+          "resolvedId": "src/components/auth/AuthFeedback.tsx:AuthFeedback:13"
+        },
+        {
+          "target": "feedback",
+          "resolved": false,
+          "confidence": 0,
+          "line": 190
+        },
+        {
+          "target": "getBehaveAs",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 192,
+          "resolvedId": "src/services/environment/index.ts:getBehaveAs:6"
+        },
+        {
+          "target": "BottomText",
+          "resolved": false,
+          "confidence": 0,
+          "line": 195
+        },
+        {
+          "target": "MobileWarningBanner",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 200,
+          "resolvedId": "src/components/auth/MobileWarningBanner.tsx:MobileWarningBanner:7"
+        },
+        {
+          "target": "EmailNotAllowedModal",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 201,
+          "resolvedId": "src/components/auth/EmailNotAllowedModal.tsx:EmailNotAllowedModal:9"
+        },
+        {
+          "target": "showNotAllowedModal",
+          "resolved": false,
+          "confidence": 0,
+          "line": 202
+        },
+        {
+          "target": "handleCloseNotAllowedModal",
+          "resolved": false,
+          "confidence": 0,
+          "line": 203
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

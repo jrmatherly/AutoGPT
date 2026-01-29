@@ -1,0 +1,218 @@
+{
+  "version": "1.0.0",
+  "category": "config",
+  "patterns": [
+    {
+      "id": "078dfbfdb03dff62",
+      "subcategory": "environment-detection",
+      "name": "Environment Detection Detector",
+      "description": "Learns environment detection patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "config/environment-detection",
+          "patternId": "config/environment-detection/class_definition"
+        }
+      },
+      "confidence": {
+        "frequency": 0.04,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.92,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src/components/contextual/GoogleDrivePicker/types.ts",
+          "line": 1,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.92
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:32:38.510Z",
+        "lastSeen": "2026-01-29T06:32:38.510Z",
+        "source": "auto-detected",
+        "tags": [
+          "config",
+          "environment-detection"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "7a73657c2c030c13",
+      "subcategory": "environment-detection",
+      "name": "Environment Detection Detector",
+      "description": "Learns environment detection patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "config/environment-detection",
+          "patternId": "config/environment-detection/function_definition"
+        }
+      },
+      "confidence": {
+        "frequency": 0.02,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.92,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src/components/contextual/GoogleDrivePicker/types.ts",
+          "line": 7,
+          "column": 40,
+          "isOutlier": false,
+          "confidence": 0.92
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:32:38.510Z",
+        "lastSeen": "2026-01-29T06:32:38.510Z",
+        "source": "auto-detected",
+        "tags": [
+          "config",
+          "environment-detection"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "3fd9ebc792d06471",
+      "subcategory": "default-values",
+      "name": "Default Values Detector",
+      "description": "Learns default value patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "config/default-values",
+          "patternId": "config/default-values/class_definition"
+        }
+      },
+      "confidence": {
+        "frequency": 0.02,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src/lib/supabase/hooks/useSupabaseStore.ts",
+          "line": 21,
+          "column": 11,
+          "isOutlier": false,
+          "confidence": 0.9566666666666667
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:32:38.510Z",
+        "lastSeen": "2026-01-29T06:32:38.510Z",
+        "source": "auto-detected",
+        "tags": [
+          "config",
+          "default-values"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "4de0ff8ea1ba117d",
+      "subcategory": "environment-detection",
+      "name": "Environment Detection Detector",
+      "description": "Learns environment detection patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "config/environment-detection",
+          "patternId": "config/environment-detection/assignment"
+        }
+      },
+      "confidence": {
+        "frequency": 0.04,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.8670588235294118,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src/services/environment/index.ts",
+          "line": 133,
+          "column": 14,
+          "isOutlier": false,
+          "confidence": 0.8670588235294118
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:32:38.510Z",
+        "lastSeen": "2026-01-29T06:32:38.510Z",
+        "source": "auto-detected",
+        "tags": [
+          "config",
+          "environment-detection"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "65001fbdc1549e88",
+      "subcategory": "env-config",
+      "name": "Environment Config Detector",
+      "description": "Learns environment configuration patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "config/env-config",
+          "patternId": "config/env-config/function_call"
+        }
+      },
+      "confidence": {
+        "frequency": 0.02,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src/tests/monitor.spec.ts",
+          "line": 18,
+          "column": 15,
+          "isOutlier": false,
+          "confidence": 0.97
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:32:38.510Z",
+        "lastSeen": "2026-01-29T06:32:38.510Z",
+        "source": "auto-detected",
+        "tags": [
+          "config",
+          "env-config"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    }
+  ],
+  "lastUpdated": "2026-01-29T07:18:17.428Z",
+  "checksum": "719d00fdbc4bcbd3"
+}

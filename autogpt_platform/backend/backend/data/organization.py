@@ -15,7 +15,6 @@ from pydantic import BaseModel, Field
 
 from backend.data.db import prisma
 
-
 # ============================================================================
 # Request/Response Models
 # ============================================================================

@@ -1,0 +1,1804 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.179Z",
+  "checksum": "2f0c97d54928e407",
+  "file": "backend/data/onboarding.py",
+  "functions": [
+    {
+      "id": "backend/data/onboarding.py:get_user_onboarding:61",
+      "name": "get_user_onboarding",
+      "startLine": 61,
+      "endLine": 68,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "upsert",
+          "resolved": false,
+          "confidence": 0,
+          "line": 62
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 62
+        },
+        {
+          "target": "UserOnboardingCreateInput",
+          "resolved": false,
+          "confidence": 0,
+          "line": 65
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "prisma",
+          "operation": "write",
+          "line": 62,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/data/onboarding.py:reset_user_onboarding:71",
+      "name": "reset_user_onboarding",
+      "startLine": 71,
+      "endLine": 91,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "upsert",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        },
+        {
+          "target": "UserOnboardingCreateInput",
+          "resolved": false,
+          "confidence": 0,
+          "line": 75
+        },
+        {
+          "target": "Json",
+          "resolved": false,
+          "confidence": 0,
+          "line": 84
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "prisma",
+          "operation": "write",
+          "line": 72,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/data/onboarding.py:update_user_onboarding:94",
+      "name": "update_user_onboarding",
+      "startLine": 94,
+      "endLine": 120,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "get_user_onboarding",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 96,
+          "resolvedId": "backend/data/onboarding.py:get_user_onboarding:61"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 96
+        },
+        {
+          "target": "list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 100
+        },
+        {
+          "target": "set",
+          "resolved": false,
+          "confidence": 0,
+          "line": 100
+        },
+        {
+          "target": "SafeJson",
+          "resolved": false,
+          "confidence": 0,
+          "line": 110
+        },
+        {
+          "target": "upsert",
+          "resolved": false,
+          "confidence": 0,
+          "line": 114
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 114
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "prisma",
+          "operation": "write",
+          "line": 114,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/data/onboarding.py:_reward_user:123",
+      "name": "_reward_user",
+      "startLine": 123,
+      "endLine": 171,
+      "isEntryPoint": false,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "get_user_credit_model",
+          "resolved": false,
+          "confidence": 0,
+          "line": 164
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 164
+        },
+        {
+          "target": "onboarding_reward",
+          "resolved": false,
+          "confidence": 0,
+          "line": 165
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 165
+        },
+        {
+          "target": "reward",
+          "resolved": false,
+          "confidence": 0,
+          "line": 165
+        },
+        {
+          "target": "step",
+          "resolved": false,
+          "confidence": 0,
+          "line": 165
+        },
+        {
+          "target": "update",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 166,
+          "resolvedId": "backend/integrations/creds_manager.py:update:162"
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 166
+        },
+        {
+          "target": "list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 169
+        },
+        {
+          "target": "set",
+          "resolved": false,
+          "confidence": 0,
+          "line": 169
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "prisma",
+          "operation": "write",
+          "line": 166,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/data/onboarding.py:complete_onboarding_step:174",
+      "name": "complete_onboarding_step",
+      "startLine": 174,
+      "endLine": 187,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "get_user_onboarding",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 178,
+          "resolvedId": "backend/data/onboarding.py:get_user_onboarding:61"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 178
+        },
+        {
+          "target": "update",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 180,
+          "resolvedId": "backend/integrations/creds_manager.py:update:162"
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 180
+        },
+        {
+          "target": "list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 183
+        },
+        {
+          "target": "set",
+          "resolved": false,
+          "confidence": 0,
+          "line": 183
+        },
+        {
+          "target": "_reward_user",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 186,
+          "resolvedId": "backend/data/onboarding.py:_reward_user:123"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 186
+        },
+        {
+          "target": "onboarding",
+          "resolved": false,
+          "confidence": 0,
+          "line": 186
+        },
+        {
+          "target": "step",
+          "resolved": false,
+          "confidence": 0,
+          "line": 186
+        },
+        {
+          "target": "_send_onboarding_notification",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 187,
+          "resolvedId": "backend/data/onboarding.py:_send_onboarding_notification:190"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 187
+        },
+        {
+          "target": "step",
+          "resolved": false,
+          "confidence": 0,
+          "line": 187
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "prisma",
+          "operation": "write",
+          "line": 180,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/data/onboarding.py:_send_onboarding_notification:190",
+      "name": "_send_onboarding_notification",
+      "startLine": 190,
+      "endLine": 203,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "OnboardingNotificationPayload",
+          "resolved": false,
+          "confidence": 0,
+          "line": 196
+        },
+        {
+          "target": "publish",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 201,
+          "resolvedId": "backend/data/notification_bus.py:publish:31"
+        },
+        {
+          "target": "AsyncRedisNotificationEventBus",
+          "resolved": false,
+          "confidence": 0,
+          "line": 201
+        },
+        {
+          "target": "NotificationEvent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 202
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/onboarding.py:complete_re_run_agent:206",
+      "name": "complete_re_run_agent",
+      "startLine": 206,
+      "endLine": 220,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "get_user_onboarding",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 211,
+          "resolvedId": "backend/data/onboarding.py:get_user_onboarding:61"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 211
+        },
+        {
+          "target": "get_graph_executions_count",
+          "resolved": false,
+          "confidence": 0,
+          "line": 216
+        },
+        {
+          "target": "complete_onboarding_step",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 220,
+          "resolvedId": "backend/data/onboarding.py:complete_onboarding_step:174"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 220
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/onboarding.py:_clean_and_split:223",
+      "name": "_clean_and_split",
+      "startLine": 223,
+      "endLine": 243,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "sub",
+          "resolved": false,
+          "confidence": 0,
+          "line": 235
+        },
+        {
+          "target": "strip",
+          "resolved": false,
+          "confidence": 0,
+          "line": 235
+        },
+        {
+          "target": "split",
+          "resolved": false,
+          "confidence": 0,
+          "line": 238
+        },
+        {
+          "target": "cleaned_text",
+          "resolved": false,
+          "confidence": 0,
+          "line": 238
+        },
+        {
+          "target": "lower",
+          "resolved": false,
+          "confidence": 0,
+          "line": 241
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/onboarding.py:_calculate_points:246",
+      "name": "_calculate_points",
+      "startLine": 246,
+      "endLine": 287,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "sum",
+          "resolved": false,
+          "confidence": 0,
+          "line": 263
+        },
+        {
+          "target": "split",
+          "resolved": false,
+          "confidence": 0,
+          "line": 269
+        },
+        {
+          "target": "sum",
+          "resolved": false,
+          "confidence": 0,
+          "line": 270
+        },
+        {
+          "target": "sum",
+          "resolved": false,
+          "confidence": 0,
+          "line": 273
+        },
+        {
+          "target": "min",
+          "resolved": false,
+          "confidence": 0,
+          "line": 284
+        },
+        {
+          "target": "int",
+          "resolved": false,
+          "confidence": 0,
+          "line": 287
+        },
+        {
+          "target": "points",
+          "resolved": false,
+          "confidence": 0,
+          "line": 287
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/onboarding.py:_normalize_datetime:290",
+      "name": "_normalize_datetime",
+      "startLine": 290,
+      "endLine": 295,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "replace",
+          "resolved": false,
+          "confidence": 0,
+          "line": 294
+        },
+        {
+          "target": "astimezone",
+          "resolved": false,
+          "confidence": 0,
+          "line": 295
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/onboarding.py:_calculate_consecutive_run_days:298",
+      "name": "_calculate_consecutive_run_days",
+      "startLine": 298,
+      "endLine": 318,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "ZoneInfo",
+          "resolved": false,
+          "confidence": 0,
+          "line": 301
+        },
+        {
+          "target": "user_timezone",
+          "resolved": false,
+          "confidence": 0,
+          "line": 301
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 302
+        },
+        {
+          "target": "tz",
+          "resolved": false,
+          "confidence": 0,
+          "line": 302
+        },
+        {
+          "target": "_normalize_datetime",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 303,
+          "resolvedId": "backend/data/onboarding.py:_normalize_datetime:290"
+        },
+        {
+          "target": "last_run_at",
+          "resolved": false,
+          "confidence": 0,
+          "line": 303
+        },
+        {
+          "target": "astimezone",
+          "resolved": false,
+          "confidence": 0,
+          "line": 306
+        },
+        {
+          "target": "astimezone",
+          "resolved": false,
+          "confidence": 0,
+          "line": 308
+        },
+        {
+          "target": "tz",
+          "resolved": false,
+          "confidence": 0,
+          "line": 308
+        },
+        {
+          "target": "date",
+          "resolved": false,
+          "confidence": 0,
+          "line": 309
+        },
+        {
+          "target": "date",
+          "resolved": false,
+          "confidence": 0,
+          "line": 310
+        },
+        {
+          "target": "astimezone",
+          "resolved": false,
+          "confidence": 0,
+          "line": 313
+        },
+        {
+          "target": "timedelta",
+          "resolved": false,
+          "confidence": 0,
+          "line": 315
+        },
+        {
+          "target": "astimezone",
+          "resolved": false,
+          "confidence": 0,
+          "line": 316
+        },
+        {
+          "target": "astimezone",
+          "resolved": false,
+          "confidence": 0,
+          "line": 318
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/onboarding.py:_get_run_milestone_steps:321",
+      "name": "_get_run_milestone_steps",
+      "startLine": 321,
+      "endLine": 333,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 326
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 328
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 330
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 332
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/onboarding.py:_get_user_timezone:336",
+      "name": "_get_user_timezone",
+      "startLine": 336,
+      "endLine": 338,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "get_user_by_id",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 337,
+          "resolvedId": "backend/data/user.py:get_user_by_id:58"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 337
+        },
+        {
+          "target": "get_user_timezone_or_utc",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 338,
+          "resolvedId": "backend/util/timezone_utils.py:get_user_timezone_or_utc:133"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/onboarding.py:increment_onboarding_runs:341",
+      "name": "increment_onboarding_runs",
+      "startLine": 341,
+      "endLine": 368,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "_get_user_timezone",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 345,
+          "resolvedId": "backend/data/onboarding.py:_get_user_timezone:336"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 345
+        },
+        {
+          "target": "get_user_onboarding",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 346,
+          "resolvedId": "backend/data/onboarding.py:get_user_onboarding:61"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 346
+        },
+        {
+          "target": "_calculate_consecutive_run_days",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 348,
+          "resolvedId": "backend/data/onboarding.py:_calculate_consecutive_run_days:298"
+        },
+        {
+          "target": "user_timezone",
+          "resolved": false,
+          "confidence": 0,
+          "line": 349
+        },
+        {
+          "target": "update",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 352,
+          "resolvedId": "backend/integrations/creds_manager.py:update:162"
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 352
+        },
+        {
+          "target": "_get_run_milestone_steps",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 361,
+          "resolvedId": "backend/data/onboarding.py:_get_run_milestone_steps:321"
+        },
+        {
+          "target": "new_run_count",
+          "resolved": false,
+          "confidence": 0,
+          "line": 361
+        },
+        {
+          "target": "consecutive_run_days",
+          "resolved": false,
+          "confidence": 0,
+          "line": 361
+        },
+        {
+          "target": "complete_onboarding_step",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 365,
+          "resolvedId": "backend/data/onboarding.py:complete_onboarding_step:174"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 365
+        },
+        {
+          "target": "step",
+          "resolved": false,
+          "confidence": 0,
+          "line": 365
+        },
+        {
+          "target": "_send_onboarding_notification",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 368,
+          "resolvedId": "backend/data/onboarding.py:_send_onboarding_notification:190"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 368
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "prisma",
+          "operation": "write",
+          "line": 352,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/data/onboarding.py:get_recommended_agents:371",
+      "name": "get_recommended_agents",
+      "startLine": 371,
+      "endLine": 454,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "get_user_onboarding",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 372,
+          "resolvedId": "backend/data/onboarding.py:get_user_onboarding:61"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 372
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 373,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "_clean_and_split",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 377,
+          "resolvedId": "backend/data/onboarding.py:_clean_and_split:223"
+        },
+        {
+          "target": "lower",
+          "resolved": false,
+          "confidence": 0,
+          "line": 377
+        },
+        {
+          "target": "find_many",
+          "resolved": false,
+          "confidence": 0,
+          "line": 397
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 397
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 411
+        },
+        {
+          "target": "storeAgents",
+          "resolved": false,
+          "confidence": 0,
+          "line": 411
+        },
+        {
+          "target": "find_many",
+          "resolved": false,
+          "confidence": 0,
+          "line": 412
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 412
+        },
+        {
+          "target": "StoreAgentWhereInput",
+          "resolved": false,
+          "confidence": 0,
+          "line": 413
+        },
+        {
+          "target": "_calculate_points",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 425,
+          "resolvedId": "backend/data/onboarding.py:_calculate_points:246"
+        },
+        {
+          "target": "agent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 426
+        },
+        {
+          "target": "categories",
+          "resolved": false,
+          "confidence": 0,
+          "line": 426
+        },
+        {
+          "target": "custom",
+          "resolved": false,
+          "confidence": 0,
+          "line": 426
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 428
+        },
+        {
+          "target": "sort",
+          "resolved": false,
+          "confidence": 0,
+          "line": 430
+        },
+        {
+          "target": "StoreAgentDetails",
+          "resolved": false,
+          "confidence": 0,
+          "line": 434
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "prisma",
+          "operation": "read",
+          "line": 397,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "read",
+          "line": 412,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/data/onboarding.py:onboarding_enabled:458",
+      "name": "onboarding_enabled",
+      "startLine": 458,
+      "endLine": 466,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "count",
+          "resolved": false,
+          "confidence": 0,
+          "line": 464
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 464
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/onboarding.py:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 467,
+      "isEntryPoint": false,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "upsert",
+          "resolved": false,
+          "confidence": 0,
+          "line": 62
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 62
+        },
+        {
+          "target": "UserOnboardingCreateInput",
+          "resolved": false,
+          "confidence": 0,
+          "line": 65
+        },
+        {
+          "target": "upsert",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        },
+        {
+          "target": "UserOnboardingCreateInput",
+          "resolved": false,
+          "confidence": 0,
+          "line": 75
+        },
+        {
+          "target": "Json",
+          "resolved": false,
+          "confidence": 0,
+          "line": 84
+        },
+        {
+          "target": "get_user_onboarding",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 96,
+          "resolvedId": "backend/data/onboarding.py:get_user_onboarding:61"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 96
+        },
+        {
+          "target": "list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 100
+        },
+        {
+          "target": "set",
+          "resolved": false,
+          "confidence": 0,
+          "line": 100
+        },
+        {
+          "target": "SafeJson",
+          "resolved": false,
+          "confidence": 0,
+          "line": 110
+        },
+        {
+          "target": "upsert",
+          "resolved": false,
+          "confidence": 0,
+          "line": 114
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 114
+        },
+        {
+          "target": "get_user_credit_model",
+          "resolved": false,
+          "confidence": 0,
+          "line": 164
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 164
+        },
+        {
+          "target": "onboarding_reward",
+          "resolved": false,
+          "confidence": 0,
+          "line": 165
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 165
+        },
+        {
+          "target": "reward",
+          "resolved": false,
+          "confidence": 0,
+          "line": 165
+        },
+        {
+          "target": "step",
+          "resolved": false,
+          "confidence": 0,
+          "line": 165
+        },
+        {
+          "target": "update",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 166,
+          "resolvedId": "backend/integrations/creds_manager.py:update:162"
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 166
+        },
+        {
+          "target": "list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 169
+        },
+        {
+          "target": "set",
+          "resolved": false,
+          "confidence": 0,
+          "line": 169
+        },
+        {
+          "target": "get_user_onboarding",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 178,
+          "resolvedId": "backend/data/onboarding.py:get_user_onboarding:61"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 178
+        },
+        {
+          "target": "update",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 180,
+          "resolvedId": "backend/integrations/creds_manager.py:update:162"
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 180
+        },
+        {
+          "target": "list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 183
+        },
+        {
+          "target": "set",
+          "resolved": false,
+          "confidence": 0,
+          "line": 183
+        },
+        {
+          "target": "_reward_user",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 186,
+          "resolvedId": "backend/data/onboarding.py:_reward_user:123"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 186
+        },
+        {
+          "target": "onboarding",
+          "resolved": false,
+          "confidence": 0,
+          "line": 186
+        },
+        {
+          "target": "step",
+          "resolved": false,
+          "confidence": 0,
+          "line": 186
+        },
+        {
+          "target": "_send_onboarding_notification",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 187,
+          "resolvedId": "backend/data/onboarding.py:_send_onboarding_notification:190"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 187
+        },
+        {
+          "target": "step",
+          "resolved": false,
+          "confidence": 0,
+          "line": 187
+        },
+        {
+          "target": "OnboardingNotificationPayload",
+          "resolved": false,
+          "confidence": 0,
+          "line": 196
+        },
+        {
+          "target": "publish",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 201,
+          "resolvedId": "backend/data/notification_bus.py:publish:31"
+        },
+        {
+          "target": "AsyncRedisNotificationEventBus",
+          "resolved": false,
+          "confidence": 0,
+          "line": 201
+        },
+        {
+          "target": "NotificationEvent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 202
+        },
+        {
+          "target": "get_user_onboarding",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 211,
+          "resolvedId": "backend/data/onboarding.py:get_user_onboarding:61"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 211
+        },
+        {
+          "target": "get_graph_executions_count",
+          "resolved": false,
+          "confidence": 0,
+          "line": 216
+        },
+        {
+          "target": "complete_onboarding_step",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 220,
+          "resolvedId": "backend/data/onboarding.py:complete_onboarding_step:174"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 220
+        },
+        {
+          "target": "sub",
+          "resolved": false,
+          "confidence": 0,
+          "line": 235
+        },
+        {
+          "target": "strip",
+          "resolved": false,
+          "confidence": 0,
+          "line": 235
+        },
+        {
+          "target": "split",
+          "resolved": false,
+          "confidence": 0,
+          "line": 238
+        },
+        {
+          "target": "cleaned_text",
+          "resolved": false,
+          "confidence": 0,
+          "line": 238
+        },
+        {
+          "target": "lower",
+          "resolved": false,
+          "confidence": 0,
+          "line": 241
+        },
+        {
+          "target": "sum",
+          "resolved": false,
+          "confidence": 0,
+          "line": 263
+        },
+        {
+          "target": "split",
+          "resolved": false,
+          "confidence": 0,
+          "line": 269
+        },
+        {
+          "target": "sum",
+          "resolved": false,
+          "confidence": 0,
+          "line": 270
+        },
+        {
+          "target": "sum",
+          "resolved": false,
+          "confidence": 0,
+          "line": 273
+        },
+        {
+          "target": "min",
+          "resolved": false,
+          "confidence": 0,
+          "line": 284
+        },
+        {
+          "target": "int",
+          "resolved": false,
+          "confidence": 0,
+          "line": 287
+        },
+        {
+          "target": "points",
+          "resolved": false,
+          "confidence": 0,
+          "line": 287
+        },
+        {
+          "target": "replace",
+          "resolved": false,
+          "confidence": 0,
+          "line": 294
+        },
+        {
+          "target": "astimezone",
+          "resolved": false,
+          "confidence": 0,
+          "line": 295
+        },
+        {
+          "target": "ZoneInfo",
+          "resolved": false,
+          "confidence": 0,
+          "line": 301
+        },
+        {
+          "target": "user_timezone",
+          "resolved": false,
+          "confidence": 0,
+          "line": 301
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 302
+        },
+        {
+          "target": "tz",
+          "resolved": false,
+          "confidence": 0,
+          "line": 302
+        },
+        {
+          "target": "_normalize_datetime",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 303,
+          "resolvedId": "backend/data/onboarding.py:_normalize_datetime:290"
+        },
+        {
+          "target": "last_run_at",
+          "resolved": false,
+          "confidence": 0,
+          "line": 303
+        },
+        {
+          "target": "astimezone",
+          "resolved": false,
+          "confidence": 0,
+          "line": 306
+        },
+        {
+          "target": "astimezone",
+          "resolved": false,
+          "confidence": 0,
+          "line": 308
+        },
+        {
+          "target": "tz",
+          "resolved": false,
+          "confidence": 0,
+          "line": 308
+        },
+        {
+          "target": "date",
+          "resolved": false,
+          "confidence": 0,
+          "line": 309
+        },
+        {
+          "target": "date",
+          "resolved": false,
+          "confidence": 0,
+          "line": 310
+        },
+        {
+          "target": "astimezone",
+          "resolved": false,
+          "confidence": 0,
+          "line": 313
+        },
+        {
+          "target": "timedelta",
+          "resolved": false,
+          "confidence": 0,
+          "line": 315
+        },
+        {
+          "target": "astimezone",
+          "resolved": false,
+          "confidence": 0,
+          "line": 316
+        },
+        {
+          "target": "astimezone",
+          "resolved": false,
+          "confidence": 0,
+          "line": 318
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 326
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 328
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 330
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 332
+        },
+        {
+          "target": "get_user_by_id",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 337,
+          "resolvedId": "backend/data/user.py:get_user_by_id:58"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 337
+        },
+        {
+          "target": "get_user_timezone_or_utc",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 338,
+          "resolvedId": "backend/util/timezone_utils.py:get_user_timezone_or_utc:133"
+        },
+        {
+          "target": "_get_user_timezone",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 345,
+          "resolvedId": "backend/data/onboarding.py:_get_user_timezone:336"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 345
+        },
+        {
+          "target": "get_user_onboarding",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 346,
+          "resolvedId": "backend/data/onboarding.py:get_user_onboarding:61"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 346
+        },
+        {
+          "target": "_calculate_consecutive_run_days",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 348,
+          "resolvedId": "backend/data/onboarding.py:_calculate_consecutive_run_days:298"
+        },
+        {
+          "target": "user_timezone",
+          "resolved": false,
+          "confidence": 0,
+          "line": 349
+        },
+        {
+          "target": "update",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 352,
+          "resolvedId": "backend/integrations/creds_manager.py:update:162"
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 352
+        },
+        {
+          "target": "_get_run_milestone_steps",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 361,
+          "resolvedId": "backend/data/onboarding.py:_get_run_milestone_steps:321"
+        },
+        {
+          "target": "new_run_count",
+          "resolved": false,
+          "confidence": 0,
+          "line": 361
+        },
+        {
+          "target": "consecutive_run_days",
+          "resolved": false,
+          "confidence": 0,
+          "line": 361
+        },
+        {
+          "target": "complete_onboarding_step",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 365,
+          "resolvedId": "backend/data/onboarding.py:complete_onboarding_step:174"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 365
+        },
+        {
+          "target": "step",
+          "resolved": false,
+          "confidence": 0,
+          "line": 365
+        },
+        {
+          "target": "_send_onboarding_notification",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 368,
+          "resolvedId": "backend/data/onboarding.py:_send_onboarding_notification:190"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 368
+        },
+        {
+          "target": "get_user_onboarding",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 372,
+          "resolvedId": "backend/data/onboarding.py:get_user_onboarding:61"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 372
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 373,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "_clean_and_split",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 377,
+          "resolvedId": "backend/data/onboarding.py:_clean_and_split:223"
+        },
+        {
+          "target": "lower",
+          "resolved": false,
+          "confidence": 0,
+          "line": 377
+        },
+        {
+          "target": "find_many",
+          "resolved": false,
+          "confidence": 0,
+          "line": 397
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 397
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 411
+        },
+        {
+          "target": "storeAgents",
+          "resolved": false,
+          "confidence": 0,
+          "line": 411
+        },
+        {
+          "target": "find_many",
+          "resolved": false,
+          "confidence": 0,
+          "line": 412
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 412
+        },
+        {
+          "target": "StoreAgentWhereInput",
+          "resolved": false,
+          "confidence": 0,
+          "line": 413
+        },
+        {
+          "target": "_calculate_points",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 425,
+          "resolvedId": "backend/data/onboarding.py:_calculate_points:246"
+        },
+        {
+          "target": "agent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 426
+        },
+        {
+          "target": "categories",
+          "resolved": false,
+          "confidence": 0,
+          "line": 426
+        },
+        {
+          "target": "custom",
+          "resolved": false,
+          "confidence": 0,
+          "line": 426
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 428
+        },
+        {
+          "target": "sort",
+          "resolved": false,
+          "confidence": 0,
+          "line": 430
+        },
+        {
+          "target": "StoreAgentDetails",
+          "resolved": false,
+          "confidence": 0,
+          "line": 434
+        },
+        {
+          "target": "cached",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 457,
+          "resolvedId": "backend/util/cache.py:cached:146"
+        },
+        {
+          "target": "count",
+          "resolved": false,
+          "confidence": 0,
+          "line": 464
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 464
+        },
+        {
+          "target": "cached",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 457,
+          "resolvedId": "backend/util/cache.py:cached:146"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "prisma",
+          "operation": "write",
+          "line": 62,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "write",
+          "line": 72,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "write",
+          "line": 114,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "write",
+          "line": 166,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "write",
+          "line": 180,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "write",
+          "line": 352,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "read",
+          "line": 397,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "read",
+          "line": 412,
+          "fields": []
+        }
+      ]
+    }
+  ]
+}

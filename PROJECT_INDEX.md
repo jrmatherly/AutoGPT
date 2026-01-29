@@ -31,7 +31,7 @@ AutoGPT/
 | **Executor** | `autogpt_platform/backend/backend/exec.py` | `poetry run executor` |
 | **Scheduler** | `autogpt_platform/backend/backend/scheduler.py` | `poetry run scheduler` |
 | **Frontend Dev** | `autogpt_platform/frontend/` | `pnpm dev` |
-| **CLI** | `autogpt_platform/backend/backend/cli.py` | `poetry run cli` |
+| **CLI** | `autogpt_platform/backend/backend/cli_main.py` | `poetry run cli` |
 
 ---
 
