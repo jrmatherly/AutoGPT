@@ -1,0 +1,381 @@
+name: CI (Mise-Enhanced)
+
+# GitHub Secrets Required:
+#   - OPENAI_API_KEY (required) - OpenAI API for backend tests
+#   - RABBITMQ_DEFAULT_USER (optional, defaults to: rabbitmq_user_default)
+#   - RABBITMQ_DEFAULT_PASS (optional, defaults to test value)
+#   - TEST_ENCRYPTION_KEY (optional, defaults to test value)
+#
+# See docs/GITHUB_SECRETS_SETUP.md for complete setup guide
+
+on:
+  push:
+    branches: [master, dev]
+  pull_request:
+    branches: [master, dev]
+  merge_group:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  # =============================================================================
+  # Fast Format & Lint Checks (Parallel Job 1)
+  # =============================================================================
+  lint:
+    name: Format & Lint Check
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Setup Mise
+        uses: jdx/mise-action@v3
+        with:
+          version: 2026.1.0
+          experimental: true
+          cache: true
+          cache_key: mise-lint-{{platform}}-{{file_hash}}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          log_level: info
+
+      - name: Verify mise environment
+        run: |
+          echo "🔍 Verifying mise setup..."
+          mise --version
+          mise ls
+
+      - name: Install dependencies
+        working-directory: autogpt_platform
+        run: mise run install
+
+      - name: Check code formatting
+        working-directory: autogpt_platform
+        run: |
+          mise run format
+          if ! git diff --exit-code; then
+            echo "::error::Code formatting issues detected"
+            echo ""
+            echo "Files with formatting issues:"
+            git diff --name-only
+            echo ""
+            echo "Run 'mise run format' locally to fix these issues."
+            exit 1
+          fi
+
+  # =============================================================================
+  # Backend Tests with Full Infrastructure (Parallel Job 2)
+  # =============================================================================
+  test-backend:
+    name: Backend Tests (Python ${{ matrix.python-version }})
+    permissions:
+      contents: read
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.11", "3.12", "3.13"]
+    runs-on: ubuntu-latest
+
+    services:
+      redis:
+        image: redis:latest
+        ports:
+          - 6379:6379
+      rabbitmq:
+        image: rabbitmq:3.12-management
+        ports:
+          - 5672:5672
+          - 15672:15672
+        env:
+          RABBITMQ_DEFAULT_USER: ${{ secrets.RABBITMQ_DEFAULT_USER || 'rabbitmq_user_default' }}
+          RABBITMQ_DEFAULT_PASS: ${{ secrets.RABBITMQ_DEFAULT_PASS || 'k0VMxyIJF9S35f3x2uaw5IWAl6Y536O7' }}
+      clamav:
+        image: clamav/clamav-debian:latest
+        ports:
+          - 3310:3310
+        env:
+          CLAMAV_NO_FRESHCLAMD: false
+          CLAMD_CONF_StreamMaxLength: 50M
+          CLAMD_CONF_MaxFileSize: 100M
+          CLAMD_CONF_MaxScanSize: 100M
+          CLAMD_CONF_MaxThreads: 4
+          CLAMD_CONF_ReadTimeout: 300
+        options: >-
+          --health-cmd "clamdscan --version || exit 1"
+          --health-interval 30s
+          --health-timeout 10s
+          --health-retries 5
+          --health-start-period 180s
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+          submodules: true
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v6
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Setup Mise
+        uses: jdx/mise-action@v3
+        with:
+          version: 2026.1.0
+          experimental: true
+          cache: true
+          cache_key: mise-backend-py${{ matrix.python-version }}-{{platform}}-{{file_hash}}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          log_level: info
+
+      - name: Setup Supabase
+        uses: supabase/setup-cli@v1
+        with:
+          version: 1.178.1
+
+      - id: get_date
+        name: Get date
+        run: echo "date=$(date +'%Y-%m-%d')" >> $GITHUB_OUTPUT
+
+      - name: Set up Python dependency cache
+        uses: actions/cache@v5
+        with:
+          path: ~/.cache/pypoetry
+          key: poetry-${{ runner.os }}-${{ hashFiles('autogpt_platform/backend/poetry.lock') }}
+
+      - name: Install Poetry (Unix)
+        working-directory: autogpt_platform/backend
+        run: |
+          # Extract Poetry version from backend/poetry.lock
+          HEAD_POETRY_VERSION=$(python ../../.github/workflows/scripts/get_package_version_from_lockfile.py poetry)
+          echo "Found Poetry version ${HEAD_POETRY_VERSION} in backend/poetry.lock"
+
+          if [ -n "$BASE_REF" ]; then
+            BASE_BRANCH=${BASE_REF/refs\/heads\//}
+            BASE_POETRY_VERSION=$((git show "origin/$BASE_BRANCH":./poetry.lock; true) | python ../../.github/workflows/scripts/get_package_version_from_lockfile.py poetry -)
+            echo "Found Poetry version ${BASE_POETRY_VERSION} in backend/poetry.lock on ${BASE_REF}"
+            POETRY_VERSION=$(printf '%s\n' "$HEAD_POETRY_VERSION" "$BASE_POETRY_VERSION" | sort -V | tail -n1)
+          else
+            POETRY_VERSION=$HEAD_POETRY_VERSION
+          fi
+          echo "Using Poetry version ${POETRY_VERSION}"
+
+          # Install Poetry
+          curl -sSL https://install.python-poetry.org | POETRY_VERSION=$POETRY_VERSION python3 -
+
+          if [ "${{ runner.os }}" = "macOS" ]; then
+            PATH="$HOME/.local/bin:$PATH"
+            echo "$HOME/.local/bin" >> $GITHUB_PATH
+          fi
+        env:
+          BASE_REF: ${{ github.base_ref || github.event.merge_group.base_ref }}
+
+      - name: Check poetry.lock
+        working-directory: autogpt_platform/backend
+        run: |
+          poetry lock
+
+          if ! git diff --quiet --ignore-matching-lines="^# " poetry.lock; then
+            echo "Error: poetry.lock not up to date."
+            echo
+            git diff poetry.lock
+            exit 1
+          fi
+
+      - name: Install Python dependencies
+        working-directory: autogpt_platform/backend
+        run: poetry install
+
+      - name: Generate Prisma Client
+        working-directory: autogpt_platform/backend
+        run: poetry run prisma generate && poetry run gen-prisma-stub
+
+      - id: supabase
+        name: Start Supabase
+        working-directory: autogpt_platform
+        run: |
+          supabase init
+          supabase start --exclude postgres-meta,realtime,storage-api,imgproxy,inbucket,studio,edge-runtime,logflare,vector,supavisor
+          supabase status -o env | sed 's/="/=/; s/"$//' >> $GITHUB_OUTPUT
+        # outputs:
+        # DB_URL, API_URL, GRAPHQL_URL, ANON_KEY, SERVICE_ROLE_KEY, JWT_SECRET
+
+      - name: Wait for ClamAV to be ready
+        working-directory: autogpt_platform/backend
+        run: |
+          echo "Waiting for ClamAV daemon to start..."
+          max_attempts=60
+          attempt=0
+
+          until nc -z localhost 3310 || [ $attempt -eq $max_attempts ]; do
+            echo "ClamAV is unavailable - sleeping (attempt $((attempt+1))/$max_attempts)"
+            sleep 5
+            attempt=$((attempt+1))
+          done
+
+          if [ $attempt -eq $max_attempts ]; then
+            echo "ClamAV failed to start after $((max_attempts*5)) seconds"
+            echo "Checking ClamAV service logs..."
+            docker logs $(docker ps -q --filter "ancestor=clamav/clamav-debian:latest") 2>&1 | tail -50 || echo "No ClamAV container found"
+            exit 1
+          fi
+
+          echo "ClamAV is ready!"
+
+          # Verify ClamAV is responsive
+          echo "Testing ClamAV connection..."
+          timeout 10 bash -c 'echo "PING" | nc localhost 3310' || {
+            echo "ClamAV is not responding to PING"
+            docker logs $(docker ps -q --filter "ancestor=clamav/clamav-debian:latest") 2>&1 | tail -50 || echo "No ClamAV container found"
+            exit 1
+          }
+
+      - name: Run Database Migrations
+        working-directory: autogpt_platform/backend
+        run: poetry run prisma migrate deploy
+        env:
+          DATABASE_URL: ${{ steps.supabase.outputs.DB_URL }}
+          DIRECT_URL: ${{ steps.supabase.outputs.DB_URL }}
+
+      - id: lint
+        name: Run Linter
+        working-directory: autogpt_platform/backend
+        run: poetry run lint
+
+      - name: Run pytest with coverage
+        working-directory: autogpt_platform/backend
+        run: |
+          if [[ "${{ runner.debug }}" == "1" ]]; then
+            poetry run pytest -s -vv -o log_cli=true -o log_cli_level=DEBUG
+          else
+            poetry run pytest -s -vv
+          fi
+        if: success() || (failure() && steps.lint.outcome == 'failure')
+        env:
+          LOG_LEVEL: ${{ runner.debug && 'DEBUG' || 'INFO' }}
+          DATABASE_URL: ${{ steps.supabase.outputs.DB_URL }}
+          DIRECT_URL: ${{ steps.supabase.outputs.DB_URL }}
+          SUPABASE_URL: ${{ steps.supabase.outputs.API_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ steps.supabase.outputs.SERVICE_ROLE_KEY }}
+          JWT_VERIFY_KEY: ${{ steps.supabase.outputs.JWT_SECRET }}
+          REDIS_HOST: "localhost"
+          REDIS_PORT: "6379"
+          ENCRYPTION_KEY: ${{ secrets.TEST_ENCRYPTION_KEY || 'dvziYgz0KSK8FENhju0ZYi8-fRTfAdlz6YLhdB_jhNw=' }}
+          CI: true
+          PLAIN_OUTPUT: True
+          RUN_ENV: local
+          PORT: 8080
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          RABBITMQ_DEFAULT_USER: ${{ secrets.RABBITMQ_DEFAULT_USER || 'rabbitmq_user_default' }}
+          RABBITMQ_DEFAULT_PASS: ${{ secrets.RABBITMQ_DEFAULT_PASS || 'k0VMxyIJF9S35f3x2uaw5IWAl6Y536O7' }}
+
+  # =============================================================================
+  # Frontend Tests (Parallel Job 3)
+  # =============================================================================
+  test-frontend:
+    name: Frontend Tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+        with:
+          submodules: recursive
+
+      - name: Setup Mise
+        uses: jdx/mise-action@v3
+        with:
+          version: 2026.1.0
+          experimental: true
+          cache: true
+          cache_key: mise-frontend-{{platform}}-{{file_hash}}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          log_level: info
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22.18.0"
+
+      - name: Enable corepack
+        run: corepack enable
+
+      - name: Cache frontend dependencies
+        uses: actions/cache@v5
+        with:
+          path: ~/.pnpm-store
+          key: ${{ runner.os }}-pnpm-${{ hashFiles('autogpt_platform/frontend/pnpm-lock.yaml', 'autogpt_platform/frontend/package.json') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-${{ hashFiles('autogpt_platform/frontend/pnpm-lock.yaml') }}
+            ${{ runner.os }}-pnpm-
+
+      - name: Install dependencies
+        working-directory: autogpt_platform/frontend
+        run: pnpm install --frozen-lockfile
+
+      - name: Generate API client
+        working-directory: autogpt_platform/frontend
+        run: pnpm generate:api
+
+      - name: Type checking
+        working-directory: autogpt_platform/frontend
+        run: pnpm types
+
+      - name: Run lint
+        working-directory: autogpt_platform/frontend
+        run: pnpm lint
+
+      # Note: Integration tests can be added here when available
+      # - name: Run integration tests
+      #   working-directory: autogpt_platform/frontend
+      #   run: pnpm test:unit
+
+  # =============================================================================
+  # CI Success Gate (Requires All Jobs)
+  # =============================================================================
+  ci-success:
+    name: ✅ CI Success
+    if: always()
+    needs: [lint, test-backend, test-frontend]
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check all jobs succeeded
+        run: |
+          # Check each job's result
+          LINT_RESULT="${{ needs.lint.result }}"
+          BACKEND_RESULT="${{ needs.test-backend.result }}"
+          FRONTEND_RESULT="${{ needs.test-frontend.result }}"
+
+          echo "=== CI Job Results ==="
+          echo "Lint & Format: $LINT_RESULT"
+          echo "Backend Tests: $BACKEND_RESULT"
+          echo "Frontend Tests: $FRONTEND_RESULT"
+          echo ""
+
+          # Fail if any job failed
+          if [[ "$LINT_RESULT" != "success" ]] || \
+             [[ "$BACKEND_RESULT" != "success" ]] || \
+             [[ "$FRONTEND_RESULT" != "success" ]]; then
+            echo "❌ One or more CI jobs failed"
+            echo ""
+            echo "Failed jobs:"
+            [[ "$LINT_RESULT" != "success" ]] && echo "  - Lint & Format: $LINT_RESULT"
+            [[ "$BACKEND_RESULT" != "success" ]] && echo "  - Backend Tests: $BACKEND_RESULT"
+            [[ "$FRONTEND_RESULT" != "success" ]] && echo "  - Frontend Tests: $FRONTEND_RESULT"
+            exit 1
+          fi
+
+          echo "✅ All CI checks passed successfully!"
