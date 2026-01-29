@@ -7,11 +7,10 @@ PLATFORM_ROOT = "{{config_root}}"
 BACKEND_ROOT = "{{config_root}}/backend"
 FRONTEND_ROOT = "{{config_root}}/frontend"
 
-# Load environment defaults (mise validates these exist)
-_.file = [
-    ".env.default",
-    ".env"  # Override with local settings if present
-]
+# Load environment defaults
+# Note: .env.default has unquoted values that mise's parser doesn't support
+# Environment loading handled by docker-compose and application code instead
+# _.file = [".env.default", ".env"]
 
 [tasks]
 # =============================================================================

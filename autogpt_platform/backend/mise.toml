@@ -5,10 +5,9 @@
 _.python.venv = { path = ".venv", create = true }
 
 # Load backend environment
-_.file = [
-    ".env.default",
-    ".env"
-]
+# Note: .env.default has unquoted values that mise's parser doesn't support
+# Environment loading handled by application code instead
+# _.file = [".env.default", ".env"]
 
 [tools]
 # Inherit Python from parent, but ensure poetry is available
