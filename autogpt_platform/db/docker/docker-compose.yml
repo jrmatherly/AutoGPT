@@ -423,6 +423,8 @@ services:
       - ./volumes/db/logs.sql:/docker-entrypoint-initdb.d/migrations/99-logs.sql:Z
       # Changes required for Pooler support
       - ./volumes/db/pooler.sql:/docker-entrypoint-initdb.d/migrations/99-pooler.sql:Z
+      # RLS policies for multi-tenant isolation (applied manually after Prisma migrations)
+      - ./volumes/db/rls-policies.sql:/docker-entrypoint-initdb.d/rls-policies.sql:Z
       # Use named volume to persist pgsodium decryption key between restarts
       - supabase-config:/etc/postgresql-custom
     healthcheck:
