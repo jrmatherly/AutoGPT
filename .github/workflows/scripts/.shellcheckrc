@@ -1,0 +1,20 @@
+# ShellCheck configuration for GitHub Actions workflow scripts
+#
+# These scripts are designed to run in GitHub Actions environments where
+# variables are passed externally via the workflow's env context.
+
+# External variables from GitHub Actions are expected
+# SC2154: var is referenced but not assigned (externally provided)
+disable=SC2154
+
+# Enable all other checks
+enable=all
+
+# Set severity threshold
+severity=style
+
+# Specify shell
+shell=bash
+
+# Allow external sources
+external-sources=true
