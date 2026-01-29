@@ -231,7 +231,7 @@ refactor(blocks): simplify HTTP request block
 
 ## Pull Requests
 
-- Create PRs against `dev` branch
+- Create PRs against `master` branch
 - Use descriptive branch names: `feature/add-new-block`
 - Fill out the PR template in `.github/PULL_REQUEST_TEMPLATE.md`
 - Keep out-of-scope changes under 20% of PR

@@ -6,78 +6,80 @@ The project is configured as a **multi-language monorepo** with:
 - **TypeScript**: Frontend (Next.js/React) in `autogpt_platform/frontend/`
 - **Python**: Backend (FastAPI) in `autogpt_platform/backend/` and libs in `autogpt_platform/autogpt_libs/`
 
+**Development Tools**: Managed by [mise](https://mise.jdx.dev) - Python 3.13.1, Node 22.22.0, pnpm 10.28.2, Poetry 2.3.1
+
 **To apply language server changes**: Restart Claude Code or the Serena MCP server.
 
 --- for AutoGPT Development
 
 ## Quick Reference
 
+**Development uses [mise](https://mise.jdx.dev)** - See [docs/MISE_MIGRATION.md](../../docs/MISE_MIGRATION.md) for migration from Makefile.
+
 | Task | Command |
 |------|---------|
-| Start infrastructure | `cd autogpt_platform && make start-core` |
-| Backend dev server | `cd autogpt_platform && make run-backend` |
-| Frontend dev server | `cd autogpt_platform && make run-frontend` |
-| Format all code | `cd autogpt_platform && make format` |
-| Run migrations | `cd autogpt_platform && make migrate` |
+| Setup project (first time) | `mise trust && mise run setup` |
+| Start infrastructure | `mise run docker:up` |
+| Backend dev server | `mise run backend` |
+| Frontend dev server | `mise run frontend` |
+| Format all code | `mise run format` |
+| Run migrations | `mise run db:migrate` |
 | Generate API client | `cd autogpt_platform/frontend && pnpm generate:api` |
+| List all tasks | `mise tasks` |
 
-## Makefile Commands (autogpt_platform/)
+## Mise Task Commands
 
-Run from `autogpt_platform/` directory:
+Run from project root or `autogpt_platform/` directory (mise auto-detects context):
 
 ```bash
-make help                    # List all available make targets
+mise tasks                   # List all available tasks
 
 # Core Services (Supabase + Redis + RabbitMQ)
-make start-core              # Start core services: docker compose up -d deps
-make stop-core               # Stop all services: docker compose stop
-make logs-core               # Tail logs: docker compose logs -f deps
+mise run docker:up           # Start core services
+mise run docker:down         # Stop all services
+mise run docker:logs         # Tail logs
 
 # Development Servers
-make run-backend             # Run FastAPI server: cd backend && poetry run app
-make run-frontend            # Run Next.js dev: cd frontend && pnpm dev
+mise run backend             # Run FastAPI server
+mise run frontend            # Run Next.js dev server
 
 # Code Quality
-make format                  # Format & lint backend AND frontend code
+mise run format              # Format & lint backend AND frontend code
+mise run lint                # Lint backend AND frontend code
 
 # Database
-make migrate                 # Run Prisma migrations + generate client + gen-prisma-stub
-make reset-db                # Stop db, delete volume, run migrations
-
-# Environment Setup
-make init-env                # Copy .env.default to .env for all services (platform, backend, frontend)
+mise run db:migrate          # Run Prisma migrations + generate client + stub
+mise run db:reset            # Stop db, delete volume, run migrations
+mise run db:rls-apply        # Apply RLS policies
+mise run db:rls-verify       # Verify RLS policies
 
 # Test Data
-make test-data               # Run test data creator script
-make load-store-agents       # Load store agents from agents/ folder
+mise run test:data           # Run test data creator script
+mise run store:load          # Load store agents from agents/ folder
+
+# Testing
+mise run test                # Run all tests (backend + frontend)
+mise run test:backend        # Backend tests only
+mise run test:frontend       # Frontend E2E tests only
 
 # Drift - Codebase Pattern Analysis
-# ⚠️  IMPORTANT: Multi-project commands run sequentially for backend, frontend, AND libs
+# ⚠️ Multi-project commands run sequentially for backend, frontend, AND libs
 
-# Multi-Project Commands (executes for all 3 projects)
-make drift-status            # Show drift status for all projects
-make drift-scan              # Scan all projects for patterns
-make drift-check             # Check for violations (CI-friendly)
-make drift-approve           # Approve all discovered patterns (95%+ confidence)
+mise run drift:status        # Show drift status for all projects
+mise run drift:scan          # Scan all projects for patterns
+mise run drift:check         # Check for violations (CI-friendly)
+mise run drift:approve       # Approve discovered patterns (95%+ confidence)
 
-# Single-Project Commands (executes for specific project only)
-make drift-scan-backend      # Scan backend only (verbose)
-make drift-scan-frontend     # Scan frontend only (verbose)
-make drift-scan-libs         # Scan libs only (verbose)
+# Advanced Analysis
+mise run drift:coupling      # Build module coupling graphs
+mise run drift:full          # Full analysis: scan, approve, callgraph, deep
 
-# Advanced Analysis (executes for all 3 projects)
-make drift-callgraph         # Build call graphs for all projects
-make drift-analyze           # Run language-specific analysis (Python/TypeScript) for all
-make drift-coupling          # Build module coupling graphs for all projects
-make drift-coupling-cycles   # Find dependency cycles in all projects
-make drift-coupling-hotspots # Find highly coupled modules in all projects
-make drift-test-topology     # Build test topology for all projects
-make drift-error-gaps        # Find error handling gaps in all projects
-
-# Combined Workflows (executes for all 3 projects)
-make drift-deep              # Run coupling + test-topology for all projects
-make drift-full              # Full setup: scan, approve, callgraph, deep for all projects
+# Setup & Diagnostics
+mise run setup               # Complete project setup (first time)
+mise run doctor              # Verify development environment
 ```
+
+**Note:** Makefile still works but is deprecated. See [docs/MISE_MIGRATION.md](../../docs/MISE_MIGRATION.md).
 
 ## Backend Development (autogpt_platform/backend)
 
@@ -232,20 +234,26 @@ gh api /repos/Significant-Gravitas/AutoGPT/issues/{pr_number}/comments
 
 ```bash
 cd autogpt_platform
-make init-env                     # Copy environment files (first time only)
-make start-core                   # Start Supabase + Redis + RabbitMQ
-make migrate                      # Run migrations
-make run-backend                  # In terminal 1
-make run-frontend                 # In terminal 2
+
+# First time setup
+mise trust                        # Trust mise configuration
+mise run setup                    # Complete setup (installs tools, deps, runs migrations)
+
+# Daily development
+mise run docker:up                # Start Supabase + Redis + RabbitMQ
+mise run backend                  # In terminal 1
+mise run frontend                 # In terminal 2
 ```
 
 ### Before Committing
 
 ```bash
 cd autogpt_platform
-make format                       # Format both backend and frontend
+mise run format                   # Format both backend and frontend
+mise run lint                     # Lint both backend and frontend
+mise run test                     # Run all tests
 
-# Additional checks
+# Or check individually
 cd backend && poetry run lint && poetry run test
 cd frontend && pnpm types && pnpm test
 ```
@@ -265,66 +273,28 @@ pnpm generate:api                 # Regenerate TypeScript client
 cd autogpt_platform
 
 # Quick pattern check before committing (runs for all 3 projects)
-make drift-check
+mise run drift:check
 
 # View codebase health and patterns (shows backend → frontend → libs)
-make drift-status
+mise run drift:status
 
 # After adding new code, scan for new patterns
-make drift-scan                  # For changes across projects (all 3)
-make drift-scan-backend          # For backend changes only (single project)
-make drift-scan-frontend         # For frontend changes only (single project)
+mise run drift:scan              # For changes across all projects
 
 # Deep analysis before major refactoring
-make drift-coupling              # Check module dependencies
-make drift-coupling-cycles       # Find circular dependencies
-make drift-test-topology         # Understand test coverage
-
-# Find areas needing improvement
-make drift-error-gaps            # Identify missing error handling
-make drift-coupling-hotspots     # Find tightly coupled modules
+mise run drift:coupling          # Check module dependencies
 
 # Full analysis and approval workflow
-make drift-full                  # Complete scan, approve, and analyze
+mise run drift:full              # Complete scan, approve, and analyze
 ```
 
-### Drift Intelligence in Development
+### Drift Intelligence
 
-The drift analysis has discovered **805 approved patterns** across the codebase:
+Drift analyzes the codebase for established patterns and conventions. Use drift commands to ensure new code follows project standards.
 
-**Pattern Categories** (with coverage):
-- `data-access` (88 patterns, 81% coverage) - Database queries, Prisma usage
-- `components` (65 patterns, 78% coverage) - React component patterns
-- `styling` (61 patterns, 82% coverage) - Tailwind/CSS conventions
-- `testing` (60 patterns, 87% coverage) - Test structure and assertions
-- `security` (59 patterns, 83% coverage) - Auth, validation, sanitization
-- `errors` (58 patterns, 86% coverage) - Error handling patterns
-- `types` (58 patterns, 84% coverage) - TypeScript type usage
-- `performance` (52 patterns, 83% coverage) - Optimization patterns
-- `api` (18 patterns, 100% coverage) - API route patterns
+**Multi-project setup:** Each project (backend, frontend, libs) has its own `.drift/` directory with isolated pattern analysis.
 
-**Health Score**: 95/100 | **Violations**: 0
-
-Use drift patterns to ensure new code follows established conventions.
-
-#### How Multi-Project Commands Work
-
-When you run a multi-project drift command, the Makefile executes it for each project sequentially:
-
-```bash
-# Example: make drift-status
-cd autogpt_platform
-make drift-status
-
-# Executes:
-# 1. cd backend && drift status --detailed
-# 2. cd frontend && drift status --detailed  
-# 3. cd autogpt_libs && drift status --detailed
-```
-
-**Project Structure:**
-- **Backend**: `autogpt_platform/backend/` - Python/FastAPI
-- **Frontend**: `autogpt_platform/frontend/` - TypeScript/Next.js
-- **Libs**: `autogpt_platform/autogpt_libs/` - Python shared libraries
-
-Each project has its own `.drift/` directory with isolated pattern analysis.
+**Run drift analysis:**
+- `mise run drift:status` - View current drift status
+- `mise run drift:scan` - Discover new patterns
+- `mise run drift:check` - Check for violations (CI-friendly)

@@ -1,269 +1,57 @@
-# AutoGPT Platform API Reference
+# API Reference Quick Guide
 
-## API Architecture
+## Documentation Location
 
-The platform exposes APIs through multiple servers:
-- **REST API** (`rest.py`): Main HTTP endpoints
-- **WebSocket API** (`ws.py`): Real-time communication
-- **External API** (`api/external/`): Public API (v1)
+**Complete API documentation:** [docs/API_REFERENCE.md](../../docs/API_REFERENCE.md)
 
-## API Route Groups
+## API Structure
 
-### Authentication & Users (`api/features/`)
+The platform exposes APIs through:
+- **REST API** (`backend/rest.py`) - Main HTTP endpoints at `/api/v2/`
+- **WebSocket API** (`backend/ws.py`) - Real-time updates at `/ws`
+- **External API** (`backend/api/external/v1/`) - Public API v1
 
-#### OAuth Routes (`oauth.py`)
-| Endpoint | Method | Description |
-|----------|--------|-------------|
-| `/oauth/{provider}/login` | GET | Initiate OAuth flow |
-| `/oauth/{provider}/callback` | GET | OAuth callback handler |
+## Key Route Groups
 
-#### Admin Routes (`admin/`)
-| Endpoint | Method | Description |
-|----------|--------|-------------|
-| `/admin/analytics/*` | GET | Execution analytics |
-| `/admin/store/*` | GET/POST | Store administration |
-| `/admin/credits/*` | GET/POST | Credit management |
-
-### Agent Library (`api/features/library/`)
-| Endpoint | Method | Description |
-|----------|--------|-------------|
-| `GET /library/agents` | GET | List user's agents |
-| `POST /library/agents` | POST | Create agent |
-| `GET /library/agents/{id}` | GET | Get agent details |
-| `PUT /library/agents/{id}` | PUT | Update agent |
-| `DELETE /library/agents/{id}` | DELETE | Delete agent |
-| `/library/presets/*` | * | Preset management |
-
-### Agent Builder (`api/features/builder/`)
-| Endpoint | Method | Description |
-|----------|--------|-------------|
-| `/builder/graphs` | GET/POST | Graph CRUD |
-| `/builder/graphs/{id}` | GET/PUT/DELETE | Single graph ops |
-| `/builder/graphs/{id}/execute` | POST | Execute graph |
-| `/builder/blocks` | GET | List available blocks |
-
-### Marketplace/Store (`api/features/store/`)
-| Endpoint | Method | Description |
-|----------|--------|-------------|
-| `GET /store/agents` | GET | List store agents |
-| `GET /store/agents/{id}` | GET | Get agent details |
-| `POST /store/submissions` | POST | Submit agent |
-| `GET /store/creators` | GET | List creators |
-| `/store/media/*` | * | Media handling |
-
-### Executions (`api/features/executions/`)
-| Endpoint | Method | Description |
-|----------|--------|-------------|
-| `GET /executions` | GET | List executions |
-| `GET /executions/{id}` | GET | Execution details |
-| `POST /executions/{id}/stop` | POST | Stop execution |
-| `/executions/review/*` | * | Human review flows |
-
-### Integrations (`api/features/integrations/`)
-| Endpoint | Method | Description |
-|----------|--------|-------------|
-| `GET /integrations` | GET | List user integrations |
-| `POST /integrations` | POST | Add integration |
-| `DELETE /integrations/{id}` | DELETE | Remove integration |
-| `GET /integrations/providers` | GET | Available providers |
-
-### Chat/Copilot (`api/features/chat/`)
-| Endpoint | Method | Description |
-|----------|--------|-------------|
-| `POST /chat/messages` | POST | Send chat message |
-| `GET /chat/history` | GET | Get chat history |
-| `POST /chat/sessions` | POST | Create session |
-
-### Otto AI (`api/features/otto/`)
-| Endpoint | Method | Description |
-|----------|--------|-------------|
-| `POST /otto/assist` | POST | Get AI assistance |
-
-## External API (v1)
-
-Located in `api/external/v1/`:
-
-### Tools (`tools.py`)
-| Endpoint | Method | Description |
-|----------|--------|-------------|
-| `POST /v1/tools/execute` | POST | Execute a tool/block |
-
-### Integrations (`integrations.py`)
-| Endpoint | Method | Description |
-|----------|--------|-------------|
-| `GET /v1/integrations` | GET | List integrations |
-
-### Main Routes (`routes.py`)
-| Endpoint | Method | Description |
-|----------|--------|-------------|
-| `GET /v1/graphs` | GET | List graphs |
-| `POST /v1/graphs/{id}/execute` | POST | Execute graph |
-
-## WebSocket API
-
-### Connection
-```
-ws://host/ws?user_id={user_id}
-```
-
-### Events
-| Event | Direction | Description |
-|-------|-----------|-------------|
-| `execution.started` | Server→Client | Execution began |
-| `execution.progress` | Server→Client | Progress update |
-| `execution.completed` | Server→Client | Execution finished |
-| `execution.failed` | Server→Client | Execution error |
-| `node.output` | Server→Client | Node produced output |
-
-## Data Models
-
-### Graph (Agent Workflow)
-```python
-class Graph:
-    id: str
-    name: str
-    description: str
-    nodes: List[Node]
-    links: List[Link]
-    version: int
-    is_active: bool
-    is_template: bool
-```
-
-### Node
-```python
-class Node:
-    id: str
-    block_id: str  # References Block
-    input_default: Dict[str, Any]
-    metadata: NodeMetadata
-```
-
-### Execution
-```python
-class Execution:
-    id: str
-    graph_id: str
-    graph_version: int
-    status: ExecutionStatus
-    started_at: datetime
-    ended_at: Optional[datetime]
-    stats: ExecutionStats
-```
-
-### Block
-```python
-class Block:
-    id: str  # UUID
-    name: str
-    description: str
-    categories: List[BlockCategory]
-    input_schema: BlockSchema
-    output_schema: BlockSchema
-    
-    async def run(self, input_data: Input) -> Output:
-        ...
-```
+| Group | Path | Purpose |
+|-------|------|---------|
+| Library | `/api/v2/library/*` | User's agent CRUD |
+| Builder | `/api/v2/builder/*` | Graph building & execution |
+| Store | `/api/v2/store/*` | Marketplace agents |
+| Executions | `/api/v2/executions/*` | Execution management |
+| Integrations | `/api/v2/integrations/*` | OAuth & credentials |
+| Admin | `/api/v2/admin/*` | Analytics & administration |
 
 ## Authentication
 
-### JWT Authentication
-- Bearer token in `Authorization` header
-- Supabase integration for user management
+- **JWT**: Bearer token in `Authorization` header (Supabase)
+- **API Key**: `X-API-Key` header for external API
 
-### API Key Authentication
-- For external API access
-- Header: `X-API-Key: {key}`
+## OpenAPI Spec
 
-## Error Responses
-
-```json
-{
-  "error": {
-    "code": "ERROR_CODE",
-    "message": "Human readable message",
-    "details": {}
-  }
-}
-```
-
-### Common Error Codes
-| Code | HTTP Status | Description |
-|------|-------------|-------------|
-| `UNAUTHORIZED` | 401 | Invalid/missing auth |
-| `FORBIDDEN` | 403 | Insufficient permissions |
-| `NOT_FOUND` | 404 | Resource not found |
-| `VALIDATION_ERROR` | 422 | Invalid input |
-| `RATE_LIMITED` | 429 | Too many requests |
-| `INTERNAL_ERROR` | 500 | Server error |
-
-## Rate Limiting
-
-- Default: 100 requests/minute per user
-- External API: 60 requests/minute per API key
-- Burst: 10 requests allowed
-
-## OpenAPI Specification
-
-- Production: `https://api.example.com/openapi.json`
-- Staging: `https://api-staging.example.com/openapi.json`
-- Local: `http://localhost:8006/openapi.json`
-
-Generate client:
 ```bash
-cd autogpt_platform/frontend
-pnpm generate:api
+# Local development
+http://localhost:8006/openapi.json
+
+# Generate TypeScript client
+cd autogpt_platform/frontend && pnpm generate:api
 ```
 
-## Code Examples
+## Quick Examples
 
-### Python
-
-```python
-import requests
-
-API_URL = "http://localhost:8000"  # or production URL
-TOKEN = "your_jwt_token"
-headers = {
-    "Authorization": f"Bearer {TOKEN}",
-    "Content-Type": "application/json"
-}
-
-# List library agents
-response = requests.get(f"{API_URL}/api/v2/library/agents", headers=headers)
-agents = response.json()
-
-# Execute a graph
-response = requests.post(
-    f"{API_URL}/api/v2/builder/graphs/{graph_id}/execute",
-    headers=headers,
-    json={"input_data": {"prompt": "Hello!"}}
-)
-execution = response.json()
-```
-
-### TypeScript (Using Generated Hooks)
-
+**Frontend (Generated Hooks):**
 ```typescript
 import { useGetV2ListLibraryAgents } from "@/app/api/__generated__/endpoints/library/library";
 
-// List agents
-export function useAgentList() {
-  const { data, isLoading, isError } = useGetV2ListLibraryAgents();
-  return { agents: data?.agents || [], isLoading, isError };
-}
+const { data, isLoading } = useGetV2ListLibraryAgents();
 ```
 
-### cURL
+**Python:**
+```python
+import requests
 
-```bash
-# List library agents
-curl -X GET "http://localhost:8000/api/v2/library/agents" \
-  -H "Authorization: Bearer $TOKEN"
-
-# Execute a graph
-curl -X POST "http://localhost:8000/api/v2/builder/graphs/$GRAPH_ID/execute" \
-  -H "Authorization: Bearer $TOKEN" \
-  -H "Content-Type: application/json" \
-  -d '{"input_data": {"prompt": "Hello!"}}'
+headers = {"Authorization": f"Bearer {token}"}
+response = requests.get("http://localhost:8000/api/v2/library/agents", headers=headers)
 ```
+
+**Full details:** See [docs/API_REFERENCE.md](../../docs/API_REFERENCE.md) for complete endpoint listings, request/response schemas, error codes, and examples.

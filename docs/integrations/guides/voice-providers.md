@@ -28,13 +28,13 @@ The following voices are available through Unreal Speech:
 
 ### Configuration Options
 
-| Parameter  | Description                           | Default   | Range/Options    |
-| ---------- | ------------------------------------- | --------- | ---------------- |
-| `voice_id` | Voice identifier                      | Scarlett  | See voice list   |
-| `bitrate`  | Audio quality                         | 192k      | 64k, 128k, 192k, 320k |
-| `speed`    | Speech speed adjustment               | 0         | -1.0 to 1.0      |
-| `pitch`    | Voice pitch adjustment                | 1         | 0.5 to 2.0       |
-| `timestamp`| Timestamp generation type             | sentence  | word, sentence   |
+| Parameter   | Description                           | Default   | Range/Options             |
+| ----------- | ------------------------------------- | --------- | ------------------------- |
+| `voice_id`  | Voice identifier                      | Scarlett  | See voice list            |
+| `bitrate`   | Audio quality                         | 192k      | 64k, 128k, 192k, 320k     |
+| `speed`     | Speech speed adjustment               | 0         | -1.0 to 1.0               |
+| `pitch`     | Voice pitch adjustment                | 1         | 0.5 to 2.0                |
+| `timestamp` | Timestamp generation type             | sentence  | word, sentence            |
 
 ### Setup
 
