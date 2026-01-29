@@ -52,28 +52,31 @@ make test-data               # Run test data creator script
 make load-store-agents       # Load store agents from agents/ folder
 
 # Drift - Codebase Pattern Analysis
-make drift-status            # Show drift status for all projects (backend, frontend, libs)
+# ⚠️  IMPORTANT: Multi-project commands run sequentially for backend, frontend, AND libs
+
+# Multi-Project Commands (executes for all 3 projects)
+make drift-status            # Show drift status for all projects
 make drift-scan              # Scan all projects for patterns
 make drift-check             # Check for violations (CI-friendly)
 make drift-approve           # Approve all discovered patterns (95%+ confidence)
 
-# Drift - Individual Project Scans
+# Single-Project Commands (executes for specific project only)
 make drift-scan-backend      # Scan backend only (verbose)
 make drift-scan-frontend     # Scan frontend only (verbose)
 make drift-scan-libs         # Scan libs only (verbose)
 
-# Drift - Advanced Analysis
-make drift-callgraph         # Build call graphs for impact analysis
-make drift-analyze           # Run language-specific analysis (Python/TypeScript)
-make drift-coupling          # Build module coupling graphs
-make drift-coupling-cycles   # Find dependency cycles
-make drift-coupling-hotspots # Find highly coupled modules
-make drift-test-topology     # Build test topology (maps tests to code)
-make drift-error-gaps        # Find error handling gaps
+# Advanced Analysis (executes for all 3 projects)
+make drift-callgraph         # Build call graphs for all projects
+make drift-analyze           # Run language-specific analysis (Python/TypeScript) for all
+make drift-coupling          # Build module coupling graphs for all projects
+make drift-coupling-cycles   # Find dependency cycles in all projects
+make drift-coupling-hotspots # Find highly coupled modules in all projects
+make drift-test-topology     # Build test topology for all projects
+make drift-error-gaps        # Find error handling gaps in all projects
 
-# Drift - Combined Workflows
-make drift-deep              # Run coupling + test-topology analysis
-make drift-full              # Full setup: scan, approve, callgraph, and deep analysis
+# Combined Workflows (executes for all 3 projects)
+make drift-deep              # Run coupling + test-topology for all projects
+make drift-full              # Full setup: scan, approve, callgraph, deep for all projects
 ```
 
 ## Backend Development (autogpt_platform/backend)
@@ -256,18 +259,21 @@ pnpm generate:api                 # Regenerate TypeScript client
 
 ### Using Drift for Code Intelligence
 
+**Multi-Project Execution**: Drift commands run for all 3 projects (backend, frontend, libs) sequentially.
+
 ```bash
 cd autogpt_platform
 
-# Quick pattern check before committing
+# Quick pattern check before committing (runs for all 3 projects)
 make drift-check
 
-# View codebase health and patterns
+# View codebase health and patterns (shows backend → frontend → libs)
 make drift-status
 
 # After adding new code, scan for new patterns
-make drift-scan-backend          # For backend changes
-make drift-scan-frontend         # For frontend changes
+make drift-scan                  # For changes across projects (all 3)
+make drift-scan-backend          # For backend changes only (single project)
+make drift-scan-frontend         # For frontend changes only (single project)
 
 # Deep analysis before major refactoring
 make drift-coupling              # Check module dependencies
@@ -300,3 +306,25 @@ The drift analysis has discovered **805 approved patterns** across the codebase:
 **Health Score**: 95/100 | **Violations**: 0
 
 Use drift patterns to ensure new code follows established conventions.
+
+#### How Multi-Project Commands Work
+
+When you run a multi-project drift command, the Makefile executes it for each project sequentially:
+
+```bash
+# Example: make drift-status
+cd autogpt_platform
+make drift-status
+
+# Executes:
+# 1. cd backend && drift status --detailed
+# 2. cd frontend && drift status --detailed  
+# 3. cd autogpt_libs && drift status --detailed
+```
+
+**Project Structure:**
+- **Backend**: `autogpt_platform/backend/` - Python/FastAPI
+- **Frontend**: `autogpt_platform/frontend/` - TypeScript/Next.js
+- **Libs**: `autogpt_platform/autogpt_libs/` - Python shared libraries
+
+Each project has its own `.drift/` directory with isolated pattern analysis.
