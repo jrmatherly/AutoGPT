@@ -14,6 +14,74 @@ FRONTEND_ROOT = "{{config_root}}/frontend"
 
 [tasks]
 # =============================================================================
+# Diagnostics
+# =============================================================================
+
+[tasks.doctor]
+description = "Verify mise environment is correctly configured"
+run = """
+#!/usr/bin/env bash
+set -e
+
+echo "🔍 Checking mise environment..."
+echo ""
+
+# Check mise is activated
+if [[ -z "${MISE_SHELL:-}" ]]; then
+    echo "❌ Mise is not activated in your shell"
+    echo "   Run: eval \\"\\$(mise activate bash)\\"  # or zsh"
+    exit 1
+fi
+echo "✅ Mise shell integration active"
+
+# Check Python
+if command -v python &> /dev/null; then
+    echo "✅ Python: $(python --version)"
+else
+    echo "❌ Python not found - run: mise install"
+    exit 1
+fi
+
+# Check Node
+if command -v node &> /dev/null; then
+    echo "✅ Node.js: $(node --version)"
+else
+    echo "❌ Node.js not found - run: mise install"
+    exit 1
+fi
+
+# Check pnpm
+if command -v pnpm &> /dev/null; then
+    echo "✅ pnpm: $(pnpm --version)"
+else
+    echo "❌ pnpm not found - run: mise install"
+    exit 1
+fi
+
+# Check Poetry
+if command -v poetry &> /dev/null; then
+    echo "✅ Poetry: $(poetry --version)"
+else
+    echo "❌ Poetry not found - run: mise install"
+    exit 1
+fi
+
+# Check Docker
+if command -v docker &> /dev/null; then
+    if docker info &> /dev/null; then
+        echo "✅ Docker: running"
+    else
+        echo "⚠️  Docker: installed but not running"
+    fi
+else
+    echo "⚠️  Docker: not installed (optional)"
+fi
+
+echo ""
+echo "🎉 Environment check complete!"
+"""
+
+# =============================================================================
 # Core Services (Makefile Wrappers)
 # =============================================================================
 
@@ -119,6 +187,51 @@ cp -n .env.default .env || true
 cd backend && cp -n .env.default .env || true
 cd ../frontend && cp -n .env.default .env || true
 echo "Environment files initialized. Edit .env files to customize."
+"""
+
+# =============================================================================
+# Installation Tasks (parallel execution)
+# =============================================================================
+
+[tasks.install]
+description = "Install all dependencies in parallel"
+depends = ["install:backend", "install:frontend", "install:libs"]
+run = "echo '✅ All dependencies installed'"
+
+[tasks."install:backend"]
+description = "Install backend dependencies"
+dir = "{{config_root}}/backend"
+run = "poetry install"
+
+[tasks."install:frontend"]
+description = "Install frontend dependencies"
+dir = "{{config_root}}/frontend"
+run = "pnpm install"
+
+[tasks."install:libs"]
+description = "Install shared library dependencies"
+dir = "{{config_root}}/autogpt_libs"
+run = "poetry install"
+
+# =============================================================================
+# Build Tasks (with caching)
+# =============================================================================
+
+[tasks."build:backend"]
+description = "Build backend (install dependencies with caching)"
+dir = "{{config_root}}/backend"
+sources = ["backend/**/*.py", "pyproject.toml", "poetry.lock"]
+outputs = [".venv/"]
+run = "poetry install --sync"
+
+[tasks."build:frontend"]
+description = "Build frontend (install and build with caching)"
+dir = "{{config_root}}/frontend"
+sources = ["src/**/*", "package.json", "pnpm-lock.yaml"]
+outputs = [".next/", "node_modules/"]
+run = """
+pnpm install
+pnpm build
 """
 
 # =============================================================================
