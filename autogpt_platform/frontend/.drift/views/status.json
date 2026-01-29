@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-01-29T06:32:38.839Z",
+  "generatedAt": "2026-01-29T16:43:20.762Z",
   "health": {
-    "score": 41,
+    "score": 91,
     "trend": "stable",
     "factors": [
       {
         "name": "Pattern Approval Rate",
-        "score": 0,
+        "score": 1,
         "weight": 0.3,
         "trend": "stable"
       },
@@ -26,25 +26,25 @@
   },
   "patterns": {
     "total": 717,
-    "approved": 0,
-    "discovered": 717,
+    "approved": 717,
+    "discovered": 0,
     "ignored": 0,
     "byCategory": {
-      "errors": 51,
       "structural": 51,
       "components": 61,
       "styling": 61,
-      "logging": 42,
+      "api": 18,
+      "auth": 46,
+      "errors": 51,
       "data-access": 73,
+      "testing": 54,
+      "logging": 42,
+      "security": 51,
       "config": 46,
       "types": 53,
-      "accessibility": 38,
       "performance": 41,
-      "documentation": 31,
-      "auth": 46,
-      "security": 51,
-      "testing": 54,
-      "api": 18
+      "accessibility": 38,
+      "documentation": 31
     }
   },
   "issues": {
@@ -76,12 +76,12 @@
   },
   "security": {
     "violations": 0,
-    "sensitiveExposures": 6,
-    "riskLevel": "medium"
+    "sensitiveExposures": 0,
+    "riskLevel": "low"
   },
   "lastScan": {
-    "timestamp": "2026-01-29T06:32:38.824Z",
-    "duration": 30668,
+    "timestamp": "2026-01-29T16:43:20.748Z",
+    "duration": 48092,
     "filesScanned": 851,
     "patternsFound": 717,
     "errors": 0

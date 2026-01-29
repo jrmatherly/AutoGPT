@@ -1,30 +1,30 @@
 {
   "version": "1.0.0",
-  "generatedAt": "2026-01-29T06:32:38.854Z",
+  "generatedAt": "2026-01-29T16:43:20.787Z",
   "projectRoot": "/Users/jason/dev/AutoGPT/autogpt_platform/frontend",
   "stats": {
     "patterns": {
       "total": 717,
       "byCategory": {
-        "errors": 51,
         "structural": 51,
         "components": 61,
         "styling": 61,
-        "logging": 42,
+        "api": 18,
+        "auth": 46,
+        "errors": 51,
         "data-access": 73,
+        "testing": 54,
+        "logging": 42,
+        "security": 51,
         "config": 46,
         "types": 53,
-        "accessibility": 38,
         "performance": 41,
-        "documentation": 31,
-        "auth": 46,
-        "security": 51,
-        "testing": 54,
-        "api": 18
+        "accessibility": 38,
+        "documentation": 31
       },
       "byStatus": {
-        "discovered": 717,
-        "approved": 0,
+        "discovered": 0,
+        "approved": 717,
         "ignored": 0
       },
       "byConfidence": {
@@ -37,18 +37,18 @@
       "totalOutliers": 75
     },
     "security": {
-      "totalTables": 19,
-      "totalAccessPoints": 29,
-      "sensitiveFields": 6,
+      "totalTables": 0,
+      "totalAccessPoints": 0,
+      "sensitiveFields": 0,
       "violations": 0,
-      "riskLevel": "medium"
+      "riskLevel": "low"
     },
     "callGraph": {
-      "totalFunctions": 0,
-      "totalCalls": 0,
-      "entryPoints": 0,
-      "dataAccessors": 0,
-      "avgDepth": 0
+      "totalFunctions": 3685,
+      "totalCalls": 112944,
+      "entryPoints": 937,
+      "dataAccessors": 143,
+      "avgDepth": 30.65
     },
     "contracts": {
       "verified": 0,
@@ -65,31 +65,32 @@
   },
   "fileHashes": {},
   "lastScan": {
-    "timestamp": "2026-01-29T06:32:38.824Z",
-    "duration": 30668,
+    "timestamp": "2026-01-29T16:43:20.748Z",
+    "duration": 48092,
     "filesScanned": 851,
     "patternsFound": 717,
     "errors": 0
   },
   "views": {
     "status": {
-      "generatedAt": "2026-01-29T06:32:38.853Z",
+      "generatedAt": "2026-01-29T16:43:20.786Z",
       "stale": true,
       "invalidatedBy": [
         "pattern stats updated",
         "security stats updated",
+        "call graph stats updated",
         "contract stats updated"
       ]
     },
     "patternIndex": {
-      "generatedAt": "2026-01-29T06:32:38.853Z",
+      "generatedAt": "2026-01-29T16:43:20.786Z",
       "stale": true,
       "invalidatedBy": [
         "pattern stats updated"
       ]
     },
     "securitySummary": {
-      "generatedAt": "2026-01-29T06:32:38.853Z",
+      "generatedAt": "2026-01-29T16:43:20.786Z",
       "stale": true,
       "invalidatedBy": [
         "security stats updated"
