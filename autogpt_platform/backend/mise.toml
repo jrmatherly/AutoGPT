@@ -1,0 +1,79 @@
+# AutoGPT Backend - Development Configuration
+
+[env]
+# Mise manages the virtual environment - Poetry will use this instead of creating its own
+_.python.venv = { path = ".venv", create = true }
+
+# Load backend environment
+_.file = [
+    ".env.default",
+    ".env"
+]
+
+[tools]
+# Inherit Python from parent, but ensure poetry is available
+python = "3.13"
+"pipx:poetry" = "2.3.1"
+
+[tasks]
+# Backend-specific tasks inherit from parent but run in backend context
+
+[tasks.install]
+description = "Install Python dependencies"
+run = "poetry install"
+
+[tasks.serve]
+description = "Run the development server"
+run = "poetry run app"
+
+[tasks.test]
+description = "Run tests"
+run = "poetry run test"
+
+[tasks."test:watch"]
+description = "Run tests in watch mode"
+run = "poetry run pytest-watcher"
+
+[tasks."test:block"]
+description = "Run block tests"
+usage = 'arg "[block_name]" help="Block class name (e.g., GetCurrentTimeBlock)"'
+run = """
+#!/usr/bin/env bash
+if [[ -n "${usage_block_name:-}" ]]; then
+    poetry run pytest "backend/blocks/test/test_block.py::test_available_blocks[${usage_block_name}]" -xvs
+else
+    poetry run pytest backend/blocks/test/test_block.py -xvs
+fi
+"""
+
+[tasks.format]
+description = "Format code (Black + isort)"
+run = "poetry run format"
+
+[tasks.lint]
+description = "Lint code (ruff)"
+run = "poetry run lint"
+
+[tasks."db:migrate"]
+description = "Run database migrations"
+run = """
+poetry run prisma migrate deploy
+poetry run prisma generate
+poetry run gen-prisma-stub
+"""
+
+[tasks."db:migrate:dev"]
+description = "Create and apply a new migration"
+run = "poetry run prisma migrate dev"
+
+[tasks."api:export"]
+description = "Export OpenAPI schema"
+run = "poetry run export-api-schema"
+
+[tasks.cli]
+description = "Run the CLI"
+run = "poetry run cli"
+
+[tasks."oauth:tool"]
+description = "OAuth debugging tool"
+run = "poetry run oauth-tool"

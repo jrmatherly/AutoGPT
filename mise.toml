@@ -1,0 +1,26 @@
+# AutoGPT Platform - Mise Configuration
+# https://mise.jdx.dev/
+
+min_version = "2026.1.0"
+
+[settings]
+# Trust this project automatically for contributors
+paranoid = false
+# Enable experimental features for MCP integration
+experimental = true
+# Use lockfile for reproducible builds
+lockfile = true
+# Auto-install tools when entering directory
+auto_install = true
+
+[env]
+# Project identification
+AUTOGPT_ROOT = "{{config_root}}"
+
+[tools]
+# Core runtime versions - these MUST match production
+python = "3.13"
+node = "22"
+
+# Package managers
+pnpm = "10.28.2"

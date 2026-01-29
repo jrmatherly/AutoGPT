@@ -1,0 +1,311 @@
+# AutoGPT Platform - Development Configuration
+# Inherits tools from parent mise.toml
+
+[env]
+# Platform-specific paths
+PLATFORM_ROOT = "{{config_root}}"
+BACKEND_ROOT = "{{config_root}}/backend"
+FRONTEND_ROOT = "{{config_root}}/frontend"
+
+# Load environment defaults (mise validates these exist)
+_.file = [
+    ".env.default",
+    ".env"  # Override with local settings if present
+]
+
+[tasks]
+# =============================================================================
+# Core Services (Makefile Wrappers)
+# =============================================================================
+
+[tasks."docker:up"]
+description = "Start core services (Supabase, Redis, RabbitMQ, ClamAV)"
+alias = "up"
+dir = "{{config_root}}"
+run = "docker compose up -d deps"
+
+[tasks."docker:down"]
+description = "Stop all Docker services"
+alias = "down"
+dir = "{{config_root}}"
+run = "docker compose stop"
+
+[tasks."docker:logs"]
+description = "View logs for core services"
+dir = "{{config_root}}"
+run = "docker compose logs -f deps"
+
+[tasks."db:reset"]
+description = "Reset database by deleting volume and rerunning migrations"
+dir = "{{config_root}}"
+run = """
+docker compose stop db
+rm -rf db/docker/volumes/db/data
+cd backend && poetry run prisma migrate deploy
+cd backend && poetry run prisma generate
+cd backend && poetry run gen-prisma-stub
+"""
+
+[tasks."db:migrate"]
+description = "Run database migrations"
+dir = "{{config_root}}/backend"
+run = """
+poetry run prisma migrate deploy
+poetry run prisma generate
+poetry run gen-prisma-stub
+"""
+
+[tasks."db:rls-apply"]
+description = "Apply Row-Level Security policies"
+dir = "{{config_root}}"
+run = """
+echo "Applying RLS policies to database..."
+docker exec supabase-db psql -U postgres -d postgres -f /docker-entrypoint-initdb.d/rls-policies.sql
+echo "RLS policies applied successfully."
+"""
+
+[tasks."db:rls-verify"]
+description = "Verify RLS policies are active"
+dir = "{{config_root}}"
+run = """
+echo "Checking RLS policies..."
+docker exec supabase-db psql -U postgres -d postgres -c "\\
+    SELECT schemaname, tablename, policyname, permissive, roles, cmd \\
+    FROM pg_policies \\
+    WHERE schemaname = 'platform' \\
+    ORDER BY tablename, policyname;"
+"""
+
+# =============================================================================
+# Development Tasks
+# =============================================================================
+
+[tasks.backend]
+description = "Run the backend FastAPI server"
+alias = "be"
+dir = "{{config_root}}/backend"
+run = "poetry run app"
+
+[tasks.frontend]
+description = "Run the frontend Next.js development server"
+alias = "fe"
+dir = "{{config_root}}/frontend"
+run = "pnpm dev"
+
+[tasks.dev]
+description = "Start all development services (docker + backend + frontend)"
+depends = ["docker:up"]
+run = """
+echo "Starting development environment..."
+echo "Backend: http://localhost:8006"
+echo "Frontend: http://localhost:3000"
+echo ""
+echo "Run 'mise run backend' and 'mise run frontend' in separate terminals"
+"""
+
+[tasks.format]
+description = "Format and lint all code"
+dir = "{{config_root}}"
+run = """
+cd backend && poetry run format
+cd ../frontend && pnpm format
+cd ../frontend && pnpm lint
+"""
+
+[tasks."init:env"]
+description = "Initialize .env files from defaults"
+dir = "{{config_root}}"
+run = """
+cp -n .env.default .env || true
+cd backend && cp -n .env.default .env || true
+cd ../frontend && cp -n .env.default .env || true
+echo "Environment files initialized. Edit .env files to customize."
+"""
+
+# =============================================================================
+# Testing Tasks
+# =============================================================================
+
+[tasks.test]
+description = "Run all tests"
+depends = ["test:backend"]
+run = "echo 'All tests complete'"
+
+[tasks."test:backend"]
+description = "Run backend tests"
+dir = "{{config_root}}/backend"
+run = "poetry run test"
+
+[tasks."test:frontend"]
+description = "Run frontend E2E tests"
+dir = "{{config_root}}/frontend"
+run = "pnpm test"
+
+[tasks."test:data"]
+description = "Create test data"
+dir = "{{config_root}}/backend"
+run = "poetry run python test/test_data_creator.py"
+
+[tasks."store:load"]
+description = "Load store agents from agents/ folder"
+dir = "{{config_root}}/backend"
+run = "poetry run load-store-agents"
+
+# =============================================================================
+# Drift Analysis Tasks (Grouped)
+# NOTE: The 'drift' CLI tool must be installed separately.
+# Install via: pip install drift-analyzer (or your package manager)
+# These tasks assume 'drift' is available in PATH.
+# =============================================================================
+
+[tasks."drift:scan"]
+description = "Scan all projects for patterns"
+dir = "{{config_root}}"
+run = """
+echo "Scanning backend..."
+cd backend && drift scan backend/
+echo "Scanning frontend..."
+cd ../frontend && drift scan src/
+echo "Scanning libs..."
+cd ../autogpt_libs && drift scan .
+"""
+
+[tasks."drift:scan:backend"]
+description = "Scan backend only (verbose)"
+dir = "{{config_root}}/backend"
+run = "drift scan backend/ --verbose"
+
+[tasks."drift:scan:frontend"]
+description = "Scan frontend only (verbose)"
+dir = "{{config_root}}/frontend"
+run = "drift scan src/ --verbose"
+
+[tasks."drift:scan:libs"]
+description = "Scan libs only (verbose)"
+dir = "{{config_root}}/autogpt_libs"
+run = "drift scan . --verbose"
+
+[tasks."drift:status"]
+description = "Show drift status for all projects"
+dir = "{{config_root}}"
+run = """
+echo "=== Backend ===" && cd backend && drift status --detailed || true
+echo "\n=== Frontend ===" && cd ../frontend && drift status --detailed || true
+echo "\n=== Libs ===" && cd ../autogpt_libs && drift status --detailed || true
+"""
+
+[tasks."drift:check"]
+description = "Check for violations (CI-friendly)"
+dir = "{{config_root}}"
+run = """
+cd backend && drift check
+cd ../frontend && drift check
+cd ../autogpt_libs && drift check
+"""
+
+[tasks."drift:approve"]
+description = "Approve all discovered patterns (95%+ confidence)"
+dir = "{{config_root}}"
+run = """
+echo "Approving patterns for backend..."
+cd backend && drift approve all --yes
+echo "Approving patterns for frontend..."
+cd ../frontend && drift approve all --yes
+echo "Approving patterns for libs..."
+cd ../autogpt_libs && drift approve all --yes
+"""
+
+[tasks."drift:callgraph"]
+description = "Build call graphs for impact analysis"
+dir = "{{config_root}}"
+run = """
+echo "Building call graph for backend..."
+cd backend && drift callgraph build
+echo "Building call graph for frontend..."
+cd ../frontend && drift callgraph build
+echo "Building call graph for libs..."
+cd ../autogpt_libs && drift callgraph build
+"""
+
+[tasks."drift:analyze"]
+description = "Run language-specific analysis"
+dir = "{{config_root}}"
+run = """
+echo "=== Python Analysis (Backend) ===" && cd backend && drift py status || true
+echo "\n=== TypeScript Analysis (Frontend) ===" && cd ../frontend && drift ts status || true
+echo "\n=== Python Analysis (Libs) ===" && cd ../autogpt_libs && drift py status || true
+"""
+
+[tasks."drift:coupling"]
+description = "Build module coupling graphs"
+dir = "{{config_root}}"
+run = """
+echo "Building coupling graph for backend..."
+cd backend && drift coupling build
+echo "Building coupling graph for frontend..."
+cd ../frontend && drift coupling build
+echo "Building coupling graph for libs..."
+cd ../autogpt_libs && drift coupling build
+"""
+
+[tasks."drift:coupling:cycles"]
+description = "Find dependency cycles"
+dir = "{{config_root}}"
+run = """
+echo "=== Backend Cycles ===" && cd backend && drift coupling cycles || true
+echo "\n=== Frontend Cycles ===" && cd ../frontend && drift coupling cycles || true
+echo "\n=== Libs Cycles ===" && cd ../autogpt_libs && drift coupling cycles || true
+"""
+
+[tasks."drift:coupling:hotspots"]
+description = "Find highly coupled modules"
+dir = "{{config_root}}"
+run = """
+echo "=== Backend Hotspots ===" && cd backend && drift coupling hotspots || true
+echo "\n=== Frontend Hotspots ===" && cd ../frontend && drift coupling hotspots || true
+echo "\n=== Libs Hotspots ===" && cd ../autogpt_libs && drift coupling hotspots || true
+"""
+
+[tasks."drift:test-topology"]
+description = "Build test topology (maps tests to code)"
+dir = "{{config_root}}"
+run = """
+echo "Building test topology for backend..."
+cd backend && drift test-topology build
+echo "Building test topology for frontend..."
+cd ../frontend && drift test-topology build
+echo "Building test topology for libs..."
+cd ../autogpt_libs && drift test-topology build
+"""
+
+[tasks."drift:error-gaps"]
+description = "Find error handling gaps"
+dir = "{{config_root}}"
+run = """
+echo "=== Backend Error Handling Gaps ===" && cd backend && drift error-handling gaps | head -50 || true
+echo "\n=== Frontend Error Handling Gaps ===" && cd ../frontend && drift error-handling gaps | head -50 || true
+echo "\n=== Libs Error Handling Gaps ===" && cd ../autogpt_libs && drift error-handling gaps | head -50 || true
+"""
+
+[tasks."drift:deep"]
+description = "Deep analysis: coupling, test topology, and error handling"
+depends = ["drift:coupling", "drift:test-topology"]
+run = """
+echo "\nDeep analysis complete."
+echo "Run 'mise run drift:coupling:cycles' to view dependency cycles"
+echo "Run 'mise run drift:coupling:hotspots' to view highly coupled modules"
+echo "Run 'mise run drift:error-gaps' to view error handling gaps"
+"""
+
+[tasks."drift:full"]
+description = "Full drift setup: scan, approve, callgraph, and deep analysis"
+depends = ["drift:scan", "drift:approve", "drift:callgraph", "drift:deep"]
+run = "echo '\nDrift full setup complete. Run mise run drift:status to verify.'"
+
+# =============================================================================
+# Help
+# =============================================================================
+
+[tasks.help]
+description = "Show available tasks"
+run = "mise tasks"

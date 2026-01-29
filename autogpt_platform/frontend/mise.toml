@@ -1,0 +1,70 @@
+# AutoGPT Frontend - Development Configuration
+
+[env]
+# Load frontend environment
+_.file = [
+    ".env.default",
+    ".env"
+]
+
+[tools]
+# Node.js version must match package.json engines
+node = "22"
+pnpm = "10.28.2"
+
+[tasks]
+[tasks.install]
+description = "Install Node.js dependencies"
+run = "pnpm install"
+
+[tasks.dev]
+description = "Start development server"
+run = "pnpm dev"
+
+[tasks.build]
+description = "Build for production"
+run = "pnpm build"
+
+[tasks.start]
+description = "Start production server"
+run = "pnpm start"
+
+[tasks.lint]
+description = "Run linting"
+run = "pnpm lint"
+
+[tasks.format]
+description = "Format code"
+run = "pnpm format"
+
+[tasks.types]
+description = "Run type checking"
+run = "pnpm types"
+
+[tasks.test]
+description = "Run E2E tests"
+run = "pnpm test"
+
+[tasks."test:unit"]
+description = "Run unit tests"
+run = "pnpm test:unit"
+
+[tasks."test:ui"]
+description = "Run tests with Playwright UI"
+run = "pnpm test-ui"
+
+[tasks.storybook]
+description = "Run Storybook"
+run = "pnpm storybook"
+
+[tasks."storybook:build"]
+description = "Build Storybook"
+run = "pnpm build-storybook"
+
+[tasks."api:generate"]
+description = "Generate API client from OpenAPI spec"
+run = "pnpm generate:api"
+
+[tasks."api:generate:force"]
+description = "Force regenerate API client"
+run = "pnpm generate:api:force"

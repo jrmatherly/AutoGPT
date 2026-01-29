@@ -1,0 +1,34 @@
+# AutoGPT Shared Libraries - Development Configuration
+
+[env]
+# Mise manages the virtual environment - Poetry will use this instead of creating its own
+_.python.venv = { path = ".venv", create = true }
+
+[tools]
+python = "3.13"
+"pipx:poetry" = "2.3.1"
+
+[tasks]
+[tasks.install]
+description = "Install dependencies"
+run = "poetry install"
+
+[tasks.test]
+description = "Run tests"
+run = "poetry run pytest"
+
+[tasks."test:cov"]
+description = "Run tests with coverage"
+run = "poetry run pytest --cov"
+
+[tasks.lint]
+description = "Lint code"
+run = "poetry run ruff check ."
+
+[tasks.format]
+description = "Format code"
+run = "poetry run ruff format ."
+
+[tasks.typecheck]
+description = "Run type checking"
+run = "poetry run pyright"
