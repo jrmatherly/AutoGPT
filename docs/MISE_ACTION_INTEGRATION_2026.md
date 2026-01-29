@@ -872,7 +872,7 @@ After each change:
 - `mise.toml` - Tool and task definitions
 - `autogpt_platform/mise.toml` - Platform-specific config
 - `ci-mise.yml` - Reference implementation (needs optimization)
-- `docs/WORKFLOW_OPTIMIZATION_SUMMARY.md` - Recent action updates
+- `.archive/github/workflows/reports/optimization.md` - Recent action updates
 
 ### Examples in Wild
 - [mise project CI](https://github.com/jdx/mise/blob/main/.github/workflows/test.yml)

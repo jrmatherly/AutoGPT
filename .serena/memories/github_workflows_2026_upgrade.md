@@ -30,7 +30,7 @@ Completed comprehensive upgrade of GitHub Actions workflows to latest 2026 versi
 
 ### New Files Created
 1. `.github/actions/prisma-migrate/action.yml` - Composite action for migrations
-2. `.github/workflows/UPGRADE_NOTES_2026.md` - Complete upgrade documentation
+2. `docs/github/workflows/UPGRADE_NOTES_2026.md` - Complete upgrade documentation
 
 ## Key Improvements
 
@@ -118,7 +118,7 @@ Completed comprehensive upgrade of GitHub Actions workflows to latest 2026 versi
 
 ## References
 
-- Upgrade documentation: `.github/workflows/UPGRADE_NOTES_2026.md`
+- Upgrade documentation: `docs/github/workflows/UPGRADE_NOTES_2026.md`
 - Project Python version: `mise.toml` (python = "3.13")
 - Composite action: `.github/actions/prisma-migrate/action.yml`
 

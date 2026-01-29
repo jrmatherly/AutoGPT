@@ -324,8 +324,8 @@ Updated sections:
 
 ### Implementation Documents
 
-- [WORKFLOW_SCRIPTS_ANALYSIS_2026.md](.github/workflows/WORKFLOW_SCRIPTS_ANALYSIS_2026.md) - Original analysis
-- [WORKFLOW_VALIDATION_REPORT.md](.github/workflows/WORKFLOW_VALIDATION_REPORT.md) - Validation with mise findings
+- [WORKFLOW_SCRIPTS_ANALYSIS_2026.md](../../docs/github/workflows/WORKFLOW_SCRIPTS_ANALYSIS_2026.md) - Original analysis
+- [WORKFLOW_VALIDATION_REPORT.md](../../.archive/github/workflows/reports/validation.md) - Validation with mise findings
 - [MISE_MIGRATION_COMPLETE.md](.github/workflows/MISE_MIGRATION_COMPLETE.md) - Migration details
 
 ### External Resources

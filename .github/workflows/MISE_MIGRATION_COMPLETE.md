@@ -255,8 +255,8 @@ The following documentation should be updated to reflect mise-action usage:
 
 ## Related Files
 
-- **Analysis Report:** [WORKFLOW_SCRIPTS_ANALYSIS_2026.md](WORKFLOW_SCRIPTS_ANALYSIS_2026.md)
-- **Validation Report:** [WORKFLOW_VALIDATION_REPORT.md](WORKFLOW_VALIDATION_REPORT.md)
+- **Analysis Report:** [WORKFLOW_SCRIPTS_ANALYSIS_2026.md](../../docs/github/workflows/WORKFLOW_SCRIPTS_ANALYSIS_2026.md)
+- **Validation Report:** [WORKFLOW_VALIDATION_REPORT.md](../../.archive/github/workflows/reports/validation.md)
 - **mise Configuration:** `autogpt_platform/mise.toml`
 
 ---
