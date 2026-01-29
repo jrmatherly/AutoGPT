@@ -1283,7 +1283,7 @@ model Organization {
   Invitations   OrganizationInvitation[]
   AgentGraphs   AgentGraph[]
   DefaultForUsers User[] @relation("UserDefaultOrganization")
-  // Note: AuditLogs relation added in Task 4
+  AuditLogs     AuditLog[]
 
   @@index([slug])
   @@index([ssoDomain])
@@ -1338,4 +1338,72 @@ model OrganizationInvitation {
   @@unique([organizationId, email])
   @@index([token])
   @@index([email])
+}
+
+// Audit log actions for compliance and security tracking
+enum AuditAction {
+  // Organization events
+  ORG_CREATED
+  ORG_UPDATED
+  ORG_DELETED
+  ORG_SSO_CONFIGURED
+  ORG_SCIM_CONFIGURED
+
+  // Member events
+  MEMBER_ADDED
+  MEMBER_REMOVED
+  MEMBER_ROLE_CHANGED
+  MEMBER_INVITED
+  INVITATION_ACCEPTED
+
+  // Agent events
+  AGENT_CREATED
+  AGENT_UPDATED
+  AGENT_DELETED
+  AGENT_EXECUTED
+  AGENT_SHARED
+
+  // Auth events
+  LOGIN_SUCCESS
+  LOGIN_FAILED
+  LOGOUT
+  SSO_LOGIN
+  API_KEY_CREATED
+  API_KEY_REVOKED
+
+  // Admin events
+  ADMIN_IMPERSONATION
+  SETTINGS_CHANGED
+}
+
+// Audit log for compliance and security tracking
+model AuditLog {
+  id        String   @id @default(uuid())
+  createdAt DateTime @default(now())
+
+  // Who performed the action
+  actorId    String? // User ID (null for system events)
+  actorEmail String?
+  actorIp    String?
+
+  // What happened
+  action     AuditAction
+  resource   String // e.g., "organization", "agent", "member"
+  resourceId String? // ID of the affected resource
+
+  // Context
+  organizationId String?
+  Organization   Organization? @relation(fields: [organizationId], references: [id], onDelete: SetNull)
+
+  // Details
+  details Json? // Additional context (old/new values, etc.)
+
+  // Request context
+  userAgent String?
+  requestId String?
+
+  @@index([organizationId, createdAt])
+  @@index([actorId, createdAt])
+  @@index([action, createdAt])
+  @@index([resourceId])
 }
