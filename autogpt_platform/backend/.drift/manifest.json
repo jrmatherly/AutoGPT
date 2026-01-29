@@ -1,54 +1,54 @@
 {
   "version": "1.0.0",
-  "generatedAt": "2026-01-29T06:30:17.236Z",
+  "generatedAt": "2026-01-29T16:42:31.611Z",
   "projectRoot": "/Users/jason/dev/AutoGPT/autogpt_platform/backend",
   "stats": {
     "patterns": {
       "total": 805,
       "byCategory": {
-        "auth": 49,
-        "security": 59,
-        "errors": 58,
         "structural": 61,
         "components": 65,
-        "logging": 51,
-        "testing": 60,
+        "styling": 61,
+        "api": 18,
+        "auth": 49,
+        "errors": 58,
         "data-access": 88,
+        "testing": 60,
+        "logging": 51,
+        "security": 59,
         "config": 49,
         "types": 58,
-        "accessibility": 39,
-        "documentation": 37,
         "performance": 52,
-        "styling": 61,
-        "api": 18
+        "accessibility": 39,
+        "documentation": 37
       },
       "byStatus": {
-        "discovered": 805,
-        "approved": 0,
+        "discovered": 0,
+        "approved": 805,
         "ignored": 0
       },
       "byConfidence": {
-        "high": 670,
-        "medium": 134,
+        "high": 671,
+        "medium": 133,
         "low": 1,
         "uncertain": 0
       },
-      "totalLocations": 46397,
+      "totalLocations": 46399,
       "totalOutliers": 120
     },
     "security": {
-      "totalTables": 87,
-      "totalAccessPoints": 166,
-      "sensitiveFields": 76,
+      "totalTables": 0,
+      "totalAccessPoints": 0,
+      "sensitiveFields": 0,
       "violations": 0,
-      "riskLevel": "high"
+      "riskLevel": "low"
     },
     "callGraph": {
-      "totalFunctions": 0,
-      "totalCalls": 0,
-      "entryPoints": 0,
-      "dataAccessors": 0,
-      "avgDepth": 0
+      "totalFunctions": 3870,
+      "totalCalls": 44740,
+      "entryPoints": 3108,
+      "dataAccessors": 463,
+      "avgDepth": 11.56
     },
     "contracts": {
       "verified": 0,
@@ -65,31 +65,32 @@
   },
   "fileHashes": {},
   "lastScan": {
-    "timestamp": "2026-01-29T06:30:17.197Z",
-    "duration": 51028,
+    "timestamp": "2026-01-29T16:42:31.566Z",
+    "duration": 65646,
     "filesScanned": 534,
     "patternsFound": 805,
     "errors": 0
   },
   "views": {
     "status": {
-      "generatedAt": "2026-01-29T06:30:17.235Z",
+      "generatedAt": "2026-01-29T16:42:31.610Z",
       "stale": true,
       "invalidatedBy": [
         "pattern stats updated",
         "security stats updated",
+        "call graph stats updated",
         "contract stats updated"
       ]
     },
     "patternIndex": {
-      "generatedAt": "2026-01-29T06:30:17.235Z",
+      "generatedAt": "2026-01-29T16:42:31.610Z",
       "stale": true,
       "invalidatedBy": [
         "pattern stats updated"
       ]
     },
     "securitySummary": {
-      "generatedAt": "2026-01-29T06:30:17.235Z",
+      "generatedAt": "2026-01-29T16:42:31.610Z",
       "stale": true,
       "invalidatedBy": [
         "security stats updated"
