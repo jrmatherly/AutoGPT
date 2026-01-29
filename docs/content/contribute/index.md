@@ -4,18 +4,18 @@ We welcome contributions to our documentation! Our docs are hosted on GitBook an
 
 ## How It Works
 
-- Documentation lives in the `docs/` directory on the `gitbook` branch
+- Documentation lives in the `docs/` directory on the `master` branch
 - GitBook automatically syncs changes from GitHub
 - You can edit docs directly on GitHub or locally
 
 ## Editing Docs Locally
 
-1. Clone the repository and switch to the gitbook branch:
+1. Clone the repository and ensure you're on the master branch:
 
     ```shell
     git clone https://github.com/Significant-Gravitas/AutoGPT.git
     cd AutoGPT
-    git checkout gitbook
+    git checkout master
     ```
 
 2. Make your changes to markdown files in `docs/`

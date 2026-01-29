@@ -64,12 +64,17 @@ You can learn more under: [Build your own Blocks](platform/new_blocks.md)
 
 The platform comes pre-integrated with cutting-edge LLM providers:
 
-- OpenAI - https://openai.com/
-- Anthropic - https://www.anthropic.com/
-- Groq - https://groq.com/
-- Llama - https://llamaindex.ai/
-- AI/ML API - [https://aimlapi.com/](https://aimlapi.com/?utm_source=autogpt&utm_medium=github&utm_campaign=integration)
+- **OpenAI** - https://openai.com/ (GPT-5, O-series reasoning models, GPT-4)
+- **Anthropic** - https://www.anthropic.com/ (Claude 4.5 series, 200K context)
+- **Groq** - https://groq.com/ (Ultra-fast Llama inference)
+- **Ollama** - https://ollama.com/ (Local deployment, privacy-focused)
+- **OpenRouter** - https://openrouter.ai/ (Unified access to 30+ models)
+- **AI/ML API** - [https://aimlapi.com/](https://aimlapi.com/?utm_source=autogpt&utm_medium=github&utm_campaign=integration)
   - AI/ML API provides 300+ AI models including Deepseek, Gemini, ChatGPT. The models run at enterprise-grade rate limits and uptimes.
+- **Llama API** - https://llama.developer.meta.com/ (Official Meta-hosted Llama models)
+- **V0** - https://v0.dev (Vercel's UI generation models)
+
+For comprehensive model listings, capabilities, and provider comparison, see the [LLM Providers Guide](../integrations/guides/llm-providers.md).
 
 ## License Overview 
 
