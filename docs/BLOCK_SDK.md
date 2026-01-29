@@ -586,6 +586,6 @@ class LLMBlock(Block):
 
 ## Resources
 
-- [Block SDK Guide](../docs/content/platform/block-sdk-guide.md) - Official documentation
+- [Block SDK Guide](BLOCK_SDK.md) - This guide
 - [Existing Blocks](../autogpt_platform/backend/backend/blocks/) - Reference implementations
 - [Provider Configurations](../autogpt_platform/backend/backend/integrations/providers.py) - Available providers

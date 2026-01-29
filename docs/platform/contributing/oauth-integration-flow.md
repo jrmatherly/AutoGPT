@@ -9,6 +9,8 @@ The AutoGPT platform implements OAuth 2.0 in two distinct contexts:
 
 This document focuses on the **API Integration OAuth flow** used for connecting to external services. For the list of supported providers, see `/backend/backend/integrations/providers.py`. For user authentication documentation, see the Supabase auth implementation.
 
+> **Note:** This is a technical architecture document for AutoGPT's internal OAuth implementation. If you're building an application that needs to integrate with AutoGPT's API using OAuth, see the [OAuth Integration Guide](../integrating/oauth-guide.md) instead.
+
 ## Trust Boundaries
 
 ### 1. Frontend Trust Boundary

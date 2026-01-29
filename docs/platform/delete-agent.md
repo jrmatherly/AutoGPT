@@ -2,7 +2,7 @@
 
 ## **Overview**
 
-Is your AutoGPT Monitor getting cluttered or did you create an agent you no longer see? Learn how to quickly delete unwanted agents. 
+Is your AutoGPT Monitor getting cluttered or did you create an agent you no longer need? Learn how to quickly delete unwanted agents. 
 
 <center><iframe width="560" height="315" src="https://www.youtube.com/embed/oMZklozNga4?si=b2ubsGd5AST0gN-p" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></center>
 

@@ -94,6 +94,28 @@ powershell -c "iwr https://setup.agpt.co/install.bat -o install.bat; ./install.b
 
 This method is ideal if you're setting up for development or testing and want to skip manual configuration.
 
+## Recommended Development Setup
+
+> **🚀 Recommended:** For the best development experience, we recommend using [mise](https://mise.jdx.dev/) for environment management. Mise automatically installs correct tool versions (Python, Node.js, pnpm) and provides unified task commands.
+>
+> See the [Mise Migration Guide](../MISE_MIGRATION.md) for complete details.
+>
+> Quick start with mise:
+> ```bash
+> # Install mise
+> curl https://mise.run | sh
+>
+> # Setup project
+> cd AutoGPT/autogpt_platform
+> mise trust
+> mise run setup
+>
+> # Daily development
+> mise run docker:up    # Start infrastructure
+> mise run backend      # Terminal 1
+> mise run frontend     # Terminal 2
+> ```
+
 ## Manual Setup
 
 ### Cloning the Repository
@@ -129,26 +151,29 @@ To run the platform, follow these steps:
   ```
   This command will start all the necessary backend services defined in the `docker-compose.yml` file in detached mode.
 
+  **Tip:** You can also use mise: `mise run docker:up`
+
 ---
 
-### 🛠️ Using the Makefile for Common Tasks
+### 🛠️ Using the Makefile for Common Tasks (Deprecated)
 
-The repository includes a `Makefile` with helpful commands to streamline setup and development. You may use `make` commands as an alternative to calling Docker or scripts directly.
+> **⚠️ Deprecation Notice:** The Makefile is deprecated in favor of [mise](https://mise.jdx.dev/). While it still works, we recommend using mise for new development. See [Migration Guide](../MISE_MIGRATION.md) for mise equivalents.
+
+The repository includes a `Makefile` for backwards compatibility. You may use `make` commands as an alternative to calling Docker or scripts directly, but mise is recommended.
 
 #### Most-used Makefile commands
 
 Inside the `autogpt_platform` directory, you can use:
 
-| Command                | What it Does                                                                 |
-
-|------------------------|-------------------------------------------------------------------------------|
-| `make start-core`      | Start just the core services (Supabase, Redis, RabbitMQ) in background        |
-| `make stop-core`       | Stop the core services                                                        |
-| `make logs-core`       | Tail the logs for core services                                               |
-| `make format`          | Format & lint backend (Python) and frontend (TypeScript) code                 |
-| `make migrate`         | Run backend database migrations                                               |
-| `make run-backend`     | Run the backend FastAPI server                                                |
-| `make run-frontend`    | Run the frontend Next.js development server                                   |
+| Command                | What it Does                                                                 | Mise Equivalent |
+|------------------------|-------------------------------------------------------------------------------|-----------------|
+| `make start-core`      | Start just the core services (Supabase, Redis, RabbitMQ) in background        | `mise run docker:up` |
+| `make stop-core`       | Stop the core services                                                        | `mise run docker:down` |
+| `make logs-core`       | Tail the logs for core services                                               | `mise run docker:logs` |
+| `make format`          | Format & lint backend (Python) and frontend (TypeScript) code                 | `mise run format` |
+| `make migrate`         | Run backend database migrations                                               | `mise run db:migrate` |
+| `make run-backend`     | Run the backend FastAPI server                                                | `mise run backend` |
+| `make run-frontend`    | Run the frontend Next.js development server                                   | `mise run frontend` |
 
 *Example usage:*
 ```sh
@@ -250,7 +275,7 @@ pnpm install
 
 Generate the API client:
 ```sh
-pnpm generate:api-client
+pnpm generate:api
 ```
 
 Run the frontend application:
@@ -287,7 +312,9 @@ pnpm test
 
 #### Running the backend locally
 
-To run the backend locally, you need to have Python 3.10 or higher installed on your machine.
+To run the backend locally, you need to have Python 3.13+ installed on your machine (3.13.1+ recommended).
+
+> **💡 Tip:** Using [mise](https://mise.jdx.dev/) automatically installs the correct Python version (3.13.11) for you.
 
 Install [Poetry](https://python-poetry.org/docs/#installation) to manage dependencies and virtual environments.
 

@@ -2,6 +2,8 @@
 
 This guide explains how to create new blocks for the AutoGPT Platform using the SDK pattern with advanced features.
 
+> **See Also:** [docs/BLOCK_SDK.md](../BLOCK_SDK.md) for the comprehensive block creation guide with additional patterns and examples.
+
 ## Overview
 
 Blocks are reusable components that perform specific tasks in AutoGPT workflows. They can integrate with external services, process data, or perform any programmatic operation.
@@ -287,6 +289,16 @@ poetry run pytest backend/blocks/test/test_block.py -xvs
 poetry run pytest 'backend/blocks/test/test_block.py::test_available_blocks[MyBlock]' -xvs
 ```
 
+### Using Mise (Alternative)
+
+```bash
+# Run all tests
+mise run test
+
+# Run backend tests specifically
+mise run test:backend
+```
+
 ## Integration Checklist
 
 - [ ] Create provider configuration in `_config.py`
@@ -305,5 +317,7 @@ poetry run pytest 'backend/blocks/test/test_block.py::test_available_blocks[MyBl
 - **Simple API**: `/backend/blocks/firecrawl/` - Basic API key authentication
 - **OAuth + API**: `/backend/blocks/linear/` - OAuth and API key support
 - **Webhooks**: `/backend/blocks/exa/` - Includes webhook manager
+- **Complex Integration**: `/backend/blocks/airtable/` - OAuth, webhooks, complex API patterns
+- **AI Service**: `/backend/blocks/bannerbear/` - Text overlay and image generation
 
 Study these examples to understand different patterns and approaches for building blocks.

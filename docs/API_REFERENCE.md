@@ -9,7 +9,7 @@ The AutoGPT Platform provides REST and WebSocket APIs for building, deploying, a
 **Base URLs:**
 - Production: `https://api.example.com`
 - Staging: `https://api-staging.example.com`
-- Local: `http://localhost:8000`
+- Local: `http://localhost:8006`
 
 **OpenAPI Specification:**
 - Production: `https://api.example.com/openapi.json`
@@ -539,7 +539,7 @@ Real-time updates for execution monitoring.
 ### Connection
 
 ```
-ws://localhost:8000/ws?user_id={user_id}
+ws://localhost:8001/ws?user_id={user_id}
 ```
 
 ### Subscribe to Execution
@@ -661,7 +661,7 @@ X-RateLimit-Reset: 1705320000
 ```python
 import requests
 
-API_URL = "https://api.example.com"
+API_URL = "http://localhost:8006"
 TOKEN = "your_jwt_token"
 
 headers = {
@@ -688,7 +688,7 @@ execution = response.json()
 ### JavaScript/TypeScript
 
 ```typescript
-const API_URL = "https://api.example.com";
+const API_URL = "http://localhost:8006";
 const token = "your_jwt_token";
 
 // List library agents
@@ -718,11 +718,11 @@ const execution = await execResponse.json();
 
 ```bash
 # List library agents
-curl -X GET "https://api.example.com/api/v2/library/agents" \
+curl -X GET "http://localhost:8006/api/v2/library/agents" \
   -H "Authorization: Bearer $TOKEN"
 
 # Execute a graph
-curl -X POST "https://api.example.com/api/v2/builder/graphs/$GRAPH_ID/execute" \
+curl -X POST "http://localhost:8006/api/v2/builder/graphs/$GRAPH_ID/execute" \
   -H "Authorization: Bearer $TOKEN" \
   -H "Content-Type: application/json" \
   -d '{"input_data": {"prompt": "Hello!"}}'

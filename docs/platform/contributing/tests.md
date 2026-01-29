@@ -30,7 +30,7 @@ pnpm test --debug
 
 In CI, we run the tests in headless mode, with multiple browsers, and retry a failed test up to 2 times.
 
-You can find the full configuration in [playwright.config.ts](https://github.com/Significant-Gravitas/Autogpt/blob/master/autogpt_platform/frontend/playwright.config.ts).
+You can find the full configuration in [playwright.config.ts](../../autogpt_platform/frontend/playwright.config.ts).
 
 ### Debugging tests
 

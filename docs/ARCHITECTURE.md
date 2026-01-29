@@ -35,6 +35,9 @@ graph TB
         Supabase[Supabase Auth]
         LLMs[LLM Providers<br/>OpenAI/Anthropic/etc]
         Integrations[Third-party APIs<br/>GitHub/Google/etc]
+    end
+
+    subgraph "Security Services"
         ClamAV[ClamAV<br/>Virus Scanner]
     end
 
@@ -58,6 +61,8 @@ graph TB
 
     REST --> Supabase
     REST --> ClamAV
+
+    ClamAV --> Postgres
 ```
 
 ## Component Architecture
@@ -374,32 +379,71 @@ sequenceDiagram
 
 ```yaml
 services:
-  backend:
+  rest_server:
     build: ./backend
-    ports: ["8000:8000"]
+    ports: ["8006:8006"]
     depends_on: [postgres, redis, rabbitmq]
+
+  websocket_server:
+    build: ./backend
+    ports: ["8001:8001"]
+    command: python -m backend.ws
+
+  executor:
+    build: ./backend
+    ports: ["8002:8002"]
+    command: python -m backend.exec
+
+  scheduler:
+    build: ./backend
+    ports: ["8003:8003"]
+    command: python -m backend.scheduler
+
+  database_manager:
+    build: ./backend
+    ports: ["8005:8005"]
+    command: python -m backend.db
+
+  notification_server:
+    build: ./backend
+    ports: ["8007:8007"]
+    command: python -m backend.notification
 
   frontend:
     build: ./frontend
     ports: ["3000:3000"]
 
-  executor:
-    build: ./backend
-    command: poetry run executor
-
-  scheduler:
-    build: ./backend
-    command: poetry run scheduler
-
   postgres:
     image: postgres:15
+    ports: ["5432:5432"]
     volumes: [postgres_data:/var/lib/postgresql/data]
 
   redis:
     image: redis:7
+    ports: ["6379:6379"]
 
   rabbitmq:
     image: rabbitmq:3-management
+    ports: ["5672:5672", "15672:15672"]
+
+  clamav:
+    image: clamav/clamav-debian:latest
+    ports: ["3310:3310"]
+```
+
+**Service Ports:**
+- `8006` - REST API Server (main HTTP endpoints)
+- `8001` - WebSocket Server (real-time updates)
+- `8002` - Executor Service (workflow execution)
+- `8003` - Scheduler Service (scheduled tasks)
+- `8005` - Database Manager Service
+- `8007` - Notification Service
+- `3000` - Frontend (Next.js application)
+- `5432` - PostgreSQL Database
+- `6379` - Redis Cache
+- `5672` - RabbitMQ (AMQP)
+- `15672` - RabbitMQ Management UI
+- `3310` - ClamAV Virus Scanner
 ```
 
 ### Environment Configuration
