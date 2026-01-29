@@ -155,7 +155,10 @@ def get_openai_client() -> "AsyncOpenAI | None":
     api_key = settings.secrets.openai_internal_api_key
     if not api_key:
         return None
-    return AsyncOpenAI(api_key=api_key)
+    return AsyncOpenAI(
+        api_key=api_key,
+        base_url=settings.secrets.openai_internal_base_url,
+    )
 
 
 # ============ Notification Queue Helpers ============ #

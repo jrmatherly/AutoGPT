@@ -133,6 +133,9 @@ jobs:
         run: |
           cp ../backend/.env.default ../backend/.env
           echo "OPENAI_INTERNAL_API_KEY=${{ secrets.OPENAI_API_KEY }}" >> ../backend/.env
+          if [ -n "${{ secrets.LITELLM_PROXY_URL }}" ]; then
+            echo "OPENAI_INTERNAL_BASE_URL=${{ secrets.LITELLM_PROXY_URL }}" >> ../backend/.env
+          fi
         env:
           # Used by E2E test data script to generate embeddings for approved store agents
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}

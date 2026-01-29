@@ -597,6 +597,14 @@ class Secrets(UpdateTrackingModel["Secrets"], BaseSettings):
     openai_internal_api_key: str = Field(
         default="", description="OpenAI Internal API key"
     )
+    openai_base_url: str = Field(
+        default="https://api.openai.com/v1",
+        description="Base URL for OpenAI API (or LiteLLM Proxy)",
+    )
+    openai_internal_base_url: str = Field(
+        default="",
+        description="Base URL for internal OpenAI API calls (or LiteLLM Proxy)",
+    )
     aiml_api_key: str = Field(default="", description="'AI/ML API' key")
     anthropic_api_key: str = Field(default="", description="Anthropic API key")
     groq_api_key: str = Field(default="", description="Groq API key")
@@ -684,6 +692,14 @@ class Secrets(UpdateTrackingModel["Secrets"], BaseSettings):
     posthog_host: str = Field(
         default="https://eu.i.posthog.com", description="PostHog host URL"
     )
+
+    @field_validator("openai_internal_base_url", mode="after")
+    @classmethod
+    def default_internal_base_url(cls, v: str, info: ValidationInfo) -> str:
+        """Default to openai_base_url if internal base URL not set."""
+        if not v and info.data.get("openai_base_url"):
+            return info.data["openai_base_url"]
+        return v or "https://api.openai.com/v1"
 
     # Add more secret fields as needed
     model_config = SettingsConfigDict(

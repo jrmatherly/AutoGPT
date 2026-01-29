@@ -652,8 +652,14 @@ async def llm_call(
     max_tokens = max(min(available_tokens, model_max_output, user_max), 1)
 
     if provider == "openai":
+        from backend.util.settings import Settings
+
+        settings = Settings()
         tools_param = tools if tools else openai.NOT_GIVEN
-        oai_client = openai.AsyncOpenAI(api_key=credentials.api_key.get_secret_value())
+        oai_client = openai.AsyncOpenAI(
+            api_key=credentials.api_key.get_secret_value(),
+            base_url=settings.secrets.openai_base_url,
+        )
         response_format = None
 
         parallel_tool_calls = get_parallel_tool_calls_param(

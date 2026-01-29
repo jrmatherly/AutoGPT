@@ -162,7 +162,13 @@ class CodeGenerationBlock(Block):
         reasoning_effort: CodexReasoningEffort,
     ) -> CodexCallResult:
         """Invoke the OpenAI Responses API."""
-        client = AsyncOpenAI(api_key=credentials.api_key.get_secret_value())
+        from backend.util.settings import Settings
+
+        settings = Settings()
+        client = AsyncOpenAI(
+            api_key=credentials.api_key.get_secret_value(),
+            base_url=settings.secrets.openai_base_url,
+        )
 
         request_payload: dict[str, Any] = {
             "model": model.value,

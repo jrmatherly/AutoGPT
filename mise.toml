@@ -24,3 +24,66 @@ node = "22"
 
 # Package managers
 pnpm = "10.28.2"
+
+[tasks]
+# Delegate all tasks to autogpt_platform mise tasks
+# This allows running mise commands from project root
+
+[tasks.format]
+description = "Format and lint all code"
+dir = "{{config_root}}/autogpt_platform"
+run = "mise run format"
+
+[tasks.test]
+description = "Run all tests"
+dir = "{{config_root}}/autogpt_platform"
+run = "mise run test"
+
+[tasks."test:backend"]
+description = "Run backend tests"
+dir = "{{config_root}}/autogpt_platform"
+run = "mise run test:backend"
+
+[tasks."test:frontend"]
+description = "Run frontend E2E tests"
+dir = "{{config_root}}/autogpt_platform"
+run = "mise run test:frontend"
+
+[tasks.backend]
+description = "Run the backend FastAPI server"
+alias = "be"
+dir = "{{config_root}}/autogpt_platform"
+run = "mise run backend"
+
+[tasks.frontend]
+description = "Run the frontend Next.js development server"
+alias = "fe"
+dir = "{{config_root}}/autogpt_platform"
+run = "mise run frontend"
+
+[tasks."docker:up"]
+description = "Start core services (Supabase, Redis, RabbitMQ, ClamAV)"
+alias = "up"
+dir = "{{config_root}}/autogpt_platform"
+run = "mise run docker:up"
+
+[tasks."docker:down"]
+description = "Stop all Docker services"
+alias = "down"
+dir = "{{config_root}}/autogpt_platform"
+run = "mise run docker:down"
+
+[tasks."db:migrate"]
+description = "Run database migrations"
+dir = "{{config_root}}/autogpt_platform"
+run = "mise run db:migrate"
+
+[tasks.install]
+description = "Install all dependencies"
+dir = "{{config_root}}/autogpt_platform"
+run = "mise run install"
+
+[tasks.doctor]
+description = "Verify mise environment is correctly configured"
+dir = "{{config_root}}/autogpt_platform"
+run = "mise run doctor"
