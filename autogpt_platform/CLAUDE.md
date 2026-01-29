@@ -217,6 +217,34 @@ Key models (defined in `/backend/schema.prisma`):
 - Backend/Frontend services use YAML anchors for consistent configuration
 - Supabase services (`db/docker/docker-compose.yml`) follow the same pattern
 
+#### LiteLLM Proxy Configuration
+
+The platform supports routing OpenAI API calls through a self-hosted LiteLLM Proxy for centralized API management, cost tracking, and model routing.
+
+**Environment Variables** (in `/backend/.env`):
+
+```bash
+# User-facing blocks (LLM Block, Codex Block)
+OPENAI_BASE_URL=https://your-litellm-proxy.com/v1
+
+# Internal platform calls (embeddings, etc.)
+OPENAI_INTERNAL_BASE_URL=https://your-litellm-proxy.com/v1
+```
+
+**Smart Defaulting**:
+- Both variables default to `https://api.openai.com/v1` for standard OpenAI usage
+- If `OPENAI_INTERNAL_BASE_URL` is not set, it inherits from `OPENAI_BASE_URL`
+- This allows separate routing for user blocks vs internal platform calls
+
+**Affected Components**:
+- User-facing blocks: `/backend/backend/blocks/llm.py` (LLM Block), `/backend/backend/blocks/codex.py` (Codex Block)
+- Internal utilities: `/backend/backend/util/clients.py` (embeddings generation)
+
+**CI/CD Integration**:
+GitHub Actions workflows support optional LiteLLM integration via the `LITELLM_PROXY_URL` secret (see `.github/workflows/platform-frontend-ci.yml`).
+
+For detailed configuration and troubleshooting, see `.serena/memories/litellm_proxy_configuration.md`.
+
 ### Common Development Tasks
 
 **Adding a new block:**

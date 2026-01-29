@@ -130,6 +130,64 @@ Completed comprehensive upgrade of GitHub Actions workflows to latest 2026 versi
 4. **User Consultation**: When scope ambiguity exists, ask user for guidance on including beneficial changes
 5. **Composite Actions**: Effective pattern for eliminating workflow duplication while maintaining flexibility
 
+## Root mise.toml Compatibility (2026-01-29)
+
+### Workspace Root mise.toml Addition
+
+The project now has a workspace root `/mise.toml` that:
+- Defines the same tools (python 3.13, node 22, pnpm 10.28.2)
+- Delegates all tasks to `autogpt_platform/mise.toml`
+- Allows running mise tasks from workspace root
+
+### GitHub Workflows Compatibility
+
+✅ **All workflows remain fully compatible** without changes required.
+
+**Current Pattern:**
+```yaml
+- name: Setup mise
+  uses: jdx/mise-action@v3
+  with:
+    working_directory: autogpt_platform  # ✅ Still works
+```
+
+**Why it works:**
+- mise-action finds autogpt_platform/mise.toml when working_directory is set
+- Root mise.toml defines the same tools (no conflict)
+- Task execution uses autogpt_platform/mise.toml directly
+- Root delegation pattern only activates when running from workspace root
+
+### Optional Future Optimization
+
+Workflows could be simplified to run from workspace root:
+
+```yaml
+- name: Setup mise
+  uses: jdx/mise-action@v3
+  with:
+    working_directory: .  # Workspace root
+
+- name: Install dependencies
+  run: mise run install:frontend
+  # No working-directory needed - delegates automatically
+```
+
+**Benefits:**
+- Aligns with root mise.toml delegation pattern
+- Cleaner workflow files
+- Consistent with local developer experience
+
+**Testing Required:**
+- Tool installation from root
+- Task delegation execution
+- Caching behavior
+- Python matrix installation
+
+**Documentation:**
+- See `.github/workflows/MISE_ROOT_COMPATIBILITY_ANALYSIS.md` for full analysis
+- Decision: Keep current approach for stability (low risk)
+- Future PR could implement optimization (medium benefit)
+
 ## Next Steps (Post-Merge)
 
 1. Monitor first workflow run for cache rebuild

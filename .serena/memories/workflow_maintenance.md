@@ -52,8 +52,8 @@
    - Enhances: Block documentation with AI
 
 ### Platform Workflows (Migrated to mise-action Jan 2026)
-- **platform-backend-ci.yml** - ✅ Using jdx/mise-action@v3 with mise 2026.1.9
-- **platform-frontend-ci.yml** - ✅ Using jdx/mise-action@v3 with mise 2026.1.9
+- **platform-backend-ci.yml** - ✅ Using jdx/mise-action@v3 with mise 2026.1.9 + LiteLLM Proxy support
+- **platform-frontend-ci.yml** - ✅ Using jdx/mise-action@v3 with mise 2026.1.9 + LiteLLM Proxy support
 - **platform-fullstack-ci.yml** - ✅ Using jdx/mise-action@v3 with mise 2026.1.9
 
 **Migration Benefits**:
@@ -63,7 +63,15 @@
 - Automatic caching via mise-action
 - Security: Pinned chromaui/action to v11
 
-**Details**: See `.github/workflows/MISE_MIGRATION_COMPLETE.md`
+**LiteLLM Proxy Integration** (Jan 2026):
+- Optional `LITELLM_PROXY_URL` secret support in E2E workflows
+- Routes OpenAI API calls through self-hosted LiteLLM Proxy
+- Backend supports `OPENAI_BASE_URL` and `OPENAI_INTERNAL_BASE_URL` configuration
+- Full backward compatibility maintained
+
+**Details**: 
+- Migration: `.github/workflows/MISE_MIGRATION_COMPLETE.md`
+- LiteLLM Integration: `claudedocs/research_litellm_proxy_configuration_2026-01-29.md`
 
 ### Other Workflows (Not Updated)
 - platform-autogpt-deploy-prod.yml
