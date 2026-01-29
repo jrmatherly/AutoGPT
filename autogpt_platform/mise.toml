@@ -12,6 +12,16 @@ FRONTEND_ROOT = "{{config_root}}/frontend"
 # Environment loading handled by docker-compose and application code instead
 # _.file = [".env.default", ".env"]
 
+[hooks]
+# Auto-install tools when entering project
+enter = "mise install -q"
+
+# Remind about running migrations after pulling
+postinstall = """
+echo "✅ Tools updated. Consider running:"
+echo "  mise run db:migrate"
+"""
+
 [tasks]
 # =============================================================================
 # Diagnostics

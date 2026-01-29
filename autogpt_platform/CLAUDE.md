@@ -19,6 +19,47 @@ AutoGPT Platform is a monorepo containing:
 - **Frontend** (`/frontend`): Next.js React application
 - **Shared Libraries** (`/autogpt_libs`): Common Python utilities
 
+## Development with Mise
+
+Mise is the preferred tool for managing the development environment.
+
+### Quick Start
+
+```bash
+# Install mise (one-time)
+curl https://mise.run | sh
+
+# Activate mise in your shell (add to ~/.bashrc or ~/.zshrc)
+eval "$(mise activate bash)"  # or zsh
+
+# Setup project
+cd autogpt_platform
+mise trust
+mise run setup
+```
+
+### Common Tasks
+
+```bash
+mise tasks                  # List all tasks
+mise run docker:up          # Start infrastructure
+mise run backend            # Run backend server
+mise run frontend           # Run frontend server
+mise run format             # Format all code
+mise run test               # Run all tests
+mise run drift:full         # Run drift analysis
+mise run doctor             # Verify environment
+```
+
+### Task Namespaces
+
+- `docker:*` - Docker/infrastructure tasks
+- `db:*` - Database tasks
+- `test:*` - Testing tasks
+- `drift:*` - Drift analysis tasks
+- `build:*` - Build tasks with caching
+- `install:*` - Dependency installation
+
 ## Essential Commands
 
 ### Backend Development

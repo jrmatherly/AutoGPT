@@ -1,3 +1,27 @@
+# ============================================================================
+# DEPRECATION NOTICE
+# ============================================================================
+# This Makefile is deprecated. Please use mise instead:
+#
+#   mise tasks        - List all available tasks
+#   mise run <task>   - Run a task
+#
+# Migration mapping:
+#   make start-core     ->  mise run docker:up
+#   make stop-core      ->  mise run docker:down
+#   make logs-core      ->  mise run docker:logs
+#   make reset-db       ->  mise run db:reset
+#   make run-backend    ->  mise run backend
+#   make run-frontend   ->  mise run frontend
+#   make format         ->  mise run format
+#   make migrate        ->  mise run db:migrate
+#   make apply-rls      ->  mise run db:rls-apply
+#   make verify-rls     ->  mise run db:rls-verify
+#   make drift-full     ->  mise run drift:full
+#
+# See docs/plans/2026-01-29-mise-integration.md for complete mapping.
+# ============================================================================
+
 .PHONY: start-core stop-core logs-core format lint migrate run-backend run-frontend load-store-agents \
 	drift-scan drift-scan-backend drift-scan-frontend drift-scan-libs drift-status drift-check drift-approve \
 	drift-callgraph drift-analyze drift-coupling drift-coupling-cycles drift-coupling-hotspots \

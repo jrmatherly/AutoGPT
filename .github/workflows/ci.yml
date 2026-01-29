@@ -1,0 +1,30 @@
+name: CI
+
+on:
+  push:
+    branches: [master, dev]
+  pull_request:
+    branches: [master, dev]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Mise
+        uses: jdx/mise-action@v2
+        with:
+          version: 2026.1.0
+
+      - name: Install dependencies
+        run: mise run install
+
+      - name: Run tests
+        run: mise run test:all
+
+      - name: Check formatting
+        run: |
+          mise run format
+          git diff --exit-code || (echo "Code formatting issues found. Run 'mise run format' locally." && exit 1)

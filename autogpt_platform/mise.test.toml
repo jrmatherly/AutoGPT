@@ -1,0 +1,10 @@
+# AutoGPT Platform - Test Environment Configuration
+
+[env]
+NODE_ENV = "test"
+NEXT_PUBLIC_APP_ENV = "test"
+
+[tasks."test:all"]
+description = "Run full test suite for CI"
+depends = ["test:backend", "test:frontend", "drift:check"]
+run = "echo '✅ All tests passed'"
