@@ -110,9 +110,9 @@ See [Component structure](#-component-structure) and [Styling](#-styling) sectio
 
 ## 📟 Contribution process
 
-### 1) Branch off `dev`
+### 1) Branch off `master`
 
-- Branch from `dev` for features and fixes
+- Branch from `master` for features and fixes
 - Keep PRs focused (aim for one ticket per PR)
 - Use conventional commit messages with a scope (e.g., `feat(frontend): add X`)
 
@@ -132,7 +132,7 @@ Before requesting review:
 - [x] Relevant tests pass locally: `pnpm test` (and/or Storybook tests)
 - [x] If touching UI, validate against our design system and stories
 
-### 4) Merge to `dev`
+### 4) Merge to `master`
 
 - Use squash merges
 - Follow conventional commit message format for the squash title
