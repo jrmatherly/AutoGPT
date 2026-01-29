@@ -50,6 +50,30 @@ make init-env                # Copy .env.default to .env for all services (platf
 # Test Data
 make test-data               # Run test data creator script
 make load-store-agents       # Load store agents from agents/ folder
+
+# Drift - Codebase Pattern Analysis
+make drift-status            # Show drift status for all projects (backend, frontend, libs)
+make drift-scan              # Scan all projects for patterns
+make drift-check             # Check for violations (CI-friendly)
+make drift-approve           # Approve all discovered patterns (95%+ confidence)
+
+# Drift - Individual Project Scans
+make drift-scan-backend      # Scan backend only (verbose)
+make drift-scan-frontend     # Scan frontend only (verbose)
+make drift-scan-libs         # Scan libs only (verbose)
+
+# Drift - Advanced Analysis
+make drift-callgraph         # Build call graphs for impact analysis
+make drift-analyze           # Run language-specific analysis (Python/TypeScript)
+make drift-coupling          # Build module coupling graphs
+make drift-coupling-cycles   # Find dependency cycles
+make drift-coupling-hotspots # Find highly coupled modules
+make drift-test-topology     # Build test topology (maps tests to code)
+make drift-error-gaps        # Find error handling gaps
+
+# Drift - Combined Workflows
+make drift-deep              # Run coupling + test-topology analysis
+make drift-full              # Full setup: scan, approve, callgraph, and deep analysis
 ```
 
 ## Backend Development (autogpt_platform/backend)
@@ -229,3 +253,50 @@ cd frontend && pnpm types && pnpm test
 cd autogpt_platform/frontend
 pnpm generate:api                 # Regenerate TypeScript client
 ```
+
+### Using Drift for Code Intelligence
+
+```bash
+cd autogpt_platform
+
+# Quick pattern check before committing
+make drift-check
+
+# View codebase health and patterns
+make drift-status
+
+# After adding new code, scan for new patterns
+make drift-scan-backend          # For backend changes
+make drift-scan-frontend         # For frontend changes
+
+# Deep analysis before major refactoring
+make drift-coupling              # Check module dependencies
+make drift-coupling-cycles       # Find circular dependencies
+make drift-test-topology         # Understand test coverage
+
+# Find areas needing improvement
+make drift-error-gaps            # Identify missing error handling
+make drift-coupling-hotspots     # Find tightly coupled modules
+
+# Full analysis and approval workflow
+make drift-full                  # Complete scan, approve, and analyze
+```
+
+### Drift Intelligence in Development
+
+The drift analysis has discovered **805 approved patterns** across the codebase:
+
+**Pattern Categories** (with coverage):
+- `data-access` (88 patterns, 81% coverage) - Database queries, Prisma usage
+- `components` (65 patterns, 78% coverage) - React component patterns
+- `styling` (61 patterns, 82% coverage) - Tailwind/CSS conventions
+- `testing` (60 patterns, 87% coverage) - Test structure and assertions
+- `security` (59 patterns, 83% coverage) - Auth, validation, sanitization
+- `errors` (58 patterns, 86% coverage) - Error handling patterns
+- `types` (58 patterns, 84% coverage) - TypeScript type usage
+- `performance` (52 patterns, 83% coverage) - Optimization patterns
+- `api` (18 patterns, 100% coverage) - API route patterns
+
+**Health Score**: 95/100 | **Violations**: 0
+
+Use drift patterns to ensure new code follows established conventions.

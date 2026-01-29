@@ -28,6 +28,7 @@
 | **ARCHITECTURE.md** | `docs/ARCHITECTURE.md` | System architecture, Mermaid diagrams |
 | **API_REFERENCE.md** | `docs/API_REFERENCE.md` | Complete REST/WebSocket API documentation |
 | **BLOCK_SDK.md** | `docs/BLOCK_SDK.md` | Comprehensive block creation guide |
+| **DRIFT_INTEGRATION.md** | `docs/DRIFT_INTEGRATION.md` | Drift codebase intelligence guide (846 lines) |
 | **CLAUDE.md (docs)** | `docs/CLAUDE.md` | Documentation writing guidelines |
 
 ## Serena Memory Files
