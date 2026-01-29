@@ -1,0 +1,747 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.131Z",
+  "checksum": "d018a76cc05eb744",
+  "file": "backend/blocks/apollo/_api.py",
+  "functions": [
+    {
+      "id": "backend/blocks/apollo/_api.py:__init__:24",
+      "name": "__init__",
+      "startLine": 24,
+      "endLine": 26,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "Requests",
+          "resolved": false,
+          "confidence": 0,
+          "line": 26
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/apollo/_api.py:_get_headers:28",
+      "name": "_get_headers",
+      "startLine": 28,
+      "endLine": 29,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 29,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/apollo/_api.py:search_people:31",
+      "name": "search_people",
+      "startLine": 31,
+      "endLine": 67,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "post",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 33,
+          "resolvedId": "backend/util/request.py:post:563"
+        },
+        {
+          "target": "_get_headers",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 35,
+          "resolvedId": "backend/blocks/apollo/_api.py:_get_headers:28"
+        },
+        {
+          "target": "model_dump",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 36,
+          "resolvedId": "backend/blocks/apollo/models.py:model_dump:11"
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 38,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "SearchPeopleResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 39
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 49
+        },
+        {
+          "target": "people",
+          "resolved": false,
+          "confidence": 0,
+          "line": 49
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 52
+        },
+        {
+          "target": "people",
+          "resolved": false,
+          "confidence": 0,
+          "line": 52
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 54
+        },
+        {
+          "target": "post",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 57,
+          "resolvedId": "backend/util/request.py:post:563"
+        },
+        {
+          "target": "_get_headers",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 59,
+          "resolvedId": "backend/blocks/apollo/_api.py:_get_headers:28"
+        },
+        {
+          "target": "model_dump",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 60,
+          "resolvedId": "backend/blocks/apollo/models.py:model_dump:11"
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 62,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "SearchPeopleResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 63
+        },
+        {
+          "target": "extend",
+          "resolved": false,
+          "confidence": 0,
+          "line": 64
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 64
+        },
+        {
+          "target": "people",
+          "resolved": false,
+          "confidence": 0,
+          "line": 64
+        },
+        {
+          "target": "info",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 66,
+          "resolvedId": "backend/util/logging.py:info:41"
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 66
+        },
+        {
+          "target": "people",
+          "resolved": false,
+          "confidence": 0,
+          "line": 66
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/apollo/_api.py:search_organizations:69",
+      "name": "search_organizations",
+      "startLine": 69,
+      "endLine": 113,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "post",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 73,
+          "resolvedId": "backend/util/request.py:post:563"
+        },
+        {
+          "target": "_get_headers",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 75,
+          "resolvedId": "backend/blocks/apollo/_api.py:_get_headers:28"
+        },
+        {
+          "target": "model_dump",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 76,
+          "resolvedId": "backend/blocks/apollo/models.py:model_dump:11"
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 78,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "SearchOrganizationsResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 79
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 89
+        },
+        {
+          "target": "organizations",
+          "resolved": false,
+          "confidence": 0,
+          "line": 89
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 92
+        },
+        {
+          "target": "organizations",
+          "resolved": false,
+          "confidence": 0,
+          "line": 92
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 94
+        },
+        {
+          "target": "post",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 97,
+          "resolvedId": "backend/util/request.py:post:563"
+        },
+        {
+          "target": "_get_headers",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 99,
+          "resolvedId": "backend/blocks/apollo/_api.py:_get_headers:28"
+        },
+        {
+          "target": "model_dump",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 100,
+          "resolvedId": "backend/blocks/apollo/models.py:model_dump:11"
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 102,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "SearchOrganizationsResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 103
+        },
+        {
+          "target": "extend",
+          "resolved": false,
+          "confidence": 0,
+          "line": 104
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 106
+        },
+        {
+          "target": "organizations",
+          "resolved": false,
+          "confidence": 0,
+          "line": 106
+        },
+        {
+          "target": "info",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 110,
+          "resolvedId": "backend/util/logging.py:info:41"
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 110
+        },
+        {
+          "target": "organizations",
+          "resolved": false,
+          "confidence": 0,
+          "line": 110
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/apollo/_api.py:enrich_person:115",
+      "name": "enrich_person",
+      "startLine": 115,
+      "endLine": 131,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "post",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 117,
+          "resolvedId": "backend/util/request.py:post:563"
+        },
+        {
+          "target": "_get_headers",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 119,
+          "resolvedId": "backend/blocks/apollo/_api.py:_get_headers:28"
+        },
+        {
+          "target": "model_dump",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 120,
+          "resolvedId": "backend/blocks/apollo/models.py:model_dump:11"
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 125,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "ValueError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 127
+        },
+        {
+          "target": "Contact",
+          "resolved": false,
+          "confidence": 0,
+          "line": 129
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/apollo/_api.py:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 132,
+      "isEntryPoint": false,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "getLogger",
+          "resolved": false,
+          "confidence": 0,
+          "line": 16
+        },
+        {
+          "target": "Requests",
+          "resolved": false,
+          "confidence": 0,
+          "line": 26
+        },
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 29,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        },
+        {
+          "target": "post",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 33,
+          "resolvedId": "backend/util/request.py:post:563"
+        },
+        {
+          "target": "_get_headers",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 35,
+          "resolvedId": "backend/blocks/apollo/_api.py:_get_headers:28"
+        },
+        {
+          "target": "model_dump",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 36,
+          "resolvedId": "backend/blocks/apollo/models.py:model_dump:11"
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 38,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "SearchPeopleResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 39
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 49
+        },
+        {
+          "target": "people",
+          "resolved": false,
+          "confidence": 0,
+          "line": 49
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 52
+        },
+        {
+          "target": "people",
+          "resolved": false,
+          "confidence": 0,
+          "line": 52
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 54
+        },
+        {
+          "target": "post",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 57,
+          "resolvedId": "backend/util/request.py:post:563"
+        },
+        {
+          "target": "_get_headers",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 59,
+          "resolvedId": "backend/blocks/apollo/_api.py:_get_headers:28"
+        },
+        {
+          "target": "model_dump",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 60,
+          "resolvedId": "backend/blocks/apollo/models.py:model_dump:11"
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 62,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "SearchPeopleResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 63
+        },
+        {
+          "target": "extend",
+          "resolved": false,
+          "confidence": 0,
+          "line": 64
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 64
+        },
+        {
+          "target": "people",
+          "resolved": false,
+          "confidence": 0,
+          "line": 64
+        },
+        {
+          "target": "info",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 66,
+          "resolvedId": "backend/util/logging.py:info:41"
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 66
+        },
+        {
+          "target": "people",
+          "resolved": false,
+          "confidence": 0,
+          "line": 66
+        },
+        {
+          "target": "post",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 73,
+          "resolvedId": "backend/util/request.py:post:563"
+        },
+        {
+          "target": "_get_headers",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 75,
+          "resolvedId": "backend/blocks/apollo/_api.py:_get_headers:28"
+        },
+        {
+          "target": "model_dump",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 76,
+          "resolvedId": "backend/blocks/apollo/models.py:model_dump:11"
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 78,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "SearchOrganizationsResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 79
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 89
+        },
+        {
+          "target": "organizations",
+          "resolved": false,
+          "confidence": 0,
+          "line": 89
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 92
+        },
+        {
+          "target": "organizations",
+          "resolved": false,
+          "confidence": 0,
+          "line": 92
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 94
+        },
+        {
+          "target": "post",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 97,
+          "resolvedId": "backend/util/request.py:post:563"
+        },
+        {
+          "target": "_get_headers",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 99,
+          "resolvedId": "backend/blocks/apollo/_api.py:_get_headers:28"
+        },
+        {
+          "target": "model_dump",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 100,
+          "resolvedId": "backend/blocks/apollo/models.py:model_dump:11"
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 102,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "SearchOrganizationsResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 103
+        },
+        {
+          "target": "extend",
+          "resolved": false,
+          "confidence": 0,
+          "line": 104
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 106
+        },
+        {
+          "target": "organizations",
+          "resolved": false,
+          "confidence": 0,
+          "line": 106
+        },
+        {
+          "target": "info",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 110,
+          "resolvedId": "backend/util/logging.py:info:41"
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 110
+        },
+        {
+          "target": "organizations",
+          "resolved": false,
+          "confidence": 0,
+          "line": 110
+        },
+        {
+          "target": "post",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 117,
+          "resolvedId": "backend/util/request.py:post:563"
+        },
+        {
+          "target": "_get_headers",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 119,
+          "resolvedId": "backend/blocks/apollo/_api.py:_get_headers:28"
+        },
+        {
+          "target": "model_dump",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 120,
+          "resolvedId": "backend/blocks/apollo/models.py:model_dump:11"
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 125,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "ValueError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 127
+        },
+        {
+          "target": "Contact",
+          "resolved": false,
+          "confidence": 0,
+          "line": 129
+        },
+        {
+          "target": "getLogger",
+          "resolved": false,
+          "confidence": 0,
+          "line": 16
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "logging",
+          "operation": "read",
+          "line": 16,
+          "fields": [
+            "name"
+          ]
+        }
+      ]
+    }
+  ]
+}

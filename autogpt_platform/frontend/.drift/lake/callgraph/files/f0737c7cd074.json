@@ -1,0 +1,489 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.209Z",
+  "checksum": "b0e39c9ba7e131d5",
+  "file": "src/app/(platform)/library/agents/[id]/components/OldAgentLibraryView/components/agent-schedule-details-view.tsx",
+  "functions": [
+    {
+      "id": "src/app/(platform)/library/agents/[id]/components/OldAgentLibraryView/components/agent-schedule-details-view.tsx:AgentScheduleDetailsView:31",
+      "name": "AgentScheduleDetailsView",
+      "startLine": 31,
+      "endLine": 180,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "useBackendAPI",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 44,
+          "resolvedId": "src/lib/autogpt-server-api/context.tsx:useBackendAPI:34"
+        },
+        {
+          "target": "useToastOnFail",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 48,
+          "resolvedId": "src/components/molecules/Toast/use-toast.tsx:useToastOnFail:97"
+        },
+        {
+          "target": "useUserTimezone",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 51,
+          "resolvedId": "src/lib/hooks/useUserTimezone.ts:useUserTimezone:4"
+        },
+        {
+          "target": "useMemo",
+          "resolved": false,
+          "confidence": 0,
+          "line": 53
+        },
+        {
+          "target": "toUpperCase",
+          "resolved": false,
+          "confidence": 0,
+          "line": 58
+        },
+        {
+          "target": "charAt",
+          "resolved": false,
+          "confidence": 0,
+          "line": 58
+        },
+        {
+          "target": "slice",
+          "resolved": false,
+          "confidence": 0,
+          "line": 59
+        },
+        {
+          "target": "humanizeCronExpression",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 63,
+          "resolvedId": "src/lib/cron-expression-utils.ts:humanizeCronExpression:82"
+        },
+        {
+          "target": "cron",
+          "resolved": false,
+          "confidence": 0,
+          "line": 63
+        },
+        {
+          "target": "formatScheduleTime",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 67,
+          "resolvedId": "src/lib/timezone-utils.ts:formatScheduleTime:71"
+        },
+        {
+          "target": "next_run_time",
+          "resolved": false,
+          "confidence": 0,
+          "line": 67
+        },
+        {
+          "target": "userTimezone",
+          "resolved": false,
+          "confidence": 0,
+          "line": 67
+        },
+        {
+          "target": "useMemo",
+          "resolved": false,
+          "confidence": 0,
+          "line": 75
+        },
+        {
+          "target": "fromEntries",
+          "resolved": false,
+          "confidence": 0,
+          "line": 79
+        },
+        {
+          "target": "map",
+          "resolved": false,
+          "confidence": 0,
+          "line": 80
+        },
+        {
+          "target": "entries",
+          "resolved": false,
+          "confidence": 0,
+          "line": 80
+        },
+        {
+          "target": "input_data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 80
+        },
+        {
+          "target": "useCallback",
+          "resolved": false,
+          "confidence": 0,
+          "line": 91
+        },
+        {
+          "target": "catch",
+          "resolved": false,
+          "confidence": 0,
+          "line": 93
+        },
+        {
+          "target": "then",
+          "resolved": false,
+          "confidence": 0,
+          "line": 93
+        },
+        {
+          "target": "executeGraph",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 93,
+          "resolvedId": "src/lib/autogpt-server-api/client.ts:executeGraph:253"
+        },
+        {
+          "target": "id",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 95,
+          "resolvedId": "public/gtag.js:id:112"
+        },
+        {
+          "target": "version",
+          "resolved": false,
+          "confidence": 0,
+          "line": 96
+        },
+        {
+          "target": "input_data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 97
+        },
+        {
+          "target": "input_credentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 98
+        },
+        {
+          "target": "onForcedRun",
+          "resolved": false,
+          "confidence": 0,
+          "line": 101
+        },
+        {
+          "target": "id",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 101,
+          "resolvedId": "public/gtag.js:id:112"
+        },
+        {
+          "target": "toastOnFail",
+          "resolved": false,
+          "confidence": 0,
+          "line": 102
+        },
+        {
+          "target": "useMemo",
+          "resolved": false,
+          "confidence": 0,
+          "line": 106
+        },
+        {
+          "target": "PlayIcon",
+          "resolved": false,
+          "confidence": 0,
+          "line": 111
+        },
+        {
+          "target": "IconCross",
+          "resolved": false,
+          "confidence": 0,
+          "line": 120
+        },
+        {
+          "target": "doDeleteSchedule",
+          "resolved": false,
+          "confidence": 0,
+          "line": 124
+        },
+        {
+          "target": "id",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 124,
+          "resolvedId": "public/gtag.js:id:112"
+        },
+        {
+          "target": "Card",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 134,
+          "resolvedId": "src/components/atoms/Card/Card.tsx:Card:9"
+        },
+        {
+          "target": "CardHeader",
+          "resolved": false,
+          "confidence": 0,
+          "line": 135
+        },
+        {
+          "target": "CardTitle",
+          "resolved": false,
+          "confidence": 0,
+          "line": 136
+        },
+        {
+          "target": "CardContent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 139
+        },
+        {
+          "target": "map",
+          "resolved": false,
+          "confidence": 0,
+          "line": 141
+        },
+        {
+          "target": "label",
+          "resolved": false,
+          "confidence": 0,
+          "line": 142
+        },
+        {
+          "target": "Card",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 151,
+          "resolvedId": "src/components/atoms/Card/Card.tsx:Card:9"
+        },
+        {
+          "target": "CardHeader",
+          "resolved": false,
+          "confidence": 0,
+          "line": 152
+        },
+        {
+          "target": "CardTitle",
+          "resolved": false,
+          "confidence": 0,
+          "line": 153
+        },
+        {
+          "target": "CardContent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 155
+        },
+        {
+          "target": "map",
+          "resolved": false,
+          "confidence": 0,
+          "line": 157
+        },
+        {
+          "target": "entries",
+          "resolved": false,
+          "confidence": 0,
+          "line": 157
+        },
+        {
+          "target": "agentRunInputs",
+          "resolved": false,
+          "confidence": 0,
+          "line": 157
+        },
+        {
+          "target": "key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 158
+        },
+        {
+          "target": "Input",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 160,
+          "resolvedId": "src/components/atoms/Input/Input.tsx:Input:38"
+        },
+        {
+          "target": "value",
+          "resolved": false,
+          "confidence": 0,
+          "line": 160
+        },
+        {
+          "target": "LoadingBox",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 164,
+          "resolvedId": "src/components/__legacy__/ui/loading.tsx:LoadingBox:4"
+        },
+        {
+          "target": "ActionButtonGroup",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 173,
+          "resolvedId": "src/components/__legacy__/action-button-group.tsx:ActionButtonGroup:8"
+        },
+        {
+          "target": "runActions",
+          "resolved": false,
+          "confidence": 0,
+          "line": 173
+        },
+        {
+          "target": "ActionButtonGroup",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 175,
+          "resolvedId": "src/components/__legacy__/action-button-group.tsx:ActionButtonGroup:8"
+        },
+        {
+          "target": "agentActions",
+          "resolved": false,
+          "confidence": 0,
+          "line": 175
+        },
+        {
+          "target": "label",
+          "resolved": false,
+          "confidence": 0,
+          "line": 142
+        },
+        {
+          "target": "key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 158
+        },
+        {
+          "target": "Input",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 160,
+          "resolvedId": "src/components/atoms/Input/Input.tsx:Input:38"
+        },
+        {
+          "target": "value",
+          "resolved": false,
+          "confidence": 0,
+          "line": 160
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "schedule",
+          "operation": "delete",
+          "line": 121,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "src/app/(platform)/library/agents/[id]/components/OldAgentLibraryView/components/agent-schedule-details-view.tsx:$map$1:141",
+      "name": "$map$1",
+      "startLine": 141,
+      "endLine": 146,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "map",
+          "resolved": false,
+          "confidence": 0,
+          "line": 141
+        },
+        {
+          "target": "label",
+          "resolved": false,
+          "confidence": 0,
+          "line": 142
+        },
+        {
+          "target": "label",
+          "resolved": false,
+          "confidence": 0,
+          "line": 142
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/app/(platform)/library/agents/[id]/components/OldAgentLibraryView/components/agent-schedule-details-view.tsx:$map$2:157",
+      "name": "$map$2",
+      "startLine": 157,
+      "endLine": 162,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "map",
+          "resolved": false,
+          "confidence": 0,
+          "line": 157
+        },
+        {
+          "target": "entries",
+          "resolved": false,
+          "confidence": 0,
+          "line": 157
+        },
+        {
+          "target": "agentRunInputs",
+          "resolved": false,
+          "confidence": 0,
+          "line": 157
+        },
+        {
+          "target": "key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 158
+        },
+        {
+          "target": "Input",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 160,
+          "resolvedId": "src/components/atoms/Input/Input.tsx:Input:38"
+        },
+        {
+          "target": "value",
+          "resolved": false,
+          "confidence": 0,
+          "line": 160
+        },
+        {
+          "target": "key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 158
+        },
+        {
+          "target": "Input",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 160,
+          "resolvedId": "src/components/atoms/Input/Input.tsx:Input:38"
+        },
+        {
+          "target": "value",
+          "resolved": false,
+          "confidence": 0,
+          "line": 160
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

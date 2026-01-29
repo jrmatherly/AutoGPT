@@ -1,0 +1,106 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.077Z",
+  "checksum": "55a1685e05e2ca91",
+  "file": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/modals/RunAgentModal/helpers.ts",
+  "functions": [
+    {
+      "id": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/modals/RunAgentModal/helpers.ts:validateInputs:4",
+      "name": "validateInputs",
+      "startLine": 4,
+      "endLine": 22,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "isEmpty",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 16,
+          "resolvedId": "src/lib/utils.ts:isEmpty:468"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/modals/RunAgentModal/helpers.ts:validateCredentials:24",
+      "name": "validateCredentials",
+      "startLine": 24,
+      "endLine": 41,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "keys",
+          "resolved": false,
+          "confidence": 0,
+          "line": 32
+        },
+        {
+          "target": "properties",
+          "resolved": false,
+          "confidence": 0,
+          "line": 32
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/modals/RunAgentModal/helpers.ts:formatCronExpression:43",
+      "name": "formatCronExpression",
+      "startLine": 43,
+      "endLine": 52,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "split",
+          "resolved": false,
+          "confidence": 0,
+          "line": 45
+        },
+        {
+          "target": "trim",
+          "resolved": false,
+          "confidence": 0,
+          "line": 45
+        },
+        {
+          "target": "Error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 47,
+          "resolvedId": "src/app/error.tsx:Error:8"
+        },
+        {
+          "target": "join",
+          "resolved": false,
+          "confidence": 0,
+          "line": 51
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/modals/RunAgentModal/helpers.ts:parseCronDescription:54",
+      "name": "parseCronDescription",
+      "startLine": 54,
+      "endLine": 67,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "split",
+          "resolved": false,
+          "confidence": 0,
+          "line": 56
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

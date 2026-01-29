@@ -1,0 +1,324 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.206Z",
+  "checksum": "e9164f6821b0899c",
+  "file": "backend/blocks/apollo/people.py",
+  "functions": [
+    {
+      "id": "backend/blocks/apollo/people.py:__init__:128",
+      "name": "__init__",
+      "startLine": 128,
+      "endLine": 303,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 129,
+          "resolvedId": "backend/blocks/apollo/people.py:__init__:128"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 129
+        },
+        {
+          "target": "Contact",
+          "resolved": false,
+          "confidence": 0,
+          "line": 141
+        },
+        {
+          "target": "Contact",
+          "resolved": false,
+          "confidence": 0,
+          "line": 224
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/apollo/people.py:search_people:306",
+      "name": "search_people",
+      "startLine": 306,
+      "endLine": 310,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "ApolloClient",
+          "resolved": false,
+          "confidence": 0,
+          "line": 309
+        },
+        {
+          "target": "credentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 309
+        },
+        {
+          "target": "search_people",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 310,
+          "resolvedId": "backend/blocks/apollo/people.py:search_people:306"
+        },
+        {
+          "target": "query",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 310,
+          "resolvedId": "backend/blocks/linear/_api.py:query:89"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/apollo/people.py:enrich_person:313",
+      "name": "enrich_person",
+      "startLine": 313,
+      "endLine": 317,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "ApolloClient",
+          "resolved": false,
+          "confidence": 0,
+          "line": 316
+        },
+        {
+          "target": "credentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 316
+        },
+        {
+          "target": "enrich_person",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 317,
+          "resolvedId": "backend/blocks/apollo/people.py:enrich_person:313"
+        },
+        {
+          "target": "query",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 317,
+          "resolvedId": "backend/blocks/linear/_api.py:query:89"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/apollo/people.py:merge_contact_data:320",
+      "name": "merge_contact_data",
+      "startLine": 320,
+      "endLine": 338,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "model_dump",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 325,
+          "resolvedId": "backend/blocks/apollo/models.py:model_dump:11"
+        },
+        {
+          "target": "model_dump",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 326,
+          "resolvedId": "backend/blocks/apollo/models.py:model_dump:11"
+        },
+        {
+          "target": "items",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 329,
+          "resolvedId": "backend/integrations/oauth/__init__.py:items:123"
+        },
+        {
+          "target": "Contact",
+          "resolved": false,
+          "confidence": 0,
+          "line": 338
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/apollo/people.py:run:340",
+      "name": "run",
+      "startLine": 340,
+      "endLine": 369,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "SearchPeopleRequest",
+          "resolved": false,
+          "confidence": 0,
+          "line": 348
+        },
+        {
+          "target": "model_dump",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 348,
+          "resolvedId": "backend/blocks/apollo/models.py:model_dump:11"
+        },
+        {
+          "target": "search_people",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 349,
+          "resolvedId": "backend/blocks/apollo/people.py:search_people:306"
+        },
+        {
+          "target": "query",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 349,
+          "resolvedId": "backend/blocks/linear/_api.py:query:89"
+        },
+        {
+          "target": "credentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 349
+        },
+        {
+          "target": "gather",
+          "resolved": false,
+          "confidence": 0,
+          "line": 365
+        },
+        {
+          "target": "enrich_or_fallback",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 366,
+          "resolvedId": "backend/blocks/apollo/people.py:enrich_or_fallback:354"
+        },
+        {
+          "target": "person",
+          "resolved": false,
+          "confidence": 0,
+          "line": 366
+        },
+        {
+          "target": "EnrichPersonRequest",
+          "resolved": false,
+          "confidence": 0,
+          "line": 356
+        },
+        {
+          "target": "enrich_person",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 357,
+          "resolvedId": "backend/blocks/apollo/people.py:enrich_person:313"
+        },
+        {
+          "target": "enrich_query",
+          "resolved": false,
+          "confidence": 0,
+          "line": 358
+        },
+        {
+          "target": "credentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 358
+        },
+        {
+          "target": "merge_contact_data",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 361,
+          "resolvedId": "backend/blocks/apollo/people.py:merge_contact_data:320"
+        },
+        {
+          "target": "person",
+          "resolved": false,
+          "confidence": 0,
+          "line": 361
+        },
+        {
+          "target": "enriched_person",
+          "resolved": false,
+          "confidence": 0,
+          "line": 361
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/apollo/people.py:enrich_or_fallback:354",
+      "name": "enrich_or_fallback",
+      "startLine": 354,
+      "endLine": 363,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "EnrichPersonRequest",
+          "resolved": false,
+          "confidence": 0,
+          "line": 356
+        },
+        {
+          "target": "enrich_person",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 357,
+          "resolvedId": "backend/blocks/apollo/people.py:enrich_person:313"
+        },
+        {
+          "target": "enrich_query",
+          "resolved": false,
+          "confidence": 0,
+          "line": 358
+        },
+        {
+          "target": "credentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 358
+        },
+        {
+          "target": "merge_contact_data",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 361,
+          "resolvedId": "backend/blocks/apollo/people.py:merge_contact_data:320"
+        },
+        {
+          "target": "person",
+          "resolved": false,
+          "confidence": 0,
+          "line": 361
+        },
+        {
+          "target": "enriched_person",
+          "resolved": false,
+          "confidence": 0,
+          "line": 361
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

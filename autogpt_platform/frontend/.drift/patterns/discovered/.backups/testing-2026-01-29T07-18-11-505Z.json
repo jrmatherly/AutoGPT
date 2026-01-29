@@ -1,0 +1,436 @@
+{
+  "version": "1.0.0",
+  "category": "testing",
+  "patterns": [
+    {
+      "id": "2084615ea749fb69",
+      "subcategory": "test-co-location",
+      "name": "Test Co-Location Detector",
+      "description": "Learns test co-location patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "testing/test-co-location",
+          "patternId": "testing/test-co-location/function_definition"
+        }
+      },
+      "confidence": {
+        "frequency": 0.08,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 3,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src/lib/autogpt-server-api/helpers.test.ts",
+          "line": 42,
+          "column": 23,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/tests/integrations/test-utils.tsx",
+          "line": 17,
+          "column": 10,
+          "isOutlier": false,
+          "confidence": 0.945
+        },
+        {
+          "file": "src/tests/utils/auth.ts",
+          "line": 66,
+          "column": 63,
+          "isOutlier": false,
+          "confidence": 0.9644444444444444
+        },
+        {
+          "file": "src/tests/utils/auth.ts",
+          "line": 162,
+          "column": 46,
+          "isOutlier": false,
+          "confidence": 0.9644444444444444
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:32:38.510Z",
+        "lastSeen": "2026-01-29T06:32:38.510Z",
+        "source": "auto-detected",
+        "tags": [
+          "testing",
+          "test-co-location"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "256386d8d49860c5",
+      "subcategory": "test-file-naming",
+      "name": "Test File Naming Detector",
+      "description": "Learns test file naming patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "testing/test-file-naming",
+          "patternId": "testing/test-file-naming/class_definition"
+        }
+      },
+      "confidence": {
+        "frequency": 0.06,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 3,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src/lib/autogpt-server-api/types.ts",
+          "line": 754,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.945
+        },
+        {
+          "file": "src/tests/utils/auth.ts",
+          "line": 6,
+          "column": 18,
+          "isOutlier": false,
+          "confidence": 0.9644444444444444
+        },
+        {
+          "file": "src/tests/utils/signin.ts",
+          "line": 4,
+          "column": 6,
+          "isOutlier": false,
+          "confidence": 0.8972727272727272
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:32:38.510Z",
+        "lastSeen": "2026-01-29T06:32:38.510Z",
+        "source": "auto-detected",
+        "tags": [
+          "testing",
+          "test-file-naming"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "90806fecc20c5714",
+      "subcategory": "test-co-location",
+      "name": "Test Co-Location Detector",
+      "description": "Learns test co-location patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "testing/test-co-location",
+          "patternId": "testing/test-co-location/class_definition"
+        }
+      },
+      "confidence": {
+        "frequency": 0.06,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 3,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src/lib/autogpt-server-api/types.ts",
+          "line": 754,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/tests/utils/auth.ts",
+          "line": 6,
+          "column": 18,
+          "isOutlier": false,
+          "confidence": 0.9644444444444444
+        },
+        {
+          "file": "src/tests/utils/signin.ts",
+          "line": 4,
+          "column": 6,
+          "isOutlier": false,
+          "confidence": 0.8866666666666666
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:32:38.510Z",
+        "lastSeen": "2026-01-29T06:32:38.510Z",
+        "source": "auto-detected",
+        "tags": [
+          "testing",
+          "test-co-location"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "6549655d70b1e8c2",
+      "subcategory": "setup-teardown",
+      "name": "Setup/Teardown Detector",
+      "description": "Learns test setup/teardown patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "testing/setup-teardown",
+          "patternId": "testing/setup-teardown/class_definition"
+        }
+      },
+      "confidence": {
+        "frequency": 0.02,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src/services/analytics/index.tsx",
+          "line": 23,
+          "column": 6,
+          "isOutlier": false,
+          "confidence": 1
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:32:38.510Z",
+        "lastSeen": "2026-01-29T06:32:38.510Z",
+        "source": "auto-detected",
+        "tags": [
+          "testing",
+          "setup-teardown"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "f9cb0f2e9b6536ce",
+      "subcategory": "mock-patterns",
+      "name": "Mock Patterns Detector",
+      "description": "Learns mocking patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "testing/mock-patterns",
+          "patternId": "testing/mock-patterns/property_access"
+        }
+      },
+      "confidence": {
+        "frequency": 0.14,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 3,
+        "score": 0.8892307692307693,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src/tests/CLAUDE.md",
+          "line": 64,
+          "column": 4,
+          "isOutlier": false,
+          "confidence": 0.87
+        },
+        {
+          "file": "src/tests/integrations/mock-supabase-request.tsx",
+          "line": 22,
+          "column": 6,
+          "isOutlier": true,
+          "confidence": 0.8410526315789473,
+          "outlierReason": "Value below IQR lower bound"
+        },
+        {
+          "file": "src/tests/integrations/setup-nextjs-mocks.tsx",
+          "line": 4,
+          "column": 6,
+          "isOutlier": false,
+          "confidence": 0.8892307692307693
+        },
+        {
+          "file": "src/tests/integrations/setup-nextjs-mocks.tsx",
+          "line": 20,
+          "column": 6,
+          "isOutlier": false,
+          "confidence": 0.8892307692307693
+        },
+        {
+          "file": "src/tests/integrations/setup-nextjs-mocks.tsx",
+          "line": 31,
+          "column": 6,
+          "isOutlier": false,
+          "confidence": 0.8892307692307693
+        },
+        {
+          "file": "src/tests/integrations/setup-nextjs-mocks.tsx",
+          "line": 41,
+          "column": 6,
+          "isOutlier": false,
+          "confidence": 0.8892307692307693
+        },
+        {
+          "file": "src/tests/integrations/setup-nextjs-mocks.tsx",
+          "line": 55,
+          "column": 6,
+          "isOutlier": false,
+          "confidence": 0.8892307692307693
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:32:38.510Z",
+        "lastSeen": "2026-01-29T06:32:38.510Z",
+        "source": "auto-detected",
+        "tags": [
+          "testing",
+          "mock-patterns"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "fe6fc04c335e33cb",
+      "subcategory": "setup-teardown",
+      "name": "Setup/Teardown Detector",
+      "description": "Learns test setup/teardown patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "testing/setup-teardown",
+          "patternId": "testing/setup-teardown/property_access"
+        }
+      },
+      "confidence": {
+        "frequency": 0.15,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 11,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src/tests/CLAUDE.md",
+          "line": 168,
+          "column": 20,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "src/tests/CLAUDE.md",
+          "line": 168,
+          "column": 57,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "src/tests/agent-activity.spec.ts",
+          "line": 9,
+          "column": 6,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "src/tests/agent-dashboard.spec.ts",
+          "line": 7,
+          "column": 6,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "src/tests/api-keys.spec.ts",
+          "line": 8,
+          "column": 8,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "src/tests/build.spec.ts",
+          "line": 20,
+          "column": 8,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "src/tests/library.spec.ts",
+          "line": 12,
+          "column": 8,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "src/tests/monitor.spec.ts",
+          "line": 23,
+          "column": 6,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "src/tests/monitor.spec.ts",
+          "line": 49,
+          "column": 6,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "src/tests/profile-form.spec.ts",
+          "line": 10,
+          "column": 8,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "src/tests/profile.spec.ts",
+          "line": 7,
+          "column": 6,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "src/tests/settings.spec.ts",
+          "line": 7,
+          "column": 6,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "src/tests/signin.spec.ts",
+          "line": 10,
+          "column": 6,
+          "isOutlier": false,
+          "confidence": 0.97
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:32:38.510Z",
+        "lastSeen": "2026-01-29T06:32:38.510Z",
+        "source": "auto-detected",
+        "tags": [
+          "testing",
+          "setup-teardown"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    }
+  ],
+  "lastUpdated": "2026-01-29T07:18:11.466Z",
+  "checksum": "2336f172f8466dcd"
+}

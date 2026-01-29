@@ -1,0 +1,390 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.235Z",
+  "checksum": "0c88005416afaeee",
+  "file": "backend/blocks/test/test_block.py",
+  "functions": [
+    {
+      "id": "backend/blocks/test/test_block.py:test_available_blocks:15",
+      "name": "test_available_blocks",
+      "startLine": 15,
+      "endLine": 21,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "block",
+          "resolved": false,
+          "confidence": 0,
+          "line": 16
+        },
+        {
+          "target": "skip",
+          "resolved": false,
+          "confidence": 0,
+          "line": 18
+        },
+        {
+          "target": "execute_block_test",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 21,
+          "resolvedId": "backend/util/test.py:execute_block_test:105"
+        },
+        {
+          "target": "block_instance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 21
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/test/test_block.py:test_block_ids_valid:25",
+      "name": "test_block_ids_valid",
+      "startLine": 25,
+      "endLine": 135,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "block",
+          "resolved": false,
+          "confidence": 0,
+          "line": 116
+        },
+        {
+          "target": "skip",
+          "resolved": false,
+          "confidence": 0,
+          "line": 120
+        },
+        {
+          "target": "UUID",
+          "resolved": false,
+          "confidence": 0,
+          "line": 129
+        },
+        {
+          "target": "fail",
+          "resolved": false,
+          "confidence": 0,
+          "line": 135
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/test/test_block.py:test_duplicate_auto_credentials_kwarg_name_raises_error:141",
+      "name": "test_duplicate_auto_credentials_kwarg_name_raises_error",
+      "startLine": 141,
+      "endLine": 179,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "raises",
+          "resolved": false,
+          "confidence": 0,
+          "line": 173
+        },
+        {
+          "target": "get_auto_credentials_fields",
+          "resolved": false,
+          "confidence": 0,
+          "line": 174
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 176
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "credentials",
+          "operation": "read",
+          "line": 174,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/blocks/test/test_block.py:test_unique_auto_credentials_kwarg_names_succeed:181",
+      "name": "test_unique_auto_credentials_kwarg_names_succeed",
+      "startLine": 181,
+      "endLine": 218,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "get_auto_credentials_fields",
+          "resolved": false,
+          "confidence": 0,
+          "line": 213
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/test/test_block.py:test_default_kwarg_name_is_credentials:220",
+      "name": "test_default_kwarg_name_is_credentials",
+      "startLine": 220,
+      "endLine": 242,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "get_auto_credentials_fields",
+          "resolved": false,
+          "confidence": 0,
+          "line": 239
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "credentials",
+          "operation": "read",
+          "line": 239,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/blocks/test/test_block.py:test_duplicate_default_kwarg_name_raises_error:244",
+      "name": "test_duplicate_default_kwarg_name_raises_error",
+      "startLine": 244,
+      "endLine": 280,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "raises",
+          "resolved": false,
+          "confidence": 0,
+          "line": 275
+        },
+        {
+          "target": "get_auto_credentials_fields",
+          "resolved": false,
+          "confidence": 0,
+          "line": 276
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 278
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "credentials",
+          "operation": "read",
+          "line": 276,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/blocks/test/test_block.py:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 281,
+      "isEntryPoint": false,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "parametrize",
+          "resolved": false,
+          "confidence": 0,
+          "line": 14
+        },
+        {
+          "target": "block",
+          "resolved": false,
+          "confidence": 0,
+          "line": 16
+        },
+        {
+          "target": "skip",
+          "resolved": false,
+          "confidence": 0,
+          "line": 18
+        },
+        {
+          "target": "execute_block_test",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 21,
+          "resolvedId": "backend/util/test.py:execute_block_test:105"
+        },
+        {
+          "target": "block_instance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 21
+        },
+        {
+          "target": "parametrize",
+          "resolved": false,
+          "confidence": 0,
+          "line": 24
+        },
+        {
+          "target": "block",
+          "resolved": false,
+          "confidence": 0,
+          "line": 116
+        },
+        {
+          "target": "skip",
+          "resolved": false,
+          "confidence": 0,
+          "line": 120
+        },
+        {
+          "target": "UUID",
+          "resolved": false,
+          "confidence": 0,
+          "line": 129
+        },
+        {
+          "target": "fail",
+          "resolved": false,
+          "confidence": 0,
+          "line": 135
+        },
+        {
+          "target": "raises",
+          "resolved": false,
+          "confidence": 0,
+          "line": 173
+        },
+        {
+          "target": "get_auto_credentials_fields",
+          "resolved": false,
+          "confidence": 0,
+          "line": 174
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 176
+        },
+        {
+          "target": "get_auto_credentials_fields",
+          "resolved": false,
+          "confidence": 0,
+          "line": 213
+        },
+        {
+          "target": "get_auto_credentials_fields",
+          "resolved": false,
+          "confidence": 0,
+          "line": 239
+        },
+        {
+          "target": "raises",
+          "resolved": false,
+          "confidence": 0,
+          "line": 275
+        },
+        {
+          "target": "get_auto_credentials_fields",
+          "resolved": false,
+          "confidence": 0,
+          "line": 276
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 278
+        },
+        {
+          "target": "parametrize",
+          "resolved": false,
+          "confidence": 0,
+          "line": 14
+        },
+        {
+          "target": "values",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 14,
+          "resolvedId": "backend/integrations/oauth/__init__.py:values:112"
+        },
+        {
+          "target": "get_blocks",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 14,
+          "resolvedId": "backend/api/features/builder/routes.py:get_blocks:89"
+        },
+        {
+          "target": "b",
+          "resolved": false,
+          "confidence": 0,
+          "line": 14
+        },
+        {
+          "target": "parametrize",
+          "resolved": false,
+          "confidence": 0,
+          "line": 24
+        },
+        {
+          "target": "values",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 24,
+          "resolvedId": "backend/integrations/oauth/__init__.py:values:112"
+        },
+        {
+          "target": "get_blocks",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 24,
+          "resolvedId": "backend/api/features/builder/routes.py:get_blocks:89"
+        },
+        {
+          "target": "b",
+          "resolved": false,
+          "confidence": 0,
+          "line": 24
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "credentials",
+          "operation": "read",
+          "line": 174,
+          "fields": []
+        },
+        {
+          "table": "credentials",
+          "operation": "read",
+          "line": 239,
+          "fields": []
+        },
+        {
+          "table": "credentials",
+          "operation": "read",
+          "line": 276,
+          "fields": []
+        }
+      ]
+    }
+  ]
+}

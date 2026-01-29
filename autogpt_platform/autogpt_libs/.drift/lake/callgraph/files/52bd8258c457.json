@@ -1,0 +1,838 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:21.046Z",
+  "checksum": "413d9b491b620d1b",
+  "file": "autogpt_libs/auth/helpers_test.py",
+  "functions": [
+    {
+      "id": "autogpt_libs/auth/helpers_test.py:test_add_auth_responses_to_openapi_basic:15",
+      "name": "test_add_auth_responses_to_openapi_basic",
+      "startLine": 15,
+      "endLine": 57,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "FastAPI",
+          "resolved": false,
+          "confidence": 0,
+          "line": 17
+        },
+        {
+          "target": "get",
+          "resolved": false,
+          "confidence": 0,
+          "line": 24
+        },
+        {
+          "target": "Depends",
+          "resolved": false,
+          "confidence": 0,
+          "line": 24
+        },
+        {
+          "target": "requires_user",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 24,
+          "resolvedId": "autogpt_libs/auth/dependencies.py:requires_user:55"
+        },
+        {
+          "target": "requires_user",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 24,
+          "resolvedId": "autogpt_libs/auth/dependencies.py:requires_user:55"
+        },
+        {
+          "target": "get",
+          "resolved": false,
+          "confidence": 0,
+          "line": 28
+        },
+        {
+          "target": "add_auth_responses_to_openapi",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 33,
+          "resolvedId": "autogpt_libs/auth/helpers.py:add_auth_responses_to_openapi:6"
+        },
+        {
+          "target": "app",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 33,
+          "resolvedId": "autogpt_libs/auth/dependencies_test.py:app:26"
+        },
+        {
+          "target": "openapi",
+          "resolved": false,
+          "confidence": 0,
+          "line": 36
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "autogpt_libs/auth/helpers_test.py:test_add_auth_responses_to_openapi_with_security:60",
+      "name": "test_add_auth_responses_to_openapi_with_security",
+      "startLine": 60,
+      "endLine": 109,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "FastAPI",
+          "resolved": false,
+          "confidence": 0,
+          "line": 62
+        },
+        {
+          "target": "get",
+          "resolved": false,
+          "confidence": 0,
+          "line": 69
+        },
+        {
+          "target": "post",
+          "resolved": false,
+          "confidence": 0,
+          "line": 73
+        },
+        {
+          "target": "get",
+          "resolved": false,
+          "confidence": 0,
+          "line": 77
+        },
+        {
+          "target": "add_auth_responses_to_openapi",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 82,
+          "resolvedId": "autogpt_libs/auth/helpers.py:add_auth_responses_to_openapi:6"
+        },
+        {
+          "target": "app",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 82,
+          "resolvedId": "autogpt_libs/auth/dependencies_test.py:app:26"
+        },
+        {
+          "target": "openapi",
+          "resolved": false,
+          "confidence": 0,
+          "line": 85
+        },
+        {
+          "target": "get",
+          "resolved": false,
+          "confidence": 0,
+          "line": 109
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "autogpt_libs/auth/helpers_test.py:test_add_auth_responses_to_openapi_cached_schema:112",
+      "name": "test_add_auth_responses_to_openapi_cached_schema",
+      "startLine": 112,
+      "endLine": 124,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "FastAPI",
+          "resolved": false,
+          "confidence": 0,
+          "line": 114
+        },
+        {
+          "target": "add_auth_responses_to_openapi",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 117,
+          "resolvedId": "autogpt_libs/auth/helpers.py:add_auth_responses_to_openapi:6"
+        },
+        {
+          "target": "app",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 117,
+          "resolvedId": "autogpt_libs/auth/dependencies_test.py:app:26"
+        },
+        {
+          "target": "openapi",
+          "resolved": false,
+          "confidence": 0,
+          "line": 120
+        },
+        {
+          "target": "openapi",
+          "resolved": false,
+          "confidence": 0,
+          "line": 121
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "autogpt_libs/auth/helpers_test.py:test_add_auth_responses_to_openapi_existing_responses:127",
+      "name": "test_add_auth_responses_to_openapi_existing_responses",
+      "startLine": 127,
+      "endLine": 164,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "FastAPI",
+          "resolved": false,
+          "confidence": 0,
+          "line": 129
+        },
+        {
+          "target": "get",
+          "resolved": false,
+          "confidence": 0,
+          "line": 135
+        },
+        {
+          "target": "add_auth_responses_to_openapi",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 146,
+          "resolvedId": "autogpt_libs/auth/helpers.py:add_auth_responses_to_openapi:6"
+        },
+        {
+          "target": "app",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 146,
+          "resolvedId": "autogpt_libs/auth/dependencies_test.py:app:26"
+        },
+        {
+          "target": "openapi",
+          "resolved": false,
+          "confidence": 0,
+          "line": 148
+        },
+        {
+          "target": "get",
+          "resolved": false,
+          "confidence": 0,
+          "line": 153
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "autogpt_libs/auth/helpers_test.py:test_add_auth_responses_to_openapi_no_security_endpoints:167",
+      "name": "test_add_auth_responses_to_openapi_no_security_endpoints",
+      "startLine": 167,
+      "endLine": 191,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "FastAPI",
+          "resolved": false,
+          "confidence": 0,
+          "line": 169
+        },
+        {
+          "target": "get",
+          "resolved": false,
+          "confidence": 0,
+          "line": 171
+        },
+        {
+          "target": "post",
+          "resolved": false,
+          "confidence": 0,
+          "line": 175
+        },
+        {
+          "target": "add_auth_responses_to_openapi",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 180,
+          "resolvedId": "autogpt_libs/auth/helpers.py:add_auth_responses_to_openapi:6"
+        },
+        {
+          "target": "app",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 180,
+          "resolvedId": "autogpt_libs/auth/dependencies_test.py:app:26"
+        },
+        {
+          "target": "openapi",
+          "resolved": false,
+          "confidence": 0,
+          "line": 182
+        },
+        {
+          "target": "values",
+          "resolved": false,
+          "confidence": 0,
+          "line": 188
+        },
+        {
+          "target": "values",
+          "resolved": false,
+          "confidence": 0,
+          "line": 189
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 190
+        },
+        {
+          "target": "method",
+          "resolved": false,
+          "confidence": 0,
+          "line": 190
+        },
+        {
+          "target": "dict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 190
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "autogpt_libs/auth/helpers_test.py:test_add_auth_responses_to_openapi_multiple_security_schemes:194",
+      "name": "test_add_auth_responses_to_openapi_multiple_security_schemes",
+      "startLine": 194,
+      "endLine": 223,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "FastAPI",
+          "resolved": false,
+          "confidence": 0,
+          "line": 196
+        },
+        {
+          "target": "get",
+          "resolved": false,
+          "confidence": 0,
+          "line": 203
+        },
+        {
+          "target": "add_auth_responses_to_openapi",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 211,
+          "resolvedId": "autogpt_libs/auth/helpers.py:add_auth_responses_to_openapi:6"
+        },
+        {
+          "target": "app",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 211,
+          "resolvedId": "autogpt_libs/auth/dependencies_test.py:app:26"
+        },
+        {
+          "target": "openapi",
+          "resolved": false,
+          "confidence": 0,
+          "line": 213
+        },
+        {
+          "target": "get",
+          "resolved": false,
+          "confidence": 0,
+          "line": 218
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "auth",
+          "operation": "read",
+          "line": 203,
+          "fields": []
+        },
+        {
+          "table": "auth",
+          "operation": "read",
+          "line": 218,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "autogpt_libs/auth/helpers_test.py:test_add_auth_responses_to_openapi_empty_components:226",
+      "name": "test_add_auth_responses_to_openapi_empty_components",
+      "startLine": 226,
+      "endLine": 249,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "FastAPI",
+          "resolved": false,
+          "confidence": 0,
+          "line": 228
+        },
+        {
+          "target": "patch",
+          "resolved": false,
+          "confidence": 0,
+          "line": 240
+        },
+        {
+          "target": "mock_get_openapi",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 240,
+          "resolvedId": "autogpt_libs/auth/helpers_test.py:mock_get_openapi:233"
+        },
+        {
+          "target": "add_auth_responses_to_openapi",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 242,
+          "resolvedId": "autogpt_libs/auth/helpers.py:add_auth_responses_to_openapi:6"
+        },
+        {
+          "target": "app",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 242,
+          "resolvedId": "autogpt_libs/auth/dependencies_test.py:app:26"
+        },
+        {
+          "target": "openapi",
+          "resolved": false,
+          "confidence": 0,
+          "line": 244
+        },
+        {
+          "target": "original_get_openapi",
+          "resolved": false,
+          "confidence": 0,
+          "line": 234
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "autogpt_libs/auth/helpers_test.py:mock_get_openapi:233",
+      "name": "mock_get_openapi",
+      "startLine": 233,
+      "endLine": 238,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "original_get_openapi",
+          "resolved": false,
+          "confidence": 0,
+          "line": 234
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "autogpt_libs/auth/helpers_test.py:test_add_auth_responses_to_openapi_all_http_methods:252",
+      "name": "test_add_auth_responses_to_openapi_all_http_methods",
+      "startLine": 252,
+      "endLine": 291,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "FastAPI",
+          "resolved": false,
+          "confidence": 0,
+          "line": 254
+        },
+        {
+          "target": "get",
+          "resolved": false,
+          "confidence": 0,
+          "line": 260
+        },
+        {
+          "target": "post",
+          "resolved": false,
+          "confidence": 0,
+          "line": 264
+        },
+        {
+          "target": "put",
+          "resolved": false,
+          "confidence": 0,
+          "line": 268
+        },
+        {
+          "target": "patch",
+          "resolved": false,
+          "confidence": 0,
+          "line": 272
+        },
+        {
+          "target": "delete",
+          "resolved": false,
+          "confidence": 0,
+          "line": 276
+        },
+        {
+          "target": "add_auth_responses_to_openapi",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 281,
+          "resolvedId": "autogpt_libs/auth/helpers.py:add_auth_responses_to_openapi:6"
+        },
+        {
+          "target": "app",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 281,
+          "resolvedId": "autogpt_libs/auth/dependencies_test.py:app:26"
+        },
+        {
+          "target": "openapi",
+          "resolved": false,
+          "confidence": 0,
+          "line": 283
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "posts",
+          "operation": "delete",
+          "line": 287,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "autogpt_libs/auth/helpers_test.py:test_bearer_jwt_auth_scheme_config:294",
+      "name": "test_bearer_jwt_auth_scheme_config",
+      "startLine": 294,
+      "endLine": 297,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "autogpt_libs/auth/helpers_test.py:test_add_auth_responses_with_no_routes:300",
+      "name": "test_add_auth_responses_with_no_routes",
+      "startLine": 300,
+      "endLine": 313,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "FastAPI",
+          "resolved": false,
+          "confidence": 0,
+          "line": 302
+        },
+        {
+          "target": "add_auth_responses_to_openapi",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 305,
+          "resolvedId": "autogpt_libs/auth/helpers.py:add_auth_responses_to_openapi:6"
+        },
+        {
+          "target": "app",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 305,
+          "resolvedId": "autogpt_libs/auth/dependencies_test.py:app:26"
+        },
+        {
+          "target": "openapi",
+          "resolved": false,
+          "confidence": 0,
+          "line": 307
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "autogpt_libs/auth/helpers_test.py:test_custom_openapi_function_replacement:316",
+      "name": "test_custom_openapi_function_replacement",
+      "startLine": 316,
+      "endLine": 328,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "FastAPI",
+          "resolved": false,
+          "confidence": 0,
+          "line": 318
+        },
+        {
+          "target": "add_auth_responses_to_openapi",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 324,
+          "resolvedId": "autogpt_libs/auth/helpers.py:add_auth_responses_to_openapi:6"
+        },
+        {
+          "target": "app",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 324,
+          "resolvedId": "autogpt_libs/auth/dependencies_test.py:app:26"
+        },
+        {
+          "target": "callable",
+          "resolved": false,
+          "confidence": 0,
+          "line": 328
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "autogpt_libs/auth/helpers_test.py:test_endpoint_without_responses_section:331",
+      "name": "test_endpoint_without_responses_section",
+      "startLine": 331,
+      "endLine": 371,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "FastAPI",
+          "resolved": false,
+          "confidence": 0,
+          "line": 333
+        },
+        {
+          "target": "get",
+          "resolved": false,
+          "confidence": 0,
+          "line": 341
+        },
+        {
+          "target": "patch",
+          "resolved": false,
+          "confidence": 0,
+          "line": 356
+        },
+        {
+          "target": "mock_get_openapi",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 356,
+          "resolvedId": "autogpt_libs/auth/helpers_test.py:mock_get_openapi:233"
+        },
+        {
+          "target": "add_auth_responses_to_openapi",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 358,
+          "resolvedId": "autogpt_libs/auth/helpers.py:add_auth_responses_to_openapi:6"
+        },
+        {
+          "target": "app",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 358,
+          "resolvedId": "autogpt_libs/auth/dependencies_test.py:app:26"
+        },
+        {
+          "target": "openapi",
+          "resolved": false,
+          "confidence": 0,
+          "line": 361
+        },
+        {
+          "target": "get",
+          "resolved": false,
+          "confidence": 0,
+          "line": 366
+        },
+        {
+          "target": "original_get_openapi",
+          "resolved": false,
+          "confidence": 0,
+          "line": 347
+        },
+        {
+          "target": "get",
+          "resolved": false,
+          "confidence": 0,
+          "line": 349
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "autogpt_libs/auth/helpers_test.py:mock_get_openapi:346",
+      "name": "mock_get_openapi",
+      "startLine": 346,
+      "endLine": 354,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "original_get_openapi",
+          "resolved": false,
+          "confidence": 0,
+          "line": 347
+        },
+        {
+          "target": "get",
+          "resolved": false,
+          "confidence": 0,
+          "line": 349
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "autogpt_libs/auth/helpers_test.py:test_components_with_existing_responses:374",
+      "name": "test_components_with_existing_responses",
+      "startLine": 374,
+      "endLine": 405,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "FastAPI",
+          "resolved": false,
+          "confidence": 0,
+          "line": 376
+        },
+        {
+          "target": "patch",
+          "resolved": false,
+          "confidence": 0,
+          "line": 391
+        },
+        {
+          "target": "mock_get_openapi",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 391,
+          "resolvedId": "autogpt_libs/auth/helpers_test.py:mock_get_openapi:233"
+        },
+        {
+          "target": "add_auth_responses_to_openapi",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 393,
+          "resolvedId": "autogpt_libs/auth/helpers.py:add_auth_responses_to_openapi:6"
+        },
+        {
+          "target": "app",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 393,
+          "resolvedId": "autogpt_libs/auth/dependencies_test.py:app:26"
+        },
+        {
+          "target": "openapi",
+          "resolved": false,
+          "confidence": 0,
+          "line": 395
+        },
+        {
+          "target": "original_get_openapi",
+          "resolved": false,
+          "confidence": 0,
+          "line": 382
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "autogpt_libs/auth/helpers_test.py:mock_get_openapi:381",
+      "name": "mock_get_openapi",
+      "startLine": 381,
+      "endLine": 389,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "original_get_openapi",
+          "resolved": false,
+          "confidence": 0,
+          "line": 382
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "autogpt_libs/auth/helpers_test.py:test_openapi_schema_persistence:408",
+      "name": "test_openapi_schema_persistence",
+      "startLine": 408,
+      "endLine": 435,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "FastAPI",
+          "resolved": false,
+          "confidence": 0,
+          "line": 410
+        },
+        {
+          "target": "get",
+          "resolved": false,
+          "confidence": 0,
+          "line": 416
+        },
+        {
+          "target": "add_auth_responses_to_openapi",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 421,
+          "resolvedId": "autogpt_libs/auth/helpers.py:add_auth_responses_to_openapi:6"
+        },
+        {
+          "target": "app",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 421,
+          "resolvedId": "autogpt_libs/auth/dependencies_test.py:app:26"
+        },
+        {
+          "target": "openapi",
+          "resolved": false,
+          "confidence": 0,
+          "line": 424
+        },
+        {
+          "target": "openapi",
+          "resolved": false,
+          "confidence": 0,
+          "line": 431
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

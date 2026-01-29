@@ -1,0 +1,227 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.071Z",
+  "checksum": "9997398cb6467390",
+  "file": "src/app/(platform)/profile/(user)/dashboard/components/AgentTableRow/useAgentTableRow.ts",
+  "functions": [
+    {
+      "id": "src/app/(platform)/profile/(user)/dashboard/components/AgentTableRow/useAgentTableRow.ts:useAgentTableRow:32",
+      "name": "useAgentTableRow",
+      "startLine": 32,
+      "endLine": 98,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "onViewSubmission",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 53,
+          "resolvedId": "src/app/(platform)/profile/(user)/dashboard/components/MainDashboardPage/useMainDashboardPage.ts:onViewSubmission:71"
+        },
+        {
+          "target": "onEditSubmission",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 73,
+          "resolvedId": "src/app/(platform)/profile/(user)/dashboard/components/MainDashboardPage/useMainDashboardPage.ts:onEditSubmission:79"
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 89
+        },
+        {
+          "target": "onDeleteSubmission",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 94,
+          "resolvedId": "src/app/(platform)/profile/(user)/dashboard/components/MainDashboardPage/useMainDashboardPage.ts:onDeleteSubmission:116"
+        },
+        {
+          "target": "store_listing_version_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 94
+        },
+        {
+          "target": "onViewSubmission",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 53,
+          "resolvedId": "src/app/(platform)/profile/(user)/dashboard/components/MainDashboardPage/useMainDashboardPage.ts:onViewSubmission:71"
+        },
+        {
+          "target": "onEditSubmission",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 73,
+          "resolvedId": "src/app/(platform)/profile/(user)/dashboard/components/MainDashboardPage/useMainDashboardPage.ts:onEditSubmission:79"
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 89
+        },
+        {
+          "target": "onDeleteSubmission",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 94,
+          "resolvedId": "src/app/(platform)/profile/(user)/dashboard/components/MainDashboardPage/useMainDashboardPage.ts:onDeleteSubmission:116"
+        },
+        {
+          "target": "store_listing_version_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 94
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "Submission",
+          "operation": "write",
+          "line": 80,
+          "fields": []
+        },
+        {
+          "table": "submission",
+          "operation": "write",
+          "line": 80,
+          "fields": []
+        },
+        {
+          "table": "submission",
+          "operation": "delete",
+          "line": 90,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "src/app/(platform)/profile/(user)/dashboard/components/AgentTableRow/useAgentTableRow.ts:handleView:52",
+      "name": "handleView",
+      "startLine": 52,
+      "endLine": 70,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "onViewSubmission",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 53,
+          "resolvedId": "src/app/(platform)/profile/(user)/dashboard/components/MainDashboardPage/useMainDashboardPage.ts:onViewSubmission:71"
+        },
+        {
+          "target": "onViewSubmission",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 53,
+          "resolvedId": "src/app/(platform)/profile/(user)/dashboard/components/MainDashboardPage/useMainDashboardPage.ts:onViewSubmission:71"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/app/(platform)/profile/(user)/dashboard/components/AgentTableRow/useAgentTableRow.ts:handleEdit:72",
+      "name": "handleEdit",
+      "startLine": 72,
+      "endLine": 84,
+      "isEntryPoint": false,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "onEditSubmission",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 73,
+          "resolvedId": "src/app/(platform)/profile/(user)/dashboard/components/MainDashboardPage/useMainDashboardPage.ts:onEditSubmission:79"
+        },
+        {
+          "target": "onEditSubmission",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 73,
+          "resolvedId": "src/app/(platform)/profile/(user)/dashboard/components/MainDashboardPage/useMainDashboardPage.ts:onEditSubmission:79"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "Submission",
+          "operation": "write",
+          "line": 80,
+          "fields": []
+        },
+        {
+          "table": "submission",
+          "operation": "write",
+          "line": 80,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "src/app/(platform)/profile/(user)/dashboard/components/AgentTableRow/useAgentTableRow.ts:handleDelete:86",
+      "name": "handleDelete",
+      "startLine": 86,
+      "endLine": 95,
+      "isEntryPoint": false,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 89
+        },
+        {
+          "target": "onDeleteSubmission",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 94,
+          "resolvedId": "src/app/(platform)/profile/(user)/dashboard/components/MainDashboardPage/useMainDashboardPage.ts:onDeleteSubmission:116"
+        },
+        {
+          "target": "store_listing_version_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 94
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 89
+        },
+        {
+          "target": "onDeleteSubmission",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 94,
+          "resolvedId": "src/app/(platform)/profile/(user)/dashboard/components/MainDashboardPage/useMainDashboardPage.ts:onDeleteSubmission:116"
+        },
+        {
+          "target": "store_listing_version_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 94
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "submission",
+          "operation": "delete",
+          "line": 90,
+          "fields": []
+        }
+      ]
+    }
+  ]
+}

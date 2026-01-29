@@ -1,0 +1,2328 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.237Z",
+  "checksum": "c51893a5a202bddd",
+  "file": "backend/api/features/store/embeddings_e2e_test.py",
+  "functions": [
+    {
+      "id": "backend/api/features/store/embeddings_e2e_test.py:test_content_id:32",
+      "name": "test_content_id",
+      "startLine": 32,
+      "endLine": 34,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 34
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/store/embeddings_e2e_test.py:test_user_id:38",
+      "name": "test_user_id",
+      "startLine": 38,
+      "endLine": 40,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 40
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/store/embeddings_e2e_test.py:mock_embedding:44",
+      "name": "mock_embedding",
+      "startLine": 44,
+      "endLine": 52,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "float",
+          "resolved": false,
+          "confidence": 0,
+          "line": 49
+        },
+        {
+          "target": "range",
+          "resolved": false,
+          "confidence": 0,
+          "line": 49
+        },
+        {
+          "target": "sqrt",
+          "resolved": false,
+          "confidence": 0,
+          "line": 51
+        },
+        {
+          "target": "sum",
+          "resolved": false,
+          "confidence": 0,
+          "line": 51
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/store/embeddings_e2e_test.py:similar_embedding:56",
+      "name": "similar_embedding",
+      "startLine": 56,
+      "endLine": 63,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "float",
+          "resolved": false,
+          "confidence": 0,
+          "line": 61
+        },
+        {
+          "target": "range",
+          "resolved": false,
+          "confidence": 0,
+          "line": 61
+        },
+        {
+          "target": "sqrt",
+          "resolved": false,
+          "confidence": 0,
+          "line": 62
+        },
+        {
+          "target": "sum",
+          "resolved": false,
+          "confidence": 0,
+          "line": 62
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/store/embeddings_e2e_test.py:different_embedding:67",
+      "name": "different_embedding",
+      "startLine": 67,
+      "endLine": 74,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "float",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        },
+        {
+          "target": "range",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        },
+        {
+          "target": "sqrt",
+          "resolved": false,
+          "confidence": 0,
+          "line": 73
+        },
+        {
+          "target": "sum",
+          "resolved": false,
+          "confidence": 0,
+          "line": 73
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/store/embeddings_e2e_test.py:cleanup_embeddings:78",
+      "name": "cleanup_embeddings",
+      "startLine": 78,
+      "endLine": 94,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "delete_content_embedding",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 92,
+          "resolvedId": "backend/api/features/store/embeddings.py:delete_content_embedding:306"
+        },
+        {
+          "target": "content_type",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 92,
+          "resolvedId": "backend/api/features/store/content_handlers.py:content_type:37"
+        },
+        {
+          "target": "content_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 92
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 92
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/store/embeddings_e2e_test.py:test_store_content_embedding_store_agent:103",
+      "name": "test_store_content_embedding_store_agent",
+      "startLine": 103,
+      "endLine": 131,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 111
+        },
+        {
+          "target": "store_content_embedding",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 113,
+          "resolvedId": "backend/api/features/store/embeddings.py:store_content_embedding:125"
+        },
+        {
+          "target": "get_content_embedding",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 125,
+          "resolvedId": "backend/api/features/store/embeddings.py:get_content_embedding:201"
+        },
+        {
+          "target": "test_content_id",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 126,
+          "resolvedId": "backend/api/features/store/embeddings_e2e_test.py:test_content_id:32"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/store/embeddings_e2e_test.py:test_store_content_embedding_block:135",
+      "name": "test_store_content_embedding_block",
+      "startLine": 135,
+      "endLine": 159,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 142
+        },
+        {
+          "target": "store_content_embedding",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 144,
+          "resolvedId": "backend/api/features/store/embeddings.py:store_content_embedding:125"
+        },
+        {
+          "target": "get_content_embedding",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 155,
+          "resolvedId": "backend/api/features/store/embeddings.py:get_content_embedding:201"
+        },
+        {
+          "target": "test_content_id",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 156,
+          "resolvedId": "backend/api/features/store/embeddings_e2e_test.py:test_content_id:32"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "block",
+          "operation": "read",
+          "line": 155,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/api/features/store/embeddings_e2e_test.py:test_store_content_embedding_documentation:163",
+      "name": "test_store_content_embedding_documentation",
+      "startLine": 163,
+      "endLine": 187,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 170
+        },
+        {
+          "target": "store_content_embedding",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 172,
+          "resolvedId": "backend/api/features/store/embeddings.py:store_content_embedding:125"
+        },
+        {
+          "target": "get_content_embedding",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 183,
+          "resolvedId": "backend/api/features/store/embeddings.py:get_content_embedding:201"
+        },
+        {
+          "target": "test_content_id",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 184,
+          "resolvedId": "backend/api/features/store/embeddings_e2e_test.py:test_content_id:32"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/store/embeddings_e2e_test.py:test_store_content_embedding_upsert:191",
+      "name": "test_store_content_embedding_upsert",
+      "startLine": 191,
+      "endLine": 227,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 198
+        },
+        {
+          "target": "store_content_embedding",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 201,
+          "resolvedId": "backend/api/features/store/embeddings.py:store_content_embedding:125"
+        },
+        {
+          "target": "store_content_embedding",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 212,
+          "resolvedId": "backend/api/features/store/embeddings.py:store_content_embedding:125"
+        },
+        {
+          "target": "get_content_embedding",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 223,
+          "resolvedId": "backend/api/features/store/embeddings.py:get_content_embedding:201"
+        },
+        {
+          "target": "test_content_id",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 224,
+          "resolvedId": "backend/api/features/store/embeddings_e2e_test.py:test_content_id:32"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/store/embeddings_e2e_test.py:test_get_content_embedding_not_found:236",
+      "name": "test_get_content_embedding_not_found",
+      "startLine": 236,
+      "endLine": 241,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "get_content_embedding",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 238,
+          "resolvedId": "backend/api/features/store/embeddings.py:get_content_embedding:201"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/store/embeddings_e2e_test.py:test_get_content_embedding_with_metadata:245",
+      "name": "test_get_content_embedding_with_metadata",
+      "startLine": 245,
+      "endLine": 277,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 252
+        },
+        {
+          "target": "store_content_embedding",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 261,
+          "resolvedId": "backend/api/features/store/embeddings.py:store_content_embedding:125"
+        },
+        {
+          "target": "get_content_embedding",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 270,
+          "resolvedId": "backend/api/features/store/embeddings.py:get_content_embedding:201"
+        },
+        {
+          "target": "test_content_id",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 271,
+          "resolvedId": "backend/api/features/store/embeddings_e2e_test.py:test_content_id:32"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/store/embeddings_e2e_test.py:test_delete_content_embedding:286",
+      "name": "test_delete_content_embedding",
+      "startLine": 286,
+      "endLine": 318,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "store_content_embedding",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 293,
+          "resolvedId": "backend/api/features/store/embeddings.py:store_content_embedding:125"
+        },
+        {
+          "target": "get_content_embedding",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 303,
+          "resolvedId": "backend/api/features/store/embeddings.py:get_content_embedding:201"
+        },
+        {
+          "target": "test_content_id",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 304,
+          "resolvedId": "backend/api/features/store/embeddings_e2e_test.py:test_content_id:32"
+        },
+        {
+          "target": "delete_content_embedding",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 309,
+          "resolvedId": "backend/api/features/store/embeddings.py:delete_content_embedding:306"
+        },
+        {
+          "target": "test_content_id",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 310,
+          "resolvedId": "backend/api/features/store/embeddings_e2e_test.py:test_content_id:32"
+        },
+        {
+          "target": "get_content_embedding",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 315,
+          "resolvedId": "backend/api/features/store/embeddings.py:get_content_embedding:201"
+        },
+        {
+          "target": "test_content_id",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 316,
+          "resolvedId": "backend/api/features/store/embeddings_e2e_test.py:test_content_id:32"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/store/embeddings_e2e_test.py:test_delete_content_embedding_not_found:322",
+      "name": "test_delete_content_embedding_not_found",
+      "startLine": 322,
+      "endLine": 328,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "delete_content_embedding",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 324,
+          "resolvedId": "backend/api/features/store/embeddings.py:delete_content_embedding:306"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/store/embeddings_e2e_test.py:test_unified_hybrid_search_finds_matching_content:337",
+      "name": "test_unified_hybrid_search_finds_matching_content",
+      "startLine": 337,
+      "endLine": 389,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 344
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 345
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 346
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 348
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 349
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 350
+        },
+        {
+          "target": "store_content_embedding",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 353,
+          "resolvedId": "backend/api/features/store/embeddings.py:store_content_embedding:125"
+        },
+        {
+          "target": "store_content_embedding",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 362,
+          "resolvedId": "backend/api/features/store/embeddings.py:store_content_embedding:125"
+        },
+        {
+          "target": "store_content_embedding",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 371,
+          "resolvedId": "backend/api/features/store/embeddings.py:store_content_embedding:125"
+        },
+        {
+          "target": "unified_hybrid_search",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 381,
+          "resolvedId": "backend/api/features/store/hybrid_search.py:unified_hybrid_search:135"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/store/embeddings_e2e_test.py:test_unified_hybrid_search_filter_by_content_type:393",
+      "name": "test_unified_hybrid_search_filter_by_content_type",
+      "startLine": 393,
+      "endLine": 434,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 399
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 400
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 402
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 403
+        },
+        {
+          "target": "store_content_embedding",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 406,
+          "resolvedId": "backend/api/features/store/embeddings.py:store_content_embedding:125"
+        },
+        {
+          "target": "store_content_embedding",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 415,
+          "resolvedId": "backend/api/features/store/embeddings.py:store_content_embedding:125"
+        },
+        {
+          "target": "unified_hybrid_search",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 425,
+          "resolvedId": "backend/api/features/store/hybrid_search.py:unified_hybrid_search:135"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/store/embeddings_e2e_test.py:test_unified_hybrid_search_empty_query:438",
+      "name": "test_unified_hybrid_search_empty_query",
+      "startLine": 438,
+      "endLine": 447,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "unified_hybrid_search",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 440,
+          "resolvedId": "backend/api/features/store/hybrid_search.py:unified_hybrid_search:135"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/store/embeddings_e2e_test.py:test_unified_hybrid_search_pagination:451",
+      "name": "test_unified_hybrid_search_pagination",
+      "startLine": 451,
+      "endLine": 497,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "range",
+          "resolved": false,
+          "confidence": 0,
+          "line": 459
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 460
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 461
+        },
+        {
+          "target": "content_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 461
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 462
+        },
+        {
+          "target": "store_content_embedding",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 464,
+          "resolvedId": "backend/api/features/store/embeddings.py:store_content_embedding:125"
+        },
+        {
+          "target": "unified_hybrid_search",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 474,
+          "resolvedId": "backend/api/features/store/hybrid_search.py:unified_hybrid_search:135"
+        },
+        {
+          "target": "unified_hybrid_search",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 482,
+          "resolvedId": "backend/api/features/store/hybrid_search.py:unified_hybrid_search:135"
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 493
+        },
+        {
+          "target": "page1_results",
+          "resolved": false,
+          "confidence": 0,
+          "line": 493
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 493
+        },
+        {
+          "target": "page2_results",
+          "resolved": false,
+          "confidence": 0,
+          "line": 493
+        },
+        {
+          "target": "isdisjoint",
+          "resolved": false,
+          "confidence": 0,
+          "line": 497
+        },
+        {
+          "target": "page2_ids",
+          "resolved": false,
+          "confidence": 0,
+          "line": 497
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/store/embeddings_e2e_test.py:test_unified_hybrid_search_min_score_filtering:501",
+      "name": "test_unified_hybrid_search_min_score_filtering",
+      "startLine": 501,
+      "endLine": 538,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 507
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 508
+        },
+        {
+          "target": "store_content_embedding",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 510,
+          "resolvedId": "backend/api/features/store/embeddings.py:store_content_embedding:125"
+        },
+        {
+          "target": "unified_hybrid_search",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 520,
+          "resolvedId": "backend/api/features/store/hybrid_search.py:unified_hybrid_search:135"
+        },
+        {
+          "target": "unified_hybrid_search",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 529,
+          "resolvedId": "backend/api/features/store/hybrid_search.py:unified_hybrid_search:135"
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 538
+        },
+        {
+          "target": "results_high",
+          "resolved": false,
+          "confidence": 0,
+          "line": 538
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 538
+        },
+        {
+          "target": "results_low",
+          "resolved": false,
+          "confidence": 0,
+          "line": 538
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/store/embeddings_e2e_test.py:test_hybrid_search_store_agents_sql_valid:547",
+      "name": "test_hybrid_search_store_agents_sql_valid",
+      "startLine": 547,
+      "endLine": 560,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "hybrid_search",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 551,
+          "resolvedId": "backend/api/features/store/hybrid_search.py:hybrid_search:428"
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 558
+        },
+        {
+          "target": "results",
+          "resolved": false,
+          "confidence": 0,
+          "line": 558
+        },
+        {
+          "target": "list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 558
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 559
+        },
+        {
+          "target": "total",
+          "resolved": false,
+          "confidence": 0,
+          "line": 559
+        },
+        {
+          "target": "int",
+          "resolved": false,
+          "confidence": 0,
+          "line": 559
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/store/embeddings_e2e_test.py:test_hybrid_search_with_filters:564",
+      "name": "test_hybrid_search_with_filters",
+      "startLine": 564,
+      "endLine": 578,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "hybrid_search",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 567,
+          "resolvedId": "backend/api/features/store/hybrid_search.py:hybrid_search:428"
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 577
+        },
+        {
+          "target": "results",
+          "resolved": false,
+          "confidence": 0,
+          "line": 577
+        },
+        {
+          "target": "list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 577
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 578
+        },
+        {
+          "target": "total",
+          "resolved": false,
+          "confidence": 0,
+          "line": 578
+        },
+        {
+          "target": "int",
+          "resolved": false,
+          "confidence": 0,
+          "line": 578
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/store/embeddings_e2e_test.py:test_hybrid_search_pagination:582",
+      "name": "test_hybrid_search_pagination",
+      "startLine": 582,
+      "endLine": 607,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "hybrid_search",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 585,
+          "resolvedId": "backend/api/features/store/hybrid_search.py:hybrid_search:428"
+        },
+        {
+          "target": "hybrid_search",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 592,
+          "resolvedId": "backend/api/features/store/hybrid_search.py:hybrid_search:428"
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 599
+        },
+        {
+          "target": "results1",
+          "resolved": false,
+          "confidence": 0,
+          "line": 599
+        },
+        {
+          "target": "list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 599
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 600
+        },
+        {
+          "target": "results2",
+          "resolved": false,
+          "confidence": 0,
+          "line": 600
+        },
+        {
+          "target": "list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 600
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 601
+        },
+        {
+          "target": "total1",
+          "resolved": false,
+          "confidence": 0,
+          "line": 601
+        },
+        {
+          "target": "int",
+          "resolved": false,
+          "confidence": 0,
+          "line": 601
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 602
+        },
+        {
+          "target": "total2",
+          "resolved": false,
+          "confidence": 0,
+          "line": 602
+        },
+        {
+          "target": "int",
+          "resolved": false,
+          "confidence": 0,
+          "line": 602
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/store/embeddings_e2e_test.py:test_all_content_types_searchable:616",
+      "name": "test_all_content_types_searchable",
+      "startLine": 616,
+      "endLine": 632,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "unified_hybrid_search",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 623,
+          "resolvedId": "backend/api/features/store/hybrid_search.py:unified_hybrid_search:135"
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 631
+        },
+        {
+          "target": "results",
+          "resolved": false,
+          "confidence": 0,
+          "line": 631
+        },
+        {
+          "target": "list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 631
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 632
+        },
+        {
+          "target": "total",
+          "resolved": false,
+          "confidence": 0,
+          "line": 632
+        },
+        {
+          "target": "int",
+          "resolved": false,
+          "confidence": 0,
+          "line": 632
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/store/embeddings_e2e_test.py:test_multiple_content_types_searchable:636",
+      "name": "test_multiple_content_types_searchable",
+      "startLine": 636,
+      "endLine": 647,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "unified_hybrid_search",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 638,
+          "resolvedId": "backend/api/features/store/hybrid_search.py:unified_hybrid_search:135"
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 646
+        },
+        {
+          "target": "results",
+          "resolved": false,
+          "confidence": 0,
+          "line": 646
+        },
+        {
+          "target": "list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 646
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 647
+        },
+        {
+          "target": "total",
+          "resolved": false,
+          "confidence": 0,
+          "line": 647
+        },
+        {
+          "target": "int",
+          "resolved": false,
+          "confidence": 0,
+          "line": 647
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/store/embeddings_e2e_test.py:test_search_all_content_types_default:651",
+      "name": "test_search_all_content_types_default",
+      "startLine": 651,
+      "endLine": 662,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "unified_hybrid_search",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 653,
+          "resolvedId": "backend/api/features/store/hybrid_search.py:unified_hybrid_search:135"
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 661
+        },
+        {
+          "target": "results",
+          "resolved": false,
+          "confidence": 0,
+          "line": 661
+        },
+        {
+          "target": "list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 661
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 662
+        },
+        {
+          "target": "total",
+          "resolved": false,
+          "confidence": 0,
+          "line": 662
+        },
+        {
+          "target": "int",
+          "resolved": false,
+          "confidence": 0,
+          "line": 662
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/store/embeddings_e2e_test.py:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 667,
+      "isEntryPoint": false,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 34
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 40
+        },
+        {
+          "target": "float",
+          "resolved": false,
+          "confidence": 0,
+          "line": 49
+        },
+        {
+          "target": "range",
+          "resolved": false,
+          "confidence": 0,
+          "line": 49
+        },
+        {
+          "target": "sqrt",
+          "resolved": false,
+          "confidence": 0,
+          "line": 51
+        },
+        {
+          "target": "sum",
+          "resolved": false,
+          "confidence": 0,
+          "line": 51
+        },
+        {
+          "target": "float",
+          "resolved": false,
+          "confidence": 0,
+          "line": 61
+        },
+        {
+          "target": "range",
+          "resolved": false,
+          "confidence": 0,
+          "line": 61
+        },
+        {
+          "target": "sqrt",
+          "resolved": false,
+          "confidence": 0,
+          "line": 62
+        },
+        {
+          "target": "sum",
+          "resolved": false,
+          "confidence": 0,
+          "line": 62
+        },
+        {
+          "target": "float",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        },
+        {
+          "target": "range",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        },
+        {
+          "target": "sqrt",
+          "resolved": false,
+          "confidence": 0,
+          "line": 73
+        },
+        {
+          "target": "sum",
+          "resolved": false,
+          "confidence": 0,
+          "line": 73
+        },
+        {
+          "target": "delete_content_embedding",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 92,
+          "resolvedId": "backend/api/features/store/embeddings.py:delete_content_embedding:306"
+        },
+        {
+          "target": "content_type",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 92,
+          "resolvedId": "backend/api/features/store/content_handlers.py:content_type:37"
+        },
+        {
+          "target": "content_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 92
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 92
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 102
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 111
+        },
+        {
+          "target": "store_content_embedding",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 113,
+          "resolvedId": "backend/api/features/store/embeddings.py:store_content_embedding:125"
+        },
+        {
+          "target": "get_content_embedding",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 125,
+          "resolvedId": "backend/api/features/store/embeddings.py:get_content_embedding:201"
+        },
+        {
+          "target": "test_content_id",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 126,
+          "resolvedId": "backend/api/features/store/embeddings_e2e_test.py:test_content_id:32"
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 134
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 142
+        },
+        {
+          "target": "store_content_embedding",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 144,
+          "resolvedId": "backend/api/features/store/embeddings.py:store_content_embedding:125"
+        },
+        {
+          "target": "get_content_embedding",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 155,
+          "resolvedId": "backend/api/features/store/embeddings.py:get_content_embedding:201"
+        },
+        {
+          "target": "test_content_id",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 156,
+          "resolvedId": "backend/api/features/store/embeddings_e2e_test.py:test_content_id:32"
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 162
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 170
+        },
+        {
+          "target": "store_content_embedding",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 172,
+          "resolvedId": "backend/api/features/store/embeddings.py:store_content_embedding:125"
+        },
+        {
+          "target": "get_content_embedding",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 183,
+          "resolvedId": "backend/api/features/store/embeddings.py:get_content_embedding:201"
+        },
+        {
+          "target": "test_content_id",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 184,
+          "resolvedId": "backend/api/features/store/embeddings_e2e_test.py:test_content_id:32"
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 190
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 198
+        },
+        {
+          "target": "store_content_embedding",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 201,
+          "resolvedId": "backend/api/features/store/embeddings.py:store_content_embedding:125"
+        },
+        {
+          "target": "store_content_embedding",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 212,
+          "resolvedId": "backend/api/features/store/embeddings.py:store_content_embedding:125"
+        },
+        {
+          "target": "get_content_embedding",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 223,
+          "resolvedId": "backend/api/features/store/embeddings.py:get_content_embedding:201"
+        },
+        {
+          "target": "test_content_id",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 224,
+          "resolvedId": "backend/api/features/store/embeddings_e2e_test.py:test_content_id:32"
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 235
+        },
+        {
+          "target": "get_content_embedding",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 238,
+          "resolvedId": "backend/api/features/store/embeddings.py:get_content_embedding:201"
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 244
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 252
+        },
+        {
+          "target": "store_content_embedding",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 261,
+          "resolvedId": "backend/api/features/store/embeddings.py:store_content_embedding:125"
+        },
+        {
+          "target": "get_content_embedding",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 270,
+          "resolvedId": "backend/api/features/store/embeddings.py:get_content_embedding:201"
+        },
+        {
+          "target": "test_content_id",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 271,
+          "resolvedId": "backend/api/features/store/embeddings_e2e_test.py:test_content_id:32"
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 285
+        },
+        {
+          "target": "store_content_embedding",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 293,
+          "resolvedId": "backend/api/features/store/embeddings.py:store_content_embedding:125"
+        },
+        {
+          "target": "get_content_embedding",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 303,
+          "resolvedId": "backend/api/features/store/embeddings.py:get_content_embedding:201"
+        },
+        {
+          "target": "test_content_id",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 304,
+          "resolvedId": "backend/api/features/store/embeddings_e2e_test.py:test_content_id:32"
+        },
+        {
+          "target": "delete_content_embedding",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 309,
+          "resolvedId": "backend/api/features/store/embeddings.py:delete_content_embedding:306"
+        },
+        {
+          "target": "test_content_id",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 310,
+          "resolvedId": "backend/api/features/store/embeddings_e2e_test.py:test_content_id:32"
+        },
+        {
+          "target": "get_content_embedding",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 315,
+          "resolvedId": "backend/api/features/store/embeddings.py:get_content_embedding:201"
+        },
+        {
+          "target": "test_content_id",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 316,
+          "resolvedId": "backend/api/features/store/embeddings_e2e_test.py:test_content_id:32"
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 321
+        },
+        {
+          "target": "delete_content_embedding",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 324,
+          "resolvedId": "backend/api/features/store/embeddings.py:delete_content_embedding:306"
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 336
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 344
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 345
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 346
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 348
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 349
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 350
+        },
+        {
+          "target": "store_content_embedding",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 353,
+          "resolvedId": "backend/api/features/store/embeddings.py:store_content_embedding:125"
+        },
+        {
+          "target": "store_content_embedding",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 362,
+          "resolvedId": "backend/api/features/store/embeddings.py:store_content_embedding:125"
+        },
+        {
+          "target": "store_content_embedding",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 371,
+          "resolvedId": "backend/api/features/store/embeddings.py:store_content_embedding:125"
+        },
+        {
+          "target": "unified_hybrid_search",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 381,
+          "resolvedId": "backend/api/features/store/hybrid_search.py:unified_hybrid_search:135"
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 392
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 399
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 400
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 402
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 403
+        },
+        {
+          "target": "store_content_embedding",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 406,
+          "resolvedId": "backend/api/features/store/embeddings.py:store_content_embedding:125"
+        },
+        {
+          "target": "store_content_embedding",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 415,
+          "resolvedId": "backend/api/features/store/embeddings.py:store_content_embedding:125"
+        },
+        {
+          "target": "unified_hybrid_search",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 425,
+          "resolvedId": "backend/api/features/store/hybrid_search.py:unified_hybrid_search:135"
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 437
+        },
+        {
+          "target": "unified_hybrid_search",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 440,
+          "resolvedId": "backend/api/features/store/hybrid_search.py:unified_hybrid_search:135"
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 450
+        },
+        {
+          "target": "range",
+          "resolved": false,
+          "confidence": 0,
+          "line": 459
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 460
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 461
+        },
+        {
+          "target": "content_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 461
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 462
+        },
+        {
+          "target": "store_content_embedding",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 464,
+          "resolvedId": "backend/api/features/store/embeddings.py:store_content_embedding:125"
+        },
+        {
+          "target": "unified_hybrid_search",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 474,
+          "resolvedId": "backend/api/features/store/hybrid_search.py:unified_hybrid_search:135"
+        },
+        {
+          "target": "unified_hybrid_search",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 482,
+          "resolvedId": "backend/api/features/store/hybrid_search.py:unified_hybrid_search:135"
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 493
+        },
+        {
+          "target": "page1_results",
+          "resolved": false,
+          "confidence": 0,
+          "line": 493
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 493
+        },
+        {
+          "target": "page2_results",
+          "resolved": false,
+          "confidence": 0,
+          "line": 493
+        },
+        {
+          "target": "isdisjoint",
+          "resolved": false,
+          "confidence": 0,
+          "line": 497
+        },
+        {
+          "target": "page2_ids",
+          "resolved": false,
+          "confidence": 0,
+          "line": 497
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 500
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 507
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 508
+        },
+        {
+          "target": "store_content_embedding",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 510,
+          "resolvedId": "backend/api/features/store/embeddings.py:store_content_embedding:125"
+        },
+        {
+          "target": "unified_hybrid_search",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 520,
+          "resolvedId": "backend/api/features/store/hybrid_search.py:unified_hybrid_search:135"
+        },
+        {
+          "target": "unified_hybrid_search",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 529,
+          "resolvedId": "backend/api/features/store/hybrid_search.py:unified_hybrid_search:135"
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 538
+        },
+        {
+          "target": "results_high",
+          "resolved": false,
+          "confidence": 0,
+          "line": 538
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 538
+        },
+        {
+          "target": "results_low",
+          "resolved": false,
+          "confidence": 0,
+          "line": 538
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 546
+        },
+        {
+          "target": "hybrid_search",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 551,
+          "resolvedId": "backend/api/features/store/hybrid_search.py:hybrid_search:428"
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 558
+        },
+        {
+          "target": "results",
+          "resolved": false,
+          "confidence": 0,
+          "line": 558
+        },
+        {
+          "target": "list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 558
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 559
+        },
+        {
+          "target": "total",
+          "resolved": false,
+          "confidence": 0,
+          "line": 559
+        },
+        {
+          "target": "int",
+          "resolved": false,
+          "confidence": 0,
+          "line": 559
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 563
+        },
+        {
+          "target": "hybrid_search",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 567,
+          "resolvedId": "backend/api/features/store/hybrid_search.py:hybrid_search:428"
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 577
+        },
+        {
+          "target": "results",
+          "resolved": false,
+          "confidence": 0,
+          "line": 577
+        },
+        {
+          "target": "list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 577
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 578
+        },
+        {
+          "target": "total",
+          "resolved": false,
+          "confidence": 0,
+          "line": 578
+        },
+        {
+          "target": "int",
+          "resolved": false,
+          "confidence": 0,
+          "line": 578
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 581
+        },
+        {
+          "target": "hybrid_search",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 585,
+          "resolvedId": "backend/api/features/store/hybrid_search.py:hybrid_search:428"
+        },
+        {
+          "target": "hybrid_search",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 592,
+          "resolvedId": "backend/api/features/store/hybrid_search.py:hybrid_search:428"
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 599
+        },
+        {
+          "target": "results1",
+          "resolved": false,
+          "confidence": 0,
+          "line": 599
+        },
+        {
+          "target": "list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 599
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 600
+        },
+        {
+          "target": "results2",
+          "resolved": false,
+          "confidence": 0,
+          "line": 600
+        },
+        {
+          "target": "list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 600
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 601
+        },
+        {
+          "target": "total1",
+          "resolved": false,
+          "confidence": 0,
+          "line": 601
+        },
+        {
+          "target": "int",
+          "resolved": false,
+          "confidence": 0,
+          "line": 601
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 602
+        },
+        {
+          "target": "total2",
+          "resolved": false,
+          "confidence": 0,
+          "line": 602
+        },
+        {
+          "target": "int",
+          "resolved": false,
+          "confidence": 0,
+          "line": 602
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 615
+        },
+        {
+          "target": "unified_hybrid_search",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 623,
+          "resolvedId": "backend/api/features/store/hybrid_search.py:unified_hybrid_search:135"
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 631
+        },
+        {
+          "target": "results",
+          "resolved": false,
+          "confidence": 0,
+          "line": 631
+        },
+        {
+          "target": "list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 631
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 632
+        },
+        {
+          "target": "total",
+          "resolved": false,
+          "confidence": 0,
+          "line": 632
+        },
+        {
+          "target": "int",
+          "resolved": false,
+          "confidence": 0,
+          "line": 632
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 635
+        },
+        {
+          "target": "unified_hybrid_search",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 638,
+          "resolvedId": "backend/api/features/store/hybrid_search.py:unified_hybrid_search:135"
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 646
+        },
+        {
+          "target": "results",
+          "resolved": false,
+          "confidence": 0,
+          "line": 646
+        },
+        {
+          "target": "list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 646
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 647
+        },
+        {
+          "target": "total",
+          "resolved": false,
+          "confidence": 0,
+          "line": 647
+        },
+        {
+          "target": "int",
+          "resolved": false,
+          "confidence": 0,
+          "line": 647
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 650
+        },
+        {
+          "target": "unified_hybrid_search",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 653,
+          "resolvedId": "backend/api/features/store/hybrid_search.py:unified_hybrid_search:135"
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 661
+        },
+        {
+          "target": "results",
+          "resolved": false,
+          "confidence": 0,
+          "line": 661
+        },
+        {
+          "target": "list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 661
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 662
+        },
+        {
+          "target": "total",
+          "resolved": false,
+          "confidence": 0,
+          "line": 662
+        },
+        {
+          "target": "int",
+          "resolved": false,
+          "confidence": 0,
+          "line": 662
+        },
+        {
+          "target": "main",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 666,
+          "resolvedId": "backend/check_store_data.py:main:149"
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 102
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 134
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 162
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 190
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 235
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 244
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 285
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 321
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 336
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 392
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 437
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 450
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 500
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 546
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 563
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 581
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 615
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 635
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 650
+        },
+        {
+          "target": "main",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 666,
+          "resolvedId": "backend/check_store_data.py:main:149"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "block",
+          "operation": "read",
+          "line": 155,
+          "fields": []
+        }
+      ]
+    }
+  ]
+}

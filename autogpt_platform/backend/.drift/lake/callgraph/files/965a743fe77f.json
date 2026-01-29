@@ -1,0 +1,376 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.190Z",
+  "checksum": "6aa28c716cd46bd9",
+  "file": "backend/data/model_test.py",
+  "functions": [
+    {
+      "id": "backend/data/model_test.py:test_host_scoped_credentials_creation:8",
+      "name": "test_host_scoped_credentials_creation",
+      "startLine": 8,
+      "endLine": 26,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "HostScopedCredentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 10
+        },
+        {
+          "target": "SecretStr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 14
+        },
+        {
+          "target": "SecretStr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 15
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 24
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/model_test.py:test_get_headers_dict:28",
+      "name": "test_get_headers_dict",
+      "startLine": 28,
+      "endLine": 44,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "HostScopedCredentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 30
+        },
+        {
+          "target": "SecretStr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 34
+        },
+        {
+          "target": "SecretStr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 35
+        },
+        {
+          "target": "get_headers_dict",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 39,
+          "resolvedId": "backend/data/model.py:get_headers_dict:386"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/model_test.py:test_matches_url_exact_host:46",
+      "name": "test_matches_url_exact_host",
+      "startLine": 46,
+      "endLine": 57,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "HostScopedCredentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 48
+        },
+        {
+          "target": "SecretStr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 51
+        },
+        {
+          "target": "matches_url",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 54,
+          "resolvedId": "backend/data/model.py:matches_url:397"
+        },
+        {
+          "target": "matches_url",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 55,
+          "resolvedId": "backend/data/model.py:matches_url:397"
+        },
+        {
+          "target": "matches_url",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 56,
+          "resolvedId": "backend/data/model.py:matches_url:397"
+        },
+        {
+          "target": "matches_url",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 57,
+          "resolvedId": "backend/data/model.py:matches_url:397"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/model_test.py:test_matches_url_wildcard_subdomain:59",
+      "name": "test_matches_url_wildcard_subdomain",
+      "startLine": 59,
+      "endLine": 72,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "HostScopedCredentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 61
+        },
+        {
+          "target": "SecretStr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 64
+        },
+        {
+          "target": "matches_url",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 67,
+          "resolvedId": "backend/data/model.py:matches_url:397"
+        },
+        {
+          "target": "matches_url",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 68,
+          "resolvedId": "backend/data/model.py:matches_url:397"
+        },
+        {
+          "target": "matches_url",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 69,
+          "resolvedId": "backend/data/model.py:matches_url:397"
+        },
+        {
+          "target": "matches_url",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 70,
+          "resolvedId": "backend/data/model.py:matches_url:397"
+        },
+        {
+          "target": "matches_url",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 71,
+          "resolvedId": "backend/data/model.py:matches_url:397"
+        },
+        {
+          "target": "matches_url",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 72,
+          "resolvedId": "backend/data/model.py:matches_url:397"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/model_test.py:test_matches_url_with_port_and_path:74",
+      "name": "test_matches_url_with_port_and_path",
+      "startLine": 74,
+      "endLine": 84,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "HostScopedCredentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 76
+        },
+        {
+          "target": "SecretStr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 79
+        },
+        {
+          "target": "matches_url",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 82,
+          "resolvedId": "backend/data/model.py:matches_url:397"
+        },
+        {
+          "target": "matches_url",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 83,
+          "resolvedId": "backend/data/model.py:matches_url:397"
+        },
+        {
+          "target": "matches_url",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 84,
+          "resolvedId": "backend/data/model.py:matches_url:397"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/model_test.py:test_empty_headers_dict:86",
+      "name": "test_empty_headers_dict",
+      "startLine": 86,
+      "endLine": 93,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "HostScopedCredentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 88
+        },
+        {
+          "target": "get_headers_dict",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 92,
+          "resolvedId": "backend/data/model.py:get_headers_dict:386"
+        },
+        {
+          "target": "matches_url",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 93,
+          "resolvedId": "backend/data/model.py:matches_url:397"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/model_test.py:test_credential_serialization:95",
+      "name": "test_credential_serialization",
+      "startLine": 95,
+      "endLine": 120,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "HostScopedCredentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 97
+        },
+        {
+          "target": "SecretStr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 101
+        },
+        {
+          "target": "SecretStr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 102
+        },
+        {
+          "target": "model_dump",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 108,
+          "resolvedId": "backend/blocks/apollo/models.py:model_dump:11"
+        },
+        {
+          "target": "model_validate",
+          "resolved": false,
+          "confidence": 0,
+          "line": 111
+        },
+        {
+          "target": "serialized",
+          "resolved": false,
+          "confidence": 0,
+          "line": 111
+        },
+        {
+          "target": "get_headers_dict",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 120,
+          "resolvedId": "backend/data/model.py:get_headers_dict:386"
+        },
+        {
+          "target": "get_headers_dict",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 120,
+          "resolvedId": "backend/data/model.py:get_headers_dict:386"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/model_test.py:test_url_matching_parametrized:135",
+      "name": "test_url_matching_parametrized",
+      "startLine": 135,
+      "endLine": 143,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "HostScopedCredentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 137
+        },
+        {
+          "target": "SecretStr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 140
+        },
+        {
+          "target": "matches_url",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 143,
+          "resolvedId": "backend/data/model.py:matches_url:397"
+        },
+        {
+          "target": "test_url",
+          "resolved": false,
+          "confidence": 0,
+          "line": 143
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

@@ -1,0 +1,528 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.201Z",
+  "checksum": "e2215c5573d7eb3a",
+  "file": "backend/api/features/chat/model_test.py",
+  "functions": [
+    {
+      "id": "backend/api/features/chat/model_test.py:test_chatsession_serialization_deserialization:36",
+      "name": "test_chatsession_serialization_deserialization",
+      "startLine": 36,
+      "endLine": 42,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "new",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 37,
+          "resolvedId": "backend/api/features/chat/model.py:new:108"
+        },
+        {
+          "target": "Usage",
+          "resolved": false,
+          "confidence": 0,
+          "line": 39
+        },
+        {
+          "target": "model_dump_json",
+          "resolved": false,
+          "confidence": 0,
+          "line": 40
+        },
+        {
+          "target": "model_validate_json",
+          "resolved": false,
+          "confidence": 0,
+          "line": 41
+        },
+        {
+          "target": "serialized",
+          "resolved": false,
+          "confidence": 0,
+          "line": 41
+        },
+        {
+          "target": "model_dump",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 42,
+          "resolvedId": "backend/blocks/apollo/models.py:model_dump:11"
+        },
+        {
+          "target": "model_dump",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 42,
+          "resolvedId": "backend/blocks/apollo/models.py:model_dump:11"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/chat/model_test.py:test_chatsession_redis_storage:46",
+      "name": "test_chatsession_redis_storage",
+      "startLine": 46,
+      "endLine": 58,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "new",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 48,
+          "resolvedId": "backend/api/features/chat/model.py:new:108"
+        },
+        {
+          "target": "upsert_chat_session",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 51,
+          "resolvedId": "backend/api/features/chat/model.py:upsert_chat_session:442"
+        },
+        {
+          "target": "s",
+          "resolved": false,
+          "confidence": 0,
+          "line": 51
+        },
+        {
+          "target": "get_chat_session",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 53,
+          "resolvedId": "backend/api/features/chat/model.py:get_chat_session:387"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/chat/model_test.py:test_chatsession_redis_storage_user_id_mismatch:62",
+      "name": "test_chatsession_redis_storage_user_id_mismatch",
+      "startLine": 62,
+      "endLine": 72,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "new",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 66,
+          "resolvedId": "backend/api/features/chat/model.py:new:108"
+        },
+        {
+          "target": "upsert_chat_session",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 68,
+          "resolvedId": "backend/api/features/chat/model.py:upsert_chat_session:442"
+        },
+        {
+          "target": "s",
+          "resolved": false,
+          "confidence": 0,
+          "line": 68
+        },
+        {
+          "target": "get_chat_session",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 70,
+          "resolvedId": "backend/api/features/chat/model.py:get_chat_session:387"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/chat/model_test.py:test_chatsession_db_storage:76",
+      "name": "test_chatsession_db_storage",
+      "startLine": 76,
+      "endLine": 119,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "new",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 81,
+          "resolvedId": "backend/api/features/chat/model.py:new:108"
+        },
+        {
+          "target": "upsert_chat_session",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 85,
+          "resolvedId": "backend/api/features/chat/model.py:upsert_chat_session:442"
+        },
+        {
+          "target": "s",
+          "resolved": false,
+          "confidence": 0,
+          "line": 85
+        },
+        {
+          "target": "get_redis_async",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 89,
+          "resolvedId": "backend/data/redis_client.py:get_redis_async:61"
+        },
+        {
+          "target": "delete",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 90,
+          "resolvedId": "backend/integrations/creds_manager.py:delete:166"
+        },
+        {
+          "target": "redis_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 90
+        },
+        {
+          "target": "get_chat_session",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 93,
+          "resolvedId": "backend/api/features/chat/model.py:get_chat_session:387"
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 99
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 99
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 101
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 101
+        },
+        {
+          "target": "zip",
+          "resolved": false,
+          "confidence": 0,
+          "line": 110
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 119
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 119
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/chat/model_test.py:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 120,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "ChatMessage",
+          "resolved": false,
+          "confidence": 0,
+          "line": 12
+        },
+        {
+          "target": "ChatMessage",
+          "resolved": false,
+          "confidence": 0,
+          "line": 13
+        },
+        {
+          "target": "ChatMessage",
+          "resolved": false,
+          "confidence": 0,
+          "line": 27
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 35
+        },
+        {
+          "target": "new",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 37,
+          "resolvedId": "backend/api/features/chat/model.py:new:108"
+        },
+        {
+          "target": "Usage",
+          "resolved": false,
+          "confidence": 0,
+          "line": 39
+        },
+        {
+          "target": "model_dump_json",
+          "resolved": false,
+          "confidence": 0,
+          "line": 40
+        },
+        {
+          "target": "model_validate_json",
+          "resolved": false,
+          "confidence": 0,
+          "line": 41
+        },
+        {
+          "target": "serialized",
+          "resolved": false,
+          "confidence": 0,
+          "line": 41
+        },
+        {
+          "target": "model_dump",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 42,
+          "resolvedId": "backend/blocks/apollo/models.py:model_dump:11"
+        },
+        {
+          "target": "model_dump",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 42,
+          "resolvedId": "backend/blocks/apollo/models.py:model_dump:11"
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 45
+        },
+        {
+          "target": "new",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 48,
+          "resolvedId": "backend/api/features/chat/model.py:new:108"
+        },
+        {
+          "target": "upsert_chat_session",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 51,
+          "resolvedId": "backend/api/features/chat/model.py:upsert_chat_session:442"
+        },
+        {
+          "target": "s",
+          "resolved": false,
+          "confidence": 0,
+          "line": 51
+        },
+        {
+          "target": "get_chat_session",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 53,
+          "resolvedId": "backend/api/features/chat/model.py:get_chat_session:387"
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 61
+        },
+        {
+          "target": "new",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 66,
+          "resolvedId": "backend/api/features/chat/model.py:new:108"
+        },
+        {
+          "target": "upsert_chat_session",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 68,
+          "resolvedId": "backend/api/features/chat/model.py:upsert_chat_session:442"
+        },
+        {
+          "target": "s",
+          "resolved": false,
+          "confidence": 0,
+          "line": 68
+        },
+        {
+          "target": "get_chat_session",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 70,
+          "resolvedId": "backend/api/features/chat/model.py:get_chat_session:387"
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 75
+        },
+        {
+          "target": "new",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 81,
+          "resolvedId": "backend/api/features/chat/model.py:new:108"
+        },
+        {
+          "target": "upsert_chat_session",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 85,
+          "resolvedId": "backend/api/features/chat/model.py:upsert_chat_session:442"
+        },
+        {
+          "target": "s",
+          "resolved": false,
+          "confidence": 0,
+          "line": 85
+        },
+        {
+          "target": "get_redis_async",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 89,
+          "resolvedId": "backend/data/redis_client.py:get_redis_async:61"
+        },
+        {
+          "target": "delete",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 90,
+          "resolvedId": "backend/integrations/creds_manager.py:delete:166"
+        },
+        {
+          "target": "redis_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 90
+        },
+        {
+          "target": "get_chat_session",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 93,
+          "resolvedId": "backend/api/features/chat/model.py:get_chat_session:387"
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 99
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 99
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 101
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 101
+        },
+        {
+          "target": "zip",
+          "resolved": false,
+          "confidence": 0,
+          "line": 110
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 119
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 119
+        },
+        {
+          "target": "ChatMessage",
+          "resolved": false,
+          "confidence": 0,
+          "line": 12
+        },
+        {
+          "target": "ChatMessage",
+          "resolved": false,
+          "confidence": 0,
+          "line": 13
+        },
+        {
+          "target": "ChatMessage",
+          "resolved": false,
+          "confidence": 0,
+          "line": 27
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 35
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 45
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 61
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 75
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

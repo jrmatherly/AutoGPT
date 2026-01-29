@@ -1,0 +1,1931 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.128Z",
+  "checksum": "2821131d4b52e2e0",
+  "file": "backend/api/rest_api.py",
+  "functions": [
+    {
+      "id": "backend/api/rest_api.py:launch_darkly_context:71",
+      "name": "launch_darkly_context",
+      "startLine": 71,
+      "endLine": 79,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "initialize_launchdarkly",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 73,
+          "resolvedId": "backend/util/feature_flag.py:initialize_launchdarkly:55"
+        },
+        {
+          "target": "shutdown_launchdarkly",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 77,
+          "resolvedId": "backend/util/feature_flag.py:shutdown_launchdarkly:76"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/rest_api.py:lifespan_context:83",
+      "name": "lifespan_context",
+      "startLine": 83,
+      "endLine": 128,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "verify_auth_settings",
+          "resolved": false,
+          "confidence": 0,
+          "line": 84
+        },
+        {
+          "target": "connect",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 86,
+          "resolvedId": "backend/data/rabbitmq.py:connect:102"
+        },
+        {
+          "target": "Config",
+          "resolved": false,
+          "confidence": 0,
+          "line": 94
+        },
+        {
+          "target": "current_default_thread_limiter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 98
+        },
+        {
+          "target": "info",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 101,
+          "resolvedId": "backend/util/logging.py:info:41"
+        },
+        {
+          "target": "warning",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 105,
+          "resolvedId": "backend/util/logging.py:warning:45"
+        },
+        {
+          "target": "patch_integrations",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 111,
+          "resolvedId": "backend/sdk/registry.py:patch_integrations:166"
+        },
+        {
+          "target": "initialize_blocks",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 113,
+          "resolvedId": "test/load_store_agents.py:initialize_blocks:47"
+        },
+        {
+          "target": "migrate_and_encrypt_user_integrations",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 115,
+          "resolvedId": "backend/data/user.py:migrate_and_encrypt_user_integrations:138"
+        },
+        {
+          "target": "fix_llm_provider_credentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 116
+        },
+        {
+          "target": "migrate_llm_models",
+          "resolved": false,
+          "confidence": 0,
+          "line": 117
+        },
+        {
+          "target": "migrate_legacy_triggered_graphs",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 118,
+          "resolvedId": "backend/integrations/webhooks/utils.py:migrate_legacy_triggered_graphs:149"
+        },
+        {
+          "target": "launch_darkly_context",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 120,
+          "resolvedId": "backend/api/rest_api.py:launch_darkly_context:71"
+        },
+        {
+          "target": "shutdown_cloud_storage_handler",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 124,
+          "resolvedId": "backend/util/cloud_storage.py:shutdown_cloud_storage_handler:628"
+        },
+        {
+          "target": "warning",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 126,
+          "resolvedId": "backend/util/logging.py:warning:45"
+        },
+        {
+          "target": "disconnect",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 128,
+          "resolvedId": "backend/data/rabbitmq.py:disconnect:107"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/rest_api.py:custom_generate_unique_id:131",
+      "name": "custom_generate_unique_id",
+      "startLine": 131,
+      "endLine": 155,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "lower",
+          "resolved": false,
+          "confidence": 0,
+          "line": 138
+        },
+        {
+          "target": "list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 138
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 140
+        },
+        {
+          "target": "first_tag",
+          "resolved": false,
+          "confidence": 0,
+          "line": 140
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 143
+        },
+        {
+          "target": "first_tag",
+          "resolved": false,
+          "confidence": 0,
+          "line": 143
+        },
+        {
+          "target": "join",
+          "resolved": false,
+          "confidence": 0,
+          "line": 145
+        },
+        {
+          "target": "capitalize",
+          "resolved": false,
+          "confidence": 0,
+          "line": 145
+        },
+        {
+          "target": "split",
+          "resolved": false,
+          "confidence": 0,
+          "line": 145
+        },
+        {
+          "target": "join",
+          "resolved": false,
+          "confidence": 0,
+          "line": 150
+        },
+        {
+          "target": "capitalize",
+          "resolved": false,
+          "confidence": 0,
+          "line": 150
+        },
+        {
+          "target": "split",
+          "resolved": false,
+          "confidence": 0,
+          "line": 150
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 150
+        },
+        {
+          "target": "summary",
+          "resolved": false,
+          "confidence": 0,
+          "line": 150
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/rest_api.py:handle_internal_http_error:198",
+      "name": "handle_internal_http_error",
+      "startLine": 198,
+      "endLine": 223,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "exception",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 201,
+          "resolvedId": "backend/util/logging.py:exception:57"
+        },
+        {
+          "target": "exc",
+          "resolved": false,
+          "confidence": 0,
+          "line": 205
+        },
+        {
+          "target": "JSONResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 214
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 217
+        },
+        {
+          "target": "exc",
+          "resolved": false,
+          "confidence": 0,
+          "line": 217
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/rest_api.py:handler:199",
+      "name": "handler",
+      "startLine": 199,
+      "endLine": 221,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "exception",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 201,
+          "resolvedId": "backend/util/logging.py:exception:57"
+        },
+        {
+          "target": "exc",
+          "resolved": false,
+          "confidence": 0,
+          "line": 205
+        },
+        {
+          "target": "JSONResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 214
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 217
+        },
+        {
+          "target": "exc",
+          "resolved": false,
+          "confidence": 0,
+          "line": 217
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/rest_api.py:validation_error_handler:226",
+      "name": "validation_error_handler",
+      "startLine": 226,
+      "endLine": 253,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 229,
+          "resolvedId": "backend/util/logging.py:error:49"
+        },
+        {
+          "target": "exc",
+          "resolved": false,
+          "confidence": 0,
+          "line": 233
+        },
+        {
+          "target": "hasattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 236
+        },
+        {
+          "target": "exc",
+          "resolved": false,
+          "confidence": 0,
+          "line": 236
+        },
+        {
+          "target": "errors",
+          "resolved": false,
+          "confidence": 0,
+          "line": 237
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 239
+        },
+        {
+          "target": "exc",
+          "resolved": false,
+          "confidence": 0,
+          "line": 239
+        },
+        {
+          "target": "dumps",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 247,
+          "resolvedId": "backend/util/json.py:dumps:20"
+        },
+        {
+          "target": "response_content",
+          "resolved": false,
+          "confidence": 0,
+          "line": 247
+        },
+        {
+          "target": "Response",
+          "resolved": false,
+          "confidence": 0,
+          "line": 249
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/rest_api.py:health:334",
+      "name": "health",
+      "startLine": 334,
+      "endLine": 337,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "is_connected",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 335,
+          "resolvedId": "backend/data/rabbitmq.py:is_connected:92"
+        },
+        {
+          "target": "UnhealthyServiceError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 336
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/rest_api.py:run:341",
+      "name": "run",
+      "startLine": 341,
+      "endLine": 374,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "build_cors_params",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 342,
+          "resolvedId": "backend/api/utils/cors.py:build_cors_params:14"
+        },
+        {
+          "target": "CORSMiddleware",
+          "resolved": false,
+          "confidence": 0,
+          "line": 347
+        },
+        {
+          "target": "run",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 363,
+          "resolvedId": "backend/api/rest_api.py:run:341"
+        },
+        {
+          "target": "system",
+          "resolved": false,
+          "confidence": 0,
+          "line": 371
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/rest_api.py:test_execute_graph:377",
+      "name": "test_execute_graph",
+      "startLine": 377,
+      "endLine": 389,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "execute_graph",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 383,
+          "resolvedId": "backend/executor/cluster_lock_test.py:execute_graph:411"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/rest_api.py:test_get_graph:392",
+      "name": "test_get_graph",
+      "startLine": 392,
+      "endLine": 400,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "get_graph",
+          "resolved": false,
+          "confidence": 0,
+          "line": 398
+        },
+        {
+          "target": "graph_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 399
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 399
+        },
+        {
+          "target": "graph_version",
+          "resolved": false,
+          "confidence": 0,
+          "line": 399
+        },
+        {
+          "target": "for_export",
+          "resolved": false,
+          "confidence": 0,
+          "line": 399
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "backend",
+          "operation": "read",
+          "line": 398,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/api/rest_api.py:test_create_graph:403",
+      "name": "test_create_graph",
+      "startLine": 403,
+      "endLine": 407,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "create_new_graph",
+          "resolved": false,
+          "confidence": 0,
+          "line": 407
+        },
+        {
+          "target": "create_graph",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 407,
+          "resolvedId": "backend/executor/manager_test.py:create_graph:34"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 407
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/rest_api.py:test_get_graph_run_status:410",
+      "name": "test_get_graph_run_status",
+      "startLine": 410,
+      "endLine": 418,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "get_graph_execution_meta",
+          "resolved": false,
+          "confidence": 0,
+          "line": 413
+        },
+        {
+          "target": "ValueError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 417
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/rest_api.py:test_delete_graph:421",
+      "name": "test_delete_graph",
+      "startLine": 421,
+      "endLine": 426,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "delete_library_agent_by_graph_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 423
+        },
+        {
+          "target": "delete_graph",
+          "resolved": false,
+          "confidence": 0,
+          "line": 426
+        },
+        {
+          "target": "graph_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 426
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 426
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/rest_api.py:test_get_presets:429",
+      "name": "test_get_presets",
+      "startLine": 429,
+      "endLine": 432,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "list_presets",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 430,
+          "resolvedId": "backend/api/features/library/routes/presets.py:list_presets:34"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/rest_api.py:test_get_preset:435",
+      "name": "test_get_preset",
+      "startLine": 435,
+      "endLine": 438,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "get_preset",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 436,
+          "resolvedId": "backend/api/features/library/routes/presets.py:get_preset:73"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "backend",
+          "operation": "read",
+          "line": 436,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/api/rest_api.py:test_create_preset:441",
+      "name": "test_create_preset",
+      "startLine": 441,
+      "endLine": 447,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "create_preset",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 445,
+          "resolvedId": "backend/api/features/library/routes/presets.py:create_preset:113"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/rest_api.py:test_update_preset:450",
+      "name": "test_update_preset",
+      "startLine": 450,
+      "endLine": 457,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "update_preset",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 455,
+          "resolvedId": "backend/api/features/library/routes/presets.py:update_preset:212"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/rest_api.py:test_delete_preset:460",
+      "name": "test_delete_preset",
+      "startLine": 460,
+      "endLine": 463,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "delete_preset",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 461,
+          "resolvedId": "backend/api/features/library/routes/presets.py:delete_preset:317"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/rest_api.py:test_execute_preset:466",
+      "name": "test_execute_preset",
+      "startLine": 466,
+      "endLine": 476,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "execute_preset",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 471,
+          "resolvedId": "backend/api/features/library/routes/presets.py:execute_preset:371"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/rest_api.py:test_create_store_listing:479",
+      "name": "test_create_store_listing",
+      "startLine": 479,
+      "endLine": 484,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "create_submission",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 482,
+          "resolvedId": "backend/api/features/store/routes.py:create_submission:514"
+        },
+        {
+          "target": "request",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 483,
+          "resolvedId": "backend/util/request.py:request:359"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 483
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/rest_api.py:test_review_store_listing:489",
+      "name": "test_review_store_listing",
+      "startLine": 489,
+      "endLine": 495,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "review_submission",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 493,
+          "resolvedId": "backend/api/features/admin/store_admin_routes.py:review_submission:73"
+        },
+        {
+          "target": "request",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 494,
+          "resolvedId": "backend/util/request.py:request:359"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 494
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/rest_api.py:test_create_credentials:498",
+      "name": "test_create_credentials",
+      "startLine": 498,
+      "endLine": 515,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "create_credentials",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 506,
+          "resolvedId": "backend/api/features/integrations/router.py:create_credentials:255"
+        },
+        {
+          "target": "error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 510,
+          "resolvedId": "backend/util/logging.py:error:49"
+        },
+        {
+          "target": "get_credential",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 511,
+          "resolvedId": "backend/api/features/integrations/router.py:get_credential:234"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/rest_api.py:set_test_dependency_overrides:517",
+      "name": "set_test_dependency_overrides",
+      "startLine": 517,
+      "endLine": 518,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "update",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 518,
+          "resolvedId": "backend/integrations/creds_manager.py:update:162"
+        },
+        {
+          "target": "overrides",
+          "resolved": false,
+          "confidence": 0,
+          "line": 518
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "dependency_overrides",
+          "operation": "write",
+          "line": 518,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/api/rest_api.py:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 519,
+      "isEntryPoint": false,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "Settings",
+          "resolved": false,
+          "confidence": 0,
+          "line": 64
+        },
+        {
+          "target": "getLogger",
+          "resolved": false,
+          "confidence": 0,
+          "line": 65
+        },
+        {
+          "target": "setLevel",
+          "resolved": false,
+          "confidence": 0,
+          "line": 67
+        },
+        {
+          "target": "initialize_launchdarkly",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 73,
+          "resolvedId": "backend/util/feature_flag.py:initialize_launchdarkly:55"
+        },
+        {
+          "target": "shutdown_launchdarkly",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 77,
+          "resolvedId": "backend/util/feature_flag.py:shutdown_launchdarkly:76"
+        },
+        {
+          "target": "verify_auth_settings",
+          "resolved": false,
+          "confidence": 0,
+          "line": 84
+        },
+        {
+          "target": "connect",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 86,
+          "resolvedId": "backend/data/rabbitmq.py:connect:102"
+        },
+        {
+          "target": "Config",
+          "resolved": false,
+          "confidence": 0,
+          "line": 94
+        },
+        {
+          "target": "current_default_thread_limiter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 98
+        },
+        {
+          "target": "info",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 101,
+          "resolvedId": "backend/util/logging.py:info:41"
+        },
+        {
+          "target": "warning",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 105,
+          "resolvedId": "backend/util/logging.py:warning:45"
+        },
+        {
+          "target": "patch_integrations",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 111,
+          "resolvedId": "backend/sdk/registry.py:patch_integrations:166"
+        },
+        {
+          "target": "initialize_blocks",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 113,
+          "resolvedId": "test/load_store_agents.py:initialize_blocks:47"
+        },
+        {
+          "target": "migrate_and_encrypt_user_integrations",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 115,
+          "resolvedId": "backend/data/user.py:migrate_and_encrypt_user_integrations:138"
+        },
+        {
+          "target": "fix_llm_provider_credentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 116
+        },
+        {
+          "target": "migrate_llm_models",
+          "resolved": false,
+          "confidence": 0,
+          "line": 117
+        },
+        {
+          "target": "migrate_legacy_triggered_graphs",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 118,
+          "resolvedId": "backend/integrations/webhooks/utils.py:migrate_legacy_triggered_graphs:149"
+        },
+        {
+          "target": "launch_darkly_context",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 120,
+          "resolvedId": "backend/api/rest_api.py:launch_darkly_context:71"
+        },
+        {
+          "target": "shutdown_cloud_storage_handler",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 124,
+          "resolvedId": "backend/util/cloud_storage.py:shutdown_cloud_storage_handler:628"
+        },
+        {
+          "target": "warning",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 126,
+          "resolvedId": "backend/util/logging.py:warning:45"
+        },
+        {
+          "target": "disconnect",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 128,
+          "resolvedId": "backend/data/rabbitmq.py:disconnect:107"
+        },
+        {
+          "target": "lower",
+          "resolved": false,
+          "confidence": 0,
+          "line": 138
+        },
+        {
+          "target": "list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 138
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 140
+        },
+        {
+          "target": "first_tag",
+          "resolved": false,
+          "confidence": 0,
+          "line": 140
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 143
+        },
+        {
+          "target": "first_tag",
+          "resolved": false,
+          "confidence": 0,
+          "line": 143
+        },
+        {
+          "target": "join",
+          "resolved": false,
+          "confidence": 0,
+          "line": 145
+        },
+        {
+          "target": "capitalize",
+          "resolved": false,
+          "confidence": 0,
+          "line": 145
+        },
+        {
+          "target": "split",
+          "resolved": false,
+          "confidence": 0,
+          "line": 145
+        },
+        {
+          "target": "join",
+          "resolved": false,
+          "confidence": 0,
+          "line": 150
+        },
+        {
+          "target": "capitalize",
+          "resolved": false,
+          "confidence": 0,
+          "line": 150
+        },
+        {
+          "target": "split",
+          "resolved": false,
+          "confidence": 0,
+          "line": 150
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 150
+        },
+        {
+          "target": "summary",
+          "resolved": false,
+          "confidence": 0,
+          "line": 150
+        },
+        {
+          "target": "FastAPI",
+          "resolved": false,
+          "confidence": 0,
+          "line": 164
+        },
+        {
+          "target": "add_middleware",
+          "resolved": false,
+          "confidence": 0,
+          "line": 176
+        },
+        {
+          "target": "add_middleware",
+          "resolved": false,
+          "confidence": 0,
+          "line": 179
+        },
+        {
+          "target": "add_auth_responses_to_openapi",
+          "resolved": false,
+          "confidence": 0,
+          "line": 182
+        },
+        {
+          "target": "sort_openapi",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 185,
+          "resolvedId": "backend/api/utils/openapi.py:sort_openapi:4"
+        },
+        {
+          "target": "instrument_fastapi",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 188,
+          "resolvedId": "backend/monitoring/instrumentation.py:instrument_fastapi:107"
+        },
+        {
+          "target": "exception",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 201,
+          "resolvedId": "backend/util/logging.py:exception:57"
+        },
+        {
+          "target": "exc",
+          "resolved": false,
+          "confidence": 0,
+          "line": 205
+        },
+        {
+          "target": "JSONResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 214
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 217
+        },
+        {
+          "target": "exc",
+          "resolved": false,
+          "confidence": 0,
+          "line": 217
+        },
+        {
+          "target": "error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 229,
+          "resolvedId": "backend/util/logging.py:error:49"
+        },
+        {
+          "target": "exc",
+          "resolved": false,
+          "confidence": 0,
+          "line": 233
+        },
+        {
+          "target": "hasattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 236
+        },
+        {
+          "target": "exc",
+          "resolved": false,
+          "confidence": 0,
+          "line": 236
+        },
+        {
+          "target": "errors",
+          "resolved": false,
+          "confidence": 0,
+          "line": 237
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 239
+        },
+        {
+          "target": "exc",
+          "resolved": false,
+          "confidence": 0,
+          "line": 239
+        },
+        {
+          "target": "dumps",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 247,
+          "resolvedId": "backend/util/json.py:dumps:20"
+        },
+        {
+          "target": "response_content",
+          "resolved": false,
+          "confidence": 0,
+          "line": 247
+        },
+        {
+          "target": "Response",
+          "resolved": false,
+          "confidence": 0,
+          "line": 249
+        },
+        {
+          "target": "add_exception_handler",
+          "resolved": false,
+          "confidence": 0,
+          "line": 256
+        },
+        {
+          "target": "add_exception_handler",
+          "resolved": false,
+          "confidence": 0,
+          "line": 257
+        },
+        {
+          "target": "add_exception_handler",
+          "resolved": false,
+          "confidence": 0,
+          "line": 258
+        },
+        {
+          "target": "add_exception_handler",
+          "resolved": false,
+          "confidence": 0,
+          "line": 259
+        },
+        {
+          "target": "add_exception_handler",
+          "resolved": false,
+          "confidence": 0,
+          "line": 260
+        },
+        {
+          "target": "add_exception_handler",
+          "resolved": false,
+          "confidence": 0,
+          "line": 261
+        },
+        {
+          "target": "add_exception_handler",
+          "resolved": false,
+          "confidence": 0,
+          "line": 262
+        },
+        {
+          "target": "add_exception_handler",
+          "resolved": false,
+          "confidence": 0,
+          "line": 263
+        },
+        {
+          "target": "include_router",
+          "resolved": false,
+          "confidence": 0,
+          "line": 265
+        },
+        {
+          "target": "include_router",
+          "resolved": false,
+          "confidence": 0,
+          "line": 266
+        },
+        {
+          "target": "include_router",
+          "resolved": false,
+          "confidence": 0,
+          "line": 271
+        },
+        {
+          "target": "include_router",
+          "resolved": false,
+          "confidence": 0,
+          "line": 276
+        },
+        {
+          "target": "include_router",
+          "resolved": false,
+          "confidence": 0,
+          "line": 279
+        },
+        {
+          "target": "include_router",
+          "resolved": false,
+          "confidence": 0,
+          "line": 282
+        },
+        {
+          "target": "include_router",
+          "resolved": false,
+          "confidence": 0,
+          "line": 287
+        },
+        {
+          "target": "include_router",
+          "resolved": false,
+          "confidence": 0,
+          "line": 292
+        },
+        {
+          "target": "include_router",
+          "resolved": false,
+          "confidence": 0,
+          "line": 297
+        },
+        {
+          "target": "include_router",
+          "resolved": false,
+          "confidence": 0,
+          "line": 302
+        },
+        {
+          "target": "include_router",
+          "resolved": false,
+          "confidence": 0,
+          "line": 305
+        },
+        {
+          "target": "include_router",
+          "resolved": false,
+          "confidence": 0,
+          "line": 309
+        },
+        {
+          "target": "include_router",
+          "resolved": false,
+          "confidence": 0,
+          "line": 314
+        },
+        {
+          "target": "include_router",
+          "resolved": false,
+          "confidence": 0,
+          "line": 319
+        },
+        {
+          "target": "include_router",
+          "resolved": false,
+          "confidence": 0,
+          "line": 324
+        },
+        {
+          "target": "mount",
+          "resolved": false,
+          "confidence": 0,
+          "line": 330
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 333,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "is_connected",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 335,
+          "resolvedId": "backend/data/rabbitmq.py:is_connected:92"
+        },
+        {
+          "target": "UnhealthyServiceError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 336
+        },
+        {
+          "target": "build_cors_params",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 342,
+          "resolvedId": "backend/api/utils/cors.py:build_cors_params:14"
+        },
+        {
+          "target": "CORSMiddleware",
+          "resolved": false,
+          "confidence": 0,
+          "line": 347
+        },
+        {
+          "target": "run",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 363,
+          "resolvedId": "backend/api/rest_api.py:run:341"
+        },
+        {
+          "target": "system",
+          "resolved": false,
+          "confidence": 0,
+          "line": 371
+        },
+        {
+          "target": "execute_graph",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 383,
+          "resolvedId": "backend/executor/cluster_lock_test.py:execute_graph:411"
+        },
+        {
+          "target": "get_graph",
+          "resolved": false,
+          "confidence": 0,
+          "line": 398
+        },
+        {
+          "target": "graph_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 399
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 399
+        },
+        {
+          "target": "graph_version",
+          "resolved": false,
+          "confidence": 0,
+          "line": 399
+        },
+        {
+          "target": "for_export",
+          "resolved": false,
+          "confidence": 0,
+          "line": 399
+        },
+        {
+          "target": "create_new_graph",
+          "resolved": false,
+          "confidence": 0,
+          "line": 407
+        },
+        {
+          "target": "create_graph",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 407,
+          "resolvedId": "backend/executor/manager_test.py:create_graph:34"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 407
+        },
+        {
+          "target": "get_graph_execution_meta",
+          "resolved": false,
+          "confidence": 0,
+          "line": 413
+        },
+        {
+          "target": "ValueError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 417
+        },
+        {
+          "target": "delete_library_agent_by_graph_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 423
+        },
+        {
+          "target": "delete_graph",
+          "resolved": false,
+          "confidence": 0,
+          "line": 426
+        },
+        {
+          "target": "graph_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 426
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 426
+        },
+        {
+          "target": "list_presets",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 430,
+          "resolvedId": "backend/api/features/library/routes/presets.py:list_presets:34"
+        },
+        {
+          "target": "get_preset",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 436,
+          "resolvedId": "backend/api/features/library/routes/presets.py:get_preset:73"
+        },
+        {
+          "target": "create_preset",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 445,
+          "resolvedId": "backend/api/features/library/routes/presets.py:create_preset:113"
+        },
+        {
+          "target": "update_preset",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 455,
+          "resolvedId": "backend/api/features/library/routes/presets.py:update_preset:212"
+        },
+        {
+          "target": "delete_preset",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 461,
+          "resolvedId": "backend/api/features/library/routes/presets.py:delete_preset:317"
+        },
+        {
+          "target": "execute_preset",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 471,
+          "resolvedId": "backend/api/features/library/routes/presets.py:execute_preset:371"
+        },
+        {
+          "target": "create_submission",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 482,
+          "resolvedId": "backend/api/features/store/routes.py:create_submission:514"
+        },
+        {
+          "target": "request",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 483,
+          "resolvedId": "backend/util/request.py:request:359"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 483
+        },
+        {
+          "target": "review_submission",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 493,
+          "resolvedId": "backend/api/features/admin/store_admin_routes.py:review_submission:73"
+        },
+        {
+          "target": "request",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 494,
+          "resolvedId": "backend/util/request.py:request:359"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 494
+        },
+        {
+          "target": "create_credentials",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 506,
+          "resolvedId": "backend/api/features/integrations/router.py:create_credentials:255"
+        },
+        {
+          "target": "error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 510,
+          "resolvedId": "backend/util/logging.py:error:49"
+        },
+        {
+          "target": "get_credential",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 511,
+          "resolvedId": "backend/api/features/integrations/router.py:get_credential:234"
+        },
+        {
+          "target": "update",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 518,
+          "resolvedId": "backend/integrations/creds_manager.py:update:162"
+        },
+        {
+          "target": "overrides",
+          "resolved": false,
+          "confidence": 0,
+          "line": 518
+        },
+        {
+          "target": "Settings",
+          "resolved": false,
+          "confidence": 0,
+          "line": 64
+        },
+        {
+          "target": "getLogger",
+          "resolved": false,
+          "confidence": 0,
+          "line": 65
+        },
+        {
+          "target": "setLevel",
+          "resolved": false,
+          "confidence": 0,
+          "line": 67
+        },
+        {
+          "target": "getLogger",
+          "resolved": false,
+          "confidence": 0,
+          "line": 67
+        },
+        {
+          "target": "FastAPI",
+          "resolved": false,
+          "confidence": 0,
+          "line": 164
+        },
+        {
+          "target": "add_middleware",
+          "resolved": false,
+          "confidence": 0,
+          "line": 176
+        },
+        {
+          "target": "add_middleware",
+          "resolved": false,
+          "confidence": 0,
+          "line": 179
+        },
+        {
+          "target": "add_auth_responses_to_openapi",
+          "resolved": false,
+          "confidence": 0,
+          "line": 182
+        },
+        {
+          "target": "sort_openapi",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 185,
+          "resolvedId": "backend/api/utils/openapi.py:sort_openapi:4"
+        },
+        {
+          "target": "instrument_fastapi",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 188,
+          "resolvedId": "backend/monitoring/instrumentation.py:instrument_fastapi:107"
+        },
+        {
+          "target": "add_exception_handler",
+          "resolved": false,
+          "confidence": 0,
+          "line": 256
+        },
+        {
+          "target": "handle_internal_http_error",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 256,
+          "resolvedId": "backend/api/rest_api.py:handle_internal_http_error:198"
+        },
+        {
+          "target": "add_exception_handler",
+          "resolved": false,
+          "confidence": 0,
+          "line": 257
+        },
+        {
+          "target": "handle_internal_http_error",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 257,
+          "resolvedId": "backend/api/rest_api.py:handle_internal_http_error:198"
+        },
+        {
+          "target": "add_exception_handler",
+          "resolved": false,
+          "confidence": 0,
+          "line": 258
+        },
+        {
+          "target": "handle_internal_http_error",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 258,
+          "resolvedId": "backend/api/rest_api.py:handle_internal_http_error:198"
+        },
+        {
+          "target": "add_exception_handler",
+          "resolved": false,
+          "confidence": 0,
+          "line": 259
+        },
+        {
+          "target": "add_exception_handler",
+          "resolved": false,
+          "confidence": 0,
+          "line": 260
+        },
+        {
+          "target": "add_exception_handler",
+          "resolved": false,
+          "confidence": 0,
+          "line": 261
+        },
+        {
+          "target": "handle_internal_http_error",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 261,
+          "resolvedId": "backend/api/rest_api.py:handle_internal_http_error:198"
+        },
+        {
+          "target": "add_exception_handler",
+          "resolved": false,
+          "confidence": 0,
+          "line": 262
+        },
+        {
+          "target": "handle_internal_http_error",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 262,
+          "resolvedId": "backend/api/rest_api.py:handle_internal_http_error:198"
+        },
+        {
+          "target": "add_exception_handler",
+          "resolved": false,
+          "confidence": 0,
+          "line": 263
+        },
+        {
+          "target": "handle_internal_http_error",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 263,
+          "resolvedId": "backend/api/rest_api.py:handle_internal_http_error:198"
+        },
+        {
+          "target": "include_router",
+          "resolved": false,
+          "confidence": 0,
+          "line": 265
+        },
+        {
+          "target": "include_router",
+          "resolved": false,
+          "confidence": 0,
+          "line": 266
+        },
+        {
+          "target": "include_router",
+          "resolved": false,
+          "confidence": 0,
+          "line": 271
+        },
+        {
+          "target": "include_router",
+          "resolved": false,
+          "confidence": 0,
+          "line": 276
+        },
+        {
+          "target": "include_router",
+          "resolved": false,
+          "confidence": 0,
+          "line": 279
+        },
+        {
+          "target": "include_router",
+          "resolved": false,
+          "confidence": 0,
+          "line": 282
+        },
+        {
+          "target": "include_router",
+          "resolved": false,
+          "confidence": 0,
+          "line": 287
+        },
+        {
+          "target": "include_router",
+          "resolved": false,
+          "confidence": 0,
+          "line": 292
+        },
+        {
+          "target": "include_router",
+          "resolved": false,
+          "confidence": 0,
+          "line": 297
+        },
+        {
+          "target": "include_router",
+          "resolved": false,
+          "confidence": 0,
+          "line": 302
+        },
+        {
+          "target": "include_router",
+          "resolved": false,
+          "confidence": 0,
+          "line": 305
+        },
+        {
+          "target": "include_router",
+          "resolved": false,
+          "confidence": 0,
+          "line": 309
+        },
+        {
+          "target": "include_router",
+          "resolved": false,
+          "confidence": 0,
+          "line": 314
+        },
+        {
+          "target": "include_router",
+          "resolved": false,
+          "confidence": 0,
+          "line": 319
+        },
+        {
+          "target": "include_router",
+          "resolved": false,
+          "confidence": 0,
+          "line": 324
+        },
+        {
+          "target": "mount",
+          "resolved": false,
+          "confidence": 0,
+          "line": 330
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 333,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "dependency_overrides",
+          "operation": "write",
+          "line": 518,
+          "fields": []
+        },
+        {
+          "table": "logging",
+          "operation": "read",
+          "line": 65,
+          "fields": []
+        },
+        {
+          "table": "autogpt_libs",
+          "operation": "read",
+          "line": 67,
+          "fields": []
+        },
+        {
+          "table": "backend",
+          "operation": "read",
+          "line": 398,
+          "fields": []
+        },
+        {
+          "table": "backend",
+          "operation": "read",
+          "line": 436,
+          "fields": []
+        }
+      ]
+    }
+  ]
+}

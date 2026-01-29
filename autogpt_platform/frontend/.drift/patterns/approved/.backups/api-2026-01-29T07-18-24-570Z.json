@@ -1,0 +1,3578 @@
+{
+  "version": "1.0.0",
+  "category": "api",
+  "patterns": [
+    {
+      "id": "ba946f7fc8e246cd",
+      "subcategory": "response-envelope",
+      "name": "Response Envelope Detector",
+      "description": "Detects response envelope patterns and flags inconsistencies",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "api/response-envelope",
+          "patternId": "api/response-envelope/format-standard"
+        }
+      },
+      "confidence": {
+        "frequency": 1,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 121,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src/app/(no-navbar)/onboarding/5-run/useOnboardingRunStep.tsx",
+          "line": 140,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(no-navbar)/onboarding/6-congrats/page.tsx",
+          "line": 22,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(no-navbar)/share/[token]/page.tsx",
+          "line": 20,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/admin/components/AdminImpersonationPanel.tsx",
+          "line": 23,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/admin/execution-analytics/components/ExecutionAnalyticsForm.tsx",
+          "line": 65,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/auth/auth-code-error/page.tsx",
+          "line": 62,
+          "column": 26,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/auth/authorize/page.tsx",
+          "line": 48,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/auth/integrations/oauth_callback/types.ts",
+          "line": 2,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/auth/integrations/setup-wizard/page.tsx",
+          "line": 55,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/copilot/components/CopilotShell/components/SessionsList/useSessionsPagination.ts",
+          "line": 22,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/copilot/components/CopilotShell/useCopilotShell.ts",
+          "line": 152,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/error/helpers.ts",
+          "line": 4,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/error/page.tsx",
+          "line": 57,
+          "column": 30,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/error.tsx",
+          "line": 45,
+          "column": 30,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/AgentVersionChangelog.tsx",
+          "line": 29,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/modals/RunAgentModal/useAgentRunModal.tsx",
+          "line": 368,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/selected-views/OutputRenderers/renderers/CodeRenderer.tsx",
+          "line": 99,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/selected-views/OutputRenderers/renderers/ImageRenderer.tsx",
+          "line": 136,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/selected-views/OutputRenderers/renderers/JSONRenderer.tsx",
+          "line": 57,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/selected-views/OutputRenderers/renderers/MarkdownRenderer.tsx",
+          "line": 419,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/selected-views/OutputRenderers/renderers/TextRenderer.tsx",
+          "line": 35,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/selected-views/OutputRenderers/renderers/VideoRenderer.tsx",
+          "line": 99,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/selected-views/OutputRenderers/types.ts",
+          "line": 11,
+          "column": 34,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/selected-views/SelectedRunView/components/SelectedRunActions/useSelectedRunActions.ts",
+          "line": 133,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/selected-views/SelectedScheduleView/SelectedScheduleView.tsx",
+          "line": 47,
+          "column": 15,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/selected-views/SelectedScheduleView/useSelectedScheduleView.ts",
+          "line": 25,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/selected-views/SelectedTemplateView/SelectedTemplateView.tsx",
+          "line": 70,
+          "column": 15,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/selected-views/SelectedTemplateView/useSelectedTemplateView.ts",
+          "line": 179,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/selected-views/SelectedTriggerView/SelectedTriggerView.tsx",
+          "line": 64,
+          "column": 15,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/selected-views/SelectedTriggerView/useSelectedTriggerView.ts",
+          "line": 125,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/sidebar/SidebarRunsList/components/TaskActionsDropdown.tsx",
+          "line": 73,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/sidebar/SidebarRunsList/useSidebarRunsList.ts",
+          "line": 175,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/useNewAgentLibraryView.ts",
+          "line": 194,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/library/agents/[id]/components/OldAgentLibraryView/components/agent-run-status-chip.tsx",
+          "line": 33,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/library/agents/[id]/components/OldAgentLibraryView/components/agent-status-chip.tsx",
+          "line": 17,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/library/agents/[id]/components/OldAgentLibraryView/use-agent-runs.ts",
+          "line": 98,
+          "column": 11,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/library/components/LibraryAgentCard/helpers.ts",
+          "line": 31,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/library/components/LibraryAgentCard/useLibraryAgentCard.ts",
+          "line": 31,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/library/components/LibraryAgentList/useLibraryAgentList.ts",
+          "line": 22,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/library/components/LibraryUploadAgentDialog/useLibraryUploadAgentDialog.ts",
+          "line": 119,
+          "column": 29,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/library/hooks/useFavoriteAgents.ts",
+          "line": 13,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/login/actions.ts",
+          "line": 14,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/marketplace/agent/[creator]/[slug]/page.tsx",
+          "line": 24,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/marketplace/components/AgentInfo/AgentInfo.tsx",
+          "line": 65,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/marketplace/components/AgentInfo/useAgentInfo.ts",
+          "line": 43,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/marketplace/components/MainAgentPage/MainAgentPage.tsx",
+          "line": 48,
+          "column": 30,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/marketplace/components/MainAgentPage/useMainAgentPage.ts",
+          "line": 19,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/marketplace/components/MainCreatorPage/MainCreatorPage.tsx",
+          "line": 30,
+          "column": 28,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/marketplace/components/MainCreatorPage/useMainCreatorPage.ts",
+          "line": 14,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/marketplace/components/MainMarketplacePage/MainMarketplacePage.tsx",
+          "line": 27,
+          "column": 30,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/marketplace/components/MainMarketplacePage/useMainMarketplacePage.ts",
+          "line": 17,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/marketplace/components/MainSearchResultPage/MainSearchResultPage.tsx",
+          "line": 49,
+          "column": 26,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/marketplace/components/MainSearchResultPage/useMainSearchResultPage.ts",
+          "line": 29,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/marketplace/creator/[creator]/page.tsx",
+          "line": 24,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/monitoring/components/AgentImportForm.tsx",
+          "line": 26,
+          "column": 65,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/monitoring/page.tsx",
+          "line": 34,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/profile/(user)/api-keys/components/APIKeySection/useAPISection.ts",
+          "line": 15,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/profile/(user)/api-keys/components/APIKeysModals/useAPIkeysModals.ts",
+          "line": 37,
+          "column": 43,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/profile/(user)/dashboard/components/MainDashboardPage/useMainDashboardPage.ts",
+          "line": 58,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/profile/(user)/oauth-apps/components/useOAuthApps.ts",
+          "line": 20,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/profile/(user)/page.tsx",
+          "line": 15,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/profile/(user)/settings/components/SettingsForm/components/EmailForm/useEmailForm.ts",
+          "line": 69,
+          "column": 43,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/profile/(user)/settings/components/SettingsForm/components/NotificationForm/useNotificationForm.ts",
+          "line": 28,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/profile/(user)/settings/components/SettingsForm/components/TimezoneForm/useTimezoneForm.ts",
+          "line": 43,
+          "column": 40,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/profile/(user)/settings/page.tsx",
+          "line": 19,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/profile/(user)/settings/useTimezoneDetection.ts",
+          "line": 31,
+          "column": 29,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/signup/actions.ts",
+          "line": 26,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/api/auth/provider/route.ts",
+          "line": 13,
+          "column": 18,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/api/auth/user/route.ts",
+          "line": 9,
+          "column": 16,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/api/chat/sessions/[sessionId]/stream/route.ts",
+          "line": 20,
+          "column": 14,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/api/helpers.ts",
+          "line": 50,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/api/mutators/custom-mutator.ts",
+          "line": 117,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/api/proxy/[...path]/route.ts",
+          "line": 84,
+          "column": 14,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/error.tsx",
+          "line": 11,
+          "column": 4,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/global-error.tsx",
+          "line": 7,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/components/__legacy__/ui/pagination-controls.tsx",
+          "line": 10,
+          "column": 4,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/components/atoms/Badge/Badge.tsx",
+          "line": 13,
+          "column": 53,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/components/contextual/Chat/components/AuthPromptWidget/AuthPromptWidget.tsx",
+          "line": 8,
+          "column": 40,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/components/contextual/Chat/components/ChatContainer/helpers.ts",
+          "line": 162,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/components/contextual/Chat/components/ChatErrorState/ChatErrorState.tsx",
+          "line": 5,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/components/contextual/Chat/components/ChatMessage/ChatMessage.tsx",
+          "line": 41,
+          "column": 35,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/components/contextual/Chat/components/MessageList/components/LastToolResponse/LastToolResponse.tsx",
+          "line": 5,
+          "column": 40,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/components/contextual/Chat/components/MessageList/components/MessageItem/MessageItem.tsx",
+          "line": 5,
+          "column": 35,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/components/contextual/Chat/components/MessageList/components/MessageItem/useMessageItem.ts",
+          "line": 4,
+          "column": 37,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/components/contextual/Chat/components/NoResultsMessage/NoResultsMessage.tsx",
+          "line": 5,
+          "column": 40,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/components/contextual/Chat/components/SessionsDrawer/SessionsDrawer.tsx",
+          "line": 25,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/components/contextual/Chat/useChatSession.ts",
+          "line": 74,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/components/contextual/CredentialsInput/components/CredentialRow/CredentialRow.tsx",
+          "line": 88,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/components/contextual/CredentialsInput/helpers.ts",
+          "line": 59,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/components/contextual/OutputRenderers/renderers/CodeRenderer.tsx",
+          "line": 97,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/components/contextual/OutputRenderers/renderers/ImageRenderer.tsx",
+          "line": 136,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/components/contextual/OutputRenderers/renderers/JSONRenderer.tsx",
+          "line": 57,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/components/contextual/OutputRenderers/renderers/MarkdownRenderer.tsx",
+          "line": 419,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/components/contextual/OutputRenderers/renderers/TextRenderer.tsx",
+          "line": 35,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/components/contextual/OutputRenderers/renderers/VideoRenderer.tsx",
+          "line": 99,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/components/contextual/OutputRenderers/types.ts",
+          "line": 11,
+          "column": 34,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/components/contextual/PublishAgentModal/components/AgentSelectStep/useAgentSelectStep.ts",
+          "line": 42,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/components/contextual/PublishAgentModal/usePublishAgentModal.ts",
+          "line": 75,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/components/layout/Navbar/Navbar.tsx",
+          "line": 129,
+          "column": 23,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/components/layout/Navbar/components/AgentActivityDropdown/useAgentActivityDropdown.ts",
+          "line": 76,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 1
+        }
+      ],
+      "outliers": [
+        {
+          "file": "src/app/(platform)/auth/authorize/page.tsx",
+          "line": 48,
+          "column": 9,
+          "reason": "Response envelope is missing an error field",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "src/app/(platform)/auth/integrations/setup-wizard/page.tsx",
+          "line": 55,
+          "column": 3,
+          "reason": "Response uses custom format but project predominantly uses standard",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "src/app/(platform)/auth/integrations/setup-wizard/page.tsx",
+          "line": 150,
+          "column": 40,
+          "reason": "Response envelope is missing a data field",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "src/app/(platform)/auth/integrations/setup-wizard/page.tsx",
+          "line": 108,
+          "column": 9,
+          "reason": "Response envelope is missing an error field",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "src/app/(platform)/auth/integrations/setup-wizard/page.tsx",
+          "line": 150,
+          "column": 40,
+          "reason": "Response envelope is missing an error field",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "src/app/(platform)/auth/integrations/setup-wizard/page.tsx",
+          "line": 83,
+          "column": 7,
+          "reason": "Direct array/data return without envelope wrapper",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "src/app/(platform)/auth/integrations/setup-wizard/page.tsx",
+          "line": 94,
+          "column": 5,
+          "reason": "Direct array/data return without envelope wrapper",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "src/app/(platform)/auth/integrations/setup-wizard/page.tsx",
+          "line": 114,
+          "column": 26,
+          "reason": "Direct array/data return without envelope wrapper",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/modals/RunAgentModal/useAgentRunModal.tsx",
+          "line": 257,
+          "column": 5,
+          "reason": "Direct array/data return without envelope wrapper",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/modals/RunAgentModal/useAgentRunModal.tsx",
+          "line": 270,
+          "column": 5,
+          "reason": "Direct array/data return without envelope wrapper",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/selected-views/OutputRenderers/types.ts",
+          "line": 56,
+          "column": 5,
+          "reason": "Direct array/data return without envelope wrapper",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/hooks/useMarketplaceUpdate.ts",
+          "line": 29,
+          "column": 9,
+          "reason": "Response uses standard format but project predominantly uses custom",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/hooks/useMarketplaceUpdate.ts",
+          "line": 44,
+          "column": 9,
+          "reason": "Response uses standard format but project predominantly uses custom",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/hooks/useMarketplaceUpdate.ts",
+          "line": 46,
+          "column": 7,
+          "reason": "Response uses standard format but project predominantly uses custom",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/hooks/useMarketplaceUpdate.ts",
+          "line": 46,
+          "column": 7,
+          "reason": "Response envelope is missing a data field",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "src/app/(platform)/library/agents/[id]/components/OldAgentLibraryView/use-agent-runs.ts",
+          "line": 197,
+          "column": 3,
+          "reason": "Response uses custom format but project predominantly uses standard",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "src/app/(platform)/library/agents/[id]/components/OldAgentLibraryView/use-agent-runs.ts",
+          "line": 49,
+          "column": 5,
+          "reason": "Response envelope is missing a data field",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "src/app/(platform)/library/agents/[id]/components/OldAgentLibraryView/use-agent-runs.ts",
+          "line": 163,
+          "column": 18,
+          "reason": "Response envelope is missing a data field",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "src/app/(platform)/library/components/LibraryAgentList/useLibraryAgentList.ts",
+          "line": 29,
+          "column": 5,
+          "reason": "Response envelope is missing a data field",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "src/app/(platform)/library/hooks/useFavoriteAgents.ts",
+          "line": 20,
+          "column": 5,
+          "reason": "Response envelope is missing a data field",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "src/app/(platform)/login/actions.ts",
+          "line": 41,
+          "column": 5,
+          "reason": "Response envelope is missing an error field",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "src/app/(platform)/marketplace/components/MainSearchResultPage/useMainSearchResultPage.ts",
+          "line": 80,
+          "column": 22,
+          "reason": "Direct array/data return without envelope wrapper",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "src/app/(platform)/marketplace/components/MainSearchResultPage/useMainSearchResultPage.ts",
+          "line": 94,
+          "column": 24,
+          "reason": "Direct array/data return without envelope wrapper",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "src/app/(platform)/signup/actions.ts",
+          "line": 67,
+          "column": 5,
+          "reason": "Response envelope is missing an error field",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "src/app/api/helpers.ts",
+          "line": 78,
+          "column": 49,
+          "reason": "Direct array/data return without envelope wrapper",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "src/components/contextual/Chat/components/ChatContainer/helpers.ts",
+          "line": 162,
+          "column": 3,
+          "reason": "Response uses custom format but project predominantly uses standard",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "src/components/contextual/Chat/components/ChatContainer/helpers.ts",
+          "line": 305,
+          "column": 9,
+          "reason": "Response uses custom format but project predominantly uses standard",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "src/components/contextual/Chat/components/ChatContainer/helpers.ts",
+          "line": 330,
+          "column": 7,
+          "reason": "Response uses custom format but project predominantly uses standard",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "src/components/contextual/Chat/components/ChatContainer/helpers.ts",
+          "line": 487,
+          "column": 9,
+          "reason": "Response uses custom format but project predominantly uses standard",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "src/components/contextual/Chat/components/ChatContainer/helpers.ts",
+          "line": 293,
+          "column": 7,
+          "reason": "Response envelope is missing an error field",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "src/components/contextual/Chat/components/ChatContainer/helpers.ts",
+          "line": 403,
+          "column": 7,
+          "reason": "Response envelope is missing an error field",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "src/components/contextual/Chat/components/ChatContainer/helpers.ts",
+          "line": 413,
+          "column": 3,
+          "reason": "Response envelope is missing an error field",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "src/components/contextual/Chat/components/ChatContainer/useChatContainer.ts",
+          "line": 193,
+          "column": 5,
+          "reason": "Direct array/data return without envelope wrapper",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "src/components/contextual/Chat/stream-utils.ts",
+          "line": 42,
+          "column": 7,
+          "reason": "Response uses standard format but project predominantly uses custom",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "src/components/contextual/Chat/stream-utils.ts",
+          "line": 57,
+          "column": 7,
+          "reason": "Response uses standard format but project predominantly uses custom",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "src/components/contextual/GoogleDrivePicker/helpers.ts",
+          "line": 91,
+          "column": 12,
+          "reason": "Direct array/data return without envelope wrapper",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "src/components/contextual/GoogleDrivePicker/helpers.ts",
+          "line": 92,
+          "column": 63,
+          "reason": "Direct array/data return without envelope wrapper",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "src/components/contextual/OutputRenderers/types.ts",
+          "line": 56,
+          "column": 5,
+          "reason": "Direct array/data return without envelope wrapper",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "src/components/layout/Navbar/components/Wallet/Wallet.tsx",
+          "line": 51,
+          "column": 5,
+          "reason": "Direct array/data return without envelope wrapper",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "src/components/renderers/InputRenderer/custom/CredentialField/helpers.ts",
+          "line": 142,
+          "column": 3,
+          "reason": "Direct array/data return without envelope wrapper",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "src/hooks/useAgentGraph.tsx",
+          "line": 218,
+          "column": 5,
+          "reason": "Response uses custom format but project predominantly uses standard",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "src/hooks/useAgentGraph.tsx",
+          "line": 598,
+          "column": 7,
+          "reason": "Response uses custom format but project predominantly uses standard",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "src/hooks/useAgentGraph.tsx",
+          "line": 948,
+          "column": 3,
+          "reason": "Response uses custom format but project predominantly uses standard",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "src/hooks/useAgentGraph.tsx",
+          "line": 129,
+          "column": 19,
+          "reason": "Direct array/data return without envelope wrapper",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "src/hooks/useAgentGraph.tsx",
+          "line": 467,
+          "column": 7,
+          "reason": "Direct array/data return without envelope wrapper",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "src/hooks/useAgentGraph.tsx",
+          "line": 500,
+          "column": 9,
+          "reason": "Direct array/data return without envelope wrapper",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "src/hooks/useLibraryAgents/useLibraryAgents.ts",
+          "line": 9,
+          "column": 7,
+          "reason": "Response envelope is missing a data field",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "src/lib/dexie/draft-utils.ts",
+          "line": 6,
+          "column": 3,
+          "reason": "Response uses standard format but project predominantly uses custom",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "src/lib/supabase/actions.ts",
+          "line": 24,
+          "column": 9,
+          "reason": "Response uses custom format but project predominantly uses standard",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "src/lib/supabase/actions.ts",
+          "line": 39,
+          "column": 11,
+          "reason": "Response uses custom format but project predominantly uses standard",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "src/lib/supabase/actions.ts",
+          "line": 53,
+          "column": 9,
+          "reason": "Response uses custom format but project predominantly uses standard",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "src/lib/supabase/actions.ts",
+          "line": 159,
+          "column": 9,
+          "reason": "Response envelope is missing a data field",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "src/lib/supabase/actions.ts",
+          "line": 182,
+          "column": 7,
+          "reason": "Response envelope is missing a data field",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "src/lib/supabase/actions.ts",
+          "line": 159,
+          "column": 9,
+          "reason": "Response envelope is missing an error field",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "src/lib/supabase/actions.ts",
+          "line": 182,
+          "column": 7,
+          "reason": "Response envelope is missing an error field",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "src/lib/supabase/actions.ts",
+          "line": 32,
+          "column": 15,
+          "reason": "Response envelope is missing an error field",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "src/lib/supabase/actions.ts",
+          "line": 81,
+          "column": 15,
+          "reason": "Response envelope is missing an error field",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "src/lib/supabase/actions.ts",
+          "line": 123,
+          "column": 15,
+          "reason": "Response envelope is missing an error field",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "src/lib/supabase/actions.ts",
+          "line": 202,
+          "column": 15,
+          "reason": "Response envelope is missing an error field",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "src/lib/supabase/helpers.ts",
+          "line": 21,
+          "column": 3,
+          "reason": "Response uses custom format but project predominantly uses standard",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "src/lib/supabase/helpers.ts",
+          "line": 133,
+          "column": 5,
+          "reason": "Response envelope is missing an error field",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "src/lib/supabase/helpers.ts",
+          "line": 107,
+          "column": 37,
+          "reason": "Response envelope is missing an error field",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "src/lib/supabase/server/getServerUser.ts",
+          "line": 11,
+          "column": 11,
+          "reason": "Response envelope is missing an error field",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "src/tests/pages/build.page.ts",
+          "line": 146,
+          "column": 7,
+          "reason": "Direct array/data return without envelope wrapper",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "src/tests/pages/build.page.ts",
+          "line": 210,
+          "column": 7,
+          "reason": "Direct array/data return without envelope wrapper",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "src/tests/pages/build.page.ts",
+          "line": 476,
+          "column": 5,
+          "reason": "Direct array/data return without envelope wrapper",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "src/tests/pages/build.page.ts",
+          "line": 521,
+          "column": 5,
+          "reason": "Direct array/data return without envelope wrapper",
+          "deviationScore": 0.4
+        }
+      ],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:32:38.503Z",
+        "lastSeen": "2026-01-29T07:18:01.386Z",
+        "source": "auto-detected",
+        "tags": [
+          "api",
+          "response-envelope"
+        ],
+        "approvedAt": "2026-01-29T07:18:01.386Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "f15ff010c6bbb223",
+      "subcategory": "response-envelope",
+      "name": "Response Envelope Detector",
+      "description": "Detects response envelope patterns and flags inconsistencies",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "api/response-envelope",
+          "patternId": "api/response-envelope/envelope-structure"
+        }
+      },
+      "confidence": {
+        "frequency": 1,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 160,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src/app/(no-navbar)/onboarding/5-run/useOnboardingRunStep.tsx",
+          "line": 140,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(no-navbar)/share/[token]/page.tsx",
+          "line": 20,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/admin/components/AdminImpersonationPanel.tsx",
+          "line": 23,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/admin/execution-analytics/components/ExecutionAnalyticsForm.tsx",
+          "line": 65,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/auth/auth-code-error/page.tsx",
+          "line": 62,
+          "column": 26,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/auth/authorize/page.tsx",
+          "line": 48,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/auth/integrations/oauth_callback/types.ts",
+          "line": 2,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/auth/integrations/setup-wizard/page.tsx",
+          "line": 55,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/copilot/components/CopilotShell/helpers.ts",
+          "line": 6,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/copilot/components/CopilotShell/useCopilotShell.ts",
+          "line": 152,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/copilot/useCopilotPage.ts",
+          "line": 112,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/error/helpers.ts",
+          "line": 4,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/error/page.tsx",
+          "line": 57,
+          "column": 30,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/error.tsx",
+          "line": 45,
+          "column": 30,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/AgentVersionChangelog.tsx",
+          "line": 29,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/modals/RunAgentModal/useAgentRunModal.tsx",
+          "line": 368,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/modals/ScheduleAgentModal/components/ModalScheduleSection/helpers.ts",
+          "line": 46,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/modals/ScheduleAgentModal/components/ModalScheduleSection/useModalScheduleSection.ts",
+          "line": 43,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/selected-views/OutputRenderers/renderers/CodeRenderer.tsx",
+          "line": 99,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/selected-views/OutputRenderers/renderers/ImageRenderer.tsx",
+          "line": 136,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/selected-views/OutputRenderers/renderers/JSONRenderer.tsx",
+          "line": 57,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/selected-views/OutputRenderers/renderers/MarkdownRenderer.tsx",
+          "line": 419,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/selected-views/OutputRenderers/renderers/TextRenderer.tsx",
+          "line": 35,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/selected-views/OutputRenderers/renderers/VideoRenderer.tsx",
+          "line": 99,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/selected-views/OutputRenderers/types.ts",
+          "line": 11,
+          "column": 34,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/selected-views/SelectedRunView/components/SelectedRunActions/useSelectedRunActions.ts",
+          "line": 133,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/selected-views/SelectedRunView/useSelectedRunView.ts",
+          "line": 51,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/selected-views/SelectedScheduleView/SelectedScheduleView.tsx",
+          "line": 47,
+          "column": 15,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/selected-views/SelectedScheduleView/useSelectedScheduleView.ts",
+          "line": 25,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/selected-views/SelectedTemplateView/SelectedTemplateView.tsx",
+          "line": 70,
+          "column": 15,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/selected-views/SelectedTemplateView/useSelectedTemplateView.ts",
+          "line": 179,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/selected-views/SelectedTriggerView/SelectedTriggerView.tsx",
+          "line": 64,
+          "column": 15,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/selected-views/SelectedTriggerView/useSelectedTriggerView.ts",
+          "line": 125,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/sidebar/SidebarRunsList/components/TaskActionsDropdown.tsx",
+          "line": 73,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/sidebar/SidebarRunsList/useSidebarRunsList.ts",
+          "line": 175,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/hooks/useMarketplaceUpdate.ts",
+          "line": 85,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/useNewAgentLibraryView.ts",
+          "line": 194,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/library/agents/[id]/components/OldAgentLibraryView/components/agent-run-status-chip.tsx",
+          "line": 33,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/library/agents/[id]/components/OldAgentLibraryView/components/agent-status-chip.tsx",
+          "line": 17,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/library/agents/[id]/components/OldAgentLibraryView/use-agent-runs.ts",
+          "line": 98,
+          "column": 11,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/library/components/LibraryAgentCard/helpers.ts",
+          "line": 31,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/library/components/LibraryAgentCard/useLibraryAgentCard.ts",
+          "line": 31,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/library/components/LibraryAgentList/helpers.ts",
+          "line": 47,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/library/components/LibraryAgentList/useLibraryAgentList.ts",
+          "line": 22,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/library/components/LibraryUploadAgentDialog/useLibraryUploadAgentDialog.ts",
+          "line": 119,
+          "column": 29,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/library/hooks/useFavoriteAgents.ts",
+          "line": 13,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/login/actions.ts",
+          "line": 14,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/login/useLoginPage.ts",
+          "line": 120,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/marketplace/agent/[creator]/[slug]/page.tsx",
+          "line": 24,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/marketplace/components/AgentInfo/AgentInfo.tsx",
+          "line": 65,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/marketplace/components/AgentInfo/useAgentInfo.ts",
+          "line": 43,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/marketplace/components/MainAgentPage/MainAgentPage.tsx",
+          "line": 48,
+          "column": 30,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/marketplace/components/MainAgentPage/useMainAgentPage.ts",
+          "line": 19,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/marketplace/components/MainCreatorPage/MainCreatorPage.tsx",
+          "line": 30,
+          "column": 28,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/marketplace/components/MainCreatorPage/useMainCreatorPage.ts",
+          "line": 14,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/marketplace/components/MainMarketplacePage/MainMarketplacePage.tsx",
+          "line": 27,
+          "column": 30,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/marketplace/components/MainMarketplacePage/useMainMarketplacePage.ts",
+          "line": 17,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/marketplace/components/MainSearchResultPage/MainSearchResultPage.tsx",
+          "line": 49,
+          "column": 26,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/marketplace/components/MainSearchResultPage/useMainSearchResultPage.ts",
+          "line": 29,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/marketplace/creator/[creator]/page.tsx",
+          "line": 24,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/monitoring/components/AgentImportForm.tsx",
+          "line": 26,
+          "column": 65,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/monitoring/page.tsx",
+          "line": 34,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/profile/(user)/api-keys/components/APIKeySection/useAPISection.ts",
+          "line": 15,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/profile/(user)/api-keys/components/APIKeysModals/useAPIkeysModals.ts",
+          "line": 37,
+          "column": 43,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/profile/(user)/dashboard/components/MainDashboardPage/useMainDashboardPage.ts",
+          "line": 58,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/profile/(user)/oauth-apps/components/useOAuthApps.ts",
+          "line": 20,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/profile/(user)/page.tsx",
+          "line": 15,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/profile/(user)/settings/components/SettingsForm/components/EmailForm/useEmailForm.ts",
+          "line": 69,
+          "column": 43,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/profile/(user)/settings/components/SettingsForm/components/NotificationForm/useNotificationForm.ts",
+          "line": 28,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/profile/(user)/settings/components/SettingsForm/components/TimezoneForm/useTimezoneForm.ts",
+          "line": 43,
+          "column": 40,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/profile/(user)/settings/page.tsx",
+          "line": 19,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/profile/(user)/settings/useTimezoneDetection.ts",
+          "line": 31,
+          "column": 29,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/signup/actions.ts",
+          "line": 26,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/signup/useSignupPage.ts",
+          "line": 152,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/api/auth/provider/route.ts",
+          "line": 19,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/api/auth/user/route.ts",
+          "line": 35,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/api/chat/sessions/[sessionId]/stream/route.ts",
+          "line": 21,
+          "column": 24,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/api/helpers.ts",
+          "line": 50,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/api/mutators/custom-mutator.ts",
+          "line": 117,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/api/proxy/[...path]/route.ts",
+          "line": 85,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/error.tsx",
+          "line": 11,
+          "column": 4,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/global-error.tsx",
+          "line": 7,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/components/__legacy__/ui/form.tsx",
+          "line": 57,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/components/atoms/Badge/Badge.tsx",
+          "line": 13,
+          "column": 53,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/components/contextual/Chat/components/AgentInputsSetup/AgentInputsSetup.tsx",
+          "line": 73,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/components/contextual/Chat/components/AuthPromptWidget/AuthPromptWidget.tsx",
+          "line": 8,
+          "column": 40,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/components/contextual/Chat/components/ChatContainer/helpers.ts",
+          "line": 162,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/components/contextual/Chat/components/ChatContainer/useChatContainer.ts",
+          "line": 293,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/components/contextual/Chat/components/ChatCredentialsSetup/ChatCredentialsSetup.tsx",
+          "line": 31,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/components/contextual/Chat/components/ChatErrorState/ChatErrorState.tsx",
+          "line": 5,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/components/contextual/Chat/components/ChatMessage/ChatMessage.tsx",
+          "line": 41,
+          "column": 35,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/components/contextual/Chat/components/ChatMessage/useChatMessage.ts",
+          "line": 138,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/components/contextual/Chat/components/MessageList/components/LastToolResponse/LastToolResponse.tsx",
+          "line": 5,
+          "column": 40,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/components/contextual/Chat/components/MessageList/components/MessageItem/MessageItem.tsx",
+          "line": 5,
+          "column": 35,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/components/contextual/Chat/components/MessageList/components/MessageItem/useMessageItem.ts",
+          "line": 4,
+          "column": 37,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/components/contextual/Chat/components/NoResultsMessage/NoResultsMessage.tsx",
+          "line": 5,
+          "column": 40,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/components/contextual/Chat/stream-utils.ts",
+          "line": 31,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/components/contextual/Chat/useChatSession.ts",
+          "line": 74,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/components/contextual/Chat/usePageContext.ts",
+          "line": 17,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/components/contextual/CredentialsInput/components/APIKeyCredentialsModal/useAPIKeyCredentialsModal.ts",
+          "line": 82,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 1
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:32:38.503Z",
+        "lastSeen": "2026-01-29T07:18:01.426Z",
+        "source": "auto-detected",
+        "tags": [
+          "api",
+          "response-envelope"
+        ],
+        "approvedAt": "2026-01-29T07:18:01.426Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "b47f5ad570196228",
+      "subcategory": "response-envelope",
+      "name": "Response Envelope Detector",
+      "description": "Detects response envelope patterns and flags inconsistencies",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "api/response-envelope",
+          "patternId": "api/response-envelope/pagination-offset"
+        }
+      },
+      "confidence": {
+        "frequency": 0.06,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 6,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src/app/(no-navbar)/onboarding/6-congrats/page.tsx",
+          "line": 22,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/copilot/components/CopilotShell/components/SessionsList/useSessionsPagination.ts",
+          "line": 22,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/components/contextual/Chat/components/ChatContainer/helpers.ts",
+          "line": 305,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/components/contextual/Chat/components/SessionsDrawer/SessionsDrawer.tsx",
+          "line": 25,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/components/layout/Navbar/components/AgentActivityDropdown/helpers.tsx",
+          "line": 216,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/components/layout/Navbar/components/Wallet/Wallet.tsx",
+          "line": 282,
+          "column": 41,
+          "isOutlier": false,
+          "confidence": 1
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:32:38.504Z",
+        "lastSeen": "2026-01-29T07:18:01.467Z",
+        "source": "auto-detected",
+        "tags": [
+          "api",
+          "response-envelope"
+        ],
+        "approvedAt": "2026-01-29T07:18:01.467Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "093b97841afddf91",
+      "subcategory": "response-envelope",
+      "name": "Response Envelope Detector",
+      "description": "Detects response envelope patterns and flags inconsistencies",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "api/response-envelope",
+          "patternId": "api/response-envelope/pagination-metadata"
+        }
+      },
+      "confidence": {
+        "frequency": 0.13,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 13,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src/app/(no-navbar)/onboarding/6-congrats/page.tsx",
+          "line": 22,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/copilot/components/CopilotShell/components/SessionsList/useSessionsPagination.ts",
+          "line": 22,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/sidebar/SidebarRunsList/useSidebarRunsList.ts",
+          "line": 62,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/hooks/useMarketplaceUpdate.ts",
+          "line": 46,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/library/agents/[id]/components/OldAgentLibraryView/use-agent-runs.ts",
+          "line": 49,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/library/components/LibraryAgentList/useLibraryAgentList.ts",
+          "line": 29,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/library/hooks/useFavoriteAgents.ts",
+          "line": 20,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/components/__legacy__/ui/pagination-controls.tsx",
+          "line": 10,
+          "column": 4,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/components/contextual/Chat/components/SessionsDrawer/SessionsDrawer.tsx",
+          "line": 25,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/components/contextual/CredentialsInput/components/CredentialRow/CredentialRow.tsx",
+          "line": 88,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/components/layout/Navbar/components/Wallet/Wallet.tsx",
+          "line": 282,
+          "column": 41,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/hooks/useLibraryAgents/useLibraryAgents.ts",
+          "line": 9,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/lib/autogpt-server-api/types.ts",
+          "line": 1117,
+          "column": 46,
+          "isOutlier": false,
+          "confidence": 1
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:32:38.504Z",
+        "lastSeen": "2026-01-29T07:18:01.505Z",
+        "source": "auto-detected",
+        "tags": [
+          "api",
+          "response-envelope"
+        ],
+        "approvedAt": "2026-01-29T07:18:01.505Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "a99d0fb19277d56d",
+      "subcategory": "route-structure",
+      "name": "Route Structure Detector",
+      "description": "Detects route URL structure patterns and flags inconsistencies",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "api/route-structure",
+          "patternId": "api/route-structure/restful"
+        }
+      },
+      "confidence": {
+        "frequency": 0.13,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 13,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src/app/(platform)/admin/marketplace/actions.ts",
+          "line": 19,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/admin/spending/actions.ts",
+          "line": 18,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/auth/callback/route.ts",
+          "line": 30,
+          "column": 21,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/library/components/LibraryAgentCard/helpers.ts",
+          "line": 23,
+          "column": 18,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/library/components/LibraryAgentCard/useLibraryAgentCard.ts",
+          "line": 35,
+          "column": 18,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/library/components/LibraryAgentList/useLibraryAgentList.ts",
+          "line": 47,
+          "column": 20,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/login/useLoginPage.ts",
+          "line": 56,
+          "column": 36,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/profile/(user)/settings/components/SettingsForm/components/EmailForm/useEmailForm.ts",
+          "line": 24,
+          "column": 32,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/profile/(user)/settings/useTimezoneDetection.ts",
+          "line": 37,
+          "column": 20,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/signup/useSignupPage.ts",
+          "line": 58,
+          "column": 36,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/components/contextual/CredentialsInput/useCredentialsInput.ts",
+          "line": 65,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/components/layout/Navbar/Navbar.tsx",
+          "line": 37,
+          "column": 20,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/lib/supabase/actions.ts",
+          "line": 167,
+          "column": 19,
+          "isOutlier": false,
+          "confidence": 1
+        }
+      ],
+      "outliers": [
+        {
+          "file": "src/app/(platform)/auth/integrations/oauth_callback/route.ts",
+          "line": 1,
+          "column": 1,
+          "reason": "URL segment 'oauth_callback' uses snake_case but project uses kebab-case/lowercase",
+          "deviationScore": 0.4
+        }
+      ],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:32:38.507Z",
+        "lastSeen": "2026-01-29T07:18:01.545Z",
+        "source": "auto-detected",
+        "tags": [
+          "api",
+          "route-structure"
+        ],
+        "approvedAt": "2026-01-29T07:18:01.545Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "cc4b6466607ab846",
+      "subcategory": "route-structure",
+      "name": "Route Structure Detector",
+      "description": "Detects route URL structure patterns and flags inconsistencies",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "api/route-structure",
+          "patternId": "api/route-structure/express-route"
+        }
+      },
+      "confidence": {
+        "frequency": 0.04,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 4,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src/app/(platform)/admin/marketplace/actions.ts",
+          "line": 19,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/admin/spending/actions.ts",
+          "line": 18,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/auth/callback/route.ts",
+          "line": 30,
+          "column": 21,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/lib/supabase/actions.ts",
+          "line": 167,
+          "column": 19,
+          "isOutlier": false,
+          "confidence": 1
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:32:38.507Z",
+        "lastSeen": "2026-01-29T07:18:01.613Z",
+        "source": "auto-detected",
+        "tags": [
+          "api",
+          "route-structure"
+        ],
+        "approvedAt": "2026-01-29T07:18:01.613Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "76ad93501a79f5e6",
+      "subcategory": "route-structure",
+      "name": "Route Structure Detector",
+      "description": "Detects route URL structure patterns and flags inconsistencies",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "api/route-structure",
+          "patternId": "api/route-structure/nextjs-app-router"
+        }
+      },
+      "confidence": {
+        "frequency": 0.08,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 8,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src/app/(platform)/auth/callback/route.ts",
+          "line": 1,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/auth/confirm/route.ts",
+          "line": 1,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/auth/integrations/oauth_callback/route.ts",
+          "line": 1,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/api/auth/callback/reset-password/route.ts",
+          "line": 1,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/api/auth/provider/route.ts",
+          "line": 1,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/api/auth/user/route.ts",
+          "line": 1,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/api/chat/sessions/[sessionId]/stream/route.ts",
+          "line": 1,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/api/proxy/[...path]/route.ts",
+          "line": 1,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 1
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:32:38.507Z",
+        "lastSeen": "2026-01-29T07:18:01.652Z",
+        "source": "auto-detected",
+        "tags": [
+          "api",
+          "route-structure"
+        ],
+        "approvedAt": "2026-01-29T07:18:01.652Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "9175c20b447427a7",
+      "subcategory": "http-methods",
+      "name": "HTTP Methods Detector",
+      "description": "Detects HTTP method usage patterns and flags RESTful convention violations",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "api/http-methods",
+          "patternId": "api/http-methods/nextjs-app-router"
+        }
+      },
+      "confidence": {
+        "frequency": 0.07,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 7,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src/app/(platform)/auth/callback/route.ts",
+          "line": 8,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/auth/confirm/route.ts",
+          "line": 8,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/auth/integrations/oauth_callback/route.ts",
+          "line": 7,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/api/auth/callback/reset-password/route.ts",
+          "line": 5,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/api/auth/provider/route.ts",
+          "line": 6,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/api/auth/user/route.ts",
+          "line": 4,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/api/chat/sessions/[sessionId]/stream/route.ts",
+          "line": 9,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 1
+        }
+      ],
+      "outliers": [
+        {
+          "file": "src/app/(platform)/login/useLoginPage.ts",
+          "line": 56,
+          "column": 30,
+          "reason": "Using POST for read operation. Consider using GET for idempotent read operations.",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "src/app/(platform)/signup/useSignupPage.ts",
+          "line": 58,
+          "column": 30,
+          "reason": "Using POST for read operation. Consider using GET for idempotent read operations.",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "src/app/api/chat/sessions/[sessionId]/stream/route.ts",
+          "line": 48,
+          "column": 28,
+          "reason": "Using POST for read operation. Consider using GET for idempotent read operations.",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "src/app/api/chat/sessions/[sessionId]/stream/route.ts",
+          "line": 48,
+          "column": 28,
+          "reason": "Inconsistent HTTP method for read operation. Most read operations use GET.",
+          "deviationScore": 0.4
+        },
+        {
+          "file": "src/components/contextual/Chat/stream-executor.ts",
+          "line": 41,
+          "column": 28,
+          "reason": "Using POST for read operation. Consider using GET for idempotent read operations.",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "src/lib/autogpt-server-api/client.ts",
+          "line": 859,
+          "column": 28,
+          "reason": "Using POST for read operation. Consider using GET for idempotent read operations.",
+          "deviationScore": 0.7
+        },
+        {
+          "file": "src/lib/autogpt-server-api/helpers.ts",
+          "line": 358,
+          "column": 26,
+          "reason": "Using POST for read operation. Consider using GET for idempotent read operations.",
+          "deviationScore": 0.7
+        }
+      ],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:32:38.507Z",
+        "lastSeen": "2026-01-29T07:18:01.693Z",
+        "source": "auto-detected",
+        "tags": [
+          "api",
+          "http-methods"
+        ],
+        "approvedAt": "2026-01-29T07:18:01.693Z"
+      },
+      "severity": "warning",
+      "autoFixable": false
+    },
+    {
+      "id": "6cfa91e0c904ff14",
+      "subcategory": "http-methods",
+      "name": "HTTP Methods Detector",
+      "description": "Detects HTTP method usage patterns and flags RESTful convention violations",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "api/http-methods",
+          "patternId": "api/http-methods/method-get"
+        }
+      },
+      "confidence": {
+        "frequency": 0.06,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 6,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src/app/(platform)/auth/callback/route.ts",
+          "line": 8,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/auth/confirm/route.ts",
+          "line": 8,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/auth/integrations/oauth_callback/route.ts",
+          "line": 7,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/api/auth/callback/reset-password/route.ts",
+          "line": 5,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/api/auth/user/route.ts",
+          "line": 4,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/api/chat/sessions/[sessionId]/stream/route.ts",
+          "line": 93,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 1
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:32:38.507Z",
+        "lastSeen": "2026-01-29T07:18:01.734Z",
+        "source": "auto-detected",
+        "tags": [
+          "api",
+          "http-methods"
+        ],
+        "approvedAt": "2026-01-29T07:18:01.734Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "65afd77c5c33a673",
+      "subcategory": "response-envelope",
+      "name": "Response Envelope Detector",
+      "description": "Detects response envelope patterns and flags inconsistencies",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "api/response-envelope",
+          "patternId": "api/response-envelope/format-custom"
+        }
+      },
+      "confidence": {
+        "frequency": 0.45,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 45,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src/app/(platform)/copilot/components/CopilotShell/helpers.ts",
+          "line": 6,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/copilot/useCopilotPage.ts",
+          "line": 112,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/modals/ScheduleAgentModal/components/ModalScheduleSection/helpers.ts",
+          "line": 46,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/modals/ScheduleAgentModal/components/ModalScheduleSection/useModalScheduleSection.ts",
+          "line": 43,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/selected-views/SelectedRunView/useSelectedRunView.ts",
+          "line": 51,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/hooks/useMarketplaceUpdate.ts",
+          "line": 85,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/library/components/LibraryAgentList/helpers.ts",
+          "line": 47,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/login/useLoginPage.ts",
+          "line": 120,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/signup/useSignupPage.ts",
+          "line": 152,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/components/__legacy__/ui/form.tsx",
+          "line": 57,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/components/contextual/Chat/components/AgentInputsSetup/AgentInputsSetup.tsx",
+          "line": 73,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/components/contextual/Chat/components/ChatContainer/useChatContainer.ts",
+          "line": 293,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/components/contextual/Chat/components/ChatCredentialsSetup/ChatCredentialsSetup.tsx",
+          "line": 31,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/components/contextual/Chat/components/ChatMessage/useChatMessage.ts",
+          "line": 138,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/components/contextual/Chat/stream-utils.ts",
+          "line": 31,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/components/contextual/Chat/usePageContext.ts",
+          "line": 17,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/components/contextual/CredentialsInput/components/APIKeyCredentialsModal/useAPIKeyCredentialsModal.ts",
+          "line": 82,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/components/contextual/CredentialsInput/components/CredentialsGroupedView/helpers.ts",
+          "line": 32,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/components/contextual/CredentialsInput/useCredentialsInput.ts",
+          "line": 304,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/components/contextual/GoogleDrivePicker/helpers.ts",
+          "line": 110,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/components/contextual/GoogleDrivePicker/types.ts",
+          "line": 8,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/components/contextual/GoogleDrivePicker/useGoogleDrivePicker.ts",
+          "line": 358,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/components/contextual/PublishAgentModal/components/AgentInfoStep/useAgentInfoStep.ts",
+          "line": 150,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/components/contextual/marketplaceHelpers.ts",
+          "line": 43,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/components/layout/Navbar/components/AgentActivityDropdown/helpers.tsx",
+          "line": 103,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/components/molecules/CookieConsentBanner/useCookieConsentBanner.ts",
+          "line": 29,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/components/molecules/Dialog/useDialogInternal.ts",
+          "line": 45,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/components/molecules/Form/Form.tsx",
+          "line": 81,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/components/molecules/ScrollableTabs/useScrollableTabs.ts",
+          "line": 52,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/components/renderers/InputRenderer/base/base-registry.ts",
+          "line": 40,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/components/renderers/InputRenderer/custom/CredentialField/helpers.ts",
+          "line": 56,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/components/renderers/InputRenderer/custom/JsonTextField/useJsonTextField.ts",
+          "line": 14,
+          "column": 27,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/components/renderers/InputRenderer/utils/schema-utils.ts",
+          "line": 32,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/hooks/useCredentials.ts",
+          "line": 121,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/lib/autogpt-server-api/utils.ts",
+          "line": 13,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/lib/dexie/draft-utils.ts",
+          "line": 6,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/lib/supabase/hooks/helpers.ts",
+          "line": 56,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/lib/supabase/hooks/useSupabase.ts",
+          "line": 64,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/lib/supabase/hooks/useSupabaseStore.ts",
+          "line": 275,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/lib/utils.ts",
+          "line": 374,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/providers/onboarding/helpers.ts",
+          "line": 20,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/services/environment/index.ts",
+          "line": 80,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/services/feature-flags/feature-flag-provider.tsx",
+          "line": 21,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/tests/pages/build.page.ts",
+          "line": 193,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/tests/utils/selectors.ts",
+          "line": 4,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 1
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:32:38.508Z",
+        "lastSeen": "2026-01-29T07:18:01.775Z",
+        "source": "auto-detected",
+        "tags": [
+          "api",
+          "response-envelope"
+        ],
+        "approvedAt": "2026-01-29T07:18:01.775Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "5e3fdd24e179dfa3",
+      "subcategory": "http-methods",
+      "name": "HTTP Methods Detector",
+      "description": "Detects HTTP method usage patterns and flags RESTful convention violations",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "api/http-methods",
+          "patternId": "api/http-methods/fetch-api"
+        }
+      },
+      "confidence": {
+        "frequency": 0.08,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 8,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/selected-views/SelectedScheduleView/components/EditScheduleModal/useEditScheduleModal.ts",
+          "line": 74,
+          "column": 25,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/login/useLoginPage.ts",
+          "line": 56,
+          "column": 30,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/profile/(user)/settings/components/SettingsForm/components/EmailForm/useEmailForm.ts",
+          "line": 24,
+          "column": 26,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/signup/useSignupPage.ts",
+          "line": 58,
+          "column": 30,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/api/chat/sessions/[sessionId]/stream/route.ts",
+          "line": 48,
+          "column": 28,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/components/contextual/Chat/stream-executor.ts",
+          "line": 41,
+          "column": 28,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/lib/autogpt-server-api/client.ts",
+          "line": 859,
+          "column": 28,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/lib/autogpt-server-api/helpers.ts",
+          "line": 358,
+          "column": 26,
+          "isOutlier": false,
+          "confidence": 1
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:32:38.509Z",
+        "lastSeen": "2026-01-29T07:18:01.816Z",
+        "source": "auto-detected",
+        "tags": [
+          "api",
+          "http-methods"
+        ],
+        "approvedAt": "2026-01-29T07:18:01.816Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "19a269740525d765",
+      "subcategory": "http-methods",
+      "name": "HTTP Methods Detector",
+      "description": "Detects HTTP method usage patterns and flags RESTful convention violations",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "api/http-methods",
+          "patternId": "api/http-methods/method-patch"
+        }
+      },
+      "confidence": {
+        "frequency": 0.01,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/selected-views/SelectedScheduleView/components/EditScheduleModal/useEditScheduleModal.ts",
+          "line": 74,
+          "column": 25,
+          "isOutlier": false,
+          "confidence": 1
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:32:38.509Z",
+        "lastSeen": "2026-01-29T07:18:01.856Z",
+        "source": "auto-detected",
+        "tags": [
+          "api",
+          "http-methods"
+        ],
+        "approvedAt": "2026-01-29T07:18:01.856Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "f12b1c464375b8ce",
+      "subcategory": "response-envelope",
+      "name": "Response Envelope Detector",
+      "description": "Detects response envelope patterns and flags inconsistencies",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "api/response-envelope",
+          "patternId": "api/response-envelope/pagination-page-based"
+        }
+      },
+      "confidence": {
+        "frequency": 0.08,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 8,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/sidebar/SidebarRunsList/useSidebarRunsList.ts",
+          "line": 62,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/hooks/useMarketplaceUpdate.ts",
+          "line": 46,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/library/agents/[id]/components/OldAgentLibraryView/use-agent-runs.ts",
+          "line": 49,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/library/components/LibraryAgentList/useLibraryAgentList.ts",
+          "line": 29,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/library/hooks/useFavoriteAgents.ts",
+          "line": 20,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/components/__legacy__/ui/pagination-controls.tsx",
+          "line": 10,
+          "column": 4,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/hooks/useLibraryAgents/useLibraryAgents.ts",
+          "line": 9,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/lib/autogpt-server-api/types.ts",
+          "line": 1117,
+          "column": 46,
+          "isOutlier": false,
+          "confidence": 1
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:32:38.509Z",
+        "lastSeen": "2026-01-29T07:18:01.896Z",
+        "source": "auto-detected",
+        "tags": [
+          "api",
+          "response-envelope"
+        ],
+        "approvedAt": "2026-01-29T07:18:01.896Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "842acae4ae664a6e",
+      "subcategory": "route-structure",
+      "name": "Route Structure Detector",
+      "description": "Detects route URL structure patterns and flags inconsistencies",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "api/route-structure",
+          "patternId": "api/route-structure/restful-route"
+        }
+      },
+      "confidence": {
+        "frequency": 0.09,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 9,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src/app/(platform)/library/components/LibraryAgentCard/helpers.ts",
+          "line": 23,
+          "column": 18,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/library/components/LibraryAgentCard/useLibraryAgentCard.ts",
+          "line": 35,
+          "column": 18,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/library/components/LibraryAgentList/useLibraryAgentList.ts",
+          "line": 47,
+          "column": 20,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/login/useLoginPage.ts",
+          "line": 56,
+          "column": 36,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/profile/(user)/settings/components/SettingsForm/components/EmailForm/useEmailForm.ts",
+          "line": 24,
+          "column": 32,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/profile/(user)/settings/useTimezoneDetection.ts",
+          "line": 37,
+          "column": 20,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/signup/useSignupPage.ts",
+          "line": 58,
+          "column": 36,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/components/contextual/CredentialsInput/useCredentialsInput.ts",
+          "line": 65,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/components/layout/Navbar/Navbar.tsx",
+          "line": 37,
+          "column": 20,
+          "isOutlier": false,
+          "confidence": 1
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:32:38.509Z",
+        "lastSeen": "2026-01-29T07:18:01.937Z",
+        "source": "auto-detected",
+        "tags": [
+          "api",
+          "route-structure"
+        ],
+        "approvedAt": "2026-01-29T07:18:01.937Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "909063bafec5109c",
+      "subcategory": "http-methods",
+      "name": "HTTP Methods Detector",
+      "description": "Detects HTTP method usage patterns and flags RESTful convention violations",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "api/http-methods",
+          "patternId": "api/http-methods/method-post"
+        }
+      },
+      "confidence": {
+        "frequency": 0.07,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 7,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src/app/(platform)/login/useLoginPage.ts",
+          "line": 56,
+          "column": 30,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/(platform)/signup/useSignupPage.ts",
+          "line": 58,
+          "column": 30,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/api/auth/provider/route.ts",
+          "line": 6,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/api/chat/sessions/[sessionId]/stream/route.ts",
+          "line": 9,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/components/contextual/Chat/stream-executor.ts",
+          "line": 41,
+          "column": 28,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/lib/autogpt-server-api/client.ts",
+          "line": 859,
+          "column": 28,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/lib/autogpt-server-api/helpers.ts",
+          "line": 358,
+          "column": 26,
+          "isOutlier": false,
+          "confidence": 1
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:32:38.509Z",
+        "lastSeen": "2026-01-29T07:18:01.981Z",
+        "source": "auto-detected",
+        "tags": [
+          "api",
+          "http-methods"
+        ],
+        "approvedAt": "2026-01-29T07:18:01.981Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "292e510018f82d9f",
+      "subcategory": "http-methods",
+      "name": "HTTP Methods Detector",
+      "description": "Detects HTTP method usage patterns and flags RESTful convention violations",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "api/http-methods",
+          "patternId": "api/http-methods/method-put"
+        }
+      },
+      "confidence": {
+        "frequency": 0.02,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 2,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src/app/(platform)/profile/(user)/settings/components/SettingsForm/components/EmailForm/useEmailForm.ts",
+          "line": 24,
+          "column": 26,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/api/auth/user/route.ts",
+          "line": 15,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 1
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:32:38.509Z",
+        "lastSeen": "2026-01-29T07:18:02.026Z",
+        "source": "auto-detected",
+        "tags": [
+          "api",
+          "http-methods"
+        ],
+        "approvedAt": "2026-01-29T07:18:02.026Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "d44357c84661341b",
+      "subcategory": "response-envelope",
+      "name": "Response Envelope Detector",
+      "description": "Detects response envelope patterns and flags inconsistencies",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "api/response-envelope",
+          "patternId": "api/response-envelope/nextjs-response"
+        }
+      },
+      "confidence": {
+        "frequency": 0.04,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 4,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src/app/api/auth/provider/route.ts",
+          "line": 13,
+          "column": 18,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/api/auth/user/route.ts",
+          "line": 9,
+          "column": 16,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/api/chat/sessions/[sessionId]/stream/route.ts",
+          "line": 20,
+          "column": 14,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/app/api/proxy/[...path]/route.ts",
+          "line": 84,
+          "column": 14,
+          "isOutlier": false,
+          "confidence": 1
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:32:38.509Z",
+        "lastSeen": "2026-01-29T07:18:02.068Z",
+        "source": "auto-detected",
+        "tags": [
+          "api",
+          "response-envelope"
+        ],
+        "approvedAt": "2026-01-29T07:18:02.068Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "971c22e246abf683",
+      "subcategory": "response-envelope",
+      "name": "Response Envelope Detector",
+      "description": "Detects response envelope patterns and flags inconsistencies",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "api/response-envelope",
+          "patternId": "api/response-envelope/pagination-cursor"
+        }
+      },
+      "confidence": {
+        "frequency": 0.01,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src/components/contextual/CredentialsInput/components/CredentialRow/CredentialRow.tsx",
+          "line": 88,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 1
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:32:38.510Z",
+        "lastSeen": "2026-01-29T07:18:02.110Z",
+        "source": "auto-detected",
+        "tags": [
+          "api",
+          "response-envelope"
+        ],
+        "approvedAt": "2026-01-29T07:18:02.110Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    }
+  ],
+  "lastUpdated": "2026-01-29T07:18:24.529Z",
+  "checksum": "0e7146328f083849"
+}

@@ -1,0 +1,1362 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.152Z",
+  "checksum": "a4e3e46c0f0126cf",
+  "file": "backend/data/auth/api_key.py",
+  "functions": [
+    {
+      "id": "backend/data/auth/api_key.py:from_db:36",
+      "name": "from_db",
+      "startLine": 36,
+      "endLine": 49,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "APIKeyInfo",
+          "resolved": false,
+          "confidence": 0,
+          "line": 37
+        },
+        {
+          "target": "APIKeyStatus",
+          "resolved": false,
+          "confidence": 0,
+          "line": 42
+        },
+        {
+          "target": "APIKeyPermission",
+          "resolved": false,
+          "confidence": 0,
+          "line": 43
+        },
+        {
+          "target": "p",
+          "resolved": false,
+          "confidence": 0,
+          "line": 43
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/auth/api_key.py:match:56",
+      "name": "match",
+      "startLine": 56,
+      "endLine": 58,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "verify_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 58
+        },
+        {
+          "target": "plaintext_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 58
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/auth/api_key.py:from_db:61",
+      "name": "from_db",
+      "startLine": 61,
+      "endLine": 66,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "APIKeyInfoWithHash",
+          "resolved": false,
+          "confidence": 0,
+          "line": 62
+        },
+        {
+          "target": "model_dump",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 63,
+          "resolvedId": "backend/blocks/apollo/models.py:model_dump:11"
+        },
+        {
+          "target": "from_db",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 63,
+          "resolvedId": "backend/data/auth/api_key.py:from_db:36"
+        },
+        {
+          "target": "api_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 63
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/auth/api_key.py:without_hash:68",
+      "name": "without_hash",
+      "startLine": 68,
+      "endLine": 69,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "APIKeyInfo",
+          "resolved": false,
+          "confidence": 0,
+          "line": 69
+        },
+        {
+          "target": "model_dump",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 69,
+          "resolvedId": "backend/blocks/apollo/models.py:model_dump:11"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/auth/api_key.py:create_api_key:72",
+      "name": "create_api_key",
+      "startLine": 72,
+      "endLine": 98,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "generate_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 82
+        },
+        {
+          "target": "create",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 84,
+          "resolvedId": "backend/integrations/creds_manager.py:create:68"
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 84
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 86
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 86
+        },
+        {
+          "target": "from_db",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 98,
+          "resolvedId": "backend/data/auth/api_key.py:from_db:36"
+        },
+        {
+          "target": "saved_key_obj",
+          "resolved": false,
+          "confidence": 0,
+          "line": 98
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "prisma",
+          "operation": "write",
+          "line": 84,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/data/auth/api_key.py:get_active_api_keys_by_head:101",
+      "name": "get_active_api_keys_by_head",
+      "startLine": 101,
+      "endLine": 105,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "find_many",
+          "resolved": false,
+          "confidence": 0,
+          "line": 102
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 102
+        },
+        {
+          "target": "from_db",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 105,
+          "resolvedId": "backend/data/auth/api_key.py:from_db:36"
+        },
+        {
+          "target": "key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 105
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "prisma",
+          "operation": "read",
+          "line": 102,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/data/auth/api_key.py:validate_api_key:108",
+      "name": "validate_api_key",
+      "startLine": 108,
+      "endLine": 137,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "startswith",
+          "resolved": false,
+          "confidence": 0,
+          "line": 113
+        },
+        {
+          "target": "warning",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 114,
+          "resolvedId": "backend/util/logging.py:warning:45"
+        },
+        {
+          "target": "get_active_api_keys_by_head",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 118,
+          "resolvedId": "backend/data/auth/api_key.py:get_active_api_keys_by_head:101"
+        },
+        {
+          "target": "head",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 118,
+          "resolvedId": "backend/util/request.py:head:572"
+        },
+        {
+          "target": "next",
+          "resolved": false,
+          "confidence": 0,
+          "line": 120
+        },
+        {
+          "target": "match",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 121,
+          "resolvedId": "backend/data/auth/api_key.py:match:56"
+        },
+        {
+          "target": "plaintext_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 121
+        },
+        {
+          "target": "_migrate_key_to_secure_hash",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 130,
+          "resolvedId": "backend/data/auth/api_key.py:_migrate_key_to_secure_hash:140"
+        },
+        {
+          "target": "plaintext_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 131
+        },
+        {
+          "target": "matched_api_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 131
+        },
+        {
+          "target": "without_hash",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 134,
+          "resolvedId": "backend/data/auth/api_key.py:without_hash:68"
+        },
+        {
+          "target": "error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 136,
+          "resolvedId": "backend/util/logging.py:error:49"
+        },
+        {
+          "target": "RuntimeError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 137
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/auth/api_key.py:_migrate_key_to_secure_hash:140",
+      "name": "_migrate_key_to_secure_hash",
+      "startLine": 140,
+      "endLine": 156,
+      "isEntryPoint": false,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "hash_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 145
+        },
+        {
+          "target": "plaintext_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 145
+        },
+        {
+          "target": "update",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 146,
+          "resolvedId": "backend/integrations/creds_manager.py:update:162"
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 146
+        },
+        {
+          "target": "info",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 149,
+          "resolvedId": "backend/util/logging.py:info:41"
+        },
+        {
+          "target": "error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 154,
+          "resolvedId": "backend/util/logging.py:error:49"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "prisma",
+          "operation": "write",
+          "line": 146,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/data/auth/api_key.py:revoke_api_key:159",
+      "name": "revoke_api_key",
+      "startLine": 159,
+      "endLine": 178,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "find_unique",
+          "resolved": false,
+          "confidence": 0,
+          "line": 160
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 160
+        },
+        {
+          "target": "NotFoundError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 163
+        },
+        {
+          "target": "NotAuthorizedError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 166
+        },
+        {
+          "target": "update",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 168,
+          "resolvedId": "backend/integrations/creds_manager.py:update:162"
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 168
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 172
+        },
+        {
+          "target": "NotFoundError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 176
+        },
+        {
+          "target": "from_db",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 178,
+          "resolvedId": "backend/data/auth/api_key.py:from_db:36"
+        },
+        {
+          "target": "updated_api_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 178
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "prisma",
+          "operation": "read",
+          "line": 160,
+          "fields": [
+            "id"
+          ]
+        },
+        {
+          "table": "prisma",
+          "operation": "write",
+          "line": 168,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/data/auth/api_key.py:list_user_api_keys:181",
+      "name": "list_user_api_keys",
+      "startLine": 181,
+      "endLine": 190,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "find_many",
+          "resolved": false,
+          "confidence": 0,
+          "line": 184
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 184
+        },
+        {
+          "target": "from_db",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 190,
+          "resolvedId": "backend/data/auth/api_key.py:from_db:36"
+        },
+        {
+          "target": "key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 190
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "prisma",
+          "operation": "read",
+          "line": 184,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/data/auth/api_key.py:suspend_api_key:193",
+      "name": "suspend_api_key",
+      "startLine": 193,
+      "endLine": 209,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "find_unique",
+          "resolved": false,
+          "confidence": 0,
+          "line": 195
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 195
+        },
+        {
+          "target": "NotFoundError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 198
+        },
+        {
+          "target": "NotAuthorizedError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 201
+        },
+        {
+          "target": "update",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 203,
+          "resolvedId": "backend/integrations/creds_manager.py:update:162"
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 203
+        },
+        {
+          "target": "NotFoundError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 207
+        },
+        {
+          "target": "from_db",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 209,
+          "resolvedId": "backend/data/auth/api_key.py:from_db:36"
+        },
+        {
+          "target": "updated_api_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 209
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "prisma",
+          "operation": "read",
+          "line": 195,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "write",
+          "line": 203,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/data/auth/api_key.py:has_permission:212",
+      "name": "has_permission",
+      "startLine": 212,
+      "endLine": 213,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/auth/api_key.py:get_api_key_by_id:216",
+      "name": "get_api_key_by_id",
+      "startLine": 216,
+      "endLine": 224,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "find_first",
+          "resolved": false,
+          "confidence": 0,
+          "line": 217
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 217
+        },
+        {
+          "target": "from_db",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 224,
+          "resolvedId": "backend/data/auth/api_key.py:from_db:36"
+        },
+        {
+          "target": "api_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 224
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "prisma",
+          "operation": "read",
+          "line": 217,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/data/auth/api_key.py:update_api_key_permissions:227",
+      "name": "update_api_key_permissions",
+      "startLine": 227,
+      "endLine": 248,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "find_unique",
+          "resolved": false,
+          "confidence": 0,
+          "line": 233
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 233
+        },
+        {
+          "target": "NotFoundError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 236
+        },
+        {
+          "target": "NotAuthorizedError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 239
+        },
+        {
+          "target": "update",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 241,
+          "resolvedId": "backend/integrations/creds_manager.py:update:162"
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 241
+        },
+        {
+          "target": "NotFoundError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 246
+        },
+        {
+          "target": "from_db",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 248,
+          "resolvedId": "backend/data/auth/api_key.py:from_db:36"
+        },
+        {
+          "target": "updated_api_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 248
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "prisma",
+          "operation": "read",
+          "line": 233,
+          "fields": [
+            "id"
+          ]
+        },
+        {
+          "table": "prisma",
+          "operation": "write",
+          "line": 241,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/data/auth/api_key.py:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 249,
+      "isEntryPoint": false,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "getLogger",
+          "resolved": false,
+          "confidence": 0,
+          "line": 17
+        },
+        {
+          "target": "APIKeySmith",
+          "resolved": false,
+          "confidence": 0,
+          "line": 18
+        },
+        {
+          "target": "Field",
+          "resolved": false,
+          "confidence": 0,
+          "line": 24
+        },
+        {
+          "target": "Field",
+          "resolved": false,
+          "confidence": 0,
+          "line": 27
+        },
+        {
+          "target": "APIKeyInfo",
+          "resolved": false,
+          "confidence": 0,
+          "line": 37
+        },
+        {
+          "target": "APIKeyStatus",
+          "resolved": false,
+          "confidence": 0,
+          "line": 42
+        },
+        {
+          "target": "APIKeyPermission",
+          "resolved": false,
+          "confidence": 0,
+          "line": 43
+        },
+        {
+          "target": "p",
+          "resolved": false,
+          "confidence": 0,
+          "line": 43
+        },
+        {
+          "target": "verify_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 58
+        },
+        {
+          "target": "plaintext_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 58
+        },
+        {
+          "target": "APIKeyInfoWithHash",
+          "resolved": false,
+          "confidence": 0,
+          "line": 62
+        },
+        {
+          "target": "model_dump",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 63,
+          "resolvedId": "backend/blocks/apollo/models.py:model_dump:11"
+        },
+        {
+          "target": "from_db",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 63,
+          "resolvedId": "backend/data/auth/api_key.py:from_db:36"
+        },
+        {
+          "target": "api_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 63
+        },
+        {
+          "target": "APIKeyInfo",
+          "resolved": false,
+          "confidence": 0,
+          "line": 69
+        },
+        {
+          "target": "model_dump",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 69,
+          "resolvedId": "backend/blocks/apollo/models.py:model_dump:11"
+        },
+        {
+          "target": "generate_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 82
+        },
+        {
+          "target": "create",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 84,
+          "resolvedId": "backend/integrations/creds_manager.py:create:68"
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 84
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 86
+        },
+        {
+          "target": "uuid4",
+          "resolved": false,
+          "confidence": 0,
+          "line": 86
+        },
+        {
+          "target": "from_db",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 98,
+          "resolvedId": "backend/data/auth/api_key.py:from_db:36"
+        },
+        {
+          "target": "saved_key_obj",
+          "resolved": false,
+          "confidence": 0,
+          "line": 98
+        },
+        {
+          "target": "find_many",
+          "resolved": false,
+          "confidence": 0,
+          "line": 102
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 102
+        },
+        {
+          "target": "from_db",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 105,
+          "resolvedId": "backend/data/auth/api_key.py:from_db:36"
+        },
+        {
+          "target": "key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 105
+        },
+        {
+          "target": "startswith",
+          "resolved": false,
+          "confidence": 0,
+          "line": 113
+        },
+        {
+          "target": "warning",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 114,
+          "resolvedId": "backend/util/logging.py:warning:45"
+        },
+        {
+          "target": "get_active_api_keys_by_head",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 118,
+          "resolvedId": "backend/data/auth/api_key.py:get_active_api_keys_by_head:101"
+        },
+        {
+          "target": "head",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 118,
+          "resolvedId": "backend/util/request.py:head:572"
+        },
+        {
+          "target": "next",
+          "resolved": false,
+          "confidence": 0,
+          "line": 120
+        },
+        {
+          "target": "match",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 121,
+          "resolvedId": "backend/data/auth/api_key.py:match:56"
+        },
+        {
+          "target": "plaintext_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 121
+        },
+        {
+          "target": "_migrate_key_to_secure_hash",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 130,
+          "resolvedId": "backend/data/auth/api_key.py:_migrate_key_to_secure_hash:140"
+        },
+        {
+          "target": "plaintext_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 131
+        },
+        {
+          "target": "matched_api_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 131
+        },
+        {
+          "target": "without_hash",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 134,
+          "resolvedId": "backend/data/auth/api_key.py:without_hash:68"
+        },
+        {
+          "target": "error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 136,
+          "resolvedId": "backend/util/logging.py:error:49"
+        },
+        {
+          "target": "RuntimeError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 137
+        },
+        {
+          "target": "hash_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 145
+        },
+        {
+          "target": "plaintext_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 145
+        },
+        {
+          "target": "update",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 146,
+          "resolvedId": "backend/integrations/creds_manager.py:update:162"
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 146
+        },
+        {
+          "target": "info",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 149,
+          "resolvedId": "backend/util/logging.py:info:41"
+        },
+        {
+          "target": "error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 154,
+          "resolvedId": "backend/util/logging.py:error:49"
+        },
+        {
+          "target": "find_unique",
+          "resolved": false,
+          "confidence": 0,
+          "line": 160
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 160
+        },
+        {
+          "target": "NotFoundError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 163
+        },
+        {
+          "target": "NotAuthorizedError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 166
+        },
+        {
+          "target": "update",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 168,
+          "resolvedId": "backend/integrations/creds_manager.py:update:162"
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 168
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 172
+        },
+        {
+          "target": "NotFoundError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 176
+        },
+        {
+          "target": "from_db",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 178,
+          "resolvedId": "backend/data/auth/api_key.py:from_db:36"
+        },
+        {
+          "target": "updated_api_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 178
+        },
+        {
+          "target": "find_many",
+          "resolved": false,
+          "confidence": 0,
+          "line": 184
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 184
+        },
+        {
+          "target": "from_db",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 190,
+          "resolvedId": "backend/data/auth/api_key.py:from_db:36"
+        },
+        {
+          "target": "key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 190
+        },
+        {
+          "target": "find_unique",
+          "resolved": false,
+          "confidence": 0,
+          "line": 195
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 195
+        },
+        {
+          "target": "NotFoundError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 198
+        },
+        {
+          "target": "NotAuthorizedError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 201
+        },
+        {
+          "target": "update",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 203,
+          "resolvedId": "backend/integrations/creds_manager.py:update:162"
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 203
+        },
+        {
+          "target": "NotFoundError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 207
+        },
+        {
+          "target": "from_db",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 209,
+          "resolvedId": "backend/data/auth/api_key.py:from_db:36"
+        },
+        {
+          "target": "updated_api_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 209
+        },
+        {
+          "target": "find_first",
+          "resolved": false,
+          "confidence": 0,
+          "line": 217
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 217
+        },
+        {
+          "target": "from_db",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 224,
+          "resolvedId": "backend/data/auth/api_key.py:from_db:36"
+        },
+        {
+          "target": "api_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 224
+        },
+        {
+          "target": "find_unique",
+          "resolved": false,
+          "confidence": 0,
+          "line": 233
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 233
+        },
+        {
+          "target": "NotFoundError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 236
+        },
+        {
+          "target": "NotAuthorizedError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 239
+        },
+        {
+          "target": "update",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 241,
+          "resolvedId": "backend/integrations/creds_manager.py:update:162"
+        },
+        {
+          "target": "prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 241
+        },
+        {
+          "target": "NotFoundError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 246
+        },
+        {
+          "target": "from_db",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 248,
+          "resolvedId": "backend/data/auth/api_key.py:from_db:36"
+        },
+        {
+          "target": "updated_api_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 248
+        },
+        {
+          "target": "getLogger",
+          "resolved": false,
+          "confidence": 0,
+          "line": 17
+        },
+        {
+          "target": "APIKeySmith",
+          "resolved": false,
+          "confidence": 0,
+          "line": 18
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "logging",
+          "operation": "read",
+          "line": 17,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "write",
+          "line": 84,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "read",
+          "line": 102,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "write",
+          "line": 146,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "read",
+          "line": 160,
+          "fields": [
+            "id"
+          ]
+        },
+        {
+          "table": "prisma",
+          "operation": "write",
+          "line": 168,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "read",
+          "line": 184,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "read",
+          "line": 195,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "write",
+          "line": 203,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "read",
+          "line": 217,
+          "fields": []
+        },
+        {
+          "table": "prisma",
+          "operation": "read",
+          "line": 233,
+          "fields": [
+            "id"
+          ]
+        },
+        {
+          "table": "prisma",
+          "operation": "write",
+          "line": 241,
+          "fields": []
+        }
+      ]
+    }
+  ]
+}

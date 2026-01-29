@@ -1,0 +1,1562 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:21.045Z",
+  "checksum": "6823a0c711d838ba",
+  "file": "autogpt_libs/auth/jwt_utils_test.py",
+  "functions": [
+    {
+      "id": "autogpt_libs/auth/jwt_utils_test.py:mock_config:35",
+      "name": "mock_config",
+      "startLine": 35,
+      "endLine": 38,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "dict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 36
+        },
+        {
+          "target": "object",
+          "resolved": false,
+          "confidence": 0,
+          "line": 37
+        },
+        {
+          "target": "config",
+          "resolved": false,
+          "confidence": 0,
+          "line": 37
+        },
+        {
+          "target": "Settings",
+          "resolved": false,
+          "confidence": 0,
+          "line": 37
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "autogpt_libs/auth/jwt_utils_test.py:create_token:41",
+      "name": "create_token",
+      "startLine": 41,
+      "endLine": 45,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "encode",
+          "resolved": false,
+          "confidence": 0,
+          "line": 45
+        },
+        {
+          "target": "payload",
+          "resolved": false,
+          "confidence": 0,
+          "line": 45
+        },
+        {
+          "target": "secret",
+          "resolved": false,
+          "confidence": 0,
+          "line": 45
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "autogpt_libs/auth/jwt_utils_test.py:test_parse_jwt_token_valid:48",
+      "name": "test_parse_jwt_token_valid",
+      "startLine": 48,
+      "endLine": 55,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "create_token",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 50,
+          "resolvedId": "autogpt_libs/auth/jwt_utils_test.py:create_token:41"
+        },
+        {
+          "target": "parse_jwt_token",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 51,
+          "resolvedId": "autogpt_libs/auth/jwt_utils.py:parse_jwt_token:45"
+        },
+        {
+          "target": "token",
+          "resolved": false,
+          "confidence": 0,
+          "line": 51
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "autogpt_libs/auth/jwt_utils_test.py:test_parse_jwt_token_expired:58",
+      "name": "test_parse_jwt_token_expired",
+      "startLine": 58,
+      "endLine": 68,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 62
+        },
+        {
+          "target": "timedelta",
+          "resolved": false,
+          "confidence": 0,
+          "line": 62
+        },
+        {
+          "target": "create_token",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 64,
+          "resolvedId": "autogpt_libs/auth/jwt_utils_test.py:create_token:41"
+        },
+        {
+          "target": "expired_payload",
+          "resolved": false,
+          "confidence": 0,
+          "line": 64
+        },
+        {
+          "target": "raises",
+          "resolved": false,
+          "confidence": 0,
+          "line": 66
+        },
+        {
+          "target": "parse_jwt_token",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 67,
+          "resolvedId": "autogpt_libs/auth/jwt_utils.py:parse_jwt_token:45"
+        },
+        {
+          "target": "token",
+          "resolved": false,
+          "confidence": 0,
+          "line": 67
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 68
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "autogpt_libs/auth/jwt_utils_test.py:test_parse_jwt_token_invalid_signature:71",
+      "name": "test_parse_jwt_token_invalid_signature",
+      "startLine": 71,
+      "endLine": 78,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "create_token",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 74,
+          "resolvedId": "autogpt_libs/auth/jwt_utils_test.py:create_token:41"
+        },
+        {
+          "target": "raises",
+          "resolved": false,
+          "confidence": 0,
+          "line": 76
+        },
+        {
+          "target": "parse_jwt_token",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 77,
+          "resolvedId": "autogpt_libs/auth/jwt_utils.py:parse_jwt_token:45"
+        },
+        {
+          "target": "token",
+          "resolved": false,
+          "confidence": 0,
+          "line": 77
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 78
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "autogpt_libs/auth/jwt_utils_test.py:test_parse_jwt_token_malformed:81",
+      "name": "test_parse_jwt_token_malformed",
+      "startLine": 81,
+      "endLine": 96,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "raises",
+          "resolved": false,
+          "confidence": 0,
+          "line": 94
+        },
+        {
+          "target": "parse_jwt_token",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 95,
+          "resolvedId": "autogpt_libs/auth/jwt_utils.py:parse_jwt_token:45"
+        },
+        {
+          "target": "token",
+          "resolved": false,
+          "confidence": 0,
+          "line": 95
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 96
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "autogpt_libs/auth/jwt_utils_test.py:test_parse_jwt_token_wrong_audience:99",
+      "name": "test_parse_jwt_token_wrong_audience",
+      "startLine": 99,
+      "endLine": 106,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "create_token",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 102,
+          "resolvedId": "autogpt_libs/auth/jwt_utils_test.py:create_token:41"
+        },
+        {
+          "target": "wrong_aud_payload",
+          "resolved": false,
+          "confidence": 0,
+          "line": 102
+        },
+        {
+          "target": "raises",
+          "resolved": false,
+          "confidence": 0,
+          "line": 104
+        },
+        {
+          "target": "parse_jwt_token",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 105,
+          "resolvedId": "autogpt_libs/auth/jwt_utils.py:parse_jwt_token:45"
+        },
+        {
+          "target": "token",
+          "resolved": false,
+          "confidence": 0,
+          "line": 105
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 106
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "autogpt_libs/auth/jwt_utils_test.py:test_parse_jwt_token_missing_audience:109",
+      "name": "test_parse_jwt_token_missing_audience",
+      "startLine": 109,
+      "endLine": 116,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "items",
+          "resolved": false,
+          "confidence": 0,
+          "line": 111
+        },
+        {
+          "target": "create_token",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 112,
+          "resolvedId": "autogpt_libs/auth/jwt_utils_test.py:create_token:41"
+        },
+        {
+          "target": "no_aud_payload",
+          "resolved": false,
+          "confidence": 0,
+          "line": 112
+        },
+        {
+          "target": "raises",
+          "resolved": false,
+          "confidence": 0,
+          "line": 114
+        },
+        {
+          "target": "parse_jwt_token",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 115,
+          "resolvedId": "autogpt_libs/auth/jwt_utils.py:parse_jwt_token:45"
+        },
+        {
+          "target": "token",
+          "resolved": false,
+          "confidence": 0,
+          "line": 115
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 116
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "autogpt_libs/auth/jwt_utils_test.py:test_get_jwt_payload_with_valid_token:119",
+      "name": "test_get_jwt_payload_with_valid_token",
+      "startLine": 119,
+      "endLine": 126,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "create_token",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 121,
+          "resolvedId": "autogpt_libs/auth/jwt_utils_test.py:create_token:41"
+        },
+        {
+          "target": "HTTPAuthorizationCredentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 122
+        },
+        {
+          "target": "get_jwt_payload",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 124,
+          "resolvedId": "autogpt_libs/auth/jwt_utils.py:get_jwt_payload:19"
+        },
+        {
+          "target": "credentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 124
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "autogpt_libs/auth/jwt_utils_test.py:test_get_jwt_payload_no_credentials:129",
+      "name": "test_get_jwt_payload_no_credentials",
+      "startLine": 129,
+      "endLine": 134,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "raises",
+          "resolved": false,
+          "confidence": 0,
+          "line": 131
+        },
+        {
+          "target": "get_jwt_payload",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 132,
+          "resolvedId": "autogpt_libs/auth/jwt_utils.py:get_jwt_payload:19"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "autogpt_libs/auth/jwt_utils_test.py:test_get_jwt_payload_invalid_token:137",
+      "name": "test_get_jwt_payload_invalid_token",
+      "startLine": 137,
+      "endLine": 146,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "HTTPAuthorizationCredentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 139
+        },
+        {
+          "target": "raises",
+          "resolved": false,
+          "confidence": 0,
+          "line": 143
+        },
+        {
+          "target": "get_jwt_payload",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 144,
+          "resolvedId": "autogpt_libs/auth/jwt_utils.py:get_jwt_payload:19"
+        },
+        {
+          "target": "credentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 144
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "autogpt_libs/auth/jwt_utils_test.py:test_verify_user_with_valid_user:149",
+      "name": "test_verify_user_with_valid_user",
+      "startLine": 149,
+      "endLine": 155,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "verify_user",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 151,
+          "resolvedId": "autogpt_libs/auth/jwt_utils.py:verify_user:68"
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 152
+        },
+        {
+          "target": "user",
+          "resolved": false,
+          "confidence": 0,
+          "line": 152
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "autogpt_libs/auth/jwt_utils_test.py:test_verify_user_with_admin:158",
+      "name": "test_verify_user_with_admin",
+      "startLine": 158,
+      "endLine": 163,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "verify_user",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 160,
+          "resolvedId": "autogpt_libs/auth/jwt_utils.py:verify_user:68"
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 161
+        },
+        {
+          "target": "user",
+          "resolved": false,
+          "confidence": 0,
+          "line": 161
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "autogpt_libs/auth/jwt_utils_test.py:test_verify_user_admin_only_with_regular_user:166",
+      "name": "test_verify_user_admin_only_with_regular_user",
+      "startLine": 166,
+      "endLine": 171,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "raises",
+          "resolved": false,
+          "confidence": 0,
+          "line": 168
+        },
+        {
+          "target": "verify_user",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 169,
+          "resolvedId": "autogpt_libs/auth/jwt_utils.py:verify_user:68"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "autogpt_libs/auth/jwt_utils_test.py:test_verify_user_no_payload:174",
+      "name": "test_verify_user_no_payload",
+      "startLine": 174,
+      "endLine": 179,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "raises",
+          "resolved": false,
+          "confidence": 0,
+          "line": 176
+        },
+        {
+          "target": "verify_user",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 177,
+          "resolvedId": "autogpt_libs/auth/jwt_utils.py:verify_user:68"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "autogpt_libs/auth/jwt_utils_test.py:test_verify_user_missing_sub:182",
+      "name": "test_verify_user_missing_sub",
+      "startLine": 182,
+      "endLine": 188,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "raises",
+          "resolved": false,
+          "confidence": 0,
+          "line": 185
+        },
+        {
+          "target": "verify_user",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 186,
+          "resolvedId": "autogpt_libs/auth/jwt_utils.py:verify_user:68"
+        },
+        {
+          "target": "invalid_payload",
+          "resolved": false,
+          "confidence": 0,
+          "line": 186
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "autogpt_libs/auth/jwt_utils_test.py:test_verify_user_empty_sub:191",
+      "name": "test_verify_user_empty_sub",
+      "startLine": 191,
+      "endLine": 197,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "raises",
+          "resolved": false,
+          "confidence": 0,
+          "line": 194
+        },
+        {
+          "target": "verify_user",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 195,
+          "resolvedId": "autogpt_libs/auth/jwt_utils.py:verify_user:68"
+        },
+        {
+          "target": "invalid_payload",
+          "resolved": false,
+          "confidence": 0,
+          "line": 195
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "autogpt_libs/auth/jwt_utils_test.py:test_verify_user_none_sub:200",
+      "name": "test_verify_user_none_sub",
+      "startLine": 200,
+      "endLine": 206,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "raises",
+          "resolved": false,
+          "confidence": 0,
+          "line": 203
+        },
+        {
+          "target": "verify_user",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 204,
+          "resolvedId": "autogpt_libs/auth/jwt_utils.py:verify_user:68"
+        },
+        {
+          "target": "invalid_payload",
+          "resolved": false,
+          "confidence": 0,
+          "line": 204
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "autogpt_libs/auth/jwt_utils_test.py:test_verify_user_missing_role_admin_check:209",
+      "name": "test_verify_user_missing_role_admin_check",
+      "startLine": 209,
+      "endLine": 214,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "raises",
+          "resolved": false,
+          "confidence": 0,
+          "line": 212
+        },
+        {
+          "target": "verify_user",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 214,
+          "resolvedId": "autogpt_libs/auth/jwt_utils.py:verify_user:68"
+        },
+        {
+          "target": "no_role_payload",
+          "resolved": false,
+          "confidence": 0,
+          "line": 214
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "autogpt_libs/auth/jwt_utils_test.py:test_jwt_with_additional_claims:220",
+      "name": "test_jwt_with_additional_claims",
+      "startLine": 220,
+      "endLine": 235,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "create_token",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 230,
+          "resolvedId": "autogpt_libs/auth/jwt_utils_test.py:create_token:41"
+        },
+        {
+          "target": "extra_claims_payload",
+          "resolved": false,
+          "confidence": 0,
+          "line": 230
+        },
+        {
+          "target": "parse_jwt_token",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 232,
+          "resolvedId": "autogpt_libs/auth/jwt_utils.py:parse_jwt_token:45"
+        },
+        {
+          "target": "token",
+          "resolved": false,
+          "confidence": 0,
+          "line": 232
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "autogpt_libs/auth/jwt_utils_test.py:test_jwt_with_numeric_sub:238",
+      "name": "test_jwt_with_numeric_sub",
+      "startLine": 238,
+      "endLine": 247,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "verify_user",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 246,
+          "resolvedId": "autogpt_libs/auth/jwt_utils.py:verify_user:68"
+        },
+        {
+          "target": "payload",
+          "resolved": false,
+          "confidence": 0,
+          "line": 246
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "autogpt_libs/auth/jwt_utils_test.py:test_jwt_with_very_long_sub:250",
+      "name": "test_jwt_with_very_long_sub",
+      "startLine": 250,
+      "endLine": 259,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "verify_user",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 258,
+          "resolvedId": "autogpt_libs/auth/jwt_utils.py:verify_user:68"
+        },
+        {
+          "target": "payload",
+          "resolved": false,
+          "confidence": 0,
+          "line": 258
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "autogpt_libs/auth/jwt_utils_test.py:test_jwt_with_special_characters_in_claims:262",
+      "name": "test_jwt_with_special_characters_in_claims",
+      "startLine": 262,
+      "endLine": 271,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "verify_user",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 270,
+          "resolvedId": "autogpt_libs/auth/jwt_utils.py:verify_user:68"
+        },
+        {
+          "target": "payload",
+          "resolved": false,
+          "confidence": 0,
+          "line": 270
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "autogpt_libs/auth/jwt_utils_test.py:test_jwt_with_future_iat:274",
+      "name": "test_jwt_with_future_iat",
+      "startLine": 274,
+      "endLine": 286,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 280
+        },
+        {
+          "target": "timedelta",
+          "resolved": false,
+          "confidence": 0,
+          "line": 280
+        },
+        {
+          "target": "create_token",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 282,
+          "resolvedId": "autogpt_libs/auth/jwt_utils_test.py:create_token:41"
+        },
+        {
+          "target": "future_payload",
+          "resolved": false,
+          "confidence": 0,
+          "line": 282
+        },
+        {
+          "target": "raises",
+          "resolved": false,
+          "confidence": 0,
+          "line": 285
+        },
+        {
+          "target": "parse_jwt_token",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 286,
+          "resolvedId": "autogpt_libs/auth/jwt_utils.py:parse_jwt_token:45"
+        },
+        {
+          "target": "token",
+          "resolved": false,
+          "confidence": 0,
+          "line": 286
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "autogpt_libs/auth/jwt_utils_test.py:test_jwt_with_different_algorithms:289",
+      "name": "test_jwt_with_different_algorithms",
+      "startLine": 289,
+      "endLine": 308,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "create_token",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 302,
+          "resolvedId": "autogpt_libs/auth/jwt_utils_test.py:create_token:41"
+        },
+        {
+          "target": "payload",
+          "resolved": false,
+          "confidence": 0,
+          "line": 302
+        },
+        {
+          "target": "create_token",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 304,
+          "resolvedId": "autogpt_libs/auth/jwt_utils_test.py:create_token:41"
+        },
+        {
+          "target": "payload",
+          "resolved": false,
+          "confidence": 0,
+          "line": 304
+        },
+        {
+          "target": "raises",
+          "resolved": false,
+          "confidence": 0,
+          "line": 306
+        },
+        {
+          "target": "parse_jwt_token",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 307,
+          "resolvedId": "autogpt_libs/auth/jwt_utils.py:parse_jwt_token:45"
+        },
+        {
+          "target": "token",
+          "resolved": false,
+          "confidence": 0,
+          "line": 307
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 308
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "autogpt_libs/auth/jwt_utils_test.py:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 309,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "fixture",
+          "resolved": false,
+          "confidence": 0,
+          "line": 34
+        },
+        {
+          "target": "dict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 36
+        },
+        {
+          "target": "object",
+          "resolved": false,
+          "confidence": 0,
+          "line": 37
+        },
+        {
+          "target": "config",
+          "resolved": false,
+          "confidence": 0,
+          "line": 37
+        },
+        {
+          "target": "Settings",
+          "resolved": false,
+          "confidence": 0,
+          "line": 37
+        },
+        {
+          "target": "encode",
+          "resolved": false,
+          "confidence": 0,
+          "line": 45
+        },
+        {
+          "target": "payload",
+          "resolved": false,
+          "confidence": 0,
+          "line": 45
+        },
+        {
+          "target": "secret",
+          "resolved": false,
+          "confidence": 0,
+          "line": 45
+        },
+        {
+          "target": "create_token",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 50,
+          "resolvedId": "autogpt_libs/auth/jwt_utils_test.py:create_token:41"
+        },
+        {
+          "target": "parse_jwt_token",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 51,
+          "resolvedId": "autogpt_libs/auth/jwt_utils.py:parse_jwt_token:45"
+        },
+        {
+          "target": "token",
+          "resolved": false,
+          "confidence": 0,
+          "line": 51
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 62
+        },
+        {
+          "target": "timedelta",
+          "resolved": false,
+          "confidence": 0,
+          "line": 62
+        },
+        {
+          "target": "create_token",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 64,
+          "resolvedId": "autogpt_libs/auth/jwt_utils_test.py:create_token:41"
+        },
+        {
+          "target": "expired_payload",
+          "resolved": false,
+          "confidence": 0,
+          "line": 64
+        },
+        {
+          "target": "raises",
+          "resolved": false,
+          "confidence": 0,
+          "line": 66
+        },
+        {
+          "target": "parse_jwt_token",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 67,
+          "resolvedId": "autogpt_libs/auth/jwt_utils.py:parse_jwt_token:45"
+        },
+        {
+          "target": "token",
+          "resolved": false,
+          "confidence": 0,
+          "line": 67
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 68
+        },
+        {
+          "target": "create_token",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 74,
+          "resolvedId": "autogpt_libs/auth/jwt_utils_test.py:create_token:41"
+        },
+        {
+          "target": "raises",
+          "resolved": false,
+          "confidence": 0,
+          "line": 76
+        },
+        {
+          "target": "parse_jwt_token",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 77,
+          "resolvedId": "autogpt_libs/auth/jwt_utils.py:parse_jwt_token:45"
+        },
+        {
+          "target": "token",
+          "resolved": false,
+          "confidence": 0,
+          "line": 77
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 78
+        },
+        {
+          "target": "raises",
+          "resolved": false,
+          "confidence": 0,
+          "line": 94
+        },
+        {
+          "target": "parse_jwt_token",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 95,
+          "resolvedId": "autogpt_libs/auth/jwt_utils.py:parse_jwt_token:45"
+        },
+        {
+          "target": "token",
+          "resolved": false,
+          "confidence": 0,
+          "line": 95
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 96
+        },
+        {
+          "target": "create_token",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 102,
+          "resolvedId": "autogpt_libs/auth/jwt_utils_test.py:create_token:41"
+        },
+        {
+          "target": "wrong_aud_payload",
+          "resolved": false,
+          "confidence": 0,
+          "line": 102
+        },
+        {
+          "target": "raises",
+          "resolved": false,
+          "confidence": 0,
+          "line": 104
+        },
+        {
+          "target": "parse_jwt_token",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 105,
+          "resolvedId": "autogpt_libs/auth/jwt_utils.py:parse_jwt_token:45"
+        },
+        {
+          "target": "token",
+          "resolved": false,
+          "confidence": 0,
+          "line": 105
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 106
+        },
+        {
+          "target": "items",
+          "resolved": false,
+          "confidence": 0,
+          "line": 111
+        },
+        {
+          "target": "create_token",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 112,
+          "resolvedId": "autogpt_libs/auth/jwt_utils_test.py:create_token:41"
+        },
+        {
+          "target": "no_aud_payload",
+          "resolved": false,
+          "confidence": 0,
+          "line": 112
+        },
+        {
+          "target": "raises",
+          "resolved": false,
+          "confidence": 0,
+          "line": 114
+        },
+        {
+          "target": "parse_jwt_token",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 115,
+          "resolvedId": "autogpt_libs/auth/jwt_utils.py:parse_jwt_token:45"
+        },
+        {
+          "target": "token",
+          "resolved": false,
+          "confidence": 0,
+          "line": 115
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 116
+        },
+        {
+          "target": "create_token",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 121,
+          "resolvedId": "autogpt_libs/auth/jwt_utils_test.py:create_token:41"
+        },
+        {
+          "target": "HTTPAuthorizationCredentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 122
+        },
+        {
+          "target": "get_jwt_payload",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 124,
+          "resolvedId": "autogpt_libs/auth/jwt_utils.py:get_jwt_payload:19"
+        },
+        {
+          "target": "credentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 124
+        },
+        {
+          "target": "raises",
+          "resolved": false,
+          "confidence": 0,
+          "line": 131
+        },
+        {
+          "target": "get_jwt_payload",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 132,
+          "resolvedId": "autogpt_libs/auth/jwt_utils.py:get_jwt_payload:19"
+        },
+        {
+          "target": "HTTPAuthorizationCredentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 139
+        },
+        {
+          "target": "raises",
+          "resolved": false,
+          "confidence": 0,
+          "line": 143
+        },
+        {
+          "target": "get_jwt_payload",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 144,
+          "resolvedId": "autogpt_libs/auth/jwt_utils.py:get_jwt_payload:19"
+        },
+        {
+          "target": "credentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 144
+        },
+        {
+          "target": "verify_user",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 151,
+          "resolvedId": "autogpt_libs/auth/jwt_utils.py:verify_user:68"
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 152
+        },
+        {
+          "target": "user",
+          "resolved": false,
+          "confidence": 0,
+          "line": 152
+        },
+        {
+          "target": "verify_user",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 160,
+          "resolvedId": "autogpt_libs/auth/jwt_utils.py:verify_user:68"
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 161
+        },
+        {
+          "target": "user",
+          "resolved": false,
+          "confidence": 0,
+          "line": 161
+        },
+        {
+          "target": "raises",
+          "resolved": false,
+          "confidence": 0,
+          "line": 168
+        },
+        {
+          "target": "verify_user",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 169,
+          "resolvedId": "autogpt_libs/auth/jwt_utils.py:verify_user:68"
+        },
+        {
+          "target": "raises",
+          "resolved": false,
+          "confidence": 0,
+          "line": 176
+        },
+        {
+          "target": "verify_user",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 177,
+          "resolvedId": "autogpt_libs/auth/jwt_utils.py:verify_user:68"
+        },
+        {
+          "target": "raises",
+          "resolved": false,
+          "confidence": 0,
+          "line": 185
+        },
+        {
+          "target": "verify_user",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 186,
+          "resolvedId": "autogpt_libs/auth/jwt_utils.py:verify_user:68"
+        },
+        {
+          "target": "invalid_payload",
+          "resolved": false,
+          "confidence": 0,
+          "line": 186
+        },
+        {
+          "target": "raises",
+          "resolved": false,
+          "confidence": 0,
+          "line": 194
+        },
+        {
+          "target": "verify_user",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 195,
+          "resolvedId": "autogpt_libs/auth/jwt_utils.py:verify_user:68"
+        },
+        {
+          "target": "invalid_payload",
+          "resolved": false,
+          "confidence": 0,
+          "line": 195
+        },
+        {
+          "target": "raises",
+          "resolved": false,
+          "confidence": 0,
+          "line": 203
+        },
+        {
+          "target": "verify_user",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 204,
+          "resolvedId": "autogpt_libs/auth/jwt_utils.py:verify_user:68"
+        },
+        {
+          "target": "invalid_payload",
+          "resolved": false,
+          "confidence": 0,
+          "line": 204
+        },
+        {
+          "target": "raises",
+          "resolved": false,
+          "confidence": 0,
+          "line": 212
+        },
+        {
+          "target": "verify_user",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 214,
+          "resolvedId": "autogpt_libs/auth/jwt_utils.py:verify_user:68"
+        },
+        {
+          "target": "no_role_payload",
+          "resolved": false,
+          "confidence": 0,
+          "line": 214
+        },
+        {
+          "target": "create_token",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 230,
+          "resolvedId": "autogpt_libs/auth/jwt_utils_test.py:create_token:41"
+        },
+        {
+          "target": "extra_claims_payload",
+          "resolved": false,
+          "confidence": 0,
+          "line": 230
+        },
+        {
+          "target": "parse_jwt_token",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 232,
+          "resolvedId": "autogpt_libs/auth/jwt_utils.py:parse_jwt_token:45"
+        },
+        {
+          "target": "token",
+          "resolved": false,
+          "confidence": 0,
+          "line": 232
+        },
+        {
+          "target": "verify_user",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 246,
+          "resolvedId": "autogpt_libs/auth/jwt_utils.py:verify_user:68"
+        },
+        {
+          "target": "payload",
+          "resolved": false,
+          "confidence": 0,
+          "line": 246
+        },
+        {
+          "target": "verify_user",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 258,
+          "resolvedId": "autogpt_libs/auth/jwt_utils.py:verify_user:68"
+        },
+        {
+          "target": "payload",
+          "resolved": false,
+          "confidence": 0,
+          "line": 258
+        },
+        {
+          "target": "verify_user",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 270,
+          "resolvedId": "autogpt_libs/auth/jwt_utils.py:verify_user:68"
+        },
+        {
+          "target": "payload",
+          "resolved": false,
+          "confidence": 0,
+          "line": 270
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 280
+        },
+        {
+          "target": "timedelta",
+          "resolved": false,
+          "confidence": 0,
+          "line": 280
+        },
+        {
+          "target": "create_token",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 282,
+          "resolvedId": "autogpt_libs/auth/jwt_utils_test.py:create_token:41"
+        },
+        {
+          "target": "future_payload",
+          "resolved": false,
+          "confidence": 0,
+          "line": 282
+        },
+        {
+          "target": "raises",
+          "resolved": false,
+          "confidence": 0,
+          "line": 285
+        },
+        {
+          "target": "parse_jwt_token",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 286,
+          "resolvedId": "autogpt_libs/auth/jwt_utils.py:parse_jwt_token:45"
+        },
+        {
+          "target": "token",
+          "resolved": false,
+          "confidence": 0,
+          "line": 286
+        },
+        {
+          "target": "create_token",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 302,
+          "resolvedId": "autogpt_libs/auth/jwt_utils_test.py:create_token:41"
+        },
+        {
+          "target": "payload",
+          "resolved": false,
+          "confidence": 0,
+          "line": 302
+        },
+        {
+          "target": "create_token",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 304,
+          "resolvedId": "autogpt_libs/auth/jwt_utils_test.py:create_token:41"
+        },
+        {
+          "target": "payload",
+          "resolved": false,
+          "confidence": 0,
+          "line": 304
+        },
+        {
+          "target": "raises",
+          "resolved": false,
+          "confidence": 0,
+          "line": 306
+        },
+        {
+          "target": "parse_jwt_token",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 307,
+          "resolvedId": "autogpt_libs/auth/jwt_utils.py:parse_jwt_token:45"
+        },
+        {
+          "target": "token",
+          "resolved": false,
+          "confidence": 0,
+          "line": 307
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 308
+        },
+        {
+          "target": "fixture",
+          "resolved": false,
+          "confidence": 0,
+          "line": 34
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

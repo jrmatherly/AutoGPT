@@ -1,0 +1,164 @@
+{
+  "version": "1.0.0",
+  "category": "logging",
+  "patterns": [
+    {
+      "id": "8d46302d25d90284",
+      "subcategory": "log-levels",
+      "name": "Log Levels Detector",
+      "description": "Learns log level patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "logging/log-levels",
+          "patternId": "logging/log-levels/decorator"
+        }
+      },
+      "confidence": {
+        "frequency": 0.11,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 3,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "backend/executor/manager.py",
+          "line": 707,
+          "column": 6,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/executor/manager.py",
+          "line": 1185,
+          "column": 6,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/executor/manager.py",
+          "line": 1578,
+          "column": 6,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/util/decorator.py",
+          "line": 126,
+          "column": 10,
+          "isOutlier": false,
+          "confidence": 0.98
+        },
+        {
+          "file": "backend/util/decorator.py",
+          "line": 126,
+          "column": 54,
+          "isOutlier": false,
+          "confidence": 0.98
+        },
+        {
+          "file": "backend/util/decorator.py",
+          "line": 127,
+          "column": 10,
+          "isOutlier": false,
+          "confidence": 0.98
+        },
+        {
+          "file": "backend/util/decorator.py",
+          "line": 127,
+          "column": 58,
+          "isOutlier": false,
+          "confidence": 0.98
+        },
+        {
+          "file": "backend/util/decorator.py",
+          "line": 187,
+          "column": 60,
+          "isOutlier": false,
+          "confidence": 0.98
+        },
+        {
+          "file": "backend/util/decorator.py",
+          "line": 188,
+          "column": 64,
+          "isOutlier": false,
+          "confidence": 0.98
+        },
+        {
+          "file": "backend/util/decorator_test.py",
+          "line": 15,
+          "column": 2,
+          "isOutlier": true,
+          "confidence": 0.9315384615384615,
+          "outlierReason": "Value below IQR lower bound"
+        },
+        {
+          "file": "backend/util/decorator_test.py",
+          "line": 20,
+          "column": 2,
+          "isOutlier": true,
+          "confidence": 0.9315384615384615,
+          "outlierReason": "Value below IQR lower bound"
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:30:16.815Z",
+        "lastSeen": "2026-01-29T06:30:16.815Z",
+        "source": "auto-detected",
+        "tags": [
+          "logging",
+          "log-levels"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "689b9c9e2b83e15e",
+      "subcategory": "metrics",
+      "name": "Metrics Detector",
+      "description": "Learns metrics patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "logging/metrics",
+          "patternId": "logging/metrics/function_definition"
+        }
+      },
+      "confidence": {
+        "frequency": 0.01,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.945,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "backend/util/truncate.py",
+          "line": 82,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.945
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:30:16.815Z",
+        "lastSeen": "2026-01-29T06:30:16.815Z",
+        "source": "auto-detected",
+        "tags": [
+          "logging",
+          "metrics"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    }
+  ],
+  "lastUpdated": "2026-01-29T07:17:37.771Z",
+  "checksum": "9d412f9f07cf53e4"
+}

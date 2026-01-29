@@ -1,0 +1,70 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.063Z",
+  "checksum": "f5087437fbbf3eaf",
+  "file": "src/tests/integrations/vitest.setup.tsx",
+  "functions": [
+    {
+      "id": "src/tests/integrations/vitest.setup.tsx:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 13,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "beforeAll",
+          "resolved": false,
+          "confidence": 0,
+          "line": 6
+        },
+        {
+          "target": "mockNextjsModules",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 7,
+          "resolvedId": "src/tests/integrations/setup-nextjs-mocks.tsx:mockNextjsModules:3"
+        },
+        {
+          "target": "mockSupabaseRequest",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 8,
+          "resolvedId": "src/tests/integrations/mock-supabase-request.tsx:mockSupabaseRequest:21"
+        },
+        {
+          "target": "listen",
+          "resolved": false,
+          "confidence": 0,
+          "line": 9
+        },
+        {
+          "target": "afterEach",
+          "resolved": false,
+          "confidence": 0,
+          "line": 11
+        },
+        {
+          "target": "resetHandlers",
+          "resolved": false,
+          "confidence": 0,
+          "line": 11
+        },
+        {
+          "target": "afterAll",
+          "resolved": false,
+          "confidence": 0,
+          "line": 12
+        },
+        {
+          "target": "close",
+          "resolved": false,
+          "confidence": 0,
+          "line": 12
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

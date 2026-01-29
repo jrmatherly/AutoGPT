@@ -1,0 +1,449 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.217Z",
+  "checksum": "3e99b3cba633de86",
+  "file": "backend/usecases/reddit_marketing.py",
+  "functions": [
+    {
+      "id": "backend/usecases/reddit_marketing.py:create_test_graph:10",
+      "name": "create_test_graph",
+      "startLine": 10,
+      "endLine": 140,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "strip",
+          "resolved": false,
+          "confidence": 0,
+          "line": 40
+        },
+        {
+          "target": "Node",
+          "resolved": false,
+          "confidence": 0,
+          "line": 65
+        },
+        {
+          "target": "GetRedditPostsBlock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 66
+        },
+        {
+          "target": "Node",
+          "resolved": false,
+          "confidence": 0,
+          "line": 69
+        },
+        {
+          "target": "FillTextTemplateBlock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 70
+        },
+        {
+          "target": "Node",
+          "resolved": false,
+          "confidence": 0,
+          "line": 73
+        },
+        {
+          "target": "AIStructuredResponseGeneratorBlock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 74
+        },
+        {
+          "target": "Node",
+          "resolved": false,
+          "confidence": 0,
+          "line": 76
+        },
+        {
+          "target": "MatchTextPatternBlock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 77
+        },
+        {
+          "target": "Node",
+          "resolved": false,
+          "confidence": 0,
+          "line": 80
+        },
+        {
+          "target": "PostRedditCommentBlock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 81
+        },
+        {
+          "target": "Link",
+          "resolved": false,
+          "confidence": 0,
+          "line": 95
+        },
+        {
+          "target": "Link",
+          "resolved": false,
+          "confidence": 0,
+          "line": 101
+        },
+        {
+          "target": "Link",
+          "resolved": false,
+          "confidence": 0,
+          "line": 107
+        },
+        {
+          "target": "Link",
+          "resolved": false,
+          "confidence": 0,
+          "line": 113
+        },
+        {
+          "target": "Link",
+          "resolved": false,
+          "confidence": 0,
+          "line": 119
+        },
+        {
+          "target": "Link",
+          "resolved": false,
+          "confidence": 0,
+          "line": 125
+        },
+        {
+          "target": "Graph",
+          "resolved": false,
+          "confidence": 0,
+          "line": 134
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/usecases/reddit_marketing.py:create_test_user:143",
+      "name": "create_test_user",
+      "startLine": 143,
+      "endLine": 150,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "get_or_create_user",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 149,
+          "resolvedId": "backend/data/user.py:get_or_create_user:32"
+        },
+        {
+          "target": "test_user_data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 149
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/usecases/reddit_marketing.py:reddit_marketing_agent:153",
+      "name": "reddit_marketing_agent",
+      "startLine": 153,
+      "endLine": 165,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "SpinTestServer",
+          "resolved": false,
+          "confidence": 0,
+          "line": 154
+        },
+        {
+          "target": "create_test_user",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 155,
+          "resolvedId": "backend/usecases/reddit_marketing.py:create_test_user:143"
+        },
+        {
+          "target": "create_graph",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 156,
+          "resolvedId": "backend/executor/manager_test.py:create_graph:34"
+        },
+        {
+          "target": "create_test_graph",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 156,
+          "resolvedId": "backend/usecases/reddit_marketing.py:create_test_graph:10"
+        },
+        {
+          "target": "test_execute_graph",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 158,
+          "resolvedId": "backend/api/rest_api.py:test_execute_graph:377"
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 163
+        },
+        {
+          "target": "graph_exec",
+          "resolved": false,
+          "confidence": 0,
+          "line": 163
+        },
+        {
+          "target": "wait_execution",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 164,
+          "resolvedId": "backend/util/test.py:wait_execution:74"
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 165
+        },
+        {
+          "target": "result",
+          "resolved": false,
+          "confidence": 0,
+          "line": 165
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/usecases/reddit_marketing.py:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 172,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "strip",
+          "resolved": false,
+          "confidence": 0,
+          "line": 40
+        },
+        {
+          "target": "Node",
+          "resolved": false,
+          "confidence": 0,
+          "line": 65
+        },
+        {
+          "target": "GetRedditPostsBlock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 66
+        },
+        {
+          "target": "Node",
+          "resolved": false,
+          "confidence": 0,
+          "line": 69
+        },
+        {
+          "target": "FillTextTemplateBlock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 70
+        },
+        {
+          "target": "Node",
+          "resolved": false,
+          "confidence": 0,
+          "line": 73
+        },
+        {
+          "target": "AIStructuredResponseGeneratorBlock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 74
+        },
+        {
+          "target": "Node",
+          "resolved": false,
+          "confidence": 0,
+          "line": 76
+        },
+        {
+          "target": "MatchTextPatternBlock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 77
+        },
+        {
+          "target": "Node",
+          "resolved": false,
+          "confidence": 0,
+          "line": 80
+        },
+        {
+          "target": "PostRedditCommentBlock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 81
+        },
+        {
+          "target": "Link",
+          "resolved": false,
+          "confidence": 0,
+          "line": 95
+        },
+        {
+          "target": "Link",
+          "resolved": false,
+          "confidence": 0,
+          "line": 101
+        },
+        {
+          "target": "Link",
+          "resolved": false,
+          "confidence": 0,
+          "line": 107
+        },
+        {
+          "target": "Link",
+          "resolved": false,
+          "confidence": 0,
+          "line": 113
+        },
+        {
+          "target": "Link",
+          "resolved": false,
+          "confidence": 0,
+          "line": 119
+        },
+        {
+          "target": "Link",
+          "resolved": false,
+          "confidence": 0,
+          "line": 125
+        },
+        {
+          "target": "Graph",
+          "resolved": false,
+          "confidence": 0,
+          "line": 134
+        },
+        {
+          "target": "get_or_create_user",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 149,
+          "resolvedId": "backend/data/user.py:get_or_create_user:32"
+        },
+        {
+          "target": "test_user_data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 149
+        },
+        {
+          "target": "SpinTestServer",
+          "resolved": false,
+          "confidence": 0,
+          "line": 154
+        },
+        {
+          "target": "create_test_user",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 155,
+          "resolvedId": "backend/usecases/reddit_marketing.py:create_test_user:143"
+        },
+        {
+          "target": "create_graph",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 156,
+          "resolvedId": "backend/executor/manager_test.py:create_graph:34"
+        },
+        {
+          "target": "create_test_graph",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 156,
+          "resolvedId": "backend/usecases/reddit_marketing.py:create_test_graph:10"
+        },
+        {
+          "target": "test_execute_graph",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 158,
+          "resolvedId": "backend/api/rest_api.py:test_execute_graph:377"
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 163
+        },
+        {
+          "target": "graph_exec",
+          "resolved": false,
+          "confidence": 0,
+          "line": 163
+        },
+        {
+          "target": "wait_execution",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 164,
+          "resolvedId": "backend/util/test.py:wait_execution:74"
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 165
+        },
+        {
+          "target": "result",
+          "resolved": false,
+          "confidence": 0,
+          "line": 165
+        },
+        {
+          "target": "run",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 171,
+          "resolvedId": "backend/blocks/firecrawl/crawl.py:run:73"
+        },
+        {
+          "target": "run",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 171,
+          "resolvedId": "backend/blocks/firecrawl/crawl.py:run:73"
+        },
+        {
+          "target": "reddit_marketing_agent",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 171,
+          "resolvedId": "backend/usecases/reddit_marketing.py:reddit_marketing_agent:153"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

@@ -1,0 +1,984 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.210Z",
+  "checksum": "1e75c07d4695262e",
+  "file": "backend/data/event_bus.py",
+  "functions": [
+    {
+      "id": "backend/data/event_bus.py:event_bus_name:26",
+      "name": "event_bus_name",
+      "startLine": 26,
+      "endLine": 27,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/event_bus.py:Message:30",
+      "name": "Message",
+      "startLine": 30,
+      "endLine": 31,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/event_bus.py:_serialize_message:33",
+      "name": "_serialize_message",
+      "startLine": 33,
+      "endLine": 71,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "dumps",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 38,
+          "resolvedId": "backend/util/json.py:dumps:20"
+        },
+        {
+          "target": "Message",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 39,
+          "resolvedId": "backend/data/event_bus.py:Message:30"
+        },
+        {
+          "target": "dumps",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 43,
+          "resolvedId": "backend/util/json.py:dumps:20"
+        },
+        {
+          "target": "Message",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 44,
+          "resolvedId": "backend/data/event_bus.py:Message:30"
+        },
+        {
+          "target": "warning",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 46,
+          "resolvedId": "backend/util/logging.py:warning:45"
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 51
+        },
+        {
+          "target": "encode",
+          "resolved": false,
+          "confidence": 0,
+          "line": 51
+        },
+        {
+          "target": "warning",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 53,
+          "resolvedId": "backend/util/logging.py:warning:45"
+        },
+        {
+          "target": "dumps",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 65,
+          "resolvedId": "backend/util/json.py:dumps:20"
+        },
+        {
+          "target": "error_payload",
+          "resolved": false,
+          "confidence": 0,
+          "line": 66
+        },
+        {
+          "target": "debug",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 70,
+          "resolvedId": "backend/util/logging.py:debug:53"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/event_bus.py:_deserialize_message:73",
+      "name": "_deserialize_message",
+      "startLine": 73,
+      "endLine": 81,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "debug",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 78,
+          "resolvedId": "backend/util/logging.py:debug:53"
+        },
+        {
+          "target": "model_validate_json",
+          "resolved": false,
+          "confidence": 0,
+          "line": 79
+        },
+        {
+          "target": "error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 81,
+          "resolvedId": "backend/util/logging.py:error:49"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/event_bus.py:_get_pubsub_channel:83",
+      "name": "_get_pubsub_channel",
+      "startLine": 83,
+      "endLine": 88,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "pubsub",
+          "resolved": false,
+          "confidence": 0,
+          "line": 87
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/event_bus.py:connection:102",
+      "name": "connection",
+      "startLine": 102,
+      "endLine": 103,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "get_redis",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 103,
+          "resolvedId": "backend/data/redis_client.py:get_redis:38"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/event_bus.py:publish_event:105",
+      "name": "publish_event",
+      "startLine": 105,
+      "endLine": 117,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "_serialize_message",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 111,
+          "resolvedId": "backend/data/event_bus.py:_serialize_message:33"
+        },
+        {
+          "target": "event",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 111,
+          "resolvedId": "backend/cli_main.py:event:229"
+        },
+        {
+          "target": "channel_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 111
+        },
+        {
+          "target": "publish",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 112,
+          "resolvedId": "backend/data/notification_bus.py:publish:31"
+        },
+        {
+          "target": "full_channel_name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 112
+        },
+        {
+          "target": "message",
+          "resolved": false,
+          "confidence": 0,
+          "line": 112
+        },
+        {
+          "target": "exception",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 114,
+          "resolvedId": "backend/util/logging.py:exception:57"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/event_bus.py:listen_events:119",
+      "name": "listen_events",
+      "startLine": 119,
+      "endLine": 132,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "_get_pubsub_channel",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 120,
+          "resolvedId": "backend/data/event_bus.py:_get_pubsub_channel:83"
+        },
+        {
+          "target": "channel_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 121
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 123
+        },
+        {
+          "target": "pubsub",
+          "resolved": false,
+          "confidence": 0,
+          "line": 123
+        },
+        {
+          "target": "psubscribe",
+          "resolved": false,
+          "confidence": 0,
+          "line": 126
+        },
+        {
+          "target": "full_channel_name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 126
+        },
+        {
+          "target": "subscribe",
+          "resolved": false,
+          "confidence": 0,
+          "line": 128
+        },
+        {
+          "target": "full_channel_name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 128
+        },
+        {
+          "target": "listen",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 130,
+          "resolvedId": "backend/data/notification_bus.py:listen:34"
+        },
+        {
+          "target": "_deserialize_message",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 131,
+          "resolvedId": "backend/data/event_bus.py:_deserialize_message:73"
+        },
+        {
+          "target": "message",
+          "resolved": false,
+          "confidence": 0,
+          "line": 131
+        },
+        {
+          "target": "channel_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 131
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/event_bus.py:connection:137",
+      "name": "connection",
+      "startLine": 137,
+      "endLine": 138,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "get_redis_async",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 138,
+          "resolvedId": "backend/data/redis_client.py:get_redis_async:61"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/event_bus.py:publish_event:140",
+      "name": "publish_event",
+      "startLine": 140,
+      "endLine": 153,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "_serialize_message",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 146,
+          "resolvedId": "backend/data/event_bus.py:_serialize_message:33"
+        },
+        {
+          "target": "event",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 146,
+          "resolvedId": "backend/cli_main.py:event:229"
+        },
+        {
+          "target": "channel_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 146
+        },
+        {
+          "target": "publish",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 148,
+          "resolvedId": "backend/data/notification_bus.py:publish:31"
+        },
+        {
+          "target": "full_channel_name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 148
+        },
+        {
+          "target": "message",
+          "resolved": false,
+          "confidence": 0,
+          "line": 148
+        },
+        {
+          "target": "exception",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 150,
+          "resolvedId": "backend/util/logging.py:exception:57"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/event_bus.py:listen_events:155",
+      "name": "listen_events",
+      "startLine": 155,
+      "endLine": 168,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "_get_pubsub_channel",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 156,
+          "resolvedId": "backend/data/event_bus.py:_get_pubsub_channel:83"
+        },
+        {
+          "target": "channel_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 157
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 159
+        },
+        {
+          "target": "pubsub",
+          "resolved": false,
+          "confidence": 0,
+          "line": 159
+        },
+        {
+          "target": "psubscribe",
+          "resolved": false,
+          "confidence": 0,
+          "line": 162
+        },
+        {
+          "target": "full_channel_name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 162
+        },
+        {
+          "target": "subscribe",
+          "resolved": false,
+          "confidence": 0,
+          "line": 164
+        },
+        {
+          "target": "full_channel_name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 164
+        },
+        {
+          "target": "listen",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 166,
+          "resolvedId": "backend/data/notification_bus.py:listen:34"
+        },
+        {
+          "target": "_deserialize_message",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 167,
+          "resolvedId": "backend/data/event_bus.py:_deserialize_message:73"
+        },
+        {
+          "target": "message",
+          "resolved": false,
+          "confidence": 0,
+          "line": 167
+        },
+        {
+          "target": "channel_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 167
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/event_bus.py:wait_for_event:170",
+      "name": "wait_for_event",
+      "startLine": 170,
+      "endLine": 178,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "wait_for",
+          "resolved": false,
+          "confidence": 0,
+          "line": 174
+        },
+        {
+          "target": "timeout",
+          "resolved": false,
+          "confidence": 0,
+          "line": 175
+        },
+        {
+          "target": "anext",
+          "resolved": false,
+          "confidence": 0,
+          "line": 175
+        },
+        {
+          "target": "aiter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 175
+        },
+        {
+          "target": "listen_events",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 175,
+          "resolvedId": "backend/data/event_bus.py:listen_events:119"
+        },
+        {
+          "target": "channel_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 175
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/event_bus.py:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 179,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "getLogger",
+          "resolved": false,
+          "confidence": 0,
+          "line": 14
+        },
+        {
+          "target": "Settings",
+          "resolved": false,
+          "confidence": 0,
+          "line": 15
+        },
+        {
+          "target": "TypeVar",
+          "resolved": false,
+          "confidence": 0,
+          "line": 18
+        },
+        {
+          "target": "dumps",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 38,
+          "resolvedId": "backend/util/json.py:dumps:20"
+        },
+        {
+          "target": "Message",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 39,
+          "resolvedId": "backend/data/event_bus.py:Message:30"
+        },
+        {
+          "target": "dumps",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 43,
+          "resolvedId": "backend/util/json.py:dumps:20"
+        },
+        {
+          "target": "Message",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 44,
+          "resolvedId": "backend/data/event_bus.py:Message:30"
+        },
+        {
+          "target": "warning",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 46,
+          "resolvedId": "backend/util/logging.py:warning:45"
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 51
+        },
+        {
+          "target": "encode",
+          "resolved": false,
+          "confidence": 0,
+          "line": 51
+        },
+        {
+          "target": "warning",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 53,
+          "resolvedId": "backend/util/logging.py:warning:45"
+        },
+        {
+          "target": "dumps",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 65,
+          "resolvedId": "backend/util/json.py:dumps:20"
+        },
+        {
+          "target": "error_payload",
+          "resolved": false,
+          "confidence": 0,
+          "line": 66
+        },
+        {
+          "target": "debug",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 70,
+          "resolvedId": "backend/util/logging.py:debug:53"
+        },
+        {
+          "target": "debug",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 78,
+          "resolvedId": "backend/util/logging.py:debug:53"
+        },
+        {
+          "target": "model_validate_json",
+          "resolved": false,
+          "confidence": 0,
+          "line": 79
+        },
+        {
+          "target": "error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 81,
+          "resolvedId": "backend/util/logging.py:error:49"
+        },
+        {
+          "target": "pubsub",
+          "resolved": false,
+          "confidence": 0,
+          "line": 87
+        },
+        {
+          "target": "get_redis",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 103,
+          "resolvedId": "backend/data/redis_client.py:get_redis:38"
+        },
+        {
+          "target": "_serialize_message",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 111,
+          "resolvedId": "backend/data/event_bus.py:_serialize_message:33"
+        },
+        {
+          "target": "event",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 111,
+          "resolvedId": "backend/cli_main.py:event:229"
+        },
+        {
+          "target": "channel_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 111
+        },
+        {
+          "target": "publish",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 112,
+          "resolvedId": "backend/data/notification_bus.py:publish:31"
+        },
+        {
+          "target": "full_channel_name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 112
+        },
+        {
+          "target": "message",
+          "resolved": false,
+          "confidence": 0,
+          "line": 112
+        },
+        {
+          "target": "exception",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 114,
+          "resolvedId": "backend/util/logging.py:exception:57"
+        },
+        {
+          "target": "_get_pubsub_channel",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 120,
+          "resolvedId": "backend/data/event_bus.py:_get_pubsub_channel:83"
+        },
+        {
+          "target": "channel_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 121
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 123
+        },
+        {
+          "target": "pubsub",
+          "resolved": false,
+          "confidence": 0,
+          "line": 123
+        },
+        {
+          "target": "psubscribe",
+          "resolved": false,
+          "confidence": 0,
+          "line": 126
+        },
+        {
+          "target": "full_channel_name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 126
+        },
+        {
+          "target": "subscribe",
+          "resolved": false,
+          "confidence": 0,
+          "line": 128
+        },
+        {
+          "target": "full_channel_name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 128
+        },
+        {
+          "target": "listen",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 130,
+          "resolvedId": "backend/data/notification_bus.py:listen:34"
+        },
+        {
+          "target": "_deserialize_message",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 131,
+          "resolvedId": "backend/data/event_bus.py:_deserialize_message:73"
+        },
+        {
+          "target": "message",
+          "resolved": false,
+          "confidence": 0,
+          "line": 131
+        },
+        {
+          "target": "channel_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 131
+        },
+        {
+          "target": "get_redis_async",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 138,
+          "resolvedId": "backend/data/redis_client.py:get_redis_async:61"
+        },
+        {
+          "target": "_serialize_message",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 146,
+          "resolvedId": "backend/data/event_bus.py:_serialize_message:33"
+        },
+        {
+          "target": "event",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 146,
+          "resolvedId": "backend/cli_main.py:event:229"
+        },
+        {
+          "target": "channel_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 146
+        },
+        {
+          "target": "publish",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 148,
+          "resolvedId": "backend/data/notification_bus.py:publish:31"
+        },
+        {
+          "target": "full_channel_name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 148
+        },
+        {
+          "target": "message",
+          "resolved": false,
+          "confidence": 0,
+          "line": 148
+        },
+        {
+          "target": "exception",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 150,
+          "resolvedId": "backend/util/logging.py:exception:57"
+        },
+        {
+          "target": "_get_pubsub_channel",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 156,
+          "resolvedId": "backend/data/event_bus.py:_get_pubsub_channel:83"
+        },
+        {
+          "target": "channel_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 157
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 159
+        },
+        {
+          "target": "pubsub",
+          "resolved": false,
+          "confidence": 0,
+          "line": 159
+        },
+        {
+          "target": "psubscribe",
+          "resolved": false,
+          "confidence": 0,
+          "line": 162
+        },
+        {
+          "target": "full_channel_name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 162
+        },
+        {
+          "target": "subscribe",
+          "resolved": false,
+          "confidence": 0,
+          "line": 164
+        },
+        {
+          "target": "full_channel_name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 164
+        },
+        {
+          "target": "listen",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 166,
+          "resolvedId": "backend/data/notification_bus.py:listen:34"
+        },
+        {
+          "target": "_deserialize_message",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 167,
+          "resolvedId": "backend/data/event_bus.py:_deserialize_message:73"
+        },
+        {
+          "target": "message",
+          "resolved": false,
+          "confidence": 0,
+          "line": 167
+        },
+        {
+          "target": "channel_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 167
+        },
+        {
+          "target": "wait_for",
+          "resolved": false,
+          "confidence": 0,
+          "line": 174
+        },
+        {
+          "target": "timeout",
+          "resolved": false,
+          "confidence": 0,
+          "line": 175
+        },
+        {
+          "target": "anext",
+          "resolved": false,
+          "confidence": 0,
+          "line": 175
+        },
+        {
+          "target": "aiter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 175
+        },
+        {
+          "target": "listen_events",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 175,
+          "resolvedId": "backend/data/event_bus.py:listen_events:119"
+        },
+        {
+          "target": "channel_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 175
+        },
+        {
+          "target": "getLogger",
+          "resolved": false,
+          "confidence": 0,
+          "line": 14
+        },
+        {
+          "target": "Settings",
+          "resolved": false,
+          "confidence": 0,
+          "line": 15
+        },
+        {
+          "target": "TypeVar",
+          "resolved": false,
+          "confidence": 0,
+          "line": 18
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

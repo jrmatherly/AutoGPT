@@ -9,16 +9,17 @@
 ## Table of Contents
 
 1. [Quick Start](#quick-start)
-2. [Core Workflow](#core-workflow)
-3. [MCP Tools Reference](#mcp-tools-reference)
-4. [Skills System](#skills-system)
-5. [Quality Gates & CI Integration](#quality-gates--ci-integration)
-6. [Watch Mode](#watch-mode)
-7. [Security Analysis](#security-analysis)
-8. [Impact Analysis](#impact-analysis)
-9. [Git Hooks Setup](#git-hooks-setup)
-10. [Configuration Reference](#configuration-reference)
-11. [Troubleshooting](#troubleshooting)
+2. [Multi-Project Monorepo Setup](#multi-project-monorepo-setup)
+3. [Core Workflow](#core-workflow)
+4. [MCP Tools Reference](#mcp-tools-reference)
+5. [Skills System](#skills-system)
+6. [Quality Gates & CI Integration](#quality-gates--ci-integration)
+7. [Watch Mode](#watch-mode)
+8. [Security Analysis](#security-analysis)
+9. [Impact Analysis](#impact-analysis)
+10. [Git Hooks Setup](#git-hooks-setup)
+11. [Configuration Reference](#configuration-reference)
+12. [Troubleshooting](#troubleshooting)
 
 ---
 
@@ -45,32 +46,111 @@ drift init
 ```
 
 > [!IMPORTANT]
-> **AutoGPT-Specific: Scanning the Monorepo**
-> 
-> Running `drift scan` at the project root will NOT automatically recurse into `autogpt_platform/`. You must scan each package explicitly:
+> **AutoGPT Multi-Project Setup**
+>
+> AutoGPT uses the **multi-project approach** for its polyglot monorepo. Each package is registered as a separate Drift project with its own patterns and configuration.
 
 ```bash
-# Scan all three packages (recommended)
-drift scan autogpt_platform/frontend/src --verbose
-drift scan autogpt_platform/backend/backend --verbose
-drift scan autogpt_platform/autogpt_libs --verbose
+# List registered projects
+drift projects list
 
-# Or scan all at once (slower but complete)
+# Switch to a specific project and scan
+drift projects switch @autogpt/backend
+drift scan
+
+# Or scan from root (covers all code)
 drift scan autogpt_platform --verbose
 ```
 
-| Package | Path | Language | Files |
+| Project | Path | Language | Framework |
 
-|---------|------|----------|-------|
-| **Frontend** | `autogpt_platform/frontend/src` | TypeScript/React | ~850 |
-| **Backend** | `autogpt_platform/backend/backend` | Python | ~200 |
-| **Shared Libs** | `autogpt_platform/autogpt_libs` | Python | ~30 |
+|---------|------|----------|-----------|
+| `@autogpt/frontend` | `autogpt_platform/frontend` | TypeScript | Next.js |
+| `@autogpt/backend` | `autogpt_platform/backend` | Python | FastAPI |
+| `@autogpt/libs` | `autogpt_platform/autogpt_libs` | Python | Shared |
 
 ### Check Status
 
 ```bash
 drift status --detailed
 ```
+
+---
+
+## Multi-Project Monorepo Setup
+
+AutoGPT is a **polyglot monorepo** with TypeScript (frontend) and Python (backend, libs) packages. Drift handles this through the **multi-project** approach rather than traditional workspace-based package detection.
+
+### Registered Projects
+
+The following projects are configured:
+
+| Project | Path | Language | Framework |
+
+|---------|------|----------|-----------|
+| `AutoGPT` | `/` (root) | Mixed | - |
+| `@autogpt/frontend` | `autogpt_platform/frontend` | TypeScript | Next.js |
+| `@autogpt/backend` | `autogpt_platform/backend` | Python | FastAPI |
+| `@autogpt/libs` | `autogpt_platform/autogpt_libs` | Python | - |
+
+### Managing Projects
+
+```bash
+# List all registered projects
+drift projects list
+
+# View project details
+drift projects info @autogpt/frontend
+drift projects info @autogpt/backend
+
+# Switch active project (changes context for commands)
+drift projects switch @autogpt/frontend
+
+# Show current status
+drift status --detailed
+```
+
+### Working with Specific Projects
+
+```bash
+# Scan a specific project
+drift projects switch @autogpt/backend
+drift scan
+
+# Or scan from root with path
+drift scan autogpt_platform/backend
+
+# Get context for a specific project (MCP)
+drift_context({
+  intent: "add_feature",
+  focus: "blocks",
+  project: "@autogpt/backend"
+})
+```
+
+### Adding New Projects
+
+If you add a new package to the monorepo:
+
+```bash
+# Navigate to the package directory
+cd autogpt_platform/new_package
+
+# Initialize drift
+drift init -y
+
+# Run initial scan
+drift scan
+```
+
+### Why Multi-Project vs Workspace Detection?
+
+Traditional monorepo tools (pnpm workspaces, Lerna) are JavaScript-centric. AutoGPT's polyglot nature (TypeScript + Python) requires the multi-project approach:
+
+- **Workspace detection** only finds `package.json` files
+- **Multi-project** supports any language (Python, TypeScript, etc.)
+- Each project has independent patterns and constraints
+- Cross-project analysis still works via the root `AutoGPT` project
 
 ---
 
@@ -511,19 +591,56 @@ pre-push:
 
 ## Configuration Reference
 
-### .drift/config.json
+### .drift/config.json (Root)
 
 ```json
 {
   "version": "2.0.0",
   "project": {
-    "name": "AutoGPT"
+    "id": "ca9c642b-d8c1-4613-b6f5-4333282e990d",
+    "name": "AutoGPT Platform",
+    "initializedAt": "2026-01-28T21:22:00.299Z"
   },
-  "defaultSeverity": "warning",
+  "monorepo": {
+    "enabled": true,
+    "root": ".",
+    "packageDetection": "auto",
+    "packages": {
+      "@autogpt/frontend": {
+        "path": "autogpt_platform/frontend",
+        "language": "typescript",
+        "framework": "react",
+        "categories": ["components", "styling", "hooks", "api"]
+      },
+      "@autogpt/backend": {
+        "path": "autogpt_platform/backend",
+        "language": "python",
+        "framework": "fastapi",
+        "categories": ["api", "auth", "data-access", "blocks"]
+      },
+      "@autogpt/libs": {
+        "path": "autogpt_platform/autogpt_libs",
+        "language": "python",
+        "isShared": true,
+        "categories": ["shared", "utilities"]
+      }
+    },
+    "dependencies": {
+      "@autogpt/backend": ["@autogpt/libs"],
+      "@autogpt/frontend": []
+    }
+  },
   "ignore": [
-    "**/node_modules/**",
-    "**/dist/**",
-    "**/__pycache__/**"
+    "node_modules/**",
+    "dist/**",
+    "build/**",
+    ".git/**",
+    "coverage/**",
+    "*.min.js",
+    "*.bundle.js",
+    "vendor/**",
+    "__pycache__/**",
+    ".venv/**"
   ],
   "learning": {
     "autoApproveThreshold": 0.95,
@@ -531,18 +648,27 @@ pre-push:
     "semanticLearning": true
   },
   "performance": {
-    "maxWorkers": 4,
+    "maxWorkers": 8,
     "cacheEnabled": true,
-    "incrementalAnalysis": true
+    "incrementalAnalysis": true,
+    "cacheTTL": 3600
   },
   "features": {
     "callGraph": true,
     "boundaries": true,
     "dna": true,
     "contracts": true
+  },
+  "mcp": {
+    "tools": {
+      "languages": ["typescript", "python"]
+    }
   }
 }
 ```
+
+> [!NOTE]
+> Each subproject (`@autogpt/frontend`, `@autogpt/backend`, `@autogpt/libs`) also has its own `.drift/config.json` with project-specific settings.
 
 ### .driftignore
 

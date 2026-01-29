@@ -1,0 +1,1156 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.164Z",
+  "checksum": "6949c65f696b957b",
+  "file": "backend/api/external/v1/routes.py",
+  "functions": [
+    {
+      "id": "backend/api/external/v1/routes.py:get_user_info:49",
+      "name": "get_user_info",
+      "startLine": 49,
+      "endLine": 61,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "Security",
+          "resolved": false,
+          "confidence": 0,
+          "line": 50
+        },
+        {
+          "target": "require_permission",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 51,
+          "resolvedId": "backend/api/external/middleware.py:require_permission:91"
+        },
+        {
+          "target": "get_user_by_id",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 54,
+          "resolvedId": "backend/data/user.py:get_user_by_id:58"
+        },
+        {
+          "target": "UserInfoResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 56
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "user",
+          "operation": "read",
+          "line": 54,
+          "fields": [
+            "user_id"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "backend/api/external/v1/routes.py:get_graph_blocks:69",
+      "name": "get_graph_blocks",
+      "startLine": 69,
+      "endLine": 71,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "block",
+          "resolved": false,
+          "confidence": 0,
+          "line": 70
+        },
+        {
+          "target": "values",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 70,
+          "resolvedId": "backend/integrations/oauth/__init__.py:values:112"
+        },
+        {
+          "target": "get_blocks",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 70,
+          "resolvedId": "backend/api/features/builder/routes.py:get_blocks:89"
+        },
+        {
+          "target": "to_dict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 71
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "backend",
+          "operation": "read",
+          "line": 70,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/api/external/v1/routes.py:execute_graph_block:79",
+      "name": "execute_graph_block",
+      "startLine": 79,
+      "endLine": 95,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "Security",
+          "resolved": false,
+          "confidence": 0,
+          "line": 82
+        },
+        {
+          "target": "require_permission",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 83,
+          "resolvedId": "backend/api/external/middleware.py:require_permission:91"
+        },
+        {
+          "target": "get_block",
+          "resolved": false,
+          "confidence": 0,
+          "line": 86
+        },
+        {
+          "target": "block_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 86
+        },
+        {
+          "target": "HTTPException",
+          "resolved": false,
+          "confidence": 0,
+          "line": 88
+        },
+        {
+          "target": "HTTPException",
+          "resolved": false,
+          "confidence": 0,
+          "line": 90
+        },
+        {
+          "target": "defaultdict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 92
+        },
+        {
+          "target": "list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 92
+        },
+        {
+          "target": "execute",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 93,
+          "resolvedId": "backend/api/features/chat/tools/base.py:execute:60"
+        },
+        {
+          "target": "data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 93
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 94
+        },
+        {
+          "target": "data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 94
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "backend",
+          "operation": "read",
+          "line": 86,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/api/external/v1/routes.py:execute_graph:102",
+      "name": "execute_graph",
+      "startLine": 102,
+      "endLine": 120,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "Security",
+          "resolved": false,
+          "confidence": 0,
+          "line": 106
+        },
+        {
+          "target": "require_permission",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 107,
+          "resolvedId": "backend/api/external/middleware.py:require_permission:91"
+        },
+        {
+          "target": "add_graph_execution",
+          "resolved": false,
+          "confidence": 0,
+          "line": 111
+        },
+        {
+          "target": "decode",
+          "resolved": false,
+          "confidence": 0,
+          "line": 119
+        },
+        {
+          "target": "encode",
+          "resolved": false,
+          "confidence": 0,
+          "line": 119
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 119
+        },
+        {
+          "target": "e",
+          "resolved": false,
+          "confidence": 0,
+          "line": 119
+        },
+        {
+          "target": "HTTPException",
+          "resolved": false,
+          "confidence": 0,
+          "line": 120
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/external/v1/routes.py:get_graph_execution_results:140",
+      "name": "get_graph_execution_results",
+      "startLine": 140,
+      "endLine": 184,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "Security",
+          "resolved": false,
+          "confidence": 0,
+          "line": 143
+        },
+        {
+          "target": "require_permission",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 144,
+          "resolvedId": "backend/api/external/middleware.py:require_permission:91"
+        },
+        {
+          "target": "get_graph_execution",
+          "resolved": false,
+          "confidence": 0,
+          "line": 147
+        },
+        {
+          "target": "HTTPException",
+          "resolved": false,
+          "confidence": 0,
+          "line": 153
+        },
+        {
+          "target": "get_graph",
+          "resolved": false,
+          "confidence": 0,
+          "line": 157
+        },
+        {
+          "target": "HTTPException",
+          "resolved": false,
+          "confidence": 0,
+          "line": 162
+        },
+        {
+          "target": "GraphExecutionResult",
+          "resolved": false,
+          "confidence": 0,
+          "line": 164
+        },
+        {
+          "target": "ExecutionNode",
+          "resolved": false,
+          "confidence": 0,
+          "line": 168
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 170,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "items",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 171,
+          "resolvedId": "backend/integrations/oauth/__init__.py:items:123"
+        },
+        {
+          "target": "items",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 178,
+          "resolvedId": "backend/integrations/oauth/__init__.py:items:123"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/external/v1/routes.py:get_store_agents:198",
+      "name": "get_store_agents",
+      "startLine": 198,
+      "endLine": 237,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "HTTPException",
+          "resolved": false,
+          "confidence": 0,
+          "line": 223
+        },
+        {
+          "target": "HTTPException",
+          "resolved": false,
+          "confidence": 0,
+          "line": 226
+        },
+        {
+          "target": "_get_cached_store_agents",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 228,
+          "resolvedId": "backend/api/features/store/cache.py:_get_cached_store_agents:23"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/external/v1/routes.py:get_store_agent:246",
+      "name": "get_store_agent",
+      "startLine": 246,
+      "endLine": 265,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "lower",
+          "resolved": false,
+          "confidence": 0,
+          "line": 260
+        },
+        {
+          "target": "unquote",
+          "resolved": false,
+          "confidence": 0,
+          "line": 260
+        },
+        {
+          "target": "username",
+          "resolved": false,
+          "confidence": 0,
+          "line": 260
+        },
+        {
+          "target": "lower",
+          "resolved": false,
+          "confidence": 0,
+          "line": 261
+        },
+        {
+          "target": "unquote",
+          "resolved": false,
+          "confidence": 0,
+          "line": 261
+        },
+        {
+          "target": "agent_name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 261
+        },
+        {
+          "target": "_get_cached_agent_details",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 262,
+          "resolvedId": "backend/api/features/store/cache.py:_get_cached_agent_details:46"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/external/v1/routes.py:get_store_creators:274",
+      "name": "get_store_creators",
+      "startLine": 274,
+      "endLine": 307,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "HTTPException",
+          "resolved": false,
+          "confidence": 0,
+          "line": 295
+        },
+        {
+          "target": "HTTPException",
+          "resolved": false,
+          "confidence": 0,
+          "line": 298
+        },
+        {
+          "target": "_get_cached_store_creators",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 300,
+          "resolvedId": "backend/api/features/store/cache.py:_get_cached_store_creators:57"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/external/v1/routes.py:get_store_creator:316",
+      "name": "get_store_creator",
+      "startLine": 316,
+      "endLine": 330,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "lower",
+          "resolved": false,
+          "confidence": 0,
+          "line": 328
+        },
+        {
+          "target": "unquote",
+          "resolved": false,
+          "confidence": 0,
+          "line": 328
+        },
+        {
+          "target": "username",
+          "resolved": false,
+          "confidence": 0,
+          "line": 328
+        },
+        {
+          "target": "_get_cached_creator_details",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 329,
+          "resolvedId": "backend/api/features/store/cache.py:_get_cached_creator_details:76"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/external/v1/routes.py:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 331,
+      "isEntryPoint": false,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "Settings",
+          "resolved": false,
+          "confidence": 0,
+          "line": 26
+        },
+        {
+          "target": "getLogger",
+          "resolved": false,
+          "confidence": 0,
+          "line": 27
+        },
+        {
+          "target": "APIRouter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 29
+        },
+        {
+          "target": "include_router",
+          "resolved": false,
+          "confidence": 0,
+          "line": 31
+        },
+        {
+          "target": "include_router",
+          "resolved": false,
+          "confidence": 0,
+          "line": 32
+        },
+        {
+          "target": "Field",
+          "resolved": false,
+          "confidence": 0,
+          "line": 39
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 45,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "Security",
+          "resolved": false,
+          "confidence": 0,
+          "line": 50
+        },
+        {
+          "target": "require_permission",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 51,
+          "resolvedId": "backend/api/external/middleware.py:require_permission:91"
+        },
+        {
+          "target": "get_user_by_id",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 54,
+          "resolvedId": "backend/data/user.py:get_user_by_id:58"
+        },
+        {
+          "target": "UserInfoResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 56
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 64,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "block",
+          "resolved": false,
+          "confidence": 0,
+          "line": 70
+        },
+        {
+          "target": "values",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 70,
+          "resolvedId": "backend/integrations/oauth/__init__.py:values:112"
+        },
+        {
+          "target": "get_blocks",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 70,
+          "resolvedId": "backend/api/features/builder/routes.py:get_blocks:89"
+        },
+        {
+          "target": "to_dict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 71
+        },
+        {
+          "target": "post",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 74,
+          "resolvedId": "backend/util/request.py:post:563"
+        },
+        {
+          "target": "Security",
+          "resolved": false,
+          "confidence": 0,
+          "line": 82
+        },
+        {
+          "target": "require_permission",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 83,
+          "resolvedId": "backend/api/external/middleware.py:require_permission:91"
+        },
+        {
+          "target": "get_block",
+          "resolved": false,
+          "confidence": 0,
+          "line": 86
+        },
+        {
+          "target": "block_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 86
+        },
+        {
+          "target": "HTTPException",
+          "resolved": false,
+          "confidence": 0,
+          "line": 88
+        },
+        {
+          "target": "HTTPException",
+          "resolved": false,
+          "confidence": 0,
+          "line": 90
+        },
+        {
+          "target": "defaultdict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 92
+        },
+        {
+          "target": "list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 92
+        },
+        {
+          "target": "execute",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 93,
+          "resolvedId": "backend/api/features/chat/tools/base.py:execute:60"
+        },
+        {
+          "target": "data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 93
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 94
+        },
+        {
+          "target": "data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 94
+        },
+        {
+          "target": "post",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 98,
+          "resolvedId": "backend/util/request.py:post:563"
+        },
+        {
+          "target": "Security",
+          "resolved": false,
+          "confidence": 0,
+          "line": 106
+        },
+        {
+          "target": "require_permission",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 107,
+          "resolvedId": "backend/api/external/middleware.py:require_permission:91"
+        },
+        {
+          "target": "add_graph_execution",
+          "resolved": false,
+          "confidence": 0,
+          "line": 111
+        },
+        {
+          "target": "decode",
+          "resolved": false,
+          "confidence": 0,
+          "line": 119
+        },
+        {
+          "target": "encode",
+          "resolved": false,
+          "confidence": 0,
+          "line": 119
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 119
+        },
+        {
+          "target": "e",
+          "resolved": false,
+          "confidence": 0,
+          "line": 119
+        },
+        {
+          "target": "HTTPException",
+          "resolved": false,
+          "confidence": 0,
+          "line": 120
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 136,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "Security",
+          "resolved": false,
+          "confidence": 0,
+          "line": 143
+        },
+        {
+          "target": "require_permission",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 144,
+          "resolvedId": "backend/api/external/middleware.py:require_permission:91"
+        },
+        {
+          "target": "get_graph_execution",
+          "resolved": false,
+          "confidence": 0,
+          "line": 147
+        },
+        {
+          "target": "HTTPException",
+          "resolved": false,
+          "confidence": 0,
+          "line": 153
+        },
+        {
+          "target": "get_graph",
+          "resolved": false,
+          "confidence": 0,
+          "line": 157
+        },
+        {
+          "target": "HTTPException",
+          "resolved": false,
+          "confidence": 0,
+          "line": 162
+        },
+        {
+          "target": "GraphExecutionResult",
+          "resolved": false,
+          "confidence": 0,
+          "line": 164
+        },
+        {
+          "target": "ExecutionNode",
+          "resolved": false,
+          "confidence": 0,
+          "line": 168
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 170,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "items",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 171,
+          "resolvedId": "backend/integrations/oauth/__init__.py:items:123"
+        },
+        {
+          "target": "items",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 178,
+          "resolvedId": "backend/integrations/oauth/__init__.py:items:123"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 192,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "HTTPException",
+          "resolved": false,
+          "confidence": 0,
+          "line": 223
+        },
+        {
+          "target": "HTTPException",
+          "resolved": false,
+          "confidence": 0,
+          "line": 226
+        },
+        {
+          "target": "_get_cached_store_agents",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 228,
+          "resolvedId": "backend/api/features/store/cache.py:_get_cached_store_agents:23"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 240,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "lower",
+          "resolved": false,
+          "confidence": 0,
+          "line": 260
+        },
+        {
+          "target": "unquote",
+          "resolved": false,
+          "confidence": 0,
+          "line": 260
+        },
+        {
+          "target": "username",
+          "resolved": false,
+          "confidence": 0,
+          "line": 260
+        },
+        {
+          "target": "lower",
+          "resolved": false,
+          "confidence": 0,
+          "line": 261
+        },
+        {
+          "target": "unquote",
+          "resolved": false,
+          "confidence": 0,
+          "line": 261
+        },
+        {
+          "target": "agent_name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 261
+        },
+        {
+          "target": "_get_cached_agent_details",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 262,
+          "resolvedId": "backend/api/features/store/cache.py:_get_cached_agent_details:46"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 268,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "HTTPException",
+          "resolved": false,
+          "confidence": 0,
+          "line": 295
+        },
+        {
+          "target": "HTTPException",
+          "resolved": false,
+          "confidence": 0,
+          "line": 298
+        },
+        {
+          "target": "_get_cached_store_creators",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 300,
+          "resolvedId": "backend/api/features/store/cache.py:_get_cached_store_creators:57"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 310,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "lower",
+          "resolved": false,
+          "confidence": 0,
+          "line": 328
+        },
+        {
+          "target": "unquote",
+          "resolved": false,
+          "confidence": 0,
+          "line": 328
+        },
+        {
+          "target": "username",
+          "resolved": false,
+          "confidence": 0,
+          "line": 328
+        },
+        {
+          "target": "_get_cached_creator_details",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 329,
+          "resolvedId": "backend/api/features/store/cache.py:_get_cached_creator_details:76"
+        },
+        {
+          "target": "Settings",
+          "resolved": false,
+          "confidence": 0,
+          "line": 26
+        },
+        {
+          "target": "getLogger",
+          "resolved": false,
+          "confidence": 0,
+          "line": 27
+        },
+        {
+          "target": "APIRouter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 29
+        },
+        {
+          "target": "include_router",
+          "resolved": false,
+          "confidence": 0,
+          "line": 31
+        },
+        {
+          "target": "include_router",
+          "resolved": false,
+          "confidence": 0,
+          "line": 32
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 45,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 64,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "Security",
+          "resolved": false,
+          "confidence": 0,
+          "line": 67
+        },
+        {
+          "target": "require_permission",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 67,
+          "resolvedId": "backend/api/external/middleware.py:require_permission:91"
+        },
+        {
+          "target": "post",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 74,
+          "resolvedId": "backend/util/request.py:post:563"
+        },
+        {
+          "target": "Security",
+          "resolved": false,
+          "confidence": 0,
+          "line": 77
+        },
+        {
+          "target": "require_permission",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 77,
+          "resolvedId": "backend/api/external/middleware.py:require_permission:91"
+        },
+        {
+          "target": "post",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 98,
+          "resolvedId": "backend/util/request.py:post:563"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 136,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 192,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "Security",
+          "resolved": false,
+          "confidence": 0,
+          "line": 195
+        },
+        {
+          "target": "require_permission",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 195,
+          "resolvedId": "backend/api/external/middleware.py:require_permission:91"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 240,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "Security",
+          "resolved": false,
+          "confidence": 0,
+          "line": 243
+        },
+        {
+          "target": "require_permission",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 243,
+          "resolvedId": "backend/api/external/middleware.py:require_permission:91"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 268,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "Security",
+          "resolved": false,
+          "confidence": 0,
+          "line": 271
+        },
+        {
+          "target": "require_permission",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 271,
+          "resolvedId": "backend/api/external/middleware.py:require_permission:91"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 310,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "Security",
+          "resolved": false,
+          "confidence": 0,
+          "line": 313
+        },
+        {
+          "target": "require_permission",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 313,
+          "resolvedId": "backend/api/external/middleware.py:require_permission:91"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "logging",
+          "operation": "read",
+          "line": 27,
+          "fields": []
+        },
+        {
+          "table": "user",
+          "operation": "read",
+          "line": 45,
+          "fields": []
+        },
+        {
+          "table": "user",
+          "operation": "read",
+          "line": 54,
+          "fields": [
+            "user_id"
+          ]
+        },
+        {
+          "table": "backend",
+          "operation": "read",
+          "line": 70,
+          "fields": []
+        },
+        {
+          "table": "backend",
+          "operation": "read",
+          "line": 86,
+          "fields": []
+        }
+      ]
+    }
+  ]
+}

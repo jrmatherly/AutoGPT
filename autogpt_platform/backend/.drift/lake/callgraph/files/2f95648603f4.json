@@ -1,0 +1,146 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.141Z",
+  "checksum": "8ac076924d42d943",
+  "file": "backend/api/conftest.py",
+  "functions": [
+    {
+      "id": "backend/api/conftest.py:configured_snapshot:8",
+      "name": "configured_snapshot",
+      "startLine": 8,
+      "endLine": 11,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/conftest.py:test_user_id:15",
+      "name": "test_user_id",
+      "startLine": 15,
+      "endLine": 17,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/conftest.py:admin_user_id:21",
+      "name": "admin_user_id",
+      "startLine": 21,
+      "endLine": 23,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/conftest.py:target_user_id:27",
+      "name": "target_user_id",
+      "startLine": 27,
+      "endLine": 29,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/conftest.py:setup_test_user:33",
+      "name": "setup_test_user",
+      "startLine": 33,
+      "endLine": 44,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "get_or_create_user",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 43,
+          "resolvedId": "backend/data/user.py:get_or_create_user:32"
+        },
+        {
+          "target": "user_data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 43
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/conftest.py:setup_admin_user:48",
+      "name": "setup_admin_user",
+      "startLine": 48,
+      "endLine": 59,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "get_or_create_user",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 58,
+          "resolvedId": "backend/data/user.py:get_or_create_user:32"
+        },
+        {
+          "target": "user_data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 58
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/conftest.py:mock_jwt_user:63",
+      "name": "mock_jwt_user",
+      "startLine": 63,
+      "endLine": 70,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/conftest.py:override_get_jwt_payload:67",
+      "name": "override_get_jwt_payload",
+      "startLine": 67,
+      "endLine": 68,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/conftest.py:mock_jwt_admin:74",
+      "name": "mock_jwt_admin",
+      "startLine": 74,
+      "endLine": 85,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/conftest.py:override_get_jwt_payload:78",
+      "name": "override_get_jwt_payload",
+      "startLine": 78,
+      "endLine": 83,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

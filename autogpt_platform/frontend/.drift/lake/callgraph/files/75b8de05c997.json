@@ -1,0 +1,77 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.066Z",
+  "checksum": "5d46eb6c8a99ec9a",
+  "file": "src/app/(platform)/login/actions.ts",
+  "functions": [
+    {
+      "id": "src/app/(platform)/login/actions.ts:login:9",
+      "name": "login",
+      "startLine": 9,
+      "endLine": 52,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "safeParse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 11
+        },
+        {
+          "target": "getServerSupabase",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 20,
+          "resolvedId": "src/lib/supabase/server/getServerSupabase.ts:getServerSupabase:7"
+        },
+        {
+          "target": "signInWithPassword",
+          "resolved": false,
+          "confidence": 0,
+          "line": 28
+        },
+        {
+          "target": "data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 28
+        },
+        {
+          "target": "BackendAPI",
+          "resolved": false,
+          "confidence": 0,
+          "line": 36
+        },
+        {
+          "target": "createUser",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 37,
+          "resolvedId": "src/lib/autogpt-server-api/client.ts:createUser:119"
+        },
+        {
+          "target": "shouldShowOnboarding",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 39,
+          "resolvedId": "src/app/api/helpers.ts:shouldShowOnboarding:178"
+        },
+        {
+          "target": "captureException",
+          "resolved": false,
+          "confidence": 0,
+          "line": 46
+        },
+        {
+          "target": "err",
+          "resolved": false,
+          "confidence": 0,
+          "line": 46
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

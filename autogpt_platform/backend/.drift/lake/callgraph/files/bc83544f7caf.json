@@ -1,0 +1,852 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.208Z",
+  "checksum": "08e332f61126a397",
+  "file": "backend/data/audit_test.py",
+  "functions": [
+    {
+      "id": "backend/data/audit_test.py:test_log_audit_event:17",
+      "name": "test_log_audit_event",
+      "startLine": 17,
+      "endLine": 45,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "AuditContext",
+          "resolved": false,
+          "confidence": 0,
+          "line": 19
+        },
+        {
+          "target": "log_audit_event",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 28,
+          "resolvedId": "backend/data/audit.py:log_audit_event:34"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/audit_test.py:test_log_system_event:49",
+      "name": "test_log_system_event",
+      "startLine": 49,
+      "endLine": 64,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "AuditContext",
+          "resolved": false,
+          "confidence": 0,
+          "line": 51
+        },
+        {
+          "target": "log_audit_event",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 53,
+          "resolvedId": "backend/data/audit.py:log_audit_event:34"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/audit_test.py:test_get_audit_logs_by_actor:68",
+      "name": "test_get_audit_logs_by_actor",
+      "startLine": 68,
+      "endLine": 82,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "AuditContext",
+          "resolved": false,
+          "confidence": 0,
+          "line": 70
+        },
+        {
+          "target": "log_audit_event",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 71,
+          "resolvedId": "backend/data/audit.py:log_audit_event:34"
+        },
+        {
+          "target": "get_audit_logs",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 78,
+          "resolvedId": "backend/data/audit.py:get_audit_logs:81"
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 80
+        },
+        {
+          "target": "logs",
+          "resolved": false,
+          "confidence": 0,
+          "line": 80
+        },
+        {
+          "target": "list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 80
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 81
+        },
+        {
+          "target": "logs",
+          "resolved": false,
+          "confidence": 0,
+          "line": 81
+        },
+        {
+          "target": "all",
+          "resolved": false,
+          "confidence": 0,
+          "line": 82
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/audit_test.py:test_get_audit_logs_by_action:86",
+      "name": "test_get_audit_logs_by_action",
+      "startLine": 86,
+      "endLine": 100,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "AuditContext",
+          "resolved": false,
+          "confidence": 0,
+          "line": 88
+        },
+        {
+          "target": "log_audit_event",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 89,
+          "resolvedId": "backend/data/audit.py:log_audit_event:34"
+        },
+        {
+          "target": "get_audit_logs",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 96,
+          "resolvedId": "backend/data/audit.py:get_audit_logs:81"
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 98
+        },
+        {
+          "target": "logs",
+          "resolved": false,
+          "confidence": 0,
+          "line": 98
+        },
+        {
+          "target": "list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 98
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 99
+        },
+        {
+          "target": "logs",
+          "resolved": false,
+          "confidence": 0,
+          "line": 99
+        },
+        {
+          "target": "all",
+          "resolved": false,
+          "confidence": 0,
+          "line": 100
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/audit_test.py:test_get_user_activity:104",
+      "name": "test_get_user_activity",
+      "startLine": 104,
+      "endLine": 118,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "AuditContext",
+          "resolved": false,
+          "confidence": 0,
+          "line": 106
+        },
+        {
+          "target": "log_audit_event",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 107,
+          "resolvedId": "backend/data/audit.py:log_audit_event:34"
+        },
+        {
+          "target": "get_user_activity",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 114,
+          "resolvedId": "backend/data/audit.py:get_user_activity:138"
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 116
+        },
+        {
+          "target": "activity",
+          "resolved": false,
+          "confidence": 0,
+          "line": 116
+        },
+        {
+          "target": "list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 116
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 117
+        },
+        {
+          "target": "activity",
+          "resolved": false,
+          "confidence": 0,
+          "line": 117
+        },
+        {
+          "target": "all",
+          "resolved": false,
+          "confidence": 0,
+          "line": 118
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/audit_test.py:test_get_resource_history:122",
+      "name": "test_get_resource_history",
+      "startLine": 122,
+      "endLine": 145,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "AuditContext",
+          "resolved": false,
+          "confidence": 0,
+          "line": 125
+        },
+        {
+          "target": "log_audit_event",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 127,
+          "resolvedId": "backend/data/audit.py:log_audit_event:34"
+        },
+        {
+          "target": "log_audit_event",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 133,
+          "resolvedId": "backend/data/audit.py:log_audit_event:34"
+        },
+        {
+          "target": "get_resource_history",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 141,
+          "resolvedId": "backend/data/audit.py:get_resource_history:150"
+        },
+        {
+          "target": "resource_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 141
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 143
+        },
+        {
+          "target": "history",
+          "resolved": false,
+          "confidence": 0,
+          "line": 143
+        },
+        {
+          "target": "list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 143
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 144
+        },
+        {
+          "target": "history",
+          "resolved": false,
+          "confidence": 0,
+          "line": 144
+        },
+        {
+          "target": "all",
+          "resolved": false,
+          "confidence": 0,
+          "line": 145
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/audit_test.py:test_audit_log_pagination:149",
+      "name": "test_audit_log_pagination",
+      "startLine": 149,
+      "endLine": 168,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "AuditContext",
+          "resolved": false,
+          "confidence": 0,
+          "line": 151
+        },
+        {
+          "target": "range",
+          "resolved": false,
+          "confidence": 0,
+          "line": 152
+        },
+        {
+          "target": "log_audit_event",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 153,
+          "resolvedId": "backend/data/audit.py:log_audit_event:34"
+        },
+        {
+          "target": "get_audit_logs",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 160,
+          "resolvedId": "backend/data/audit.py:get_audit_logs:81"
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 161
+        },
+        {
+          "target": "page1",
+          "resolved": false,
+          "confidence": 0,
+          "line": 161
+        },
+        {
+          "target": "get_audit_logs",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 163,
+          "resolvedId": "backend/data/audit.py:get_audit_logs:81"
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 164
+        },
+        {
+          "target": "page2",
+          "resolved": false,
+          "confidence": 0,
+          "line": 164
+        },
+        {
+          "target": "isdisjoint",
+          "resolved": false,
+          "confidence": 0,
+          "line": 168
+        },
+        {
+          "target": "page2_ids",
+          "resolved": false,
+          "confidence": 0,
+          "line": 168
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/audit_test.py:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 169,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 16
+        },
+        {
+          "target": "AuditContext",
+          "resolved": false,
+          "confidence": 0,
+          "line": 19
+        },
+        {
+          "target": "log_audit_event",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 28,
+          "resolvedId": "backend/data/audit.py:log_audit_event:34"
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 48
+        },
+        {
+          "target": "AuditContext",
+          "resolved": false,
+          "confidence": 0,
+          "line": 51
+        },
+        {
+          "target": "log_audit_event",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 53,
+          "resolvedId": "backend/data/audit.py:log_audit_event:34"
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 67
+        },
+        {
+          "target": "AuditContext",
+          "resolved": false,
+          "confidence": 0,
+          "line": 70
+        },
+        {
+          "target": "log_audit_event",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 71,
+          "resolvedId": "backend/data/audit.py:log_audit_event:34"
+        },
+        {
+          "target": "get_audit_logs",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 78,
+          "resolvedId": "backend/data/audit.py:get_audit_logs:81"
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 80
+        },
+        {
+          "target": "logs",
+          "resolved": false,
+          "confidence": 0,
+          "line": 80
+        },
+        {
+          "target": "list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 80
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 81
+        },
+        {
+          "target": "logs",
+          "resolved": false,
+          "confidence": 0,
+          "line": 81
+        },
+        {
+          "target": "all",
+          "resolved": false,
+          "confidence": 0,
+          "line": 82
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 85
+        },
+        {
+          "target": "AuditContext",
+          "resolved": false,
+          "confidence": 0,
+          "line": 88
+        },
+        {
+          "target": "log_audit_event",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 89,
+          "resolvedId": "backend/data/audit.py:log_audit_event:34"
+        },
+        {
+          "target": "get_audit_logs",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 96,
+          "resolvedId": "backend/data/audit.py:get_audit_logs:81"
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 98
+        },
+        {
+          "target": "logs",
+          "resolved": false,
+          "confidence": 0,
+          "line": 98
+        },
+        {
+          "target": "list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 98
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 99
+        },
+        {
+          "target": "logs",
+          "resolved": false,
+          "confidence": 0,
+          "line": 99
+        },
+        {
+          "target": "all",
+          "resolved": false,
+          "confidence": 0,
+          "line": 100
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 103
+        },
+        {
+          "target": "AuditContext",
+          "resolved": false,
+          "confidence": 0,
+          "line": 106
+        },
+        {
+          "target": "log_audit_event",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 107,
+          "resolvedId": "backend/data/audit.py:log_audit_event:34"
+        },
+        {
+          "target": "get_user_activity",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 114,
+          "resolvedId": "backend/data/audit.py:get_user_activity:138"
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 116
+        },
+        {
+          "target": "activity",
+          "resolved": false,
+          "confidence": 0,
+          "line": 116
+        },
+        {
+          "target": "list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 116
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 117
+        },
+        {
+          "target": "activity",
+          "resolved": false,
+          "confidence": 0,
+          "line": 117
+        },
+        {
+          "target": "all",
+          "resolved": false,
+          "confidence": 0,
+          "line": 118
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 121
+        },
+        {
+          "target": "AuditContext",
+          "resolved": false,
+          "confidence": 0,
+          "line": 125
+        },
+        {
+          "target": "log_audit_event",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 127,
+          "resolvedId": "backend/data/audit.py:log_audit_event:34"
+        },
+        {
+          "target": "log_audit_event",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 133,
+          "resolvedId": "backend/data/audit.py:log_audit_event:34"
+        },
+        {
+          "target": "get_resource_history",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 141,
+          "resolvedId": "backend/data/audit.py:get_resource_history:150"
+        },
+        {
+          "target": "resource_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 141
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 143
+        },
+        {
+          "target": "history",
+          "resolved": false,
+          "confidence": 0,
+          "line": 143
+        },
+        {
+          "target": "list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 143
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 144
+        },
+        {
+          "target": "history",
+          "resolved": false,
+          "confidence": 0,
+          "line": 144
+        },
+        {
+          "target": "all",
+          "resolved": false,
+          "confidence": 0,
+          "line": 145
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 148
+        },
+        {
+          "target": "AuditContext",
+          "resolved": false,
+          "confidence": 0,
+          "line": 151
+        },
+        {
+          "target": "range",
+          "resolved": false,
+          "confidence": 0,
+          "line": 152
+        },
+        {
+          "target": "log_audit_event",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 153,
+          "resolvedId": "backend/data/audit.py:log_audit_event:34"
+        },
+        {
+          "target": "get_audit_logs",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 160,
+          "resolvedId": "backend/data/audit.py:get_audit_logs:81"
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 161
+        },
+        {
+          "target": "page1",
+          "resolved": false,
+          "confidence": 0,
+          "line": 161
+        },
+        {
+          "target": "get_audit_logs",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 163,
+          "resolvedId": "backend/data/audit.py:get_audit_logs:81"
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 164
+        },
+        {
+          "target": "page2",
+          "resolved": false,
+          "confidence": 0,
+          "line": 164
+        },
+        {
+          "target": "isdisjoint",
+          "resolved": false,
+          "confidence": 0,
+          "line": 168
+        },
+        {
+          "target": "page2_ids",
+          "resolved": false,
+          "confidence": 0,
+          "line": 168
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 16
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 48
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 67
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 85
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 103
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 121
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 148
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

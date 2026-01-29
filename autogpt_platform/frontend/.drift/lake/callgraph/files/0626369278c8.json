@@ -1,0 +1,33 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:19.990Z",
+  "checksum": "277d1b72df7e4b1e",
+  "file": "src/middleware.ts",
+  "functions": [
+    {
+      "id": "src/middleware.ts:middleware:4",
+      "name": "middleware",
+      "startLine": 4,
+      "endLine": 6,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "updateSession",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 5,
+          "resolvedId": "src/lib/supabase/middleware.ts:updateSession:7"
+        },
+        {
+          "target": "request",
+          "resolved": false,
+          "confidence": 0,
+          "line": 5
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

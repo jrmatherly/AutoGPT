@@ -1,0 +1,103 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.214Z",
+  "checksum": "8949641c3a12f4cf",
+  "file": "backend/blocks/ayrshare/post_to_snapchat.py",
+  "functions": [
+    {
+      "id": "backend/blocks/ayrshare/post_to_snapchat.py:__init__:50",
+      "name": "__init__",
+      "startLine": 50,
+      "endLine": 59,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 51,
+          "resolvedId": "backend/blocks/ayrshare/post_to_snapchat.py:__init__:50"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 51
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/ayrshare/post_to_snapchat.py:run:61",
+      "name": "run",
+      "startLine": 61,
+      "endLine": 129,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "get_profile_key",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 69,
+          "resolvedId": "backend/blocks/ayrshare/_util.py:get_profile_key:13"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 69
+        },
+        {
+          "target": "create_ayrshare_client",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 74,
+          "resolvedId": "backend/blocks/ayrshare/_util.py:create_ayrshare_client:147"
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 84
+        },
+        {
+          "target": "join",
+          "resolved": false,
+          "confidence": 0,
+          "line": 91
+        },
+        {
+          "target": "valid_story_types",
+          "resolved": false,
+          "confidence": 0,
+          "line": 91
+        },
+        {
+          "target": "isoformat",
+          "resolved": false,
+          "confidence": 0,
+          "line": 96
+        },
+        {
+          "target": "create_post",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 110,
+          "resolvedId": "backend/blocks/wordpress/_api.py:create_post:451"
+        },
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 124,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

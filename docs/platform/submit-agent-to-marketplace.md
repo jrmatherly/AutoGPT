@@ -27,7 +27,6 @@
 * The AutoGPT team will review your submission
 * If approved, your agent will appear in the marketplace as a new listing
 
-
 ## **Tips for a Successful Submission**
 * Provide a clear, detailed description of what your agent does
 * Choose relevant keywords that accurately describe your agent's functionality

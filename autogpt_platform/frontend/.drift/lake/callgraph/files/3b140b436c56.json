@@ -1,0 +1,470 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.032Z",
+  "checksum": "c4ba1884f95cf9a4",
+  "file": "src/components/contextual/Chat/components/MessageList/MessageList.tsx",
+  "functions": [
+    {
+      "id": "src/components/contextual/Chat/components/MessageList/MessageList.tsx:MessageList:21",
+      "name": "MessageList",
+      "startLine": 21,
+      "endLine": 119,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useMessageList",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 29,
+          "resolvedId": "src/components/contextual/Chat/components/MessageList/useMessageList.ts:useMessageList:8"
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 37
+        },
+        {
+          "target": "messages",
+          "resolved": false,
+          "confidence": 0,
+          "line": 37
+        },
+        {
+          "target": "messagesContainerRef",
+          "resolved": false,
+          "confidence": 0,
+          "line": 45
+        },
+        {
+          "target": "cn",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 46,
+          "resolvedId": "src/components/renderers/InputRenderer/utils/rjsf-utils.ts:cn:4"
+        },
+        {
+          "target": "className",
+          "resolved": false,
+          "confidence": 0,
+          "line": 49
+        },
+        {
+          "target": "(() => {\n            const lastAssistantMessageIndex = findLastMessageIndex(\n              messages,\n              (msg) => msg.type === \"message\" && msg.role === \"assistant\",\n            );\n\n            const lastToolResponseIndex = findLastMessageIndex(\n              messages,\n              (msg) => msg.type === \"tool_response\",\n            );\n\n            return messages.map((message, index) => {\n              // Skip agent_output tool_responses that should be rendered inside assistant messages\n              if (shouldSkipAgentOutput(message, messages[index - 1])) {\n                return null;\n              }\n\n              // Render last tool_response as AIChatBubble\n              if (\n                message.type === \"tool_response\" &&\n                index === lastToolResponseIndex\n              ) {\n                return (\n                  <LastToolResponse\n                    key={index}\n                    message={message}\n                    prevMessage={messages[index - 1]}\n                  />\n                );\n              }\n\n              return (\n                <MessageItem\n                  key={index}\n                  message={message}\n                  messages={messages}\n                  index={index}\n                  lastAssistantMessageIndex={lastAssistantMessageIndex}\n                  isStreaming={isStreaming}\n                  onSendMessage={onSendMessage}\n                />\n              );\n            });\n          })",
+          "resolved": false,
+          "confidence": 0,
+          "line": 54
+        },
+        {
+          "target": "findLastMessageIndex",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 55,
+          "resolvedId": "src/components/contextual/Chat/components/MessageList/helpers.ts:findLastMessageIndex:45"
+        },
+        {
+          "target": "messages",
+          "resolved": false,
+          "confidence": 0,
+          "line": 56
+        },
+        {
+          "target": "findLastMessageIndex",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 60,
+          "resolvedId": "src/components/contextual/Chat/components/MessageList/helpers.ts:findLastMessageIndex:45"
+        },
+        {
+          "target": "messages",
+          "resolved": false,
+          "confidence": 0,
+          "line": 61
+        },
+        {
+          "target": "map",
+          "resolved": false,
+          "confidence": 0,
+          "line": 65
+        },
+        {
+          "target": "shouldSkipAgentOutput",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 67,
+          "resolvedId": "src/components/contextual/Chat/components/MessageList/helpers.ts:shouldSkipAgentOutput:55"
+        },
+        {
+          "target": "message",
+          "resolved": false,
+          "confidence": 0,
+          "line": 67
+        },
+        {
+          "target": "LastToolResponse",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 77,
+          "resolvedId": "src/components/contextual/Chat/components/MessageList/components/LastToolResponse/LastToolResponse.tsx:LastToolResponse:10"
+        },
+        {
+          "target": "index",
+          "resolved": false,
+          "confidence": 0,
+          "line": 78
+        },
+        {
+          "target": "message",
+          "resolved": false,
+          "confidence": 0,
+          "line": 79
+        },
+        {
+          "target": "MessageItem",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 86,
+          "resolvedId": "src/components/contextual/Chat/components/MessageList/components/MessageItem/MessageItem.tsx:MessageItem:14"
+        },
+        {
+          "target": "index",
+          "resolved": false,
+          "confidence": 0,
+          "line": 87
+        },
+        {
+          "target": "message",
+          "resolved": false,
+          "confidence": 0,
+          "line": 88
+        },
+        {
+          "target": "messages",
+          "resolved": false,
+          "confidence": 0,
+          "line": 89
+        },
+        {
+          "target": "index",
+          "resolved": false,
+          "confidence": 0,
+          "line": 90
+        },
+        {
+          "target": "lastAssistantMessageIndex",
+          "resolved": false,
+          "confidence": 0,
+          "line": 91
+        },
+        {
+          "target": "isStreaming",
+          "resolved": false,
+          "confidence": 0,
+          "line": 92
+        },
+        {
+          "target": "onSendMessage",
+          "resolved": false,
+          "confidence": 0,
+          "line": 93
+        },
+        {
+          "target": "ThinkingMessage",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 100,
+          "resolvedId": "src/components/contextual/Chat/components/ThinkingMessage/ThinkingMessage.tsx:ThinkingMessage:9"
+        },
+        {
+          "target": "StreamingMessage",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 104,
+          "resolvedId": "src/components/contextual/Chat/components/StreamingMessage/StreamingMessage.tsx:StreamingMessage:12"
+        },
+        {
+          "target": "streamingChunks",
+          "resolved": false,
+          "confidence": 0,
+          "line": 105
+        },
+        {
+          "target": "onStreamComplete",
+          "resolved": false,
+          "confidence": 0,
+          "line": 106
+        },
+        {
+          "target": "messagesEndRef",
+          "resolved": false,
+          "confidence": 0,
+          "line": 111
+        },
+        {
+          "target": "shouldSkipAgentOutput",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 67,
+          "resolvedId": "src/components/contextual/Chat/components/MessageList/helpers.ts:shouldSkipAgentOutput:55"
+        },
+        {
+          "target": "message",
+          "resolved": false,
+          "confidence": 0,
+          "line": 67
+        },
+        {
+          "target": "LastToolResponse",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 77,
+          "resolvedId": "src/components/contextual/Chat/components/MessageList/components/LastToolResponse/LastToolResponse.tsx:LastToolResponse:10"
+        },
+        {
+          "target": "index",
+          "resolved": false,
+          "confidence": 0,
+          "line": 78
+        },
+        {
+          "target": "message",
+          "resolved": false,
+          "confidence": 0,
+          "line": 79
+        },
+        {
+          "target": "MessageItem",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 86,
+          "resolvedId": "src/components/contextual/Chat/components/MessageList/components/MessageItem/MessageItem.tsx:MessageItem:14"
+        },
+        {
+          "target": "index",
+          "resolved": false,
+          "confidence": 0,
+          "line": 87
+        },
+        {
+          "target": "message",
+          "resolved": false,
+          "confidence": 0,
+          "line": 88
+        },
+        {
+          "target": "messages",
+          "resolved": false,
+          "confidence": 0,
+          "line": 89
+        },
+        {
+          "target": "index",
+          "resolved": false,
+          "confidence": 0,
+          "line": 90
+        },
+        {
+          "target": "lastAssistantMessageIndex",
+          "resolved": false,
+          "confidence": 0,
+          "line": 91
+        },
+        {
+          "target": "isStreaming",
+          "resolved": false,
+          "confidence": 0,
+          "line": 92
+        },
+        {
+          "target": "onSendMessage",
+          "resolved": false,
+          "confidence": 0,
+          "line": 93
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/contextual/Chat/components/MessageList/MessageList.tsx:$map$1:65",
+      "name": "$map$1",
+      "startLine": 65,
+      "endLine": 96,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "map",
+          "resolved": false,
+          "confidence": 0,
+          "line": 65
+        },
+        {
+          "target": "shouldSkipAgentOutput",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 67,
+          "resolvedId": "src/components/contextual/Chat/components/MessageList/helpers.ts:shouldSkipAgentOutput:55"
+        },
+        {
+          "target": "message",
+          "resolved": false,
+          "confidence": 0,
+          "line": 67
+        },
+        {
+          "target": "LastToolResponse",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 77,
+          "resolvedId": "src/components/contextual/Chat/components/MessageList/components/LastToolResponse/LastToolResponse.tsx:LastToolResponse:10"
+        },
+        {
+          "target": "index",
+          "resolved": false,
+          "confidence": 0,
+          "line": 78
+        },
+        {
+          "target": "message",
+          "resolved": false,
+          "confidence": 0,
+          "line": 79
+        },
+        {
+          "target": "MessageItem",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 86,
+          "resolvedId": "src/components/contextual/Chat/components/MessageList/components/MessageItem/MessageItem.tsx:MessageItem:14"
+        },
+        {
+          "target": "index",
+          "resolved": false,
+          "confidence": 0,
+          "line": 87
+        },
+        {
+          "target": "message",
+          "resolved": false,
+          "confidence": 0,
+          "line": 88
+        },
+        {
+          "target": "messages",
+          "resolved": false,
+          "confidence": 0,
+          "line": 89
+        },
+        {
+          "target": "index",
+          "resolved": false,
+          "confidence": 0,
+          "line": 90
+        },
+        {
+          "target": "lastAssistantMessageIndex",
+          "resolved": false,
+          "confidence": 0,
+          "line": 91
+        },
+        {
+          "target": "isStreaming",
+          "resolved": false,
+          "confidence": 0,
+          "line": 92
+        },
+        {
+          "target": "onSendMessage",
+          "resolved": false,
+          "confidence": 0,
+          "line": 93
+        },
+        {
+          "target": "shouldSkipAgentOutput",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 67,
+          "resolvedId": "src/components/contextual/Chat/components/MessageList/helpers.ts:shouldSkipAgentOutput:55"
+        },
+        {
+          "target": "message",
+          "resolved": false,
+          "confidence": 0,
+          "line": 67
+        },
+        {
+          "target": "LastToolResponse",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 77,
+          "resolvedId": "src/components/contextual/Chat/components/MessageList/components/LastToolResponse/LastToolResponse.tsx:LastToolResponse:10"
+        },
+        {
+          "target": "index",
+          "resolved": false,
+          "confidence": 0,
+          "line": 78
+        },
+        {
+          "target": "message",
+          "resolved": false,
+          "confidence": 0,
+          "line": 79
+        },
+        {
+          "target": "MessageItem",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 86,
+          "resolvedId": "src/components/contextual/Chat/components/MessageList/components/MessageItem/MessageItem.tsx:MessageItem:14"
+        },
+        {
+          "target": "index",
+          "resolved": false,
+          "confidence": 0,
+          "line": 87
+        },
+        {
+          "target": "message",
+          "resolved": false,
+          "confidence": 0,
+          "line": 88
+        },
+        {
+          "target": "messages",
+          "resolved": false,
+          "confidence": 0,
+          "line": 89
+        },
+        {
+          "target": "index",
+          "resolved": false,
+          "confidence": 0,
+          "line": 90
+        },
+        {
+          "target": "lastAssistantMessageIndex",
+          "resolved": false,
+          "confidence": 0,
+          "line": 91
+        },
+        {
+          "target": "isStreaming",
+          "resolved": false,
+          "confidence": 0,
+          "line": 92
+        },
+        {
+          "target": "onSendMessage",
+          "resolved": false,
+          "confidence": 0,
+          "line": 93
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

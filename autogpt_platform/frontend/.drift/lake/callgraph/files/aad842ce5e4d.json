@@ -1,0 +1,179 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.095Z",
+  "checksum": "876a467452d49552",
+  "file": "src/components/contextual/Chat/Chat.tsx",
+  "functions": [
+    {
+      "id": "src/components/contextual/Chat/Chat.tsx:Chat:20",
+      "name": "Chat",
+      "startLine": 20,
+      "endLine": 96,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useCopilotSessionId",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 26,
+          "resolvedId": "src/app/(platform)/copilot/useCopilotSessionId.ts:useCopilotSessionId:3"
+        },
+        {
+          "target": "useRef",
+          "resolved": false,
+          "confidence": 0,
+          "line": 27
+        },
+        {
+          "target": "useCopilotStore",
+          "resolved": false,
+          "confidence": 0,
+          "line": 28
+        },
+        {
+          "target": "useChat",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 39,
+          "resolvedId": "src/components/contextual/Chat/useChat.ts:useChat:12"
+        },
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 41
+        },
+        {
+          "target": "onSessionNotFound",
+          "resolved": false,
+          "confidence": 0,
+          "line": 47
+        },
+        {
+          "target": "cn",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 60,
+          "resolvedId": "src/components/renderers/InputRenderer/utils/rjsf-utils.ts:cn:4"
+        },
+        {
+          "target": "className",
+          "resolved": false,
+          "confidence": 0,
+          "line": 60
+        },
+        {
+          "target": "LoadingSpinner",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 67,
+          "resolvedId": "src/components/__legacy__/ui/loading.tsx:LoadingSpinner:24"
+        },
+        {
+          "target": "Text",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 68,
+          "resolvedId": "src/components/atoms/Text/Text.tsx:Text:15"
+        },
+        {
+          "target": "ChatErrorState",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 79,
+          "resolvedId": "src/components/contextual/Chat/components/ChatErrorState/ChatErrorState.tsx:ChatErrorState:11"
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 79
+        },
+        {
+          "target": "createSession",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 79,
+          "resolvedId": "src/components/contextual/Chat/useChatSession.ts:createSession:225"
+        },
+        {
+          "target": "ChatContainer",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 84,
+          "resolvedId": "src/components/contextual/Chat/components/ChatContainer/ChatContainer.tsx:ChatContainer:22"
+        },
+        {
+          "target": "sessionId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 85
+        },
+        {
+          "target": "messages",
+          "resolved": false,
+          "confidence": 0,
+          "line": 86
+        },
+        {
+          "target": "initialPrompt",
+          "resolved": false,
+          "confidence": 0,
+          "line": 87
+        },
+        {
+          "target": "onStreamingChange",
+          "resolved": false,
+          "confidence": 0,
+          "line": 89
+        },
+        {
+          "target": "startPollingForOperation",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 90,
+          "resolvedId": "src/components/contextual/Chat/useChatSession.ts:startPollingForOperation:158"
+        },
+        {
+          "target": "onSessionNotFound",
+          "resolved": false,
+          "confidence": 0,
+          "line": 47
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/contextual/Chat/Chat.tsx:$useEffect$1:41",
+      "name": "$useEffect$1",
+      "startLine": 41,
+      "endLine": 48,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 41
+        },
+        {
+          "target": "onSessionNotFound",
+          "resolved": false,
+          "confidence": 0,
+          "line": 47
+        },
+        {
+          "target": "onSessionNotFound",
+          "resolved": false,
+          "confidence": 0,
+          "line": 47
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

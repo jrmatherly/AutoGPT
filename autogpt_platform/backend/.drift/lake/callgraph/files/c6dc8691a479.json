@@ -1,0 +1,690 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.213Z",
+  "checksum": "4df75b6a200de50b",
+  "file": "backend/api/features/postmark/postmark.py",
+  "functions": [
+    {
+      "id": "backend/api/features/postmark/postmark.py:unsubscribe_via_one_click:38",
+      "name": "unsubscribe_via_one_click",
+      "startLine": 38,
+      "endLine": 48,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "info",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 39,
+          "resolvedId": "backend/util/logging.py:info:41"
+        },
+        {
+          "target": "unsubscribe_user_by_token",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 41,
+          "resolvedId": "backend/data/user.py:unsubscribe_user_by_token:418"
+        },
+        {
+          "target": "token",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 41,
+          "resolvedId": "backend/api/features/oauth.py:token:337"
+        },
+        {
+          "target": "exception",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 43,
+          "resolvedId": "backend/util/logging.py:exception:57"
+        },
+        {
+          "target": "e",
+          "resolved": false,
+          "confidence": 0,
+          "line": 43
+        },
+        {
+          "target": "HTTPException",
+          "resolved": false,
+          "confidence": 0,
+          "line": 44
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 46
+        },
+        {
+          "target": "e",
+          "resolved": false,
+          "confidence": 0,
+          "line": 46
+        },
+        {
+          "target": "JSONResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 48
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/postmark/postmark.py:postmark_webhook_handler:56",
+      "name": "postmark_webhook_handler",
+      "startLine": 56,
+      "endLine": 81,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "info",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 62,
+          "resolvedId": "backend/util/logging.py:info:41"
+        },
+        {
+          "target": "delivery_handler",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 65,
+          "resolvedId": "backend/api/features/postmark/postmark.py:delivery_handler:112"
+        },
+        {
+          "target": "webhook",
+          "resolved": false,
+          "confidence": 0,
+          "line": 65
+        },
+        {
+          "target": "bounce_handler",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 67,
+          "resolvedId": "backend/api/features/postmark/postmark.py:bounce_handler:84"
+        },
+        {
+          "target": "webhook",
+          "resolved": false,
+          "confidence": 0,
+          "line": 67
+        },
+        {
+          "target": "spam_handler",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 69,
+          "resolvedId": "backend/api/features/postmark/postmark.py:spam_handler:107"
+        },
+        {
+          "target": "webhook",
+          "resolved": false,
+          "confidence": 0,
+          "line": 69
+        },
+        {
+          "target": "open_handler",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 71,
+          "resolvedId": "backend/api/features/postmark/postmark.py:open_handler:117"
+        },
+        {
+          "target": "webhook",
+          "resolved": false,
+          "confidence": 0,
+          "line": 71
+        },
+        {
+          "target": "click_handler",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 73,
+          "resolvedId": "backend/api/features/postmark/postmark.py:click_handler:122"
+        },
+        {
+          "target": "webhook",
+          "resolved": false,
+          "confidence": 0,
+          "line": 73
+        },
+        {
+          "target": "subscription_handler",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 75,
+          "resolvedId": "backend/api/features/postmark/postmark.py:subscription_handler:127"
+        },
+        {
+          "target": "webhook",
+          "resolved": false,
+          "confidence": 0,
+          "line": 75
+        },
+        {
+          "target": "warning",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 77,
+          "resolvedId": "backend/util/logging.py:warning:45"
+        },
+        {
+          "target": "type",
+          "resolved": false,
+          "confidence": 0,
+          "line": 79
+        },
+        {
+          "target": "webhook",
+          "resolved": false,
+          "confidence": 0,
+          "line": 79
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/postmark/postmark.py:bounce_handler:84",
+      "name": "bounce_handler",
+      "startLine": 84,
+      "endLine": 104,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "info",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 85,
+          "resolvedId": "backend/util/logging.py:info:41"
+        },
+        {
+          "target": "info",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 91,
+          "resolvedId": "backend/util/logging.py:info:41"
+        },
+        {
+          "target": "info",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 95,
+          "resolvedId": "backend/util/logging.py:info:41"
+        },
+        {
+          "target": "get_user_by_email",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 96,
+          "resolvedId": "backend/data/user.py:get_user_by_email:74"
+        },
+        {
+          "target": "warning",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 98,
+          "resolvedId": "backend/util/logging.py:warning:45"
+        },
+        {
+          "target": "set_user_email_verification",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 103,
+          "resolvedId": "backend/data/user.py:set_user_email_verification:342"
+        },
+        {
+          "target": "debug",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 104,
+          "resolvedId": "backend/util/logging.py:debug:53"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/postmark/postmark.py:spam_handler:107",
+      "name": "spam_handler",
+      "startLine": 107,
+      "endLine": 109,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "info",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 108,
+          "resolvedId": "backend/util/logging.py:info:41"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/postmark/postmark.py:delivery_handler:112",
+      "name": "delivery_handler",
+      "startLine": 112,
+      "endLine": 114,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "info",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 113,
+          "resolvedId": "backend/util/logging.py:info:41"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/postmark/postmark.py:open_handler:117",
+      "name": "open_handler",
+      "startLine": 117,
+      "endLine": 119,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "info",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 118,
+          "resolvedId": "backend/util/logging.py:info:41"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/postmark/postmark.py:click_handler:122",
+      "name": "click_handler",
+      "startLine": 122,
+      "endLine": 124,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "info",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 123,
+          "resolvedId": "backend/util/logging.py:info:41"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/postmark/postmark.py:subscription_handler:127",
+      "name": "subscription_handler",
+      "startLine": 127,
+      "endLine": 129,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "info",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 128,
+          "resolvedId": "backend/util/logging.py:info:41"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/postmark/postmark.py:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 130,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "getLogger",
+          "resolved": false,
+          "confidence": 0,
+          "line": 26
+        },
+        {
+          "target": "Settings",
+          "resolved": false,
+          "confidence": 0,
+          "line": 27
+        },
+        {
+          "target": "APIRouter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 29
+        },
+        {
+          "target": "APIKeyAuthenticator",
+          "resolved": false,
+          "confidence": 0,
+          "line": 31
+        },
+        {
+          "target": "post",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 37,
+          "resolvedId": "backend/util/request.py:post:563"
+        },
+        {
+          "target": "info",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 39,
+          "resolvedId": "backend/util/logging.py:info:41"
+        },
+        {
+          "target": "unsubscribe_user_by_token",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 41,
+          "resolvedId": "backend/data/user.py:unsubscribe_user_by_token:418"
+        },
+        {
+          "target": "token",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 41,
+          "resolvedId": "backend/api/features/oauth.py:token:337"
+        },
+        {
+          "target": "exception",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 43,
+          "resolvedId": "backend/util/logging.py:exception:57"
+        },
+        {
+          "target": "e",
+          "resolved": false,
+          "confidence": 0,
+          "line": 43
+        },
+        {
+          "target": "HTTPException",
+          "resolved": false,
+          "confidence": 0,
+          "line": 44
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 46
+        },
+        {
+          "target": "e",
+          "resolved": false,
+          "confidence": 0,
+          "line": 46
+        },
+        {
+          "target": "JSONResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 48
+        },
+        {
+          "target": "post",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 51,
+          "resolvedId": "backend/util/request.py:post:563"
+        },
+        {
+          "target": "info",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 62,
+          "resolvedId": "backend/util/logging.py:info:41"
+        },
+        {
+          "target": "delivery_handler",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 65,
+          "resolvedId": "backend/api/features/postmark/postmark.py:delivery_handler:112"
+        },
+        {
+          "target": "webhook",
+          "resolved": false,
+          "confidence": 0,
+          "line": 65
+        },
+        {
+          "target": "bounce_handler",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 67,
+          "resolvedId": "backend/api/features/postmark/postmark.py:bounce_handler:84"
+        },
+        {
+          "target": "webhook",
+          "resolved": false,
+          "confidence": 0,
+          "line": 67
+        },
+        {
+          "target": "spam_handler",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 69,
+          "resolvedId": "backend/api/features/postmark/postmark.py:spam_handler:107"
+        },
+        {
+          "target": "webhook",
+          "resolved": false,
+          "confidence": 0,
+          "line": 69
+        },
+        {
+          "target": "open_handler",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 71,
+          "resolvedId": "backend/api/features/postmark/postmark.py:open_handler:117"
+        },
+        {
+          "target": "webhook",
+          "resolved": false,
+          "confidence": 0,
+          "line": 71
+        },
+        {
+          "target": "click_handler",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 73,
+          "resolvedId": "backend/api/features/postmark/postmark.py:click_handler:122"
+        },
+        {
+          "target": "webhook",
+          "resolved": false,
+          "confidence": 0,
+          "line": 73
+        },
+        {
+          "target": "subscription_handler",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 75,
+          "resolvedId": "backend/api/features/postmark/postmark.py:subscription_handler:127"
+        },
+        {
+          "target": "webhook",
+          "resolved": false,
+          "confidence": 0,
+          "line": 75
+        },
+        {
+          "target": "warning",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 77,
+          "resolvedId": "backend/util/logging.py:warning:45"
+        },
+        {
+          "target": "type",
+          "resolved": false,
+          "confidence": 0,
+          "line": 79
+        },
+        {
+          "target": "webhook",
+          "resolved": false,
+          "confidence": 0,
+          "line": 79
+        },
+        {
+          "target": "info",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 85,
+          "resolvedId": "backend/util/logging.py:info:41"
+        },
+        {
+          "target": "info",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 91,
+          "resolvedId": "backend/util/logging.py:info:41"
+        },
+        {
+          "target": "info",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 95,
+          "resolvedId": "backend/util/logging.py:info:41"
+        },
+        {
+          "target": "get_user_by_email",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 96,
+          "resolvedId": "backend/data/user.py:get_user_by_email:74"
+        },
+        {
+          "target": "warning",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 98,
+          "resolvedId": "backend/util/logging.py:warning:45"
+        },
+        {
+          "target": "set_user_email_verification",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 103,
+          "resolvedId": "backend/data/user.py:set_user_email_verification:342"
+        },
+        {
+          "target": "debug",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 104,
+          "resolvedId": "backend/util/logging.py:debug:53"
+        },
+        {
+          "target": "info",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 108,
+          "resolvedId": "backend/util/logging.py:info:41"
+        },
+        {
+          "target": "info",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 113,
+          "resolvedId": "backend/util/logging.py:info:41"
+        },
+        {
+          "target": "info",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 118,
+          "resolvedId": "backend/util/logging.py:info:41"
+        },
+        {
+          "target": "info",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 123,
+          "resolvedId": "backend/util/logging.py:info:41"
+        },
+        {
+          "target": "info",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 128,
+          "resolvedId": "backend/util/logging.py:info:41"
+        },
+        {
+          "target": "getLogger",
+          "resolved": false,
+          "confidence": 0,
+          "line": 26
+        },
+        {
+          "target": "Settings",
+          "resolved": false,
+          "confidence": 0,
+          "line": 27
+        },
+        {
+          "target": "APIRouter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 29
+        },
+        {
+          "target": "APIKeyAuthenticator",
+          "resolved": false,
+          "confidence": 0,
+          "line": 31
+        },
+        {
+          "target": "post",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 37,
+          "resolvedId": "backend/util/request.py:post:563"
+        },
+        {
+          "target": "post",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 51,
+          "resolvedId": "backend/util/request.py:post:563"
+        },
+        {
+          "target": "Security",
+          "resolved": false,
+          "confidence": 0,
+          "line": 53
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

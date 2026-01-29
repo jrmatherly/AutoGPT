@@ -1,0 +1,1374 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.198Z",
+  "checksum": "14440ce37d44ff3e",
+  "file": "backend/integrations/creds_manager.py",
+  "functions": [
+    {
+      "id": "backend/integrations/creds_manager.py:__init__:57",
+      "name": "__init__",
+      "startLine": 57,
+      "endLine": 59,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "IntegrationCredentialsStore",
+          "resolved": false,
+          "confidence": 0,
+          "line": 58
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/integrations/creds_manager.py:locks:61",
+      "name": "locks",
+      "startLine": 61,
+      "endLine": 66,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "AsyncRedisKeyedMutex",
+          "resolved": false,
+          "confidence": 0,
+          "line": 65
+        },
+        {
+          "target": "get_redis_async",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 65,
+          "resolvedId": "backend/data/redis_client.py:get_redis_async:61"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/integrations/creds_manager.py:create:68",
+      "name": "create",
+      "startLine": 68,
+      "endLine": 69,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "add_creds",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 69,
+          "resolvedId": "backend/integrations/credentials_store.py:add_creds:296"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 69
+        },
+        {
+          "target": "credentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 69
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/integrations/creds_manager.py:exists:71",
+      "name": "exists",
+      "startLine": 71,
+      "endLine": 72,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "get_creds_by_id",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 72,
+          "resolvedId": "backend/integrations/credentials_store.py:get_creds_by_id:371"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        },
+        {
+          "target": "credentials_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/integrations/creds_manager.py:get:74",
+      "name": "get",
+      "startLine": 74,
+      "endLine": 92,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "get_creds_by_id",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 77,
+          "resolvedId": "backend/integrations/credentials_store.py:get_creds_by_id:371"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 77
+        },
+        {
+          "target": "credentials_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 77
+        },
+        {
+          "target": "debug",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 83,
+          "resolvedId": "backend/util/logging.py:debug:53"
+        },
+        {
+          "target": "fromtimestamp",
+          "resolved": false,
+          "confidence": 0,
+          "line": 85
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 86
+        },
+        {
+          "target": "refresh_if_needed",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 88,
+          "resolvedId": "backend/integrations/creds_manager.py:refresh_if_needed:136"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 88
+        },
+        {
+          "target": "credentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 88
+        },
+        {
+          "target": "lock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 88
+        },
+        {
+          "target": "debug",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 90,
+          "resolvedId": "backend/util/logging.py:debug:53"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/integrations/creds_manager.py:acquire:94",
+      "name": "acquire",
+      "startLine": 94,
+      "endLine": 111,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "_locked",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 104,
+          "resolvedId": "backend/integrations/creds_manager.py:_locked:184"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 104
+        },
+        {
+          "target": "credentials_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 104
+        },
+        {
+          "target": "_acquire_lock",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 105,
+          "resolvedId": "backend/integrations/creds_manager.py:_acquire_lock:172"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 105
+        },
+        {
+          "target": "credentials_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 105
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 106,
+          "resolvedId": "backend/integrations/creds_manager.py:get:74"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 106
+        },
+        {
+          "target": "credentials_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 106
+        },
+        {
+          "target": "ValueError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 108
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/integrations/creds_manager.py:cached_getter:113",
+      "name": "cached_getter",
+      "startLine": 113,
+      "endLine": 134,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "get_all_creds",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 122,
+          "resolvedId": "backend/integrations/credentials_store.py:get_all_creds:307"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 122
+        },
+        {
+          "target": "next",
+          "resolved": false,
+          "confidence": 0,
+          "line": 124
+        },
+        {
+          "target": "refresh_if_needed",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 132,
+          "resolvedId": "backend/integrations/creds_manager.py:refresh_if_needed:136"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 132
+        },
+        {
+          "target": "credential",
+          "resolved": false,
+          "confidence": 0,
+          "line": 132
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/integrations/creds_manager.py:get_credentials:118",
+      "name": "get_credentials",
+      "startLine": 118,
+      "endLine": 132,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "get_all_creds",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 122,
+          "resolvedId": "backend/integrations/credentials_store.py:get_all_creds:307"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 122
+        },
+        {
+          "target": "next",
+          "resolved": false,
+          "confidence": 0,
+          "line": 124
+        },
+        {
+          "target": "refresh_if_needed",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 132,
+          "resolvedId": "backend/integrations/creds_manager.py:refresh_if_needed:136"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 132
+        },
+        {
+          "target": "credential",
+          "resolved": false,
+          "confidence": 0,
+          "line": 132
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/integrations/creds_manager.py:refresh_if_needed:136",
+      "name": "refresh_if_needed",
+      "startLine": 136,
+      "endLine": 160,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "_locked",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 139,
+          "resolvedId": "backend/integrations/creds_manager.py:_locked:184"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 139
+        },
+        {
+          "target": "_get_provider_oauth_handler",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 140,
+          "resolvedId": "backend/integrations/creds_manager.py:_get_provider_oauth_handler:201"
+        },
+        {
+          "target": "needs_refresh",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 141,
+          "resolvedId": "backend/integrations/oauth/base.py:needs_refresh:73"
+        },
+        {
+          "target": "credentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 141
+        },
+        {
+          "target": "debug",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 142,
+          "resolvedId": "backend/util/logging.py:debug:53"
+        },
+        {
+          "target": "_acquire_lock",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 149,
+          "resolvedId": "backend/integrations/creds_manager.py:_acquire_lock:172"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 149
+        },
+        {
+          "target": "refresh_tokens",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 151,
+          "resolvedId": "backend/integrations/oauth/base.py:refresh_tokens:59"
+        },
+        {
+          "target": "credentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 151
+        },
+        {
+          "target": "update_creds",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 152,
+          "resolvedId": "backend/integrations/credentials_store.py:update_creds:387"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 152
+        },
+        {
+          "target": "fresh_credentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 152
+        },
+        {
+          "target": "locked",
+          "resolved": false,
+          "confidence": 0,
+          "line": 153
+        },
+        {
+          "target": "owned",
+          "resolved": false,
+          "confidence": 0,
+          "line": 153
+        },
+        {
+          "target": "release",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 155,
+          "resolvedId": "backend/executor/cluster_lock.py:release:105"
+        },
+        {
+          "target": "warning",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 157,
+          "resolvedId": "backend/util/logging.py:warning:45"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/integrations/creds_manager.py:update:162",
+      "name": "update",
+      "startLine": 162,
+      "endLine": 164,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "_locked",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 163,
+          "resolvedId": "backend/integrations/creds_manager.py:_locked:184"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 163
+        },
+        {
+          "target": "update_creds",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 164,
+          "resolvedId": "backend/integrations/credentials_store.py:update_creds:387"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 164
+        },
+        {
+          "target": "updated",
+          "resolved": false,
+          "confidence": 0,
+          "line": 164
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/integrations/creds_manager.py:delete:166",
+      "name": "delete",
+      "startLine": 166,
+      "endLine": 168,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "_locked",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 167,
+          "resolvedId": "backend/integrations/creds_manager.py:_locked:184"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 167
+        },
+        {
+          "target": "credentials_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 167
+        },
+        {
+          "target": "delete_creds_by_id",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 168,
+          "resolvedId": "backend/integrations/credentials_store.py:delete_creds_by_id:421"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 168
+        },
+        {
+          "target": "credentials_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 168
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/integrations/creds_manager.py:_acquire_lock:172",
+      "name": "_acquire_lock",
+      "startLine": 172,
+      "endLine": 181,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "locks",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 180,
+          "resolvedId": "backend/integrations/creds_manager.py:locks:61"
+        },
+        {
+          "target": "acquire",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 181,
+          "resolvedId": "backend/integrations/creds_manager.py:acquire:94"
+        },
+        {
+          "target": "key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 181
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/integrations/creds_manager.py:_locked:184",
+      "name": "_locked",
+      "startLine": 184,
+      "endLine": 193,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "_acquire_lock",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 185,
+          "resolvedId": "backend/integrations/creds_manager.py:_acquire_lock:172"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 185
+        },
+        {
+          "target": "credentials_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 185
+        },
+        {
+          "target": "locked",
+          "resolved": false,
+          "confidence": 0,
+          "line": 189
+        },
+        {
+          "target": "owned",
+          "resolved": false,
+          "confidence": 0,
+          "line": 189
+        },
+        {
+          "target": "release",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 191,
+          "resolvedId": "backend/executor/cluster_lock.py:release:105"
+        },
+        {
+          "target": "warning",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 193,
+          "resolvedId": "backend/util/logging.py:warning:45"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/integrations/creds_manager.py:release_all_locks:195",
+      "name": "release_all_locks",
+      "startLine": 195,
+      "endLine": 198,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "release_all_locks",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 197,
+          "resolvedId": "backend/integrations/creds_manager.py:release_all_locks:195"
+        },
+        {
+          "target": "locks",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 197,
+          "resolvedId": "backend/integrations/creds_manager.py:locks:61"
+        },
+        {
+          "target": "release_all_locks",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 198,
+          "resolvedId": "backend/integrations/creds_manager.py:release_all_locks:195"
+        },
+        {
+          "target": "locks",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 198,
+          "resolvedId": "backend/integrations/creds_manager.py:locks:61"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/integrations/creds_manager.py:_get_provider_oauth_handler:201",
+      "name": "_get_provider_oauth_handler",
+      "startLine": 201,
+      "endLine": 238,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "ProviderName",
+          "resolved": false,
+          "confidence": 0,
+          "line": 202
+        },
+        {
+          "target": "provider_name_str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 202
+        },
+        {
+          "target": "KeyError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 204
+        },
+        {
+          "target": "getenv",
+          "resolved": false,
+          "confidence": 0,
+          "line": 210
+        },
+        {
+          "target": "getenv",
+          "resolved": false,
+          "confidence": 0,
+          "line": 215
+        },
+        {
+          "target": "getattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 220
+        },
+        {
+          "target": "getattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 221
+        },
+        {
+          "target": "MissingConfigError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 226
+        },
+        {
+          "target": "handler_class",
+          "resolved": false,
+          "confidence": 0,
+          "line": 234
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/integrations/creds_manager.py:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 239,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "getLogger",
+          "resolved": false,
+          "confidence": 0,
+          "line": 21
+        },
+        {
+          "target": "Settings",
+          "resolved": false,
+          "confidence": 0,
+          "line": 22
+        },
+        {
+          "target": "IntegrationCredentialsStore",
+          "resolved": false,
+          "confidence": 0,
+          "line": 58
+        },
+        {
+          "target": "AsyncRedisKeyedMutex",
+          "resolved": false,
+          "confidence": 0,
+          "line": 65
+        },
+        {
+          "target": "get_redis_async",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 65,
+          "resolvedId": "backend/data/redis_client.py:get_redis_async:61"
+        },
+        {
+          "target": "add_creds",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 69,
+          "resolvedId": "backend/integrations/credentials_store.py:add_creds:296"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 69
+        },
+        {
+          "target": "credentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 69
+        },
+        {
+          "target": "get_creds_by_id",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 72,
+          "resolvedId": "backend/integrations/credentials_store.py:get_creds_by_id:371"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        },
+        {
+          "target": "credentials_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        },
+        {
+          "target": "get_creds_by_id",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 77,
+          "resolvedId": "backend/integrations/credentials_store.py:get_creds_by_id:371"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 77
+        },
+        {
+          "target": "credentials_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 77
+        },
+        {
+          "target": "debug",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 83,
+          "resolvedId": "backend/util/logging.py:debug:53"
+        },
+        {
+          "target": "fromtimestamp",
+          "resolved": false,
+          "confidence": 0,
+          "line": 85
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 86
+        },
+        {
+          "target": "refresh_if_needed",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 88,
+          "resolvedId": "backend/integrations/creds_manager.py:refresh_if_needed:136"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 88
+        },
+        {
+          "target": "credentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 88
+        },
+        {
+          "target": "lock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 88
+        },
+        {
+          "target": "debug",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 90,
+          "resolvedId": "backend/util/logging.py:debug:53"
+        },
+        {
+          "target": "_locked",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 104,
+          "resolvedId": "backend/integrations/creds_manager.py:_locked:184"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 104
+        },
+        {
+          "target": "credentials_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 104
+        },
+        {
+          "target": "_acquire_lock",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 105,
+          "resolvedId": "backend/integrations/creds_manager.py:_acquire_lock:172"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 105
+        },
+        {
+          "target": "credentials_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 105
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 106,
+          "resolvedId": "backend/integrations/creds_manager.py:get:74"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 106
+        },
+        {
+          "target": "credentials_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 106
+        },
+        {
+          "target": "ValueError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 108
+        },
+        {
+          "target": "get_all_creds",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 122,
+          "resolvedId": "backend/integrations/credentials_store.py:get_all_creds:307"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 122
+        },
+        {
+          "target": "next",
+          "resolved": false,
+          "confidence": 0,
+          "line": 124
+        },
+        {
+          "target": "refresh_if_needed",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 132,
+          "resolvedId": "backend/integrations/creds_manager.py:refresh_if_needed:136"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 132
+        },
+        {
+          "target": "credential",
+          "resolved": false,
+          "confidence": 0,
+          "line": 132
+        },
+        {
+          "target": "_locked",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 139,
+          "resolvedId": "backend/integrations/creds_manager.py:_locked:184"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 139
+        },
+        {
+          "target": "_get_provider_oauth_handler",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 140,
+          "resolvedId": "backend/integrations/creds_manager.py:_get_provider_oauth_handler:201"
+        },
+        {
+          "target": "needs_refresh",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 141,
+          "resolvedId": "backend/integrations/oauth/base.py:needs_refresh:73"
+        },
+        {
+          "target": "credentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 141
+        },
+        {
+          "target": "debug",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 142,
+          "resolvedId": "backend/util/logging.py:debug:53"
+        },
+        {
+          "target": "_acquire_lock",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 149,
+          "resolvedId": "backend/integrations/creds_manager.py:_acquire_lock:172"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 149
+        },
+        {
+          "target": "refresh_tokens",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 151,
+          "resolvedId": "backend/integrations/oauth/base.py:refresh_tokens:59"
+        },
+        {
+          "target": "credentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 151
+        },
+        {
+          "target": "update_creds",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 152,
+          "resolvedId": "backend/integrations/credentials_store.py:update_creds:387"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 152
+        },
+        {
+          "target": "fresh_credentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 152
+        },
+        {
+          "target": "locked",
+          "resolved": false,
+          "confidence": 0,
+          "line": 153
+        },
+        {
+          "target": "owned",
+          "resolved": false,
+          "confidence": 0,
+          "line": 153
+        },
+        {
+          "target": "release",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 155,
+          "resolvedId": "backend/executor/cluster_lock.py:release:105"
+        },
+        {
+          "target": "warning",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 157,
+          "resolvedId": "backend/util/logging.py:warning:45"
+        },
+        {
+          "target": "_locked",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 163,
+          "resolvedId": "backend/integrations/creds_manager.py:_locked:184"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 163
+        },
+        {
+          "target": "update_creds",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 164,
+          "resolvedId": "backend/integrations/credentials_store.py:update_creds:387"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 164
+        },
+        {
+          "target": "updated",
+          "resolved": false,
+          "confidence": 0,
+          "line": 164
+        },
+        {
+          "target": "_locked",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 167,
+          "resolvedId": "backend/integrations/creds_manager.py:_locked:184"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 167
+        },
+        {
+          "target": "credentials_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 167
+        },
+        {
+          "target": "delete_creds_by_id",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 168,
+          "resolvedId": "backend/integrations/credentials_store.py:delete_creds_by_id:421"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 168
+        },
+        {
+          "target": "credentials_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 168
+        },
+        {
+          "target": "locks",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 180,
+          "resolvedId": "backend/integrations/creds_manager.py:locks:61"
+        },
+        {
+          "target": "acquire",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 181,
+          "resolvedId": "backend/integrations/creds_manager.py:acquire:94"
+        },
+        {
+          "target": "key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 181
+        },
+        {
+          "target": "_acquire_lock",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 185,
+          "resolvedId": "backend/integrations/creds_manager.py:_acquire_lock:172"
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 185
+        },
+        {
+          "target": "credentials_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 185
+        },
+        {
+          "target": "locked",
+          "resolved": false,
+          "confidence": 0,
+          "line": 189
+        },
+        {
+          "target": "owned",
+          "resolved": false,
+          "confidence": 0,
+          "line": 189
+        },
+        {
+          "target": "release",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 191,
+          "resolvedId": "backend/executor/cluster_lock.py:release:105"
+        },
+        {
+          "target": "warning",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 193,
+          "resolvedId": "backend/util/logging.py:warning:45"
+        },
+        {
+          "target": "release_all_locks",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 197,
+          "resolvedId": "backend/integrations/creds_manager.py:release_all_locks:195"
+        },
+        {
+          "target": "locks",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 197,
+          "resolvedId": "backend/integrations/creds_manager.py:locks:61"
+        },
+        {
+          "target": "release_all_locks",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 198,
+          "resolvedId": "backend/integrations/creds_manager.py:release_all_locks:195"
+        },
+        {
+          "target": "locks",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 198,
+          "resolvedId": "backend/integrations/creds_manager.py:locks:61"
+        },
+        {
+          "target": "ProviderName",
+          "resolved": false,
+          "confidence": 0,
+          "line": 202
+        },
+        {
+          "target": "provider_name_str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 202
+        },
+        {
+          "target": "KeyError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 204
+        },
+        {
+          "target": "getenv",
+          "resolved": false,
+          "confidence": 0,
+          "line": 210
+        },
+        {
+          "target": "getenv",
+          "resolved": false,
+          "confidence": 0,
+          "line": 215
+        },
+        {
+          "target": "getattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 220
+        },
+        {
+          "target": "getattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 221
+        },
+        {
+          "target": "MissingConfigError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 226
+        },
+        {
+          "target": "handler_class",
+          "resolved": false,
+          "confidence": 0,
+          "line": 234
+        },
+        {
+          "target": "getLogger",
+          "resolved": false,
+          "confidence": 0,
+          "line": 21
+        },
+        {
+          "target": "Settings",
+          "resolved": false,
+          "confidence": 0,
+          "line": 22
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

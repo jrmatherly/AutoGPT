@@ -1,0 +1,388 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.069Z",
+  "checksum": "0afe82428f134763",
+  "file": "src/providers/posthog/posthog-provider.tsx",
+  "functions": [
+    {
+      "id": "src/providers/posthog/posthog-provider.tsx:PostHogProvider:10",
+      "name": "PostHogProvider",
+      "startLine": 10,
+      "endLine": 29,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "isPostHogEnabled",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 11,
+          "resolvedId": "src/services/environment/index.ts:isPostHogEnabled:126"
+        },
+        {
+          "target": "getPostHogCredentials",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 12,
+          "resolvedId": "src/services/environment/index.ts:getPostHogCredentials:79"
+        },
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 14
+        },
+        {
+          "target": "init",
+          "resolved": false,
+          "confidence": 0,
+          "line": 16
+        },
+        {
+          "target": "key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 16
+        },
+        {
+          "target": "PHProvider",
+          "resolved": false,
+          "confidence": 0,
+          "line": 28
+        },
+        {
+          "target": "posthog",
+          "resolved": false,
+          "confidence": 0,
+          "line": 28
+        },
+        {
+          "target": "init",
+          "resolved": false,
+          "confidence": 0,
+          "line": 16
+        },
+        {
+          "target": "key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 16
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "react",
+          "operation": "read",
+          "line": 12,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "src/providers/posthog/posthog-provider.tsx:$useEffect$1:14",
+      "name": "$useEffect$1",
+      "startLine": 14,
+      "endLine": 24,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 14
+        },
+        {
+          "target": "init",
+          "resolved": false,
+          "confidence": 0,
+          "line": 16
+        },
+        {
+          "target": "key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 16
+        },
+        {
+          "target": "init",
+          "resolved": false,
+          "confidence": 0,
+          "line": 16
+        },
+        {
+          "target": "key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 16
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/providers/posthog/posthog-provider.tsx:PostHogUserTracker:31",
+      "name": "PostHogUserTracker",
+      "startLine": 31,
+      "endLine": 54,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useSupabase",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 32,
+          "resolvedId": "src/lib/supabase/hooks/useSupabase.ts:useSupabase:10"
+        },
+        {
+          "target": "useRef",
+          "resolved": false,
+          "confidence": 0,
+          "line": 33
+        },
+        {
+          "target": "isPostHogEnabled",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 34,
+          "resolvedId": "src/services/environment/index.ts:isPostHogEnabled:126"
+        },
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 36
+        },
+        {
+          "target": "identify",
+          "resolved": false,
+          "confidence": 0,
+          "line": 41
+        },
+        {
+          "target": "id",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 41,
+          "resolvedId": "public/gtag.js:id:112"
+        },
+        {
+          "target": "reset",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 48,
+          "resolvedId": "src/app/(platform)/copilot/components/CopilotShell/components/SessionsList/useSessionsPagination.ts:reset:75"
+        },
+        {
+          "target": "identify",
+          "resolved": false,
+          "confidence": 0,
+          "line": 41
+        },
+        {
+          "target": "id",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 41,
+          "resolvedId": "public/gtag.js:id:112"
+        },
+        {
+          "target": "reset",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 48,
+          "resolvedId": "src/app/(platform)/copilot/components/CopilotShell/components/SessionsList/useSessionsPagination.ts:reset:75"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/providers/posthog/posthog-provider.tsx:$useEffect$1:36",
+      "name": "$useEffect$1",
+      "startLine": 36,
+      "endLine": 51,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 36
+        },
+        {
+          "target": "identify",
+          "resolved": false,
+          "confidence": 0,
+          "line": 41
+        },
+        {
+          "target": "id",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 41,
+          "resolvedId": "public/gtag.js:id:112"
+        },
+        {
+          "target": "reset",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 48,
+          "resolvedId": "src/app/(platform)/copilot/components/CopilotShell/components/SessionsList/useSessionsPagination.ts:reset:75"
+        },
+        {
+          "target": "identify",
+          "resolved": false,
+          "confidence": 0,
+          "line": 41
+        },
+        {
+          "target": "id",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 41,
+          "resolvedId": "public/gtag.js:id:112"
+        },
+        {
+          "target": "reset",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 48,
+          "resolvedId": "src/app/(platform)/copilot/components/CopilotShell/components/SessionsList/useSessionsPagination.ts:reset:75"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/providers/posthog/posthog-provider.tsx:PostHogPageViewTracker:56",
+      "name": "PostHogPageViewTracker",
+      "startLine": 56,
+      "endLine": 72,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "usePathname",
+          "resolved": false,
+          "confidence": 0,
+          "line": 57
+        },
+        {
+          "target": "useSearchParams",
+          "resolved": false,
+          "confidence": 0,
+          "line": 58
+        },
+        {
+          "target": "isPostHogEnabled",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 59,
+          "resolvedId": "src/services/environment/index.ts:isPostHogEnabled:126"
+        },
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 61
+        },
+        {
+          "target": "toString",
+          "resolved": false,
+          "confidence": 0,
+          "line": 64
+        },
+        {
+          "target": "toString",
+          "resolved": false,
+          "confidence": 0,
+          "line": 65
+        },
+        {
+          "target": "capture",
+          "resolved": false,
+          "confidence": 0,
+          "line": 67
+        },
+        {
+          "target": "toString",
+          "resolved": false,
+          "confidence": 0,
+          "line": 64
+        },
+        {
+          "target": "toString",
+          "resolved": false,
+          "confidence": 0,
+          "line": 65
+        },
+        {
+          "target": "capture",
+          "resolved": false,
+          "confidence": 0,
+          "line": 67
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/providers/posthog/posthog-provider.tsx:$useEffect$1:61",
+      "name": "$useEffect$1",
+      "startLine": 61,
+      "endLine": 69,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 61
+        },
+        {
+          "target": "toString",
+          "resolved": false,
+          "confidence": 0,
+          "line": 64
+        },
+        {
+          "target": "toString",
+          "resolved": false,
+          "confidence": 0,
+          "line": 65
+        },
+        {
+          "target": "capture",
+          "resolved": false,
+          "confidence": 0,
+          "line": 67
+        },
+        {
+          "target": "toString",
+          "resolved": false,
+          "confidence": 0,
+          "line": 64
+        },
+        {
+          "target": "toString",
+          "resolved": false,
+          "confidence": 0,
+          "line": 65
+        },
+        {
+          "target": "capture",
+          "resolved": false,
+          "confidence": 0,
+          "line": 67
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

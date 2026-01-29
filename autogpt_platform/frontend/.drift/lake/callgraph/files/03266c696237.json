@@ -1,0 +1,164 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:19.988Z",
+  "checksum": "047b17715185bbf7",
+  "file": "src/lib/autogpt-server-api/context.tsx",
+  "functions": [
+    {
+      "id": "src/lib/autogpt-server-api/context.tsx:BackendAPIProvider:16",
+      "name": "BackendAPIProvider",
+      "startLine": 16,
+      "endLine": 32,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useMemo",
+          "resolved": false,
+          "confidence": 0,
+          "line": 21
+        },
+        {
+          "target": "BackendAPI",
+          "resolved": false,
+          "confidence": 0,
+          "line": 21
+        },
+        {
+          "target": "isLocal",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 23,
+          "resolvedId": "src/services/environment/index.ts:isLocal:106"
+        },
+        {
+          "target": "isServerSide",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 23,
+          "resolvedId": "src/services/environment/index.ts:isServerSide:110"
+        },
+        {
+          "target": "Provider",
+          "resolved": false,
+          "confidence": 0,
+          "line": 28
+        },
+        {
+          "target": "api",
+          "resolved": false,
+          "confidence": 0,
+          "line": 28
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/lib/autogpt-server-api/context.tsx:useBackendAPI:34",
+      "name": "useBackendAPI",
+      "startLine": 34,
+      "endLine": 42,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useContext",
+          "resolved": false,
+          "confidence": 0,
+          "line": 35
+        },
+        {
+          "target": "BackendAPIProviderContext",
+          "resolved": false,
+          "confidence": 0,
+          "line": 35
+        },
+        {
+          "target": "Error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 37,
+          "resolvedId": "src/app/error.tsx:Error:8"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/lib/autogpt-server-api/context.tsx:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 43,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useMemo",
+          "resolved": false,
+          "confidence": 0,
+          "line": 21
+        },
+        {
+          "target": "BackendAPI",
+          "resolved": false,
+          "confidence": 0,
+          "line": 21
+        },
+        {
+          "target": "isLocal",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 23,
+          "resolvedId": "src/services/environment/index.ts:isLocal:106"
+        },
+        {
+          "target": "isServerSide",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 23,
+          "resolvedId": "src/services/environment/index.ts:isServerSide:110"
+        },
+        {
+          "target": "Provider",
+          "resolved": false,
+          "confidence": 0,
+          "line": 28
+        },
+        {
+          "target": "api",
+          "resolved": false,
+          "confidence": 0,
+          "line": 28
+        },
+        {
+          "target": "useContext",
+          "resolved": false,
+          "confidence": 0,
+          "line": 35
+        },
+        {
+          "target": "BackendAPIProviderContext",
+          "resolved": false,
+          "confidence": 0,
+          "line": 35
+        },
+        {
+          "target": "Error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 37,
+          "resolvedId": "src/app/error.tsx:Error:8"
+        },
+        {
+          "target": "createContext",
+          "resolved": false,
+          "confidence": 0,
+          "line": 14
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

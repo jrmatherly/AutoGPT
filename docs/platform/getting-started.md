@@ -94,7 +94,6 @@ powershell -c "iwr https://setup.agpt.co/install.bat -o install.bat; ./install.b
 
 This method is ideal if you're setting up for development or testing and want to skip manual configuration.
 
-
 ## Manual Setup
 
 ### Cloning the Repository
@@ -111,7 +110,7 @@ Once that's complete you can continue the setup process.
 
 To run the platform, follow these steps:
 
-* Navigate to the `autogpt_platform` directory inside the AutoGPT folder:
+- Navigate to the `autogpt_platform` directory inside the AutoGPT folder:
   ```bash
    cd AutoGPT/autogpt_platform
   ```
@@ -141,6 +140,7 @@ The repository includes a `Makefile` with helpful commands to streamline setup a
 Inside the `autogpt_platform` directory, you can use:
 
 | Command                | What it Does                                                                 |
+
 |------------------------|-------------------------------------------------------------------------------|
 | `make start-core`      | Start just the core services (Supabase, Redis, RabbitMQ) in background        |
 | `make stop-core`       | Stop the core services                                                        |
@@ -181,19 +181,22 @@ Execution API Rest Server: 8006
 
 You may want to change your encryption key in the `.env` file in the `autogpt_platform/backend` directory.
 
-To generate a new encryption key, run the following command in python:
+!!! note "Prerequisite"
+    You must have completed the backend setup (including `poetry install`) before generating encryption keys.
 
-```python
-from cryptography.fernet import Fernet;Fernet.generate_key().decode()
-```
-
-Or run the following command in the `autogpt_platform/backend` directory:
+To generate a new encryption key, navigate to the `autogpt_platform/backend` directory and run:
 
 ```bash
 poetry run cli gen-encrypt-key
 ```
 
-Then, replace the existing key in the `autogpt_platform/backend/.env` file with the new one.
+Alternatively, you can use the Python one-liner:
+
+```bash
+poetry run python -c "from cryptography.fernet import Fernet; print(Fernet.generate_key().decode())"
+```
+
+Then, replace the `ENCRYPTION_KEY` value in the `autogpt_platform/backend/.env` file with the generated key.
 
 ### 📌 Windows Installation Note
 
@@ -217,7 +220,6 @@ If you initially installed Docker with Hyper-V, you **don’t need to reinstall*
 🚨 **Warning:** Enabling WSL 2 may **erase your existing containers and build history**. If you have important containers, consider backing them up before switching.
 
 For more details, refer to [Docker's official documentation](https://docs.docker.com/desktop/windows/wsl/).
-
 
 ## Development
 
@@ -346,11 +348,11 @@ poetry run pytest -s
 ## Adding a New Agent Block
 
 To add a new agent block, you need to create a new class that inherits from `Block` and provides the following information:
-* All the block code should live in the `blocks` (`backend.blocks`) module.
-* `input_schema`: the schema of the input data, represented by a Pydantic object.
-* `output_schema`: the schema of the output data, represented by a Pydantic object.
-* `run` method: the main logic of the block.
-* `test_input` & `test_output`: the sample input and output data for the block, which will be used to auto-test the block.
-* You can mock the functions declared in the block using the `test_mock` field for your unit tests.
-* Once you finish creating the block, you can test it by running `poetry run pytest backend/blocks/test/test_block.py -s`.
-* Create a Pull Request to the `dev` branch of the repository with your changes so you can share it with the community :)
+- All the block code should live in the `blocks` (`backend.blocks`) module.
+- `input_schema`: the schema of the input data, represented by a Pydantic object.
+- `output_schema`: the schema of the output data, represented by a Pydantic object.
+- `run` method: the main logic of the block.
+- `test_input` & `test_output`: the sample input and output data for the block, which will be used to auto-test the block.
+- You can mock the functions declared in the block using the `test_mock` field for your unit tests.
+- Once you finish creating the block, you can test it by running `poetry run pytest backend/blocks/test/test_block.py -s`.
+- Create a Pull Request to the `dev` branch of the repository with your changes so you can share it with the community :)

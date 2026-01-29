@@ -21,22 +21,22 @@ The AutoGPT Platform consists of two main components:
 
 The powerhouse of our platform, containing:
 
--  **Source Code**: Core logic driving agents and automation processes.
--  **Infrastructure**: Robust systems ensuring reliable and scalable performance.
--  **Marketplace**: A comprehensive marketplace for pre-built agents.
+- **Source Code**: Core logic driving agents and automation processes.
+- **Infrastructure**: Robust systems ensuring reliable and scalable performance.
+- **Marketplace**: A comprehensive marketplace for pre-built agents.
 
 ### 2. AutoGPT Frontend
 
 The user interface where you interact with the platform:
 
--  **Agent Builder**: Design and configure your own AI agents.
--  **Workflow Management**: Build, modify, and optimize automation workflows.
--  **Deployment Controls**: Manage the lifecycle of your agents.
--  **Ready-to-Use Agents**: Select from pre-configured agents.
--  **Agent Interaction**: Run and interact with agents through a user-friendly interface.
--  **Monitoring and Analytics**: Track agent performance and gain insights.
+- **Agent Builder**: Design and configure your own AI agents.
+- **Workflow Management**: Build, modify, and optimize automation workflows.
+- **Deployment Controls**: Manage the lifecycle of your agents.
+- **Ready-to-Use Agents**: Select from pre-configured agents.
+- **Agent Interaction**: Run and interact with agents through a user-friendly interface.
+- **Monitoring and Analytics**: Track agent performance and gain insights.
 
-##  Platform Components
+## Platform Components
 
 ### Agents and Workflows
 

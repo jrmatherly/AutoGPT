@@ -1,0 +1,384 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.088Z",
+  "checksum": "0f1bb13b1367f503",
+  "file": "src/app/(no-navbar)/onboarding/5-run/page.tsx",
+  "functions": [
+    {
+      "id": "src/app/(no-navbar)/onboarding/5-run/page.tsx:Page:23",
+      "name": "Page",
+      "startLine": 23,
+      "endLine": 124,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useOnboardingRunStep",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 38,
+          "resolvedId": "src/app/(no-navbar)/onboarding/5-run/useOnboardingRunStep.tsx:useOnboardingRunStep:17"
+        },
+        {
+          "target": "ErrorCard",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 41,
+          "resolvedId": "src/components/molecules/ErrorCard/ErrorCard.tsx:ErrorCard:26"
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 41
+        },
+        {
+          "target": "CircleNotchIcon",
+          "resolved": false,
+          "confidence": 0,
+          "line": 47
+        },
+        {
+          "target": "OnboardingStep",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 53,
+          "resolvedId": "src/app/(no-navbar)/onboarding/components/OnboardingStep.tsx:OnboardingStep:8"
+        },
+        {
+          "target": "OnboardingHeader",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 54,
+          "resolvedId": "src/app/(no-navbar)/onboarding/components/OnboardingStep.tsx:OnboardingHeader:31"
+        },
+        {
+          "target": "SelectedAgentCard",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 56,
+          "resolvedId": "src/app/(no-navbar)/onboarding/5-run/components/SelectedAgentCard.tsx:SelectedAgentCard:9"
+        },
+        {
+          "target": "storeAgent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 56
+        },
+        {
+          "target": "RunAgentHint",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 59,
+          "resolvedId": "src/app/(no-navbar)/onboarding/5-run/components/RunAgentHint.tsx:RunAgentHint:8"
+        },
+        {
+          "target": "handleNewRun",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 59,
+          "resolvedId": "src/app/(no-navbar)/onboarding/5-run/useOnboardingRunStep.tsx:handleNewRun:74"
+        },
+        {
+          "target": "OnboardingText",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 63,
+          "resolvedId": "src/app/(no-navbar)/onboarding/components/OnboardingText.tsx:OnboardingText:10"
+        },
+        {
+          "target": "Card",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 74,
+          "resolvedId": "src/components/atoms/Card/Card.tsx:Card:9"
+        },
+        {
+          "target": "CardHeader",
+          "resolved": false,
+          "confidence": 0,
+          "line": 75
+        },
+        {
+          "target": "CardTitle",
+          "resolved": false,
+          "confidence": 0,
+          "line": 76
+        },
+        {
+          "target": "CardContent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 78
+        },
+        {
+          "target": "map",
+          "resolved": false,
+          "confidence": 0,
+          "line": 79
+        },
+        {
+          "target": "entries",
+          "resolved": false,
+          "confidence": 0,
+          "line": 79
+        },
+        {
+          "target": "RunAgentInputs",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 82,
+          "resolvedId": "src/components/contextual/RunAgentInputs/RunAgentInputs.tsx:RunAgentInputs:44"
+        },
+        {
+          "target": "key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 83
+        },
+        {
+          "target": "inputSubSchema",
+          "resolved": false,
+          "confidence": 0,
+          "line": 84
+        },
+        {
+          "target": "description",
+          "resolved": false,
+          "confidence": 0,
+          "line": 86
+        },
+        {
+          "target": "handleSetAgentInput",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 87,
+          "resolvedId": "src/app/(no-navbar)/onboarding/5-run/useOnboardingRunStep.tsx:handleSetAgentInput:82"
+        },
+        {
+          "target": "key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 87
+        },
+        {
+          "target": "value",
+          "resolved": false,
+          "confidence": 0,
+          "line": 87
+        },
+        {
+          "target": "AgentOnboardingCredentials",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 90,
+          "resolvedId": "src/app/(no-navbar)/onboarding/5-run/components/AgentOnboardingCredentials/AgentOnboardingCredentials.tsx:AgentOnboardingCredentials:21"
+        },
+        {
+          "target": "agentGraph",
+          "resolved": false,
+          "confidence": 0,
+          "line": 91
+        },
+        {
+          "target": "handleCredentialsChange",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 96,
+          "resolvedId": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/modals/RunAgentModal/RunAgentModal.tsx:handleCredentialsChange:152"
+        },
+        {
+          "target": "handleCredentialsValidationChange",
+          "resolved": false,
+          "confidence": 0,
+          "line": 97
+        },
+        {
+          "target": "handleCredentialsLoadingChange",
+          "resolved": false,
+          "confidence": 0,
+          "line": 98
+        },
+        {
+          "target": "OnboardingButton",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 102,
+          "resolvedId": "src/app/(no-navbar)/onboarding/components/OnboardingButton.tsx:OnboardingButton:22"
+        },
+        {
+          "target": "runningAgent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 105
+        },
+        {
+          "target": "handleRunAgent",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 113,
+          "resolvedId": "src/app/(no-navbar)/onboarding/5-run/useOnboardingRunStep.tsx:handleRunAgent:93"
+        },
+        {
+          "target": "isRunDisabled",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 106,
+          "resolvedId": "src/app/(no-navbar)/onboarding/5-run/helpers.ts:isRunDisabled:37"
+        },
+        {
+          "target": "Play",
+          "resolved": false,
+          "confidence": 0,
+          "line": 114
+        },
+        {
+          "target": "RunAgentInputs",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 82,
+          "resolvedId": "src/components/contextual/RunAgentInputs/RunAgentInputs.tsx:RunAgentInputs:44"
+        },
+        {
+          "target": "key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 83
+        },
+        {
+          "target": "inputSubSchema",
+          "resolved": false,
+          "confidence": 0,
+          "line": 84
+        },
+        {
+          "target": "description",
+          "resolved": false,
+          "confidence": 0,
+          "line": 86
+        },
+        {
+          "target": "handleSetAgentInput",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 87,
+          "resolvedId": "src/app/(no-navbar)/onboarding/5-run/useOnboardingRunStep.tsx:handleSetAgentInput:82"
+        },
+        {
+          "target": "key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 87
+        },
+        {
+          "target": "value",
+          "resolved": false,
+          "confidence": 0,
+          "line": 87
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/app/(no-navbar)/onboarding/5-run/page.tsx:$map$1:81",
+      "name": "$map$1",
+      "startLine": 81,
+      "endLine": 89,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "RunAgentInputs",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 82,
+          "resolvedId": "src/components/contextual/RunAgentInputs/RunAgentInputs.tsx:RunAgentInputs:44"
+        },
+        {
+          "target": "key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 83
+        },
+        {
+          "target": "inputSubSchema",
+          "resolved": false,
+          "confidence": 0,
+          "line": 84
+        },
+        {
+          "target": "description",
+          "resolved": false,
+          "confidence": 0,
+          "line": 86
+        },
+        {
+          "target": "handleSetAgentInput",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 87,
+          "resolvedId": "src/app/(no-navbar)/onboarding/5-run/useOnboardingRunStep.tsx:handleSetAgentInput:82"
+        },
+        {
+          "target": "key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 87
+        },
+        {
+          "target": "value",
+          "resolved": false,
+          "confidence": 0,
+          "line": 87
+        },
+        {
+          "target": "RunAgentInputs",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 82,
+          "resolvedId": "src/components/contextual/RunAgentInputs/RunAgentInputs.tsx:RunAgentInputs:44"
+        },
+        {
+          "target": "key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 83
+        },
+        {
+          "target": "inputSubSchema",
+          "resolved": false,
+          "confidence": 0,
+          "line": 84
+        },
+        {
+          "target": "description",
+          "resolved": false,
+          "confidence": 0,
+          "line": 86
+        },
+        {
+          "target": "handleSetAgentInput",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 87,
+          "resolvedId": "src/app/(no-navbar)/onboarding/5-run/useOnboardingRunStep.tsx:handleSetAgentInput:82"
+        },
+        {
+          "target": "key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 87
+        },
+        {
+          "target": "value",
+          "resolved": false,
+          "confidence": 0,
+          "line": 87
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

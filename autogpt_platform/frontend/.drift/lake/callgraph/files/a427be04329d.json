@@ -1,0 +1,166 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.090Z",
+  "checksum": "809dab88e8537602",
+  "file": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/selected-views/SelectedTemplateView/components/WebhookTriggerCard.tsx",
+  "functions": [
+    {
+      "id": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/selected-views/SelectedTemplateView/components/WebhookTriggerCard.tsx:getTriggerStatus:15",
+      "name": "getTriggerStatus",
+      "startLine": 15,
+      "endLine": 20,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/selected-views/SelectedTemplateView/components/WebhookTriggerCard.tsx:WebhookTriggerCard:22",
+      "name": "WebhookTriggerCard",
+      "startLine": 22,
+      "endLine": 92,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "getTriggerStatus",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 23,
+          "resolvedId": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/selected-views/SelectedTemplateView/components/WebhookTriggerCard.tsx:getTriggerStatus:15"
+        },
+        {
+          "target": "template",
+          "resolved": false,
+          "confidence": 0,
+          "line": 23
+        },
+        {
+          "target": "writeText",
+          "resolved": false,
+          "confidence": 0,
+          "line": 28
+        },
+        {
+          "target": "url",
+          "resolved": false,
+          "confidence": 0,
+          "line": 28
+        },
+        {
+          "target": "RunDetailCard",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 33,
+          "resolvedId": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/selected-views/RunDetailCard/RunDetailCard.tsx:RunDetailCard:10"
+        },
+        {
+          "target": "Text",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 36,
+          "resolvedId": "src/components/atoms/Text/Text.tsx:Text:15"
+        },
+        {
+          "target": "Text",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 55,
+          "resolvedId": "src/components/atoms/Text/Text.tsx:Text:15"
+        },
+        {
+          "target": "Text",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 61,
+          "resolvedId": "src/components/atoms/Text/Text.tsx:Text:15"
+        },
+        {
+          "target": "Text",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 66,
+          "resolvedId": "src/components/atoms/Text/Text.tsx:Text:15"
+        },
+        {
+          "target": "Button",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 69,
+          "resolvedId": "src/components/atoms/Button/Button.tsx:Button:12"
+        },
+        {
+          "target": "handleCopyWebhookUrl",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 73,
+          "resolvedId": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/selected-views/SelectedTemplateView/components/WebhookTriggerCard.tsx:handleCopyWebhookUrl:26"
+        },
+        {
+          "target": "CopyIcon",
+          "resolved": false,
+          "confidence": 0,
+          "line": 76
+        },
+        {
+          "target": "Text",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 82,
+          "resolvedId": "src/components/atoms/Text/Text.tsx:Text:15"
+        },
+        {
+          "target": "writeText",
+          "resolved": false,
+          "confidence": 0,
+          "line": 28
+        },
+        {
+          "target": "url",
+          "resolved": false,
+          "confidence": 0,
+          "line": 28
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/selected-views/SelectedTemplateView/components/WebhookTriggerCard.tsx:handleCopyWebhookUrl:26",
+      "name": "handleCopyWebhookUrl",
+      "startLine": 26,
+      "endLine": 30,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "writeText",
+          "resolved": false,
+          "confidence": 0,
+          "line": 28
+        },
+        {
+          "target": "url",
+          "resolved": false,
+          "confidence": 0,
+          "line": 28
+        },
+        {
+          "target": "writeText",
+          "resolved": false,
+          "confidence": 0,
+          "line": 28
+        },
+        {
+          "target": "url",
+          "resolved": false,
+          "confidence": 0,
+          "line": 28
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

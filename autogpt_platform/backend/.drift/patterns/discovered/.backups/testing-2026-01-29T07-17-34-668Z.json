@@ -1,0 +1,218 @@
+{
+  "version": "1.0.0",
+  "category": "testing",
+  "patterns": [
+    {
+      "id": "da77cae6a0a3db08",
+      "subcategory": "test-structure",
+      "name": "Test Structure Detector",
+      "description": "Learns test structure patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "testing/test-structure",
+          "patternId": "testing/test-structure/type_annotation"
+        }
+      },
+      "confidence": {
+        "frequency": 0.03,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 3,
+        "score": 0.8788757396449705,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "backend/api/test_helpers.py",
+          "line": 114,
+          "column": 67,
+          "isOutlier": false,
+          "confidence": 0.7583720930232558
+        },
+        {
+          "file": "backend/blocks/llm.py",
+          "line": 534,
+          "column": 6,
+          "isOutlier": false,
+          "confidence": 0.8101234567901234
+        },
+        {
+          "file": "backend/blocks/reddit.py",
+          "line": 222,
+          "column": 10,
+          "isOutlier": false,
+          "confidence": 0.8788757396449705
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:30:16.814Z",
+        "lastSeen": "2026-01-29T06:30:16.814Z",
+        "source": "auto-detected",
+        "tags": [
+          "testing",
+          "test-structure"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "11601c4375031671",
+      "subcategory": "describe-naming",
+      "name": "Describe Naming Detector",
+      "description": "Learns test describe/it naming patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "testing/describe-naming",
+          "patternId": "testing/describe-naming/type_annotation"
+        }
+      },
+      "confidence": {
+        "frequency": 0.06,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 3,
+        "score": 0.8758479532163743,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "backend/api/test_helpers.py",
+          "line": 114,
+          "column": 67,
+          "isOutlier": false,
+          "confidence": 0.82
+        },
+        {
+          "file": "backend/blocks/llm.py",
+          "line": 534,
+          "column": 6,
+          "isOutlier": false,
+          "confidence": 0.8089999999999999
+        },
+        {
+          "file": "backend/blocks/reddit.py",
+          "line": 222,
+          "column": 10,
+          "isOutlier": false,
+          "confidence": 0.8758479532163743
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:30:16.814Z",
+        "lastSeen": "2026-01-29T06:30:16.814Z",
+        "source": "auto-detected",
+        "tags": [
+          "testing",
+          "describe-naming"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "c2423d83520cb0b1",
+      "subcategory": "test-file-naming",
+      "name": "Test File Naming Detector",
+      "description": "Learns test file naming patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "testing/test-file-naming",
+          "patternId": "testing/test-file-naming/type_annotation"
+        }
+      },
+      "confidence": {
+        "frequency": 0.06,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.8338888888888889,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "backend/integrations/webhooks/_base.py",
+          "line": 38,
+          "column": 10,
+          "isOutlier": false,
+          "confidence": 0.8338888888888889
+        },
+        {
+          "file": "backend/integrations/webhooks/_base.py",
+          "line": 68,
+          "column": 10,
+          "isOutlier": false,
+          "confidence": 0.8338888888888889
+        },
+        {
+          "file": "backend/integrations/webhooks/_base.py",
+          "line": 201,
+          "column": 10,
+          "isOutlier": false,
+          "confidence": 0.8338888888888889
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:30:16.815Z",
+        "lastSeen": "2026-01-29T06:30:16.815Z",
+        "source": "auto-detected",
+        "tags": [
+          "testing",
+          "test-file-naming"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "139b82972f64058c",
+      "subcategory": "setup-teardown",
+      "name": "Setup/Teardown Detector",
+      "description": "Learns test setup/teardown patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "testing/setup-teardown",
+          "patternId": "testing/setup-teardown/property_access"
+        }
+      },
+      "confidence": {
+        "frequency": 0.02,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "backend/util/request_test.py",
+          "line": 136,
+          "column": 18,
+          "isOutlier": false,
+          "confidence": 0.97
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:30:16.815Z",
+        "lastSeen": "2026-01-29T06:30:16.815Z",
+        "source": "auto-detected",
+        "tags": [
+          "testing",
+          "setup-teardown"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    }
+  ],
+  "lastUpdated": "2026-01-29T07:17:34.588Z",
+  "checksum": "9d0fb90083a20f72"
+}

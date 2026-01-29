@@ -1,0 +1,489 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.080Z",
+  "checksum": "95b8b9385722ae86",
+  "file": "src/hooks/useAgentSafeMode.ts",
+  "functions": [
+    {
+      "id": "src/hooks/useAgentSafeMode.ts:getGraphId:14",
+      "name": "getGraphId",
+      "startLine": 14,
+      "endLine": 17,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "toString",
+          "resolved": false,
+          "confidence": 0,
+          "line": 16
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/hooks/useAgentSafeMode.ts:hasHITLBlocks:19",
+      "name": "hasHITLBlocks",
+      "startLine": 19,
+      "endLine": 24,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/hooks/useAgentSafeMode.ts:hasSensitiveActionBlocks:26",
+      "name": "hasSensitiveActionBlocks",
+      "startLine": 26,
+      "endLine": 33,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/hooks/useAgentSafeMode.ts:isLibraryAgent:35",
+      "name": "isLibraryAgent",
+      "startLine": 35,
+      "endLine": 39,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/hooks/useAgentSafeMode.ts:useAgentSafeMode:41",
+      "name": "useAgentSafeMode",
+      "startLine": 41,
+      "endLine": 206,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useToast",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 42,
+          "resolvedId": "src/components/molecules/Toast/use-toast.tsx:useToast:77"
+        },
+        {
+          "target": "useQueryClient",
+          "resolved": false,
+          "confidence": 0,
+          "line": 43
+        },
+        {
+          "target": "getGraphId",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 45,
+          "resolvedId": "src/hooks/useAgentSafeMode.ts:getGraphId:14"
+        },
+        {
+          "target": "graph",
+          "resolved": false,
+          "confidence": 0,
+          "line": 45
+        },
+        {
+          "target": "isLibraryAgent",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 46,
+          "resolvedId": "src/hooks/useAgentSafeMode.ts:isLibraryAgent:35"
+        },
+        {
+          "target": "graph",
+          "resolved": false,
+          "confidence": 0,
+          "line": 46
+        },
+        {
+          "target": "hasHITLBlocks",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 47,
+          "resolvedId": "src/hooks/useAgentSafeMode.ts:hasHITLBlocks:19"
+        },
+        {
+          "target": "graph",
+          "resolved": false,
+          "confidence": 0,
+          "line": 47
+        },
+        {
+          "target": "hasSensitiveActionBlocks",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 48,
+          "resolvedId": "src/hooks/useAgentSafeMode.ts:hasSensitiveActionBlocks:26"
+        },
+        {
+          "target": "graph",
+          "resolved": false,
+          "confidence": 0,
+          "line": 48
+        },
+        {
+          "target": "usePatchV1UpdateGraphSettings",
+          "resolved": false,
+          "confidence": 0,
+          "line": 52
+        },
+        {
+          "target": "useGetV2GetLibraryAgentByGraphId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 54
+        },
+        {
+          "target": "graphId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 55
+        },
+        {
+          "target": "useState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 65
+        },
+        {
+          "target": "useState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 67
+        },
+        {
+          "target": "useState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 68
+        },
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 70
+        },
+        {
+          "target": "setLocalHITLSafeMode",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        },
+        {
+          "target": "setLocalSensitiveActionSafeMode",
+          "resolved": false,
+          "confidence": 0,
+          "line": 75
+        },
+        {
+          "target": "setIsLocalStateLoaded",
+          "resolved": false,
+          "confidence": 0,
+          "line": 78
+        },
+        {
+          "target": "useCallback",
+          "resolved": false,
+          "confidence": 0,
+          "line": 94
+        },
+        {
+          "target": "updateGraphSettings",
+          "resolved": false,
+          "confidence": 0,
+          "line": 98
+        },
+        {
+          "target": "setLocalHITLSafeMode",
+          "resolved": false,
+          "confidence": 0,
+          "line": 104
+        },
+        {
+          "target": "newSafeMode",
+          "resolved": false,
+          "confidence": 0,
+          "line": 104
+        },
+        {
+          "target": "invalidateQueries",
+          "resolved": false,
+          "confidence": 0,
+          "line": 108
+        },
+        {
+          "target": "getGetV2GetLibraryAgentQueryOptions",
+          "resolved": false,
+          "confidence": 0,
+          "line": 109
+        },
+        {
+          "target": "toString",
+          "resolved": false,
+          "confidence": 0,
+          "line": 109
+        },
+        {
+          "target": "invalidateQueries",
+          "resolved": false,
+          "confidence": 0,
+          "line": 114
+        },
+        {
+          "target": "invalidateQueries",
+          "resolved": false,
+          "confidence": 0,
+          "line": 117
+        },
+        {
+          "target": "toast",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 119,
+          "resolvedId": "src/components/molecules/Toast/use-toast.tsx:toast:27"
+        },
+        {
+          "target": "handleToggleError",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 127,
+          "resolvedId": "src/hooks/useAgentSafeMode.ts:handleToggleError:208"
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 127
+        },
+        {
+          "target": "isAgent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 127
+        },
+        {
+          "target": "toast",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 127,
+          "resolvedId": "src/components/molecules/Toast/use-toast.tsx:toast:27"
+        },
+        {
+          "target": "useCallback",
+          "resolved": false,
+          "confidence": 0,
+          "line": 139
+        },
+        {
+          "target": "updateGraphSettings",
+          "resolved": false,
+          "confidence": 0,
+          "line": 143
+        },
+        {
+          "target": "setLocalSensitiveActionSafeMode",
+          "resolved": false,
+          "confidence": 0,
+          "line": 149
+        },
+        {
+          "target": "newSafeMode",
+          "resolved": false,
+          "confidence": 0,
+          "line": 149
+        },
+        {
+          "target": "invalidateQueries",
+          "resolved": false,
+          "confidence": 0,
+          "line": 153
+        },
+        {
+          "target": "getGetV2GetLibraryAgentQueryOptions",
+          "resolved": false,
+          "confidence": 0,
+          "line": 154
+        },
+        {
+          "target": "toString",
+          "resolved": false,
+          "confidence": 0,
+          "line": 154
+        },
+        {
+          "target": "invalidateQueries",
+          "resolved": false,
+          "confidence": 0,
+          "line": 159
+        },
+        {
+          "target": "invalidateQueries",
+          "resolved": false,
+          "confidence": 0,
+          "line": 162
+        },
+        {
+          "target": "toast",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 164,
+          "resolvedId": "src/components/molecules/Toast/use-toast.tsx:toast:27"
+        },
+        {
+          "target": "handleToggleError",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 172,
+          "resolvedId": "src/hooks/useAgentSafeMode.ts:handleToggleError:208"
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 172
+        },
+        {
+          "target": "isAgent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 172
+        },
+        {
+          "target": "toast",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 172,
+          "resolvedId": "src/components/molecules/Toast/use-toast.tsx:toast:27"
+        },
+        {
+          "target": "setLocalHITLSafeMode",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        },
+        {
+          "target": "setLocalSensitiveActionSafeMode",
+          "resolved": false,
+          "confidence": 0,
+          "line": 75
+        },
+        {
+          "target": "setIsLocalStateLoaded",
+          "resolved": false,
+          "confidence": 0,
+          "line": 78
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/hooks/useAgentSafeMode.ts:$useEffect$1:70",
+      "name": "$useEffect$1",
+      "startLine": 70,
+      "endLine": 80,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 70
+        },
+        {
+          "target": "setLocalHITLSafeMode",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        },
+        {
+          "target": "setLocalSensitiveActionSafeMode",
+          "resolved": false,
+          "confidence": 0,
+          "line": 75
+        },
+        {
+          "target": "setIsLocalStateLoaded",
+          "resolved": false,
+          "confidence": 0,
+          "line": 78
+        },
+        {
+          "target": "setLocalHITLSafeMode",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        },
+        {
+          "target": "setLocalSensitiveActionSafeMode",
+          "resolved": false,
+          "confidence": 0,
+          "line": 75
+        },
+        {
+          "target": "setIsLocalStateLoaded",
+          "resolved": false,
+          "confidence": 0,
+          "line": 78
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/hooks/useAgentSafeMode.ts:handleToggleError:208",
+      "name": "handleToggleError",
+      "startLine": 208,
+      "endLine": 234,
+      "isEntryPoint": false,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "includes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 215
+        },
+        {
+          "target": "includes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 215
+        },
+        {
+          "target": "toast",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 218,
+          "resolvedId": "src/components/molecules/Toast/use-toast.tsx:toast:27"
+        },
+        {
+          "target": "toast",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 225,
+          "resolvedId": "src/components/molecules/Toast/use-toast.tsx:toast:27"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "safe",
+          "operation": "write",
+          "line": 226,
+          "fields": [
+            "title"
+          ]
+        }
+      ]
+    }
+  ]
+}

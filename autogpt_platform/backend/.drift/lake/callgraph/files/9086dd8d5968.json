@@ -1,0 +1,209 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.186Z",
+  "checksum": "935275c89c6797e4",
+  "file": "backend/blocks/test/test_smart_decision_maker_dict.py",
+  "functions": [
+    {
+      "id": "backend/blocks/test/test_smart_decision_maker_dict.py:test_smart_decision_maker_handles_dynamic_dict_fields:10",
+      "name": "test_smart_decision_maker_handles_dynamic_dict_fields",
+      "startLine": 10,
+      "endLine": 69,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "Mock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 14
+        },
+        {
+          "target": "CreateDictionaryBlock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 15
+        },
+        {
+          "target": "CreateDictionaryBlock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 16
+        },
+        {
+          "target": "Mock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 22
+        },
+        {
+          "target": "Mock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 28
+        },
+        {
+          "target": "Mock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 34
+        },
+        {
+          "target": "_create_block_function_signature",
+          "resolved": false,
+          "confidence": 0,
+          "line": 43
+        },
+        {
+          "target": "mock_node",
+          "resolved": false,
+          "confidence": 0,
+          "line": 44
+        },
+        {
+          "target": "mock_links",
+          "resolved": false,
+          "confidence": 0,
+          "line": 44
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 54
+        },
+        {
+          "target": "properties",
+          "resolved": false,
+          "confidence": 0,
+          "line": 54
+        },
+        {
+          "target": "items",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 62,
+          "resolvedId": "backend/integrations/oauth/__init__.py:items:123"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/test/test_smart_decision_maker_dict.py:test_smart_decision_maker_handles_dynamic_list_fields:73",
+      "name": "test_smart_decision_maker_handles_dynamic_list_fields",
+      "startLine": 73,
+      "endLine": 120,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "Mock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 77
+        },
+        {
+          "target": "AddToListBlock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 78
+        },
+        {
+          "target": "AddToListBlock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 79
+        },
+        {
+          "target": "Mock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 85
+        },
+        {
+          "target": "Mock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 91
+        },
+        {
+          "target": "_create_block_function_signature",
+          "resolved": false,
+          "confidence": 0,
+          "line": 100
+        },
+        {
+          "target": "mock_node",
+          "resolved": false,
+          "confidence": 0,
+          "line": 101
+        },
+        {
+          "target": "mock_links",
+          "resolved": false,
+          "confidence": 0,
+          "line": 101
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 107
+        },
+        {
+          "target": "properties",
+          "resolved": false,
+          "confidence": 0,
+          "line": 107
+        },
+        {
+          "target": "items",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 114,
+          "resolvedId": "backend/integrations/oauth/__init__.py:items:123"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/test/test_smart_decision_maker_dict.py:test_create_dict_block_with_dynamic_values:124",
+      "name": "test_create_dict_block_with_dynamic_values",
+      "startLine": 124,
+      "endLine": 148,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "CreateDictionaryBlock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 127
+        },
+        {
+          "target": "input_schema",
+          "resolved": false,
+          "confidence": 0,
+          "line": 131
+        },
+        {
+          "target": "run",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 141,
+          "resolvedId": "backend/blocks/firecrawl/crawl.py:run:73"
+        },
+        {
+          "target": "input_data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 141
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

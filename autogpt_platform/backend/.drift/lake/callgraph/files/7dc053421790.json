@@ -1,0 +1,64 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.177Z",
+  "checksum": "2498f07f30d8d8a3",
+  "file": "backend/blocks/jina/_auth.py",
+  "functions": [
+    {
+      "id": "backend/blocks/jina/_auth.py:JinaCredentialsField:15",
+      "name": "JinaCredentialsField",
+      "startLine": 15,
+      "endLine": 22,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "CredentialsField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 20,
+          "resolvedId": "backend/data/model.py:CredentialsField:681"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/jina/_auth.py:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 38,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "CredentialsField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 20,
+          "resolvedId": "backend/data/model.py:CredentialsField:681"
+        },
+        {
+          "target": "APIKeyCredentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 25
+        },
+        {
+          "target": "APIKeyCredentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 25
+        },
+        {
+          "target": "SecretStr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 28
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

@@ -1,0 +1,372 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.131Z",
+  "checksum": "7664124efe36d978",
+  "file": "backend/blocks/search.py",
+  "functions": [
+    {
+      "id": "backend/blocks/search.py:__init__:34",
+      "name": "__init__",
+      "startLine": 34,
+      "endLine": 46,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 35,
+          "resolvedId": "backend/blocks/search.py:__init__:34"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 35
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/search.py:run:48",
+      "name": "run",
+      "startLine": 48,
+      "endLine": 68,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "quote",
+          "resolved": false,
+          "confidence": 0,
+          "line": 51
+        },
+        {
+          "target": "topic",
+          "resolved": false,
+          "confidence": 0,
+          "line": 51
+        },
+        {
+          "target": "get_request",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 63,
+          "resolvedId": "backend/blocks/helpers/http.py:get_request:8"
+        },
+        {
+          "target": "url",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 63,
+          "resolvedId": "backend/data/integrations.py:url:48"
+        },
+        {
+          "target": "ValueError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 65
+        },
+        {
+          "target": "ValueError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 68
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/search.py:__init__:114",
+      "name": "__init__",
+      "startLine": 114,
+      "endLine": 137,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 115,
+          "resolvedId": "backend/blocks/search.py:__init__:34"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 115
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/search.py:run:139",
+      "name": "run",
+      "startLine": 139,
+      "endLine": 153,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "quote",
+          "resolved": false,
+          "confidence": 0,
+          "line": 145
+        },
+        {
+          "target": "location",
+          "resolved": false,
+          "confidence": 0,
+          "line": 145
+        },
+        {
+          "target": "get_request",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 146,
+          "resolvedId": "backend/blocks/helpers/http.py:get_request:8"
+        },
+        {
+          "target": "url",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 146,
+          "resolvedId": "backend/data/integrations.py:url:48"
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 149
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 150
+        },
+        {
+          "target": "RuntimeError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 153
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/search.py:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 154,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 26,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 29,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 30,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 35,
+          "resolvedId": "backend/blocks/search.py:__init__:34"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 35
+        },
+        {
+          "target": "quote",
+          "resolved": false,
+          "confidence": 0,
+          "line": 51
+        },
+        {
+          "target": "topic",
+          "resolved": false,
+          "confidence": 0,
+          "line": 51
+        },
+        {
+          "target": "get_request",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 63,
+          "resolvedId": "backend/blocks/helpers/http.py:get_request:8"
+        },
+        {
+          "target": "url",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 63,
+          "resolvedId": "backend/data/integrations.py:url:48"
+        },
+        {
+          "target": "ValueError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 65
+        },
+        {
+          "target": "ValueError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 68
+        },
+        {
+          "target": "APIKeyCredentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 71
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 88,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "CredentialsField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 93,
+          "resolvedId": "backend/data/model.py:CredentialsField:681"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 97,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 103,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 106,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 107,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 110,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 115,
+          "resolvedId": "backend/blocks/search.py:__init__:34"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 115
+        },
+        {
+          "target": "quote",
+          "resolved": false,
+          "confidence": 0,
+          "line": 145
+        },
+        {
+          "target": "location",
+          "resolved": false,
+          "confidence": 0,
+          "line": 145
+        },
+        {
+          "target": "get_request",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 146,
+          "resolvedId": "backend/blocks/helpers/http.py:get_request:8"
+        },
+        {
+          "target": "url",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 146,
+          "resolvedId": "backend/data/integrations.py:url:48"
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 149
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 150
+        },
+        {
+          "target": "RuntimeError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 153
+        },
+        {
+          "target": "APIKeyCredentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 71
+        },
+        {
+          "target": "SecretStr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 74
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

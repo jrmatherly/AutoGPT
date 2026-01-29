@@ -1,0 +1,114 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.200Z",
+  "checksum": "120309c036e0357b",
+  "file": "src/services/analytics/VercelAnalyticsWrapper.tsx",
+  "functions": [
+    {
+      "id": "src/services/analytics/VercelAnalyticsWrapper.tsx:VercelAnalyticsWrapper:8",
+      "name": "VercelAnalyticsWrapper",
+      "startLine": 8,
+      "endLine": 25,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 9
+        },
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 11
+        },
+        {
+          "target": "setHasAnalyticsConsent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 12
+        },
+        {
+          "target": "hasConsentFor",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 12,
+          "resolvedId": "src/services/consent/cookies.ts:hasConsentFor:90"
+        },
+        {
+          "target": "SpeedInsights",
+          "resolved": false,
+          "confidence": 0,
+          "line": 21
+        },
+        {
+          "target": "Analytics",
+          "resolved": false,
+          "confidence": 0,
+          "line": 22
+        },
+        {
+          "target": "setHasAnalyticsConsent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 12
+        },
+        {
+          "target": "hasConsentFor",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 12,
+          "resolvedId": "src/services/consent/cookies.ts:hasConsentFor:90"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/services/analytics/VercelAnalyticsWrapper.tsx:$useEffect$1:11",
+      "name": "$useEffect$1",
+      "startLine": 11,
+      "endLine": 13,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 11
+        },
+        {
+          "target": "setHasAnalyticsConsent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 12
+        },
+        {
+          "target": "hasConsentFor",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 12,
+          "resolvedId": "src/services/consent/cookies.ts:hasConsentFor:90"
+        },
+        {
+          "target": "setHasAnalyticsConsent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 12
+        },
+        {
+          "target": "hasConsentFor",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 12,
+          "resolvedId": "src/services/consent/cookies.ts:hasConsentFor:90"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

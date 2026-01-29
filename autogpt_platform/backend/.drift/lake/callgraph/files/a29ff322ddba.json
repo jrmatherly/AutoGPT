@@ -1,0 +1,238 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.196Z",
+  "checksum": "be956969492e881e",
+  "file": "backend/app.py",
+  "functions": [
+    {
+      "id": "backend/app.py:run_processes:14",
+      "name": "run_processes",
+      "startLine": 14,
+      "endLine": 31,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "start",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 22,
+          "resolvedId": "backend/util/process.py:start:113"
+        },
+        {
+          "target": "start",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 25,
+          "resolvedId": "backend/util/process.py:start:113"
+        },
+        {
+          "target": "stop",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 29,
+          "resolvedId": "backend/util/process.py:stop:138"
+        },
+        {
+          "target": "exception",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 31,
+          "resolvedId": "backend/util/logging.py:exception:57"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/app.py:main:34",
+      "name": "main",
+      "startLine": 34,
+      "endLine": 52,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "run_processes",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 44,
+          "resolvedId": "backend/app.py:run_processes:14"
+        },
+        {
+          "target": "set_log_level",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 45,
+          "resolvedId": "backend/util/service.py:set_log_level:220"
+        },
+        {
+          "target": "DatabaseManager",
+          "resolved": false,
+          "confidence": 0,
+          "line": 45
+        },
+        {
+          "target": "Scheduler",
+          "resolved": false,
+          "confidence": 0,
+          "line": 46
+        },
+        {
+          "target": "NotificationManager",
+          "resolved": false,
+          "confidence": 0,
+          "line": 47
+        },
+        {
+          "target": "WebsocketServer",
+          "resolved": false,
+          "confidence": 0,
+          "line": 48
+        },
+        {
+          "target": "AgentServer",
+          "resolved": false,
+          "confidence": 0,
+          "line": 49
+        },
+        {
+          "target": "ExecutionManager",
+          "resolved": false,
+          "confidence": 0,
+          "line": 50
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/app.py:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 57,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "load_dotenv",
+          "resolved": false,
+          "confidence": 0,
+          "line": 6
+        },
+        {
+          "target": "getLogger",
+          "resolved": false,
+          "confidence": 0,
+          "line": 11
+        },
+        {
+          "target": "start",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 22,
+          "resolvedId": "backend/util/process.py:start:113"
+        },
+        {
+          "target": "start",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 25,
+          "resolvedId": "backend/util/process.py:start:113"
+        },
+        {
+          "target": "stop",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 29,
+          "resolvedId": "backend/util/process.py:stop:138"
+        },
+        {
+          "target": "exception",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 31,
+          "resolvedId": "backend/util/logging.py:exception:57"
+        },
+        {
+          "target": "run_processes",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 44,
+          "resolvedId": "backend/app.py:run_processes:14"
+        },
+        {
+          "target": "set_log_level",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 45,
+          "resolvedId": "backend/util/service.py:set_log_level:220"
+        },
+        {
+          "target": "DatabaseManager",
+          "resolved": false,
+          "confidence": 0,
+          "line": 45
+        },
+        {
+          "target": "Scheduler",
+          "resolved": false,
+          "confidence": 0,
+          "line": 46
+        },
+        {
+          "target": "NotificationManager",
+          "resolved": false,
+          "confidence": 0,
+          "line": 47
+        },
+        {
+          "target": "WebsocketServer",
+          "resolved": false,
+          "confidence": 0,
+          "line": 48
+        },
+        {
+          "target": "AgentServer",
+          "resolved": false,
+          "confidence": 0,
+          "line": 49
+        },
+        {
+          "target": "ExecutionManager",
+          "resolved": false,
+          "confidence": 0,
+          "line": 50
+        },
+        {
+          "target": "main",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 56,
+          "resolvedId": "backend/app.py:main:34"
+        },
+        {
+          "target": "load_dotenv",
+          "resolved": false,
+          "confidence": 0,
+          "line": 6
+        },
+        {
+          "target": "getLogger",
+          "resolved": false,
+          "confidence": 0,
+          "line": 11
+        },
+        {
+          "target": "main",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 56,
+          "resolvedId": "backend/app.py:main:34"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

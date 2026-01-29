@@ -1,0 +1,362 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.210Z",
+  "checksum": "a5c1e3efd40ed4ed",
+  "file": "src/components/contextual/CredentialsInput/CredentialsInput.tsx",
+  "functions": [
+    {
+      "id": "src/components/contextual/CredentialsInput/CredentialsInput.tsx:isLoaded:21",
+      "name": "isLoaded",
+      "startLine": 21,
+      "endLine": 25,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/contextual/CredentialsInput/CredentialsInput.tsx:CredentialsInput:40",
+      "name": "CredentialsInput",
+      "startLine": 40,
+      "endLine": 172,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useCredentialsInput",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 52,
+          "resolvedId": "src/components/contextual/CredentialsInput/useCredentialsInput.ts:useCredentialsInput:30"
+        },
+        {
+          "target": "isLoaded",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 62,
+          "resolvedId": "src/components/contextual/CredentialsInput/CredentialsInput.tsx:isLoaded:21"
+        },
+        {
+          "target": "hookData",
+          "resolved": false,
+          "confidence": 0,
+          "line": 62
+        },
+        {
+          "target": "toDisplayName",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 89,
+          "resolvedId": "src/components/renderers/InputRenderer/custom/CredentialField/helpers.ts:toDisplayName:62"
+        },
+        {
+          "target": "provider",
+          "resolved": false,
+          "confidence": 0,
+          "line": 89
+        },
+        {
+          "target": "isSystemCredential",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 91,
+          "resolvedId": "src/components/contextual/CredentialsInput/helpers.ts:isSystemCredential:104"
+        },
+        {
+          "target": "selectedCredential",
+          "resolved": false,
+          "confidence": 0,
+          "line": 91
+        },
+        {
+          "target": "cn",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 100,
+          "resolvedId": "src/components/renderers/InputRenderer/utils/rjsf-utils.ts:cn:4"
+        },
+        {
+          "target": "className",
+          "resolved": false,
+          "confidence": 0,
+          "line": 100
+        },
+        {
+          "target": "CredentialsFlatView",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 101,
+          "resolvedId": "src/components/contextual/CredentialsInput/components/CredentialsFlatView/CredentialsFlatView.tsx:CredentialsFlatView:36"
+        },
+        {
+          "target": "schema",
+          "resolved": false,
+          "confidence": 0,
+          "line": 102
+        },
+        {
+          "target": "provider",
+          "resolved": false,
+          "confidence": 0,
+          "line": 103
+        },
+        {
+          "target": "displayName",
+          "resolved": false,
+          "confidence": 0,
+          "line": 104
+        },
+        {
+          "target": "allCredentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 105
+        },
+        {
+          "target": "selectedCredential",
+          "resolved": false,
+          "confidence": 0,
+          "line": 106
+        },
+        {
+          "target": "handleCredentialSelect",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 107,
+          "resolvedId": "src/app/(platform)/auth/integrations/setup-wizard/page.tsx:handleCredentialSelect:135"
+        },
+        {
+          "target": "handleActionButtonClick",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 109,
+          "resolvedId": "src/components/contextual/CredentialsInput/useCredentialsInput.ts:handleActionButtonClick:267"
+        },
+        {
+          "target": "actionButtonText",
+          "resolved": false,
+          "confidence": 0,
+          "line": 110
+        },
+        {
+          "target": "isOptional",
+          "resolved": false,
+          "confidence": 0,
+          "line": 111
+        },
+        {
+          "target": "showTitle",
+          "resolved": false,
+          "confidence": 0,
+          "line": 112
+        },
+        {
+          "target": "readOnly",
+          "resolved": false,
+          "confidence": 0,
+          "line": 113
+        },
+        {
+          "target": "variant",
+          "resolved": false,
+          "confidence": 0,
+          "line": 114
+        },
+        {
+          "target": "onSelectCredential",
+          "resolved": false,
+          "confidence": 0,
+          "line": 108
+        },
+        {
+          "target": "undefined",
+          "resolved": false,
+          "confidence": 0,
+          "line": 108
+        },
+        {
+          "target": "APIKeyCredentialsModal",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 120,
+          "resolvedId": "src/components/contextual/CredentialsInput/components/APIKeyCredentialsModal/APIKeyCredentialsModal.tsx:APIKeyCredentialsModal:23"
+        },
+        {
+          "target": "schema",
+          "resolved": false,
+          "confidence": 0,
+          "line": 121
+        },
+        {
+          "target": "isAPICredentialsModalOpen",
+          "resolved": false,
+          "confidence": 0,
+          "line": 122
+        },
+        {
+          "target": "siblingInputs",
+          "resolved": false,
+          "confidence": 0,
+          "line": 128
+        },
+        {
+          "target": "setAPICredentialsModalOpen",
+          "resolved": false,
+          "confidence": 0,
+          "line": 123
+        },
+        {
+          "target": "onSelectCredential",
+          "resolved": false,
+          "confidence": 0,
+          "line": 125
+        },
+        {
+          "target": "credsMeta",
+          "resolved": false,
+          "confidence": 0,
+          "line": 125
+        },
+        {
+          "target": "setAPICredentialsModalOpen",
+          "resolved": false,
+          "confidence": 0,
+          "line": 126
+        },
+        {
+          "target": "OAuthFlowWaitingModal",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 132,
+          "resolvedId": "src/components/contextual/CredentialsInput/components/OAuthWaitingModal/OAuthWaitingModal.tsx:OAuthFlowWaitingModal:9"
+        },
+        {
+          "target": "isOAuth2FlowInProgress",
+          "resolved": false,
+          "confidence": 0,
+          "line": 133
+        },
+        {
+          "target": "providerName",
+          "resolved": false,
+          "confidence": 0,
+          "line": 135
+        },
+        {
+          "target": "abort",
+          "resolved": false,
+          "confidence": 0,
+          "line": 134
+        },
+        {
+          "target": "PasswordCredentialsModal",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 139,
+          "resolvedId": "src/components/contextual/CredentialsInput/components/PasswordCredentialsModal/PasswordCredentialsModal.tsx:PasswordCredentialsModal:22"
+        },
+        {
+          "target": "schema",
+          "resolved": false,
+          "confidence": 0,
+          "line": 140
+        },
+        {
+          "target": "isUserPasswordCredentialsModalOpen",
+          "resolved": false,
+          "confidence": 0,
+          "line": 141
+        },
+        {
+          "target": "siblingInputs",
+          "resolved": false,
+          "confidence": 0,
+          "line": 147
+        },
+        {
+          "target": "setUserPasswordCredentialsModalOpen",
+          "resolved": false,
+          "confidence": 0,
+          "line": 142
+        },
+        {
+          "target": "onSelectCredential",
+          "resolved": false,
+          "confidence": 0,
+          "line": 144
+        },
+        {
+          "target": "creds",
+          "resolved": false,
+          "confidence": 0,
+          "line": 144
+        },
+        {
+          "target": "setUserPasswordCredentialsModalOpen",
+          "resolved": false,
+          "confidence": 0,
+          "line": 145
+        },
+        {
+          "target": "HostScopedCredentialsModal",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 151,
+          "resolvedId": "src/components/contextual/CredentialsInput/components/HotScopedCredentialsModal/HotScopedCredentialsModal.tsx:HostScopedCredentialsModal:30"
+        },
+        {
+          "target": "schema",
+          "resolved": false,
+          "confidence": 0,
+          "line": 152
+        },
+        {
+          "target": "isHostScopedCredentialsModalOpen",
+          "resolved": false,
+          "confidence": 0,
+          "line": 153
+        },
+        {
+          "target": "siblingInputs",
+          "resolved": false,
+          "confidence": 0,
+          "line": 159
+        },
+        {
+          "target": "setHostScopedCredentialsModalOpen",
+          "resolved": false,
+          "confidence": 0,
+          "line": 154
+        },
+        {
+          "target": "onSelectCredential",
+          "resolved": false,
+          "confidence": 0,
+          "line": 156
+        },
+        {
+          "target": "creds",
+          "resolved": false,
+          "confidence": 0,
+          "line": 156
+        },
+        {
+          "target": "setHostScopedCredentialsModalOpen",
+          "resolved": false,
+          "confidence": 0,
+          "line": 157
+        },
+        {
+          "target": "Text",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 164,
+          "resolvedId": "src/components/atoms/Text/Text.tsx:Text:15"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

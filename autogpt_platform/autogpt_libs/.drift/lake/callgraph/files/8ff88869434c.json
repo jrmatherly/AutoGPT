@@ -1,0 +1,70 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:21.047Z",
+  "checksum": "26b3102f79382114",
+  "file": "autogpt_libs/logging/test_utils.py",
+  "functions": [
+    {
+      "id": "autogpt_libs/logging/test_utils.py:test_remove_color_codes:35",
+      "name": "test_remove_color_codes",
+      "startLine": 35,
+      "endLine": 36,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "remove_color_codes",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 36,
+          "resolvedId": "autogpt_libs/logging/utils.py:remove_color_codes:4"
+        },
+        {
+          "target": "raw_text",
+          "resolved": false,
+          "confidence": 0,
+          "line": 36
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "autogpt_libs/logging/test_utils.py:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 37,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "parametrize",
+          "resolved": false,
+          "confidence": 0,
+          "line": 6
+        },
+        {
+          "target": "remove_color_codes",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 36,
+          "resolvedId": "autogpt_libs/logging/utils.py:remove_color_codes:4"
+        },
+        {
+          "target": "raw_text",
+          "resolved": false,
+          "confidence": 0,
+          "line": 36
+        },
+        {
+          "target": "parametrize",
+          "resolved": false,
+          "confidence": 0,
+          "line": 6
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

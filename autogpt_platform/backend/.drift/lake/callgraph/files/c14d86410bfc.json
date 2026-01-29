@@ -1,0 +1,808 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.211Z",
+  "checksum": "2fc7014e015a3763",
+  "file": "backend/blocks/ideogram.py",
+  "functions": [
+    {
+      "id": "backend/blocks/ideogram.py:__init__:165",
+      "name": "__init__",
+      "startLine": 165,
+      "endLine": 202,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 166,
+          "resolvedId": "backend/blocks/ideogram.py:__init__:165"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 166
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/ideogram.py:run:204",
+      "name": "run",
+      "startLine": 204,
+      "endLine": 230,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "run_model",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 210,
+          "resolvedId": "backend/blocks/ideogram.py:run_model:232"
+        },
+        {
+          "target": "upscale_image",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 225,
+          "resolvedId": "backend/blocks/ideogram.py:upscale_image:390"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/ideogram.py:run_model:232",
+      "name": "run_model",
+      "startLine": 232,
+      "endLine": 270,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "_run_model_v3",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 247,
+          "resolvedId": "backend/blocks/ideogram.py:_run_model_v3:272"
+        },
+        {
+          "target": "api_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 248
+        },
+        {
+          "target": "prompt",
+          "resolved": false,
+          "confidence": 0,
+          "line": 249
+        },
+        {
+          "target": "seed",
+          "resolved": false,
+          "confidence": 0,
+          "line": 250
+        },
+        {
+          "target": "aspect_ratio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 251
+        },
+        {
+          "target": "magic_prompt_option",
+          "resolved": false,
+          "confidence": 0,
+          "line": 252
+        },
+        {
+          "target": "style_type",
+          "resolved": false,
+          "confidence": 0,
+          "line": 253
+        },
+        {
+          "target": "negative_prompt",
+          "resolved": false,
+          "confidence": 0,
+          "line": 254
+        },
+        {
+          "target": "color_palette_name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 255
+        },
+        {
+          "target": "custom_colors",
+          "resolved": false,
+          "confidence": 0,
+          "line": 256
+        },
+        {
+          "target": "_run_model_legacy",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 259,
+          "resolvedId": "backend/blocks/ideogram.py:_run_model_legacy:337"
+        },
+        {
+          "target": "api_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 260
+        },
+        {
+          "target": "model_name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 261
+        },
+        {
+          "target": "prompt",
+          "resolved": false,
+          "confidence": 0,
+          "line": 262
+        },
+        {
+          "target": "seed",
+          "resolved": false,
+          "confidence": 0,
+          "line": 263
+        },
+        {
+          "target": "aspect_ratio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 264
+        },
+        {
+          "target": "magic_prompt_option",
+          "resolved": false,
+          "confidence": 0,
+          "line": 265
+        },
+        {
+          "target": "style_type",
+          "resolved": false,
+          "confidence": 0,
+          "line": 266
+        },
+        {
+          "target": "negative_prompt",
+          "resolved": false,
+          "confidence": 0,
+          "line": 267
+        },
+        {
+          "target": "color_palette_name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 268
+        },
+        {
+          "target": "custom_colors",
+          "resolved": false,
+          "confidence": 0,
+          "line": 269
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/ideogram.py:_run_model_v3:272",
+      "name": "_run_model_v3",
+      "startLine": 272,
+      "endLine": 335,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 286,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 310,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "aspect_ratio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 311
+        },
+        {
+          "target": "post",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 332,
+          "resolvedId": "backend/util/request.py:post:563"
+        },
+        {
+          "target": "url",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 332,
+          "resolvedId": "backend/data/integrations.py:url:48"
+        },
+        {
+          "target": "Requests",
+          "resolved": false,
+          "confidence": 0,
+          "line": 332
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 333,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "ValueError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 335
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/ideogram.py:_run_model_legacy:337",
+      "name": "_run_model_legacy",
+      "startLine": 337,
+      "endLine": 388,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 352,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        },
+        {
+          "target": "post",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 385,
+          "resolvedId": "backend/util/request.py:post:563"
+        },
+        {
+          "target": "url",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 385,
+          "resolvedId": "backend/data/integrations.py:url:48"
+        },
+        {
+          "target": "Requests",
+          "resolved": false,
+          "confidence": 0,
+          "line": 385
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 386,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "ValueError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 388
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/ideogram.py:upscale_image:390",
+      "name": "upscale_image",
+      "startLine": 390,
+      "endLine": 416,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 393,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 398,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "image_url",
+          "resolved": false,
+          "confidence": 0,
+          "line": 398
+        },
+        {
+          "target": "Requests",
+          "resolved": false,
+          "confidence": 0,
+          "line": 398
+        },
+        {
+          "target": "post",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 406,
+          "resolvedId": "backend/util/request.py:post:563"
+        },
+        {
+          "target": "url",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 407,
+          "resolvedId": "backend/data/integrations.py:url:48"
+        },
+        {
+          "target": "Requests",
+          "resolved": false,
+          "confidence": 0,
+          "line": 406
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 413,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "ValueError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 416
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/ideogram.py:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 417,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "APIKeyCredentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 22
+        },
+        {
+          "target": "CredentialsField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 95,
+          "resolvedId": "backend/data/model.py:CredentialsField:681"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 98,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 103,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 109,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 115,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 121,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 127,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 133,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 139,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 145,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 151,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 163,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 166,
+          "resolvedId": "backend/blocks/ideogram.py:__init__:165"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 166
+        },
+        {
+          "target": "run_model",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 210,
+          "resolvedId": "backend/blocks/ideogram.py:run_model:232"
+        },
+        {
+          "target": "upscale_image",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 225,
+          "resolvedId": "backend/blocks/ideogram.py:upscale_image:390"
+        },
+        {
+          "target": "_run_model_v3",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 247,
+          "resolvedId": "backend/blocks/ideogram.py:_run_model_v3:272"
+        },
+        {
+          "target": "api_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 248
+        },
+        {
+          "target": "prompt",
+          "resolved": false,
+          "confidence": 0,
+          "line": 249
+        },
+        {
+          "target": "seed",
+          "resolved": false,
+          "confidence": 0,
+          "line": 250
+        },
+        {
+          "target": "aspect_ratio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 251
+        },
+        {
+          "target": "magic_prompt_option",
+          "resolved": false,
+          "confidence": 0,
+          "line": 252
+        },
+        {
+          "target": "style_type",
+          "resolved": false,
+          "confidence": 0,
+          "line": 253
+        },
+        {
+          "target": "negative_prompt",
+          "resolved": false,
+          "confidence": 0,
+          "line": 254
+        },
+        {
+          "target": "color_palette_name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 255
+        },
+        {
+          "target": "custom_colors",
+          "resolved": false,
+          "confidence": 0,
+          "line": 256
+        },
+        {
+          "target": "_run_model_legacy",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 259,
+          "resolvedId": "backend/blocks/ideogram.py:_run_model_legacy:337"
+        },
+        {
+          "target": "api_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 260
+        },
+        {
+          "target": "model_name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 261
+        },
+        {
+          "target": "prompt",
+          "resolved": false,
+          "confidence": 0,
+          "line": 262
+        },
+        {
+          "target": "seed",
+          "resolved": false,
+          "confidence": 0,
+          "line": 263
+        },
+        {
+          "target": "aspect_ratio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 264
+        },
+        {
+          "target": "magic_prompt_option",
+          "resolved": false,
+          "confidence": 0,
+          "line": 265
+        },
+        {
+          "target": "style_type",
+          "resolved": false,
+          "confidence": 0,
+          "line": 266
+        },
+        {
+          "target": "negative_prompt",
+          "resolved": false,
+          "confidence": 0,
+          "line": 267
+        },
+        {
+          "target": "color_palette_name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 268
+        },
+        {
+          "target": "custom_colors",
+          "resolved": false,
+          "confidence": 0,
+          "line": 269
+        },
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 286,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 310,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "aspect_ratio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 311
+        },
+        {
+          "target": "post",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 332,
+          "resolvedId": "backend/util/request.py:post:563"
+        },
+        {
+          "target": "url",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 332,
+          "resolvedId": "backend/data/integrations.py:url:48"
+        },
+        {
+          "target": "Requests",
+          "resolved": false,
+          "confidence": 0,
+          "line": 332
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 333,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "ValueError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 335
+        },
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 352,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        },
+        {
+          "target": "post",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 385,
+          "resolvedId": "backend/util/request.py:post:563"
+        },
+        {
+          "target": "url",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 385,
+          "resolvedId": "backend/data/integrations.py:url:48"
+        },
+        {
+          "target": "Requests",
+          "resolved": false,
+          "confidence": 0,
+          "line": 385
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 386,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "ValueError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 388
+        },
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 393,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 398,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "image_url",
+          "resolved": false,
+          "confidence": 0,
+          "line": 398
+        },
+        {
+          "target": "Requests",
+          "resolved": false,
+          "confidence": 0,
+          "line": 398
+        },
+        {
+          "target": "post",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 406,
+          "resolvedId": "backend/util/request.py:post:563"
+        },
+        {
+          "target": "url",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 407,
+          "resolvedId": "backend/data/integrations.py:url:48"
+        },
+        {
+          "target": "Requests",
+          "resolved": false,
+          "confidence": 0,
+          "line": 406
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 413,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "ValueError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 416
+        },
+        {
+          "target": "APIKeyCredentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 22
+        },
+        {
+          "target": "SecretStr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 25
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

@@ -1,0 +1,261 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:19.999Z",
+  "checksum": "ff8a6cd7ff093135",
+  "file": "src/components/layout/Navbar/components/AgentActivityDropdown/useAgentActivityDropdown.ts",
+  "functions": [
+    {
+      "id": "src/components/layout/Navbar/components/AgentActivityDropdown/useAgentActivityDropdown.ts:useAgentActivityDropdown:14",
+      "name": "useAgentActivityDropdown",
+      "startLine": 14,
+      "endLine": 83,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 15
+        },
+        {
+          "target": "useLibraryAgents",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 16,
+          "resolvedId": "src/hooks/useLibraryAgents/useLibraryAgents.ts:useLibraryAgents:6"
+        },
+        {
+          "target": "useState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 18
+        },
+        {
+          "target": "useGetV1ListAllExecutions",
+          "resolved": false,
+          "confidence": 0,
+          "line": 29
+        },
+        {
+          "target": "useMemo",
+          "resolved": false,
+          "confidence": 0,
+          "line": 34
+        },
+        {
+          "target": "from",
+          "resolved": false,
+          "confidence": 0,
+          "line": 35
+        },
+        {
+          "target": "keys",
+          "resolved": false,
+          "confidence": 0,
+          "line": 35
+        },
+        {
+          "target": "useCallback",
+          "resolved": false,
+          "confidence": 0,
+          "line": 40
+        },
+        {
+          "target": "setNotifications",
+          "resolved": false,
+          "confidence": 0,
+          "line": 42
+        },
+        {
+          "target": "handleExecutionUpdate",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 43,
+          "resolvedId": "src/components/layout/Navbar/components/AgentActivityDropdown/helpers.tsx:handleExecutionUpdate:273"
+        },
+        {
+          "target": "currentState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 43
+        },
+        {
+          "target": "execution",
+          "resolved": false,
+          "confidence": 0,
+          "line": 43
+        },
+        {
+          "target": "agentInfoMap",
+          "resolved": false,
+          "confidence": 0,
+          "line": 43
+        },
+        {
+          "target": "useRef",
+          "resolved": false,
+          "confidence": 0,
+          "line": 51
+        },
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 52
+        },
+        {
+          "target": "categorizeExecutions",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 63,
+          "resolvedId": "src/components/layout/Navbar/components/AgentActivityDropdown/helpers.tsx:categorizeExecutions:154"
+        },
+        {
+          "target": "executions",
+          "resolved": false,
+          "confidence": 0,
+          "line": 63
+        },
+        {
+          "target": "agentInfoMap",
+          "resolved": false,
+          "confidence": 0,
+          "line": 63
+        },
+        {
+          "target": "setNotifications",
+          "resolved": false,
+          "confidence": 0,
+          "line": 64
+        },
+        {
+          "target": "notifications",
+          "resolved": false,
+          "confidence": 0,
+          "line": 64
+        },
+        {
+          "target": "useExecutionEvents",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 70,
+          "resolvedId": "src/hooks/useExecutionEvents.ts:useExecutionEvents:27"
+        },
+        {
+          "target": "categorizeExecutions",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 63,
+          "resolvedId": "src/components/layout/Navbar/components/AgentActivityDropdown/helpers.tsx:categorizeExecutions:154"
+        },
+        {
+          "target": "executions",
+          "resolved": false,
+          "confidence": 0,
+          "line": 63
+        },
+        {
+          "target": "agentInfoMap",
+          "resolved": false,
+          "confidence": 0,
+          "line": 63
+        },
+        {
+          "target": "setNotifications",
+          "resolved": false,
+          "confidence": 0,
+          "line": 64
+        },
+        {
+          "target": "notifications",
+          "resolved": false,
+          "confidence": 0,
+          "line": 64
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/layout/Navbar/components/AgentActivityDropdown/useAgentActivityDropdown.ts:$useEffect$1:52",
+      "name": "$useEffect$1",
+      "startLine": 52,
+      "endLine": 67,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 52
+        },
+        {
+          "target": "categorizeExecutions",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 63,
+          "resolvedId": "src/components/layout/Navbar/components/AgentActivityDropdown/helpers.tsx:categorizeExecutions:154"
+        },
+        {
+          "target": "executions",
+          "resolved": false,
+          "confidence": 0,
+          "line": 63
+        },
+        {
+          "target": "agentInfoMap",
+          "resolved": false,
+          "confidence": 0,
+          "line": 63
+        },
+        {
+          "target": "setNotifications",
+          "resolved": false,
+          "confidence": 0,
+          "line": 64
+        },
+        {
+          "target": "notifications",
+          "resolved": false,
+          "confidence": 0,
+          "line": 64
+        },
+        {
+          "target": "categorizeExecutions",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 63,
+          "resolvedId": "src/components/layout/Navbar/components/AgentActivityDropdown/helpers.tsx:categorizeExecutions:154"
+        },
+        {
+          "target": "executions",
+          "resolved": false,
+          "confidence": 0,
+          "line": 63
+        },
+        {
+          "target": "agentInfoMap",
+          "resolved": false,
+          "confidence": 0,
+          "line": 63
+        },
+        {
+          "target": "setNotifications",
+          "resolved": false,
+          "confidence": 0,
+          "line": 64
+        },
+        {
+          "target": "notifications",
+          "resolved": false,
+          "confidence": 0,
+          "line": 64
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

@@ -1,0 +1,647 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.141Z",
+  "checksum": "5980d997bbf65a9e",
+  "file": "backend/util/prompt_test.py",
+  "functions": [
+    {
+      "id": "backend/util/prompt_test.py:enc:14",
+      "name": "enc",
+      "startLine": 14,
+      "endLine": 16,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "encoding_for_model",
+          "resolved": false,
+          "confidence": 0,
+          "line": 16
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/prompt_test.py:test_regular_message_token_counting:18",
+      "name": "test_regular_message_token_counting",
+      "startLine": 18,
+      "endLine": 27,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "_msg_tokens",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 22,
+          "resolvedId": "backend/util/prompt.py:_msg_tokens:25"
+        },
+        {
+          "target": "msg",
+          "resolved": false,
+          "confidence": 0,
+          "line": 22
+        },
+        {
+          "target": "enc",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 22,
+          "resolvedId": "backend/util/prompt_test.py:enc:14"
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 25
+        },
+        {
+          "target": "encode",
+          "resolved": false,
+          "confidence": 0,
+          "line": 25
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/prompt_test.py:test_regular_message_with_name:29",
+      "name": "test_regular_message_with_name",
+      "startLine": 29,
+      "endLine": 37,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "_msg_tokens",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 33,
+          "resolvedId": "backend/util/prompt.py:_msg_tokens:25"
+        },
+        {
+          "target": "msg",
+          "resolved": false,
+          "confidence": 0,
+          "line": 33
+        },
+        {
+          "target": "enc",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 33,
+          "resolvedId": "backend/util/prompt_test.py:enc:14"
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 36
+        },
+        {
+          "target": "encode",
+          "resolved": false,
+          "confidence": 0,
+          "line": 36
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/prompt_test.py:test_openai_tool_call_token_counting:39",
+      "name": "test_openai_tool_call_token_counting",
+      "startLine": 39,
+      "endLine": 68,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "_msg_tokens",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 56,
+          "resolvedId": "backend/util/prompt.py:_msg_tokens:25"
+        },
+        {
+          "target": "msg",
+          "resolved": false,
+          "confidence": 0,
+          "line": 56
+        },
+        {
+          "target": "enc",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 56,
+          "resolvedId": "backend/util/prompt_test.py:enc:14"
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 60
+        },
+        {
+          "target": "encode",
+          "resolved": false,
+          "confidence": 0,
+          "line": 60
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 61
+        },
+        {
+          "target": "encode",
+          "resolved": false,
+          "confidence": 0,
+          "line": 61
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 62
+        },
+        {
+          "target": "encode",
+          "resolved": false,
+          "confidence": 0,
+          "line": 62
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 63
+        },
+        {
+          "target": "encode",
+          "resolved": false,
+          "confidence": 0,
+          "line": 63
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/prompt_test.py:test_openai_multiple_tool_calls:70",
+      "name": "test_openai_multiple_tool_calls",
+      "startLine": 70,
+      "endLine": 92,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "_msg_tokens",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 89,
+          "resolvedId": "backend/util/prompt.py:_msg_tokens:25"
+        },
+        {
+          "target": "msg",
+          "resolved": false,
+          "confidence": 0,
+          "line": 89
+        },
+        {
+          "target": "enc",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 89,
+          "resolvedId": "backend/util/prompt_test.py:enc:14"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/prompt_test.py:test_anthropic_tool_use_token_counting:94",
+      "name": "test_anthropic_tool_use_token_counting",
+      "startLine": 94,
+      "endLine": 121,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "_msg_tokens",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 108,
+          "resolvedId": "backend/util/prompt.py:_msg_tokens:25"
+        },
+        {
+          "target": "msg",
+          "resolved": false,
+          "confidence": 0,
+          "line": 108
+        },
+        {
+          "target": "enc",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 108,
+          "resolvedId": "backend/util/prompt_test.py:enc:14"
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 112
+        },
+        {
+          "target": "encode",
+          "resolved": false,
+          "confidence": 0,
+          "line": 112
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 113
+        },
+        {
+          "target": "encode",
+          "resolved": false,
+          "confidence": 0,
+          "line": 113
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 114
+        },
+        {
+          "target": "encode",
+          "resolved": false,
+          "confidence": 0,
+          "line": 115
+        },
+        {
+          "target": "dumps",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 115,
+          "resolvedId": "backend/util/json.py:dumps:20"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/prompt_test.py:test_anthropic_tool_result_token_counting:123",
+      "name": "test_anthropic_tool_result_token_counting",
+      "startLine": 123,
+      "endLine": 145,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "_msg_tokens",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 136,
+          "resolvedId": "backend/util/prompt.py:_msg_tokens:25"
+        },
+        {
+          "target": "msg",
+          "resolved": false,
+          "confidence": 0,
+          "line": 136
+        },
+        {
+          "target": "enc",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 136,
+          "resolvedId": "backend/util/prompt_test.py:enc:14"
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 139
+        },
+        {
+          "target": "encode",
+          "resolved": false,
+          "confidence": 0,
+          "line": 139
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 139
+        },
+        {
+          "target": "encode",
+          "resolved": false,
+          "confidence": 0,
+          "line": 140
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/prompt_test.py:test_anthropic_mixed_content:147",
+      "name": "test_anthropic_mixed_content",
+      "startLine": 147,
+      "endLine": 165,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "_msg_tokens",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 162,
+          "resolvedId": "backend/util/prompt.py:_msg_tokens:25"
+        },
+        {
+          "target": "msg",
+          "resolved": false,
+          "confidence": 0,
+          "line": 162
+        },
+        {
+          "target": "enc",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 162,
+          "resolvedId": "backend/util/prompt_test.py:enc:14"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/prompt_test.py:test_empty_content:167",
+      "name": "test_empty_content",
+      "startLine": 167,
+      "endLine": 176,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "_msg_tokens",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 171,
+          "resolvedId": "backend/util/prompt.py:_msg_tokens:25"
+        },
+        {
+          "target": "msg",
+          "resolved": false,
+          "confidence": 0,
+          "line": 171
+        },
+        {
+          "target": "enc",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 171,
+          "resolvedId": "backend/util/prompt_test.py:enc:14"
+        },
+        {
+          "target": "_msg_tokens",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 175,
+          "resolvedId": "backend/util/prompt.py:_msg_tokens:25"
+        },
+        {
+          "target": "msg",
+          "resolved": false,
+          "confidence": 0,
+          "line": 175
+        },
+        {
+          "target": "enc",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 175,
+          "resolvedId": "backend/util/prompt_test.py:enc:14"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/prompt_test.py:test_string_content_with_tool_calls:178",
+      "name": "test_string_content_with_tool_calls",
+      "startLine": 178,
+      "endLine": 204,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "_msg_tokens",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 192,
+          "resolvedId": "backend/util/prompt.py:_msg_tokens:25"
+        },
+        {
+          "target": "msg",
+          "resolved": false,
+          "confidence": 0,
+          "line": 192
+        },
+        {
+          "target": "enc",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 192,
+          "resolvedId": "backend/util/prompt_test.py:enc:14"
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 195
+        },
+        {
+          "target": "encode",
+          "resolved": false,
+          "confidence": 0,
+          "line": 195
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 197
+        },
+        {
+          "target": "encode",
+          "resolved": false,
+          "confidence": 0,
+          "line": 197
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 198
+        },
+        {
+          "target": "encode",
+          "resolved": false,
+          "confidence": 0,
+          "line": 198
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 199
+        },
+        {
+          "target": "encode",
+          "resolved": false,
+          "confidence": 0,
+          "line": 199
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 200
+        },
+        {
+          "target": "encode",
+          "resolved": false,
+          "confidence": 0,
+          "line": 200
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/prompt_test.py:test_conversation_with_tool_calls:210",
+      "name": "test_conversation_with_tool_calls",
+      "startLine": 210,
+      "endLine": 248,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "estimate_token_count",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 241,
+          "resolvedId": "backend/util/prompt.py:estimate_token_count:278"
+        },
+        {
+          "target": "conversation",
+          "resolved": false,
+          "confidence": 0,
+          "line": 241
+        },
+        {
+          "target": "encoding_for_model",
+          "resolved": false,
+          "confidence": 0,
+          "line": 244
+        },
+        {
+          "target": "sum",
+          "resolved": false,
+          "confidence": 0,
+          "line": 245
+        },
+        {
+          "target": "_msg_tokens",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 245,
+          "resolvedId": "backend/util/prompt.py:_msg_tokens:25"
+        },
+        {
+          "target": "msg",
+          "resolved": false,
+          "confidence": 0,
+          "line": 245
+        },
+        {
+          "target": "enc",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 245,
+          "resolvedId": "backend/util/prompt_test.py:enc:14"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/prompt_test.py:test_openai_conversation:250",
+      "name": "test_openai_conversation",
+      "startLine": 250,
+      "endLine": 278,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "estimate_token_count",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 271,
+          "resolvedId": "backend/util/prompt.py:estimate_token_count:278"
+        },
+        {
+          "target": "conversation",
+          "resolved": false,
+          "confidence": 0,
+          "line": 271
+        },
+        {
+          "target": "encoding_for_model",
+          "resolved": false,
+          "confidence": 0,
+          "line": 274
+        },
+        {
+          "target": "sum",
+          "resolved": false,
+          "confidence": 0,
+          "line": 275
+        },
+        {
+          "target": "_msg_tokens",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 275,
+          "resolvedId": "backend/util/prompt.py:_msg_tokens:25"
+        },
+        {
+          "target": "msg",
+          "resolved": false,
+          "confidence": 0,
+          "line": 275
+        },
+        {
+          "target": "enc",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 275,
+          "resolvedId": "backend/util/prompt_test.py:enc:14"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

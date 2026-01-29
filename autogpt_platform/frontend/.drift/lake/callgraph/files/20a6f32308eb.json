@@ -1,0 +1,593 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.011Z",
+  "checksum": "2ecdca526f1d59b4",
+  "file": "src/components/contextual/PublishAgentModal/components/AgentInfoStep/AgentInfoStep.tsx",
+  "functions": [
+    {
+      "id": "src/components/contextual/PublishAgentModal/components/AgentInfoStep/AgentInfoStep.tsx:AgentInfoStep:16",
+      "name": "AgentInfoStep",
+      "startLine": 16,
+      "endLine": 290,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useAgentInfoStep",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 32,
+          "resolvedId": "src/components/contextual/PublishAgentModal/components/AgentInfoStep/useAgentInfoStep.ts:useAgentInfoStep:22"
+        },
+        {
+          "target": "useState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 42
+        },
+        {
+          "target": "setValue",
+          "resolved": false,
+          "confidence": 0,
+          "line": 45
+        },
+        {
+          "target": "cronExpression",
+          "resolved": false,
+          "confidence": 0,
+          "line": 45
+        },
+        {
+          "target": "StepHeader",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 63,
+          "resolvedId": "src/components/contextual/PublishAgentModal/components/StepHeader.tsx:StepHeader:8"
+        },
+        {
+          "target": "Form",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 68,
+          "resolvedId": "src/components/molecules/Form/Form.tsx:Form:24"
+        },
+        {
+          "target": "handleSubmit",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 69,
+          "resolvedId": "src/components/__legacy__/RatingCard.tsx:handleSubmit:28"
+        },
+        {
+          "target": "FormField",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 72,
+          "resolvedId": "src/components/__legacy__/ui/form.tsx:FormField:31"
+        },
+        {
+          "target": "control",
+          "resolved": false,
+          "confidence": 0,
+          "line": 73
+        },
+        {
+          "target": "Input",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 77,
+          "resolvedId": "src/components/atoms/Input/Input.tsx:Input:38"
+        },
+        {
+          "target": "name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 78
+        },
+        {
+          "target": "message",
+          "resolved": false,
+          "confidence": 0,
+          "line": 82
+        },
+        {
+          "target": "Text",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 86,
+          "resolvedId": "src/components/atoms/Text/Text.tsx:Text:15"
+        },
+        {
+          "target": "Text",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 98,
+          "resolvedId": "src/components/atoms/Text/Text.tsx:Text:15"
+        },
+        {
+          "target": "FormField",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 105,
+          "resolvedId": "src/components/__legacy__/ui/form.tsx:FormField:31"
+        },
+        {
+          "target": "control",
+          "resolved": false,
+          "confidence": 0,
+          "line": 106
+        },
+        {
+          "target": "Input",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 109,
+          "resolvedId": "src/components/atoms/Input/Input.tsx:Input:38"
+        },
+        {
+          "target": "name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 110
+        },
+        {
+          "target": "message",
+          "resolved": false,
+          "confidence": 0,
+          "line": 114
+        },
+        {
+          "target": "FormField",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 120,
+          "resolvedId": "src/components/__legacy__/ui/form.tsx:FormField:31"
+        },
+        {
+          "target": "control",
+          "resolved": false,
+          "confidence": 0,
+          "line": 121
+        },
+        {
+          "target": "Input",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 124,
+          "resolvedId": "src/components/atoms/Input/Input.tsx:Input:38"
+        },
+        {
+          "target": "name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 125
+        },
+        {
+          "target": "message",
+          "resolved": false,
+          "confidence": 0,
+          "line": 129
+        },
+        {
+          "target": "FormField",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 135,
+          "resolvedId": "src/components/__legacy__/ui/form.tsx:FormField:31"
+        },
+        {
+          "target": "control",
+          "resolved": false,
+          "confidence": 0,
+          "line": 136
+        },
+        {
+          "target": "Input",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 139,
+          "resolvedId": "src/components/atoms/Input/Input.tsx:Input:38"
+        },
+        {
+          "target": "name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 140
+        },
+        {
+          "target": "message",
+          "resolved": false,
+          "confidence": 0,
+          "line": 144
+        },
+        {
+          "target": "ThumbnailImages",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 150,
+          "resolvedId": "src/components/contextual/PublishAgentModal/components/AgentInfoStep/components/ThumbnailImages.tsx:ThumbnailImages:18"
+        },
+        {
+          "target": "agentId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 151
+        },
+        {
+          "target": "handleImagesChange",
+          "resolved": false,
+          "confidence": 0,
+          "line": 152
+        },
+        {
+          "target": "initialImages",
+          "resolved": false,
+          "confidence": 0,
+          "line": 153
+        },
+        {
+          "target": "initialSelectedImage",
+          "resolved": false,
+          "confidence": 0,
+          "line": 154
+        },
+        {
+          "target": "message",
+          "resolved": false,
+          "confidence": 0,
+          "line": 155
+        },
+        {
+          "target": "FormField",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 158,
+          "resolvedId": "src/components/__legacy__/ui/form.tsx:FormField:31"
+        },
+        {
+          "target": "control",
+          "resolved": false,
+          "confidence": 0,
+          "line": 159
+        },
+        {
+          "target": "Input",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 162,
+          "resolvedId": "src/components/atoms/Input/Input.tsx:Input:38"
+        },
+        {
+          "target": "name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 163
+        },
+        {
+          "target": "message",
+          "resolved": false,
+          "confidence": 0,
+          "line": 167
+        },
+        {
+          "target": "FormField",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 173,
+          "resolvedId": "src/components/__legacy__/ui/form.tsx:FormField:31"
+        },
+        {
+          "target": "control",
+          "resolved": false,
+          "confidence": 0,
+          "line": 174
+        },
+        {
+          "target": "Select",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 177,
+          "resolvedId": "src/components/atoms/Select/Select.tsx:Select:42"
+        },
+        {
+          "target": "name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 178
+        },
+        {
+          "target": "value",
+          "resolved": false,
+          "confidence": 0,
+          "line": 181
+        },
+        {
+          "target": "onChange",
+          "resolved": false,
+          "confidence": 0,
+          "line": 182
+        },
+        {
+          "target": "message",
+          "resolved": false,
+          "confidence": 0,
+          "line": 183
+        },
+        {
+          "target": "categoryOptions",
+          "resolved": false,
+          "confidence": 0,
+          "line": 184
+        },
+        {
+          "target": "FormField",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 189,
+          "resolvedId": "src/components/__legacy__/ui/form.tsx:FormField:31"
+        },
+        {
+          "target": "control",
+          "resolved": false,
+          "confidence": 0,
+          "line": 190
+        },
+        {
+          "target": "Input",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 193,
+          "resolvedId": "src/components/atoms/Input/Input.tsx:Input:38"
+        },
+        {
+          "target": "name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 194
+        },
+        {
+          "target": "message",
+          "resolved": false,
+          "confidence": 0,
+          "line": 198
+        },
+        {
+          "target": "FormField",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 204,
+          "resolvedId": "src/components/__legacy__/ui/form.tsx:FormField:31"
+        },
+        {
+          "target": "control",
+          "resolved": false,
+          "confidence": 0,
+          "line": 205
+        },
+        {
+          "target": "Input",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 208,
+          "resolvedId": "src/components/atoms/Input/Input.tsx:Input:38"
+        },
+        {
+          "target": "name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 209
+        },
+        {
+          "target": "message",
+          "resolved": false,
+          "confidence": 0,
+          "line": 213
+        },
+        {
+          "target": "FormField",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 219,
+          "resolvedId": "src/components/__legacy__/ui/form.tsx:FormField:31"
+        },
+        {
+          "target": "control",
+          "resolved": false,
+          "confidence": 0,
+          "line": 220
+        },
+        {
+          "target": "Input",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 223,
+          "resolvedId": "src/components/atoms/Input/Input.tsx:Input:38"
+        },
+        {
+          "target": "name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 224
+        },
+        {
+          "target": "message",
+          "resolved": false,
+          "confidence": 0,
+          "line": 228
+        },
+        {
+          "target": "FormField",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 234,
+          "resolvedId": "src/components/__legacy__/ui/form.tsx:FormField:31"
+        },
+        {
+          "target": "control",
+          "resolved": false,
+          "confidence": 0,
+          "line": 235
+        },
+        {
+          "target": "Text",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 239,
+          "resolvedId": "src/components/atoms/Text/Text.tsx:Text:15"
+        },
+        {
+          "target": "Button",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 243,
+          "resolvedId": "src/components/atoms/Button/Button.tsx:Button:12"
+        },
+        {
+          "target": "setCronScheduleDialogOpen",
+          "resolved": false,
+          "confidence": 0,
+          "line": 246
+        },
+        {
+          "target": "CalendarClockIcon",
+          "resolved": false,
+          "confidence": 0,
+          "line": 249
+        },
+        {
+          "target": "humanizeCronExpression",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 251,
+          "resolvedId": "src/lib/cron-expression-utils.ts:humanizeCronExpression:82"
+        },
+        {
+          "target": "value",
+          "resolved": false,
+          "confidence": 0,
+          "line": 251
+        },
+        {
+          "target": "Button",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 259,
+          "resolvedId": "src/components/atoms/Button/Button.tsx:Button:12"
+        },
+        {
+          "target": "onBack",
+          "resolved": false,
+          "confidence": 0,
+          "line": 261
+        },
+        {
+          "target": "Button",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 267,
+          "resolvedId": "src/components/atoms/Button/Button.tsx:Button:12"
+        },
+        {
+          "target": "isSubmitting",
+          "resolved": false,
+          "confidence": 0,
+          "line": 273
+        },
+        {
+          "target": "keys",
+          "resolved": false,
+          "confidence": 0,
+          "line": 271
+        },
+        {
+          "target": "errors",
+          "resolved": false,
+          "confidence": 0,
+          "line": 271
+        },
+        {
+          "target": "CronExpressionDialog",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 281,
+          "resolvedId": "src/app/(platform)/library/agents/[id]/components/OldAgentLibraryView/components/cron-scheduler-dialog.tsx:CronExpressionDialog:151"
+        },
+        {
+          "target": "cronScheduleDialogOpen",
+          "resolved": false,
+          "confidence": 0,
+          "line": 282
+        },
+        {
+          "target": "setCronScheduleDialogOpen",
+          "resolved": false,
+          "confidence": 0,
+          "line": 283
+        },
+        {
+          "target": "handleScheduleChange",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 284,
+          "resolvedId": "src/components/contextual/PublishAgentModal/components/AgentInfoStep/AgentInfoStep.tsx:handleScheduleChange:44"
+        },
+        {
+          "target": "getValues",
+          "resolved": false,
+          "confidence": 0,
+          "line": 285
+        },
+        {
+          "target": "setValue",
+          "resolved": false,
+          "confidence": 0,
+          "line": 45
+        },
+        {
+          "target": "cronExpression",
+          "resolved": false,
+          "confidence": 0,
+          "line": 45
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/contextual/PublishAgentModal/components/AgentInfoStep/AgentInfoStep.tsx:handleScheduleChange:44",
+      "name": "handleScheduleChange",
+      "startLine": 44,
+      "endLine": 46,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "setValue",
+          "resolved": false,
+          "confidence": 0,
+          "line": 45
+        },
+        {
+          "target": "cronExpression",
+          "resolved": false,
+          "confidence": 0,
+          "line": 45
+        },
+        {
+          "target": "setValue",
+          "resolved": false,
+          "confidence": 0,
+          "line": 45
+        },
+        {
+          "target": "cronExpression",
+          "resolved": false,
+          "confidence": 0,
+          "line": 45
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

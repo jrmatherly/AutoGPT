@@ -1,0 +1,287 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.196Z",
+  "checksum": "0cab11c46cab3a54",
+  "file": "backend/blocks/github/_api.py",
+  "functions": [
+    {
+      "id": "backend/blocks/github/_api.py:_convert_to_api_url:12",
+      "name": "_convert_to_api_url",
+      "startLine": 12,
+      "endLine": 12,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/github/_api.py:_convert_to_api_url:16",
+      "name": "_convert_to_api_url",
+      "startLine": 16,
+      "endLine": 16,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/github/_api.py:_convert_to_api_url:19",
+      "name": "_convert_to_api_url",
+      "startLine": 19,
+      "endLine": 42,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 24
+        },
+        {
+          "target": "url",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 24,
+          "resolvedId": "backend/data/integrations.py:url:48"
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 24
+        },
+        {
+          "target": "urlparse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 25
+        },
+        {
+          "target": "url",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 25,
+          "resolvedId": "backend/data/integrations.py:url:48"
+        },
+        {
+          "target": "split",
+          "resolved": false,
+          "confidence": 0,
+          "line": 27
+        },
+        {
+          "target": "strip",
+          "resolved": false,
+          "confidence": 0,
+          "line": 27
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 29
+        },
+        {
+          "target": "path_parts",
+          "resolved": false,
+          "confidence": 0,
+          "line": 29
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 33
+        },
+        {
+          "target": "path_parts",
+          "resolved": false,
+          "confidence": 0,
+          "line": 33
+        },
+        {
+          "target": "join",
+          "resolved": false,
+          "confidence": 0,
+          "line": 34
+        },
+        {
+          "target": "ValueError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 40
+        },
+        {
+          "target": "urlparse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 42
+        },
+        {
+          "target": "api_url",
+          "resolved": false,
+          "confidence": 0,
+          "line": 42
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/github/_api.py:_get_headers:45",
+      "name": "_get_headers",
+      "startLine": 45,
+      "endLine": 49,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "auth_header",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 47,
+          "resolvedId": "backend/data/model.py:auth_header:337"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/github/_api.py:convert_comment_url_to_api_endpoint:52",
+      "name": "convert_comment_url_to_api_endpoint",
+      "startLine": 52,
+      "endLine": 102,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "urlparse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 63
+        },
+        {
+          "target": "comment_url",
+          "resolved": false,
+          "confidence": 0,
+          "line": 63
+        },
+        {
+          "target": "replace",
+          "resolved": false,
+          "confidence": 0,
+          "line": 69
+        },
+        {
+          "target": "split",
+          "resolved": false,
+          "confidence": 0,
+          "line": 73
+        },
+        {
+          "target": "urlparse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 77
+        },
+        {
+          "target": "base_url",
+          "resolved": false,
+          "confidence": 0,
+          "line": 77
+        },
+        {
+          "target": "split",
+          "resolved": false,
+          "confidence": 0,
+          "line": 78
+        },
+        {
+          "target": "strip",
+          "resolved": false,
+          "confidence": 0,
+          "line": 78
+        },
+        {
+          "target": "split",
+          "resolved": false,
+          "confidence": 0,
+          "line": 88
+        },
+        {
+          "target": "urlparse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 92
+        },
+        {
+          "target": "base_url",
+          "resolved": false,
+          "confidence": 0,
+          "line": 92
+        },
+        {
+          "target": "split",
+          "resolved": false,
+          "confidence": 0,
+          "line": 93
+        },
+        {
+          "target": "strip",
+          "resolved": false,
+          "confidence": 0,
+          "line": 93
+        },
+        {
+          "target": "_convert_to_api_url",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 102,
+          "resolvedId": "backend/blocks/github/_api.py:_convert_to_api_url:12"
+        },
+        {
+          "target": "comment_url",
+          "resolved": false,
+          "confidence": 0,
+          "line": 102
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/github/_api.py:get_api:105",
+      "name": "get_api",
+      "startLine": 105,
+      "endLine": 113,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "Requests",
+          "resolved": false,
+          "confidence": 0,
+          "line": 109
+        },
+        {
+          "target": "_get_headers",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 112,
+          "resolvedId": "backend/blocks/github/_api.py:_get_headers:45"
+        },
+        {
+          "target": "credentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 112
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

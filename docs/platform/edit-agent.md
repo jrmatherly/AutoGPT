@@ -11,8 +11,8 @@ This guide explains how to access and edit existing agents in AutoGPT, whether t
 ### **1. Access the Monitor Tab**
 * Navigate to the Monitor Tab in the AutoGPT builder
 * You'll see a list of all your agents, including:
-    * Agents you've created
-    * Agents downloaded from the marketplace
+  * Agents you've created
+  * Agents downloaded from the marketplace
 
 ### **2. Select the Agent**
 * Locate the agent you want to edit from the list
@@ -21,7 +21,6 @@ This guide explains how to access and edit existing agents in AutoGPT, whether t
 ### **3. Enter Edit Mode**
 * Look for the pencil icon next to the selected agent
 * Click the pencil icon to open the editor
-
 
 ### **4. Modify the Agent**
 * The agent will load in the editor with all its existing components

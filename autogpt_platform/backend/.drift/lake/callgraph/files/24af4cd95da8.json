@@ -1,0 +1,550 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.136Z",
+  "checksum": "e9c8d6b25c522abd",
+  "file": "test/blocks/test_youtube.py",
+  "functions": [
+    {
+      "id": "test/blocks/test_youtube.py:setup_method:17",
+      "name": "setup_method",
+      "startLine": 17,
+      "endLine": 20,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "TranscribeYoutubeVideoBlock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 19
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/blocks/test_youtube.py:test_extract_video_id_standard_url:22",
+      "name": "test_extract_video_id_standard_url",
+      "startLine": 22,
+      "endLine": 26,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "extract_video_id",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 25,
+          "resolvedId": "backend/blocks/youtube.py:extract_video_id:102"
+        },
+        {
+          "target": "url",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 25,
+          "resolvedId": "backend/data/integrations.py:url:48"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/blocks/test_youtube.py:test_extract_video_id_short_url:28",
+      "name": "test_extract_video_id_short_url",
+      "startLine": 28,
+      "endLine": 32,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "extract_video_id",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 31,
+          "resolvedId": "backend/blocks/youtube.py:extract_video_id:102"
+        },
+        {
+          "target": "url",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 31,
+          "resolvedId": "backend/data/integrations.py:url:48"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/blocks/test_youtube.py:test_extract_video_id_embed_url:34",
+      "name": "test_extract_video_id_embed_url",
+      "startLine": 34,
+      "endLine": 38,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "extract_video_id",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 37,
+          "resolvedId": "backend/blocks/youtube.py:extract_video_id:102"
+        },
+        {
+          "target": "url",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 37,
+          "resolvedId": "backend/data/integrations.py:url:48"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/blocks/test_youtube.py:test_extract_video_id_shorts_url:40",
+      "name": "test_extract_video_id_shorts_url",
+      "startLine": 40,
+      "endLine": 44,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "extract_video_id",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 43,
+          "resolvedId": "backend/blocks/youtube.py:extract_video_id:102"
+        },
+        {
+          "target": "url",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 43,
+          "resolvedId": "backend/data/integrations.py:url:48"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/blocks/test_youtube.py:test_extract_video_id_shorts_url_with_params:46",
+      "name": "test_extract_video_id_shorts_url_with_params",
+      "startLine": 46,
+      "endLine": 50,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "extract_video_id",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 49,
+          "resolvedId": "backend/blocks/youtube.py:extract_video_id:102"
+        },
+        {
+          "target": "url",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 49,
+          "resolvedId": "backend/data/integrations.py:url:48"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/blocks/test_youtube.py:test_get_transcript_english_available:53",
+      "name": "test_get_transcript_english_available",
+      "startLine": 53,
+      "endLine": 70,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "Mock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 56
+        },
+        {
+          "target": "Mock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 58
+        },
+        {
+          "target": "get_transcript",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 62,
+          "resolvedId": "backend/blocks/youtube.py:get_transcript:118"
+        },
+        {
+          "target": "assert_called_once",
+          "resolved": false,
+          "confidence": 0,
+          "line": 66
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 68
+        },
+        {
+          "target": "proxy_config",
+          "resolved": false,
+          "confidence": 0,
+          "line": 68
+        },
+        {
+          "target": "assert_called_once_with",
+          "resolved": false,
+          "confidence": 0,
+          "line": 69
+        },
+        {
+          "target": "assert_not_called",
+          "resolved": false,
+          "confidence": 0,
+          "line": 70
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "credentials",
+          "operation": "read",
+          "line": 62,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "test/blocks/test_youtube.py:test_get_transcript_with_custom_credentials:73",
+      "name": "test_get_transcript_with_custom_credentials",
+      "startLine": 73,
+      "endLine": 98,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "Mock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 76
+        },
+        {
+          "target": "Mock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 78
+        },
+        {
+          "target": "UserPasswordCredentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 81
+        },
+        {
+          "target": "SecretStr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 83
+        },
+        {
+          "target": "SecretStr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 84
+        },
+        {
+          "target": "get_transcript",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 88,
+          "resolvedId": "backend/blocks/youtube.py:get_transcript:118"
+        },
+        {
+          "target": "credentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 88
+        },
+        {
+          "target": "assert_called_once",
+          "resolved": false,
+          "confidence": 0,
+          "line": 92
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 94
+        },
+        {
+          "target": "proxy_config",
+          "resolved": false,
+          "confidence": 0,
+          "line": 94
+        },
+        {
+          "target": "assert_called_once_with",
+          "resolved": false,
+          "confidence": 0,
+          "line": 97
+        },
+        {
+          "target": "assert_not_called",
+          "resolved": false,
+          "confidence": 0,
+          "line": 98
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "credentials",
+          "operation": "read",
+          "line": 88,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "test/blocks/test_youtube.py:test_get_transcript_fallback_to_first_available:101",
+      "name": "test_get_transcript_fallback_to_first_available",
+      "startLine": 101,
+      "endLine": 132,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "Mock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 104
+        },
+        {
+          "target": "Mock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 108
+        },
+        {
+          "target": "Mock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 109
+        },
+        {
+          "target": "Mock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 110
+        },
+        {
+          "target": "NoTranscriptFound",
+          "resolved": false,
+          "confidence": 0,
+          "line": 119
+        },
+        {
+          "target": "mock_transcript_list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 120
+        },
+        {
+          "target": "get_transcript",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 125,
+          "resolvedId": "backend/blocks/youtube.py:get_transcript:118"
+        },
+        {
+          "target": "assert_called_once",
+          "resolved": false,
+          "confidence": 0,
+          "line": 129
+        },
+        {
+          "target": "assert_called_once_with",
+          "resolved": false,
+          "confidence": 0,
+          "line": 130
+        },
+        {
+          "target": "assert_called_once_with",
+          "resolved": false,
+          "confidence": 0,
+          "line": 131
+        },
+        {
+          "target": "assert_called_once",
+          "resolved": false,
+          "confidence": 0,
+          "line": 132
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "credentials",
+          "operation": "read",
+          "line": 125,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "test/blocks/test_youtube.py:test_get_transcript_prefers_manually_created:135",
+      "name": "test_get_transcript_prefers_manually_created",
+      "startLine": 135,
+      "endLine": 167,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "Mock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 138
+        },
+        {
+          "target": "Mock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 142
+        },
+        {
+          "target": "Mock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 143
+        },
+        {
+          "target": "Mock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 144
+        },
+        {
+          "target": "Mock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 145
+        },
+        {
+          "target": "NoTranscriptFound",
+          "resolved": false,
+          "confidence": 0,
+          "line": 155
+        },
+        {
+          "target": "mock_transcript_list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 156
+        },
+        {
+          "target": "get_transcript",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 161,
+          "resolvedId": "backend/blocks/youtube.py:get_transcript:118"
+        },
+        {
+          "target": "assert_called_once",
+          "resolved": false,
+          "confidence": 0,
+          "line": 165
+        },
+        {
+          "target": "assert_called_once",
+          "resolved": false,
+          "confidence": 0,
+          "line": 166
+        },
+        {
+          "target": "assert_not_called",
+          "resolved": false,
+          "confidence": 0,
+          "line": 167
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "credentials",
+          "operation": "read",
+          "line": 161,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "test/blocks/test_youtube.py:test_get_transcript_no_transcripts_available:170",
+      "name": "test_get_transcript_no_transcripts_available",
+      "startLine": 170,
+      "endLine": 191,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "Mock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 173
+        },
+        {
+          "target": "Mock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 177
+        },
+        {
+          "target": "NoTranscriptFound",
+          "resolved": false,
+          "confidence": 0,
+          "line": 182
+        },
+        {
+          "target": "mock_transcript_list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 183
+        },
+        {
+          "target": "raises",
+          "resolved": false,
+          "confidence": 0,
+          "line": 189
+        },
+        {
+          "target": "get_transcript",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 190,
+          "resolvedId": "backend/blocks/youtube.py:get_transcript:118"
+        },
+        {
+          "target": "assert_called_once",
+          "resolved": false,
+          "confidence": 0,
+          "line": 191
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "credentials",
+          "operation": "read",
+          "line": 190,
+          "fields": []
+        }
+      ]
+    }
+  ]
+}

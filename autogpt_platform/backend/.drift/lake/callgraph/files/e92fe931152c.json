@@ -1,0 +1,106 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.229Z",
+  "checksum": "108c2e50916b791a",
+  "file": "backend/integrations/providers.py",
+  "functions": [
+    {
+      "id": "backend/integrations/providers.py:_missing_:56",
+      "name": "_missing_",
+      "startLine": 56,
+      "endLine": 68,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 62
+        },
+        {
+          "target": "value",
+          "resolved": false,
+          "confidence": 0,
+          "line": 62
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 62
+        },
+        {
+          "target": "__new__",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 64,
+          "resolvedId": "backend/util/timezone_name.py:__new__:53"
+        },
+        {
+          "target": "value",
+          "resolved": false,
+          "confidence": 0,
+          "line": 64
+        },
+        {
+          "target": "upper",
+          "resolved": false,
+          "confidence": 0,
+          "line": 65
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/integrations/providers.py:__get_pydantic_json_schema__:71",
+      "name": "__get_pydantic_json_schema__",
+      "startLine": 71,
+      "endLine": 92,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "handler",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 77,
+          "resolvedId": "backend/api/rest_api.py:handler:199"
+        },
+        {
+          "target": "schema",
+          "resolved": false,
+          "confidence": 0,
+          "line": 77
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/integrations/providers.py:__get_pydantic_core_schema__:95",
+      "name": "__get_pydantic_core_schema__",
+      "startLine": 95,
+      "endLine": 105,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "no_info_after_validator_function",
+          "resolved": false,
+          "confidence": 0,
+          "line": 102
+        },
+        {
+          "target": "str_schema",
+          "resolved": false,
+          "confidence": 0,
+          "line": 104
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

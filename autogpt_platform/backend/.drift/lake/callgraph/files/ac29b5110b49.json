@@ -1,0 +1,73 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.201Z",
+  "checksum": "e2c6d2afe15ae180",
+  "file": "backend/api/features/chat/tools/find_agent.py",
+  "functions": [
+    {
+      "id": "backend/api/features/chat/tools/find_agent.py:name:16",
+      "name": "name",
+      "startLine": 16,
+      "endLine": 17,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/chat/tools/find_agent.py:description:20",
+      "name": "description",
+      "startLine": 20,
+      "endLine": 23,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/chat/tools/find_agent.py:parameters:26",
+      "name": "parameters",
+      "startLine": 26,
+      "endLine": 36,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/chat/tools/find_agent.py:_execute:38",
+      "name": "_execute",
+      "startLine": 38,
+      "endLine": 46,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "search_agents",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 41,
+          "resolvedId": "backend/api/features/chat/tools/agent_search.py:search_agents:23"
+        },
+        {
+          "target": "strip",
+          "resolved": false,
+          "confidence": 0,
+          "line": 42
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 42,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

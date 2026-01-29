@@ -627,6 +627,7 @@ from backend.util.exceptions import BlockInputError, BlockExecutionError
 ```
 
 | Exception | Use Case | Example |
+
 |-----------|----------|---------|
 | `BlockInputError` | Invalid user input, validation failures, missing required fields | Bad API key format, invalid URL, missing credentials |
 | `BlockExecutionError` | Runtime failures the user can address | API errors, auth failures, resource not found, rate limits |

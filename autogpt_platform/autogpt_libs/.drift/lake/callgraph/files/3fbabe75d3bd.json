@@ -1,0 +1,264 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:21.046Z",
+  "checksum": "20b6f3324ddbcc98",
+  "file": "autogpt_libs/api_key/keysmith.py",
+  "functions": [
+    {
+      "id": "autogpt_libs/api_key/keysmith.py:generate_key:23",
+      "name": "generate_key",
+      "startLine": 23,
+      "endLine": 34,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "token_urlsafe",
+          "resolved": false,
+          "confidence": 0,
+          "line": 25
+        },
+        {
+          "target": "hash_key",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 26,
+          "resolvedId": "autogpt_libs/api_key/keysmith.py:hash_key:58"
+        },
+        {
+          "target": "raw_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 26
+        },
+        {
+          "target": "APIKeyContainer",
+          "resolved": false,
+          "confidence": 0,
+          "line": 28
+        },
+        {
+          "target": "raw_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 29
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "autogpt_libs/api_key/keysmith.py:verify_key:36",
+      "name": "verify_key",
+      "startLine": 36,
+      "endLine": 56,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "startswith",
+          "resolved": false,
+          "confidence": 0,
+          "line": 43
+        },
+        {
+          "target": "hexdigest",
+          "resolved": false,
+          "confidence": 0,
+          "line": 48
+        },
+        {
+          "target": "sha256",
+          "resolved": false,
+          "confidence": 0,
+          "line": 48
+        },
+        {
+          "target": "encode",
+          "resolved": false,
+          "confidence": 0,
+          "line": 48
+        },
+        {
+          "target": "compare_digest",
+          "resolved": false,
+          "confidence": 0,
+          "line": 49
+        },
+        {
+          "target": "legacy_hash",
+          "resolved": false,
+          "confidence": 0,
+          "line": 49
+        },
+        {
+          "target": "known_hash",
+          "resolved": false,
+          "confidence": 0,
+          "line": 49
+        },
+        {
+          "target": "fromhex",
+          "resolved": false,
+          "confidence": 0,
+          "line": 52
+        },
+        {
+          "target": "known_salt",
+          "resolved": false,
+          "confidence": 0,
+          "line": 52
+        },
+        {
+          "target": "_hash_key_with_salt",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 53,
+          "resolvedId": "autogpt_libs/api_key/keysmith.py:_hash_key_with_salt:71"
+        },
+        {
+          "target": "provided_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 53
+        },
+        {
+          "target": "salt_bytes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 53
+        },
+        {
+          "target": "compare_digest",
+          "resolved": false,
+          "confidence": 0,
+          "line": 54
+        },
+        {
+          "target": "provided_hash",
+          "resolved": false,
+          "confidence": 0,
+          "line": 54
+        },
+        {
+          "target": "known_hash",
+          "resolved": false,
+          "confidence": 0,
+          "line": 54
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "autogpt_libs/api_key/keysmith.py:hash_key:58",
+      "name": "hash_key",
+      "startLine": 58,
+      "endLine": 65,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "startswith",
+          "resolved": false,
+          "confidence": 0,
+          "line": 60
+        },
+        {
+          "target": "ValueError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 61
+        },
+        {
+          "target": "_generate_salt",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 63,
+          "resolvedId": "autogpt_libs/api_key/keysmith.py:_generate_salt:67"
+        },
+        {
+          "target": "_hash_key_with_salt",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 64,
+          "resolvedId": "autogpt_libs/api_key/keysmith.py:_hash_key_with_salt:71"
+        },
+        {
+          "target": "raw_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 64
+        },
+        {
+          "target": "salt",
+          "resolved": false,
+          "confidence": 0,
+          "line": 64
+        },
+        {
+          "target": "hex",
+          "resolved": false,
+          "confidence": 0,
+          "line": 65
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "autogpt_libs/api_key/keysmith.py:_generate_salt:67",
+      "name": "_generate_salt",
+      "startLine": 67,
+      "endLine": 69,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "token_bytes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 69
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "autogpt_libs/api_key/keysmith.py:_hash_key_with_salt:71",
+      "name": "_hash_key_with_salt",
+      "startLine": 71,
+      "endLine": 81,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "Scrypt",
+          "resolved": false,
+          "confidence": 0,
+          "line": 73
+        },
+        {
+          "target": "derive",
+          "resolved": false,
+          "confidence": 0,
+          "line": 80
+        },
+        {
+          "target": "encode",
+          "resolved": false,
+          "confidence": 0,
+          "line": 80
+        },
+        {
+          "target": "hex",
+          "resolved": false,
+          "confidence": 0,
+          "line": 81
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

@@ -1,0 +1,237 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.227Z",
+  "checksum": "fe4e812275d292bc",
+  "file": "backend/api/test_helpers.py",
+  "functions": [
+    {
+      "id": "backend/api/test_helpers.py:assert_response_status:8",
+      "name": "assert_response_status",
+      "startLine": 8,
+      "endLine": 30,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 25,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "dumps",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 26,
+          "resolvedId": "backend/util/json.py:dumps:20"
+        },
+        {
+          "target": "body",
+          "resolved": false,
+          "confidence": 0,
+          "line": 26
+        },
+        {
+          "target": "AssertionError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 30
+        },
+        {
+          "target": "error_msg",
+          "resolved": false,
+          "confidence": 0,
+          "line": 30
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/test_helpers.py:safe_parse_json:33",
+      "name": "safe_parse_json",
+      "startLine": 33,
+      "endLine": 55,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 49,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "AssertionError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 55
+        },
+        {
+          "target": "error_msg",
+          "resolved": false,
+          "confidence": 0,
+          "line": 55
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/test_helpers.py:assert_error_response_structure:58",
+      "name": "assert_error_response_structure",
+      "startLine": 58,
+      "endLine": 90,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "assert_response_status",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 73,
+          "resolvedId": "backend/api/test_helpers.py:assert_response_status:8"
+        },
+        {
+          "target": "response",
+          "resolved": false,
+          "confidence": 0,
+          "line": 73
+        },
+        {
+          "target": "expected_status",
+          "resolved": false,
+          "confidence": 0,
+          "line": 73
+        },
+        {
+          "target": "safe_parse_json",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 75,
+          "resolvedId": "backend/api/test_helpers.py:safe_parse_json:33"
+        },
+        {
+          "target": "response",
+          "resolved": false,
+          "confidence": 0,
+          "line": 75
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 83
+        },
+        {
+          "target": "detail",
+          "resolved": false,
+          "confidence": 0,
+          "line": 83
+        },
+        {
+          "target": "list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 83
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/test_helpers.py:assert_mock_called_with_partial:93",
+      "name": "assert_mock_called_with_partial",
+      "startLine": 93,
+      "endLine": 110,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "items",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 104,
+          "resolvedId": "backend/integrations/oauth/__init__.py:items:123"
+        },
+        {
+          "target": "list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 107
+        },
+        {
+          "target": "keys",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 107,
+          "resolvedId": "backend/integrations/oauth/__init__.py:keys:100"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/test_helpers.py:override_config:114",
+      "name": "override_config",
+      "startLine": 114,
+      "endLine": 131,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "getattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 126
+        },
+        {
+          "target": "attribute",
+          "resolved": false,
+          "confidence": 0,
+          "line": 126
+        },
+        {
+          "target": "setattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 127
+        },
+        {
+          "target": "attribute",
+          "resolved": false,
+          "confidence": 0,
+          "line": 127
+        },
+        {
+          "target": "value",
+          "resolved": false,
+          "confidence": 0,
+          "line": 127
+        },
+        {
+          "target": "setattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 131
+        },
+        {
+          "target": "attribute",
+          "resolved": false,
+          "confidence": 0,
+          "line": 131
+        },
+        {
+          "target": "original",
+          "resolved": false,
+          "confidence": 0,
+          "line": 131
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

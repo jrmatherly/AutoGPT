@@ -1,0 +1,442 @@
+{
+  "version": "1.0.0",
+  "category": "data-access",
+  "patterns": [
+    {
+      "id": "0cfdc6d9e06ec4c8",
+      "subcategory": "transaction",
+      "name": "Transaction Patterns Detector",
+      "description": "Learns transaction patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "data-access/transaction",
+          "patternId": "data-access/transaction/unknown"
+        }
+      },
+      "confidence": {
+        "frequency": 0.1,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.5229411764705882,
+        "level": "low"
+      },
+      "locations": [
+        {
+          "file": "autogpt_libs/utils/synchronize.py",
+          "line": 14,
+          "column": 45,
+          "isOutlier": false,
+          "confidence": 0.5229411764705882
+        },
+        {
+          "file": "autogpt_libs/utils/synchronize.py",
+          "line": 15,
+          "column": 34,
+          "isOutlier": false,
+          "confidence": 0.5229411764705882
+        },
+        {
+          "file": "autogpt_libs/utils/synchronize.py",
+          "line": 35,
+          "column": 23,
+          "isOutlier": false,
+          "confidence": 0.5229411764705882
+        },
+        {
+          "file": "autogpt_libs/utils/synchronize.py",
+          "line": 45,
+          "column": 15,
+          "isOutlier": false,
+          "confidence": 0.5229411764705882
+        },
+        {
+          "file": "autogpt_libs/utils/synchronize.py",
+          "line": 46,
+          "column": 16,
+          "isOutlier": false,
+          "confidence": 0.5229411764705882
+        },
+        {
+          "file": "autogpt_libs/utils/synchronize.py",
+          "line": 52,
+          "column": 24,
+          "isOutlier": false,
+          "confidence": 0.5229411764705882
+        },
+        {
+          "file": "autogpt_libs/utils/synchronize.py",
+          "line": 54,
+          "column": 19,
+          "isOutlier": false,
+          "confidence": 0.5229411764705882
+        },
+        {
+          "file": "autogpt_libs/utils/synchronize.py",
+          "line": 59,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.5229411764705882
+        },
+        {
+          "file": "autogpt_libs/utils/synchronize.py",
+          "line": 59,
+          "column": 30,
+          "isOutlier": false,
+          "confidence": 0.5229411764705882
+        },
+        {
+          "file": "autogpt_libs/utils/synchronize.py",
+          "line": 61,
+          "column": 27,
+          "isOutlier": false,
+          "confidence": 0.5229411764705882
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:33:06.623Z",
+        "lastSeen": "2026-01-29T06:33:06.623Z",
+        "source": "auto-detected",
+        "tags": [
+          "data-access",
+          "transaction"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "2efe3b412975ada1",
+      "subcategory": "transaction",
+      "name": "Transaction Patterns Detector",
+      "description": "Learns transaction patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "data-access/transaction",
+          "patternId": "data-access/transaction/assignment"
+        }
+      },
+      "confidence": {
+        "frequency": 0.08,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.7229411764705882,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "autogpt_libs/utils/synchronize.py",
+          "line": 23,
+          "column": 14,
+          "isOutlier": false,
+          "confidence": 0.7229411764705882
+        },
+        {
+          "file": "autogpt_libs/utils/synchronize.py",
+          "line": 30,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.7229411764705882
+        },
+        {
+          "file": "autogpt_libs/utils/synchronize.py",
+          "line": 39,
+          "column": 25,
+          "isOutlier": false,
+          "confidence": 0.7229411764705882
+        },
+        {
+          "file": "autogpt_libs/utils/synchronize.py",
+          "line": 44,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.7229411764705882
+        },
+        {
+          "file": "autogpt_libs/utils/synchronize.py",
+          "line": 44,
+          "column": 25,
+          "isOutlier": false,
+          "confidence": 0.7229411764705882
+        },
+        {
+          "file": "autogpt_libs/utils/synchronize.py",
+          "line": 50,
+          "column": 14,
+          "isOutlier": false,
+          "confidence": 0.7229411764705882
+        },
+        {
+          "file": "autogpt_libs/utils/synchronize.py",
+          "line": 50,
+          "column": 27,
+          "isOutlier": false,
+          "confidence": 0.7229411764705882
+        },
+        {
+          "file": "autogpt_libs/utils/synchronize.py",
+          "line": 58,
+          "column": 25,
+          "isOutlier": false,
+          "confidence": 0.7229411764705882
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:33:06.623Z",
+        "lastSeen": "2026-01-29T06:33:06.623Z",
+        "source": "auto-detected",
+        "tags": [
+          "data-access",
+          "transaction"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "acb91232602f18f1",
+      "subcategory": "transaction",
+      "name": "Transaction Patterns Detector",
+      "description": "Learns transaction patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "data-access/transaction",
+          "patternId": "data-access/transaction/property_access"
+        }
+      },
+      "confidence": {
+        "frequency": 0.04,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.7229411764705882,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "autogpt_libs/utils/synchronize.py",
+          "line": 26,
+          "column": 14,
+          "isOutlier": false,
+          "confidence": 0.7229411764705882
+        },
+        {
+          "file": "autogpt_libs/utils/synchronize.py",
+          "line": 26,
+          "column": 35,
+          "isOutlier": false,
+          "confidence": 0.7229411764705882
+        },
+        {
+          "file": "autogpt_libs/utils/synchronize.py",
+          "line": 41,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 0.7229411764705882
+        },
+        {
+          "file": "autogpt_libs/utils/synchronize.py",
+          "line": 41,
+          "column": 46,
+          "isOutlier": false,
+          "confidence": 0.7229411764705882
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:33:06.623Z",
+        "lastSeen": "2026-01-29T06:33:06.623Z",
+        "source": "auto-detected",
+        "tags": [
+          "data-access",
+          "transaction"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "14a2e132a4068564",
+      "subcategory": "transaction",
+      "name": "Transaction Patterns Detector",
+      "description": "Learns transaction patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "data-access/transaction",
+          "patternId": "data-access/transaction/function_definition"
+        }
+      },
+      "confidence": {
+        "frequency": 0.01,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.8729411764705882,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "autogpt_libs/utils/synchronize.py",
+          "line": 29,
+          "column": 15,
+          "isOutlier": false,
+          "confidence": 0.8729411764705882
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:33:06.623Z",
+        "lastSeen": "2026-01-29T06:33:06.623Z",
+        "source": "auto-detected",
+        "tags": [
+          "data-access",
+          "transaction"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "d8f9aac40c5350c9",
+      "subcategory": "transaction",
+      "name": "Transaction Patterns Detector",
+      "description": "Learns transaction patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "data-access/transaction",
+          "patternId": "data-access/transaction/function_call"
+        }
+      },
+      "confidence": {
+        "frequency": 0.08,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.7229411764705882,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "autogpt_libs/utils/synchronize.py",
+          "line": 34,
+          "column": 23,
+          "isOutlier": false,
+          "confidence": 0.7229411764705882
+        },
+        {
+          "file": "autogpt_libs/utils/synchronize.py",
+          "line": 34,
+          "column": 28,
+          "isOutlier": false,
+          "confidence": 0.7229411764705882
+        },
+        {
+          "file": "autogpt_libs/utils/synchronize.py",
+          "line": 34,
+          "column": 49,
+          "isOutlier": false,
+          "confidence": 0.7229411764705882
+        },
+        {
+          "file": "autogpt_libs/utils/synchronize.py",
+          "line": 51,
+          "column": 24,
+          "isOutlier": false,
+          "confidence": 0.7229411764705882
+        },
+        {
+          "file": "autogpt_libs/utils/synchronize.py",
+          "line": 51,
+          "column": 29,
+          "isOutlier": false,
+          "confidence": 0.7229411764705882
+        },
+        {
+          "file": "autogpt_libs/utils/synchronize.py",
+          "line": 60,
+          "column": 27,
+          "isOutlier": false,
+          "confidence": 0.7229411764705882
+        },
+        {
+          "file": "autogpt_libs/utils/synchronize.py",
+          "line": 60,
+          "column": 32,
+          "isOutlier": false,
+          "confidence": 0.7229411764705882
+        },
+        {
+          "file": "autogpt_libs/utils/synchronize.py",
+          "line": 60,
+          "column": 53,
+          "isOutlier": false,
+          "confidence": 0.7229411764705882
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:33:06.623Z",
+        "lastSeen": "2026-01-29T06:33:06.623Z",
+        "source": "auto-detected",
+        "tags": [
+          "data-access",
+          "transaction"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "f06c75f290e83c3c",
+      "subcategory": "transaction",
+      "name": "Transaction Patterns Detector",
+      "description": "Learns transaction patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "data-access/transaction",
+          "patternId": "data-access/transaction/conditional"
+        }
+      },
+      "confidence": {
+        "frequency": 0.01,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.7229411764705882,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "autogpt_libs/utils/synchronize.py",
+          "line": 40,
+          "column": 32,
+          "isOutlier": false,
+          "confidence": 0.7229411764705882
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:33:06.623Z",
+        "lastSeen": "2026-01-29T06:33:06.623Z",
+        "source": "auto-detected",
+        "tags": [
+          "data-access",
+          "transaction"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    }
+  ],
+  "lastUpdated": "2026-01-29T07:18:31.041Z",
+  "checksum": "9945868df5d7c9a2"
+}

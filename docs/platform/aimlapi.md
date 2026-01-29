@@ -45,8 +45,8 @@ Or click **“Build”** in the navigation bar.
 
 ![Step 3 AI Block](../imgs/aimlapi/Step%203%20AI%20Block.png)
 
-2. In the search bar, type `AI Text Generator`.
-3. Drag the block into the canvas.
+1. In the search bar, type `AI Text Generator`.
+2. Drag the block into the canvas.
 
 ![Step 4 AI Generator Block](../imgs/aimlapi/Step%204%20AI%20Generator%20Block.png)
 

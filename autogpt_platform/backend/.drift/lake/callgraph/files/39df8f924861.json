@@ -1,0 +1,299 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.147Z",
+  "checksum": "c2af02540db06e0c",
+  "file": "backend/blocks/smartlead/_api.py",
+  "functions": [
+    {
+      "id": "backend/blocks/smartlead/_api.py:__init__:20",
+      "name": "__init__",
+      "startLine": 20,
+      "endLine": 22,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "Requests",
+          "resolved": false,
+          "confidence": 0,
+          "line": 22
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/smartlead/_api.py:_add_auth_to_url:24",
+      "name": "_add_auth_to_url",
+      "startLine": 24,
+      "endLine": 25,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/smartlead/_api.py:_handle_error:27",
+      "name": "_handle_error",
+      "startLine": 27,
+      "endLine": 28,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "replace",
+          "resolved": false,
+          "confidence": 0,
+          "line": 28
+        },
+        {
+          "target": "__str__",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 28,
+          "resolvedId": "backend/util/service.py:__str__:173"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/smartlead/_api.py:create_campaign:30",
+      "name": "create_campaign",
+      "startLine": 30,
+      "endLine": 43,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "post",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 34,
+          "resolvedId": "backend/util/request.py:post:563"
+        },
+        {
+          "target": "_add_auth_to_url",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 35,
+          "resolvedId": "backend/blocks/smartlead/_api.py:_add_auth_to_url:24"
+        },
+        {
+          "target": "model_dump",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 36,
+          "resolvedId": "backend/blocks/apollo/models.py:model_dump:11"
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 38,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "CreateCampaignResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 39
+        },
+        {
+          "target": "ValueError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 41
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 41
+        },
+        {
+          "target": "e",
+          "resolved": false,
+          "confidence": 0,
+          "line": 41
+        },
+        {
+          "target": "ValueError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 43
+        },
+        {
+          "target": "_handle_error",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 43,
+          "resolvedId": "backend/blocks/smartlead/_api.py:_handle_error:27"
+        },
+        {
+          "target": "e",
+          "resolved": false,
+          "confidence": 0,
+          "line": 43
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/smartlead/_api.py:add_leads_to_campaign:45",
+      "name": "add_leads_to_campaign",
+      "startLine": 45,
+      "endLine": 67,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "post",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 49,
+          "resolvedId": "backend/util/request.py:post:563"
+        },
+        {
+          "target": "_add_auth_to_url",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 50,
+          "resolvedId": "backend/blocks/smartlead/_api.py:_add_auth_to_url:24"
+        },
+        {
+          "target": "model_dump",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 53,
+          "resolvedId": "backend/blocks/apollo/models.py:model_dump:11"
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 55,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "AddLeadsToCampaignResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 56
+        },
+        {
+          "target": "ValueError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 58
+        },
+        {
+          "target": "ValueError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 63
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 63
+        },
+        {
+          "target": "e",
+          "resolved": false,
+          "confidence": 0,
+          "line": 63
+        },
+        {
+          "target": "ValueError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 65
+        },
+        {
+          "target": "_handle_error",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 66,
+          "resolvedId": "backend/blocks/smartlead/_api.py:_handle_error:27"
+        },
+        {
+          "target": "e",
+          "resolved": false,
+          "confidence": 0,
+          "line": 66
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/smartlead/_api.py:save_campaign_sequences:69",
+      "name": "save_campaign_sequences",
+      "startLine": 69,
+      "endLine": 99,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "post",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 89,
+          "resolvedId": "backend/util/request.py:post:563"
+        },
+        {
+          "target": "_add_auth_to_url",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 90,
+          "resolvedId": "backend/blocks/smartlead/_api.py:_add_auth_to_url:24"
+        },
+        {
+          "target": "model_dump",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 93,
+          "resolvedId": "backend/blocks/apollo/models.py:model_dump:11"
+        },
+        {
+          "target": "SaveSequencesResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 95
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 95,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "ValueError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 97
+        },
+        {
+          "target": "replace",
+          "resolved": false,
+          "confidence": 0,
+          "line": 98
+        },
+        {
+          "target": "__str__",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 98,
+          "resolvedId": "backend/util/service.py:__str__:173"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

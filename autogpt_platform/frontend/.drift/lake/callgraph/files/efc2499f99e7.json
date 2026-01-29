@@ -1,0 +1,242 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.208Z",
+  "checksum": "2e7c41b6610a6541",
+  "file": "src/components/contextual/CredentialsInput/helpers.ts",
+  "functions": [
+    {
+      "id": "src/components/contextual/CredentialsInput/helpers.ts:getActionButtonText:70",
+      "name": "getActionButtonText",
+      "startLine": 70,
+      "endLine": 90,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/contextual/CredentialsInput/helpers.ts:getCredentialDisplayName:92",
+      "name": "getCredentialDisplayName",
+      "startLine": 92,
+      "endLine": 99,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/contextual/CredentialsInput/helpers.ts:isSystemCredential:104",
+      "name": "isSystemCredential",
+      "startLine": 104,
+      "endLine": 116,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "toLowerCase",
+          "resolved": false,
+          "confidence": 0,
+          "line": 110
+        },
+        {
+          "target": "includes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 112
+        },
+        {
+          "target": "startsWith",
+          "resolved": false,
+          "confidence": 0,
+          "line": 113
+        },
+        {
+          "target": "includes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 114
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/contextual/CredentialsInput/helpers.ts:filterSystemCredentials:118",
+      "name": "filterSystemCredentials",
+      "startLine": 118,
+      "endLine": 122,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "filter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 121
+        },
+        {
+          "target": "isSystemCredential",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 121,
+          "resolvedId": "src/components/contextual/CredentialsInput/helpers.ts:isSystemCredential:104"
+        },
+        {
+          "target": "cred",
+          "resolved": false,
+          "confidence": 0,
+          "line": 121
+        },
+        {
+          "target": "isSystemCredential",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 121,
+          "resolvedId": "src/components/contextual/CredentialsInput/helpers.ts:isSystemCredential:104"
+        },
+        {
+          "target": "cred",
+          "resolved": false,
+          "confidence": 0,
+          "line": 121
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/contextual/CredentialsInput/helpers.ts:$filter$1:121",
+      "name": "$filter$1",
+      "startLine": 121,
+      "endLine": 121,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "filter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 121
+        },
+        {
+          "target": "isSystemCredential",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 121,
+          "resolvedId": "src/components/contextual/CredentialsInput/helpers.ts:isSystemCredential:104"
+        },
+        {
+          "target": "cred",
+          "resolved": false,
+          "confidence": 0,
+          "line": 121
+        },
+        {
+          "target": "isSystemCredential",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 121,
+          "resolvedId": "src/components/contextual/CredentialsInput/helpers.ts:isSystemCredential:104"
+        },
+        {
+          "target": "cred",
+          "resolved": false,
+          "confidence": 0,
+          "line": 121
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/contextual/CredentialsInput/helpers.ts:getSystemCredentials:124",
+      "name": "getSystemCredentials",
+      "startLine": 124,
+      "endLine": 128,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "filter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 127
+        },
+        {
+          "target": "isSystemCredential",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 127,
+          "resolvedId": "src/components/contextual/CredentialsInput/helpers.ts:isSystemCredential:104"
+        },
+        {
+          "target": "cred",
+          "resolved": false,
+          "confidence": 0,
+          "line": 127
+        },
+        {
+          "target": "isSystemCredential",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 127,
+          "resolvedId": "src/components/contextual/CredentialsInput/helpers.ts:isSystemCredential:104"
+        },
+        {
+          "target": "cred",
+          "resolved": false,
+          "confidence": 0,
+          "line": 127
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/contextual/CredentialsInput/helpers.ts:$filter$1:127",
+      "name": "$filter$1",
+      "startLine": 127,
+      "endLine": 127,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "filter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 127
+        },
+        {
+          "target": "isSystemCredential",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 127,
+          "resolvedId": "src/components/contextual/CredentialsInput/helpers.ts:isSystemCredential:104"
+        },
+        {
+          "target": "cred",
+          "resolved": false,
+          "confidence": 0,
+          "line": 127
+        },
+        {
+          "target": "isSystemCredential",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 127,
+          "resolvedId": "src/components/contextual/CredentialsInput/helpers.ts:isSystemCredential:104"
+        },
+        {
+          "target": "cred",
+          "resolved": false,
+          "confidence": 0,
+          "line": 127
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.121Z",
+  "checksum": "0333f72ce2e3370f",
+  "file": "backend/blocks/firecrawl/crawl.py",
+  "functions": [
+    {
+      "id": "backend/blocks/firecrawl/crawl.py:__init__:64",
+      "name": "__init__",
+      "startLine": 64,
+      "endLine": 71,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 65,
+          "resolvedId": "backend/blocks/firecrawl/crawl.py:__init__:64"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 65
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/firecrawl/crawl.py:run:73",
+      "name": "run",
+      "startLine": 73,
+      "endLine": 108,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "FirecrawlApp",
+          "resolved": false,
+          "confidence": 0,
+          "line": 76
+        },
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 76,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        },
+        {
+          "target": "crawl",
+          "resolved": false,
+          "confidence": 0,
+          "line": 79
+        },
+        {
+          "target": "ScrapeOptions",
+          "resolved": false,
+          "confidence": 0,
+          "line": 82
+        },
+        {
+          "target": "convert_to_format_options",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 83,
+          "resolvedId": "backend/blocks/firecrawl/_format_utils.py:convert_to_format_options:10"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

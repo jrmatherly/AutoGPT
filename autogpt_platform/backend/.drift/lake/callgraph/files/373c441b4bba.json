@@ -1,0 +1,451 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.145Z",
+  "checksum": "c15007ddb50dad64",
+  "file": "backend/api/features/chat/service_test.py",
+  "functions": [
+    {
+      "id": "backend/api/features/chat/service_test.py:test_stream_chat_completion:19",
+      "name": "test_stream_chat_completion",
+      "startLine": 19,
+      "endLine": 45,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "getenv",
+          "resolved": false,
+          "confidence": 0,
+          "line": 23
+        },
+        {
+          "target": "skip",
+          "resolved": false,
+          "confidence": 0,
+          "line": 25
+        },
+        {
+          "target": "create_chat_session",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 27,
+          "resolvedId": "backend/api/features/chat/model.py:create_chat_session:500"
+        },
+        {
+          "target": "test_user_id",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 27,
+          "resolvedId": "backend/api/conftest.py:test_user_id:15"
+        },
+        {
+          "target": "stream_chat_completion",
+          "resolved": false,
+          "confidence": 0,
+          "line": 32
+        },
+        {
+          "target": "info",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 35,
+          "resolvedId": "backend/util/logging.py:info:41"
+        },
+        {
+          "target": "chunk",
+          "resolved": false,
+          "confidence": 0,
+          "line": 35
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 36
+        },
+        {
+          "target": "chunk",
+          "resolved": false,
+          "confidence": 0,
+          "line": 36
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 38
+        },
+        {
+          "target": "chunk",
+          "resolved": false,
+          "confidence": 0,
+          "line": 38
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 40
+        },
+        {
+          "target": "chunk",
+          "resolved": false,
+          "confidence": 0,
+          "line": 40
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/chat/service_test.py:test_stream_chat_completion_with_tool_calls:49",
+      "name": "test_stream_chat_completion_with_tool_calls",
+      "startLine": 49,
+      "endLine": 82,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "getenv",
+          "resolved": false,
+          "confidence": 0,
+          "line": 53
+        },
+        {
+          "target": "skip",
+          "resolved": false,
+          "confidence": 0,
+          "line": 55
+        },
+        {
+          "target": "create_chat_session",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 57,
+          "resolvedId": "backend/api/features/chat/model.py:create_chat_session:500"
+        },
+        {
+          "target": "test_user_id",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 57,
+          "resolvedId": "backend/api/conftest.py:test_user_id:15"
+        },
+        {
+          "target": "upsert_chat_session",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 58,
+          "resolvedId": "backend/api/features/chat/model.py:upsert_chat_session:442"
+        },
+        {
+          "target": "session",
+          "resolved": false,
+          "confidence": 0,
+          "line": 58
+        },
+        {
+          "target": "stream_chat_completion",
+          "resolved": false,
+          "confidence": 0,
+          "line": 63
+        },
+        {
+          "target": "info",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 68,
+          "resolvedId": "backend/util/logging.py:info:41"
+        },
+        {
+          "target": "chunk",
+          "resolved": false,
+          "confidence": 0,
+          "line": 68
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 69
+        },
+        {
+          "target": "chunk",
+          "resolved": false,
+          "confidence": 0,
+          "line": 69
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        },
+        {
+          "target": "chunk",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 74
+        },
+        {
+          "target": "chunk",
+          "resolved": false,
+          "confidence": 0,
+          "line": 74
+        },
+        {
+          "target": "get_chat_session",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 80,
+          "resolvedId": "backend/api/features/chat/model.py:get_chat_session:387"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/chat/service_test.py:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 83,
+      "isEntryPoint": false,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "getLogger",
+          "resolved": false,
+          "confidence": 0,
+          "line": 15
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 18
+        },
+        {
+          "target": "getenv",
+          "resolved": false,
+          "confidence": 0,
+          "line": 23
+        },
+        {
+          "target": "skip",
+          "resolved": false,
+          "confidence": 0,
+          "line": 25
+        },
+        {
+          "target": "create_chat_session",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 27,
+          "resolvedId": "backend/api/features/chat/model.py:create_chat_session:500"
+        },
+        {
+          "target": "test_user_id",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 27,
+          "resolvedId": "backend/api/conftest.py:test_user_id:15"
+        },
+        {
+          "target": "stream_chat_completion",
+          "resolved": false,
+          "confidence": 0,
+          "line": 32
+        },
+        {
+          "target": "info",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 35,
+          "resolvedId": "backend/util/logging.py:info:41"
+        },
+        {
+          "target": "chunk",
+          "resolved": false,
+          "confidence": 0,
+          "line": 35
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 36
+        },
+        {
+          "target": "chunk",
+          "resolved": false,
+          "confidence": 0,
+          "line": 36
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 38
+        },
+        {
+          "target": "chunk",
+          "resolved": false,
+          "confidence": 0,
+          "line": 38
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 40
+        },
+        {
+          "target": "chunk",
+          "resolved": false,
+          "confidence": 0,
+          "line": 40
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 48
+        },
+        {
+          "target": "getenv",
+          "resolved": false,
+          "confidence": 0,
+          "line": 53
+        },
+        {
+          "target": "skip",
+          "resolved": false,
+          "confidence": 0,
+          "line": 55
+        },
+        {
+          "target": "create_chat_session",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 57,
+          "resolvedId": "backend/api/features/chat/model.py:create_chat_session:500"
+        },
+        {
+          "target": "test_user_id",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 57,
+          "resolvedId": "backend/api/conftest.py:test_user_id:15"
+        },
+        {
+          "target": "upsert_chat_session",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 58,
+          "resolvedId": "backend/api/features/chat/model.py:upsert_chat_session:442"
+        },
+        {
+          "target": "session",
+          "resolved": false,
+          "confidence": 0,
+          "line": 58
+        },
+        {
+          "target": "stream_chat_completion",
+          "resolved": false,
+          "confidence": 0,
+          "line": 63
+        },
+        {
+          "target": "info",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 68,
+          "resolvedId": "backend/util/logging.py:info:41"
+        },
+        {
+          "target": "chunk",
+          "resolved": false,
+          "confidence": 0,
+          "line": 68
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 69
+        },
+        {
+          "target": "chunk",
+          "resolved": false,
+          "confidence": 0,
+          "line": 69
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        },
+        {
+          "target": "chunk",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 74
+        },
+        {
+          "target": "chunk",
+          "resolved": false,
+          "confidence": 0,
+          "line": 74
+        },
+        {
+          "target": "get_chat_session",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 80,
+          "resolvedId": "backend/api/features/chat/model.py:get_chat_session:387"
+        },
+        {
+          "target": "getLogger",
+          "resolved": false,
+          "confidence": 0,
+          "line": 15
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 18
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 48
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "logging",
+          "operation": "read",
+          "line": 15,
+          "fields": []
+        }
+      ]
+    }
+  ]
+}

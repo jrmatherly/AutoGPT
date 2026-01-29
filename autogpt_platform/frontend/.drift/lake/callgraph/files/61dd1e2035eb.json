@@ -1,0 +1,213 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.056Z",
+  "checksum": "f6ac056fbd90d9cf",
+  "file": "src/lib/supabase/hooks/useSupabase.ts",
+  "functions": [
+    {
+      "id": "src/lib/supabase/hooks/useSupabase.ts:useSupabase:10",
+      "name": "useSupabase",
+      "startLine": 10,
+      "endLine": 73,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useRouter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 11
+        },
+        {
+          "target": "usePathname",
+          "resolved": false,
+          "confidence": 0,
+          "line": 12
+        },
+        {
+          "target": "useSearchParams",
+          "resolved": false,
+          "confidence": 0,
+          "line": 13
+        },
+        {
+          "target": "useBackendAPI",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 14,
+          "resolvedId": "src/lib/autogpt-server-api/context.tsx:useBackendAPI:34"
+        },
+        {
+          "target": "useMemo",
+          "resolved": false,
+          "confidence": 0,
+          "line": 17
+        },
+        {
+          "target": "toString",
+          "resolved": false,
+          "confidence": 0,
+          "line": 18
+        },
+        {
+          "target": "useSupabaseStore",
+          "resolved": false,
+          "confidence": 0,
+          "line": 30
+        },
+        {
+          "target": "useShallow",
+          "resolved": false,
+          "confidence": 0,
+          "line": 31
+        },
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 42
+        },
+        {
+          "target": "initialize",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 43,
+          "resolvedId": "src/lib/supabase/hooks/useSupabaseStore.ts:initialize:59"
+        },
+        {
+          "target": "logOut",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 51,
+          "resolvedId": "src/lib/supabase/hooks/useSupabaseStore.ts:logOut:125"
+        },
+        {
+          "target": "validateSession",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 58,
+          "resolvedId": "src/lib/supabase/hooks/helpers.ts:validateSession:91"
+        },
+        {
+          "target": "Boolean",
+          "resolved": false,
+          "confidence": 0,
+          "line": 67
+        },
+        {
+          "target": "user",
+          "resolved": false,
+          "confidence": 0,
+          "line": 67
+        },
+        {
+          "target": "initialize",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 43,
+          "resolvedId": "src/lib/supabase/hooks/useSupabaseStore.ts:initialize:59"
+        },
+        {
+          "target": "logOut",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 51,
+          "resolvedId": "src/lib/supabase/hooks/useSupabaseStore.ts:logOut:125"
+        },
+        {
+          "target": "validateSession",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 58,
+          "resolvedId": "src/lib/supabase/hooks/helpers.ts:validateSession:91"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/lib/supabase/hooks/useSupabase.ts:$useEffect$1:42",
+      "name": "$useEffect$1",
+      "startLine": 42,
+      "endLine": 48,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 42
+        },
+        {
+          "target": "initialize",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 43,
+          "resolvedId": "src/lib/supabase/hooks/useSupabaseStore.ts:initialize:59"
+        },
+        {
+          "target": "initialize",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 43,
+          "resolvedId": "src/lib/supabase/hooks/useSupabaseStore.ts:initialize:59"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/lib/supabase/hooks/useSupabase.ts:handleLogout:50",
+      "name": "handleLogout",
+      "startLine": 50,
+      "endLine": 55,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "logOut",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 51,
+          "resolvedId": "src/lib/supabase/hooks/useSupabaseStore.ts:logOut:125"
+        },
+        {
+          "target": "logOut",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 51,
+          "resolvedId": "src/lib/supabase/hooks/useSupabaseStore.ts:logOut:125"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/lib/supabase/hooks/useSupabase.ts:handleValidateSession:57",
+      "name": "handleValidateSession",
+      "startLine": 57,
+      "endLine": 62,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "validateSession",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 58,
+          "resolvedId": "src/lib/supabase/hooks/helpers.ts:validateSession:91"
+        },
+        {
+          "target": "validateSession",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 58,
+          "resolvedId": "src/lib/supabase/hooks/helpers.ts:validateSession:91"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

@@ -1,0 +1,522 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.224Z",
+  "checksum": "c4dbac9a43e66322",
+  "file": "test/sdk/test_sdk_patching.py",
+  "functions": [
+    {
+      "id": "test/sdk/test_sdk_patching.py:authorize:28",
+      "name": "authorize",
+      "startLine": 28,
+      "endLine": 29,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/sdk/test_sdk_patching.py:validate_payload:38",
+      "name": "validate_payload",
+      "startLine": 38,
+      "endLine": 39,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/sdk/test_sdk_patching.py:_register_webhook:41",
+      "name": "_register_webhook",
+      "startLine": 41,
+      "endLine": 42,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/sdk/test_sdk_patching.py:_deregister_webhook:44",
+      "name": "_deregister_webhook",
+      "startLine": 44,
+      "endLine": 45,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/sdk/test_sdk_patching.py:setup_method:51",
+      "name": "setup_method",
+      "startLine": 51,
+      "endLine": 53,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "clear",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 53,
+          "resolvedId": "backend/sdk/registry.py:clear:155"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/sdk/test_sdk_patching.py:test_webhook_manager_patching:55",
+      "name": "test_webhook_manager_patching",
+      "startLine": 55,
+      "endLine": 88,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "build",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 66,
+          "resolvedId": "backend/blocks/twitter/_builders.py:build:109"
+        },
+        {
+          "target": "with_webhook_manager",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 66,
+          "resolvedId": "backend/sdk/builder.py:with_webhook_manager:135"
+        },
+        {
+          "target": "ProviderBuilder",
+          "resolved": false,
+          "confidence": 0,
+          "line": 66
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        },
+        {
+          "target": "dict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 75
+        },
+        {
+          "target": "patch_integrations",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 78,
+          "resolvedId": "backend/sdk/registry.py:patch_integrations:166"
+        },
+        {
+          "target": "load_webhook_managers",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 81,
+          "resolvedId": "backend/integrations/webhooks/__init__.py:load_webhook_managers:12"
+        },
+        {
+          "target": "Mock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 61
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/sdk/test_sdk_patching.py:mock_load_webhook_managers:59",
+      "name": "mock_load_webhook_managers",
+      "startLine": 59,
+      "endLine": 62,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "Mock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 61
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/sdk/test_sdk_patching.py:test_webhook_patching_no_original_function:90",
+      "name": "test_webhook_patching_no_original_function",
+      "startLine": 90,
+      "endLine": 109,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 93
+        },
+        {
+          "target": "build",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 97,
+          "resolvedId": "backend/blocks/twitter/_builders.py:build:109"
+        },
+        {
+          "target": "with_webhook_manager",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 97,
+          "resolvedId": "backend/sdk/builder.py:with_webhook_manager:135"
+        },
+        {
+          "target": "ProviderBuilder",
+          "resolved": false,
+          "confidence": 0,
+          "line": 97
+        },
+        {
+          "target": "dict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 102
+        },
+        {
+          "target": "patch_integrations",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 106,
+          "resolvedId": "backend/sdk/registry.py:patch_integrations:166"
+        },
+        {
+          "target": "hasattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 109
+        },
+        {
+          "target": "mock_webhooks_module",
+          "resolved": false,
+          "confidence": 0,
+          "line": 109
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/sdk/test_sdk_patching.py:setup_method:115",
+      "name": "setup_method",
+      "startLine": 115,
+      "endLine": 117,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "clear",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 117,
+          "resolvedId": "backend/sdk/registry.py:clear:155"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/sdk/test_sdk_patching.py:test_complete_provider_registration_and_patching:119",
+      "name": "test_complete_provider_registration_and_patching",
+      "startLine": 119,
+      "endLine": 147,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 122
+        },
+        {
+          "target": "Mock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 123
+        },
+        {
+          "target": "build",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 127,
+          "resolvedId": "backend/blocks/twitter/_builders.py:build:109"
+        },
+        {
+          "target": "with_webhook_manager",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 127,
+          "resolvedId": "backend/sdk/builder.py:with_webhook_manager:135"
+        },
+        {
+          "target": "with_oauth",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 127,
+          "resolvedId": "backend/sdk/builder.py:with_oauth:44"
+        },
+        {
+          "target": "with_api_key",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 127,
+          "resolvedId": "backend/sdk/builder.py:with_api_key:74"
+        },
+        {
+          "target": "ProviderBuilder",
+          "resolved": false,
+          "confidence": 0,
+          "line": 127
+        },
+        {
+          "target": "dict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 135
+        },
+        {
+          "target": "patch_integrations",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 141,
+          "resolvedId": "backend/sdk/registry.py:patch_integrations:166"
+        },
+        {
+          "target": "load_webhook_managers",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 144,
+          "resolvedId": "backend/integrations/webhooks/__init__.py:load_webhook_managers:12"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/sdk/test_sdk_patching.py:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 152,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "clear",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 53,
+          "resolvedId": "backend/sdk/registry.py:clear:155"
+        },
+        {
+          "target": "build",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 66,
+          "resolvedId": "backend/blocks/twitter/_builders.py:build:109"
+        },
+        {
+          "target": "with_webhook_manager",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 66,
+          "resolvedId": "backend/sdk/builder.py:with_webhook_manager:135"
+        },
+        {
+          "target": "ProviderBuilder",
+          "resolved": false,
+          "confidence": 0,
+          "line": 66
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        },
+        {
+          "target": "dict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 75
+        },
+        {
+          "target": "patch_integrations",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 78,
+          "resolvedId": "backend/sdk/registry.py:patch_integrations:166"
+        },
+        {
+          "target": "load_webhook_managers",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 81,
+          "resolvedId": "backend/integrations/webhooks/__init__.py:load_webhook_managers:12"
+        },
+        {
+          "target": "Mock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 61
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 93
+        },
+        {
+          "target": "build",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 97,
+          "resolvedId": "backend/blocks/twitter/_builders.py:build:109"
+        },
+        {
+          "target": "with_webhook_manager",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 97,
+          "resolvedId": "backend/sdk/builder.py:with_webhook_manager:135"
+        },
+        {
+          "target": "ProviderBuilder",
+          "resolved": false,
+          "confidence": 0,
+          "line": 97
+        },
+        {
+          "target": "dict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 102
+        },
+        {
+          "target": "patch_integrations",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 106,
+          "resolvedId": "backend/sdk/registry.py:patch_integrations:166"
+        },
+        {
+          "target": "hasattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 109
+        },
+        {
+          "target": "mock_webhooks_module",
+          "resolved": false,
+          "confidence": 0,
+          "line": 109
+        },
+        {
+          "target": "clear",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 117,
+          "resolvedId": "backend/sdk/registry.py:clear:155"
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 122
+        },
+        {
+          "target": "Mock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 123
+        },
+        {
+          "target": "build",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 127,
+          "resolvedId": "backend/blocks/twitter/_builders.py:build:109"
+        },
+        {
+          "target": "with_webhook_manager",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 127,
+          "resolvedId": "backend/sdk/builder.py:with_webhook_manager:135"
+        },
+        {
+          "target": "with_oauth",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 127,
+          "resolvedId": "backend/sdk/builder.py:with_oauth:44"
+        },
+        {
+          "target": "with_api_key",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 127,
+          "resolvedId": "backend/sdk/builder.py:with_api_key:74"
+        },
+        {
+          "target": "ProviderBuilder",
+          "resolved": false,
+          "confidence": 0,
+          "line": 127
+        },
+        {
+          "target": "dict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 135
+        },
+        {
+          "target": "patch_integrations",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 141,
+          "resolvedId": "backend/sdk/registry.py:patch_integrations:166"
+        },
+        {
+          "target": "load_webhook_managers",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 144,
+          "resolvedId": "backend/integrations/webhooks/__init__.py:load_webhook_managers:12"
+        },
+        {
+          "target": "main",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 151,
+          "resolvedId": "backend/check_store_data.py:main:149"
+        },
+        {
+          "target": "main",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 151,
+          "resolvedId": "backend/check_store_data.py:main:149"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

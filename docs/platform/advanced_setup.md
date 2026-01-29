@@ -42,7 +42,6 @@ This is useful when running on docker so you can copy the secrets into the conta
 
 ## Database selection
 
-
 ### PostgreSQL
 
 We use a Supabase PostgreSQL as the database. You will swap the commands you use to generate and run prisma to the following

@@ -1,0 +1,1190 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.026Z",
+  "checksum": "ec0af8b40777d165",
+  "file": "src/components/atoms/Avatar/Avatar.tsx",
+  "functions": [
+    {
+      "id": "src/components/atoms/Avatar/Avatar.tsx:useAvatarContext:24",
+      "name": "useAvatarContext",
+      "startLine": 24,
+      "endLine": 28,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useContext",
+          "resolved": false,
+          "confidence": 0,
+          "line": 25
+        },
+        {
+          "target": "AvatarContext",
+          "resolved": false,
+          "confidence": 0,
+          "line": 25
+        },
+        {
+          "target": "Error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 26,
+          "resolvedId": "src/app/error.tsx:Error:8"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/atoms/Avatar/Avatar.tsx:Avatar:32",
+      "name": "Avatar",
+      "startLine": 32,
+      "endLine": 58,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 37
+        },
+        {
+          "target": "useState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 38
+        },
+        {
+          "target": "useMemo",
+          "resolved": false,
+          "confidence": 0,
+          "line": 40
+        },
+        {
+          "target": "Provider",
+          "resolved": false,
+          "confidence": 0,
+          "line": 46
+        },
+        {
+          "target": "value",
+          "resolved": false,
+          "confidence": 0,
+          "line": 46
+        },
+        {
+          "target": "cn",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 48,
+          "resolvedId": "src/components/renderers/InputRenderer/utils/rjsf-utils.ts:cn:4"
+        },
+        {
+          "target": "className",
+          "resolved": false,
+          "confidence": 0,
+          "line": 50
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/atoms/Avatar/Avatar.tsx:getAvatarSizeFromClassName:71",
+      "name": "getAvatarSizeFromClassName",
+      "startLine": 71,
+      "endLine": 80,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "match",
+          "resolved": false,
+          "confidence": 0,
+          "line": 74
+        },
+        {
+          "target": "parseInt",
+          "resolved": false,
+          "confidence": 0,
+          "line": 75
+        },
+        {
+          "target": "match",
+          "resolved": false,
+          "confidence": 0,
+          "line": 76
+        },
+        {
+          "target": "parseInt",
+          "resolved": false,
+          "confidence": 0,
+          "line": 77
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/atoms/Avatar/Avatar.tsx:AvatarImage:82",
+      "name": "AvatarImage",
+      "startLine": 82,
+      "endLine": 163,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useAvatarContext",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 97,
+          "resolvedId": "src/components/atoms/Avatar/Avatar.tsx:useAvatarContext:24"
+        },
+        {
+          "target": "trim",
+          "resolved": false,
+          "confidence": 0,
+          "line": 99
+        },
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 101
+        },
+        {
+          "target": "setHasImage",
+          "resolved": false,
+          "confidence": 0,
+          "line": 103
+        },
+        {
+          "target": "Boolean",
+          "resolved": false,
+          "confidence": 0,
+          "line": 103
+        },
+        {
+          "target": "normalizedSrc",
+          "resolved": false,
+          "confidence": 0,
+          "line": 103
+        },
+        {
+          "target": "getAvatarSizeFromClassName",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 110,
+          "resolvedId": "src/components/atoms/Avatar/Avatar.tsx:getAvatarSizeFromClassName:71"
+        },
+        {
+          "target": "className",
+          "resolved": false,
+          "confidence": 0,
+          "line": 110
+        },
+        {
+          "target": "setIsLoaded",
+          "resolved": false,
+          "confidence": 0,
+          "line": 116
+        },
+        {
+          "target": "onLoad",
+          "resolved": false,
+          "confidence": 0,
+          "line": 117
+        },
+        {
+          "target": "e",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 117,
+          "resolvedId": "public/gtag.js:e:37"
+        },
+        {
+          "target": "setIsLoaded",
+          "resolved": false,
+          "confidence": 0,
+          "line": 120
+        },
+        {
+          "target": "setHasImage",
+          "resolved": false,
+          "confidence": 0,
+          "line": 121
+        },
+        {
+          "target": "onError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 122
+        },
+        {
+          "target": "e",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 122,
+          "resolvedId": "public/gtag.js:e:37"
+        },
+        {
+          "target": "normalizedSrc",
+          "resolved": false,
+          "confidence": 0,
+          "line": 128
+        },
+        {
+          "target": "computedWidth",
+          "resolved": false,
+          "confidence": 0,
+          "line": 131
+        },
+        {
+          "target": "computedHeight",
+          "resolved": false,
+          "confidence": 0,
+          "line": 132
+        },
+        {
+          "target": "handleLoad",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 133,
+          "resolvedId": "src/components/atoms/Avatar/Avatar.tsx:handleLoad:115"
+        },
+        {
+          "target": "handleError",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 134,
+          "resolvedId": "src/components/atoms/Avatar/Avatar.tsx:handleError:119"
+        },
+        {
+          "target": "cn",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 130,
+          "resolvedId": "src/components/renderers/InputRenderer/utils/rjsf-utils.ts:cn:4"
+        },
+        {
+          "target": "className",
+          "resolved": false,
+          "confidence": 0,
+          "line": 130
+        },
+        {
+          "target": "setIsLoaded",
+          "resolved": false,
+          "confidence": 0,
+          "line": 141
+        },
+        {
+          "target": "setIsLoaded",
+          "resolved": false,
+          "confidence": 0,
+          "line": 144
+        },
+        {
+          "target": "setHasImage",
+          "resolved": false,
+          "confidence": 0,
+          "line": 145
+        },
+        {
+          "target": "Image",
+          "resolved": false,
+          "confidence": 0,
+          "line": 149
+        },
+        {
+          "target": "normalizedSrc",
+          "resolved": false,
+          "confidence": 0,
+          "line": 150
+        },
+        {
+          "target": "sizes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 156
+        },
+        {
+          "target": "priority",
+          "resolved": false,
+          "confidence": 0,
+          "line": 157
+        },
+        {
+          "target": "unoptimized",
+          "resolved": false,
+          "confidence": 0,
+          "line": 158
+        },
+        {
+          "target": "handleLoadingComplete",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 159,
+          "resolvedId": "src/components/atoms/Avatar/Avatar.tsx:handleLoadingComplete:140"
+        },
+        {
+          "target": "cn",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 152,
+          "resolvedId": "src/components/renderers/InputRenderer/utils/rjsf-utils.ts:cn:4"
+        },
+        {
+          "target": "className",
+          "resolved": false,
+          "confidence": 0,
+          "line": 152
+        },
+        {
+          "target": "Boolean",
+          "resolved": false,
+          "confidence": 0,
+          "line": 155
+        },
+        {
+          "target": "fill",
+          "resolved": false,
+          "confidence": 0,
+          "line": 155
+        },
+        {
+          "target": "setHasImage",
+          "resolved": false,
+          "confidence": 0,
+          "line": 103
+        },
+        {
+          "target": "Boolean",
+          "resolved": false,
+          "confidence": 0,
+          "line": 103
+        },
+        {
+          "target": "normalizedSrc",
+          "resolved": false,
+          "confidence": 0,
+          "line": 103
+        },
+        {
+          "target": "setIsLoaded",
+          "resolved": false,
+          "confidence": 0,
+          "line": 116
+        },
+        {
+          "target": "onLoad",
+          "resolved": false,
+          "confidence": 0,
+          "line": 117
+        },
+        {
+          "target": "e",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 117,
+          "resolvedId": "public/gtag.js:e:37"
+        },
+        {
+          "target": "setIsLoaded",
+          "resolved": false,
+          "confidence": 0,
+          "line": 120
+        },
+        {
+          "target": "setHasImage",
+          "resolved": false,
+          "confidence": 0,
+          "line": 121
+        },
+        {
+          "target": "onError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 122
+        },
+        {
+          "target": "e",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 122,
+          "resolvedId": "public/gtag.js:e:37"
+        },
+        {
+          "target": "setIsLoaded",
+          "resolved": false,
+          "confidence": 0,
+          "line": 141
+        },
+        {
+          "target": "setIsLoaded",
+          "resolved": false,
+          "confidence": 0,
+          "line": 144
+        },
+        {
+          "target": "setHasImage",
+          "resolved": false,
+          "confidence": 0,
+          "line": 145
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/atoms/Avatar/Avatar.tsx:$useEffect$1:102",
+      "name": "$useEffect$1",
+      "startLine": 102,
+      "endLine": 104,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "setHasImage",
+          "resolved": false,
+          "confidence": 0,
+          "line": 103
+        },
+        {
+          "target": "Boolean",
+          "resolved": false,
+          "confidence": 0,
+          "line": 103
+        },
+        {
+          "target": "normalizedSrc",
+          "resolved": false,
+          "confidence": 0,
+          "line": 103
+        },
+        {
+          "target": "setHasImage",
+          "resolved": false,
+          "confidence": 0,
+          "line": 103
+        },
+        {
+          "target": "Boolean",
+          "resolved": false,
+          "confidence": 0,
+          "line": 103
+        },
+        {
+          "target": "normalizedSrc",
+          "resolved": false,
+          "confidence": 0,
+          "line": 103
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/atoms/Avatar/Avatar.tsx:handleLoad:115",
+      "name": "handleLoad",
+      "startLine": 115,
+      "endLine": 118,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "setIsLoaded",
+          "resolved": false,
+          "confidence": 0,
+          "line": 116
+        },
+        {
+          "target": "onLoad",
+          "resolved": false,
+          "confidence": 0,
+          "line": 117
+        },
+        {
+          "target": "e",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 117,
+          "resolvedId": "public/gtag.js:e:37"
+        },
+        {
+          "target": "setIsLoaded",
+          "resolved": false,
+          "confidence": 0,
+          "line": 116
+        },
+        {
+          "target": "onLoad",
+          "resolved": false,
+          "confidence": 0,
+          "line": 117
+        },
+        {
+          "target": "e",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 117,
+          "resolvedId": "public/gtag.js:e:37"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/atoms/Avatar/Avatar.tsx:handleError:119",
+      "name": "handleError",
+      "startLine": 119,
+      "endLine": 123,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "setIsLoaded",
+          "resolved": false,
+          "confidence": 0,
+          "line": 120
+        },
+        {
+          "target": "setHasImage",
+          "resolved": false,
+          "confidence": 0,
+          "line": 121
+        },
+        {
+          "target": "onError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 122
+        },
+        {
+          "target": "e",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 122,
+          "resolvedId": "public/gtag.js:e:37"
+        },
+        {
+          "target": "setIsLoaded",
+          "resolved": false,
+          "confidence": 0,
+          "line": 120
+        },
+        {
+          "target": "setHasImage",
+          "resolved": false,
+          "confidence": 0,
+          "line": 121
+        },
+        {
+          "target": "onError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 122
+        },
+        {
+          "target": "e",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 122,
+          "resolvedId": "public/gtag.js:e:37"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/atoms/Avatar/Avatar.tsx:handleLoadingComplete:140",
+      "name": "handleLoadingComplete",
+      "startLine": 140,
+      "endLine": 142,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "setIsLoaded",
+          "resolved": false,
+          "confidence": 0,
+          "line": 141
+        },
+        {
+          "target": "setIsLoaded",
+          "resolved": false,
+          "confidence": 0,
+          "line": 141
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/atoms/Avatar/Avatar.tsx:handleErrorNext:143",
+      "name": "handleErrorNext",
+      "startLine": 143,
+      "endLine": 146,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "setIsLoaded",
+          "resolved": false,
+          "confidence": 0,
+          "line": 144
+        },
+        {
+          "target": "setHasImage",
+          "resolved": false,
+          "confidence": 0,
+          "line": 145
+        },
+        {
+          "target": "setIsLoaded",
+          "resolved": false,
+          "confidence": 0,
+          "line": 144
+        },
+        {
+          "target": "setHasImage",
+          "resolved": false,
+          "confidence": 0,
+          "line": 145
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/atoms/Avatar/Avatar.tsx:AvatarFallback:169",
+      "name": "AvatarFallback",
+      "startLine": 169,
+      "endLine": 198,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useAvatarContext",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 175,
+          "resolvedId": "src/components/atoms/Avatar/Avatar.tsx:useAvatarContext:24"
+        },
+        {
+          "target": "getAvatarSizeFromClassName",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 178,
+          "resolvedId": "src/components/atoms/Avatar/Avatar.tsx:getAvatarSizeFromClassName:71"
+        },
+        {
+          "target": "className",
+          "resolved": false,
+          "confidence": 0,
+          "line": 178
+        },
+        {
+          "target": "trim",
+          "resolved": false,
+          "confidence": 0,
+          "line": 180
+        },
+        {
+          "target": "cn",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 183,
+          "resolvedId": "src/components/renderers/InputRenderer/utils/rjsf-utils.ts:cn:4"
+        },
+        {
+          "target": "className",
+          "resolved": false,
+          "confidence": 0,
+          "line": 185
+        },
+        {
+          "target": "BoringAvatar",
+          "resolved": false,
+          "confidence": 0,
+          "line": 189
+        },
+        {
+          "target": "computedSize",
+          "resolved": false,
+          "confidence": 0,
+          "line": 190
+        },
+        {
+          "target": "name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 191
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/atoms/Avatar/Avatar.tsx:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 201,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useContext",
+          "resolved": false,
+          "confidence": 0,
+          "line": 25
+        },
+        {
+          "target": "AvatarContext",
+          "resolved": false,
+          "confidence": 0,
+          "line": 25
+        },
+        {
+          "target": "Error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 26,
+          "resolvedId": "src/app/error.tsx:Error:8"
+        },
+        {
+          "target": "useState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 37
+        },
+        {
+          "target": "useState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 38
+        },
+        {
+          "target": "useMemo",
+          "resolved": false,
+          "confidence": 0,
+          "line": 40
+        },
+        {
+          "target": "Provider",
+          "resolved": false,
+          "confidence": 0,
+          "line": 46
+        },
+        {
+          "target": "value",
+          "resolved": false,
+          "confidence": 0,
+          "line": 46
+        },
+        {
+          "target": "cn",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 48,
+          "resolvedId": "src/components/renderers/InputRenderer/utils/rjsf-utils.ts:cn:4"
+        },
+        {
+          "target": "className",
+          "resolved": false,
+          "confidence": 0,
+          "line": 50
+        },
+        {
+          "target": "match",
+          "resolved": false,
+          "confidence": 0,
+          "line": 74
+        },
+        {
+          "target": "parseInt",
+          "resolved": false,
+          "confidence": 0,
+          "line": 75
+        },
+        {
+          "target": "match",
+          "resolved": false,
+          "confidence": 0,
+          "line": 76
+        },
+        {
+          "target": "parseInt",
+          "resolved": false,
+          "confidence": 0,
+          "line": 77
+        },
+        {
+          "target": "useAvatarContext",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 97,
+          "resolvedId": "src/components/atoms/Avatar/Avatar.tsx:useAvatarContext:24"
+        },
+        {
+          "target": "trim",
+          "resolved": false,
+          "confidence": 0,
+          "line": 99
+        },
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 101
+        },
+        {
+          "target": "setHasImage",
+          "resolved": false,
+          "confidence": 0,
+          "line": 103
+        },
+        {
+          "target": "Boolean",
+          "resolved": false,
+          "confidence": 0,
+          "line": 103
+        },
+        {
+          "target": "normalizedSrc",
+          "resolved": false,
+          "confidence": 0,
+          "line": 103
+        },
+        {
+          "target": "getAvatarSizeFromClassName",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 110,
+          "resolvedId": "src/components/atoms/Avatar/Avatar.tsx:getAvatarSizeFromClassName:71"
+        },
+        {
+          "target": "className",
+          "resolved": false,
+          "confidence": 0,
+          "line": 110
+        },
+        {
+          "target": "setIsLoaded",
+          "resolved": false,
+          "confidence": 0,
+          "line": 116
+        },
+        {
+          "target": "onLoad",
+          "resolved": false,
+          "confidence": 0,
+          "line": 117
+        },
+        {
+          "target": "e",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 117,
+          "resolvedId": "public/gtag.js:e:37"
+        },
+        {
+          "target": "setIsLoaded",
+          "resolved": false,
+          "confidence": 0,
+          "line": 120
+        },
+        {
+          "target": "setHasImage",
+          "resolved": false,
+          "confidence": 0,
+          "line": 121
+        },
+        {
+          "target": "onError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 122
+        },
+        {
+          "target": "e",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 122,
+          "resolvedId": "public/gtag.js:e:37"
+        },
+        {
+          "target": "normalizedSrc",
+          "resolved": false,
+          "confidence": 0,
+          "line": 128
+        },
+        {
+          "target": "computedWidth",
+          "resolved": false,
+          "confidence": 0,
+          "line": 131
+        },
+        {
+          "target": "computedHeight",
+          "resolved": false,
+          "confidence": 0,
+          "line": 132
+        },
+        {
+          "target": "handleLoad",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 133,
+          "resolvedId": "src/components/atoms/Avatar/Avatar.tsx:handleLoad:115"
+        },
+        {
+          "target": "handleError",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 134,
+          "resolvedId": "src/components/atoms/Avatar/Avatar.tsx:handleError:119"
+        },
+        {
+          "target": "cn",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 130,
+          "resolvedId": "src/components/renderers/InputRenderer/utils/rjsf-utils.ts:cn:4"
+        },
+        {
+          "target": "className",
+          "resolved": false,
+          "confidence": 0,
+          "line": 130
+        },
+        {
+          "target": "setIsLoaded",
+          "resolved": false,
+          "confidence": 0,
+          "line": 141
+        },
+        {
+          "target": "setIsLoaded",
+          "resolved": false,
+          "confidence": 0,
+          "line": 144
+        },
+        {
+          "target": "setHasImage",
+          "resolved": false,
+          "confidence": 0,
+          "line": 145
+        },
+        {
+          "target": "Image",
+          "resolved": false,
+          "confidence": 0,
+          "line": 149
+        },
+        {
+          "target": "normalizedSrc",
+          "resolved": false,
+          "confidence": 0,
+          "line": 150
+        },
+        {
+          "target": "sizes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 156
+        },
+        {
+          "target": "priority",
+          "resolved": false,
+          "confidence": 0,
+          "line": 157
+        },
+        {
+          "target": "unoptimized",
+          "resolved": false,
+          "confidence": 0,
+          "line": 158
+        },
+        {
+          "target": "handleLoadingComplete",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 159,
+          "resolvedId": "src/components/atoms/Avatar/Avatar.tsx:handleLoadingComplete:140"
+        },
+        {
+          "target": "cn",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 152,
+          "resolvedId": "src/components/renderers/InputRenderer/utils/rjsf-utils.ts:cn:4"
+        },
+        {
+          "target": "className",
+          "resolved": false,
+          "confidence": 0,
+          "line": 152
+        },
+        {
+          "target": "Boolean",
+          "resolved": false,
+          "confidence": 0,
+          "line": 155
+        },
+        {
+          "target": "fill",
+          "resolved": false,
+          "confidence": 0,
+          "line": 155
+        },
+        {
+          "target": "setHasImage",
+          "resolved": false,
+          "confidence": 0,
+          "line": 103
+        },
+        {
+          "target": "Boolean",
+          "resolved": false,
+          "confidence": 0,
+          "line": 103
+        },
+        {
+          "target": "normalizedSrc",
+          "resolved": false,
+          "confidence": 0,
+          "line": 103
+        },
+        {
+          "target": "setIsLoaded",
+          "resolved": false,
+          "confidence": 0,
+          "line": 116
+        },
+        {
+          "target": "onLoad",
+          "resolved": false,
+          "confidence": 0,
+          "line": 117
+        },
+        {
+          "target": "e",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 117,
+          "resolvedId": "public/gtag.js:e:37"
+        },
+        {
+          "target": "setIsLoaded",
+          "resolved": false,
+          "confidence": 0,
+          "line": 120
+        },
+        {
+          "target": "setHasImage",
+          "resolved": false,
+          "confidence": 0,
+          "line": 121
+        },
+        {
+          "target": "onError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 122
+        },
+        {
+          "target": "e",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 122,
+          "resolvedId": "public/gtag.js:e:37"
+        },
+        {
+          "target": "setIsLoaded",
+          "resolved": false,
+          "confidence": 0,
+          "line": 141
+        },
+        {
+          "target": "setIsLoaded",
+          "resolved": false,
+          "confidence": 0,
+          "line": 144
+        },
+        {
+          "target": "setHasImage",
+          "resolved": false,
+          "confidence": 0,
+          "line": 145
+        },
+        {
+          "target": "useAvatarContext",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 175,
+          "resolvedId": "src/components/atoms/Avatar/Avatar.tsx:useAvatarContext:24"
+        },
+        {
+          "target": "getAvatarSizeFromClassName",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 178,
+          "resolvedId": "src/components/atoms/Avatar/Avatar.tsx:getAvatarSizeFromClassName:71"
+        },
+        {
+          "target": "className",
+          "resolved": false,
+          "confidence": 0,
+          "line": 178
+        },
+        {
+          "target": "trim",
+          "resolved": false,
+          "confidence": 0,
+          "line": 180
+        },
+        {
+          "target": "cn",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 183,
+          "resolvedId": "src/components/renderers/InputRenderer/utils/rjsf-utils.ts:cn:4"
+        },
+        {
+          "target": "className",
+          "resolved": false,
+          "confidence": 0,
+          "line": 185
+        },
+        {
+          "target": "BoringAvatar",
+          "resolved": false,
+          "confidence": 0,
+          "line": 189
+        },
+        {
+          "target": "computedSize",
+          "resolved": false,
+          "confidence": 0,
+          "line": 190
+        },
+        {
+          "target": "name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 191
+        },
+        {
+          "target": "createContext",
+          "resolved": false,
+          "confidence": 0,
+          "line": 22
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

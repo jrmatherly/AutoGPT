@@ -1,0 +1,304 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.205Z",
+  "checksum": "565d1e2d70352c77",
+  "file": "backend/util/metrics.py",
+  "functions": [
+    {
+      "id": "backend/util/metrics.py:sentry_init:24",
+      "name": "sentry_init",
+      "startLine": 24,
+      "endLine": 46,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "is_configured",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 27,
+          "resolvedId": "backend/util/feature_flag.py:is_configured:43"
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 29
+        },
+        {
+          "target": "LaunchDarklyIntegration",
+          "resolved": false,
+          "confidence": 0,
+          "line": 29
+        },
+        {
+          "target": "get_client",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 29,
+          "resolvedId": "backend/util/feature_flag.py:get_client:48"
+        },
+        {
+          "target": "error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 31,
+          "resolvedId": "backend/util/logging.py:error:49"
+        },
+        {
+          "target": "init",
+          "resolved": false,
+          "confidence": 0,
+          "line": 32
+        },
+        {
+          "target": "AsyncioIntegration",
+          "resolved": false,
+          "confidence": 0,
+          "line": 39
+        },
+        {
+          "target": "LoggingIntegration",
+          "resolved": false,
+          "confidence": 0,
+          "line": 40
+        },
+        {
+          "target": "AnthropicIntegration",
+          "resolved": false,
+          "confidence": 0,
+          "line": 41
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/metrics.py:sentry_capture_error:49",
+      "name": "sentry_capture_error",
+      "startLine": 49,
+      "endLine": 51,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "capture_exception",
+          "resolved": false,
+          "confidence": 0,
+          "line": 50
+        },
+        {
+          "target": "error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 50,
+          "resolvedId": "backend/util/logging.py:error:49"
+        },
+        {
+          "target": "flush",
+          "resolved": false,
+          "confidence": 0,
+          "line": 51
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/metrics.py:discord_send_alert:54",
+      "name": "discord_send_alert",
+      "startLine": 54,
+      "endLine": 88,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "APIKeyCredentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 60
+        },
+        {
+          "target": "SecretStr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 62
+        },
+        {
+          "target": "run_once",
+          "resolved": false,
+          "confidence": 0,
+          "line": 75
+        },
+        {
+          "target": "SendDiscordMessageBlock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 75
+        },
+        {
+          "target": "Input",
+          "resolved": false,
+          "confidence": 0,
+          "line": 76
+        },
+        {
+          "target": "CredentialsMetaInput",
+          "resolved": false,
+          "confidence": 0,
+          "line": 77
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/util/metrics.py:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 89,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "Settings",
+          "resolved": false,
+          "confidence": 0,
+          "line": 15
+        },
+        {
+          "target": "getLogger",
+          "resolved": false,
+          "confidence": 0,
+          "line": 16
+        },
+        {
+          "target": "is_configured",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 27,
+          "resolvedId": "backend/util/feature_flag.py:is_configured:43"
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 29
+        },
+        {
+          "target": "LaunchDarklyIntegration",
+          "resolved": false,
+          "confidence": 0,
+          "line": 29
+        },
+        {
+          "target": "get_client",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 29,
+          "resolvedId": "backend/util/feature_flag.py:get_client:48"
+        },
+        {
+          "target": "error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 31,
+          "resolvedId": "backend/util/logging.py:error:49"
+        },
+        {
+          "target": "init",
+          "resolved": false,
+          "confidence": 0,
+          "line": 32
+        },
+        {
+          "target": "AsyncioIntegration",
+          "resolved": false,
+          "confidence": 0,
+          "line": 39
+        },
+        {
+          "target": "LoggingIntegration",
+          "resolved": false,
+          "confidence": 0,
+          "line": 40
+        },
+        {
+          "target": "AnthropicIntegration",
+          "resolved": false,
+          "confidence": 0,
+          "line": 41
+        },
+        {
+          "target": "capture_exception",
+          "resolved": false,
+          "confidence": 0,
+          "line": 50
+        },
+        {
+          "target": "error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 50,
+          "resolvedId": "backend/util/logging.py:error:49"
+        },
+        {
+          "target": "flush",
+          "resolved": false,
+          "confidence": 0,
+          "line": 51
+        },
+        {
+          "target": "APIKeyCredentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 60
+        },
+        {
+          "target": "SecretStr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 62
+        },
+        {
+          "target": "run_once",
+          "resolved": false,
+          "confidence": 0,
+          "line": 75
+        },
+        {
+          "target": "SendDiscordMessageBlock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 75
+        },
+        {
+          "target": "Input",
+          "resolved": false,
+          "confidence": 0,
+          "line": 76
+        },
+        {
+          "target": "CredentialsMetaInput",
+          "resolved": false,
+          "confidence": 0,
+          "line": 77
+        },
+        {
+          "target": "Settings",
+          "resolved": false,
+          "confidence": 0,
+          "line": 15
+        },
+        {
+          "target": "getLogger",
+          "resolved": false,
+          "confidence": 0,
+          "line": 16
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

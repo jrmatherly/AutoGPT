@@ -1,0 +1,82 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.021Z",
+  "checksum": "e9dcee47ef3334fd",
+  "file": "src/app/(platform)/auth/integrations/oauth_callback/route.ts",
+  "functions": [
+    {
+      "id": "src/app/(platform)/auth/integrations/oauth_callback/route.ts:GET:7",
+      "name": "GET",
+      "startLine": 7,
+      "endLine": 41,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "URL",
+          "resolved": false,
+          "confidence": 0,
+          "line": 8
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 9,
+          "resolvedId": "src/services/storage/local-storage.ts:get:16"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 10,
+          "resolvedId": "src/services/storage/local-storage.ts:get:16"
+        },
+        {
+          "target": "debug",
+          "resolved": false,
+          "confidence": 0,
+          "line": 12
+        },
+        {
+          "target": "toString",
+          "resolved": false,
+          "confidence": 0,
+          "line": 20
+        },
+        {
+          "target": "debug",
+          "resolved": false,
+          "confidence": 0,
+          "line": 23
+        },
+        {
+          "target": "message",
+          "resolved": false,
+          "confidence": 0,
+          "line": 23
+        },
+        {
+          "target": "NextResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 26
+        },
+        {
+          "target": "stringify",
+          "resolved": false,
+          "confidence": 0,
+          "line": 31
+        },
+        {
+          "target": "message",
+          "resolved": false,
+          "confidence": 0,
+          "line": 31
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

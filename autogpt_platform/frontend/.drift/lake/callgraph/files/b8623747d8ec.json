@@ -1,0 +1,57 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.105Z",
+  "checksum": "ce6b0159cf0056c9",
+  "file": "src/app/(platform)/admin/settings/page.tsx",
+  "functions": [
+    {
+      "id": "src/app/(platform)/admin/settings/page.tsx:AdminSettings:4",
+      "name": "AdminSettings",
+      "startLine": 4,
+      "endLine": 11,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/app/(platform)/admin/settings/page.tsx:AdminSettingsPage:13",
+      "name": "AdminSettingsPage",
+      "startLine": 13,
+      "endLine": 18,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "withRoleAccess",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 15,
+          "resolvedId": "src/lib/withRoleAccess.ts:withRoleAccess:6"
+        },
+        {
+          "target": "withAdminAccess",
+          "resolved": false,
+          "confidence": 0,
+          "line": 16
+        },
+        {
+          "target": "AdminSettings",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 16,
+          "resolvedId": "src/app/(platform)/admin/settings/page.tsx:AdminSettings:4"
+        },
+        {
+          "target": "ProtectedAdminSettings",
+          "resolved": false,
+          "confidence": 0,
+          "line": 17
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

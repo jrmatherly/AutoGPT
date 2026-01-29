@@ -1,60 +1,124 @@
 # AutoGPT Project Overview
 
 ## Purpose
+
 AutoGPT is a powerful platform for building, deploying, and managing continuous AI agents that automate complex workflows. It enables users to create custom AI-powered automation through a visual graph-based editor.
 
 ## Project Structure
 
-The repository is a **monorepo** containing two main sections:
+The repository is a **monorepo** containing:
 
-### 1. AutoGPT Platform (`autogpt_platform/`)
-The modern, actively developed platform with:
-- **Backend** (`/backend`): Python FastAPI server with async support
-- **Frontend** (`/frontend`): Next.js 15 React application
-- **Shared Libraries** (`/autogpt_libs`): Common Python utilities
-- **Graph Templates** (`/graph_templates`): Pre-built workflow templates
-- **Database** (`/db`): Database Docker configuration
+```
+AutoGPT/
+├── autogpt_platform/          # Modern platform (main development)
+│   ├── backend/               # Python FastAPI server
+│   ├── frontend/              # Next.js 15 React app
+│   ├── autogpt_libs/          # Shared Python libraries
+│   ├── graph_templates/       # Pre-built workflow templates
+│   └── db/                    # Database Docker configuration
+└── docs/                      # Project documentation
+```
 
-Licensed under **Polyform Shield License**.
-
-
+Licensed under **Polyform Shield License** (commercial restrictions apply).
 
 ## Tech Stack
 
-### Backend (Platform)
-- **Framework**: FastAPI with async support
-- **Language**: Python 3.10+
-- **Database**: PostgreSQL with Prisma ORM (includes pgvector for embeddings)
-- **Queue**: RabbitMQ for async task processing
-- **Cache**: Redis
-- **Auth**: JWT-based with Supabase integration
-- **Package Manager**: Poetry
-- **Testing**: pytest with snapshot testing
+### Backend (Python)
 
-### Frontend (Platform)
-- **Framework**: Next.js 15 with App Router (client-first approach)
-- **Language**: TypeScript
-- **Data Fetching**: Orval-generated React Query hooks from OpenAPI spec
-- **State**: React Query for server state, Zustand for complex local state
-- **Styling**: Tailwind CSS + shadcn/ui (Radix primitives)
-- **Components**: Design system with atoms, molecules, organisms
-- **Icons**: Phosphor Icons (only)
-- **Testing**: Playwright for E2E, Storybook for components, Vitest for units
-- **Package Manager**: pnpm (v10.20.0+)
-- **Node**: 22.x
+| Component | Technology |
+|-----------|------------|
+| **Framework** | FastAPI with async support |
+| **Language** | Python 3.10+ |
+| **Database** | PostgreSQL with Prisma ORM (includes pgvector for embeddings) |
+| **Queue** | RabbitMQ for async task processing |
+| **Cache** | Redis |
+| **Auth** | JWT-based with Supabase integration |
+| **Package Manager** | Poetry |
+| **Testing** | pytest with snapshot testing |
+| **Formatting** | Black + isort |
+| **Linting** | Ruff |
+
+### Frontend (TypeScript)
+
+| Component | Technology |
+|-----------|------------|
+| **Framework** | Next.js 15 with App Router (client-first approach) |
+| **Language** | TypeScript (strict mode) |
+| **Data Fetching** | Orval-generated React Query hooks from OpenAPI spec |
+| **State** | React Query (server state), Zustand (complex local state) |
+| **Styling** | Tailwind CSS + shadcn/ui (Radix primitives) |
+| **Components** | Design system with atoms, molecules, organisms |
+| **Workflow Editor** | @xyflow/react |
+| **Icons** | Phosphor Icons (only - no other icon libraries) |
+| **Feature Flags** | LaunchDarkly |
+| **Testing** | Playwright (E2E), Storybook (components), Vitest (units) |
+| **Package Manager** | pnpm (v10.20.0+) |
+| **Node** | 22.x |
 
 ## Key Concepts
 
-1. **Agent Graphs**: Workflow definitions stored as JSON, executed by the backend
-2. **Blocks**: Reusable components in `/backend/blocks/` that perform specific tasks
-3. **Integrations**: OAuth and API connections stored per user
-4. **Store/Marketplace**: Platform for sharing agent templates
-5. **Execution Engine**: Separate executor service processes agent workflows
+1. **Agent Graphs**: Workflow definitions stored as JSON, executed by the backend. Contains nodes (blocks) and links (connections).
+
+2. **Blocks**: Reusable components in `/backend/blocks/` that perform specific tasks (224+ available). Each block has input/output schemas and an async `run` method.
+
+3. **Integrations**: OAuth and API connections stored per user for third-party services (Google, GitHub, Discord, Twitter, etc.).
+
+4. **Store/Marketplace**: Platform for sharing and discovering agent templates.
+
+5. **Execution Engine**: Separate executor service processes agent workflows asynchronously via RabbitMQ queue.
 
 ## Architecture Highlights
 
-- **API Layer**: REST and WebSocket endpoints
-- **Visual Builder**: Graph editor using @xyflow/react
-- **Feature Flags**: LaunchDarkly integration
-- **Security**: Cache protection middleware, ClamAV for file uploads
-- **Monitoring**: Sentry for error tracking, Prometheus metrics
+### Services
+
+| Service | Purpose |
+|---------|---------|
+| **REST API** (`rest.py`) | Main HTTP endpoints |
+| **WebSocket** (`ws.py`) | Real-time execution updates |
+| **Executor** (`exec.py`) | Workflow execution engine |
+| **Scheduler** (`scheduler.py`) | Task scheduling |
+| **Notification** (`notification.py`) | User notifications |
+
+### Security
+
+- **Cache Protection Middleware**: Disables caching for all endpoints by default; only explicitly allowed paths can be cached
+- **ClamAV**: Virus scanning for file uploads
+- **User ID Validation**: All data layer operations verify user ownership
+
+### Monitoring
+
+- **Sentry**: Error tracking and exception monitoring
+- **Prometheus**: Metrics collection
+- **Structured Logging**: JSON logs for observability
+
+## Development Workflow
+
+### Quick Start
+
+```bash
+# Start infrastructure
+cd autogpt_platform && docker compose up -d
+
+# Backend
+cd backend && poetry install && poetry run serve
+
+# Frontend
+cd frontend && pnpm i && pnpm dev
+```
+
+### Key Commands
+
+| Task | Command |
+|------|---------|
+| Format backend | `poetry run format` |
+| Test backend | `poetry run test` |
+| Format frontend | `pnpm format` |
+| Type check frontend | `pnpm types` |
+| Generate API client | `pnpm generate:api` |
+
+## Contributing
+
+- Create PRs against the `dev` branch
+- Use conventional commit format: `type(scope): description`
+- Types: `feat`, `fix`, `refactor`, `ci`, `docs`, `dx`
+- Scopes: `platform`, `frontend`, `backend`, `blocks`, `infra`

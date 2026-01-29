@@ -1,0 +1,224 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.204Z",
+  "checksum": "90af55ba40725f07",
+  "file": "src/components/contextual/OutputRenderers/renderers/CodeRenderer.tsx",
+  "functions": [
+    {
+      "id": "src/components/contextual/OutputRenderers/renderers/CodeRenderer.tsx:getFileExtension:9",
+      "name": "getFileExtension",
+      "startLine": 9,
+      "endLine": 31,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "toLowerCase",
+          "resolved": false,
+          "confidence": 0,
+          "line": 30
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/contextual/OutputRenderers/renderers/CodeRenderer.tsx:canRenderCode:33",
+      "name": "canRenderCode",
+      "startLine": 33,
+      "endLine": 69,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "test",
+          "resolved": false,
+          "confidence": 0,
+          "line": 51
+        },
+        {
+          "target": "value",
+          "resolved": false,
+          "confidence": 0,
+          "line": 51
+        },
+        {
+          "target": "some",
+          "resolved": false,
+          "confidence": 0,
+          "line": 68
+        },
+        {
+          "target": "test",
+          "resolved": false,
+          "confidence": 0,
+          "line": 68
+        },
+        {
+          "target": "value",
+          "resolved": false,
+          "confidence": 0,
+          "line": 68
+        },
+        {
+          "target": "test",
+          "resolved": false,
+          "confidence": 0,
+          "line": 68
+        },
+        {
+          "target": "value",
+          "resolved": false,
+          "confidence": 0,
+          "line": 68
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/contextual/OutputRenderers/renderers/CodeRenderer.tsx:$some$1:68",
+      "name": "$some$1",
+      "startLine": 68,
+      "endLine": 68,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "some",
+          "resolved": false,
+          "confidence": 0,
+          "line": 68
+        },
+        {
+          "target": "test",
+          "resolved": false,
+          "confidence": 0,
+          "line": 68
+        },
+        {
+          "target": "value",
+          "resolved": false,
+          "confidence": 0,
+          "line": 68
+        },
+        {
+          "target": "test",
+          "resolved": false,
+          "confidence": 0,
+          "line": 68
+        },
+        {
+          "target": "value",
+          "resolved": false,
+          "confidence": 0,
+          "line": 68
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/contextual/OutputRenderers/renderers/CodeRenderer.tsx:renderCode:71",
+      "name": "renderCode",
+      "startLine": 71,
+      "endLine": 90,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "String",
+          "resolved": false,
+          "confidence": 0,
+          "line": 75
+        },
+        {
+          "target": "value",
+          "resolved": false,
+          "confidence": 0,
+          "line": 75
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/contextual/OutputRenderers/renderers/CodeRenderer.tsx:getCopyContentCode:92",
+      "name": "getCopyContentCode",
+      "startLine": 92,
+      "endLine": 102,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "String",
+          "resolved": false,
+          "confidence": 0,
+          "line": 96
+        },
+        {
+          "target": "value",
+          "resolved": false,
+          "confidence": 0,
+          "line": 96
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/contextual/OutputRenderers/renderers/CodeRenderer.tsx:getDownloadContentCode:104",
+      "name": "getDownloadContentCode",
+      "startLine": 104,
+      "endLine": 118,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "String",
+          "resolved": false,
+          "confidence": 0,
+          "line": 108
+        },
+        {
+          "target": "value",
+          "resolved": false,
+          "confidence": 0,
+          "line": 108
+        },
+        {
+          "target": "getFileExtension",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 110,
+          "resolvedId": "src/components/contextual/OutputRenderers/renderers/CodeRenderer.tsx:getFileExtension:9"
+        },
+        {
+          "target": "language",
+          "resolved": false,
+          "confidence": 0,
+          "line": 110
+        },
+        {
+          "target": "Blob",
+          "resolved": false,
+          "confidence": 0,
+          "line": 111
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/contextual/OutputRenderers/renderers/CodeRenderer.tsx:isConcatenableCode:120",
+      "name": "isConcatenableCode",
+      "startLine": 120,
+      "endLine": 125,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

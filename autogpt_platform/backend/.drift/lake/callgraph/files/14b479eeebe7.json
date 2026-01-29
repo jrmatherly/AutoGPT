@@ -1,0 +1,71 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.130Z",
+  "checksum": "6f623d1beee9392b",
+  "file": "backend/blocks/slant3d/filament.py",
+  "functions": [
+    {
+      "id": "backend/blocks/slant3d/filament.py:__init__:27",
+      "name": "__init__",
+      "startLine": 27,
+      "endLine": 72,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 28,
+          "resolvedId": "backend/blocks/slant3d/filament.py:__init__:27"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 28
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/slant3d/filament.py:run:74",
+      "name": "run",
+      "startLine": 74,
+      "endLine": 84,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "_make_request",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 78,
+          "resolvedId": "backend/blocks/slant3d/base.py:_make_request:17"
+        },
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 79,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 83
+        },
+        {
+          "target": "e",
+          "resolved": false,
+          "confidence": 0,
+          "line": 83
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

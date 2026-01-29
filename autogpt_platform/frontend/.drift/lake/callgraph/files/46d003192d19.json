@@ -1,0 +1,356 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.039Z",
+  "checksum": "49c9cfe94ac8a0be",
+  "file": "src/components/contextual/Chat/stream-executor.ts",
+  "functions": [
+    {
+      "id": "src/components/contextual/Chat/stream-executor.ts:notifySubscribers:13",
+      "name": "notifySubscribers",
+      "startLine": 13,
+      "endLine": 22,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "push",
+          "resolved": false,
+          "confidence": 0,
+          "line": 14
+        },
+        {
+          "target": "chunk",
+          "resolved": false,
+          "confidence": 0,
+          "line": 14
+        },
+        {
+          "target": "callback",
+          "resolved": false,
+          "confidence": 0,
+          "line": 17
+        },
+        {
+          "target": "chunk",
+          "resolved": false,
+          "confidence": 0,
+          "line": 17
+        },
+        {
+          "target": "warn",
+          "resolved": false,
+          "confidence": 0,
+          "line": 19
+        },
+        {
+          "target": "err",
+          "resolved": false,
+          "confidence": 0,
+          "line": 19
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/contextual/Chat/stream-executor.ts:executeStream:24",
+      "name": "executeStream",
+      "startLine": 24,
+      "endLine": 142,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "stringify",
+          "resolved": false,
+          "confidence": 0,
+          "line": 35
+        },
+        {
+          "target": "fetch",
+          "resolved": false,
+          "confidence": 0,
+          "line": 41
+        },
+        {
+          "target": "url",
+          "resolved": false,
+          "confidence": 0,
+          "line": 41
+        },
+        {
+          "target": "text",
+          "resolved": false,
+          "confidence": 0,
+          "line": 52
+        },
+        {
+          "target": "Error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 53,
+          "resolvedId": "src/app/error.tsx:Error:8"
+        },
+        {
+          "target": "Error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 57,
+          "resolvedId": "src/app/error.tsx:Error:8"
+        },
+        {
+          "target": "getReader",
+          "resolved": false,
+          "confidence": 0,
+          "line": 60
+        },
+        {
+          "target": "TextDecoder",
+          "resolved": false,
+          "confidence": 0,
+          "line": 61
+        },
+        {
+          "target": "read",
+          "resolved": false,
+          "confidence": 0,
+          "line": 65
+        },
+        {
+          "target": "notifySubscribers",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 68,
+          "resolvedId": "src/components/contextual/Chat/stream-executor.ts:notifySubscribers:13"
+        },
+        {
+          "target": "stream",
+          "resolved": false,
+          "confidence": 0,
+          "line": 68
+        },
+        {
+          "target": "decode",
+          "resolved": false,
+          "confidence": 0,
+          "line": 73
+        },
+        {
+          "target": "value",
+          "resolved": false,
+          "confidence": 0,
+          "line": 73
+        },
+        {
+          "target": "split",
+          "resolved": false,
+          "confidence": 0,
+          "line": 74
+        },
+        {
+          "target": "pop",
+          "resolved": false,
+          "confidence": 0,
+          "line": 75
+        },
+        {
+          "target": "parseSSELine",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 78,
+          "resolvedId": "src/components/contextual/Chat/stream-utils.ts:parseSSELine:81"
+        },
+        {
+          "target": "line",
+          "resolved": false,
+          "confidence": 0,
+          "line": 78
+        },
+        {
+          "target": "notifySubscribers",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 81,
+          "resolvedId": "src/components/contextual/Chat/stream-executor.ts:notifySubscribers:13"
+        },
+        {
+          "target": "stream",
+          "resolved": false,
+          "confidence": 0,
+          "line": 81
+        },
+        {
+          "target": "parse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 87
+        },
+        {
+          "target": "data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 87
+        },
+        {
+          "target": "normalizeStreamChunk",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 90,
+          "resolvedId": "src/components/contextual/Chat/stream-utils.ts:normalizeStreamChunk:24"
+        },
+        {
+          "target": "rawChunk",
+          "resolved": false,
+          "confidence": 0,
+          "line": 90
+        },
+        {
+          "target": "notifySubscribers",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 93,
+          "resolvedId": "src/components/contextual/Chat/stream-executor.ts:notifySubscribers:13"
+        },
+        {
+          "target": "stream",
+          "resolved": false,
+          "confidence": 0,
+          "line": 93
+        },
+        {
+          "target": "chunk",
+          "resolved": false,
+          "confidence": 0,
+          "line": 93
+        },
+        {
+          "target": "Error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 102,
+          "resolvedId": "src/app/error.tsx:Error:8"
+        },
+        {
+          "target": "warn",
+          "resolved": false,
+          "confidence": 0,
+          "line": 108
+        },
+        {
+          "target": "err",
+          "resolved": false,
+          "confidence": 0,
+          "line": 108
+        },
+        {
+          "target": "notifySubscribers",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 115,
+          "resolvedId": "src/components/contextual/Chat/stream-executor.ts:notifySubscribers:13"
+        },
+        {
+          "target": "stream",
+          "resolved": false,
+          "confidence": 0,
+          "line": 115
+        },
+        {
+          "target": "pow",
+          "resolved": false,
+          "confidence": 0,
+          "line": 121
+        },
+        {
+          "target": "retryCount",
+          "resolved": false,
+          "confidence": 0,
+          "line": 121
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 122
+        },
+        {
+          "target": "Promise",
+          "resolved": false,
+          "confidence": 0,
+          "line": 125
+        },
+        {
+          "target": "setTimeout",
+          "resolved": false,
+          "confidence": 0,
+          "line": 125
+        },
+        {
+          "target": "resolve",
+          "resolved": false,
+          "confidence": 0,
+          "line": 125
+        },
+        {
+          "target": "retryDelay",
+          "resolved": false,
+          "confidence": 0,
+          "line": 125
+        },
+        {
+          "target": "executeStream",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 126,
+          "resolvedId": "src/components/contextual/Chat/stream-executor.ts:executeStream:24"
+        },
+        {
+          "target": "stream",
+          "resolved": false,
+          "confidence": 0,
+          "line": 127
+        },
+        {
+          "target": "message",
+          "resolved": false,
+          "confidence": 0,
+          "line": 128
+        },
+        {
+          "target": "isUserMessage",
+          "resolved": false,
+          "confidence": 0,
+          "line": 129
+        },
+        {
+          "target": "context",
+          "resolved": false,
+          "confidence": 0,
+          "line": 130
+        },
+        {
+          "target": "Error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 136,
+          "resolvedId": "src/app/error.tsx:Error:8"
+        },
+        {
+          "target": "notifySubscribers",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 137,
+          "resolvedId": "src/components/contextual/Chat/stream-executor.ts:notifySubscribers:13"
+        },
+        {
+          "target": "stream",
+          "resolved": false,
+          "confidence": 0,
+          "line": 137
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

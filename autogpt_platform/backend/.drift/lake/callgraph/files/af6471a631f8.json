@@ -1,0 +1,321 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.204Z",
+  "checksum": "cd55a1cc714d9e92",
+  "file": "backend/blocks/replicate/replicate_block.py",
+  "functions": [
+    {
+      "id": "backend/blocks/replicate/replicate_block.py:__init__:64",
+      "name": "__init__",
+      "startLine": 64,
+      "endLine": 87,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 65,
+          "resolvedId": "backend/blocks/replicate/replicate_block.py:__init__:64"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 65
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/replicate/replicate_block.py:run:89",
+      "name": "run",
+      "startLine": 89,
+      "endLine": 135,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "debug",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 107,
+          "resolvedId": "backend/util/logging.py:debug:53"
+        },
+        {
+          "target": "run_model",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 108,
+          "resolvedId": "backend/blocks/replicate/replicate_block.py:run_model:137"
+        },
+        {
+          "target": "model_ref",
+          "resolved": false,
+          "confidence": 0,
+          "line": 109
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 115
+        },
+        {
+          "target": "e",
+          "resolved": false,
+          "confidence": 0,
+          "line": 115
+        },
+        {
+          "target": "error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 116,
+          "resolvedId": "backend/util/logging.py:error:49"
+        },
+        {
+          "target": "BlockInputError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 124
+        },
+        {
+          "target": "BlockExecutionError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 131
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/replicate/replicate_block.py:run_model:137",
+      "name": "run_model",
+      "startLine": 137,
+      "endLine": 157,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 149,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        },
+        {
+          "target": "ReplicateClient",
+          "resolved": false,
+          "confidence": 0,
+          "line": 150
+        },
+        {
+          "target": "async_run",
+          "resolved": false,
+          "confidence": 0,
+          "line": 151
+        },
+        {
+          "target": "model_ref",
+          "resolved": false,
+          "confidence": 0,
+          "line": 152
+        },
+        {
+          "target": "extract_result",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 155,
+          "resolvedId": "backend/blocks/replicate/_helper.py:extract_result:10"
+        },
+        {
+          "target": "output",
+          "resolved": false,
+          "confidence": 0,
+          "line": 155
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/replicate/replicate_block.py:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 158,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "getLogger",
+          "resolved": false,
+          "confidence": 0,
+          "line": 23
+        },
+        {
+          "target": "CredentialsField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 38,
+          "resolvedId": "backend/data/model.py:CredentialsField:681"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 41,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 46,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 52,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 60,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 61,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 62,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 65,
+          "resolvedId": "backend/blocks/replicate/replicate_block.py:__init__:64"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 65
+        },
+        {
+          "target": "debug",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 107,
+          "resolvedId": "backend/util/logging.py:debug:53"
+        },
+        {
+          "target": "run_model",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 108,
+          "resolvedId": "backend/blocks/replicate/replicate_block.py:run_model:137"
+        },
+        {
+          "target": "model_ref",
+          "resolved": false,
+          "confidence": 0,
+          "line": 109
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 115
+        },
+        {
+          "target": "e",
+          "resolved": false,
+          "confidence": 0,
+          "line": 115
+        },
+        {
+          "target": "error",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 116,
+          "resolvedId": "backend/util/logging.py:error:49"
+        },
+        {
+          "target": "BlockInputError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 124
+        },
+        {
+          "target": "BlockExecutionError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 131
+        },
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 149,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        },
+        {
+          "target": "ReplicateClient",
+          "resolved": false,
+          "confidence": 0,
+          "line": 150
+        },
+        {
+          "target": "async_run",
+          "resolved": false,
+          "confidence": 0,
+          "line": 151
+        },
+        {
+          "target": "model_ref",
+          "resolved": false,
+          "confidence": 0,
+          "line": 152
+        },
+        {
+          "target": "extract_result",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 155,
+          "resolvedId": "backend/blocks/replicate/_helper.py:extract_result:10"
+        },
+        {
+          "target": "output",
+          "resolved": false,
+          "confidence": 0,
+          "line": 155
+        },
+        {
+          "target": "getLogger",
+          "resolved": false,
+          "confidence": 0,
+          "line": 23
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

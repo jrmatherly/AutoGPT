@@ -1,0 +1,555 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.019Z",
+  "checksum": "9cd2863686e0cb88",
+  "file": "src/components/contextual/InfiniteScroll/useInfiniteScroll.ts",
+  "functions": [
+    {
+      "id": "src/components/contextual/InfiniteScroll/useInfiniteScroll.ts:useInfiniteScroll:12",
+      "name": "useInfiniteScroll",
+      "startLine": 12,
+      "endLine": 86,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useRef",
+          "resolved": false,
+          "confidence": 0,
+          "line": 19
+        },
+        {
+          "target": "useRef",
+          "resolved": false,
+          "confidence": 0,
+          "line": 20
+        },
+        {
+          "target": "useState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 21
+        },
+        {
+          "target": "useRef",
+          "resolved": false,
+          "confidence": 0,
+          "line": 22
+        },
+        {
+          "target": "useCallback",
+          "resolved": false,
+          "confidence": 0,
+          "line": 24
+        },
+        {
+          "target": "fetchNextPage",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 28,
+          "resolvedId": "src/app/(platform)/copilot/components/CopilotShell/components/SessionsList/useSessionsPagination.ts:fetchNextPage:69"
+        },
+        {
+          "target": "onLoadMore",
+          "resolved": false,
+          "confidence": 0,
+          "line": 29
+        },
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 36
+        },
+        {
+          "target": "isServerSide",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 37,
+          "resolvedId": "src/services/environment/index.ts:isServerSide:110"
+        },
+        {
+          "target": "IntersectionObserver",
+          "resolved": false,
+          "confidence": 0,
+          "line": 40
+        },
+        {
+          "target": "setIsInView",
+          "resolved": false,
+          "confidence": 0,
+          "line": 43
+        },
+        {
+          "target": "isIntersecting",
+          "resolved": false,
+          "confidence": 0,
+          "line": 43
+        },
+        {
+          "target": "observe",
+          "resolved": false,
+          "confidence": 0,
+          "line": 50
+        },
+        {
+          "target": "current",
+          "resolved": false,
+          "confidence": 0,
+          "line": 50
+        },
+        {
+          "target": "getBoundingClientRect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 55
+        },
+        {
+          "target": "setIsInView",
+          "resolved": false,
+          "confidence": 0,
+          "line": 61
+        },
+        {
+          "target": "checkInitialView",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 67,
+          "resolvedId": "src/components/contextual/InfiniteScroll/useInfiniteScroll.ts:checkInitialView:53"
+        },
+        {
+          "target": "setTimeout",
+          "resolved": false,
+          "confidence": 0,
+          "line": 68
+        },
+        {
+          "target": "checkInitialView",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 68,
+          "resolvedId": "src/components/contextual/InfiniteScroll/useInfiniteScroll.ts:checkInitialView:53"
+        },
+        {
+          "target": "clearTimeout",
+          "resolved": false,
+          "confidence": 0,
+          "line": 71
+        },
+        {
+          "target": "timeoutId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 71
+        },
+        {
+          "target": "disconnect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        },
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 76
+        },
+        {
+          "target": "loadMore",
+          "resolved": false,
+          "confidence": 0,
+          "line": 78
+        },
+        {
+          "target": "isServerSide",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 37,
+          "resolvedId": "src/services/environment/index.ts:isServerSide:110"
+        },
+        {
+          "target": "IntersectionObserver",
+          "resolved": false,
+          "confidence": 0,
+          "line": 40
+        },
+        {
+          "target": "setIsInView",
+          "resolved": false,
+          "confidence": 0,
+          "line": 43
+        },
+        {
+          "target": "isIntersecting",
+          "resolved": false,
+          "confidence": 0,
+          "line": 43
+        },
+        {
+          "target": "observe",
+          "resolved": false,
+          "confidence": 0,
+          "line": 50
+        },
+        {
+          "target": "current",
+          "resolved": false,
+          "confidence": 0,
+          "line": 50
+        },
+        {
+          "target": "getBoundingClientRect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 55
+        },
+        {
+          "target": "setIsInView",
+          "resolved": false,
+          "confidence": 0,
+          "line": 61
+        },
+        {
+          "target": "checkInitialView",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 67,
+          "resolvedId": "src/components/contextual/InfiniteScroll/useInfiniteScroll.ts:checkInitialView:53"
+        },
+        {
+          "target": "setTimeout",
+          "resolved": false,
+          "confidence": 0,
+          "line": 68
+        },
+        {
+          "target": "checkInitialView",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 68,
+          "resolvedId": "src/components/contextual/InfiniteScroll/useInfiniteScroll.ts:checkInitialView:53"
+        },
+        {
+          "target": "clearTimeout",
+          "resolved": false,
+          "confidence": 0,
+          "line": 71
+        },
+        {
+          "target": "timeoutId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 71
+        },
+        {
+          "target": "disconnect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        },
+        {
+          "target": "getBoundingClientRect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 55
+        },
+        {
+          "target": "setIsInView",
+          "resolved": false,
+          "confidence": 0,
+          "line": 61
+        },
+        {
+          "target": "loadMore",
+          "resolved": false,
+          "confidence": 0,
+          "line": 78
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/contextual/InfiniteScroll/useInfiniteScroll.ts:$useEffect$1:36",
+      "name": "$useEffect$1",
+      "startLine": 36,
+      "endLine": 74,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 36
+        },
+        {
+          "target": "isServerSide",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 37,
+          "resolvedId": "src/services/environment/index.ts:isServerSide:110"
+        },
+        {
+          "target": "IntersectionObserver",
+          "resolved": false,
+          "confidence": 0,
+          "line": 40
+        },
+        {
+          "target": "setIsInView",
+          "resolved": false,
+          "confidence": 0,
+          "line": 43
+        },
+        {
+          "target": "isIntersecting",
+          "resolved": false,
+          "confidence": 0,
+          "line": 43
+        },
+        {
+          "target": "observe",
+          "resolved": false,
+          "confidence": 0,
+          "line": 50
+        },
+        {
+          "target": "current",
+          "resolved": false,
+          "confidence": 0,
+          "line": 50
+        },
+        {
+          "target": "getBoundingClientRect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 55
+        },
+        {
+          "target": "setIsInView",
+          "resolved": false,
+          "confidence": 0,
+          "line": 61
+        },
+        {
+          "target": "checkInitialView",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 67,
+          "resolvedId": "src/components/contextual/InfiniteScroll/useInfiniteScroll.ts:checkInitialView:53"
+        },
+        {
+          "target": "setTimeout",
+          "resolved": false,
+          "confidence": 0,
+          "line": 68
+        },
+        {
+          "target": "checkInitialView",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 68,
+          "resolvedId": "src/components/contextual/InfiniteScroll/useInfiniteScroll.ts:checkInitialView:53"
+        },
+        {
+          "target": "clearTimeout",
+          "resolved": false,
+          "confidence": 0,
+          "line": 71
+        },
+        {
+          "target": "timeoutId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 71
+        },
+        {
+          "target": "disconnect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        },
+        {
+          "target": "isServerSide",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 37,
+          "resolvedId": "src/services/environment/index.ts:isServerSide:110"
+        },
+        {
+          "target": "IntersectionObserver",
+          "resolved": false,
+          "confidence": 0,
+          "line": 40
+        },
+        {
+          "target": "setIsInView",
+          "resolved": false,
+          "confidence": 0,
+          "line": 43
+        },
+        {
+          "target": "isIntersecting",
+          "resolved": false,
+          "confidence": 0,
+          "line": 43
+        },
+        {
+          "target": "observe",
+          "resolved": false,
+          "confidence": 0,
+          "line": 50
+        },
+        {
+          "target": "current",
+          "resolved": false,
+          "confidence": 0,
+          "line": 50
+        },
+        {
+          "target": "getBoundingClientRect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 55
+        },
+        {
+          "target": "setIsInView",
+          "resolved": false,
+          "confidence": 0,
+          "line": 61
+        },
+        {
+          "target": "checkInitialView",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 67,
+          "resolvedId": "src/components/contextual/InfiniteScroll/useInfiniteScroll.ts:checkInitialView:53"
+        },
+        {
+          "target": "setTimeout",
+          "resolved": false,
+          "confidence": 0,
+          "line": 68
+        },
+        {
+          "target": "checkInitialView",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 68,
+          "resolvedId": "src/components/contextual/InfiniteScroll/useInfiniteScroll.ts:checkInitialView:53"
+        },
+        {
+          "target": "clearTimeout",
+          "resolved": false,
+          "confidence": 0,
+          "line": 71
+        },
+        {
+          "target": "timeoutId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 71
+        },
+        {
+          "target": "disconnect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        },
+        {
+          "target": "getBoundingClientRect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 55
+        },
+        {
+          "target": "setIsInView",
+          "resolved": false,
+          "confidence": 0,
+          "line": 61
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/contextual/InfiniteScroll/useInfiniteScroll.ts:checkInitialView:53",
+      "name": "checkInitialView",
+      "startLine": 53,
+      "endLine": 64,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "getBoundingClientRect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 55
+        },
+        {
+          "target": "setIsInView",
+          "resolved": false,
+          "confidence": 0,
+          "line": 61
+        },
+        {
+          "target": "getBoundingClientRect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 55
+        },
+        {
+          "target": "setIsInView",
+          "resolved": false,
+          "confidence": 0,
+          "line": 61
+        },
+        {
+          "target": "getBoundingClientRect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 55
+        },
+        {
+          "target": "setIsInView",
+          "resolved": false,
+          "confidence": 0,
+          "line": 61
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/contextual/InfiniteScroll/useInfiniteScroll.ts:$useEffect$2:76",
+      "name": "$useEffect$2",
+      "startLine": 76,
+      "endLine": 80,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 76
+        },
+        {
+          "target": "loadMore",
+          "resolved": false,
+          "confidence": 0,
+          "line": 78
+        },
+        {
+          "target": "loadMore",
+          "resolved": false,
+          "confidence": 0,
+          "line": 78
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

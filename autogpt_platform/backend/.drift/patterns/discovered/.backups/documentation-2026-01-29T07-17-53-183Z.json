@@ -1,0 +1,948 @@
+{
+  "version": "1.0.0",
+  "category": "documentation",
+  "patterns": [
+    {
+      "id": "258d379a0f04d561",
+      "subcategory": "todo-patterns",
+      "name": "Todo Patterns Detector",
+      "description": "Learns TODO/FIXME comment patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "documentation/todo-patterns",
+          "patternId": "documentation/todo-patterns/conditional"
+        }
+      },
+      "confidence": {
+        "frequency": 0.1,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 7,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "backend/blocks/github/example_payloads/pull_request.synchronize.json",
+          "line": 37,
+          "column": 3248,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "backend/blocks/github/example_payloads/pull_request.synchronize.json",
+          "line": 37,
+          "column": 3385,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "backend/blocks/github/reviews.py",
+          "line": 772,
+          "column": 58,
+          "isOutlier": false,
+          "confidence": 0.83
+        },
+        {
+          "file": "backend/blocks/google/sheets.py",
+          "line": 6236,
+          "column": 28,
+          "isOutlier": false,
+          "confidence": 0.8825
+        },
+        {
+          "file": "backend/blocks/todoist/projects.py",
+          "line": 216,
+          "column": 36,
+          "isOutlier": false,
+          "confidence": 0.8003030303030303
+        },
+        {
+          "file": "backend/blocks/todoist/projects.py",
+          "line": 235,
+          "column": 54,
+          "isOutlier": false,
+          "confidence": 0.8003030303030303
+        },
+        {
+          "file": "backend/blocks/todoist/projects.py",
+          "line": 486,
+          "column": 64,
+          "isOutlier": false,
+          "confidence": 0.8003030303030303
+        },
+        {
+          "file": "backend/data/credit_integration_test.py",
+          "line": 161,
+          "column": 83,
+          "isOutlier": false,
+          "confidence": 0.8533333333333333
+        },
+        {
+          "file": "backend/integrations/ayrshare.py",
+          "line": 465,
+          "column": 12,
+          "isOutlier": false,
+          "confidence": 0.8825
+        },
+        {
+          "file": "backend/util/test_json.py",
+          "line": 498,
+          "column": 58,
+          "isOutlier": false,
+          "confidence": 0.7949999999999999
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:30:16.815Z",
+        "lastSeen": "2026-01-29T06:30:16.815Z",
+        "source": "auto-detected",
+        "tags": [
+          "documentation",
+          "todo-patterns"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "2a1ec7474d36e2af",
+      "subcategory": "todo-patterns",
+      "name": "Todo Patterns Detector",
+      "description": "Learns TODO/FIXME comment patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "documentation/todo-patterns",
+          "patternId": "documentation/todo-patterns/function_call"
+        }
+      },
+      "confidence": {
+        "frequency": 0.91,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 6,
+        "score": 0.8825,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "backend/blocks/google/sheets.py",
+          "line": 5948,
+          "column": 14,
+          "isOutlier": true,
+          "confidence": 0.8825,
+          "outlierReason": "High confidence outlier"
+        },
+        {
+          "file": "backend/blocks/todoist/comments.py",
+          "line": 39,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 0.807962962962963
+        },
+        {
+          "file": "backend/blocks/todoist/comments.py",
+          "line": 39,
+          "column": 48,
+          "isOutlier": false,
+          "confidence": 0.807962962962963
+        },
+        {
+          "file": "backend/blocks/todoist/comments.py",
+          "line": 103,
+          "column": 19,
+          "isOutlier": false,
+          "confidence": 0.807962962962963
+        },
+        {
+          "file": "backend/blocks/todoist/comments.py",
+          "line": 154,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 0.807962962962963
+        },
+        {
+          "file": "backend/blocks/todoist/comments.py",
+          "line": 154,
+          "column": 48,
+          "isOutlier": false,
+          "confidence": 0.807962962962963
+        },
+        {
+          "file": "backend/blocks/todoist/comments.py",
+          "line": 214,
+          "column": 19,
+          "isOutlier": false,
+          "confidence": 0.807962962962963
+        },
+        {
+          "file": "backend/blocks/todoist/comments.py",
+          "line": 251,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 0.807962962962963
+        },
+        {
+          "file": "backend/blocks/todoist/comments.py",
+          "line": 251,
+          "column": 48,
+          "isOutlier": false,
+          "confidence": 0.807962962962963
+        },
+        {
+          "file": "backend/blocks/todoist/comments.py",
+          "line": 304,
+          "column": 19,
+          "isOutlier": false,
+          "confidence": 0.807962962962963
+        },
+        {
+          "file": "backend/blocks/todoist/comments.py",
+          "line": 339,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 0.807962962962963
+        },
+        {
+          "file": "backend/blocks/todoist/comments.py",
+          "line": 339,
+          "column": 48,
+          "isOutlier": false,
+          "confidence": 0.807962962962963
+        },
+        {
+          "file": "backend/blocks/todoist/comments.py",
+          "line": 367,
+          "column": 19,
+          "isOutlier": false,
+          "confidence": 0.807962962962963
+        },
+        {
+          "file": "backend/blocks/todoist/comments.py",
+          "line": 398,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 0.807962962962963
+        },
+        {
+          "file": "backend/blocks/todoist/comments.py",
+          "line": 398,
+          "column": 48,
+          "isOutlier": false,
+          "confidence": 0.807962962962963
+        },
+        {
+          "file": "backend/blocks/todoist/comments.py",
+          "line": 424,
+          "column": 19,
+          "isOutlier": false,
+          "confidence": 0.807962962962963
+        },
+        {
+          "file": "backend/blocks/todoist/labels.py",
+          "line": 27,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 0.7990697674418604
+        },
+        {
+          "file": "backend/blocks/todoist/labels.py",
+          "line": 27,
+          "column": 48,
+          "isOutlier": false,
+          "confidence": 0.7990697674418604
+        },
+        {
+          "file": "backend/blocks/todoist/labels.py",
+          "line": 81,
+          "column": 19,
+          "isOutlier": false,
+          "confidence": 0.7990697674418604
+        },
+        {
+          "file": "backend/blocks/todoist/labels.py",
+          "line": 125,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 0.7990697674418604
+        },
+        {
+          "file": "backend/blocks/todoist/labels.py",
+          "line": 125,
+          "column": 48,
+          "isOutlier": false,
+          "confidence": 0.7990697674418604
+        },
+        {
+          "file": "backend/blocks/todoist/labels.py",
+          "line": 174,
+          "column": 19,
+          "isOutlier": false,
+          "confidence": 0.7990697674418604
+        },
+        {
+          "file": "backend/blocks/todoist/labels.py",
+          "line": 202,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 0.7990697674418604
+        },
+        {
+          "file": "backend/blocks/todoist/labels.py",
+          "line": 202,
+          "column": 48,
+          "isOutlier": false,
+          "confidence": 0.7990697674418604
+        },
+        {
+          "file": "backend/blocks/todoist/labels.py",
+          "line": 246,
+          "column": 19,
+          "isOutlier": false,
+          "confidence": 0.7990697674418604
+        },
+        {
+          "file": "backend/blocks/todoist/labels.py",
+          "line": 278,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 0.7990697674418604
+        },
+        {
+          "file": "backend/blocks/todoist/labels.py",
+          "line": 278,
+          "column": 48,
+          "isOutlier": false,
+          "confidence": 0.7990697674418604
+        },
+        {
+          "file": "backend/blocks/todoist/labels.py",
+          "line": 318,
+          "column": 19,
+          "isOutlier": false,
+          "confidence": 0.7990697674418604
+        },
+        {
+          "file": "backend/blocks/todoist/labels.py",
+          "line": 359,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 0.7990697674418604
+        },
+        {
+          "file": "backend/blocks/todoist/labels.py",
+          "line": 359,
+          "column": 48,
+          "isOutlier": false,
+          "confidence": 0.7990697674418604
+        },
+        {
+          "file": "backend/blocks/todoist/labels.py",
+          "line": 385,
+          "column": 19,
+          "isOutlier": false,
+          "confidence": 0.7990697674418604
+        },
+        {
+          "file": "backend/blocks/todoist/labels.py",
+          "line": 411,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 0.7990697674418604
+        },
+        {
+          "file": "backend/blocks/todoist/labels.py",
+          "line": 411,
+          "column": 48,
+          "isOutlier": false,
+          "confidence": 0.7990697674418604
+        },
+        {
+          "file": "backend/blocks/todoist/labels.py",
+          "line": 439,
+          "column": 19,
+          "isOutlier": false,
+          "confidence": 0.7990697674418604
+        },
+        {
+          "file": "backend/blocks/todoist/labels.py",
+          "line": 465,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 0.7990697674418604
+        },
+        {
+          "file": "backend/blocks/todoist/labels.py",
+          "line": 465,
+          "column": 48,
+          "isOutlier": false,
+          "confidence": 0.7990697674418604
+        },
+        {
+          "file": "backend/blocks/todoist/labels.py",
+          "line": 493,
+          "column": 19,
+          "isOutlier": false,
+          "confidence": 0.7990697674418604
+        },
+        {
+          "file": "backend/blocks/todoist/labels.py",
+          "line": 521,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 0.7990697674418604
+        },
+        {
+          "file": "backend/blocks/todoist/labels.py",
+          "line": 521,
+          "column": 48,
+          "isOutlier": false,
+          "confidence": 0.7990697674418604
+        },
+        {
+          "file": "backend/blocks/todoist/labels.py",
+          "line": 544,
+          "column": 19,
+          "isOutlier": false,
+          "confidence": 0.7990697674418604
+        },
+        {
+          "file": "backend/blocks/todoist/projects.py",
+          "line": 27,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 0.8003030303030303
+        },
+        {
+          "file": "backend/blocks/todoist/projects.py",
+          "line": 27,
+          "column": 48,
+          "isOutlier": false,
+          "confidence": 0.8003030303030303
+        },
+        {
+          "file": "backend/blocks/todoist/projects.py",
+          "line": 84,
+          "column": 19,
+          "isOutlier": false,
+          "confidence": 0.8003030303030303
+        },
+        {
+          "file": "backend/blocks/todoist/projects.py",
+          "line": 130,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 0.8003030303030303
+        },
+        {
+          "file": "backend/blocks/todoist/projects.py",
+          "line": 130,
+          "column": 48,
+          "isOutlier": false,
+          "confidence": 0.8003030303030303
+        },
+        {
+          "file": "backend/blocks/todoist/projects.py",
+          "line": 176,
+          "column": 19,
+          "isOutlier": false,
+          "confidence": 0.8003030303030303
+        },
+        {
+          "file": "backend/blocks/todoist/projects.py",
+          "line": 219,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 0.8003030303030303
+        },
+        {
+          "file": "backend/blocks/todoist/projects.py",
+          "line": 219,
+          "column": 48,
+          "isOutlier": false,
+          "confidence": 0.8003030303030303
+        },
+        {
+          "file": "backend/blocks/todoist/projects.py",
+          "line": 275,
+          "column": 19,
+          "isOutlier": false,
+          "confidence": 0.8003030303030303
+        },
+        {
+          "file": "backend/blocks/todoist/projects.py",
+          "line": 312,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 0.8003030303030303
+        },
+        {
+          "file": "backend/blocks/todoist/projects.py",
+          "line": 312,
+          "column": 48,
+          "isOutlier": false,
+          "confidence": 0.8003030303030303
+        },
+        {
+          "file": "backend/blocks/todoist/projects.py",
+          "line": 362,
+          "column": 19,
+          "isOutlier": false,
+          "confidence": 0.8003030303030303
+        },
+        {
+          "file": "backend/blocks/todoist/projects.py",
+          "line": 407,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 0.8003030303030303
+        },
+        {
+          "file": "backend/blocks/todoist/projects.py",
+          "line": 407,
+          "column": 48,
+          "isOutlier": false,
+          "confidence": 0.8003030303030303
+        },
+        {
+          "file": "backend/blocks/todoist/projects.py",
+          "line": 435,
+          "column": 19,
+          "isOutlier": false,
+          "confidence": 0.8003030303030303
+        },
+        {
+          "file": "backend/blocks/todoist/projects.py",
+          "line": 464,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 0.8003030303030303
+        },
+        {
+          "file": "backend/blocks/todoist/projects.py",
+          "line": 464,
+          "column": 48,
+          "isOutlier": false,
+          "confidence": 0.8003030303030303
+        },
+        {
+          "file": "backend/blocks/todoist/projects.py",
+          "line": 532,
+          "column": 19,
+          "isOutlier": false,
+          "confidence": 0.8003030303030303
+        },
+        {
+          "file": "backend/blocks/todoist/sections.py",
+          "line": 26,
+          "column": 22,
+          "isOutlier": true,
+          "confidence": 0.7746511627906977,
+          "outlierReason": "Value below IQR lower bound"
+        },
+        {
+          "file": "backend/blocks/todoist/sections.py",
+          "line": 26,
+          "column": 48,
+          "isOutlier": false,
+          "confidence": 0.7746511627906977
+        },
+        {
+          "file": "backend/blocks/todoist/sections.py",
+          "line": 87,
+          "column": 19,
+          "isOutlier": true,
+          "confidence": 0.7746511627906977,
+          "outlierReason": "Value below IQR lower bound"
+        },
+        {
+          "file": "backend/blocks/todoist/sections.py",
+          "line": 132,
+          "column": 24,
+          "isOutlier": true,
+          "confidence": 0.7746511627906977,
+          "outlierReason": "Value below IQR lower bound"
+        },
+        {
+          "file": "backend/blocks/todoist/sections.py",
+          "line": 132,
+          "column": 50,
+          "isOutlier": false,
+          "confidence": 0.7746511627906977
+        },
+        {
+          "file": "backend/blocks/todoist/sections.py",
+          "line": 167,
+          "column": 21,
+          "isOutlier": true,
+          "confidence": 0.7746511627906977,
+          "outlierReason": "Value below IQR lower bound"
+        },
+        {
+          "file": "backend/blocks/todoist/sections.py",
+          "line": 200,
+          "column": 22,
+          "isOutlier": true,
+          "confidence": 0.7746511627906977,
+          "outlierReason": "Value below IQR lower bound"
+        },
+        {
+          "file": "backend/blocks/todoist/sections.py",
+          "line": 200,
+          "column": 48,
+          "isOutlier": false,
+          "confidence": 0.7746511627906977
+        },
+        {
+          "file": "backend/blocks/todoist/sections.py",
+          "line": 238,
+          "column": 19,
+          "isOutlier": true,
+          "confidence": 0.7746511627906977,
+          "outlierReason": "Value below IQR lower bound"
+        },
+        {
+          "file": "backend/blocks/todoist/sections.py",
+          "line": 269,
+          "column": 22,
+          "isOutlier": true,
+          "confidence": 0.7746511627906977,
+          "outlierReason": "Value below IQR lower bound"
+        },
+        {
+          "file": "backend/blocks/todoist/sections.py",
+          "line": 269,
+          "column": 48,
+          "isOutlier": false,
+          "confidence": 0.7746511627906977
+        },
+        {
+          "file": "backend/blocks/todoist/sections.py",
+          "line": 294,
+          "column": 19,
+          "isOutlier": true,
+          "confidence": 0.7746511627906977,
+          "outlierReason": "Value below IQR lower bound"
+        },
+        {
+          "file": "backend/blocks/todoist/tasks.py",
+          "line": 29,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 0.802
+        },
+        {
+          "file": "backend/blocks/todoist/tasks.py",
+          "line": 29,
+          "column": 48,
+          "isOutlier": false,
+          "confidence": 0.802
+        },
+        {
+          "file": "backend/blocks/todoist/tasks.py",
+          "line": 131,
+          "column": 19,
+          "isOutlier": false,
+          "confidence": 0.802
+        },
+        {
+          "file": "backend/blocks/todoist/tasks.py",
+          "line": 190,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 0.802
+        },
+        {
+          "file": "backend/blocks/todoist/tasks.py",
+          "line": 190,
+          "column": 48,
+          "isOutlier": false,
+          "confidence": 0.802
+        },
+        {
+          "file": "backend/blocks/todoist/tasks.py",
+          "line": 262,
+          "column": 19,
+          "isOutlier": false,
+          "confidence": 0.802
+        },
+        {
+          "file": "backend/blocks/todoist/tasks.py",
+          "line": 301,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 0.802
+        },
+        {
+          "file": "backend/blocks/todoist/tasks.py",
+          "line": 301,
+          "column": 48,
+          "isOutlier": false,
+          "confidence": 0.802
+        },
+        {
+          "file": "backend/blocks/todoist/tasks.py",
+          "line": 345,
+          "column": 19,
+          "isOutlier": false,
+          "confidence": 0.802
+        },
+        {
+          "file": "backend/blocks/todoist/tasks.py",
+          "line": 374,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 0.802
+        },
+        {
+          "file": "backend/blocks/todoist/tasks.py",
+          "line": 374,
+          "column": 48,
+          "isOutlier": false,
+          "confidence": 0.802
+        },
+        {
+          "file": "backend/blocks/todoist/tasks.py",
+          "line": 451,
+          "column": 19,
+          "isOutlier": false,
+          "confidence": 0.802
+        },
+        {
+          "file": "backend/blocks/todoist/tasks.py",
+          "line": 512,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 0.802
+        },
+        {
+          "file": "backend/blocks/todoist/tasks.py",
+          "line": 512,
+          "column": 48,
+          "isOutlier": false,
+          "confidence": 0.802
+        },
+        {
+          "file": "backend/blocks/todoist/tasks.py",
+          "line": 537,
+          "column": 19,
+          "isOutlier": false,
+          "confidence": 0.802
+        },
+        {
+          "file": "backend/blocks/todoist/tasks.py",
+          "line": 562,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 0.802
+        },
+        {
+          "file": "backend/blocks/todoist/tasks.py",
+          "line": 562,
+          "column": 48,
+          "isOutlier": false,
+          "confidence": 0.802
+        },
+        {
+          "file": "backend/blocks/todoist/tasks.py",
+          "line": 589,
+          "column": 19,
+          "isOutlier": false,
+          "confidence": 0.802
+        },
+        {
+          "file": "backend/blocks/todoist/tasks.py",
+          "line": 614,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 0.802
+        },
+        {
+          "file": "backend/blocks/todoist/tasks.py",
+          "line": 614,
+          "column": 48,
+          "isOutlier": false,
+          "confidence": 0.802
+        },
+        {
+          "file": "backend/blocks/todoist/tasks.py",
+          "line": 641,
+          "column": 19,
+          "isOutlier": false,
+          "confidence": 0.802
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:30:16.815Z",
+        "lastSeen": "2026-01-29T06:30:16.815Z",
+        "source": "auto-detected",
+        "tags": [
+          "documentation",
+          "todo-patterns"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "a1f51c1c319edd5b",
+      "subcategory": "deprecation",
+      "name": "Deprecation Detector",
+      "description": "Learns deprecation patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "documentation/deprecation",
+          "patternId": "documentation/deprecation/import"
+        }
+      },
+      "confidence": {
+        "frequency": 0.04,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 2,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "backend/blocks/ideogram.py",
+          "line": 245,
+          "column": 41,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "backend/util/virus_scanner_test.py",
+          "line": 168,
+          "column": 31,
+          "isOutlier": false,
+          "confidence": 0.97
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:30:16.815Z",
+        "lastSeen": "2026-01-29T06:30:16.815Z",
+        "source": "auto-detected",
+        "tags": [
+          "documentation",
+          "deprecation"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "4bb3dbea31eefdf6",
+      "subcategory": "todo-patterns",
+      "name": "Todo Patterns Detector",
+      "description": "Learns TODO/FIXME comment patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "documentation/todo-patterns",
+          "patternId": "documentation/todo-patterns/function_definition"
+        }
+      },
+      "confidence": {
+        "frequency": 0.02,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.9158333333333334,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "backend/blocks/todoist/_auth.py",
+          "line": 25,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 0.9158333333333334
+        },
+        {
+          "file": "backend/blocks/todoist/_auth.py",
+          "line": 25,
+          "column": 51,
+          "isOutlier": false,
+          "confidence": 0.9158333333333334
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:30:16.815Z",
+        "lastSeen": "2026-01-29T06:30:16.815Z",
+        "source": "auto-detected",
+        "tags": [
+          "documentation",
+          "todo-patterns"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "eb2753f0932bf650",
+      "subcategory": "deprecation",
+      "name": "Deprecation Detector",
+      "description": "Learns deprecation patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "documentation/deprecation",
+          "patternId": "documentation/deprecation/function_call"
+        }
+      },
+      "confidence": {
+        "frequency": 0.06,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 2,
+        "score": 0.8268181818181818,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "backend/data/graph_test.py",
+          "line": 323,
+          "column": 30,
+          "isOutlier": false,
+          "confidence": 0.7949999999999999
+        },
+        {
+          "file": "backend/notifications/test_notifications.py",
+          "line": 264,
+          "column": 45,
+          "isOutlier": false,
+          "confidence": 0.8268181818181818
+        },
+        {
+          "file": "backend/notifications/test_notifications.py",
+          "line": 491,
+          "column": 33,
+          "isOutlier": false,
+          "confidence": 0.8268181818181818
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:30:16.815Z",
+        "lastSeen": "2026-01-29T06:30:16.815Z",
+        "source": "auto-detected",
+        "tags": [
+          "documentation",
+          "deprecation"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    }
+  ],
+  "lastUpdated": "2026-01-29T07:17:53.130Z",
+  "checksum": "198e69ddab1597d6"
+}

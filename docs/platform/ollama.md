@@ -87,10 +87,10 @@ To properly set up Ollama for network access, choose one of these methods:
 
 Navigate to the autogpt_platform directory and start all services:
 
-```bash
-cd autogpt_platform
-docker compose up -d --build
-```
+      ```bash
+      cd autogpt_platform
+      docker compose up -d --build
+      ```
 
 This command starts both the backend and frontend services. Once running, visit [http://localhost:3000](http://localhost:3000) to access the platform. After registering/logging in, navigate to the build page at [http://localhost:3000/build](http://localhost:3000/build).
 
@@ -119,23 +119,23 @@ Now that both Ollama and the AutoGPT platform are running, we can use Ollama wit
    **To find your local IP address:**
 
    **Windows (Command Prompt):**
-   ```cmd
-   ipconfig
-   ```
+         ```cmd
+         ipconfig
+         ```
 
    **Linux/macOS (Terminal):**
-   ```bash
-   ip addr show
-   ```
-   or
-   ```bash
-   ifconfig
-   ```
+         ```bash
+         ip addr show
+         ```
+         or
+         ```bash
+         ifconfig
+         ```
 
    Look for your IPv4 address (e.g., `192.168.0.39`), then enter it with port `11434` in the "Ollama Host" field:
-   ```
-   192.168.0.39:11434
-   ```
+         ```text
+         192.168.0.39:11434
+         ```
 
    ![Ollama Remote Host](../imgs/ollama/Ollama-Remote-Host.png)
 
@@ -154,25 +154,25 @@ For running Ollama on a remote server, simply make sure the Ollama server is run
 **To find your local IP address of the system running Ollama:**
 
 **Windows (Command Prompt):**
-```cmd
-ipconfig
-```
+         ```cmd
+         ipconfig
+         ```
 
 **Linux/macOS (Terminal):**
-```bash
-ip addr show
-```
-or
-```bash
-ifconfig
-```
+         ```bash
+         ip addr show
+         ```
+         or
+         ```bash
+         ifconfig
+         ```
 
 Look for your IPv4 address (e.g., `192.168.0.39`).
 
 Then you can use the same steps above but you need to add the Ollama server's IP address to the "Ollama Host" field in the block settings like so:
-```
-192.168.0.39:11434
-```
+         ```text
+         192.168.0.39:11434
+         ```
 
 ![Ollama Remote Host](../imgs/ollama/Ollama-Remote-Host.png)
 
@@ -183,20 +183,20 @@ If you want to use models other than the default ones, you'll need to add them t
 1. **Add the model to the LlmModel enum** in `autogpt_platform/backend/backend/blocks/llm.py`:
    
    Find the Ollama models section (around line 119) and add your model like the other Ollama models:
-   ```python
-   # Ollama models
-   OLLAMA_LLAMA3_3 = "llama3.3"
-   OLLAMA_LLAMA3_2 = "llama3.2"
-   OLLAMA_YOUR_MODEL = "The-model-name-from-ollama"  # Add your model here
-   ```
+         ```python
+         # Ollama models
+         OLLAMA_LLAMA3_3 = "llama3.3"
+         OLLAMA_LLAMA3_2 = "llama3.2"
+         OLLAMA_YOUR_MODEL = "The-model-name-from-ollama"  # Add your model here
+         ```
 
 2. **Add model metadata** in the same file:
    
    Find the `MODEL_METADATA` dictionary (around line 181) and add your model with its metadata:
-   ```python
-   # In MODEL_METADATA dictionary, add:
-   LlmModel.OLLAMA_YOUR_MODEL: ModelMetadata("ollama", 8192, None),
-   ```
+         ```python
+         # In MODEL_METADATA dictionary, add:
+         LlmModel.OLLAMA_YOUR_MODEL: ModelMetadata("ollama", 8192, None),
+         ```
    
    Where:
 
@@ -207,22 +207,22 @@ If you want to use models other than the default ones, you'll need to add them t
 3. **Add model cost configuration** in `autogpt_platform/backend/backend/data/block_cost_config.py`:
    
    Find the `MODEL_COST` dictionary (around line 54) and add your model:
-   ```python
-   # In MODEL_COST dictionary, add:
-   LlmModel.OLLAMA_YOUR_MODEL: 1,
-   ```
+         ```python
+         # In MODEL_COST dictionary, add:
+         LlmModel.OLLAMA_YOUR_MODEL: 1,
+         ```
    
    > **Note**: Setting cost to `1` is fine for local usage as cost tracking is disabled for self-hosted instances.
 
 4. **Rebuild the backend**:
-   ```bash
-   docker compose up -d --build
-   ```
+         ```bash
+         docker compose up -d --build
+         ```
 
 5. **Pull the model in Ollama**:
-   ```bash
-   ollama pull your-model-name
-   ```
+         ```bash
+         ollama pull your-model-name
+         ```
 
 ## Troubleshooting
 
@@ -243,20 +243,20 @@ If you encounter any issues, verify that:
 
 #### Model Not Found
 - Pull the model manually:
-  ```bash
-  ollama pull llama3.2
-  ```
+         ```bash
+         ollama pull llama3.2
+         ```
 - If using a custom model, ensure it's added to the model list in `backend/server/model.py`
 
 #### Docker Issues
 - Ensure Docker daemon is running:
-  ```bash
-  docker ps
-  ```
+         ```bash
+         docker ps
+         ```
 - Try rebuilding:
-  ```bash
-  docker compose up -d --build
-  ```
+         ```bash
+         docker compose up -d --build
+         ```
 
 #### API Key Errors
 - Remember that Ollama doesn't require authentication - any value works for the API key field

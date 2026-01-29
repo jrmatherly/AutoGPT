@@ -1,0 +1,383 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.134Z",
+  "checksum": "e48f7cb4c7feb69a",
+  "file": "backend/blocks/twitter/lists/pinned_lists.py",
+  "functions": [
+    {
+      "id": "backend/blocks/twitter/lists/pinned_lists.py:__init__:54",
+      "name": "__init__",
+      "startLine": 54,
+      "endLine": 66,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 55,
+          "resolvedId": "backend/blocks/twitter/lists/pinned_lists.py:__init__:54"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 55
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/twitter/lists/pinned_lists.py:unpin_list:69",
+      "name": "unpin_list",
+      "startLine": 69,
+      "endLine": 82,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "Client",
+          "resolved": false,
+          "confidence": 0,
+          "line": 71
+        },
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 72,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        },
+        {
+          "target": "unpin_list",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 75,
+          "resolvedId": "backend/blocks/twitter/lists/pinned_lists.py:unpin_list:69"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/twitter/lists/pinned_lists.py:run:84",
+      "name": "run",
+      "startLine": 84,
+      "endLine": 96,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "unpin_list",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 92,
+          "resolvedId": "backend/blocks/twitter/lists/pinned_lists.py:unpin_list:69"
+        },
+        {
+          "target": "credentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 92
+        },
+        {
+          "target": "handle_tweepy_exception",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 96,
+          "resolvedId": "backend/blocks/twitter/tweepy_exceptions.py:handle_tweepy_exception:4"
+        },
+        {
+          "target": "e",
+          "resolved": false,
+          "confidence": 0,
+          "line": 96
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/twitter/lists/pinned_lists.py:__init__:117",
+      "name": "__init__",
+      "startLine": 117,
+      "endLine": 129,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 118,
+          "resolvedId": "backend/blocks/twitter/lists/pinned_lists.py:__init__:54"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 118
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/twitter/lists/pinned_lists.py:pin_list:132",
+      "name": "pin_list",
+      "startLine": 132,
+      "endLine": 145,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "Client",
+          "resolved": false,
+          "confidence": 0,
+          "line": 134
+        },
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 135,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        },
+        {
+          "target": "pin_list",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 138,
+          "resolvedId": "backend/blocks/twitter/lists/pinned_lists.py:pin_list:132"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/twitter/lists/pinned_lists.py:run:147",
+      "name": "run",
+      "startLine": 147,
+      "endLine": 159,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "pin_list",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 155,
+          "resolvedId": "backend/blocks/twitter/lists/pinned_lists.py:pin_list:132"
+        },
+        {
+          "target": "credentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 155
+        },
+        {
+          "target": "handle_tweepy_exception",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 159,
+          "resolvedId": "backend/blocks/twitter/tweepy_exceptions.py:handle_tweepy_exception:4"
+        },
+        {
+          "target": "e",
+          "resolved": false,
+          "confidence": 0,
+          "line": 159
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/twitter/lists/pinned_lists.py:__init__:186",
+      "name": "__init__",
+      "startLine": 186,
+      "endLine": 215,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 187,
+          "resolvedId": "backend/blocks/twitter/lists/pinned_lists.py:__init__:54"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 187
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/twitter/lists/pinned_lists.py:get_pinned_lists:218",
+      "name": "get_pinned_lists",
+      "startLine": 218,
+      "endLine": 261,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "Client",
+          "resolved": false,
+          "confidence": 0,
+          "line": 225
+        },
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 226,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        },
+        {
+          "target": "build",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 232,
+          "resolvedId": "backend/blocks/twitter/_builders.py:build:109"
+        },
+        {
+          "target": "add_list_fields",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 232,
+          "resolvedId": "backend/blocks/twitter/_builders.py:add_list_fields:167"
+        },
+        {
+          "target": "list_fields",
+          "resolved": false,
+          "confidence": 0,
+          "line": 235
+        },
+        {
+          "target": "add_user_fields",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 232,
+          "resolvedId": "backend/blocks/twitter/_builders.py:add_user_fields:98"
+        },
+        {
+          "target": "user_fields",
+          "resolved": false,
+          "confidence": 0,
+          "line": 234
+        },
+        {
+          "target": "add_expansions",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 232,
+          "resolvedId": "backend/blocks/twitter/_builders.py:add_expansions:41"
+        },
+        {
+          "target": "expansions",
+          "resolved": false,
+          "confidence": 0,
+          "line": 233
+        },
+        {
+          "target": "ListExpansionsBuilder",
+          "resolved": false,
+          "confidence": 0,
+          "line": 232
+        },
+        {
+          "target": "params",
+          "resolved": false,
+          "confidence": 0,
+          "line": 232
+        },
+        {
+          "target": "cast",
+          "resolved": false,
+          "confidence": 0,
+          "line": 239
+        },
+        {
+          "target": "get_pinned_lists",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 239,
+          "resolvedId": "backend/blocks/twitter/lists/pinned_lists.py:get_pinned_lists:218"
+        },
+        {
+          "target": "serialize",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 250,
+          "resolvedId": "backend/blocks/twitter/_serializer.py:serialize:15"
+        },
+        {
+          "target": "serialize_list",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 253,
+          "resolvedId": "backend/blocks/twitter/_serializer.py:serialize_list:54"
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 254
+        },
+        {
+          "target": "Exception",
+          "resolved": false,
+          "confidence": 0,
+          "line": 258
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/twitter/lists/pinned_lists.py:run:263",
+      "name": "run",
+      "startLine": 263,
+      "endLine": 290,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "get_pinned_lists",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 271,
+          "resolvedId": "backend/blocks/twitter/lists/pinned_lists.py:get_pinned_lists:218"
+        },
+        {
+          "target": "credentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 272
+        },
+        {
+          "target": "handle_tweepy_exception",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 290,
+          "resolvedId": "backend/blocks/twitter/tweepy_exceptions.py:handle_tweepy_exception:4"
+        },
+        {
+          "target": "e",
+          "resolved": false,
+          "confidence": 0,
+          "line": 290
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

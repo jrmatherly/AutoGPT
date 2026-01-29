@@ -1,0 +1,107 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.031Z",
+  "checksum": "4716844526538a0d",
+  "file": "src/app/api/auth/provider/route.ts",
+  "functions": [
+    {
+      "id": "src/app/api/auth/provider/route.ts:POST:6",
+      "name": "POST",
+      "startLine": 6,
+      "endLine": 51,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "json",
+          "resolved": false,
+          "confidence": 0,
+          "line": 8
+        },
+        {
+          "target": "json",
+          "resolved": false,
+          "confidence": 0,
+          "line": 13
+        },
+        {
+          "target": "getServerSupabase",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 16,
+          "resolvedId": "src/lib/supabase/server/getServerSupabase.ts:getServerSupabase:7"
+        },
+        {
+          "target": "json",
+          "resolved": false,
+          "confidence": 0,
+          "line": 18
+        },
+        {
+          "target": "signInWithOAuth",
+          "resolved": false,
+          "confidence": 0,
+          "line": 24
+        },
+        {
+          "target": "isWaitlistError",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 36,
+          "resolvedId": "src/app/api/auth/utils.ts:isWaitlistError:15"
+        },
+        {
+          "target": "code",
+          "resolved": false,
+          "confidence": 0,
+          "line": 36
+        },
+        {
+          "target": "message",
+          "resolved": false,
+          "confidence": 0,
+          "line": 36
+        },
+        {
+          "target": "logWaitlistError",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 37,
+          "resolvedId": "src/app/api/auth/utils.ts:logWaitlistError:53"
+        },
+        {
+          "target": "message",
+          "resolved": false,
+          "confidence": 0,
+          "line": 37
+        },
+        {
+          "target": "json",
+          "resolved": false,
+          "confidence": 0,
+          "line": 38
+        },
+        {
+          "target": "json",
+          "resolved": false,
+          "confidence": 0,
+          "line": 41
+        },
+        {
+          "target": "json",
+          "resolved": false,
+          "confidence": 0,
+          "line": 44
+        },
+        {
+          "target": "json",
+          "resolved": false,
+          "confidence": 0,
+          "line": 46
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

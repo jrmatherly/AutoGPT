@@ -1,0 +1,663 @@
+{
+  "version": "1.0.0",
+  "category": "types",
+  "patterns": [
+    {
+      "id": "541ca37c69b39d85",
+      "subcategory": "naming-conventions",
+      "name": "Naming Conventions Detector",
+      "description": "Learns type naming convention patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "types/naming-conventions",
+          "patternId": "types/naming-conventions/function_call"
+        }
+      },
+      "confidence": {
+        "frequency": 0.27,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 14,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src/app/api/openapi.json",
+          "line": 5629,
+          "column": 51,
+          "isOutlier": false,
+          "confidence": 0.7546153846153846
+        },
+        {
+          "file": "src/app/api/openapi.json",
+          "line": 5629,
+          "column": 295,
+          "isOutlier": false,
+          "confidence": 0.7546153846153846
+        },
+        {
+          "file": "src/app/api/openapi.json",
+          "line": 6554,
+          "column": 46,
+          "isOutlier": false,
+          "confidence": 0.7546153846153846
+        },
+        {
+          "file": "src/app/api/openapi.json",
+          "line": 6584,
+          "column": 46,
+          "isOutlier": false,
+          "confidence": 0.7546153846153846
+        },
+        {
+          "file": "src/components/atoms/Switch/Switch.stories.tsx",
+          "line": 19,
+          "column": 58,
+          "isOutlier": false,
+          "confidence": 0.83
+        },
+        {
+          "file": "src/components/contextual/Chat/components/ChatContainer/helpers.ts",
+          "line": 430,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "src/components/contextual/Chat/components/ChatContainer/helpers.ts",
+          "line": 451,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "src/components/contextual/Chat/components/ChatContainer/helpers.ts",
+          "line": 452,
+          "column": 34,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "src/components/contextual/GoogleDrivePicker/helpers.ts",
+          "line": 129,
+          "column": 6,
+          "isOutlier": false,
+          "confidence": 0.75125
+        },
+        {
+          "file": "src/components/contextual/GoogleDrivePicker/helpers.ts",
+          "line": 130,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 0.75125
+        },
+        {
+          "file": "src/components/molecules/Collapsible/Collapsible.stories.tsx",
+          "line": 41,
+          "column": 33,
+          "isOutlier": false,
+          "confidence": 0.8258823529411765
+        },
+        {
+          "file": "src/components/molecules/Collapsible/Collapsible.stories.tsx",
+          "line": 42,
+          "column": 26,
+          "isOutlier": false,
+          "confidence": 0.8258823529411765
+        },
+        {
+          "file": "src/components/molecules/Collapsible/Collapsible.stories.tsx",
+          "line": 63,
+          "column": 34,
+          "isOutlier": false,
+          "confidence": 0.8258823529411765
+        },
+        {
+          "file": "src/components/molecules/Collapsible/Collapsible.stories.tsx",
+          "line": 70,
+          "column": 34,
+          "isOutlier": false,
+          "confidence": 0.8258823529411765
+        },
+        {
+          "file": "src/components/molecules/ShowMore/ShowMore.stories.tsx",
+          "line": 47,
+          "column": 53,
+          "isOutlier": false,
+          "confidence": 0.8084615384615385
+        },
+        {
+          "file": "src/components/molecules/ShowMoreText/ShowMoreText.stories.tsx",
+          "line": 47,
+          "column": 53,
+          "isOutlier": false,
+          "confidence": 0.8084615384615385
+        },
+        {
+          "file": "src/components/organisms/PendingReviewCard/PendingReviewCard.tsx",
+          "line": 19,
+          "column": 6,
+          "isOutlier": false,
+          "confidence": 0.725
+        },
+        {
+          "file": "src/components/renderers/InputRenderer/base/anyof/helpers.ts",
+          "line": 24,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.75125
+        },
+        {
+          "file": "src/components/renderers/InputRenderer/base/anyof/helpers.ts",
+          "line": 24,
+          "column": 45,
+          "isOutlier": false,
+          "confidence": 0.75125
+        },
+        {
+          "file": "src/components/renderers/InputRenderer/utils/generate-ui-schema.ts",
+          "line": 26,
+          "column": 19,
+          "isOutlier": false,
+          "confidence": 0.7524324324324324
+        },
+        {
+          "file": "src/components/renderers/InputRenderer/utils/generate-ui-schema.ts",
+          "line": 31,
+          "column": 70,
+          "isOutlier": false,
+          "confidence": 0.7524324324324324
+        },
+        {
+          "file": "src/components/renderers/InputRenderer/utils/generate-ui-schema.ts",
+          "line": 128,
+          "column": 41,
+          "isOutlier": false,
+          "confidence": 0.7524324324324324
+        },
+        {
+          "file": "src/components/renderers/InputRenderer/utils/generate-ui-schema.ts",
+          "line": 180,
+          "column": 45,
+          "isOutlier": false,
+          "confidence": 0.7524324324324324
+        },
+        {
+          "file": "src/lib/autogpt-server-api/helpers.test.ts",
+          "line": 72,
+          "column": 33,
+          "isOutlier": false,
+          "confidence": 0.7949999999999999
+        },
+        {
+          "file": "src/lib/autogpt-server-api/types.ts",
+          "line": 1228,
+          "column": 31,
+          "isOutlier": false,
+          "confidence": 0.8246153846153846
+        },
+        {
+          "file": "src/tests/CLAUDE.md",
+          "line": 107,
+          "column": 10,
+          "isOutlier": false,
+          "confidence": 0.8922222222222222
+        },
+        {
+          "file": "src/tests/monitor.spec.ts",
+          "line": 18,
+          "column": 15,
+          "isOutlier": true,
+          "confidence": 0.97,
+          "outlierReason": "High confidence outlier"
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:32:38.509Z",
+        "lastSeen": "2026-01-29T06:32:38.509Z",
+        "source": "auto-detected",
+        "tags": [
+          "types",
+          "naming-conventions"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "65d01ccd0c14d3e6",
+      "subcategory": "interface-vs-type",
+      "name": "Interface vs Type Detector",
+      "description": "Learns interface vs type usage patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "types/interface-vs-type",
+          "patternId": "types/interface-vs-type/function_call"
+        }
+      },
+      "confidence": {
+        "frequency": 0.18,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 8,
+        "score": 0.8278125,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "src/app/api/openapi.json",
+          "line": 5629,
+          "column": 51,
+          "isOutlier": false,
+          "confidence": 0.7658333333333334
+        },
+        {
+          "file": "src/app/api/openapi.json",
+          "line": 5629,
+          "column": 295,
+          "isOutlier": false,
+          "confidence": 0.7658333333333334
+        },
+        {
+          "file": "src/app/api/openapi.json",
+          "line": 6554,
+          "column": 46,
+          "isOutlier": false,
+          "confidence": 0.7658333333333334
+        },
+        {
+          "file": "src/app/api/openapi.json",
+          "line": 6584,
+          "column": 46,
+          "isOutlier": false,
+          "confidence": 0.7658333333333334
+        },
+        {
+          "file": "src/components/contextual/Chat/components/ChatContainer/helpers.ts",
+          "line": 430,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 0.7724193548387097
+        },
+        {
+          "file": "src/components/contextual/Chat/components/ChatContainer/helpers.ts",
+          "line": 451,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 0.7724193548387097
+        },
+        {
+          "file": "src/components/contextual/Chat/components/ChatContainer/helpers.ts",
+          "line": 452,
+          "column": 34,
+          "isOutlier": false,
+          "confidence": 0.7724193548387097
+        },
+        {
+          "file": "src/components/contextual/GoogleDrivePicker/helpers.ts",
+          "line": 129,
+          "column": 6,
+          "isOutlier": false,
+          "confidence": 0.75125
+        },
+        {
+          "file": "src/components/contextual/GoogleDrivePicker/helpers.ts",
+          "line": 130,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 0.75125
+        },
+        {
+          "file": "src/components/organisms/PendingReviewCard/PendingReviewCard.tsx",
+          "line": 19,
+          "column": 6,
+          "isOutlier": true,
+          "confidence": 0.725,
+          "outlierReason": "Value below IQR lower bound"
+        },
+        {
+          "file": "src/components/renderers/InputRenderer/base/anyof/helpers.ts",
+          "line": 24,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.7815384615384615
+        },
+        {
+          "file": "src/components/renderers/InputRenderer/base/anyof/helpers.ts",
+          "line": 24,
+          "column": 45,
+          "isOutlier": false,
+          "confidence": 0.7815384615384615
+        },
+        {
+          "file": "src/components/renderers/InputRenderer/utils/generate-ui-schema.ts",
+          "line": 26,
+          "column": 19,
+          "isOutlier": false,
+          "confidence": 0.7673684210526316
+        },
+        {
+          "file": "src/components/renderers/InputRenderer/utils/generate-ui-schema.ts",
+          "line": 31,
+          "column": 70,
+          "isOutlier": false,
+          "confidence": 0.7673684210526316
+        },
+        {
+          "file": "src/components/renderers/InputRenderer/utils/generate-ui-schema.ts",
+          "line": 128,
+          "column": 41,
+          "isOutlier": false,
+          "confidence": 0.7673684210526316
+        },
+        {
+          "file": "src/components/renderers/InputRenderer/utils/generate-ui-schema.ts",
+          "line": 180,
+          "column": 45,
+          "isOutlier": false,
+          "confidence": 0.7673684210526316
+        },
+        {
+          "file": "src/lib/autogpt-server-api/helpers.test.ts",
+          "line": 72,
+          "column": 33,
+          "isOutlier": true,
+          "confidence": 0.7949999999999999,
+          "outlierReason": "Value above IQR upper bound"
+        },
+        {
+          "file": "src/lib/autogpt-server-api/types.ts",
+          "line": 1228,
+          "column": 31,
+          "isOutlier": true,
+          "confidence": 0.8278125,
+          "outlierReason": "Value above IQR upper bound"
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:32:38.509Z",
+        "lastSeen": "2026-01-29T06:32:38.509Z",
+        "source": "auto-detected",
+        "tags": [
+          "types",
+          "interface-vs-type"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "f8a6b5a4305c1636",
+      "subcategory": "utility-types",
+      "name": "Utility Types Detector",
+      "description": "Learns utility type patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "types/utility-types",
+          "patternId": "types/utility-types/function_definition"
+        }
+      },
+      "confidence": {
+        "frequency": 0.04,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 2,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src/components/contextual/Chat/components/ChatContainer/helpers.ts",
+          "line": 243,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/components/contextual/Chat/components/ChatContainer/helpers.ts",
+          "line": 456,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/components/contextual/Chat/components/ChatContainer/helpers.ts",
+          "line": 516,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/components/organisms/PendingReviewCard/PendingReviewCard.tsx",
+          "line": 24,
+          "column": 10,
+          "isOutlier": false,
+          "confidence": 0.945
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:32:38.510Z",
+        "lastSeen": "2026-01-29T06:32:38.510Z",
+        "source": "auto-detected",
+        "tags": [
+          "types",
+          "utility-types"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "5c751c94804b0bdf",
+      "subcategory": "any-usage",
+      "name": "Any Usage Detector",
+      "description": "Learns any/unknown/never/void usage patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "types/any-usage",
+          "patternId": "types/any-usage/import"
+        }
+      },
+      "confidence": {
+        "frequency": 0.1,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 6,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src/components/renderers/InputRenderer/base/anyof/AnyOfField.tsx",
+          "line": 2,
+          "column": 10,
+          "isOutlier": false,
+          "confidence": 0.7949999999999999
+        },
+        {
+          "file": "src/components/renderers/InputRenderer/base/anyof/AnyOfField.tsx",
+          "line": 2,
+          "column": 47,
+          "isOutlier": false,
+          "confidence": 0.7949999999999999
+        },
+        {
+          "file": "src/components/renderers/InputRenderer/base/anyof/AnyOfField.tsx",
+          "line": 7,
+          "column": 10,
+          "isOutlier": false,
+          "confidence": 0.7949999999999999
+        },
+        {
+          "file": "src/components/renderers/InputRenderer/base/base-registry.ts",
+          "line": 6,
+          "column": 10,
+          "isOutlier": false,
+          "confidence": 0.8825
+        },
+        {
+          "file": "src/components/renderers/InputRenderer/base/base-registry.ts",
+          "line": 6,
+          "column": 31,
+          "isOutlier": false,
+          "confidence": 0.8825
+        },
+        {
+          "file": "src/components/renderers/InputRenderer/base/base-registry.ts",
+          "line": 6,
+          "column": 37,
+          "isOutlier": false,
+          "confidence": 0.8825
+        },
+        {
+          "file": "src/components/tokens/colors.stories.tsx",
+          "line": 129,
+          "column": 23,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "src/hooks/useAgentGraph.tsx",
+          "line": 315,
+          "column": 78,
+          "isOutlier": false,
+          "confidence": 0.7949999999999999
+        },
+        {
+          "file": "src/lib/utils.ts",
+          "line": 99,
+          "column": 61,
+          "isOutlier": false,
+          "confidence": 0.8745454545454545
+        },
+        {
+          "file": "src/tests/pages/library.page.ts",
+          "line": 472,
+          "column": 48,
+          "isOutlier": false,
+          "confidence": 0.956
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:32:38.510Z",
+        "lastSeen": "2026-01-29T06:32:38.510Z",
+        "source": "auto-detected",
+        "tags": [
+          "types",
+          "any-usage"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "018bb7236b5e2880",
+      "subcategory": "any-usage",
+      "name": "Any Usage Detector",
+      "description": "Learns any/unknown/never/void usage patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "types/any-usage",
+          "patternId": "types/any-usage/function_call"
+        }
+      },
+      "confidence": {
+        "frequency": 0.03,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 2,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src/components/renderers/InputRenderer/base/anyof/helpers.ts",
+          "line": 25,
+          "column": 29,
+          "isOutlier": false,
+          "confidence": 0.7472727272727272
+        },
+        {
+          "file": "src/lib/cron-expression-utils.ts",
+          "line": 247,
+          "column": 27,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "src/lib/cron-expression-utils.ts",
+          "line": 271,
+          "column": 31,
+          "isOutlier": false,
+          "confidence": 0.97
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:32:38.510Z",
+        "lastSeen": "2026-01-29T06:32:38.510Z",
+        "source": "auto-detected",
+        "tags": [
+          "types",
+          "any-usage"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "c913f94622f512aa",
+      "subcategory": "type-assertions",
+      "name": "Type Assertions Detector",
+      "description": "Learns type assertion patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "types/type-assertions",
+          "patternId": "types/type-assertions/property_access"
+        }
+      },
+      "confidence": {
+        "frequency": 0.01,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.7366666666666666,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "src/lib/autogpt-server-api/helpers.test.ts",
+          "line": 7,
+          "column": 20,
+          "isOutlier": false,
+          "confidence": 0.7366666666666666
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:32:38.510Z",
+        "lastSeen": "2026-01-29T06:32:38.510Z",
+        "source": "auto-detected",
+        "tags": [
+          "types",
+          "type-assertions"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    }
+  ],
+  "lastUpdated": "2026-01-29T07:18:19.607Z",
+  "checksum": "736c435ca2a84584"
+}

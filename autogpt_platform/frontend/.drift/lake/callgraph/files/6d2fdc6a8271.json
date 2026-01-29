@@ -1,0 +1,721 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.061Z",
+  "checksum": "f457f10db1aed04b",
+  "file": "src/app/(no-navbar)/onboarding/5-run/useOnboardingRunStep.tsx",
+  "functions": [
+    {
+      "id": "src/app/(no-navbar)/onboarding/5-run/useOnboardingRunStep.tsx:useOnboardingRunStep:17",
+      "name": "useOnboardingRunStep",
+      "startLine": 17,
+      "endLine": 157,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useOnboarding",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 18,
+          "resolvedId": "src/providers/onboarding/onboarding-provider.tsx:useOnboarding:60"
+        },
+        {
+          "target": "undefined",
+          "resolved": false,
+          "confidence": 0,
+          "line": 18
+        },
+        {
+          "target": "useState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 20
+        },
+        {
+          "target": "useState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 21
+        },
+        {
+          "target": "useState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 23
+        },
+        {
+          "target": "useState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 27
+        },
+        {
+          "target": "useState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 28
+        },
+        {
+          "target": "useToast",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 30,
+          "resolvedId": "src/components/molecules/Toast/use-toast.tsx:useToast:77"
+        },
+        {
+          "target": "useRouter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 31
+        },
+        {
+          "target": "useBackendAPI",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 32,
+          "resolvedId": "src/lib/autogpt-server-api/context.tsx:useBackendAPI:34"
+        },
+        {
+          "target": "useGetV2GetAgentByVersion",
+          "resolved": false,
+          "confidence": 0,
+          "line": 41
+        },
+        {
+          "target": "currentAgentVersion",
+          "resolved": false,
+          "confidence": 0,
+          "line": 41
+        },
+        {
+          "target": "useGetV2GetAgentGraph",
+          "resolved": false,
+          "confidence": 0,
+          "line": 52
+        },
+        {
+          "target": "currentAgentVersion",
+          "resolved": false,
+          "confidence": 0,
+          "line": 52
+        },
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 59
+        },
+        {
+          "target": "setStep",
+          "resolved": false,
+          "confidence": 0,
+          "line": 60
+        },
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 63
+        },
+        {
+          "target": "computeInitialAgentInputs",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 65,
+          "resolvedId": "src/app/(no-navbar)/onboarding/5-run/helpers.ts:computeInitialAgentInputs:8"
+        },
+        {
+          "target": "agentGraphMeta",
+          "resolved": false,
+          "confidence": 0,
+          "line": 66
+        },
+        {
+          "target": "updateState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 70
+        },
+        {
+          "target": "setShowInput",
+          "resolved": false,
+          "confidence": 0,
+          "line": 77
+        },
+        {
+          "target": "setStep",
+          "resolved": false,
+          "confidence": 0,
+          "line": 78
+        },
+        {
+          "target": "completeStep",
+          "resolved": false,
+          "confidence": 0,
+          "line": 79
+        },
+        {
+          "target": "updateState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 85
+        },
+        {
+          "target": "toast",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 95,
+          "resolvedId": "src/components/molecules/Toast/use-toast.tsx:toast:27"
+        },
+        {
+          "target": "setRunningAgent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 105
+        },
+        {
+          "target": "resolveResponse",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 108,
+          "resolvedId": "src/app/api/helpers.ts:resolveResponse:149"
+        },
+        {
+          "target": "postV2AddMarketplaceAgent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 109
+        },
+        {
+          "target": "executeGraph",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 115,
+          "resolvedId": "src/lib/autogpt-server-api/client.ts:executeGraph:253"
+        },
+        {
+          "target": "graph_version",
+          "resolved": false,
+          "confidence": 0,
+          "line": 117
+        },
+        {
+          "target": "inputCredentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 119
+        },
+        {
+          "target": "updateState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 123
+        },
+        {
+          "target": "push",
+          "resolved": false,
+          "confidence": 0,
+          "line": 125
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 127
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 127
+        },
+        {
+          "target": "toast",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 129,
+          "resolvedId": "src/components/molecules/Toast/use-toast.tsx:toast:27"
+        },
+        {
+          "target": "setRunningAgent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 136
+        },
+        {
+          "target": "setCredentialsLoaded",
+          "resolved": false,
+          "confidence": 0,
+          "line": 155
+        },
+        {
+          "target": "setStep",
+          "resolved": false,
+          "confidence": 0,
+          "line": 60
+        },
+        {
+          "target": "computeInitialAgentInputs",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 65,
+          "resolvedId": "src/app/(no-navbar)/onboarding/5-run/helpers.ts:computeInitialAgentInputs:8"
+        },
+        {
+          "target": "agentGraphMeta",
+          "resolved": false,
+          "confidence": 0,
+          "line": 66
+        },
+        {
+          "target": "updateState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 70
+        },
+        {
+          "target": "setShowInput",
+          "resolved": false,
+          "confidence": 0,
+          "line": 77
+        },
+        {
+          "target": "setStep",
+          "resolved": false,
+          "confidence": 0,
+          "line": 78
+        },
+        {
+          "target": "completeStep",
+          "resolved": false,
+          "confidence": 0,
+          "line": 79
+        },
+        {
+          "target": "updateState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 85
+        },
+        {
+          "target": "toast",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 95,
+          "resolvedId": "src/components/molecules/Toast/use-toast.tsx:toast:27"
+        },
+        {
+          "target": "setRunningAgent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 105
+        },
+        {
+          "target": "resolveResponse",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 108,
+          "resolvedId": "src/app/api/helpers.ts:resolveResponse:149"
+        },
+        {
+          "target": "postV2AddMarketplaceAgent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 109
+        },
+        {
+          "target": "executeGraph",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 115,
+          "resolvedId": "src/lib/autogpt-server-api/client.ts:executeGraph:253"
+        },
+        {
+          "target": "graph_version",
+          "resolved": false,
+          "confidence": 0,
+          "line": 117
+        },
+        {
+          "target": "inputCredentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 119
+        },
+        {
+          "target": "updateState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 123
+        },
+        {
+          "target": "push",
+          "resolved": false,
+          "confidence": 0,
+          "line": 125
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 127
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 127
+        },
+        {
+          "target": "toast",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 129,
+          "resolvedId": "src/components/molecules/Toast/use-toast.tsx:toast:27"
+        },
+        {
+          "target": "setRunningAgent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 136
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/app/(no-navbar)/onboarding/5-run/useOnboardingRunStep.tsx:$useEffect$1:59",
+      "name": "$useEffect$1",
+      "startLine": 59,
+      "endLine": 61,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 59
+        },
+        {
+          "target": "setStep",
+          "resolved": false,
+          "confidence": 0,
+          "line": 60
+        },
+        {
+          "target": "setStep",
+          "resolved": false,
+          "confidence": 0,
+          "line": 60
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/app/(no-navbar)/onboarding/5-run/useOnboardingRunStep.tsx:$useEffect$2:63",
+      "name": "$useEffect$2",
+      "startLine": 63,
+      "endLine": 72,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 63
+        },
+        {
+          "target": "computeInitialAgentInputs",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 65,
+          "resolvedId": "src/app/(no-navbar)/onboarding/5-run/helpers.ts:computeInitialAgentInputs:8"
+        },
+        {
+          "target": "agentGraphMeta",
+          "resolved": false,
+          "confidence": 0,
+          "line": 66
+        },
+        {
+          "target": "updateState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 70
+        },
+        {
+          "target": "computeInitialAgentInputs",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 65,
+          "resolvedId": "src/app/(no-navbar)/onboarding/5-run/helpers.ts:computeInitialAgentInputs:8"
+        },
+        {
+          "target": "agentGraphMeta",
+          "resolved": false,
+          "confidence": 0,
+          "line": 66
+        },
+        {
+          "target": "updateState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 70
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/app/(no-navbar)/onboarding/5-run/useOnboardingRunStep.tsx:handleNewRun:74",
+      "name": "handleNewRun",
+      "startLine": 74,
+      "endLine": 80,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "setShowInput",
+          "resolved": false,
+          "confidence": 0,
+          "line": 77
+        },
+        {
+          "target": "setStep",
+          "resolved": false,
+          "confidence": 0,
+          "line": 78
+        },
+        {
+          "target": "completeStep",
+          "resolved": false,
+          "confidence": 0,
+          "line": 79
+        },
+        {
+          "target": "setShowInput",
+          "resolved": false,
+          "confidence": 0,
+          "line": 77
+        },
+        {
+          "target": "setStep",
+          "resolved": false,
+          "confidence": 0,
+          "line": 78
+        },
+        {
+          "target": "completeStep",
+          "resolved": false,
+          "confidence": 0,
+          "line": 79
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/app/(no-navbar)/onboarding/5-run/useOnboardingRunStep.tsx:handleSetAgentInput:82",
+      "name": "handleSetAgentInput",
+      "startLine": 82,
+      "endLine": 91,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "updateState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 85
+        },
+        {
+          "target": "updateState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 85
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/app/(no-navbar)/onboarding/5-run/useOnboardingRunStep.tsx:handleRunAgent:93",
+      "name": "handleRunAgent",
+      "startLine": 93,
+      "endLine": 138,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "toast",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 95,
+          "resolvedId": "src/components/molecules/Toast/use-toast.tsx:toast:27"
+        },
+        {
+          "target": "setRunningAgent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 105
+        },
+        {
+          "target": "resolveResponse",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 108,
+          "resolvedId": "src/app/api/helpers.ts:resolveResponse:149"
+        },
+        {
+          "target": "postV2AddMarketplaceAgent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 109
+        },
+        {
+          "target": "executeGraph",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 115,
+          "resolvedId": "src/lib/autogpt-server-api/client.ts:executeGraph:253"
+        },
+        {
+          "target": "graph_version",
+          "resolved": false,
+          "confidence": 0,
+          "line": 117
+        },
+        {
+          "target": "inputCredentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 119
+        },
+        {
+          "target": "updateState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 123
+        },
+        {
+          "target": "push",
+          "resolved": false,
+          "confidence": 0,
+          "line": 125
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 127
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 127
+        },
+        {
+          "target": "toast",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 129,
+          "resolvedId": "src/components/molecules/Toast/use-toast.tsx:toast:27"
+        },
+        {
+          "target": "setRunningAgent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 136
+        },
+        {
+          "target": "toast",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 95,
+          "resolvedId": "src/components/molecules/Toast/use-toast.tsx:toast:27"
+        },
+        {
+          "target": "setRunningAgent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 105
+        },
+        {
+          "target": "resolveResponse",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 108,
+          "resolvedId": "src/app/api/helpers.ts:resolveResponse:149"
+        },
+        {
+          "target": "postV2AddMarketplaceAgent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 109
+        },
+        {
+          "target": "executeGraph",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 115,
+          "resolvedId": "src/lib/autogpt-server-api/client.ts:executeGraph:253"
+        },
+        {
+          "target": "graph_version",
+          "resolved": false,
+          "confidence": 0,
+          "line": 117
+        },
+        {
+          "target": "inputCredentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 119
+        },
+        {
+          "target": "updateState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 123
+        },
+        {
+          "target": "push",
+          "resolved": false,
+          "confidence": 0,
+          "line": 125
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 127
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 127
+        },
+        {
+          "target": "toast",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 129,
+          "resolvedId": "src/components/molecules/Toast/use-toast.tsx:toast:27"
+        },
+        {
+          "target": "setRunningAgent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 136
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

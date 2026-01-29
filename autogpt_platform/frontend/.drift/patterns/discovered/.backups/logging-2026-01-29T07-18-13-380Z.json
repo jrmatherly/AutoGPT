@@ -1,0 +1,239 @@
+{
+  "version": "1.0.0",
+  "category": "logging",
+  "patterns": [
+    {
+      "id": "03c72a9c8ac476c5",
+      "subcategory": "context-fields",
+      "name": "Context Fields Detector",
+      "description": "Learns logging context field patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "logging/context-fields",
+          "patternId": "logging/context-fields/function_definition"
+        }
+      },
+      "confidence": {
+        "frequency": 0.07,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 5,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src/components/contextual/Chat/components/ChatContainer/helpers.ts",
+          "line": 243,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/components/contextual/Chat/components/ChatContainer/helpers.ts",
+          "line": 456,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/components/contextual/Chat/components/ChatContainer/helpers.ts",
+          "line": 516,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "src/components/contextual/GoogleDrivePicker/useGoogleDrivePicker.ts",
+          "line": 316,
+          "column": 29,
+          "isOutlier": false,
+          "confidence": 0.945
+        },
+        {
+          "file": "src/components/organisms/PendingReviewCard/PendingReviewCard.tsx",
+          "line": 24,
+          "column": 10,
+          "isOutlier": false,
+          "confidence": 0.87
+        },
+        {
+          "file": "src/components/organisms/PendingReviewsList/PendingReviewsList.tsx",
+          "line": 111,
+          "column": 55,
+          "isOutlier": false,
+          "confidence": 0.8575
+        },
+        {
+          "file": "src/lib/autogpt-server-api/types.ts",
+          "line": 1199,
+          "column": 62,
+          "isOutlier": false,
+          "confidence": 1
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:32:38.510Z",
+        "lastSeen": "2026-01-29T06:32:38.510Z",
+        "source": "auto-detected",
+        "tags": [
+          "logging",
+          "context-fields"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "fa55124ab73bf891",
+      "subcategory": "metrics",
+      "name": "Metrics Detector",
+      "description": "Learns metrics patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "logging/metrics",
+          "patternId": "logging/metrics/conditional"
+        }
+      },
+      "confidence": {
+        "frequency": 0.02,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.7949999999999999,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "src/components/contextual/Chat/components/ThinkingMessage/ThinkingMessage.tsx",
+          "line": 16,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.7949999999999999
+        },
+        {
+          "file": "src/components/contextual/Chat/components/ThinkingMessage/ThinkingMessage.tsx",
+          "line": 29,
+          "column": 11,
+          "isOutlier": false,
+          "confidence": 0.7949999999999999
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:32:38.510Z",
+        "lastSeen": "2026-01-29T06:32:38.510Z",
+        "source": "auto-detected",
+        "tags": [
+          "logging",
+          "metrics"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "2f22a7b457e320ab",
+      "subcategory": "pii-redaction",
+      "name": "PII Redaction Detector",
+      "description": "Learns PII redaction patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "logging/pii-redaction",
+          "patternId": "logging/pii-redaction/function_definition"
+        }
+      },
+      "confidence": {
+        "frequency": 0.02,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "src/lib/autogpt-server-api/utils.ts",
+          "line": 42,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 1
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:32:38.510Z",
+        "lastSeen": "2026-01-29T06:32:38.510Z",
+        "source": "auto-detected",
+        "tags": [
+          "logging",
+          "pii-redaction"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "c6e440a1333e3852",
+      "subcategory": "structured-logging",
+      "name": "Structured Logging Detector",
+      "description": "Learns structured logging patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "logging/structured-logging",
+          "patternId": "logging/structured-logging/type_annotation"
+        }
+      },
+      "confidence": {
+        "frequency": 0.03,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.7229411764705882,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "src/tests/utils/signin.ts",
+          "line": 65,
+          "column": 37,
+          "isOutlier": false,
+          "confidence": 0.7229411764705882
+        },
+        {
+          "file": "src/tests/utils/signin.ts",
+          "line": 65,
+          "column": 46,
+          "isOutlier": false,
+          "confidence": 0.7229411764705882
+        },
+        {
+          "file": "src/tests/utils/signin.ts",
+          "line": 65,
+          "column": 56,
+          "isOutlier": false,
+          "confidence": 0.7229411764705882
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:32:38.510Z",
+        "lastSeen": "2026-01-29T06:32:38.510Z",
+        "source": "auto-detected",
+        "tags": [
+          "logging",
+          "structured-logging"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    }
+  ],
+  "lastUpdated": "2026-01-29T07:18:13.340Z",
+  "checksum": "616e382563a741ed"
+}

@@ -1,0 +1,96 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.090Z",
+  "checksum": "b603977d91ff9fa0",
+  "file": "src/tests/integrations/test-utils.tsx",
+  "functions": [
+    {
+      "id": "src/tests/integrations/test-utils.tsx:createTestQueryClient:7",
+      "name": "createTestQueryClient",
+      "startLine": 7,
+      "endLine": 15,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "QueryClient",
+          "resolved": false,
+          "confidence": 0,
+          "line": 8
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/tests/integrations/test-utils.tsx:TestProviders:17",
+      "name": "TestProviders",
+      "startLine": 17,
+      "endLine": 26,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "createTestQueryClient",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 18,
+          "resolvedId": "src/tests/integrations/test-utils.tsx:createTestQueryClient:7"
+        },
+        {
+          "target": "QueryClientProvider",
+          "resolved": false,
+          "confidence": 0,
+          "line": 20
+        },
+        {
+          "target": "queryClient",
+          "resolved": false,
+          "confidence": 0,
+          "line": 20
+        },
+        {
+          "target": "BackendAPIProvider",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 21,
+          "resolvedId": "src/lib/autogpt-server-api/context.tsx:BackendAPIProvider:16"
+        },
+        {
+          "target": "OnboardingProvider",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 22,
+          "resolvedId": "src/providers/onboarding/onboarding-provider.tsx:OnboardingProvider:90"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/tests/integrations/test-utils.tsx:customRender:28",
+      "name": "customRender",
+      "startLine": 28,
+      "endLine": 33,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "render",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 32,
+          "resolvedId": "src/components/molecules/ErrorBoundary/ErrorBoundary.tsx:render:53"
+        },
+        {
+          "target": "ui",
+          "resolved": false,
+          "confidence": 0,
+          "line": 32
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

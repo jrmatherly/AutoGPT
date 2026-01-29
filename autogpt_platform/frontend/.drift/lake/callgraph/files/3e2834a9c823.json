@@ -1,0 +1,235 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.034Z",
+  "checksum": "c720ffa8b5abb36e",
+  "file": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/AgentVersionChangelog.tsx",
+  "functions": [
+    {
+      "id": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/AgentVersionChangelog.tsx:AgentVersionChangelog:23",
+      "name": "AgentVersionChangelog",
+      "startLine": 23,
+      "endLine": 137,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useGetV2GetSpecificAgent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 29
+        },
+        {
+          "target": "okData",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 44,
+          "resolvedId": "src/app/api/helpers.ts:okData:23"
+        },
+        {
+          "target": "storeAgentData",
+          "resolved": false,
+          "confidence": 0,
+          "line": 44
+        },
+        {
+          "target": "map",
+          "resolved": false,
+          "confidence": 0,
+          "line": 46
+        },
+        {
+          "target": "sort",
+          "resolved": false,
+          "confidence": 0,
+          "line": 46
+        },
+        {
+          "target": "map",
+          "resolved": false,
+          "confidence": 0,
+          "line": 46
+        },
+        {
+          "target": "parseInt",
+          "resolved": false,
+          "confidence": 0,
+          "line": 47
+        },
+        {
+          "target": "versionStr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 47
+        },
+        {
+          "target": "version",
+          "resolved": false,
+          "confidence": 0,
+          "line": 58
+        },
+        {
+          "target": "Text",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 67,
+          "resolvedId": "src/components/atoms/Text/Text.tsx:Text:15"
+        },
+        {
+          "target": "Text",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 78,
+          "resolvedId": "src/components/atoms/Text/Text.tsx:Text:15"
+        },
+        {
+          "target": "Dialog",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 89,
+          "resolvedId": "src/components/molecules/Dialog/Dialog.tsx:Dialog:28"
+        },
+        {
+          "target": "onClose",
+          "resolved": false,
+          "confidence": 0,
+          "line": 98
+        },
+        {
+          "target": "Content",
+          "resolved": false,
+          "confidence": 0,
+          "line": 103
+        },
+        {
+          "target": "Skeleton",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 107,
+          "resolvedId": "src/components/atoms/Skeleton/Skeleton.tsx:Skeleton:7"
+        },
+        {
+          "target": "Skeleton",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 108,
+          "resolvedId": "src/components/atoms/Skeleton/Skeleton.tsx:Skeleton:7"
+        },
+        {
+          "target": "Skeleton",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 109,
+          "resolvedId": "src/components/atoms/Skeleton/Skeleton.tsx:Skeleton:7"
+        },
+        {
+          "target": "Skeleton",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 110,
+          "resolvedId": "src/components/atoms/Skeleton/Skeleton.tsx:Skeleton:7"
+        },
+        {
+          "target": "Text",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 114,
+          "resolvedId": "src/components/atoms/Text/Text.tsx:Text:15"
+        },
+        {
+          "target": "map",
+          "resolved": false,
+          "confidence": 0,
+          "line": 121
+        },
+        {
+          "target": "renderVersionItem",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 121,
+          "resolvedId": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/AgentVersionChangelog.tsx:renderVersionItem:55"
+        },
+        {
+          "target": "Text",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 125,
+          "resolvedId": "src/components/atoms/Text/Text.tsx:Text:15"
+        },
+        {
+          "target": "version",
+          "resolved": false,
+          "confidence": 0,
+          "line": 58
+        },
+        {
+          "target": "Text",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 67,
+          "resolvedId": "src/components/atoms/Text/Text.tsx:Text:15"
+        },
+        {
+          "target": "Text",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 78,
+          "resolvedId": "src/components/atoms/Text/Text.tsx:Text:15"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/AgentVersionChangelog.tsx:renderVersionItem:55",
+      "name": "renderVersionItem",
+      "startLine": 55,
+      "endLine": 86,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "version",
+          "resolved": false,
+          "confidence": 0,
+          "line": 58
+        },
+        {
+          "target": "Text",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 67,
+          "resolvedId": "src/components/atoms/Text/Text.tsx:Text:15"
+        },
+        {
+          "target": "Text",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 78,
+          "resolvedId": "src/components/atoms/Text/Text.tsx:Text:15"
+        },
+        {
+          "target": "version",
+          "resolved": false,
+          "confidence": 0,
+          "line": 58
+        },
+        {
+          "target": "Text",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 67,
+          "resolvedId": "src/components/atoms/Text/Text.tsx:Text:15"
+        },
+        {
+          "target": "Text",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 78,
+          "resolvedId": "src/components/atoms/Text/Text.tsx:Text:15"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

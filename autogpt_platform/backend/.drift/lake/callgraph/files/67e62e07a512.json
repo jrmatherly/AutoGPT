@@ -1,0 +1,2436 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.166Z",
+  "checksum": "3a9570b27b1babfd",
+  "file": "backend/api/features/store/routes_test.py",
+  "functions": [
+    {
+      "id": "backend/api/features/store/routes_test.py:setup_app_auth:25",
+      "name": "setup_app_auth",
+      "startLine": 25,
+      "endLine": 31,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "clear",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 31,
+          "resolvedId": "backend/sdk/registry.py:clear:155"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/store/routes_test.py:test_get_agents_defaults:34",
+      "name": "test_get_agents_defaults",
+      "startLine": 34,
+      "endLine": 66,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "StoreAgentsResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 38
+        },
+        {
+          "target": "Pagination",
+          "resolved": false,
+          "confidence": 0,
+          "line": 40
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 47,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 49,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "model_validate",
+          "resolved": false,
+          "confidence": 0,
+          "line": 52
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 52,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "assert_match",
+          "resolved": false,
+          "confidence": 0,
+          "line": 57
+        },
+        {
+          "target": "dumps",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 57,
+          "resolvedId": "backend/util/json.py:dumps:20"
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 57,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "assert_called_once_with",
+          "resolved": false,
+          "confidence": 0,
+          "line": 58
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/store/routes_test.py:test_get_agents_featured:69",
+      "name": "test_get_agents_featured",
+      "startLine": 69,
+      "endLine": 111,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "StoreAgentsResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 73
+        },
+        {
+          "target": "StoreAgent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 75
+        },
+        {
+          "target": "Pagination",
+          "resolved": false,
+          "confidence": 0,
+          "line": 87
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 94,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 96,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "model_validate",
+          "resolved": false,
+          "confidence": 0,
+          "line": 98
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 98,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 99
+        },
+        {
+          "target": "assert_match",
+          "resolved": false,
+          "confidence": 0,
+          "line": 102
+        },
+        {
+          "target": "dumps",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 102,
+          "resolvedId": "backend/util/json.py:dumps:20"
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 102,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "assert_called_once_with",
+          "resolved": false,
+          "confidence": 0,
+          "line": 103
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/store/routes_test.py:test_get_agents_by_creator:114",
+      "name": "test_get_agents_by_creator",
+      "startLine": 114,
+      "endLine": 156,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "StoreAgentsResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 118
+        },
+        {
+          "target": "StoreAgent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 120
+        },
+        {
+          "target": "Pagination",
+          "resolved": false,
+          "confidence": 0,
+          "line": 132
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 139,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 141,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "model_validate",
+          "resolved": false,
+          "confidence": 0,
+          "line": 143
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 143,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 144
+        },
+        {
+          "target": "assert_match",
+          "resolved": false,
+          "confidence": 0,
+          "line": 147
+        },
+        {
+          "target": "dumps",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 147,
+          "resolvedId": "backend/util/json.py:dumps:20"
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 147,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "assert_called_once_with",
+          "resolved": false,
+          "confidence": 0,
+          "line": 148
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/store/routes_test.py:test_get_agents_sorted:159",
+      "name": "test_get_agents_sorted",
+      "startLine": 159,
+      "endLine": 201,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "StoreAgentsResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 163
+        },
+        {
+          "target": "StoreAgent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 165
+        },
+        {
+          "target": "Pagination",
+          "resolved": false,
+          "confidence": 0,
+          "line": 177
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 184,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 186,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "model_validate",
+          "resolved": false,
+          "confidence": 0,
+          "line": 188
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 188,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 189
+        },
+        {
+          "target": "assert_match",
+          "resolved": false,
+          "confidence": 0,
+          "line": 192
+        },
+        {
+          "target": "dumps",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 192,
+          "resolvedId": "backend/util/json.py:dumps:20"
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 192,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "assert_called_once_with",
+          "resolved": false,
+          "confidence": 0,
+          "line": 193
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/store/routes_test.py:test_get_agents_search:204",
+      "name": "test_get_agents_search",
+      "startLine": 204,
+      "endLine": 246,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "StoreAgentsResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 208
+        },
+        {
+          "target": "StoreAgent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 210
+        },
+        {
+          "target": "Pagination",
+          "resolved": false,
+          "confidence": 0,
+          "line": 222
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 229,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 231,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "model_validate",
+          "resolved": false,
+          "confidence": 0,
+          "line": 233
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 233,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 234
+        },
+        {
+          "target": "lower",
+          "resolved": false,
+          "confidence": 0,
+          "line": 235
+        },
+        {
+          "target": "assert_match",
+          "resolved": false,
+          "confidence": 0,
+          "line": 237
+        },
+        {
+          "target": "dumps",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 237,
+          "resolvedId": "backend/util/json.py:dumps:20"
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 237,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "assert_called_once_with",
+          "resolved": false,
+          "confidence": 0,
+          "line": 238
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/store/routes_test.py:test_get_agents_category:249",
+      "name": "test_get_agents_category",
+      "startLine": 249,
+      "endLine": 290,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "StoreAgentsResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 253
+        },
+        {
+          "target": "StoreAgent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 255
+        },
+        {
+          "target": "Pagination",
+          "resolved": false,
+          "confidence": 0,
+          "line": 267
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 274,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 276,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "model_validate",
+          "resolved": false,
+          "confidence": 0,
+          "line": 278
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 278,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 279
+        },
+        {
+          "target": "assert_match",
+          "resolved": false,
+          "confidence": 0,
+          "line": 281
+        },
+        {
+          "target": "dumps",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 281,
+          "resolvedId": "backend/util/json.py:dumps:20"
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 281,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "assert_called_once_with",
+          "resolved": false,
+          "confidence": 0,
+          "line": 282
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/store/routes_test.py:test_get_agents_pagination:293",
+      "name": "test_get_agents_pagination",
+      "startLine": 293,
+      "endLine": 337,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "StoreAgentsResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 297
+        },
+        {
+          "target": "StoreAgent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 299
+        },
+        {
+          "target": "range",
+          "resolved": false,
+          "confidence": 0,
+          "line": 310
+        },
+        {
+          "target": "Pagination",
+          "resolved": false,
+          "confidence": 0,
+          "line": 312
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 319,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 321,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "model_validate",
+          "resolved": false,
+          "confidence": 0,
+          "line": 323
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 323,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 324
+        },
+        {
+          "target": "assert_match",
+          "resolved": false,
+          "confidence": 0,
+          "line": 328
+        },
+        {
+          "target": "dumps",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 328,
+          "resolvedId": "backend/util/json.py:dumps:20"
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 328,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "assert_called_once_with",
+          "resolved": false,
+          "confidence": 0,
+          "line": 329
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/store/routes_test.py:test_get_agents_malformed_request:340",
+      "name": "test_get_agents_malformed_request",
+      "startLine": 340,
+      "endLine": 355,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 342,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 346,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 350,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 354,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "assert_not_called",
+          "resolved": false,
+          "confidence": 0,
+          "line": 355
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "abc",
+          "operation": "read",
+          "line": 350,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/api/features/store/routes_test.py:test_get_agent_details:358",
+      "name": "test_get_agent_details",
+      "startLine": 358,
+      "endLine": 394,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "StoreAgentDetails",
+          "resolved": false,
+          "confidence": 0,
+          "line": 362
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 381,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 384,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "model_validate",
+          "resolved": false,
+          "confidence": 0,
+          "line": 387
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 387,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "assert_match",
+          "resolved": false,
+          "confidence": 0,
+          "line": 391
+        },
+        {
+          "target": "dumps",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 391,
+          "resolvedId": "backend/util/json.py:dumps:20"
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 391,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "assert_called_once_with",
+          "resolved": false,
+          "confidence": 0,
+          "line": 392
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/store/routes_test.py:test_get_creators_defaults:397",
+      "name": "test_get_creators_defaults",
+      "startLine": 397,
+      "endLine": 423,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "CreatorsResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 401
+        },
+        {
+          "target": "Pagination",
+          "resolved": false,
+          "confidence": 0,
+          "line": 403
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 410,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 413,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "model_validate",
+          "resolved": false,
+          "confidence": 0,
+          "line": 416
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 416,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "assert_match",
+          "resolved": false,
+          "confidence": 0,
+          "line": 420
+        },
+        {
+          "target": "dumps",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 420,
+          "resolvedId": "backend/util/json.py:dumps:20"
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 420,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "assert_called_once_with",
+          "resolved": false,
+          "confidence": 0,
+          "line": 421
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/store/routes_test.py:test_get_creators_pagination:426",
+      "name": "test_get_creators_pagination",
+      "startLine": 426,
+      "endLine": 465,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "CreatorsResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 430
+        },
+        {
+          "target": "Creator",
+          "resolved": false,
+          "confidence": 0,
+          "line": 432
+        },
+        {
+          "target": "range",
+          "resolved": false,
+          "confidence": 0,
+          "line": 442
+        },
+        {
+          "target": "Pagination",
+          "resolved": false,
+          "confidence": 0,
+          "line": 444
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 451,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 454,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "model_validate",
+          "resolved": false,
+          "confidence": 0,
+          "line": 457
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 457,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 458
+        },
+        {
+          "target": "assert_match",
+          "resolved": false,
+          "confidence": 0,
+          "line": 462
+        },
+        {
+          "target": "dumps",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 462,
+          "resolvedId": "backend/util/json.py:dumps:20"
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 462,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "assert_called_once_with",
+          "resolved": false,
+          "confidence": 0,
+          "line": 463
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/store/routes_test.py:test_get_creators_malformed_request:468",
+      "name": "test_get_creators_malformed_request",
+      "startLine": 468,
+      "endLine": 483,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 470,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 474,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 478,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 482,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "assert_not_called",
+          "resolved": false,
+          "confidence": 0,
+          "line": 483
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "abc",
+          "operation": "read",
+          "line": 478,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/api/features/store/routes_test.py:test_get_creator_details:486",
+      "name": "test_get_creator_details",
+      "startLine": 486,
+      "endLine": 513,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "CreatorDetails",
+          "resolved": false,
+          "confidence": 0,
+          "line": 490
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 500,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 505,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "model_validate",
+          "resolved": false,
+          "confidence": 0,
+          "line": 508
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 508,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "assert_match",
+          "resolved": false,
+          "confidence": 0,
+          "line": 512
+        },
+        {
+          "target": "dumps",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 512,
+          "resolvedId": "backend/util/json.py:dumps:20"
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 512,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "assert_called_once_with",
+          "resolved": false,
+          "confidence": 0,
+          "line": 513
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/store/routes_test.py:test_get_submissions_success:516",
+      "name": "test_get_submissions_success",
+      "startLine": 516,
+      "endLine": 559,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "StoreSubmissionsResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 521
+        },
+        {
+          "target": "StoreSubmission",
+          "resolved": false,
+          "confidence": 0,
+          "line": 523
+        },
+        {
+          "target": "Pagination",
+          "resolved": false,
+          "confidence": 0,
+          "line": 540
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 547,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 550,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "model_validate",
+          "resolved": false,
+          "confidence": 0,
+          "line": 553
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 553,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 554
+        },
+        {
+          "target": "assert_match",
+          "resolved": false,
+          "confidence": 0,
+          "line": 558
+        },
+        {
+          "target": "dumps",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 558,
+          "resolvedId": "backend/util/json.py:dumps:20"
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 558,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "assert_called_once_with",
+          "resolved": false,
+          "confidence": 0,
+          "line": 559
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/store/routes_test.py:test_get_submissions_pagination:562",
+      "name": "test_get_submissions_pagination",
+      "startLine": 562,
+      "endLine": 587,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "StoreSubmissionsResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 567
+        },
+        {
+          "target": "Pagination",
+          "resolved": false,
+          "confidence": 0,
+          "line": 569
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 576,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 579,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "model_validate",
+          "resolved": false,
+          "confidence": 0,
+          "line": 582
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 582,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "assert_match",
+          "resolved": false,
+          "confidence": 0,
+          "line": 586
+        },
+        {
+          "target": "dumps",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 586,
+          "resolvedId": "backend/util/json.py:dumps:20"
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 586,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "assert_called_once_with",
+          "resolved": false,
+          "confidence": 0,
+          "line": 587
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/features/store/routes_test.py:test_get_submissions_malformed_request:590",
+      "name": "test_get_submissions_malformed_request",
+      "startLine": 590,
+      "endLine": 605,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 592,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 596,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 600,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 604,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "assert_not_called",
+          "resolved": false,
+          "confidence": 0,
+          "line": 605
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "abc",
+          "operation": "read",
+          "line": 600,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/api/features/store/routes_test.py:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 606,
+      "isEntryPoint": false,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "datetime",
+          "resolved": false,
+          "confidence": 0,
+          "line": 16
+        },
+        {
+          "target": "FastAPI",
+          "resolved": false,
+          "confidence": 0,
+          "line": 18
+        },
+        {
+          "target": "include_router",
+          "resolved": false,
+          "confidence": 0,
+          "line": 19
+        },
+        {
+          "target": "TestClient",
+          "resolved": false,
+          "confidence": 0,
+          "line": 21
+        },
+        {
+          "target": "fixture",
+          "resolved": false,
+          "confidence": 0,
+          "line": 24
+        },
+        {
+          "target": "clear",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 31,
+          "resolvedId": "backend/sdk/registry.py:clear:155"
+        },
+        {
+          "target": "StoreAgentsResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 38
+        },
+        {
+          "target": "Pagination",
+          "resolved": false,
+          "confidence": 0,
+          "line": 40
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 47,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 49,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "model_validate",
+          "resolved": false,
+          "confidence": 0,
+          "line": 52
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 52,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "assert_match",
+          "resolved": false,
+          "confidence": 0,
+          "line": 57
+        },
+        {
+          "target": "dumps",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 57,
+          "resolvedId": "backend/util/json.py:dumps:20"
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 57,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "assert_called_once_with",
+          "resolved": false,
+          "confidence": 0,
+          "line": 58
+        },
+        {
+          "target": "StoreAgentsResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 73
+        },
+        {
+          "target": "StoreAgent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 75
+        },
+        {
+          "target": "Pagination",
+          "resolved": false,
+          "confidence": 0,
+          "line": 87
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 94,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 96,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "model_validate",
+          "resolved": false,
+          "confidence": 0,
+          "line": 98
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 98,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 99
+        },
+        {
+          "target": "assert_match",
+          "resolved": false,
+          "confidence": 0,
+          "line": 102
+        },
+        {
+          "target": "dumps",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 102,
+          "resolvedId": "backend/util/json.py:dumps:20"
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 102,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "assert_called_once_with",
+          "resolved": false,
+          "confidence": 0,
+          "line": 103
+        },
+        {
+          "target": "StoreAgentsResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 118
+        },
+        {
+          "target": "StoreAgent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 120
+        },
+        {
+          "target": "Pagination",
+          "resolved": false,
+          "confidence": 0,
+          "line": 132
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 139,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 141,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "model_validate",
+          "resolved": false,
+          "confidence": 0,
+          "line": 143
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 143,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 144
+        },
+        {
+          "target": "assert_match",
+          "resolved": false,
+          "confidence": 0,
+          "line": 147
+        },
+        {
+          "target": "dumps",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 147,
+          "resolvedId": "backend/util/json.py:dumps:20"
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 147,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "assert_called_once_with",
+          "resolved": false,
+          "confidence": 0,
+          "line": 148
+        },
+        {
+          "target": "StoreAgentsResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 163
+        },
+        {
+          "target": "StoreAgent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 165
+        },
+        {
+          "target": "Pagination",
+          "resolved": false,
+          "confidence": 0,
+          "line": 177
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 184,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 186,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "model_validate",
+          "resolved": false,
+          "confidence": 0,
+          "line": 188
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 188,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 189
+        },
+        {
+          "target": "assert_match",
+          "resolved": false,
+          "confidence": 0,
+          "line": 192
+        },
+        {
+          "target": "dumps",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 192,
+          "resolvedId": "backend/util/json.py:dumps:20"
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 192,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "assert_called_once_with",
+          "resolved": false,
+          "confidence": 0,
+          "line": 193
+        },
+        {
+          "target": "StoreAgentsResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 208
+        },
+        {
+          "target": "StoreAgent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 210
+        },
+        {
+          "target": "Pagination",
+          "resolved": false,
+          "confidence": 0,
+          "line": 222
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 229,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 231,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "model_validate",
+          "resolved": false,
+          "confidence": 0,
+          "line": 233
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 233,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 234
+        },
+        {
+          "target": "lower",
+          "resolved": false,
+          "confidence": 0,
+          "line": 235
+        },
+        {
+          "target": "assert_match",
+          "resolved": false,
+          "confidence": 0,
+          "line": 237
+        },
+        {
+          "target": "dumps",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 237,
+          "resolvedId": "backend/util/json.py:dumps:20"
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 237,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "assert_called_once_with",
+          "resolved": false,
+          "confidence": 0,
+          "line": 238
+        },
+        {
+          "target": "StoreAgentsResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 253
+        },
+        {
+          "target": "StoreAgent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 255
+        },
+        {
+          "target": "Pagination",
+          "resolved": false,
+          "confidence": 0,
+          "line": 267
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 274,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 276,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "model_validate",
+          "resolved": false,
+          "confidence": 0,
+          "line": 278
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 278,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 279
+        },
+        {
+          "target": "assert_match",
+          "resolved": false,
+          "confidence": 0,
+          "line": 281
+        },
+        {
+          "target": "dumps",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 281,
+          "resolvedId": "backend/util/json.py:dumps:20"
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 281,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "assert_called_once_with",
+          "resolved": false,
+          "confidence": 0,
+          "line": 282
+        },
+        {
+          "target": "StoreAgentsResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 297
+        },
+        {
+          "target": "StoreAgent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 299
+        },
+        {
+          "target": "range",
+          "resolved": false,
+          "confidence": 0,
+          "line": 310
+        },
+        {
+          "target": "Pagination",
+          "resolved": false,
+          "confidence": 0,
+          "line": 312
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 319,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 321,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "model_validate",
+          "resolved": false,
+          "confidence": 0,
+          "line": 323
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 323,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 324
+        },
+        {
+          "target": "assert_match",
+          "resolved": false,
+          "confidence": 0,
+          "line": 328
+        },
+        {
+          "target": "dumps",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 328,
+          "resolvedId": "backend/util/json.py:dumps:20"
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 328,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "assert_called_once_with",
+          "resolved": false,
+          "confidence": 0,
+          "line": 329
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 342,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 346,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 350,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 354,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "assert_not_called",
+          "resolved": false,
+          "confidence": 0,
+          "line": 355
+        },
+        {
+          "target": "StoreAgentDetails",
+          "resolved": false,
+          "confidence": 0,
+          "line": 362
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 381,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 384,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "model_validate",
+          "resolved": false,
+          "confidence": 0,
+          "line": 387
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 387,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "assert_match",
+          "resolved": false,
+          "confidence": 0,
+          "line": 391
+        },
+        {
+          "target": "dumps",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 391,
+          "resolvedId": "backend/util/json.py:dumps:20"
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 391,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "assert_called_once_with",
+          "resolved": false,
+          "confidence": 0,
+          "line": 392
+        },
+        {
+          "target": "CreatorsResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 401
+        },
+        {
+          "target": "Pagination",
+          "resolved": false,
+          "confidence": 0,
+          "line": 403
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 410,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 413,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "model_validate",
+          "resolved": false,
+          "confidence": 0,
+          "line": 416
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 416,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "assert_match",
+          "resolved": false,
+          "confidence": 0,
+          "line": 420
+        },
+        {
+          "target": "dumps",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 420,
+          "resolvedId": "backend/util/json.py:dumps:20"
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 420,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "assert_called_once_with",
+          "resolved": false,
+          "confidence": 0,
+          "line": 421
+        },
+        {
+          "target": "CreatorsResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 430
+        },
+        {
+          "target": "Creator",
+          "resolved": false,
+          "confidence": 0,
+          "line": 432
+        },
+        {
+          "target": "range",
+          "resolved": false,
+          "confidence": 0,
+          "line": 442
+        },
+        {
+          "target": "Pagination",
+          "resolved": false,
+          "confidence": 0,
+          "line": 444
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 451,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 454,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "model_validate",
+          "resolved": false,
+          "confidence": 0,
+          "line": 457
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 457,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 458
+        },
+        {
+          "target": "assert_match",
+          "resolved": false,
+          "confidence": 0,
+          "line": 462
+        },
+        {
+          "target": "dumps",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 462,
+          "resolvedId": "backend/util/json.py:dumps:20"
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 462,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "assert_called_once_with",
+          "resolved": false,
+          "confidence": 0,
+          "line": 463
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 470,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 474,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 478,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 482,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "assert_not_called",
+          "resolved": false,
+          "confidence": 0,
+          "line": 483
+        },
+        {
+          "target": "CreatorDetails",
+          "resolved": false,
+          "confidence": 0,
+          "line": 490
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 500,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 505,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "model_validate",
+          "resolved": false,
+          "confidence": 0,
+          "line": 508
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 508,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "assert_match",
+          "resolved": false,
+          "confidence": 0,
+          "line": 512
+        },
+        {
+          "target": "dumps",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 512,
+          "resolvedId": "backend/util/json.py:dumps:20"
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 512,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "assert_called_once_with",
+          "resolved": false,
+          "confidence": 0,
+          "line": 513
+        },
+        {
+          "target": "StoreSubmissionsResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 521
+        },
+        {
+          "target": "StoreSubmission",
+          "resolved": false,
+          "confidence": 0,
+          "line": 523
+        },
+        {
+          "target": "Pagination",
+          "resolved": false,
+          "confidence": 0,
+          "line": 540
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 547,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 550,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "model_validate",
+          "resolved": false,
+          "confidence": 0,
+          "line": 553
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 553,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 554
+        },
+        {
+          "target": "assert_match",
+          "resolved": false,
+          "confidence": 0,
+          "line": 558
+        },
+        {
+          "target": "dumps",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 558,
+          "resolvedId": "backend/util/json.py:dumps:20"
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 558,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "assert_called_once_with",
+          "resolved": false,
+          "confidence": 0,
+          "line": 559
+        },
+        {
+          "target": "StoreSubmissionsResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 567
+        },
+        {
+          "target": "Pagination",
+          "resolved": false,
+          "confidence": 0,
+          "line": 569
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 576,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 579,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "model_validate",
+          "resolved": false,
+          "confidence": 0,
+          "line": 582
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 582,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "assert_match",
+          "resolved": false,
+          "confidence": 0,
+          "line": 586
+        },
+        {
+          "target": "dumps",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 586,
+          "resolvedId": "backend/util/json.py:dumps:20"
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 586,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "assert_called_once_with",
+          "resolved": false,
+          "confidence": 0,
+          "line": 587
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 592,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 596,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 600,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 604,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "assert_not_called",
+          "resolved": false,
+          "confidence": 0,
+          "line": 605
+        },
+        {
+          "target": "datetime",
+          "resolved": false,
+          "confidence": 0,
+          "line": 16
+        },
+        {
+          "target": "FastAPI",
+          "resolved": false,
+          "confidence": 0,
+          "line": 18
+        },
+        {
+          "target": "include_router",
+          "resolved": false,
+          "confidence": 0,
+          "line": 19
+        },
+        {
+          "target": "TestClient",
+          "resolved": false,
+          "confidence": 0,
+          "line": 21
+        },
+        {
+          "target": "fixture",
+          "resolved": false,
+          "confidence": 0,
+          "line": 24
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "abc",
+          "operation": "read",
+          "line": 350,
+          "fields": []
+        },
+        {
+          "table": "abc",
+          "operation": "read",
+          "line": 478,
+          "fields": []
+        },
+        {
+          "table": "abc",
+          "operation": "read",
+          "line": 600,
+          "fields": []
+        }
+      ]
+    }
+  ]
+}

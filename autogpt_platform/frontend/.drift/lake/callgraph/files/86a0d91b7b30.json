@@ -1,0 +1,92 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.076Z",
+  "checksum": "a57cef75f3b4bf31",
+  "file": "src/app/api/auth/utils.ts",
+  "functions": [
+    {
+      "id": "src/app/api/auth/utils.ts:isWaitlistError:15",
+      "name": "isWaitlistError",
+      "startLine": 15,
+      "endLine": 44,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "toLowerCase",
+          "resolved": false,
+          "confidence": 0,
+          "line": 24
+        },
+        {
+          "target": "includes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 37
+        },
+        {
+          "target": "includes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 38
+        },
+        {
+          "target": "includes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 39
+        },
+        {
+          "target": "includes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 40
+        },
+        {
+          "target": "includes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 41
+        },
+        {
+          "target": "includes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 42
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/app/api/auth/utils.ts:logWaitlistError:53",
+      "name": "logWaitlistError",
+      "startLine": 53,
+      "endLine": 60,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "replace",
+          "resolved": false,
+          "confidence": 0,
+          "line": 55
+        },
+        {
+          "target": "log",
+          "resolved": false,
+          "confidence": 0,
+          "line": 59
+        },
+        {
+          "target": "sanitizedMessage",
+          "resolved": false,
+          "confidence": 0,
+          "line": 59
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

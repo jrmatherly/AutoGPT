@@ -1,0 +1,583 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.194Z",
+  "checksum": "827957111dcd37ea",
+  "file": "test/blocks/test_gmail.py",
+  "functions": [
+    {
+      "id": "test/blocks/test_gmail.py:setup_method:12",
+      "name": "setup_method",
+      "startLine": 12,
+      "endLine": 15,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "GmailReadBlock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 14
+        },
+        {
+          "target": "Mock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 15
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/blocks/test_gmail.py:_encode_base64:17",
+      "name": "_encode_base64",
+      "startLine": 17,
+      "endLine": 19,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "decode",
+          "resolved": false,
+          "confidence": 0,
+          "line": 19
+        },
+        {
+          "target": "urlsafe_b64encode",
+          "resolved": false,
+          "confidence": 0,
+          "line": 19
+        },
+        {
+          "target": "encode",
+          "resolved": false,
+          "confidence": 0,
+          "line": 19
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/blocks/test_gmail.py:test_single_part_text_plain:22",
+      "name": "test_single_part_text_plain",
+      "startLine": 22,
+      "endLine": 34,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "_encode_base64",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 29,
+          "resolvedId": "test/blocks/test_gmail.py:_encode_base64:17"
+        },
+        {
+          "target": "body_text",
+          "resolved": false,
+          "confidence": 0,
+          "line": 29
+        },
+        {
+          "target": "_get_email_body",
+          "resolved": false,
+          "confidence": 0,
+          "line": 33
+        },
+        {
+          "target": "msg",
+          "resolved": false,
+          "confidence": 0,
+          "line": 33
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/blocks/test_gmail.py:test_multipart_alternative_plain_and_html:37",
+      "name": "test_multipart_alternative_plain_and_html",
+      "startLine": 37,
+      "endLine": 61,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "_encode_base64",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 49,
+          "resolvedId": "test/blocks/test_gmail.py:_encode_base64:17"
+        },
+        {
+          "target": "plain_text",
+          "resolved": false,
+          "confidence": 0,
+          "line": 49
+        },
+        {
+          "target": "_encode_base64",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 53,
+          "resolvedId": "test/blocks/test_gmail.py:_encode_base64:17"
+        },
+        {
+          "target": "html_text",
+          "resolved": false,
+          "confidence": 0,
+          "line": 53
+        },
+        {
+          "target": "_get_email_body",
+          "resolved": false,
+          "confidence": 0,
+          "line": 59
+        },
+        {
+          "target": "msg",
+          "resolved": false,
+          "confidence": 0,
+          "line": 59
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/blocks/test_gmail.py:test_html_only_email:64",
+      "name": "test_html_only_email",
+      "startLine": 64,
+      "endLine": 85,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "_encode_base64",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 74,
+          "resolvedId": "test/blocks/test_gmail.py:_encode_base64:17"
+        },
+        {
+          "target": "html_text",
+          "resolved": false,
+          "confidence": 0,
+          "line": 74
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 78,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "Mock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 79
+        },
+        {
+          "target": "_get_email_body",
+          "resolved": false,
+          "confidence": 0,
+          "line": 83
+        },
+        {
+          "target": "msg",
+          "resolved": false,
+          "confidence": 0,
+          "line": 83
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/blocks/test_gmail.py:test_html_fallback_when_html2text_unavailable:88",
+      "name": "test_html_fallback_when_html2text_unavailable",
+      "startLine": 88,
+      "endLine": 102,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "_encode_base64",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 96,
+          "resolvedId": "test/blocks/test_gmail.py:_encode_base64:17"
+        },
+        {
+          "target": "html_text",
+          "resolved": false,
+          "confidence": 0,
+          "line": 96
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 100,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "_get_email_body",
+          "resolved": false,
+          "confidence": 0,
+          "line": 101
+        },
+        {
+          "target": "msg",
+          "resolved": false,
+          "confidence": 0,
+          "line": 101
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/blocks/test_gmail.py:test_nested_multipart_structure:105",
+      "name": "test_nested_multipart_structure",
+      "startLine": 105,
+      "endLine": 128,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "_encode_base64",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 119,
+          "resolvedId": "test/blocks/test_gmail.py:_encode_base64:17"
+        },
+        {
+          "target": "plain_text",
+          "resolved": false,
+          "confidence": 0,
+          "line": 119
+        },
+        {
+          "target": "_get_email_body",
+          "resolved": false,
+          "confidence": 0,
+          "line": 127
+        },
+        {
+          "target": "msg",
+          "resolved": false,
+          "confidence": 0,
+          "line": 127
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/blocks/test_gmail.py:test_attachment_body_content:131",
+      "name": "test_attachment_body_content",
+      "startLine": 131,
+      "endLine": 149,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "_encode_base64",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 133,
+          "resolvedId": "test/blocks/test_gmail.py:_encode_base64:17"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 144,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "attachments",
+          "resolved": false,
+          "confidence": 0,
+          "line": 144
+        },
+        {
+          "target": "messages",
+          "resolved": false,
+          "confidence": 0,
+          "line": 144
+        },
+        {
+          "target": "users",
+          "resolved": false,
+          "confidence": 0,
+          "line": 144
+        },
+        {
+          "target": "_get_email_body",
+          "resolved": false,
+          "confidence": 0,
+          "line": 148
+        },
+        {
+          "target": "msg",
+          "resolved": false,
+          "confidence": 0,
+          "line": 148
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/blocks/test_gmail.py:test_no_readable_body:152",
+      "name": "test_no_readable_body",
+      "startLine": 152,
+      "endLine": 163,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "_get_email_body",
+          "resolved": false,
+          "confidence": 0,
+          "line": 162
+        },
+        {
+          "target": "msg",
+          "resolved": false,
+          "confidence": 0,
+          "line": 162
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/blocks/test_gmail.py:test_base64_padding_handling:166",
+      "name": "test_base64_padding_handling",
+      "startLine": 166,
+      "endLine": 175,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "decode",
+          "resolved": false,
+          "confidence": 0,
+          "line": 170
+        },
+        {
+          "target": "urlsafe_b64encode",
+          "resolved": false,
+          "confidence": 0,
+          "line": 170
+        },
+        {
+          "target": "encode",
+          "resolved": false,
+          "confidence": 0,
+          "line": 170
+        },
+        {
+          "target": "rstrip",
+          "resolved": false,
+          "confidence": 0,
+          "line": 172
+        },
+        {
+          "target": "_decode_base64",
+          "resolved": false,
+          "confidence": 0,
+          "line": 174
+        },
+        {
+          "target": "encoded_no_padding",
+          "resolved": false,
+          "confidence": 0,
+          "line": 174
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/blocks/test_gmail.py:test_recursion_depth_limit:178",
+      "name": "test_recursion_depth_limit",
+      "startLine": 178,
+      "endLine": 200,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "create_nested_part",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 195,
+          "resolvedId": "test/blocks/test_gmail.py:create_nested_part:182"
+        },
+        {
+          "target": "_get_email_body",
+          "resolved": false,
+          "confidence": 0,
+          "line": 198
+        },
+        {
+          "target": "msg",
+          "resolved": false,
+          "confidence": 0,
+          "line": 198
+        },
+        {
+          "target": "_encode_base64",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 186,
+          "resolvedId": "test/blocks/test_gmail.py:_encode_base64:17"
+        },
+        {
+          "target": "create_nested_part",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 190,
+          "resolvedId": "test/blocks/test_gmail.py:create_nested_part:182"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/blocks/test_gmail.py:create_nested_part:182",
+      "name": "create_nested_part",
+      "startLine": 182,
+      "endLine": 191,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "_encode_base64",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 186,
+          "resolvedId": "test/blocks/test_gmail.py:_encode_base64:17"
+        },
+        {
+          "target": "create_nested_part",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 190,
+          "resolvedId": "test/blocks/test_gmail.py:create_nested_part:182"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/blocks/test_gmail.py:test_malformed_base64_handling:203",
+      "name": "test_malformed_base64_handling",
+      "startLine": 203,
+      "endLine": 206,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "_decode_base64",
+          "resolved": false,
+          "confidence": 0,
+          "line": 205
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/blocks/test_gmail.py:test_empty_data_handling:209",
+      "name": "test_empty_data_handling",
+      "startLine": 209,
+      "endLine": 212,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "_decode_base64",
+          "resolved": false,
+          "confidence": 0,
+          "line": 211
+        },
+        {
+          "target": "_decode_base64",
+          "resolved": false,
+          "confidence": 0,
+          "line": 212
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/blocks/test_gmail.py:test_attachment_download_failure:215",
+      "name": "test_attachment_download_failure",
+      "startLine": 215,
+      "endLine": 231,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 226,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "attachments",
+          "resolved": false,
+          "confidence": 0,
+          "line": 226
+        },
+        {
+          "target": "messages",
+          "resolved": false,
+          "confidence": 0,
+          "line": 226
+        },
+        {
+          "target": "users",
+          "resolved": false,
+          "confidence": 0,
+          "line": 226
+        },
+        {
+          "target": "Exception",
+          "resolved": false,
+          "confidence": 0,
+          "line": 227
+        },
+        {
+          "target": "_get_email_body",
+          "resolved": false,
+          "confidence": 0,
+          "line": 230
+        },
+        {
+          "target": "msg",
+          "resolved": false,
+          "confidence": 0,
+          "line": 230
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "users",
+          "operation": "read",
+          "line": 226,
+          "fields": []
+        }
+      ]
+    }
+  ]
+}

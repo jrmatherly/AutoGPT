@@ -1,0 +1,72 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.208Z",
+  "checksum": "7a1441a20012fc8b",
+  "file": "backend/db.py",
+  "functions": [
+    {
+      "id": "backend/db.py:main:5",
+      "name": "main",
+      "startLine": 5,
+      "endLine": 9,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "run_processes",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 9,
+          "resolvedId": "backend/app.py:run_processes:14"
+        },
+        {
+          "target": "DatabaseManager",
+          "resolved": false,
+          "confidence": 0,
+          "line": 9
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/db.py:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 14,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "run_processes",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 9,
+          "resolvedId": "backend/app.py:run_processes:14"
+        },
+        {
+          "target": "DatabaseManager",
+          "resolved": false,
+          "confidence": 0,
+          "line": 9
+        },
+        {
+          "target": "main",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 13,
+          "resolvedId": "backend/db.py:main:5"
+        },
+        {
+          "target": "main",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 13,
+          "resolvedId": "backend/db.py:main:5"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

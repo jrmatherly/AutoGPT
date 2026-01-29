@@ -1,0 +1,253 @@
+{
+  "version": "1.0.0",
+  "category": "auth",
+  "patterns": [
+    {
+      "id": "6dd8407ca624ac96",
+      "subcategory": "audit",
+      "name": "Audit Logging Detector",
+      "description": "Learns audit logging patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "auth/audit",
+          "patternId": "auth/audit/class_definition"
+        }
+      },
+      "confidence": {
+        "frequency": 0.1,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 6,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "backend/api/features/store/model.py",
+          "line": 10,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 0.945
+        },
+        {
+          "file": "backend/blocks/ayrshare/_util.py",
+          "line": 85,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/blocks/github/triggers.py",
+          "line": 69,
+          "column": 15,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/blocks/github/triggers.py",
+          "line": 172,
+          "column": 15,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/blocks/github/triggers.py",
+          "line": 256,
+          "column": 15,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/blocks/github/triggers.py",
+          "line": 352,
+          "column": 15,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/blocks/github/triggers.py",
+          "line": 457,
+          "column": 15,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/blocks/slant3d/webhook.py",
+          "line": 51,
+          "column": 15,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/data/audit.py",
+          "line": 23,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "backend/executor/activity_status_generator.py",
+          "line": 167,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 0.9566666666666667
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:30:16.814Z",
+        "lastSeen": "2026-01-29T06:30:16.814Z",
+        "source": "auto-detected",
+        "tags": [
+          "auth",
+          "audit"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "57683b5995988df0",
+      "subcategory": "middleware",
+      "name": "Auth Middleware Detector",
+      "description": "Learns auth middleware patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "auth/middleware",
+          "patternId": "auth/middleware/class_definition"
+        }
+      },
+      "confidence": {
+        "frequency": 0.03,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 3,
+        "score": 0.945,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "backend/blocks/google/sheets.py",
+          "line": 2155,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 0.91
+        },
+        {
+          "file": "backend/data/credit.py",
+          "line": 90,
+          "column": 58,
+          "isOutlier": false,
+          "confidence": 0.945
+        },
+        {
+          "file": "backend/util/logging.py",
+          "line": 74,
+          "column": 28,
+          "isOutlier": false,
+          "confidence": 0.945
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:30:16.815Z",
+        "lastSeen": "2026-01-29T06:30:16.815Z",
+        "source": "auto-detected",
+        "tags": [
+          "auth",
+          "middleware"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "e1b5d37eb0cb0465",
+      "subcategory": "audit",
+      "name": "Audit Logging Detector",
+      "description": "Learns audit logging patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "auth/audit",
+          "patternId": "auth/audit/type_annotation"
+        }
+      },
+      "confidence": {
+        "frequency": 0.01,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.8066666666666666,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "backend/executor/activity_status_generator.py",
+          "line": 194,
+          "column": 6,
+          "isOutlier": false,
+          "confidence": 0.8066666666666666
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:30:16.815Z",
+        "lastSeen": "2026-01-29T06:30:16.815Z",
+        "source": "auto-detected",
+        "tags": [
+          "auth",
+          "audit"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "3462c118ad3bcf8a",
+      "subcategory": "token-handling",
+      "name": "Token Handling Detector",
+      "description": "Learns token handling patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "auth/token-handling",
+          "patternId": "auth/token-handling/class_definition"
+        }
+      },
+      "confidence": {
+        "frequency": 0.01,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "backend/integrations/ayrshare.py",
+          "line": 49,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 0.9584615384615385
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:30:16.815Z",
+        "lastSeen": "2026-01-29T06:30:16.815Z",
+        "source": "auto-detected",
+        "tags": [
+          "auth",
+          "token-handling"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    }
+  ],
+  "lastUpdated": "2026-01-29T07:17:22.676Z",
+  "checksum": "40c50dc33d6b1d79"
+}

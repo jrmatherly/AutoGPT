@@ -1,0 +1,849 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.236Z",
+  "checksum": "d0b1f234aa3ba986",
+  "file": "test/sdk/test_sdk_webhooks.py",
+  "functions": [
+    {
+      "id": "test/sdk/test_sdk_webhooks.py:validate_payload:50",
+      "name": "validate_payload",
+      "startLine": 50,
+      "endLine": 57,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/sdk/test_sdk_webhooks.py:_register_webhook:59",
+      "name": "_register_webhook",
+      "startLine": 59,
+      "endLine": 77,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/sdk/test_sdk_webhooks.py:_deregister_webhook:79",
+      "name": "_deregister_webhook",
+      "startLine": 79,
+      "endLine": 82,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/sdk/test_sdk_webhooks.py:__init__:114",
+      "name": "__init__",
+      "startLine": 114,
+      "endLine": 126,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 115,
+          "resolvedId": "test/sdk/test_sdk_webhooks.py:__init__:114"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 115
+        },
+        {
+          "target": "BlockWebhookConfig",
+          "resolved": false,
+          "confidence": 0,
+          "line": 121
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/sdk/test_sdk_webhooks.py:run:128",
+      "name": "run",
+      "startLine": 128,
+      "endLine": 136,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 136
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/sdk/test_sdk_webhooks.py:setup_method:142",
+      "name": "setup_method",
+      "startLine": 142,
+      "endLine": 152,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "clear",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 144,
+          "resolvedId": "backend/sdk/registry.py:clear:155"
+        },
+        {
+          "target": "build",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 148,
+          "resolvedId": "backend/blocks/twitter/_builders.py:build:109"
+        },
+        {
+          "target": "with_webhook_manager",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 148,
+          "resolvedId": "backend/sdk/builder.py:with_webhook_manager:135"
+        },
+        {
+          "target": "with_api_key",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 148,
+          "resolvedId": "backend/sdk/builder.py:with_api_key:74"
+        },
+        {
+          "target": "ProviderBuilder",
+          "resolved": false,
+          "confidence": 0,
+          "line": 148
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/sdk/test_sdk_webhooks.py:test_basic_webhook_block:155",
+      "name": "test_basic_webhook_block",
+      "startLine": 155,
+      "endLine": 191,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "TestWebhookBlock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 157
+        },
+        {
+          "target": "APIKeyCredentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 166
+        },
+        {
+          "target": "SecretStr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 169
+        },
+        {
+          "target": "run",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 174,
+          "resolvedId": "test/sdk/test_sdk_webhooks.py:run:128"
+        },
+        {
+          "target": "Input",
+          "resolved": false,
+          "confidence": 0,
+          "line": 175
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/sdk/test_sdk_webhooks.py:test_webhook_block_with_filters:194",
+      "name": "test_webhook_block_with_filters",
+      "startLine": 194,
+      "endLine": 301,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "FilteredWebhookBlock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 252
+        },
+        {
+          "target": "APIKeyCredentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 254
+        },
+        {
+          "target": "SecretStr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 257
+        },
+        {
+          "target": "run",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 263,
+          "resolvedId": "test/sdk/test_sdk_webhooks.py:run:128"
+        },
+        {
+          "target": "Input",
+          "resolved": false,
+          "confidence": 0,
+          "line": 264
+        },
+        {
+          "target": "EventFilterModel",
+          "resolved": false,
+          "confidence": 0,
+          "line": 280
+        },
+        {
+          "target": "run",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 286,
+          "resolvedId": "test/sdk/test_sdk_webhooks.py:run:128"
+        },
+        {
+          "target": "Input",
+          "resolved": false,
+          "confidence": 0,
+          "line": 287
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/sdk/test_sdk_webhooks.py:setup_method:307",
+      "name": "setup_method",
+      "startLine": 307,
+      "endLine": 309,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "clear",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 309,
+          "resolvedId": "backend/sdk/registry.py:clear:155"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/sdk/test_sdk_webhooks.py:test_webhook_manager_registration:311",
+      "name": "test_webhook_manager_registration",
+      "startLine": 311,
+      "endLine": 339,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "build",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 323,
+          "resolvedId": "backend/blocks/twitter/_builders.py:build:109"
+        },
+        {
+          "target": "with_webhook_manager",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 323,
+          "resolvedId": "backend/sdk/builder.py:with_webhook_manager:135"
+        },
+        {
+          "target": "ProviderBuilder",
+          "resolved": false,
+          "confidence": 0,
+          "line": 323
+        },
+        {
+          "target": "build",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 329,
+          "resolvedId": "backend/blocks/twitter/_builders.py:build:109"
+        },
+        {
+          "target": "with_webhook_manager",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 329,
+          "resolvedId": "backend/sdk/builder.py:with_webhook_manager:135"
+        },
+        {
+          "target": "ProviderBuilder",
+          "resolved": false,
+          "confidence": 0,
+          "line": 329
+        },
+        {
+          "target": "get_webhook_managers",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 335,
+          "resolvedId": "backend/sdk/registry.py:get_webhook_managers:129"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/sdk/test_sdk_webhooks.py:test_webhook_block_with_provider_manager:342",
+      "name": "test_webhook_block_with_provider_manager",
+      "startLine": 342,
+      "endLine": 420,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "build",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 346,
+          "resolvedId": "backend/blocks/twitter/_builders.py:build:109"
+        },
+        {
+          "target": "with_webhook_manager",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 346,
+          "resolvedId": "backend/sdk/builder.py:with_webhook_manager:135"
+        },
+        {
+          "target": "with_api_key",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 346,
+          "resolvedId": "backend/sdk/builder.py:with_api_key:74"
+        },
+        {
+          "target": "ProviderBuilder",
+          "resolved": false,
+          "confidence": 0,
+          "line": 346
+        },
+        {
+          "target": "IntegratedWebhookBlock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 396
+        },
+        {
+          "target": "APIKeyCredentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 398
+        },
+        {
+          "target": "SecretStr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 401
+        },
+        {
+          "target": "run",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 406,
+          "resolvedId": "test/sdk/test_sdk_webhooks.py:run:128"
+        },
+        {
+          "target": "Input",
+          "resolved": false,
+          "confidence": 0,
+          "line": 407
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/sdk/test_sdk_webhooks.py:test_webhook_event_processing_block:427",
+      "name": "test_webhook_event_processing_block",
+      "startLine": 427,
+      "endLine": 506,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "WebhookEventBlock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 478
+        },
+        {
+          "target": "run",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 482,
+          "resolvedId": "test/sdk/test_sdk_webhooks.py:run:128"
+        },
+        {
+          "target": "Input",
+          "resolved": false,
+          "confidence": 0,
+          "line": 483
+        },
+        {
+          "target": "run",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 496,
+          "resolvedId": "test/sdk/test_sdk_webhooks.py:run:128"
+        },
+        {
+          "target": "Input",
+          "resolved": false,
+          "confidence": 0,
+          "line": 497
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "user",
+          "operation": "read",
+          "line": 461,
+          "fields": [
+            "id"
+          ]
+        },
+        {
+          "table": "user",
+          "operation": "read",
+          "line": 464,
+          "fields": [
+            "id"
+          ]
+        },
+        {
+          "table": "user",
+          "operation": "read",
+          "line": 467,
+          "fields": [
+            "id"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "test/sdk/test_sdk_webhooks.py:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 511,
+      "isEntryPoint": false,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "CredentialsField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 89,
+          "resolvedId": "backend/data/model.py:CredentialsField:681"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 94,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 97,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 100,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 104,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 110,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 111,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 112,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 115,
+          "resolvedId": "test/sdk/test_sdk_webhooks.py:__init__:114"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 115
+        },
+        {
+          "target": "BlockWebhookConfig",
+          "resolved": false,
+          "confidence": 0,
+          "line": 121
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 136
+        },
+        {
+          "target": "clear",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 144,
+          "resolvedId": "backend/sdk/registry.py:clear:155"
+        },
+        {
+          "target": "build",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 148,
+          "resolvedId": "backend/blocks/twitter/_builders.py:build:109"
+        },
+        {
+          "target": "with_webhook_manager",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 148,
+          "resolvedId": "backend/sdk/builder.py:with_webhook_manager:135"
+        },
+        {
+          "target": "with_api_key",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 148,
+          "resolvedId": "backend/sdk/builder.py:with_api_key:74"
+        },
+        {
+          "target": "ProviderBuilder",
+          "resolved": false,
+          "confidence": 0,
+          "line": 148
+        },
+        {
+          "target": "TestWebhookBlock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 157
+        },
+        {
+          "target": "APIKeyCredentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 166
+        },
+        {
+          "target": "SecretStr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 169
+        },
+        {
+          "target": "run",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 174,
+          "resolvedId": "test/sdk/test_sdk_webhooks.py:run:128"
+        },
+        {
+          "target": "Input",
+          "resolved": false,
+          "confidence": 0,
+          "line": 175
+        },
+        {
+          "target": "FilteredWebhookBlock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 252
+        },
+        {
+          "target": "APIKeyCredentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 254
+        },
+        {
+          "target": "SecretStr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 257
+        },
+        {
+          "target": "run",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 263,
+          "resolvedId": "test/sdk/test_sdk_webhooks.py:run:128"
+        },
+        {
+          "target": "Input",
+          "resolved": false,
+          "confidence": 0,
+          "line": 264
+        },
+        {
+          "target": "EventFilterModel",
+          "resolved": false,
+          "confidence": 0,
+          "line": 280
+        },
+        {
+          "target": "run",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 286,
+          "resolvedId": "test/sdk/test_sdk_webhooks.py:run:128"
+        },
+        {
+          "target": "Input",
+          "resolved": false,
+          "confidence": 0,
+          "line": 287
+        },
+        {
+          "target": "clear",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 309,
+          "resolvedId": "backend/sdk/registry.py:clear:155"
+        },
+        {
+          "target": "build",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 323,
+          "resolvedId": "backend/blocks/twitter/_builders.py:build:109"
+        },
+        {
+          "target": "with_webhook_manager",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 323,
+          "resolvedId": "backend/sdk/builder.py:with_webhook_manager:135"
+        },
+        {
+          "target": "ProviderBuilder",
+          "resolved": false,
+          "confidence": 0,
+          "line": 323
+        },
+        {
+          "target": "build",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 329,
+          "resolvedId": "backend/blocks/twitter/_builders.py:build:109"
+        },
+        {
+          "target": "with_webhook_manager",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 329,
+          "resolvedId": "backend/sdk/builder.py:with_webhook_manager:135"
+        },
+        {
+          "target": "ProviderBuilder",
+          "resolved": false,
+          "confidence": 0,
+          "line": 329
+        },
+        {
+          "target": "get_webhook_managers",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 335,
+          "resolvedId": "backend/sdk/registry.py:get_webhook_managers:129"
+        },
+        {
+          "target": "build",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 346,
+          "resolvedId": "backend/blocks/twitter/_builders.py:build:109"
+        },
+        {
+          "target": "with_webhook_manager",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 346,
+          "resolvedId": "backend/sdk/builder.py:with_webhook_manager:135"
+        },
+        {
+          "target": "with_api_key",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 346,
+          "resolvedId": "backend/sdk/builder.py:with_api_key:74"
+        },
+        {
+          "target": "ProviderBuilder",
+          "resolved": false,
+          "confidence": 0,
+          "line": 346
+        },
+        {
+          "target": "IntegratedWebhookBlock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 396
+        },
+        {
+          "target": "APIKeyCredentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 398
+        },
+        {
+          "target": "SecretStr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 401
+        },
+        {
+          "target": "run",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 406,
+          "resolvedId": "test/sdk/test_sdk_webhooks.py:run:128"
+        },
+        {
+          "target": "Input",
+          "resolved": false,
+          "confidence": 0,
+          "line": 407
+        },
+        {
+          "target": "WebhookEventBlock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 478
+        },
+        {
+          "target": "run",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 482,
+          "resolvedId": "test/sdk/test_sdk_webhooks.py:run:128"
+        },
+        {
+          "target": "Input",
+          "resolved": false,
+          "confidence": 0,
+          "line": 483
+        },
+        {
+          "target": "run",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 496,
+          "resolvedId": "test/sdk/test_sdk_webhooks.py:run:128"
+        },
+        {
+          "target": "Input",
+          "resolved": false,
+          "confidence": 0,
+          "line": 497
+        },
+        {
+          "target": "main",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 510,
+          "resolvedId": "backend/check_store_data.py:main:149"
+        },
+        {
+          "target": "main",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 510,
+          "resolvedId": "backend/check_store_data.py:main:149"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "user",
+          "operation": "read",
+          "line": 461,
+          "fields": [
+            "id"
+          ]
+        },
+        {
+          "table": "user",
+          "operation": "read",
+          "line": 464,
+          "fields": [
+            "id"
+          ]
+        },
+        {
+          "table": "user",
+          "operation": "read",
+          "line": 467,
+          "fields": [
+            "id"
+          ]
+        }
+      ]
+    }
+  ]
+}

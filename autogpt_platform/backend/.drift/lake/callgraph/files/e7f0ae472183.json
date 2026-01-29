@@ -1,0 +1,1865 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.227Z",
+  "checksum": "f5f99b5632149dec",
+  "file": "backend/executor/manager_insufficient_funds_test.py",
+  "functions": [
+    {
+      "id": "backend/executor/manager_insufficient_funds_test.py:async_iter:16",
+      "name": "async_iter",
+      "startLine": 16,
+      "endLine": 19,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/executor/manager_insufficient_funds_test.py:test_handle_insufficient_funds_sends_discord_alert_first_time:23",
+      "name": "test_handle_insufficient_funds_sends_discord_alert_first_time",
+      "startLine": 23,
+      "endLine": 93,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "ExecutionProcessor",
+          "resolved": false,
+          "confidence": 0,
+          "line": 28
+        },
+        {
+          "target": "InsufficientBalanceError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 31
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 38,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 40,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 42,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 44,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 49
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 54
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 59
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 60
+        },
+        {
+          "target": "_handle_insufficient_funds_notif",
+          "resolved": false,
+          "confidence": 0,
+          "line": 66
+        },
+        {
+          "target": "assert_called_once",
+          "resolved": false,
+          "confidence": 0,
+          "line": 74
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 78
+        },
+        {
+          "target": "assert_called_once",
+          "resolved": false,
+          "confidence": 0,
+          "line": 83
+        },
+        {
+          "target": "assert_called_once",
+          "resolved": false,
+          "confidence": 0,
+          "line": 89
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/executor/manager_insufficient_funds_test.py:test_handle_insufficient_funds_skips_duplicate_notifications:97",
+      "name": "test_handle_insufficient_funds_skips_duplicate_notifications",
+      "startLine": 97,
+      "endLine": 148,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "ExecutionProcessor",
+          "resolved": false,
+          "confidence": 0,
+          "line": 102
+        },
+        {
+          "target": "InsufficientBalanceError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 105
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 112,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 114,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 116,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 118,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 123
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 128
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 133
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 134
+        },
+        {
+          "target": "_handle_insufficient_funds_notif",
+          "resolved": false,
+          "confidence": 0,
+          "line": 137
+        },
+        {
+          "target": "assert_not_called",
+          "resolved": false,
+          "confidence": 0,
+          "line": 145
+        },
+        {
+          "target": "assert_not_called",
+          "resolved": false,
+          "confidence": 0,
+          "line": 148
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/executor/manager_insufficient_funds_test.py:test_handle_insufficient_funds_different_agents_get_separate_alerts:152",
+      "name": "test_handle_insufficient_funds_different_agents_get_separate_alerts",
+      "startLine": 152,
+      "endLine": 221,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "ExecutionProcessor",
+          "resolved": false,
+          "confidence": 0,
+          "line": 157
+        },
+        {
+          "target": "InsufficientBalanceError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 162
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 169,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 169,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 171,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 173,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 177
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 181
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 186
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 187
+        },
+        {
+          "target": "_handle_insufficient_funds_notif",
+          "resolved": false,
+          "confidence": 0,
+          "line": 193
+        },
+        {
+          "target": "_handle_insufficient_funds_notif",
+          "resolved": false,
+          "confidence": 0,
+          "line": 201
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/executor/manager_insufficient_funds_test.py:test_clear_insufficient_funds_notifications:225",
+      "name": "test_clear_insufficient_funds_notifications",
+      "startLine": 225,
+      "endLine": 257,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 230,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 232
+        },
+        {
+          "target": "AsyncMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 234
+        },
+        {
+          "target": "async_iter",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 242,
+          "resolvedId": "backend/executor/manager_insufficient_funds_test.py:async_iter:16"
+        },
+        {
+          "target": "mock_keys",
+          "resolved": false,
+          "confidence": 0,
+          "line": 242
+        },
+        {
+          "target": "AsyncMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 244
+        },
+        {
+          "target": "clear_insufficient_funds_notifications",
+          "resolved": false,
+          "confidence": 0,
+          "line": 247
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 247
+        },
+        {
+          "target": "assert_called_once_with",
+          "resolved": false,
+          "confidence": 0,
+          "line": 251
+        },
+        {
+          "target": "assert_called_once_with",
+          "resolved": false,
+          "confidence": 0,
+          "line": 254
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/executor/manager_insufficient_funds_test.py:test_clear_insufficient_funds_notifications_no_keys:261",
+      "name": "test_clear_insufficient_funds_notifications_no_keys",
+      "startLine": 261,
+      "endLine": 282,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 266,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 268
+        },
+        {
+          "target": "AsyncMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 270
+        },
+        {
+          "target": "async_iter",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 273,
+          "resolvedId": "backend/executor/manager_insufficient_funds_test.py:async_iter:16"
+        },
+        {
+          "target": "clear_insufficient_funds_notifications",
+          "resolved": false,
+          "confidence": 0,
+          "line": 276
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 276
+        },
+        {
+          "target": "assert_not_called",
+          "resolved": false,
+          "confidence": 0,
+          "line": 279
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/executor/manager_insufficient_funds_test.py:test_clear_insufficient_funds_notifications_handles_redis_error:286",
+      "name": "test_clear_insufficient_funds_notifications_handles_redis_error",
+      "startLine": 286,
+      "endLine": 304,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 293,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "AsyncMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 296
+        },
+        {
+          "target": "Exception",
+          "resolved": false,
+          "confidence": 0,
+          "line": 297
+        },
+        {
+          "target": "clear_insufficient_funds_notifications",
+          "resolved": false,
+          "confidence": 0,
+          "line": 301
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 301
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/executor/manager_insufficient_funds_test.py:test_handle_insufficient_funds_continues_on_redis_error:308",
+      "name": "test_handle_insufficient_funds_continues_on_redis_error",
+      "startLine": 308,
+      "endLine": 360,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "ExecutionProcessor",
+          "resolved": false,
+          "confidence": 0,
+          "line": 313
+        },
+        {
+          "target": "InsufficientBalanceError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 316
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 323,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 325,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 327,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 329,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 333
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 338
+        },
+        {
+          "target": "Exception",
+          "resolved": false,
+          "confidence": 0,
+          "line": 340
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 342
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 343
+        },
+        {
+          "target": "_handle_insufficient_funds_notif",
+          "resolved": false,
+          "confidence": 0,
+          "line": 349
+        },
+        {
+          "target": "assert_called_once",
+          "resolved": false,
+          "confidence": 0,
+          "line": 357
+        },
+        {
+          "target": "assert_called_once",
+          "resolved": false,
+          "confidence": 0,
+          "line": 360
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/executor/manager_insufficient_funds_test.py:test_add_transaction_clears_notifications_on_grant:364",
+      "name": "test_add_transaction_clears_notifications_on_grant",
+      "startLine": 364,
+      "endLine": 402,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 372,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 372,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 380
+        },
+        {
+          "target": "AsyncMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 381
+        },
+        {
+          "target": "async_iter",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 382,
+          "resolvedId": "backend/executor/manager_insufficient_funds_test.py:async_iter:16"
+        },
+        {
+          "target": "AsyncMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 385
+        },
+        {
+          "target": "UserCredit",
+          "resolved": false,
+          "confidence": 0,
+          "line": 388
+        },
+        {
+          "target": "_add_transaction",
+          "resolved": false,
+          "confidence": 0,
+          "line": 391
+        },
+        {
+          "target": "assert_called_once",
+          "resolved": false,
+          "confidence": 0,
+          "line": 399
+        },
+        {
+          "target": "assert_called_once_with",
+          "resolved": false,
+          "confidence": 0,
+          "line": 400
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/executor/manager_insufficient_funds_test.py:test_add_transaction_clears_notifications_on_top_up:406",
+      "name": "test_add_transaction_clears_notifications_on_top_up",
+      "startLine": 406,
+      "endLine": 438,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 414,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 414,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 422
+        },
+        {
+          "target": "AsyncMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 423
+        },
+        {
+          "target": "async_iter",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 424,
+          "resolvedId": "backend/executor/manager_insufficient_funds_test.py:async_iter:16"
+        },
+        {
+          "target": "AsyncMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 425
+        },
+        {
+          "target": "UserCredit",
+          "resolved": false,
+          "confidence": 0,
+          "line": 427
+        },
+        {
+          "target": "_add_transaction",
+          "resolved": false,
+          "confidence": 0,
+          "line": 430
+        },
+        {
+          "target": "assert_called_once",
+          "resolved": false,
+          "confidence": 0,
+          "line": 438
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/executor/manager_insufficient_funds_test.py:test_add_transaction_skips_clearing_for_inactive_transaction:442",
+      "name": "test_add_transaction_skips_clearing_for_inactive_transaction",
+      "startLine": 442,
+      "endLine": 474,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 452,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 452,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 460
+        },
+        {
+          "target": "AsyncMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 461
+        },
+        {
+          "target": "UserCredit",
+          "resolved": false,
+          "confidence": 0,
+          "line": 463
+        },
+        {
+          "target": "_add_transaction",
+          "resolved": false,
+          "confidence": 0,
+          "line": 466
+        },
+        {
+          "target": "assert_not_called",
+          "resolved": false,
+          "confidence": 0,
+          "line": 474
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/executor/manager_insufficient_funds_test.py:test_add_transaction_skips_clearing_for_usage_transaction:478",
+      "name": "test_add_transaction_skips_clearing_for_usage_transaction",
+      "startLine": 478,
+      "endLine": 510,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 488,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 488,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 496
+        },
+        {
+          "target": "AsyncMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 497
+        },
+        {
+          "target": "UserCredit",
+          "resolved": false,
+          "confidence": 0,
+          "line": 499
+        },
+        {
+          "target": "_add_transaction",
+          "resolved": false,
+          "confidence": 0,
+          "line": 502
+        },
+        {
+          "target": "assert_not_called",
+          "resolved": false,
+          "confidence": 0,
+          "line": 510
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/executor/manager_insufficient_funds_test.py:test_enable_transaction_clears_notifications:514",
+      "name": "test_enable_transaction_clears_notifications",
+      "startLine": 514,
+      "endLine": 560,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 522,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 522,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 524,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 527
+        },
+        {
+          "target": "AsyncMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 530
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 538
+        },
+        {
+          "target": "AsyncMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 539
+        },
+        {
+          "target": "async_iter",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 540,
+          "resolvedId": "backend/executor/manager_insufficient_funds_test.py:async_iter:16"
+        },
+        {
+          "target": "AsyncMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 543
+        },
+        {
+          "target": "UserCredit",
+          "resolved": false,
+          "confidence": 0,
+          "line": 545
+        },
+        {
+          "target": "_enable_transaction",
+          "resolved": false,
+          "confidence": 0,
+          "line": 550
+        },
+        {
+          "target": "SafeJson",
+          "resolved": false,
+          "confidence": 0,
+          "line": 553
+        },
+        {
+          "target": "assert_called_once",
+          "resolved": false,
+          "confidence": 0,
+          "line": 557
+        },
+        {
+          "target": "assert_called_once_with",
+          "resolved": false,
+          "confidence": 0,
+          "line": 558
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/executor/manager_insufficient_funds_test.py:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 561,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 22
+        },
+        {
+          "target": "ExecutionProcessor",
+          "resolved": false,
+          "confidence": 0,
+          "line": 28
+        },
+        {
+          "target": "InsufficientBalanceError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 31
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 38,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 40,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 42,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 44,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 49
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 54
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 59
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 60
+        },
+        {
+          "target": "_handle_insufficient_funds_notif",
+          "resolved": false,
+          "confidence": 0,
+          "line": 66
+        },
+        {
+          "target": "assert_called_once",
+          "resolved": false,
+          "confidence": 0,
+          "line": 74
+        },
+        {
+          "target": "isinstance",
+          "resolved": false,
+          "confidence": 0,
+          "line": 78
+        },
+        {
+          "target": "assert_called_once",
+          "resolved": false,
+          "confidence": 0,
+          "line": 83
+        },
+        {
+          "target": "assert_called_once",
+          "resolved": false,
+          "confidence": 0,
+          "line": 89
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 96
+        },
+        {
+          "target": "ExecutionProcessor",
+          "resolved": false,
+          "confidence": 0,
+          "line": 102
+        },
+        {
+          "target": "InsufficientBalanceError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 105
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 112,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 114,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 116,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 118,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 123
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 128
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 133
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 134
+        },
+        {
+          "target": "_handle_insufficient_funds_notif",
+          "resolved": false,
+          "confidence": 0,
+          "line": 137
+        },
+        {
+          "target": "assert_not_called",
+          "resolved": false,
+          "confidence": 0,
+          "line": 145
+        },
+        {
+          "target": "assert_not_called",
+          "resolved": false,
+          "confidence": 0,
+          "line": 148
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 151
+        },
+        {
+          "target": "ExecutionProcessor",
+          "resolved": false,
+          "confidence": 0,
+          "line": 157
+        },
+        {
+          "target": "InsufficientBalanceError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 162
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 169,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 169,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 171,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 173,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 177
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 181
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 186
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 187
+        },
+        {
+          "target": "_handle_insufficient_funds_notif",
+          "resolved": false,
+          "confidence": 0,
+          "line": 193
+        },
+        {
+          "target": "_handle_insufficient_funds_notif",
+          "resolved": false,
+          "confidence": 0,
+          "line": 201
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 224
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 230,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 232
+        },
+        {
+          "target": "AsyncMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 234
+        },
+        {
+          "target": "async_iter",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 242,
+          "resolvedId": "backend/executor/manager_insufficient_funds_test.py:async_iter:16"
+        },
+        {
+          "target": "mock_keys",
+          "resolved": false,
+          "confidence": 0,
+          "line": 242
+        },
+        {
+          "target": "AsyncMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 244
+        },
+        {
+          "target": "clear_insufficient_funds_notifications",
+          "resolved": false,
+          "confidence": 0,
+          "line": 247
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 247
+        },
+        {
+          "target": "assert_called_once_with",
+          "resolved": false,
+          "confidence": 0,
+          "line": 251
+        },
+        {
+          "target": "assert_called_once_with",
+          "resolved": false,
+          "confidence": 0,
+          "line": 254
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 260
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 266,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 268
+        },
+        {
+          "target": "AsyncMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 270
+        },
+        {
+          "target": "async_iter",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 273,
+          "resolvedId": "backend/executor/manager_insufficient_funds_test.py:async_iter:16"
+        },
+        {
+          "target": "clear_insufficient_funds_notifications",
+          "resolved": false,
+          "confidence": 0,
+          "line": 276
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 276
+        },
+        {
+          "target": "assert_not_called",
+          "resolved": false,
+          "confidence": 0,
+          "line": 279
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 285
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 293,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "AsyncMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 296
+        },
+        {
+          "target": "Exception",
+          "resolved": false,
+          "confidence": 0,
+          "line": 297
+        },
+        {
+          "target": "clear_insufficient_funds_notifications",
+          "resolved": false,
+          "confidence": 0,
+          "line": 301
+        },
+        {
+          "target": "user_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 301
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 307
+        },
+        {
+          "target": "ExecutionProcessor",
+          "resolved": false,
+          "confidence": 0,
+          "line": 313
+        },
+        {
+          "target": "InsufficientBalanceError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 316
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 323,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 325,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 327,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 329,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 333
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 338
+        },
+        {
+          "target": "Exception",
+          "resolved": false,
+          "confidence": 0,
+          "line": 340
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 342
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 343
+        },
+        {
+          "target": "_handle_insufficient_funds_notif",
+          "resolved": false,
+          "confidence": 0,
+          "line": 349
+        },
+        {
+          "target": "assert_called_once",
+          "resolved": false,
+          "confidence": 0,
+          "line": 357
+        },
+        {
+          "target": "assert_called_once",
+          "resolved": false,
+          "confidence": 0,
+          "line": 360
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 363
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 372,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 372,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 380
+        },
+        {
+          "target": "AsyncMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 381
+        },
+        {
+          "target": "async_iter",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 382,
+          "resolvedId": "backend/executor/manager_insufficient_funds_test.py:async_iter:16"
+        },
+        {
+          "target": "AsyncMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 385
+        },
+        {
+          "target": "UserCredit",
+          "resolved": false,
+          "confidence": 0,
+          "line": 388
+        },
+        {
+          "target": "_add_transaction",
+          "resolved": false,
+          "confidence": 0,
+          "line": 391
+        },
+        {
+          "target": "assert_called_once",
+          "resolved": false,
+          "confidence": 0,
+          "line": 399
+        },
+        {
+          "target": "assert_called_once_with",
+          "resolved": false,
+          "confidence": 0,
+          "line": 400
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 405
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 414,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 414,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 422
+        },
+        {
+          "target": "AsyncMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 423
+        },
+        {
+          "target": "async_iter",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 424,
+          "resolvedId": "backend/executor/manager_insufficient_funds_test.py:async_iter:16"
+        },
+        {
+          "target": "AsyncMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 425
+        },
+        {
+          "target": "UserCredit",
+          "resolved": false,
+          "confidence": 0,
+          "line": 427
+        },
+        {
+          "target": "_add_transaction",
+          "resolved": false,
+          "confidence": 0,
+          "line": 430
+        },
+        {
+          "target": "assert_called_once",
+          "resolved": false,
+          "confidence": 0,
+          "line": 438
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 441
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 452,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 452,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 460
+        },
+        {
+          "target": "AsyncMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 461
+        },
+        {
+          "target": "UserCredit",
+          "resolved": false,
+          "confidence": 0,
+          "line": 463
+        },
+        {
+          "target": "_add_transaction",
+          "resolved": false,
+          "confidence": 0,
+          "line": 466
+        },
+        {
+          "target": "assert_not_called",
+          "resolved": false,
+          "confidence": 0,
+          "line": 474
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 477
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 488,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 488,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 496
+        },
+        {
+          "target": "AsyncMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 497
+        },
+        {
+          "target": "UserCredit",
+          "resolved": false,
+          "confidence": 0,
+          "line": 499
+        },
+        {
+          "target": "_add_transaction",
+          "resolved": false,
+          "confidence": 0,
+          "line": 502
+        },
+        {
+          "target": "assert_not_called",
+          "resolved": false,
+          "confidence": 0,
+          "line": 510
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 513
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 522,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 522,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 524,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 527
+        },
+        {
+          "target": "AsyncMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 530
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 538
+        },
+        {
+          "target": "AsyncMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 539
+        },
+        {
+          "target": "async_iter",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 540,
+          "resolvedId": "backend/executor/manager_insufficient_funds_test.py:async_iter:16"
+        },
+        {
+          "target": "AsyncMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 543
+        },
+        {
+          "target": "UserCredit",
+          "resolved": false,
+          "confidence": 0,
+          "line": 545
+        },
+        {
+          "target": "_enable_transaction",
+          "resolved": false,
+          "confidence": 0,
+          "line": 550
+        },
+        {
+          "target": "SafeJson",
+          "resolved": false,
+          "confidence": 0,
+          "line": 553
+        },
+        {
+          "target": "assert_called_once",
+          "resolved": false,
+          "confidence": 0,
+          "line": 557
+        },
+        {
+          "target": "assert_called_once_with",
+          "resolved": false,
+          "confidence": 0,
+          "line": 558
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 22
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 96
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 151
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 224
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 260
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 285
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 307
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 363
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 405
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 441
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 477
+        },
+        {
+          "target": "asyncio",
+          "resolved": false,
+          "confidence": 0,
+          "line": 513
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

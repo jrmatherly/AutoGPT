@@ -1,0 +1,140 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.201Z",
+  "checksum": "cfc05d57a03b5f6f",
+  "file": "src/app/(platform)/error.tsx",
+  "functions": [
+    {
+      "id": "src/app/(platform)/error.tsx:ErrorPageContent:8",
+      "name": "ErrorPageContent",
+      "startLine": 8,
+      "endLine": 36,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useSearchParams",
+          "resolved": false,
+          "confidence": 0,
+          "line": 9
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 10,
+          "resolvedId": "src/services/storage/local-storage.ts:get:16"
+        },
+        {
+          "target": "getErrorDetails",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 12,
+          "resolvedId": "src/app/(platform)/error/helpers.ts:getErrorDetails:1"
+        },
+        {
+          "target": "errorMessage",
+          "resolved": false,
+          "confidence": 0,
+          "line": 12
+        },
+        {
+          "target": "reload",
+          "resolved": false,
+          "confidence": 0,
+          "line": 21
+        },
+        {
+          "target": "ErrorCard",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 28,
+          "resolvedId": "src/components/molecules/ErrorCard/ErrorCard.tsx:ErrorCard:26"
+        },
+        {
+          "target": "responseError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 29
+        },
+        {
+          "target": "context",
+          "resolved": false,
+          "confidence": 0,
+          "line": 30
+        },
+        {
+          "target": "handleRetry",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 31,
+          "resolvedId": "src/app/(platform)/error.tsx:handleRetry:14"
+        },
+        {
+          "target": "reload",
+          "resolved": false,
+          "confidence": 0,
+          "line": 21
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/app/(platform)/error.tsx:handleRetry:14",
+      "name": "handleRetry",
+      "startLine": 14,
+      "endLine": 23,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "reload",
+          "resolved": false,
+          "confidence": 0,
+          "line": 21
+        },
+        {
+          "target": "reload",
+          "resolved": false,
+          "confidence": 0,
+          "line": 21
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/app/(platform)/error.tsx:ErrorPage:38",
+      "name": "ErrorPage",
+      "startLine": 38,
+      "endLine": 55,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "Suspense",
+          "resolved": false,
+          "confidence": 0,
+          "line": 40
+        },
+        {
+          "target": "ErrorCard",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 44,
+          "resolvedId": "src/components/molecules/ErrorCard/ErrorCard.tsx:ErrorCard:26"
+        },
+        {
+          "target": "ErrorPageContent",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 52,
+          "resolvedId": "src/app/(platform)/error.tsx:ErrorPageContent:8"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

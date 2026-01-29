@@ -160,7 +160,6 @@ You can pass information between tests using the `testInfo` object. This is usef
 });
 ```
 
-
 ## See Also
 
 - [Writing Tests](https://playwright.dev/docs/writing-tests)

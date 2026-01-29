@@ -1,0 +1,276 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.106Z",
+  "checksum": "4ca2b2f045e31ede",
+  "file": "src/components/renderers/InputRenderer/base/anyof/AnyOfField.tsx",
+  "functions": [
+    {
+      "id": "src/components/renderers/InputRenderer/base/anyof/AnyOfField.tsx:AnyOfField:12",
+      "name": "AnyOfField",
+      "startLine": 12,
+      "endLine": 108,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useEdgeStore",
+          "resolved": false,
+          "confidence": 0,
+          "line": 17
+        },
+        {
+          "target": "useAnyOfField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 24,
+          "resolvedId": "src/components/renderers/InputRenderer/base/anyof/useAnyOfField.ts:useAnyOfField:8"
+        },
+        {
+          "target": "props",
+          "resolved": false,
+          "confidence": 0,
+          "line": 24
+        },
+        {
+          "target": "useNodeStore",
+          "resolved": false,
+          "confidence": 0,
+          "line": 26
+        },
+        {
+          "target": "findCustomFieldId",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 28,
+          "resolvedId": "src/components/renderers/InputRenderer/custom/custom-registry.ts:findCustomFieldId:72"
+        },
+        {
+          "target": "schema",
+          "resolved": false,
+          "confidence": 0,
+          "line": 28
+        },
+        {
+          "target": "getUiOptions",
+          "resolved": false,
+          "confidence": 0,
+          "line": 33
+        },
+        {
+          "target": "uiSchema",
+          "resolved": false,
+          "confidence": 0,
+          "line": 33
+        },
+        {
+          "target": "globalUiOptions",
+          "resolved": false,
+          "confidence": 0,
+          "line": 33
+        },
+        {
+          "target": "getWidget",
+          "resolved": false,
+          "confidence": 0,
+          "line": 35
+        },
+        {
+          "target": "widgets",
+          "resolved": false,
+          "confidence": 0,
+          "line": 35
+        },
+        {
+          "target": "getHandleId",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 37,
+          "resolvedId": "src/components/renderers/InputRenderer/helpers.ts:getHandleId:115"
+        },
+        {
+          "target": "updateUiOption",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 43,
+          "resolvedId": "src/components/renderers/InputRenderer/helpers.ts:updateUiOption:19"
+        },
+        {
+          "target": "uiSchema",
+          "resolved": false,
+          "confidence": 0,
+          "line": 43
+        },
+        {
+          "target": "isInputConnected",
+          "resolved": false,
+          "confidence": 0,
+          "line": 49
+        },
+        {
+          "target": "nodeId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 49
+        },
+        {
+          "target": "handleId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 49
+        },
+        {
+          "target": "isInputBroken",
+          "resolved": false,
+          "confidence": 0,
+          "line": 50
+        },
+        {
+          "target": "nodeId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 50
+        },
+        {
+          "target": "cleanUpHandleId",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 50,
+          "resolvedId": "src/components/renderers/InputRenderer/helpers.ts:cleanUpHandleId:32"
+        },
+        {
+          "target": "handleId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 50
+        },
+        {
+          "target": "findCustomFieldId",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 54,
+          "resolvedId": "src/components/renderers/InputRenderer/custom/custom-registry.ts:findCustomFieldId:72"
+        },
+        {
+          "target": "optionSchema",
+          "resolved": false,
+          "confidence": 0,
+          "line": 54
+        },
+        {
+          "target": "optionSchema",
+          "resolved": false,
+          "confidence": 0,
+          "line": 65
+        },
+        {
+          "target": "optionUiSchema",
+          "resolved": false,
+          "confidence": 0,
+          "line": 66
+        },
+        {
+          "target": "Widget",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        },
+        {
+          "target": "field_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 73
+        },
+        {
+          "target": "handleOptionChange",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 76,
+          "resolvedId": "src/components/renderers/InputRenderer/base/anyof/useAnyOfField.ts:handleOptionChange:47"
+        },
+        {
+          "target": "onBlur",
+          "resolved": false,
+          "confidence": 0,
+          "line": 77
+        },
+        {
+          "target": "onFocus",
+          "resolved": false,
+          "confidence": 0,
+          "line": 78
+        },
+        {
+          "target": "registry",
+          "resolved": false,
+          "confidence": 0,
+          "line": 83
+        },
+        {
+          "target": "placeholder",
+          "resolved": false,
+          "confidence": 0,
+          "line": 84
+        },
+        {
+          "target": "autocomplete",
+          "resolved": false,
+          "confidence": 0,
+          "line": 85
+        },
+        {
+          "target": "autofocus",
+          "resolved": false,
+          "confidence": 0,
+          "line": 91
+        },
+        {
+          "target": "readonly",
+          "resolved": false,
+          "confidence": 0,
+          "line": 94
+        },
+        {
+          "target": "isEmpty",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 79,
+          "resolvedId": "src/lib/utils.ts:isEmpty:468"
+        },
+        {
+          "target": "enumOptions",
+          "resolved": false,
+          "confidence": 0,
+          "line": 79
+        },
+        {
+          "target": "cn",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 86,
+          "resolvedId": "src/components/renderers/InputRenderer/utils/rjsf-utils.ts:cn:4"
+        },
+        {
+          "target": "AnyOfFieldTitle",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 100,
+          "resolvedId": "src/components/renderers/InputRenderer/base/anyof/components/AnyOfFieldTitle.tsx:AnyOfFieldTitle:22"
+        },
+        {
+          "target": "selector",
+          "resolved": false,
+          "confidence": 0,
+          "line": 102
+        },
+        {
+          "target": "updatedUiSchema",
+          "resolved": false,
+          "confidence": 0,
+          "line": 103
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

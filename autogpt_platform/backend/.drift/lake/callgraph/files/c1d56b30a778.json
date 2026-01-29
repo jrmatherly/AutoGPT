@@ -1,0 +1,773 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.211Z",
+  "checksum": "7116a30604cd92f3",
+  "file": "backend/sdk/builder.py",
+  "functions": [
+    {
+      "id": "backend/sdk/builder.py:__init__:30",
+      "name": "__init__",
+      "startLine": 30,
+      "endLine": 42,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "set",
+          "resolved": false,
+          "confidence": 0,
+          "line": 36
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/sdk/builder.py:with_oauth:44",
+      "name": "with_oauth",
+      "startLine": 44,
+      "endLine": 72,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "upper",
+          "resolved": false,
+          "confidence": 0,
+          "line": 53
+        },
+        {
+          "target": "upper",
+          "resolved": false,
+          "confidence": 0,
+          "line": 54
+        },
+        {
+          "target": "getenv",
+          "resolved": false,
+          "confidence": 0,
+          "line": 56
+        },
+        {
+          "target": "client_id_env_var",
+          "resolved": false,
+          "confidence": 0,
+          "line": 56
+        },
+        {
+          "target": "getenv",
+          "resolved": false,
+          "confidence": 0,
+          "line": 56
+        },
+        {
+          "target": "client_secret_env_var",
+          "resolved": false,
+          "confidence": 0,
+          "line": 56
+        },
+        {
+          "target": "OAuthConfig",
+          "resolved": false,
+          "confidence": 0,
+          "line": 60
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 66,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "warning",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 68,
+          "resolvedId": "backend/util/logging.py:warning:45"
+        },
+        {
+          "target": "upper",
+          "resolved": false,
+          "confidence": 0,
+          "line": 69
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "os",
+          "operation": "read",
+          "line": 56,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/sdk/builder.py:with_api_key:74",
+      "name": "with_api_key",
+      "startLine": 74,
+      "endLine": 92,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 76,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "register_api_key",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 79,
+          "resolvedId": "backend/sdk/registry.py:register_api_key:103"
+        },
+        {
+          "target": "env_var_name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 79
+        },
+        {
+          "target": "getenv",
+          "resolved": false,
+          "confidence": 0,
+          "line": 82
+        },
+        {
+          "target": "env_var_name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 82
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 84
+        },
+        {
+          "target": "APIKeyCredentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 85
+        },
+        {
+          "target": "SecretStr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 88
+        },
+        {
+          "target": "api_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 88
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "os",
+          "operation": "read",
+          "line": 82,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/sdk/builder.py:with_api_key_from_settings:94",
+      "name": "with_api_key_from_settings",
+      "startLine": 94,
+      "endLine": 112,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 98,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "Settings",
+          "resolved": false,
+          "confidence": 0,
+          "line": 101
+        },
+        {
+          "target": "getattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 102
+        },
+        {
+          "target": "settings_attr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 102
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 104
+        },
+        {
+          "target": "APIKeyCredentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 105
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/sdk/builder.py:with_user_password:114",
+      "name": "with_user_password",
+      "startLine": 114,
+      "endLine": 133,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 118,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "getenv",
+          "resolved": false,
+          "confidence": 0,
+          "line": 121
+        },
+        {
+          "target": "username_env_var",
+          "resolved": false,
+          "confidence": 0,
+          "line": 121
+        },
+        {
+          "target": "getenv",
+          "resolved": false,
+          "confidence": 0,
+          "line": 122
+        },
+        {
+          "target": "password_env_var",
+          "resolved": false,
+          "confidence": 0,
+          "line": 122
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 124
+        },
+        {
+          "target": "UserPasswordCredentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 125
+        },
+        {
+          "target": "SecretStr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 128
+        },
+        {
+          "target": "username",
+          "resolved": false,
+          "confidence": 0,
+          "line": 128
+        },
+        {
+          "target": "SecretStr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 129
+        },
+        {
+          "target": "password",
+          "resolved": false,
+          "confidence": 0,
+          "line": 129
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "os",
+          "operation": "read",
+          "line": 121,
+          "fields": [
+            "username"
+          ]
+        },
+        {
+          "table": "os",
+          "operation": "read",
+          "line": 122,
+          "fields": [
+            "password"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "backend/sdk/builder.py:with_webhook_manager:135",
+      "name": "with_webhook_manager",
+      "startLine": 135,
+      "endLine": 140,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/sdk/builder.py:with_base_cost:142",
+      "name": "with_base_cost",
+      "startLine": 142,
+      "endLine": 147,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 146
+        },
+        {
+          "target": "BlockCost",
+          "resolved": false,
+          "confidence": 0,
+          "line": 146
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/sdk/builder.py:with_api_client:149",
+      "name": "with_api_client",
+      "startLine": 149,
+      "endLine": 152,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/sdk/builder.py:with_error_handler:154",
+      "name": "with_error_handler",
+      "startLine": 154,
+      "endLine": 159,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/sdk/builder.py:with_config:161",
+      "name": "with_config",
+      "startLine": 161,
+      "endLine": 164,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "update",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 163,
+          "resolvedId": "backend/integrations/creds_manager.py:update:162"
+        },
+        {
+          "target": "kwargs",
+          "resolved": false,
+          "confidence": 0,
+          "line": 163
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/sdk/builder.py:build:166",
+      "name": "build",
+      "startLine": 166,
+      "endLine": 182,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "Provider",
+          "resolved": false,
+          "confidence": 0,
+          "line": 168
+        },
+        {
+          "target": "register_provider",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 181,
+          "resolvedId": "backend/sdk/registry.py:register_provider:62"
+        },
+        {
+          "target": "provider",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 181,
+          "resolvedId": "backend/blocks/stagehand/blocks.py:provider:109"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/sdk/builder.py:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 183,
+      "isEntryPoint": false,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "getLogger",
+          "resolved": false,
+          "confidence": 0,
+          "line": 24
+        },
+        {
+          "target": "set",
+          "resolved": false,
+          "confidence": 0,
+          "line": 36
+        },
+        {
+          "target": "upper",
+          "resolved": false,
+          "confidence": 0,
+          "line": 53
+        },
+        {
+          "target": "upper",
+          "resolved": false,
+          "confidence": 0,
+          "line": 54
+        },
+        {
+          "target": "getenv",
+          "resolved": false,
+          "confidence": 0,
+          "line": 56
+        },
+        {
+          "target": "client_id_env_var",
+          "resolved": false,
+          "confidence": 0,
+          "line": 56
+        },
+        {
+          "target": "getenv",
+          "resolved": false,
+          "confidence": 0,
+          "line": 56
+        },
+        {
+          "target": "client_secret_env_var",
+          "resolved": false,
+          "confidence": 0,
+          "line": 56
+        },
+        {
+          "target": "OAuthConfig",
+          "resolved": false,
+          "confidence": 0,
+          "line": 60
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 66,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "warning",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 68,
+          "resolvedId": "backend/util/logging.py:warning:45"
+        },
+        {
+          "target": "upper",
+          "resolved": false,
+          "confidence": 0,
+          "line": 69
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 76,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "register_api_key",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 79,
+          "resolvedId": "backend/sdk/registry.py:register_api_key:103"
+        },
+        {
+          "target": "env_var_name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 79
+        },
+        {
+          "target": "getenv",
+          "resolved": false,
+          "confidence": 0,
+          "line": 82
+        },
+        {
+          "target": "env_var_name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 82
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 84
+        },
+        {
+          "target": "APIKeyCredentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 85
+        },
+        {
+          "target": "SecretStr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 88
+        },
+        {
+          "target": "api_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 88
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 98,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "Settings",
+          "resolved": false,
+          "confidence": 0,
+          "line": 101
+        },
+        {
+          "target": "getattr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 102
+        },
+        {
+          "target": "settings_attr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 102
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 104
+        },
+        {
+          "target": "APIKeyCredentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 105
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 118,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "getenv",
+          "resolved": false,
+          "confidence": 0,
+          "line": 121
+        },
+        {
+          "target": "username_env_var",
+          "resolved": false,
+          "confidence": 0,
+          "line": 121
+        },
+        {
+          "target": "getenv",
+          "resolved": false,
+          "confidence": 0,
+          "line": 122
+        },
+        {
+          "target": "password_env_var",
+          "resolved": false,
+          "confidence": 0,
+          "line": 122
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 124
+        },
+        {
+          "target": "UserPasswordCredentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 125
+        },
+        {
+          "target": "SecretStr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 128
+        },
+        {
+          "target": "username",
+          "resolved": false,
+          "confidence": 0,
+          "line": 128
+        },
+        {
+          "target": "SecretStr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 129
+        },
+        {
+          "target": "password",
+          "resolved": false,
+          "confidence": 0,
+          "line": 129
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 146
+        },
+        {
+          "target": "BlockCost",
+          "resolved": false,
+          "confidence": 0,
+          "line": 146
+        },
+        {
+          "target": "update",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 163,
+          "resolvedId": "backend/integrations/creds_manager.py:update:162"
+        },
+        {
+          "target": "kwargs",
+          "resolved": false,
+          "confidence": 0,
+          "line": 163
+        },
+        {
+          "target": "Provider",
+          "resolved": false,
+          "confidence": 0,
+          "line": 168
+        },
+        {
+          "target": "register_provider",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 181,
+          "resolvedId": "backend/sdk/registry.py:register_provider:62"
+        },
+        {
+          "target": "provider",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 181,
+          "resolvedId": "backend/blocks/stagehand/blocks.py:provider:109"
+        },
+        {
+          "target": "getLogger",
+          "resolved": false,
+          "confidence": 0,
+          "line": 24
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "logging",
+          "operation": "read",
+          "line": 24,
+          "fields": []
+        },
+        {
+          "table": "os",
+          "operation": "read",
+          "line": 56,
+          "fields": []
+        },
+        {
+          "table": "os",
+          "operation": "read",
+          "line": 82,
+          "fields": []
+        },
+        {
+          "table": "os",
+          "operation": "read",
+          "line": 121,
+          "fields": [
+            "username"
+          ]
+        },
+        {
+          "table": "os",
+          "operation": "read",
+          "line": 122,
+          "fields": [
+            "password"
+          ]
+        }
+      ]
+    }
+  ]
+}

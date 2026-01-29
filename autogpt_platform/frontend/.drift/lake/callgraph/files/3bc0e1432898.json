@@ -1,0 +1,152 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.033Z",
+  "checksum": "991e8eb3576c3ae5",
+  "file": "src/app/(platform)/library/components/LibrarySearchBar/useLibrarySearchbar.tsx",
+  "functions": [
+    {
+      "id": "src/app/(platform)/library/components/LibrarySearchBar/useLibrarySearchbar.tsx:useLibrarySearchbar:8",
+      "name": "useLibrarySearchbar",
+      "startLine": 8,
+      "endLine": 30,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useCallback",
+          "resolved": false,
+          "confidence": 0,
+          "line": 9
+        },
+        {
+          "target": "debounce",
+          "resolved": false,
+          "confidence": 0,
+          "line": 10
+        },
+        {
+          "target": "setSearchTerm",
+          "resolved": false,
+          "confidence": 0,
+          "line": 11
+        },
+        {
+          "target": "value",
+          "resolved": false,
+          "confidence": 0,
+          "line": 11
+        },
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 16
+        },
+        {
+          "target": "cancel",
+          "resolved": false,
+          "confidence": 0,
+          "line": 18
+        },
+        {
+          "target": "debouncedSearch",
+          "resolved": false,
+          "confidence": 0,
+          "line": 24
+        },
+        {
+          "target": "searchTerm",
+          "resolved": false,
+          "confidence": 0,
+          "line": 24
+        },
+        {
+          "target": "cancel",
+          "resolved": false,
+          "confidence": 0,
+          "line": 18
+        },
+        {
+          "target": "debouncedSearch",
+          "resolved": false,
+          "confidence": 0,
+          "line": 24
+        },
+        {
+          "target": "searchTerm",
+          "resolved": false,
+          "confidence": 0,
+          "line": 24
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/app/(platform)/library/components/LibrarySearchBar/useLibrarySearchbar.tsx:$useEffect$1:16",
+      "name": "$useEffect$1",
+      "startLine": 16,
+      "endLine": 20,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 16
+        },
+        {
+          "target": "cancel",
+          "resolved": false,
+          "confidence": 0,
+          "line": 18
+        },
+        {
+          "target": "cancel",
+          "resolved": false,
+          "confidence": 0,
+          "line": 18
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/app/(platform)/library/components/LibrarySearchBar/useLibrarySearchbar.tsx:handleSearchInput:22",
+      "name": "handleSearchInput",
+      "startLine": 22,
+      "endLine": 25,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "debouncedSearch",
+          "resolved": false,
+          "confidence": 0,
+          "line": 24
+        },
+        {
+          "target": "searchTerm",
+          "resolved": false,
+          "confidence": 0,
+          "line": 24
+        },
+        {
+          "target": "debouncedSearch",
+          "resolved": false,
+          "confidence": 0,
+          "line": 24
+        },
+        {
+          "target": "searchTerm",
+          "resolved": false,
+          "confidence": 0,
+          "line": 24
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

@@ -1,0 +1,1806 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.204Z",
+  "checksum": "b11a85e3d75fc164",
+  "file": "test/sdk/test_sdk_registry.py",
+  "functions": [
+    {
+      "id": "test/sdk/test_sdk_registry.py:setup_method:33",
+      "name": "setup_method",
+      "startLine": 33,
+      "endLine": 35,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "clear",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 35,
+          "resolvedId": "backend/sdk/registry.py:clear:155"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/sdk/test_sdk_registry.py:test_provider_registration:37",
+      "name": "test_provider_registration",
+      "startLine": 37,
+      "endLine": 54,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "Provider",
+          "resolved": false,
+          "confidence": 0,
+          "line": 40
+        },
+        {
+          "target": "register_provider",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 50,
+          "resolvedId": "backend/sdk/registry.py:register_provider:62"
+        },
+        {
+          "target": "provider",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 50,
+          "resolvedId": "backend/blocks/stagehand/blocks.py:provider:109"
+        },
+        {
+          "target": "get_provider",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 54,
+          "resolvedId": "backend/sdk/registry.py:get_provider:143"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/sdk/test_sdk_registry.py:test_provider_with_oauth:56",
+      "name": "test_provider_with_oauth",
+      "startLine": 56,
+      "endLine": 87,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "dict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 66
+        },
+        {
+          "target": "Provider",
+          "resolved": false,
+          "confidence": 0,
+          "line": 70
+        },
+        {
+          "target": "OAuthConfig",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        },
+        {
+          "target": "register_provider",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 83,
+          "resolvedId": "backend/sdk/registry.py:register_provider:62"
+        },
+        {
+          "target": "provider",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 83,
+          "resolvedId": "backend/blocks/stagehand/blocks.py:provider:109"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/sdk/test_sdk_registry.py:test_provider_with_webhook_manager:89",
+      "name": "test_provider_with_webhook_manager",
+      "startLine": 89,
+      "endLine": 109,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "Provider",
+          "resolved": false,
+          "confidence": 0,
+          "line": 96
+        },
+        {
+          "target": "register_provider",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 105,
+          "resolvedId": "backend/sdk/registry.py:register_provider:62"
+        },
+        {
+          "target": "provider",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 105,
+          "resolvedId": "backend/blocks/stagehand/blocks.py:provider:109"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/sdk/test_sdk_registry.py:test_default_credentials_registration:111",
+      "name": "test_default_credentials_registration",
+      "startLine": 111,
+      "endLine": 143,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "APIKeyCredentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 116
+        },
+        {
+          "target": "SecretStr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 119
+        },
+        {
+          "target": "APIKeyCredentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 122
+        },
+        {
+          "target": "SecretStr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 125
+        },
+        {
+          "target": "Provider",
+          "resolved": false,
+          "confidence": 0,
+          "line": 129
+        },
+        {
+          "target": "register_provider",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 138,
+          "resolvedId": "backend/sdk/registry.py:register_provider:62"
+        },
+        {
+          "target": "provider",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 138,
+          "resolvedId": "backend/blocks/stagehand/blocks.py:provider:109"
+        },
+        {
+          "target": "get_all_credentials",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 141,
+          "resolvedId": "backend/sdk/registry.py:get_all_credentials:111"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/sdk/test_sdk_registry.py:test_api_key_registration:145",
+      "name": "test_api_key_registration",
+      "startLine": 145,
+      "endLine": 176,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "build",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 157,
+          "resolvedId": "backend/blocks/twitter/_builders.py:build:109"
+        },
+        {
+          "target": "with_api_key",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 157,
+          "resolvedId": "backend/sdk/builder.py:with_api_key:74"
+        },
+        {
+          "target": "ProviderBuilder",
+          "resolved": false,
+          "confidence": 0,
+          "line": 157
+        },
+        {
+          "target": "get_all_credentials",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 166,
+          "resolvedId": "backend/sdk/registry.py:get_all_credentials:111"
+        },
+        {
+          "target": "next",
+          "resolved": false,
+          "confidence": 0,
+          "line": 167
+        },
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 172,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/sdk/test_sdk_registry.py:test_get_oauth_handlers:178",
+      "name": "test_get_oauth_handlers",
+      "startLine": 178,
+      "endLine": 228,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "dict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 191
+        },
+        {
+          "target": "Provider",
+          "resolved": false,
+          "confidence": 0,
+          "line": 195
+        },
+        {
+          "target": "OAuthConfig",
+          "resolved": false,
+          "confidence": 0,
+          "line": 197
+        },
+        {
+          "target": "Provider",
+          "resolved": false,
+          "confidence": 0,
+          "line": 208
+        },
+        {
+          "target": "OAuthConfig",
+          "resolved": false,
+          "confidence": 0,
+          "line": 210
+        },
+        {
+          "target": "register_provider",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 221,
+          "resolvedId": "backend/sdk/registry.py:register_provider:62"
+        },
+        {
+          "target": "provider1",
+          "resolved": false,
+          "confidence": 0,
+          "line": 221
+        },
+        {
+          "target": "register_provider",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 222,
+          "resolvedId": "backend/sdk/registry.py:register_provider:62"
+        },
+        {
+          "target": "provider2",
+          "resolved": false,
+          "confidence": 0,
+          "line": 222
+        },
+        {
+          "target": "get_oauth_handlers",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 224,
+          "resolvedId": "backend/sdk/registry.py:get_oauth_handlers:117"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/sdk/test_sdk_registry.py:test_block_configuration_registration:230",
+      "name": "test_block_configuration_registration",
+      "startLine": 230,
+      "endLine": 249,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "BlockConfiguration",
+          "resolved": false,
+          "confidence": 0,
+          "line": 237
+        },
+        {
+          "target": "register_block_configuration",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 245,
+          "resolvedId": "backend/sdk/registry.py:register_block_configuration:135"
+        },
+        {
+          "target": "config",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 245,
+          "resolvedId": "backend/util/cloud_storage_test.py:config:16"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/sdk/test_sdk_registry.py:test_clear_registry:251",
+      "name": "test_clear_registry",
+      "startLine": 251,
+      "endLine": 274,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "Provider",
+          "resolved": false,
+          "confidence": 0,
+          "line": 254
+        },
+        {
+          "target": "register_provider",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 262,
+          "resolvedId": "backend/sdk/registry.py:register_provider:62"
+        },
+        {
+          "target": "provider",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 262,
+          "resolvedId": "backend/blocks/stagehand/blocks.py:provider:109"
+        },
+        {
+          "target": "register_api_key",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 263,
+          "resolvedId": "backend/sdk/registry.py:register_api_key:103"
+        },
+        {
+          "target": "clear",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 266,
+          "resolvedId": "backend/sdk/registry.py:clear:155"
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 269
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 270
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 271
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 272
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 273
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 274
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/sdk/test_sdk_registry.py:setup_method:280",
+      "name": "setup_method",
+      "startLine": 280,
+      "endLine": 282,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "clear",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 282,
+          "resolvedId": "backend/sdk/registry.py:clear:155"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/sdk/test_sdk_registry.py:test_webhook_manager_patching:285",
+      "name": "test_webhook_manager_patching",
+      "startLine": 285,
+      "endLine": 321,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "Provider",
+          "resolved": false,
+          "confidence": 0,
+          "line": 295
+        },
+        {
+          "target": "register_provider",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 304,
+          "resolvedId": "backend/sdk/registry.py:register_provider:62"
+        },
+        {
+          "target": "provider",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 304,
+          "resolvedId": "backend/blocks/stagehand/blocks.py:provider:109"
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 307
+        },
+        {
+          "target": "dict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 310
+        },
+        {
+          "target": "patch_integrations",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 314,
+          "resolvedId": "backend/sdk/registry.py:patch_integrations:166"
+        },
+        {
+          "target": "load_webhook_managers",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 317,
+          "resolvedId": "backend/integrations/webhooks/__init__.py:load_webhook_managers:12"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/sdk/test_sdk_registry.py:setup_method:327",
+      "name": "setup_method",
+      "startLine": 327,
+      "endLine": 329,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "clear",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 329,
+          "resolvedId": "backend/sdk/registry.py:clear:155"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/sdk/test_sdk_registry.py:test_basic_provider_builder:331",
+      "name": "test_basic_provider_builder",
+      "startLine": 331,
+      "endLine": 341,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "build",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 334,
+          "resolvedId": "backend/blocks/twitter/_builders.py:build:109"
+        },
+        {
+          "target": "with_api_key",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 334,
+          "resolvedId": "backend/sdk/builder.py:with_api_key:74"
+        },
+        {
+          "target": "ProviderBuilder",
+          "resolved": false,
+          "confidence": 0,
+          "line": 334
+        },
+        {
+          "target": "get_provider",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 341,
+          "resolvedId": "backend/sdk/registry.py:get_provider:143"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/sdk/test_sdk_registry.py:test_provider_builder_with_oauth:343",
+      "name": "test_provider_builder_with_oauth",
+      "startLine": 343,
+      "endLine": 364,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "dict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 349
+        },
+        {
+          "target": "build",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 357,
+          "resolvedId": "backend/blocks/twitter/_builders.py:build:109"
+        },
+        {
+          "target": "with_oauth",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 357,
+          "resolvedId": "backend/sdk/builder.py:with_oauth:44"
+        },
+        {
+          "target": "ProviderBuilder",
+          "resolved": false,
+          "confidence": 0,
+          "line": 357
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/sdk/test_sdk_registry.py:test_provider_builder_with_webhook:366",
+      "name": "test_provider_builder_with_webhook",
+      "startLine": 366,
+      "endLine": 376,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "build",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 373,
+          "resolvedId": "backend/blocks/twitter/_builders.py:build:109"
+        },
+        {
+          "target": "with_webhook_manager",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 373,
+          "resolvedId": "backend/sdk/builder.py:with_webhook_manager:135"
+        },
+        {
+          "target": "ProviderBuilder",
+          "resolved": false,
+          "confidence": 0,
+          "line": 373
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/sdk/test_sdk_registry.py:test_provider_builder_with_base_cost:378",
+      "name": "test_provider_builder_with_base_cost",
+      "startLine": 378,
+      "endLine": 393,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "build",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 383,
+          "resolvedId": "backend/blocks/twitter/_builders.py:build:109"
+        },
+        {
+          "target": "with_base_cost",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 383,
+          "resolvedId": "backend/sdk/builder.py:with_base_cost:142"
+        },
+        {
+          "target": "with_base_cost",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 383,
+          "resolvedId": "backend/sdk/builder.py:with_base_cost:142"
+        },
+        {
+          "target": "ProviderBuilder",
+          "resolved": false,
+          "confidence": 0,
+          "line": 383
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 389
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/sdk/test_sdk_registry.py:test_provider_builder_with_api_client:395",
+      "name": "test_provider_builder_with_api_client",
+      "startLine": 395,
+      "endLine": 405,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "build",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 402,
+          "resolvedId": "backend/blocks/twitter/_builders.py:build:109"
+        },
+        {
+          "target": "with_api_client",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 402,
+          "resolvedId": "backend/sdk/builder.py:with_api_client:149"
+        },
+        {
+          "target": "mock_client_factory",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 402,
+          "resolvedId": "test/sdk/test_sdk_registry.py:mock_client_factory:398"
+        },
+        {
+          "target": "ProviderBuilder",
+          "resolved": false,
+          "confidence": 0,
+          "line": 402
+        },
+        {
+          "target": "Mock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 399
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/sdk/test_sdk_registry.py:mock_client_factory:398",
+      "name": "mock_client_factory",
+      "startLine": 398,
+      "endLine": 399,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "Mock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 399
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/sdk/test_sdk_registry.py:test_provider_builder_with_error_handler:407",
+      "name": "test_provider_builder_with_error_handler",
+      "startLine": 407,
+      "endLine": 417,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "build",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 414,
+          "resolvedId": "backend/blocks/twitter/_builders.py:build:109"
+        },
+        {
+          "target": "with_error_handler",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 414,
+          "resolvedId": "backend/sdk/builder.py:with_error_handler:154"
+        },
+        {
+          "target": "mock_error_handler",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 414,
+          "resolvedId": "test/sdk/test_sdk_registry.py:mock_error_handler:410"
+        },
+        {
+          "target": "ProviderBuilder",
+          "resolved": false,
+          "confidence": 0,
+          "line": 414
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 411
+        },
+        {
+          "target": "exc",
+          "resolved": false,
+          "confidence": 0,
+          "line": 411
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/sdk/test_sdk_registry.py:mock_error_handler:410",
+      "name": "mock_error_handler",
+      "startLine": 410,
+      "endLine": 411,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 411
+        },
+        {
+          "target": "exc",
+          "resolved": false,
+          "confidence": 0,
+          "line": 411
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/sdk/test_sdk_registry.py:test_provider_builder_complete_example:419",
+      "name": "test_provider_builder_complete_example",
+      "startLine": 419,
+      "endLine": 471,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "dict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 436
+        },
+        {
+          "target": "build",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 445,
+          "resolvedId": "backend/blocks/twitter/_builders.py:build:109"
+        },
+        {
+          "target": "with_config",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 445,
+          "resolvedId": "backend/sdk/builder.py:with_config:161"
+        },
+        {
+          "target": "with_error_handler",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 445,
+          "resolvedId": "backend/sdk/builder.py:with_error_handler:154"
+        },
+        {
+          "target": "error_handler",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 451,
+          "resolvedId": "test/sdk/test_sdk_registry.py:error_handler:432"
+        },
+        {
+          "target": "with_api_client",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 445,
+          "resolvedId": "backend/sdk/builder.py:with_api_client:149"
+        },
+        {
+          "target": "client_factory",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 450,
+          "resolvedId": "test/sdk/test_sdk_registry.py:client_factory:429"
+        },
+        {
+          "target": "with_base_cost",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 445,
+          "resolvedId": "backend/sdk/builder.py:with_base_cost:142"
+        },
+        {
+          "target": "with_webhook_manager",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 445,
+          "resolvedId": "backend/sdk/builder.py:with_webhook_manager:135"
+        },
+        {
+          "target": "with_oauth",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 445,
+          "resolvedId": "backend/sdk/builder.py:with_oauth:44"
+        },
+        {
+          "target": "with_api_key",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 445,
+          "resolvedId": "backend/sdk/builder.py:with_api_key:74"
+        },
+        {
+          "target": "ProviderBuilder",
+          "resolved": false,
+          "confidence": 0,
+          "line": 445
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 463
+        },
+        {
+          "target": "get_config",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 466,
+          "resolvedId": "backend/sdk/provider.py:get_config:155"
+        },
+        {
+          "target": "get_provider",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 469,
+          "resolvedId": "backend/sdk/registry.py:get_provider:143"
+        },
+        {
+          "target": "Mock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 430
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 433
+        },
+        {
+          "target": "exc",
+          "resolved": false,
+          "confidence": 0,
+          "line": 433
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/sdk/test_sdk_registry.py:client_factory:429",
+      "name": "client_factory",
+      "startLine": 429,
+      "endLine": 430,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "Mock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 430
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/sdk/test_sdk_registry.py:error_handler:432",
+      "name": "error_handler",
+      "startLine": 432,
+      "endLine": 433,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 433
+        },
+        {
+          "target": "exc",
+          "resolved": false,
+          "confidence": 0,
+          "line": 433
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/sdk/test_sdk_registry.py:test_core_block_imports:477",
+      "name": "test_core_block_imports",
+      "startLine": 477,
+      "endLine": 483,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/sdk/test_sdk_registry.py:test_schema_imports:485",
+      "name": "test_schema_imports",
+      "startLine": 485,
+      "endLine": 490,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/sdk/test_sdk_registry.py:test_type_alias_imports:492",
+      "name": "test_type_alias_imports",
+      "startLine": 492,
+      "endLine": 496,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/sdk/test_sdk_registry.py:test_cost_system_imports:498",
+      "name": "test_cost_system_imports",
+      "startLine": 498,
+      "endLine": 503,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/sdk/test_sdk_registry.py:test_utility_imports:505",
+      "name": "test_utility_imports",
+      "startLine": 505,
+      "endLine": 511,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/sdk/test_sdk_registry.py:test_integration_imports:513",
+      "name": "test_integration_imports",
+      "startLine": 513,
+      "endLine": 517,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/sdk/test_sdk_registry.py:test_sdk_component_imports:519",
+      "name": "test_sdk_component_imports",
+      "startLine": 519,
+      "endLine": 524,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/sdk/test_sdk_registry.py:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 529,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "clear",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 35,
+          "resolvedId": "backend/sdk/registry.py:clear:155"
+        },
+        {
+          "target": "Provider",
+          "resolved": false,
+          "confidence": 0,
+          "line": 40
+        },
+        {
+          "target": "register_provider",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 50,
+          "resolvedId": "backend/sdk/registry.py:register_provider:62"
+        },
+        {
+          "target": "provider",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 50,
+          "resolvedId": "backend/blocks/stagehand/blocks.py:provider:109"
+        },
+        {
+          "target": "get_provider",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 54,
+          "resolvedId": "backend/sdk/registry.py:get_provider:143"
+        },
+        {
+          "target": "dict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 66
+        },
+        {
+          "target": "Provider",
+          "resolved": false,
+          "confidence": 0,
+          "line": 70
+        },
+        {
+          "target": "OAuthConfig",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        },
+        {
+          "target": "register_provider",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 83,
+          "resolvedId": "backend/sdk/registry.py:register_provider:62"
+        },
+        {
+          "target": "provider",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 83,
+          "resolvedId": "backend/blocks/stagehand/blocks.py:provider:109"
+        },
+        {
+          "target": "Provider",
+          "resolved": false,
+          "confidence": 0,
+          "line": 96
+        },
+        {
+          "target": "register_provider",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 105,
+          "resolvedId": "backend/sdk/registry.py:register_provider:62"
+        },
+        {
+          "target": "provider",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 105,
+          "resolvedId": "backend/blocks/stagehand/blocks.py:provider:109"
+        },
+        {
+          "target": "APIKeyCredentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 116
+        },
+        {
+          "target": "SecretStr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 119
+        },
+        {
+          "target": "APIKeyCredentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 122
+        },
+        {
+          "target": "SecretStr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 125
+        },
+        {
+          "target": "Provider",
+          "resolved": false,
+          "confidence": 0,
+          "line": 129
+        },
+        {
+          "target": "register_provider",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 138,
+          "resolvedId": "backend/sdk/registry.py:register_provider:62"
+        },
+        {
+          "target": "provider",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 138,
+          "resolvedId": "backend/blocks/stagehand/blocks.py:provider:109"
+        },
+        {
+          "target": "get_all_credentials",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 141,
+          "resolvedId": "backend/sdk/registry.py:get_all_credentials:111"
+        },
+        {
+          "target": "build",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 157,
+          "resolvedId": "backend/blocks/twitter/_builders.py:build:109"
+        },
+        {
+          "target": "with_api_key",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 157,
+          "resolvedId": "backend/sdk/builder.py:with_api_key:74"
+        },
+        {
+          "target": "ProviderBuilder",
+          "resolved": false,
+          "confidence": 0,
+          "line": 157
+        },
+        {
+          "target": "get_all_credentials",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 166,
+          "resolvedId": "backend/sdk/registry.py:get_all_credentials:111"
+        },
+        {
+          "target": "next",
+          "resolved": false,
+          "confidence": 0,
+          "line": 167
+        },
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 172,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        },
+        {
+          "target": "dict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 191
+        },
+        {
+          "target": "Provider",
+          "resolved": false,
+          "confidence": 0,
+          "line": 195
+        },
+        {
+          "target": "OAuthConfig",
+          "resolved": false,
+          "confidence": 0,
+          "line": 197
+        },
+        {
+          "target": "Provider",
+          "resolved": false,
+          "confidence": 0,
+          "line": 208
+        },
+        {
+          "target": "OAuthConfig",
+          "resolved": false,
+          "confidence": 0,
+          "line": 210
+        },
+        {
+          "target": "register_provider",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 221,
+          "resolvedId": "backend/sdk/registry.py:register_provider:62"
+        },
+        {
+          "target": "provider1",
+          "resolved": false,
+          "confidence": 0,
+          "line": 221
+        },
+        {
+          "target": "register_provider",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 222,
+          "resolvedId": "backend/sdk/registry.py:register_provider:62"
+        },
+        {
+          "target": "provider2",
+          "resolved": false,
+          "confidence": 0,
+          "line": 222
+        },
+        {
+          "target": "get_oauth_handlers",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 224,
+          "resolvedId": "backend/sdk/registry.py:get_oauth_handlers:117"
+        },
+        {
+          "target": "BlockConfiguration",
+          "resolved": false,
+          "confidence": 0,
+          "line": 237
+        },
+        {
+          "target": "register_block_configuration",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 245,
+          "resolvedId": "backend/sdk/registry.py:register_block_configuration:135"
+        },
+        {
+          "target": "config",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 245,
+          "resolvedId": "backend/util/cloud_storage_test.py:config:16"
+        },
+        {
+          "target": "Provider",
+          "resolved": false,
+          "confidence": 0,
+          "line": 254
+        },
+        {
+          "target": "register_provider",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 262,
+          "resolvedId": "backend/sdk/registry.py:register_provider:62"
+        },
+        {
+          "target": "provider",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 262,
+          "resolvedId": "backend/blocks/stagehand/blocks.py:provider:109"
+        },
+        {
+          "target": "register_api_key",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 263,
+          "resolvedId": "backend/sdk/registry.py:register_api_key:103"
+        },
+        {
+          "target": "clear",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 266,
+          "resolvedId": "backend/sdk/registry.py:clear:155"
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 269
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 270
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 271
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 272
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 273
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 274
+        },
+        {
+          "target": "clear",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 282,
+          "resolvedId": "backend/sdk/registry.py:clear:155"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 284,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "Provider",
+          "resolved": false,
+          "confidence": 0,
+          "line": 295
+        },
+        {
+          "target": "register_provider",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 304,
+          "resolvedId": "backend/sdk/registry.py:register_provider:62"
+        },
+        {
+          "target": "provider",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 304,
+          "resolvedId": "backend/blocks/stagehand/blocks.py:provider:109"
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 307
+        },
+        {
+          "target": "dict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 310
+        },
+        {
+          "target": "patch_integrations",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 314,
+          "resolvedId": "backend/sdk/registry.py:patch_integrations:166"
+        },
+        {
+          "target": "load_webhook_managers",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 317,
+          "resolvedId": "backend/integrations/webhooks/__init__.py:load_webhook_managers:12"
+        },
+        {
+          "target": "clear",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 329,
+          "resolvedId": "backend/sdk/registry.py:clear:155"
+        },
+        {
+          "target": "build",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 334,
+          "resolvedId": "backend/blocks/twitter/_builders.py:build:109"
+        },
+        {
+          "target": "with_api_key",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 334,
+          "resolvedId": "backend/sdk/builder.py:with_api_key:74"
+        },
+        {
+          "target": "ProviderBuilder",
+          "resolved": false,
+          "confidence": 0,
+          "line": 334
+        },
+        {
+          "target": "get_provider",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 341,
+          "resolvedId": "backend/sdk/registry.py:get_provider:143"
+        },
+        {
+          "target": "dict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 349
+        },
+        {
+          "target": "build",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 357,
+          "resolvedId": "backend/blocks/twitter/_builders.py:build:109"
+        },
+        {
+          "target": "with_oauth",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 357,
+          "resolvedId": "backend/sdk/builder.py:with_oauth:44"
+        },
+        {
+          "target": "ProviderBuilder",
+          "resolved": false,
+          "confidence": 0,
+          "line": 357
+        },
+        {
+          "target": "build",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 373,
+          "resolvedId": "backend/blocks/twitter/_builders.py:build:109"
+        },
+        {
+          "target": "with_webhook_manager",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 373,
+          "resolvedId": "backend/sdk/builder.py:with_webhook_manager:135"
+        },
+        {
+          "target": "ProviderBuilder",
+          "resolved": false,
+          "confidence": 0,
+          "line": 373
+        },
+        {
+          "target": "build",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 383,
+          "resolvedId": "backend/blocks/twitter/_builders.py:build:109"
+        },
+        {
+          "target": "with_base_cost",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 383,
+          "resolvedId": "backend/sdk/builder.py:with_base_cost:142"
+        },
+        {
+          "target": "with_base_cost",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 383,
+          "resolvedId": "backend/sdk/builder.py:with_base_cost:142"
+        },
+        {
+          "target": "ProviderBuilder",
+          "resolved": false,
+          "confidence": 0,
+          "line": 383
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 389
+        },
+        {
+          "target": "build",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 402,
+          "resolvedId": "backend/blocks/twitter/_builders.py:build:109"
+        },
+        {
+          "target": "with_api_client",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 402,
+          "resolvedId": "backend/sdk/builder.py:with_api_client:149"
+        },
+        {
+          "target": "mock_client_factory",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 402,
+          "resolvedId": "test/sdk/test_sdk_registry.py:mock_client_factory:398"
+        },
+        {
+          "target": "ProviderBuilder",
+          "resolved": false,
+          "confidence": 0,
+          "line": 402
+        },
+        {
+          "target": "Mock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 399
+        },
+        {
+          "target": "build",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 414,
+          "resolvedId": "backend/blocks/twitter/_builders.py:build:109"
+        },
+        {
+          "target": "with_error_handler",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 414,
+          "resolvedId": "backend/sdk/builder.py:with_error_handler:154"
+        },
+        {
+          "target": "mock_error_handler",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 414,
+          "resolvedId": "test/sdk/test_sdk_registry.py:mock_error_handler:410"
+        },
+        {
+          "target": "ProviderBuilder",
+          "resolved": false,
+          "confidence": 0,
+          "line": 414
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 411
+        },
+        {
+          "target": "exc",
+          "resolved": false,
+          "confidence": 0,
+          "line": 411
+        },
+        {
+          "target": "dict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 436
+        },
+        {
+          "target": "build",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 445,
+          "resolvedId": "backend/blocks/twitter/_builders.py:build:109"
+        },
+        {
+          "target": "with_config",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 445,
+          "resolvedId": "backend/sdk/builder.py:with_config:161"
+        },
+        {
+          "target": "with_error_handler",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 445,
+          "resolvedId": "backend/sdk/builder.py:with_error_handler:154"
+        },
+        {
+          "target": "error_handler",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 451,
+          "resolvedId": "test/sdk/test_sdk_registry.py:error_handler:432"
+        },
+        {
+          "target": "with_api_client",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 445,
+          "resolvedId": "backend/sdk/builder.py:with_api_client:149"
+        },
+        {
+          "target": "client_factory",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 450,
+          "resolvedId": "test/sdk/test_sdk_registry.py:client_factory:429"
+        },
+        {
+          "target": "with_base_cost",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 445,
+          "resolvedId": "backend/sdk/builder.py:with_base_cost:142"
+        },
+        {
+          "target": "with_webhook_manager",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 445,
+          "resolvedId": "backend/sdk/builder.py:with_webhook_manager:135"
+        },
+        {
+          "target": "with_oauth",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 445,
+          "resolvedId": "backend/sdk/builder.py:with_oauth:44"
+        },
+        {
+          "target": "with_api_key",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 445,
+          "resolvedId": "backend/sdk/builder.py:with_api_key:74"
+        },
+        {
+          "target": "ProviderBuilder",
+          "resolved": false,
+          "confidence": 0,
+          "line": 445
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 463
+        },
+        {
+          "target": "get_config",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 466,
+          "resolvedId": "backend/sdk/provider.py:get_config:155"
+        },
+        {
+          "target": "get_provider",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 469,
+          "resolvedId": "backend/sdk/registry.py:get_provider:143"
+        },
+        {
+          "target": "Mock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 430
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 433
+        },
+        {
+          "target": "exc",
+          "resolved": false,
+          "confidence": 0,
+          "line": 433
+        },
+        {
+          "target": "main",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 528,
+          "resolvedId": "backend/check_store_data.py:main:149"
+        },
+        {
+          "target": "main",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 528,
+          "resolvedId": "backend/check_store_data.py:main:149"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

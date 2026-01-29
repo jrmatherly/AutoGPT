@@ -205,11 +205,65 @@ class Block:
 
 ## OpenAPI Specification
 
-- Production: https://backend.agpt.co/openapi.json
-- Staging: https://dev-server.agpt.co/openapi.json
+- Production: `https://api.example.com/openapi.json`
+- Staging: `https://api-staging.example.com/openapi.json`
+- Local: `http://localhost:8006/openapi.json`
 
 Generate client:
 ```bash
 cd autogpt_platform/frontend
 pnpm generate:api
+```
+
+## Code Examples
+
+### Python
+
+```python
+import requests
+
+API_URL = "http://localhost:8000"  # or production URL
+TOKEN = "your_jwt_token"
+headers = {
+    "Authorization": f"Bearer {TOKEN}",
+    "Content-Type": "application/json"
+}
+
+# List library agents
+response = requests.get(f"{API_URL}/api/v2/library/agents", headers=headers)
+agents = response.json()
+
+# Execute a graph
+response = requests.post(
+    f"{API_URL}/api/v2/builder/graphs/{graph_id}/execute",
+    headers=headers,
+    json={"input_data": {"prompt": "Hello!"}}
+)
+execution = response.json()
+```
+
+### TypeScript (Using Generated Hooks)
+
+```typescript
+import { useGetV2ListLibraryAgents } from "@/app/api/__generated__/endpoints/library/library";
+
+// List agents
+export function useAgentList() {
+  const { data, isLoading, isError } = useGetV2ListLibraryAgents();
+  return { agents: data?.agents || [], isLoading, isError };
+}
+```
+
+### cURL
+
+```bash
+# List library agents
+curl -X GET "http://localhost:8000/api/v2/library/agents" \
+  -H "Authorization: Bearer $TOKEN"
+
+# Execute a graph
+curl -X POST "http://localhost:8000/api/v2/builder/graphs/$GRAPH_ID/execute" \
+  -H "Authorization: Bearer $TOKEN" \
+  -H "Content-Type: application/json" \
+  -d '{"input_data": {"prompt": "Hello!"}}'
 ```

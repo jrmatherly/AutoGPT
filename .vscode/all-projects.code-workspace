@@ -23,35 +23,32 @@
   ],
   "settings": {
     "python.analysis.typeCheckingMode": "basic",
-    "java.project.resourceFilters": [
-      "node_modules",
-      "classic",
-      ".archive"
-    ],
-    "java.import.exclusions": [
-      "**/node_modules/**",
-      "**/classic/**",
-      "**/.archive/**"
-    ],
-    "gradle.nestedProjects": false,
-    "java.gradle.buildServer.enabled": "off",
-    "cmake.ignoreCMakeListsMissing": true,
-    "dart.analysisExcludedFolders": [
-      "classic",
-      ".archive"
-    ],
     "files.watcherExclude": {
       "**/classic/**": true,
-      "**/.archive/**": true
-    }
+      "**/.archive/**": true,
+      "**/node_modules/**": true,
+      "**/.next/**": true,
+      "**/__pycache__/**": true,
+      "**/.venv/**": true
+    },
+    "search.exclude": {
+      "**/classic/**": true,
+      "**/.archive/**": true,
+      "**/node_modules/**": true,
+      "**/.next/**": true
+    },
+    "prisma.pinToPrisma6": true
   },
   "extensions": {
     "recommendations": [
       "charliermarsh.ruff",
-      "dart-code.flutter",
-      "ms-python.black-formatter",
+      "ms-python.python",
       "ms-python.vscode-pylance",
+      "ms-python.black-formatter",
       "prisma.prisma",
+      "dbaeumer.vscode-eslint",
+      "esbenp.prettier-vscode",
+      "bradlc.vscode-tailwindcss",
       "qwtel.sqlite-viewer"
     ]
   }

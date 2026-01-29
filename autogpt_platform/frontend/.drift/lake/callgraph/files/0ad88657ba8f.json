@@ -1,0 +1,1421 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:19.995Z",
+  "checksum": "3f34859574b241f5",
+  "file": "src/components/layout/Navbar/components/Wallet/Wallet.tsx",
+  "functions": [
+    {
+      "id": "src/components/layout/Navbar/components/Wallet/Wallet.tsx:Wallet:46",
+      "name": "Wallet",
+      "startLine": 46,
+      "endLine": 404,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useOnboarding",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 47,
+          "resolvedId": "src/providers/onboarding/onboarding-provider.tsx:useOnboarding:60"
+        },
+        {
+          "target": "useGetFlag",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 48,
+          "resolvedId": "src/services/feature-flags/use-get-flag.ts:useGetFlag:53"
+        },
+        {
+          "target": "ENABLE_PLATFORM_PAYMENT",
+          "resolved": false,
+          "confidence": 0,
+          "line": 48
+        },
+        {
+          "target": "useMemo",
+          "resolved": false,
+          "confidence": 0,
+          "line": 50
+        },
+        {
+          "target": "useBackendAPI",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 170,
+          "resolvedId": "src/lib/autogpt-server-api/context.tsx:useBackendAPI:34"
+        },
+        {
+          "target": "useCredits",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 171,
+          "resolvedId": "src/hooks/useCredits.ts:useCredits:9"
+        },
+        {
+          "target": "useState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 175
+        },
+        {
+          "target": "credits",
+          "resolved": false,
+          "confidence": 0,
+          "line": 175
+        },
+        {
+          "target": "useState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 176
+        },
+        {
+          "target": "useState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 177
+        },
+        {
+          "target": "useState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 178
+        },
+        {
+          "target": "useMemo",
+          "resolved": false,
+          "confidence": 0,
+          "line": 180
+        },
+        {
+          "target": "reduce",
+          "resolved": false,
+          "confidence": 0,
+          "line": 181
+        },
+        {
+          "target": "useState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 185
+        },
+        {
+          "target": "useRef",
+          "resolved": false,
+          "confidence": 0,
+          "line": 187
+        },
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 189
+        },
+        {
+          "target": "reduce",
+          "resolved": false,
+          "confidence": 0,
+          "line": 193
+        },
+        {
+          "target": "filter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 196
+        },
+        {
+          "target": "includes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 196
+        },
+        {
+          "target": "id",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 196,
+          "resolvedId": "public/gtag.js:id:112"
+        },
+        {
+          "target": "setCompletedCount",
+          "resolved": false,
+          "confidence": 0,
+          "line": 200
+        },
+        {
+          "target": "completed",
+          "resolved": false,
+          "confidence": 0,
+          "line": 200
+        },
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 204
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 205,
+          "resolvedId": "src/services/storage/local-storage.ts:get:16"
+        },
+        {
+          "target": "WALLET_LAST_SEEN_CREDITS",
+          "resolved": false,
+          "confidence": 0,
+          "line": 205
+        },
+        {
+          "target": "parseFloat",
+          "resolved": false,
+          "confidence": 0,
+          "line": 207
+        },
+        {
+          "target": "stored",
+          "resolved": false,
+          "confidence": 0,
+          "line": 207
+        },
+        {
+          "target": "isNaN",
+          "resolved": false,
+          "confidence": 0,
+          "line": 208
+        },
+        {
+          "target": "parsed",
+          "resolved": false,
+          "confidence": 0,
+          "line": 208
+        },
+        {
+          "target": "setLastSeenCredits",
+          "resolved": false,
+          "confidence": 0,
+          "line": 208
+        },
+        {
+          "target": "parsed",
+          "resolved": false,
+          "confidence": 0,
+          "line": 208
+        },
+        {
+          "target": "setLastSeenCredits",
+          "resolved": false,
+          "confidence": 0,
+          "line": 209
+        },
+        {
+          "target": "setLastSeenCredits",
+          "resolved": false,
+          "confidence": 0,
+          "line": 211
+        },
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 216
+        },
+        {
+          "target": "requestAnimationFrame",
+          "resolved": false,
+          "confidence": 0,
+          "line": 220
+        },
+        {
+          "target": "setWalletOpen",
+          "resolved": false,
+          "confidence": 0,
+          "line": 220
+        },
+        {
+          "target": "updateState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 222
+        },
+        {
+          "target": "requestAnimationFrame",
+          "resolved": false,
+          "confidence": 0,
+          "line": 231
+        },
+        {
+          "target": "setWalletOpen",
+          "resolved": false,
+          "confidence": 0,
+          "line": 231
+        },
+        {
+          "target": "useCallback",
+          "resolved": false,
+          "confidence": 0,
+          "line": 235
+        },
+        {
+          "target": "updateState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 237
+        },
+        {
+          "target": "fetchCredits",
+          "resolved": false,
+          "confidence": 0,
+          "line": 240
+        },
+        {
+          "target": "useMemo",
+          "resolved": false,
+          "confidence": 0,
+          "line": 243
+        },
+        {
+          "target": "build",
+          "resolved": false,
+          "confidence": 0,
+          "line": 245
+        },
+        {
+          "target": "through",
+          "resolved": false,
+          "confidence": 0,
+          "line": 245
+        },
+        {
+          "target": "by",
+          "resolved": false,
+          "confidence": 0,
+          "line": 245
+        },
+        {
+          "target": "drive",
+          "resolved": false,
+          "confidence": 0,
+          "line": 245
+        },
+        {
+          "target": "ModuleBuilder",
+          "resolved": false,
+          "confidence": 0,
+          "line": 245
+        },
+        {
+          "target": "useCallback",
+          "resolved": false,
+          "confidence": 0,
+          "line": 254
+        },
+        {
+          "target": "fetchCredits",
+          "resolved": false,
+          "confidence": 0,
+          "line": 264
+        },
+        {
+          "target": "map",
+          "resolved": false,
+          "confidence": 0,
+          "line": 270
+        },
+        {
+          "target": "flatMap",
+          "resolved": false,
+          "confidence": 0,
+          "line": 270
+        },
+        {
+          "target": "includes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 273
+        },
+        {
+          "target": "getBoundingClientRect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 277
+        },
+        {
+          "target": "confetti",
+          "resolved": false,
+          "confidence": 0,
+          "line": 282
+        },
+        {
+          "target": "current",
+          "resolved": false,
+          "confidence": 0,
+          "line": 282
+        },
+        {
+          "target": "range",
+          "resolved": false,
+          "confidence": 0,
+          "line": 286
+        },
+        {
+          "target": "range",
+          "resolved": false,
+          "confidence": 0,
+          "line": 287
+        },
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 295
+        },
+        {
+          "target": "onWebSocketMessage",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 296,
+          "resolvedId": "src/lib/autogpt-server-api/client.ts:onWebSocketMessage:1118"
+        },
+        {
+          "target": "handleNotification",
+          "resolved": false,
+          "confidence": 0,
+          "line": 298
+        },
+        {
+          "target": "connectWebSocket",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 301,
+          "resolvedId": "src/lib/autogpt-server-api/client.ts:connectWebSocket:1160"
+        },
+        {
+          "target": "detachMessage",
+          "resolved": false,
+          "confidence": 0,
+          "line": 304
+        },
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 309
+        },
+        {
+          "target": "setPrevCredits",
+          "resolved": false,
+          "confidence": 0,
+          "line": 313
+        },
+        {
+          "target": "credits",
+          "resolved": false,
+          "confidence": 0,
+          "line": 313
+        },
+        {
+          "target": "setFlash",
+          "resolved": false,
+          "confidence": 0,
+          "line": 317
+        },
+        {
+          "target": "setTimeout",
+          "resolved": false,
+          "confidence": 0,
+          "line": 318
+        },
+        {
+          "target": "setFlash",
+          "resolved": false,
+          "confidence": 0,
+          "line": 319
+        },
+        {
+          "target": "Popover",
+          "resolved": false,
+          "confidence": 0,
+          "line": 327
+        },
+        {
+          "target": "walletOpen",
+          "resolved": false,
+          "confidence": 0,
+          "line": 328
+        },
+        {
+          "target": "setWalletOpen",
+          "resolved": false,
+          "confidence": 0,
+          "line": 330
+        },
+        {
+          "target": "open",
+          "resolved": false,
+          "confidence": 0,
+          "line": 330
+        },
+        {
+          "target": "set",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 334,
+          "resolvedId": "src/services/storage/local-storage.ts:set:29"
+        },
+        {
+          "target": "WALLET_LAST_SEEN_CREDITS",
+          "resolved": false,
+          "confidence": 0,
+          "line": 334
+        },
+        {
+          "target": "String",
+          "resolved": false,
+          "confidence": 0,
+          "line": 334
+        },
+        {
+          "target": "credits",
+          "resolved": false,
+          "confidence": 0,
+          "line": 334
+        },
+        {
+          "target": "setLastSeenCredits",
+          "resolved": false,
+          "confidence": 0,
+          "line": 335
+        },
+        {
+          "target": "credits",
+          "resolved": false,
+          "confidence": 0,
+          "line": 335
+        },
+        {
+          "target": "PopoverTrigger",
+          "resolved": false,
+          "confidence": 0,
+          "line": 340
+        },
+        {
+          "target": "walletRef",
+          "resolved": false,
+          "confidence": 0,
+          "line": 343
+        },
+        {
+          "target": "onWalletOpen",
+          "resolved": false,
+          "confidence": 0,
+          "line": 345
+        },
+        {
+          "target": "WalletIcon",
+          "resolved": false,
+          "confidence": 0,
+          "line": 347
+        },
+        {
+          "target": "formatCredits",
+          "resolved": false,
+          "confidence": 0,
+          "line": 351
+        },
+        {
+          "target": "credits",
+          "resolved": false,
+          "confidence": 0,
+          "line": 351
+        },
+        {
+          "target": "Text",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 357,
+          "resolvedId": "src/components/atoms/Text/Text.tsx:Text:15"
+        },
+        {
+          "target": "cn",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 364,
+          "resolvedId": "src/components/renderers/InputRenderer/utils/rjsf-utils.ts:cn:4"
+        },
+        {
+          "target": "PopoverContent",
+          "resolved": false,
+          "confidence": 0,
+          "line": 371
+        },
+        {
+          "target": "cn",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 375,
+          "resolvedId": "src/components/renderers/InputRenderer/utils/rjsf-utils.ts:cn:4"
+        },
+        {
+          "target": "formatCredits",
+          "resolved": false,
+          "confidence": 0,
+          "line": 385
+        },
+        {
+          "target": "credits",
+          "resolved": false,
+          "confidence": 0,
+          "line": 385
+        },
+        {
+          "target": "PopoverClose",
+          "resolved": false,
+          "confidence": 0,
+          "line": 387
+        },
+        {
+          "target": "X",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 388,
+          "resolvedId": "public/gtag.js:X:785"
+        },
+        {
+          "target": "ScrollArea",
+          "resolved": false,
+          "confidence": 0,
+          "line": 392
+        },
+        {
+          "target": "WalletRefill",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 394,
+          "resolvedId": "src/components/layout/Navbar/components/Wallet/components/WalletRefill.tsx:WalletRefill:45"
+        },
+        {
+          "target": "TaskGroups",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 399,
+          "resolvedId": "src/components/layout/Navbar/components/Wallet/components/WalletTaskGroups.tsx:TaskGroups:12"
+        },
+        {
+          "target": "groups",
+          "resolved": false,
+          "confidence": 0,
+          "line": 399
+        },
+        {
+          "target": "reduce",
+          "resolved": false,
+          "confidence": 0,
+          "line": 193
+        },
+        {
+          "target": "filter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 196
+        },
+        {
+          "target": "includes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 196
+        },
+        {
+          "target": "id",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 196,
+          "resolvedId": "public/gtag.js:id:112"
+        },
+        {
+          "target": "setCompletedCount",
+          "resolved": false,
+          "confidence": 0,
+          "line": 200
+        },
+        {
+          "target": "completed",
+          "resolved": false,
+          "confidence": 0,
+          "line": 200
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 205,
+          "resolvedId": "src/services/storage/local-storage.ts:get:16"
+        },
+        {
+          "target": "WALLET_LAST_SEEN_CREDITS",
+          "resolved": false,
+          "confidence": 0,
+          "line": 205
+        },
+        {
+          "target": "parseFloat",
+          "resolved": false,
+          "confidence": 0,
+          "line": 207
+        },
+        {
+          "target": "stored",
+          "resolved": false,
+          "confidence": 0,
+          "line": 207
+        },
+        {
+          "target": "isNaN",
+          "resolved": false,
+          "confidence": 0,
+          "line": 208
+        },
+        {
+          "target": "parsed",
+          "resolved": false,
+          "confidence": 0,
+          "line": 208
+        },
+        {
+          "target": "setLastSeenCredits",
+          "resolved": false,
+          "confidence": 0,
+          "line": 208
+        },
+        {
+          "target": "parsed",
+          "resolved": false,
+          "confidence": 0,
+          "line": 208
+        },
+        {
+          "target": "setLastSeenCredits",
+          "resolved": false,
+          "confidence": 0,
+          "line": 209
+        },
+        {
+          "target": "setLastSeenCredits",
+          "resolved": false,
+          "confidence": 0,
+          "line": 211
+        },
+        {
+          "target": "requestAnimationFrame",
+          "resolved": false,
+          "confidence": 0,
+          "line": 220
+        },
+        {
+          "target": "setWalletOpen",
+          "resolved": false,
+          "confidence": 0,
+          "line": 220
+        },
+        {
+          "target": "updateState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 222
+        },
+        {
+          "target": "requestAnimationFrame",
+          "resolved": false,
+          "confidence": 0,
+          "line": 231
+        },
+        {
+          "target": "setWalletOpen",
+          "resolved": false,
+          "confidence": 0,
+          "line": 231
+        },
+        {
+          "target": "setWalletOpen",
+          "resolved": false,
+          "confidence": 0,
+          "line": 220
+        },
+        {
+          "target": "setWalletOpen",
+          "resolved": false,
+          "confidence": 0,
+          "line": 231
+        },
+        {
+          "target": "onWebSocketMessage",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 296,
+          "resolvedId": "src/lib/autogpt-server-api/client.ts:onWebSocketMessage:1118"
+        },
+        {
+          "target": "handleNotification",
+          "resolved": false,
+          "confidence": 0,
+          "line": 298
+        },
+        {
+          "target": "connectWebSocket",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 301,
+          "resolvedId": "src/lib/autogpt-server-api/client.ts:connectWebSocket:1160"
+        },
+        {
+          "target": "detachMessage",
+          "resolved": false,
+          "confidence": 0,
+          "line": 304
+        },
+        {
+          "target": "setPrevCredits",
+          "resolved": false,
+          "confidence": 0,
+          "line": 313
+        },
+        {
+          "target": "credits",
+          "resolved": false,
+          "confidence": 0,
+          "line": 313
+        },
+        {
+          "target": "setFlash",
+          "resolved": false,
+          "confidence": 0,
+          "line": 317
+        },
+        {
+          "target": "setTimeout",
+          "resolved": false,
+          "confidence": 0,
+          "line": 318
+        },
+        {
+          "target": "setFlash",
+          "resolved": false,
+          "confidence": 0,
+          "line": 319
+        },
+        {
+          "target": "setFlash",
+          "resolved": false,
+          "confidence": 0,
+          "line": 319
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/layout/Navbar/components/Wallet/Wallet.tsx:$useEffect$1:189",
+      "name": "$useEffect$1",
+      "startLine": 189,
+      "endLine": 201,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 189
+        },
+        {
+          "target": "reduce",
+          "resolved": false,
+          "confidence": 0,
+          "line": 193
+        },
+        {
+          "target": "filter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 196
+        },
+        {
+          "target": "includes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 196
+        },
+        {
+          "target": "id",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 196,
+          "resolvedId": "public/gtag.js:id:112"
+        },
+        {
+          "target": "setCompletedCount",
+          "resolved": false,
+          "confidence": 0,
+          "line": 200
+        },
+        {
+          "target": "completed",
+          "resolved": false,
+          "confidence": 0,
+          "line": 200
+        },
+        {
+          "target": "reduce",
+          "resolved": false,
+          "confidence": 0,
+          "line": 193
+        },
+        {
+          "target": "filter",
+          "resolved": false,
+          "confidence": 0,
+          "line": 196
+        },
+        {
+          "target": "includes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 196
+        },
+        {
+          "target": "id",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 196,
+          "resolvedId": "public/gtag.js:id:112"
+        },
+        {
+          "target": "setCompletedCount",
+          "resolved": false,
+          "confidence": 0,
+          "line": 200
+        },
+        {
+          "target": "completed",
+          "resolved": false,
+          "confidence": 0,
+          "line": 200
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/layout/Navbar/components/Wallet/Wallet.tsx:$useEffect$2:204",
+      "name": "$useEffect$2",
+      "startLine": 204,
+      "endLine": 213,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 204
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 205,
+          "resolvedId": "src/services/storage/local-storage.ts:get:16"
+        },
+        {
+          "target": "WALLET_LAST_SEEN_CREDITS",
+          "resolved": false,
+          "confidence": 0,
+          "line": 205
+        },
+        {
+          "target": "parseFloat",
+          "resolved": false,
+          "confidence": 0,
+          "line": 207
+        },
+        {
+          "target": "stored",
+          "resolved": false,
+          "confidence": 0,
+          "line": 207
+        },
+        {
+          "target": "isNaN",
+          "resolved": false,
+          "confidence": 0,
+          "line": 208
+        },
+        {
+          "target": "parsed",
+          "resolved": false,
+          "confidence": 0,
+          "line": 208
+        },
+        {
+          "target": "setLastSeenCredits",
+          "resolved": false,
+          "confidence": 0,
+          "line": 208
+        },
+        {
+          "target": "parsed",
+          "resolved": false,
+          "confidence": 0,
+          "line": 208
+        },
+        {
+          "target": "setLastSeenCredits",
+          "resolved": false,
+          "confidence": 0,
+          "line": 209
+        },
+        {
+          "target": "setLastSeenCredits",
+          "resolved": false,
+          "confidence": 0,
+          "line": 211
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 205,
+          "resolvedId": "src/services/storage/local-storage.ts:get:16"
+        },
+        {
+          "target": "WALLET_LAST_SEEN_CREDITS",
+          "resolved": false,
+          "confidence": 0,
+          "line": 205
+        },
+        {
+          "target": "parseFloat",
+          "resolved": false,
+          "confidence": 0,
+          "line": 207
+        },
+        {
+          "target": "stored",
+          "resolved": false,
+          "confidence": 0,
+          "line": 207
+        },
+        {
+          "target": "isNaN",
+          "resolved": false,
+          "confidence": 0,
+          "line": 208
+        },
+        {
+          "target": "parsed",
+          "resolved": false,
+          "confidence": 0,
+          "line": 208
+        },
+        {
+          "target": "setLastSeenCredits",
+          "resolved": false,
+          "confidence": 0,
+          "line": 208
+        },
+        {
+          "target": "parsed",
+          "resolved": false,
+          "confidence": 0,
+          "line": 208
+        },
+        {
+          "target": "setLastSeenCredits",
+          "resolved": false,
+          "confidence": 0,
+          "line": 209
+        },
+        {
+          "target": "setLastSeenCredits",
+          "resolved": false,
+          "confidence": 0,
+          "line": 211
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/layout/Navbar/components/Wallet/Wallet.tsx:$useEffect$3:216",
+      "name": "$useEffect$3",
+      "startLine": 216,
+      "endLine": 233,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 216
+        },
+        {
+          "target": "requestAnimationFrame",
+          "resolved": false,
+          "confidence": 0,
+          "line": 220
+        },
+        {
+          "target": "setWalletOpen",
+          "resolved": false,
+          "confidence": 0,
+          "line": 220
+        },
+        {
+          "target": "updateState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 222
+        },
+        {
+          "target": "requestAnimationFrame",
+          "resolved": false,
+          "confidence": 0,
+          "line": 231
+        },
+        {
+          "target": "setWalletOpen",
+          "resolved": false,
+          "confidence": 0,
+          "line": 231
+        },
+        {
+          "target": "requestAnimationFrame",
+          "resolved": false,
+          "confidence": 0,
+          "line": 220
+        },
+        {
+          "target": "setWalletOpen",
+          "resolved": false,
+          "confidence": 0,
+          "line": 220
+        },
+        {
+          "target": "updateState",
+          "resolved": false,
+          "confidence": 0,
+          "line": 222
+        },
+        {
+          "target": "requestAnimationFrame",
+          "resolved": false,
+          "confidence": 0,
+          "line": 231
+        },
+        {
+          "target": "setWalletOpen",
+          "resolved": false,
+          "confidence": 0,
+          "line": 231
+        },
+        {
+          "target": "setWalletOpen",
+          "resolved": false,
+          "confidence": 0,
+          "line": 220
+        },
+        {
+          "target": "setWalletOpen",
+          "resolved": false,
+          "confidence": 0,
+          "line": 231
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/layout/Navbar/components/Wallet/Wallet.tsx:$requestAnimationFrame$1:220",
+      "name": "$requestAnimationFrame$1",
+      "startLine": 220,
+      "endLine": 220,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "requestAnimationFrame",
+          "resolved": false,
+          "confidence": 0,
+          "line": 220
+        },
+        {
+          "target": "setWalletOpen",
+          "resolved": false,
+          "confidence": 0,
+          "line": 220
+        },
+        {
+          "target": "requestAnimationFrame",
+          "resolved": false,
+          "confidence": 0,
+          "line": 220
+        },
+        {
+          "target": "setWalletOpen",
+          "resolved": false,
+          "confidence": 0,
+          "line": 220
+        },
+        {
+          "target": "setWalletOpen",
+          "resolved": false,
+          "confidence": 0,
+          "line": 220
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/layout/Navbar/components/Wallet/Wallet.tsx:$requestAnimationFrame$2:231",
+      "name": "$requestAnimationFrame$2",
+      "startLine": 231,
+      "endLine": 231,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "requestAnimationFrame",
+          "resolved": false,
+          "confidence": 0,
+          "line": 231
+        },
+        {
+          "target": "setWalletOpen",
+          "resolved": false,
+          "confidence": 0,
+          "line": 231
+        },
+        {
+          "target": "requestAnimationFrame",
+          "resolved": false,
+          "confidence": 0,
+          "line": 231
+        },
+        {
+          "target": "setWalletOpen",
+          "resolved": false,
+          "confidence": 0,
+          "line": 231
+        },
+        {
+          "target": "setWalletOpen",
+          "resolved": false,
+          "confidence": 0,
+          "line": 231
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/layout/Navbar/components/Wallet/Wallet.tsx:$useEffect$4:295",
+      "name": "$useEffect$4",
+      "startLine": 295,
+      "endLine": 306,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 295
+        },
+        {
+          "target": "onWebSocketMessage",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 296,
+          "resolvedId": "src/lib/autogpt-server-api/client.ts:onWebSocketMessage:1118"
+        },
+        {
+          "target": "handleNotification",
+          "resolved": false,
+          "confidence": 0,
+          "line": 298
+        },
+        {
+          "target": "connectWebSocket",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 301,
+          "resolvedId": "src/lib/autogpt-server-api/client.ts:connectWebSocket:1160"
+        },
+        {
+          "target": "detachMessage",
+          "resolved": false,
+          "confidence": 0,
+          "line": 304
+        },
+        {
+          "target": "onWebSocketMessage",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 296,
+          "resolvedId": "src/lib/autogpt-server-api/client.ts:onWebSocketMessage:1118"
+        },
+        {
+          "target": "handleNotification",
+          "resolved": false,
+          "confidence": 0,
+          "line": 298
+        },
+        {
+          "target": "connectWebSocket",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 301,
+          "resolvedId": "src/lib/autogpt-server-api/client.ts:connectWebSocket:1160"
+        },
+        {
+          "target": "detachMessage",
+          "resolved": false,
+          "confidence": 0,
+          "line": 304
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/layout/Navbar/components/Wallet/Wallet.tsx:$useEffect$5:309",
+      "name": "$useEffect$5",
+      "startLine": 309,
+      "endLine": 321,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 309
+        },
+        {
+          "target": "setPrevCredits",
+          "resolved": false,
+          "confidence": 0,
+          "line": 313
+        },
+        {
+          "target": "credits",
+          "resolved": false,
+          "confidence": 0,
+          "line": 313
+        },
+        {
+          "target": "setFlash",
+          "resolved": false,
+          "confidence": 0,
+          "line": 317
+        },
+        {
+          "target": "setTimeout",
+          "resolved": false,
+          "confidence": 0,
+          "line": 318
+        },
+        {
+          "target": "setFlash",
+          "resolved": false,
+          "confidence": 0,
+          "line": 319
+        },
+        {
+          "target": "setPrevCredits",
+          "resolved": false,
+          "confidence": 0,
+          "line": 313
+        },
+        {
+          "target": "credits",
+          "resolved": false,
+          "confidence": 0,
+          "line": 313
+        },
+        {
+          "target": "setFlash",
+          "resolved": false,
+          "confidence": 0,
+          "line": 317
+        },
+        {
+          "target": "setTimeout",
+          "resolved": false,
+          "confidence": 0,
+          "line": 318
+        },
+        {
+          "target": "setFlash",
+          "resolved": false,
+          "confidence": 0,
+          "line": 319
+        },
+        {
+          "target": "setFlash",
+          "resolved": false,
+          "confidence": 0,
+          "line": 319
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/layout/Navbar/components/Wallet/Wallet.tsx:$setTimeout$1:318",
+      "name": "$setTimeout$1",
+      "startLine": 318,
+      "endLine": 320,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "setTimeout",
+          "resolved": false,
+          "confidence": 0,
+          "line": 318
+        },
+        {
+          "target": "setFlash",
+          "resolved": false,
+          "confidence": 0,
+          "line": 319
+        },
+        {
+          "target": "setTimeout",
+          "resolved": false,
+          "confidence": 0,
+          "line": 318
+        },
+        {
+          "target": "setFlash",
+          "resolved": false,
+          "confidence": 0,
+          "line": 319
+        },
+        {
+          "target": "setFlash",
+          "resolved": false,
+          "confidence": 0,
+          "line": 319
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

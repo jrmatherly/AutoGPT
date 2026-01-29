@@ -1,0 +1,76 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.082Z",
+  "checksum": "65655201bcbf8292",
+  "file": "src/services/feature-flags/feature-flag-provider.tsx",
+  "functions": [
+    {
+      "id": "src/services/feature-flags/feature-flag-provider.tsx:LaunchDarklyProvider:14",
+      "name": "LaunchDarklyProvider",
+      "startLine": 14,
+      "endLine": 59,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useSupabase",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 15,
+          "resolvedId": "src/lib/supabase/hooks/useSupabase.ts:useSupabase:10"
+        },
+        {
+          "target": "isCloud",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 16,
+          "resolvedId": "src/services/environment/index.ts:isCloud:102"
+        },
+        {
+          "target": "useMemo",
+          "resolved": false,
+          "confidence": 0,
+          "line": 19
+        },
+        {
+          "target": "LDProvider",
+          "resolved": false,
+          "confidence": 0,
+          "line": 44
+        },
+        {
+          "target": "key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 46
+        },
+        {
+          "target": "clientId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 47
+        },
+        {
+          "target": "context",
+          "resolved": false,
+          "confidence": 0,
+          "line": 48
+        },
+        {
+          "target": "LAUNCHDARKLY_INIT_TIMEOUT_MS",
+          "resolved": false,
+          "confidence": 0,
+          "line": 49
+        },
+        {
+          "target": "buildLaunchDarklyFlagUsedHandler",
+          "resolved": false,
+          "confidence": 0,
+          "line": 53
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

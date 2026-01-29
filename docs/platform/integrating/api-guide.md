@@ -44,6 +44,7 @@ See the [SSO Integration Guide](sso-guide.md) for complete OAuth implementation 
 When using OAuth, request only the scopes your application needs:
 
 | Scope | Description |
+
 |-------|-------------|
 | `IDENTITY` | Read user ID, e-mail, and timezone |
 | `EXECUTE_GRAPH` | Run agents |

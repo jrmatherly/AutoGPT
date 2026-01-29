@@ -1,0 +1,326 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:21.047Z",
+  "checksum": "ec172af3474a6644",
+  "file": "autogpt_libs/auth/jwt_utils.py",
+  "functions": [
+    {
+      "id": "autogpt_libs/auth/jwt_utils.py:get_jwt_payload:19",
+      "name": "get_jwt_payload",
+      "startLine": 19,
+      "endLine": 42,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "Security",
+          "resolved": false,
+          "confidence": 0,
+          "line": 20
+        },
+        {
+          "target": "HTTPException",
+          "resolved": false,
+          "confidence": 0,
+          "line": 35
+        },
+        {
+          "target": "parse_jwt_token",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 38,
+          "resolvedId": "autogpt_libs/auth/jwt_utils.py:parse_jwt_token:45"
+        },
+        {
+          "target": "debug",
+          "resolved": false,
+          "confidence": 0,
+          "line": 39
+        },
+        {
+          "target": "HTTPException",
+          "resolved": false,
+          "confidence": 0,
+          "line": 42
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 42
+        },
+        {
+          "target": "e",
+          "resolved": false,
+          "confidence": 0,
+          "line": 42
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "autogpt_libs/auth/jwt_utils.py:parse_jwt_token:45",
+      "name": "parse_jwt_token",
+      "startLine": 45,
+      "endLine": 65,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "get_settings",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 53,
+          "resolvedId": "autogpt_libs/auth/config.py:get_settings:74"
+        },
+        {
+          "target": "decode",
+          "resolved": false,
+          "confidence": 0,
+          "line": 55
+        },
+        {
+          "target": "token",
+          "resolved": false,
+          "confidence": 0,
+          "line": 56
+        },
+        {
+          "target": "ValueError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 63
+        },
+        {
+          "target": "ValueError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 65
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 65
+        },
+        {
+          "target": "e",
+          "resolved": false,
+          "confidence": 0,
+          "line": 65
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "autogpt_libs/auth/jwt_utils.py:verify_user:68",
+      "name": "verify_user",
+      "startLine": 68,
+      "endLine": 80,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "HTTPException",
+          "resolved": false,
+          "confidence": 0,
+          "line": 70
+        },
+        {
+          "target": "get",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        },
+        {
+          "target": "HTTPException",
+          "resolved": false,
+          "confidence": 0,
+          "line": 75
+        },
+        {
+          "target": "HTTPException",
+          "resolved": false,
+          "confidence": 0,
+          "line": 78
+        },
+        {
+          "target": "from_payload",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 80,
+          "resolvedId": "autogpt_libs/auth/models.py:from_payload:16"
+        },
+        {
+          "target": "jwt_payload",
+          "resolved": false,
+          "confidence": 0,
+          "line": 80
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "autogpt_libs/auth/jwt_utils.py:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 81,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "getLogger",
+          "resolved": false,
+          "confidence": 0,
+          "line": 11
+        },
+        {
+          "target": "HTTPBearer",
+          "resolved": false,
+          "confidence": 0,
+          "line": 14
+        },
+        {
+          "target": "Security",
+          "resolved": false,
+          "confidence": 0,
+          "line": 20
+        },
+        {
+          "target": "HTTPException",
+          "resolved": false,
+          "confidence": 0,
+          "line": 35
+        },
+        {
+          "target": "parse_jwt_token",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 38,
+          "resolvedId": "autogpt_libs/auth/jwt_utils.py:parse_jwt_token:45"
+        },
+        {
+          "target": "debug",
+          "resolved": false,
+          "confidence": 0,
+          "line": 39
+        },
+        {
+          "target": "HTTPException",
+          "resolved": false,
+          "confidence": 0,
+          "line": 42
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 42
+        },
+        {
+          "target": "e",
+          "resolved": false,
+          "confidence": 0,
+          "line": 42
+        },
+        {
+          "target": "get_settings",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 53,
+          "resolvedId": "autogpt_libs/auth/config.py:get_settings:74"
+        },
+        {
+          "target": "decode",
+          "resolved": false,
+          "confidence": 0,
+          "line": 55
+        },
+        {
+          "target": "token",
+          "resolved": false,
+          "confidence": 0,
+          "line": 56
+        },
+        {
+          "target": "ValueError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 63
+        },
+        {
+          "target": "ValueError",
+          "resolved": false,
+          "confidence": 0,
+          "line": 65
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 65
+        },
+        {
+          "target": "e",
+          "resolved": false,
+          "confidence": 0,
+          "line": 65
+        },
+        {
+          "target": "HTTPException",
+          "resolved": false,
+          "confidence": 0,
+          "line": 70
+        },
+        {
+          "target": "get",
+          "resolved": false,
+          "confidence": 0,
+          "line": 72
+        },
+        {
+          "target": "HTTPException",
+          "resolved": false,
+          "confidence": 0,
+          "line": 75
+        },
+        {
+          "target": "HTTPException",
+          "resolved": false,
+          "confidence": 0,
+          "line": 78
+        },
+        {
+          "target": "from_payload",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 80,
+          "resolvedId": "autogpt_libs/auth/models.py:from_payload:16"
+        },
+        {
+          "target": "jwt_payload",
+          "resolved": false,
+          "confidence": 0,
+          "line": 80
+        },
+        {
+          "target": "getLogger",
+          "resolved": false,
+          "confidence": 0,
+          "line": 11
+        },
+        {
+          "target": "HTTPBearer",
+          "resolved": false,
+          "confidence": 0,
+          "line": 14
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

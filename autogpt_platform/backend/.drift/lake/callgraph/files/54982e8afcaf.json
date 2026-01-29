@@ -1,0 +1,2258 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.157Z",
+  "checksum": "69d1e5816eea11f9",
+  "file": "test/load_store_agents.py",
+  "functions": [
+    {
+      "id": "test/load_store_agents.py:initialize_blocks:47",
+      "name": "initialize_blocks",
+      "startLine": 47,
+      "endLine": 87,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 54
+        },
+        {
+          "target": "get_blocks",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 55,
+          "resolvedId": "backend/api/features/builder/routes.py:get_blocks:89"
+        },
+        {
+          "target": "set",
+          "resolved": false,
+          "confidence": 0,
+          "line": 57
+        },
+        {
+          "target": "values",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 59,
+          "resolvedId": "backend/integrations/oauth/__init__.py:values:112"
+        },
+        {
+          "target": "block_cls",
+          "resolved": false,
+          "confidence": 0,
+          "line": 60
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 61,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "find_first",
+          "resolved": false,
+          "confidence": 0,
+          "line": 62
+        },
+        {
+          "target": "create",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 66,
+          "resolvedId": "backend/integrations/creds_manager.py:create:68"
+        },
+        {
+          "target": "AgentBlockCreateInput",
+          "resolved": false,
+          "confidence": 0,
+          "line": 67
+        },
+        {
+          "target": "dumps",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 70,
+          "resolvedId": "backend/util/json.py:dumps:20"
+        },
+        {
+          "target": "jsonschema",
+          "resolved": false,
+          "confidence": 0,
+          "line": 70
+        },
+        {
+          "target": "dumps",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 71,
+          "resolvedId": "backend/util/json.py:dumps:20"
+        },
+        {
+          "target": "jsonschema",
+          "resolved": false,
+          "confidence": 0,
+          "line": 71
+        },
+        {
+          "target": "update",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 76,
+          "resolvedId": "backend/integrations/creds_manager.py:update:162"
+        },
+        {
+          "target": "dumps",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 81,
+          "resolvedId": "backend/util/json.py:dumps:20"
+        },
+        {
+          "target": "jsonschema",
+          "resolved": false,
+          "confidence": 0,
+          "line": 81
+        },
+        {
+          "target": "dumps",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 82,
+          "resolvedId": "backend/util/json.py:dumps:20"
+        },
+        {
+          "target": "jsonschema",
+          "resolved": false,
+          "confidence": 0,
+          "line": 82
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 86
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 86
+        },
+        {
+          "target": "blocks",
+          "resolved": false,
+          "confidence": 0,
+          "line": 86
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/load_store_agents.py:ensure_block_exists:90",
+      "name": "ensure_block_exists",
+      "startLine": 90,
+      "endLine": 121,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "find_unique",
+          "resolved": false,
+          "confidence": 0,
+          "line": 101
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 103,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "block_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 103
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 107
+        },
+        {
+          "target": "create",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 109,
+          "resolvedId": "backend/integrations/creds_manager.py:create:68"
+        },
+        {
+          "target": "AgentBlockCreateInput",
+          "resolved": false,
+          "confidence": 0,
+          "line": 110
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 117,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "block_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 117
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 120
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/load_store_agents.py:parse_image_urls:124",
+      "name": "parse_image_urls",
+      "startLine": 124,
+      "endLine": 131,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "loads",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 129,
+          "resolvedId": "backend/util/json.py:loads:77"
+        },
+        {
+          "target": "image_str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 129
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/load_store_agents.py:parse_categories:134",
+      "name": "parse_categories",
+      "startLine": 134,
+      "endLine": 141,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "loads",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 139,
+          "resolvedId": "backend/util/json.py:loads:77"
+        },
+        {
+          "target": "categories_str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 139
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/load_store_agents.py:sanitize_slug:144",
+      "name": "sanitize_slug",
+      "startLine": 144,
+      "endLine": 146,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "sub",
+          "resolved": false,
+          "confidence": 0,
+          "line": 146
+        },
+        {
+          "target": "lower",
+          "resolved": false,
+          "confidence": 0,
+          "line": 146
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/load_store_agents.py:create_user_and_profile:149",
+      "name": "create_user_and_profile",
+      "startLine": 149,
+      "endLine": 184,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "find_unique",
+          "resolved": false,
+          "confidence": 0,
+          "line": 152
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 154
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 156
+        },
+        {
+          "target": "create",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 157,
+          "resolvedId": "backend/integrations/creds_manager.py:create:68"
+        },
+        {
+          "target": "UserCreateInput",
+          "resolved": false,
+          "confidence": 0,
+          "line": 158
+        },
+        {
+          "target": "Json",
+          "resolved": false,
+          "confidence": 0,
+          "line": 162
+        },
+        {
+          "target": "find_first",
+          "resolved": false,
+          "confidence": 0,
+          "line": 168
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 170
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 174
+        },
+        {
+          "target": "create",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 175,
+          "resolvedId": "backend/integrations/creds_manager.py:create:68"
+        },
+        {
+          "target": "ProfileCreateInput",
+          "resolved": false,
+          "confidence": 0,
+          "line": 176
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/load_store_agents.py:load_csv_metadata:187",
+      "name": "load_csv_metadata",
+      "startLine": 187,
+      "endLine": 208,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "open",
+          "resolved": false,
+          "confidence": 0,
+          "line": 190
+        },
+        {
+          "target": "DictReader",
+          "resolved": false,
+          "confidence": 0,
+          "line": 191
+        },
+        {
+          "target": "f",
+          "resolved": false,
+          "confidence": 0,
+          "line": 191
+        },
+        {
+          "target": "sanitize_slug",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 197,
+          "resolvedId": "test/load_store_agents.py:sanitize_slug:144"
+        },
+        {
+          "target": "parse_image_urls",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 200,
+          "resolvedId": "test/load_store_agents.py:parse_image_urls:124"
+        },
+        {
+          "target": "lower",
+          "resolved": false,
+          "confidence": 0,
+          "line": 201
+        },
+        {
+          "target": "parse_categories",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 204,
+          "resolvedId": "test/load_store_agents.py:parse_categories:134"
+        },
+        {
+          "target": "lower",
+          "resolved": false,
+          "confidence": 0,
+          "line": 205
+        },
+        {
+          "target": "lower",
+          "resolved": false,
+          "confidence": 0,
+          "line": 206
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/load_store_agents.py:load_agent_json:211",
+      "name": "load_agent_json",
+      "startLine": 211,
+      "endLine": 214,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "open",
+          "resolved": false,
+          "confidence": 0,
+          "line": 213
+        },
+        {
+          "target": "json_path",
+          "resolved": false,
+          "confidence": 0,
+          "line": 213
+        },
+        {
+          "target": "load",
+          "resolved": false,
+          "confidence": 0,
+          "line": 214
+        },
+        {
+          "target": "f",
+          "resolved": false,
+          "confidence": 0,
+          "line": 214
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/load_store_agents.py:create_agent_graph:217",
+      "name": "create_agent_graph",
+      "startLine": 217,
+      "endLine": 294,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 222,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "find_unique",
+          "resolved": false,
+          "confidence": 0,
+          "line": 225
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 229
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 232
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 233,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "create",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 237,
+          "resolvedId": "backend/integrations/creds_manager.py:create:68"
+        },
+        {
+          "target": "AgentGraphCreateInput",
+          "resolved": false,
+          "confidence": 0,
+          "line": 238
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 241,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 242,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 243,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 244,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 245,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 247,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 248,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 253,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "ensure_block_exists",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 257,
+          "resolvedId": "test/load_store_agents.py:ensure_block_exists:90"
+        },
+        {
+          "target": "db",
+          "resolved": false,
+          "confidence": 0,
+          "line": 257
+        },
+        {
+          "target": "block_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 257
+        },
+        {
+          "target": "known_blocks",
+          "resolved": false,
+          "confidence": 0,
+          "line": 257
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 259
+        },
+        {
+          "target": "create",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 264,
+          "resolvedId": "backend/integrations/creds_manager.py:create:68"
+        },
+        {
+          "target": "AgentNodeCreateInput",
+          "resolved": false,
+          "confidence": 0,
+          "line": 265
+        },
+        {
+          "target": "Json",
+          "resolved": false,
+          "confidence": 0,
+          "line": 270
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 270,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "Json",
+          "resolved": false,
+          "confidence": 0,
+          "line": 271
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 271,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 276,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "create",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 278,
+          "resolvedId": "backend/integrations/creds_manager.py:create:68"
+        },
+        {
+          "target": "AgentNodeLinkCreateInput",
+          "resolved": false,
+          "confidence": 0,
+          "line": 279
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 285,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 290,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "create_agent_graph",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 292,
+          "resolvedId": "test/load_store_agents.py:create_agent_graph:217"
+        },
+        {
+          "target": "db",
+          "resolved": false,
+          "confidence": 0,
+          "line": 292
+        },
+        {
+          "target": "sub_graph",
+          "resolved": false,
+          "confidence": 0,
+          "line": 292
+        },
+        {
+          "target": "known_blocks",
+          "resolved": false,
+          "confidence": 0,
+          "line": 292
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "graph",
+          "operation": "read",
+          "line": 233,
+          "fields": [
+            "name"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "test/load_store_agents.py:create_store_listing:297",
+      "name": "create_store_listing",
+      "startLine": 297,
+      "endLine": 363,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "find_unique",
+          "resolved": false,
+          "confidence": 0,
+          "line": 308
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 310
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 313
+        },
+        {
+          "target": "create",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 324,
+          "resolvedId": "backend/integrations/creds_manager.py:create:68"
+        },
+        {
+          "target": "StoreListingCreateInput",
+          "resolved": false,
+          "confidence": 0,
+          "line": 325
+        },
+        {
+          "target": "create",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 337,
+          "resolvedId": "backend/integrations/creds_manager.py:create:68"
+        },
+        {
+          "target": "StoreListingVersionCreateInput",
+          "resolved": false,
+          "confidence": 0,
+          "line": 338
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 352
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 353
+        },
+        {
+          "target": "update",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 360,
+          "resolvedId": "backend/integrations/creds_manager.py:update:162"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/load_store_agents.py:main:366",
+      "name": "main",
+      "startLine": 366,
+      "endLine": 446,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 368
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 369
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 370
+        },
+        {
+          "target": "Prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 372
+        },
+        {
+          "target": "connect",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 373,
+          "resolvedId": "backend/data/rabbitmq.py:connect:102"
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 377
+        },
+        {
+          "target": "initialize_blocks",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 378,
+          "resolvedId": "test/load_store_agents.py:initialize_blocks:47"
+        },
+        {
+          "target": "db",
+          "resolved": false,
+          "confidence": 0,
+          "line": 378
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 381
+        },
+        {
+          "target": "create_user_and_profile",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 382,
+          "resolvedId": "test/load_store_agents.py:create_user_and_profile:149"
+        },
+        {
+          "target": "db",
+          "resolved": false,
+          "confidence": 0,
+          "line": 382
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 385
+        },
+        {
+          "target": "load_csv_metadata",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 386,
+          "resolvedId": "test/load_store_agents.py:load_csv_metadata:187"
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 387
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 387
+        },
+        {
+          "target": "csv_metadata",
+          "resolved": false,
+          "confidence": 0,
+          "line": 387
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 390
+        },
+        {
+          "target": "list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 391
+        },
+        {
+          "target": "glob",
+          "resolved": false,
+          "confidence": 0,
+          "line": 391
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 392
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 392
+        },
+        {
+          "target": "json_files",
+          "resolved": false,
+          "confidence": 0,
+          "line": 392
+        },
+        {
+          "target": "replace",
+          "resolved": false,
+          "confidence": 0,
+          "line": 400
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 403
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 410
+        },
+        {
+          "target": "tx",
+          "resolved": false,
+          "confidence": 0,
+          "line": 414
+        },
+        {
+          "target": "load_agent_json",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 416,
+          "resolvedId": "test/load_store_agents.py:load_agent_json:211"
+        },
+        {
+          "target": "json_file",
+          "resolved": false,
+          "confidence": 0,
+          "line": 416
+        },
+        {
+          "target": "create_agent_graph",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 417,
+          "resolvedId": "test/load_store_agents.py:create_agent_graph:217"
+        },
+        {
+          "target": "tx",
+          "resolved": false,
+          "confidence": 0,
+          "line": 418
+        },
+        {
+          "target": "agent_data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 418
+        },
+        {
+          "target": "known_blocks",
+          "resolved": false,
+          "confidence": 0,
+          "line": 418
+        },
+        {
+          "target": "create_store_listing",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 423,
+          "resolvedId": "test/load_store_agents.py:create_store_listing:297"
+        },
+        {
+          "target": "tx",
+          "resolved": false,
+          "confidence": 0,
+          "line": 423
+        },
+        {
+          "target": "graph_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 423
+        },
+        {
+          "target": "graph_version",
+          "resolved": false,
+          "confidence": 0,
+          "line": 423
+        },
+        {
+          "target": "metadata",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 423,
+          "resolvedId": "backend/blocks/stagehand/blocks.py:metadata:113"
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 425
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 426
+        },
+        {
+          "target": "agent_name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 426
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 430
+        },
+        {
+          "target": "execute_raw",
+          "resolved": false,
+          "confidence": 0,
+          "line": 432
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 433
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 435
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 437
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 438
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 438
+        },
+        {
+          "target": "loaded_graphs",
+          "resolved": false,
+          "confidence": 0,
+          "line": 438
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 440
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 441
+        },
+        {
+          "target": "failed_agents",
+          "resolved": false,
+          "confidence": 0,
+          "line": 441
+        },
+        {
+          "target": "join",
+          "resolved": false,
+          "confidence": 0,
+          "line": 441
+        },
+        {
+          "target": "failed_agents",
+          "resolved": false,
+          "confidence": 0,
+          "line": 441
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 443
+        },
+        {
+          "target": "disconnect",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 446,
+          "resolvedId": "backend/data/rabbitmq.py:disconnect:107"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/load_store_agents.py:run:449",
+      "name": "run",
+      "startLine": 449,
+      "endLine": 451,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "run",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 451,
+          "resolvedId": "test/load_store_agents.py:run:449"
+        },
+        {
+          "target": "main",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 451,
+          "resolvedId": "test/load_store_agents.py:main:366"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "test/load_store_agents.py:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 456,
+      "isEntryPoint": false,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "Path",
+          "resolved": false,
+          "confidence": 0,
+          "line": 37
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 54
+        },
+        {
+          "target": "get_blocks",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 55,
+          "resolvedId": "backend/api/features/builder/routes.py:get_blocks:89"
+        },
+        {
+          "target": "set",
+          "resolved": false,
+          "confidence": 0,
+          "line": 57
+        },
+        {
+          "target": "values",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 59,
+          "resolvedId": "backend/integrations/oauth/__init__.py:values:112"
+        },
+        {
+          "target": "block_cls",
+          "resolved": false,
+          "confidence": 0,
+          "line": 60
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 61,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "find_first",
+          "resolved": false,
+          "confidence": 0,
+          "line": 62
+        },
+        {
+          "target": "create",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 66,
+          "resolvedId": "backend/integrations/creds_manager.py:create:68"
+        },
+        {
+          "target": "AgentBlockCreateInput",
+          "resolved": false,
+          "confidence": 0,
+          "line": 67
+        },
+        {
+          "target": "dumps",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 70,
+          "resolvedId": "backend/util/json.py:dumps:20"
+        },
+        {
+          "target": "jsonschema",
+          "resolved": false,
+          "confidence": 0,
+          "line": 70
+        },
+        {
+          "target": "dumps",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 71,
+          "resolvedId": "backend/util/json.py:dumps:20"
+        },
+        {
+          "target": "jsonschema",
+          "resolved": false,
+          "confidence": 0,
+          "line": 71
+        },
+        {
+          "target": "update",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 76,
+          "resolvedId": "backend/integrations/creds_manager.py:update:162"
+        },
+        {
+          "target": "dumps",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 81,
+          "resolvedId": "backend/util/json.py:dumps:20"
+        },
+        {
+          "target": "jsonschema",
+          "resolved": false,
+          "confidence": 0,
+          "line": 81
+        },
+        {
+          "target": "dumps",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 82,
+          "resolvedId": "backend/util/json.py:dumps:20"
+        },
+        {
+          "target": "jsonschema",
+          "resolved": false,
+          "confidence": 0,
+          "line": 82
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 86
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 86
+        },
+        {
+          "target": "blocks",
+          "resolved": false,
+          "confidence": 0,
+          "line": 86
+        },
+        {
+          "target": "find_unique",
+          "resolved": false,
+          "confidence": 0,
+          "line": 101
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 103,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "block_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 103
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 107
+        },
+        {
+          "target": "create",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 109,
+          "resolvedId": "backend/integrations/creds_manager.py:create:68"
+        },
+        {
+          "target": "AgentBlockCreateInput",
+          "resolved": false,
+          "confidence": 0,
+          "line": 110
+        },
+        {
+          "target": "add",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 117,
+          "resolvedId": "backend/blocks/mem0.py:add:455"
+        },
+        {
+          "target": "block_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 117
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 120
+        },
+        {
+          "target": "loads",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 129,
+          "resolvedId": "backend/util/json.py:loads:77"
+        },
+        {
+          "target": "image_str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 129
+        },
+        {
+          "target": "loads",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 139,
+          "resolvedId": "backend/util/json.py:loads:77"
+        },
+        {
+          "target": "categories_str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 139
+        },
+        {
+          "target": "sub",
+          "resolved": false,
+          "confidence": 0,
+          "line": 146
+        },
+        {
+          "target": "lower",
+          "resolved": false,
+          "confidence": 0,
+          "line": 146
+        },
+        {
+          "target": "find_unique",
+          "resolved": false,
+          "confidence": 0,
+          "line": 152
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 154
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 156
+        },
+        {
+          "target": "create",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 157,
+          "resolvedId": "backend/integrations/creds_manager.py:create:68"
+        },
+        {
+          "target": "UserCreateInput",
+          "resolved": false,
+          "confidence": 0,
+          "line": 158
+        },
+        {
+          "target": "Json",
+          "resolved": false,
+          "confidence": 0,
+          "line": 162
+        },
+        {
+          "target": "find_first",
+          "resolved": false,
+          "confidence": 0,
+          "line": 168
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 170
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 174
+        },
+        {
+          "target": "create",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 175,
+          "resolvedId": "backend/integrations/creds_manager.py:create:68"
+        },
+        {
+          "target": "ProfileCreateInput",
+          "resolved": false,
+          "confidence": 0,
+          "line": 176
+        },
+        {
+          "target": "open",
+          "resolved": false,
+          "confidence": 0,
+          "line": 190
+        },
+        {
+          "target": "DictReader",
+          "resolved": false,
+          "confidence": 0,
+          "line": 191
+        },
+        {
+          "target": "f",
+          "resolved": false,
+          "confidence": 0,
+          "line": 191
+        },
+        {
+          "target": "sanitize_slug",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 197,
+          "resolvedId": "test/load_store_agents.py:sanitize_slug:144"
+        },
+        {
+          "target": "parse_image_urls",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 200,
+          "resolvedId": "test/load_store_agents.py:parse_image_urls:124"
+        },
+        {
+          "target": "lower",
+          "resolved": false,
+          "confidence": 0,
+          "line": 201
+        },
+        {
+          "target": "parse_categories",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 204,
+          "resolvedId": "test/load_store_agents.py:parse_categories:134"
+        },
+        {
+          "target": "lower",
+          "resolved": false,
+          "confidence": 0,
+          "line": 205
+        },
+        {
+          "target": "lower",
+          "resolved": false,
+          "confidence": 0,
+          "line": 206
+        },
+        {
+          "target": "open",
+          "resolved": false,
+          "confidence": 0,
+          "line": 213
+        },
+        {
+          "target": "json_path",
+          "resolved": false,
+          "confidence": 0,
+          "line": 213
+        },
+        {
+          "target": "load",
+          "resolved": false,
+          "confidence": 0,
+          "line": 214
+        },
+        {
+          "target": "f",
+          "resolved": false,
+          "confidence": 0,
+          "line": 214
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 222,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "find_unique",
+          "resolved": false,
+          "confidence": 0,
+          "line": 225
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 229
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 232
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 233,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "create",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 237,
+          "resolvedId": "backend/integrations/creds_manager.py:create:68"
+        },
+        {
+          "target": "AgentGraphCreateInput",
+          "resolved": false,
+          "confidence": 0,
+          "line": 238
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 241,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 242,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 243,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 244,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 245,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 247,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 248,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 253,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "ensure_block_exists",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 257,
+          "resolvedId": "test/load_store_agents.py:ensure_block_exists:90"
+        },
+        {
+          "target": "db",
+          "resolved": false,
+          "confidence": 0,
+          "line": 257
+        },
+        {
+          "target": "block_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 257
+        },
+        {
+          "target": "known_blocks",
+          "resolved": false,
+          "confidence": 0,
+          "line": 257
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 259
+        },
+        {
+          "target": "create",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 264,
+          "resolvedId": "backend/integrations/creds_manager.py:create:68"
+        },
+        {
+          "target": "AgentNodeCreateInput",
+          "resolved": false,
+          "confidence": 0,
+          "line": 265
+        },
+        {
+          "target": "Json",
+          "resolved": false,
+          "confidence": 0,
+          "line": 270
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 270,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "Json",
+          "resolved": false,
+          "confidence": 0,
+          "line": 271
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 271,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 276,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "create",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 278,
+          "resolvedId": "backend/integrations/creds_manager.py:create:68"
+        },
+        {
+          "target": "AgentNodeLinkCreateInput",
+          "resolved": false,
+          "confidence": 0,
+          "line": 279
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 285,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 290,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "create_agent_graph",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 292,
+          "resolvedId": "test/load_store_agents.py:create_agent_graph:217"
+        },
+        {
+          "target": "db",
+          "resolved": false,
+          "confidence": 0,
+          "line": 292
+        },
+        {
+          "target": "sub_graph",
+          "resolved": false,
+          "confidence": 0,
+          "line": 292
+        },
+        {
+          "target": "known_blocks",
+          "resolved": false,
+          "confidence": 0,
+          "line": 292
+        },
+        {
+          "target": "find_unique",
+          "resolved": false,
+          "confidence": 0,
+          "line": 308
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 310
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 313
+        },
+        {
+          "target": "create",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 324,
+          "resolvedId": "backend/integrations/creds_manager.py:create:68"
+        },
+        {
+          "target": "StoreListingCreateInput",
+          "resolved": false,
+          "confidence": 0,
+          "line": 325
+        },
+        {
+          "target": "create",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 337,
+          "resolvedId": "backend/integrations/creds_manager.py:create:68"
+        },
+        {
+          "target": "StoreListingVersionCreateInput",
+          "resolved": false,
+          "confidence": 0,
+          "line": 338
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 352
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 353
+        },
+        {
+          "target": "update",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 360,
+          "resolvedId": "backend/integrations/creds_manager.py:update:162"
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 368
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 369
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 370
+        },
+        {
+          "target": "Prisma",
+          "resolved": false,
+          "confidence": 0,
+          "line": 372
+        },
+        {
+          "target": "connect",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 373,
+          "resolvedId": "backend/data/rabbitmq.py:connect:102"
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 377
+        },
+        {
+          "target": "initialize_blocks",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 378,
+          "resolvedId": "test/load_store_agents.py:initialize_blocks:47"
+        },
+        {
+          "target": "db",
+          "resolved": false,
+          "confidence": 0,
+          "line": 378
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 381
+        },
+        {
+          "target": "create_user_and_profile",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 382,
+          "resolvedId": "test/load_store_agents.py:create_user_and_profile:149"
+        },
+        {
+          "target": "db",
+          "resolved": false,
+          "confidence": 0,
+          "line": 382
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 385
+        },
+        {
+          "target": "load_csv_metadata",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 386,
+          "resolvedId": "test/load_store_agents.py:load_csv_metadata:187"
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 387
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 387
+        },
+        {
+          "target": "csv_metadata",
+          "resolved": false,
+          "confidence": 0,
+          "line": 387
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 390
+        },
+        {
+          "target": "list",
+          "resolved": false,
+          "confidence": 0,
+          "line": 391
+        },
+        {
+          "target": "glob",
+          "resolved": false,
+          "confidence": 0,
+          "line": 391
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 392
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 392
+        },
+        {
+          "target": "json_files",
+          "resolved": false,
+          "confidence": 0,
+          "line": 392
+        },
+        {
+          "target": "replace",
+          "resolved": false,
+          "confidence": 0,
+          "line": 400
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 403
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 410
+        },
+        {
+          "target": "tx",
+          "resolved": false,
+          "confidence": 0,
+          "line": 414
+        },
+        {
+          "target": "load_agent_json",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 416,
+          "resolvedId": "test/load_store_agents.py:load_agent_json:211"
+        },
+        {
+          "target": "json_file",
+          "resolved": false,
+          "confidence": 0,
+          "line": 416
+        },
+        {
+          "target": "create_agent_graph",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 417,
+          "resolvedId": "test/load_store_agents.py:create_agent_graph:217"
+        },
+        {
+          "target": "tx",
+          "resolved": false,
+          "confidence": 0,
+          "line": 418
+        },
+        {
+          "target": "agent_data",
+          "resolved": false,
+          "confidence": 0,
+          "line": 418
+        },
+        {
+          "target": "known_blocks",
+          "resolved": false,
+          "confidence": 0,
+          "line": 418
+        },
+        {
+          "target": "create_store_listing",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 423,
+          "resolvedId": "test/load_store_agents.py:create_store_listing:297"
+        },
+        {
+          "target": "tx",
+          "resolved": false,
+          "confidence": 0,
+          "line": 423
+        },
+        {
+          "target": "graph_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 423
+        },
+        {
+          "target": "graph_version",
+          "resolved": false,
+          "confidence": 0,
+          "line": 423
+        },
+        {
+          "target": "metadata",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 423,
+          "resolvedId": "backend/blocks/stagehand/blocks.py:metadata:113"
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 425
+        },
+        {
+          "target": "append",
+          "resolved": false,
+          "confidence": 0,
+          "line": 426
+        },
+        {
+          "target": "agent_name",
+          "resolved": false,
+          "confidence": 0,
+          "line": 426
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 430
+        },
+        {
+          "target": "execute_raw",
+          "resolved": false,
+          "confidence": 0,
+          "line": 432
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 433
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 435
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 437
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 438
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 438
+        },
+        {
+          "target": "loaded_graphs",
+          "resolved": false,
+          "confidence": 0,
+          "line": 438
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 440
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 441
+        },
+        {
+          "target": "failed_agents",
+          "resolved": false,
+          "confidence": 0,
+          "line": 441
+        },
+        {
+          "target": "join",
+          "resolved": false,
+          "confidence": 0,
+          "line": 441
+        },
+        {
+          "target": "failed_agents",
+          "resolved": false,
+          "confidence": 0,
+          "line": 441
+        },
+        {
+          "target": "print",
+          "resolved": false,
+          "confidence": 0,
+          "line": 443
+        },
+        {
+          "target": "disconnect",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 446,
+          "resolvedId": "backend/data/rabbitmq.py:disconnect:107"
+        },
+        {
+          "target": "run",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 451,
+          "resolvedId": "test/load_store_agents.py:run:449"
+        },
+        {
+          "target": "main",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 451,
+          "resolvedId": "test/load_store_agents.py:main:366"
+        },
+        {
+          "target": "run",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 455,
+          "resolvedId": "test/load_store_agents.py:run:449"
+        },
+        {
+          "target": "Path",
+          "resolved": false,
+          "confidence": 0,
+          "line": 37
+        },
+        {
+          "target": "run",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 455,
+          "resolvedId": "test/load_store_agents.py:run:449"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "graph",
+          "operation": "read",
+          "line": 233,
+          "fields": [
+            "name"
+          ]
+        }
+      ]
+    }
+  ]
+}

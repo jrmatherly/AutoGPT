@@ -1,0 +1,207 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.236Z",
+  "checksum": "19091d42ad0b78c1",
+  "file": "backend/data/notifications_test.py",
+  "functions": [
+    {
+      "id": "backend/data/notifications_test.py:test_valid_agent_approval_data:14",
+      "name": "test_valid_agent_approval_data",
+      "startLine": 14,
+      "endLine": 34,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "AgentApprovalData",
+          "resolved": false,
+          "confidence": 0,
+          "line": 16
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 23
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/notifications_test.py:test_agent_approval_data_without_timezone_raises_error:36",
+      "name": "test_agent_approval_data_without_timezone_raises_error",
+      "startLine": 36,
+      "endLine": 50,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "raises",
+          "resolved": false,
+          "confidence": 0,
+          "line": 38
+        },
+        {
+          "target": "AgentApprovalData",
+          "resolved": false,
+          "confidence": 0,
+          "line": 41
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 48
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/notifications_test.py:test_agent_approval_data_with_empty_comments:52",
+      "name": "test_agent_approval_data_with_empty_comments",
+      "startLine": 52,
+      "endLine": 65,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "AgentApprovalData",
+          "resolved": false,
+          "confidence": 0,
+          "line": 54
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 61
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/notifications_test.py:test_valid_agent_rejection_data:71",
+      "name": "test_valid_agent_rejection_data",
+      "startLine": 71,
+      "endLine": 91,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "AgentRejectionData",
+          "resolved": false,
+          "confidence": 0,
+          "line": 73
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 80
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/notifications_test.py:test_agent_rejection_data_without_timezone_raises_error:93",
+      "name": "test_agent_rejection_data_without_timezone_raises_error",
+      "startLine": 93,
+      "endLine": 107,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "raises",
+          "resolved": false,
+          "confidence": 0,
+          "line": 95
+        },
+        {
+          "target": "AgentRejectionData",
+          "resolved": false,
+          "confidence": 0,
+          "line": 98
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 105
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/notifications_test.py:test_agent_rejection_data_with_long_comments:109",
+      "name": "test_agent_rejection_data_with_long_comments",
+      "startLine": 109,
+      "endLine": 123,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "AgentRejectionData",
+          "resolved": false,
+          "confidence": 0,
+          "line": 112
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 119
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/data/notifications_test.py:test_model_serialization:125",
+      "name": "test_model_serialization",
+      "startLine": 125,
+      "endLine": 151,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "AgentRejectionData",
+          "resolved": false,
+          "confidence": 0,
+          "line": 127
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 134
+        },
+        {
+          "target": "model_dump",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 139,
+          "resolvedId": "backend/blocks/apollo/models.py:model_dump:11"
+        },
+        {
+          "target": "model_validate",
+          "resolved": false,
+          "confidence": 0,
+          "line": 142
+        },
+        {
+          "target": "data_dict",
+          "resolved": false,
+          "confidence": 0,
+          "line": 142
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

@@ -1,0 +1,586 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.031Z",
+  "checksum": "2a63fc3caef32b93",
+  "file": "src/app/api/proxy/[...path]/route.ts",
+  "functions": [
+    {
+      "id": "src/app/api/proxy/[...path]/route.ts:buildBackendUrl:13",
+      "name": "buildBackendUrl",
+      "startLine": 13,
+      "endLine": 16,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "join",
+          "resolved": false,
+          "confidence": 0,
+          "line": 14
+        },
+        {
+          "target": "getAGPTServerBaseUrl",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 15,
+          "resolvedId": "src/services/environment/index.ts:getAGPTServerBaseUrl:35"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/app/api/proxy/[...path]/route.ts:handleJsonRequest:18",
+      "name": "handleJsonRequest",
+      "startLine": 18,
+      "endLine": 40,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "json",
+          "resolved": false,
+          "confidence": 0,
+          "line": 26
+        },
+        {
+          "target": "warn",
+          "resolved": false,
+          "confidence": 0,
+          "line": 29
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 29
+        },
+        {
+          "target": "makeAuthenticatedRequest",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 33,
+          "resolvedId": "src/lib/autogpt-server-api/helpers.ts:makeAuthenticatedRequest:283"
+        },
+        {
+          "target": "method",
+          "resolved": false,
+          "confidence": 0,
+          "line": 34
+        },
+        {
+          "target": "backendUrl",
+          "resolved": false,
+          "confidence": 0,
+          "line": 35
+        },
+        {
+          "target": "payload",
+          "resolved": false,
+          "confidence": 0,
+          "line": 36
+        },
+        {
+          "target": "req",
+          "resolved": false,
+          "confidence": 0,
+          "line": 38
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/app/api/proxy/[...path]/route.ts:handleFormDataRequest:42",
+      "name": "handleFormDataRequest",
+      "startLine": 42,
+      "endLine": 48,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "formData",
+          "resolved": false,
+          "confidence": 0,
+          "line": 46
+        },
+        {
+          "target": "makeAuthenticatedFileUpload",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 47,
+          "resolvedId": "src/lib/autogpt-server-api/helpers.ts:makeAuthenticatedFileUpload:342"
+        },
+        {
+          "target": "backendUrl",
+          "resolved": false,
+          "confidence": 0,
+          "line": 47
+        },
+        {
+          "target": "formData",
+          "resolved": false,
+          "confidence": 0,
+          "line": 47
+        },
+        {
+          "target": "req",
+          "resolved": false,
+          "confidence": 0,
+          "line": 47
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/app/api/proxy/[...path]/route.ts:handleUrlEncodedRequest:50",
+      "name": "handleUrlEncodedRequest",
+      "startLine": 50,
+      "endLine": 65,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "text",
+          "resolved": false,
+          "confidence": 0,
+          "line": 55
+        },
+        {
+          "target": "URLSearchParams",
+          "resolved": false,
+          "confidence": 0,
+          "line": 56
+        },
+        {
+          "target": "fromEntries",
+          "resolved": false,
+          "confidence": 0,
+          "line": 57
+        },
+        {
+          "target": "entries",
+          "resolved": false,
+          "confidence": 0,
+          "line": 57
+        },
+        {
+          "target": "makeAuthenticatedRequest",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 58,
+          "resolvedId": "src/lib/autogpt-server-api/helpers.ts:makeAuthenticatedRequest:283"
+        },
+        {
+          "target": "method",
+          "resolved": false,
+          "confidence": 0,
+          "line": 59
+        },
+        {
+          "target": "backendUrl",
+          "resolved": false,
+          "confidence": 0,
+          "line": 60
+        },
+        {
+          "target": "payload",
+          "resolved": false,
+          "confidence": 0,
+          "line": 61
+        },
+        {
+          "target": "req",
+          "resolved": false,
+          "confidence": 0,
+          "line": 63
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/app/api/proxy/[...path]/route.ts:handleGetDeleteRequest:67",
+      "name": "handleGetDeleteRequest",
+      "startLine": 67,
+      "endLine": 79,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "makeAuthenticatedRequest",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 72,
+          "resolvedId": "src/lib/autogpt-server-api/helpers.ts:makeAuthenticatedRequest:283"
+        },
+        {
+          "target": "method",
+          "resolved": false,
+          "confidence": 0,
+          "line": 73
+        },
+        {
+          "target": "backendUrl",
+          "resolved": false,
+          "confidence": 0,
+          "line": 74
+        },
+        {
+          "target": "undefined",
+          "resolved": false,
+          "confidence": 0,
+          "line": 75
+        },
+        {
+          "target": "req",
+          "resolved": false,
+          "confidence": 0,
+          "line": 77
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/app/api/proxy/[...path]/route.ts:createUnsupportedContentTypeResponse:81",
+      "name": "createUnsupportedContentTypeResponse",
+      "startLine": 81,
+      "endLine": 97,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "json",
+          "resolved": false,
+          "confidence": 0,
+          "line": 84
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/app/api/proxy/[...path]/route.ts:createResponse:99",
+      "name": "createResponse",
+      "startLine": 99,
+      "endLine": 112,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "NextResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 105
+        },
+        {
+          "target": "json",
+          "resolved": false,
+          "confidence": 0,
+          "line": 107
+        },
+        {
+          "target": "responseBody",
+          "resolved": false,
+          "confidence": 0,
+          "line": 107
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/app/api/proxy/[...path]/route.ts:createErrorResponse:114",
+      "name": "createErrorResponse",
+      "startLine": 114,
+      "endLine": 157,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "includes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 123
+        },
+        {
+          "target": "warn",
+          "resolved": false,
+          "confidence": 0,
+          "line": 126
+        },
+        {
+          "target": "json",
+          "resolved": false,
+          "confidence": 0,
+          "line": 134
+        },
+        {
+          "target": "includes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 140
+        },
+        {
+          "target": "json",
+          "resolved": false,
+          "confidence": 0,
+          "line": 141
+        },
+        {
+          "target": "json",
+          "resolved": false,
+          "confidence": 0,
+          "line": 153
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/app/api/proxy/[...path]/route.ts:handler:165",
+      "name": "handler",
+      "startLine": 165,
+      "endLine": 204,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "URL",
+          "resolved": false,
+          "confidence": 0,
+          "line": 170
+        },
+        {
+          "target": "buildBackendUrl",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 172,
+          "resolvedId": "src/app/api/proxy/[...path]/route.ts:buildBackendUrl:13"
+        },
+        {
+          "target": "path",
+          "resolved": false,
+          "confidence": 0,
+          "line": 172
+        },
+        {
+          "target": "queryString",
+          "resolved": false,
+          "confidence": 0,
+          "line": 172
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 175,
+          "resolvedId": "src/services/storage/local-storage.ts:get:16"
+        },
+        {
+          "target": "handleGetDeleteRequest",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 184,
+          "resolvedId": "src/app/api/proxy/[...path]/route.ts:handleGetDeleteRequest:67"
+        },
+        {
+          "target": "method",
+          "resolved": false,
+          "confidence": 0,
+          "line": 184
+        },
+        {
+          "target": "backendUrl",
+          "resolved": false,
+          "confidence": 0,
+          "line": 184
+        },
+        {
+          "target": "req",
+          "resolved": false,
+          "confidence": 0,
+          "line": 184
+        },
+        {
+          "target": "includes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 185
+        },
+        {
+          "target": "handleJsonRequest",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 186,
+          "resolvedId": "src/app/api/proxy/[...path]/route.ts:handleJsonRequest:18"
+        },
+        {
+          "target": "req",
+          "resolved": false,
+          "confidence": 0,
+          "line": 186
+        },
+        {
+          "target": "method",
+          "resolved": false,
+          "confidence": 0,
+          "line": 186
+        },
+        {
+          "target": "backendUrl",
+          "resolved": false,
+          "confidence": 0,
+          "line": 186
+        },
+        {
+          "target": "includes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 187
+        },
+        {
+          "target": "handleFormDataRequest",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 188,
+          "resolvedId": "src/app/api/proxy/[...path]/route.ts:handleFormDataRequest:42"
+        },
+        {
+          "target": "req",
+          "resolved": false,
+          "confidence": 0,
+          "line": 188
+        },
+        {
+          "target": "backendUrl",
+          "resolved": false,
+          "confidence": 0,
+          "line": 188
+        },
+        {
+          "target": "includes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 190
+        },
+        {
+          "target": "handleUrlEncodedRequest",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 191,
+          "resolvedId": "src/app/api/proxy/[...path]/route.ts:handleUrlEncodedRequest:50"
+        },
+        {
+          "target": "req",
+          "resolved": false,
+          "confidence": 0,
+          "line": 191
+        },
+        {
+          "target": "method",
+          "resolved": false,
+          "confidence": 0,
+          "line": 191
+        },
+        {
+          "target": "backendUrl",
+          "resolved": false,
+          "confidence": 0,
+          "line": 191
+        },
+        {
+          "target": "createUnsupportedContentTypeResponse",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 193,
+          "resolvedId": "src/app/api/proxy/[...path]/route.ts:createUnsupportedContentTypeResponse:81"
+        },
+        {
+          "target": "contentType",
+          "resolved": false,
+          "confidence": 0,
+          "line": 193
+        },
+        {
+          "target": "createResponse",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 196,
+          "resolvedId": "src/app/api/proxy/[...path]/route.ts:createResponse:99"
+        },
+        {
+          "target": "responseBody",
+          "resolved": false,
+          "confidence": 0,
+          "line": 196
+        },
+        {
+          "target": "responseHeaders",
+          "resolved": false,
+          "confidence": 0,
+          "line": 196
+        },
+        {
+          "target": "createErrorResponse",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 198,
+          "resolvedId": "src/app/api/proxy/[...path]/route.ts:createErrorResponse:114"
+        },
+        {
+          "target": "error",
+          "resolved": false,
+          "confidence": 0,
+          "line": 199
+        },
+        {
+          "target": "method",
+          "resolved": false,
+          "confidence": 0,
+          "line": 201
+        },
+        {
+          "target": "join",
+          "resolved": false,
+          "confidence": 0,
+          "line": 200
+        },
+        {
+          "target": "map",
+          "resolved": false,
+          "confidence": 0,
+          "line": 200
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/app/api/proxy/[...path]/route.ts:$map$1:200",
+      "name": "$map$1",
+      "startLine": 200,
+      "endLine": 200,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "join",
+          "resolved": false,
+          "confidence": 0,
+          "line": 200
+        },
+        {
+          "target": "map",
+          "resolved": false,
+          "confidence": 0,
+          "line": 200
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

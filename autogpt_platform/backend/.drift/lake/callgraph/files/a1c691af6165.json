@@ -1,0 +1,1118 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.195Z",
+  "checksum": "cbab2858640db1ff",
+  "file": "backend/executor/activity_status_generator_test.py",
+  "functions": [
+    {
+      "id": "backend/executor/activity_status_generator_test.py:mock_node_executions:20",
+      "name": "mock_node_executions",
+      "startLine": 20,
+      "endLine": 73,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "NodeExecutionResult",
+          "resolved": false,
+          "confidence": 0,
+          "line": 23
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 34
+        },
+        {
+          "target": "NodeExecutionResult",
+          "resolved": false,
+          "confidence": 0,
+          "line": 39
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 50
+        },
+        {
+          "target": "NodeExecutionResult",
+          "resolved": false,
+          "confidence": 0,
+          "line": 55
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 68
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/executor/activity_status_generator_test.py:mock_execution_stats:77",
+      "name": "mock_execution_stats",
+      "startLine": 77,
+      "endLine": 88,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "GraphExecutionStats",
+          "resolved": false,
+          "confidence": 0,
+          "line": 79
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/executor/activity_status_generator_test.py:mock_execution_stats_with_graph_error:92",
+      "name": "mock_execution_stats_with_graph_error",
+      "startLine": 92,
+      "endLine": 103,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "GraphExecutionStats",
+          "resolved": false,
+          "confidence": 0,
+          "line": 94
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/executor/activity_status_generator_test.py:mock_blocks:107",
+      "name": "mock_blocks",
+      "startLine": 107,
+      "endLine": 126,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 109
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 113
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 117
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/executor/activity_status_generator_test.py:test_build_summary_with_successful_execution:132",
+      "name": "test_build_summary_with_successful_execution",
+      "startLine": 132,
+      "endLine": 202,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 138
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 147,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 150,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "block_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 150
+        },
+        {
+          "target": "_build_execution_summary",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 152,
+          "resolvedId": "backend/executor/activity_status_generator.py:_build_execution_summary:370"
+        },
+        {
+          "target": "mock_execution_stats",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 154,
+          "resolvedId": "backend/executor/activity_status_generator_test.py:mock_execution_stats:77"
+        },
+        {
+          "target": "mock_links",
+          "resolved": false,
+          "confidence": 0,
+          "line": 157
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 166
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 175
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/executor/activity_status_generator_test.py:test_build_summary_with_failed_execution:204",
+      "name": "test_build_summary_with_failed_execution",
+      "startLine": 204,
+      "endLine": 241,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 210,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 213,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "block_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 213
+        },
+        {
+          "target": "_build_execution_summary",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 215,
+          "resolvedId": "backend/executor/activity_status_generator.py:_build_execution_summary:370"
+        },
+        {
+          "target": "mock_node_executions",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 216,
+          "resolvedId": "backend/executor/activity_status_generator_test.py:mock_node_executions:20"
+        },
+        {
+          "target": "mock_execution_stats",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 217,
+          "resolvedId": "backend/executor/activity_status_generator_test.py:mock_execution_stats:77"
+        },
+        {
+          "target": "mock_links",
+          "resolved": false,
+          "confidence": 0,
+          "line": 220
+        },
+        {
+          "target": "next",
+          "resolved": false,
+          "confidence": 0,
+          "line": 226
+        },
+        {
+          "target": "n",
+          "resolved": false,
+          "confidence": 0,
+          "line": 227
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 234
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/executor/activity_status_generator_test.py:test_build_summary_with_missing_blocks:243",
+      "name": "test_build_summary_with_missing_blocks",
+      "startLine": 243,
+      "endLine": 264,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 247,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "_build_execution_summary",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 252,
+          "resolvedId": "backend/executor/activity_status_generator.py:_build_execution_summary:370"
+        },
+        {
+          "target": "mock_node_executions",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 253,
+          "resolvedId": "backend/executor/activity_status_generator_test.py:mock_node_executions:20"
+        },
+        {
+          "target": "mock_execution_stats",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 254,
+          "resolvedId": "backend/executor/activity_status_generator_test.py:mock_execution_stats:77"
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 262
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/executor/activity_status_generator_test.py:test_build_summary_with_graph_error:266",
+      "name": "test_build_summary_with_graph_error",
+      "startLine": 266,
+      "endLine": 293,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 272,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 275,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "block_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 275
+        },
+        {
+          "target": "_build_execution_summary",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 277,
+          "resolvedId": "backend/executor/activity_status_generator.py:_build_execution_summary:370"
+        },
+        {
+          "target": "mock_node_executions",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 278,
+          "resolvedId": "backend/executor/activity_status_generator_test.py:mock_node_executions:20"
+        },
+        {
+          "target": "mock_execution_stats_with_graph_error",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 279,
+          "resolvedId": "backend/executor/activity_status_generator_test.py:mock_execution_stats_with_graph_error:92"
+        },
+        {
+          "target": "mock_links",
+          "resolved": false,
+          "confidence": 0,
+          "line": 282
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/executor/activity_status_generator_test.py:test_build_summary_with_different_error_formats:295",
+      "name": "test_build_summary_with_different_error_formats",
+      "startLine": 295,
+      "endLine": 368,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "NodeExecutionResult",
+          "resolved": false,
+          "confidence": 0,
+          "line": 301
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 312
+        },
+        {
+          "target": "NodeExecutionResult",
+          "resolved": false,
+          "confidence": 0,
+          "line": 317
+        },
+        {
+          "target": "now",
+          "resolved": false,
+          "confidence": 0,
+          "line": 328
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 335,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 338,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "block_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 338
+        },
+        {
+          "target": "_build_execution_summary",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 340,
+          "resolvedId": "backend/executor/activity_status_generator.py:_build_execution_summary:370"
+        },
+        {
+          "target": "mock_executions",
+          "resolved": false,
+          "confidence": 0,
+          "line": 341
+        },
+        {
+          "target": "mock_execution_stats",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 342,
+          "resolvedId": "backend/executor/activity_status_generator_test.py:mock_execution_stats:77"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 350,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 351
+        },
+        {
+          "target": "error_nodes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 351
+        },
+        {
+          "target": "next",
+          "resolved": false,
+          "confidence": 0,
+          "line": 354
+        },
+        {
+          "target": "n",
+          "resolved": false,
+          "confidence": 0,
+          "line": 355
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 357
+        },
+        {
+          "target": "next",
+          "resolved": false,
+          "confidence": 0,
+          "line": 364
+        },
+        {
+          "target": "n",
+          "resolved": false,
+          "confidence": 0,
+          "line": 365
+        },
+        {
+          "target": "len",
+          "resolved": false,
+          "confidence": 0,
+          "line": 367
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/executor/activity_status_generator_test.py:test_structured_llm_call_success:375",
+      "name": "test_structured_llm_call_success",
+      "startLine": 375,
+      "endLine": 435,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 382,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 382,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "LLMResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 385
+        },
+        {
+          "target": "APIKeyCredentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 394
+        },
+        {
+          "target": "SecretStr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 397
+        },
+        {
+          "target": "AIStructuredResponseGeneratorBlock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 408
+        },
+        {
+          "target": "Input",
+          "resolved": false,
+          "confidence": 0,
+          "line": 416
+        },
+        {
+          "target": "run",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 425,
+          "resolvedId": "backend/blocks/firecrawl/crawl.py:run:73"
+        },
+        {
+          "target": "structured_input",
+          "resolved": false,
+          "confidence": 0,
+          "line": 426
+        },
+        {
+          "target": "assert_called",
+          "resolved": false,
+          "confidence": 0,
+          "line": 435
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/executor/activity_status_generator_test.py:test_structured_llm_call_validation_error:438",
+      "name": "test_structured_llm_call_validation_error",
+      "startLine": 438,
+      "endLine": 495,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 445,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 445,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "LLMResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 449
+        },
+        {
+          "target": "APIKeyCredentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 458
+        },
+        {
+          "target": "SecretStr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 461
+        },
+        {
+          "target": "AIStructuredResponseGeneratorBlock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 472
+        },
+        {
+          "target": "Input",
+          "resolved": false,
+          "confidence": 0,
+          "line": 480
+        },
+        {
+          "target": "raises",
+          "resolved": false,
+          "confidence": 0,
+          "line": 488
+        },
+        {
+          "target": "run",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 491,
+          "resolvedId": "backend/blocks/firecrawl/crawl.py:run:73"
+        },
+        {
+          "target": "structured_input",
+          "resolved": false,
+          "confidence": 0,
+          "line": 492
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/executor/activity_status_generator_test.py:test_generate_status_success:502",
+      "name": "test_generate_status_success",
+      "startLine": 502,
+      "endLine": 561,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "AsyncMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 506
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 509
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 514
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 518,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 520,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 522,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 524,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 529,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "block_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 529
+        },
+        {
+          "target": "generate_activity_status_for_execution",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 543,
+          "resolvedId": "backend/executor/activity_status_generator.py:generate_activity_status_for_execution:181"
+        },
+        {
+          "target": "assert_called_once",
+          "resolved": false,
+          "confidence": 0,
+          "line": 558
+        },
+        {
+          "target": "assert_called_once",
+          "resolved": false,
+          "confidence": 0,
+          "line": 559
+        },
+        {
+          "target": "assert_called_once",
+          "resolved": false,
+          "confidence": 0,
+          "line": 560
+        },
+        {
+          "target": "assert_called_once",
+          "resolved": false,
+          "confidence": 0,
+          "line": 561
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/executor/activity_status_generator_test.py:mock_run:535",
+      "name": "mock_run",
+      "startLine": 535,
+      "endLine": 539,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/executor/activity_status_generator_test.py:test_generate_status_feature_disabled:564",
+      "name": "test_generate_status_feature_disabled",
+      "startLine": 564,
+      "endLine": 582,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "AsyncMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 566
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 568,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "generate_activity_status_for_execution",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 572,
+          "resolvedId": "backend/executor/activity_status_generator.py:generate_activity_status_for_execution:181"
+        },
+        {
+          "target": "assert_not_called",
+          "resolved": false,
+          "confidence": 0,
+          "line": 582
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/executor/activity_status_generator_test.py:test_generate_status_no_api_key:585",
+      "name": "test_generate_status_no_api_key",
+      "startLine": 585,
+      "endLine": 607,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "AsyncMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 587
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 589,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 591,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "generate_activity_status_for_execution",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 597,
+          "resolvedId": "backend/executor/activity_status_generator.py:generate_activity_status_for_execution:181"
+        },
+        {
+          "target": "assert_not_called",
+          "resolved": false,
+          "confidence": 0,
+          "line": 607
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/executor/activity_status_generator_test.py:test_generate_status_exception_handling:610",
+      "name": "test_generate_status_exception_handling",
+      "startLine": 610,
+      "endLine": 632,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "AsyncMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 612
+        },
+        {
+          "target": "Exception",
+          "resolved": false,
+          "confidence": 0,
+          "line": 613
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 615,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 617,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "generate_activity_status_for_execution",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 623,
+          "resolvedId": "backend/executor/activity_status_generator.py:generate_activity_status_for_execution:181"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/executor/activity_status_generator_test.py:test_generate_status_with_graph_name_fallback:635",
+      "name": "test_generate_status_with_graph_name_fallback",
+      "startLine": 635,
+      "endLine": 682,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "AsyncMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 639
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 644,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 646,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 648,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 650,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 655,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "block_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 655
+        },
+        {
+          "target": "generate_activity_status_for_execution",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 669,
+          "resolvedId": "backend/executor/activity_status_generator.py:generate_activity_status_for_execution:181"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/executor/activity_status_generator_test.py:mock_run:661",
+      "name": "mock_run",
+      "startLine": 661,
+      "endLine": 665,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/executor/activity_status_generator_test.py:test_full_integration_flow:689",
+      "name": "test_full_integration_flow",
+      "startLine": 689,
+      "endLine": 748,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "AsyncMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 693
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 696
+        },
+        {
+          "target": "MagicMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 701
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 707,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 709,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 711,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 713,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 718,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "block_id",
+          "resolved": false,
+          "confidence": 0,
+          "line": 718
+        },
+        {
+          "target": "generate_activity_status_for_execution",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 732,
+          "resolvedId": "backend/executor/activity_status_generator.py:generate_activity_status_for_execution:181"
+        },
+        {
+          "target": "assert_called_once",
+          "resolved": false,
+          "confidence": 0,
+          "line": 748
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/executor/activity_status_generator_test.py:mock_run:724",
+      "name": "mock_run",
+      "startLine": 724,
+      "endLine": 728,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/executor/activity_status_generator_test.py:test_manager_integration_with_disabled_feature:751",
+      "name": "test_manager_integration_with_disabled_feature",
+      "startLine": 751,
+      "endLine": 776,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "AsyncMock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 755
+        },
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 757,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "generate_activity_status_for_execution",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 761,
+          "resolvedId": "backend/executor/activity_status_generator.py:generate_activity_status_for_execution:181"
+        },
+        {
+          "target": "assert_not_called",
+          "resolved": false,
+          "confidence": 0,
+          "line": 774
+        },
+        {
+          "target": "assert_not_called",
+          "resolved": false,
+          "confidence": 0,
+          "line": 775
+        },
+        {
+          "target": "assert_not_called",
+          "resolved": false,
+          "confidence": 0,
+          "line": 776
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

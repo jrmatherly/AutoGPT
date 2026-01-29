@@ -1,0 +1,205 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.089Z",
+  "checksum": "82b188252c9e818b",
+  "file": "src/components/renderers/InputRenderer/utils/schema-utils.ts",
+  "functions": [
+    {
+      "id": "src/components/renderers/InputRenderer/utils/schema-utils.ts:isAnyOfSchema:3",
+      "name": "isAnyOfSchema",
+      "startLine": 3,
+      "endLine": 9,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "isArray",
+          "resolved": false,
+          "confidence": 0,
+          "line": 5
+        },
+        {
+          "target": "anyOf",
+          "resolved": false,
+          "confidence": 0,
+          "line": 5
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/renderers/InputRenderer/utils/schema-utils.ts:isAnyOfChild:11",
+      "name": "isAnyOfChild",
+      "startLine": 11,
+      "endLine": 16,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "getUiOptions",
+          "resolved": false,
+          "confidence": 0,
+          "line": 14
+        },
+        {
+          "target": "uiSchema",
+          "resolved": false,
+          "confidence": 0,
+          "line": 14
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/renderers/InputRenderer/utils/schema-utils.ts:isOptionalType:18",
+      "name": "isOptionalType",
+      "startLine": 18,
+      "endLine": 36,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "isArray",
+          "resolved": false,
+          "confidence": 0,
+          "line": 23
+        },
+        {
+          "target": "anyOf",
+          "resolved": false,
+          "confidence": 0,
+          "line": 23
+        },
+        {
+          "target": "some",
+          "resolved": false,
+          "confidence": 0,
+          "line": 25
+        },
+        {
+          "target": "find",
+          "resolved": false,
+          "confidence": 0,
+          "line": 30
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/renderers/InputRenderer/utils/schema-utils.ts:$some$1:25",
+      "name": "$some$1",
+      "startLine": 25,
+      "endLine": 25,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "some",
+          "resolved": false,
+          "confidence": 0,
+          "line": 25
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/renderers/InputRenderer/utils/schema-utils.ts:isAnyOfSelector:37",
+      "name": "isAnyOfSelector",
+      "startLine": 37,
+      "endLine": 39,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "includes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 38
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/renderers/InputRenderer/utils/schema-utils.ts:isMultiSelectSchema:41",
+      "name": "isMultiSelectSchema",
+      "startLine": 41,
+      "endLine": 57,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "every",
+          "resolved": false,
+          "confidence": 0,
+          "line": 53
+        },
+        {
+          "target": "values",
+          "resolved": false,
+          "confidence": 0,
+          "line": 53
+        },
+        {
+          "target": "properties",
+          "resolved": false,
+          "confidence": 0,
+          "line": 53
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/renderers/InputRenderer/utils/schema-utils.ts:$every$1:54",
+      "name": "$every$1",
+      "startLine": 54,
+      "endLine": 54,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/renderers/InputRenderer/utils/schema-utils.ts:isGoogleDriveFileObject:59",
+      "name": "isGoogleDriveFileObject",
+      "startLine": 59,
+      "endLine": 69,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/components/renderers/InputRenderer/utils/schema-utils.ts:isGoogleDrivePickerSchema:71",
+      "name": "isGoogleDrivePickerSchema",
+      "startLine": 71,
+      "endLine": 92,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "isGoogleDriveFileObject",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 87,
+          "resolvedId": "src/components/renderers/InputRenderer/utils/schema-utils.ts:isGoogleDriveFileObject:59"
+        },
+        {
+          "target": "schema",
+          "resolved": false,
+          "confidence": 0,
+          "line": 87
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

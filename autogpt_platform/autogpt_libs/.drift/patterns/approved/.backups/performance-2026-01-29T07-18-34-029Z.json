@@ -1,0 +1,2196 @@
+{
+  "version": "1.0.0",
+  "category": "performance",
+  "patterns": [
+    {
+      "id": "9c9f39b03283d2d9",
+      "subcategory": "caching-patterns",
+      "name": "Caching Patterns Detector",
+      "description": "Learns caching patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "performance/caching-patterns",
+          "patternId": "performance/caching-patterns/unknown"
+        }
+      },
+      "confidence": {
+        "frequency": 0.02,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.77,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "README.md",
+          "line": 3,
+          "column": 26,
+          "isOutlier": false,
+          "confidence": 0.77
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:33:06.620Z",
+        "lastSeen": "2026-01-29T07:18:33.477Z",
+        "source": "auto-detected",
+        "tags": [
+          "performance",
+          "caching-patterns"
+        ],
+        "approvedAt": "2026-01-29T07:18:33.477Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "9700df138fb69a3e",
+      "subcategory": "code-splitting",
+      "name": "Code Splitting Detector",
+      "description": "Learns code splitting patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "performance/code-splitting",
+          "patternId": "performance/code-splitting/unknown"
+        }
+      },
+      "confidence": {
+        "frequency": 0.6,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 16,
+        "score": 0.77,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "autogpt_libs/api_key/keysmith.py",
+          "line": 1,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 0.595
+        },
+        {
+          "file": "autogpt_libs/api_key/keysmith.py",
+          "line": 2,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 0.595
+        },
+        {
+          "file": "autogpt_libs/api_key/test_keysmith.py",
+          "line": 1,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 0.595
+        },
+        {
+          "file": "autogpt_libs/auth/config.py",
+          "line": 1,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 0.6533333333333333
+        },
+        {
+          "file": "autogpt_libs/auth/config.py",
+          "line": 2,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 0.6533333333333333
+        },
+        {
+          "file": "autogpt_libs/auth/config_test.py",
+          "line": 6,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 0.6299999999999999
+        },
+        {
+          "file": "autogpt_libs/auth/config_test.py",
+          "line": 7,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 0.6299999999999999
+        },
+        {
+          "file": "autogpt_libs/auth/config_test.py",
+          "line": 9,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 0.6299999999999999
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies.py",
+          "line": 7,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 0.6533333333333333
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies.py",
+          "line": 9,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 0.6533333333333333
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 6,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 0.6745454545454546
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 9,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 0.6745454545454546
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 177,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.6745454545454546
+        },
+        {
+          "file": "autogpt_libs/auth/jwt_utils.py",
+          "line": 1,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 0.6699999999999999
+        },
+        {
+          "file": "autogpt_libs/auth/jwt_utils.py",
+          "line": 4,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 0.6699999999999999
+        },
+        {
+          "file": "autogpt_libs/auth/jwt_utils_test.py",
+          "line": 6,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 0.665
+        },
+        {
+          "file": "autogpt_libs/auth/jwt_utils_test.py",
+          "line": 9,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 0.665
+        },
+        {
+          "file": "autogpt_libs/auth/jwt_utils_test.py",
+          "line": 10,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 0.665
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 3,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 0.6427272727272728
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 4,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 0.6427272727272728
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 5,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 0.6427272727272728
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 6,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 0.6427272727272728
+        },
+        {
+          "file": "autogpt_libs/logging/filters.py",
+          "line": 1,
+          "column": 1,
+          "isOutlier": true,
+          "confidence": 0.77,
+          "outlierReason": "Value above IQR upper bound"
+        },
+        {
+          "file": "autogpt_libs/logging/formatters.py",
+          "line": 1,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 0.6533333333333333
+        },
+        {
+          "file": "autogpt_libs/logging/handlers.py",
+          "line": 3,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 0.6533333333333333
+        },
+        {
+          "file": "autogpt_libs/logging/handlers.py",
+          "line": 4,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 0.6533333333333333
+        },
+        {
+          "file": "autogpt_libs/logging/test_utils.py",
+          "line": 1,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 0.595
+        },
+        {
+          "file": "autogpt_libs/logging/utils.py",
+          "line": 1,
+          "column": 1,
+          "isOutlier": true,
+          "confidence": 0.77,
+          "outlierReason": "Value above IQR upper bound"
+        },
+        {
+          "file": "autogpt_libs/rate_limit/limiter.py",
+          "line": 1,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 0.6824999999999999
+        },
+        {
+          "file": "autogpt_libs/utils/synchronize.py",
+          "line": 1,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 0.7116666666666667
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:33:06.621Z",
+        "lastSeen": "2026-01-29T07:18:33.490Z",
+        "source": "auto-detected",
+        "tags": [
+          "performance",
+          "code-splitting"
+        ],
+        "approvedAt": "2026-01-29T07:18:33.490Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "d89616c8df135131",
+      "subcategory": "code-splitting",
+      "name": "Code Splitting Detector",
+      "description": "Learns code splitting patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "performance/code-splitting",
+          "patternId": "performance/code-splitting/import"
+        }
+      },
+      "confidence": {
+        "frequency": 1,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 22,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "autogpt_libs/api_key/keysmith.py",
+          "line": 3,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.7949999999999999
+        },
+        {
+          "file": "autogpt_libs/api_key/keysmith.py",
+          "line": 5,
+          "column": 48,
+          "isOutlier": false,
+          "confidence": 0.7949999999999999
+        },
+        {
+          "file": "autogpt_libs/api_key/test_keysmith.py",
+          "line": 3,
+          "column": 36,
+          "isOutlier": false,
+          "confidence": 0.7949999999999999
+        },
+        {
+          "file": "autogpt_libs/auth/__init__.py",
+          "line": 1,
+          "column": 14,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/auth/__init__.py",
+          "line": 2,
+          "column": 20,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/auth/__init__.py",
+          "line": 8,
+          "column": 15,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/auth/__init__.py",
+          "line": 9,
+          "column": 14,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/auth/config.py",
+          "line": 4,
+          "column": 21,
+          "isOutlier": false,
+          "confidence": 0.8533333333333333
+        },
+        {
+          "file": "autogpt_libs/auth/config_test.py",
+          "line": 10,
+          "column": 18,
+          "isOutlier": false,
+          "confidence": 0.83
+        },
+        {
+          "file": "autogpt_libs/auth/config_test.py",
+          "line": 12,
+          "column": 31,
+          "isOutlier": false,
+          "confidence": 0.83
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies.py",
+          "line": 10,
+          "column": 23,
+          "isOutlier": false,
+          "confidence": 0.8533333333333333
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies.py",
+          "line": 12,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.8533333333333333
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies.py",
+          "line": 13,
+          "column": 14,
+          "isOutlier": false,
+          "confidence": 0.8533333333333333
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies.py",
+          "line": 46,
+          "column": 42,
+          "isOutlier": false,
+          "confidence": 0.8533333333333333
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 7,
+          "column": 20,
+          "isOutlier": false,
+          "confidence": 0.8745454545454545
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 10,
+          "column": 14,
+          "isOutlier": false,
+          "confidence": 0.8745454545454545
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 11,
+          "column": 25,
+          "isOutlier": false,
+          "confidence": 0.8745454545454545
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 12,
+          "column": 18,
+          "isOutlier": false,
+          "confidence": 0.8745454545454545
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 14,
+          "column": 37,
+          "isOutlier": false,
+          "confidence": 0.8745454545454545
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 19,
+          "column": 31,
+          "isOutlier": false,
+          "confidence": 0.8745454545454545
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 347,
+          "column": 42,
+          "isOutlier": false,
+          "confidence": 0.8745454545454545
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 357,
+          "column": 42,
+          "isOutlier": false,
+          "confidence": 0.8745454545454545
+        },
+        {
+          "file": "autogpt_libs/auth/helpers.py",
+          "line": 1,
+          "column": 14,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/auth/helpers.py",
+          "line": 3,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/auth/helpers_test.py",
+          "line": 6,
+          "column": 15,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/auth/helpers_test.py",
+          "line": 8,
+          "column": 14,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/auth/helpers_test.py",
+          "line": 9,
+          "column": 28,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/auth/helpers_test.py",
+          "line": 11,
+          "column": 32,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/auth/helpers_test.py",
+          "line": 12,
+          "column": 34,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/auth/helpers_test.py",
+          "line": 20,
+          "column": 18,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/auth/helpers_test.py",
+          "line": 22,
+          "column": 41,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/auth/helpers_test.py",
+          "line": 65,
+          "column": 18,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/auth/helpers_test.py",
+          "line": 67,
+          "column": 41,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/auth/helpers_test.py",
+          "line": 131,
+          "column": 18,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/auth/helpers_test.py",
+          "line": 133,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/auth/helpers_test.py",
+          "line": 198,
+          "column": 18,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/auth/helpers_test.py",
+          "line": 200,
+          "column": 41,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/auth/helpers_test.py",
+          "line": 201,
+          "column": 35,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/auth/helpers_test.py",
+          "line": 256,
+          "column": 18,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/auth/helpers_test.py",
+          "line": 258,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/auth/helpers_test.py",
+          "line": 335,
+          "column": 18,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/auth/helpers_test.py",
+          "line": 336,
+          "column": 32,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/auth/helpers_test.py",
+          "line": 338,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/auth/helpers_test.py",
+          "line": 379,
+          "column": 32,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/auth/helpers_test.py",
+          "line": 412,
+          "column": 18,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/auth/helpers_test.py",
+          "line": 414,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/auth/jwt_utils.py",
+          "line": 2,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.87
+        },
+        {
+          "file": "autogpt_libs/auth/jwt_utils.py",
+          "line": 5,
+          "column": 14,
+          "isOutlier": false,
+          "confidence": 0.87
+        },
+        {
+          "file": "autogpt_libs/auth/jwt_utils.py",
+          "line": 6,
+          "column": 23,
+          "isOutlier": false,
+          "confidence": 0.87
+        },
+        {
+          "file": "autogpt_libs/auth/jwt_utils.py",
+          "line": 8,
+          "column": 14,
+          "isOutlier": false,
+          "confidence": 0.87
+        },
+        {
+          "file": "autogpt_libs/auth/jwt_utils.py",
+          "line": 9,
+          "column": 14,
+          "isOutlier": false,
+          "confidence": 0.87
+        },
+        {
+          "file": "autogpt_libs/auth/jwt_utils_test.py",
+          "line": 7,
+          "column": 15,
+          "isOutlier": false,
+          "confidence": 0.865
+        },
+        {
+          "file": "autogpt_libs/auth/jwt_utils_test.py",
+          "line": 11,
+          "column": 14,
+          "isOutlier": false,
+          "confidence": 0.865
+        },
+        {
+          "file": "autogpt_libs/auth/jwt_utils_test.py",
+          "line": 12,
+          "column": 23,
+          "isOutlier": false,
+          "confidence": 0.865
+        },
+        {
+          "file": "autogpt_libs/auth/jwt_utils_test.py",
+          "line": 13,
+          "column": 18,
+          "isOutlier": false,
+          "confidence": 0.865
+        },
+        {
+          "file": "autogpt_libs/auth/jwt_utils_test.py",
+          "line": 15,
+          "column": 24,
+          "isOutlier": false,
+          "confidence": 0.865
+        },
+        {
+          "file": "autogpt_libs/auth/jwt_utils_test.py",
+          "line": 16,
+          "column": 31,
+          "isOutlier": false,
+          "confidence": 0.865
+        },
+        {
+          "file": "autogpt_libs/auth/jwt_utils_test.py",
+          "line": 17,
+          "column": 31,
+          "isOutlier": false,
+          "confidence": 0.865
+        },
+        {
+          "file": "autogpt_libs/auth/models.py",
+          "line": 1,
+          "column": 18,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/logging/__init__.py",
+          "line": 1,
+          "column": 14,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/logging/__init__.py",
+          "line": 2,
+          "column": 15,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/logging/__init__.py",
+          "line": 3,
+          "column": 18,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 7,
+          "column": 23,
+          "isOutlier": false,
+          "confidence": 0.8427272727272728
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 8,
+          "column": 14,
+          "isOutlier": false,
+          "confidence": 0.8427272727272728
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 10,
+          "column": 15,
+          "isOutlier": false,
+          "confidence": 0.8427272727272728
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 11,
+          "column": 24,
+          "isOutlier": false,
+          "confidence": 0.8427272727272728
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 13,
+          "column": 15,
+          "isOutlier": false,
+          "confidence": 0.8427272727272728
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 14,
+          "column": 18,
+          "isOutlier": false,
+          "confidence": 0.8427272727272728
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 122,
+          "column": 44,
+          "isOutlier": false,
+          "confidence": 0.8427272727272728
+        },
+        {
+          "file": "autogpt_libs/logging/formatters.py",
+          "line": 3,
+          "column": 15,
+          "isOutlier": false,
+          "confidence": 0.8533333333333333
+        },
+        {
+          "file": "autogpt_libs/logging/formatters.py",
+          "line": 5,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.8533333333333333
+        },
+        {
+          "file": "autogpt_libs/logging/handlers.py",
+          "line": 1,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.8533333333333333
+        },
+        {
+          "file": "autogpt_libs/logging/test_utils.py",
+          "line": 3,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.7949999999999999
+        },
+        {
+          "file": "autogpt_libs/rate_limit/config.py",
+          "line": 1,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/rate_limit/config.py",
+          "line": 3,
+          "column": 15,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/rate_limit/config.py",
+          "line": 4,
+          "column": 24,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/rate_limit/limiter.py",
+          "line": 2,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.8825
+        },
+        {
+          "file": "autogpt_libs/rate_limit/limiter.py",
+          "line": 4,
+          "column": 12,
+          "isOutlier": false,
+          "confidence": 0.8825
+        },
+        {
+          "file": "autogpt_libs/rate_limit/limiter.py",
+          "line": 6,
+          "column": 14,
+          "isOutlier": false,
+          "confidence": 0.8825
+        },
+        {
+          "file": "autogpt_libs/rate_limit/middleware.py",
+          "line": 1,
+          "column": 14,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/rate_limit/middleware.py",
+          "line": 2,
+          "column": 32,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/rate_limit/middleware.py",
+          "line": 4,
+          "column": 15,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/supabase_integration_credentials_store/types.py",
+          "line": 1,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/supabase_integration_credentials_store/types.py",
+          "line": 2,
+          "column": 11,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/supabase_integration_credentials_store/types.py",
+          "line": 4,
+          "column": 15,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/utils/synchronize.py",
+          "line": 2,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.9116666666666666
+        },
+        {
+          "file": "autogpt_libs/utils/synchronize.py",
+          "line": 3,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.9116666666666666
+        },
+        {
+          "file": "autogpt_libs/utils/synchronize.py",
+          "line": 5,
+          "column": 19,
+          "isOutlier": false,
+          "confidence": 0.9116666666666666
+        },
+        {
+          "file": "autogpt_libs/utils/synchronize.py",
+          "line": 8,
+          "column": 24,
+          "isOutlier": false,
+          "confidence": 0.9116666666666666
+        },
+        {
+          "file": "autogpt_libs/utils/synchronize.py",
+          "line": 9,
+          "column": 29,
+          "isOutlier": false,
+          "confidence": 0.9116666666666666
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:33:06.621Z",
+        "lastSeen": "2026-01-29T07:18:33.503Z",
+        "source": "auto-detected",
+        "tags": [
+          "performance",
+          "code-splitting"
+        ],
+        "approvedAt": "2026-01-29T07:18:33.503Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "a5fadec34900252f",
+      "subcategory": "lazy-loading",
+      "name": "Lazy Loading Detector",
+      "description": "Learns lazy loading patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "performance/lazy-loading",
+          "patternId": "performance/lazy-loading/unknown"
+        }
+      },
+      "confidence": {
+        "frequency": 1,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 7,
+        "score": 0.77,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "autogpt_libs/auth/dependencies.py",
+          "line": 55,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies.py",
+          "line": 65,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies.py",
+          "line": 77,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 49,
+          "column": 18,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 50,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 63,
+          "column": 18,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 64,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 79,
+          "column": 18,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 80,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 89,
+          "column": 18,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 90,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 98,
+          "column": 18,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 99,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 114,
+          "column": 18,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 115,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 124,
+          "column": 18,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 125,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 132,
+          "column": 18,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 133,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 145,
+          "column": 18,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 146,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 157,
+          "column": 18,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 158,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 190,
+          "column": 18,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 191,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 205,
+          "column": 18,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 206,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 225,
+          "column": 18,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 226,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 263,
+          "column": 18,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 264,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 287,
+          "column": 18,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 288,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 301,
+          "column": 18,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 302,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 316,
+          "column": 18,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 317,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 341,
+          "column": 18,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 342,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 353,
+          "column": 18,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 354,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 367,
+          "column": 18,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 368,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 403,
+          "column": 18,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 404,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 430,
+          "column": 18,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 431,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 450,
+          "column": 18,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 451,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 470,
+          "column": 18,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 471,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 505,
+          "column": 18,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 506,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 526,
+          "column": 18,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/auth/dependencies_test.py",
+          "line": 527,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/auth/jwt_utils.py",
+          "line": 19,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/auth/jwt_utils_test.py",
+          "line": 119,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/auth/jwt_utils_test.py",
+          "line": 129,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/auth/jwt_utils_test.py",
+          "line": 137,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/rate_limit/limiter.py",
+          "line": 26,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/rate_limit/middleware.py",
+          "line": 7,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/utils/synchronize.py",
+          "line": 26,
+          "column": 27,
+          "isOutlier": true,
+          "confidence": 0.5700000000000001,
+          "outlierReason": "Low confidence outlier"
+        },
+        {
+          "file": "autogpt_libs/utils/synchronize.py",
+          "line": 29,
+          "column": 5,
+          "isOutlier": true,
+          "confidence": 0.5700000000000001,
+          "outlierReason": "Low confidence outlier"
+        },
+        {
+          "file": "autogpt_libs/utils/synchronize.py",
+          "line": 39,
+          "column": 9,
+          "isOutlier": true,
+          "confidence": 0.5700000000000001,
+          "outlierReason": "Low confidence outlier"
+        },
+        {
+          "file": "autogpt_libs/utils/synchronize.py",
+          "line": 48,
+          "column": 5,
+          "isOutlier": true,
+          "confidence": 0.5700000000000001,
+          "outlierReason": "Low confidence outlier"
+        },
+        {
+          "file": "autogpt_libs/utils/synchronize.py",
+          "line": 56,
+          "column": 5,
+          "isOutlier": true,
+          "confidence": 0.5700000000000001,
+          "outlierReason": "Low confidence outlier"
+        },
+        {
+          "file": "autogpt_libs/utils/synchronize.py",
+          "line": 58,
+          "column": 9,
+          "isOutlier": true,
+          "confidence": 0.5700000000000001,
+          "outlierReason": "Low confidence outlier"
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:33:06.622Z",
+        "lastSeen": "2026-01-29T07:18:33.517Z",
+        "source": "auto-detected",
+        "tags": [
+          "performance",
+          "lazy-loading"
+        ],
+        "approvedAt": "2026-01-29T07:18:33.517Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "421bc8b8ced92e03",
+      "subcategory": "memoization",
+      "name": "Memoization Detector",
+      "description": "Learns memoization patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "performance/memoization",
+          "patternId": "performance/memoization/conditional"
+        }
+      },
+      "confidence": {
+        "frequency": 0.04,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 2,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "autogpt_libs/auth/helpers_test.py",
+          "line": 426,
+          "column": 18,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/utils/synchronize.py",
+          "line": 17,
+          "column": 74,
+          "isOutlier": false,
+          "confidence": 0.97
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:33:06.622Z",
+        "lastSeen": "2026-01-29T07:18:33.530Z",
+        "source": "auto-detected",
+        "tags": [
+          "performance",
+          "memoization"
+        ],
+        "approvedAt": "2026-01-29T07:18:33.530Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "e393ae3f676eccb4",
+      "subcategory": "caching-patterns",
+      "name": "Caching Patterns Detector",
+      "description": "Learns caching patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "performance/caching-patterns",
+          "patternId": "performance/caching-patterns/conditional"
+        }
+      },
+      "confidence": {
+        "frequency": 0.06,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "autogpt_libs/auth/helpers_test.py",
+          "line": 426,
+          "column": 18,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/auth/helpers_test.py",
+          "line": 409,
+          "column": 50,
+          "isOutlier": false,
+          "confidence": 0.97
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:33:06.622Z",
+        "lastSeen": "2026-01-29T07:18:33.544Z",
+        "source": "auto-detected",
+        "tags": [
+          "performance",
+          "caching-patterns"
+        ],
+        "approvedAt": "2026-01-29T07:18:33.544Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "0b318aa3d87729e6",
+      "subcategory": "debounce-throttle",
+      "name": "Debounce Throttle Detector",
+      "description": "Learns debounce and throttle patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "performance/debounce-throttle",
+          "patternId": "performance/debounce-throttle/import"
+        }
+      },
+      "confidence": {
+        "frequency": 0.12,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 3,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 137,
+          "column": 59,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 153,
+          "column": 63,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 168,
+          "column": 59,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/rate_limit/limiter.py",
+          "line": 6,
+          "column": 21,
+          "isOutlier": false,
+          "confidence": 0.7755555555555556
+        },
+        {
+          "file": "autogpt_libs/rate_limit/middleware.py",
+          "line": 4,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 0.7366666666666666
+        },
+        {
+          "file": "autogpt_libs/rate_limit/middleware.py",
+          "line": 4,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 0.7366666666666666
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:33:06.623Z",
+        "lastSeen": "2026-01-29T07:18:33.556Z",
+        "source": "auto-detected",
+        "tags": [
+          "performance",
+          "debounce-throttle"
+        ],
+        "approvedAt": "2026-01-29T07:18:33.556Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "8372e7b3f1afe450",
+      "subcategory": "bundle-size",
+      "name": "Bundle Size Detector",
+      "description": "Learns bundle size optimization patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "performance/bundle-size",
+          "patternId": "performance/bundle-size/import"
+        }
+      },
+      "confidence": {
+        "frequency": 0.06,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 137,
+          "column": 54,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 153,
+          "column": 58,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "autogpt_libs/logging/config.py",
+          "line": 168,
+          "column": 54,
+          "isOutlier": false,
+          "confidence": 0.97
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:33:06.623Z",
+        "lastSeen": "2026-01-29T07:18:33.571Z",
+        "source": "auto-detected",
+        "tags": [
+          "performance",
+          "bundle-size"
+        ],
+        "approvedAt": "2026-01-29T07:18:33.571Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "a79314f308cdb0ce",
+      "subcategory": "debounce-throttle",
+      "name": "Debounce Throttle Detector",
+      "description": "Learns debounce and throttle patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "performance/debounce-throttle",
+          "patternId": "performance/debounce-throttle/class_definition"
+        }
+      },
+      "confidence": {
+        "frequency": 0.04,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 2,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "autogpt_libs/rate_limit/config.py",
+          "line": 7,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "autogpt_libs/rate_limit/limiter.py",
+          "line": 9,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 0.9255555555555556
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:33:06.623Z",
+        "lastSeen": "2026-01-29T07:18:33.584Z",
+        "source": "auto-detected",
+        "tags": [
+          "performance",
+          "debounce-throttle"
+        ],
+        "approvedAt": "2026-01-29T07:18:33.584Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "5fecfedb098bda9f",
+      "subcategory": "debounce-throttle",
+      "name": "Debounce Throttle Detector",
+      "description": "Learns debounce and throttle patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "performance/debounce-throttle",
+          "patternId": "performance/debounce-throttle/function_call"
+        }
+      },
+      "confidence": {
+        "frequency": 0.06,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 2,
+        "score": 0.8533333333333333,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "autogpt_libs/rate_limit/config.py",
+          "line": 33,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 0.8533333333333333
+        },
+        {
+          "file": "autogpt_libs/rate_limit/config.py",
+          "line": 33,
+          "column": 23,
+          "isOutlier": false,
+          "confidence": 0.8533333333333333
+        },
+        {
+          "file": "autogpt_libs/rate_limit/middleware.py",
+          "line": 9,
+          "column": 15,
+          "isOutlier": false,
+          "confidence": 0.7366666666666666
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:33:06.623Z",
+        "lastSeen": "2026-01-29T07:18:33.597Z",
+        "source": "auto-detected",
+        "tags": [
+          "performance",
+          "debounce-throttle"
+        ],
+        "approvedAt": "2026-01-29T07:18:33.597Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "997f06e366dc2288",
+      "subcategory": "debounce-throttle",
+      "name": "Debounce Throttle Detector",
+      "description": "Learns debounce and throttle patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "performance/debounce-throttle",
+          "patternId": "performance/debounce-throttle/unknown"
+        }
+      },
+      "confidence": {
+        "frequency": 0.1,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 2,
+        "score": 0.5755555555555556,
+        "level": "low"
+      },
+      "locations": [
+        {
+          "file": "autogpt_libs/rate_limit/limiter.py",
+          "line": 12,
+          "column": 27,
+          "isOutlier": false,
+          "confidence": 0.5755555555555556
+        },
+        {
+          "file": "autogpt_libs/rate_limit/limiter.py",
+          "line": 13,
+          "column": 27,
+          "isOutlier": false,
+          "confidence": 0.5755555555555556
+        },
+        {
+          "file": "autogpt_libs/rate_limit/limiter.py",
+          "line": 14,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.5755555555555556
+        },
+        {
+          "file": "autogpt_libs/rate_limit/limiter.py",
+          "line": 15,
+          "column": 36,
+          "isOutlier": false,
+          "confidence": 0.5755555555555556
+        },
+        {
+          "file": "autogpt_libs/rate_limit/middleware.py",
+          "line": 20,
+          "column": 47,
+          "isOutlier": false,
+          "confidence": 0.5366666666666666
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:33:06.623Z",
+        "lastSeen": "2026-01-29T07:18:33.610Z",
+        "source": "auto-detected",
+        "tags": [
+          "performance",
+          "debounce-throttle"
+        ],
+        "approvedAt": "2026-01-29T07:18:33.610Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "83665e09a816bb23",
+      "subcategory": "debounce-throttle",
+      "name": "Debounce Throttle Detector",
+      "description": "Learns debounce and throttle patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "performance/debounce-throttle",
+          "patternId": "performance/debounce-throttle/conditional"
+        }
+      },
+      "confidence": {
+        "frequency": 0.04,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.7755555555555556,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "autogpt_libs/rate_limit/limiter.py",
+          "line": 28,
+          "column": 36,
+          "isOutlier": false,
+          "confidence": 0.7755555555555556
+        },
+        {
+          "file": "autogpt_libs/rate_limit/limiter.py",
+          "line": 28,
+          "column": 41,
+          "isOutlier": false,
+          "confidence": 0.7755555555555556
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:33:06.623Z",
+        "lastSeen": "2026-01-29T07:18:33.624Z",
+        "source": "auto-detected",
+        "tags": [
+          "performance",
+          "debounce-throttle"
+        ],
+        "approvedAt": "2026-01-29T07:18:33.624Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "72436b5139fa81b5",
+      "subcategory": "debounce-throttle",
+      "name": "Debounce Throttle Detector",
+      "description": "Learns debounce and throttle patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "performance/debounce-throttle",
+          "patternId": "performance/debounce-throttle/assignment"
+        }
+      },
+      "confidence": {
+        "frequency": 0.04,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 2,
+        "score": 0.7755555555555556,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "autogpt_libs/rate_limit/limiter.py",
+          "line": 38,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.7755555555555556
+        },
+        {
+          "file": "autogpt_libs/rate_limit/middleware.py",
+          "line": 9,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 0.7366666666666666
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:33:06.623Z",
+        "lastSeen": "2026-01-29T07:18:33.637Z",
+        "source": "auto-detected",
+        "tags": [
+          "performance",
+          "debounce-throttle"
+        ],
+        "approvedAt": "2026-01-29T07:18:33.637Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "ca0991e72111ae86",
+      "subcategory": "debounce-throttle",
+      "name": "Debounce Throttle Detector",
+      "description": "Learns debounce and throttle patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "performance/debounce-throttle",
+          "patternId": "performance/debounce-throttle/function_definition"
+        }
+      },
+      "confidence": {
+        "frequency": 0.02,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.8866666666666666,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "autogpt_libs/rate_limit/middleware.py",
+          "line": 7,
+          "column": 11,
+          "isOutlier": false,
+          "confidence": 0.8866666666666666
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:33:06.623Z",
+        "lastSeen": "2026-01-29T07:18:33.651Z",
+        "source": "auto-detected",
+        "tags": [
+          "performance",
+          "debounce-throttle"
+        ],
+        "approvedAt": "2026-01-29T07:18:33.651Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "b287e0f9091172d8",
+      "subcategory": "lazy-loading",
+      "name": "Lazy Loading Detector",
+      "description": "Learns lazy loading patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "performance/lazy-loading",
+          "patternId": "performance/lazy-loading/import"
+        }
+      },
+      "confidence": {
+        "frequency": 0.12,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.77,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "autogpt_libs/utils/synchronize.py",
+          "line": 1,
+          "column": 8,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/utils/synchronize.py",
+          "line": 2,
+          "column": 24,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/utils/synchronize.py",
+          "line": 8,
+          "column": 16,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/utils/synchronize.py",
+          "line": 8,
+          "column": 40,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/utils/synchronize.py",
+          "line": 9,
+          "column": 16,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "autogpt_libs/utils/synchronize.py",
+          "line": 9,
+          "column": 44,
+          "isOutlier": false,
+          "confidence": 0.77
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:33:06.623Z",
+        "lastSeen": "2026-01-29T07:18:33.664Z",
+        "source": "auto-detected",
+        "tags": [
+          "performance",
+          "lazy-loading"
+        ],
+        "approvedAt": "2026-01-29T07:18:33.664Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "14c6bbac9f5f25bc",
+      "subcategory": "lazy-loading",
+      "name": "Lazy Loading Detector",
+      "description": "Learns lazy loading patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "performance/lazy-loading",
+          "patternId": "performance/lazy-loading/class_definition"
+        }
+      },
+      "confidence": {
+        "frequency": 0.02,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.92,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "autogpt_libs/utils/synchronize.py",
+          "line": 12,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 0.92
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:33:06.623Z",
+        "lastSeen": "2026-01-29T07:18:33.684Z",
+        "source": "auto-detected",
+        "tags": [
+          "performance",
+          "lazy-loading"
+        ],
+        "approvedAt": "2026-01-29T07:18:33.684Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "4b1c0244c09af280",
+      "subcategory": "lazy-loading",
+      "name": "Lazy Loading Detector",
+      "description": "Learns lazy loading patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "performance/lazy-loading",
+          "patternId": "performance/lazy-loading/decorator"
+        }
+      },
+      "confidence": {
+        "frequency": 0.02,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.92,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "autogpt_libs/utils/synchronize.py",
+          "line": 28,
+          "column": 6,
+          "isOutlier": false,
+          "confidence": 0.92
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T06:33:06.623Z",
+        "lastSeen": "2026-01-29T07:18:33.698Z",
+        "source": "auto-detected",
+        "tags": [
+          "performance",
+          "lazy-loading"
+        ],
+        "approvedAt": "2026-01-29T07:18:33.698Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    }
+  ],
+  "lastUpdated": "2026-01-29T07:18:34.015Z",
+  "checksum": "ee006621f84e9e64"
+}

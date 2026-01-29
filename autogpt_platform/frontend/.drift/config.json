@@ -1,0 +1,54 @@
+{
+  "version": "2.0.0",
+  "project": {
+    "id": "e8c36352-94b0-479a-b811-88ad4d225de8",
+    "name": "@autogpt/frontend",
+    "description": "AutoGPT Platform Frontend - Next.js 15 React Application",
+    "language": "typescript",
+    "framework": "nextjs",
+    "initializedAt": "2026-01-29T06:11:54.409Z"
+  },
+  "severity": {},
+  "categories": ["components", "styling", "hooks", "api"],
+  "ignore": [
+    "node_modules/**",
+    "dist/**",
+    "build/**",
+    ".git/**",
+    "coverage/**",
+    "*.min.js",
+    "*.bundle.js",
+    "vendor/**",
+    "__pycache__/**",
+    ".venv/**",
+    "target/**",
+    "bin/**",
+    "obj/**",
+    ".next/**",
+    "storybook-static/**",
+    "playwright-report/**",
+    "test-results/**",
+    "src/app/api/__generated__/**"
+  ],
+  "ci": {
+    "failOn": "error",
+    "reportFormat": "text"
+  },
+  "learning": {
+    "autoApproveThreshold": 0.95,
+    "minOccurrences": 3,
+    "semanticLearning": true
+  },
+  "performance": {
+    "maxWorkers": 4,
+    "cacheEnabled": true,
+    "incrementalAnalysis": true,
+    "cacheTTL": 3600
+  },
+  "features": {
+    "callGraph": true,
+    "boundaries": true,
+    "dna": true,
+    "contracts": true
+  }
+}

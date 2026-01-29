@@ -1,0 +1,1020 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.158Z",
+  "checksum": "87dd90b760d8f3a1",
+  "file": "backend/blocks/slant3d/order.py",
+  "functions": [
+    {
+      "id": "backend/blocks/slant3d/order.py:__init__:42",
+      "name": "__init__",
+      "startLine": 42,
+      "endLine": 75,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 43,
+          "resolvedId": "backend/blocks/slant3d/order.py:__init__:42"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 43
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/slant3d/order.py:run:77",
+      "name": "run",
+      "startLine": 77,
+      "endLine": 93,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "_format_order_data",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 81,
+          "resolvedId": "backend/blocks/slant3d/base.py:_format_order_data:61"
+        },
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 85,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        },
+        {
+          "target": "_make_request",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 87,
+          "resolvedId": "backend/blocks/slant3d/base.py:_make_request:17"
+        },
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 88,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 92
+        },
+        {
+          "target": "e",
+          "resolved": false,
+          "confidence": 0,
+          "line": 92
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "credentials",
+          "operation": "read",
+          "line": 85,
+          "fields": []
+        },
+        {
+          "table": "credentials",
+          "operation": "read",
+          "line": 88,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/blocks/slant3d/order.py:__init__:119",
+      "name": "__init__",
+      "startLine": 119,
+      "endLine": 160,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 120,
+          "resolvedId": "backend/blocks/slant3d/order.py:__init__:42"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 120
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/slant3d/order.py:run:162",
+      "name": "run",
+      "startLine": 162,
+      "endLine": 179,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "_format_order_data",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 165,
+          "resolvedId": "backend/blocks/slant3d/base.py:_format_order_data:61"
+        },
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 169,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        },
+        {
+          "target": "_make_request",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 171,
+          "resolvedId": "backend/blocks/slant3d/base.py:_make_request:17"
+        },
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 174,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "credentials",
+          "operation": "read",
+          "line": 169,
+          "fields": []
+        },
+        {
+          "table": "credentials",
+          "operation": "read",
+          "line": 174,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/blocks/slant3d/order.py:__init__:203",
+      "name": "__init__",
+      "startLine": 203,
+      "endLine": 239,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 204,
+          "resolvedId": "backend/blocks/slant3d/order.py:__init__:42"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 204
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/slant3d/order.py:run:241",
+      "name": "run",
+      "startLine": 241,
+      "endLine": 261,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "_format_order_data",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 245,
+          "resolvedId": "backend/blocks/slant3d/base.py:_format_order_data:61"
+        },
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 249,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        },
+        {
+          "target": "_make_request",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 251,
+          "resolvedId": "backend/blocks/slant3d/base.py:_make_request:17"
+        },
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 254,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 260
+        },
+        {
+          "target": "e",
+          "resolved": false,
+          "confidence": 0,
+          "line": 260
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "credentials",
+          "operation": "read",
+          "line": 249,
+          "fields": []
+        },
+        {
+          "table": "credentials",
+          "operation": "read",
+          "line": 254,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/blocks/slant3d/order.py:__init__:273",
+      "name": "__init__",
+      "startLine": 273,
+      "endLine": 304,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 274,
+          "resolvedId": "backend/blocks/slant3d/order.py:__init__:42"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 274
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/slant3d/order.py:run:306",
+      "name": "run",
+      "startLine": 306,
+      "endLine": 316,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "_make_request",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 310,
+          "resolvedId": "backend/blocks/slant3d/base.py:_make_request:17"
+        },
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 311,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 313
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 315
+        },
+        {
+          "target": "e",
+          "resolved": false,
+          "confidence": 0,
+          "line": 315
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "credentials",
+          "operation": "read",
+          "line": 311,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/blocks/slant3d/order.py:__init__:332",
+      "name": "__init__",
+      "startLine": 332,
+      "endLine": 350,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 333,
+          "resolvedId": "backend/blocks/slant3d/order.py:__init__:42"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 333
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/slant3d/order.py:run:352",
+      "name": "run",
+      "startLine": 352,
+      "endLine": 365,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "_make_request",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 356,
+          "resolvedId": "backend/blocks/slant3d/base.py:_make_request:17"
+        },
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 359,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 364
+        },
+        {
+          "target": "e",
+          "resolved": false,
+          "confidence": 0,
+          "line": 364
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "credentials",
+          "operation": "read",
+          "line": 359,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/blocks/slant3d/order.py:__init__:378",
+      "name": "__init__",
+      "startLine": 378,
+      "endLine": 393,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 379,
+          "resolvedId": "backend/blocks/slant3d/order.py:__init__:42"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 379
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/slant3d/order.py:run:395",
+      "name": "run",
+      "startLine": 395,
+      "endLine": 407,
+      "isEntryPoint": true,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "_make_request",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 399,
+          "resolvedId": "backend/blocks/slant3d/base.py:_make_request:17"
+        },
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 402,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 406
+        },
+        {
+          "target": "e",
+          "resolved": false,
+          "confidence": 0,
+          "line": 406
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "credentials",
+          "operation": "read",
+          "line": 402,
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "backend/blocks/slant3d/order.py:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 408,
+      "isEntryPoint": false,
+      "isDataAccessor": true,
+      "calls": [
+        {
+          "target": "Settings",
+          "resolved": false,
+          "confidence": 0,
+          "line": 18
+        },
+        {
+          "target": "Slant3DCredentialsField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 25,
+          "resolvedId": "backend/blocks/slant3d/_api.py:Slant3DCredentialsField:14"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 26,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 30,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 34,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 40,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 43,
+          "resolvedId": "backend/blocks/slant3d/order.py:__init__:42"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 43
+        },
+        {
+          "target": "_format_order_data",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 81,
+          "resolvedId": "backend/blocks/slant3d/base.py:_format_order_data:61"
+        },
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 85,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        },
+        {
+          "target": "_make_request",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 87,
+          "resolvedId": "backend/blocks/slant3d/base.py:_make_request:17"
+        },
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 88,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 92
+        },
+        {
+          "target": "e",
+          "resolved": false,
+          "confidence": 0,
+          "line": 92
+        },
+        {
+          "target": "Slant3DCredentialsField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 100,
+          "resolvedId": "backend/blocks/slant3d/_api.py:Slant3DCredentialsField:14"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 101,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 105,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 109,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 115,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 116,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 117,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 120,
+          "resolvedId": "backend/blocks/slant3d/order.py:__init__:42"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 120
+        },
+        {
+          "target": "_format_order_data",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 165,
+          "resolvedId": "backend/blocks/slant3d/base.py:_format_order_data:61"
+        },
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 169,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        },
+        {
+          "target": "_make_request",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 171,
+          "resolvedId": "backend/blocks/slant3d/base.py:_make_request:17"
+        },
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 174,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        },
+        {
+          "target": "Slant3DCredentialsField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 186,
+          "resolvedId": "backend/blocks/slant3d/_api.py:Slant3DCredentialsField:14"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 187,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 191,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 194,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 200,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 201,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 204,
+          "resolvedId": "backend/blocks/slant3d/order.py:__init__:42"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 204
+        },
+        {
+          "target": "_format_order_data",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 245,
+          "resolvedId": "backend/blocks/slant3d/base.py:_format_order_data:61"
+        },
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 249,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        },
+        {
+          "target": "_make_request",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 251,
+          "resolvedId": "backend/blocks/slant3d/base.py:_make_request:17"
+        },
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 254,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 260
+        },
+        {
+          "target": "e",
+          "resolved": false,
+          "confidence": 0,
+          "line": 260
+        },
+        {
+          "target": "Slant3DCredentialsField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 268,
+          "resolvedId": "backend/blocks/slant3d/_api.py:Slant3DCredentialsField:14"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 271,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 274,
+          "resolvedId": "backend/blocks/slant3d/order.py:__init__:42"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 274
+        },
+        {
+          "target": "_make_request",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 310,
+          "resolvedId": "backend/blocks/slant3d/base.py:_make_request:17"
+        },
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 311,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 313
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 315
+        },
+        {
+          "target": "e",
+          "resolved": false,
+          "confidence": 0,
+          "line": 315
+        },
+        {
+          "target": "Slant3DCredentialsField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 323,
+          "resolvedId": "backend/blocks/slant3d/_api.py:Slant3DCredentialsField:14"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 324,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 327,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 328,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 333,
+          "resolvedId": "backend/blocks/slant3d/order.py:__init__:42"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 333
+        },
+        {
+          "target": "_make_request",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 356,
+          "resolvedId": "backend/blocks/slant3d/base.py:_make_request:17"
+        },
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 359,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 364
+        },
+        {
+          "target": "e",
+          "resolved": false,
+          "confidence": 0,
+          "line": 364
+        },
+        {
+          "target": "Slant3DCredentialsField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 372,
+          "resolvedId": "backend/blocks/slant3d/_api.py:Slant3DCredentialsField:14"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 373,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "SchemaField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 376,
+          "resolvedId": "backend/data/model.py:SchemaField:257"
+        },
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 379,
+          "resolvedId": "backend/blocks/slant3d/order.py:__init__:42"
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 379
+        },
+        {
+          "target": "_make_request",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 399,
+          "resolvedId": "backend/blocks/slant3d/base.py:_make_request:17"
+        },
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 402,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 406
+        },
+        {
+          "target": "e",
+          "resolved": false,
+          "confidence": 0,
+          "line": 406
+        },
+        {
+          "target": "Settings",
+          "resolved": false,
+          "confidence": 0,
+          "line": 18
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": [
+        {
+          "table": "credentials",
+          "operation": "read",
+          "line": 85,
+          "fields": []
+        },
+        {
+          "table": "credentials",
+          "operation": "read",
+          "line": 88,
+          "fields": []
+        },
+        {
+          "table": "credentials",
+          "operation": "read",
+          "line": 169,
+          "fields": []
+        },
+        {
+          "table": "credentials",
+          "operation": "read",
+          "line": 174,
+          "fields": []
+        },
+        {
+          "table": "credentials",
+          "operation": "read",
+          "line": 249,
+          "fields": []
+        },
+        {
+          "table": "credentials",
+          "operation": "read",
+          "line": 254,
+          "fields": []
+        },
+        {
+          "table": "credentials",
+          "operation": "read",
+          "line": 311,
+          "fields": []
+        },
+        {
+          "table": "credentials",
+          "operation": "read",
+          "line": 359,
+          "fields": []
+        },
+        {
+          "table": "credentials",
+          "operation": "read",
+          "line": 402,
+          "fields": []
+        }
+      ]
+    }
+  ]
+}

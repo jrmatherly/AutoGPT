@@ -33,6 +33,7 @@ Below is a comprehensive list of all available blocks, categorized by their prim
 ## Basic Operations
 
 | Block Name | Description |
+
 |------------|-------------|
 | [Add Memory](block-integrations/basic.md#add-memory) | Add new memories to Mem0 with user segmentation |
 | [Add To Dictionary](block-integrations/basic.md#add-to-dictionary) | Adds a new key-value pair to a dictionary |
@@ -89,6 +90,7 @@ Below is a comprehensive list of all available blocks, categorized by their prim
 ## Data Processing
 
 | Block Name | Description |
+
 |------------|-------------|
 | [Airtable Create Base](block-integrations/airtable/bases.md#airtable-create-base) | Create or find a base in Airtable |
 | [Airtable Create Field](block-integrations/airtable/schema.md#airtable-create-field) | Add a new field to an Airtable table |
@@ -182,6 +184,7 @@ Below is a comprehensive list of all available blocks, categorized by their prim
 ## Text Processing
 
 | Block Name | Description |
+
 |------------|-------------|
 | [Code Extraction](block-integrations/text.md#code-extraction) | Extracts code blocks from text and identifies their programming languages |
 | [Combine Texts](block-integrations/text.md#combine-texts) | This block combines multiple input texts into a single output text |
@@ -200,6 +203,7 @@ Below is a comprehensive list of all available blocks, categorized by their prim
 ## AI and Language Models
 
 | Block Name | Description |
+
 |------------|-------------|
 | [AI Ad Maker Video Creator](block-integrations/llm.md#ai-ad-maker-video-creator) | Creates an AI‑generated 30‑second advert (text + images) |
 | [AI Condition](block-integrations/llm.md#ai-condition) | Uses AI to evaluate natural language conditions and provide conditional outputs |
@@ -237,6 +241,7 @@ Below is a comprehensive list of all available blocks, categorized by their prim
 ## Search and Information Retrieval
 
 | Block Name | Description |
+
 |------------|-------------|
 | [Ask Wolfram](block-integrations/wolfram/llm_api.md#ask-wolfram) | Ask Wolfram Alpha a question |
 | [Exa Bulk Webset Items](block-integrations/exa/websets_items.md#exa-bulk-webset-items) | Get all items from a webset in bulk (with configurable limits) |
@@ -294,6 +299,7 @@ Below is a comprehensive list of all available blocks, categorized by their prim
 ## Social Media and Content
 
 | Block Name | Description |
+
 |------------|-------------|
 | [Create Discord Thread](block-integrations/discord/bot_blocks.md#create-discord-thread) | Creates a new thread in a Discord channel |
 | [Create Reddit Post](block-integrations/misc.md#create-reddit-post) | Create a new post on a subreddit |
@@ -399,6 +405,7 @@ Below is a comprehensive list of all available blocks, categorized by their prim
 ## Communication
 
 | Block Name | Description |
+
 |------------|-------------|
 | [Baas Bot Join Meeting](block-integrations/baas/bots.md#baas-bot-join-meeting) | Deploy a bot to join and record a meeting |
 | [Baas Bot Leave Meeting](block-integrations/baas/bots.md#baas-bot-leave-meeting) | Remove a bot from an ongoing meeting |
@@ -418,6 +425,7 @@ Below is a comprehensive list of all available blocks, categorized by their prim
 ## Developer Tools
 
 | Block Name | Description |
+
 |------------|-------------|
 | [Exa Code Context](block-integrations/exa/code_context.md#exa-code-context) | Search billions of GitHub repos, docs, and Stack Overflow for relevant code examples |
 | [Execute Code](block-integrations/misc.md#execute-code) | Executes code in a sandbox environment with internet access |
@@ -471,6 +479,7 @@ Below is a comprehensive list of all available blocks, categorized by their prim
 ## Media Generation
 
 | Block Name | Description |
+
 |------------|-------------|
 | [Add Audio To Video](block-integrations/multimedia.md#add-audio-to-video) | Block to attach an audio file to a video file using moviepy |
 | [Loop Video](block-integrations/multimedia.md#loop-video) | Block to loop a video to a given duration or number of repeats |
@@ -479,6 +488,7 @@ Below is a comprehensive list of all available blocks, categorized by their prim
 ## Productivity
 
 | Block Name | Description |
+
 |------------|-------------|
 | [Google Calendar Create Event](block-integrations/google/calendar.md#google-calendar-create-event) | This block creates a new event in Google Calendar with customizable parameters |
 | [Notion Create Page](block-integrations/notion/create_page.md#notion-create-page) | Create a new page in Notion |
@@ -519,6 +529,7 @@ Below is a comprehensive list of all available blocks, categorized by their prim
 ## Logic and Control Flow
 
 | Block Name | Description |
+
 |------------|-------------|
 | [Calculator](block-integrations/logic.md#calculator) | Performs a mathematical operation on two numbers |
 | [Condition](block-integrations/logic.md#condition) | Handles conditional logic based on comparison operators |
@@ -534,6 +545,7 @@ Below is a comprehensive list of all available blocks, categorized by their prim
 ## Input/Output
 
 | Block Name | Description |
+
 |------------|-------------|
 | [Exa Webset Webhook](block-integrations/exa/webhook_blocks.md#exa-webset-webhook) | Receive webhook notifications for Exa webset events |
 | [Generic Webhook Trigger](block-integrations/generic_webhook/triggers.md#generic-webhook-trigger) | This block will output the contents of the generic input for the webhook |
@@ -545,12 +557,14 @@ Below is a comprehensive list of all available blocks, categorized by their prim
 ## Agent Integration
 
 | Block Name | Description |
+
 |------------|-------------|
 | [Agent Executor](block-integrations/misc.md#agent-executor) | Executes an existing agent inside your agent |
 
 ## CRM Services
 
 | Block Name | Description |
+
 |------------|-------------|
 | [Add Lead To Campaign](block-integrations/smartlead/campaign.md#add-lead-to-campaign) | Add a lead to a campaign in SmartLead |
 | [Create Campaign](block-integrations/smartlead/campaign.md#create-campaign) | Create a campaign in SmartLead |
@@ -561,12 +575,14 @@ Below is a comprehensive list of all available blocks, categorized by their prim
 ## AI Safety
 
 | Block Name | Description |
+
 |------------|-------------|
 | [Nvidia Deepfake Detect](block-integrations/nvidia/deepfake.md#nvidia-deepfake-detect) | Detects potential deepfakes in images using Nvidia's AI API |
 
 ## Issue Tracking
 
 | Block Name | Description |
+
 |------------|-------------|
 | [Linear Create Comment](block-integrations/linear/comment.md#linear-create-comment) | Creates a new comment on a Linear issue |
 | [Linear Create Issue](block-integrations/linear/issues.md#linear-create-issue) | Creates a new issue on Linear |
@@ -576,5 +592,6 @@ Below is a comprehensive list of all available blocks, categorized by their prim
 ## Hardware
 
 | Block Name | Description |
+
 |------------|-------------|
 | [Compass AI Trigger](block-integrations/compass/triggers.md#compass-ai-trigger) | This block will output the contents of the compass transcription |

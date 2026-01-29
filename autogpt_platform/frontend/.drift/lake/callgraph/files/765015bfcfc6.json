@@ -1,0 +1,44 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.067Z",
+  "checksum": "f3fc62a159acdf02",
+  "file": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/selected-views/SelectedScheduleView/useSelectedScheduleView.ts",
+  "functions": [
+    {
+      "id": "src/app/(platform)/library/agents/[id]/components/NewAgentLibraryView/components/selected-views/SelectedScheduleView/useSelectedScheduleView.ts:useSelectedScheduleView:7",
+      "name": "useSelectedScheduleView",
+      "startLine": 7,
+      "endLine": 30,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useGetV1ListExecutionSchedulesForAGraph",
+          "resolved": false,
+          "confidence": 0,
+          "line": 8
+        },
+        {
+          "target": "graphId",
+          "resolved": false,
+          "confidence": 0,
+          "line": 8
+        },
+        {
+          "target": "useMemo",
+          "resolved": false,
+          "confidence": 0,
+          "line": 15
+        },
+        {
+          "target": "find",
+          "resolved": false,
+          "confidence": 0,
+          "line": 16
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

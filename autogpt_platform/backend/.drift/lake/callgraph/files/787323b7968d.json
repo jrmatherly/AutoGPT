@@ -1,0 +1,1280 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.175Z",
+  "checksum": "8e0c615233cdbd46",
+  "file": "backend/api/utils/api_key_auth_test.py",
+  "functions": [
+    {
+      "id": "backend/api/utils/api_key_auth_test.py:mock_request:16",
+      "name": "mock_request",
+      "startLine": 16,
+      "endLine": 21,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "Mock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 18
+        },
+        {
+          "target": "Mock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 19
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/utils/api_key_auth_test.py:api_key_auth:25",
+      "name": "api_key_auth",
+      "startLine": 25,
+      "endLine": 29,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "APIKeyAuthenticator",
+          "resolved": false,
+          "confidence": 0,
+          "line": 27
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/utils/api_key_auth_test.py:api_key_auth_custom_validator:33",
+      "name": "api_key_auth_custom_validator",
+      "startLine": 33,
+      "endLine": 39,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "APIKeyAuthenticator",
+          "resolved": false,
+          "confidence": 0,
+          "line": 39
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/utils/api_key_auth_test.py:custom_validator:36",
+      "name": "custom_validator",
+      "startLine": 36,
+      "endLine": 37,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/utils/api_key_auth_test.py:api_key_auth_async_validator:43",
+      "name": "api_key_auth_async_validator",
+      "startLine": 43,
+      "endLine": 49,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "APIKeyAuthenticator",
+          "resolved": false,
+          "confidence": 0,
+          "line": 49
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/utils/api_key_auth_test.py:async_validator:46",
+      "name": "async_validator",
+      "startLine": 46,
+      "endLine": 47,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/utils/api_key_auth_test.py:api_key_auth_object_validator:53",
+      "name": "api_key_auth_object_validator",
+      "startLine": 53,
+      "endLine": 61,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "APIKeyAuthenticator",
+          "resolved": false,
+          "confidence": 0,
+          "line": 61
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/utils/api_key_auth_test.py:object_validator:56",
+      "name": "object_validator",
+      "startLine": 56,
+      "endLine": 59,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/utils/api_key_auth_test.py:test_init_with_expected_token:67",
+      "name": "test_init_with_expected_token",
+      "startLine": 67,
+      "endLine": 75,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "APIKeyAuthenticator",
+          "resolved": false,
+          "confidence": 0,
+          "line": 69
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/utils/api_key_auth_test.py:test_init_with_custom_validator:78",
+      "name": "test_init_with_custom_validator",
+      "startLine": 78,
+      "endLine": 90,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "APIKeyAuthenticator",
+          "resolved": false,
+          "confidence": 0,
+          "line": 84
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/utils/api_key_auth_test.py:validator:81",
+      "name": "validator",
+      "startLine": 81,
+      "endLine": 82,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/utils/api_key_auth_test.py:test_init_with_custom_parameters:93",
+      "name": "test_init_with_custom_parameters",
+      "startLine": 93,
+      "endLine": 104,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "APIKeyAuthenticator",
+          "resolved": false,
+          "confidence": 0,
+          "line": 95
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/utils/api_key_auth_test.py:test_scheme_name_generation:107",
+      "name": "test_scheme_name_generation",
+      "startLine": 107,
+      "endLine": 111,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "APIKeyAuthenticator",
+          "resolved": false,
+          "confidence": 0,
+          "line": 109
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/utils/api_key_auth_test.py:test_api_key_missing:118",
+      "name": "test_api_key_missing",
+      "startLine": 118,
+      "endLine": 125,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "raises",
+          "resolved": false,
+          "confidence": 0,
+          "line": 121
+        },
+        {
+          "target": "api_key_auth",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 122,
+          "resolvedId": "backend/api/utils/api_key_auth_test.py:api_key_auth:25"
+        },
+        {
+          "target": "mock_request",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 122,
+          "resolvedId": "backend/api/utils/api_key_auth_test.py:mock_request:16"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/utils/api_key_auth_test.py:test_api_key_valid:129",
+      "name": "test_api_key_valid",
+      "startLine": 129,
+      "endLine": 139,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "object",
+          "resolved": false,
+          "confidence": 0,
+          "line": 132
+        },
+        {
+          "target": "api_key_auth",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 137,
+          "resolvedId": "backend/api/utils/api_key_auth_test.py:api_key_auth:25"
+        },
+        {
+          "target": "mock_request",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 137,
+          "resolvedId": "backend/api/utils/api_key_auth_test.py:mock_request:16"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/utils/api_key_auth_test.py:test_api_key_invalid:143",
+      "name": "test_api_key_invalid",
+      "startLine": 143,
+      "endLine": 153,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "object",
+          "resolved": false,
+          "confidence": 0,
+          "line": 146
+        },
+        {
+          "target": "raises",
+          "resolved": false,
+          "confidence": 0,
+          "line": 149
+        },
+        {
+          "target": "api_key_auth",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 150,
+          "resolvedId": "backend/api/utils/api_key_auth_test.py:api_key_auth:25"
+        },
+        {
+          "target": "mock_request",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 150,
+          "resolvedId": "backend/api/utils/api_key_auth_test.py:mock_request:16"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/utils/api_key_auth_test.py:test_custom_status_and_message:160",
+      "name": "test_custom_status_and_message",
+      "startLine": 160,
+      "endLine": 184,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "APIKeyAuthenticator",
+          "resolved": false,
+          "confidence": 0,
+          "line": 162
+        },
+        {
+          "target": "raises",
+          "resolved": false,
+          "confidence": 0,
+          "line": 170
+        },
+        {
+          "target": "auth",
+          "resolved": false,
+          "confidence": 0,
+          "line": 171
+        },
+        {
+          "target": "mock_request",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 171,
+          "resolvedId": "backend/api/utils/api_key_auth_test.py:mock_request:16"
+        },
+        {
+          "target": "object",
+          "resolved": false,
+          "confidence": 0,
+          "line": 177
+        },
+        {
+          "target": "raises",
+          "resolved": false,
+          "confidence": 0,
+          "line": 180
+        },
+        {
+          "target": "auth",
+          "resolved": false,
+          "confidence": 0,
+          "line": 181
+        },
+        {
+          "target": "mock_request",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 181,
+          "resolvedId": "backend/api/utils/api_key_auth_test.py:mock_request:16"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/utils/api_key_auth_test.py:test_custom_sync_validator:188",
+      "name": "test_custom_sync_validator",
+      "startLine": 188,
+      "endLine": 198,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "object",
+          "resolved": false,
+          "confidence": 0,
+          "line": 191
+        },
+        {
+          "target": "api_key_auth_custom_validator",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 196,
+          "resolvedId": "backend/api/utils/api_key_auth_test.py:api_key_auth_custom_validator:33"
+        },
+        {
+          "target": "mock_request",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 196,
+          "resolvedId": "backend/api/utils/api_key_auth_test.py:mock_request:16"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/utils/api_key_auth_test.py:test_custom_sync_validator_invalid:202",
+      "name": "test_custom_sync_validator_invalid",
+      "startLine": 202,
+      "endLine": 215,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "object",
+          "resolved": false,
+          "confidence": 0,
+          "line": 206
+        },
+        {
+          "target": "raises",
+          "resolved": false,
+          "confidence": 0,
+          "line": 211
+        },
+        {
+          "target": "api_key_auth_custom_validator",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 212,
+          "resolvedId": "backend/api/utils/api_key_auth_test.py:api_key_auth_custom_validator:33"
+        },
+        {
+          "target": "mock_request",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 212,
+          "resolvedId": "backend/api/utils/api_key_auth_test.py:mock_request:16"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/utils/api_key_auth_test.py:test_custom_async_validator:219",
+      "name": "test_custom_async_validator",
+      "startLine": 219,
+      "endLine": 228,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "object",
+          "resolved": false,
+          "confidence": 0,
+          "line": 221
+        },
+        {
+          "target": "api_key_auth_async_validator",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 226,
+          "resolvedId": "backend/api/utils/api_key_auth_test.py:api_key_auth_async_validator:43"
+        },
+        {
+          "target": "mock_request",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 226,
+          "resolvedId": "backend/api/utils/api_key_auth_test.py:mock_request:16"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/utils/api_key_auth_test.py:test_custom_async_validator_invalid:232",
+      "name": "test_custom_async_validator_invalid",
+      "startLine": 232,
+      "endLine": 245,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "object",
+          "resolved": false,
+          "confidence": 0,
+          "line": 236
+        },
+        {
+          "target": "raises",
+          "resolved": false,
+          "confidence": 0,
+          "line": 241
+        },
+        {
+          "target": "api_key_auth_async_validator",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 242,
+          "resolvedId": "backend/api/utils/api_key_auth_test.py:api_key_auth_async_validator:43"
+        },
+        {
+          "target": "mock_request",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 242,
+          "resolvedId": "backend/api/utils/api_key_auth_test.py:mock_request:16"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/utils/api_key_auth_test.py:test_validator_returns_object:249",
+      "name": "test_validator_returns_object",
+      "startLine": 249,
+      "endLine": 261,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "object",
+          "resolved": false,
+          "confidence": 0,
+          "line": 251
+        },
+        {
+          "target": "api_key_auth_object_validator",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 256,
+          "resolvedId": "backend/api/utils/api_key_auth_test.py:api_key_auth_object_validator:53"
+        },
+        {
+          "target": "mock_request",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 256,
+          "resolvedId": "backend/api/utils/api_key_auth_test.py:mock_request:16"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/utils/api_key_auth_test.py:test_validator_returns_none:265",
+      "name": "test_validator_returns_none",
+      "startLine": 265,
+      "endLine": 276,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "object",
+          "resolved": false,
+          "confidence": 0,
+          "line": 267
+        },
+        {
+          "target": "raises",
+          "resolved": false,
+          "confidence": 0,
+          "line": 272
+        },
+        {
+          "target": "api_key_auth_object_validator",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 273,
+          "resolvedId": "backend/api/utils/api_key_auth_test.py:api_key_auth_object_validator:53"
+        },
+        {
+          "target": "mock_request",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 273,
+          "resolvedId": "backend/api/utils/api_key_auth_test.py:mock_request:16"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/utils/api_key_auth_test.py:test_validator_database_lookup_simulation:280",
+      "name": "test_validator_database_lookup_simulation",
+      "startLine": 280,
+      "endLine": 311,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "APIKeyAuthenticator",
+          "resolved": false,
+          "confidence": 0,
+          "line": 292
+        },
+        {
+          "target": "object",
+          "resolved": false,
+          "confidence": 0,
+          "line": 295
+        },
+        {
+          "target": "auth",
+          "resolved": false,
+          "confidence": 0,
+          "line": 296
+        },
+        {
+          "target": "mock_request",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 296,
+          "resolvedId": "backend/api/utils/api_key_auth_test.py:mock_request:16"
+        },
+        {
+          "target": "Mock",
+          "resolved": false,
+          "confidence": 0,
+          "line": 301
+        },
+        {
+          "target": "object",
+          "resolved": false,
+          "confidence": 0,
+          "line": 302
+        },
+        {
+          "target": "raises",
+          "resolved": false,
+          "confidence": 0,
+          "line": 303
+        },
+        {
+          "target": "auth",
+          "resolved": false,
+          "confidence": 0,
+          "line": 304
+        },
+        {
+          "target": "mock_request",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 304,
+          "resolvedId": "backend/api/utils/api_key_auth_test.py:mock_request:16"
+        },
+        {
+          "target": "object",
+          "resolved": false,
+          "confidence": 0,
+          "line": 307
+        },
+        {
+          "target": "raises",
+          "resolved": false,
+          "confidence": 0,
+          "line": 310
+        },
+        {
+          "target": "auth",
+          "resolved": false,
+          "confidence": 0,
+          "line": 311
+        },
+        {
+          "target": "mock_request",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 311,
+          "resolvedId": "backend/api/utils/api_key_auth_test.py:mock_request:16"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 289,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "api_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 289
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/utils/api_key_auth_test.py:db_validator:288",
+      "name": "db_validator",
+      "startLine": 288,
+      "endLine": 290,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 289,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "api_key",
+          "resolved": false,
+          "confidence": 0,
+          "line": 289
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/utils/api_key_auth_test.py:test_default_validator_key_valid:318",
+      "name": "test_default_validator_key_valid",
+      "startLine": 318,
+      "endLine": 321,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "default_validator",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 320,
+          "resolvedId": "backend/api/utils/api_key_auth.py:default_validator:109"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/utils/api_key_auth_test.py:test_default_validator_key_invalid:325",
+      "name": "test_default_validator_key_invalid",
+      "startLine": 325,
+      "endLine": 328,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "default_validator",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 327,
+          "resolvedId": "backend/api/utils/api_key_auth.py:default_validator:109"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/utils/api_key_auth_test.py:test_default_validator_missing_expected_token:332",
+      "name": "test_default_validator_missing_expected_token",
+      "startLine": 332,
+      "endLine": 340,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "APIKeyAuthenticator",
+          "resolved": false,
+          "confidence": 0,
+          "line": 334
+        },
+        {
+          "target": "raises",
+          "resolved": false,
+          "confidence": 0,
+          "line": 336
+        },
+        {
+          "target": "default_validator",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 337,
+          "resolvedId": "backend/api/utils/api_key_auth.py:default_validator:109"
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 339
+        },
+        {
+          "target": "str",
+          "resolved": false,
+          "confidence": 0,
+          "line": 340
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/utils/api_key_auth_test.py:test_default_validator_uses_constant_time_comparison:344",
+      "name": "test_default_validator_uses_constant_time_comparison",
+      "startLine": 344,
+      "endLine": 353,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "patch",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 348,
+          "resolvedId": "backend/util/request.py:patch:578"
+        },
+        {
+          "target": "default_validator",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 351,
+          "resolvedId": "backend/api/utils/api_key_auth.py:default_validator:109"
+        },
+        {
+          "target": "assert_called_once_with",
+          "resolved": false,
+          "confidence": 0,
+          "line": 353
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/utils/api_key_auth_test.py:test_api_key_empty:357",
+      "name": "test_api_key_empty",
+      "startLine": 357,
+      "endLine": 366,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "APIKeyAuthenticator",
+          "resolved": false,
+          "confidence": 0,
+          "line": 359
+        },
+        {
+          "target": "object",
+          "resolved": false,
+          "confidence": 0,
+          "line": 361
+        },
+        {
+          "target": "raises",
+          "resolved": false,
+          "confidence": 0,
+          "line": 362
+        },
+        {
+          "target": "auth",
+          "resolved": false,
+          "confidence": 0,
+          "line": 363
+        },
+        {
+          "target": "mock_request",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 363,
+          "resolvedId": "backend/api/utils/api_key_auth_test.py:mock_request:16"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/utils/api_key_auth_test.py:test_api_key_whitespace_only:370",
+      "name": "test_api_key_whitespace_only",
+      "startLine": 370,
+      "endLine": 381,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "APIKeyAuthenticator",
+          "resolved": false,
+          "confidence": 0,
+          "line": 372
+        },
+        {
+          "target": "object",
+          "resolved": false,
+          "confidence": 0,
+          "line": 374
+        },
+        {
+          "target": "raises",
+          "resolved": false,
+          "confidence": 0,
+          "line": 377
+        },
+        {
+          "target": "auth",
+          "resolved": false,
+          "confidence": 0,
+          "line": 378
+        },
+        {
+          "target": "mock_request",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 378,
+          "resolvedId": "backend/api/utils/api_key_auth_test.py:mock_request:16"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/utils/api_key_auth_test.py:test_api_key_very_long:385",
+      "name": "test_api_key_very_long",
+      "startLine": 385,
+      "endLine": 399,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "APIKeyAuthenticator",
+          "resolved": false,
+          "confidence": 0,
+          "line": 387
+        },
+        {
+          "target": "object",
+          "resolved": false,
+          "confidence": 0,
+          "line": 392
+        },
+        {
+          "target": "raises",
+          "resolved": false,
+          "confidence": 0,
+          "line": 395
+        },
+        {
+          "target": "auth",
+          "resolved": false,
+          "confidence": 0,
+          "line": 396
+        },
+        {
+          "target": "mock_request",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 396,
+          "resolvedId": "backend/api/utils/api_key_auth_test.py:mock_request:16"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/utils/api_key_auth_test.py:test_api_key_with_null_bytes:403",
+      "name": "test_api_key_with_null_bytes",
+      "startLine": 403,
+      "endLine": 416,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "APIKeyAuthenticator",
+          "resolved": false,
+          "confidence": 0,
+          "line": 405
+        },
+        {
+          "target": "object",
+          "resolved": false,
+          "confidence": 0,
+          "line": 409
+        },
+        {
+          "target": "raises",
+          "resolved": false,
+          "confidence": 0,
+          "line": 412
+        },
+        {
+          "target": "auth",
+          "resolved": false,
+          "confidence": 0,
+          "line": 413
+        },
+        {
+          "target": "mock_request",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 413,
+          "resolvedId": "backend/api/utils/api_key_auth_test.py:mock_request:16"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/utils/api_key_auth_test.py:test_api_key_with_control_characters:420",
+      "name": "test_api_key_with_control_characters",
+      "startLine": 420,
+      "endLine": 434,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "APIKeyAuthenticator",
+          "resolved": false,
+          "confidence": 0,
+          "line": 422
+        },
+        {
+          "target": "object",
+          "resolved": false,
+          "confidence": 0,
+          "line": 427
+        },
+        {
+          "target": "raises",
+          "resolved": false,
+          "confidence": 0,
+          "line": 430
+        },
+        {
+          "target": "auth",
+          "resolved": false,
+          "confidence": 0,
+          "line": 431
+        },
+        {
+          "target": "mock_request",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 431,
+          "resolvedId": "backend/api/utils/api_key_auth_test.py:mock_request:16"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/utils/api_key_auth_test.py:test_api_key_with_unicode_characters:438",
+      "name": "test_api_key_with_unicode_characters",
+      "startLine": 438,
+      "endLine": 452,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "APIKeyAuthenticator",
+          "resolved": false,
+          "confidence": 0,
+          "line": 440
+        },
+        {
+          "target": "object",
+          "resolved": false,
+          "confidence": 0,
+          "line": 445
+        },
+        {
+          "target": "raises",
+          "resolved": false,
+          "confidence": 0,
+          "line": 448
+        },
+        {
+          "target": "auth",
+          "resolved": false,
+          "confidence": 0,
+          "line": 449
+        },
+        {
+          "target": "mock_request",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 449,
+          "resolvedId": "backend/api/utils/api_key_auth_test.py:mock_request:16"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/utils/api_key_auth_test.py:test_api_key_with_unicode_characters_normalization_attack:456",
+      "name": "test_api_key_with_unicode_characters_normalization_attack",
+      "startLine": 456,
+      "endLine": 474,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "APIKeyAuthenticator",
+          "resolved": false,
+          "confidence": 0,
+          "line": 459
+        },
+        {
+          "target": "object",
+          "resolved": false,
+          "confidence": 0,
+          "line": 466
+        },
+        {
+          "target": "raises",
+          "resolved": false,
+          "confidence": 0,
+          "line": 470
+        },
+        {
+          "target": "auth",
+          "resolved": false,
+          "confidence": 0,
+          "line": 471
+        },
+        {
+          "target": "mock_request",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 471,
+          "resolvedId": "backend/api/utils/api_key_auth_test.py:mock_request:16"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/utils/api_key_auth_test.py:test_api_key_with_binary_data:478",
+      "name": "test_api_key_with_binary_data",
+      "startLine": 478,
+      "endLine": 494,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "APIKeyAuthenticator",
+          "resolved": false,
+          "confidence": 0,
+          "line": 480
+        },
+        {
+          "target": "decode",
+          "resolved": false,
+          "confidence": 0,
+          "line": 483
+        },
+        {
+          "target": "bytes",
+          "resolved": false,
+          "confidence": 0,
+          "line": 483
+        },
+        {
+          "target": "object",
+          "resolved": false,
+          "confidence": 0,
+          "line": 487
+        },
+        {
+          "target": "raises",
+          "resolved": false,
+          "confidence": 0,
+          "line": 490
+        },
+        {
+          "target": "auth",
+          "resolved": false,
+          "confidence": 0,
+          "line": 491
+        },
+        {
+          "target": "mock_request",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 491,
+          "resolvedId": "backend/api/utils/api_key_auth_test.py:mock_request:16"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/utils/api_key_auth_test.py:test_api_key_with_regex_dos_attack_pattern:498",
+      "name": "test_api_key_with_regex_dos_attack_pattern",
+      "startLine": 498,
+      "endLine": 512,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "APIKeyAuthenticator",
+          "resolved": false,
+          "confidence": 0,
+          "line": 500
+        },
+        {
+          "target": "object",
+          "resolved": false,
+          "confidence": 0,
+          "line": 505
+        },
+        {
+          "target": "raises",
+          "resolved": false,
+          "confidence": 0,
+          "line": 508
+        },
+        {
+          "target": "auth",
+          "resolved": false,
+          "confidence": 0,
+          "line": 509
+        },
+        {
+          "target": "mock_request",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 509,
+          "resolvedId": "backend/api/utils/api_key_auth_test.py:mock_request:16"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/api/utils/api_key_auth_test.py:test_api_keys_with_newline_variations:516",
+      "name": "test_api_keys_with_newline_variations",
+      "startLine": 516,
+      "endLine": 537,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "APIKeyAuthenticator",
+          "resolved": false,
+          "confidence": 0,
+          "line": 518
+        },
+        {
+          "target": "object",
+          "resolved": false,
+          "confidence": 0,
+          "line": 530
+        },
+        {
+          "target": "raises",
+          "resolved": false,
+          "confidence": 0,
+          "line": 533
+        },
+        {
+          "target": "auth",
+          "resolved": false,
+          "confidence": 0,
+          "line": 534
+        },
+        {
+          "target": "mock_request",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 534,
+          "resolvedId": "backend/api/utils/api_key_auth_test.py:mock_request:16"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

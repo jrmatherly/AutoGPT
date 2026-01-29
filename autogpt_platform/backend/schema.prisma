@@ -69,6 +69,13 @@ model User {
   OAuthAuthorizationCodes OAuthAuthorizationCode[]
   OAuthAccessTokens       OAuthAccessToken[]
   OAuthRefreshTokens      OAuthRefreshToken[]
+
+  // Organization membership (multi-tenancy)
+  OrganizationMemberships OrganizationMember[]
+
+  // Default organization for the user (used when not explicitly specified)
+  defaultOrganizationId String?
+  DefaultOrganization   Organization? @relation("UserDefaultOrganization", fields: [defaultOrganizationId], references: [id])
 }
 
 enum OnboardingStep {
@@ -222,6 +229,10 @@ model AgentGraph {
   // This allows us to delete user data with deleting the agent which maybe in use by other users
   User   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
 
+  // Organization scoping for multi-tenancy (nullable for backward compatibility)
+  organizationId String?
+  Organization   Organization? @relation(fields: [organizationId], references: [id], onDelete: SetNull)
+
   forkedFromId      String?
   forkedFromVersion Int?
   forkedFrom        AgentGraph?  @relation("AgentGraphForks", fields: [forkedFromId, forkedFromVersion], references: [id, version])
@@ -238,6 +249,7 @@ model AgentGraph {
   @@id(name: "graphVersionId", [id, version])
   @@index([userId, isActive, id, version])
   @@index([forkedFromId, forkedFromVersion])
+  @@index([organizationId, isActive])
 }
 
 ////////////////////////////////////////////////////////////
@@ -1201,4 +1213,197 @@ model OAuthRefreshToken {
   @@index([token]) // For token lookup
   @@index([userId, applicationId])
   @@index([expiresAt]) // For cleanup
+}
+
+////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////
+//////////////   ORGANIZATION MULTI-TENANCY   //////////////
+////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////
+
+// Organization tier determines resource limits and features
+enum OrganizationTier {
+  FREE
+  STANDARD
+  PREMIUM
+  ENTERPRISE
+}
+
+// Organization status for lifecycle management
+enum OrganizationStatus {
+  ACTIVE
+  SUSPENDED
+  PENDING_DELETION
+  DELETED
+}
+
+// Organization membership roles
+enum OrganizationRole {
+  OWNER // Full access, can delete org
+  ADMIN // Manage members, settings, billing
+  MEMBER // Create/edit own agents
+  VIEWER // Read-only access
+}
+
+// Core organization model for multi-tenancy
+model Organization {
+  id        String   @id @default(uuid())
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // Basic info
+  name        String
+  slug        String  @unique // URL-friendly identifier
+  description String?
+  logoUrl     String?
+
+  // Status and tier
+  status OrganizationStatus @default(ACTIVE)
+  tier   OrganizationTier   @default(FREE)
+
+  // SSO Configuration (nullable - not all orgs use SSO)
+  ssoEnabled      Boolean @default(false)
+  ssoEnforced     Boolean @default(false) // Block password login when true
+  ssoProvider     String? // "entra_id", "okta", "google", etc.
+  ssoTenantId     String? // IdP tenant identifier
+  ssoClientId     String? // OAuth client ID (encrypted)
+  ssoClientSecret String? // OAuth client secret (encrypted)
+  ssoDomain       String? // Email domain for auto-routing
+
+  // SCIM provisioning
+  scimEnabled     Boolean   @default(false)
+  scimBearerToken String? // Long-lived token for SCIM sync (encrypted)
+  scimLastSyncAt  DateTime?
+
+  // Feature flags and settings
+  settings Json @default("{}")
+
+  // Relations
+  Members       OrganizationMember[]
+  Invitations   OrganizationInvitation[]
+  AgentGraphs   AgentGraph[]
+  DefaultForUsers User[] @relation("UserDefaultOrganization")
+  AuditLogs     AuditLog[]
+
+  @@index([slug])
+  @@index([ssoDomain])
+  @@index([status])
+}
+
+// Organization membership linking users to organizations
+model OrganizationMember {
+  id        String   @id @default(uuid())
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  organizationId String
+  Organization   Organization @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+
+  userId String
+  User   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  role OrganizationRole @default(MEMBER)
+
+  // SCIM-provisioned users have external ID
+  scimExternalId String?
+
+  // Invitation tracking
+  invitedBy  String?
+  invitedAt  DateTime?
+  acceptedAt DateTime?
+
+  @@unique([organizationId, userId])
+  @@index([userId])
+  @@index([organizationId, role])
+  @@index([scimExternalId])
+}
+
+// Pending invitations to join an organization
+model OrganizationInvitation {
+  id        String   @id @default(uuid())
+  createdAt DateTime @default(now())
+  expiresAt DateTime
+
+  organizationId String
+  Organization   Organization @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+
+  email     String
+  role      OrganizationRole @default(MEMBER)
+  token     String           @unique
+  invitedBy String
+
+  acceptedAt DateTime?
+  declinedAt DateTime?
+
+  @@unique([organizationId, email])
+  @@index([token])
+  @@index([email])
+}
+
+// Audit log actions for compliance and security tracking
+enum AuditAction {
+  // Organization events
+  ORG_CREATED
+  ORG_UPDATED
+  ORG_DELETED
+  ORG_SSO_CONFIGURED
+  ORG_SCIM_CONFIGURED
+
+  // Member events
+  MEMBER_ADDED
+  MEMBER_REMOVED
+  MEMBER_ROLE_CHANGED
+  MEMBER_INVITED
+  INVITATION_ACCEPTED
+
+  // Agent events
+  AGENT_CREATED
+  AGENT_UPDATED
+  AGENT_DELETED
+  AGENT_EXECUTED
+  AGENT_SHARED
+
+  // Auth events
+  LOGIN_SUCCESS
+  LOGIN_FAILED
+  LOGOUT
+  SSO_LOGIN
+  API_KEY_CREATED
+  API_KEY_REVOKED
+
+  // Admin events
+  ADMIN_IMPERSONATION
+  SETTINGS_CHANGED
+}
+
+// Audit log for compliance and security tracking
+model AuditLog {
+  id        String   @id @default(uuid())
+  createdAt DateTime @default(now())
+
+  // Who performed the action
+  actorId    String? // User ID (null for system events)
+  actorEmail String?
+  actorIp    String?
+
+  // What happened
+  action     AuditAction
+  resource   String // e.g., "organization", "agent", "member"
+  resourceId String? // ID of the affected resource
+
+  // Context
+  organizationId String?
+  Organization   Organization? @relation(fields: [organizationId], references: [id], onDelete: SetNull)
+
+  // Details
+  details Json? // Additional context (old/new values, etc.)
+
+  // Request context
+  userAgent String?
+  requestId String?
+
+  @@index([organizationId, createdAt])
+  @@index([actorId, createdAt])
+  @@index([action, createdAt])
+  @@index([resourceId])
 }

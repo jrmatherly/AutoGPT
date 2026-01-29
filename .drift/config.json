@@ -1,27 +1,39 @@
 {
   "version": "2.0.0",
   "project": {
-    "id": "ca9c642b-d8c1-4613-b6f5-4333282e990d",
+    "id": "c2a2e639-6b92-4058-b625-f6e889b5fc37",
     "name": "AutoGPT Platform",
-    "initializedAt": "2026-01-28T21:22:00.299Z"
+    "initializedAt": "2026-01-29T06:26:57.233Z"
   },
-  "packages": [
-    {
-      "name": "frontend",
-      "path": "autogpt_platform/frontend",
-      "language": "typescript"
+  "monorepo": {
+    "enabled": true,
+    "root": ".",
+    "packageDetection": "auto",
+    "packages": {
+      "@autogpt/frontend": {
+        "path": "autogpt_platform/frontend",
+        "language": "typescript",
+        "framework": "react",
+        "categories": ["components", "styling", "hooks", "api"]
+      },
+      "@autogpt/backend": {
+        "path": "autogpt_platform/backend",
+        "language": "python",
+        "framework": "fastapi",
+        "categories": ["api", "auth", "data-access", "blocks"]
+      },
+      "@autogpt/libs": {
+        "path": "autogpt_platform/autogpt_libs",
+        "language": "python",
+        "isShared": true,
+        "categories": ["shared", "utilities"]
+      }
     },
-    {
-      "name": "backend",
-      "path": "autogpt_platform/backend",
-      "language": "python"
-    },
-    {
-      "name": "autogpt_libs",
-      "path": "autogpt_platform/autogpt_libs",
-      "language": "python"
+    "dependencies": {
+      "@autogpt/backend": ["@autogpt/libs"],
+      "@autogpt/frontend": []
     }
-  ],
+  },
   "severity": {},
   "ignore": [
     "node_modules/**",
@@ -58,5 +70,10 @@
     "boundaries": true,
     "dna": true,
     "contracts": true
+  },
+  "mcp": {
+    "tools": {
+      "languages": ["typescript", "python"]
+    }
   }
 }

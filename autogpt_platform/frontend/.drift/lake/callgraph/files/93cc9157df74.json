@@ -1,0 +1,113 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.082Z",
+  "checksum": "8c2807b7195cfeb0",
+  "file": "src/app/(platform)/library/components/LibraryAgentList/useLibraryAgentList.ts",
+  "functions": [
+    {
+      "id": "src/app/(platform)/library/components/LibraryAgentList/useLibraryAgentList.ts:useLibraryAgentList:18",
+      "name": "useLibraryAgentList",
+      "startLine": 18,
+      "endLine": 66,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "getQueryClient",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 19,
+          "resolvedId": "src/lib/react-query/queryClient.ts:getQueryClient:28"
+        },
+        {
+          "target": "useRef",
+          "resolved": false,
+          "confidence": 0,
+          "line": 20
+        },
+        {
+          "target": "useGetV2ListLibraryAgentsInfinite",
+          "resolved": false,
+          "confidence": 0,
+          "line": 28
+        },
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 43
+        },
+        {
+          "target": "resetQueries",
+          "resolved": false,
+          "confidence": 0,
+          "line": 46
+        },
+        {
+          "target": "unpaginate",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 54,
+          "resolvedId": "src/app/api/helpers.ts:unpaginate:62"
+        },
+        {
+          "target": "agentsQueryData",
+          "resolved": false,
+          "confidence": 0,
+          "line": 54
+        },
+        {
+          "target": "getPaginatedTotalCount",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 56,
+          "resolvedId": "src/app/api/helpers.ts:getPaginatedTotalCount:39"
+        },
+        {
+          "target": "agentsQueryData",
+          "resolved": false,
+          "confidence": 0,
+          "line": 56
+        },
+        {
+          "target": "resetQueries",
+          "resolved": false,
+          "confidence": 0,
+          "line": 46
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "src/app/(platform)/library/components/LibraryAgentList/useLibraryAgentList.ts:$useEffect$1:43",
+      "name": "$useEffect$1",
+      "startLine": 43,
+      "endLine": 51,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useEffect",
+          "resolved": false,
+          "confidence": 0,
+          "line": 43
+        },
+        {
+          "target": "resetQueries",
+          "resolved": false,
+          "confidence": 0,
+          "line": 46
+        },
+        {
+          "target": "resetQueries",
+          "resolved": false,
+          "confidence": 0,
+          "line": 46
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

@@ -1,0 +1,495 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.167Z",
+  "checksum": "601265afc0396549",
+  "file": "backend/blocks/enrichlayer/_api.py",
+  "functions": [
+    {
+      "id": "backend/blocks/enrichlayer/_api.py:__init__:27",
+      "name": "__init__",
+      "startLine": 27,
+      "endLine": 29,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 28,
+          "resolvedId": "backend/blocks/enrichlayer/_api.py:__init__:27"
+        },
+        {
+          "target": "message",
+          "resolved": false,
+          "confidence": 0,
+          "line": 28
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 28
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/enrichlayer/_api.py:profile_picture_url:187",
+      "name": "profile_picture_url",
+      "startLine": 187,
+      "endLine": 189,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/enrichlayer/_api.py:__init__:197",
+      "name": "__init__",
+      "startLine": 197,
+      "endLine": 223,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 217,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        },
+        {
+          "target": "Requests",
+          "resolved": false,
+          "confidence": 0,
+          "line": 220
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/enrichlayer/_api.py:_handle_response:225",
+      "name": "_handle_response",
+      "startLine": 225,
+      "endLine": 250,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 240,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 241,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "EnrichlayerAPIException",
+          "resolved": false,
+          "confidence": 0,
+          "line": 245
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 250,
+          "resolvedId": "backend/util/request.py:json:289"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/enrichlayer/_api.py:fetch_profile:252",
+      "name": "fetch_profile",
+      "startLine": 252,
+      "endLine": 308,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "lower",
+          "resolved": false,
+          "confidence": 0,
+          "line": 286
+        },
+        {
+          "target": "lower",
+          "resolved": false,
+          "confidence": 0,
+          "line": 287
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 305,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "PersonProfileResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 308
+        },
+        {
+          "target": "_handle_response",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 308,
+          "resolvedId": "backend/blocks/enrichlayer/_api.py:_handle_response:225"
+        },
+        {
+          "target": "response",
+          "resolved": false,
+          "confidence": 0,
+          "line": 308
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/enrichlayer/_api.py:lookup_person:310",
+      "name": "lookup_person",
+      "startLine": 310,
+      "endLine": 354,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 351,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "PersonLookupResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 354
+        },
+        {
+          "target": "_handle_response",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 354,
+          "resolvedId": "backend/blocks/enrichlayer/_api.py:_handle_response:225"
+        },
+        {
+          "target": "response",
+          "resolved": false,
+          "confidence": 0,
+          "line": 354
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/enrichlayer/_api.py:lookup_role:356",
+      "name": "lookup_role",
+      "startLine": 356,
+      "endLine": 384,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 381,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "RoleLookupResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 384
+        },
+        {
+          "target": "_handle_response",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 384,
+          "resolvedId": "backend/blocks/enrichlayer/_api.py:_handle_response:225"
+        },
+        {
+          "target": "response",
+          "resolved": false,
+          "confidence": 0,
+          "line": 384
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/enrichlayer/_api.py:get_profile_picture:386",
+      "name": "get_profile_picture",
+      "startLine": 386,
+      "endLine": 408,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 405,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "ProfilePictureResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 408
+        },
+        {
+          "target": "_handle_response",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 408,
+          "resolvedId": "backend/blocks/enrichlayer/_api.py:_handle_response:225"
+        },
+        {
+          "target": "response",
+          "resolved": false,
+          "confidence": 0,
+          "line": 408
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/enrichlayer/_api.py:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 409,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "getLogger",
+          "resolved": false,
+          "confidence": 0,
+          "line": 19
+        },
+        {
+          "target": "TypeVar",
+          "resolved": false,
+          "confidence": 0,
+          "line": 21
+        },
+        {
+          "target": "__init__",
+          "resolved": true,
+          "confidence": 0.7,
+          "line": 28,
+          "resolvedId": "backend/blocks/enrichlayer/_api.py:__init__:27"
+        },
+        {
+          "target": "message",
+          "resolved": false,
+          "confidence": 0,
+          "line": 28
+        },
+        {
+          "target": "super",
+          "resolved": false,
+          "confidence": 0,
+          "line": 28
+        },
+        {
+          "target": "Field",
+          "resolved": false,
+          "confidence": 0,
+          "line": 182
+        },
+        {
+          "target": "get_secret_value",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 217,
+          "resolvedId": "backend/data/model.py:get_secret_value:205"
+        },
+        {
+          "target": "Requests",
+          "resolved": false,
+          "confidence": 0,
+          "line": 220
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 240,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 241,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "EnrichlayerAPIException",
+          "resolved": false,
+          "confidence": 0,
+          "line": 245
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 250,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "lower",
+          "resolved": false,
+          "confidence": 0,
+          "line": 286
+        },
+        {
+          "target": "lower",
+          "resolved": false,
+          "confidence": 0,
+          "line": 287
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 305,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "PersonProfileResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 308
+        },
+        {
+          "target": "_handle_response",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 308,
+          "resolvedId": "backend/blocks/enrichlayer/_api.py:_handle_response:225"
+        },
+        {
+          "target": "response",
+          "resolved": false,
+          "confidence": 0,
+          "line": 308
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 351,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "PersonLookupResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 354
+        },
+        {
+          "target": "_handle_response",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 354,
+          "resolvedId": "backend/blocks/enrichlayer/_api.py:_handle_response:225"
+        },
+        {
+          "target": "response",
+          "resolved": false,
+          "confidence": 0,
+          "line": 354
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 381,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "RoleLookupResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 384
+        },
+        {
+          "target": "_handle_response",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 384,
+          "resolvedId": "backend/blocks/enrichlayer/_api.py:_handle_response:225"
+        },
+        {
+          "target": "response",
+          "resolved": false,
+          "confidence": 0,
+          "line": 384
+        },
+        {
+          "target": "get",
+          "resolved": true,
+          "confidence": 0.4,
+          "line": 405,
+          "resolvedId": "backend/integrations/oauth/__init__.py:get:83"
+        },
+        {
+          "target": "ProfilePictureResponse",
+          "resolved": false,
+          "confidence": 0,
+          "line": 408
+        },
+        {
+          "target": "_handle_response",
+          "resolved": true,
+          "confidence": 0.95,
+          "line": 408,
+          "resolvedId": "backend/blocks/enrichlayer/_api.py:_handle_response:225"
+        },
+        {
+          "target": "response",
+          "resolved": false,
+          "confidence": 0,
+          "line": 408
+        },
+        {
+          "target": "getLogger",
+          "resolved": false,
+          "confidence": 0,
+          "line": 19
+        },
+        {
+          "target": "TypeVar",
+          "resolved": false,
+          "confidence": 0,
+          "line": 21
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

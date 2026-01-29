@@ -13,7 +13,7 @@ This guide explains how to download an agent from the AutoGPT marketplace and im
 
 ### **1. Access the Marketplace**
 * Navigate to the marketplace section
-    * Note: The interface will differ from the cloud-hosted platform
+  * Note: The interface will differ from the cloud-hosted platform
 
 ### **2. Download the Agent**
 1. Browse and select your desired agent
@@ -35,7 +35,7 @@ This guide explains how to download an agent from the AutoGPT marketplace and im
 * The agent should now appear in your Builder
 * You can begin editing or using the imported agent
 
-##  **Important Notes**
+## **Important Notes**
 * The marketplace interface differs between local hosting and cloud-hosted versions
 * Ensure you're following the local hosting specific steps
 * The agent will be available in your Builder after successful import

@@ -1,0 +1,58 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.205Z",
+  "checksum": "d40e78f21cba330b",
+  "file": "backend/blocks/generic_webhook/_webhook.py",
+  "functions": [
+    {
+      "id": "backend/blocks/generic_webhook/_webhook.py:validate_payload:19",
+      "name": "validate_payload",
+      "startLine": 19,
+      "endLine": 25,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 22,
+          "resolvedId": "backend/util/request.py:json:289"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/generic_webhook/_webhook.py:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 26,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "getLogger",
+          "resolved": false,
+          "confidence": 0,
+          "line": 8
+        },
+        {
+          "target": "json",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 22,
+          "resolvedId": "backend/util/request.py:json:289"
+        },
+        {
+          "target": "getLogger",
+          "resolved": false,
+          "confidence": 0,
+          "line": 8
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

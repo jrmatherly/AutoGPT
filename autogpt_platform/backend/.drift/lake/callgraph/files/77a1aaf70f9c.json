@@ -1,0 +1,64 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:14.174Z",
+  "checksum": "fd0c380e922bc24a",
+  "file": "backend/blocks/hubspot/_auth.py",
+  "functions": [
+    {
+      "id": "backend/blocks/hubspot/_auth.py:HubSpotCredentialsField:15",
+      "name": "HubSpotCredentialsField",
+      "startLine": 15,
+      "endLine": 19,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "CredentialsField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 17,
+          "resolvedId": "backend/data/model.py:CredentialsField:681"
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    },
+    {
+      "id": "backend/blocks/hubspot/_auth.py:__module__:1",
+      "name": "__module__",
+      "startLine": 1,
+      "endLine": 36,
+      "isEntryPoint": false,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "CredentialsField",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 17,
+          "resolvedId": "backend/data/model.py:CredentialsField:681"
+        },
+        {
+          "target": "APIKeyCredentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 22
+        },
+        {
+          "target": "APIKeyCredentials",
+          "resolved": false,
+          "confidence": 0,
+          "line": 22
+        },
+        {
+          "target": "SecretStr",
+          "resolved": false,
+          "confidence": 0,
+          "line": 25
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}

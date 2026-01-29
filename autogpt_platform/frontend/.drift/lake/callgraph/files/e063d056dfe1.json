@@ -1,0 +1,33 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T07:19:20.197Z",
+  "checksum": "4e7dfe1f3ff6b884",
+  "file": "src/app/(platform)/admin/components/AdminImpersonationBanner.tsx",
+  "functions": [
+    {
+      "id": "src/app/(platform)/admin/components/AdminImpersonationBanner.tsx:AdminImpersonationBanner:5",
+      "name": "AdminImpersonationBanner",
+      "startLine": 5,
+      "endLine": 36,
+      "isEntryPoint": true,
+      "isDataAccessor": false,
+      "calls": [
+        {
+          "target": "useAdminImpersonation",
+          "resolved": true,
+          "confidence": 0.8,
+          "line": 7,
+          "resolvedId": "src/app/(platform)/admin/components/useAdminImpersonation.ts:useAdminImpersonation:20"
+        },
+        {
+          "target": "stopImpersonating",
+          "resolved": false,
+          "confidence": 0,
+          "line": 28
+        }
+      ],
+      "calledBy": [],
+      "dataAccess": []
+    }
+  ]
+}
