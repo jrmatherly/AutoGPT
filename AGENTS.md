@@ -1,6 +1,6 @@
 # AutoGPT Platform Contribution Guide
 
-This guide provides context for Codex when updating the **autogpt_platform** folder.
+This guide provides context for AI assistants (Claude Code, etc.) when working with the **autogpt_platform** folder.
 
 ## Directory overview
 
@@ -9,12 +9,16 @@ This guide provides context for Codex when updating the **autogpt_platform** fol
 - `autogpt_platform/frontend` – Next.js + Typescript frontend.
 - `autogpt_platform/docker-compose.yml` – development stack.
 
-See `docs/content/platform/getting-started.md` for setup instructions.
+See `docs/platform/getting-started.md` for setup instructions.
 
 ## Code style
 
-- Format Python code with `poetry run format`.
-- Format frontend code using `pnpm format`.
+**Recommended (mise):**
+- Format all code: `mise run format` (formats both backend + frontend)
+
+**Alternative (direct):**
+- Format Python code: `poetry run format`
+- Format frontend code: `pnpm format`
 
 ## Frontend guidelines:
 
@@ -44,8 +48,14 @@ See `/frontend/CONTRIBUTING.md` for complete patterns. Quick reference:
 
 ## Testing
 
-- Backend: `poetry run test` (runs pytest with a docker based postgres + prisma).
-- Frontend: `pnpm test` or `pnpm test-ui` for Playwright tests. See `docs/content/platform/contributing/tests.md` for tips.
+**Recommended (mise):**
+- All tests: `mise run test` (runs both backend + frontend tests)
+- Backend only: `mise run test:backend`
+- Frontend only: `mise run test:frontend`
+
+**Alternative (direct):**
+- Backend: `poetry run test` (runs pytest with docker-based postgres + prisma)
+- Frontend: `pnpm test` or `pnpm test-ui` for Playwright tests
 
 Always run the relevant linters and tests before committing.
 Use conventional commit messages for all commits (e.g. `feat(backend): add API`).

@@ -21,11 +21,18 @@ Before proceeding with the installation, ensure your system meets the following 
   - macOS (10.15 or newer)
   - Windows 10/11 with WSL2
 - Required Software (with minimum versions):
+  - **mise** (2026.1.0 or newer) - Development tool manager ([install guide](https://mise.jdx.dev))
   - Docker Engine (20.10.0 or newer)
   - Docker Compose (2.0.0 or newer)
   - Git (2.30 or newer)
-  - Node.js (16.x or newer)
-  - npm (8.x or newer)
+
+**Note:** The following tools are managed automatically by mise:
+  - Python 3.13
+  - Node.js 22.x
+  - pnpm 10.28.2+
+  - Poetry 2.3.1+
+
+**Optional:**
   - VSCode (1.60 or newer) or any modern code editor
 
 #### Network Requirements
@@ -80,6 +87,32 @@ Here are two examples of what you can do with AutoGPT:
    - Then, it writes a post to automatically publish to your social media.
 
 These examples show just a glimpse of what you can achieve with AutoGPT! You can create customized workflows to build agents for any use case.
+
+---
+
+### 🚀 Quick Start
+
+```bash
+# 1. Install mise (one-time setup)
+curl https://mise.run | sh
+eval "$(mise activate bash)"  # or zsh - add to ~/.bashrc or ~/.zshrc
+
+# 2. Clone and setup the project
+git clone https://github.com/Significant-Gravitas/AutoGPT.git
+cd AutoGPT/autogpt_platform
+
+# 3. Trust mise configuration and run setup
+mise trust
+mise run setup
+
+# 4. Start development
+mise run docker:up     # Start infrastructure (Supabase, Redis, RabbitMQ)
+mise run backend       # Terminal 1: Start backend server
+mise run frontend      # Terminal 2: Start frontend dev server
+```
+
+**For detailed setup instructions:** See [docs/platform/getting-started.md](docs/platform/getting-started.md)
+**For mise migration:** See [docs/MISE_MIGRATION.md](docs/MISE_MIGRATION.md)
 
 ---
 

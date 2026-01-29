@@ -58,17 +58,45 @@ For platform development, see **[autogpt_platform/CLAUDE.md](autogpt_platform/CL
 - **Workflow Editor**: @xyflow/react
 - **Icons**: Phosphor Icons only
 
-## Common Commands
+## Development Tool Management
+
+**The project uses [mise](https://mise.jdx.dev)** for unified development tool management.
+
+### Common Commands (Mise - Recommended)
 
 ```bash
-# Start infrastructure
-cd autogpt_platform && docker compose up -d
+# First time setup
+cd autogpt_platform
+mise trust && mise run setup
 
+# Daily development
+mise run docker:up      # Start infrastructure (Supabase, Redis, RabbitMQ)
+mise run backend        # Start backend server
+mise run frontend       # Start frontend dev server
+
+# Code quality
+mise run format         # Format both backend + frontend
+mise run lint           # Lint both backend + frontend
+mise run test           # Run all tests
+
+# Database
+mise run db:migrate     # Run Prisma migrations
+mise run db:reset       # Reset database
+
+# List all available tasks
+mise tasks
+```
+
+### Alternative Commands (Direct)
+
+If you prefer not to use mise:
+
+```bash
 # Backend
 cd autogpt_platform/backend
 poetry install
 poetry run prisma migrate dev
-poetry run serve
+poetry run app
 poetry run test
 
 # Frontend
@@ -79,13 +107,15 @@ pnpm dev
 pnpm test
 ```
 
+**For migration from Makefile:** See [docs/MISE_MIGRATION.md](docs/MISE_MIGRATION.md)
+
 ## Licensing
 
 - **autogpt_platform/**: Polyform Shield License (commercial restrictions)
 
 ## Contributing
 
-- Create PRs against the `dev` branch
+- Create PRs against the `master` branch
 - Use conventional commit format: `type(scope): description`
 - Types: `feat`, `fix`, `refactor`, `ci`, `docs`, `dx`
 - Scopes: `platform`, `frontend`, `backend`, `blocks`, `infra`

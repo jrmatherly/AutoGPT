@@ -1,6 +1,6 @@
 # Project Index: AutoGPT
 
-> **Generated**: 2026-01-28 | **Backend**: v0.6.22 | **Frontend**: v0.3.4
+> **Generated**: 2026-01-29 | **Backend**: v0.6.22 | **Frontend**: v0.3.4
 
 A platform for building, deploying, and managing AI agents that automate complex workflows.
 
@@ -23,15 +23,16 @@ AutoGPT/
 
 ## 🚀 Entry Points
 
-| Component | Path | Command |
-|-----------|------|---------|
-| **Backend Server** | `autogpt_platform/backend/backend/app.py` | `poetry run serve` |
-| **REST API** | `autogpt_platform/backend/backend/rest.py` | `poetry run rest` |
-| **WebSocket** | `autogpt_platform/backend/backend/ws.py` | `poetry run ws` |
-| **Executor** | `autogpt_platform/backend/backend/exec.py` | `poetry run executor` |
-| **Scheduler** | `autogpt_platform/backend/backend/scheduler.py` | `poetry run scheduler` |
-| **Frontend Dev** | `autogpt_platform/frontend/` | `pnpm dev` |
-| **CLI** | `autogpt_platform/backend/backend/cli_main.py` | `poetry run cli` |
+| Component | Path | Mise Command | Alternative |
+|-----------|------|--------------|-------------|
+| **Backend Server** | `autogpt_platform/backend/backend/app.py` | `mise run backend` | `poetry run serve` |
+| **Frontend Dev** | `autogpt_platform/frontend/` | `mise run frontend` | `pnpm dev` |
+| **Infrastructure** | `autogpt_platform/docker-compose.yml` | `mise run docker:up` | `docker compose up -d` |
+| **REST API** | `autogpt_platform/backend/backend/rest.py` | N/A | `poetry run rest` |
+| **WebSocket** | `autogpt_platform/backend/backend/ws.py` | N/A | `poetry run ws` |
+| **Executor** | `autogpt_platform/backend/backend/exec.py` | N/A | `poetry run executor` |
+| **Scheduler** | `autogpt_platform/backend/backend/scheduler.py` | N/A | `poetry run scheduler` |
+| **CLI** | `autogpt_platform/backend/backend/cli_main.py` | N/A | `poetry run cli` |
 
 ---
 
@@ -94,7 +95,9 @@ AutoGPT/
 
 | File | Purpose |
 |------|---------|
-| `autogpt_platform/docker-compose.yml` | Development stack (DB, Redis, RabbitMQ) |
+| `mise.lock` | Tool version pinning (Python 3.13.1, Node 22.22.0, pnpm 10.28.2) |
+| `mise.toml` | Development environment configuration |
+| `autogpt_platform/docker-compose.yml` | Development stack (DB, Redis, RabbitMQ, ClamAV) |
 | `autogpt_platform/backend/schema.prisma` | Database schema |
 | `autogpt_platform/backend/pyproject.toml` | Backend dependencies |
 | `autogpt_platform/frontend/package.json` | Frontend dependencies |
@@ -106,12 +109,13 @@ AutoGPT/
 
 ## 🧪 Test Coverage
 
-| Area | Files | Command |
-|------|-------|---------|
-| **Backend Unit** | 61 `*_test.py` files | `poetry run test` |
-| **Block Tests** | `blocks/test/test_block.py` | `poetry run pytest backend/blocks/test/` |
-| **Frontend E2E** | Playwright | `pnpm test` |
-| **Storybook** | 57 `*.stories.tsx` files | `pnpm storybook` |
+| Area | Files | Mise Command | Alternative |
+|------|-------|--------------|-------------|
+| **All Tests** | Backend + Frontend | `mise run test` | See below |
+| **Backend Unit** | 61 `*_test.py` files | `mise run test:backend` | `poetry run test` |
+| **Block Tests** | `blocks/test/test_block.py` | N/A | `poetry run pytest backend/blocks/test/` |
+| **Frontend E2E** | Playwright | `mise run test:frontend` | `pnpm test` |
+| **Storybook** | 57 `*.stories.tsx` files | N/A | `pnpm storybook` |
 
 ---
 
@@ -141,6 +145,31 @@ AutoGPT/
 
 ## 📝 Quick Start
 
+### Using Mise (Recommended)
+
+```bash
+# 1. Install mise (one-time setup)
+curl https://mise.run | sh
+eval "$(mise activate bash)"  # Add to ~/.bashrc or ~/.zshrc
+
+# 2. Setup project
+cd autogpt_platform
+mise trust && mise run setup
+
+# 3. Daily development
+mise run docker:up      # Start infrastructure (Supabase, Redis, RabbitMQ)
+mise run backend        # Terminal 1: Start backend server
+mise run frontend       # Terminal 2: Start frontend dev server
+
+# Common tasks
+mise tasks              # List all available tasks
+mise run format         # Format and lint all code (backend + frontend)
+mise run test           # Run all tests
+mise run db:migrate     # Run database migrations
+```
+
+### Using Direct Commands (Alternative)
+
 ```bash
 # 1. Start infrastructure
 cd autogpt_platform && docker compose up -d
@@ -166,14 +195,19 @@ pnpm dev
 
 ## 🎯 Common Tasks
 
-| Task | Command |
-|------|---------|
-| Add new block | Create in `backend/blocks/`, inherit `Block`, run tests |
-| Add API endpoint | Create route in `api/features/`, add Pydantic models |
-| Add frontend page | Create in `app/(platform)/`, add hooks |
-| Regenerate API client | `pnpm generate:api` |
-| Format code | Backend: `poetry run format` / Frontend: `pnpm format` |
-| Run tests | Backend: `poetry run test` / Frontend: `pnpm test` |
+| Task | Mise Command | Alternative |
+|------|--------------|-------------|
+| **Start infrastructure** | `mise run docker:up` | `docker compose up -d` |
+| **Format and lint all code** | `mise run format` | Backend: `poetry run format` / Frontend: `pnpm format` |
+| **Run all tests** | `mise run test` | Backend: `poetry run test` / Frontend: `pnpm test` |
+| **Database migrations** | `mise run db:migrate` | `poetry run prisma migrate dev` |
+| **Reset database** | `mise run db:reset` | Stop DB, delete volume, re-run migrations |
+| **Regenerate API client** | `cd frontend && pnpm generate:api` | Same |
+| **Environment check** | `mise run doctor` | N/A |
+| **List all tasks** | `mise tasks` | N/A |
+| **Add new block** | Create in `backend/blocks/`, inherit `Block`, test with `mise run test:backend` |
+| **Add API endpoint** | Create route in `api/features/`, add Pydantic models, regenerate API client |
+| **Add frontend page** | Create in `app/(platform)/`, add hooks, use generated API client |
 
 ---
 

@@ -1,6 +1,6 @@
 {
   "name": "AutoGPT",
-  "generated": "2026-01-28",
+  "generated": "2026-01-29",
   "versions": {
     "backend": "0.6.22",
     "frontend": "0.3.4"
@@ -36,7 +36,18 @@
   "entry_points": {
     "backend_server": {
       "path": "autogpt_platform/backend/backend/app.py",
+      "mise_command": "mise run backend",
       "command": "poetry run serve"
+    },
+    "frontend": {
+      "path": "autogpt_platform/frontend/",
+      "mise_command": "mise run frontend",
+      "command": "pnpm dev"
+    },
+    "infrastructure": {
+      "path": "autogpt_platform/docker-compose.yml",
+      "mise_command": "mise run docker:up",
+      "command": "docker compose up -d"
     },
     "rest_api": {
       "path": "autogpt_platform/backend/backend/rest.py",
@@ -53,10 +64,6 @@
     "scheduler": {
       "path": "autogpt_platform/backend/backend/scheduler.py",
       "command": "poetry run scheduler"
-    },
-    "frontend": {
-      "path": "autogpt_platform/frontend/",
-      "command": "pnpm dev"
     },
     "cli": {
       "path": "autogpt_platform/backend/backend/cli_main.py",
@@ -135,6 +142,8 @@
     "core": ["http", "basic", "text", "iteration", "branching", "persistence"]
   },
   "configuration_files": {
+    "mise_lock": "mise.lock",
+    "mise_config": "mise.toml",
     "docker_compose": "autogpt_platform/docker-compose.yml",
     "prisma_schema": "autogpt_platform/backend/schema.prisma",
     "backend_deps": "autogpt_platform/backend/pyproject.toml",
@@ -144,14 +153,20 @@
     "ai_guide": "autogpt_platform/CLAUDE.md"
   },
   "testing": {
+    "all": {
+      "mise_command": "mise run test",
+      "description": "Run both backend and frontend tests"
+    },
     "backend": {
       "test_files": 61,
       "pattern": "*_test.py",
+      "mise_command": "mise run test:backend",
       "command": "poetry run test"
     },
     "frontend": {
       "story_files": 57,
       "e2e_framework": "Playwright",
+      "mise_command": "mise run test:frontend",
       "commands": {
         "e2e": "pnpm test",
         "storybook": "pnpm storybook"
@@ -183,27 +198,44 @@
     "openapi_staging": "https://dev-server.agpt.co/openapi.json"
   },
   "commands": {
+    "mise": {
+      "install": "curl https://mise.run | sh",
+      "setup": "cd autogpt_platform && mise trust && mise run setup",
+      "list_tasks": "mise tasks",
+      "doctor": "mise run doctor"
+    },
     "setup": {
+      "mise_recommended": "cd autogpt_platform && mise trust && mise run setup",
       "infrastructure": "cd autogpt_platform && docker compose up -d",
       "backend": "cd backend && poetry install && poetry run prisma migrate dev",
       "frontend": "cd frontend && pnpm i && pnpm generate:api"
     },
     "run": {
+      "mise_infrastructure": "mise run docker:up",
+      "mise_backend": "mise run backend",
+      "mise_frontend": "mise run frontend",
       "backend": "poetry run serve",
       "frontend": "pnpm dev"
     },
     "test": {
+      "mise_all": "mise run test",
+      "mise_backend": "mise run test:backend",
+      "mise_frontend": "mise run test:frontend",
       "backend": "poetry run test",
       "frontend": "pnpm test"
     },
-    "format": {
+    "format_and_lint": {
+      "mise_all": "mise run format",
+      "description": "Format and lint all code (mise run format does both)",
       "backend": "poetry run format",
       "frontend": "pnpm format"
     },
-    "lint": {
-      "backend": "poetry run lint",
-      "frontend": "pnpm lint"
+    "database": {
+      "mise_migrate": "mise run db:migrate",
+      "mise_reset": "mise run db:reset",
+      "migrate": "poetry run prisma migrate dev",
+      "reset": "Stop db, delete volume, re-run migrations"
     },
-    "generate_api": "pnpm generate:api"
+    "generate_api": "cd frontend && pnpm generate:api"
   }
 }
