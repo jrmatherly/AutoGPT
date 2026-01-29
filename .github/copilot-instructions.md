@@ -1,3 +1,10 @@
+<!--
+  GitHub Copilot Instructions for AutoGPT
+  Version: 2.0
+  Last Updated: 2026-01-29
+  This is a living document - update as the project evolves
+-->
+
 # GitHub Copilot Instructions for AutoGPT
 
 This file provides comprehensive onboarding information for GitHub Copilot coding agent to work efficiently with the AutoGPT repository.
@@ -16,11 +23,56 @@ This file provides comprehensive onboarding information for GitHub Copilot codin
 - **Frontend**: TypeScript, Next.js 15, React, Tailwind CSS, Radix UI
 - **Development**: Docker, Poetry, pnpm, Playwright, Storybook
 
+## Development Tool Management
+
+**The project uses [mise](https://mise.jdx.dev)** for unified development tool management. Mise automatically installs and manages Python, Node.js, Poetry, and pnpm at the correct versions.
+
+### Quick Setup with Mise (Recommended)
+
+```bash
+# Install mise (one-time)
+curl https://mise.run | sh
+eval "$(mise activate bash)"  # Add to ~/.bashrc or ~/.zshrc
+
+# Setup project (replaces manual steps below)
+cd autogpt_platform
+mise trust                    # Trust the mise configuration
+mise run setup                # Install everything automatically
+```
+
+**📖 Complete Setup Guide:** See [CONTRIBUTING.md](../CONTRIBUTING.md) for full installation and troubleshooting.
+
+**Alternative:** You can still use Poetry and pnpm directly if you prefer manual management. The commands below show both approaches.
+
+---
+
 ## Build and Validation Instructions
 
-### Essential Setup Commands
+### Recommended: Automated Setup with Mise
 
-**Always run these commands in the correct directory and in this order:**
+**If you have mise installed** (recommended for new contributors):
+
+```bash
+# Clone and enter repository
+git clone <repo> && cd AutoGPT
+
+# Complete setup (handles all dependencies, services, and migrations)
+cd autogpt_platform
+mise trust && mise run setup
+
+# Verify environment
+mise run doctor
+```
+
+**That's it!** Mise handles all of the following automatically:
+- Installing Python, Node.js, Poetry, pnpm at correct versions
+- Starting Docker services (Supabase, Redis, RabbitMQ, ClamAV)
+- Installing backend and frontend dependencies
+- Running database migrations
+
+### Alternative: Manual Setup (Without Mise)
+
+**If you prefer manual setup** or don't have mise installed:
 
 1. **Initial Setup** (required once):
 
@@ -49,19 +101,35 @@ This file provides comprehensive onboarding information for GitHub Copilot codin
 
 ### Runtime Requirements
 
-**Critical:** Always ensure Docker services are running before starting development:
+**Critical:** Always ensure Docker services are running before starting development.
 
+**With mise:**
+```bash
+cd autogpt_platform && mise run docker:up
+```
+
+**Without mise:**
 ```bash
 cd autogpt_platform && docker compose --profile local up deps --build --detach
 ```
 
-**Python Version:** Use Python 3.11 (required; managed by Poetry via pyproject.toml)
-**Node.js Version:** Use Node.js 21+ with pnpm package manager
+**Python Version:** Python 3.11 (required; managed automatically by mise or Poetry via pyproject.toml)
+**Node.js Version:** Node.js 21+ with pnpm (managed automatically by mise or manually)
 
 ### Development Commands
 
 **Backend Development:**
 
+Recommended (with mise):
+```bash
+cd autogpt_platform
+mise run backend                     # Start development server (port 8000)
+mise run test:backend                # Run all backend tests
+mise run format                      # Format all code (backend + frontend)
+mise run db:migrate                  # Run database migrations
+```
+
+Alternative (direct tools):
 ```bash
 cd autogpt_platform/backend
 poetry run serve                     # Start development server (port 8000)
@@ -73,6 +141,15 @@ poetry run lint                      # Lint code (ruff) - run after format
 
 **Frontend Development:**
 
+Recommended (with mise):
+```bash
+cd autogpt_platform
+mise run frontend                    # Start development server (port 3000)
+mise run test:frontend               # Run Playwright E2E tests
+mise run format                      # Format all code (backend + frontend)
+```
+
+Alternative (direct tools):
 ```bash
 cd autogpt_platform/frontend
 pnpm dev                            # Start development server (port 3000) - use for active development
@@ -81,6 +158,13 @@ pnpm test                           # Run Playwright E2E tests (requires build f
 pnpm test-ui                        # Run tests with UI
 pnpm format                         # Format and lint code
 pnpm storybook                      # Start component development server
+```
+
+**All Tasks:**
+
+View all available mise tasks:
+```bash
+cd autogpt_platform && mise tasks
 ```
 
 ### Testing Strategy
@@ -100,17 +184,30 @@ pnpm storybook                      # Start component development server
 
 **Before committing changes:**
 
-1. Run `poetry run format` (backend) and `pnpm format` (frontend)
-2. Ensure all tests pass in modified areas
-3. Verify Docker services are still running
-4. Check that database migrations apply cleanly
+With mise (recommended):
+```bash
+cd autogpt_platform
+mise run format                      # Format all code
+mise run test                        # Run all tests
+mise run doctor                      # Verify environment
+```
+
+Without mise:
+```bash
+# Backend
+cd autogpt_platform/backend && poetry run format && poetry run test
+
+# Frontend
+cd autogpt_platform/frontend && pnpm format && pnpm test
+```
 
 **Common Issues & Workarounds:**
 
-- **Prisma issues**: Run `poetry run prisma generate` after schema changes
+- **Prisma issues**: Run `poetry run prisma generate` (or `mise run db:migrate`)
 - **Permission errors**: Ensure Docker has proper permissions
-- **Port conflicts**: Check the `docker-compose.yml` file for the current list of exposed ports. You can list all mapped ports with:
+- **Port conflicts**: Check the `docker-compose.yml` file for the current list of exposed ports
 - **Test timeouts**: Backend tests can take 5+ minutes, use `-x` flag to stop on first failure
+- **Environment issues**: Run `mise run doctor` to diagnose problems
 
 ## Project Layout & Architecture
 
@@ -148,12 +245,14 @@ pnpm storybook                      # Start component development server
 
 **GitHub Actions**: Multiple CI/CD workflows in `.github/workflows/`
 
+- `ci-mise.yml` - Comprehensive mise-based CI (recommended for new workflows)
 - `platform-backend-ci.yml` - Backend testing and validation
 - `platform-frontend-ci.yml` - Frontend testing and validation
 - `platform-fullstack-ci.yml` - End-to-end integration tests
 
 **Pre-commit Hooks**: Run linting and formatting checks
 **Conventional Commits**: Use format `type(scope): description` (e.g., `feat(backend): add API`)
+**Development Tool**: [mise](https://mise.jdx.dev) for unified environment management
 
 ### Key Source Files
 
@@ -222,7 +321,7 @@ Agents are built using a visual block-based system where each block performs a s
 2. Add/update Pydantic models in same directory
 3. Write tests alongside route files
 4. For `data/*.py` changes, validate user ID checks
-5. Run `poetry run test` to verify changes
+5. Run `poetry run test` (or `mise run test:backend`) to verify changes
 
 ### Frontend Development
 
@@ -243,7 +342,7 @@ Agents are built using a visual block-based system where each block performs a s
 - Generated via Orval from backend OpenAPI spec
 - Pattern: `use{Method}{Version}{OperationName}`
 - Example: `useGetV2ListLibraryAgents`
-- Regenerate with: `pnpm generate:api`
+- Regenerate with: `pnpm generate:api` (or `mise run frontend` does this automatically)
 - **Never** use deprecated `BackendAPI` or `src/lib/autogpt-server-api/*`
 
 **Code Conventions:**
@@ -298,6 +397,7 @@ The repository has comprehensive CI workflows that test:
 - **Backend**: Python 3.11-3.13, services (Redis/RabbitMQ/ClamAV), Prisma migrations, Poetry lock validation
 - **Frontend**: Node.js 21, pnpm, Playwright with Docker Compose stack, API schema validation
 - **Integration**: Full-stack type checking and E2E testing
+- **Mise-based**: `ci-mise.yml` provides comprehensive mise-based CI pipeline
 
 Match these patterns when developing locally - the copilot setup environment mirrors these CI configurations.
 
@@ -319,3 +419,7 @@ These instructions are comprehensive and tested. Only perform additional searche
 3. You need to understand implementation details not covered above
 
 For detailed platform development patterns, refer to `autogpt_platform/CLAUDE.md` and `AGENTS.md` in the repository root.
+
+---
+
+**Note:** This is a living document that evolves with the project. For the most up-to-date setup instructions, always refer to [CONTRIBUTING.md](../CONTRIBUTING.md).

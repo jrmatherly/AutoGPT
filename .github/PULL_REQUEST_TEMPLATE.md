@@ -1,3 +1,5 @@
+<!-- For setup and contribution guidelines, see CONTRIBUTING.md -->
+
 <!-- Clearly explain the need for these changes: -->
 
 ### Changes 🏗️
@@ -13,10 +15,12 @@
 - [ ] I have tested my changes according to the test plan:
   <!-- Put your test plan here: -->
   - [ ] ...
+- [ ] I have formatted code with `mise run format` or equivalent tool commands
+- [ ] Tests pass with `mise run test` or equivalent tool commands
 
 <details>
   <summary>Example test plan</summary>
-  
+
 - [ ] Create from scratch and execute an agent with at least 3 blocks
 - [ ] Import an agent from file upload, and confirm it executes correctly
 - [ ] Upload agent to marketplace
