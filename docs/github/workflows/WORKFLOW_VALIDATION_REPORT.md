@@ -59,6 +59,7 @@ mise run test         # Run all tests
 ### Impact Analysis
 
 | Issue | Impact | Severity |
+
 |-------|--------|----------|
 | **Environment drift** | Local uses mise, CI uses manual setup | 🔴 HIGH |
 | **Duplication** | mise.toml defines tools, workflows re-define them | 🔴 HIGH |
@@ -79,6 +80,7 @@ Official GitHub Action for mise: [jdx/mise-action](https://github.com/jdx/mise-a
 ### Benefits
 
 | Benefit | Description |
+
 |---------|-------------|
 | **Dev/CI Parity** | Identical tool versions between local and CI |
 | **Simplified Workflows** | Replace manual setup with single action |
@@ -376,8 +378,8 @@ steps:
 
 *(Original Tier 2 recommendations)*
 
-5. **Consolidate Bash Scripts** (4-8 hours)
-6. **Update Python Scripts for 3.11+** (2-4 hours)
+1. **Consolidate Bash Scripts** (4-8 hours)
+2. **Update Python Scripts for 3.11+** (2-4 hours)
 
 ---
 
@@ -386,6 +388,7 @@ steps:
 ### Original Analysis Accuracy: ✅ 95%
 
 | Category | Status | Notes |
+
 |----------|--------|-------|
 | Python scripts analysis | ✅ Correct | All findings valid |
 | Bash scripts analysis | ✅ Correct | 85% duplication confirmed |

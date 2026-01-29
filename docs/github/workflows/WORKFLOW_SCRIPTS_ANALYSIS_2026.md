@@ -17,6 +17,7 @@
 ### ⚠️ Areas for Improvement
 
 | Category | Impact | Priority | Effort |
+
 |----------|--------|----------|--------|
 | Bash script duplication (85%) | High | High | Low |
 | Python script error handling | Medium | Medium | Low |
@@ -30,6 +31,7 @@
 ### Current State (All Up-to-Date ✅)
 
 | Action | Current Version | Latest Version | Status | Source |
+
 |--------|----------------|----------------|--------|--------|
 | actions/checkout | v6 | v6 | ✅ Current | [GitHub Marketplace](https://github.com/actions/checkout) |
 | actions/setup-python | v6 | v6 | ✅ Current | [GitHub Marketplace](https://github.com/actions/setup-python) |
@@ -239,6 +241,7 @@ Current manual parsing is fine for this simple case. Only consider `argparse` if
 **Current State:**
 
 | Script | Required Version | Used In Workflow | Recommended |
+
 |--------|-----------------|------------------|-------------|
 | check_actions_status.py | None specified | Python 3.10 | Upgrade to 3.11+ |
 | get_package_version_from_lockfile.py | 3.11+ | Python 3.11+ | Keep 3.11+ |
@@ -266,6 +269,7 @@ Current manual parsing is fine for this simple case. Only consider `argparse` if
 ### 3.1 Overview
 
 | Script | Purpose | Lines | Duplication | ShellCheck Violations |
+
 |--------|---------|-------|-------------|---------------------|
 | docker-ci-summary.sh | CI build summary | 99 | 85% with release | 15+ |
 | docker-release-summary.sh | Release build summary | 86 | 85% with CI | 15+ |
@@ -384,6 +388,7 @@ If consolidation is not desired, minimum fixes required:
 ### 4.1 Files Reviewed
 
 | File | Purpose | Status |
+
 |------|---------|--------|
 | platform-autogpt-deploy-dev.yaml | Dev deployment | ✅ Modern |
 | platform-autogpt-deploy-prod.yml | Prod deployment | ✅ Modern |
@@ -477,6 +482,7 @@ env:
 ### 5.1 Across Scripts
 
 | Pattern | Files | Duplication % | Impact |
+
 |---------|-------|--------------|--------|
 | Docker metadata extraction | docker-ci-summary.sh, docker-release-summary.sh | 85% | High |
 | Error handling patterns | All Python scripts | 40% | Medium |
@@ -485,6 +491,7 @@ env:
 ### 5.2 Across Workflows
 
 | Pattern | Files | Duplication % | Recommendation |
+
 |---------|-------|--------------|----------------|
 | pnpm setup | 3 frontend workflows | 90% | Consider composite action |
 | Docker compose startup | 2 workflows | 80% | Consider composite action |
@@ -563,13 +570,13 @@ env:
 
 ### Tier 2: High Impact, Medium Effort (Do Next)
 
-5. **Consolidate Bash Scripts** (4-8 hours)
+1. **Consolidate Bash Scripts** (4-8 hours)
    - Use provided unified script
    - Test in dev workflow first
    - Gradual migration to production
    - Remove legacy scripts after validation
 
-6. **Update Python Scripts for 3.11+** (2-4 hours)
+2. **Update Python Scripts for 3.11+** (2-4 hours)
    - Modernize type hints
    - Add retry logic to check_actions_status.py
    - Add maximum polling timeout
@@ -577,13 +584,13 @@ env:
 
 ### Tier 3: Low Impact, Low Effort (Nice to Have)
 
-7. **Add Missing Return Types** (15 min)
+1. **Add Missing Return Types** (15 min)
 
    ```python
    def main() -> None:
    ```
 
-8. **Consider Composite Actions for Repeated Setup** (Optional)
+2. **Consider Composite Actions for Repeated Setup** (Optional)
    - pnpm setup
    - docker-compose startup
 

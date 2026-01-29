@@ -7,6 +7,7 @@ This document describes the breaking changes and migration notes for the GitHub 
 All workflow files have been updated to use the latest stable versions of GitHub Actions as of January 2026:
 
 | Action | Previous | Current | Breaking Changes |
+
 |--------|----------|---------|------------------|
 | actions/checkout | v4 | v6 | Minimal (credential storage) |
 | actions/setup-python | v5 | v6 | **Yes** (runner requirement, cache keys) |
@@ -265,7 +266,7 @@ git push origin master
     key: poetry-${{ runner.os }}-${{ hashFiles('autogpt_platform/backend/poetry.lock') }}
 ```
 
-3. Optionally revert composite action usage to inline steps
+1. Optionally revert composite action usage to inline steps
 
 ## Testing Checklist
 
