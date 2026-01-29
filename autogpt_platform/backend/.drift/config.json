@@ -1,0 +1,49 @@
+{
+  "version": "2.0.0",
+  "project": {
+    "id": "cdf5f842-4a32-4601-b12f-dcac888b2a80",
+    "name": "@autogpt/backend",
+    "description": "AutoGPT Platform Backend - FastAPI Python Server",
+    "language": "python",
+    "framework": "fastapi",
+    "initializedAt": "2026-01-29T06:11:57.930Z"
+  },
+  "severity": {},
+  "categories": ["api", "auth", "data-access", "blocks"],
+  "ignore": [
+    "node_modules/**",
+    "dist/**",
+    "build/**",
+    ".git/**",
+    "coverage/**",
+    "*.min.js",
+    "*.bundle.js",
+    "vendor/**",
+    "__pycache__/**",
+    ".venv/**",
+    "target/**",
+    "bin/**",
+    "obj/**"
+  ],
+  "ci": {
+    "failOn": "error",
+    "reportFormat": "text"
+  },
+  "learning": {
+    "autoApproveThreshold": 0.95,
+    "minOccurrences": 3,
+    "semanticLearning": true
+  },
+  "performance": {
+    "maxWorkers": 4,
+    "cacheEnabled": true,
+    "incrementalAnalysis": true,
+    "cacheTTL": 3600
+  },
+  "features": {
+    "callGraph": true,
+    "boundaries": true,
+    "dna": true,
+    "contracts": true
+  }
+}
