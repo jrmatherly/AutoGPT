@@ -2,11 +2,9 @@
   "modules": {
     "autogpt_libs/auth/jwt_utils_test.py": {
       "path": "autogpt_libs/auth/jwt_utils_test.py",
-      "language": "python",
+      "imports": [],
       "importedBy": [],
-      "imports": [
-        "autogpt_libs/auth/jwt_utils.py"
-      ],
+      "exports": [],
       "metrics": {
         "Ca": 0,
         "Ce": 1,
@@ -14,219 +12,15 @@
         "abstractness": 0,
         "distance": 0
       },
-      "role": "authority",
-      "exports": [
-        {
-          "name": "mock_config",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 35,
-          "isReExport": false
-        },
-        {
-          "name": "create_token",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 41,
-          "isReExport": false
-        },
-        {
-          "name": "test_parse_jwt_token_valid",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 48,
-          "isReExport": false
-        },
-        {
-          "name": "test_parse_jwt_token_expired",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 58,
-          "isReExport": false
-        },
-        {
-          "name": "test_parse_jwt_token_invalid_signature",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 71,
-          "isReExport": false
-        },
-        {
-          "name": "test_parse_jwt_token_malformed",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 81,
-          "isReExport": false
-        },
-        {
-          "name": "test_parse_jwt_token_wrong_audience",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 99,
-          "isReExport": false
-        },
-        {
-          "name": "test_parse_jwt_token_missing_audience",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 109,
-          "isReExport": false
-        },
-        {
-          "name": "test_get_jwt_payload_with_valid_token",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 119,
-          "isReExport": false
-        },
-        {
-          "name": "test_get_jwt_payload_no_credentials",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 129,
-          "isReExport": false
-        },
-        {
-          "name": "test_get_jwt_payload_invalid_token",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 137,
-          "isReExport": false
-        },
-        {
-          "name": "test_verify_user_with_valid_user",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 149,
-          "isReExport": false
-        },
-        {
-          "name": "test_verify_user_with_admin",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 158,
-          "isReExport": false
-        },
-        {
-          "name": "test_verify_user_admin_only_with_regular_user",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 166,
-          "isReExport": false
-        },
-        {
-          "name": "test_verify_user_no_payload",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 174,
-          "isReExport": false
-        },
-        {
-          "name": "test_verify_user_missing_sub",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 182,
-          "isReExport": false
-        },
-        {
-          "name": "test_verify_user_empty_sub",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 191,
-          "isReExport": false
-        },
-        {
-          "name": "test_verify_user_none_sub",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 200,
-          "isReExport": false
-        },
-        {
-          "name": "test_verify_user_missing_role_admin_check",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 209,
-          "isReExport": false
-        },
-        {
-          "name": "test_jwt_with_additional_claims",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 220,
-          "isReExport": false
-        },
-        {
-          "name": "test_jwt_with_numeric_sub",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 238,
-          "isReExport": false
-        },
-        {
-          "name": "test_jwt_with_very_long_sub",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 250,
-          "isReExport": false
-        },
-        {
-          "name": "test_jwt_with_special_characters_in_claims",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 262,
-          "isReExport": false
-        },
-        {
-          "name": "test_jwt_with_future_iat",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 274,
-          "isReExport": false
-        },
-        {
-          "name": "test_jwt_with_different_algorithms",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 289,
-          "isReExport": false
-        }
-      ],
-      "unusedExports": [
-        "mock_config",
-        "create_token",
-        "test_parse_jwt_token_valid",
-        "test_parse_jwt_token_expired",
-        "test_parse_jwt_token_invalid_signature",
-        "test_parse_jwt_token_malformed",
-        "test_parse_jwt_token_wrong_audience",
-        "test_parse_jwt_token_missing_audience",
-        "test_get_jwt_payload_with_valid_token",
-        "test_get_jwt_payload_no_credentials",
-        "test_get_jwt_payload_invalid_token",
-        "test_verify_user_with_valid_user",
-        "test_verify_user_with_admin",
-        "test_verify_user_admin_only_with_regular_user",
-        "test_verify_user_no_payload",
-        "test_verify_user_missing_sub",
-        "test_verify_user_empty_sub",
-        "test_verify_user_none_sub",
-        "test_verify_user_missing_role_admin_check",
-        "test_jwt_with_additional_claims",
-        "test_jwt_with_numeric_sub",
-        "test_jwt_with_very_long_sub",
-        "test_jwt_with_special_characters_in_claims",
-        "test_jwt_with_future_iat",
-        "test_jwt_with_different_algorithms"
-      ],
-      "isEntryPoint": true,
+      "role": "balanced",
+      "isEntryPoint": false,
       "isLeaf": false
     },
     "autogpt_libs/logging/filters.py": {
       "path": "autogpt_libs/logging/filters.py",
-      "language": "python",
-      "importedBy": [],
       "imports": [],
+      "importedBy": [],
+      "exports": [],
       "metrics": {
         "Ca": 0,
         "Ce": 0,
@@ -234,37 +28,15 @@
         "abstractness": 0,
         "distance": 1
       },
-      "role": "isolated",
-      "exports": [
-        {
-          "name": "__init__",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 7,
-          "isReExport": false
-        },
-        {
-          "name": "filter",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 11,
-          "isReExport": false
-        }
-      ],
-      "unusedExports": [
-        "__init__",
-        "filter"
-      ],
-      "isEntryPoint": true,
+      "role": "balanced",
+      "isEntryPoint": false,
       "isLeaf": true
     },
     "autogpt_libs/api_key/keysmith.py": {
       "path": "autogpt_libs/api_key/keysmith.py",
-      "language": "python",
-      "importedBy": [
-        "autogpt_libs/api_key/test_keysmith.py"
-      ],
       "imports": [],
+      "importedBy": [],
+      "exports": [],
       "metrics": {
         "Ca": 1,
         "Ce": 0,
@@ -272,43 +44,15 @@
         "abstractness": 0,
         "distance": 1
       },
-      "role": "hub",
-      "exports": [
-        {
-          "name": "generate_key",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 23,
-          "isReExport": false
-        },
-        {
-          "name": "verify_key",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 36,
-          "isReExport": false
-        },
-        {
-          "name": "hash_key",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 58,
-          "isReExport": false
-        }
-      ],
-      "unusedExports": [],
-      "isEntryPoint": true,
+      "role": "balanced",
+      "isEntryPoint": false,
       "isLeaf": true
     },
     "autogpt_libs/auth/helpers_test.py": {
       "path": "autogpt_libs/auth/helpers_test.py",
-      "language": "python",
+      "imports": [],
       "importedBy": [],
-      "imports": [
-        "autogpt_libs/auth/dependencies.py",
-        "autogpt_libs/auth/dependencies_test.py",
-        "autogpt_libs/auth/helpers.py"
-      ],
+      "exports": [],
       "metrics": {
         "Ca": 0,
         "Ce": 3,
@@ -316,131 +60,15 @@
         "abstractness": 0,
         "distance": 0
       },
-      "role": "authority",
-      "exports": [
-        {
-          "name": "test_add_auth_responses_to_openapi_basic",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 15,
-          "isReExport": false
-        },
-        {
-          "name": "test_add_auth_responses_to_openapi_with_security",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 60,
-          "isReExport": false
-        },
-        {
-          "name": "test_add_auth_responses_to_openapi_cached_schema",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 112,
-          "isReExport": false
-        },
-        {
-          "name": "test_add_auth_responses_to_openapi_existing_responses",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 127,
-          "isReExport": false
-        },
-        {
-          "name": "test_add_auth_responses_to_openapi_no_security_endpoints",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 167,
-          "isReExport": false
-        },
-        {
-          "name": "test_add_auth_responses_to_openapi_multiple_security_schemes",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 194,
-          "isReExport": false
-        },
-        {
-          "name": "test_add_auth_responses_to_openapi_empty_components",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 226,
-          "isReExport": false
-        },
-        {
-          "name": "test_add_auth_responses_to_openapi_all_http_methods",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 252,
-          "isReExport": false
-        },
-        {
-          "name": "test_bearer_jwt_auth_scheme_config",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 294,
-          "isReExport": false
-        },
-        {
-          "name": "test_add_auth_responses_with_no_routes",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 300,
-          "isReExport": false
-        },
-        {
-          "name": "test_custom_openapi_function_replacement",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 316,
-          "isReExport": false
-        },
-        {
-          "name": "test_endpoint_without_responses_section",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 331,
-          "isReExport": false
-        },
-        {
-          "name": "test_components_with_existing_responses",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 374,
-          "isReExport": false
-        },
-        {
-          "name": "test_openapi_schema_persistence",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 408,
-          "isReExport": false
-        }
-      ],
-      "unusedExports": [
-        "test_add_auth_responses_to_openapi_basic",
-        "test_add_auth_responses_to_openapi_with_security",
-        "test_add_auth_responses_to_openapi_cached_schema",
-        "test_add_auth_responses_to_openapi_existing_responses",
-        "test_add_auth_responses_to_openapi_no_security_endpoints",
-        "test_add_auth_responses_to_openapi_multiple_security_schemes",
-        "test_add_auth_responses_to_openapi_empty_components",
-        "test_add_auth_responses_to_openapi_all_http_methods",
-        "test_bearer_jwt_auth_scheme_config",
-        "test_add_auth_responses_with_no_routes",
-        "test_custom_openapi_function_replacement",
-        "test_endpoint_without_responses_section",
-        "test_components_with_existing_responses",
-        "test_openapi_schema_persistence"
-      ],
-      "isEntryPoint": true,
+      "role": "balanced",
+      "isEntryPoint": false,
       "isLeaf": false
     },
     "autogpt_libs/logging/handlers.py": {
       "path": "autogpt_libs/logging/handlers.py",
-      "language": "python",
-      "importedBy": [],
       "imports": [],
+      "importedBy": [],
+      "exports": [],
       "metrics": {
         "Ca": 0,
         "Ce": 0,
@@ -448,35 +76,15 @@
         "abstractness": 0,
         "distance": 1
       },
-      "role": "isolated",
-      "exports": [
-        {
-          "name": "format",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 8,
-          "isReExport": false
-        },
-        {
-          "name": "emit",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 12,
-          "isReExport": false
-        }
-      ],
-      "unusedExports": [
-        "format",
-        "emit"
-      ],
-      "isEntryPoint": true,
+      "role": "balanced",
+      "isEntryPoint": false,
       "isLeaf": true
     },
     "autogpt_libs/supabase_integration_credentials_store/types.py": {
       "path": "autogpt_libs/supabase_integration_credentials_store/types.py",
-      "language": "python",
-      "importedBy": [],
       "imports": [],
+      "importedBy": [],
+      "exports": [],
       "metrics": {
         "Ca": 0,
         "Ce": 0,
@@ -484,48 +92,15 @@
         "abstractness": 0,
         "distance": 1
       },
-      "role": "isolated",
-      "exports": [
-        {
-          "name": "dump_secret_strings",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 13,
-          "isReExport": false
-        },
-        {
-          "name": "bearer",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 32,
-          "isReExport": false
-        },
-        {
-          "name": "bearer",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 42,
-          "isReExport": false
-        }
-      ],
-      "unusedExports": [
-        "dump_secret_strings",
-        "bearer",
-        "bearer"
-      ],
-      "isEntryPoint": true,
+      "role": "balanced",
+      "isEntryPoint": false,
       "isLeaf": true
     },
     "autogpt_libs/auth/dependencies.py": {
       "path": "autogpt_libs/auth/dependencies.py",
-      "language": "python",
-      "importedBy": [
-        "autogpt_libs/auth/helpers_test.py",
-        "autogpt_libs/auth/dependencies_test.py"
-      ],
-      "imports": [
-        "autogpt_libs/auth/jwt_utils.py"
-      ],
+      "imports": [],
+      "importedBy": [],
+      "exports": [],
       "metrics": {
         "Ca": 2,
         "Ce": 1,
@@ -534,47 +109,14 @@
         "distance": 0.67
       },
       "role": "balanced",
-      "exports": [
-        {
-          "name": "get_optional_user_id",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 23,
-          "isReExport": false
-        },
-        {
-          "name": "requires_user",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 55,
-          "isReExport": false
-        },
-        {
-          "name": "requires_admin_user",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 65,
-          "isReExport": false
-        },
-        {
-          "name": "get_user_id",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 77,
-          "isReExport": false
-        }
-      ],
-      "unusedExports": [
-        "get_optional_user_id"
-      ],
-      "isEntryPoint": true,
+      "isEntryPoint": false,
       "isLeaf": false
     },
     "autogpt_libs/logging/config.py": {
       "path": "autogpt_libs/logging/config.py",
-      "language": "python",
-      "importedBy": [],
       "imports": [],
+      "importedBy": [],
+      "exports": [],
       "metrics": {
         "Ca": 0,
         "Ce": 0,
@@ -582,37 +124,15 @@
         "abstractness": 0,
         "distance": 1
       },
-      "role": "isolated",
-      "exports": [
-        {
-          "name": "parse_log_level",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 68,
-          "isReExport": false
-        },
-        {
-          "name": "configure_logging",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 77,
-          "isReExport": false
-        }
-      ],
-      "unusedExports": [
-        "parse_log_level",
-        "configure_logging"
-      ],
-      "isEntryPoint": true,
+      "role": "balanced",
+      "isEntryPoint": false,
       "isLeaf": true
     },
     "autogpt_libs/logging/test_utils.py": {
       "path": "autogpt_libs/logging/test_utils.py",
-      "language": "python",
+      "imports": [],
       "importedBy": [],
-      "imports": [
-        "autogpt_libs/logging/utils.py"
-      ],
+      "exports": [],
       "metrics": {
         "Ca": 0,
         "Ce": 1,
@@ -620,34 +140,15 @@
         "abstractness": 0,
         "distance": 0
       },
-      "role": "authority",
-      "exports": [
-        {
-          "name": "test_remove_color_codes",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 35,
-          "isReExport": false
-        }
-      ],
-      "unusedExports": [
-        "test_remove_color_codes"
-      ],
-      "isEntryPoint": true,
+      "role": "balanced",
+      "isEntryPoint": false,
       "isLeaf": false
     },
     "autogpt_libs/auth/jwt_utils.py": {
       "path": "autogpt_libs/auth/jwt_utils.py",
-      "language": "python",
-      "importedBy": [
-        "autogpt_libs/auth/dependencies_test.py",
-        "autogpt_libs/auth/jwt_utils_test.py",
-        "autogpt_libs/auth/dependencies.py"
-      ],
-      "imports": [
-        "autogpt_libs/auth/config.py",
-        "autogpt_libs/auth/models.py"
-      ],
+      "imports": [],
+      "importedBy": [],
+      "exports": [],
       "metrics": {
         "Ca": 3,
         "Ce": 2,
@@ -656,38 +157,14 @@
         "distance": 0.6
       },
       "role": "balanced",
-      "exports": [
-        {
-          "name": "get_jwt_payload",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 19,
-          "isReExport": false
-        },
-        {
-          "name": "parse_jwt_token",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 45,
-          "isReExport": false
-        },
-        {
-          "name": "verify_user",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 68,
-          "isReExport": false
-        }
-      ],
-      "unusedExports": [],
-      "isEntryPoint": true,
+      "isEntryPoint": false,
       "isLeaf": false
     },
     "autogpt_libs/auth/config_test.py": {
       "path": "autogpt_libs/auth/config_test.py",
-      "language": "python",
-      "importedBy": [],
       "imports": [],
+      "importedBy": [],
+      "exports": [],
       "metrics": {
         "Ca": 0,
         "Ce": 0,
@@ -695,230 +172,15 @@
         "abstractness": 0,
         "distance": 1
       },
-      "role": "isolated",
-      "exports": [
-        {
-          "name": "test_environment_variable_precedence",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 15,
-          "isReExport": false
-        },
-        {
-          "name": "test_environment_variable_backwards_compatible",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 24,
-          "isReExport": false
-        },
-        {
-          "name": "test_auth_config_error_inheritance",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 33,
-          "isReExport": false
-        },
-        {
-          "name": "test_settings_static_after_creation",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 40,
-          "isReExport": false
-        },
-        {
-          "name": "test_settings_load_with_valid_secret",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 54,
-          "isReExport": false
-        },
-        {
-          "name": "test_settings_load_with_strong_secret",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 63,
-          "isReExport": false
-        },
-        {
-          "name": "test_secret_empty_raises_error",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 73,
-          "isReExport": false
-        },
-        {
-          "name": "test_secret_missing_raises_error",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 82,
-          "isReExport": false
-        },
-        {
-          "name": "test_secret_only_whitespace_raises_error",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 92,
-          "isReExport": false
-        },
-        {
-          "name": "test_secret_weak_logs_warning",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 100,
-          "isReExport": false
-        },
-        {
-          "name": "test_secret_31_char_logs_warning",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 114,
-          "isReExport": false
-        },
-        {
-          "name": "test_secret_32_char_no_warning",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 127,
-          "isReExport": false
-        },
-        {
-          "name": "test_secret_whitespace_stripped",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 140,
-          "isReExport": false
-        },
-        {
-          "name": "test_secret_with_special_characters",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 149,
-          "isReExport": false
-        },
-        {
-          "name": "test_secret_with_unicode",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 158,
-          "isReExport": false
-        },
-        {
-          "name": "test_secret_very_long",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 167,
-          "isReExport": false
-        },
-        {
-          "name": "test_secret_with_newline",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 177,
-          "isReExport": false
-        },
-        {
-          "name": "test_secret_base64_encoded",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 186,
-          "isReExport": false
-        },
-        {
-          "name": "test_secret_numeric_only",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 195,
-          "isReExport": false
-        },
-        {
-          "name": "test_algorithm_default_hs256",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 204,
-          "isReExport": false
-        },
-        {
-          "name": "test_algorithm_whitespace_stripped",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 212,
-          "isReExport": false
-        },
-        {
-          "name": "test_no_crypto_warning",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 225,
-          "isReExport": false
-        },
-        {
-          "name": "test_algorithm_invalid_raises_error",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 239,
-          "isReExport": false
-        },
-        {
-          "name": "test_algorithm_none_raises_error",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 254,
-          "isReExport": false
-        },
-        {
-          "name": "test_algorithm_symmetric_warning",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 269,
-          "isReExport": false
-        },
-        {
-          "name": "test_algorithm_asymmetric_no_warning",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 291,
-          "isReExport": false
-        }
-      ],
-      "unusedExports": [
-        "test_environment_variable_precedence",
-        "test_environment_variable_backwards_compatible",
-        "test_auth_config_error_inheritance",
-        "test_settings_static_after_creation",
-        "test_settings_load_with_valid_secret",
-        "test_settings_load_with_strong_secret",
-        "test_secret_empty_raises_error",
-        "test_secret_missing_raises_error",
-        "test_secret_only_whitespace_raises_error",
-        "test_secret_weak_logs_warning",
-        "test_secret_31_char_logs_warning",
-        "test_secret_32_char_no_warning",
-        "test_secret_whitespace_stripped",
-        "test_secret_with_special_characters",
-        "test_secret_with_unicode",
-        "test_secret_very_long",
-        "test_secret_with_newline",
-        "test_secret_base64_encoded",
-        "test_secret_numeric_only",
-        "test_algorithm_default_hs256",
-        "test_algorithm_whitespace_stripped",
-        "test_no_crypto_warning",
-        "test_algorithm_invalid_raises_error",
-        "test_algorithm_none_raises_error",
-        "test_algorithm_symmetric_warning",
-        "test_algorithm_asymmetric_no_warning"
-      ],
-      "isEntryPoint": true,
+      "role": "balanced",
+      "isEntryPoint": false,
       "isLeaf": true
     },
     "autogpt_libs/logging/utils.py": {
       "path": "autogpt_libs/logging/utils.py",
-      "language": "python",
-      "importedBy": [
-        "autogpt_libs/logging/test_utils.py",
-        "autogpt_libs/logging/formatters.py"
-      ],
       "imports": [],
+      "importedBy": [],
+      "exports": [],
       "metrics": {
         "Ca": 2,
         "Ce": 0,
@@ -926,25 +188,15 @@
         "abstractness": 0,
         "distance": 1
       },
-      "role": "hub",
-      "exports": [
-        {
-          "name": "remove_color_codes",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 4,
-          "isReExport": false
-        }
-      ],
-      "unusedExports": [],
-      "isEntryPoint": true,
+      "role": "balanced",
+      "isEntryPoint": false,
       "isLeaf": true
     },
     "autogpt_libs/rate_limit/config.py": {
       "path": "autogpt_libs/rate_limit/config.py",
-      "language": "python",
-      "importedBy": [],
       "imports": [],
+      "importedBy": [],
+      "exports": [],
       "metrics": {
         "Ca": 0,
         "Ce": 0,
@@ -952,19 +204,15 @@
         "abstractness": 0,
         "distance": 1
       },
-      "role": "isolated",
-      "exports": [],
-      "unusedExports": [],
+      "role": "balanced",
       "isEntryPoint": false,
       "isLeaf": true
     },
     "autogpt_libs/api_key/test_keysmith.py": {
       "path": "autogpt_libs/api_key/test_keysmith.py",
-      "language": "python",
+      "imports": [],
       "importedBy": [],
-      "imports": [
-        "autogpt_libs/api_key/keysmith.py"
-      ],
+      "exports": [],
       "metrics": {
         "Ca": 0,
         "Ce": 1,
@@ -972,80 +220,15 @@
         "abstractness": 0,
         "distance": 0
       },
-      "role": "authority",
-      "exports": [
-        {
-          "name": "test_generate_api_key",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 6,
-          "isReExport": false
-        },
-        {
-          "name": "test_verify_new_secure_key",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 17,
-          "isReExport": false
-        },
-        {
-          "name": "test_verify_legacy_key",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 29,
-          "isReExport": false
-        },
-        {
-          "name": "test_rehash_existing_key",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 42,
-          "isReExport": false
-        },
-        {
-          "name": "test_invalid_key_prefix",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 57,
-          "isReExport": false
-        },
-        {
-          "name": "test_secure_hash_requires_salt",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 66,
-          "isReExport": false
-        },
-        {
-          "name": "test_invalid_salt_format",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 74,
-          "isReExport": false
-        }
-      ],
-      "unusedExports": [
-        "test_generate_api_key",
-        "test_verify_new_secure_key",
-        "test_verify_legacy_key",
-        "test_rehash_existing_key",
-        "test_invalid_key_prefix",
-        "test_secure_hash_requires_salt",
-        "test_invalid_salt_format"
-      ],
-      "isEntryPoint": true,
+      "role": "balanced",
+      "isEntryPoint": false,
       "isLeaf": false
     },
     "autogpt_libs/auth/dependencies_test.py": {
       "path": "autogpt_libs/auth/dependencies_test.py",
-      "language": "python",
-      "importedBy": [
-        "autogpt_libs/auth/helpers_test.py"
-      ],
-      "imports": [
-        "autogpt_libs/auth/dependencies.py",
-        "autogpt_libs/auth/jwt_utils.py"
-      ],
+      "imports": [],
+      "importedBy": [],
+      "exports": [],
       "metrics": {
         "Ca": 1,
         "Ce": 2,
@@ -1054,251 +237,14 @@
         "distance": 0.33
       },
       "role": "balanced",
-      "exports": [
-        {
-          "name": "app",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 26,
-          "isReExport": false
-        },
-        {
-          "name": "client",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 45,
-          "isReExport": false
-        },
-        {
-          "name": "test_requires_user_with_valid_jwt_payload",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 50,
-          "isReExport": false
-        },
-        {
-          "name": "test_requires_user_with_admin_jwt_payload",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 64,
-          "isReExport": false
-        },
-        {
-          "name": "test_requires_user_missing_sub",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 80,
-          "isReExport": false
-        },
-        {
-          "name": "test_requires_user_empty_sub",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 90,
-          "isReExport": false
-        },
-        {
-          "name": "test_requires_admin_user_with_admin",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 99,
-          "isReExport": false
-        },
-        {
-          "name": "test_requires_admin_user_with_regular_user",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 115,
-          "isReExport": false
-        },
-        {
-          "name": "test_requires_admin_user_missing_role",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 125,
-          "isReExport": false
-        },
-        {
-          "name": "test_get_user_id_with_valid_payload",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 133,
-          "isReExport": false
-        },
-        {
-          "name": "test_get_user_id_missing_sub",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 146,
-          "isReExport": false
-        },
-        {
-          "name": "test_get_user_id_none_sub",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 158,
-          "isReExport": false
-        },
-        {
-          "name": "create_token",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 175,
-          "isReExport": false
-        },
-        {
-          "name": "test_endpoint_auth_enabled_no_token",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 191,
-          "isReExport": false
-        },
-        {
-          "name": "test_endpoint_with_valid_token",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 206,
-          "isReExport": false
-        },
-        {
-          "name": "test_admin_endpoint_requires_admin_role",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 226,
-          "isReExport": false
-        },
-        {
-          "name": "test_dependency_with_complex_payload",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 264,
-          "isReExport": false
-        },
-        {
-          "name": "test_dependency_with_unicode_in_payload",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 288,
-          "isReExport": false
-        },
-        {
-          "name": "test_dependency_with_null_values",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 302,
-          "isReExport": false
-        },
-        {
-          "name": "test_concurrent_requests_isolation",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 317,
-          "isReExport": false
-        },
-        {
-          "name": "test_dependency_error_cases",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 342,
-          "isReExport": false
-        },
-        {
-          "name": "test_dependency_valid_user",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 354,
-          "isReExport": false
-        },
-        {
-          "name": "test_admin_impersonation_success",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 368,
-          "isReExport": false
-        },
-        {
-          "name": "test_non_admin_impersonation_attempt",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 404,
-          "isReExport": false
-        },
-        {
-          "name": "test_impersonation_empty_header",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 431,
-          "isReExport": false
-        },
-        {
-          "name": "test_impersonation_missing_header",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 451,
-          "isReExport": false
-        },
-        {
-          "name": "test_impersonation_audit_logging_details",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 471,
-          "isReExport": false
-        },
-        {
-          "name": "test_impersonation_header_case_sensitivity",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 506,
-          "isReExport": false
-        },
-        {
-          "name": "test_impersonation_with_whitespace_header",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 527,
-          "isReExport": false
-        }
-      ],
-      "unusedExports": [
-        "client",
-        "test_requires_user_with_valid_jwt_payload",
-        "test_requires_user_with_admin_jwt_payload",
-        "test_requires_user_missing_sub",
-        "test_requires_user_empty_sub",
-        "test_requires_admin_user_with_admin",
-        "test_requires_admin_user_with_regular_user",
-        "test_requires_admin_user_missing_role",
-        "test_get_user_id_with_valid_payload",
-        "test_get_user_id_missing_sub",
-        "test_get_user_id_none_sub",
-        "create_token",
-        "test_endpoint_auth_enabled_no_token",
-        "test_endpoint_with_valid_token",
-        "test_admin_endpoint_requires_admin_role",
-        "test_dependency_with_complex_payload",
-        "test_dependency_with_unicode_in_payload",
-        "test_dependency_with_null_values",
-        "test_concurrent_requests_isolation",
-        "test_dependency_error_cases",
-        "test_dependency_valid_user",
-        "test_admin_impersonation_success",
-        "test_non_admin_impersonation_attempt",
-        "test_impersonation_empty_header",
-        "test_impersonation_missing_header",
-        "test_impersonation_audit_logging_details",
-        "test_impersonation_header_case_sensitivity",
-        "test_impersonation_with_whitespace_header"
-      ],
-      "isEntryPoint": true,
+      "isEntryPoint": false,
       "isLeaf": false
     },
     "autogpt_libs/auth/config.py": {
       "path": "autogpt_libs/auth/config.py",
-      "language": "python",
-      "importedBy": [
-        "autogpt_libs/auth/jwt_utils.py"
-      ],
       "imports": [],
+      "importedBy": [],
+      "exports": [],
       "metrics": {
         "Ca": 1,
         "Ce": 0,
@@ -1306,50 +252,15 @@
         "abstractness": 0,
         "distance": 1
       },
-      "role": "hub",
-      "exports": [
-        {
-          "name": "__init__",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 24,
-          "isReExport": false
-        },
-        {
-          "name": "validate",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 32,
-          "isReExport": false
-        },
-        {
-          "name": "get_settings",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 74,
-          "isReExport": false
-        },
-        {
-          "name": "verify_settings",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 83,
-          "isReExport": false
-        }
-      ],
-      "unusedExports": [
-        "__init__",
-        "validate",
-        "verify_settings"
-      ],
-      "isEntryPoint": true,
+      "role": "balanced",
+      "isEntryPoint": false,
       "isLeaf": true
     },
     "autogpt_libs/utils/synchronize.py": {
       "path": "autogpt_libs/utils/synchronize.py",
-      "language": "python",
-      "importedBy": [],
       "imports": [],
+      "importedBy": [],
+      "exports": [],
       "metrics": {
         "Ca": 0,
         "Ce": 0,
@@ -1357,61 +268,15 @@
         "abstractness": 0,
         "distance": 1
       },
-      "role": "isolated",
-      "exports": [
-        {
-          "name": "__init__",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 20,
-          "isReExport": false
-        },
-        {
-          "name": "locked",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 29,
-          "isReExport": false
-        },
-        {
-          "name": "acquire",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 37,
-          "isReExport": false
-        },
-        {
-          "name": "release",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 48,
-          "isReExport": false
-        },
-        {
-          "name": "release_all_locks",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 56,
-          "isReExport": false
-        }
-      ],
-      "unusedExports": [
-        "__init__",
-        "locked",
-        "acquire",
-        "release",
-        "release_all_locks"
-      ],
-      "isEntryPoint": true,
+      "role": "balanced",
+      "isEntryPoint": false,
       "isLeaf": true
     },
     "autogpt_libs/auth/helpers.py": {
       "path": "autogpt_libs/auth/helpers.py",
-      "language": "python",
-      "importedBy": [
-        "autogpt_libs/auth/helpers_test.py"
-      ],
       "imports": [],
+      "importedBy": [],
+      "exports": [],
       "metrics": {
         "Ca": 1,
         "Ce": 0,
@@ -1419,27 +284,15 @@
         "abstractness": 0,
         "distance": 1
       },
-      "role": "hub",
-      "exports": [
-        {
-          "name": "add_auth_responses_to_openapi",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 6,
-          "isReExport": false
-        }
-      ],
-      "unusedExports": [],
-      "isEntryPoint": true,
+      "role": "balanced",
+      "isEntryPoint": false,
       "isLeaf": true
     },
     "autogpt_libs/rate_limit/limiter.py": {
       "path": "autogpt_libs/rate_limit/limiter.py",
-      "language": "python",
-      "importedBy": [
-        "autogpt_libs/rate_limit/middleware.py"
-      ],
       "imports": [],
+      "importedBy": [],
+      "exports": [],
       "metrics": {
         "Ca": 1,
         "Ce": 0,
@@ -1447,36 +300,15 @@
         "abstractness": 0,
         "distance": 1
       },
-      "role": "hub",
-      "exports": [
-        {
-          "name": "__init__",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 10,
-          "isReExport": false
-        },
-        {
-          "name": "check_rate_limit",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 26,
-          "isReExport": false
-        }
-      ],
-      "unusedExports": [
-        "__init__"
-      ],
-      "isEntryPoint": true,
+      "role": "balanced",
+      "isEntryPoint": false,
       "isLeaf": true
     },
     "autogpt_libs/auth/models.py": {
       "path": "autogpt_libs/auth/models.py",
-      "language": "python",
-      "importedBy": [
-        "autogpt_libs/auth/jwt_utils.py"
-      ],
       "imports": [],
+      "importedBy": [],
+      "exports": [],
       "metrics": {
         "Ca": 1,
         "Ce": 0,
@@ -1484,27 +316,15 @@
         "abstractness": 0,
         "distance": 1
       },
-      "role": "hub",
-      "exports": [
-        {
-          "name": "from_payload",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 16,
-          "isReExport": false
-        }
-      ],
-      "unusedExports": [],
-      "isEntryPoint": true,
+      "role": "balanced",
+      "isEntryPoint": false,
       "isLeaf": true
     },
     "autogpt_libs/rate_limit/middleware.py": {
       "path": "autogpt_libs/rate_limit/middleware.py",
-      "language": "python",
+      "imports": [],
       "importedBy": [],
-      "imports": [
-        "autogpt_libs/rate_limit/limiter.py"
-      ],
+      "exports": [],
       "metrics": {
         "Ca": 0,
         "Ce": 1,
@@ -1512,29 +332,15 @@
         "abstractness": 0,
         "distance": 0
       },
-      "role": "authority",
-      "exports": [
-        {
-          "name": "rate_limit_middleware",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 7,
-          "isReExport": false
-        }
-      ],
-      "unusedExports": [
-        "rate_limit_middleware"
-      ],
-      "isEntryPoint": true,
+      "role": "balanced",
+      "isEntryPoint": false,
       "isLeaf": false
     },
     "autogpt_libs/logging/formatters.py": {
       "path": "autogpt_libs/logging/formatters.py",
-      "language": "python",
+      "imports": [],
       "importedBy": [],
-      "imports": [
-        "autogpt_libs/logging/utils.py"
-      ],
+      "exports": [],
       "metrics": {
         "Ca": 0,
         "Ce": 1,
@@ -1542,253 +348,29 @@
         "abstractness": 0,
         "distance": 0
       },
-      "role": "authority",
-      "exports": [
-        {
-          "name": "format",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 28,
-          "isReExport": false
-        },
-        {
-          "name": "__init__",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 53,
-          "isReExport": false
-        },
-        {
-          "name": "format",
-          "kind": "function",
-          "isTypeOnly": false,
-          "line": 57,
-          "isReExport": false
-        }
-      ],
-      "unusedExports": [
-        "format",
-        "__init__",
-        "format"
-      ],
-      "isEntryPoint": true,
+      "role": "balanced",
+      "isEntryPoint": false,
       "isLeaf": false
     }
   },
-  "edges": [
-    {
-      "from": "autogpt_libs/api_key/test_keysmith.py",
-      "to": "autogpt_libs/api_key/keysmith.py",
-      "symbols": [
-        "generate_key",
-        "verify_key",
-        "hash_key"
-      ],
-      "isTypeOnly": false,
-      "weight": 3,
-      "line": 8
-    },
-    {
-      "from": "autogpt_libs/auth/helpers_test.py",
-      "to": "autogpt_libs/auth/dependencies.py",
-      "symbols": [
-        "requires_user"
-      ],
-      "isTypeOnly": false,
-      "weight": 1,
-      "line": 24
-    },
-    {
-      "from": "autogpt_libs/auth/helpers_test.py",
-      "to": "autogpt_libs/auth/dependencies_test.py",
-      "symbols": [
-        "app"
-      ],
-      "isTypeOnly": false,
-      "weight": 1,
-      "line": 33
-    },
-    {
-      "from": "autogpt_libs/auth/helpers_test.py",
-      "to": "autogpt_libs/auth/helpers.py",
-      "symbols": [
-        "add_auth_responses_to_openapi"
-      ],
-      "isTypeOnly": false,
-      "weight": 1,
-      "line": 33
-    },
-    {
-      "from": "autogpt_libs/auth/dependencies_test.py",
-      "to": "autogpt_libs/auth/dependencies.py",
-      "symbols": [
-        "requires_user",
-        "requires_admin_user",
-        "get_user_id"
-      ],
-      "isTypeOnly": false,
-      "weight": 3,
-      "line": 58
-    },
-    {
-      "from": "autogpt_libs/auth/dependencies_test.py",
-      "to": "autogpt_libs/auth/jwt_utils.py",
-      "symbols": [
-        "verify_user"
-      ],
-      "isTypeOnly": false,
-      "weight": 1,
-      "line": 350
-    },
-    {
-      "from": "autogpt_libs/auth/jwt_utils_test.py",
-      "to": "autogpt_libs/auth/jwt_utils.py",
-      "symbols": [
-        "get_jwt_payload",
-        "parse_jwt_token",
-        "verify_user"
-      ],
-      "isTypeOnly": false,
-      "weight": 3,
-      "line": 124
-    },
-    {
-      "from": "autogpt_libs/auth/dependencies.py",
-      "to": "autogpt_libs/auth/jwt_utils.py",
-      "symbols": [
-        "parse_jwt_token",
-        "verify_user"
-      ],
-      "isTypeOnly": false,
-      "weight": 2,
-      "line": 48
-    },
-    {
-      "from": "autogpt_libs/logging/test_utils.py",
-      "to": "autogpt_libs/logging/utils.py",
-      "symbols": [
-        "remove_color_codes"
-      ],
-      "isTypeOnly": false,
-      "weight": 1,
-      "line": 36
-    },
-    {
-      "from": "autogpt_libs/logging/formatters.py",
-      "to": "autogpt_libs/logging/utils.py",
-      "symbols": [
-        "remove_color_codes"
-      ],
-      "isTypeOnly": false,
-      "weight": 1,
-      "line": 66
-    },
-    {
-      "from": "autogpt_libs/auth/jwt_utils.py",
-      "to": "autogpt_libs/auth/config.py",
-      "symbols": [
-        "get_settings"
-      ],
-      "isTypeOnly": false,
-      "weight": 1,
-      "line": 53
-    },
-    {
-      "from": "autogpt_libs/auth/jwt_utils.py",
-      "to": "autogpt_libs/auth/models.py",
-      "symbols": [
-        "from_payload"
-      ],
-      "isTypeOnly": false,
-      "weight": 1,
-      "line": 80
-    },
-    {
-      "from": "autogpt_libs/rate_limit/middleware.py",
-      "to": "autogpt_libs/rate_limit/limiter.py",
-      "symbols": [
-        "check_rate_limit"
-      ],
-      "isTypeOnly": false,
-      "weight": 1,
-      "line": 20
-    }
-  ],
+  "edges": [],
   "cycles": [],
   "metrics": {
     "totalModules": 22,
-    "totalEdges": 13,
-    "avgInstability": 0.34,
-    "avgDistance": 0.66,
+    "totalEdges": 0,
     "cycleCount": 0,
-    "zoneOfPain": [
-      "autogpt_libs/logging/filters.py",
-      "autogpt_libs/api_key/keysmith.py",
-      "autogpt_libs/logging/handlers.py",
-      "autogpt_libs/supabase_integration_credentials_store/types.py",
-      "autogpt_libs/logging/config.py",
-      "autogpt_libs/auth/config_test.py",
-      "autogpt_libs/logging/utils.py",
-      "autogpt_libs/rate_limit/config.py",
-      "autogpt_libs/auth/config.py",
-      "autogpt_libs/utils/synchronize.py",
-      "autogpt_libs/auth/helpers.py",
-      "autogpt_libs/rate_limit/limiter.py",
-      "autogpt_libs/auth/models.py"
-    ],
+    "avgInstability": 0.33636363636363636,
+    "avgDistance": 0.6636363636363636,
+    "zoneOfPain": [],
     "zoneOfUselessness": [],
     "hotspots": [
       {
         "path": "autogpt_libs/auth/jwt_utils.py",
         "coupling": 5
-      },
-      {
-        "path": "autogpt_libs/auth/helpers_test.py",
-        "coupling": 3
-      },
-      {
-        "path": "autogpt_libs/auth/dependencies.py",
-        "coupling": 3
-      },
-      {
-        "path": "autogpt_libs/auth/dependencies_test.py",
-        "coupling": 3
-      },
-      {
-        "path": "autogpt_libs/logging/utils.py",
-        "coupling": 2
-      },
-      {
-        "path": "autogpt_libs/auth/jwt_utils_test.py",
-        "coupling": 1
-      },
-      {
-        "path": "autogpt_libs/api_key/keysmith.py",
-        "coupling": 1
-      },
-      {
-        "path": "autogpt_libs/logging/test_utils.py",
-        "coupling": 1
-      },
-      {
-        "path": "autogpt_libs/api_key/test_keysmith.py",
-        "coupling": 1
-      },
-      {
-        "path": "autogpt_libs/auth/config.py",
-        "coupling": 1
       }
     ],
-    "isolatedModules": [
-      "autogpt_libs/logging/filters.py",
-      "autogpt_libs/logging/handlers.py",
-      "autogpt_libs/supabase_integration_credentials_store/types.py",
-      "autogpt_libs/logging/config.py",
-      "autogpt_libs/auth/config_test.py",
-      "autogpt_libs/rate_limit/config.py",
-      "autogpt_libs/utils/synchronize.py"
-    ]
+    "isolatedModules": []
   },
-  "generatedAt": "2026-01-29T07:29:49.350Z",
+  "generatedAt": "2026-01-29T16:40:20.627Z",
   "projectRoot": "/Users/jason/dev/AutoGPT/autogpt_platform/autogpt_libs"
 }

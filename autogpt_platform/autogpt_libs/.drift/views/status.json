@@ -1,50 +1,50 @@
 {
-  "generatedAt": "2026-01-29T06:33:06.653Z",
+  "generatedAt": "2026-01-29T16:43:22.065Z",
   "health": {
-    "score": 30,
+    "score": 80,
     "trend": "stable",
     "factors": [
       {
         "name": "Pattern Approval Rate",
-        "score": 0,
+        "score": 0.995049504950495,
         "weight": 0.3,
         "trend": "stable"
       },
       {
         "name": "High Confidence Patterns",
-        "score": 0.599502487562189,
+        "score": 0.6014851485148515,
         "weight": 0.3,
         "trend": "stable"
       },
       {
         "name": "Low Outlier Rate",
-        "score": 0.9996845425867508,
+        "score": 0.9996846420687481,
         "weight": 0.4,
         "trend": "stable"
       }
     ]
   },
   "patterns": {
-    "total": 402,
-    "approved": 0,
-    "discovered": 402,
+    "total": 404,
+    "approved": 402,
+    "discovered": 2,
     "ignored": 0,
     "byCategory": {
-      "auth": 34,
       "structural": 31,
       "components": 17,
-      "data-access": 50,
-      "types": 40,
-      "performance": 17,
-      "security": 36,
-      "errors": 30,
       "styling": 20,
-      "config": 26,
-      "documentation": 15,
+      "api": 9,
+      "auth": 34,
+      "errors": 30,
+      "data-access": 50,
       "testing": 44,
       "logging": 23,
+      "security": 36,
+      "config": 26,
+      "types": 40,
+      "performance": 19,
       "accessibility": 10,
-      "api": 9
+      "documentation": 15
     }
   },
   "issues": {
@@ -62,14 +62,14 @@
   },
   "security": {
     "violations": 0,
-    "sensitiveExposures": 1,
+    "sensitiveExposures": 0,
     "riskLevel": "low"
   },
   "lastScan": {
-    "timestamp": "2026-01-29T06:33:06.650Z",
-    "duration": 287,
-    "filesScanned": 28,
-    "patternsFound": 402,
+    "timestamp": "2026-01-29T16:43:22.061Z",
+    "duration": 360,
+    "filesScanned": 29,
+    "patternsFound": 404,
     "errors": 0
   }
 }
