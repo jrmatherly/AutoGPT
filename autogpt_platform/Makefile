@@ -1,6 +1,7 @@
 .PHONY: start-core stop-core logs-core format lint migrate run-backend run-frontend load-store-agents \
 	drift-scan drift-scan-backend drift-scan-frontend drift-scan-libs drift-status drift-check drift-approve \
-	drift-callgraph drift-analyze drift-full apply-rls verify-rls
+	drift-callgraph drift-analyze drift-coupling drift-coupling-cycles drift-coupling-hotspots \
+	drift-test-topology drift-error-gaps drift-deep drift-full apply-rls verify-rls
 
 # Run just Supabase + Redis + RabbitMQ
 start-core:
@@ -126,12 +127,58 @@ drift-analyze:
 	@echo "\n=== TypeScript Analysis (Frontend) ===" && cd frontend && drift ts status || true
 	@echo "\n=== Python Analysis (Libs) ===" && cd autogpt_libs && drift py status || true
 
+# Build module coupling graphs
+drift-coupling:
+	@echo "Building coupling graph for backend..."
+	cd backend && drift coupling build
+	@echo "Building coupling graph for frontend..."
+	cd frontend && drift coupling build
+	@echo "Building coupling graph for libs..."
+	cd autogpt_libs && drift coupling build
+
+# Find dependency cycles
+drift-coupling-cycles:
+	@echo "=== Backend Cycles ===" && cd backend && drift coupling cycles || true
+	@echo "\n=== Frontend Cycles ===" && cd frontend && drift coupling cycles || true
+	@echo "\n=== Libs Cycles ===" && cd autogpt_libs && drift coupling cycles || true
+
+# Find highly coupled modules (hotspots)
+drift-coupling-hotspots:
+	@echo "=== Backend Hotspots ===" && cd backend && drift coupling hotspots || true
+	@echo "\n=== Frontend Hotspots ===" && cd frontend && drift coupling hotspots || true
+	@echo "\n=== Libs Hotspots ===" && cd autogpt_libs && drift coupling hotspots || true
+
+# Build test topology (maps tests to code)
+drift-test-topology:
+	@echo "Building test topology for backend..."
+	cd backend && drift test-topology build
+	@echo "Building test topology for frontend..."
+	cd frontend && drift test-topology build
+	@echo "Building test topology for libs..."
+	cd autogpt_libs && drift test-topology build
+
+# Find error handling gaps
+drift-error-gaps:
+	@echo "=== Backend Error Handling Gaps ===" && cd backend && drift error-handling gaps | head -50 || true
+	@echo "\n=== Frontend Error Handling Gaps ===" && cd frontend && drift error-handling gaps | head -50 || true
+	@echo "\n=== Libs Error Handling Gaps ===" && cd autogpt_libs && drift error-handling gaps | head -50 || true
+
+# Deep analysis: coupling, test topology, and error handling
+drift-deep:
+	$(MAKE) drift-coupling
+	$(MAKE) drift-test-topology
+	@echo "\nDeep analysis complete."
+	@echo "Run 'make drift-coupling-cycles' to view dependency cycles"
+	@echo "Run 'make drift-coupling-hotspots' to view highly coupled modules"
+	@echo "Run 'make drift-error-gaps' to view error handling gaps"
+
 # Full drift setup: scan, approve, and build call graphs
 drift-full:
 	$(MAKE) drift-scan
 	$(MAKE) drift-approve
 	$(MAKE) drift-callgraph
-	@echo "\nDrift setup complete. Run 'make drift-status' to verify."
+	$(MAKE) drift-deep
+	@echo "\nDrift full setup complete. Run 'make drift-status' to verify."
 
 help:
 	@echo "Usage: make <target>"
@@ -158,13 +205,23 @@ help:
 	@echo "  verify-rls        - Verify RLS policies are active in database"
 	@echo ""
 	@echo "Drift (Pattern Analysis):"
-	@echo "  drift-scan          - Scan all projects for patterns"
-	@echo "  drift-scan-backend  - Scan backend only (verbose)"
-	@echo "  drift-scan-frontend - Scan frontend only (verbose)"
-	@echo "  drift-scan-libs     - Scan libs only (verbose)"
-	@echo "  drift-status        - Show drift status for all projects"
-	@echo "  drift-check         - Check for violations (CI-friendly)"
-	@echo "  drift-approve       - Approve all discovered patterns (95%+ confidence)"
-	@echo "  drift-callgraph     - Build call graphs for impact analysis"
-	@echo "  drift-analyze       - Run language-specific analysis (Python/TypeScript)"
-	@echo "  drift-full          - Full setup: scan, approve, and build call graphs"
+	@echo "  drift-scan            - Scan all projects for patterns"
+	@echo "  drift-scan-backend    - Scan backend only (verbose)"
+	@echo "  drift-scan-frontend   - Scan frontend only (verbose)"
+	@echo "  drift-scan-libs       - Scan libs only (verbose)"
+	@echo "  drift-status          - Show drift status for all projects"
+	@echo "  drift-check           - Check for violations (CI-friendly)"
+	@echo "  drift-approve         - Approve all discovered patterns (95%+ confidence)"
+	@echo "  drift-callgraph       - Build call graphs for impact analysis"
+	@echo "  drift-analyze         - Run language-specific analysis (Python/TypeScript)"
+	@echo ""
+	@echo "Drift (Deep Analysis):"
+	@echo "  drift-coupling        - Build module coupling graphs"
+	@echo "  drift-coupling-cycles - Find dependency cycles"
+	@echo "  drift-coupling-hotspots - Find highly coupled modules"
+	@echo "  drift-test-topology   - Build test topology (maps tests to code)"
+	@echo "  drift-error-gaps      - Find error handling gaps"
+	@echo "  drift-deep            - Run all deep analysis (coupling, test-topology)"
+	@echo ""
+	@echo "Drift (Combined):"
+	@echo "  drift-full            - Full setup: scan, approve, callgraph, and deep analysis"
