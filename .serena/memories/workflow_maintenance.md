@@ -2,8 +2,8 @@
 
 ## Last Updated
 - **Date**: January 29, 2026
-- **Commit**: f2c8f623d - ci(workflows): update GitHub Actions to latest versions
-- **Updated Files**: 5 workflow files in `.github/workflows/`
+- **Commit**: PENDING - ci(workflows): migrate to mise-action for unified tool management
+- **Updated Files**: 3 platform workflows + 5 documentation workflows (8 total in `.github/workflows/`)
 
 ## Current Action Versions (January 2026)
 
@@ -11,12 +11,14 @@
 | Action | Current Version | Last Updated | Notes |
 |--------|----------------|--------------|-------|
 | **actions/checkout** | v6 | Jan 2026 | Latest stable |
-| **actions/setup-python** | v6 | Jan 2026 | Enhanced caching support |
-| **actions/setup-node** | v6 | Jan 2026 | Auto-caching with packageManager field |
+| **actions/setup-python** | v6 | Jan 2026 | ⚠️ Replaced by mise-action in platform workflows |
+| **actions/setup-node** | v6 | Jan 2026 | ⚠️ Replaced by mise-action in platform workflows |
 | **actions/cache** | v5 | Jan 2026 | New cache service (Feb 2025), requires runner v2.327.1+ |
 | **github/codeql-action** | v4 | Jan 2026 | Uses Node.js 24, v3 deprecates Dec 2026 |
 | **docker/setup-buildx-action** | v3 | Current | v3.12.0 latest |
 | **anthropics/claude-code-action** | v1 | Current | v1 GA (General Availability) |
+| **jdx/mise-action** | v3 | Jan 2026 | **NEW**: Unified tool management for platform workflows |
+| **chromaui/action** | v11 | Jan 2026 | **UPDATED**: Pinned from @latest for security |
 
 ### Runner Requirements
 - All current actions require GitHub Actions runner **v2.327.1+**
@@ -49,10 +51,21 @@
    - Uses: anthropics/claude-code-action@v1
    - Enhances: Block documentation with AI
 
-### Other Workflows (Not Updated Jan 2026)
-- platform-backend-ci.yml
-- platform-frontend-ci.yml
-- platform-fullstack-ci.yml
+### Platform Workflows (Migrated to mise-action Jan 2026)
+- **platform-backend-ci.yml** - ✅ Using jdx/mise-action@v3 with mise 2026.1.9
+- **platform-frontend-ci.yml** - ✅ Using jdx/mise-action@v3 with mise 2026.1.9
+- **platform-fullstack-ci.yml** - ✅ Using jdx/mise-action@v3 with mise 2026.1.9
+
+**Migration Benefits**:
+- Dev/CI parity: Same tool versions defined in `autogpt_platform/mise.toml`
+- Code reduction: ~85% fewer lines (390 → 60 lines of setup code)
+- Eliminated manual Poetry installation script
+- Automatic caching via mise-action
+- Security: Pinned chromaui/action to v11
+
+**Details**: See `.github/workflows/MISE_MIGRATION_COMPLETE.md`
+
+### Other Workflows (Not Updated)
 - platform-autogpt-deploy-prod.yml
 - claude-ci-failure-auto-fix.yml
 - claude-dependabot.yml
@@ -62,6 +75,60 @@
 - repo-* workflows (labels, stats, stale issues, etc.)
 
 **Note**: These workflows may also benefit from action updates in future maintenance.
+
+## mise-action Configuration (Platform Workflows)
+
+### What is mise?
+[mise](https://mise.jdx.dev) is a polyglot tool version manager that replaces asdf, nvm, pyenv, rbenv, etc. It's the official development tool manager for the AutoGPT Platform, configured in `autogpt_platform/mise.toml`.
+
+### Why mise-action?
+- **Dev/CI Parity**: Identical tool versions between local development and CI
+- **Single Source of Truth**: `mise.toml` defines all tool versions
+- **Automatic Caching**: Built-in GitHub Actions cache integration
+- **Simplified Workflows**: Eliminates manual setup scripts
+- **Task Integration**: Can run `mise run` tasks directly in CI
+
+### Current Configuration
+All platform workflows use:
+```yaml
+- name: Setup mise
+  uses: jdx/mise-action@v3
+  with:
+    version: 2026.1.9  # Latest stable release
+    install: true      # Automatically run `mise install`
+    cache: true        # Enable GitHub Actions caching
+    working_directory: autogpt_platform
+```
+
+### Python Matrix Testing
+Backend CI preserves Python version matrix testing:
+```yaml
+strategy:
+  matrix:
+    python-version: ["3.11", "3.12", "3.13"]
+
+steps:
+  - uses: jdx/mise-action@v3
+    with:
+      install_args: python@${{ matrix.python-version }}
+```
+
+### Caching Behavior
+mise-action automatically caches tools with key format:
+```
+mise-v0-<platform>-<mise.toml hash>-<tools hash>
+```
+
+Cache invalidation:
+- mise.toml changes → cache refresh
+- Platform changes (Linux/macOS) → separate caches
+- Tool version changes → automatic refresh
+
+### Obsolete Scripts
+After mise-action migration, the following script is **no longer needed**:
+- `.github/workflows/scripts/get_package_version_from_lockfile.py`
+
+Reason: Poetry version now managed by mise.toml instead of extracted from lockfile.
 
 ## Maintenance Schedule
 
@@ -149,6 +216,8 @@ The following pattern appears in 4 workflows:
 ```
 
 **Future Optimization**: Consider creating a composite action at `.github/actions/setup-python-poetry/action.yml` to eliminate this duplication (~100 lines of YAML).
+
+**Update (Jan 2026)**: Platform workflows now use mise-action instead of manual Python/Poetry setup, eliminating duplication there. Documentation workflows still use manual setup.
 
 ## Deprecation Timeline
 

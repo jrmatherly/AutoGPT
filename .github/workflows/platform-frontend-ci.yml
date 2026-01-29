@@ -32,31 +32,21 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v6
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v6
+      - name: Setup mise
+        uses: jdx/mise-action@v3
         with:
-          node-version: "22.x"
-          cache: 'pnpm'
-          cache-dependency-path: 'autogpt_platform/frontend/pnpm-lock.yaml'
-
-      - name: Enable corepack
-        run: corepack enable
+          version: 2026.1.9  # Latest as of January 2026
+          install: true
+          cache: true
+          working_directory: autogpt_platform
 
       - name: Generate cache key
         id: cache-key
         run: echo "key=${{ runner.os }}-pnpm-${{ hashFiles('autogpt_platform/frontend/pnpm-lock.yaml', 'autogpt_platform/frontend/package.json') }}" >> $GITHUB_OUTPUT
 
-      - name: Cache dependencies
-        uses: actions/cache@v5
-        with:
-          path: ~/.pnpm-store
-          key: ${{ steps.cache-key.outputs.key }}
-          restore-keys: |
-            ${{ runner.os }}-pnpm-${{ hashFiles('autogpt_platform/frontend/pnpm-lock.yaml') }}
-            ${{ runner.os }}-pnpm-
-
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: mise run install:frontend
+        working-directory: autogpt_platform
 
   lint:
     runs-on: ubuntu-latest
@@ -66,30 +56,21 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v6
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v6
+      - name: Setup mise
+        uses: jdx/mise-action@v3
         with:
-          node-version: "22.x"
-          cache: 'pnpm'
-          cache-dependency-path: 'autogpt_platform/frontend/pnpm-lock.yaml'
-
-      - name: Enable corepack
-        run: corepack enable
-
-      - name: Restore dependencies cache
-        uses: actions/cache@v5
-        with:
-          path: ~/.pnpm-store
-          key: ${{ needs.setup.outputs.cache-key }}
-          restore-keys: |
-            ${{ runner.os }}-pnpm-${{ hashFiles('autogpt_platform/frontend/pnpm-lock.yaml') }}
-            ${{ runner.os }}-pnpm-
+          version: 2026.1.9  # Latest as of January 2026
+          install: true
+          cache: true
+          working_directory: autogpt_platform
 
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: mise run install:frontend
+        working-directory: autogpt_platform
 
       - name: Run lint
         run: pnpm lint
+        working-directory: autogpt_platform/frontend
 
   chromatic:
     runs-on: ubuntu-latest
@@ -103,30 +84,20 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v6
+      - name: Setup mise
+        uses: jdx/mise-action@v3
         with:
-          node-version: "22.x"
-          cache: 'pnpm'
-          cache-dependency-path: 'autogpt_platform/frontend/pnpm-lock.yaml'
-
-      - name: Enable corepack
-        run: corepack enable
-
-      - name: Restore dependencies cache
-        uses: actions/cache@v5
-        with:
-          path: ~/.pnpm-store
-          key: ${{ needs.setup.outputs.cache-key }}
-          restore-keys: |
-            ${{ runner.os }}-pnpm-${{ hashFiles('autogpt_platform/frontend/pnpm-lock.yaml') }}
-            ${{ runner.os }}-pnpm-
+          version: 2026.1.9  # Latest as of January 2026
+          install: true
+          cache: true
+          working_directory: autogpt_platform
 
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: mise run install:frontend
+        working-directory: autogpt_platform
 
       - name: Run Chromatic
-        uses: chromaui/action@latest
+        uses: chromaui/action@v11
         with:
           projectToken: chpt_9e7c1a76478c9c8
           onlyChanged: true
@@ -146,15 +117,13 @@ jobs:
         with:
           submodules: recursive
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v6
+      - name: Setup mise
+        uses: jdx/mise-action@v3
         with:
-          node-version: "22.x"
-          cache: 'pnpm'
-          cache-dependency-path: 'autogpt_platform/frontend/pnpm-lock.yaml'
-
-      - name: Enable corepack
-        run: corepack enable
+          version: 2026.1.9  # Latest as of January 2026
+          install: true
+          cache: true
+          working_directory: autogpt_platform
 
       - name: Copy default supabase .env
         run: |
@@ -211,23 +180,17 @@ jobs:
             }
           fi
 
-      - name: Restore dependencies cache
-        uses: actions/cache@v5
-        with:
-          path: ~/.pnpm-store
-          key: ${{ needs.setup.outputs.cache-key }}
-          restore-keys: |
-            ${{ runner.os }}-pnpm-${{ hashFiles('autogpt_platform/frontend/pnpm-lock.yaml') }}
-            ${{ runner.os }}-pnpm-
-
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: mise run install:frontend
+        working-directory: autogpt_platform
 
       - name: Install Browser 'chromium'
         run: pnpm playwright install --with-deps chromium
+        working-directory: autogpt_platform/frontend
 
       - name: Run Playwright tests
         run: pnpm test:no-build
+        working-directory: autogpt_platform/frontend
         continue-on-error: false
 
       - name: Upload Playwright report
@@ -262,30 +225,22 @@ jobs:
         with:
           submodules: recursive
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v6
+      - name: Setup mise
+        uses: jdx/mise-action@v3
         with:
-          node-version: "22.x"
-          cache: 'pnpm'
-          cache-dependency-path: 'autogpt_platform/frontend/pnpm-lock.yaml'
-
-      - name: Enable corepack
-        run: corepack enable
-
-      - name: Restore dependencies cache
-        uses: actions/cache@v5
-        with:
-          path: ~/.pnpm-store
-          key: ${{ needs.setup.outputs.cache-key }}
-          restore-keys: |
-            ${{ runner.os }}-pnpm-${{ hashFiles('autogpt_platform/frontend/pnpm-lock.yaml') }}
-            ${{ runner.os }}-pnpm-
+          version: 2026.1.9  # Latest as of January 2026
+          install: true
+          cache: true
+          working_directory: autogpt_platform
 
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: mise run install:frontend
+        working-directory: autogpt_platform
 
       - name: Generate API client
         run: pnpm generate:api
+        working-directory: autogpt_platform/frontend
 
       - name: Run Integration Tests
         run: pnpm test:unit
+        working-directory: autogpt_platform/frontend
