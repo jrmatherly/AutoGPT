@@ -71,7 +71,10 @@
 
 **Details**: 
 - Migration: `.github/workflows/MISE_MIGRATION_COMPLETE.md`
-- LiteLLM Integration: `claudedocs/research_litellm_proxy_configuration_2026-01-29.md`
+- LiteLLM Integration: `.serena/memories/litellm_proxy_configuration.md`
+- Workflows Guide: `docs/github/workflows/WORKFLOWS.md`
+- Configuration Guide: `docs/github/CONFIGURATION.md`
+- Documentation Guide: `docs/github/DOCUMENTATION.md`
 
 ### Other Workflows (Not Updated)
 - platform-autogpt-deploy-prod.yml
