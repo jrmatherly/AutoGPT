@@ -1,0 +1,1705 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-29T20:58:08.043Z",
+  "scanHash": "09be017f3ccf349c",
+  "summary": {
+    "totalPatterns": 73,
+    "autoApproveEligible": 13,
+    "flaggedForReview": 49,
+    "likelyFalsePositives": 11,
+    "duplicateCandidates": 9,
+    "healthScore": 91,
+    "byCategory": {
+      "structural": {
+        "total": 9,
+        "autoApproveEligible": 1,
+        "flaggedForReview": 6,
+        "likelyFalsePositives": 2,
+        "avgConfidence": 0.8407771446660335
+      },
+      "components": {
+        "total": 1,
+        "autoApproveEligible": 0,
+        "flaggedForReview": 1,
+        "likelyFalsePositives": 0,
+        "avgConfidence": 0.77
+      },
+      "styling": {
+        "total": 7,
+        "autoApproveEligible": 3,
+        "flaggedForReview": 4,
+        "likelyFalsePositives": 0,
+        "avgConfidence": 0.9356709956709957
+      },
+      "auth": {
+        "total": 4,
+        "autoApproveEligible": 1,
+        "flaggedForReview": 2,
+        "likelyFalsePositives": 1,
+        "avgConfidence": 0.7925
+      },
+      "errors": {
+        "total": 2,
+        "autoApproveEligible": 0,
+        "flaggedForReview": 2,
+        "likelyFalsePositives": 0,
+        "avgConfidence": 0.86
+      },
+      "data-access": {
+        "total": 8,
+        "autoApproveEligible": 3,
+        "flaggedForReview": 4,
+        "likelyFalsePositives": 1,
+        "avgConfidence": 0.8636363636363638
+      },
+      "testing": {
+        "total": 6,
+        "autoApproveEligible": 0,
+        "flaggedForReview": 4,
+        "likelyFalsePositives": 2,
+        "avgConfidence": 0.7199999999999999
+      },
+      "logging": {
+        "total": 4,
+        "autoApproveEligible": 1,
+        "flaggedForReview": 2,
+        "likelyFalsePositives": 1,
+        "avgConfidence": 0.78
+      },
+      "security": {
+        "total": 7,
+        "autoApproveEligible": 1,
+        "flaggedForReview": 6,
+        "likelyFalsePositives": 0,
+        "avgConfidence": 0.8985714285714285
+      },
+      "config": {
+        "total": 7,
+        "autoApproveEligible": 1,
+        "flaggedForReview": 5,
+        "likelyFalsePositives": 1,
+        "avgConfidence": 0.9061038961038961
+      },
+      "types": {
+        "total": 13,
+        "autoApproveEligible": 2,
+        "flaggedForReview": 8,
+        "likelyFalsePositives": 3,
+        "avgConfidence": 0.8231267635872899
+      },
+      "performance": {
+        "total": 1,
+        "autoApproveEligible": 0,
+        "flaggedForReview": 1,
+        "likelyFalsePositives": 0,
+        "avgConfidence": 0.95
+      },
+      "accessibility": {
+        "total": 3,
+        "autoApproveEligible": 0,
+        "flaggedForReview": 3,
+        "likelyFalsePositives": 0,
+        "avgConfidence": 0.87
+      },
+      "documentation": {
+        "total": 1,
+        "autoApproveEligible": 0,
+        "flaggedForReview": 1,
+        "likelyFalsePositives": 0,
+        "avgConfidence": 0.95
+      }
+    }
+  },
+  "patterns": [
+    {
+      "id": "651b472a4503972d",
+      "name": "File Naming Detector",
+      "category": "structural",
+      "confidence": 0.95,
+      "locationCount": 1,
+      "outlierCount": 0,
+      "recommendation": "review",
+      "reasons": [
+        "Moderate confidence (95%)",
+        "Only 1 locations (need 3+)"
+      ],
+      "crossValidation": {
+        "inCallGraph": true,
+        "matchesConstraints": true,
+        "hasTestCoverage": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "36f4bdd33ae1a431",
+      "name": "Co-Location Detector",
+      "category": "structural",
+      "confidence": 0.9116666666666666,
+      "locationCount": 1,
+      "outlierCount": 0,
+      "recommendation": "review",
+      "reasons": [
+        "Moderate confidence (91%)",
+        "Only 1 locations (need 3+)"
+      ],
+      "crossValidation": {
+        "inCallGraph": true,
+        "matchesConstraints": true,
+        "hasTestCoverage": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "ace07941429a2c5d",
+      "name": "Co-Location Detector",
+      "category": "structural",
+      "confidence": 0.931111111111111,
+      "locationCount": 13,
+      "outlierCount": 0,
+      "recommendation": "auto-approve",
+      "reasons": [
+        "High confidence (93%)",
+        "13 consistent locations",
+        "No outliers detected"
+      ],
+      "crossValidation": {
+        "inCallGraph": true,
+        "matchesConstraints": true,
+        "hasTestCoverage": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "ba38e1b947043cac",
+      "name": "Import Ordering Detector",
+      "category": "structural",
+      "confidence": 0.95,
+      "locationCount": 1,
+      "outlierCount": 0,
+      "recommendation": "review",
+      "reasons": [
+        "Moderate confidence (95%)",
+        "Only 1 locations (need 3+)"
+      ],
+      "crossValidation": {
+        "inCallGraph": true,
+        "matchesConstraints": true,
+        "hasTestCoverage": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "e392819f3589db41",
+      "name": "File Naming Detector",
+      "category": "structural",
+      "confidence": 0.6802564102564104,
+      "locationCount": 10,
+      "outlierCount": 0,
+      "recommendation": "likely-false-positive",
+      "reasons": [
+        "Low confidence (68%)"
+      ],
+      "crossValidation": {
+        "inCallGraph": true,
+        "matchesConstraints": true,
+        "hasTestCoverage": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "91609a58794e24a9",
+      "name": "File Naming Detector",
+      "category": "structural",
+      "confidence": 0.8802564102564103,
+      "locationCount": 29,
+      "outlierCount": 0,
+      "recommendation": "review",
+      "reasons": [
+        "Moderate confidence (88%)"
+      ],
+      "crossValidation": {
+        "inCallGraph": true,
+        "matchesConstraints": true,
+        "hasTestCoverage": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "35b7c6cd5e16b5cf",
+      "name": "Directory Structure Detector",
+      "category": "structural",
+      "confidence": 0.6662962962962964,
+      "locationCount": 8,
+      "outlierCount": 0,
+      "recommendation": "likely-false-positive",
+      "reasons": [
+        "Low confidence (67%)"
+      ],
+      "crossValidation": {
+        "inCallGraph": true,
+        "matchesConstraints": true,
+        "hasTestCoverage": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "1b71ad0c08853b3f",
+      "name": "Directory Structure Detector",
+      "category": "structural",
+      "confidence": 0.8662962962962963,
+      "locationCount": 19,
+      "outlierCount": 0,
+      "recommendation": "review",
+      "reasons": [
+        "Moderate confidence (87%)"
+      ],
+      "crossValidation": {
+        "inCallGraph": true,
+        "matchesConstraints": true,
+        "hasTestCoverage": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "ba7a79f8b8551954",
+      "name": "Co-Location Detector",
+      "category": "structural",
+      "confidence": 0.731111111111111,
+      "locationCount": 1,
+      "outlierCount": 0,
+      "recommendation": "review",
+      "reasons": [
+        "Moderate confidence (73%)",
+        "Only 1 locations (need 3+)"
+      ],
+      "crossValidation": {
+        "inCallGraph": true,
+        "matchesConstraints": true,
+        "hasTestCoverage": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "26368b7ec9b4033d",
+      "name": "State Patterns Detector",
+      "category": "components",
+      "confidence": 0.77,
+      "locationCount": 1,
+      "outlierCount": 0,
+      "recommendation": "review",
+      "reasons": [
+        "Moderate confidence (77%)",
+        "Only 1 locations (need 3+)"
+      ],
+      "crossValidation": {
+        "inCallGraph": true,
+        "matchesConstraints": true,
+        "hasTestCoverage": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "d1d2ebdae257192c",
+      "name": "Spacing Scale Detector",
+      "category": "styling",
+      "confidence": 0.95,
+      "locationCount": 2,
+      "outlierCount": 0,
+      "recommendation": "review",
+      "reasons": [
+        "Moderate confidence (95%)",
+        "Only 2 locations (need 3+)"
+      ],
+      "crossValidation": {
+        "inCallGraph": true,
+        "matchesConstraints": true,
+        "hasTestCoverage": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "b76c0cf1adce5f20",
+      "name": "Typography Detector",
+      "category": "styling",
+      "confidence": 0.95,
+      "locationCount": 1,
+      "outlierCount": 0,
+      "recommendation": "review",
+      "reasons": [
+        "Moderate confidence (95%)",
+        "Only 1 locations (need 3+)",
+        "Part of potential duplicate group"
+      ],
+      "crossValidation": {
+        "inCallGraph": true,
+        "matchesConstraints": true,
+        "hasTestCoverage": true,
+        "issues": []
+      },
+      "duplicateGroupId": "dup-05b7f349"
+    },
+    {
+      "id": "b637b56f06456c95",
+      "name": "Class Naming Detector",
+      "category": "styling",
+      "confidence": 0.9116666666666666,
+      "locationCount": 1,
+      "outlierCount": 0,
+      "recommendation": "review",
+      "reasons": [
+        "Moderate confidence (91%)",
+        "Only 1 locations (need 3+)"
+      ],
+      "crossValidation": {
+        "inCallGraph": true,
+        "matchesConstraints": true,
+        "hasTestCoverage": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "3d10e7ddcd7c619b",
+      "name": "Class Naming Detector",
+      "category": "styling",
+      "confidence": 0.9116666666666666,
+      "locationCount": 5,
+      "outlierCount": 0,
+      "recommendation": "auto-approve",
+      "reasons": [
+        "High confidence (91%)",
+        "5 consistent locations",
+        "No outliers detected"
+      ],
+      "crossValidation": {
+        "inCallGraph": true,
+        "matchesConstraints": true,
+        "hasTestCoverage": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "8f87d6d6e744bad9",
+      "name": "Tailwind Patterns Detector",
+      "category": "styling",
+      "confidence": 0.95,
+      "locationCount": 1,
+      "outlierCount": 0,
+      "recommendation": "review",
+      "reasons": [
+        "Moderate confidence (95%)",
+        "Only 1 locations (need 3+)",
+        "Part of potential duplicate group"
+      ],
+      "crossValidation": {
+        "inCallGraph": true,
+        "matchesConstraints": true,
+        "hasTestCoverage": true,
+        "issues": []
+      },
+      "duplicateGroupId": "dup-05b7f349"
+    },
+    {
+      "id": "04ec33bbced88836",
+      "name": "Responsive Detector",
+      "category": "styling",
+      "confidence": 0.9381818181818182,
+      "locationCount": 3,
+      "outlierCount": 0,
+      "recommendation": "auto-approve",
+      "reasons": [
+        "High confidence (94%)",
+        "3 consistent locations",
+        "No outliers detected"
+      ],
+      "crossValidation": {
+        "inCallGraph": true,
+        "matchesConstraints": true,
+        "hasTestCoverage": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "59db13033f761a5d",
+      "name": "Responsive Detector",
+      "category": "styling",
+      "confidence": 0.9381818181818182,
+      "locationCount": 30,
+      "outlierCount": 0,
+      "recommendation": "auto-approve",
+      "reasons": [
+        "High confidence (94%)",
+        "30 consistent locations",
+        "No outliers detected"
+      ],
+      "crossValidation": {
+        "inCallGraph": true,
+        "matchesConstraints": true,
+        "hasTestCoverage": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "64f918011a6e29a0",
+      "name": "Permission Checks Detector",
+      "category": "auth",
+      "confidence": 0.7949999999999999,
+      "locationCount": 1,
+      "outlierCount": 0,
+      "recommendation": "review",
+      "reasons": [
+        "Moderate confidence (80%)",
+        "Only 1 locations (need 3+)"
+      ],
+      "crossValidation": {
+        "inCallGraph": true,
+        "matchesConstraints": true,
+        "hasTestCoverage": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "073891497cb92e7a",
+      "name": "Permission Checks Detector",
+      "category": "auth",
+      "confidence": 0.7949999999999999,
+      "locationCount": 1,
+      "outlierCount": 0,
+      "recommendation": "review",
+      "reasons": [
+        "Moderate confidence (80%)",
+        "Only 1 locations (need 3+)"
+      ],
+      "crossValidation": {
+        "inCallGraph": true,
+        "matchesConstraints": true,
+        "hasTestCoverage": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "5ad9440e83d2654a",
+      "name": "Permission Checks Detector",
+      "category": "auth",
+      "confidence": 0.6299999999999999,
+      "locationCount": 6,
+      "outlierCount": 0,
+      "recommendation": "likely-false-positive",
+      "reasons": [
+        "Low confidence (63%)"
+      ],
+      "crossValidation": {
+        "inCallGraph": true,
+        "matchesConstraints": true,
+        "hasTestCoverage": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "20eb38092dca276d",
+      "name": "Permission Checks Detector",
+      "category": "auth",
+      "confidence": 0.95,
+      "locationCount": 4,
+      "outlierCount": 0,
+      "recommendation": "auto-approve",
+      "reasons": [
+        "High confidence (95%)",
+        "4 consistent locations",
+        "No outliers detected"
+      ],
+      "crossValidation": {
+        "inCallGraph": true,
+        "matchesConstraints": true,
+        "hasTestCoverage": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "083bae9f406e6f5e",
+      "name": "Error Codes Detector",
+      "category": "errors",
+      "confidence": 0.95,
+      "locationCount": 1,
+      "outlierCount": 0,
+      "recommendation": "review",
+      "reasons": [
+        "Moderate confidence (95%)",
+        "Only 1 locations (need 3+)"
+      ],
+      "crossValidation": {
+        "inCallGraph": true,
+        "matchesConstraints": true,
+        "hasTestCoverage": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "186bf2f0ddfd0c0d",
+      "name": "Error Logging Detector",
+      "category": "errors",
+      "confidence": 0.77,
+      "locationCount": 1,
+      "outlierCount": 0,
+      "recommendation": "review",
+      "reasons": [
+        "Moderate confidence (77%)",
+        "Only 1 locations (need 3+)"
+      ],
+      "crossValidation": {
+        "inCallGraph": true,
+        "matchesConstraints": true,
+        "hasTestCoverage": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "b37badc88ad33da0",
+      "name": "Connection Pooling Detector",
+      "category": "data-access",
+      "confidence": 0.95,
+      "locationCount": 1,
+      "outlierCount": 0,
+      "recommendation": "review",
+      "reasons": [
+        "Moderate confidence (95%)",
+        "Only 1 locations (need 3+)"
+      ],
+      "crossValidation": {
+        "inCallGraph": true,
+        "matchesConstraints": true,
+        "hasTestCoverage": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "0ee0b753feb59588",
+      "name": "Query Access Detector",
+      "category": "data-access",
+      "confidence": 0.77,
+      "locationCount": 2,
+      "outlierCount": 0,
+      "recommendation": "review",
+      "reasons": [
+        "Moderate confidence (77%)",
+        "Only 2 locations (need 3+)"
+      ],
+      "crossValidation": {
+        "inCallGraph": true,
+        "matchesConstraints": true,
+        "hasTestCoverage": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "dc1166ff5bbe9064",
+      "name": "Repository Pattern Detector",
+      "category": "data-access",
+      "confidence": 0.95,
+      "locationCount": 8,
+      "outlierCount": 0,
+      "recommendation": "auto-approve",
+      "reasons": [
+        "High confidence (95%)",
+        "8 consistent locations",
+        "No outliers detected"
+      ],
+      "crossValidation": {
+        "inCallGraph": true,
+        "matchesConstraints": true,
+        "hasTestCoverage": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "57d1ae91f615424d",
+      "name": "Transaction Patterns Detector",
+      "category": "data-access",
+      "confidence": 0.9381818181818182,
+      "locationCount": 1,
+      "outlierCount": 0,
+      "recommendation": "review",
+      "reasons": [
+        "Moderate confidence (94%)",
+        "Only 1 locations (need 3+)"
+      ],
+      "crossValidation": {
+        "inCallGraph": true,
+        "matchesConstraints": true,
+        "hasTestCoverage": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "4d490718ed45eaea",
+      "name": "Transaction Patterns Detector",
+      "category": "data-access",
+      "confidence": 0.9381818181818182,
+      "locationCount": 10,
+      "outlierCount": 0,
+      "recommendation": "auto-approve",
+      "reasons": [
+        "High confidence (94%)",
+        "10 consistent locations",
+        "No outliers detected"
+      ],
+      "crossValidation": {
+        "inCallGraph": true,
+        "matchesConstraints": true,
+        "hasTestCoverage": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "c7b96404a5b7330a",
+      "name": "Validation Patterns Detector",
+      "category": "data-access",
+      "confidence": 0.6427272727272728,
+      "locationCount": 7,
+      "outlierCount": 0,
+      "recommendation": "likely-false-positive",
+      "reasons": [
+        "Low confidence (64%)"
+      ],
+      "crossValidation": {
+        "inCallGraph": true,
+        "matchesConstraints": true,
+        "hasTestCoverage": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "4f3bb88c3c13dfdc",
+      "name": "Validation Patterns Detector",
+      "category": "data-access",
+      "confidence": 0.95,
+      "locationCount": 4,
+      "outlierCount": 0,
+      "recommendation": "auto-approve",
+      "reasons": [
+        "High confidence (95%)",
+        "4 consistent locations",
+        "No outliers detected"
+      ],
+      "crossValidation": {
+        "inCallGraph": true,
+        "matchesConstraints": true,
+        "hasTestCoverage": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "1840ea0e8e5a87f8",
+      "name": "Sensitive Field Detector",
+      "category": "data-access",
+      "confidence": 0.77,
+      "locationCount": 3,
+      "outlierCount": 0,
+      "recommendation": "review",
+      "reasons": [
+        "Moderate confidence (77%)"
+      ],
+      "crossValidation": {
+        "inCallGraph": true,
+        "matchesConstraints": true,
+        "hasTestCoverage": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "adcc0fe13124346a",
+      "name": "Test File Naming Detector",
+      "category": "testing",
+      "confidence": 0.77,
+      "locationCount": 1,
+      "outlierCount": 0,
+      "recommendation": "review",
+      "reasons": [
+        "Moderate confidence (77%)",
+        "Only 1 locations (need 3+)",
+        "Part of potential duplicate group"
+      ],
+      "crossValidation": {
+        "inCallGraph": true,
+        "matchesConstraints": true,
+        "hasTestCoverage": true,
+        "issues": []
+      },
+      "duplicateGroupId": "dup-9e0f4358"
+    },
+    {
+      "id": "f5fd4f06b35227df",
+      "name": "Test Co-Location Detector",
+      "category": "testing",
+      "confidence": 0.77,
+      "locationCount": 1,
+      "outlierCount": 0,
+      "recommendation": "review",
+      "reasons": [
+        "Moderate confidence (77%)",
+        "Only 1 locations (need 3+)",
+        "Part of potential duplicate group"
+      ],
+      "crossValidation": {
+        "inCallGraph": true,
+        "matchesConstraints": true,
+        "hasTestCoverage": true,
+        "issues": []
+      },
+      "duplicateGroupId": "dup-9e0f4358"
+    },
+    {
+      "id": "12c031e1fcb1678d",
+      "name": "Test Structure Detector",
+      "category": "testing",
+      "confidence": 0.595,
+      "locationCount": 1,
+      "outlierCount": 0,
+      "recommendation": "likely-false-positive",
+      "reasons": [
+        "Low confidence (60%)",
+        "Part of potential duplicate group"
+      ],
+      "crossValidation": {
+        "inCallGraph": true,
+        "matchesConstraints": true,
+        "hasTestCoverage": true,
+        "issues": []
+      },
+      "duplicateGroupId": "dup-9e0f4358"
+    },
+    {
+      "id": "6ff058f433aebb6e",
+      "name": "Test Structure Detector",
+      "category": "testing",
+      "confidence": 0.7949999999999999,
+      "locationCount": 1,
+      "outlierCount": 0,
+      "recommendation": "review",
+      "reasons": [
+        "Moderate confidence (80%)",
+        "Only 1 locations (need 3+)",
+        "Part of potential duplicate group"
+      ],
+      "crossValidation": {
+        "inCallGraph": true,
+        "matchesConstraints": true,
+        "hasTestCoverage": true,
+        "issues": []
+      },
+      "duplicateGroupId": "dup-6d0a3832"
+    },
+    {
+      "id": "8ac32256ebd03d63",
+      "name": "Describe Naming Detector",
+      "category": "testing",
+      "confidence": 0.7949999999999999,
+      "locationCount": 1,
+      "outlierCount": 0,
+      "recommendation": "review",
+      "reasons": [
+        "Moderate confidence (80%)",
+        "Only 1 locations (need 3+)",
+        "Part of potential duplicate group"
+      ],
+      "crossValidation": {
+        "inCallGraph": true,
+        "matchesConstraints": true,
+        "hasTestCoverage": true,
+        "issues": []
+      },
+      "duplicateGroupId": "dup-6d0a3832"
+    },
+    {
+      "id": "9621e736eb79b1ce",
+      "name": "Describe Naming Detector",
+      "category": "testing",
+      "confidence": 0.595,
+      "locationCount": 1,
+      "outlierCount": 0,
+      "recommendation": "likely-false-positive",
+      "reasons": [
+        "Low confidence (60%)",
+        "Part of potential duplicate group"
+      ],
+      "crossValidation": {
+        "inCallGraph": true,
+        "matchesConstraints": true,
+        "hasTestCoverage": true,
+        "issues": []
+      },
+      "duplicateGroupId": "dup-9e0f4358"
+    },
+    {
+      "id": "e3c72a30031a4770",
+      "name": "Structured Logging Detector",
+      "category": "logging",
+      "confidence": 0.77,
+      "locationCount": 1,
+      "outlierCount": 0,
+      "recommendation": "review",
+      "reasons": [
+        "Moderate confidence (77%)",
+        "Only 1 locations (need 3+)",
+        "Part of potential duplicate group"
+      ],
+      "crossValidation": {
+        "inCallGraph": true,
+        "matchesConstraints": true,
+        "hasTestCoverage": true,
+        "issues": []
+      },
+      "duplicateGroupId": "dup-ea368e71"
+    },
+    {
+      "id": "80a01c15db890d2f",
+      "name": "Log Levels Detector",
+      "category": "logging",
+      "confidence": 0.77,
+      "locationCount": 1,
+      "outlierCount": 0,
+      "recommendation": "review",
+      "reasons": [
+        "Moderate confidence (77%)",
+        "Only 1 locations (need 3+)",
+        "Part of potential duplicate group"
+      ],
+      "crossValidation": {
+        "inCallGraph": true,
+        "matchesConstraints": true,
+        "hasTestCoverage": true,
+        "issues": []
+      },
+      "duplicateGroupId": "dup-ea368e71"
+    },
+    {
+      "id": "d00dda3b972d6fb7",
+      "name": "Health Checks Detector",
+      "category": "logging",
+      "confidence": 0.6299999999999999,
+      "locationCount": 6,
+      "outlierCount": 0,
+      "recommendation": "likely-false-positive",
+      "reasons": [
+        "Low confidence (63%)"
+      ],
+      "crossValidation": {
+        "inCallGraph": true,
+        "matchesConstraints": true,
+        "hasTestCoverage": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "593f439ae9729586",
+      "name": "Health Checks Detector",
+      "category": "logging",
+      "confidence": 0.95,
+      "locationCount": 4,
+      "outlierCount": 0,
+      "recommendation": "auto-approve",
+      "reasons": [
+        "High confidence (95%)",
+        "4 consistent locations",
+        "No outliers detected"
+      ],
+      "crossValidation": {
+        "inCallGraph": true,
+        "matchesConstraints": true,
+        "hasTestCoverage": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "f5389201be8f5ce7",
+      "name": "SQL Injection Detector",
+      "category": "security",
+      "confidence": 0.95,
+      "locationCount": 1,
+      "outlierCount": 0,
+      "recommendation": "review",
+      "reasons": [
+        "Moderate confidence (95%)",
+        "Only 1 locations (need 3+)"
+      ],
+      "crossValidation": {
+        "inCallGraph": true,
+        "matchesConstraints": true,
+        "hasTestCoverage": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "e9abe4abd172ee01",
+      "name": "Secret Management Detector",
+      "category": "security",
+      "confidence": 0.95,
+      "locationCount": 5,
+      "outlierCount": 0,
+      "recommendation": "auto-approve",
+      "reasons": [
+        "High confidence (95%)",
+        "5 consistent locations",
+        "No outliers detected"
+      ],
+      "crossValidation": {
+        "inCallGraph": true,
+        "matchesConstraints": true,
+        "hasTestCoverage": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "2f6a81a528915408",
+      "name": "XSS Prevention Detector",
+      "category": "security",
+      "confidence": 0.95,
+      "locationCount": 1,
+      "outlierCount": 0,
+      "recommendation": "review",
+      "reasons": [
+        "Moderate confidence (95%)",
+        "Only 1 locations (need 3+)"
+      ],
+      "crossValidation": {
+        "inCallGraph": true,
+        "matchesConstraints": true,
+        "hasTestCoverage": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "3c259b047a4e4064",
+      "name": "CSRF Protection Detector",
+      "category": "security",
+      "confidence": 0.95,
+      "locationCount": 1,
+      "outlierCount": 0,
+      "recommendation": "review",
+      "reasons": [
+        "Moderate confidence (95%)",
+        "Only 1 locations (need 3+)"
+      ],
+      "crossValidation": {
+        "inCallGraph": true,
+        "matchesConstraints": true,
+        "hasTestCoverage": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "930f45d794185359",
+      "name": "Secret Management Detector",
+      "category": "security",
+      "confidence": 0.95,
+      "locationCount": 1,
+      "outlierCount": 0,
+      "recommendation": "review",
+      "reasons": [
+        "Moderate confidence (95%)",
+        "Only 1 locations (need 3+)"
+      ],
+      "crossValidation": {
+        "inCallGraph": true,
+        "matchesConstraints": true,
+        "hasTestCoverage": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "9d2e87cfd712cbcc",
+      "name": "SQL Injection Detector",
+      "category": "security",
+      "confidence": 0.77,
+      "locationCount": 1,
+      "outlierCount": 0,
+      "recommendation": "review",
+      "reasons": [
+        "Moderate confidence (77%)",
+        "Only 1 locations (need 3+)"
+      ],
+      "crossValidation": {
+        "inCallGraph": true,
+        "matchesConstraints": true,
+        "hasTestCoverage": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "9223a8d1eb320f87",
+      "name": "Secret Management Detector",
+      "category": "security",
+      "confidence": 0.77,
+      "locationCount": 3,
+      "outlierCount": 0,
+      "recommendation": "review",
+      "reasons": [
+        "Moderate confidence (77%)"
+      ],
+      "crossValidation": {
+        "inCallGraph": true,
+        "matchesConstraints": true,
+        "hasTestCoverage": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "ff7859fd23ca11c6",
+      "name": "Environment Config Detector",
+      "category": "config",
+      "confidence": 0.95,
+      "locationCount": 5,
+      "outlierCount": 0,
+      "recommendation": "review",
+      "reasons": [
+        "High confidence (95%)",
+        "5 consistent locations",
+        "No outliers detected",
+        "Part of potential duplicate group"
+      ],
+      "crossValidation": {
+        "inCallGraph": true,
+        "matchesConstraints": true,
+        "hasTestCoverage": true,
+        "issues": []
+      },
+      "duplicateGroupId": "dup-1c61a204"
+    },
+    {
+      "id": "10d5c71b4279631d",
+      "name": "Environment Detection Detector",
+      "category": "config",
+      "confidence": 0.95,
+      "locationCount": 5,
+      "outlierCount": 0,
+      "recommendation": "review",
+      "reasons": [
+        "High confidence (95%)",
+        "5 consistent locations",
+        "No outliers detected",
+        "Part of potential duplicate group"
+      ],
+      "crossValidation": {
+        "inCallGraph": true,
+        "matchesConstraints": true,
+        "hasTestCoverage": true,
+        "issues": []
+      },
+      "duplicateGroupId": "dup-1c61a204"
+    },
+    {
+      "id": "505e4567fbaa64e7",
+      "name": "Environment Config Detector",
+      "category": "config",
+      "confidence": 0.95,
+      "locationCount": 1,
+      "outlierCount": 0,
+      "recommendation": "review",
+      "reasons": [
+        "Moderate confidence (95%)",
+        "Only 1 locations (need 3+)"
+      ],
+      "crossValidation": {
+        "inCallGraph": true,
+        "matchesConstraints": true,
+        "hasTestCoverage": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "6c3d05c87e5fd2c3",
+      "name": "Required/Optional Detector",
+      "category": "config",
+      "confidence": 0.95,
+      "locationCount": 1,
+      "outlierCount": 0,
+      "recommendation": "review",
+      "reasons": [
+        "Moderate confidence (95%)",
+        "Only 1 locations (need 3+)",
+        "Part of potential duplicate group"
+      ],
+      "crossValidation": {
+        "inCallGraph": true,
+        "matchesConstraints": true,
+        "hasTestCoverage": true,
+        "issues": []
+      },
+      "duplicateGroupId": "dup-265fdc99"
+    },
+    {
+      "id": "089417a02df144aa",
+      "name": "Default Values Detector",
+      "category": "config",
+      "confidence": 0.95,
+      "locationCount": 1,
+      "outlierCount": 0,
+      "recommendation": "review",
+      "reasons": [
+        "Moderate confidence (95%)",
+        "Only 1 locations (need 3+)",
+        "Part of potential duplicate group"
+      ],
+      "crossValidation": {
+        "inCallGraph": true,
+        "matchesConstraints": true,
+        "hasTestCoverage": true,
+        "issues": []
+      },
+      "duplicateGroupId": "dup-265fdc99"
+    },
+    {
+      "id": "5ac4fbddf4ccecff",
+      "name": "Config Validation Detector",
+      "category": "config",
+      "confidence": 0.6427272727272728,
+      "locationCount": 7,
+      "outlierCount": 0,
+      "recommendation": "likely-false-positive",
+      "reasons": [
+        "Low confidence (64%)"
+      ],
+      "crossValidation": {
+        "inCallGraph": true,
+        "matchesConstraints": true,
+        "hasTestCoverage": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "39da210270e07e01",
+      "name": "Config Validation Detector",
+      "category": "config",
+      "confidence": 0.95,
+      "locationCount": 4,
+      "outlierCount": 0,
+      "recommendation": "auto-approve",
+      "reasons": [
+        "High confidence (95%)",
+        "4 consistent locations",
+        "No outliers detected"
+      ],
+      "crossValidation": {
+        "inCallGraph": true,
+        "matchesConstraints": true,
+        "hasTestCoverage": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "9e50053c5e91c142",
+      "name": "Naming Conventions Detector",
+      "category": "types",
+      "confidence": 0.95,
+      "locationCount": 9,
+      "outlierCount": 0,
+      "recommendation": "review",
+      "reasons": [
+        "High confidence (95%)",
+        "9 consistent locations",
+        "No outliers detected",
+        "Part of potential duplicate group"
+      ],
+      "crossValidation": {
+        "inCallGraph": true,
+        "matchesConstraints": true,
+        "hasTestCoverage": true,
+        "issues": []
+      },
+      "duplicateGroupId": "dup-0cbc028a"
+    },
+    {
+      "id": "79303427f826206f",
+      "name": "Generic Patterns Detector",
+      "category": "types",
+      "confidence": 0.7262500000000001,
+      "locationCount": 24,
+      "outlierCount": 0,
+      "recommendation": "review",
+      "reasons": [
+        "Moderate confidence (73%)"
+      ],
+      "crossValidation": {
+        "inCallGraph": true,
+        "matchesConstraints": true,
+        "hasTestCoverage": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "960ea7e8b79c2486",
+      "name": "Generic Patterns Detector",
+      "category": "types",
+      "confidence": 0.92625,
+      "locationCount": 1,
+      "outlierCount": 0,
+      "recommendation": "review",
+      "reasons": [
+        "Moderate confidence (93%)",
+        "Only 1 locations (need 3+)"
+      ],
+      "crossValidation": {
+        "inCallGraph": true,
+        "matchesConstraints": true,
+        "hasTestCoverage": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "81d0d2c0be1a36ad",
+      "name": "Generic Patterns Detector",
+      "category": "types",
+      "confidence": 0.92625,
+      "locationCount": 4,
+      "outlierCount": 0,
+      "recommendation": "auto-approve",
+      "reasons": [
+        "High confidence (93%)",
+        "4 consistent locations",
+        "No outliers detected"
+      ],
+      "crossValidation": {
+        "inCallGraph": true,
+        "matchesConstraints": true,
+        "hasTestCoverage": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "5302684dab9f5587",
+      "name": "Type Assertions Detector",
+      "category": "types",
+      "confidence": 0.95,
+      "locationCount": 5,
+      "outlierCount": 0,
+      "recommendation": "auto-approve",
+      "reasons": [
+        "High confidence (95%)",
+        "5 consistent locations",
+        "No outliers detected"
+      ],
+      "crossValidation": {
+        "inCallGraph": true,
+        "matchesConstraints": true,
+        "hasTestCoverage": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "a12f44277f16339f",
+      "name": "File Location Detector",
+      "category": "types",
+      "confidence": 0.9147368421052631,
+      "locationCount": 8,
+      "outlierCount": 0,
+      "recommendation": "review",
+      "reasons": [
+        "High confidence (91%)",
+        "8 consistent locations",
+        "No outliers detected",
+        "Part of potential duplicate group"
+      ],
+      "crossValidation": {
+        "inCallGraph": true,
+        "matchesConstraints": true,
+        "hasTestCoverage": true,
+        "issues": []
+      },
+      "duplicateGroupId": "dup-0cbc028a"
+    },
+    {
+      "id": "68237c8019cfc4fe",
+      "name": "File Location Detector",
+      "category": "types",
+      "confidence": 0.7147368421052631,
+      "locationCount": 3,
+      "outlierCount": 0,
+      "recommendation": "review",
+      "reasons": [
+        "Moderate confidence (71%)",
+        "Part of potential duplicate group"
+      ],
+      "crossValidation": {
+        "inCallGraph": true,
+        "matchesConstraints": true,
+        "hasTestCoverage": true,
+        "issues": []
+      },
+      "duplicateGroupId": "dup-ca8f91ce"
+    },
+    {
+      "id": "41d8c82aa9622279",
+      "name": "Naming Conventions Detector",
+      "category": "types",
+      "confidence": 0.6533333333333333,
+      "locationCount": 4,
+      "outlierCount": 0,
+      "recommendation": "likely-false-positive",
+      "reasons": [
+        "Low confidence (65%)"
+      ],
+      "crossValidation": {
+        "inCallGraph": true,
+        "matchesConstraints": true,
+        "hasTestCoverage": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "bcad4eb5edb56237",
+      "name": "Interface vs Type Detector",
+      "category": "types",
+      "confidence": 0.8745454545454545,
+      "locationCount": 8,
+      "outlierCount": 0,
+      "recommendation": "review",
+      "reasons": [
+        "Moderate confidence (87%)",
+        "Part of potential duplicate group"
+      ],
+      "crossValidation": {
+        "inCallGraph": true,
+        "matchesConstraints": true,
+        "hasTestCoverage": true,
+        "issues": []
+      },
+      "duplicateGroupId": "dup-0cbc028a"
+    },
+    {
+      "id": "3a9c7f022b427201",
+      "name": "Interface vs Type Detector",
+      "category": "types",
+      "confidence": 0.6745454545454546,
+      "locationCount": 3,
+      "outlierCount": 0,
+      "recommendation": "likely-false-positive",
+      "reasons": [
+        "Low confidence (67%)",
+        "Part of potential duplicate group"
+      ],
+      "crossValidation": {
+        "inCallGraph": true,
+        "matchesConstraints": true,
+        "hasTestCoverage": true,
+        "issues": []
+      },
+      "duplicateGroupId": "dup-ca8f91ce"
+    },
+    {
+      "id": "e7b957ea40f4b51c",
+      "name": "Generic Patterns Detector",
+      "category": "types",
+      "confidence": 0.7866666666666666,
+      "locationCount": 8,
+      "outlierCount": 0,
+      "recommendation": "review",
+      "reasons": [
+        "Moderate confidence (79%)",
+        "Part of potential duplicate group"
+      ],
+      "crossValidation": {
+        "inCallGraph": true,
+        "matchesConstraints": true,
+        "hasTestCoverage": true,
+        "issues": []
+      },
+      "duplicateGroupId": "dup-0cbc028a"
+    },
+    {
+      "id": "9c7923fee3152255",
+      "name": "Utility Types Detector",
+      "category": "types",
+      "confidence": 0.95,
+      "locationCount": 1,
+      "outlierCount": 0,
+      "recommendation": "review",
+      "reasons": [
+        "Moderate confidence (95%)",
+        "Only 1 locations (need 3+)"
+      ],
+      "crossValidation": {
+        "inCallGraph": true,
+        "matchesConstraints": true,
+        "hasTestCoverage": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "a07c45408587731a",
+      "name": "Type Assertions Detector",
+      "category": "types",
+      "confidence": 0.6533333333333333,
+      "locationCount": 4,
+      "outlierCount": 0,
+      "recommendation": "likely-false-positive",
+      "reasons": [
+        "Low confidence (65%)"
+      ],
+      "crossValidation": {
+        "inCallGraph": true,
+        "matchesConstraints": true,
+        "hasTestCoverage": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "73aaf18f054d6fc5",
+      "name": "Memoization Detector",
+      "category": "performance",
+      "confidence": 0.95,
+      "locationCount": 1,
+      "outlierCount": 0,
+      "recommendation": "review",
+      "reasons": [
+        "Moderate confidence (95%)",
+        "Only 1 locations (need 3+)"
+      ],
+      "crossValidation": {
+        "inCallGraph": true,
+        "matchesConstraints": true,
+        "hasTestCoverage": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "1bca2f9d012e65b6",
+      "name": "Semantic HTML Detector",
+      "category": "accessibility",
+      "confidence": 0.95,
+      "locationCount": 1,
+      "outlierCount": 0,
+      "recommendation": "review",
+      "reasons": [
+        "Moderate confidence (95%)",
+        "Only 1 locations (need 3+)",
+        "Part of potential duplicate group"
+      ],
+      "crossValidation": {
+        "inCallGraph": true,
+        "matchesConstraints": true,
+        "hasTestCoverage": true,
+        "issues": []
+      },
+      "duplicateGroupId": "dup-abe7719b"
+    },
+    {
+      "id": "3106a1cfdcd8dc10",
+      "name": "Heading Hierarchy Detector",
+      "category": "accessibility",
+      "confidence": 0.83,
+      "locationCount": 3,
+      "outlierCount": 0,
+      "recommendation": "review",
+      "reasons": [
+        "Moderate confidence (83%)"
+      ],
+      "crossValidation": {
+        "inCallGraph": true,
+        "matchesConstraints": true,
+        "hasTestCoverage": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "dc7dfdf40f85646e",
+      "name": "Heading Hierarchy Detector",
+      "category": "accessibility",
+      "confidence": 0.83,
+      "locationCount": 2,
+      "outlierCount": 0,
+      "recommendation": "review",
+      "reasons": [
+        "Moderate confidence (83%)",
+        "Only 2 locations (need 3+)",
+        "Part of potential duplicate group"
+      ],
+      "crossValidation": {
+        "inCallGraph": true,
+        "matchesConstraints": true,
+        "hasTestCoverage": true,
+        "issues": []
+      },
+      "duplicateGroupId": "dup-abe7719b"
+    },
+    {
+      "id": "10e105bd1cbaf141",
+      "name": "JSDoc Patterns Detector",
+      "category": "documentation",
+      "confidence": 0.95,
+      "locationCount": 1,
+      "outlierCount": 0,
+      "recommendation": "review",
+      "reasons": [
+        "Moderate confidence (95%)",
+        "Only 1 locations (need 3+)"
+      ],
+      "crossValidation": {
+        "inCallGraph": true,
+        "matchesConstraints": true,
+        "hasTestCoverage": true,
+        "issues": []
+      }
+    }
+  ],
+  "duplicates": [
+    {
+      "id": "dup-05b7f349",
+      "patterns": [
+        "b76c0cf1adce5f20",
+        "8f87d6d6e744bad9"
+      ],
+      "patternNames": [
+        "Typography Detector",
+        "Tailwind Patterns Detector"
+      ],
+      "similarity": 1,
+      "reason": "High location overlap detected",
+      "recommendation": "merge",
+      "overlappingLocations": 1,
+      "totalLocations": 2
+    },
+    {
+      "id": "dup-9e0f4358",
+      "patterns": [
+        "adcc0fe13124346a",
+        "f5fd4f06b35227df",
+        "12c031e1fcb1678d",
+        "9621e736eb79b1ce"
+      ],
+      "patternNames": [
+        "Test File Naming Detector",
+        "Test Co-Location Detector",
+        "Test Structure Detector",
+        "Describe Naming Detector"
+      ],
+      "similarity": 1,
+      "reason": "High location overlap detected",
+      "recommendation": "merge",
+      "overlappingLocations": 3,
+      "totalLocations": 4
+    },
+    {
+      "id": "dup-6d0a3832",
+      "patterns": [
+        "6ff058f433aebb6e",
+        "8ac32256ebd03d63"
+      ],
+      "patternNames": [
+        "Test Structure Detector",
+        "Describe Naming Detector"
+      ],
+      "similarity": 1,
+      "reason": "High location overlap detected",
+      "recommendation": "merge",
+      "overlappingLocations": 1,
+      "totalLocations": 2
+    },
+    {
+      "id": "dup-ea368e71",
+      "patterns": [
+        "e3c72a30031a4770",
+        "80a01c15db890d2f"
+      ],
+      "patternNames": [
+        "Structured Logging Detector",
+        "Log Levels Detector"
+      ],
+      "similarity": 1,
+      "reason": "High location overlap detected",
+      "recommendation": "merge",
+      "overlappingLocations": 1,
+      "totalLocations": 2
+    },
+    {
+      "id": "dup-1c61a204",
+      "patterns": [
+        "ff7859fd23ca11c6",
+        "10d5c71b4279631d"
+      ],
+      "patternNames": [
+        "Environment Config Detector",
+        "Environment Detection Detector"
+      ],
+      "similarity": 1,
+      "reason": "High location overlap detected",
+      "recommendation": "merge",
+      "overlappingLocations": 5,
+      "totalLocations": 10
+    },
+    {
+      "id": "dup-265fdc99",
+      "patterns": [
+        "6c3d05c87e5fd2c3",
+        "089417a02df144aa"
+      ],
+      "patternNames": [
+        "Required/Optional Detector",
+        "Default Values Detector"
+      ],
+      "similarity": 1,
+      "reason": "High location overlap detected",
+      "recommendation": "merge",
+      "overlappingLocations": 1,
+      "totalLocations": 2
+    },
+    {
+      "id": "dup-0cbc028a",
+      "patterns": [
+        "9e50053c5e91c142",
+        "a12f44277f16339f",
+        "bcad4eb5edb56237",
+        "e7b957ea40f4b51c"
+      ],
+      "patternNames": [
+        "Naming Conventions Detector",
+        "File Location Detector",
+        "Interface vs Type Detector",
+        "Generic Patterns Detector"
+      ],
+      "similarity": 1,
+      "reason": "High location overlap detected",
+      "recommendation": "merge",
+      "overlappingLocations": 24,
+      "totalLocations": 33
+    },
+    {
+      "id": "dup-ca8f91ce",
+      "patterns": [
+        "68237c8019cfc4fe",
+        "3a9c7f022b427201"
+      ],
+      "patternNames": [
+        "File Location Detector",
+        "Interface vs Type Detector"
+      ],
+      "similarity": 1,
+      "reason": "High location overlap detected",
+      "recommendation": "merge",
+      "overlappingLocations": 3,
+      "totalLocations": 6
+    },
+    {
+      "id": "dup-abe7719b",
+      "patterns": [
+        "1bca2f9d012e65b6",
+        "dc7dfdf40f85646e"
+      ],
+      "patternNames": [
+        "Semantic HTML Detector",
+        "Heading Hierarchy Detector"
+      ],
+      "similarity": 0.5,
+      "reason": "High location overlap detected",
+      "recommendation": "review",
+      "overlappingLocations": 1,
+      "totalLocations": 3
+    }
+  ],
+  "crossValidation": {
+    "patternsMatchingCallGraph": 73,
+    "patternsNotInCallGraph": 0,
+    "callGraphEntriesWithoutPatterns": 0,
+    "constraintAlignment": 1,
+    "testCoverageAlignment": 1,
+    "issues": []
+  }
+}

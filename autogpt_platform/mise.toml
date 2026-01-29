@@ -337,6 +337,42 @@ echo "Approving patterns for libs..."
 cd ../autogpt_libs && drift approve all --yes
 """
 
+[tasks."drift:approve:auto"]
+description = "Auto-approve high-confidence patterns (≥90%)"
+dir = "{{config_root}}"
+run = """
+echo "Auto-approving backend patterns..."
+cd backend && drift approve --auto --yes
+echo "Auto-approving frontend patterns..."
+cd ../frontend && drift approve --auto --yes
+echo "Auto-approving libs patterns..."
+cd ../autogpt_libs && drift approve --auto --yes
+"""
+
+[tasks."drift:audit"]
+description = "Run audit review for all projects"
+dir = "{{config_root}}"
+run = """
+echo "=== Backend Audit ===" && cd backend && drift audit --review || true
+echo "\n=== Frontend Audit ===" && cd ../frontend && drift audit --review || true
+echo "\n=== Libs Audit ===" && cd ../autogpt_libs && drift audit --review || true
+"""
+
+[tasks."drift:audit:backend"]
+description = "Run audit review for backend only"
+dir = "{{config_root}}/backend"
+run = "drift audit --review"
+
+[tasks."drift:audit:frontend"]
+description = "Run audit review for frontend only"
+dir = "{{config_root}}/frontend"
+run = "drift audit --review"
+
+[tasks."drift:audit:libs"]
+description = "Run audit review for libs only"
+dir = "{{config_root}}/autogpt_libs"
+run = "drift audit --review"
+
 [tasks."drift:callgraph"]
 description = "Build call graphs for impact analysis"
 dir = "{{config_root}}"

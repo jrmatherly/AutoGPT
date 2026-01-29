@@ -3,6 +3,92 @@
   "category": "performance",
   "patterns": [
     {
+      "id": "0068ad38076c8116",
+      "subcategory": "code-splitting",
+      "name": "Code Splitting Detector",
+      "description": "Learns code splitting patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "performance/code-splitting",
+          "patternId": "performance/code-splitting/property_access"
+        }
+      },
+      "confidence": {
+        "frequency": 0.02,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": ".drift/config.json",
+          "line": 20,
+          "column": 8,
+          "isOutlier": false,
+          "confidence": 0.97
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T20:55:50.285Z",
+        "lastSeen": "2026-01-29T21:02:22.893Z",
+        "source": "auto-detected",
+        "tags": [
+          "performance",
+          "code-splitting"
+        ],
+        "approvedAt": "2026-01-29T21:02:22.893Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "cc2f44a5a565a6af",
+      "subcategory": "bundle-size",
+      "name": "Bundle Size Detector",
+      "description": "Learns bundle size optimization patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "performance/bundle-size",
+          "patternId": "performance/bundle-size/property_access"
+        }
+      },
+      "confidence": {
+        "frequency": 0.02,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": ".drift/config.json",
+          "line": 20,
+          "column": 8,
+          "isOutlier": false,
+          "confidence": 0.97
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-29T20:55:50.285Z",
+        "lastSeen": "2026-01-29T21:02:22.918Z",
+        "source": "auto-detected",
+        "tags": [
+          "performance",
+          "bundle-size"
+        ],
+        "approvedAt": "2026-01-29T21:02:22.918Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
       "id": "9c9f39b03283d2d9",
       "subcategory": "caching-patterns",
       "name": "Caching Patterns Detector",
@@ -33,8 +119,8 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-29T16:43:22.025Z",
-        "lastSeen": "2026-01-29T16:43:22.025Z",
+        "firstSeen": "2026-01-29T20:55:50.285Z",
+        "lastSeen": "2026-01-29T20:55:50.285Z",
         "source": "auto-detected",
         "tags": [
           "performance",
@@ -280,8 +366,8 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-29T16:43:22.026Z",
-        "lastSeen": "2026-01-29T16:43:22.026Z",
+        "firstSeen": "2026-01-29T20:55:50.286Z",
+        "lastSeen": "2026-01-29T20:55:50.286Z",
         "source": "auto-detected",
         "tags": [
           "performance",
@@ -945,8 +1031,8 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-29T16:43:22.026Z",
-        "lastSeen": "2026-01-29T16:43:22.026Z",
+        "firstSeen": "2026-01-29T20:55:50.286Z",
+        "lastSeen": "2026-01-29T20:55:50.286Z",
         "source": "auto-detected",
         "tags": [
           "performance",
@@ -1455,8 +1541,8 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-29T16:43:22.027Z",
-        "lastSeen": "2026-01-29T16:43:22.027Z",
+        "firstSeen": "2026-01-29T20:55:50.288Z",
+        "lastSeen": "2026-01-29T20:55:50.288Z",
         "source": "auto-detected",
         "tags": [
           "performance",
@@ -1504,8 +1590,8 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-29T16:43:22.029Z",
-        "lastSeen": "2026-01-29T16:43:22.029Z",
+        "firstSeen": "2026-01-29T20:55:50.289Z",
+        "lastSeen": "2026-01-29T20:55:50.289Z",
         "source": "auto-detected",
         "tags": [
           "performance",
@@ -1553,8 +1639,8 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-29T16:43:22.029Z",
-        "lastSeen": "2026-01-29T16:43:22.029Z",
+        "firstSeen": "2026-01-29T20:55:50.289Z",
+        "lastSeen": "2026-01-29T20:55:50.289Z",
         "source": "auto-detected",
         "tags": [
           "performance",
@@ -1630,8 +1716,8 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-29T16:43:22.029Z",
-        "lastSeen": "2026-01-29T16:43:22.029Z",
+        "firstSeen": "2026-01-29T20:55:50.290Z",
+        "lastSeen": "2026-01-29T20:55:50.290Z",
         "source": "auto-detected",
         "tags": [
           "performance",
@@ -1686,8 +1772,8 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-29T16:43:22.029Z",
-        "lastSeen": "2026-01-29T16:43:22.029Z",
+        "firstSeen": "2026-01-29T20:55:50.290Z",
+        "lastSeen": "2026-01-29T20:55:50.290Z",
         "source": "auto-detected",
         "tags": [
           "performance",
@@ -1735,8 +1821,8 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-29T16:43:22.030Z",
-        "lastSeen": "2026-01-29T16:43:22.030Z",
+        "firstSeen": "2026-01-29T20:55:50.290Z",
+        "lastSeen": "2026-01-29T20:55:50.290Z",
         "source": "auto-detected",
         "tags": [
           "performance",
@@ -1791,8 +1877,8 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-29T16:43:22.030Z",
-        "lastSeen": "2026-01-29T16:43:22.030Z",
+        "firstSeen": "2026-01-29T20:55:50.290Z",
+        "lastSeen": "2026-01-29T20:55:50.290Z",
         "source": "auto-detected",
         "tags": [
           "performance",
@@ -1861,8 +1947,8 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-29T16:43:22.030Z",
-        "lastSeen": "2026-01-29T16:43:22.030Z",
+        "firstSeen": "2026-01-29T20:55:50.290Z",
+        "lastSeen": "2026-01-29T20:55:50.290Z",
         "source": "auto-detected",
         "tags": [
           "performance",
@@ -1910,8 +1996,8 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-29T16:43:22.030Z",
-        "lastSeen": "2026-01-29T16:43:22.030Z",
+        "firstSeen": "2026-01-29T20:55:50.290Z",
+        "lastSeen": "2026-01-29T20:55:50.290Z",
         "source": "auto-detected",
         "tags": [
           "performance",
@@ -1959,8 +2045,8 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-29T16:43:22.030Z",
-        "lastSeen": "2026-01-29T16:43:22.030Z",
+        "firstSeen": "2026-01-29T20:55:50.290Z",
+        "lastSeen": "2026-01-29T20:55:50.290Z",
         "source": "auto-detected",
         "tags": [
           "performance",
@@ -2001,8 +2087,8 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-29T16:43:22.030Z",
-        "lastSeen": "2026-01-29T16:43:22.030Z",
+        "firstSeen": "2026-01-29T20:55:50.290Z",
+        "lastSeen": "2026-01-29T20:55:50.290Z",
         "source": "auto-detected",
         "tags": [
           "performance",
@@ -2078,8 +2164,8 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-29T16:43:22.030Z",
-        "lastSeen": "2026-01-29T16:43:22.030Z",
+        "firstSeen": "2026-01-29T20:55:50.290Z",
+        "lastSeen": "2026-01-29T20:55:50.290Z",
         "source": "auto-detected",
         "tags": [
           "performance",
@@ -2120,8 +2206,8 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-29T16:43:22.030Z",
-        "lastSeen": "2026-01-29T16:43:22.030Z",
+        "firstSeen": "2026-01-29T20:55:50.290Z",
+        "lastSeen": "2026-01-29T20:55:50.290Z",
         "source": "auto-detected",
         "tags": [
           "performance",
@@ -2162,8 +2248,8 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-29T16:43:22.030Z",
-        "lastSeen": "2026-01-29T16:43:22.030Z",
+        "firstSeen": "2026-01-29T20:55:50.290Z",
+        "lastSeen": "2026-01-29T20:55:50.290Z",
         "source": "auto-detected",
         "tags": [
           "performance",
@@ -2174,6 +2260,6 @@
       "autoFixable": false
     }
   ],
-  "lastUpdated": "2026-01-29T16:43:22.051Z",
-  "checksum": "3f7822f1f6f30881"
+  "lastUpdated": "2026-01-29T21:02:22.934Z",
+  "checksum": "ac2b8af925aedb36"
 }

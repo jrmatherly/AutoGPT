@@ -69,6 +69,8 @@ mise run drift:status        # Show drift status for all projects
 mise run drift:scan          # Scan all projects for patterns
 mise run drift:check         # Check for violations (CI-friendly)
 mise run drift:approve       # Approve discovered patterns (95%+ confidence)
+mise run drift:approve:auto  # Auto-approve high-confidence patterns (≥90%)
+mise run drift:audit         # Run audit review for all projects
 
 # Advanced Analysis
 mise run drift:coupling      # Build module coupling graphs
@@ -286,6 +288,11 @@ mise run drift:coupling          # Check module dependencies
 
 # Full analysis and approval workflow
 mise run drift:full              # Complete scan, approve, and analyze
+
+# Per-project audit commands
+mise run drift:audit:backend     # Audit backend only
+mise run drift:audit:frontend    # Audit frontend only
+mise run drift:audit:libs        # Audit libs only
 ```
 
 ### Drift Intelligence
@@ -298,3 +305,6 @@ Drift analyzes the codebase for established patterns and conventions. Use drift 
 - `mise run drift:status` - View current drift status
 - `mise run drift:scan` - Discover new patterns
 - `mise run drift:check` - Check for violations (CI-friendly)
+- `mise run drift:approve` - Approve discovered patterns (95%+ confidence)
+- `mise run drift:approve:auto` - Auto-approve high-confidence patterns (≥90%)
+- `mise run drift:audit` - Run audit review with recommendations
