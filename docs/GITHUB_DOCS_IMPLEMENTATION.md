@@ -70,7 +70,7 @@ Comprehensive 500+ line analysis including:
 **Effort:** 2-3 hours
 **Risk:** LOW
 
-#### Steps:
+#### Steps
 
 **1. Backup Current File**
 ```bash
@@ -153,7 +153,7 @@ rm .github/copilot-instructions.enhanced.md
 **Effort:** 15 minutes
 **Risk:** VERY LOW
 
-#### Steps:
+#### Steps
 
 **1. Backup Current File**
 ```bash

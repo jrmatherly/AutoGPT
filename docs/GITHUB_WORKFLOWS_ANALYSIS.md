@@ -30,6 +30,7 @@ Analysis of AutoGPT's GitHub Actions workflows reveals opportunities for version
 ### Current vs Latest Versions
 
 | Action | Current Version | Latest Version | Status | Priority |
+
 |--------|----------------|----------------|--------|----------|
 | `actions/checkout` | v4 | **v6** | ⚠️ Update Available | HIGH |
 | `actions/setup-python` | v5 | **v6** | ⚠️ Update Available | HIGH |
@@ -916,14 +917,14 @@ All workflows follow security best practices:
 
 **Recommendation:** Current approach (semantic versioning) is fine for trusted sources like Anthropic.
 
-2. **Regular Security Audits**
+1. **Regular Security Audits**
 
 ```bash
 # Check for known vulnerabilities in workflow actions
 gh api /repos/{owner}/{repo}/code-scanning/alerts
 ```
 
-3. **Workflow Run Limits**
+1. **Workflow Run Limits**
 
 Consider adding to organization settings:
 - Max concurrent workflows per repo

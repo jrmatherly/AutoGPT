@@ -59,6 +59,7 @@ The following workflows have been updated to the latest stable action versions a
 ## 📊 Update Summary
 
 | Metric | Count |
+
 |--------|-------|
 | **Workflows Updated** | 5 |
 | **Total Changes** | 14 (14 insertions, 14 deletions) |
@@ -68,6 +69,7 @@ The following workflows have been updated to the latest stable action versions a
 ### Action Version Matrix
 
 | Action | Old | New | Workflows Affected | Priority |
+
 |--------|-----|-----|-------------------|----------|
 | `actions/checkout` | v4 | **v6** | All 5 | HIGH |
 | `actions/setup-python` | v5 | **v6** | 4 workflows | HIGH |
@@ -223,6 +225,7 @@ updates:
 ## 📝 Deprecation Timeline
 
 | Action/Version | Deprecation Date | Reason | Status |
+
 |---------------|------------------|--------|--------|
 | CodeQL Action v3 | December 2026 | Node.js 20 EOL (April 2026) | ✅ Updated to v4 |
 | CodeQL Action v2 | January 2025 | Outdated runtime | ✅ Already migrated |

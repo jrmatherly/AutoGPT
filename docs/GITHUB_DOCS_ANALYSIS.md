@@ -13,6 +13,7 @@ Analysis of GitHub documentation files reveals **critical misalignment** with th
 ### Key Findings
 
 | File | Issues | Severity | Impact |
+
 |------|--------|----------|--------|
 | `.github/copilot-instructions.md` | No mise references, outdated commands | **CRITICAL** | GitHub Copilot users will use deprecated workflow |
 | `.github/PULL_REQUEST_TEMPLATE.md` | Missing mise validation checks | **LOW** | Minor improvement opportunity |
@@ -460,6 +461,7 @@ Update to:
 Compared copilot-instructions.md patterns with:
 
 | File | Mise References | Command Patterns | Alignment |
+
 |------|----------------|------------------|-----------|
 | `CLAUDE.md` | ✅ Yes | Mise-first, alternatives shown | ✅ Updated |
 | `CONTRIBUTING.md` | ✅ Yes | Mise-first, alternatives shown | ✅ Updated |
