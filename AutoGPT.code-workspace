@@ -72,6 +72,9 @@
     }
   ],
   "settings": {
+    // Terminal Configuration
+    // Open new terminals at workspace root where the main mise.toml lives
+    "terminal.integrated.cwd": "${workspaceFolder:[root]}",
     "python.analysis.typeCheckingMode": "basic",
     "files.watcherExclude": {
       "**/classic/**": true,

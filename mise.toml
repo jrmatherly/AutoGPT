@@ -88,6 +88,38 @@ description = "Verify mise environment is correctly configured"
 dir = "{{config_root}}/autogpt_platform"
 run = "mise run doctor"
 
+# Drift analysis tasks
+[tasks."drift:status"]
+description = "Show drift status for all projects"
+dir = "{{config_root}}/autogpt_platform"
+run = "mise run drift:status"
+
+[tasks."drift:scan"]
+description = "Scan all projects for patterns"
+dir = "{{config_root}}/autogpt_platform"
+run = "mise run drift:scan"
+
+[tasks."drift:check"]
+description = "Check for violations (CI-friendly)"
+dir = "{{config_root}}/autogpt_platform"
+run = "mise run drift:check"
+
+[tasks."drift:full"]
+description = "Full drift setup: scan, approve, callgraph, and deep analysis"
+dir = "{{config_root}}/autogpt_platform"
+run = "mise run drift:full"
+
+# Dependency management tasks
+[tasks."deps:check"]
+description = "Check for outdated dependencies across all projects"
+dir = "{{config_root}}/autogpt_platform"
+run = "mise run deps:check"
+
+[tasks."deps:update"]
+description = "Update dependencies across all projects (safe, respects semver)"
+dir = "{{config_root}}/autogpt_platform"
+run = "mise run deps:update"
+
 # Release automation tasks
 [tasks.release]
 description = "Create a new release (interactive)"

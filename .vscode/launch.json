@@ -5,8 +5,8 @@
       "name": "Frontend: Server Side",
       "type": "node-terminal",
       "request": "launch",
-      "cwd": "${workspaceFolder}/autogpt_platform/frontend",
-      "command": "pnpm dev"
+      "cwd": "${workspaceFolder}/autogpt_platform",
+      "command": "mise run frontend"
     },
     {
       "name": "Frontend: Client Side",
@@ -18,8 +18,8 @@
       "name": "Frontend: Full Stack",
       "type": "node-terminal",
       "request": "launch",
-      "command": "pnpm dev",
-      "cwd": "${workspaceFolder}/autogpt_platform/frontend",
+      "command": "mise run frontend",
+      "cwd": "${workspaceFolder}/autogpt_platform",
       "serverReadyAction": {
         "pattern": "- Local:.+(https?://.+)",
         "uriFormat": "%s",
@@ -36,7 +36,8 @@
       },
       "envFile": "${workspaceFolder}/autogpt_platform/backend/.env",
       "justMyCode": false,
-      "cwd": "${workspaceFolder}/autogpt_platform/backend"
+      "cwd": "${workspaceFolder}/autogpt_platform/backend",
+      "python": "${workspaceFolder}/autogpt_platform/backend/.venv/bin/python"
     }
   ],
   "compounds": [
