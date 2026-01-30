@@ -134,6 +134,29 @@ pnpm test
 
 **For migration from Makefile:** See [docs/development/MISE_MIGRATION.md](docs/development/MISE_MIGRATION.md)
 
+## GitHub Workflows
+
+**Workflow Documentation:** See [docs/github/workflows/](docs/github/workflows/) for comprehensive workflow documentation.
+
+### Workflow Best Practices (Updated: January 2026)
+
+**Action Version Management:**
+- ✅ **Always pin to specific versions** (e.g., `@v1.4.2`, not `@HEAD` or `@latest`)
+- ✅ **Use major version tags for auto-updates** (e.g., `@v3` for automatic v3.x updates)
+- ❌ **Never use @HEAD or branch references** for security and reproducibility
+
+**Recent Updates:**
+- All workflows updated to 2026 standards (January 30, 2026)
+- Security improvements: Eliminated @HEAD usage, pinned all actions to stable versions
+- Performance improvements: Added pip caching, updated Python to 3.13
+- For details: See [docs/github/workflows/2026-WORKFLOW-ANALYSIS.md](docs/github/workflows/2026-WORKFLOW-ANALYSIS.md)
+
+**Key Workflows:**
+- `platform-autogpt-deploy-{dev,prod}.yml` - Deployment pipelines with Prisma migrations
+- `repo-pr-label.yml` - Auto-labeling (conflicts, size, scope)
+- `repo-workflow-checker.yml` - PR status validation
+- `repo-stats.yml` - Daily repository statistics collection
+
 ## Licensing
 
 - **autogpt_platform/**: Polyform Shield License (commercial restrictions)

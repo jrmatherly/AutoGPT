@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: run-ghrs
-        # Use latest release.
-        uses: jgehrcke/github-repo-stats@HEAD
+        # Pinned to v1.4.2 for security and reproducibility
+        uses: jgehrcke/github-repo-stats@v1.4.2
         with:
           ghtoken: ${{ secrets.ghrs_github_api_token }}
