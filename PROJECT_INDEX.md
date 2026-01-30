@@ -207,6 +207,9 @@ pnpm dev
 | **Regenerate API client** | `cd frontend && pnpm generate:api` | Same |
 | **Environment check** | `mise run doctor` | N/A |
 | **List all tasks** | `mise tasks` | N/A |
+| **Check dependencies** | `mise run deps:check` | Check for outdated dependencies |
+| **Create release** | `mise run release` | Interactive release (creates tag, GitHub release) |
+| **Patch release** | `mise run release:patch` | Auto-confirm patch version bump |
 | **Add new block** | Create in `backend/blocks/`, inherit `Block`, test with `mise run test:backend` |
 | **Add API endpoint** | Create route in `api/features/`, add Pydantic models, regenerate API client |
 | **Add frontend page** | Create in `app/(platform)/`, add hooks, use generated API client |
@@ -222,7 +225,30 @@ pnpm dev
 | Frontend Contributing | `frontend/CONTRIBUTING.md` | Frontend patterns |
 | Agents Guide | `AGENTS.md` | Platform contribution |
 | Block SDK | `docs/content/platform/block-sdk-guide.md` | Creating blocks |
+| Release Process | `docs/processes/RELEASE_PROCESS.md` | Release automation guide |
 
 ---
 
-*Index size: ~4KB | Full codebase: ~60KB tokens | Savings: 94%*
+## 🔌 MCP Server Integration
+
+| MCP Server | Documentation | Purpose |
+|-----------|---------------|---------|
+| **microsoft-learn** | `.serena/memories/mcp_microsoft_learn_integration.md` | Official Microsoft docs (TypeScript, Playwright, GitHub Actions) |
+
+**Available Tools**:
+- `microsoft_docs_search`: Quick documentation lookups (up to 10 content chunks)
+- `microsoft_code_sample_search`: Code examples (up to 20 samples, language filter available)
+- `microsoft_docs_fetch`: Full documentation pages in markdown format
+
+**Covered Technologies**:
+- ✅ TypeScript (official language docs)
+- ✅ Playwright (Microsoft-maintained testing framework)
+- ✅ GitHub Actions (Microsoft-owned CI/CD platform)
+- ⚠️ React/Next.js (partial coverage, use official docs as primary)
+- ✅ VS Code (editor configuration)
+
+See `.serena/memories/mcp_microsoft_learn_integration.md` for complete integration guide.
+
+---
+
+*Index size: ~5KB | Full codebase: ~60KB tokens | Savings: 92%*

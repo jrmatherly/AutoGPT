@@ -150,7 +150,9 @@
     "frontend_deps": "autogpt_platform/frontend/package.json",
     "api_generation": "autogpt_platform/frontend/orval.config.ts",
     "pre_commit": ".pre-commit-config.yaml",
-    "ai_guide": "autogpt_platform/CLAUDE.md"
+    "ai_guide": "autogpt_platform/CLAUDE.md",
+    "release_script": "scripts/release.sh",
+    "release_docs": "docs/processes/RELEASE_PROCESS.md"
   },
   "testing": {
     "all": {
@@ -202,7 +204,12 @@
       "install": "curl https://mise.run | sh",
       "setup": "cd autogpt_platform && mise trust && mise run setup",
       "list_tasks": "mise tasks",
-      "doctor": "mise run doctor"
+      "doctor": "mise run doctor",
+      "deps_check": "mise run deps:check",
+      "release": "mise run release",
+      "release_patch": "mise run release:patch",
+      "release_minor": "mise run release:minor",
+      "release_major": "mise run release:major"
     },
     "setup": {
       "mise_recommended": "cd autogpt_platform && mise trust && mise run setup",
@@ -237,5 +244,46 @@
       "reset": "Stop db, delete volume, re-run migrations"
     },
     "generate_api": "cd frontend && pnpm generate:api"
+  },
+  "release_automation": {
+    "script": "scripts/release.sh",
+    "documentation": "docs/processes/RELEASE_PROCESS.md",
+    "mise_tasks": {
+      "interactive": "mise run release",
+      "patch": "mise run release:patch",
+      "minor": "mise run release:minor",
+      "major": "mise run release:major"
+    },
+    "features": [
+      "Monorepo version synchronization (3 files)",
+      "Semantic versioning (major/minor/patch)",
+      "Git tag and GitHub release creation",
+      "Production-grade security hardening",
+      "Automatic deployment trigger"
+    ],
+    "version_files": [
+      "autogpt_platform/frontend/package.json",
+      "autogpt_platform/backend/pyproject.toml",
+      "autogpt_platform/autogpt_libs/pyproject.toml"
+    ]
+  },
+  "mcp_servers": {
+    "microsoft_learn": {
+      "documentation": ".serena/memories/mcp_microsoft_learn_integration.md",
+      "tools": {
+        "docs_search": "microsoft_docs_search",
+        "code_samples": "microsoft_code_sample_search",
+        "docs_fetch": "microsoft_docs_fetch"
+      },
+      "covered_technologies": [
+        "TypeScript",
+        "Playwright",
+        "GitHub Actions",
+        "React (partial)",
+        "Next.js (partial)",
+        "VS Code"
+      ],
+      "purpose": "Official Microsoft documentation and code examples for ecosystem technologies"
+    }
   }
 }
