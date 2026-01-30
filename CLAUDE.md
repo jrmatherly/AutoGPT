@@ -39,7 +39,7 @@ For platform development, see **[autogpt_platform/CLAUDE.md](autogpt_platform/CL
 | [docs/API_REFERENCE.md](docs/API_REFERENCE.md) | Complete REST/WebSocket API documentation |
 | [docs/BLOCK_SDK.md](docs/BLOCK_SDK.md) | Comprehensive block creation guide |
 | [docs/CLAUDE.md](docs/CLAUDE.md) | Documentation writing guidelines |
-| [docs/RELEASE_PROCESS.md](docs/RELEASE_PROCESS.md) | Release automation and versioning guide |
+| [docs/processes/RELEASE_PROCESS.md](docs/processes/RELEASE_PROCESS.md) | Release automation and versioning guide |
 
 ## Key Technologies
 
@@ -114,7 +114,7 @@ pnpm dev
 pnpm test
 ```
 
-**For migration from Makefile:** See [docs/MISE_MIGRATION.md](docs/MISE_MIGRATION.md)
+**For migration from Makefile:** See [docs/development/MISE_MIGRATION.md](docs/development/MISE_MIGRATION.md)
 
 ## Licensing
 

@@ -14,7 +14,7 @@ The project is configured as a **multi-language monorepo** with:
 
 ## Quick Reference
 
-**Development uses [mise](https://mise.jdx.dev)** - See [docs/MISE_MIGRATION.md](../../docs/MISE_MIGRATION.md) for migration from Makefile.
+**Development uses [mise](https://mise.jdx.dev)** - See [docs/MISE_MIGRATION.md](../../docs/development/MISE_MIGRATION.md) for migration from Makefile.
 
 | Task | Command |
 |------|---------|
@@ -81,7 +81,7 @@ mise run setup               # Complete project setup (first time)
 mise run doctor              # Verify development environment
 ```
 
-**Note:** Makefile still works but is deprecated. See [docs/MISE_MIGRATION.md](../../docs/MISE_MIGRATION.md).
+**Note:** Makefile still works but is deprecated. See [docs/MISE_MIGRATION.md](../../docs/development/MISE_MIGRATION.md).
 
 ## Backend Development (autogpt_platform/backend)
 

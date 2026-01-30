@@ -336,7 +336,7 @@ mise run release v1.2.3
 
 ### Documentation
 
-Complete release documentation: `docs/RELEASE_PROCESS.md`
+Complete release documentation: `docs/processes/RELEASE_PROCESS.md`
 
 Includes:
 - Version synchronization strategy
