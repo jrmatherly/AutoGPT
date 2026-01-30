@@ -187,18 +187,20 @@ mise run deps:update   # 3. Apply updates
 mise run test          # 4. Verify everything works
 ```
 
-See `.serena/memories/dependency_management.md` for detailed documentation.
+See the task commands above for detailed usage.
 
 ## Microsoft Learn MCP Server
 
 When working with Microsoft ecosystem technologies (TypeScript, Playwright, GitHub Actions), use the **microsoft-learn** MCP server for official documentation:
 
 **Quick Lookups**:
+
 - TypeScript concepts: `microsoft_docs_search "TypeScript generics"`
 - Playwright testing: `microsoft_code_sample_search "Playwright selectors" language="typescript"`
 - GitHub Actions: `microsoft_docs_fetch` (workflow optimization guide)
 
 **Covered Technologies**:
+
 - **TypeScript**: Official language docs and API reference
 - **Playwright**: Microsoft-maintained testing framework
 - **GitHub Actions**: Microsoft-owned CI/CD platform
@@ -206,16 +208,18 @@ When working with Microsoft ecosystem technologies (TypeScript, Playwright, GitH
 - **VS Code**: Editor configuration and extensions
 
 **When to Use**:
+
 - ✅ Official API documentation needed
 - ✅ Working code examples required
 - ✅ TypeScript/Playwright/GitHub Actions questions
 
 **When NOT to Use**:
+
 - ❌ AutoGPT-specific implementation details (use Serena/Grep)
 - ❌ Third-party library documentation (use Context7 or web search)
 - ❌ Community best practices (use web search)
 
-See `.serena/memories/mcp_microsoft_learn_integration.md` for complete guide.
+See [docs/development/MCP_MICROSOFT_LEARN.md](../docs/development/MCP_MICROSOFT_LEARN.md) for complete guide.
 
 ## Architecture Overview
 
@@ -316,7 +320,7 @@ OPENAI_INTERNAL_BASE_URL=https://your-litellm-proxy.com/v1
 **CI/CD Integration**:
 GitHub Actions workflows support optional LiteLLM integration via the `LITELLM_PROXY_URL` secret (see `.github/workflows/platform-frontend-ci.yml`).
 
-For detailed configuration and troubleshooting, see `.serena/memories/litellm_proxy_configuration.md`.
+For detailed configuration and troubleshooting, see [docs/platform/LITELLM_PROXY.md](../docs/platform/LITELLM_PROXY.md).
 
 ### Common Development Tasks
 

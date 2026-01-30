@@ -19,6 +19,7 @@ Complete reference for all GitHub Actions workflows in the AutoGPT repository.
 ## Quick Reference
 
 | Category | Workflows | Purpose |
+
 |----------|-----------|---------|
 | **Platform CI/CD** | platform-backend-ci, platform-frontend-ci, platform-fullstack-ci, platform-autogpt-deploy-prod | Test, validate, and deploy the AutoGPT Platform |
 | **Documentation** | docs-block-sync, docs-claude-review, docs-enhance | Maintain and enhance block documentation |
@@ -229,7 +230,9 @@ Runtime: ~15-45 minutes (depends on max_blocks)
 - Creates PR with enhancements
 
 **Parameters**:
+
 | Parameter | Description | Default |
+
 |-----------|-------------|---------|
 | `block_pattern` | File pattern (e.g., `google/*.md`, `*`) | `*` |
 | `dry_run` | Show changes without committing | `true` |
@@ -512,6 +515,7 @@ mise-v0-<platform>-<mise.toml hash>-<tools hash>
 ### Migration History
 
 | Date | Workflows Migrated | Lines Eliminated | Impact |
+
 |------|-------------------|------------------|--------|
 | **Jan 2026** | Platform workflows (3) | ~90 lines | Initial migration |
 | **Jan 2026** | Documentation workflows (4) | ~120 lines | Phase 2 completion |
@@ -581,6 +585,7 @@ Place reusable scripts in `.github/workflows/scripts/`:
 **Current action versions (January 2026)**:
 
 | Action | Version | Notes |
+
 |--------|---------|-------|
 | **actions/checkout** | v6 | Latest stable |
 | **actions/setup-python** | v6 | ⚠️ Use mise-action instead |
@@ -648,6 +653,7 @@ permissions:
 ### Maintenance Schedule
 
 | Frequency | Action | Resources |
+
 |-----------|--------|-----------|
 | **Quarterly** | Check for action updates | [GitHub Changelog](https://github.blog/changelog/label/actions/) |
 | **Immediate** | Security vulnerabilities | [Security Advisories](https://github.com/advisories) |
@@ -658,6 +664,7 @@ permissions:
 #### 1. Follow Naming Conventions
 
 | Prefix | Purpose | Examples |
+
 |--------|---------|----------|
 | `platform-*` | Platform CI/CD | platform-backend-ci.yml |
 | `docs-*` | Documentation | docs-block-sync.yml |
@@ -863,13 +870,13 @@ Error: failed to solve: executor failed running [...]
 ## Related Documentation
 
 | Document | Purpose |
+
 |----------|---------|
 | **[DUPLICATION_CLEANUP_ANALYSIS.md](DUPLICATION_CLEANUP_ANALYSIS.md)** | Comprehensive 693-line analysis of workflow duplication patterns |
 | **[MISE_MIGRATION_COMPLETE.md](MISE_MIGRATION_COMPLETE.md)** | Platform workflow migration to mise-action |
 | **[Release Process](../../processes/RELEASE_PROCESS.md)** | Release automation via mise tasks |
 | **[GitHub Actions Documentation](https://docs.github.com/en/actions)** | Official GitHub Actions reference |
 | **[mise Documentation](https://mise.jdx.dev)** | mise tool version manager |
-| **[Serena Workflow Maintenance](.serena/memories/workflow_maintenance.md)** | Workflow maintenance memory |
 
 ---
 

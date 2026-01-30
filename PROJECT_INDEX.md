@@ -246,7 +246,7 @@ pnpm dev
 
 | MCP Server | Documentation | Purpose |
 |-----------|---------------|---------|
-| **microsoft-learn** | `.serena/memories/mcp_microsoft_learn_integration.md` | Official Microsoft docs (TypeScript, Playwright, GitHub Actions) |
+| **microsoft-learn** | [docs/development/MCP_MICROSOFT_LEARN.md](docs/development/MCP_MICROSOFT_LEARN.md) | Official Microsoft docs (TypeScript, Playwright, GitHub Actions) |
 
 **Available Tools**:
 
@@ -262,7 +262,7 @@ pnpm dev
 - ⚠️ React/Next.js (partial coverage, use official docs as primary)
 - ✅ VS Code (editor configuration)
 
-See `.serena/memories/mcp_microsoft_learn_integration.md` for complete integration guide.
+See [docs/development/MCP_MICROSOFT_LEARN.md](docs/development/MCP_MICROSOFT_LEARN.md) for complete integration guide.
 
 ---
 
