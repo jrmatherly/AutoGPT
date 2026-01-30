@@ -15,12 +15,14 @@ This document summarizes the security hardening implementation for your self-hos
 ### 1. Production Secret Generation System
 
 **Files Created:**
+
 - `scripts/generate-secrets.sh` - Automated secret generation script
 - `scripts/rotate-secrets.sh` - Zero-downtime secret rotation script
 - `scripts/validate-config.sh` - Configuration validation script
 - `scripts/README.md` - Comprehensive script documentation
 
 **Capabilities:**
+
 - ✅ Cryptographically secure secret generation using OpenSSL
 - ✅ All secrets meet minimum security requirements
 - ✅ Automated validation of generated secrets
@@ -29,6 +31,7 @@ This document summarizes the security hardening implementation for your self-hos
 - ✅ Interactive and command-line interfaces
 
 **Generated Secrets:**
+
 | Secret | Type | Length | Purpose |
 |--------|------|--------|---------|
 | JWT_SECRET | Base64 | 48 bytes | JWT token signing |
@@ -43,9 +46,11 @@ This document summarizes the security hardening implementation for your self-hos
 ### 2. Kong Gateway Upgrade Plan
 
 **Files Created:**
+
 - `KONG_UPGRADE.md` - Step-by-step Kong 2.8.1 → 3.4 LTS upgrade guide
 
 **Key Features:**
+
 - ✅ Pre-upgrade checklist with backup procedures
 - ✅ Detailed migration steps for docker-compose.yml
 - ✅ Kong configuration format update (2.1 → 3.0)
@@ -56,6 +61,7 @@ This document summarizes the security hardening implementation for your self-hos
 - ✅ Troubleshooting guide with common issues
 
 **Benefits of Kong 3.4 LTS:**
+
 - FIPS 140-2 compliance for government/finance sectors
 - Enhanced secrets management (AWS, HashiCorp Vault)
 - Improved OAuth/OIDC security (JWT-secured authorization, DPoP)
@@ -65,9 +71,11 @@ This document summarizes the security hardening implementation for your self-hos
 ### 3. Comprehensive Security Documentation
 
 **Files Created:**
+
 - `SECURITY_HARDENING.md` - Complete security hardening guide
 
 **Coverage:**
+
 - ✅ Step-by-step production deployment workflow
 - ✅ Secret generation and management
 - ✅ Configuration validation procedures
@@ -81,7 +89,7 @@ This document summarizes the security hardening implementation for your self-hos
 
 ## File Structure
 
-```
+```tree
 autogpt_platform/db/docker/
 ├── scripts/
 │   ├── README.md                    # Script documentation
@@ -209,6 +217,7 @@ cd autogpt_platform/db/docker/scripts
 ### Before Implementation
 
 ❌ **Critical Gaps:**
+
 - Placeholder secrets in configuration files
 - No automated secret generation
 - No validation procedures
@@ -219,6 +228,7 @@ cd autogpt_platform/db/docker/scripts
 ### After Implementation
 
 ✅ **Security Enhancements:**
+
 - Cryptographically secure secret generation
 - Automated configuration validation
 - Kong 3.4 LTS upgrade path (FIPS 140-2 compliant)
@@ -303,11 +313,13 @@ cd autogpt_platform/db/docker/scripts
 ### Documentation
 
 **Primary Guides:**
+
 - `SECURITY_HARDENING.md` - Main security hardening guide
 - `KONG_UPGRADE.md` - Kong Gateway upgrade guide
 - `scripts/README.md` - Script usage and troubleshooting
 
 **External Resources:**
+
 - [Supabase Self-Hosting](https://supabase.com/docs/guides/self-hosting/docker)
 - [Supabase Production Checklist](https://supabase.com/docs/guides/deployment/going-into-prod)
 - [Kong 3.4 Documentation](https://docs.konghq.com/gateway/latest/)
@@ -324,6 +336,7 @@ cd autogpt_platform/db/docker/scripts
 5. **Database connection fails** → Verify POSTGRES_PASSWORD in .env matches database
 
 **Getting Help:**
+
 - Check troubleshooting sections in documentation
 - Review Docker logs: `docker compose logs <service-name>`
 - Validate configuration: `./scripts/validate-config.sh`
@@ -395,6 +408,7 @@ All success criteria met:
 ## Acknowledgments
 
 **Implementation based on:**
+
 - Supabase official self-hosting documentation (January 2026)
 - Kong Gateway 3.4 LTS security enhancements
 - NIST cryptographic standards
@@ -402,6 +416,7 @@ All success criteria met:
 - Industry standard secret management procedures
 
 **Validation sources:**
+
 - Supabase MCP server (official documentation queries)
 - Kong Gateway release notes and upgrade guides
 - Current web research (January 2026)

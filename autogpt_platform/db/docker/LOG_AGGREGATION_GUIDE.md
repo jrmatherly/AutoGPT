@@ -46,7 +46,7 @@ Promtail is the agent responsible for:
 
 ## Architecture
 
-```
+```mermaid
 ┌─────────────────────────────────────────────────────────┐
 │                    Grafana                              │
 │  (Visualization & Querying - Port 3001)                 │
@@ -255,6 +255,7 @@ topk(10, sum by (message) (count_over_time({level="ERROR"} [1h])))
 Example: Error rate dashboard
 
 **Query:**
+
 ```logql
 sum by (service) (rate({service=~".*"} |= "ERROR" [5m]))
 ```
@@ -268,6 +269,7 @@ sum by (service) (rate({service=~".*"} |= "ERROR" [5m]))
 Example: Recent errors
 
 **Query:**
+
 ```logql
 {service=~".*"} |= "ERROR"
 ```
@@ -412,11 +414,13 @@ docker compose -f docker-compose.yml -f docker-compose.monitoring.yml restart lo
 ### 1. Use Specific Label Selectors
 
 ❌ **Bad** (scans all services):
+
 ```logql
 {service=~".*"} |= "ERROR"
 ```
 
 ✅ **Good** (scans only auth):
+
 ```logql
 {service="auth"} |= "ERROR"
 ```
@@ -424,11 +428,13 @@ docker compose -f docker-compose.yml -f docker-compose.monitoring.yml restart lo
 ### 2. Limit Time Ranges
 
 ❌ **Bad** (queries 30 days):
+
 ```logql
 {service="auth"}
 ```
 
 ✅ **Good** (queries last hour):
+
 ```logql
 {service="auth"}[1h]
 ```
@@ -520,6 +526,7 @@ docker compose -f docker-compose.yml -f docker-compose.monitoring.yml \
 2. Example alert: High error rate
 
 **Query:**
+
 ```logql
 sum(rate({service=~".*"} |= "ERROR" [5m]))
 ```
