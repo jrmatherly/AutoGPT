@@ -51,7 +51,7 @@ The YAML extension allows disabling schema validation for specific file patterns
 
 #### Workspace Configuration
 
-Add to `.vscode/all-projects.code-workspace`:
+Add to `AutoGPT.code-workspace` (project root):
 
 ```json
 {
@@ -228,9 +228,9 @@ We've implemented the following configuration:
 }
 ```
 
-#### 2. Updated `.vscode/all-projects.code-workspace`
+#### 2. Updated `AutoGPT.code-workspace`
 
-Added the same `yaml.schemas` configuration to workspace settings.
+Added the same `yaml.schemas` configuration to workspace settings (located at project root).
 
 #### 3. Documentation
 
