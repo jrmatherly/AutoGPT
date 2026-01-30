@@ -11,25 +11,12 @@
       "name": "backend",
       "path": "autogpt_platform/backend",
       "settings": {
-        "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+        // Python test configuration is in autogpt_platform/backend/.vscode/settings.json
+        // to avoid duplication and conflicts with local folder settings
         "python.analysis.extraPaths": [
           "${workspaceFolder}"
         ],
         "python.languageServer": "Pylance",
-        "python.testing.pytestEnabled": true,
-        "python.testing.unittestEnabled": false,
-        "python.testing.pytestArgs": [
-          "--verbose"
-        ],
-        "python.testing.autoTestDiscoverOnSaveEnabled": true,
-        "[python]": {
-          "editor.defaultFormatter": "charliermarsh.ruff",
-          "editor.formatOnSave": true,
-          "editor.codeActionsOnSave": {
-            "source.fixAll": "explicit",
-            "source.organizeImports": "explicit"
-          }
-        },
         "ruff.lint.args": [
           "--target-version=py310"
         ]
@@ -39,26 +26,12 @@
       "name": "lib",
       "path": "autogpt_platform/autogpt_libs",
       "settings": {
-        "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+        // Python test configuration is in autogpt_platform/autogpt_libs/.vscode/settings.json
+        // to avoid duplication and conflicts with local folder settings
         "python.analysis.extraPaths": [
           "${workspaceFolder}"
         ],
         "python.languageServer": "Pylance",
-        "python.testing.pytestEnabled": true,
-        "python.testing.unittestEnabled": false,
-        "python.testing.pytestArgs": [
-          "--no-cov",
-          "--verbose"
-        ],
-        "python.testing.autoTestDiscoverOnSaveEnabled": true,
-        "[python]": {
-          "editor.defaultFormatter": "charliermarsh.ruff",
-          "editor.formatOnSave": true,
-          "editor.codeActionsOnSave": {
-            "source.fixAll": "explicit",
-            "source.organizeImports": "explicit"
-          }
-        },
         "ruff.lint.args": [
           "--target-version=py310"
         ]
