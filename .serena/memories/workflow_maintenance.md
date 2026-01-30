@@ -2,8 +2,8 @@
 
 ## Last Updated
 - **Date**: January 29, 2026
-- **Commit**: PENDING - ci(workflows): migrate to mise-action for unified tool management
-- **Updated Files**: 3 platform workflows + 5 documentation workflows (8 total in `.github/workflows/`)
+- **Commit**: e37cbd7a6 - docs(workflows): create comprehensive workflow guide for contributor onboarding
+- **Updated Files**: Created WORKFLOW_GUIDE.md (881 lines) - complete workflow reference documentation
 
 ## Current Action Versions (January 2026)
 
@@ -204,44 +204,72 @@ Co-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>"
 
 A systematic analysis of all 20 workflow files identified 5 major duplication patterns and created a 3-phase cleanup roadmap.
 
-### Phase 1: Action Version Standardization (PENDING)
+### Phase 1: Action Version Standardization (✅ COMPLETE)
+
+**Status**: ✅ Complete (commit not tracked - completed earlier)
 
 **Target**: Standardize all workflows to latest action versions
 
-| Action | Outdated | Target | Workflows to Update |
-|--------|----------|--------|---------------------|
-| actions/checkout | @v4 | @v6 | 7 workflows |
-| actions/setup-python | @v5 | @v6 | 1 workflow |
-| actions/setup-node | @v4 | @v6 | 1 workflow |
+Updated actions:
+- actions/checkout: @v4 → @v6 (9 workflows)
+- actions/setup-python: @v5 → @v6 (1 workflow)
+- actions/setup-node: @v4 → @v6 (1 workflow)
 
 **Impact**: Security improvements, 100% version consistency
 **Effort**: 30 minutes
 **Risk**: Very low
-**Status**: ⏳ Pending implementation
 
-### Phase 2: Composite Action for Python/Poetry (PLANNED)
+### Phase 2: Migrate Documentation Workflows to mise-action (✅ COMPLETE)
 
-**Target**: Create `.github/actions/setup-python-poetry/action.yml`
+**Status**: ✅ Complete (commit 0621d9822)
 
-Currently 4 workflows duplicate ~100 lines of Python/Poetry setup:
-- copilot-setup-steps.yml
-- docs-block-sync.yml
-- docs-claude-review.yml
-- docs-enhance.yml
+**Target**: Migrate 4 documentation workflows to use mise-action for dev/CI parity
 
-**Impact**: 80% code reduction (~100 lines → ~20 lines), single source of truth
-**Effort**: 2 hours
-**Risk**: Low (requires testing)
-**Status**: 📋 Planned for after Phase 1
+Migrated workflows:
+- docs-enhance.yml (~25 lines → mise-action)
+- docs-block-sync.yml (~25 lines → mise-action)
+- docs-claude-review.yml (~25 lines → mise-action)
+- copilot-setup-steps.yml (~45 lines → mise-action)
 
-### Phase 3: Documentation & Guidelines (PLANNED)
+**Pattern Used**:
+```yaml
+- name: Setup mise
+  uses: jdx/mise-action@v3
+  with:
+    version: 2026.1.9  # Latest as of January 2026
+    install: true
+    cache: true
+    working_directory: autogpt_platform
+```
 
-**Target**: Update `docs/github/workflows/README.md` with workflow purposes and duplication prevention guidelines
+**Impact**: 
+- ~120 lines of duplicated setup code eliminated
+- Dev/CI parity achieved using same mise.toml configuration
+- Automatic caching via mise-action
+- Unified tool management (Python, Poetry, Node.js, pnpm)
 
-**Impact**: Improved contributor onboarding, prevention of future duplication
-**Effort**: 1 hour
-**Risk**: None
-**Status**: 📋 Planned
+**Note**: Initial approach attempted composite action, but pivoted to mise-action per project standards
+
+### Phase 3: Documentation & Guidelines (✅ COMPLETE)
+
+**Status**: ✅ Complete (commit e37cbd7a6)
+
+**Target**: Create comprehensive workflow guide for contributor onboarding
+
+**Deliverable**: `docs/github/workflows/WORKFLOW_GUIDE.md` (881 lines)
+
+**Contents**:
+- Complete reference for all 20 workflows
+- Tool management guide (mise-action)
+- Best practices (duplication prevention, security, version management)
+- Troubleshooting guide for common issues
+- Contributing guidelines with examples
+
+**Impact**: 
+- Improved contributor onboarding with comprehensive reference
+- Duplication prevention guidelines documented
+- Security best practices with code examples
+- Troubleshooting reduces time-to-resolution
 
 **Analysis Details**: See `docs/github/workflows/DUPLICATION_CLEANUP_ANALYSIS.md` for complete implementation guides, risk assessments, and success metrics.
 
