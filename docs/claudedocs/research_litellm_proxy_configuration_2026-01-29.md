@@ -18,6 +18,7 @@ The AutoGPT Platform currently uses native OpenAI SDK clients throughout the cod
 ### Key Findings
 
 | Component | Base URL Support | Configuration Needed |
+
 |-----------|------------------|----------------------|
 | **Chat Service** | ✅ Already Supported | Environment variable only |
 | **LLM Blocks** | ❌ Not Supported | Code + environment changes |
@@ -252,6 +253,7 @@ Based on official [LiteLLM documentation](https://docs.litellm.ai/docs/proxy/con
 #### Environment Variables
 
 | Variable | Purpose | Example |
+
 |----------|---------|---------|
 | `LITELLM_PROXY_API_KEY` | Authentication to LiteLLM Proxy | `sk-1234` |
 | `LITELLM_PROXY_API_BASE` | LiteLLM Proxy endpoint URL | `http://localhost:4000` |
@@ -740,6 +742,7 @@ async def test_llm_block_with_litellm_proxy():
 ## Migration Timeline
 
 | Phase | Priority | Effort | Dependencies |
+
 |-------|----------|--------|--------------|
 | **Phase 1:** Backend Settings | High | 1 hour | None |
 | **Phase 2:** Client Updates | High | 2-3 hours | Phase 1 |
@@ -755,6 +758,7 @@ async def test_llm_block_with_litellm_proxy():
 ## Risks & Mitigation
 
 | Risk | Impact | Probability | Mitigation |
+
 |------|--------|-------------|------------|
 | Breaking existing OpenAI integrations | High | Low | Default to OpenAI API URL, backward compatible |
 | LiteLLM Proxy downtime affects all LLM calls | High | Medium | Document rollback procedure, monitor proxy health |

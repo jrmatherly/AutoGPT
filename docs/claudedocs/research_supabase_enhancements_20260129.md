@@ -82,34 +82,34 @@ searchDocs(query: "realtime websocket configuration limits")
 
 ### High Priority (P1)
 
-4. **No Automated Backups**
+1. **No Automated Backups**
    - Missing: Daily automated backups with retention
    - Required: pg_dump + volume backups + S3 upload
    - Impact: Data loss risk
 
-5. **Health Check Tuning Needed**
+2. **Health Check Tuning Needed**
    - Issue: 5-second timeouts can cause false positives
    - Recommendation: Increase to 10s with 30s start_period
    - Impact: Service stability during high load
 
-6. **No Log Management**
+3. **No Log Management**
    - Current: Docker logs only (limited retention)
    - Recommendation: Loki + Promtail stack
    - Impact: Debugging difficulties, compliance issues
 
 ### Medium Priority (P2)
 
-7. **File-Based Storage**
+1. **File-Based Storage**
    - Current: Local file system
    - Recommendation: Migrate to S3-compatible storage
    - Impact: Scalability limitations
 
-8. **Connection Pool Not Optimized**
+2. **Connection Pool Not Optimized**
    - Current: Default pool size
    - Recommendation: Tune based on usage (40%-80% of max)
    - Impact: Performance degradation under load
 
-9. **No Resource Limits**
+3. **No Resource Limits**
    - Current: Unlimited container resources
    - Recommendation: Add CPU/memory limits
    - Impact: Resource exhaustion risk
@@ -232,6 +232,7 @@ All recommendations sourced from official Supabase documentation:
 ### Pre-Production Deployment Risks
 
 | Risk | Current State | Mitigation |
+
 |------|---------------|------------|
 | **Secrets compromise** | Low (hardened Jan 2026) | Already mitigated ✅ |
 | **Data loss** | **HIGH** (no backups) | Implement automated backups |
@@ -247,6 +248,7 @@ All recommendations sourced from official Supabase documentation:
 **Total Monthly Cost:** ~$20-80
 
 | Component | Monthly Cost |
+
 |-----------|--------------|
 | SSL/TLS (Let's Encrypt) | $0 |
 | AWS SES (SMTP) | $5-10 |
