@@ -79,14 +79,17 @@ jobs:
           version: 2026.1.9  # Latest as of January 2026
           install: true
           cache: true
+          cache_key: mise-backend-py${{ matrix.python-version }}-{{platform}}-{{file_hash}}
           working_directory: autogpt_platform
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          log_level: info
           # Override Python version for matrix testing
           install_args: python@${{ matrix.python-version }}
 
       - name: Setup Supabase
         uses: supabase/setup-cli@v1
         with:
-          version: latest
+          version: 1.204.4
 
       - id: get_date
         name: Get date
