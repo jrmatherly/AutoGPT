@@ -16,6 +16,14 @@
     "null": [
       ".github/workflows/*.yml",
       ".github/workflows/*.yaml"
+    ],
+    // Grafana provisioning datasource files use a different schema than Prometheus config
+    // This prevents false positives for files like prometheus.yml in datasources folders
+    "./.vscode/schemas/grafana-datasource-provisioning.json": [
+      "**/grafana/provisioning/datasources/*.yml",
+      "**/grafana/provisioning/datasources/*.yaml",
+      "/autogpt_platform/db/docker/monitoring/grafana/provisioning/datasources/*.yaml",
+      "/autogpt_platform/db/docker/monitoring/grafana/provisioning/datasources/*.yml"
     ]
   },
   // ============================================================================

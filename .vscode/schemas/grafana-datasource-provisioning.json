@@ -1,0 +1,210 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://grafana.com/schemas/provisioning/datasources.json",
+  "title": "Grafana Datasource Provisioning",
+  "description": "Schema for Grafana datasource provisioning YAML files. Reference: https://grafana.com/docs/grafana/latest/administration/provisioning/#datasources",
+  "type": "object",
+  "required": ["apiVersion"],
+  "properties": {
+    "apiVersion": {
+      "type": "integer",
+      "description": "Configuration file version. Currently should be 1.",
+      "enum": [1]
+    },
+    "prune": {
+      "type": "boolean",
+      "description": "Mark provisioned data sources for deletion if they are no longer in a provisioning file."
+    },
+    "deleteDatasources": {
+      "type": "array",
+      "description": "List of data sources to delete from the database.",
+      "items": {
+        "type": "object",
+        "required": ["name"],
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Name of the data source to delete."
+          },
+          "orgId": {
+            "type": "integer",
+            "description": "Organization ID. Defaults to 1.",
+            "default": 1
+          }
+        }
+      }
+    },
+    "datasources": {
+      "type": "array",
+      "description": "List of data sources to insert/update.",
+      "items": {
+        "type": "object",
+        "required": ["name", "type"],
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Name you use to refer to the data source in panels and queries."
+          },
+          "type": {
+            "type": "string",
+            "description": "Data source type (e.g., prometheus, graphite, elasticsearch, loki, etc.)."
+          },
+          "access": {
+            "type": "string",
+            "description": "Access mode: proxy (Server) or direct (Browser).",
+            "enum": ["proxy", "direct"],
+            "default": "proxy"
+          },
+          "orgId": {
+            "type": "integer",
+            "description": "Organization ID. Defaults to 1.",
+            "default": 1
+          },
+          "uid": {
+            "type": "string",
+            "description": "Custom UID to reference this data source. If not specified, Grafana generates one."
+          },
+          "url": {
+            "type": "string",
+            "description": "Data source URL, including the port."
+          },
+          "user": {
+            "type": "string",
+            "description": "Database user, if necessary."
+          },
+          "database": {
+            "type": "string",
+            "description": "Database name, if necessary."
+          },
+          "basicAuth": {
+            "type": "boolean",
+            "description": "Enables basic authorization."
+          },
+          "basicAuthUser": {
+            "type": "string",
+            "description": "Basic authorization username."
+          },
+          "withCredentials": {
+            "type": "boolean",
+            "description": "Enables credential headers."
+          },
+          "isDefault": {
+            "type": "boolean",
+            "description": "Pre-selects this data source for new panels. Only one default per organization."
+          },
+          "editable": {
+            "type": "boolean",
+            "description": "Allows users to edit data sources from the Grafana UI.",
+            "default": false
+          },
+          "version": {
+            "type": "integer",
+            "description": "Version number. Used to compare versions when updating."
+          },
+          "jsonData": {
+            "type": "object",
+            "description": "Additional configuration fields stored as JSON.",
+            "properties": {
+              "tlsAuth": {
+                "type": "boolean",
+                "description": "Enables TLS authentication using a client certificate."
+              },
+              "tlsAuthWithCACert": {
+                "type": "boolean",
+                "description": "Enables TLS authentication using a CA certificate."
+              },
+              "tlsSkipVerify": {
+                "type": "boolean",
+                "description": "Skip TLS certificate verification."
+              },
+              "serverName": {
+                "type": "string",
+                "description": "Server name for TLS verification."
+              },
+              "timeout": {
+                "type": "integer",
+                "description": "Connection timeout in seconds."
+              },
+              "timeInterval": {
+                "type": "string",
+                "description": "Scrape interval (e.g., '15s', '1m')."
+              },
+              "httpMethod": {
+                "type": "string",
+                "description": "HTTP method for queries.",
+                "enum": ["GET", "POST"]
+              },
+              "manageAlerts": {
+                "type": "boolean",
+                "description": "Enable alert management for this data source."
+              },
+              "prometheusType": {
+                "type": "string",
+                "description": "Prometheus-compatible backend type.",
+                "enum": ["Prometheus", "Cortex", "Mimir", "Thanos"]
+              },
+              "prometheusVersion": {
+                "type": "string",
+                "description": "Prometheus version (e.g., '2.37.0')."
+              },
+              "graphiteVersion": {
+                "type": "string",
+                "description": "Graphite service version."
+              },
+              "cacheLevel": {
+                "type": "string",
+                "description": "Query caching level.",
+                "enum": ["None", "Low", "Medium", "High"]
+              },
+              "incrementalQuerying": {
+                "type": "boolean",
+                "description": "Enable incremental querying."
+              },
+              "disableRecordingRules": {
+                "type": "boolean",
+                "description": "Disable recording rules."
+              }
+            },
+            "additionalProperties": true
+          },
+          "secureJsonData": {
+            "type": "object",
+            "description": "Encrypted configuration fields (passwords, certificates, etc.).",
+            "properties": {
+              "tlsCACert": {
+                "type": "string",
+                "description": "CA certificate for TLS."
+              },
+              "tlsClientCert": {
+                "type": "string",
+                "description": "Client certificate for TLS."
+              },
+              "tlsClientKey": {
+                "type": "string",
+                "description": "Client key for TLS."
+              },
+              "password": {
+                "type": "string",
+                "description": "Database password."
+              },
+              "basicAuthPassword": {
+                "type": "string",
+                "description": "Basic authorization password."
+              },
+              "accessKey": {
+                "type": "string",
+                "description": "AWS access key."
+              },
+              "secretKey": {
+                "type": "string",
+                "description": "AWS secret key."
+              }
+            },
+            "additionalProperties": true
+          }
+        }
+      }
+    }
+  },
+  "additionalProperties": false
+}
