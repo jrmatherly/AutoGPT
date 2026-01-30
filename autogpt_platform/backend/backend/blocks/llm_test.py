@@ -14,11 +14,14 @@ from unittest.mock import AsyncMock, MagicMock, patch
 import pytest
 from pydantic import SecretStr
 
-from backend.blocks.llm import AITextGeneratorBlock, LlmProvider
+from backend.blocks.llm import AITextGeneratorBlock
 from backend.data.model import APIKeyCredentials
+from backend.integrations.providers import ProviderName
 
 
-@pytest.mark.skip(reason="Needs adjustment for Settings caching - see settings_test.py for config validation")
+@pytest.mark.skip(
+    reason="Needs adjustment for Settings caching - see settings_test.py for config validation"
+)
 class TestLLMBlockBaseURLConfiguration:
     """Test LLM block OpenAI client initialization with base URL configuration."""
 
@@ -37,7 +40,7 @@ class TestLLMBlockBaseURLConfiguration:
         )
 
         input_data = AITextGeneratorBlock.Input(
-            provider=LlmProvider.OPENAI,
+            provider=ProviderName.OPENAI,
             model="gpt-4o-mini",
             prompt="Test prompt",
             sys_prompt="You are helpful",
@@ -57,7 +60,8 @@ class TestLLMBlockBaseURLConfiguration:
 
             # Run the block
             outputs = [
-                output async for output in block.run(input_data, credentials=credentials)
+                output
+                async for output in block.run(input_data, credentials=credentials)
             ]
 
             # Verify AsyncOpenAI was called with base_url from settings
@@ -81,7 +85,7 @@ class TestLLMBlockBaseURLConfiguration:
         )
 
         input_data = AITextGeneratorBlock.Input(
-            provider=LlmProvider.OPENAI,
+            provider=ProviderName.OPENAI,
             model="gpt-4o-mini",
             prompt="Test prompt",
             sys_prompt="You are helpful",
@@ -101,7 +105,8 @@ class TestLLMBlockBaseURLConfiguration:
 
             # Run the block
             outputs = [
-                output async for output in block.run(input_data, credentials=credentials)
+                output
+                async for output in block.run(input_data, credentials=credentials)
             ]
 
             # Verify AsyncOpenAI was called with default URL
@@ -125,7 +130,7 @@ class TestLLMBlockBaseURLConfiguration:
         )
 
         input_data = AITextGeneratorBlock.Input(
-            provider=LlmProvider.ANTHROPIC,
+            provider=ProviderName.ANTHROPIC,
             model="claude-3-5-sonnet-20241022",
             prompt="Test prompt",
             sys_prompt="You are helpful",
@@ -141,7 +146,8 @@ class TestLLMBlockBaseURLConfiguration:
 
             # Run the block
             outputs = [
-                output async for output in block.run(input_data, credentials=credentials)
+                output
+                async for output in block.run(input_data, credentials=credentials)
             ]
 
             # Verify Anthropic client was called (not affected by OpenAI base_url)

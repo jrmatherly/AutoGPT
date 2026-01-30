@@ -4622,6 +4622,467 @@
         }
       }
     },
+    "/api/organizations": {
+      "get": {
+        "tags": ["v2", "organizations", "organizations"],
+        "summary": "List My Organizations",
+        "description": "Get all organizations the current user belongs to.",
+        "operationId": "getV2List my organizations",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "items": {
+                    "$ref": "#/components/schemas/UserOrganizationResponse"
+                  },
+                  "type": "array",
+                  "title": "Response Getv2List My Organizations"
+                }
+              }
+            }
+          },
+          "401": {
+            "$ref": "#/components/responses/HTTP401NotAuthenticatedError"
+          }
+        },
+        "security": [{ "HTTPBearerJWT": [] }]
+      },
+      "post": {
+        "tags": ["v2", "organizations", "organizations"],
+        "summary": "Create Organization",
+        "description": "Create a new organization. The creator becomes the owner.",
+        "operationId": "postV2Create organization",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/OrganizationCreateRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "201": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/OrganizationResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "$ref": "#/components/responses/HTTP401NotAuthenticatedError"
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/HTTPValidationError" }
+              }
+            }
+          }
+        },
+        "security": [{ "HTTPBearerJWT": [] }]
+      }
+    },
+    "/api/organizations/invitations/{token}/accept": {
+      "post": {
+        "tags": ["v2", "organizations", "organizations"],
+        "summary": "Accept Invitation",
+        "description": "Accept an invitation using the token.",
+        "operationId": "postV2Accept invitation",
+        "security": [{ "HTTPBearerJWT": [] }],
+        "parameters": [
+          {
+            "name": "token",
+            "in": "path",
+            "required": true,
+            "schema": { "type": "string", "title": "Token" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AcceptInvitationResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "$ref": "#/components/responses/HTTP401NotAuthenticatedError"
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/HTTPValidationError" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/organizations/slug/{slug}": {
+      "get": {
+        "tags": ["v2", "organizations", "organizations"],
+        "summary": "Get Organization by Slug",
+        "description": "Get organization by URL slug. User must be a member.",
+        "operationId": "getV2Get organization by slug",
+        "security": [{ "HTTPBearerJWT": [] }],
+        "parameters": [
+          {
+            "name": "slug",
+            "in": "path",
+            "required": true,
+            "schema": { "type": "string", "title": "Slug" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/OrganizationResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "$ref": "#/components/responses/HTTP401NotAuthenticatedError"
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/HTTPValidationError" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/organizations/{organization_id}": {
+      "get": {
+        "tags": ["v2", "organizations", "organizations"],
+        "summary": "Get Organization",
+        "description": "Get organization details. User must be a member.",
+        "operationId": "getV2Get organization",
+        "security": [{ "HTTPBearerJWT": [] }],
+        "parameters": [
+          {
+            "name": "organization_id",
+            "in": "path",
+            "required": true,
+            "schema": { "type": "string", "title": "Organization Id" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/OrganizationResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "$ref": "#/components/responses/HTTP401NotAuthenticatedError"
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/HTTPValidationError" }
+              }
+            }
+          }
+        }
+      },
+      "patch": {
+        "tags": ["v2", "organizations", "organizations"],
+        "summary": "Update Organization",
+        "description": "Update organization details. Requires admin or owner role.",
+        "operationId": "patchV2Update organization",
+        "security": [{ "HTTPBearerJWT": [] }],
+        "parameters": [
+          {
+            "name": "organization_id",
+            "in": "path",
+            "required": true,
+            "schema": { "type": "string", "title": "Organization Id" }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/OrganizationUpdateRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/OrganizationResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "$ref": "#/components/responses/HTTP401NotAuthenticatedError"
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/HTTPValidationError" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/organizations/{organization_id}/invitations": {
+      "get": {
+        "tags": ["v2", "organizations", "organizations"],
+        "summary": "List Pending Invitations",
+        "description": "List pending invitations. Requires admin or owner role.",
+        "operationId": "getV2List pending invitations",
+        "security": [{ "HTTPBearerJWT": [] }],
+        "parameters": [
+          {
+            "name": "organization_id",
+            "in": "path",
+            "required": true,
+            "schema": { "type": "string", "title": "Organization Id" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/OrganizationInvitationResponse"
+                  },
+                  "title": "Response Getv2List Pending Invitations"
+                }
+              }
+            }
+          },
+          "401": {
+            "$ref": "#/components/responses/HTTP401NotAuthenticatedError"
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/HTTPValidationError" }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": ["v2", "organizations", "organizations"],
+        "summary": "Invite Member",
+        "description": "Invite a user to join the organization by email. Requires admin or owner role.",
+        "operationId": "postV2Invite member",
+        "security": [{ "HTTPBearerJWT": [] }],
+        "parameters": [
+          {
+            "name": "organization_id",
+            "in": "path",
+            "required": true,
+            "schema": { "type": "string", "title": "Organization Id" }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/components/schemas/InviteMemberRequest" }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/OrganizationInvitationResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "$ref": "#/components/responses/HTTP401NotAuthenticatedError"
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/HTTPValidationError" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/organizations/{organization_id}/members": {
+      "get": {
+        "tags": ["v2", "organizations", "organizations"],
+        "summary": "List Members",
+        "description": "List all members of the organization. Any member can view.",
+        "operationId": "getV2List members",
+        "security": [{ "HTTPBearerJWT": [] }],
+        "parameters": [
+          {
+            "name": "organization_id",
+            "in": "path",
+            "required": true,
+            "schema": { "type": "string", "title": "Organization Id" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/OrganizationMemberResponse"
+                  },
+                  "title": "Response Getv2List Members"
+                }
+              }
+            }
+          },
+          "401": {
+            "$ref": "#/components/responses/HTTP401NotAuthenticatedError"
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/HTTPValidationError" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/organizations/{organization_id}/members/{member_user_id}": {
+      "delete": {
+        "tags": ["v2", "organizations", "organizations"],
+        "summary": "Remove Member",
+        "description": "Remove a member from the organization. Requires admin or owner role.",
+        "operationId": "deleteV2Remove member",
+        "security": [{ "HTTPBearerJWT": [] }],
+        "parameters": [
+          {
+            "name": "organization_id",
+            "in": "path",
+            "required": true,
+            "schema": { "type": "string", "title": "Organization Id" }
+          },
+          {
+            "name": "member_user_id",
+            "in": "path",
+            "required": true,
+            "schema": { "type": "string", "title": "Member User Id" }
+          }
+        ],
+        "responses": {
+          "204": { "description": "Successful Response" },
+          "401": {
+            "$ref": "#/components/responses/HTTP401NotAuthenticatedError"
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/HTTPValidationError" }
+              }
+            }
+          }
+        }
+      },
+      "patch": {
+        "tags": ["v2", "organizations", "organizations"],
+        "summary": "Update Member Role",
+        "description": "Update a member's role. Requires admin or owner role.",
+        "operationId": "patchV2Update member role",
+        "security": [{ "HTTPBearerJWT": [] }],
+        "parameters": [
+          {
+            "name": "organization_id",
+            "in": "path",
+            "required": true,
+            "schema": { "type": "string", "title": "Organization Id" }
+          },
+          {
+            "name": "member_user_id",
+            "in": "path",
+            "required": true,
+            "schema": { "type": "string", "title": "Member User Id" }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateMemberRoleRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/OrganizationMemberResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "$ref": "#/components/responses/HTTP401NotAuthenticatedError"
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/HTTPValidationError" }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/otto/ask": {
       "post": {
         "tags": ["v2", "otto"],
@@ -6065,6 +6526,23 @@
         "type": "string",
         "enum": ["ACTIVE", "REVOKED", "SUSPENDED"],
         "title": "APIKeyStatus"
+      },
+      "AcceptInvitationResponse": {
+        "properties": {
+          "organization": {
+            "$ref": "#/components/schemas/OrganizationResponse"
+          },
+          "role": { "$ref": "#/components/schemas/OrganizationRole" },
+          "message": {
+            "type": "string",
+            "title": "Message",
+            "default": "Successfully joined organization"
+          }
+        },
+        "type": "object",
+        "required": ["organization", "role"],
+        "title": "AcceptInvitationResponse",
+        "description": "Response after accepting an invitation."
       },
       "AccuracyAlertData": {
         "properties": {
@@ -7891,6 +8369,19 @@
         "required": ["provider", "host"],
         "title": "HostScopedCredentials"
       },
+      "InviteMemberRequest": {
+        "properties": {
+          "email": { "type": "string", "title": "Email" },
+          "role": {
+            "$ref": "#/components/schemas/OrganizationRole",
+            "default": "MEMBER"
+          }
+        },
+        "type": "object",
+        "required": ["email"],
+        "title": "InviteMemberRequest",
+        "description": "Request to invite a new member."
+      },
       "LibraryAgent": {
         "properties": {
           "id": { "type": "string", "title": "Id" },
@@ -8772,6 +9263,178 @@
           "BUILDER_RUN_AGENT"
         ],
         "title": "OnboardingStep"
+      },
+      "OrganizationCreateRequest": {
+        "properties": {
+          "name": {
+            "type": "string",
+            "maxLength": 100,
+            "minLength": 1,
+            "title": "Name"
+          },
+          "slug": {
+            "type": "string",
+            "maxLength": 50,
+            "minLength": 1,
+            "pattern": "^[a-z0-9-]+$",
+            "title": "Slug",
+            "description": "URL-friendly identifier (lowercase letters, numbers, hyphens)"
+          },
+          "description": {
+            "anyOf": [{ "type": "string" }, { "type": "null" }],
+            "title": "Description"
+          },
+          "tier": {
+            "$ref": "#/components/schemas/OrganizationTier",
+            "default": "FREE"
+          }
+        },
+        "type": "object",
+        "required": ["name", "slug"],
+        "title": "OrganizationCreateRequest",
+        "description": "Request to create a new organization."
+      },
+      "OrganizationInvitationResponse": {
+        "properties": {
+          "id": { "type": "string", "title": "Id" },
+          "email": { "type": "string", "title": "Email" },
+          "role": { "$ref": "#/components/schemas/OrganizationRole" },
+          "invited_by": { "type": "string", "title": "Invited By" },
+          "created_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Created At"
+          },
+          "expires_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Expires At"
+          }
+        },
+        "type": "object",
+        "required": [
+          "id",
+          "email",
+          "role",
+          "invited_by",
+          "created_at",
+          "expires_at"
+        ],
+        "title": "OrganizationInvitationResponse",
+        "description": "Pending invitation details."
+      },
+      "OrganizationMemberResponse": {
+        "properties": {
+          "id": { "type": "string", "title": "Id" },
+          "user_id": { "type": "string", "title": "User Id" },
+          "organization_id": { "type": "string", "title": "Organization Id" },
+          "role": { "$ref": "#/components/schemas/OrganizationRole" },
+          "user_email": {
+            "anyOf": [{ "type": "string" }, { "type": "null" }],
+            "title": "User Email"
+          },
+          "user_name": {
+            "anyOf": [{ "type": "string" }, { "type": "null" }],
+            "title": "User Name"
+          },
+          "created_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Created At"
+          },
+          "accepted_at": {
+            "anyOf": [
+              { "type": "string", "format": "date-time" },
+              { "type": "null" }
+            ],
+            "title": "Accepted At"
+          }
+        },
+        "type": "object",
+        "required": ["id", "user_id", "organization_id", "role", "created_at"],
+        "title": "OrganizationMemberResponse",
+        "description": "Organization member details."
+      },
+      "OrganizationResponse": {
+        "properties": {
+          "id": { "type": "string", "title": "Id" },
+          "name": { "type": "string", "title": "Name" },
+          "slug": { "type": "string", "title": "Slug" },
+          "description": {
+            "anyOf": [{ "type": "string" }, { "type": "null" }],
+            "title": "Description"
+          },
+          "logo_url": {
+            "anyOf": [{ "type": "string" }, { "type": "null" }],
+            "title": "Logo Url"
+          },
+          "status": { "$ref": "#/components/schemas/OrganizationStatus" },
+          "tier": { "$ref": "#/components/schemas/OrganizationTier" },
+          "sso_enabled": {
+            "type": "boolean",
+            "title": "Sso Enabled",
+            "default": false
+          },
+          "created_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Created At"
+          },
+          "updated_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Updated At"
+          }
+        },
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "slug",
+          "status",
+          "tier",
+          "created_at",
+          "updated_at"
+        ],
+        "title": "OrganizationResponse",
+        "description": "Organization details response."
+      },
+      "OrganizationRole": {
+        "type": "string",
+        "enum": ["OWNER", "ADMIN", "MEMBER", "VIEWER"],
+        "title": "OrganizationRole"
+      },
+      "OrganizationStatus": {
+        "type": "string",
+        "enum": ["ACTIVE", "SUSPENDED", "PENDING_DELETION", "DELETED"],
+        "title": "OrganizationStatus"
+      },
+      "OrganizationTier": {
+        "type": "string",
+        "enum": ["FREE", "STANDARD", "PREMIUM", "ENTERPRISE"],
+        "title": "OrganizationTier"
+      },
+      "OrganizationUpdateRequest": {
+        "properties": {
+          "name": {
+            "anyOf": [
+              { "type": "string", "maxLength": 100, "minLength": 1 },
+              { "type": "null" }
+            ],
+            "title": "Name"
+          },
+          "description": {
+            "anyOf": [{ "type": "string" }, { "type": "null" }],
+            "title": "Description"
+          },
+          "logo_url": {
+            "anyOf": [{ "type": "string" }, { "type": "null" }],
+            "title": "Logo Url"
+          }
+        },
+        "type": "object",
+        "title": "OrganizationUpdateRequest",
+        "description": "Request to update organization details."
       },
       "Pagination": {
         "properties": {
@@ -11101,6 +11764,15 @@
         "required": ["logo_url"],
         "title": "UpdateAppLogoRequest"
       },
+      "UpdateMemberRoleRequest": {
+        "properties": {
+          "role": { "$ref": "#/components/schemas/OrganizationRole" }
+        },
+        "type": "object",
+        "required": ["role"],
+        "title": "UpdateMemberRoleRequest",
+        "description": "Request to update a member's role."
+      },
       "UpdatePermissionsRequest": {
         "properties": {
           "permissions": {
@@ -11884,6 +12556,23 @@
         },
         "type": "object",
         "title": "UserOnboardingUpdate"
+      },
+      "UserOrganizationResponse": {
+        "properties": {
+          "organization": {
+            "$ref": "#/components/schemas/OrganizationResponse"
+          },
+          "role": { "$ref": "#/components/schemas/OrganizationRole" },
+          "is_default": {
+            "type": "boolean",
+            "title": "Is Default",
+            "default": false
+          }
+        },
+        "type": "object",
+        "required": ["organization", "role"],
+        "title": "UserOrganizationResponse",
+        "description": "User's organization membership info."
       },
       "UserPasswordCredentials": {
         "properties": {

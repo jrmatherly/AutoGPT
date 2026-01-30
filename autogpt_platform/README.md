@@ -45,6 +45,7 @@ To run the AutoGPT Platform, follow these steps:
 > See the [Mise Migration Guide](../docs/MISE_MIGRATION.md) for complete details.
 >
 > Quick start with mise:
+>
 > ```bash
 > # Install mise
 > curl https://mise.run | sh
