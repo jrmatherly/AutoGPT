@@ -1,6 +1,6 @@
 # GitHub Workflows Guide
 
-**Last Updated:** 2026-01-29
+**Last Updated:** 2026-01-30
 **Status:** Recently upgraded (January 2026)
 
 ## Overview
@@ -67,22 +67,45 @@ This guide covers GitHub Actions workflows for the AutoGPT platform. All workflo
 
 **Location:** `.github/actions/prisma-migrate/action.yml`
 
-**Purpose:** Reusable migration workflow eliminating 45 lines of duplication
+**Purpose:** Reusable migration workflow using mise-action for dev/CI parity
+
+**Updated:** 2026-01-30 - Migrated to `jdx/mise-action@v3`
 
 **Usage:**
 ```yaml
 - name: Run Prisma migrations
   uses: ./.github/actions/prisma-migrate
   with:
-    python-version: "3.13"
     database-url: ${{ secrets.BACKEND_DATABASE_URL }}
     git-ref: ${{ github.ref_name }}
+    # Optional: Override Python version (uses mise.toml default if omitted)
+    # python-version: "3.13"
+    # Optional: Skip client generation
+    # generate-client: "false"
 ```
+
+**Inputs:**
+
+| Input | Required | Default | Description |
+|-------|----------|---------|-------------|
+| `database-url` | Yes | - | Database connection string |
+| `git-ref` | No | `github.ref_name` | Git ref to checkout |
+| `python-version` | No | `""` (uses mise.toml) | Override Python version |
+| `mise-version` | No | `2026.1.10` | Mise version to use |
+| `generate-client` | No | `true` | Run `prisma generate` after migrations |
+
+**Features:**
+- Uses `jdx/mise-action@v3` for dev/CI parity
+- Installs dependencies via Poetry (respects lock file)
+- Runs both `prisma migrate deploy` and `prisma generate`
+- Automatic caching via mise (cache_key_prefix: `mise-prisma`)
+- Configurable Python version override for matrix testing
 
 **Benefits:**
 - Single source of truth for migrations
-- Used by both dev and prod deployment workflows
-- Easier to maintain and update
+- Consistent with all other platform workflows
+- Uses Poetry lock file for reproducible builds
+- Proper Prisma client generation included
 
 ## CI Integration with Mise
 
@@ -249,6 +272,7 @@ mise run test
 
 ## Change Log
 
+- **2026-01-30:** Prisma-migrate action updated to use `jdx/mise-action@v3` for dev/CI parity
 - **2026-01-29:** Consolidated workflows guide created
 - **2026-01-29:** Action version upgrades completed (v4→v6)
 - **2026-01-29:** Composite action created for Prisma migrations
