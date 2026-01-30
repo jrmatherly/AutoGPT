@@ -11,6 +11,7 @@ This directory contains shell scripts used by GitHub Actions workflows in this r
 Unified script that generates detailed Markdown summaries of Docker builds for both CI and release workflows.
 
 **Features:**
+
 - Comprehensive error handling with strict mode
 - Input validation for all required variables
 - Dependency checking (docker, jq, etc.)
@@ -20,6 +21,7 @@ Unified script that generates detailed Markdown summaries of Docker builds for b
 - Complete documentation
 
 **Usage:**
+
 ```bash
 # CI mode
 docker-build-summary-unified.sh ci
@@ -40,6 +42,7 @@ docker-build-summary-unified.sh --help
 **Required Environment Variables:**
 
 Common (all modes):
+
 - `IMAGE_NAME` - Docker image name with tag
 - `current_ref` - Current git ref (branch/tag)
 - `commit_hash` - Full commit SHA
@@ -50,6 +53,7 @@ Common (all modes):
 - `job_env_json` - Job environment JSON
 
 CI mode additional:
+
 - `base_branch` - Base branch name
 - `build_type` - Build type label
 - `compare_url_template` - URL template for comparisons
@@ -59,11 +63,13 @@ CI mode additional:
 - `push_forced_label` - (optional) Forced push indicator
 
 Release mode additional:
+
 - `ref_type` - Ref type (tag/branch)
 - `event_name` - GitHub event name
 - `inputs_no_cache` - No-cache build parameter
 
 **Exit Codes:**
+
 - `0` - Success
 - `1` - General error
 - `2` - Missing dependency
@@ -77,6 +83,7 @@ Release mode additional:
 Original CI build summary generator. Works but lacks error handling and modern best practices.
 
 **Issues:**
+
 - No error handling (no `set -euo pipefail`)
 - Multiple ShellCheck violations (unquoted variables, legacy syntax)
 - No input validation
@@ -92,6 +99,7 @@ Original CI build summary generator. Works but lacks error handling and modern b
 Original release build summary generator. Works but lacks error handling and modern best practices.
 
 **Issues:**
+
 - Same issues as docker-ci-summary.sh
 - 85% code duplication with docker-ci-summary.sh
 
@@ -102,11 +110,13 @@ Original release build summary generator. Works but lacks error handling and mod
 ### Testing
 
 Run ShellCheck on all scripts:
+
 ```bash
 shellcheck *.sh
 ```
 
 The unified script includes comprehensive validation:
+
 ```bash
 # Validate environment without generating output
 DRY_RUN=true ./docker-build-summary-unified.sh ci
@@ -115,6 +125,7 @@ DRY_RUN=true ./docker-build-summary-unified.sh ci
 ### ShellCheck Configuration
 
 The `.shellcheckrc` file configures ShellCheck for GitHub Actions environment:
+
 - Disables SC2154 (external variables) since variables come from workflow env
 - Enables all other checks
 - Sets severity to "style" for comprehensive checking
@@ -122,6 +133,7 @@ The `.shellcheckrc` file configures ShellCheck for GitHub Actions environment:
 ### Code Quality Standards
 
 All new scripts should:
+
 - Use `#!/usr/bin/env bash` shebang
 - Enable strict mode: `set -Eeuo pipefail`
 - Quote all variable expansions
@@ -136,6 +148,7 @@ All new scripts should:
 To migrate from legacy scripts to unified script:
 
 1. **Update workflow file:**
+
    ```yaml
    # Old
    - name: Generate summary
@@ -161,6 +174,7 @@ To migrate from legacy scripts to unified script:
 ## Analysis
 
 See [ANALYSIS.md](ANALYSIS.md) for detailed analysis of:
+
 - Code quality issues
 - Security considerations
 - Performance optimization opportunities

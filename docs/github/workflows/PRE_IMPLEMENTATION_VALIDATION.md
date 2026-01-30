@@ -187,6 +187,7 @@ git commit -m "ci: restore workflows from <commit-sha>"
 ### All Systems Go ✅
 
 | Check | Status | Notes |
+
 |-------|--------|-------|
 | Files exist | ✅ Pass | All 7 target workflows confirmed |
 | Git status clean | ✅ Pass | Only docs modified, workflows untouched |

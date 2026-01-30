@@ -2,6 +2,7 @@
 
 **Date:** 2026-01-29
 **Scripts Analyzed:**
+
 - `docker-ci-summary.sh` (99 lines)
 - `docker-release-summary.sh` (86 lines)
 
@@ -14,6 +15,7 @@ These two scripts generate Markdown summaries for Docker builds in GitHub Action
 ### 1. Missing Error Handling (Priority: HIGH)
 
 Both scripts lack:
+
 - Strict mode (`set -euo pipefail`)
 - Error traps for cleanup
 - Input validation
@@ -23,9 +25,10 @@ Both scripts lack:
 
 ### 2. ShellCheck Violations (Priority: HIGH)
 
-#### Common Issues in Both Scripts:
+#### Common Issues in Both Scripts
 
 **SC2086 (Info):** Unquoted variable expansions (8+ instances each)
+
 ```bash
 # Current (UNSAFE)
 <<< $meta
@@ -39,6 +42,7 @@ $IMAGE_NAME
 ```
 
 **SC2006 (Style):** Legacy backtick syntax in arithmetic
+
 ```bash
 # Current (DEPRECATED)
 $((`jq -r .Size <<< $meta` / 10**6))
@@ -48,6 +52,7 @@ $(($(jq -r .Size <<< "$meta") / 10**6))
 ```
 
 **SC2034 (Warning):** Unused EOF variable
+
 ```bash
 # Current approach is correct for heredoc delimiter randomization
 # but ShellCheck doesn't recognize cat << $EOF pattern
@@ -57,12 +62,14 @@ EOF=$(dd if=/dev/urandom bs=15 count=1 status=none | base64)
 ```
 
 **SC2154 (Warning):** External variables not declared (10+ each)
+
 - These are passed from workflow environment
 - Should add documentation header listing required variables
 
 ### 3. Code Duplication (Priority: HIGH)
 
 **Identical sections (85% overlap):**
+
 - Docker metadata extraction (line 2)
 - EOF delimiter generation (lines 4-6 vs 4)
 - Layer history table (lines 18-36 vs 18-32: 100% identical)
@@ -71,6 +78,7 @@ EOF=$(dd if=/dev/urandom bs=15 count=1 status=none | base64)
 - Job environment sections (lines 86-96 vs 73-83: 100% identical)
 
 **Different sections:**
+
 - CI: Source commit comparison URLs (lines 3-4, 74-84)
 - CI: Build type field (line 13)
 - CI: Push forced label (line 63)
@@ -80,17 +88,20 @@ EOF=$(dd if=/dev/urandom bs=15 count=1 status=none | base64)
 ### 4. Security Considerations (Priority: MEDIUM)
 
 **Heredoc Delimiter Randomization:**
+
 ```bash
 EOF=$(dd if=/dev/urandom bs=15 count=1 status=none | base64)
 ```
 
 **Purpose:** Prevents injection if variables contain the string "EOF"
 **Analysis:** Good security practice, but:
+
 - Could use `mktemp` approach for better portability
 - Should document why this is necessary
 - Consider `openssl rand -base64 12` as alternative
 
 **Variable Injection Risks:**
+
 - Multiple unquoted expansions allow word splitting
 - No sanitization of external variables
 - Markdown content could break with malicious input
@@ -98,6 +109,7 @@ EOF=$(dd if=/dev/urandom bs=15 count=1 status=none | base64)
 ### 5. Performance Issues (Priority: LOW)
 
 **Multiple sed calls in pipeline (lines 28-33):**
+
 ```bash
 # Current: 5 separate sed invocations
 | sed 's/ ago//'
@@ -114,11 +126,13 @@ EOF=$(dd if=/dev/urandom bs=15 count=1 status=none | base64)
 ### 6. Portability Issues (Priority: MEDIUM)
 
 **GNU vs BSD differences:**
+
 - `column -t` behavior varies
 - `dd if=/dev/urandom` not available on all systems
 - `base64` encoding differences
 
 **Missing version checks:**
+
 - No Bash version validation
 - No jq version check
 - No docker availability check
@@ -128,6 +142,7 @@ EOF=$(dd if=/dev/urandom bs=15 count=1 status=none | base64)
 ### Missing Bash Best Practices
 
 1. **No shebang options:**
+
    ```bash
    #!/usr/bin/env bash
    # Missing: set -Eeuo pipefail
@@ -139,6 +154,7 @@ EOF=$(dd if=/dev/urandom bs=15 count=1 status=none | base64)
    - Difficult to test
 
 3. **No parameter validation:**
+
    ```bash
    # Should have:
    : "${IMAGE_NAME:?IMAGE_NAME is required}"
@@ -146,6 +162,7 @@ EOF=$(dd if=/dev/urandom bs=15 count=1 status=none | base64)
    ```
 
 4. **No dependency checks:**
+
    ```bash
    # Should have:
    command -v docker &>/dev/null || { echo "docker not found" >&2; exit 1; }
@@ -153,6 +170,7 @@ EOF=$(dd if=/dev/urandom bs=15 count=1 status=none | base64)
    ```
 
 5. **No cleanup traps:**
+
    ```bash
    # Should have:
    trap 'cleanup' EXIT ERR
@@ -179,6 +197,7 @@ EOF=$(dd if=/dev/urandom bs=15 count=1 status=none | base64)
    - Already using `<<<` (good) ✓
 
 5. **Readonly constants:**
+
    ```bash
    # Should have:
    readonly SCRIPT_VERSION="1.0.0"
@@ -190,6 +209,7 @@ EOF=$(dd if=/dev/urandom bs=15 count=1 status=none | base64)
 ### Immediate Actions (Must Fix)
 
 1. **Add strict mode and error handling:**
+
    ```bash
    #!/usr/bin/env bash
    set -Eeuo pipefail
@@ -203,6 +223,7 @@ EOF=$(dd if=/dev/urandom bs=15 count=1 status=none | base64)
 3. **Replace legacy backticks:** (Fix SC2006)
 
 4. **Validate required variables:**
+
    ```bash
    for var in IMAGE_NAME current_ref repository commit_hash; do
        [[ -n "${!var:-}" ]] || { echo "$var is required" >&2; exit 1; }
@@ -210,6 +231,7 @@ EOF=$(dd if=/dev/urandom bs=15 count=1 status=none | base64)
    ```
 
 5. **Check dependencies:**
+
    ```bash
    for cmd in docker jq base64; do
        command -v "$cmd" &>/dev/null || { echo "$cmd not found" >&2; exit 1; }
@@ -234,6 +256,7 @@ esac
 ```
 
 **Shared functions to extract:**
+
 - `validate_environment()` - Check required vars
 - `check_dependencies()` - Verify docker/jq
 - `get_image_metadata()` - Extract docker metadata
@@ -243,6 +266,7 @@ esac
 - `generate_job_environment()` - Job context sections
 
 **Benefits:**
+
 - Eliminates 85% code duplication
 - Single point of maintenance
 - Consistent error handling
@@ -257,6 +281,7 @@ esac
 ```
 
 **Benefits:**
+
 - Maintains separate entry points
 - Easier migration
 - Clear separation of concerns
@@ -264,11 +289,13 @@ esac
 ### Enhanced Features to Add
 
 1. **Dry-run mode:**
+
    ```bash
    [[ "${DRY_RUN:-}" == "true" ]] && echo "Would generate summary" && exit 0
    ```
 
 2. **Verbose/debug mode:**
+
    ```bash
    [[ "${DEBUG:-}" == "true" ]] && set -x
    ```
@@ -279,6 +306,7 @@ esac
    - JSON for further processing
 
 4. **Size formatting:**
+
    ```bash
    # Current: Always MB
    # Better: Human-readable with units
@@ -295,6 +323,7 @@ esac
    ```
 
 5. **Exit code documentation:**
+
    ```bash
    # 0: Success
    # 1: General error
@@ -306,6 +335,7 @@ esac
 ### Testing Strategy
 
 **Unit tests with bats-core:**
+
 ```bash
 # test/docker-summary.bats
 @test "validates required environment variables" {
@@ -331,12 +361,14 @@ esac
 ```
 
 **Integration tests:**
+
 - Build test Docker image
 - Run script with test data
 - Validate output format
 - Check all sections present
 
 **ShellCheck integration:**
+
 ```bash
 # .shellcheckrc
 enable=all
@@ -348,6 +380,7 @@ external-sources=true
 ### Documentation Requirements
 
 **Script header:**
+
 ```bash
 #!/usr/bin/env bash
 #
@@ -398,6 +431,7 @@ external-sources=true
 ```
 
 **README.md for scripts directory:**
+
 ```markdown
 # Workflow Scripts
 
@@ -419,12 +453,13 @@ shellcheck docker-build-summary.sh
 ```
 
 ### Configuration
+
 See script header for required environment variables.
-```
 
 ## Implementation Priority
 
 ### Phase 1: Fix Critical Issues (Week 1)
+
 1. Add strict mode and error handling
 2. Fix all ShellCheck violations
 3. Add input validation
@@ -432,18 +467,21 @@ See script header for required environment variables.
 5. Document required variables
 
 ### Phase 2: Consolidation (Week 2)
+
 1. Extract shared functions to library
 2. Create unified script with mode parameter
 3. Update workflow calls
 4. Add comprehensive tests
 
 ### Phase 3: Enhancements (Week 3)
+
 1. Add debug/dry-run modes
 2. Improve output formatting
 3. Add exit code documentation
 4. Create full test suite
 
 ### Phase 4: Polish (Week 4)
+
 1. Add usage documentation
 2. Performance optimization
 3. Portability improvements
@@ -452,12 +490,14 @@ See script header for required environment variables.
 ## Cost-Benefit Analysis
 
 **Current State:**
+
 - ~200 lines of duplicated code
 - No error handling = difficult debugging
 - ShellCheck violations = potential bugs
 - No tests = fragile maintenance
 
 **After Consolidation:**
+
 - ~150 lines total (50% reduction)
 - Comprehensive error handling
 - ShellCheck clean
@@ -465,6 +505,7 @@ See script header for required environment variables.
 - Single maintenance point
 
 **Estimated Effort:**
+
 - Phase 1: 4 hours
 - Phase 2: 8 hours
 - Phase 3: 4 hours
@@ -472,6 +513,7 @@ See script header for required environment variables.
 - **Total: 20 hours (~2.5 days)**
 
 **Risk Assessment:**
+
 - **Low risk:** Scripts appear unused in current workflows
 - **Easy rollback:** Git history preserved
 - **Gradual migration:** Can maintain both during transition
@@ -483,18 +525,21 @@ See script header for required environment variables.
 Neither script appears to be called in any current GitHub Actions workflows (searched `.github/workflows/*.yml` and `.github/workflows/*.yaml`).
 
 **Possible scenarios:**
+
 1. **Deprecated:** Replaced by newer build summary mechanisms
 2. **Legacy:** From older workflow versions (last major change: 2023)
 3. **Dormant:** Planned for future use but not yet integrated
 4. **External:** Called from outside the repository
 
 **Recommendation:**
+
 1. Search workflow run history for actual usage
 2. If truly unused, consider removing or archiving
 3. If planned for future use, modernize before activation
 4. If used externally, add usage documentation
 
 **Verification needed:**
+
 ```bash
 # Check if any workflow runs have used these scripts
 # (requires GitHub API or web UI inspection)
@@ -573,6 +618,7 @@ main "$@"
 These scripts demonstrate functional heredoc and jq usage but lack modern Bash best practices. The high code duplication (85%) and absence of error handling present significant maintenance and reliability risks.
 
 **Primary recommendations:**
+
 1. **Consolidate immediately** - Reduce maintenance burden by 50%
 2. **Add error handling** - Prevent silent failures
 3. **Fix ShellCheck issues** - Eliminate potential bugs
