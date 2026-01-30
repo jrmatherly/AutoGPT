@@ -37,7 +37,15 @@
       "**/node_modules/**": true,
       "**/.next/**": true
     },
-    "prisma.pinToPrisma6": true
+    "prisma.pinToPrisma6": true,
+    // Suppress GitHub Actions workflow YAML schema false positives
+    "yaml.schemas": {
+      "null": [
+        ".github/workflows/*.yml",
+        ".github/workflows/*.yaml"
+      ]
+    },
+    "problems.showCurrentInStatus": true
   },
   "extensions": {
     "recommendations": [

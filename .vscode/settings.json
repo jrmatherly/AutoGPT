@@ -1,0 +1,55 @@
+{
+  // GitHub Actions Workflow Validation Configuration
+  // Created: 2026-01-29
+  // Purpose: Suppress false positive warnings in GitHub Actions workflow files
+  // ============================================================================
+  // YAML Schema Validation Suppression
+  // ============================================================================
+  // Disable YAML schema validation for GitHub Actions workflows to prevent
+  // false positive "Missing property matrix" errors. The GitHub Actions
+  // extension provides its own validation.
+  //
+  // Reference: https://github.com/redhat-developer/vscode-yaml/discussions/962
+  "yaml.schemas": {
+    // Disable schema validation for GitHub Actions workflow files
+    // Setting to null prevents YAML extension from applying generic schemas
+    "null": [
+      ".github/workflows/*.yml",
+      ".github/workflows/*.yaml"
+    ]
+  },
+  // ============================================================================
+  // GitHub Actions Extension Configuration
+  // ============================================================================
+  // Note: The GitHub Actions extension (github.vscode-github-actions) does not
+  // currently support suppressing context validation warnings like:
+  // - "Context access might be invalid: OPENAI_API_KEY"
+  // - "Context access might be invalid: merge_group"
+  //
+  // These are false positives for:
+  // 1. Optional repository secrets (using || fallback pattern)
+  // 2. Valid GitHub Actions contexts (merge_group, etc.)
+  //
+  // Feature requests exist but are not implemented as of v0.28.x:
+  // - https://github.com/github/vscode-github-actions/issues/96
+  // - https://github.com/github/vscode-github-actions/issues/123
+  // - https://github.com/github/vscode-github-actions/issues/196
+  //
+  // Workarounds:
+  // 1. Use Problems panel filter (Ctrl+Shift+M) to hide warnings
+  // 2. Temporarily disable the extension for these files
+  // 3. Accept the warnings as false positives (recommended)
+  // ============================================================================
+  // Problems Panel Configuration
+  // ============================================================================
+  // Filter settings for the Problems panel to reduce noise
+  "problems.showCurrentInStatus": true,
+  // ============================================================================
+  // File Associations
+  // ============================================================================
+  // Ensure GitHub Actions workflows are recognized as YAML
+  "files.associations": {
+    ".github/workflows/*.yml": "yaml",
+    ".github/workflows/*.yaml": "yaml"
+  }
+}

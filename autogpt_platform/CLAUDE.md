@@ -47,6 +47,7 @@ mise run backend            # Run backend server
 mise run frontend           # Run frontend server
 mise run format             # Format all code
 mise run test               # Run all tests
+mise run deps:check         # Check for outdated dependencies
 mise run drift:full         # Run drift analysis
 mise run doctor             # Verify environment
 ```
@@ -56,6 +57,7 @@ mise run doctor             # Verify environment
 - `docker:*` - Docker/infrastructure tasks
 - `db:*` - Database tasks
 - `test:*` - Testing tasks
+- `deps:*` - Dependency management (check, update, preview)
 - `drift:*` - Drift analysis tasks
 - `build:*` - Build tasks with caching
 - `install:*` - Dependency installation
@@ -146,6 +148,47 @@ pnpm types
 - Only use Phosphor Icons
 - Never use `src/components/__legacy__/*` or deprecated `BackendAPI`
 
+## Dependency Management
+
+The platform provides safe dependency update tasks that respect semver constraints (no breaking changes):
+
+```bash
+# Check for outdated dependencies (read-only, always safe)
+mise run deps:check              # All projects
+mise run deps:check:frontend     # Frontend only
+mise run deps:check:backend      # Backend only
+mise run deps:check:libs         # Libs only
+
+# Preview updates without applying (dry-run, 100% safe)
+mise run deps:preview            # All projects
+mise run deps:preview:frontend   # Frontend only
+mise run deps:preview:backend    # Backend only
+mise run deps:preview:libs       # Libs only
+
+# Apply safe updates (respects semver constraints)
+mise run deps:update             # All projects (interactive)
+mise run deps:update:frontend    # Frontend (interactive pnpm)
+mise run deps:update:backend     # Backend (Poetry)
+mise run deps:update:libs        # Libs (Poetry, then rebuild backend)
+```
+
+**Safety Guarantees:**
+
+- Frontend: `pnpm update --interactive` lets you review each change
+- Backend/Libs: `poetry update` respects ^ and ~ constraints (no major version jumps)
+- All updates maintain semver compatibility to prevent breaking changes
+
+**Recommended Workflow:**
+
+```bash
+mise run deps:check    # 1. Check what's outdated
+mise run deps:preview  # 2. Preview changes
+mise run deps:update   # 3. Apply updates
+mise run test          # 4. Verify everything works
+```
+
+See `.serena/memories/dependency_management.md` for detailed documentation.
+
 ## Architecture Overview
 
 ### Backend Architecture
@@ -232,11 +275,13 @@ OPENAI_INTERNAL_BASE_URL=https://your-litellm-proxy.com/v1
 ```
 
 **Smart Defaulting**:
+
 - Both variables default to `https://api.openai.com/v1` for standard OpenAI usage
 - If `OPENAI_INTERNAL_BASE_URL` is not set, it inherits from `OPENAI_BASE_URL`
 - This allows separate routing for user blocks vs internal platform calls
 
 **Affected Components**:
+
 - User-facing blocks: `/backend/backend/blocks/llm.py` (LLM Block), `/backend/backend/blocks/codex.py` (Codex Block)
 - Internal utilities: `/backend/backend/util/clients.py` (embeddings generation)
 

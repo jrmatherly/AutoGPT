@@ -288,6 +288,120 @@ dir = "{{config_root}}/backend"
 run = "poetry run load-store-agents"
 
 # =============================================================================
+# Dependency Management Tasks
+# Safe dependency updates that respect semver constraints (no breaking changes)
+# =============================================================================
+
+[tasks."deps:check"]
+description = "Check for outdated dependencies across all projects (safe, read-only)"
+dir = "{{config_root}}"
+run = """
+echo "🔍 Checking outdated dependencies..."
+echo ""
+echo "=== Frontend (pnpm) ==="
+cd frontend && pnpm outdated --compatible || true
+echo ""
+echo "=== Backend (Poetry) ==="
+cd ../backend && poetry show --outdated --top-level || true
+echo ""
+echo "=== Libs (Poetry) ==="
+cd ../autogpt_libs && poetry show --outdated --top-level || true
+echo ""
+echo "✅ Check complete. Use 'mise run deps:update' to update safely."
+"""
+
+[tasks."deps:check:frontend"]
+description = "Check outdated frontend dependencies (pnpm, semver-compatible only)"
+dir = "{{config_root}}/frontend"
+run = "pnpm outdated --compatible"
+
+[tasks."deps:check:backend"]
+description = "Check outdated backend dependencies (Poetry, shows constraint-compatible)"
+dir = "{{config_root}}/backend"
+run = "poetry show --outdated --top-level"
+
+[tasks."deps:check:libs"]
+description = "Check outdated library dependencies (Poetry, shows constraint-compatible)"
+dir = "{{config_root}}/autogpt_libs"
+run = "poetry show --outdated --top-level"
+
+[tasks."deps:update"]
+description = "Update dependencies across all projects (safe, respects semver constraints)"
+dir = "{{config_root}}"
+run = """
+echo "🔄 Updating dependencies (respecting semver constraints)..."
+echo ""
+echo "=== Frontend (pnpm) ==="
+cd frontend && pnpm update --interactive
+echo ""
+echo "=== Backend (Poetry) ==="
+cd ../backend && poetry update
+echo ""
+echo "=== Libs (Poetry) ==="
+cd ../autogpt_libs && poetry update
+echo ""
+echo "✅ Dependencies updated. Run 'mise run test' to verify."
+"""
+
+[tasks."deps:update:frontend"]
+description = "Update frontend dependencies interactively (safe, respects semver in package.json)"
+dir = "{{config_root}}/frontend"
+run = "pnpm update --interactive"
+
+[tasks."deps:update:backend"]
+description = "Update backend dependencies (safe, respects ^ and ~ constraints in pyproject.toml)"
+dir = "{{config_root}}/backend"
+run = """
+echo "📦 Updating backend dependencies..."
+poetry update
+echo "✅ Backend dependencies updated"
+echo "💡 Run 'mise run test:backend' to verify"
+"""
+
+[tasks."deps:update:libs"]
+description = "Update library dependencies (safe, respects ^ and ~ constraints in pyproject.toml)"
+dir = "{{config_root}}/autogpt_libs"
+run = """
+echo "📦 Updating library dependencies..."
+poetry update
+echo "✅ Library dependencies updated"
+echo "💡 Rebuild backend to pick up changes: 'cd ../backend && poetry install'"
+"""
+
+[tasks."deps:preview"]
+description = "Preview dependency updates without applying (dry-run, 100% safe)"
+dir = "{{config_root}}"
+run = """
+echo "👁️  Previewing dependency updates (no changes will be made)..."
+echo ""
+echo "=== Frontend (pnpm) ==="
+cd frontend && pnpm outdated --long || true
+echo ""
+echo "=== Backend (Poetry) ==="
+cd ../backend && poetry update --dry-run
+echo ""
+echo "=== Libs (Poetry) ==="
+cd ../autogpt_libs && poetry update --dry-run
+echo ""
+echo "✅ Preview complete. Use 'mise run deps:update' to apply."
+"""
+
+[tasks."deps:preview:frontend"]
+description = "Preview frontend dependency updates (read-only)"
+dir = "{{config_root}}/frontend"
+run = "pnpm outdated --long"
+
+[tasks."deps:preview:backend"]
+description = "Preview backend dependency updates without applying (dry-run)"
+dir = "{{config_root}}/backend"
+run = "poetry update --dry-run"
+
+[tasks."deps:preview:libs"]
+description = "Preview library dependency updates without applying (dry-run)"
+dir = "{{config_root}}/autogpt_libs"
+run = "poetry update --dry-run"
+
+# =============================================================================
 # Drift Analysis Tasks (Grouped)
 # NOTE: The 'drift' CLI tool must be installed separately.
 # Install via: pip install drift-analyzer (or your package manager)
