@@ -1,0 +1,36 @@
+{
+  // ============================================================================
+  // Python Testing Configuration
+  // ============================================================================
+  // Enable pytest for Python testing
+  "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+  "python.testing.pytestEnabled": true,
+  "python.testing.unittestEnabled": false,
+  "python.testing.nosetestsEnabled": false,
+  // Pytest arguments for discovery and execution
+  "python.testing.pytestArgs": [
+    "--verbose"
+  ],
+  // Auto-discover tests on save
+  "python.testing.autoTestDiscoverOnSaveEnabled": true,
+  // ============================================================================
+  // Python Environment Configuration
+  // ============================================================================
+  // Default Python interpreter (mise-managed Python)
+  // "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+  // Enable linting
+  "python.linting.enabled": true,
+  "python.linting.pylintEnabled": false,
+  "python.linting.flake8Enabled": false,
+  "python.linting.mypyEnabled": false,
+  // Formatting
+  "python.formatting.provider": "none",
+  "[python]": {
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "explicit",
+      "source.organizeImports": "explicit"
+    }
+  }
+}

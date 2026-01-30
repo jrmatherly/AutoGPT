@@ -5,7 +5,7 @@
       "name": "Frontend: Server Side",
       "type": "node-terminal",
       "request": "launch",
-      "cwd": "${workspaceFolder}/autogpt_platform",
+      "cwd": "${workspaceFolder:[root]}/autogpt_platform",
       "command": "mise run frontend"
     },
     {
@@ -19,7 +19,7 @@
       "type": "node-terminal",
       "request": "launch",
       "command": "mise run frontend",
-      "cwd": "${workspaceFolder}/autogpt_platform",
+      "cwd": "${workspaceFolder:[root]}/autogpt_platform",
       "serverReadyAction": {
         "pattern": "- Local:.+(https?://.+)",
         "uriFormat": "%s",
@@ -31,13 +31,73 @@
       "type": "debugpy",
       "request": "launch",
       "module": "backend.app",
+      "console": "integratedTerminal",
       "env": {
         "OBJC_DISABLE_INITIALIZE_FORK_SAFETY": "YES"
       },
-      "envFile": "${workspaceFolder}/autogpt_platform/backend/.env",
+      "envFile": "${workspaceFolder:[root]}/autogpt_platform/backend/.env",
       "justMyCode": false,
-      "cwd": "${workspaceFolder}/autogpt_platform/backend",
-      "python": "${workspaceFolder}/autogpt_platform/backend/.venv/bin/python"
+      "cwd": "${workspaceFolder:[root]}/autogpt_platform/backend",
+      "python": "${workspaceFolder:[root]}/autogpt_platform/backend/.venv/bin/python"
+    },
+    {
+      "name": "Backend: REST Server Only",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "backend.rest",
+      "console": "integratedTerminal",
+      "env": {
+        "OBJC_DISABLE_INITIALIZE_FORK_SAFETY": "YES"
+      },
+      "envFile": "${workspaceFolder:[root]}/autogpt_platform/backend/.env",
+      "justMyCode": false,
+      "cwd": "${workspaceFolder:[root]}/autogpt_platform/backend",
+      "python": "${workspaceFolder:[root]}/autogpt_platform/backend/.venv/bin/python"
+    },
+    {
+      "name": "Backend: WebSocket Server Only",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "backend.ws",
+      "console": "integratedTerminal",
+      "env": {
+        "OBJC_DISABLE_INITIALIZE_FORK_SAFETY": "YES"
+      },
+      "envFile": "${workspaceFolder:[root]}/autogpt_platform/backend/.env",
+      "justMyCode": false,
+      "cwd": "${workspaceFolder:[root]}/autogpt_platform/backend",
+      "python": "${workspaceFolder:[root]}/autogpt_platform/backend/.venv/bin/python"
+    },
+    {
+      "name": "Backend: Executor Service Only",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "backend.exec",
+      "console": "integratedTerminal",
+      "env": {
+        "OBJC_DISABLE_INITIALIZE_FORK_SAFETY": "YES"
+      },
+      "envFile": "${workspaceFolder:[root]}/autogpt_platform/backend/.env",
+      "justMyCode": false,
+      "cwd": "${workspaceFolder:[root]}/autogpt_platform/backend",
+      "python": "${workspaceFolder:[root]}/autogpt_platform/backend/.venv/bin/python"
+    },
+    {
+      "name": "Backend: Tests (Current File)",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "pytest",
+      "args": [
+        "${file}",
+        "-v",
+        "--ignore=backend/blocks/llm_test.py",
+        "--ignore=backend/blocks/test/test_block.py"
+      ],
+      "console": "integratedTerminal",
+      "envFile": "${workspaceFolder:[root]}/autogpt_platform/backend/.env",
+      "justMyCode": false,
+      "cwd": "${workspaceFolder:[root]}/autogpt_platform/backend",
+      "python": "${workspaceFolder:[root]}/autogpt_platform/backend/.venv/bin/python"
     }
   ],
   "compounds": [
@@ -47,7 +107,6 @@
         "Backend",
         "Frontend: Full Stack"
       ],
-      // "preLaunchTask": "${defaultBuildTask}",
       "stopAll": true,
       "presentation": {
         "hidden": false,

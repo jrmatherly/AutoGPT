@@ -64,21 +64,21 @@
   // Python Testing Configuration
   // ============================================================================
   // Enable pytest for Python testing
-  "python.testing.pytestEnabled": true,
+  "python.testing.pytestEnabled": false,
   "python.testing.unittestEnabled": false,
   "python.testing.nosetestsEnabled": false,
   // Pytest arguments for discovery and execution
-  "python.testing.pytestArgs": [
-    "--no-cov",
-    "--verbose"
-  ],
+  // "python.testing.pytestArgs": [
+  //   "--no-cov",
+  //   "--verbose"
+  // ],
   // Auto-discover tests on save
-  "python.testing.autoTestDiscoverOnSaveEnabled": true,
+  "python.testing.autoTestDiscoverOnSaveEnabled": false,
   // ============================================================================
   // Python Environment Configuration
   // ============================================================================
   // Default Python interpreter (mise-managed Python)
-  // "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+  "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
   // Enable linting
   "python.linting.enabled": true,
   "python.linting.pylintEnabled": false,

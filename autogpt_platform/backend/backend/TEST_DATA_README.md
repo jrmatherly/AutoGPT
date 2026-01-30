@@ -58,7 +58,7 @@ docker compose up -d
 docker compose -f docker-compose.test.yaml --env-file ../.env up -d
 ```
 
-2. Run database migrations:
+1. Run database migrations:
 ```bash
 poetry run prisma migrate deploy
 ```
