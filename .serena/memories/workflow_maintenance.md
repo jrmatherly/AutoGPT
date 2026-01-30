@@ -198,6 +198,53 @@ Co-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>"
 - Check for deprecation warnings
 - Verify all jobs complete successfully
 
+## Duplication Cleanup Roadmap (January 2026)
+
+**Comprehensive Analysis**: `docs/github/workflows/DUPLICATION_CLEANUP_ANALYSIS.md` (693 lines)
+
+A systematic analysis of all 20 workflow files identified 5 major duplication patterns and created a 3-phase cleanup roadmap.
+
+### Phase 1: Action Version Standardization (PENDING)
+
+**Target**: Standardize all workflows to latest action versions
+
+| Action | Outdated | Target | Workflows to Update |
+|--------|----------|--------|---------------------|
+| actions/checkout | @v4 | @v6 | 7 workflows |
+| actions/setup-python | @v5 | @v6 | 1 workflow |
+| actions/setup-node | @v4 | @v6 | 1 workflow |
+
+**Impact**: Security improvements, 100% version consistency
+**Effort**: 30 minutes
+**Risk**: Very low
+**Status**: ⏳ Pending implementation
+
+### Phase 2: Composite Action for Python/Poetry (PLANNED)
+
+**Target**: Create `.github/actions/setup-python-poetry/action.yml`
+
+Currently 4 workflows duplicate ~100 lines of Python/Poetry setup:
+- copilot-setup-steps.yml
+- docs-block-sync.yml
+- docs-claude-review.yml
+- docs-enhance.yml
+
+**Impact**: 80% code reduction (~100 lines → ~20 lines), single source of truth
+**Effort**: 2 hours
+**Risk**: Low (requires testing)
+**Status**: 📋 Planned for after Phase 1
+
+### Phase 3: Documentation & Guidelines (PLANNED)
+
+**Target**: Update `docs/github/workflows/README.md` with workflow purposes and duplication prevention guidelines
+
+**Impact**: Improved contributor onboarding, prevention of future duplication
+**Effort**: 1 hour
+**Risk**: None
+**Status**: 📋 Planned
+
+**Analysis Details**: See `docs/github/workflows/DUPLICATION_CLEANUP_ANALYSIS.md` for complete implementation guides, risk assessments, and success metrics.
+
 ## Common Duplication Patterns
 
 ### Python/Poetry Setup (4 workflows)
