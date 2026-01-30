@@ -41,6 +41,24 @@ For platform development, see **[autogpt_platform/CLAUDE.md](autogpt_platform/CL
 | [docs/CLAUDE.md](docs/CLAUDE.md) | Documentation writing guidelines |
 | [docs/processes/RELEASE_PROCESS.md](docs/processes/RELEASE_PROCESS.md) | Release automation and versioning guide |
 
+### Documentation Placement Rules
+
+**CRITICAL**: Always place documentation in the `docs/` directory, NOT in `.github/workflows/` or other code directories.
+
+| Documentation Type | Correct Location | Examples |
+|--------------------|------------------|----------|
+| **GitHub Actions/Workflows** | `docs/github/workflows/` | Workflow analysis, migration docs, CI/CD documentation |
+| **Process Documentation** | `docs/processes/` | Release process, deployment guides, operational procedures |
+| **Development Tooling** | `docs/development/` | Mise setup, tool integrations, development environment |
+| **Platform Integration** | `docs/platform/` | OAuth guides, API integration, external services |
+| **Architecture & Design** | `docs/` (root) | ARCHITECTURE.md, API_REFERENCE.md, BLOCK_SDK.md |
+
+**Never create documentation in:**
+
+- `.github/workflows/` (reserved for YAML workflow files only)
+- `autogpt_platform/` subdirectories (except `autogpt_platform/CLAUDE.md`)
+- Root directory (except root-level docs: CLAUDE.md, README.md)
+
 ## Key Technologies
 
 ### Backend (Python)

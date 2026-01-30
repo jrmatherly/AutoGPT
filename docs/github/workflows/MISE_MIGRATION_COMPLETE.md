@@ -12,6 +12,7 @@ Successfully migrated all GitHub Actions workflows from manual tool installation
 ### Workflows Migrated
 
 | Workflow | Status | Changes |
+
 |----------|--------|---------|
 | platform-backend-ci.yml | ✅ Complete | Replaced Python/Poetry setup with mise-action, Python matrix testing preserved |
 | platform-frontend-ci.yml | ✅ Complete | Replaced Node.js setup with mise-action across 4 jobs (setup, lint, chromatic, e2e_test, integration_test) |
@@ -127,6 +128,7 @@ All workflows use:
 ## Code Reduction
 
 | Metric | Before | After | Reduction |
+
 |--------|--------|-------|-----------|
 | **Backend CI lines** | ~150 (setup code) | ~20 (mise setup) | ~87% |
 | **Frontend CI lines** | ~180 (5x Node setup) | ~25 (mise setup) | ~86% |
@@ -140,6 +142,7 @@ All workflows use:
 ### Before Migration
 
 | Environment | Python | Node | Poetry | pnpm |
+
 |-------------|--------|------|--------|------|
 | **Local** | mise.toml | mise.toml | mise.toml | mise.toml |
 | **CI** | Manual setup | Manual hardcoded | Manual script | Manual cache |
@@ -149,6 +152,7 @@ All workflows use:
 ### After Migration
 
 | Environment | Python | Node | Poetry | pnpm |
+
 |-------------|--------|------|--------|------|
 | **Local** | mise.toml | mise.toml | mise.toml | mise.toml |
 | **CI** | mise.toml | mise.toml | mise.toml | mise.toml |

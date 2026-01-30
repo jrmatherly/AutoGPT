@@ -26,6 +26,45 @@
 
 ---
 
+## Documentation Organization Structure
+
+### Where to Place Documentation
+
+**CRITICAL**: Always create documentation in the `docs/` directory, organized by category.
+
+| Category | Location | Purpose | Examples |
+|----------|----------|---------|----------|
+| **GitHub Actions** | `docs/github/workflows/` | Workflow analysis, CI/CD migration docs | MISE_MIGRATION_COMPLETE.md, WORKFLOWS.md |
+| **Processes** | `docs/processes/` | Release process, deployment procedures | RELEASE_PROCESS.md, RELEASE_TASK_ANALYSIS.md |
+| **Development** | `docs/development/` | Tool setup, development environment | MISE_MIGRATION.md, DRIFT_INTEGRATION.md |
+| **Platform** | `docs/platform/` | Integration guides, OAuth flows | oauth-guide.md, api-guide.md |
+| **Architecture** | `docs/` (root level) | System design, API reference | ARCHITECTURE.md, API_REFERENCE.md |
+
+### Documentation Anti-Patterns
+
+**Never create documentation in these locations:**
+
+❌ `.github/workflows/` - Reserved for YAML workflow files only
+❌ `autogpt_platform/backend/` - Source code directory
+❌ `autogpt_platform/frontend/` - Source code directory  
+❌ Root directory - Except root-level docs (CLAUDE.md, README.md)
+
+### When Creating New Documentation
+
+1. **Determine the category**: GitHub workflows, processes, development tooling, platform integration, or architecture
+2. **Choose the correct `docs/` subdirectory** based on the table above
+3. **Use descriptive filenames** in SCREAMING_SNAKE_CASE for analysis/reports, kebab-case for guides
+4. **Update this index** if creating a new frequently-referenced document
+
+### Enforcement
+
+This structure is enforced through:
+- CLAUDE.md documentation placement rules
+- Serena memory (this file) for cross-session consistency
+- Code review to catch misplaced documentation
+
+---
+
 ## Quick Access
 
 **For efficient context loading** (94% token reduction vs full codebase exploration):
@@ -42,3 +81,5 @@ cat PROJECT_INDEX.json
 - API Reference: `docs/API_REFERENCE.md`
 - Block SDK: `docs/BLOCK_SDK.md`
 - Platform Guide: `autogpt_platform/CLAUDE.md`
+- GitHub Workflows: `docs/github/workflows/WORKFLOWS.md`
+- Release Process: `docs/processes/RELEASE_PROCESS.md`

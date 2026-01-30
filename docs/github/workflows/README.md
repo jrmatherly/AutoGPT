@@ -5,8 +5,11 @@ This directory contains documentation for GitHub Actions workflows, upgrades, an
 ## Quick Navigation
 
 | Document | Purpose | When to Use |
+
 |----------|---------|-------------|
 | **[WORKFLOWS.md](WORKFLOWS.md)** | Workflow analysis and upgrades | Understanding workflow structure and updates |
+| **[DUPLICATION_ANALYSIS_2026.md](DUPLICATION_ANALYSIS_2026.md)** | Duplication analysis & validation | Understanding workflow cleanup rationale (Jan 2026) |
+| **[CLEANUP_PLAN_2026.md](CLEANUP_PLAN_2026.md)** | Actionable cleanup plan | Executing workflow consolidation (Jan 2026) |
 | **[UPGRADE_NOTES_2026.md](UPGRADE_NOTES_2026.md)** | January 2026 action upgrades | Reference for 2026 workflow updates |
 | **[WORKFLOW_SCRIPTS_ANALYSIS_2026.md](WORKFLOW_SCRIPTS_ANALYSIS_2026.md)** | Workflow script analysis | Understanding workflow helper scripts |
 
@@ -26,6 +29,13 @@ Detailed analysis and reports are preserved in **[../../../.archive/github/workf
 
 ## Recent Updates
 
+**January 2026 Workflow Analysis & Cleanup:**
+- 🔍 **NEW:** Comprehensive duplication analysis completed ([DUPLICATION_ANALYSIS_2026.md](DUPLICATION_ANALYSIS_2026.md))
+- 📋 **NEW:** Actionable cleanup plan created ([CLEANUP_PLAN_2026.md](CLEANUP_PLAN_2026.md))
+- ⚠️ **Finding:** 3 duplicate CI workflows causing 66% waste in execution
+- ⚠️ **Finding:** Service definitions duplicated across 6 workflows
+- ✅ **Status:** Validated and ready for implementation
+
 **January 2026 Workflow Upgrades:**
 - ✅ Updated all GitHub Actions to latest versions (v4→v6, etc.)
 - ✅ Created composite action for Prisma migrations (eliminated duplication)
@@ -33,7 +43,7 @@ Detailed analysis and reports are preserved in **[../../../.archive/github/workf
 - ✅ Migrated to setup-python@v6 built-in caching
 - ✅ Added security enhancements (concurrency, permissions)
 
-See **[UPGRADE_NOTES_2026.md](UPGRADE_NOTES_2026.md)** for complete details.
+See **[UPGRADE_NOTES_2026.md](UPGRADE_NOTES_2026.md)** for upgrade details.
 
 ## Workflow Structure
 

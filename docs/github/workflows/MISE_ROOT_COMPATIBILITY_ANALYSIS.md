@@ -20,6 +20,7 @@
 All platform CI workflows currently use:
 
 | Workflow | mise-action working_directory | mise run working-directory | Impact |
+
 |----------|-------------------------------|----------------------------|---------|
 | platform-backend-ci.yml | `autogpt_platform` | `autogpt_platform` | ✅ Compatible |
 | platform-frontend-ci.yml | `autogpt_platform` | `autogpt_platform` | ✅ Compatible |
@@ -301,6 +302,7 @@ This allows:
 ## Decision Matrix
 
 | Criterion | Option A (No Changes) | Option B (Optimize) |
+
 |-----------|----------------------|---------------------|
 | Risk Level | 🟢 Low | 🟡 Medium |
 | Implementation Effort | 🟢 None | 🟡 Medium |
@@ -337,8 +339,8 @@ The root mise.toml changes are **fully backward compatible** with existing workf
 
 - `/mise.toml` - Root mise configuration with task delegation
 - `/autogpt_platform/mise.toml` - Platform mise configuration with task implementations
-- `.github/workflows/MISE_MIGRATION_COMPLETE.md` - Original mise-action migration
-- `.github/workflows/IMPLEMENTATION_VALIDATED.md` - Migration validation
+- `docs/github/workflows/MISE_MIGRATION_COMPLETE.md` - Original mise-action migration
+- `docs/github/workflows/IMPLEMENTATION_VALIDATED.md` - Migration validation
 
 ---
 

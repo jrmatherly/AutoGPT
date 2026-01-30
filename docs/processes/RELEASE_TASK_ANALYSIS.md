@@ -401,17 +401,17 @@ validate_version_sync() {
 
 ### Phase 2: Validation & Documentation
 
-5. **Add validation checks**
+1. **Add validation checks**
    - Verify all version files updated
    - Check git tag creation
    - Validate GitHub release
 
-6. **Update documentation**
+2. **Update documentation**
    - Add release process to CLAUDE.md
    - Document conventional commit usage
    - Create release checklist
 
-7. **Team communication**
+3. **Team communication**
    - Announce new release process
    - Provide usage examples
    - Document rollback procedures
@@ -615,6 +615,7 @@ Developer                    GitHub                      Infrastructure
 ## Comparison: AgentOS vs AutoGPT
 
 | Aspect | AgentOS | AutoGPT (Proposed) |
+
 |--------|---------|---------------------|
 | **Project Type** | Single Next.js app | Monorepo (FE + BE + Libs) |
 | **Version Files** | 1 (package.json) | 3 (package.json + 2x pyproject.toml) |
@@ -674,6 +675,6 @@ Developer                    GitHub                      Infrastructure
 
 **Related Documentation:**
 
-- `.github/workflows/MISE_ROOT_COMPATIBILITY_ANALYSIS.md`
+- `docs/github/workflows/MISE_ROOT_COMPATIBILITY_ANALYSIS.md`
 - `.serena/memories/github_workflows_2026_upgrade.md`
 - `.serena/memories/workflow_maintenance.md`
