@@ -41,6 +41,7 @@ cat KONG_UPGRADE.md
 |----------|---------|
 | [SECURITY_HARDENING.md](SECURITY_HARDENING.md) | Complete security hardening guide |
 | [KONG_UPGRADE.md](KONG_UPGRADE.md) | Kong Gateway 2.8.1 → 3.4 LTS upgrade |
+| [ENHANCEMENT_OPPORTUNITIES.md](ENHANCEMENT_OPPORTUNITIES.md) | Production readiness and optimization recommendations |
 | [IMPLEMENTATION_SUMMARY.md](IMPLEMENTATION_SUMMARY.md) | Implementation overview and validation |
 | [scripts/README.md](scripts/README.md) | Security scripts documentation |
 
