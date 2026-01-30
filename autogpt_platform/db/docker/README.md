@@ -37,23 +37,37 @@ cat KONG_UPGRADE.md
 
 ## Documentation
 
+### Core Documentation
+
 | Document | Purpose |
 |----------|---------|
 | [SECURITY_HARDENING.md](SECURITY_HARDENING.md) | Complete security hardening guide |
 | [KONG_UPGRADE.md](KONG_UPGRADE.md) | Kong Gateway 2.8.1 → 3.4 LTS upgrade |
-| [ENHANCEMENT_OPPORTUNITIES.md](ENHANCEMENT_OPPORTUNITIES.md) | Production readiness and optimization recommendations |
-| [IMPLEMENTATION_SUMMARY.md](IMPLEMENTATION_SUMMARY.md) | Implementation overview and validation |
-| [scripts/README.md](scripts/README.md) | Security scripts documentation |
+| [ENHANCEMENT_OPPORTUNITIES.md](ENHANCEMENT_OPPORTUNITIES.md) | Production readiness research and recommendations |
+| [IMPLEMENTATION_SUMMARY.md](IMPLEMENTATION_SUMMARY.md) | Enhancement implementation summary and validation |
 
-## Security Scripts
+### Production Setup Guides
 
-Located in `scripts/`:
+| Guide | Purpose |
+|-------|---------|
+| [SSL_SETUP_GUIDE.md](SSL_SETUP_GUIDE.md) | SSL/TLS configuration with Nginx or Caddy |
+| [SMTP_SETUP_GUIDE.md](SMTP_SETUP_GUIDE.md) | Production SMTP configuration and testing |
+| [HEALTH_CHECK_OPTIMIZATION.md](HEALTH_CHECK_OPTIMIZATION.md) | Docker health check optimization guide |
+| [LOG_AGGREGATION_GUIDE.md](LOG_AGGREGATION_GUIDE.md) | Centralized logging with Loki + Promtail |
 
-- `generate-secrets.sh` - Generate production secrets
-- `rotate-secrets.sh` - Zero-downtime secret rotation
-- `validate-config.sh` - Pre-deployment validation
+### Scripts Documentation
 
-See [scripts/README.md](scripts/README.md) for detailed usage.
+| Script | Purpose |
+|--------|---------|
+| [scripts/README.md](scripts/README.md) | Security scripts overview |
+| `scripts/generate-secrets.sh` | Generate production secrets |
+| `scripts/rotate-secrets.sh` | Zero-downtime secret rotation |
+| `scripts/validate-config.sh` | Pre-deployment validation |
+| `scripts/setup-ssl.sh` | Automated SSL/TLS setup |
+| `scripts/test-smtp.sh` | SMTP configuration testing |
+| `scripts/backup-database.sh` | Automated database backups |
+| `scripts/restore-database.sh` | Disaster recovery |
+| `scripts/verify-health.sh` | Health status monitoring |
 
 ## Additional Resources
 
