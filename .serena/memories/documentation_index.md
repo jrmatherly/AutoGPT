@@ -18,6 +18,11 @@
 | **Pre-commit checklist** | [task_completion_checklist](task_completion_checklist.md) (Serena memory) |
 | **API quick reference** | [api_reference](api_reference.md) (Serena memory) |
 | **Blocks catalog** | [blocks_catalog](blocks_catalog.md) (Serena memory) |
+| **Microsoft Learn MCP integration** | [mcp_microsoft_learn_integration](mcp_microsoft_learn_integration.md) (Serena memory) |
+| **Dependency management** | [dependency_management](dependency_management.md) (Serena memory) |
+| **Unit testing patterns** | [unit_testing_patterns](unit_testing_patterns.md) (Serena memory) |
+| **Workflow maintenance** | [workflow_maintenance](workflow_maintenance.md) (Serena memory) |
+| **LiteLLM Proxy configuration** | [litellm_proxy_configuration](litellm_proxy_configuration.md) (Serena memory) |
 
 ---
 

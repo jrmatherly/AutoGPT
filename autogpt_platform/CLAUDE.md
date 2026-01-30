@@ -189,6 +189,34 @@ mise run test          # 4. Verify everything works
 
 See `.serena/memories/dependency_management.md` for detailed documentation.
 
+## Microsoft Learn MCP Server
+
+When working with Microsoft ecosystem technologies (TypeScript, Playwright, GitHub Actions), use the **microsoft-learn** MCP server for official documentation:
+
+**Quick Lookups**:
+- TypeScript concepts: `microsoft_docs_search "TypeScript generics"`
+- Playwright testing: `microsoft_code_sample_search "Playwright selectors" language="typescript"`
+- GitHub Actions: `microsoft_docs_fetch` (workflow optimization guide)
+
+**Covered Technologies**:
+- **TypeScript**: Official language docs and API reference
+- **Playwright**: Microsoft-maintained testing framework
+- **GitHub Actions**: Microsoft-owned CI/CD platform
+- **React/Next.js**: Partial coverage (use official docs as primary)
+- **VS Code**: Editor configuration and extensions
+
+**When to Use**:
+- ✅ Official API documentation needed
+- ✅ Working code examples required
+- ✅ TypeScript/Playwright/GitHub Actions questions
+
+**When NOT to Use**:
+- ❌ AutoGPT-specific implementation details (use Serena/Grep)
+- ❌ Third-party library documentation (use Context7 or web search)
+- ❌ Community best practices (use web search)
+
+See `.serena/memories/mcp_microsoft_learn_integration.md` for complete guide.
+
 ## Architecture Overview
 
 ### Backend Architecture
