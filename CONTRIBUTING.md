@@ -5,7 +5,6 @@ which is part of our [wiki].
 
 [contribution guide]: https://github.com/jrmatherly/AutoGPT/wiki/Contributing
 [wiki]: https://github.com/jrmatherly/AutoGPT/wiki
-[roadmap]: https://github.com/jrmatherly/AutoGPT/discussions/6971
 
 ## Prerequisites
 
@@ -14,6 +13,7 @@ Before contributing, ensure you have the following installed:
 ### Required Tools
 
 1. **mise** (2026.1.0 or newer) - Development tool manager
+
    ```bash
    curl https://mise.run | sh
    eval "$(mise activate bash)"  # Add to ~/.bashrc or ~/.zshrc
@@ -27,6 +27,7 @@ Before contributing, ensure you have the following installed:
 ### Tools Managed by mise
 
 The following are automatically installed and managed by mise:
+
 - Python 3.13.1
 - Node.js 22.22.0
 - pnpm 10.28.2+
@@ -62,6 +63,7 @@ mise trust && mise run setup
 ```
 
 This will:
+
 - Install all required tools (Python, Node, pnpm, Poetry)
 - Install backend and frontend dependencies
 - Run database migrations
@@ -91,6 +93,7 @@ mise run frontend
 ```
 
 Access the application:
+
 - Frontend: http://localhost:3000
 - Backend API: http://localhost:8000
 - OpenAPI docs: http://localhost:8000/docs
@@ -113,7 +116,8 @@ mise run test            # Run all tests
 - Clearly explain your changes
 
 **Example commit messages:**
-```
+
+```git
 feat(backend): add new Twitter DM block
 fix(frontend): resolve infinite loop in agent builder
 docs(platform): update CLAUDE.md with mise commands

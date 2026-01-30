@@ -27,13 +27,15 @@ Before proceeding with the installation, ensure your system meets the following 
   - Git (2.30 or newer)
 
 **Note:** The following tools are managed automatically by mise:
-  - Python 3.13
-  - Node.js 22.x
-  - pnpm 10.28.2+
-  - Poetry 2.3.1+
+
+- Python 3.13
+- Node.js 22.x
+- pnpm 10.28.2+
+- Poetry 2.3.1+
 
 **Optional:**
-  - VSCode (1.60 or newer) or any modern code editor
+
+- VSCode (1.60 or newer) or any modern code editor
 
 #### Network Requirements
 

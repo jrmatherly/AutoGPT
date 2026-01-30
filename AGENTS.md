@@ -14,9 +14,11 @@ See `docs/platform/getting-started.md` for setup instructions.
 ## Code style
 
 **Recommended (mise):**
+
 - Format all code: `mise run format` (formats both backend + frontend)
 
 **Alternative (direct):**
+
 - Format Python code: `poetry run format`
 - Format frontend code: `pnpm format`
 
@@ -49,11 +51,13 @@ See `/frontend/CONTRIBUTING.md` for complete patterns. Quick reference:
 ## Testing
 
 **Recommended (mise):**
+
 - All tests: `mise run test` (runs both backend + frontend tests)
 - Backend only: `mise run test:backend`
 - Frontend only: `mise run test:frontend`
 
 **Alternative (direct):**
+
 - Backend: `poetry run test` (runs pytest with docker-based postgres + prisma)
 - Frontend: `pnpm test` or `pnpm test-ui` for Playwright tests
 
