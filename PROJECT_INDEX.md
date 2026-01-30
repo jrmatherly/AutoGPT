@@ -227,6 +227,19 @@ pnpm dev
 | Block SDK | `docs/content/platform/block-sdk-guide.md` | Creating blocks |
 | Release Process | `docs/processes/RELEASE_PROCESS.md` | Release automation guide |
 
+### Supabase Production Documentation
+
+| Doc | Path | Purpose |
+|-----|------|---------|
+| **Enhancement Summary** | `autogpt_platform/db/docker/IMPLEMENTATION_SUMMARY.md` | Production enhancements overview |
+| **SSL/TLS Setup** | `autogpt_platform/db/docker/SSL_SETUP_GUIDE.md` | HTTPS configuration (Nginx/Caddy) |
+| **SMTP Setup** | `autogpt_platform/db/docker/SMTP_SETUP_GUIDE.md` | Production email configuration |
+| **Health Checks** | `autogpt_platform/db/docker/HEALTH_CHECK_OPTIMIZATION.md` | Docker health optimization |
+| **Log Aggregation** | `autogpt_platform/db/docker/LOG_AGGREGATION_GUIDE.md` | Centralized logging (Loki) |
+| **Enhancements** | `autogpt_platform/db/docker/ENHANCEMENT_OPPORTUNITIES.md` | Research findings & roadmap |
+| **Security** | `autogpt_platform/db/docker/SECURITY_HARDENING.md` | Security hardening guide |
+| **Kong Upgrade** | `autogpt_platform/db/docker/KONG_UPGRADE.md` | Kong Gateway upgrade guide |
+
 ---
 
 ## 🔌 MCP Server Integration
@@ -236,11 +249,13 @@ pnpm dev
 | **microsoft-learn** | `.serena/memories/mcp_microsoft_learn_integration.md` | Official Microsoft docs (TypeScript, Playwright, GitHub Actions) |
 
 **Available Tools**:
+
 - `microsoft_docs_search`: Quick documentation lookups (up to 10 content chunks)
 - `microsoft_code_sample_search`: Code examples (up to 20 samples, language filter available)
 - `microsoft_docs_fetch`: Full documentation pages in markdown format
 
 **Covered Technologies**:
+
 - ✅ TypeScript (official language docs)
 - ✅ Playwright (Microsoft-maintained testing framework)
 - ✅ GitHub Actions (Microsoft-owned CI/CD platform)
