@@ -1,0 +1,159 @@
+# Promtail Configuration for Supabase Log Collection
+# Grafana Promtail: Agent that ships logs to Loki
+#
+# This configuration collects logs from:
+# - All Docker containers (Supabase services)
+# - System logs (optional)
+# - Application logs with proper labeling
+
+server:
+  http_listen_port: 9080
+  grpc_listen_port: 0
+  log_level: info
+
+# Position tracking (tracks which logs have been sent to Loki)
+positions:
+  filename: /tmp/positions.yaml
+
+# Loki client configuration
+clients:
+  - url: http://loki:3100/loki/api/v1/push
+    timeout: 10s
+    batchwait: 1s
+    batchsize: 1048576  # 1MB
+
+# Scrape configurations
+scrape_configs:
+  # ==============================================================================
+  # Docker Container Logs
+  # ==============================================================================
+  - job_name: docker
+    docker_sd_configs:
+      - host: unix:///var/run/docker.sock
+        refresh_interval: 5s
+        filters:
+          - name: label
+            values: ["com.docker.compose.project=supabase"]
+
+    relabel_configs:
+      # Container name
+      - source_labels: ['__meta_docker_container_name']
+        regex: '/(.*)'
+        target_label: 'container'
+
+      # Container ID (short)
+      - source_labels: ['__meta_docker_container_id']
+        regex: '([0-9a-f]{12}).*'
+        target_label: 'container_id'
+
+      # Service name from compose
+      - source_labels: ['__meta_docker_container_label_com_docker_compose_service']
+        target_label: 'service'
+
+      # Project name
+      - source_labels: ['__meta_docker_container_label_com_docker_compose_project']
+        target_label: 'project'
+
+      # Image name
+      - source_labels: ['__meta_docker_container_label_com_docker_compose_image']
+        target_label: 'image'
+
+    pipeline_stages:
+      # Extract log level from common formats
+      - match:
+          selector: '{container=~"supabase-.*"}'
+          stages:
+            # JSON log parsing (many Supabase services use JSON logging)
+            - json:
+                expressions:
+                  level: level
+                  message: msg
+                  timestamp: time
+                  error: error
+
+            # Extract log level from text logs
+            - regex:
+                expression: '(?P<level>DEBUG|INFO|WARN|ERROR|FATAL)'
+
+            # Set log level label
+            - labels:
+                level:
+
+            # Timestamp extraction
+            - timestamp:
+                source: timestamp
+                format: RFC3339Nano
+
+      # PostgreSQL specific parsing
+      - match:
+          selector: '{service="db"}'
+          stages:
+            - regex:
+                expression: '^\[(?P<timestamp>.*?)\] (?P<level>\w+):\s+(?P<message>.*)'
+            - labels:
+                level:
+            - timestamp:
+                source: timestamp
+                format: '2006-01-02 15:04:05.000 MST'
+
+      # Kong/Nginx access log parsing
+      - match:
+          selector: '{service="kong"}'
+          stages:
+            - regex:
+                expression: '(?P<remote_addr>[\d\.]+) - (?P<remote_user>\S+) \[(?P<timestamp>.*?)\] "(?P<method>\S+) (?P<path>\S+) (?P<protocol>\S+)" (?P<status>\d+) (?P<body_bytes_sent>\d+)'
+            - labels:
+                method:
+                status:
+            - timestamp:
+                source: timestamp
+                format: '02/Jan/2006:15:04:05 -0700'
+
+      # Auth service (GoTrue) parsing
+      - match:
+          selector: '{service="auth"}'
+          stages:
+            - json:
+                expressions:
+                  level: level
+                  msg: msg
+                  user_id: user_id
+                  email: email
+            - labels:
+                level:
+
+      # Drop health check logs to reduce noise
+      - match:
+          selector: '{container=~"supabase-.*"}'
+          stages:
+            - drop:
+                expression: '.*health.*'
+                drop_counter_reason: health_check
+
+  # ==============================================================================
+  # System Logs (optional, uncomment to enable)
+  # ==============================================================================
+  # - job_name: system
+  #   static_configs:
+  #     - targets:
+  #         - localhost
+  #       labels:
+  #         job: varlogs
+  #         __path__: /var/log/*log
+  #
+  #   pipeline_stages:
+  #     - match:
+  #         selector: '{job="varlogs"}'
+  #         stages:
+  #           - regex:
+  #               expression: '^(?P<timestamp>\w+\s+\d+\s+\d+:\d+:\d+) (?P<hostname>\S+) (?P<service>\S+)(\[(?P<pid>\d+)\])?: (?P<message>.*)'
+  #           - labels:
+  #               service:
+  #           - timestamp:
+  #               source: timestamp
+  #               format: 'Jan _2 15:04:05'
+
+# Limits
+limits_config:
+  readline_rate: 10000
+  readline_burst: 20000

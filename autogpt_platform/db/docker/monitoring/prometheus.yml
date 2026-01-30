@@ -1,0 +1,70 @@
+# Prometheus Configuration for Supabase Monitoring
+# Scrapes metrics from Postgres, Kong, and system metrics
+
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+  external_labels:
+    cluster: "supabase-selfhosted"
+    environment: "production"
+
+# Alertmanager configuration (optional - uncomment if using)
+# alerting:
+#   alertmanagers:
+#     - static_configs:
+#         - targets:
+#           - alertmanager:9093
+
+# Load rules once and periodically evaluate them
+rule_files:
+  # - "alerts/*.yml"
+
+scrape_configs:
+  # Prometheus self-monitoring
+  - job_name: "prometheus"
+    static_configs:
+      - targets: ["localhost:9090"]
+        labels:
+          service: "prometheus"
+
+  # PostgreSQL metrics via postgres_exporter
+  - job_name: "postgres"
+    static_configs:
+      - targets: ["postgres_exporter:9187"]
+        labels:
+          service: "postgresql"
+          database: "supabase"
+
+  # Kong API Gateway metrics
+  # Note: Requires Kong admin API to be accessible
+  # If Kong admin API is not exposed, comment this out
+  - job_name: "kong"
+    static_configs:
+      - targets: ["kong:8001"]
+        labels:
+          service: "kong"
+    metrics_path: "/metrics"
+    scheme: "http"
+
+  # System metrics via node_exporter
+  - job_name: "node"
+    static_configs:
+      - targets: ["node_exporter:9100"]
+        labels:
+          service: "node-exporter"
+
+  # Docker container metrics (if Docker daemon metrics are enabled)
+  # Uncomment if you've enabled Docker metrics endpoint
+  # - job_name: 'docker'
+  #   static_configs:
+  #     - targets: ['host.docker.internal:9323']
+  #       labels:
+  #         service: 'docker'
+
+  # Additional Supabase services can be added here
+  # Example: If services expose Prometheus metrics endpoints
+  # - job_name: 'realtime'
+  #   static_configs:
+  #     - targets: ['realtime:9091']
+  #       labels:
+  #         service: 'realtime'

@@ -1,0 +1,176 @@
+# Health Check Optimized Configuration Overrides
+#
+# This file contains optimized health check configurations for production deployments.
+# Use it as an override file with your existing docker-compose.yml:
+#
+# Usage:
+#   docker compose -f docker-compose.yml -f docker-compose.healthcheck-optimized.yml up -d
+#
+# Or merge these configurations into your main docker-compose.yml file.
+#
+# Health Check Tiers:
+#   Tier 1 (Critical): timeout=10s, interval=10s, retries=5, start_period=30s
+#   Tier 2 (Standard): timeout=5s, interval=10s, retries=3, start_period=20s
+#   Tier 3 (Support):  timeout=5s, interval=15s, retries=3, start_period=10s
+
+name: supabase
+
+services:
+  # ==============================================================================
+  # TIER 1: CRITICAL SERVICES
+  # ==============================================================================
+
+  db:
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "postgres", "-h", "localhost"]
+      timeout: 10s
+      interval: 10s
+      retries: 5
+      start_period: 30s
+
+  auth:
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "wget",
+          "--no-verbose",
+          "--tries=1",
+          "--spider",
+          "http://localhost:9999/health",
+        ]
+      timeout: 10s
+      interval: 10s
+      retries: 5
+      start_period: 30s
+
+  kong:
+    healthcheck:
+      test: ["CMD", "kong", "health"]
+      timeout: 10s
+      interval: 10s
+      retries: 5
+      start_period: 30s
+
+  # ==============================================================================
+  # TIER 2: STANDARD SERVICES
+  # ==============================================================================
+
+  rest:
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "curl",
+          "-sSfL",
+          "--head",
+          "-o",
+          "/dev/null",
+          "-H",
+          "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyAgCiAgICAicm9sZSI6ICJhbm9uIiwKICAgICJpc3MiOiAic3VwYWJhc2UtZGVtbyIsCiAgICAiaWF0IjogMTY0MTc2OTIwMCwKICAgICJleHAiOiAxNzk5NTM1NjAwCn0.dc_X5iR_VP_qT0zsiyj_I_OZ2T9FtRU2BBNWN8Bu4GE",
+          "http://localhost:3000/",
+        ]
+      timeout: 5s
+      interval: 10s
+      retries: 3
+      start_period: 20s
+
+  realtime:
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "curl",
+          "-sSfL",
+          "--head",
+          "-o",
+          "/dev/null",
+          "http://127.0.0.1:4000/api/health",
+        ]
+      timeout: 5s
+      interval: 10s
+      retries: 3
+      start_period: 20s
+
+  storage:
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "wget",
+          "--no-verbose",
+          "--tries=1",
+          "--spider",
+          "http://storage:5000/status",
+        ]
+      timeout: 5s
+      interval: 10s
+      retries: 3
+      start_period: 20s
+
+  meta:
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "curl",
+          "-sSfL",
+          "--head",
+          "-o",
+          "/dev/null",
+          "http://meta:8080/health",
+        ]
+      timeout: 5s
+      interval: 10s
+      retries: 3
+      start_period: 20s
+
+  # ==============================================================================
+  # TIER 3: SUPPORT SERVICES
+  # ==============================================================================
+
+  studio:
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "node",
+          "-e",
+          "fetch('http://studio:3000/api/platform/profile').then((r) => {if (r.status !== 200) throw new Error(r.status)})",
+        ]
+      timeout: 5s
+      interval: 15s
+      retries: 3
+      start_period: 10s
+
+  analytics:
+    healthcheck:
+      test: ["CMD", "curl", "http://localhost:4000/health"]
+      timeout: 5s
+      interval: 15s
+      retries: 3
+      start_period: 10s
+
+  imgproxy:
+    healthcheck:
+      test: ["CMD", "imgproxy", "health"]
+      timeout: 5s
+      interval: 15s
+      retries: 3
+      start_period: 10s
+
+  vector:
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "wget",
+          "--no-verbose",
+          "--tries=1",
+          "--spider",
+          "http://vector:9001/health",
+        ]
+      timeout: 5s
+      interval: 15s
+      retries: 3
+      start_period: 10s
