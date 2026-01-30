@@ -132,6 +132,15 @@ poetry run prisma generate
 poetry run gen-prisma-stub
 """
 
+[tasks."db:generate"]
+description = "Generate Prisma client types (no database required)"
+dir = "{{config_root}}/backend"
+run = """
+poetry run prisma generate
+poetry run gen-prisma-stub
+echo "✅ Prisma client types generated successfully"
+"""
+
 [tasks."db:rls-apply"]
 description = "Apply Row-Level Security policies"
 dir = "{{config_root}}"
@@ -257,6 +266,11 @@ run = "echo 'All tests complete'"
 description = "Run backend tests"
 dir = "{{config_root}}/backend"
 run = "poetry run test"
+
+[tasks."test:backend:unit"]
+description = "Run backend unit tests - usage: mise run test:backend:unit -- <test_file>"
+dir = "{{config_root}}/backend"
+run = "poetry run pytest {{arg(n=0)}} -v"
 
 [tasks."test:frontend"]
 description = "Run frontend E2E tests"

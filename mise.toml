@@ -87,3 +87,24 @@ run = "mise run install"
 description = "Verify mise environment is correctly configured"
 dir = "{{config_root}}/autogpt_platform"
 run = "mise run doctor"
+
+# Release automation tasks
+[tasks.release]
+description = "Create a new release (interactive)"
+run = "{{config_root}}/scripts/release.sh"
+raw = true
+
+[tasks."release:major"]
+description = "Create a major release (vX.0.0)"
+run = "{{config_root}}/scripts/release.sh major --yes"
+raw = true
+
+[tasks."release:minor"]
+description = "Create a minor release (vX.Y.0)"
+run = "{{config_root}}/scripts/release.sh minor --yes"
+raw = true
+
+[tasks."release:patch"]
+description = "Create a patch release (vX.Y.Z)"
+run = "{{config_root}}/scripts/release.sh patch --yes"
+raw = true

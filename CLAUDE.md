@@ -39,6 +39,7 @@ For platform development, see **[autogpt_platform/CLAUDE.md](autogpt_platform/CL
 | [docs/API_REFERENCE.md](docs/API_REFERENCE.md) | Complete REST/WebSocket API documentation |
 | [docs/BLOCK_SDK.md](docs/BLOCK_SDK.md) | Comprehensive block creation guide |
 | [docs/CLAUDE.md](docs/CLAUDE.md) | Documentation writing guidelines |
+| [docs/RELEASE_PROCESS.md](docs/RELEASE_PROCESS.md) | Release automation and versioning guide |
 
 ## Key Technologies
 
@@ -82,6 +83,12 @@ mise run test           # Run all tests
 # Database
 mise run db:migrate     # Run Prisma migrations
 mise run db:reset       # Reset database
+
+# Release management
+mise run release        # Interactive release (creates git tag, GitHub release)
+mise run release:patch  # Auto-confirm patch release (vX.Y.Z → vX.Y.Z+1)
+mise run release:minor  # Auto-confirm minor release (vX.Y.Z → vX.Y+1.0)
+mise run release:major  # Auto-confirm major release (vX.Y.Z → vX+1.0.0)
 
 # List all available tasks
 mise tasks

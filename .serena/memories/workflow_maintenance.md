@@ -282,3 +282,65 @@ Solution: Update to v4 (already completed in Jan 2026 update).
 - All actions used are official GitHub or Anthropic maintained
 - No third-party untrusted actions in critical workflows
 - Review action permissions regularly (see `permissions:` sections)
+
+## Release Automation (Added January 2026)
+
+### Release Process
+
+The AutoGPT Platform uses automated release management via mise tasks:
+
+**Script**: `scripts/release.sh` (executable bash script)
+**Tasks**: Defined in root `mise.toml`
+
+### Key Features
+
+1. **Monorepo Version Synchronization**
+   - Atomically updates 3 version files:
+     * `autogpt_platform/frontend/package.json`
+     * `autogpt_platform/backend/pyproject.toml`
+     * `autogpt_platform/autogpt_libs/pyproject.toml`
+   - Detects and resolves version mismatches on first run
+   - Ensures all packages share same version number
+
+2. **Semantic Versioning**
+   - major: Breaking changes (v1.2.3 → v2.0.0)
+   - minor: New features (v1.2.3 → v1.3.0)
+   - patch: Bug fixes (v1.2.3 → v1.2.4)
+
+3. **Automated Workflow**
+   - Generates release notes from commit history
+   - Creates git tags with annotations
+   - Creates GitHub releases via `gh` CLI
+   - Triggers `platform-autogpt-deploy-prod.yml` deployment
+
+### Usage
+
+```bash
+# Interactive release (recommended)
+mise run release
+
+# Auto-confirm releases
+mise run release:patch  # vX.Y.Z → vX.Y.Z+1
+mise run release:minor  # vX.Y.Z → vX.Y+1.0
+mise run release:major  # vX.Y.Z → vX+1.0.0
+
+# Specific version
+mise run release v1.2.3
+```
+
+### Prerequisites
+
+- Clean working directory (no uncommitted changes)
+- GitHub CLI authenticated (`gh auth login`)
+- Run from workspace root (mise handles path resolution)
+
+### Documentation
+
+Complete release documentation: `docs/RELEASE_PROCESS.md`
+
+Includes:
+- Version synchronization strategy
+- Usage examples and troubleshooting
+- Rollback procedures
+- Best practices for conventional commits
+- CI/CD integration details
