@@ -32,39 +32,14 @@ jobs:
           fetch-depth: 0
           submodules: true
 
-      # Backend Python/Poetry setup (mirrors platform-backend-ci.yml)
-      - name: Set up Python
-        uses: actions/setup-python@v6
+      # Setup mise for unified tool management (Python, Poetry, Node.js, pnpm)
+      - name: Setup mise
+        uses: jdx/mise-action@v3
         with:
-          python-version: "3.11" # Use standard version matching CI
-
-      - name: Set up Python dependency cache
-        uses: actions/cache@v5
-        with:
-          path: ~/.cache/pypoetry
-          key: poetry-${{ runner.os }}-${{ hashFiles('autogpt_platform/backend/poetry.lock') }}
-
-      - name: Install Poetry
-        run: |
-          # Extract Poetry version from backend/poetry.lock (matches CI)
-          cd autogpt_platform/backend
-          HEAD_POETRY_VERSION=$(python3 ../../.github/workflows/scripts/get_package_version_from_lockfile.py poetry)
-          echo "Found Poetry version ${HEAD_POETRY_VERSION} in backend/poetry.lock"
-
-          # Install Poetry
-          curl -sSL https://install.python-poetry.org | POETRY_VERSION=$HEAD_POETRY_VERSION python3 -
-
-          # Add Poetry to PATH
-          echo "$HOME/.local/bin" >> $GITHUB_PATH
-
-      - name: Check poetry.lock
-        working-directory: autogpt_platform/backend
-        run: |
-          poetry lock
-          if ! git diff --quiet --ignore-matching-lines="^# " poetry.lock; then
-            echo "Warning: poetry.lock not up to date, but continuing for setup"
-            git checkout poetry.lock  # Reset for clean setup
-          fi
+          version: 2026.1.9  # Latest as of January 2026
+          install: true
+          cache: true
+          working_directory: autogpt_platform
 
       - name: Install Python dependencies
         working-directory: autogpt_platform/backend
@@ -74,28 +49,15 @@ jobs:
         working-directory: autogpt_platform/backend
         run: poetry run prisma generate && poetry run gen-prisma-stub
 
-      # Frontend Node.js/pnpm setup (mirrors platform-frontend-ci.yml)
-      - name: Set up Node.js
-        uses: actions/setup-node@v6
-        with:
-          node-version: "22"
-
-      - name: Enable corepack
-        run: corepack enable
-
-      - name: Set pnpm store directory
+      # Check poetry.lock for consistency
+      - name: Check poetry.lock
+        working-directory: autogpt_platform/backend
         run: |
-          pnpm config set store-dir ~/.pnpm-store
-          echo "PNPM_HOME=$HOME/.pnpm-store" >> $GITHUB_ENV
-
-      - name: Cache frontend dependencies
-        uses: actions/cache@v5
-        with:
-          path: ~/.pnpm-store
-          key: ${{ runner.os }}-pnpm-${{ hashFiles('autogpt_platform/frontend/pnpm-lock.yaml', 'autogpt_platform/frontend/package.json') }}
-          restore-keys: |
-            ${{ runner.os }}-pnpm-${{ hashFiles('autogpt_platform/frontend/pnpm-lock.yaml') }}
-            ${{ runner.os }}-pnpm-
+          poetry lock
+          if ! git diff --quiet --ignore-matching-lines="^# " poetry.lock; then
+            echo "Warning: poetry.lock not up to date, but continuing for setup"
+            git checkout poetry.lock  # Reset for clean setup
+          fi
 
       - name: Install JavaScript dependencies
         working-directory: autogpt_platform/frontend
