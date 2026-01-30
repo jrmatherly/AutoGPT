@@ -104,6 +104,8 @@ AutoGPT/
 | `autogpt_platform/frontend/orval.config.ts` | API client generation |
 | `.pre-commit-config.yaml` | Pre-commit hooks |
 | `autogpt_platform/CLAUDE.md` | AI assistant guide |
+| `scripts/release.sh` | Release automation script (production-hardened) |
+| `docs/processes/RELEASE_PROCESS.md` | Release process documentation |
 
 ---
 
